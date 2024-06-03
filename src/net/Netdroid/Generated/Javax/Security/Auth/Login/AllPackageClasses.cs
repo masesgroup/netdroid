@@ -28,7 +28,7 @@ namespace Javax.Security.Auth.Login
 {
     #region LoginException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/login/LoginException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/security/auth/login/LoginException.html"/>
     /// </summary>
     public partial class LoginException : Java.Security.GeneralSecurityException
     {

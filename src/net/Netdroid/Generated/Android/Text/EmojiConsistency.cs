@@ -42,11 +42,12 @@ namespace Android.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/EmojiConsistency.html#getEmojiConsistencySet()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/EmojiConsistency.html#getEmojiConsistencySet()"/>
         /// </summary>
-        public static Java.Util.Set<int[]> EmojiConsistencySet
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set<int[]> GetEmojiConsistencySet()
         {
-            get { return SExecuteWithSignature<Java.Util.Set<int[]>>(LocalBridgeClazz, "getEmojiConsistencySet", "()Ljava/util/Set;"); }
+            return SExecuteWithSignature<Java.Util.Set<int[]>>(LocalBridgeClazz, "getEmojiConsistencySet", "()Ljava/util/Set;");
         }
 
         #endregion

@@ -65,7 +65,7 @@ namespace Android.Media
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Graphics.Bitmap CreateAudioThumbnail(Java.Lang.String arg0, int arg1)
         {
             return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createAudioThumbnail", arg0, arg1);
@@ -88,7 +88,7 @@ namespace Android.Media
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Graphics.Bitmap CreateImageThumbnail(Java.Lang.String arg0, int arg1)
         {
             return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createImageThumbnail", arg0, arg1);
@@ -111,7 +111,7 @@ namespace Android.Media
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Graphics.Bitmap CreateVideoThumbnail(Java.Lang.String arg0, int arg1)
         {
             return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createVideoThumbnail", arg0, arg1);

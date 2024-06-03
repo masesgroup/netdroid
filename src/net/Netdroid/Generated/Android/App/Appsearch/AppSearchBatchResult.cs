@@ -46,33 +46,36 @@ namespace Android.App.Appsearch
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.html#getAll()"/> 
-        /// </summary>
-        public Java.Util.Map All
-        {
-            get { return IExecuteWithSignature<Java.Util.Map>("getAll", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.html#getFailures()"/> 
-        /// </summary>
-        public Java.Util.Map Failures
-        {
-            get { return IExecuteWithSignature<Java.Util.Map>("getFailures", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.html#getSuccesses()"/> 
-        /// </summary>
-        public Java.Util.Map Successes
-        {
-            get { return IExecuteWithSignature<Java.Util.Map>("getSuccesses", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.html#isSuccess()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsSuccess()
         {
             return IExecuteWithSignature<bool>("isSuccess", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.html#getAll()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map GetAll()
+        {
+            return IExecuteWithSignature<Java.Util.Map>("getAll", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.html#getFailures()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map GetFailures()
+        {
+            return IExecuteWithSignature<Java.Util.Map>("getFailures", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.html#getSuccesses()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map GetSuccesses()
+        {
+            return IExecuteWithSignature<Java.Util.Map>("getSuccesses", "()Ljava/util/Map;");
         }
 
         #endregion
@@ -254,33 +257,36 @@ namespace Android.App.Appsearch
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.html#getAll()"/> 
-        /// </summary>
-        public Java.Util.Map<KeyType, Android.App.Appsearch.AppSearchResult<ValueType>> All
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<KeyType, Android.App.Appsearch.AppSearchResult<ValueType>>>("getAll", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.html#getFailures()"/> 
-        /// </summary>
-        public Java.Util.Map<KeyType, Android.App.Appsearch.AppSearchResult<ValueType>> Failures
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<KeyType, Android.App.Appsearch.AppSearchResult<ValueType>>>("getFailures", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.html#getSuccesses()"/> 
-        /// </summary>
-        public Java.Util.Map<KeyType, ValueType> Successes
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<KeyType, ValueType>>("getSuccesses", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.html#isSuccess()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsSuccess()
         {
             return IExecuteWithSignature<bool>("isSuccess", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.html#getAll()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<KeyType, Android.App.Appsearch.AppSearchResult<ValueType>> GetAll()
+        {
+            return IExecuteWithSignature<Java.Util.Map<KeyType, Android.App.Appsearch.AppSearchResult<ValueType>>>("getAll", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.html#getFailures()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<KeyType, Android.App.Appsearch.AppSearchResult<ValueType>> GetFailures()
+        {
+            return IExecuteWithSignature<Java.Util.Map<KeyType, Android.App.Appsearch.AppSearchResult<ValueType>>>("getFailures", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.html#getSuccesses()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<KeyType, ValueType> GetSuccesses()
+        {
+            return IExecuteWithSignature<Java.Util.Map<KeyType, ValueType>>("getSuccesses", "()Ljava/util/Map;");
         }
 
         #endregion

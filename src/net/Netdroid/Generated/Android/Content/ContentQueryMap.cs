@@ -57,13 +57,6 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ContentQueryMap.html#getRows()"/> 
-        /// </summary>
-        public Java.Util.Map<Java.Lang.String, Android.Content.ContentValues> Rows
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Android.Content.ContentValues>>("getRows", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentQueryMap.html#getValues(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -71,6 +64,14 @@ namespace Android.Content
         public Android.Content.ContentValues GetValues(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Android.Content.ContentValues>("getValues", "(Ljava/lang/String;)Landroid/content/ContentValues;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentQueryMap.html#getRows()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Android.Content.ContentValues> GetRows()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Android.Content.ContentValues>>("getRows", "()Ljava/util/Map;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentQueryMap.html#close()"/>

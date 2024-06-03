@@ -64,11 +64,12 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/XECKey.html#getParams()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/XECKey.html#getParams()"/>
         /// </summary>
-        public Java.Security.Spec.AlgorithmParameterSpec Params
+        /// <returns><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></returns>
+        public Java.Security.Spec.AlgorithmParameterSpec GetParams()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getParams", "()Ljava/security/spec/AlgorithmParameterSpec;"); }
+            return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getParams", "()Ljava/security/spec/AlgorithmParameterSpec;");
         }
 
         #endregion

@@ -70,62 +70,6 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getBucketCount()"/> 
-        /// </summary>
-        public int BucketCount
-        {
-            get { return IExecuteWithSignature<int>("getBucketCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getBucketLabels()"/> 
-        /// </summary>
-        public Java.Util.List BucketLabels
-        {
-            get { return IExecuteWithSignature<Java.Util.List>("getBucketLabels", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getCollator()"/> 
-        /// </summary>
-        public Android.Icu.Text.RuleBasedCollator Collator
-        {
-            get { return IExecuteWithSignature<Android.Icu.Text.RuleBasedCollator>("getCollator", "()Landroid/icu/text/RuleBasedCollator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getInflowLabel()"/> 
-        /// </summary>
-        public Java.Lang.String InflowLabel
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInflowLabel", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getMaxLabelCount()"/> 
-        /// </summary>
-        public int MaxLabelCount
-        {
-            get { return IExecuteWithSignature<int>("getMaxLabelCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getOverflowLabel()"/> 
-        /// </summary>
-        public Java.Lang.String OverflowLabel
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getOverflowLabel", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getRecordCount()"/> 
-        /// </summary>
-        public int RecordCount
-        {
-            get { return IExecuteWithSignature<int>("getRecordCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getUnderflowLabel()"/> 
-        /// </summary>
-        public Java.Lang.String UnderflowLabel
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUnderflowLabel", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#addLabels(android.icu.text.UnicodeSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Text.UnicodeSet"/></param>
@@ -215,6 +159,22 @@ namespace Android.Icu.Text
             return IExecuteWithSignature<Android.Icu.Text.AlphabeticIndex.ImmutableIndex>("buildImmutableIndex", "()Landroid/icu/text/AlphabeticIndex$ImmutableIndex;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getCollator()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.RuleBasedCollator"/></returns>
+        public Android.Icu.Text.RuleBasedCollator GetCollator()
+        {
+            return IExecuteWithSignature<Android.Icu.Text.RuleBasedCollator>("getCollator", "()Landroid/icu/text/RuleBasedCollator;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getBucketCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBucketCount()
+        {
+            return IExecuteWithSignature<int>("getBucketCount", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getBucketIndex(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
@@ -224,12 +184,60 @@ namespace Android.Icu.Text
             return IExecuteWithSignature<int>("getBucketIndex", "(Ljava/lang/CharSequence;)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getMaxLabelCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxLabelCount()
+        {
+            return IExecuteWithSignature<int>("getMaxLabelCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getRecordCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRecordCount()
+        {
+            return IExecuteWithSignature<int>("getRecordCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getInflowLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetInflowLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getInflowLabel", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getOverflowLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetOverflowLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getOverflowLabel", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getUnderflowLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUnderflowLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUnderflowLabel", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
         {
             return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getBucketLabels()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List GetBucketLabels()
+        {
+            return IExecuteWithSignature<Java.Util.List>("getBucketLabels", "()Ljava/util/List;");
         }
 
         #endregion
@@ -256,18 +264,12 @@ namespace Android.Icu.Text
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.html#getLabel()"/> 
+            /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.html#getLabelType()"/>
             /// </summary>
-            public Java.Lang.String Label
+            /// <returns><see cref="Android.Icu.Text.AlphabeticIndex.Bucket.LabelType"/></returns>
+            public Android.Icu.Text.AlphabeticIndex.Bucket.LabelType GetLabelType()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getLabel", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.html#getLabelType()"/> 
-            /// </summary>
-            public Android.Icu.Text.AlphabeticIndex.Bucket.LabelType LabelType
-            {
-                get { return IExecuteWithSignature<Android.Icu.Text.AlphabeticIndex.Bucket.LabelType>("getLabelType", "()Landroid/icu/text/AlphabeticIndex$Bucket$LabelType;"); }
+                return IExecuteWithSignature<Android.Icu.Text.AlphabeticIndex.Bucket.LabelType>("getLabelType", "()Landroid/icu/text/AlphabeticIndex$Bucket$LabelType;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.html#size()"/>
@@ -276,6 +278,14 @@ namespace Android.Icu.Text
             public int Size()
             {
                 return IExecuteWithSignature<int>("size", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.html#getLabel()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetLabel()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getLabel", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.html#iterator()"/>
@@ -393,18 +403,12 @@ namespace Android.Icu.Text
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.html#getLabel()"/> 
+            /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.html#getLabelType()"/>
             /// </summary>
-            public Java.Lang.String Label
+            /// <returns><see cref="Android.Icu.Text.AlphabeticIndex.Bucket.LabelType"/></returns>
+            public Android.Icu.Text.AlphabeticIndex.Bucket.LabelType GetLabelType()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getLabel", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.html#getLabelType()"/> 
-            /// </summary>
-            public Android.Icu.Text.AlphabeticIndex.Bucket.LabelType LabelType
-            {
-                get { return IExecuteWithSignature<Android.Icu.Text.AlphabeticIndex.Bucket.LabelType>("getLabelType", "()Landroid/icu/text/AlphabeticIndex$Bucket$LabelType;"); }
+                return IExecuteWithSignature<Android.Icu.Text.AlphabeticIndex.Bucket.LabelType>("getLabelType", "()Landroid/icu/text/AlphabeticIndex$Bucket$LabelType;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.html#size()"/>
@@ -413,6 +417,14 @@ namespace Android.Icu.Text
             public int Size()
             {
                 return IExecuteWithSignature<int>("size", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.html#getLabel()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetLabel()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getLabel", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.html#iterator()"/>
@@ -526,13 +538,6 @@ namespace Android.Icu.Text
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.ImmutableIndex.html#getBucketCount()"/> 
-            /// </summary>
-            public int BucketCount
-            {
-                get { return IExecuteWithSignature<int>("getBucketCount", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.ImmutableIndex.html#getBucket(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -540,6 +545,14 @@ namespace Android.Icu.Text
             public Android.Icu.Text.AlphabeticIndex.Bucket GetBucket(int arg0)
             {
                 return IExecuteWithSignature<Android.Icu.Text.AlphabeticIndex.Bucket>("getBucket", "(I)Landroid/icu/text/AlphabeticIndex$Bucket;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.ImmutableIndex.html#getBucketCount()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetBucketCount()
+            {
+                return IExecuteWithSignature<int>("getBucketCount", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.ImmutableIndex.html#getBucketIndex(java.lang.CharSequence)"/>
@@ -594,13 +607,6 @@ namespace Android.Icu.Text
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.ImmutableIndex.html#getBucketCount()"/> 
-            /// </summary>
-            public int BucketCount
-            {
-                get { return IExecuteWithSignature<int>("getBucketCount", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.ImmutableIndex.html#getBucket(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -608,6 +614,14 @@ namespace Android.Icu.Text
             public Android.Icu.Text.AlphabeticIndex.Bucket<V> GetBucket(int arg0)
             {
                 return IExecuteWithSignature<Android.Icu.Text.AlphabeticIndex.Bucket<V>>("getBucket", "(I)Landroid/icu/text/AlphabeticIndex$Bucket;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.ImmutableIndex.html#getBucketCount()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetBucketCount()
+            {
+                return IExecuteWithSignature<int>("getBucketCount", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.ImmutableIndex.html#getBucketIndex(java.lang.CharSequence)"/>
@@ -658,18 +672,20 @@ namespace Android.Icu.Text
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Record.html#getData()"/> 
+            /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Record.html#getName()"/>
             /// </summary>
-            public object Data
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetName()
             {
-                get { return IExecuteWithSignature("getData", "()Ljava/lang/Object;"); }
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getName", "()Ljava/lang/CharSequence;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Record.html#getName()"/> 
+            /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Record.html#getData()"/>
             /// </summary>
-            public Java.Lang.CharSequence Name
+            /// <returns><see cref="object"/></returns>
+            public object GetData()
             {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getName", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature("getData", "()Ljava/lang/Object;");
             }
 
             #endregion
@@ -707,18 +723,20 @@ namespace Android.Icu.Text
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Record.html#getData()"/> 
+            /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Record.html#getName()"/>
             /// </summary>
-            public V Data
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetName()
             {
-                get { return IExecuteWithSignature<V>("getData", "()Ljava/lang/Object;"); }
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getName", "()Ljava/lang/CharSequence;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Record.html#getName()"/> 
+            /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Record.html#getData()"/>
             /// </summary>
-            public Java.Lang.CharSequence Name
+            /// <returns><typeparamref name="V"/></returns>
+            public V GetData()
             {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getName", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature<V>("getData", "()Ljava/lang/Object;");
             }
 
             #endregion
@@ -786,62 +804,6 @@ namespace Android.Icu.Text
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getBucketCount()"/> 
-        /// </summary>
-        public int BucketCount
-        {
-            get { return IExecuteWithSignature<int>("getBucketCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getBucketLabels()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> BucketLabels
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getBucketLabels", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getCollator()"/> 
-        /// </summary>
-        public Android.Icu.Text.RuleBasedCollator Collator
-        {
-            get { return IExecuteWithSignature<Android.Icu.Text.RuleBasedCollator>("getCollator", "()Landroid/icu/text/RuleBasedCollator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getInflowLabel()"/> 
-        /// </summary>
-        public Java.Lang.String InflowLabel
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInflowLabel", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getMaxLabelCount()"/> 
-        /// </summary>
-        public int MaxLabelCount
-        {
-            get { return IExecuteWithSignature<int>("getMaxLabelCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getOverflowLabel()"/> 
-        /// </summary>
-        public Java.Lang.String OverflowLabel
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getOverflowLabel", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getRecordCount()"/> 
-        /// </summary>
-        public int RecordCount
-        {
-            get { return IExecuteWithSignature<int>("getRecordCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getUnderflowLabel()"/> 
-        /// </summary>
-        public Java.Lang.String UnderflowLabel
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUnderflowLabel", "()Ljava/lang/String;"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#addLabels(android.icu.text.UnicodeSet)"/>
         /// </summary>
@@ -932,6 +894,22 @@ namespace Android.Icu.Text
             return IExecuteWithSignature<Android.Icu.Text.AlphabeticIndex.ImmutableIndex<V>>("buildImmutableIndex", "()Landroid/icu/text/AlphabeticIndex$ImmutableIndex;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getCollator()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.RuleBasedCollator"/></returns>
+        public Android.Icu.Text.RuleBasedCollator GetCollator()
+        {
+            return IExecuteWithSignature<Android.Icu.Text.RuleBasedCollator>("getCollator", "()Landroid/icu/text/RuleBasedCollator;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getBucketCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBucketCount()
+        {
+            return IExecuteWithSignature<int>("getBucketCount", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getBucketIndex(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
@@ -941,12 +919,60 @@ namespace Android.Icu.Text
             return IExecuteWithSignature<int>("getBucketIndex", "(Ljava/lang/CharSequence;)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getMaxLabelCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxLabelCount()
+        {
+            return IExecuteWithSignature<int>("getMaxLabelCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getRecordCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRecordCount()
+        {
+            return IExecuteWithSignature<int>("getRecordCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getInflowLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetInflowLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getInflowLabel", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getOverflowLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetOverflowLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getOverflowLabel", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getUnderflowLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUnderflowLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUnderflowLabel", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<Android.Icu.Text.AlphabeticIndex.Bucket<V>> Iterator()
         {
             return IExecuteWithSignature<Java.Util.Iterator<Android.Icu.Text.AlphabeticIndex.Bucket<V>>>("iterator", "()Ljava/util/Iterator;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getBucketLabels()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetBucketLabels()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getBucketLabels", "()Ljava/util/List;");
         }
 
         #endregion

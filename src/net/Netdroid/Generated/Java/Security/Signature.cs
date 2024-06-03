@@ -42,7 +42,7 @@ namespace Java.Security
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#getInstance(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Signature.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -54,7 +54,7 @@ namespace Java.Security
             return SExecute<Java.Security.Signature>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#getInstance(java.lang.String,java.security.Provider)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Signature.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
@@ -65,7 +65,7 @@ namespace Java.Security
             return SExecute<Java.Security.Signature>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#getInstance(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Signature.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.Signature"/></returns>
@@ -79,28 +79,7 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#getAlgorithm()"/> 
-        /// </summary>
-        public Java.Lang.String Algorithm
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#getParameters()"/> 
-        /// </summary>
-        public Java.Security.AlgorithmParameters Parameters
-        {
-            get { return IExecuteWithSignature<Java.Security.AlgorithmParameters>("getParameters", "()Ljava/security/AlgorithmParameters;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#getProvider()"/> 
-        /// </summary>
-        public Java.Security.Provider Provider
-        {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#verify(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Signature.html#verify(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -112,7 +91,7 @@ namespace Java.Security
             return IExecute<bool>("verify", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#verify(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/Signature.html#verify(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -122,7 +101,7 @@ namespace Java.Security
             return IExecuteWithSignature<bool>("verify", "([B)Z", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#sign()"/>
+        /// <see href="https://developer.android.com/reference/java/security/Signature.html#sign()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Security.SignatureException"/>
@@ -131,7 +110,7 @@ namespace Java.Security
             return IExecuteWithSignatureArray<byte>("sign", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#sign(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Signature.html#sign(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -143,18 +122,42 @@ namespace Java.Security
             return IExecute<int>("sign", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#getParameter(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Signature.html#getParameter(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Security.InvalidParameterException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public object GetParameter(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("getParameter", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#initSign(java.security.PrivateKey,java.security.SecureRandom)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Signature.html#getAlgorithm()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAlgorithm()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/Signature.html#getParameters()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.AlgorithmParameters"/></returns>
+        public Java.Security.AlgorithmParameters GetParameters()
+        {
+            return IExecuteWithSignature<Java.Security.AlgorithmParameters>("getParameters", "()Ljava/security/AlgorithmParameters;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/Signature.html#getProvider()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Provider"/></returns>
+        public Java.Security.Provider GetProvider()
+        {
+            return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/Signature.html#initSign(java.security.PrivateKey,java.security.SecureRandom)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PrivateKey"/></param>
         /// <param name="arg1"><see cref="Java.Security.SecureRandom"/></param>
@@ -164,7 +167,7 @@ namespace Java.Security
             IExecute("initSign", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#initSign(java.security.PrivateKey)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Signature.html#initSign(java.security.PrivateKey)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PrivateKey"/></param>
         /// <exception cref="Java.Security.InvalidKeyException"/>
@@ -173,7 +176,7 @@ namespace Java.Security
             IExecuteWithSignature("initSign", "(Ljava/security/PrivateKey;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#initVerify(java.security.cert.Certificate)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Signature.html#initVerify(java.security.cert.Certificate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
         /// <exception cref="Java.Security.InvalidKeyException"/>
@@ -182,7 +185,7 @@ namespace Java.Security
             IExecuteWithSignature("initVerify", "(Ljava/security/cert/Certificate;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#initVerify(java.security.PublicKey)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Signature.html#initVerify(java.security.PublicKey)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
         /// <exception cref="Java.Security.InvalidKeyException"/>
@@ -191,18 +194,18 @@ namespace Java.Security
             IExecuteWithSignature("initVerify", "(Ljava/security/PublicKey;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#setParameter(java.lang.String,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Signature.html#setParameter(java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Java.Security.InvalidParameterException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetParameter(Java.Lang.String arg0, object arg1)
         {
             IExecute("setParameter", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#setParameter(java.security.spec.AlgorithmParameterSpec)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Signature.html#setParameter(java.security.spec.AlgorithmParameterSpec)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
         /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
@@ -211,7 +214,7 @@ namespace Java.Security
             IExecuteWithSignature("setParameter", "(Ljava/security/spec/AlgorithmParameterSpec;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#update(byte)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Signature.html#update(byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <exception cref="Java.Security.SignatureException"/>
@@ -220,7 +223,7 @@ namespace Java.Security
             IExecuteWithSignature("update", "(B)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#update(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Signature.html#update(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -231,7 +234,7 @@ namespace Java.Security
             IExecute("update", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#update(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/Signature.html#update(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <exception cref="Java.Security.SignatureException"/>
@@ -240,7 +243,7 @@ namespace Java.Security
             IExecuteWithSignature("update", "([B)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#update(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Signature.html#update(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <exception cref="Java.Security.SignatureException"/>

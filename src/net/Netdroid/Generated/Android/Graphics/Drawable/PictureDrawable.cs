@@ -54,11 +54,20 @@ namespace Android.Graphics.Drawable
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/PictureDrawable.html#getPicture()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/PictureDrawable.html#setPicture(android.graphics.Picture)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/PictureDrawable.html#getPicture()"/>
         /// </summary>
-        public Android.Graphics.Picture Picture
+        /// <returns><see cref="Android.Graphics.Picture"/></returns>
+        public Android.Graphics.Picture GetPicture()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Picture>("getPicture", "()Landroid/graphics/Picture;"); } set { IExecuteWithSignature("setPicture", "(Landroid/graphics/Picture;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Picture>("getPicture", "()Landroid/graphics/Picture;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/PictureDrawable.html#setPicture(android.graphics.Picture)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Picture"/></param>
+        public void SetPicture(Android.Graphics.Picture arg0)
+        {
+            IExecuteWithSignature("setPicture", "(Landroid/graphics/Picture;)V", arg0);
         }
 
         #endregion

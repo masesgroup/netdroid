@@ -46,7 +46,7 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/PrivilegedAction.html#run()"/>
+        /// <see href="https://developer.android.com/reference/java/security/PrivilegedAction.html#run()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Run()
@@ -107,7 +107,7 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/PrivilegedAction.html#run()"/>
+        /// <see href="https://developer.android.com/reference/java/security/PrivilegedAction.html#run()"/>
         /// </summary>
         /// <returns><typeparamref name="T"/></returns>
         public T Run()

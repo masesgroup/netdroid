@@ -34,7 +34,7 @@ namespace Android.Media
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.PendingIntent"/></param>
         /// <param name="arg1"><see cref="Android.Os.Looper"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public RemoteControlClient(Android.App.PendingIntent arg0, Android.Os.Looper arg1)
             : base(arg0, arg1)
         {
@@ -43,7 +43,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#%3Cinit%3E(android.app.PendingIntent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.PendingIntent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public RemoteControlClient(Android.App.PendingIntent arg0)
             : base(arg0)
         {
@@ -59,133 +59,133 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#FLAG_KEY_MEDIA_FAST_FORWARD"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FLAG_KEY_MEDIA_FAST_FORWARD { get { if (!_FLAG_KEY_MEDIA_FAST_FORWARDReady) { _FLAG_KEY_MEDIA_FAST_FORWARDContent = SGetField<int>(LocalBridgeClazz, "FLAG_KEY_MEDIA_FAST_FORWARD"); _FLAG_KEY_MEDIA_FAST_FORWARDReady = true; } return _FLAG_KEY_MEDIA_FAST_FORWARDContent; } }
         private static int _FLAG_KEY_MEDIA_FAST_FORWARDContent = default;
         private static bool _FLAG_KEY_MEDIA_FAST_FORWARDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#FLAG_KEY_MEDIA_NEXT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FLAG_KEY_MEDIA_NEXT { get { if (!_FLAG_KEY_MEDIA_NEXTReady) { _FLAG_KEY_MEDIA_NEXTContent = SGetField<int>(LocalBridgeClazz, "FLAG_KEY_MEDIA_NEXT"); _FLAG_KEY_MEDIA_NEXTReady = true; } return _FLAG_KEY_MEDIA_NEXTContent; } }
         private static int _FLAG_KEY_MEDIA_NEXTContent = default;
         private static bool _FLAG_KEY_MEDIA_NEXTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#FLAG_KEY_MEDIA_PAUSE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FLAG_KEY_MEDIA_PAUSE { get { if (!_FLAG_KEY_MEDIA_PAUSEReady) { _FLAG_KEY_MEDIA_PAUSEContent = SGetField<int>(LocalBridgeClazz, "FLAG_KEY_MEDIA_PAUSE"); _FLAG_KEY_MEDIA_PAUSEReady = true; } return _FLAG_KEY_MEDIA_PAUSEContent; } }
         private static int _FLAG_KEY_MEDIA_PAUSEContent = default;
         private static bool _FLAG_KEY_MEDIA_PAUSEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#FLAG_KEY_MEDIA_PLAY"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FLAG_KEY_MEDIA_PLAY { get { if (!_FLAG_KEY_MEDIA_PLAYReady) { _FLAG_KEY_MEDIA_PLAYContent = SGetField<int>(LocalBridgeClazz, "FLAG_KEY_MEDIA_PLAY"); _FLAG_KEY_MEDIA_PLAYReady = true; } return _FLAG_KEY_MEDIA_PLAYContent; } }
         private static int _FLAG_KEY_MEDIA_PLAYContent = default;
         private static bool _FLAG_KEY_MEDIA_PLAYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#FLAG_KEY_MEDIA_PLAY_PAUSE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FLAG_KEY_MEDIA_PLAY_PAUSE { get { if (!_FLAG_KEY_MEDIA_PLAY_PAUSEReady) { _FLAG_KEY_MEDIA_PLAY_PAUSEContent = SGetField<int>(LocalBridgeClazz, "FLAG_KEY_MEDIA_PLAY_PAUSE"); _FLAG_KEY_MEDIA_PLAY_PAUSEReady = true; } return _FLAG_KEY_MEDIA_PLAY_PAUSEContent; } }
         private static int _FLAG_KEY_MEDIA_PLAY_PAUSEContent = default;
         private static bool _FLAG_KEY_MEDIA_PLAY_PAUSEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#FLAG_KEY_MEDIA_POSITION_UPDATE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FLAG_KEY_MEDIA_POSITION_UPDATE { get { if (!_FLAG_KEY_MEDIA_POSITION_UPDATEReady) { _FLAG_KEY_MEDIA_POSITION_UPDATEContent = SGetField<int>(LocalBridgeClazz, "FLAG_KEY_MEDIA_POSITION_UPDATE"); _FLAG_KEY_MEDIA_POSITION_UPDATEReady = true; } return _FLAG_KEY_MEDIA_POSITION_UPDATEContent; } }
         private static int _FLAG_KEY_MEDIA_POSITION_UPDATEContent = default;
         private static bool _FLAG_KEY_MEDIA_POSITION_UPDATEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#FLAG_KEY_MEDIA_PREVIOUS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FLAG_KEY_MEDIA_PREVIOUS { get { if (!_FLAG_KEY_MEDIA_PREVIOUSReady) { _FLAG_KEY_MEDIA_PREVIOUSContent = SGetField<int>(LocalBridgeClazz, "FLAG_KEY_MEDIA_PREVIOUS"); _FLAG_KEY_MEDIA_PREVIOUSReady = true; } return _FLAG_KEY_MEDIA_PREVIOUSContent; } }
         private static int _FLAG_KEY_MEDIA_PREVIOUSContent = default;
         private static bool _FLAG_KEY_MEDIA_PREVIOUSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#FLAG_KEY_MEDIA_RATING"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FLAG_KEY_MEDIA_RATING { get { if (!_FLAG_KEY_MEDIA_RATINGReady) { _FLAG_KEY_MEDIA_RATINGContent = SGetField<int>(LocalBridgeClazz, "FLAG_KEY_MEDIA_RATING"); _FLAG_KEY_MEDIA_RATINGReady = true; } return _FLAG_KEY_MEDIA_RATINGContent; } }
         private static int _FLAG_KEY_MEDIA_RATINGContent = default;
         private static bool _FLAG_KEY_MEDIA_RATINGReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#FLAG_KEY_MEDIA_REWIND"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FLAG_KEY_MEDIA_REWIND { get { if (!_FLAG_KEY_MEDIA_REWINDReady) { _FLAG_KEY_MEDIA_REWINDContent = SGetField<int>(LocalBridgeClazz, "FLAG_KEY_MEDIA_REWIND"); _FLAG_KEY_MEDIA_REWINDReady = true; } return _FLAG_KEY_MEDIA_REWINDContent; } }
         private static int _FLAG_KEY_MEDIA_REWINDContent = default;
         private static bool _FLAG_KEY_MEDIA_REWINDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#FLAG_KEY_MEDIA_STOP"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FLAG_KEY_MEDIA_STOP { get { if (!_FLAG_KEY_MEDIA_STOPReady) { _FLAG_KEY_MEDIA_STOPContent = SGetField<int>(LocalBridgeClazz, "FLAG_KEY_MEDIA_STOP"); _FLAG_KEY_MEDIA_STOPReady = true; } return _FLAG_KEY_MEDIA_STOPContent; } }
         private static int _FLAG_KEY_MEDIA_STOPContent = default;
         private static bool _FLAG_KEY_MEDIA_STOPReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#PLAYSTATE_BUFFERING"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PLAYSTATE_BUFFERING { get { if (!_PLAYSTATE_BUFFERINGReady) { _PLAYSTATE_BUFFERINGContent = SGetField<int>(LocalBridgeClazz, "PLAYSTATE_BUFFERING"); _PLAYSTATE_BUFFERINGReady = true; } return _PLAYSTATE_BUFFERINGContent; } }
         private static int _PLAYSTATE_BUFFERINGContent = default;
         private static bool _PLAYSTATE_BUFFERINGReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#PLAYSTATE_ERROR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PLAYSTATE_ERROR { get { if (!_PLAYSTATE_ERRORReady) { _PLAYSTATE_ERRORContent = SGetField<int>(LocalBridgeClazz, "PLAYSTATE_ERROR"); _PLAYSTATE_ERRORReady = true; } return _PLAYSTATE_ERRORContent; } }
         private static int _PLAYSTATE_ERRORContent = default;
         private static bool _PLAYSTATE_ERRORReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#PLAYSTATE_FAST_FORWARDING"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PLAYSTATE_FAST_FORWARDING { get { if (!_PLAYSTATE_FAST_FORWARDINGReady) { _PLAYSTATE_FAST_FORWARDINGContent = SGetField<int>(LocalBridgeClazz, "PLAYSTATE_FAST_FORWARDING"); _PLAYSTATE_FAST_FORWARDINGReady = true; } return _PLAYSTATE_FAST_FORWARDINGContent; } }
         private static int _PLAYSTATE_FAST_FORWARDINGContent = default;
         private static bool _PLAYSTATE_FAST_FORWARDINGReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#PLAYSTATE_PAUSED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PLAYSTATE_PAUSED { get { if (!_PLAYSTATE_PAUSEDReady) { _PLAYSTATE_PAUSEDContent = SGetField<int>(LocalBridgeClazz, "PLAYSTATE_PAUSED"); _PLAYSTATE_PAUSEDReady = true; } return _PLAYSTATE_PAUSEDContent; } }
         private static int _PLAYSTATE_PAUSEDContent = default;
         private static bool _PLAYSTATE_PAUSEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#PLAYSTATE_PLAYING"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PLAYSTATE_PLAYING { get { if (!_PLAYSTATE_PLAYINGReady) { _PLAYSTATE_PLAYINGContent = SGetField<int>(LocalBridgeClazz, "PLAYSTATE_PLAYING"); _PLAYSTATE_PLAYINGReady = true; } return _PLAYSTATE_PLAYINGContent; } }
         private static int _PLAYSTATE_PLAYINGContent = default;
         private static bool _PLAYSTATE_PLAYINGReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#PLAYSTATE_REWINDING"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PLAYSTATE_REWINDING { get { if (!_PLAYSTATE_REWINDINGReady) { _PLAYSTATE_REWINDINGContent = SGetField<int>(LocalBridgeClazz, "PLAYSTATE_REWINDING"); _PLAYSTATE_REWINDINGReady = true; } return _PLAYSTATE_REWINDINGContent; } }
         private static int _PLAYSTATE_REWINDINGContent = default;
         private static bool _PLAYSTATE_REWINDINGReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#PLAYSTATE_SKIPPING_BACKWARDS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PLAYSTATE_SKIPPING_BACKWARDS { get { if (!_PLAYSTATE_SKIPPING_BACKWARDSReady) { _PLAYSTATE_SKIPPING_BACKWARDSContent = SGetField<int>(LocalBridgeClazz, "PLAYSTATE_SKIPPING_BACKWARDS"); _PLAYSTATE_SKIPPING_BACKWARDSReady = true; } return _PLAYSTATE_SKIPPING_BACKWARDSContent; } }
         private static int _PLAYSTATE_SKIPPING_BACKWARDSContent = default;
         private static bool _PLAYSTATE_SKIPPING_BACKWARDSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#PLAYSTATE_SKIPPING_FORWARDS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PLAYSTATE_SKIPPING_FORWARDS { get { if (!_PLAYSTATE_SKIPPING_FORWARDSReady) { _PLAYSTATE_SKIPPING_FORWARDSContent = SGetField<int>(LocalBridgeClazz, "PLAYSTATE_SKIPPING_FORWARDS"); _PLAYSTATE_SKIPPING_FORWARDSReady = true; } return _PLAYSTATE_SKIPPING_FORWARDSContent; } }
         private static int _PLAYSTATE_SKIPPING_FORWARDSContent = default;
         private static bool _PLAYSTATE_SKIPPING_FORWARDSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#PLAYSTATE_STOPPED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PLAYSTATE_STOPPED { get { if (!_PLAYSTATE_STOPPEDReady) { _PLAYSTATE_STOPPEDContent = SGetField<int>(LocalBridgeClazz, "PLAYSTATE_STOPPED"); _PLAYSTATE_STOPPEDReady = true; } return _PLAYSTATE_STOPPEDContent; } }
         private static int _PLAYSTATE_STOPPEDContent = default;
         private static bool _PLAYSTATE_STOPPEDReady = false; // this is used because in case of generics 
@@ -198,28 +198,29 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#getMediaSession()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Media.Session.MediaSession MediaSession
-        {
-            get { return IExecuteWithSignature<Android.Media.Session.MediaSession>("getMediaSession", "()Landroid/media/session/MediaSession;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#editMetadata(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Android.Media.RemoteControlClient.MetadataEditor"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Media.RemoteControlClient.MetadataEditor EditMetadata(bool arg0)
         {
             return IExecuteWithSignature<Android.Media.RemoteControlClient.MetadataEditor>("editMetadata", "(Z)Landroid/media/RemoteControlClient$MetadataEditor;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#getMediaSession()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.Session.MediaSession"/></returns>
+        [global::System.Obsolete()]
+        public Android.Media.Session.MediaSession GetMediaSession()
+        {
+            return IExecuteWithSignature<Android.Media.Session.MediaSession>("getMediaSession", "()Landroid/media/session/MediaSession;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#setMetadataUpdateListener(android.media.RemoteControlClient.OnMetadataUpdateListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.RemoteControlClient.OnMetadataUpdateListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetMetadataUpdateListener(Android.Media.RemoteControlClient.OnMetadataUpdateListener arg0)
         {
             IExecuteWithSignature("setMetadataUpdateListener", "(Landroid/media/RemoteControlClient$OnMetadataUpdateListener;)V", arg0);
@@ -228,7 +229,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#setOnGetPlaybackPositionListener(android.media.RemoteControlClient.OnGetPlaybackPositionListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.RemoteControlClient.OnGetPlaybackPositionListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetOnGetPlaybackPositionListener(Android.Media.RemoteControlClient.OnGetPlaybackPositionListener arg0)
         {
             IExecuteWithSignature("setOnGetPlaybackPositionListener", "(Landroid/media/RemoteControlClient$OnGetPlaybackPositionListener;)V", arg0);
@@ -237,7 +238,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#setPlaybackPositionUpdateListener(android.media.RemoteControlClient.OnPlaybackPositionUpdateListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.RemoteControlClient.OnPlaybackPositionUpdateListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetPlaybackPositionUpdateListener(Android.Media.RemoteControlClient.OnPlaybackPositionUpdateListener arg0)
         {
             IExecuteWithSignature("setPlaybackPositionUpdateListener", "(Landroid/media/RemoteControlClient$OnPlaybackPositionUpdateListener;)V", arg0);
@@ -248,7 +249,7 @@ namespace Android.Media
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetPlaybackState(int arg0, long arg1, float arg2)
         {
             IExecute("setPlaybackState", arg0, arg1, arg2);
@@ -257,7 +258,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#setPlaybackState(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetPlaybackState(int arg0)
         {
             IExecuteWithSignature("setPlaybackState", "(I)V", arg0);
@@ -266,7 +267,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#setTransportControlFlags(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetTransportControlFlags(int arg0)
         {
             IExecuteWithSignature("setTransportControlFlags", "(I)V", arg0);
@@ -290,7 +291,7 @@ namespace Android.Media
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.MetadataEditor.html#BITMAP_KEY_ARTWORK"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int BITMAP_KEY_ARTWORK { get { if (!_BITMAP_KEY_ARTWORKReady) { _BITMAP_KEY_ARTWORKContent = SGetField<int>(LocalBridgeClazz, "BITMAP_KEY_ARTWORK"); _BITMAP_KEY_ARTWORKReady = true; } return _BITMAP_KEY_ARTWORKContent; } }
             private static int _BITMAP_KEY_ARTWORKContent = default;
             private static bool _BITMAP_KEY_ARTWORKReady = false; // this is used because in case of generics 
@@ -338,7 +339,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onGetPlaybackPosition", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnGetPlaybackPositionEventHandler));
+                AddEventHandler("onGetPlaybackPosition", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnGetPlaybackPositionEventHandler));
 
             }
 
@@ -346,7 +347,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/RemoteControlClient.OnGetPlaybackPositionListener.html#onGetPlaybackPosition()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGetPlaybackPosition"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<long> OnOnGetPlaybackPosition { get; set; } = null;
+            public global::System.Func<long> OnOnGetPlaybackPosition { get; set; } = null;
 
             void OnGetPlaybackPositionEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {
@@ -359,7 +360,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.OnGetPlaybackPositionListener.html#onGetPlaybackPosition()"/>
             /// </summary>
             /// <returns><see cref="long"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual long OnGetPlaybackPosition()
             {
                 return default;
@@ -399,7 +400,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.OnGetPlaybackPositionListener.html#onGetPlaybackPosition()"/>
             /// </summary>
             /// <returns><see cref="long"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override long OnGetPlaybackPosition()
             {
                 return IExecuteWithSignature<long>("onGetPlaybackPosition", "()J");
@@ -440,7 +441,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onMetadataUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnMetadataUpdateEventHandler));
+                AddEventHandler("onMetadataUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnMetadataUpdateEventHandler));
 
             }
 
@@ -448,7 +449,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/RemoteControlClient.OnMetadataUpdateListener.html#onMetadataUpdate(int,java.lang.Object)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnMetadataUpdate"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int, object> OnOnMetadataUpdate { get; set; } = null;
+            public global::System.Action<int, object> OnOnMetadataUpdate { get; set; } = null;
 
             void OnMetadataUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -461,7 +462,7 @@ namespace Android.Media
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="object"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnMetadataUpdate(int arg0, object arg1)
             {
                 
@@ -502,7 +503,7 @@ namespace Android.Media
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="object"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnMetadataUpdate(int arg0, object arg1)
             {
                 IExecute("onMetadataUpdate", arg0, arg1);
@@ -543,7 +544,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onPlaybackPositionUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(OnPlaybackPositionUpdateEventHandler));
+                AddEventHandler("onPlaybackPositionUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(OnPlaybackPositionUpdateEventHandler));
 
             }
 
@@ -551,7 +552,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/RemoteControlClient.OnPlaybackPositionUpdateListener.html#onPlaybackPositionUpdate(long)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPlaybackPositionUpdate"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<long> OnOnPlaybackPositionUpdate { get; set; } = null;
+            public global::System.Action<long> OnOnPlaybackPositionUpdate { get; set; } = null;
 
             void OnPlaybackPositionUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
             {
@@ -563,7 +564,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.OnPlaybackPositionUpdateListener.html#onPlaybackPositionUpdate(long)"/>
             /// </summary>
             /// <param name="arg0"><see cref="long"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnPlaybackPositionUpdate(long arg0)
             {
                 
@@ -603,7 +604,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.OnPlaybackPositionUpdateListener.html#onPlaybackPositionUpdate(long)"/>
             /// </summary>
             /// <param name="arg0"><see cref="long"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnPlaybackPositionUpdate(long arg0)
             {
                 IExecuteWithSignature("onPlaybackPositionUpdate", "(J)V", arg0);

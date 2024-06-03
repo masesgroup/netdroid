@@ -63,18 +63,20 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LocalSocketAddress.html#getNamespace()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/LocalSocketAddress.html#getNamespace()"/>
         /// </summary>
-        public Android.Net.LocalSocketAddress.Namespace GetNamespace
+        /// <returns><see cref="Android.Net.LocalSocketAddress.Namespace"/></returns>
+        public Android.Net.LocalSocketAddress.Namespace GetNamespace()
         {
-            get { return IExecuteWithSignature<Android.Net.LocalSocketAddress.Namespace>("getNamespace", "()Landroid/net/LocalSocketAddress$Namespace;"); }
+            return IExecuteWithSignature<Android.Net.LocalSocketAddress.Namespace>("getNamespace", "()Landroid/net/LocalSocketAddress$Namespace;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LocalSocketAddress.html#getName()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/LocalSocketAddress.html#getName()"/>
         /// </summary>
-        public Java.Lang.String Name
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
 
         #endregion

@@ -28,7 +28,7 @@ namespace Javax.Xml.Validation
 {
     #region Schema
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/Schema.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/validation/Schema.html"/>
     /// </summary>
     public partial class Schema : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Schema>
     {
@@ -36,12 +36,12 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Schema class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Schema class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Schema() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Schema class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Schema class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Schema(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,7 +74,7 @@ namespace Javax.Xml.Validation
 
     #region SchemaFactory
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/SchemaFactory.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/validation/SchemaFactory.html"/>
     /// </summary>
     public partial class SchemaFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SchemaFactory>
     {
@@ -82,12 +82,12 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SchemaFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SchemaFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SchemaFactory() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SchemaFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SchemaFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SchemaFactory(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -120,7 +120,7 @@ namespace Javax.Xml.Validation
 
     #region SchemaFactoryLoader
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/SchemaFactoryLoader.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/validation/SchemaFactoryLoader.html"/>
     /// </summary>
     public partial class SchemaFactoryLoader : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SchemaFactoryLoader>
     {
@@ -128,12 +128,12 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SchemaFactoryLoader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SchemaFactoryLoader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SchemaFactoryLoader() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SchemaFactoryLoader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SchemaFactoryLoader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SchemaFactoryLoader(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -166,7 +166,7 @@ namespace Javax.Xml.Validation
 
     #region TypeInfoProvider
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/TypeInfoProvider.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/validation/TypeInfoProvider.html"/>
     /// </summary>
     public partial class TypeInfoProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TypeInfoProvider>
     {
@@ -174,12 +174,12 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("TypeInfoProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TypeInfoProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TypeInfoProvider() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("TypeInfoProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TypeInfoProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TypeInfoProvider(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -212,7 +212,7 @@ namespace Javax.Xml.Validation
 
     #region Validator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/Validator.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html"/>
     /// </summary>
     public partial class Validator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Validator>
     {
@@ -220,12 +220,12 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Validator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Validator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Validator() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Validator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Validator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Validator(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -258,7 +258,7 @@ namespace Javax.Xml.Validation
 
     #region ValidatorHandler
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/ValidatorHandler.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/validation/ValidatorHandler.html"/>
     /// </summary>
     public partial class ValidatorHandler : Org.Xml.Sax.ContentHandler
     {
@@ -266,12 +266,12 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ValidatorHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ValidatorHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ValidatorHandler() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ValidatorHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ValidatorHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ValidatorHandler(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

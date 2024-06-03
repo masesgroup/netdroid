@@ -118,18 +118,20 @@ namespace Android.Telephony.Mbms
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/mbms/StreamingService.html#getInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/mbms/StreamingService.html#getPlaybackUri()"/>
         /// </summary>
-        public Android.Telephony.Mbms.StreamingServiceInfo Info
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetPlaybackUri()
         {
-            get { return IExecuteWithSignature<Android.Telephony.Mbms.StreamingServiceInfo>("getInfo", "()Landroid/telephony/mbms/StreamingServiceInfo;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getPlaybackUri", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/mbms/StreamingService.html#getPlaybackUri()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/mbms/StreamingService.html#getInfo()"/>
         /// </summary>
-        public Android.Net.Uri PlaybackUri
+        /// <returns><see cref="Android.Telephony.Mbms.StreamingServiceInfo"/></returns>
+        public Android.Telephony.Mbms.StreamingServiceInfo GetInfo()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getPlaybackUri", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Telephony.Mbms.StreamingServiceInfo>("getInfo", "()Landroid/telephony/mbms/StreamingServiceInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/mbms/StreamingService.html#close()"/>

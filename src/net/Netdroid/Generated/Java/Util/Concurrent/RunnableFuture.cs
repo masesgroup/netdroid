@@ -54,7 +54,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/RunnableFuture.html#run()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/RunnableFuture.html#run()"/>
         /// </summary>
         public void Run()
         {
@@ -122,7 +122,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/RunnableFuture.html#run()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/RunnableFuture.html#run()"/>
         /// </summary>
         public void Run()
         {

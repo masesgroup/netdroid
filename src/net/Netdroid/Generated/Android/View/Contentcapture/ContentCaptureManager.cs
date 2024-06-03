@@ -64,18 +64,12 @@ namespace Android.View.Contentcapture
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureManager.html#getContentCaptureConditions()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureManager.html#getServiceComponentName()"/>
         /// </summary>
-        public Java.Util.Set<Android.View.Contentcapture.ContentCaptureCondition> ContentCaptureConditions
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        public Android.Content.ComponentName GetServiceComponentName()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Android.View.Contentcapture.ContentCaptureCondition>>("getContentCaptureConditions", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureManager.html#getServiceComponentName()"/> 
-        /// </summary>
-        public Android.Content.ComponentName ServiceComponentName
-        {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getServiceComponentName", "()Landroid/content/ComponentName;"); }
+            return IExecuteWithSignature<Android.Content.ComponentName>("getServiceComponentName", "()Landroid/content/ComponentName;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureManager.html#isContentCaptureEnabled()"/>
@@ -84,6 +78,14 @@ namespace Android.View.Contentcapture
         public bool IsContentCaptureEnabled()
         {
             return IExecuteWithSignature<bool>("isContentCaptureEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureManager.html#getContentCaptureConditions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Android.View.Contentcapture.ContentCaptureCondition> GetContentCaptureConditions()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Android.View.Contentcapture.ContentCaptureCondition>>("getContentCaptureConditions", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureManager.html#removeData(android.view.contentcapture.DataRemovalRequest)"/>

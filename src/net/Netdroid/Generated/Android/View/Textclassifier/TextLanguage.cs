@@ -52,27 +52,6 @@ namespace Android.View.Textclassifier
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextLanguage.html#getExtras()"/> 
-        /// </summary>
-        public Android.Os.Bundle Extras
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextLanguage.html#getId()"/> 
-        /// </summary>
-        public Java.Lang.String Id
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextLanguage.html#getLocaleHypothesisCount()"/> 
-        /// </summary>
-        public int LocaleHypothesisCount
-        {
-            get { return IExecuteWithSignature<int>("getLocaleHypothesisCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextLanguage.html#getLocale(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -80,6 +59,14 @@ namespace Android.View.Textclassifier
         public Android.Icu.Util.ULocale GetLocale(int arg0)
         {
             return IExecuteWithSignature<Android.Icu.Util.ULocale>("getLocale", "(I)Landroid/icu/util/ULocale;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextLanguage.html#getExtras()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
+        {
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextLanguage.html#getConfidenceScore(android.icu.util.ULocale)"/>
@@ -97,6 +84,22 @@ namespace Android.View.Textclassifier
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextLanguage.html#getLocaleHypothesisCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLocaleHypothesisCount()
+        {
+            return IExecuteWithSignature<int>("getLocaleHypothesisCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextLanguage.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextLanguage.html#writeToParcel(android.os.Parcel,int)"/>
@@ -205,25 +208,12 @@ namespace Android.View.Textclassifier
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextLanguage.Request.html#getCallingPackageName()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextLanguage.Request.html#getExtras()"/>
             /// </summary>
-            public Java.Lang.String CallingPackageName
+            /// <returns><see cref="Android.Os.Bundle"/></returns>
+            public Android.Os.Bundle GetExtras()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getCallingPackageName", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextLanguage.Request.html#getExtras()"/> 
-            /// </summary>
-            public Android.Os.Bundle Extras
-            {
-                get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextLanguage.Request.html#getText()"/> 
-            /// </summary>
-            public Java.Lang.CharSequence Text
-            {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextLanguage.Request.html#describeContents()"/>
@@ -232,6 +222,22 @@ namespace Android.View.Textclassifier
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextLanguage.Request.html#getText()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetText()
+            {
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextLanguage.Request.html#getCallingPackageName()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetCallingPackageName()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getCallingPackageName", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextLanguage.Request.html#writeToParcel(android.os.Parcel,int)"/>

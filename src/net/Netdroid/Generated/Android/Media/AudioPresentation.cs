@@ -148,41 +148,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioPresentation.html#getLabels()"/> 
-        /// </summary>
-        public Java.Util.Map<Java.Util.Locale, Java.Lang.String> Labels
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Util.Locale, Java.Lang.String>>("getLabels", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioPresentation.html#getLocale()"/> 
-        /// </summary>
-        public Java.Util.Locale Locale
-        {
-            get { return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioPresentation.html#getMasteringIndication()"/> 
-        /// </summary>
-        public int MasteringIndication
-        {
-            get { return IExecuteWithSignature<int>("getMasteringIndication", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioPresentation.html#getPresentationId()"/> 
-        /// </summary>
-        public int PresentationId
-        {
-            get { return IExecuteWithSignature<int>("getPresentationId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioPresentation.html#getProgramId()"/> 
-        /// </summary>
-        public int ProgramId
-        {
-            get { return IExecuteWithSignature<int>("getProgramId", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioPresentation.html#hasAudioDescription()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -213,6 +178,46 @@ namespace Android.Media
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioPresentation.html#getMasteringIndication()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMasteringIndication()
+        {
+            return IExecuteWithSignature<int>("getMasteringIndication", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioPresentation.html#getPresentationId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPresentationId()
+        {
+            return IExecuteWithSignature<int>("getPresentationId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioPresentation.html#getProgramId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetProgramId()
+        {
+            return IExecuteWithSignature<int>("getProgramId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioPresentation.html#getLocale()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public Java.Util.Locale GetLocale()
+        {
+            return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioPresentation.html#getLabels()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Util.Locale, Java.Lang.String> GetLabels()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Util.Locale, Java.Lang.String>>("getLabels", "()Ljava/util/Map;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioPresentation.html#writeToParcel(android.os.Parcel,int)"/>

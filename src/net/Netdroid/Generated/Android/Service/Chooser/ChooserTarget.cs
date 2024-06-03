@@ -37,7 +37,7 @@ namespace Android.Service.Chooser
         /// <param name="arg2"><see cref="float"/></param>
         /// <param name="arg3"><see cref="Android.Content.ComponentName"/></param>
         /// <param name="arg4"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public ChooserTarget(Java.Lang.CharSequence arg0, Android.Graphics.Drawable.Icon arg1, float arg2, Android.Content.ComponentName arg3, Android.Os.Bundle arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -53,7 +53,7 @@ namespace Android.Service.Chooser
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserTarget.html#CREATOR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
@@ -66,60 +66,65 @@ namespace Android.Service.Chooser
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserTarget.html#getComponentName()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserTarget.html#getComponentName()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Content.ComponentName ComponentName
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        [global::System.Obsolete()]
+        public Android.Content.ComponentName GetComponentName()
         {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getComponentName", "()Landroid/content/ComponentName;"); }
+            return IExecuteWithSignature<Android.Content.ComponentName>("getComponentName", "()Landroid/content/ComponentName;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserTarget.html#getIcon()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserTarget.html#getIcon()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Graphics.Drawable.Icon Icon
+        /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
+        [global::System.Obsolete()]
+        public Android.Graphics.Drawable.Icon GetIcon()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserTarget.html#getIntentExtras()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserTarget.html#getIntentExtras()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Os.Bundle IntentExtras
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        [global::System.Obsolete()]
+        public Android.Os.Bundle GetIntentExtras()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getIntentExtras", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getIntentExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserTarget.html#getScore()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserTarget.html#getScore()"/>
         /// </summary>
-        [System.Obsolete()]
-        public float Score
+        /// <returns><see cref="float"/></returns>
+        [global::System.Obsolete()]
+        public float GetScore()
         {
-            get { return IExecuteWithSignature<float>("getScore", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserTarget.html#getTitle()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.CharSequence Title
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<float>("getScore", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserTarget.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserTarget.html#getTitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.CharSequence GetTitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserTarget.html#writeToParcel(android.os.Parcel,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
             IExecute("writeToParcel", arg0, arg1);

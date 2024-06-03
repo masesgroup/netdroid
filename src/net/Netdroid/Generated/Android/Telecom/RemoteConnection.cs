@@ -46,102 +46,52 @@ namespace Android.Telecom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getAddress()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getAddress()"/>
         /// </summary>
-        public Android.Net.Uri Address
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetAddress()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getAddress", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getAddress", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getAddressPresentation()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getExtras()"/>
         /// </summary>
-        public int AddressPresentation
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<int>("getAddressPresentation", "()I"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getCallerDisplayName()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getDisconnectCause()"/>
         /// </summary>
-        public Java.Lang.CharSequence CallerDisplayName
+        /// <returns><see cref="Android.Telecom.DisconnectCause"/></returns>
+        public Android.Telecom.DisconnectCause GetDisconnectCause()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getCallerDisplayName", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Android.Telecom.DisconnectCause>("getDisconnectCause", "()Landroid/telecom/DisconnectCause;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getCallerDisplayNamePresentation()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getConference()"/>
         /// </summary>
-        public int CallerDisplayNamePresentation
+        /// <returns><see cref="Android.Telecom.RemoteConference"/></returns>
+        public Android.Telecom.RemoteConference GetConference()
         {
-            get { return IExecuteWithSignature<int>("getCallerDisplayNamePresentation", "()I"); }
+            return IExecuteWithSignature<Android.Telecom.RemoteConference>("getConference", "()Landroid/telecom/RemoteConference;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getConference()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getVideoProvider()"/>
         /// </summary>
-        public Android.Telecom.RemoteConference Conference
+        /// <returns><see cref="Android.Telecom.RemoteConnection.VideoProvider"/></returns>
+        public Android.Telecom.RemoteConnection.VideoProvider GetVideoProvider()
         {
-            get { return IExecuteWithSignature<Android.Telecom.RemoteConference>("getConference", "()Landroid/telecom/RemoteConference;"); }
+            return IExecuteWithSignature<Android.Telecom.RemoteConnection.VideoProvider>("getVideoProvider", "()Landroid/telecom/RemoteConnection$VideoProvider;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getConferenceableConnections()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getStatusHints()"/>
         /// </summary>
-        public Java.Util.List<Android.Telecom.RemoteConnection> ConferenceableConnections
+        /// <returns><see cref="Android.Telecom.StatusHints"/></returns>
+        public Android.Telecom.StatusHints GetStatusHints()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telecom.RemoteConnection>>("getConferenceableConnections", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getConnectionCapabilities()"/> 
-        /// </summary>
-        public int ConnectionCapabilities
-        {
-            get { return IExecuteWithSignature<int>("getConnectionCapabilities", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getConnectionProperties()"/> 
-        /// </summary>
-        public int ConnectionProperties
-        {
-            get { return IExecuteWithSignature<int>("getConnectionProperties", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getDisconnectCause()"/> 
-        /// </summary>
-        public Android.Telecom.DisconnectCause DisconnectCause
-        {
-            get { return IExecuteWithSignature<Android.Telecom.DisconnectCause>("getDisconnectCause", "()Landroid/telecom/DisconnectCause;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getExtras()"/> 
-        /// </summary>
-        public Android.Os.Bundle Extras
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getVideoProvider()"/> 
-        /// </summary>
-        public Android.Telecom.RemoteConnection.VideoProvider GetVideoProvider
-        {
-            get { return IExecuteWithSignature<Android.Telecom.RemoteConnection.VideoProvider>("getVideoProvider", "()Landroid/telecom/RemoteConnection$VideoProvider;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getState()"/> 
-        /// </summary>
-        public int State
-        {
-            get { return IExecuteWithSignature<int>("getState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getStatusHints()"/> 
-        /// </summary>
-        public Android.Telecom.StatusHints StatusHints
-        {
-            get { return IExecuteWithSignature<Android.Telecom.StatusHints>("getStatusHints", "()Landroid/telecom/StatusHints;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getVideoState()"/> 
-        /// </summary>
-        public int VideoState
-        {
-            get { return IExecuteWithSignature<int>("getVideoState", "()I"); }
+            return IExecuteWithSignature<Android.Telecom.StatusHints>("getStatusHints", "()Landroid/telecom/StatusHints;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#isRingbackRequested()"/>
@@ -158,6 +108,70 @@ namespace Android.Telecom
         public bool IsVoipAudioMode()
         {
             return IExecuteWithSignature<bool>("isVoipAudioMode", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getAddressPresentation()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAddressPresentation()
+        {
+            return IExecuteWithSignature<int>("getAddressPresentation", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getCallerDisplayNamePresentation()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCallerDisplayNamePresentation()
+        {
+            return IExecuteWithSignature<int>("getCallerDisplayNamePresentation", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getConnectionCapabilities()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetConnectionCapabilities()
+        {
+            return IExecuteWithSignature<int>("getConnectionCapabilities", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getConnectionProperties()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetConnectionProperties()
+        {
+            return IExecuteWithSignature<int>("getConnectionProperties", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetState()
+        {
+            return IExecuteWithSignature<int>("getState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getVideoState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVideoState()
+        {
+            return IExecuteWithSignature<int>("getVideoState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getCallerDisplayName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetCallerDisplayName()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getCallerDisplayName", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#getConferenceableConnections()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telecom.RemoteConnection> GetConferenceableConnections()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telecom.RemoteConnection>>("getConferenceableConnections", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.html#abort()"/>

@@ -64,7 +64,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runnable.html#run()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Runnable.html#run()"/>
         /// </summary>
         public void Run()
         {

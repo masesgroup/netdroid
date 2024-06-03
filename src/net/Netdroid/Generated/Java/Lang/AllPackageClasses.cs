@@ -1837,7 +1837,6 @@ namespace Java.Lang
     #endregion
 
 
-
     #region RuntimePermission
     /// <summary>
     /// <see href="https://developer.android.com/reference/java/lang/RuntimePermission.html"/>

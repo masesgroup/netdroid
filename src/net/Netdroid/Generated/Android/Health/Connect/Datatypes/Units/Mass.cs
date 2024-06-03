@@ -55,11 +55,12 @@ namespace Android.Health.Connect.Datatypes.Units
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Mass.html#getInGrams()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Mass.html#getInGrams()"/>
         /// </summary>
-        public double InGrams
+        /// <returns><see cref="double"/></returns>
+        public double GetInGrams()
         {
-            get { return IExecuteWithSignature<double>("getInGrams", "()D"); }
+            return IExecuteWithSignature<double>("getInGrams", "()D");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Mass.html#compareTo(android.health.connect.datatypes.units.Mass)"/>

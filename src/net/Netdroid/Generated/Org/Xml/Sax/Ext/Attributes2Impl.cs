@@ -30,7 +30,7 @@ namespace Org.Xml.Sax.Ext
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Attributes2Impl.html#%3Cinit%3E(org.xml.sax.Attributes)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Attributes2Impl.html#%3Cinit%3E(org.xml.sax.Attributes)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.Attributes"/></param>
         public Attributes2Impl(Org.Xml.Sax.Attributes arg0)
@@ -58,7 +58,7 @@ namespace Org.Xml.Sax.Ext
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Attributes2Impl.html#isDeclared(int)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Attributes2Impl.html#isDeclared(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -67,7 +67,7 @@ namespace Org.Xml.Sax.Ext
             return IExecuteWithSignature<bool>("isDeclared", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Attributes2Impl.html#isDeclared(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Attributes2Impl.html#isDeclared(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -77,7 +77,7 @@ namespace Org.Xml.Sax.Ext
             return IExecute<bool>("isDeclared", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Attributes2Impl.html#isDeclared(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Attributes2Impl.html#isDeclared(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -86,7 +86,7 @@ namespace Org.Xml.Sax.Ext
             return IExecuteWithSignature<bool>("isDeclared", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Attributes2Impl.html#isSpecified(int)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Attributes2Impl.html#isSpecified(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -95,7 +95,7 @@ namespace Org.Xml.Sax.Ext
             return IExecuteWithSignature<bool>("isSpecified", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Attributes2Impl.html#isSpecified(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Attributes2Impl.html#isSpecified(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -105,7 +105,7 @@ namespace Org.Xml.Sax.Ext
             return IExecute<bool>("isSpecified", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Attributes2Impl.html#isSpecified(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Attributes2Impl.html#isSpecified(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -114,7 +114,7 @@ namespace Org.Xml.Sax.Ext
             return IExecuteWithSignature<bool>("isSpecified", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Attributes2Impl.html#setDeclared(int,boolean)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Attributes2Impl.html#setDeclared(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -123,7 +123,7 @@ namespace Org.Xml.Sax.Ext
             IExecute("setDeclared", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Attributes2Impl.html#setSpecified(int,boolean)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Attributes2Impl.html#setSpecified(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="bool"/></param>

@@ -62,13 +62,6 @@ namespace Android.Appwidget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetHost.html#getAppWidgetIds()"/> 
-        /// </summary>
-        public int[] AppWidgetIds
-        {
-            get { return IExecuteWithSignatureArray<int>("getAppWidgetIds", "()[I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetHost.html#createView(android.content.Context,int,android.appwidget.AppWidgetProviderInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -98,6 +91,14 @@ namespace Android.Appwidget
         public int AllocateAppWidgetId()
         {
             return IExecuteWithSignature<int>("allocateAppWidgetId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetHost.html#getAppWidgetIds()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetAppWidgetIds()
+        {
+            return IExecuteWithSignatureArray<int>("getAppWidgetIds", "()[I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetHost.html#deleteAppWidgetId(int)"/>

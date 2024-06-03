@@ -61,26 +61,28 @@ namespace Android.View.Textclassifier
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.html#getConversationActions()"/> 
-        /// </summary>
-        public Java.Util.List<Android.View.Textclassifier.ConversationAction> GetConversationActions
-        {
-            get { return IExecute<Java.Util.List<Android.View.Textclassifier.ConversationAction>>("getConversationActions"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.html#getId()"/> 
-        /// </summary>
-        public Java.Lang.String Id
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.html#getConversationActions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.View.Textclassifier.ConversationAction> GetConversationActions()
+        {
+            return IExecute<Java.Util.List<Android.View.Textclassifier.ConversationAction>>("getConversationActions");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.html#writeToParcel(android.os.Parcel,int)"/>
@@ -134,32 +136,20 @@ namespace Android.View.Textclassifier
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Message.html#getAuthor()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Message.html#getAuthor()"/>
             /// </summary>
-            public Android.App.Person Author
+            /// <returns><see cref="Android.App.Person"/></returns>
+            public Android.App.Person GetAuthor()
             {
-                get { return IExecuteWithSignature<Android.App.Person>("getAuthor", "()Landroid/app/Person;"); }
+                return IExecuteWithSignature<Android.App.Person>("getAuthor", "()Landroid/app/Person;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Message.html#getExtras()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Message.html#getExtras()"/>
             /// </summary>
-            public Android.Os.Bundle Extras
+            /// <returns><see cref="Android.Os.Bundle"/></returns>
+            public Android.Os.Bundle GetExtras()
             {
-                get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Message.html#getReferenceTime()"/> 
-            /// </summary>
-            public Java.Time.ZonedDateTime ReferenceTime
-            {
-                get { return IExecuteWithSignature<Java.Time.ZonedDateTime>("getReferenceTime", "()Ljava/time/ZonedDateTime;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Message.html#getText()"/> 
-            /// </summary>
-            public Java.Lang.CharSequence Text
-            {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Message.html#describeContents()"/>
@@ -168,6 +158,22 @@ namespace Android.View.Textclassifier
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Message.html#getText()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetText()
+            {
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Message.html#getReferenceTime()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
+            public Java.Time.ZonedDateTime GetReferenceTime()
+            {
+                return IExecuteWithSignature<Java.Time.ZonedDateTime>("getReferenceTime", "()Ljava/time/ZonedDateTime;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Message.html#writeToParcel(android.os.Parcel,int)"/>
@@ -302,46 +308,20 @@ namespace Android.View.Textclassifier
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Request.html#getCallingPackageName()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Request.html#getExtras()"/>
             /// </summary>
-            public Java.Lang.String CallingPackageName
+            /// <returns><see cref="Android.Os.Bundle"/></returns>
+            public Android.Os.Bundle GetExtras()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getCallingPackageName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Request.html#getConversation()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Request.html#getTypeConfig()"/>
             /// </summary>
-            public Java.Util.List<Android.View.Textclassifier.ConversationActions.Message> Conversation
+            /// <returns><see cref="Android.View.Textclassifier.TextClassifier.EntityConfig"/></returns>
+            public Android.View.Textclassifier.TextClassifier.EntityConfig GetTypeConfig()
             {
-                get { return IExecute<Java.Util.List<Android.View.Textclassifier.ConversationActions.Message>>("getConversation"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Request.html#getExtras()"/> 
-            /// </summary>
-            public Android.Os.Bundle Extras
-            {
-                get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Request.html#getHints()"/> 
-            /// </summary>
-            public Java.Util.List<Java.Lang.String> Hints
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getHints", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Request.html#getMaxSuggestions()"/> 
-            /// </summary>
-            public int MaxSuggestions
-            {
-                get { return IExecuteWithSignature<int>("getMaxSuggestions", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Request.html#getTypeConfig()"/> 
-            /// </summary>
-            public Android.View.Textclassifier.TextClassifier.EntityConfig TypeConfig
-            {
-                get { return IExecute<Android.View.Textclassifier.TextClassifier.EntityConfig>("getTypeConfig"); }
+                return IExecute<Android.View.Textclassifier.TextClassifier.EntityConfig>("getTypeConfig");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Request.html#describeContents()"/>
@@ -350,6 +330,38 @@ namespace Android.View.Textclassifier
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Request.html#getMaxSuggestions()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetMaxSuggestions()
+            {
+                return IExecuteWithSignature<int>("getMaxSuggestions", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Request.html#getCallingPackageName()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetCallingPackageName()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getCallingPackageName", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Request.html#getConversation()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            public Java.Util.List<Android.View.Textclassifier.ConversationActions.Message> GetConversation()
+            {
+                return IExecute<Java.Util.List<Android.View.Textclassifier.ConversationActions.Message>>("getConversation");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Request.html#getHints()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            public Java.Util.List<Java.Lang.String> GetHints()
+            {
+                return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getHints", "()Ljava/util/List;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationActions.Request.html#writeToParcel(android.os.Parcel,int)"/>

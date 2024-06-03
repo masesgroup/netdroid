@@ -44,7 +44,7 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowAnimationFrameStats.html#CREATOR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
@@ -60,7 +60,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/WindowAnimationFrameStats.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
@@ -70,7 +70,7 @@ namespace Android.View
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
             IExecute("writeToParcel", arg0, arg1);

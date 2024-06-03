@@ -46,7 +46,7 @@ namespace Java.Lang.Invoke
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#fromMethodDescriptorString(java.lang.String,java.lang.ClassLoader)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#fromMethodDescriptorString(java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
@@ -58,7 +58,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "fromMethodDescriptorString", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#genericMethodType(int,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#genericMethodType(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -68,7 +68,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "genericMethodType", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#genericMethodType(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#genericMethodType(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
@@ -77,7 +77,7 @@ namespace Java.Lang.Invoke
             return SExecuteWithSignature<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "genericMethodType", "(I)Ljava/lang/invoke/MethodType;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.lang.Class,java.lang.Class[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.lang.Class,java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -88,7 +88,7 @@ namespace Java.Lang.Invoke
             if (arg2.Length == 0) return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", arg0, arg1); else return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -98,7 +98,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.lang.Class[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -108,7 +108,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.lang.invoke.MethodType)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.lang.invoke.MethodType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodType"/></param>
@@ -118,7 +118,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
@@ -128,7 +128,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#methodType(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#methodType(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
@@ -141,7 +141,7 @@ namespace Java.Lang.Invoke
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#hasPrimitives()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#hasPrimitives()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasPrimitives()
@@ -149,7 +149,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<bool>("hasPrimitives", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#hasWrappers()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#hasWrappers()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasWrappers()
@@ -157,7 +157,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<bool>("hasWrappers", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#parameterCount()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#parameterCount()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int ParameterCount()
@@ -165,7 +165,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<int>("parameterCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#lastParameterType()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#lastParameterType()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class LastParameterType()
@@ -173,7 +173,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<Java.Lang.Class>("lastParameterType", "()Ljava/lang/Class;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#appendParameterTypes(java.lang.Class[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#appendParameterTypes(java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
@@ -182,7 +182,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("appendParameterTypes", "([Ljava/lang/Class;)Ljava/lang/invoke/MethodType;"); else return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("appendParameterTypes", "([Ljava/lang/Class;)Ljava/lang/invoke/MethodType;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#appendParameterTypes(java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#appendParameterTypes(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
@@ -191,7 +191,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("appendParameterTypes", "(Ljava/util/List;)Ljava/lang/invoke/MethodType;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#changeParameterType(int,java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#changeParameterType(int,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -201,7 +201,7 @@ namespace Java.Lang.Invoke
             return IExecute<Java.Lang.Invoke.MethodType>("changeParameterType", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#changeReturnType(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#changeReturnType(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
@@ -210,7 +210,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("changeReturnType", "(Ljava/lang/Class;)Ljava/lang/invoke/MethodType;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#erase()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#erase()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType Erase()
@@ -218,7 +218,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("erase", "()Ljava/lang/invoke/MethodType;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#generic()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#generic()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType Generic()
@@ -226,7 +226,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("generic", "()Ljava/lang/invoke/MethodType;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#insertParameterTypes(int,java.lang.Class[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#insertParameterTypes(int,java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -236,7 +236,7 @@ namespace Java.Lang.Invoke
             if (arg1.Length == 0) return IExecute<Java.Lang.Invoke.MethodType>("insertParameterTypes", arg0); else return IExecute<Java.Lang.Invoke.MethodType>("insertParameterTypes", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#insertParameterTypes(int,java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#insertParameterTypes(int,java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
@@ -246,7 +246,7 @@ namespace Java.Lang.Invoke
             return IExecute<Java.Lang.Invoke.MethodType>("insertParameterTypes", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#unwrap()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#unwrap()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType Unwrap()
@@ -254,7 +254,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("unwrap", "()Ljava/lang/invoke/MethodType;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#wrap()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#wrap()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType Wrap()
@@ -262,7 +262,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("wrap", "()Ljava/lang/invoke/MethodType;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#parameterType(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#parameterType(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></returns>
@@ -271,7 +271,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfField>("parameterType", "(I)Ljava/lang/invoke/TypeDescriptor$OfField;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#returnType()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#returnType()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></returns>
         public Java.Lang.Invoke.TypeDescriptor.OfField ReturnType()
@@ -279,7 +279,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfField>("returnType", "()Ljava/lang/invoke/TypeDescriptor$OfField;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#parameterArray()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#parameterArray()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></returns>
         public Java.Lang.Invoke.TypeDescriptor.OfField[] ParameterArray()
@@ -287,7 +287,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignatureArray<Java.Lang.Invoke.TypeDescriptor.OfField>("parameterArray", "()[Ljava/lang/invoke/TypeDescriptor$OfField;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#changeParameterType(int,java.lang.invoke.TypeDescriptor.OfField)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#changeParameterType(int,java.lang.invoke.TypeDescriptor.OfField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></param>
@@ -297,7 +297,7 @@ namespace Java.Lang.Invoke
             return IExecute<Java.Lang.Invoke.TypeDescriptor.OfMethod>("changeParameterType", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#changeReturnType(java.lang.invoke.TypeDescriptor.OfField)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#changeReturnType(java.lang.invoke.TypeDescriptor.OfField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></param>
         /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfMethod"/></returns>
@@ -306,7 +306,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfMethod>("changeReturnType", "(Ljava/lang/invoke/TypeDescriptor$OfField;)Ljava/lang/invoke/TypeDescriptor$OfMethod;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#dropParameterTypes(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#dropParameterTypes(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -316,7 +316,7 @@ namespace Java.Lang.Invoke
             return IExecute<Java.Lang.Invoke.TypeDescriptor.OfMethod>("dropParameterTypes", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#insertParameterTypes(int,java.lang.invoke.TypeDescriptor.OfField[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#insertParameterTypes(int,java.lang.invoke.TypeDescriptor.OfField[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></param>
@@ -326,7 +326,7 @@ namespace Java.Lang.Invoke
             return IExecute<Java.Lang.Invoke.TypeDescriptor.OfMethod>("insertParameterTypes", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#descriptorString()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#descriptorString()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String DescriptorString()
@@ -334,7 +334,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<Java.Lang.String>("descriptorString", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#toMethodDescriptorString()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#toMethodDescriptorString()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToMethodDescriptorString()
@@ -342,7 +342,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<Java.Lang.String>("toMethodDescriptorString", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#parameterList()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#parameterList()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Lang.Class> ParameterList()

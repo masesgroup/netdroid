@@ -46,11 +46,12 @@ namespace Android.View.Translation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationManager.html#getOnDeviceTranslationSettingsActivityIntent()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationManager.html#getOnDeviceTranslationSettingsActivityIntent()"/>
         /// </summary>
-        public Android.App.PendingIntent OnDeviceTranslationSettingsActivityIntent
+        /// <returns><see cref="Android.App.PendingIntent"/></returns>
+        public Android.App.PendingIntent GetOnDeviceTranslationSettingsActivityIntent()
         {
-            get { return IExecuteWithSignature<Android.App.PendingIntent>("getOnDeviceTranslationSettingsActivityIntent", "()Landroid/app/PendingIntent;"); }
+            return IExecuteWithSignature<Android.App.PendingIntent>("getOnDeviceTranslationSettingsActivityIntent", "()Landroid/app/PendingIntent;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/translation/TranslationManager.html#getOnDeviceTranslationCapabilities(int,int)"/>

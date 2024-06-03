@@ -46,74 +46,12 @@ namespace Android.Telephony.Mbms
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="DownloadStatusListener"/>
-        /// </summary>
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("onStatusUpdated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.Mbms.DownloadRequest>>>(OnStatusUpdatedEventHandler));
-
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/mbms/DownloadStatusListener.html#onStatusUpdated(android.telephony.mbms.DownloadRequest,android.telephony.mbms.FileInfo,int)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnStatusUpdated"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Telephony.Mbms.DownloadRequest, Android.Telephony.Mbms.FileInfo, int> OnOnStatusUpdated { get; set; } = null;
-
-        void OnStatusUpdatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Telephony.Mbms.DownloadRequest>> data)
-        {
-            var methodToExecute = (OnOnStatusUpdated != null) ? OnOnStatusUpdated : OnStatusUpdated;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Android.Telephony.Mbms.FileInfo>(0), data.EventData.GetAt<int>(1));
-        }
-
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/mbms/DownloadStatusListener.html#onStatusUpdated(android.telephony.mbms.DownloadRequest,android.telephony.mbms.FileInfo,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Telephony.Mbms.DownloadRequest"/></param>
         /// <param name="arg1"><see cref="Android.Telephony.Mbms.FileInfo"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        public virtual void OnStatusUpdated(Android.Telephony.Mbms.DownloadRequest arg0, Android.Telephony.Mbms.FileInfo arg1, int arg2)
-        {
-            
-        }
-
-        #endregion
-
-        #region Nested classes
-
-        #endregion
-
-        // TODO: complete the class
-    }
-    #endregion
-
-    #region DownloadStatusListenerDirect
-    public partial class DownloadStatusListenerDirect
-    {
-        #region Constructors
-
-        #endregion
-
-        #region Class/Interface conversion operators
-
-        #endregion
-
-        #region Fields
-
-        #endregion
-
-        #region Static methods
-
-        #endregion
-
-        #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/mbms/DownloadStatusListener.html#onStatusUpdated(android.telephony.mbms.DownloadRequest,android.telephony.mbms.FileInfo,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Telephony.Mbms.DownloadRequest"/></param>
-        /// <param name="arg1"><see cref="Android.Telephony.Mbms.FileInfo"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        public override void OnStatusUpdated(Android.Telephony.Mbms.DownloadRequest arg0, Android.Telephony.Mbms.FileInfo arg1, int arg2)
+        public void OnStatusUpdated(Android.Telephony.Mbms.DownloadRequest arg0, Android.Telephony.Mbms.FileInfo arg1, int arg2)
         {
             IExecute("onStatusUpdated", arg0, arg1, arg2);
         }

@@ -56,9 +56,9 @@ namespace Java.Security
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Key.html#serialVersionUID"/>
+        /// <see href="https://developer.android.com/reference/java/security/Key.html#serialVersionUID"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static long serialVersionUID { get { if (!_serialVersionUIDReady) { _serialVersionUIDContent = SGetField<long>(LocalBridgeClazz, "serialVersionUID"); _serialVersionUIDReady = true; } return _serialVersionUIDContent; } }
         private static long _serialVersionUIDContent = default;
         private static bool _serialVersionUIDReady = false; // this is used because in case of generics 
@@ -71,25 +71,28 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Key.html#getAlgorithm()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/Key.html#getEncoded()"/>
         /// </summary>
-        public Java.Lang.String Algorithm
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetEncoded()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<byte>("getEncoded", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Key.html#getEncoded()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/Key.html#getAlgorithm()"/>
         /// </summary>
-        public byte[] Encoded
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAlgorithm()
         {
-            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
+            return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Key.html#getFormat()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/Key.html#getFormat()"/>
         /// </summary>
-        public Java.Lang.String Format
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFormat()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFormat", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getFormat", "()Ljava/lang/String;");
         }
 
         #endregion

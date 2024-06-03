@@ -52,25 +52,12 @@ namespace Android.Location
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssAutomaticGainControl.html#getCarrierFrequencyHz()"/> 
+        /// <see href="https://developer.android.com/reference/android/location/GnssAutomaticGainControl.html#getLevelDb()"/>
         /// </summary>
-        public long CarrierFrequencyHz
+        /// <returns><see cref="double"/></returns>
+        public double GetLevelDb()
         {
-            get { return IExecuteWithSignature<long>("getCarrierFrequencyHz", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssAutomaticGainControl.html#getConstellationType()"/> 
-        /// </summary>
-        public int ConstellationType
-        {
-            get { return IExecuteWithSignature<int>("getConstellationType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssAutomaticGainControl.html#getLevelDb()"/> 
-        /// </summary>
-        public double LevelDb
-        {
-            get { return IExecuteWithSignature<double>("getLevelDb", "()D"); }
+            return IExecuteWithSignature<double>("getLevelDb", "()D");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssAutomaticGainControl.html#describeContents()"/>
@@ -79,6 +66,22 @@ namespace Android.Location
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssAutomaticGainControl.html#getConstellationType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetConstellationType()
+        {
+            return IExecuteWithSignature<int>("getConstellationType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssAutomaticGainControl.html#getCarrierFrequencyHz()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetCarrierFrequencyHz()
+        {
+            return IExecuteWithSignature<long>("getCarrierFrequencyHz", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssAutomaticGainControl.html#writeToParcel(android.os.Parcel,int)"/>

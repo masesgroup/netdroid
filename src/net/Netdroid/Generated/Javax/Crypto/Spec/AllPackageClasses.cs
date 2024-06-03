@@ -28,7 +28,7 @@ namespace Javax.Crypto.Spec
 {
     #region DESedeKeySpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/DESedeKeySpec.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/spec/DESedeKeySpec.html"/>
     /// </summary>
     public partial class DESedeKeySpec : Java.Security.Spec.KeySpec
     {
@@ -72,7 +72,7 @@ namespace Javax.Crypto.Spec
 
     #region DESKeySpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/DESKeySpec.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/spec/DESKeySpec.html"/>
     /// </summary>
     public partial class DESKeySpec : Java.Security.Spec.KeySpec
     {
@@ -116,7 +116,7 @@ namespace Javax.Crypto.Spec
 
     #region DHGenParameterSpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/DHGenParameterSpec.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/spec/DHGenParameterSpec.html"/>
     /// </summary>
     public partial class DHGenParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
@@ -160,7 +160,7 @@ namespace Javax.Crypto.Spec
 
     #region DHParameterSpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/DHParameterSpec.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/spec/DHParameterSpec.html"/>
     /// </summary>
     public partial class DHParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
@@ -204,7 +204,7 @@ namespace Javax.Crypto.Spec
 
     #region DHPrivateKeySpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/DHPrivateKeySpec.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/spec/DHPrivateKeySpec.html"/>
     /// </summary>
     public partial class DHPrivateKeySpec : Java.Security.Spec.KeySpec
     {
@@ -248,7 +248,7 @@ namespace Javax.Crypto.Spec
 
     #region DHPublicKeySpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/DHPublicKeySpec.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/spec/DHPublicKeySpec.html"/>
     /// </summary>
     public partial class DHPublicKeySpec : Java.Security.Spec.KeySpec
     {
@@ -292,7 +292,7 @@ namespace Javax.Crypto.Spec
 
     #region GCMParameterSpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/GCMParameterSpec.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/spec/GCMParameterSpec.html"/>
     /// </summary>
     public partial class GCMParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
@@ -336,7 +336,7 @@ namespace Javax.Crypto.Spec
 
     #region IvParameterSpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/IvParameterSpec.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/spec/IvParameterSpec.html"/>
     /// </summary>
     public partial class IvParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
@@ -380,7 +380,7 @@ namespace Javax.Crypto.Spec
 
     #region OAEPParameterSpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/OAEPParameterSpec.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/spec/OAEPParameterSpec.html"/>
     /// </summary>
     public partial class OAEPParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
@@ -424,7 +424,7 @@ namespace Javax.Crypto.Spec
 
     #region PBEKeySpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/PBEKeySpec.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/spec/PBEKeySpec.html"/>
     /// </summary>
     public partial class PBEKeySpec : Java.Security.Spec.KeySpec
     {
@@ -468,7 +468,7 @@ namespace Javax.Crypto.Spec
 
     #region PBEParameterSpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/PBEParameterSpec.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/spec/PBEParameterSpec.html"/>
     /// </summary>
     public partial class PBEParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
@@ -512,7 +512,7 @@ namespace Javax.Crypto.Spec
 
     #region PSource
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/PSource.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/spec/PSource.html"/>
     /// </summary>
     public partial class PSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PSource>
     {
@@ -552,7 +552,7 @@ namespace Javax.Crypto.Spec
         // TODO: complete the class
         #region PSpecified
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/PSource.PSpecified.html"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/PSource.PSpecified.html"/>
         /// </summary>
         public partial class PSpecified : Javax.Crypto.Spec.PSource
         {
@@ -600,7 +600,7 @@ namespace Javax.Crypto.Spec
 
     #region RC2ParameterSpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/RC2ParameterSpec.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/spec/RC2ParameterSpec.html"/>
     /// </summary>
     public partial class RC2ParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
@@ -644,7 +644,7 @@ namespace Javax.Crypto.Spec
 
     #region RC5ParameterSpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/RC5ParameterSpec.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/spec/RC5ParameterSpec.html"/>
     /// </summary>
     public partial class RC5ParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
@@ -688,7 +688,7 @@ namespace Javax.Crypto.Spec
 
     #region SecretKeySpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/SecretKeySpec.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/spec/SecretKeySpec.html"/>
     /// </summary>
     public partial class SecretKeySpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SecretKeySpec>
     {

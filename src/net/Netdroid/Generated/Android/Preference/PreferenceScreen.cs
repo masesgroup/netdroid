@@ -46,26 +46,37 @@ namespace Android.Preference
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/PreferenceScreen.html#getDialog()"/> 
+        /// <see href="https://developer.android.com/reference/android/preference/PreferenceScreen.html#getDialog()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.App.Dialog Dialog
+        /// <returns><see cref="Android.App.Dialog"/></returns>
+        [global::System.Obsolete()]
+        public Android.App.Dialog GetDialog()
         {
-            get { return IExecuteWithSignature<Android.App.Dialog>("getDialog", "()Landroid/app/Dialog;"); }
+            return IExecuteWithSignature<Android.App.Dialog>("getDialog", "()Landroid/app/Dialog;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/PreferenceScreen.html#getRootAdapter()"/> 
+        /// <see href="https://developer.android.com/reference/android/preference/PreferenceScreen.html#getRootAdapter()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Widget.ListAdapter RootAdapter
+        /// <returns><see cref="Android.Widget.ListAdapter"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.ListAdapter GetRootAdapter()
         {
-            get { return IExecuteWithSignature<Android.Widget.ListAdapter>("getRootAdapter", "()Landroid/widget/ListAdapter;"); }
+            return IExecuteWithSignature<Android.Widget.ListAdapter>("getRootAdapter", "()Landroid/widget/ListAdapter;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/PreferenceScreen.html#getRootAdapter()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Widget.ListAdapter"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.ListAdapter GetRootAdapterDirect()
+        {
+            return IExecuteWithSignature<Android.Widget.ListAdapterDirect, Android.Widget.ListAdapter>("getRootAdapter", "()Landroid/widget/ListAdapter;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceScreen.html#bind(android.widget.ListView)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Widget.ListView"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Bind(Android.Widget.ListView arg0)
         {
             IExecuteWithSignature("bind", "(Landroid/widget/ListView;)V", arg0);
@@ -74,7 +85,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceScreen.html#onDismiss(android.content.DialogInterface)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.DialogInterface"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnDismiss(Android.Content.DialogInterface arg0)
         {
             IExecuteWithSignature("onDismiss", "(Landroid/content/DialogInterface;)V", arg0);
@@ -86,7 +97,7 @@ namespace Android.Preference
         /// <param name="arg1"><see cref="Android.View.View"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="long"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnItemClick(Android.Widget.AdapterView arg0, Android.View.View arg1, int arg2, long arg3)
         {
             IExecute("onItemClick", arg0, arg1, arg2, arg3);

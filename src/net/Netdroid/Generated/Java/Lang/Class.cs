@@ -58,7 +58,7 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#forName(java.lang.String,boolean,java.lang.ClassLoader)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#forName(java.lang.String,boolean,java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -70,7 +70,7 @@ namespace Java.Lang
             return SExecute<Java.Lang.Class>(LocalBridgeClazz, "forName", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#forName(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#forName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
@@ -84,245 +84,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getAnnotations()"/> 
-        /// </summary>
-        public Java.Lang.Annotation.Annotation[] Annotations
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getAnnotations", "()[Ljava/lang/annotation/Annotation;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getCanonicalName()"/> 
-        /// </summary>
-        public Java.Lang.String CanonicalName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCanonicalName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getClasses()"/> 
-        /// </summary>
-        public Java.Lang.Class[] Classes
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getClasses", "()[Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getClassLoader()"/> 
-        /// </summary>
-        public Java.Lang.ClassLoader ClassLoader
-        {
-            get { return IExecuteWithSignature<Java.Lang.ClassLoader>("getClassLoader", "()Ljava/lang/ClassLoader;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getConstructors()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Constructor[] Constructors
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Constructor>("getConstructors", "()[Ljava/lang/reflect/Constructor;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaredAnnotations()"/> 
-        /// </summary>
-        public Java.Lang.Annotation.Annotation[] DeclaredAnnotations
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaredClasses()"/> 
-        /// </summary>
-        public Java.Lang.Class[] DeclaredClasses
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getDeclaredClasses", "()[Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaredConstructors()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Constructor[] DeclaredConstructors
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Constructor>("getDeclaredConstructors", "()[Ljava/lang/reflect/Constructor;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaredFields()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Field[] DeclaredFields
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Field>("getDeclaredFields", "()[Ljava/lang/reflect/Field;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaredMethods()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Method[] DeclaredMethods
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Method>("getDeclaredMethods", "()[Ljava/lang/reflect/Method;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaringClass()"/> 
-        /// </summary>
-        public Java.Lang.Class DeclaringClass
-        {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getEnclosingClass()"/> 
-        /// </summary>
-        public Java.Lang.Class EnclosingClass
-        {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getEnclosingClass", "()Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getEnclosingConstructor()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Constructor EnclosingConstructor
-        {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Constructor>("getEnclosingConstructor", "()Ljava/lang/reflect/Constructor;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getEnclosingMethod()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Method EnclosingMethod
-        {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Method>("getEnclosingMethod", "()Ljava/lang/reflect/Method;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getEnumConstants()"/> 
-        /// </summary>
-        public object[] EnumConstants
-        {
-            get { return IExecuteWithSignatureArray<object>("getEnumConstants", "()[Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getFields()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Field[] Fields
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Field>("getFields", "()[Ljava/lang/reflect/Field;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getGenericInterfaces()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Type[] GenericInterfaces
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getGenericInterfaces", "()[Ljava/lang/reflect/Type;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getGenericSuperclass()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Type GenericSuperclass
-        {
-            get { return IExecute<Java.Lang.Reflect.Type>("getGenericSuperclass"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getInterfaces()"/> 
-        /// </summary>
-        public Java.Lang.Class[] Interfaces
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getInterfaces", "()[Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getMethods()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Method[] Methods
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Method>("getMethods", "()[Ljava/lang/reflect/Method;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getModifiers()"/> 
-        /// </summary>
-        public int Modifiers
-        {
-            get { return IExecuteWithSignature<int>("getModifiers", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getNestHost()"/> 
-        /// </summary>
-        public Java.Lang.Class NestHost
-        {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getNestHost", "()Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getNestMembers()"/> 
-        /// </summary>
-        public Java.Lang.Class[] NestMembers
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getNestMembers", "()[Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getPackage()"/> 
-        /// </summary>
-        public Java.Lang.Package Package
-        {
-            get { return IExecuteWithSignature<Java.Lang.Package>("getPackage", "()Ljava/lang/Package;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String PackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getPermittedSubclasses()"/> 
-        /// </summary>
-        public Java.Lang.Class[] PermittedSubclasses
-        {
-            get { return IExecuteArray<Java.Lang.Class>("getPermittedSubclasses"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getProtectionDomain()"/> 
-        /// </summary>
-        public Java.Security.ProtectionDomain ProtectionDomain
-        {
-            get { return IExecuteWithSignature<Java.Security.ProtectionDomain>("getProtectionDomain", "()Ljava/security/ProtectionDomain;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getRecordComponents()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.RecordComponent[] RecordComponents
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.RecordComponent>("getRecordComponents", "()[Ljava/lang/reflect/RecordComponent;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getSigners()"/> 
-        /// </summary>
-        public object[] Signers
-        {
-            get { return IExecuteWithSignatureArray<object>("getSigners", "()[Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getSimpleName()"/> 
-        /// </summary>
-        public Java.Lang.String SimpleName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSimpleName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getSuperclass()"/> 
-        /// </summary>
-        public Java.Lang.Class Superclass
-        {
-            get { return IExecute<Java.Lang.Class>("getSuperclass"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getTypeName()"/> 
-        /// </summary>
-        public Java.Lang.String TypeName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTypeName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getTypeParameters()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.TypeVariable[] TypeParameters
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.TypeVariable>("getTypeParameters", "()[Ljava/lang/reflect/TypeVariable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getAnnotation(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
@@ -331,7 +93,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.Annotation.Annotation>("getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaredAnnotation(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
@@ -340,7 +102,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.Annotation.Annotation>("getDeclaredAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getAnnotationsByType(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getAnnotationsByType(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
@@ -349,7 +111,7 @@ namespace Java.Lang
             return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getAnnotationsByType", "(Ljava/lang/Class;)[Ljava/lang/annotation/Annotation;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaredAnnotationsByType(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredAnnotationsByType(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
@@ -358,7 +120,7 @@ namespace Java.Lang
             return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotationsByType", "(Ljava/lang/Class;)[Ljava/lang/annotation/Annotation;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#asSubclass(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#asSubclass(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
@@ -367,7 +129,7 @@ namespace Java.Lang
             return IExecute<Java.Lang.Class>("asSubclass", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#desiredAssertionStatus()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#desiredAssertionStatus()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool DesiredAssertionStatus()
@@ -375,7 +137,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("desiredAssertionStatus", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isAnnotation()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isAnnotation()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsAnnotation()
@@ -383,7 +145,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isAnnotation", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isAnnotationPresent(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isAnnotationPresent(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -392,7 +154,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isAnnotationPresent", "(Ljava/lang/Class;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isAnonymousClass()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isAnonymousClass()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsAnonymousClass()
@@ -400,7 +162,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isAnonymousClass", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isEnum()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isEnum()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEnum()
@@ -408,7 +170,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isEnum", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isLocalClass()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isLocalClass()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsLocalClass()
@@ -416,7 +178,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isLocalClass", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isMemberClass()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isMemberClass()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsMemberClass()
@@ -424,7 +186,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isMemberClass", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isNestmateOf(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isNestmateOf(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -433,7 +195,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isNestmateOf", "(Ljava/lang/Class;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isRecord()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isRecord()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsRecord()
@@ -441,7 +203,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isRecord", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isSealed()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isSealed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsSealed()
@@ -449,7 +211,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isSealed", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isSynthetic()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isSynthetic()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsSynthetic()
@@ -457,7 +219,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isSynthetic", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getResourceAsStream(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getResourceAsStream(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
@@ -466,7 +228,23 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Io.InputStream>("getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getComponentType()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getAnnotations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
+        public Java.Lang.Annotation.Annotation[] GetAnnotations()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getAnnotations", "()[Ljava/lang/annotation/Annotation;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredAnnotations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
+        public Java.Lang.Annotation.Annotation[] GetDeclaredAnnotations()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getComponentType()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class GetComponentType()
@@ -474,7 +252,82 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.Class>("getComponentType", "()Ljava/lang/Class;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#arrayType()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaringClass()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Class GetDeclaringClass()
+        {
+            return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getEnclosingClass()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Class GetEnclosingClass()
+        {
+            return IExecuteWithSignature<Java.Lang.Class>("getEnclosingClass", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getNestHost()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetNestHost()
+        {
+            return IExecuteWithSignature<Java.Lang.Class>("getNestHost", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getClasses()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class[] GetClasses()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Class>("getClasses", "()[Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredClasses()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Class[] GetDeclaredClasses()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Class>("getDeclaredClasses", "()[Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getInterfaces()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class[] GetInterfaces()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Class>("getInterfaces", "()[Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getNestMembers()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class[] GetNestMembers()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Class>("getNestMembers", "()[Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getPermittedSubclasses()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class[] GetPermittedSubclasses()
+        {
+            return IExecuteArray<Java.Lang.Class>("getPermittedSubclasses");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getClassLoader()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.ClassLoader"/></returns>
+        public Java.Lang.ClassLoader GetClassLoader()
+        {
+            return IExecuteWithSignature<Java.Lang.ClassLoader>("getClassLoader", "()Ljava/lang/ClassLoader;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#arrayType()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></returns>
         public Java.Lang.Invoke.TypeDescriptor.OfField ArrayType()
@@ -482,7 +335,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfField>("arrayType", "()Ljava/lang/invoke/TypeDescriptor$OfField;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#componentType()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#componentType()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></returns>
         public Java.Lang.Invoke.TypeDescriptor.OfField ComponentType()
@@ -490,7 +343,42 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfField>("componentType", "()Ljava/lang/invoke/TypeDescriptor$OfField;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getConstructor(java.lang.Class[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getPackage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Package"/></returns>
+        public Java.Lang.Package GetPackage()
+        {
+            return IExecuteWithSignature<Java.Lang.Package>("getPackage", "()Ljava/lang/Package;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getEnclosingConstructor()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Constructor"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Reflect.Constructor GetEnclosingConstructor()
+        {
+            return IExecuteWithSignature<Java.Lang.Reflect.Constructor>("getEnclosingConstructor", "()Ljava/lang/reflect/Constructor;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getConstructors()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Constructor"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Reflect.Constructor[] GetConstructors()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Constructor>("getConstructors", "()[Ljava/lang/reflect/Constructor;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredConstructors()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Constructor"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Reflect.Constructor[] GetDeclaredConstructors()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Constructor>("getDeclaredConstructors", "()[Ljava/lang/reflect/Constructor;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getConstructor(java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Reflect.Constructor"/></returns>
@@ -501,7 +389,7 @@ namespace Java.Lang
             if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Constructor>("getConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;"); else return IExecuteWithSignature<Java.Lang.Reflect.Constructor>("getConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaredConstructor(java.lang.Class[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredConstructor(java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Reflect.Constructor"/></returns>
@@ -512,7 +400,7 @@ namespace Java.Lang
             if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Constructor>("getDeclaredConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;"); else return IExecuteWithSignature<Java.Lang.Reflect.Constructor>("getDeclaredConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaredField(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredField(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Reflect.Field"/></returns>
@@ -523,7 +411,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.Reflect.Field>("getDeclaredField", "(Ljava/lang/String;)Ljava/lang/reflect/Field;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getField(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getField(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Reflect.Field"/></returns>
@@ -534,7 +422,25 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.Reflect.Field>("getField", "(Ljava/lang/String;)Ljava/lang/reflect/Field;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaredMethod(java.lang.String,java.lang.Class[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredFields()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Field"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Reflect.Field[] GetDeclaredFields()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Field>("getDeclaredFields", "()[Ljava/lang/reflect/Field;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getFields()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Field"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Reflect.Field[] GetFields()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Field>("getFields", "()[Ljava/lang/reflect/Field;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredMethod(java.lang.String,java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -546,7 +452,16 @@ namespace Java.Lang
             if (arg1.Length == 0) return IExecute<Java.Lang.Reflect.Method>("getDeclaredMethod", arg0); else return IExecute<Java.Lang.Reflect.Method>("getDeclaredMethod", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getMethod(java.lang.String,java.lang.Class[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getEnclosingMethod()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Method"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Reflect.Method GetEnclosingMethod()
+        {
+            return IExecuteWithSignature<Java.Lang.Reflect.Method>("getEnclosingMethod", "()Ljava/lang/reflect/Method;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getMethod(java.lang.String,java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -558,7 +473,57 @@ namespace Java.Lang
             if (arg1.Length == 0) return IExecute<Java.Lang.Reflect.Method>("getMethod", arg0); else return IExecute<Java.Lang.Reflect.Method>("getMethod", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#descriptorString()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredMethods()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Method"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Reflect.Method[] GetDeclaredMethods()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Method>("getDeclaredMethods", "()[Ljava/lang/reflect/Method;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getMethods()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Method"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Reflect.Method[] GetMethods()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Method>("getMethods", "()[Ljava/lang/reflect/Method;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getRecordComponents()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.RecordComponent"/></returns>
+        public Java.Lang.Reflect.RecordComponent[] GetRecordComponents()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.RecordComponent>("getRecordComponents", "()[Ljava/lang/reflect/RecordComponent;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getGenericSuperclass()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Type"/></returns>
+        public Java.Lang.Reflect.Type GetGenericSuperclass()
+        {
+            return IExecute<Java.Lang.Reflect.Type>("getGenericSuperclass");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getGenericInterfaces()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Type"/></returns>
+        public Java.Lang.Reflect.Type[] GetGenericInterfaces()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getGenericInterfaces", "()[Ljava/lang/reflect/Type;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getTypeParameters()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.TypeVariable"/></returns>
+        public Java.Lang.Reflect.TypeVariable[] GetTypeParameters()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.TypeVariable>("getTypeParameters", "()[Ljava/lang/reflect/TypeVariable;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#descriptorString()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String DescriptorString()
@@ -566,7 +531,47 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("descriptorString", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#toGenericString()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getCanonicalName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCanonicalName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCanonicalName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getSimpleName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSimpleName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSimpleName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getTypeName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTypeName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTypeName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#toGenericString()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToGenericString()
@@ -574,7 +579,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("toGenericString", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getResource(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getResource(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Net.URL"/></returns>
@@ -583,7 +588,15 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Net.URL>("getResource", "(Ljava/lang/String;)Ljava/net/URL;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isArray()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getProtectionDomain()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.ProtectionDomain"/></returns>
+        public Java.Security.ProtectionDomain GetProtectionDomain()
+        {
+            return IExecuteWithSignature<Java.Security.ProtectionDomain>("getProtectionDomain", "()Ljava/security/ProtectionDomain;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isArray()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsArray()
@@ -591,7 +604,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isArray", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isAssignableFrom(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isAssignableFrom(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -600,7 +613,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isAssignableFrom", "(Ljava/lang/Class;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isHidden()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isHidden()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsHidden()
@@ -608,7 +621,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isHidden", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isInstance(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isInstance(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -617,7 +630,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isInstance", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isInterface()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isInterface()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsInterface()
@@ -625,7 +638,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isInterface", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isPrimitive()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isPrimitive()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsPrimitive()
@@ -633,7 +646,31 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isPrimitive", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#cast(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getModifiers()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetModifiers()
+        {
+            return IExecuteWithSignature<int>("getModifiers", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getSuperclass()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetSuperclass()
+        {
+            return IExecute<Java.Lang.Class>("getSuperclass");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getSigners()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object[] GetSigners()
+        {
+            return IExecuteWithSignatureArray<object>("getSigners", "()[Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#cast(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -642,15 +679,23 @@ namespace Java.Lang
             return IExecuteWithSignature("cast", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#newInstance()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#newInstance()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InstantiationException"/>
         /// <exception cref="Java.Lang.IllegalAccessException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public object NewInstance()
         {
             return IExecuteWithSignature("newInstance", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getEnumConstants()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object[] GetEnumConstants()
+        {
+            return IExecuteWithSignatureArray<object>("getEnumConstants", "()[Ljava/lang/Object;");
         }
 
         #endregion
@@ -700,7 +745,7 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#forName(java.lang.String,boolean,java.lang.ClassLoader)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#forName(java.lang.String,boolean,java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -712,7 +757,7 @@ namespace Java.Lang
             return SExecute<Java.Lang.Class>(LocalBridgeClazz, "forName", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#forName(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#forName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
@@ -726,296 +771,58 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getAnnotations()"/> 
-        /// </summary>
-        public Java.Lang.Annotation.Annotation[] Annotations
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getAnnotations", "()[Ljava/lang/annotation/Annotation;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getCanonicalName()"/> 
-        /// </summary>
-        public Java.Lang.String CanonicalName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCanonicalName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getClasses()"/> 
-        /// </summary>
-        public Java.Lang.Class[] Classes
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getClasses", "()[Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getClassLoader()"/> 
-        /// </summary>
-        public Java.Lang.ClassLoader ClassLoader
-        {
-            get { return IExecuteWithSignature<Java.Lang.ClassLoader>("getClassLoader", "()Ljava/lang/ClassLoader;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getConstructors()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Constructor<object>[] Constructors
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Constructor<object>>("getConstructors", "()[Ljava/lang/reflect/Constructor;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaredAnnotations()"/> 
-        /// </summary>
-        public Java.Lang.Annotation.Annotation[] DeclaredAnnotations
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaredClasses()"/> 
-        /// </summary>
-        public Java.Lang.Class[] DeclaredClasses
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getDeclaredClasses", "()[Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaredConstructors()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Constructor<object>[] DeclaredConstructors
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Constructor<object>>("getDeclaredConstructors", "()[Ljava/lang/reflect/Constructor;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaredFields()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Field[] DeclaredFields
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Field>("getDeclaredFields", "()[Ljava/lang/reflect/Field;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaredMethods()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Method[] DeclaredMethods
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Method>("getDeclaredMethods", "()[Ljava/lang/reflect/Method;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaringClass()"/> 
-        /// </summary>
-        public Java.Lang.Class DeclaringClass
-        {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getEnclosingClass()"/> 
-        /// </summary>
-        public Java.Lang.Class EnclosingClass
-        {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getEnclosingClass", "()Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getEnclosingConstructor()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Constructor<object> EnclosingConstructor
-        {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Constructor<object>>("getEnclosingConstructor", "()Ljava/lang/reflect/Constructor;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getEnclosingMethod()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Method EnclosingMethod
-        {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Method>("getEnclosingMethod", "()Ljava/lang/reflect/Method;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getEnumConstants()"/> 
-        /// </summary>
-        public T[] EnumConstants
-        {
-            get { return IExecuteWithSignatureArray<T>("getEnumConstants", "()[Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getFields()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Field[] Fields
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Field>("getFields", "()[Ljava/lang/reflect/Field;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getGenericInterfaces()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Type[] GenericInterfaces
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getGenericInterfaces", "()[Ljava/lang/reflect/Type;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getGenericSuperclass()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Type GenericSuperclass
-        {
-            get { return IExecute<Java.Lang.Reflect.Type>("getGenericSuperclass"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getInterfaces()"/> 
-        /// </summary>
-        public Java.Lang.Class[] Interfaces
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getInterfaces", "()[Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getMethods()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Method[] Methods
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Method>("getMethods", "()[Ljava/lang/reflect/Method;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getModifiers()"/> 
-        /// </summary>
-        public int Modifiers
-        {
-            get { return IExecuteWithSignature<int>("getModifiers", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getNestHost()"/> 
-        /// </summary>
-        public Java.Lang.Class NestHost
-        {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getNestHost", "()Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getNestMembers()"/> 
-        /// </summary>
-        public Java.Lang.Class[] NestMembers
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getNestMembers", "()[Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getPackage()"/> 
-        /// </summary>
-        public Java.Lang.Package Package
-        {
-            get { return IExecuteWithSignature<Java.Lang.Package>("getPackage", "()Ljava/lang/Package;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String PackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getPermittedSubclasses()"/> 
-        /// </summary>
-        public Java.Lang.Class[] PermittedSubclasses
-        {
-            get { return IExecuteArray<Java.Lang.Class>("getPermittedSubclasses"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getProtectionDomain()"/> 
-        /// </summary>
-        public Java.Security.ProtectionDomain ProtectionDomain
-        {
-            get { return IExecuteWithSignature<Java.Security.ProtectionDomain>("getProtectionDomain", "()Ljava/security/ProtectionDomain;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getRecordComponents()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.RecordComponent[] RecordComponents
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.RecordComponent>("getRecordComponents", "()[Ljava/lang/reflect/RecordComponent;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getSigners()"/> 
-        /// </summary>
-        public object[] Signers
-        {
-            get { return IExecuteWithSignatureArray<object>("getSigners", "()[Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getSimpleName()"/> 
-        /// </summary>
-        public Java.Lang.String SimpleName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSimpleName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getSuperclass()"/> 
-        /// </summary>
-        public Java.Lang.Class Superclass
-        {
-            get { return IExecute<Java.Lang.Class>("getSuperclass"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getTypeName()"/> 
-        /// </summary>
-        public Java.Lang.String TypeName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTypeName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getTypeParameters()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.TypeVariable<Java.Lang.Class>[] TypeParameters
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.TypeVariable<Java.Lang.Class>>("getTypeParameters", "()[Ljava/lang/reflect/TypeVariable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getAnnotation(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        public A GetAnnotation<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.IAnnotation, new()
+        public A GetAnnotation<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
         {
             return IExecuteWithSignature<A>("getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaredAnnotation(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        public A GetDeclaredAnnotation<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.IAnnotation, new()
+        public A GetDeclaredAnnotation<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
         {
             return IExecuteWithSignature<A>("getDeclaredAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getAnnotationsByType(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getAnnotationsByType(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        public A[] GetAnnotationsByType<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.IAnnotation, new()
+        public A[] GetAnnotationsByType<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
         {
             return IExecuteWithSignatureArray<A>("getAnnotationsByType", "(Ljava/lang/Class;)[Ljava/lang/annotation/Annotation;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaredAnnotationsByType(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredAnnotationsByType(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        public A[] GetDeclaredAnnotationsByType<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.IAnnotation, new()
+        public A[] GetDeclaredAnnotationsByType<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
         {
             return IExecuteWithSignatureArray<A>("getDeclaredAnnotationsByType", "(Ljava/lang/Class;)[Ljava/lang/annotation/Annotation;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#asSubclass(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#asSubclass(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="ReturnExtendsU"><typeparamref name="U"/></typeparam>
         /// <typeparam name="U"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class AsSubclass<ReturnExtendsU, U>(Java.Lang.Class arg0) where ReturnExtendsU: U
+        public Java.Lang.Class AsSubclass<ReturnExtendsU, U>(Java.Lang.Class arg0) where ReturnExtendsU : U
         {
             return IExecute<Java.Lang.Class>("asSubclass", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#desiredAssertionStatus()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#desiredAssertionStatus()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool DesiredAssertionStatus()
@@ -1023,7 +830,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("desiredAssertionStatus", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isAnnotation()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isAnnotation()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsAnnotation()
@@ -1031,7 +838,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isAnnotation", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isAnnotationPresent(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isAnnotationPresent(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -1040,7 +847,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isAnnotationPresent", "(Ljava/lang/Class;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isAnonymousClass()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isAnonymousClass()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsAnonymousClass()
@@ -1048,7 +855,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isAnonymousClass", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isEnum()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isEnum()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEnum()
@@ -1056,7 +863,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isEnum", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isLocalClass()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isLocalClass()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsLocalClass()
@@ -1064,7 +871,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isLocalClass", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isMemberClass()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isMemberClass()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsMemberClass()
@@ -1072,7 +879,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isMemberClass", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isNestmateOf(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isNestmateOf(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -1081,7 +888,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isNestmateOf", "(Ljava/lang/Class;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isRecord()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isRecord()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsRecord()
@@ -1089,7 +896,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isRecord", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isSealed()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isSealed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsSealed()
@@ -1097,7 +904,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isSealed", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isSynthetic()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isSynthetic()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsSynthetic()
@@ -1105,7 +912,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isSynthetic", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getResourceAsStream(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getResourceAsStream(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
@@ -1114,7 +921,23 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Io.InputStream>("getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getComponentType()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getAnnotations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
+        public Java.Lang.Annotation.Annotation[] GetAnnotations()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getAnnotations", "()[Ljava/lang/annotation/Annotation;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredAnnotations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
+        public Java.Lang.Annotation.Annotation[] GetDeclaredAnnotations()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getComponentType()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class GetComponentType()
@@ -1122,7 +945,82 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.Class>("getComponentType", "()Ljava/lang/Class;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#arrayType()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaringClass()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Class GetDeclaringClass()
+        {
+            return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getEnclosingClass()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Class GetEnclosingClass()
+        {
+            return IExecuteWithSignature<Java.Lang.Class>("getEnclosingClass", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getNestHost()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetNestHost()
+        {
+            return IExecuteWithSignature<Java.Lang.Class>("getNestHost", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getClasses()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class[] GetClasses()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Class>("getClasses", "()[Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredClasses()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Class[] GetDeclaredClasses()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Class>("getDeclaredClasses", "()[Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getInterfaces()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class[] GetInterfaces()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Class>("getInterfaces", "()[Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getNestMembers()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class[] GetNestMembers()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Class>("getNestMembers", "()[Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getPermittedSubclasses()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class[] GetPermittedSubclasses()
+        {
+            return IExecuteArray<Java.Lang.Class>("getPermittedSubclasses");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getClassLoader()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.ClassLoader"/></returns>
+        public Java.Lang.ClassLoader GetClassLoader()
+        {
+            return IExecuteWithSignature<Java.Lang.ClassLoader>("getClassLoader", "()Ljava/lang/ClassLoader;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#arrayType()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></returns>
         public Java.Lang.Invoke.TypeDescriptor.OfField ArrayType()
@@ -1130,7 +1028,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfField>("arrayType", "()Ljava/lang/invoke/TypeDescriptor$OfField;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#componentType()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#componentType()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></returns>
         public Java.Lang.Invoke.TypeDescriptor.OfField ComponentType()
@@ -1138,7 +1036,42 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfField>("componentType", "()Ljava/lang/invoke/TypeDescriptor$OfField;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getConstructor(java.lang.Class[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getPackage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Package"/></returns>
+        public Java.Lang.Package GetPackage()
+        {
+            return IExecuteWithSignature<Java.Lang.Package>("getPackage", "()Ljava/lang/Package;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getEnclosingConstructor()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Constructor"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Reflect.Constructor<object> GetEnclosingConstructor()
+        {
+            return IExecuteWithSignature<Java.Lang.Reflect.Constructor<object>>("getEnclosingConstructor", "()Ljava/lang/reflect/Constructor;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getConstructors()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Constructor"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Reflect.Constructor<object>[] GetConstructors()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Constructor<object>>("getConstructors", "()[Ljava/lang/reflect/Constructor;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredConstructors()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Constructor"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Reflect.Constructor<object>[] GetDeclaredConstructors()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Constructor<object>>("getDeclaredConstructors", "()[Ljava/lang/reflect/Constructor;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getConstructor(java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Reflect.Constructor"/></returns>
@@ -1149,7 +1082,7 @@ namespace Java.Lang
             if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Constructor<T>>("getConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;"); else return IExecuteWithSignature<Java.Lang.Reflect.Constructor<T>>("getConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaredConstructor(java.lang.Class[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredConstructor(java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Reflect.Constructor"/></returns>
@@ -1160,7 +1093,7 @@ namespace Java.Lang
             if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Constructor<T>>("getDeclaredConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;"); else return IExecuteWithSignature<Java.Lang.Reflect.Constructor<T>>("getDeclaredConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaredField(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredField(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Reflect.Field"/></returns>
@@ -1171,7 +1104,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.Reflect.Field>("getDeclaredField", "(Ljava/lang/String;)Ljava/lang/reflect/Field;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getField(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getField(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Reflect.Field"/></returns>
@@ -1182,7 +1115,25 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.Reflect.Field>("getField", "(Ljava/lang/String;)Ljava/lang/reflect/Field;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getDeclaredMethod(java.lang.String,java.lang.Class[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredFields()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Field"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Reflect.Field[] GetDeclaredFields()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Field>("getDeclaredFields", "()[Ljava/lang/reflect/Field;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getFields()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Field"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Reflect.Field[] GetFields()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Field>("getFields", "()[Ljava/lang/reflect/Field;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredMethod(java.lang.String,java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -1194,7 +1145,16 @@ namespace Java.Lang
             if (arg1.Length == 0) return IExecute<Java.Lang.Reflect.Method>("getDeclaredMethod", arg0); else return IExecute<Java.Lang.Reflect.Method>("getDeclaredMethod", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getMethod(java.lang.String,java.lang.Class[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getEnclosingMethod()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Method"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Reflect.Method GetEnclosingMethod()
+        {
+            return IExecuteWithSignature<Java.Lang.Reflect.Method>("getEnclosingMethod", "()Ljava/lang/reflect/Method;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getMethod(java.lang.String,java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -1206,7 +1166,57 @@ namespace Java.Lang
             if (arg1.Length == 0) return IExecute<Java.Lang.Reflect.Method>("getMethod", arg0); else return IExecute<Java.Lang.Reflect.Method>("getMethod", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#descriptorString()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredMethods()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Method"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Reflect.Method[] GetDeclaredMethods()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Method>("getDeclaredMethods", "()[Ljava/lang/reflect/Method;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getMethods()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Method"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public Java.Lang.Reflect.Method[] GetMethods()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Method>("getMethods", "()[Ljava/lang/reflect/Method;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getRecordComponents()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.RecordComponent"/></returns>
+        public Java.Lang.Reflect.RecordComponent[] GetRecordComponents()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.RecordComponent>("getRecordComponents", "()[Ljava/lang/reflect/RecordComponent;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getGenericSuperclass()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Type"/></returns>
+        public Java.Lang.Reflect.Type GetGenericSuperclass()
+        {
+            return IExecute<Java.Lang.Reflect.Type>("getGenericSuperclass");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getGenericInterfaces()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Type"/></returns>
+        public Java.Lang.Reflect.Type[] GetGenericInterfaces()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getGenericInterfaces", "()[Ljava/lang/reflect/Type;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getTypeParameters()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.TypeVariable"/></returns>
+        public Java.Lang.Reflect.TypeVariable<Java.Lang.Class>[] GetTypeParameters()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.TypeVariable<Java.Lang.Class>>("getTypeParameters", "()[Ljava/lang/reflect/TypeVariable;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#descriptorString()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String DescriptorString()
@@ -1214,7 +1224,47 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("descriptorString", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#toGenericString()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getCanonicalName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCanonicalName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCanonicalName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getSimpleName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSimpleName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSimpleName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getTypeName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTypeName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTypeName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#toGenericString()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToGenericString()
@@ -1222,7 +1272,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("toGenericString", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getResource(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getResource(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Net.URL"/></returns>
@@ -1231,7 +1281,15 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Net.URL>("getResource", "(Ljava/lang/String;)Ljava/net/URL;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isArray()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getProtectionDomain()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.ProtectionDomain"/></returns>
+        public Java.Security.ProtectionDomain GetProtectionDomain()
+        {
+            return IExecuteWithSignature<Java.Security.ProtectionDomain>("getProtectionDomain", "()Ljava/security/ProtectionDomain;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isArray()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsArray()
@@ -1239,7 +1297,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isArray", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isAssignableFrom(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isAssignableFrom(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -1248,7 +1306,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isAssignableFrom", "(Ljava/lang/Class;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isHidden()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isHidden()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsHidden()
@@ -1256,7 +1314,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isHidden", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isInstance(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isInstance(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -1265,7 +1323,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isInstance", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isInterface()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isInterface()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsInterface()
@@ -1273,7 +1331,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isInterface", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isPrimitive()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#isPrimitive()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsPrimitive()
@@ -1281,7 +1339,32 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isPrimitive", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#cast(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getModifiers()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetModifiers()
+        {
+            return IExecuteWithSignature<int>("getModifiers", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getSuperclass()"/>
+        /// </summary>
+        /// <typeparam name="ReturnobjectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetSuperclass<ReturnobjectSuperT>() where ReturnobjectSuperT : T
+        {
+            return IExecute<Java.Lang.Class>("getSuperclass");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getSigners()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object[] GetSigners()
+        {
+            return IExecuteWithSignatureArray<object>("getSigners", "()[Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#cast(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><typeparamref name="T"/></returns>
@@ -1290,15 +1373,23 @@ namespace Java.Lang
             return IExecuteWithSignature<T>("cast", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#newInstance()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#newInstance()"/>
         /// </summary>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Lang.InstantiationException"/>
         /// <exception cref="Java.Lang.IllegalAccessException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public T NewInstance()
         {
             return IExecuteWithSignature<T>("newInstance", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Class.html#getEnumConstants()"/>
+        /// </summary>
+        /// <returns><typeparamref name="T"/></returns>
+        public T[] GetEnumConstants()
+        {
+            return IExecuteWithSignatureArray<T>("getEnumConstants", "()[Ljava/lang/Object;");
         }
 
         #endregion

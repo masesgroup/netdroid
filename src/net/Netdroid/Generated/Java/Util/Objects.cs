@@ -42,7 +42,7 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Objects.html#requireNonNull(java.lang.Object,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#requireNonNull(java.lang.Object,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -53,7 +53,7 @@ namespace Java.Util
             return SExecute<T>(LocalBridgeClazz, "requireNonNull", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Objects.html#requireNonNull(java.lang.Object,java.util.function.Supplier)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#requireNonNull(java.lang.Object,java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
@@ -64,7 +64,7 @@ namespace Java.Util
             return SExecute<T>(LocalBridgeClazz, "requireNonNull", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Objects.html#requireNonNull(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#requireNonNull(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <typeparam name="T"></typeparam>
@@ -74,7 +74,7 @@ namespace Java.Util
             return SExecuteWithSignature<T>(LocalBridgeClazz, "requireNonNull", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Objects.html#requireNonNullElse(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#requireNonNullElse(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="T"/></param>
@@ -85,19 +85,19 @@ namespace Java.Util
             return SExecute<T>(LocalBridgeClazz, "requireNonNullElse", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Objects.html#requireNonNullElseGet(java.lang.Object,java.util.function.Supplier)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#requireNonNullElseGet(java.lang.Object,java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T RequireNonNullElseGet<T, Arg1ExtendsT>(T arg0, Java.Util.Function.Supplier<Arg1ExtendsT> arg1) where Arg1ExtendsT: T
+        public static T RequireNonNullElseGet<T, Arg1ExtendsT>(T arg0, Java.Util.Function.Supplier<Arg1ExtendsT> arg1) where Arg1ExtendsT : T
         {
             return SExecute<T>(LocalBridgeClazz, "requireNonNullElseGet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Objects.html#deepEquals(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#deepEquals(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -107,7 +107,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "deepEquals", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Objects.html#equals(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#equals(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -117,7 +117,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Objects.html#isNull(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#isNull(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -126,7 +126,7 @@ namespace Java.Util
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isNull", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Objects.html#nonNull(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#nonNull(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -135,7 +135,7 @@ namespace Java.Util
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "nonNull", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Objects.html#checkFromIndexSize(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#checkFromIndexSize(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -146,7 +146,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "checkFromIndexSize", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Objects.html#checkFromToIndex(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#checkFromToIndex(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -157,7 +157,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "checkFromToIndex", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Objects.html#checkIndex(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#checkIndex(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -167,7 +167,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "checkIndex", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Objects.html#hash(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#hash(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -176,7 +176,7 @@ namespace Java.Util
             if (arg0.Length == 0) return SExecuteWithSignature<int>(LocalBridgeClazz, "hash", "([Ljava/lang/Object;)I"); else return SExecuteWithSignature<int>(LocalBridgeClazz, "hash", "([Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Objects.html#hashCode(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#hashCode(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -185,7 +185,7 @@ namespace Java.Util
             return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Objects.html#toString(java.lang.Object,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#toString(java.lang.Object,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -195,7 +195,7 @@ namespace Java.Util
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Objects.html#toString(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#toString(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -204,7 +204,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(Ljava/lang/Object;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Objects.html#checkFromIndexSize(long,long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#checkFromIndexSize(long,long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -215,7 +215,7 @@ namespace Java.Util
             return SExecute<long>(LocalBridgeClazz, "checkFromIndexSize", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Objects.html#checkFromToIndex(long,long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#checkFromToIndex(long,long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -226,7 +226,7 @@ namespace Java.Util
             return SExecute<long>(LocalBridgeClazz, "checkFromToIndex", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Objects.html#checkIndex(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#checkIndex(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>

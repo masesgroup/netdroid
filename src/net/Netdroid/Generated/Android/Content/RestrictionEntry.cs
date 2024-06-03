@@ -173,81 +173,20 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getAllSelectedStrings()"/> <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setAllSelectedStrings(java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getRestrictions()"/>
         /// </summary>
-        public Java.Lang.String[] AllSelectedStrings
+        /// <returns><see cref="Android.Content.RestrictionEntry"/></returns>
+        public Android.Content.RestrictionEntry[] GetRestrictions()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getAllSelectedStrings", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setAllSelectedStrings", "([Ljava/lang/String;)V", value); }
+            return IExecuteWithSignatureArray<Android.Content.RestrictionEntry>("getRestrictions", "()[Landroid/content/RestrictionEntry;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getChoiceEntries()"/> <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setChoiceEntries(java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getSelectedState()"/>
         /// </summary>
-        public Java.Lang.String[] ChoiceEntries
+        /// <returns><see cref="bool"/></returns>
+        public bool GetSelectedState()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getChoiceEntries", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setChoiceEntries", "([Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getChoiceValues()"/> <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setChoiceValues(java.lang.String[])"/>
-        /// </summary>
-        public Java.Lang.String[] ChoiceValues
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getChoiceValues", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setChoiceValues", "([Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getDescription()"/> <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setDescription(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Description
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDescription", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getIntValue()"/> <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setIntValue(int)"/>
-        /// </summary>
-        public int IntValue
-        {
-            get { return IExecuteWithSignature<int>("getIntValue", "()I"); } set { IExecuteWithSignature("setIntValue", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getKey()"/> 
-        /// </summary>
-        public Java.Lang.String Key
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getRestrictions()"/> <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setRestrictions(android.content.RestrictionEntry[])"/>
-        /// </summary>
-        public Android.Content.RestrictionEntry[] Restrictions
-        {
-            get { return IExecuteWithSignatureArray<Android.Content.RestrictionEntry>("getRestrictions", "()[Landroid/content/RestrictionEntry;"); } set { IExecuteWithSignature("setRestrictions", "([Landroid/content/RestrictionEntry;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getSelectedState()"/> <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setSelectedState(boolean)"/>
-        /// </summary>
-        public bool SelectedState
-        {
-            get { return IExecuteWithSignature<bool>("getSelectedState", "()Z"); } set { IExecuteWithSignature("setSelectedState", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getSelectedString()"/> <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setSelectedString(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String SelectedString
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSelectedString", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSelectedString", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getTitle()"/> <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setTitle(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Title
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTitle", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setTitle", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getType()"/> <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setType(int)"/>
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); } set { IExecuteWithSignature("setType", "(I)V", value); }
+            return IExecuteWithSignature<bool>("getSelectedState", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#describeContents()"/>
@@ -256,6 +195,86 @@ namespace Android.Content
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getIntValue()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetIntValue()
+        {
+            return IExecuteWithSignature<int>("getIntValue", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getKey()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetKey()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getSelectedString()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSelectedString()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSelectedString", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getTitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTitle()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTitle", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getAllSelectedStrings()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetAllSelectedStrings()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getAllSelectedStrings", "()[Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getChoiceEntries()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetChoiceEntries()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getChoiceEntries", "()[Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getChoiceValues()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetChoiceValues()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getChoiceValues", "()[Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setAllSelectedStrings(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetAllSelectedStrings(Java.Lang.String[] arg0)
+        {
+            IExecuteWithSignature("setAllSelectedStrings", "([Ljava/lang/String;)V", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setChoiceEntries(android.content.Context,int)"/>
@@ -267,6 +286,14 @@ namespace Android.Content
             IExecute("setChoiceEntries", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setChoiceEntries(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetChoiceEntries(Java.Lang.String[] arg0)
+        {
+            IExecuteWithSignature("setChoiceEntries", "([Ljava/lang/String;)V", new object[] { arg0 });
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setChoiceValues(android.content.Context,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -274,6 +301,70 @@ namespace Android.Content
         public void SetChoiceValues(Android.Content.Context arg0, int arg1)
         {
             IExecute("setChoiceValues", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setChoiceValues(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetChoiceValues(Java.Lang.String[] arg0)
+        {
+            IExecuteWithSignature("setChoiceValues", "([Ljava/lang/String;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setDescription(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetDescription(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setDescription", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setIntValue(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetIntValue(int arg0)
+        {
+            IExecuteWithSignature("setIntValue", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setRestrictions(android.content.RestrictionEntry[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.RestrictionEntry"/></param>
+        public void SetRestrictions(Android.Content.RestrictionEntry[] arg0)
+        {
+            IExecuteWithSignature("setRestrictions", "([Landroid/content/RestrictionEntry;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setSelectedState(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetSelectedState(bool arg0)
+        {
+            IExecuteWithSignature("setSelectedState", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setSelectedString(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetSelectedString(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSelectedString", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setTitle(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetTitle(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setTitle", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setType(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetType(int arg0)
+        {
+            IExecuteWithSignature("setType", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#writeToParcel(android.os.Parcel,int)"/>

@@ -128,7 +128,7 @@ namespace Android.Content.Res
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#locale"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.Locale locale { get { return IGetField<Java.Util.Locale>("locale"); } set { ISetField("locale", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#CREATOR"/>
@@ -361,7 +361,7 @@ namespace Android.Content.Res
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#ORIENTATION_SQUARE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ORIENTATION_SQUARE { get { if (!_ORIENTATION_SQUAREReady) { _ORIENTATION_SQUAREContent = SGetField<int>(LocalBridgeClazz, "ORIENTATION_SQUARE"); _ORIENTATION_SQUAREReady = true; } return _ORIENTATION_SQUAREContent; } }
         private static int _ORIENTATION_SQUAREContent = default;
         private static bool _ORIENTATION_SQUAREReady = false; // this is used because in case of generics 
@@ -524,7 +524,7 @@ namespace Android.Content.Res
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#TOUCHSCREEN_STYLUS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TOUCHSCREEN_STYLUS { get { if (!_TOUCHSCREEN_STYLUSReady) { _TOUCHSCREEN_STYLUSContent = SGetField<int>(LocalBridgeClazz, "TOUCHSCREEN_STYLUS"); _TOUCHSCREEN_STYLUSReady = true; } return _TOUCHSCREEN_STYLUSContent; } }
         private static int _TOUCHSCREEN_STYLUSContent = default;
         private static bool _TOUCHSCREEN_STYLUSReady = false; // this is used because in case of generics 
@@ -641,25 +641,12 @@ namespace Android.Content.Res
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#getGrammaticalGender()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#getLocales()"/>
         /// </summary>
-        public int GrammaticalGender
+        /// <returns><see cref="Android.Os.LocaleList"/></returns>
+        public Android.Os.LocaleList GetLocales()
         {
-            get { return IExecuteWithSignature<int>("getGrammaticalGender", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#getLayoutDirection()"/> <see href="https://developer.android.com/reference/android/content/res/Configuration.html#setLayoutDirection(java.util.Locale)"/>
-        /// </summary>
-        public int LayoutDirection
-        {
-            get { return IExecuteWithSignature<int>("getLayoutDirection", "()I"); } set { IExecuteWithSignature("setLayoutDirection", "(Ljava/util/Locale;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#getLocales()"/> <see href="https://developer.android.com/reference/android/content/res/Configuration.html#setLocales(android.os.LocaleList)"/>
-        /// </summary>
-        public Android.Os.LocaleList Locales
-        {
-            get { return IExecuteWithSignature<Android.Os.LocaleList>("getLocales", "()Landroid/os/LocaleList;"); } set { IExecuteWithSignature("setLocales", "(Landroid/os/LocaleList;)V", value); }
+            return IExecuteWithSignature<Android.Os.LocaleList>("getLocales", "()Landroid/os/LocaleList;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#isLayoutSizeAtLeast(int)"/>
@@ -738,6 +725,22 @@ namespace Android.Content.Res
             return IExecuteWithSignature<int>("diff", "(Landroid/content/res/Configuration;)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#getGrammaticalGender()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGrammaticalGender()
+        {
+            return IExecuteWithSignature<int>("getGrammaticalGender", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#getLayoutDirection()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLayoutDirection()
+        {
+            return IExecuteWithSignature<int>("getLayoutDirection", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#updateFrom(android.content.res.Configuration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Res.Configuration"/></param>
@@ -755,12 +758,28 @@ namespace Android.Content.Res
             IExecuteWithSignature("readFromParcel", "(Landroid/os/Parcel;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#setLayoutDirection(java.util.Locale)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        public void SetLayoutDirection(Java.Util.Locale arg0)
+        {
+            IExecuteWithSignature("setLayoutDirection", "(Ljava/util/Locale;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#setLocale(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         public void SetLocale(Java.Util.Locale arg0)
         {
             IExecuteWithSignature("setLocale", "(Ljava/util/Locale;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#setLocales(android.os.LocaleList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.LocaleList"/></param>
+        public void SetLocales(Android.Os.LocaleList arg0)
+        {
+            IExecuteWithSignature("setLocales", "(Landroid/os/LocaleList;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#setTo(android.content.res.Configuration)"/>

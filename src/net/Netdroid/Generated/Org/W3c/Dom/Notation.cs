@@ -64,18 +64,20 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Notation.html#getPublicId()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Notation.html#getPublicId()"/>
         /// </summary>
-        public Java.Lang.String PublicId
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPublicId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Notation.html#getSystemId()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Notation.html#getSystemId()"/>
         /// </summary>
-        public Java.Lang.String SystemId
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSystemId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;");
         }
 
         #endregion

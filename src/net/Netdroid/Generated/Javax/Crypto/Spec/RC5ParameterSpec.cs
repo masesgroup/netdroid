@@ -30,7 +30,7 @@ namespace Javax.Crypto.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/RC5ParameterSpec.html#%3Cinit%3E(int,int,int,byte[],int)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/RC5ParameterSpec.html#%3Cinit%3E(int,int,int,byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -42,7 +42,7 @@ namespace Javax.Crypto.Spec
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/RC5ParameterSpec.html#%3Cinit%3E(int,int,int,byte[])"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/RC5ParameterSpec.html#%3Cinit%3E(int,int,int,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -53,7 +53,7 @@ namespace Javax.Crypto.Spec
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/RC5ParameterSpec.html#%3Cinit%3E(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/RC5ParameterSpec.html#%3Cinit%3E(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -79,32 +79,36 @@ namespace Javax.Crypto.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/RC5ParameterSpec.html#getIV()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/RC5ParameterSpec.html#getIV()"/>
         /// </summary>
-        public byte[] IV
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetIV()
         {
-            get { return IExecuteWithSignatureArray<byte>("getIV", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getIV", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/RC5ParameterSpec.html#getRounds()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/RC5ParameterSpec.html#getRounds()"/>
         /// </summary>
-        public int Rounds
+        /// <returns><see cref="int"/></returns>
+        public int GetRounds()
         {
-            get { return IExecuteWithSignature<int>("getRounds", "()I"); }
+            return IExecuteWithSignature<int>("getRounds", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/RC5ParameterSpec.html#getVersion()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/RC5ParameterSpec.html#getVersion()"/>
         /// </summary>
-        public int Version
+        /// <returns><see cref="int"/></returns>
+        public int GetVersion()
         {
-            get { return IExecuteWithSignature<int>("getVersion", "()I"); }
+            return IExecuteWithSignature<int>("getVersion", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/RC5ParameterSpec.html#getWordSize()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/RC5ParameterSpec.html#getWordSize()"/>
         /// </summary>
-        public int WordSize
+        /// <returns><see cref="int"/></returns>
+        public int GetWordSize()
         {
-            get { return IExecuteWithSignature<int>("getWordSize", "()I"); }
+            return IExecuteWithSignature<int>("getWordSize", "()I");
         }
 
         #endregion

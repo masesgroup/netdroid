@@ -75,25 +75,12 @@ namespace Android.Text.Style
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/AbsoluteSizeSpan.html#getDip()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/style/AbsoluteSizeSpan.html#getDip()"/>
         /// </summary>
-        public bool Dip
+        /// <returns><see cref="bool"/></returns>
+        public bool GetDip()
         {
-            get { return IExecuteWithSignature<bool>("getDip", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/AbsoluteSizeSpan.html#getSize()"/> 
-        /// </summary>
-        public int Size
-        {
-            get { return IExecuteWithSignature<int>("getSize", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/AbsoluteSizeSpan.html#getSpanTypeId()"/> 
-        /// </summary>
-        public int SpanTypeId
-        {
-            get { return IExecuteWithSignature<int>("getSpanTypeId", "()I"); }
+            return IExecuteWithSignature<bool>("getDip", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/AbsoluteSizeSpan.html#describeContents()"/>
@@ -102,6 +89,22 @@ namespace Android.Text.Style
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/AbsoluteSizeSpan.html#getSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSize()
+        {
+            return IExecuteWithSignature<int>("getSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/AbsoluteSizeSpan.html#getSpanTypeId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSpanTypeId()
+        {
+            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/AbsoluteSizeSpan.html#writeToParcel(android.os.Parcel,int)"/>

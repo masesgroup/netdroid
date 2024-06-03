@@ -46,18 +46,20 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaCommunicationManager.html#getSession2Tokens()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaCommunicationManager.html#getVersion()"/>
         /// </summary>
-        public Java.Util.List<Android.Media.Session2Token> Session2Tokens
+        /// <returns><see cref="int"/></returns>
+        public int GetVersion()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.Session2Token>>("getSession2Tokens", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<int>("getVersion", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaCommunicationManager.html#getVersion()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaCommunicationManager.html#getSession2Tokens()"/>
         /// </summary>
-        public int Version
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.Session2Token> GetSession2Tokens()
         {
-            get { return IExecuteWithSignature<int>("getVersion", "()I"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Media.Session2Token>>("getSession2Tokens", "()Ljava/util/List;");
         }
 
         #endregion

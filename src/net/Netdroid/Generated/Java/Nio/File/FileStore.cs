@@ -46,45 +46,17 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileStore.html#getBlockSize()"/> 
-        /// </summary>
-        public long BlockSize
-        {
-            get { return IExecuteWithSignature<long>("getBlockSize", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileStore.html#getTotalSpace()"/> 
-        /// </summary>
-        public long TotalSpace
-        {
-            get { return IExecuteWithSignature<long>("getTotalSpace", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileStore.html#getUnallocatedSpace()"/> 
-        /// </summary>
-        public long UnallocatedSpace
-        {
-            get { return IExecuteWithSignature<long>("getUnallocatedSpace", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileStore.html#getUsableSpace()"/> 
-        /// </summary>
-        public long UsableSpace
-        {
-            get { return IExecuteWithSignature<long>("getUsableSpace", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileStore.html#getFileStoreAttributeView(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileStore.html#getFileStoreAttributeView(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.IFileStoreAttributeView"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public V GetFileStoreAttributeView<V>(Java.Lang.Class arg0) where V: Java.Nio.File.Attribute.IFileStoreAttributeView, new()
+        public V GetFileStoreAttributeView<V>(Java.Lang.Class arg0) where V : Java.Nio.File.Attribute.IFileStoreAttributeView, new()
         {
             return IExecuteWithSignature<V>("getFileStoreAttributeView", "(Ljava/lang/Class;)Ljava/nio/file/attribute/FileStoreAttributeView;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileStore.html#isReadOnly()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileStore.html#isReadOnly()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
@@ -92,7 +64,7 @@ namespace Java.Nio.File
             return IExecuteWithSignature<bool>("isReadOnly", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileStore.html#supportsFileAttributeView(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileStore.html#supportsFileAttributeView(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -101,7 +73,7 @@ namespace Java.Nio.File
             return IExecuteWithSignature<bool>("supportsFileAttributeView", "(Ljava/lang/Class;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileStore.html#supportsFileAttributeView(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileStore.html#supportsFileAttributeView(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -110,7 +82,7 @@ namespace Java.Nio.File
             return IExecuteWithSignature<bool>("supportsFileAttributeView", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileStore.html#getAttribute(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileStore.html#getAttribute(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
@@ -120,7 +92,7 @@ namespace Java.Nio.File
             return IExecuteWithSignature("getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileStore.html#name()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileStore.html#name()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
@@ -128,12 +100,48 @@ namespace Java.Nio.File
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileStore.html#type()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileStore.html#type()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Type()
         {
             return IExecuteWithSignature<Java.Lang.String>("type", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileStore.html#getTotalSpace()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public long GetTotalSpace()
+        {
+            return IExecuteWithSignature<long>("getTotalSpace", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileStore.html#getUnallocatedSpace()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public long GetUnallocatedSpace()
+        {
+            return IExecuteWithSignature<long>("getUnallocatedSpace", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileStore.html#getUsableSpace()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public long GetUsableSpace()
+        {
+            return IExecuteWithSignature<long>("getUsableSpace", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileStore.html#getBlockSize()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public long GetBlockSize()
+        {
+            return IExecuteWithSignature<long>("getBlockSize", "()J");
         }
 
         #endregion

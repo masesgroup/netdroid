@@ -46,11 +46,12 @@ namespace Android.App.Appsearch.Observer
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/ObserverSpec.html#getFilterSchemas()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/ObserverSpec.html#getFilterSchemas()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> FilterSchemas
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetFilterSchemas()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getFilterSchemas", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getFilterSchemas", "()Ljava/util/Set;");
         }
 
         #endregion

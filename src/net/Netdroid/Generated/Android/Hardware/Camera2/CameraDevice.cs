@@ -100,20 +100,6 @@ namespace Android.Hardware.Camera2
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.html#getCameraAudioRestriction()"/> <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.html#setCameraAudioRestriction(int)"/>
-        /// </summary>
-        public int CameraAudioRestriction
-        {
-            get { return IExecuteWithSignature<int>("getCameraAudioRestriction", "()I"); } set { IExecuteWithSignature("setCameraAudioRestriction", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.html#getId()"/> 
-        /// </summary>
-        public Java.Lang.String Id
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.html#createCaptureRequest(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -134,6 +120,14 @@ namespace Android.Hardware.Camera2
             return IExecuteWithSignature<Android.Hardware.Camera2.CaptureRequest.Builder>("createReprocessCaptureRequest", "(Landroid/hardware/camera2/TotalCaptureResult;)Landroid/hardware/camera2/CaptureRequest$Builder;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.html#close()"/>
         /// </summary>
         public void Close()
@@ -147,7 +141,7 @@ namespace Android.Hardware.Camera2
         /// <param name="arg1"><see cref="Android.Hardware.Camera2.CameraCaptureSession.StateCallback"/></param>
         /// <param name="arg2"><see cref="Android.Os.Handler"/></param>
         /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CreateCaptureSession(Java.Util.List<Android.View.Surface> arg0, Android.Hardware.Camera2.CameraCaptureSession.StateCallback arg1, Android.Os.Handler arg2)
         {
             IExecute("createCaptureSession", arg0, arg1, arg2);
@@ -159,7 +153,7 @@ namespace Android.Hardware.Camera2
         /// <param name="arg1"><see cref="Android.Hardware.Camera2.CameraCaptureSession.StateCallback"/></param>
         /// <param name="arg2"><see cref="Android.Os.Handler"/></param>
         /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CreateCaptureSessionByOutputConfigurations(Java.Util.List<Android.Hardware.Camera2.Params.OutputConfiguration> arg0, Android.Hardware.Camera2.CameraCaptureSession.StateCallback arg1, Android.Os.Handler arg2)
         {
             IExecute("createCaptureSessionByOutputConfigurations", arg0, arg1, arg2);
@@ -171,7 +165,7 @@ namespace Android.Hardware.Camera2
         /// <param name="arg1"><see cref="Android.Hardware.Camera2.CameraCaptureSession.StateCallback"/></param>
         /// <param name="arg2"><see cref="Android.Os.Handler"/></param>
         /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CreateConstrainedHighSpeedCaptureSession(Java.Util.List<Android.View.Surface> arg0, Android.Hardware.Camera2.CameraCaptureSession.StateCallback arg1, Android.Os.Handler arg2)
         {
             IExecute("createConstrainedHighSpeedCaptureSession", arg0, arg1, arg2);
@@ -184,7 +178,7 @@ namespace Android.Hardware.Camera2
         /// <param name="arg2"><see cref="Android.Hardware.Camera2.CameraCaptureSession.StateCallback"/></param>
         /// <param name="arg3"><see cref="Android.Os.Handler"/></param>
         /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CreateReprocessableCaptureSession(Android.Hardware.Camera2.Params.InputConfiguration arg0, Java.Util.List<Android.View.Surface> arg1, Android.Hardware.Camera2.CameraCaptureSession.StateCallback arg2, Android.Os.Handler arg3)
         {
             IExecute("createReprocessableCaptureSession", arg0, arg1, arg2, arg3);
@@ -197,7 +191,7 @@ namespace Android.Hardware.Camera2
         /// <param name="arg2"><see cref="Android.Hardware.Camera2.CameraCaptureSession.StateCallback"/></param>
         /// <param name="arg3"><see cref="Android.Os.Handler"/></param>
         /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CreateReprocessableCaptureSessionByConfigurations(Android.Hardware.Camera2.Params.InputConfiguration arg0, Java.Util.List<Android.Hardware.Camera2.Params.OutputConfiguration> arg1, Android.Hardware.Camera2.CameraCaptureSession.StateCallback arg2, Android.Os.Handler arg3)
         {
             IExecute("createReprocessableCaptureSessionByConfigurations", arg0, arg1, arg2, arg3);
@@ -224,6 +218,15 @@ namespace Android.Hardware.Camera2
             return IExecuteWithSignature<bool>("isSessionConfigurationSupported", "(Landroid/hardware/camera2/params/SessionConfiguration;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.html#getCameraAudioRestriction()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
+        public int GetCameraAudioRestriction()
+        {
+            return IExecuteWithSignature<int>("getCameraAudioRestriction", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.html#createCaptureSession(android.hardware.camera2.params.SessionConfiguration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Hardware.Camera2.Params.SessionConfiguration"/></param>
@@ -240,6 +243,15 @@ namespace Android.Hardware.Camera2
         public void CreateExtensionSession(Android.Hardware.Camera2.Params.ExtensionSessionConfiguration arg0)
         {
             IExecuteWithSignature("createExtensionSession", "(Landroid/hardware/camera2/params/ExtensionSessionConfiguration;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.html#setCameraAudioRestriction(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
+        public void SetCameraAudioRestriction(int arg0)
+        {
+            IExecuteWithSignature("setCameraAudioRestriction", "(I)V", arg0);
         }
 
         #endregion

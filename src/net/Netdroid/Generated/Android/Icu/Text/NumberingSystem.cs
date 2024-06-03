@@ -48,18 +48,12 @@ namespace Android.Icu.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/NumberingSystem.html#getAvailableNames()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberingSystem.html#getInstance()"/>
         /// </summary>
-        public static Java.Lang.String[] AvailableNames
+        /// <returns><see cref="Android.Icu.Text.NumberingSystem"/></returns>
+        public static Android.Icu.Text.NumberingSystem GetInstance()
         {
-            get { return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getAvailableNames", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/NumberingSystem.html#getInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Text.NumberingSystem Instance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.NumberingSystem>(LocalBridgeClazz, "getInstance", "()Landroid/icu/text/NumberingSystem;"); }
+            return SExecuteWithSignature<Android.Icu.Text.NumberingSystem>(LocalBridgeClazz, "getInstance", "()Landroid/icu/text/NumberingSystem;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberingSystem.html#getInstance(android.icu.util.ULocale)"/>
@@ -108,31 +102,18 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isValidDigitString", "(Ljava/lang/String;)Z", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberingSystem.html#getAvailableNames()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String[] GetAvailableNames()
+        {
+            return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getAvailableNames", "()[Ljava/lang/String;");
+        }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/NumberingSystem.html#getDescription()"/> 
-        /// </summary>
-        public Java.Lang.String Description
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/NumberingSystem.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/NumberingSystem.html#getRadix()"/> 
-        /// </summary>
-        public int Radix
-        {
-            get { return IExecuteWithSignature<int>("getRadix", "()I"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberingSystem.html#isAlgorithmic()"/>
         /// </summary>
@@ -140,6 +121,30 @@ namespace Android.Icu.Text
         public bool IsAlgorithmic()
         {
             return IExecuteWithSignature<bool>("isAlgorithmic", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberingSystem.html#getRadix()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRadix()
+        {
+            return IExecuteWithSignature<int>("getRadix", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberingSystem.html#getDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberingSystem.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
 
         #endregion

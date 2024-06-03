@@ -63,18 +63,12 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/HandlerThread.html#getLooper()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/HandlerThread.html#getLooper()"/>
         /// </summary>
-        public Android.Os.Looper Looper
+        /// <returns><see cref="Android.Os.Looper"/></returns>
+        public Android.Os.Looper GetLooper()
         {
-            get { return IExecuteWithSignature<Android.Os.Looper>("getLooper", "()Landroid/os/Looper;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/HandlerThread.html#getThreadId()"/> 
-        /// </summary>
-        public int ThreadId
-        {
-            get { return IExecuteWithSignature<int>("getThreadId", "()I"); }
+            return IExecuteWithSignature<Android.Os.Looper>("getLooper", "()Landroid/os/Looper;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/HandlerThread.html#quit()"/>
@@ -91,6 +85,14 @@ namespace Android.Os
         public bool QuitSafely()
         {
             return IExecuteWithSignature<bool>("quitSafely", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/HandlerThread.html#getThreadId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetThreadId()
+        {
+            return IExecuteWithSignature<int>("getThreadId", "()I");
         }
 
         #endregion

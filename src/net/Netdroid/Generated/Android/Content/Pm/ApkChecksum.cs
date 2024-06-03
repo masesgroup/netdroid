@@ -52,39 +52,12 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ApkChecksum.html#getInstallerCertificate()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/pm/ApkChecksum.html#getValue()"/>
         /// </summary>
-        public Java.Security.Cert.Certificate InstallerCertificate
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetValue()
         {
-            get { return IExecuteWithSignature<Java.Security.Cert.Certificate>("getInstallerCertificate", "()Ljava/security/cert/Certificate;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ApkChecksum.html#getInstallerPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String InstallerPackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInstallerPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ApkChecksum.html#getSplitName()"/> 
-        /// </summary>
-        public Java.Lang.String SplitName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSplitName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ApkChecksum.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ApkChecksum.html#getValue()"/> 
-        /// </summary>
-        public byte[] Value
-        {
-            get { return IExecuteWithSignatureArray<byte>("getValue", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getValue", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ApkChecksum.html#describeContents()"/>
@@ -93,6 +66,39 @@ namespace Android.Content.Pm
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ApkChecksum.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ApkChecksum.html#getInstallerPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetInstallerPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getInstallerPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ApkChecksum.html#getSplitName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSplitName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSplitName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ApkChecksum.html#getInstallerCertificate()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
+        /// <exception cref="Java.Security.Cert.CertificateException"/>
+        public Java.Security.Cert.Certificate GetInstallerCertificate()
+        {
+            return IExecuteWithSignature<Java.Security.Cert.Certificate>("getInstallerCertificate", "()Ljava/security/cert/Certificate;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ApkChecksum.html#writeToParcel(android.os.Parcel,int)"/>

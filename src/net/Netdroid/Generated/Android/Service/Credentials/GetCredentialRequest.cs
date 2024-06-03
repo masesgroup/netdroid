@@ -61,18 +61,12 @@ namespace Android.Service.Credentials
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/credentials/GetCredentialRequest.html#getCallingAppInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/credentials/GetCredentialRequest.html#getCallingAppInfo()"/>
         /// </summary>
-        public Android.Service.Credentials.CallingAppInfo CallingAppInfo
+        /// <returns><see cref="Android.Service.Credentials.CallingAppInfo"/></returns>
+        public Android.Service.Credentials.CallingAppInfo GetCallingAppInfo()
         {
-            get { return IExecuteWithSignature<Android.Service.Credentials.CallingAppInfo>("getCallingAppInfo", "()Landroid/service/credentials/CallingAppInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/credentials/GetCredentialRequest.html#getCredentialOptions()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Credentials.CredentialOption> CredentialOptions
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Credentials.CredentialOption>>("getCredentialOptions", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Service.Credentials.CallingAppInfo>("getCallingAppInfo", "()Landroid/service/credentials/CallingAppInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/credentials/GetCredentialRequest.html#describeContents()"/>
@@ -81,6 +75,14 @@ namespace Android.Service.Credentials
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/credentials/GetCredentialRequest.html#getCredentialOptions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Credentials.CredentialOption> GetCredentialOptions()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Credentials.CredentialOption>>("getCredentialOptions", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/credentials/GetCredentialRequest.html#writeToParcel(android.os.Parcel,int)"/>

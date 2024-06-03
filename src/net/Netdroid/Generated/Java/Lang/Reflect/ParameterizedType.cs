@@ -64,25 +64,28 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/ParameterizedType.html#getActualTypeArguments()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/ParameterizedType.html#getOwnerType()"/>
         /// </summary>
-        public Java.Lang.Reflect.Type[] ActualTypeArguments
+        /// <returns><see cref="Java.Lang.Reflect.Type"/></returns>
+        public Java.Lang.Reflect.Type GetOwnerType()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getActualTypeArguments", "()[Ljava/lang/reflect/Type;"); }
+            return IExecuteWithSignature<Java.Lang.Reflect.Type>("getOwnerType", "()Ljava/lang/reflect/Type;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/ParameterizedType.html#getOwnerType()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/ParameterizedType.html#getRawType()"/>
         /// </summary>
-        public Java.Lang.Reflect.Type OwnerType
+        /// <returns><see cref="Java.Lang.Reflect.Type"/></returns>
+        public Java.Lang.Reflect.Type GetRawType()
         {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Type>("getOwnerType", "()Ljava/lang/reflect/Type;"); }
+            return IExecuteWithSignature<Java.Lang.Reflect.Type>("getRawType", "()Ljava/lang/reflect/Type;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/ParameterizedType.html#getRawType()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/ParameterizedType.html#getActualTypeArguments()"/>
         /// </summary>
-        public Java.Lang.Reflect.Type RawType
+        /// <returns><see cref="Java.Lang.Reflect.Type"/></returns>
+        public Java.Lang.Reflect.Type[] GetActualTypeArguments()
         {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Type>("getRawType", "()Ljava/lang/reflect/Type;"); }
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getActualTypeArguments", "()[Ljava/lang/reflect/Type;");
         }
 
         #endregion

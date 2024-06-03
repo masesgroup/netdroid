@@ -54,11 +54,12 @@ namespace Android.Graphics.Drawable
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableWrapper.html#getDrawable()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableWrapper.html#setDrawable(android.graphics.drawable.Drawable)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableWrapper.html#getDrawable()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable Drawable
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetDrawable()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawable", "()Landroid/graphics/drawable/Drawable;"); } set { IExecuteWithSignature("setDrawable", "(Landroid/graphics/drawable/Drawable;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawable", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableWrapper.html#invalidateDrawable(android.graphics.drawable.Drawable)"/>
@@ -77,6 +78,14 @@ namespace Android.Graphics.Drawable
         public void ScheduleDrawable(Android.Graphics.Drawable.Drawable arg0, Java.Lang.Runnable arg1, long arg2)
         {
             IExecute("scheduleDrawable", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableWrapper.html#setDrawable(android.graphics.drawable.Drawable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
+        public void SetDrawable(Android.Graphics.Drawable.Drawable arg0)
+        {
+            IExecuteWithSignature("setDrawable", "(Landroid/graphics/drawable/Drawable;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableWrapper.html#unscheduleDrawable(android.graphics.drawable.Drawable,java.lang.Runnable)"/>

@@ -52,19 +52,20 @@ namespace Android.View.Textclassifier
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassificationSessionId.html#getValue()"/> 
-        /// </summary>
-        public Java.Lang.String Value
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassificationSessionId.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassificationSessionId.html#getValue()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetValue()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassificationSessionId.html#writeToParcel(android.os.Parcel,int)"/>

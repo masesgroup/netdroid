@@ -46,39 +46,44 @@ namespace Android.Mtp
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpStorageInfo.html#getDescription()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpStorageInfo.html#getStorageId()"/>
         /// </summary>
-        public Java.Lang.String Description
+        /// <returns><see cref="int"/></returns>
+        public int GetStorageId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<int>("getStorageId", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpStorageInfo.html#getFreeSpace()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpStorageInfo.html#getDescription()"/>
         /// </summary>
-        public long FreeSpace
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDescription()
         {
-            get { return IExecuteWithSignature<long>("getFreeSpace", "()J"); }
+            return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpStorageInfo.html#getMaxCapacity()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpStorageInfo.html#getVolumeIdentifier()"/>
         /// </summary>
-        public long MaxCapacity
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetVolumeIdentifier()
         {
-            get { return IExecuteWithSignature<long>("getMaxCapacity", "()J"); }
+            return IExecuteWithSignature<Java.Lang.String>("getVolumeIdentifier", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpStorageInfo.html#getStorageId()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpStorageInfo.html#getFreeSpace()"/>
         /// </summary>
-        public int StorageId
+        /// <returns><see cref="long"/></returns>
+        public long GetFreeSpace()
         {
-            get { return IExecuteWithSignature<int>("getStorageId", "()I"); }
+            return IExecuteWithSignature<long>("getFreeSpace", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpStorageInfo.html#getVolumeIdentifier()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpStorageInfo.html#getMaxCapacity()"/>
         /// </summary>
-        public Java.Lang.String VolumeIdentifier
+        /// <returns><see cref="long"/></returns>
+        public long GetMaxCapacity()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVolumeIdentifier", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<long>("getMaxCapacity", "()J");
         }
 
         #endregion

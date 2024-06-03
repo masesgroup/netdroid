@@ -42,7 +42,7 @@ namespace Java.Time
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Clock.html#fixed(java.time.Instant,java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Clock.html#fixed(java.time.Instant,java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
         /// <param name="arg1"><see cref="Java.Time.ZoneId"/></param>
@@ -52,7 +52,7 @@ namespace Java.Time
             return SExecute<Java.Time.Clock>(LocalBridgeClazz, "fixed", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Clock.html#offset(java.time.Clock,java.time.Duration)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Clock.html#offset(java.time.Clock,java.time.Duration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Clock"/></param>
         /// <param name="arg1"><see cref="Java.Time.Duration"/></param>
@@ -62,7 +62,7 @@ namespace Java.Time
             return SExecute<Java.Time.Clock>(LocalBridgeClazz, "offset", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Clock.html#system(java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Clock.html#system(java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
         /// <returns><see cref="Java.Time.Clock"/></returns>
@@ -71,7 +71,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.Clock>(LocalBridgeClazz, "system", "(Ljava/time/ZoneId;)Ljava/time/Clock;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Clock.html#systemDefaultZone()"/>
+        /// <see href="https://developer.android.com/reference/java/time/Clock.html#systemDefaultZone()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Clock"/></returns>
         public static Java.Time.Clock SystemDefaultZone()
@@ -79,7 +79,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.Clock>(LocalBridgeClazz, "systemDefaultZone", "()Ljava/time/Clock;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Clock.html#systemUTC()"/>
+        /// <see href="https://developer.android.com/reference/java/time/Clock.html#systemUTC()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Clock"/></returns>
         public static Java.Time.Clock SystemUTC()
@@ -87,7 +87,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.Clock>(LocalBridgeClazz, "systemUTC", "()Ljava/time/Clock;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Clock.html#tick(java.time.Clock,java.time.Duration)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Clock.html#tick(java.time.Clock,java.time.Duration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Clock"/></param>
         /// <param name="arg1"><see cref="Java.Time.Duration"/></param>
@@ -97,7 +97,7 @@ namespace Java.Time
             return SExecute<Java.Time.Clock>(LocalBridgeClazz, "tick", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Clock.html#tickMillis(java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Clock.html#tickMillis(java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
         /// <returns><see cref="Java.Time.Clock"/></returns>
@@ -106,7 +106,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.Clock>(LocalBridgeClazz, "tickMillis", "(Ljava/time/ZoneId;)Ljava/time/Clock;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Clock.html#tickMinutes(java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Clock.html#tickMinutes(java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
         /// <returns><see cref="Java.Time.Clock"/></returns>
@@ -115,7 +115,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.Clock>(LocalBridgeClazz, "tickMinutes", "(Ljava/time/ZoneId;)Ljava/time/Clock;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Clock.html#tickSeconds(java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Clock.html#tickSeconds(java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
         /// <returns><see cref="Java.Time.Clock"/></returns>
@@ -128,14 +128,7 @@ namespace Java.Time
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Clock.html#getZone()"/> 
-        /// </summary>
-        public Java.Time.ZoneId Zone
-        {
-            get { return IExecuteWithSignature<Java.Time.ZoneId>("getZone", "()Ljava/time/ZoneId;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Clock.html#withZone(java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Clock.html#withZone(java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
         /// <returns><see cref="Java.Time.Clock"/></returns>
@@ -144,7 +137,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Clock>("withZone", "(Ljava/time/ZoneId;)Ljava/time/Clock;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Clock.html#instant()"/>
+        /// <see href="https://developer.android.com/reference/java/time/Clock.html#instant()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant Instant()
@@ -152,7 +145,15 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Instant>("instant", "()Ljava/time/Instant;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Clock.html#millis()"/>
+        /// <see href="https://developer.android.com/reference/java/time/Clock.html#getZone()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.ZoneId"/></returns>
+        public Java.Time.ZoneId GetZone()
+        {
+            return IExecuteWithSignature<Java.Time.ZoneId>("getZone", "()Ljava/time/ZoneId;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/Clock.html#millis()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long Millis()

@@ -42,7 +42,7 @@ namespace Java.Security
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/MessageDigest.html#isEqual(byte[],byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#isEqual(byte[],byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -52,7 +52,7 @@ namespace Java.Security
             return SExecute<bool>(LocalBridgeClazz, "isEqual", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/MessageDigest.html#getInstance(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -64,7 +64,7 @@ namespace Java.Security
             return SExecute<Java.Security.MessageDigest>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/MessageDigest.html#getInstance(java.lang.String,java.security.Provider)"/>
+        /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
@@ -75,7 +75,7 @@ namespace Java.Security
             return SExecute<Java.Security.MessageDigest>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/MessageDigest.html#getInstance(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.MessageDigest"/></returns>
@@ -89,28 +89,7 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/MessageDigest.html#getAlgorithm()"/> 
-        /// </summary>
-        public Java.Lang.String Algorithm
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/MessageDigest.html#getDigestLength()"/> 
-        /// </summary>
-        public int DigestLength
-        {
-            get { return IExecuteWithSignature<int>("getDigestLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/MessageDigest.html#getProvider()"/> 
-        /// </summary>
-        public Java.Security.Provider Provider
-        {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/MessageDigest.html#digest()"/>
+        /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#digest()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
         public byte[] Digest()
@@ -118,7 +97,7 @@ namespace Java.Security
             return IExecuteWithSignatureArray<byte>("digest", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/MessageDigest.html#digest(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#digest(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="byte"/></returns>
@@ -127,7 +106,31 @@ namespace Java.Security
             return IExecuteWithSignatureArray<byte>("digest", "([B)[B", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/MessageDigest.html#update(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#getDigestLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDigestLength()
+        {
+            return IExecuteWithSignature<int>("getDigestLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#getAlgorithm()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAlgorithm()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#getProvider()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Provider"/></returns>
+        public Java.Security.Provider GetProvider()
+        {
+            return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#update(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         public void Update(Java.Nio.ByteBuffer arg0)
@@ -135,7 +138,7 @@ namespace Java.Security
             IExecuteWithSignature("update", "(Ljava/nio/ByteBuffer;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/MessageDigest.html#digest(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#digest(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -147,14 +150,14 @@ namespace Java.Security
             return IExecute<int>("digest", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/MessageDigest.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#reset()"/>
         /// </summary>
         public void Reset()
         {
             IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/MessageDigest.html#update(byte)"/>
+        /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#update(byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public void Update(byte arg0)
@@ -162,7 +165,7 @@ namespace Java.Security
             IExecuteWithSignature("update", "(B)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/MessageDigest.html#update(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#update(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -172,7 +175,7 @@ namespace Java.Security
             IExecute("update", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/MessageDigest.html#update(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#update(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public void Update(byte[] arg0)

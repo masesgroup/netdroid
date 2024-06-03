@@ -42,7 +42,7 @@ namespace Java.Lang.Reflect
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Array.html#newInstance(java.lang.Class,int[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Array.html#newInstance(java.lang.Class,int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -54,7 +54,7 @@ namespace Java.Lang.Reflect
             if (arg1.Length == 0) return SExecute(LocalBridgeClazz, "newInstance", arg0); else return SExecute(LocalBridgeClazz, "newInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Array.html#newInstance(java.lang.Class,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Array.html#newInstance(java.lang.Class,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -65,7 +65,7 @@ namespace Java.Lang.Reflect
             return SExecute(LocalBridgeClazz, "newInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Array.html#getBoolean(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Array.html#getBoolean(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -77,7 +77,7 @@ namespace Java.Lang.Reflect
             return SExecute<bool>(LocalBridgeClazz, "getBoolean", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Array.html#getByte(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Array.html#getByte(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -89,7 +89,7 @@ namespace Java.Lang.Reflect
             return SExecute<byte>(LocalBridgeClazz, "getByte", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Array.html#getChar(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Array.html#getChar(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -101,7 +101,7 @@ namespace Java.Lang.Reflect
             return SExecute<char>(LocalBridgeClazz, "getChar", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Array.html#getDouble(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Array.html#getDouble(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -113,7 +113,7 @@ namespace Java.Lang.Reflect
             return SExecute<double>(LocalBridgeClazz, "getDouble", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Array.html#getFloat(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Array.html#getFloat(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -125,7 +125,7 @@ namespace Java.Lang.Reflect
             return SExecute<float>(LocalBridgeClazz, "getFloat", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Array.html#getInt(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Array.html#getInt(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -137,7 +137,7 @@ namespace Java.Lang.Reflect
             return SExecute<int>(LocalBridgeClazz, "getInt", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Array.html#getLength(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Array.html#getLength(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -147,7 +147,7 @@ namespace Java.Lang.Reflect
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getLength", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Array.html#get(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Array.html#get(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -159,7 +159,7 @@ namespace Java.Lang.Reflect
             return SExecute(LocalBridgeClazz, "get", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Array.html#getLong(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Array.html#getLong(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -171,7 +171,7 @@ namespace Java.Lang.Reflect
             return SExecute<long>(LocalBridgeClazz, "getLong", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Array.html#getShort(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Array.html#getShort(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -183,7 +183,7 @@ namespace Java.Lang.Reflect
             return SExecute<short>(LocalBridgeClazz, "getShort", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Array.html#set(java.lang.Object,int,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Array.html#set(java.lang.Object,int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -195,7 +195,7 @@ namespace Java.Lang.Reflect
             SExecute(LocalBridgeClazz, "set", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Array.html#setBoolean(java.lang.Object,int,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Array.html#setBoolean(java.lang.Object,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -207,7 +207,7 @@ namespace Java.Lang.Reflect
             SExecute(LocalBridgeClazz, "setBoolean", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Array.html#setByte(java.lang.Object,int,byte)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Array.html#setByte(java.lang.Object,int,byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -219,7 +219,7 @@ namespace Java.Lang.Reflect
             SExecute(LocalBridgeClazz, "setByte", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Array.html#setChar(java.lang.Object,int,char)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Array.html#setChar(java.lang.Object,int,char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -231,7 +231,7 @@ namespace Java.Lang.Reflect
             SExecute(LocalBridgeClazz, "setChar", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Array.html#setDouble(java.lang.Object,int,double)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Array.html#setDouble(java.lang.Object,int,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -243,7 +243,7 @@ namespace Java.Lang.Reflect
             SExecute(LocalBridgeClazz, "setDouble", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Array.html#setFloat(java.lang.Object,int,float)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Array.html#setFloat(java.lang.Object,int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -255,7 +255,7 @@ namespace Java.Lang.Reflect
             SExecute(LocalBridgeClazz, "setFloat", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Array.html#setInt(java.lang.Object,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Array.html#setInt(java.lang.Object,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -267,7 +267,7 @@ namespace Java.Lang.Reflect
             SExecute(LocalBridgeClazz, "setInt", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Array.html#setLong(java.lang.Object,int,long)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Array.html#setLong(java.lang.Object,int,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -279,7 +279,7 @@ namespace Java.Lang.Reflect
             SExecute(LocalBridgeClazz, "setLong", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Array.html#setShort(java.lang.Object,int,short)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Array.html#setShort(java.lang.Object,int,short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>

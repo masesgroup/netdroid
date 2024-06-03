@@ -46,20 +46,6 @@ namespace Android.Bluetooth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServer.html#getConnectedDevices()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Bluetooth.BluetoothDevice> ConnectedDevices
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothDevice>>("getConnectedDevices", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServer.html#getServices()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Bluetooth.BluetoothGattService> Services
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothGattService>>("getServices", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServer.html#getService(java.util.UUID)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.UUID"/></param>
@@ -94,7 +80,7 @@ namespace Android.Bluetooth
         /// <param name="arg1"><see cref="Android.Bluetooth.BluetoothGattCharacteristic"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool NotifyCharacteristicChanged(Android.Bluetooth.BluetoothDevice arg0, Android.Bluetooth.BluetoothGattCharacteristic arg1, bool arg2)
         {
             return IExecute<bool>("notifyCharacteristicChanged", arg0, arg1, arg2);
@@ -143,6 +129,14 @@ namespace Android.Bluetooth
             return IExecute<int>("notifyCharacteristicChanged", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServer.html#getConnectedDevices()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Bluetooth.BluetoothDevice> GetConnectedDevices()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothDevice>>("getConnectedDevices", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServer.html#getDevicesMatchingConnectionStates(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -150,6 +144,14 @@ namespace Android.Bluetooth
         public Java.Util.List<Android.Bluetooth.BluetoothDevice> GetDevicesMatchingConnectionStates(int[] arg0)
         {
             return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothDevice>>("getDevicesMatchingConnectionStates", "([I)Ljava/util/List;", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServer.html#getServices()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Bluetooth.BluetoothGattService> GetServices()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothGattService>>("getServices", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServer.html#cancelConnection(android.bluetooth.BluetoothDevice)"/>

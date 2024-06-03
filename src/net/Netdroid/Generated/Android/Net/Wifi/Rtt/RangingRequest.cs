@@ -48,44 +48,41 @@ namespace Android.Net.Wifi.Rtt
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingRequest.html#getDefaultRttBurstSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingRequest.html#getDefaultRttBurstSize()"/>
         /// </summary>
-        public static int DefaultRttBurstSize
+        /// <returns><see cref="int"/></returns>
+        public static int GetDefaultRttBurstSize()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getDefaultRttBurstSize", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getDefaultRttBurstSize", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingRequest.html#getMaxPeers()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingRequest.html#getMaxPeers()"/>
         /// </summary>
-        public static int MaxPeers
+        /// <returns><see cref="int"/></returns>
+        public static int GetMaxPeers()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxPeers", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxPeers", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingRequest.html#getMaxRttBurstSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingRequest.html#getMaxRttBurstSize()"/>
         /// </summary>
-        public static int MaxRttBurstSize
+        /// <returns><see cref="int"/></returns>
+        public static int GetMaxRttBurstSize()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxRttBurstSize", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxRttBurstSize", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingRequest.html#getMinRttBurstSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingRequest.html#getMinRttBurstSize()"/>
         /// </summary>
-        public static int MinRttBurstSize
+        /// <returns><see cref="int"/></returns>
+        public static int GetMinRttBurstSize()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMinRttBurstSize", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMinRttBurstSize", "()I");
         }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingRequest.html#getRttBurstSize()"/> 
-        /// </summary>
-        public int RttBurstSize
-        {
-            get { return IExecuteWithSignature<int>("getRttBurstSize", "()I"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingRequest.html#describeContents()"/>
         /// </summary>
@@ -93,6 +90,14 @@ namespace Android.Net.Wifi.Rtt
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingRequest.html#getRttBurstSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRttBurstSize()
+        {
+            return IExecuteWithSignature<int>("getRttBurstSize", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingRequest.html#writeToParcel(android.os.Parcel,int)"/>

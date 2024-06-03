@@ -36,7 +36,7 @@ namespace Android.Renderscript
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Int4(int arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -52,22 +52,22 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Int4.html#w"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int w { get { return IGetField<int>("w"); } set { ISetField("w", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Int4.html#x"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int x { get { return IGetField<int>("x"); } set { ISetField("x", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Int4.html#y"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int y { get { return IGetField<int>("y"); } set { ISetField("y", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Int4.html#z"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int z { get { return IGetField<int>("z"); } set { ISetField("z", value); } }
 
         #endregion

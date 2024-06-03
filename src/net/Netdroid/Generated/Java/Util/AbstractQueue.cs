@@ -50,7 +50,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractQueue.html#element()"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractQueue.html#element()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Element()
@@ -58,7 +58,7 @@ namespace Java.Util
             return IExecuteWithSignature("element", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractQueue.html#remove()"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractQueue.html#remove()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Remove()
@@ -105,7 +105,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractQueue.html#element()"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractQueue.html#element()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Element()
@@ -113,7 +113,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("element", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractQueue.html#remove()"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractQueue.html#remove()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Remove()

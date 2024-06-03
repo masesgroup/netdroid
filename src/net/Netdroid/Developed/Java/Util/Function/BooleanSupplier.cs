@@ -39,6 +39,11 @@ namespace Java.Util.Function
     public class BooleanSupplier : JVMBridgeListener, IBooleanSupplier
     {
         /// <summary>
+        /// Enable/disable handlers initialization, default is <see langword="true"/>
+        /// </summary>
+        protected virtual bool InitHandlers { get; } = true;
+
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => "org.mases.netdroid.developed.java.util.function.BooleanSupplier";

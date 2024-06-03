@@ -52,32 +52,20 @@ namespace Android.Net.Wifi.Aware
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareDataPathSecurityConfig.html#getCipherSuite()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareDataPathSecurityConfig.html#getPmk()"/>
         /// </summary>
-        public int CipherSuite
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetPmk()
         {
-            get { return IExecuteWithSignature<int>("getCipherSuite", "()I"); }
+            return IExecuteWithSignatureArray<byte>("getPmk", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareDataPathSecurityConfig.html#getPmk()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareDataPathSecurityConfig.html#getPmkId()"/>
         /// </summary>
-        public byte[] Pmk
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetPmkId()
         {
-            get { return IExecuteWithSignatureArray<byte>("getPmk", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareDataPathSecurityConfig.html#getPmkId()"/> 
-        /// </summary>
-        public byte[] PmkId
-        {
-            get { return IExecuteWithSignatureArray<byte>("getPmkId", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareDataPathSecurityConfig.html#getPskPassphrase()"/> 
-        /// </summary>
-        public Java.Lang.String PskPassphrase
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPskPassphrase", "()Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<byte>("getPmkId", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareDataPathSecurityConfig.html#describeContents()"/>
@@ -86,6 +74,22 @@ namespace Android.Net.Wifi.Aware
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareDataPathSecurityConfig.html#getCipherSuite()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCipherSuite()
+        {
+            return IExecuteWithSignature<int>("getCipherSuite", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareDataPathSecurityConfig.html#getPskPassphrase()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPskPassphrase()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPskPassphrase", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareDataPathSecurityConfig.html#writeToParcel(android.os.Parcel,int)"/>

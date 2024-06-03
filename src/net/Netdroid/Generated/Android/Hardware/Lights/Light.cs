@@ -58,7 +58,7 @@ namespace Android.Hardware.Lights
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/lights/Light.html#LIGHT_CAPABILITY_RGB"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int LIGHT_CAPABILITY_RGB { get { if (!_LIGHT_CAPABILITY_RGBReady) { _LIGHT_CAPABILITY_RGBContent = SGetField<int>(LocalBridgeClazz, "LIGHT_CAPABILITY_RGB"); _LIGHT_CAPABILITY_RGBReady = true; } return _LIGHT_CAPABILITY_RGBContent; } }
         private static int _LIGHT_CAPABILITY_RGBContent = default;
         private static bool _LIGHT_CAPABILITY_RGBReady = false; // this is used because in case of generics 
@@ -95,34 +95,6 @@ namespace Android.Hardware.Lights
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/lights/Light.html#getId()"/> 
-        /// </summary>
-        public int Id
-        {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/lights/Light.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/lights/Light.html#getOrdinal()"/> 
-        /// </summary>
-        public int Ordinal
-        {
-            get { return IExecuteWithSignature<int>("getOrdinal", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/lights/Light.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/lights/Light.html#hasBrightnessControl()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -145,6 +117,38 @@ namespace Android.Hardware.Lights
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/lights/Light.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/lights/Light.html#getOrdinal()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOrdinal()
+        {
+            return IExecuteWithSignature<int>("getOrdinal", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/lights/Light.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/lights/Light.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/lights/Light.html#writeToParcel(android.os.Parcel,int)"/>

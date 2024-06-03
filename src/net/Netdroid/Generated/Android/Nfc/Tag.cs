@@ -52,18 +52,12 @@ namespace Android.Nfc
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/Tag.html#getId()"/> 
+        /// <see href="https://developer.android.com/reference/android/nfc/Tag.html#getId()"/>
         /// </summary>
-        public byte[] Id
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetId()
         {
-            get { return IExecuteWithSignatureArray<byte>("getId", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/Tag.html#getTechList()"/> 
-        /// </summary>
-        public Java.Lang.String[] TechList
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getTechList", "()[Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<byte>("getId", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/Tag.html#describeContents()"/>
@@ -72,6 +66,14 @@ namespace Android.Nfc
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/Tag.html#getTechList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetTechList()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getTechList", "()[Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/Tag.html#writeToParcel(android.os.Parcel,int)"/>

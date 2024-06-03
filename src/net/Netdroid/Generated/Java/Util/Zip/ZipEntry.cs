@@ -30,7 +30,7 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public ZipEntry(Java.Lang.String arg0)
@@ -38,7 +38,7 @@ namespace Java.Util.Zip
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#%3Cinit%3E(java.util.zip.ZipEntry)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#%3Cinit%3E(java.util.zip.ZipEntry)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Zip.ZipEntry"/></param>
         public ZipEntry(Java.Util.Zip.ZipEntry arg0)
@@ -58,13 +58,13 @@ namespace Java.Util.Zip
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#DEFLATED"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#DEFLATED"/>
         /// </summary>
         public static int DEFLATED { get { if (!_DEFLATEDReady) { _DEFLATEDContent = SGetField<int>(LocalBridgeClazz, "DEFLATED"); _DEFLATEDReady = true; } return _DEFLATEDContent; } }
         private static int _DEFLATEDContent = default;
         private static bool _DEFLATEDReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#STORED"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#STORED"/>
         /// </summary>
         public static int STORED { get { if (!_STOREDReady) { _STOREDContent = SGetField<int>(LocalBridgeClazz, "STORED"); _STOREDReady = true; } return _STOREDContent; } }
         private static int _STOREDContent = default;
@@ -78,91 +78,7 @@ namespace Java.Util.Zip
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#getComment()"/> <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#setComment(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Comment
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getComment", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setComment", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#getCompressedSize()"/> <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#setCompressedSize(long)"/>
-        /// </summary>
-        public long CompressedSize
-        {
-            get { return IExecuteWithSignature<long>("getCompressedSize", "()J"); } set { IExecuteWithSignature("setCompressedSize", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#getCrc()"/> <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#setCrc(long)"/>
-        /// </summary>
-        public long Crc
-        {
-            get { return IExecuteWithSignature<long>("getCrc", "()J"); } set { IExecuteWithSignature("setCrc", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#getCreationTime()"/> 
-        /// </summary>
-        public Java.Nio.File.Attribute.FileTime CreationTime
-        {
-            get { return IExecuteWithSignature<Java.Nio.File.Attribute.FileTime>("getCreationTime", "()Ljava/nio/file/attribute/FileTime;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#getExtra()"/> <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#setExtra(byte[])"/>
-        /// </summary>
-        public byte[] Extra
-        {
-            get { return IExecuteWithSignatureArray<byte>("getExtra", "()[B"); } set { IExecuteWithSignature("setExtra", "([B)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#getLastAccessTime()"/> 
-        /// </summary>
-        public Java.Nio.File.Attribute.FileTime LastAccessTime
-        {
-            get { return IExecuteWithSignature<Java.Nio.File.Attribute.FileTime>("getLastAccessTime", "()Ljava/nio/file/attribute/FileTime;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#getLastModifiedTime()"/> 
-        /// </summary>
-        public Java.Nio.File.Attribute.FileTime LastModifiedTime
-        {
-            get { return IExecuteWithSignature<Java.Nio.File.Attribute.FileTime>("getLastModifiedTime", "()Ljava/nio/file/attribute/FileTime;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#getMethod()"/> <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#setMethod(int)"/>
-        /// </summary>
-        public int Method
-        {
-            get { return IExecuteWithSignature<int>("getMethod", "()I"); } set { IExecuteWithSignature("setMethod", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#getSize()"/> <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#setSize(long)"/>
-        /// </summary>
-        public long Size
-        {
-            get { return IExecuteWithSignature<long>("getSize", "()J"); } set { IExecuteWithSignature("setSize", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#getTime()"/> <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#setTime(long)"/>
-        /// </summary>
-        public long Time
-        {
-            get { return IExecuteWithSignature<long>("getTime", "()J"); } set { IExecuteWithSignature("setTime", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#getTimeLocal()"/> <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#setTimeLocal(java.time.LocalDateTime)"/>
-        /// </summary>
-        public Java.Time.LocalDateTime TimeLocal
-        {
-            get { return IExecuteWithSignature<Java.Time.LocalDateTime>("getTimeLocal", "()Ljava/time/LocalDateTime;"); } set { IExecuteWithSignature("setTimeLocal", "(Ljava/time/LocalDateTime;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#isDirectory()"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#isDirectory()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsDirectory()
@@ -170,7 +86,71 @@ namespace Java.Util.Zip
             return IExecuteWithSignature<bool>("isDirectory", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#setCreationTime(java.nio.file.attribute.FileTime)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#getExtra()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetExtra()
+        {
+            return IExecuteWithSignatureArray<byte>("getExtra", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#getMethod()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMethod()
+        {
+            return IExecuteWithSignature<int>("getMethod", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#getComment()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetComment()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getComment", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#getCreationTime()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
+        public Java.Nio.File.Attribute.FileTime GetCreationTime()
+        {
+            return IExecuteWithSignature<Java.Nio.File.Attribute.FileTime>("getCreationTime", "()Ljava/nio/file/attribute/FileTime;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#getLastAccessTime()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
+        public Java.Nio.File.Attribute.FileTime GetLastAccessTime()
+        {
+            return IExecuteWithSignature<Java.Nio.File.Attribute.FileTime>("getLastAccessTime", "()Ljava/nio/file/attribute/FileTime;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#getLastModifiedTime()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
+        public Java.Nio.File.Attribute.FileTime GetLastModifiedTime()
+        {
+            return IExecuteWithSignature<Java.Nio.File.Attribute.FileTime>("getLastModifiedTime", "()Ljava/nio/file/attribute/FileTime;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#getTimeLocal()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
+        public Java.Time.LocalDateTime GetTimeLocal()
+        {
+            return IExecuteWithSignature<Java.Time.LocalDateTime>("getTimeLocal", "()Ljava/time/LocalDateTime;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#setCreationTime(java.nio.file.attribute.FileTime)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
         /// <returns><see cref="Java.Util.Zip.ZipEntry"/></returns>
@@ -179,7 +159,7 @@ namespace Java.Util.Zip
             return IExecuteWithSignature<Java.Util.Zip.ZipEntry>("setCreationTime", "(Ljava/nio/file/attribute/FileTime;)Ljava/util/zip/ZipEntry;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#setLastAccessTime(java.nio.file.attribute.FileTime)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#setLastAccessTime(java.nio.file.attribute.FileTime)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
         /// <returns><see cref="Java.Util.Zip.ZipEntry"/></returns>
@@ -188,13 +168,109 @@ namespace Java.Util.Zip
             return IExecuteWithSignature<Java.Util.Zip.ZipEntry>("setLastAccessTime", "(Ljava/nio/file/attribute/FileTime;)Ljava/util/zip/ZipEntry;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html#setLastModifiedTime(java.nio.file.attribute.FileTime)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#setLastModifiedTime(java.nio.file.attribute.FileTime)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
         /// <returns><see cref="Java.Util.Zip.ZipEntry"/></returns>
         public Java.Util.Zip.ZipEntry SetLastModifiedTime(Java.Nio.File.Attribute.FileTime arg0)
         {
             return IExecuteWithSignature<Java.Util.Zip.ZipEntry>("setLastModifiedTime", "(Ljava/nio/file/attribute/FileTime;)Ljava/util/zip/ZipEntry;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#getCompressedSize()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetCompressedSize()
+        {
+            return IExecuteWithSignature<long>("getCompressedSize", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#getCrc()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetCrc()
+        {
+            return IExecuteWithSignature<long>("getCrc", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#getSize()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetSize()
+        {
+            return IExecuteWithSignature<long>("getSize", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#getTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTime()
+        {
+            return IExecuteWithSignature<long>("getTime", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#setComment(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetComment(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setComment", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#setCompressedSize(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetCompressedSize(long arg0)
+        {
+            IExecuteWithSignature("setCompressedSize", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#setCrc(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetCrc(long arg0)
+        {
+            IExecuteWithSignature("setCrc", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#setExtra(byte[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        public void SetExtra(byte[] arg0)
+        {
+            IExecuteWithSignature("setExtra", "([B)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#setMethod(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMethod(int arg0)
+        {
+            IExecuteWithSignature("setMethod", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#setSize(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetSize(long arg0)
+        {
+            IExecuteWithSignature("setSize", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#setTime(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetTime(long arg0)
+        {
+            IExecuteWithSignature("setTime", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html#setTimeLocal(java.time.LocalDateTime)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
+        public void SetTimeLocal(Java.Time.LocalDateTime arg0)
+        {
+            IExecuteWithSignature("setTimeLocal", "(Ljava/time/LocalDateTime;)V", arg0);
         }
 
         #endregion

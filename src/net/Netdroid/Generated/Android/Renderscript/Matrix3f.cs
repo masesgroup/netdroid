@@ -33,7 +33,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Matrix3f.html#%3Cinit%3E(float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Matrix3f(float[] arg0)
             : base(arg0)
         {
@@ -55,29 +55,30 @@ namespace Android.Renderscript
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Matrix3f.html#getArray()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public float[] Array
-        {
-            get { return IExecuteWithSignatureArray<float>("getArray", "()[F"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Matrix3f.html#get(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="float"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public float Get(int arg0, int arg1)
         {
             return IExecute<float>("get", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/renderscript/Matrix3f.html#getArray()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        [global::System.Obsolete()]
+        public float[] GetArray()
+        {
+            return IExecuteWithSignatureArray<float>("getArray", "()[F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Matrix3f.html#load(android.renderscript.Matrix3f)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Matrix3f"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Load(Android.Renderscript.Matrix3f arg0)
         {
             IExecuteWithSignature("load", "(Landroid/renderscript/Matrix3f;)V", arg0);
@@ -85,7 +86,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Matrix3f.html#loadIdentity()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void LoadIdentity()
         {
             IExecuteWithSignature("loadIdentity", "()V");
@@ -95,7 +96,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Matrix3f"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Matrix3f"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void LoadMultiply(Android.Renderscript.Matrix3f arg0, Android.Renderscript.Matrix3f arg1)
         {
             IExecute("loadMultiply", arg0, arg1);
@@ -107,7 +108,7 @@ namespace Android.Renderscript
         /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="float"/></param>
         /// <param name="arg3"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void LoadRotate(float arg0, float arg1, float arg2, float arg3)
         {
             IExecute("loadRotate", arg0, arg1, arg2, arg3);
@@ -116,7 +117,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Matrix3f.html#loadRotate(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void LoadRotate(float arg0)
         {
             IExecuteWithSignature("loadRotate", "(F)V", arg0);
@@ -127,7 +128,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void LoadScale(float arg0, float arg1, float arg2)
         {
             IExecute("loadScale", arg0, arg1, arg2);
@@ -137,7 +138,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void LoadScale(float arg0, float arg1)
         {
             IExecute("loadScale", arg0, arg1);
@@ -147,7 +148,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void LoadTranslate(float arg0, float arg1)
         {
             IExecute("loadTranslate", arg0, arg1);
@@ -156,7 +157,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Matrix3f.html#multiply(android.renderscript.Matrix3f)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Matrix3f"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Multiply(Android.Renderscript.Matrix3f arg0)
         {
             IExecuteWithSignature("multiply", "(Landroid/renderscript/Matrix3f;)V", arg0);
@@ -168,7 +169,7 @@ namespace Android.Renderscript
         /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="float"/></param>
         /// <param name="arg3"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Rotate(float arg0, float arg1, float arg2, float arg3)
         {
             IExecute("rotate", arg0, arg1, arg2, arg3);
@@ -177,7 +178,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Matrix3f.html#rotate(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Rotate(float arg0)
         {
             IExecuteWithSignature("rotate", "(F)V", arg0);
@@ -188,7 +189,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Scale(float arg0, float arg1, float arg2)
         {
             IExecute("scale", arg0, arg1, arg2);
@@ -198,7 +199,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Scale(float arg0, float arg1)
         {
             IExecute("scale", arg0, arg1);
@@ -209,7 +210,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Set(int arg0, int arg1, float arg2)
         {
             IExecute("set", arg0, arg1, arg2);
@@ -219,7 +220,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Translate(float arg0, float arg1)
         {
             IExecute("translate", arg0, arg1);
@@ -227,7 +228,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Matrix3f.html#transpose()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Transpose()
         {
             IExecuteWithSignature("transpose", "()V");

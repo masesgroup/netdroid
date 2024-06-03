@@ -52,25 +52,20 @@ namespace Android.Service.Chooser
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserAction.html#getAction()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserAction.html#getAction()"/>
         /// </summary>
-        public Android.App.PendingIntent Action
+        /// <returns><see cref="Android.App.PendingIntent"/></returns>
+        public Android.App.PendingIntent GetAction()
         {
-            get { return IExecuteWithSignature<Android.App.PendingIntent>("getAction", "()Landroid/app/PendingIntent;"); }
+            return IExecuteWithSignature<Android.App.PendingIntent>("getAction", "()Landroid/app/PendingIntent;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserAction.html#getIcon()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserAction.html#getIcon()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Icon Icon
+        /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
+        public Android.Graphics.Drawable.Icon GetIcon()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserAction.html#getLabel()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Label
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserAction.html#describeContents()"/>
@@ -79,6 +74,14 @@ namespace Android.Service.Chooser
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserAction.html#getLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserAction.html#writeToParcel(android.os.Parcel,int)"/>

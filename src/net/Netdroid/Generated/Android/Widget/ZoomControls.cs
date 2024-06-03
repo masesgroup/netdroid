@@ -34,7 +34,7 @@ namespace Android.Widget
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public ZoomControls(Android.Content.Context arg0, Android.Util.AttributeSet arg1)
             : base(arg0, arg1)
         {
@@ -43,7 +43,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/ZoomControls.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public ZoomControls(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -67,7 +67,7 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ZoomControls.html#hide()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Hide()
         {
             IExecuteWithSignature("hide", "()V");
@@ -76,7 +76,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/ZoomControls.html#setIsZoomInEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetIsZoomInEnabled(bool arg0)
         {
             IExecuteWithSignature("setIsZoomInEnabled", "(Z)V", arg0);
@@ -85,7 +85,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/ZoomControls.html#setIsZoomOutEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetIsZoomOutEnabled(bool arg0)
         {
             IExecuteWithSignature("setIsZoomOutEnabled", "(Z)V", arg0);
@@ -94,7 +94,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/ZoomControls.html#setOnZoomInClickListener(android.view.View.OnClickListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View.OnClickListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetOnZoomInClickListener(Android.View.View.OnClickListener arg0)
         {
             IExecuteWithSignature("setOnZoomInClickListener", "(Landroid/view/View$OnClickListener;)V", arg0);
@@ -103,7 +103,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/ZoomControls.html#setOnZoomOutClickListener(android.view.View.OnClickListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View.OnClickListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetOnZoomOutClickListener(Android.View.View.OnClickListener arg0)
         {
             IExecuteWithSignature("setOnZoomOutClickListener", "(Landroid/view/View$OnClickListener;)V", arg0);
@@ -112,7 +112,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/ZoomControls.html#setZoomSpeed(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetZoomSpeed(long arg0)
         {
             IExecuteWithSignature("setZoomSpeed", "(J)V", arg0);
@@ -120,7 +120,7 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ZoomControls.html#show()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Show()
         {
             IExecuteWithSignature("show", "()V");

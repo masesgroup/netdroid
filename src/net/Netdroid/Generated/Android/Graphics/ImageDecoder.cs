@@ -211,39 +211,36 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#getAllocator()"/> <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#setAllocator(int)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#getOnPartialImageListener()"/>
         /// </summary>
-        public int Allocator
+        /// <returns><see cref="Android.Graphics.ImageDecoder.OnPartialImageListener"/></returns>
+        public Android.Graphics.ImageDecoder.OnPartialImageListener GetOnPartialImageListener()
         {
-            get { return IExecuteWithSignature<int>("getAllocator", "()I"); } set { IExecuteWithSignature("setAllocator", "(I)V", value); }
+            return IExecuteWithSignature<Android.Graphics.ImageDecoder.OnPartialImageListener>("getOnPartialImageListener", "()Landroid/graphics/ImageDecoder$OnPartialImageListener;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#getCrop()"/> <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#setCrop(android.graphics.Rect)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#getOnPartialImageListener()"/>
         /// </summary>
-        public Android.Graphics.Rect Crop
+        /// <returns><see cref="Android.Graphics.ImageDecoder.OnPartialImageListener"/></returns>
+        public Android.Graphics.ImageDecoder.OnPartialImageListener GetOnPartialImageListenerDirect()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getCrop", "()Landroid/graphics/Rect;"); } set { IExecuteWithSignature("setCrop", "(Landroid/graphics/Rect;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.ImageDecoder.OnPartialImageListenerDirect, Android.Graphics.ImageDecoder.OnPartialImageListener>("getOnPartialImageListener", "()Landroid/graphics/ImageDecoder$OnPartialImageListener;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#getOnPartialImageListener()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#getPostProcessor()"/>
         /// </summary>
-        public Android.Graphics.ImageDecoder.OnPartialImageListener GetOnPartialImageListener
+        /// <returns><see cref="Android.Graphics.PostProcessor"/></returns>
+        public Android.Graphics.PostProcessor GetPostProcessor()
         {
-            get { return IExecuteWithSignature<Android.Graphics.ImageDecoder.OnPartialImageListener>("getOnPartialImageListener", "()Landroid/graphics/ImageDecoder$OnPartialImageListener;"); }
+            return IExecuteWithSignature<Android.Graphics.PostProcessor>("getPostProcessor", "()Landroid/graphics/PostProcessor;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#getMemorySizePolicy()"/> <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#setMemorySizePolicy(int)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#getCrop()"/>
         /// </summary>
-        public int MemorySizePolicy
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetCrop()
         {
-            get { return IExecuteWithSignature<int>("getMemorySizePolicy", "()I"); } set { IExecuteWithSignature("setMemorySizePolicy", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#getPostProcessor()"/> <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#setPostProcessor(android.graphics.PostProcessor)"/>
-        /// </summary>
-        public Android.Graphics.PostProcessor PostProcessor
-        {
-            get { return IExecuteWithSignature<Android.Graphics.PostProcessor>("getPostProcessor", "()Landroid/graphics/PostProcessor;"); } set { IExecuteWithSignature("setPostProcessor", "(Landroid/graphics/PostProcessor;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Rect>("getCrop", "()Landroid/graphics/Rect;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#isDecodeAsAlphaMaskEnabled()"/>
@@ -270,11 +267,43 @@ namespace Android.Graphics
             return IExecuteWithSignature<bool>("isUnpremultipliedRequired", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#getAllocator()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAllocator()
+        {
+            return IExecuteWithSignature<int>("getAllocator", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#getMemorySizePolicy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMemorySizePolicy()
+        {
+            return IExecuteWithSignature<int>("getMemorySizePolicy", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#close()"/>
         /// </summary>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#setAllocator(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetAllocator(int arg0)
+        {
+            IExecuteWithSignature("setAllocator", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#setCrop(android.graphics.Rect)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
+        public void SetCrop(Android.Graphics.Rect arg0)
+        {
+            IExecuteWithSignature("setCrop", "(Landroid/graphics/Rect;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#setDecodeAsAlphaMaskEnabled(boolean)"/>
@@ -283,6 +312,14 @@ namespace Android.Graphics
         public void SetDecodeAsAlphaMaskEnabled(bool arg0)
         {
             IExecuteWithSignature("setDecodeAsAlphaMaskEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#setMemorySizePolicy(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMemorySizePolicy(int arg0)
+        {
+            IExecuteWithSignature("setMemorySizePolicy", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#setMutableRequired(boolean)"/>
@@ -299,6 +336,14 @@ namespace Android.Graphics
         public void SetOnPartialImageListener(Android.Graphics.ImageDecoder.OnPartialImageListener arg0)
         {
             IExecuteWithSignature("setOnPartialImageListener", "(Landroid/graphics/ImageDecoder$OnPartialImageListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#setPostProcessor(android.graphics.PostProcessor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.PostProcessor"/></param>
+        public void SetPostProcessor(Android.Graphics.PostProcessor arg0)
+        {
+            IExecuteWithSignature("setPostProcessor", "(Landroid/graphics/PostProcessor;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#setTargetColorSpace(android.graphics.ColorSpace)"/>
@@ -389,25 +434,20 @@ namespace Android.Graphics
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.ImageInfo.html#getColorSpace()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.ImageInfo.html#getColorSpace()"/>
             /// </summary>
-            public Android.Graphics.ColorSpace ColorSpace
+            /// <returns><see cref="Android.Graphics.ColorSpace"/></returns>
+            public Android.Graphics.ColorSpace GetColorSpace()
             {
-                get { return IExecuteWithSignature<Android.Graphics.ColorSpace>("getColorSpace", "()Landroid/graphics/ColorSpace;"); }
+                return IExecuteWithSignature<Android.Graphics.ColorSpace>("getColorSpace", "()Landroid/graphics/ColorSpace;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.ImageInfo.html#getMimeType()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.ImageInfo.html#getSize()"/>
             /// </summary>
-            public Java.Lang.String MimeType
+            /// <returns><see cref="Android.Util.Size"/></returns>
+            public Android.Util.Size GetSize()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getMimeType", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.ImageInfo.html#getSize()"/> 
-            /// </summary>
-            public Android.Util.Size Size
-            {
-                get { return IExecuteWithSignature<Android.Util.Size>("getSize", "()Landroid/util/Size;"); }
+                return IExecuteWithSignature<Android.Util.Size>("getSize", "()Landroid/util/Size;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.ImageInfo.html#isAnimated()"/>
@@ -416,6 +456,14 @@ namespace Android.Graphics
             public bool IsAnimated()
             {
                 return IExecuteWithSignature<bool>("isAnimated", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.ImageInfo.html#getMimeType()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetMimeType()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getMimeType", "()Ljava/lang/String;");
             }
 
             #endregion
@@ -453,7 +501,7 @@ namespace Android.Graphics
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onHeaderDecoded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Graphics.ImageDecoder>>>(OnHeaderDecodedEventHandler));
+                AddEventHandler("onHeaderDecoded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Graphics.ImageDecoder>>>(OnHeaderDecodedEventHandler));
 
             }
 
@@ -461,7 +509,7 @@ namespace Android.Graphics
             /// Handler for <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.OnHeaderDecodedListener.html#onHeaderDecoded(android.graphics.ImageDecoder,android.graphics.ImageDecoder.ImageInfo,android.graphics.ImageDecoder.Source)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnHeaderDecoded"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Graphics.ImageDecoder, Android.Graphics.ImageDecoder.ImageInfo, Android.Graphics.ImageDecoder.Source> OnOnHeaderDecoded { get; set; } = null;
+            public global::System.Action<Android.Graphics.ImageDecoder, Android.Graphics.ImageDecoder.ImageInfo, Android.Graphics.ImageDecoder.Source> OnOnHeaderDecoded { get; set; } = null;
 
             void OnHeaderDecodedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Graphics.ImageDecoder>> data)
             {
@@ -556,7 +604,7 @@ namespace Android.Graphics
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onPartialImage", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnPartialImageEventHandler));
+                AddEventHandler("onPartialImage", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnPartialImageEventHandler));
 
             }
 
@@ -564,7 +612,7 @@ namespace Android.Graphics
             /// Handler for <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.OnPartialImageListener.html#onPartialImage(android.graphics.ImageDecoder.DecodeException)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPartialImage"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<MASES.JCOBridge.C2JBridge.JVMBridgeException, bool> OnOnPartialImage { get; set; } = null;
+            public global::System.Func<MASES.JCOBridge.C2JBridge.JVMBridgeException, bool> OnOnPartialImage { get; set; } = null;
 
             void OnPartialImageEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {

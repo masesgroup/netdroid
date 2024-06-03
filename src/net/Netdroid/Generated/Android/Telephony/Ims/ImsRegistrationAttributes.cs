@@ -58,32 +58,12 @@ namespace Android.Telephony.Ims
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsRegistrationAttributes.html#getAttributeFlags()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsRegistrationAttributes.html#getSipDetails()"/>
         /// </summary>
-        public int AttributeFlags
+        /// <returns><see cref="Android.Telephony.Ims.SipDetails"/></returns>
+        public Android.Telephony.Ims.SipDetails GetSipDetails()
         {
-            get { return IExecuteWithSignature<int>("getAttributeFlags", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsRegistrationAttributes.html#getFeatureTags()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> FeatureTags
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getFeatureTags", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsRegistrationAttributes.html#getSipDetails()"/> 
-        /// </summary>
-        public Android.Telephony.Ims.SipDetails SipDetails
-        {
-            get { return IExecuteWithSignature<Android.Telephony.Ims.SipDetails>("getSipDetails", "()Landroid/telephony/ims/SipDetails;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsRegistrationAttributes.html#getTransportType()"/> 
-        /// </summary>
-        public int TransportType
-        {
-            get { return IExecuteWithSignature<int>("getTransportType", "()I"); }
+            return IExecuteWithSignature<Android.Telephony.Ims.SipDetails>("getSipDetails", "()Landroid/telephony/ims/SipDetails;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsRegistrationAttributes.html#describeContents()"/>
@@ -92,6 +72,30 @@ namespace Android.Telephony.Ims
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsRegistrationAttributes.html#getAttributeFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAttributeFlags()
+        {
+            return IExecuteWithSignature<int>("getAttributeFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsRegistrationAttributes.html#getTransportType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTransportType()
+        {
+            return IExecuteWithSignature<int>("getTransportType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsRegistrationAttributes.html#getFeatureTags()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetFeatureTags()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getFeatureTags", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsRegistrationAttributes.html#writeToParcel(android.os.Parcel,int)"/>

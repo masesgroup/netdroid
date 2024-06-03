@@ -30,7 +30,7 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/ChoiceFormat.html#%3Cinit%3E(double[],java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/java/text/ChoiceFormat.html#%3Cinit%3E(double[],java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -39,7 +39,7 @@ namespace Java.Text
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/ChoiceFormat.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/text/ChoiceFormat.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public ChoiceFormat(Java.Lang.String arg0)
@@ -59,7 +59,7 @@ namespace Java.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/ChoiceFormat.html#nextDouble(double,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/text/ChoiceFormat.html#nextDouble(double,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -69,7 +69,7 @@ namespace Java.Text
             return SExecute<double>(LocalBridgeClazz, "nextDouble", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/ChoiceFormat.html#nextDouble(double)"/>
+        /// <see href="https://developer.android.com/reference/java/text/ChoiceFormat.html#nextDouble(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="double"/></returns>
@@ -78,7 +78,7 @@ namespace Java.Text
             return SExecuteWithSignature<double>(LocalBridgeClazz, "nextDouble", "(D)D", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/ChoiceFormat.html#previousDouble(double)"/>
+        /// <see href="https://developer.android.com/reference/java/text/ChoiceFormat.html#previousDouble(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="double"/></returns>
@@ -91,21 +91,23 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/ChoiceFormat.html#getFormats()"/> 
+        /// <see href="https://developer.android.com/reference/java/text/ChoiceFormat.html#getLimits()"/>
         /// </summary>
-        public object[] Formats
+        /// <returns><see cref="double"/></returns>
+        public double[] GetLimits()
         {
-            get { return IExecuteWithSignatureArray<object>("getFormats", "()[Ljava/lang/Object;"); }
+            return IExecuteWithSignatureArray<double>("getLimits", "()[D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/ChoiceFormat.html#getLimits()"/> 
+        /// <see href="https://developer.android.com/reference/java/text/ChoiceFormat.html#getFormats()"/>
         /// </summary>
-        public double[] Limits
+        /// <returns><see cref="object"/></returns>
+        public object[] GetFormats()
         {
-            get { return IExecuteWithSignatureArray<double>("getLimits", "()[D"); }
+            return IExecuteWithSignatureArray<object>("getFormats", "()[Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/ChoiceFormat.html#toPattern()"/>
+        /// <see href="https://developer.android.com/reference/java/text/ChoiceFormat.html#toPattern()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToPattern()
@@ -113,7 +115,7 @@ namespace Java.Text
             return IExecuteWithSignature<Java.Lang.String>("toPattern", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/ChoiceFormat.html#applyPattern(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/text/ChoiceFormat.html#applyPattern(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void ApplyPattern(Java.Lang.String arg0)
@@ -121,7 +123,7 @@ namespace Java.Text
             IExecuteWithSignature("applyPattern", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/ChoiceFormat.html#setChoices(double[],java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/java/text/ChoiceFormat.html#setChoices(double[],java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>

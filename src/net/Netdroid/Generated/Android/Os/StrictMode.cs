@@ -42,20 +42,6 @@ namespace Android.Os
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/StrictMode.html#getThreadPolicy()"/> 
-        /// </summary>
-        public static Android.Os.StrictMode.ThreadPolicy GetThreadPolicy
-        {
-            get { return SExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy>(LocalBridgeClazz, "getThreadPolicy", "()Landroid/os/StrictMode$ThreadPolicy;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/StrictMode.html#getVmPolicy()"/> 
-        /// </summary>
-        public static Android.Os.StrictMode.VmPolicy GetVmPolicy
-        {
-            get { return SExecuteWithSignature<Android.Os.StrictMode.VmPolicy>(LocalBridgeClazz, "getVmPolicy", "()Landroid/os/StrictMode$VmPolicy;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/StrictMode.html#allowThreadDiskReads()"/>
         /// </summary>
         /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy"/></returns>
@@ -70,6 +56,22 @@ namespace Android.Os
         public static Android.Os.StrictMode.ThreadPolicy AllowThreadDiskWrites()
         {
             return SExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy>(LocalBridgeClazz, "allowThreadDiskWrites", "()Landroid/os/StrictMode$ThreadPolicy;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/StrictMode.html#getThreadPolicy()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy"/></returns>
+        public static Android.Os.StrictMode.ThreadPolicy GetThreadPolicy()
+        {
+            return SExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy>(LocalBridgeClazz, "getThreadPolicy", "()Landroid/os/StrictMode$ThreadPolicy;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/StrictMode.html#getVmPolicy()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.StrictMode.VmPolicy"/></returns>
+        public static Android.Os.StrictMode.VmPolicy GetVmPolicy()
+        {
+            return SExecuteWithSignature<Android.Os.StrictMode.VmPolicy>(LocalBridgeClazz, "getVmPolicy", "()Landroid/os/StrictMode$VmPolicy;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/StrictMode.html#enableDefaults()"/>
@@ -135,7 +137,7 @@ namespace Android.Os
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onThreadViolation", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnThreadViolationEventHandler));
+                AddEventHandler("onThreadViolation", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnThreadViolationEventHandler));
 
             }
 
@@ -143,7 +145,7 @@ namespace Android.Os
             /// Handler for <see href="https://developer.android.com/reference/android/os/StrictMode.OnThreadViolationListener.html#onThreadViolation(android.os.strictmode.Violation)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnThreadViolation"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnOnThreadViolation { get; set; } = null;
+            public global::System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnOnThreadViolation { get; set; } = null;
 
             void OnThreadViolationEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {
@@ -234,7 +236,7 @@ namespace Android.Os
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onVmViolation", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnVmViolationEventHandler));
+                AddEventHandler("onVmViolation", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnVmViolationEventHandler));
 
             }
 
@@ -242,7 +244,7 @@ namespace Android.Os
             /// Handler for <see href="https://developer.android.com/reference/android/os/StrictMode.OnVmViolationListener.html#onVmViolation(android.os.strictmode.Violation)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnVmViolation"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnOnVmViolation { get; set; } = null;
+            public global::System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnOnVmViolation { get; set; } = null;
 
             void OnVmViolationEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {

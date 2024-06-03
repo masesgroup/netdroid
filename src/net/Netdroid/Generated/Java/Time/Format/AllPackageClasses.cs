@@ -28,7 +28,7 @@ namespace Java.Time.Format
 {
     #region DateTimeFormatter
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatter.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatter.html"/>
     /// </summary>
     public partial class DateTimeFormatter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DateTimeFormatter>
     {
@@ -72,7 +72,7 @@ namespace Java.Time.Format
 
     #region DateTimeFormatterBuilder
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html"/>
     /// </summary>
     public partial class DateTimeFormatterBuilder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DateTimeFormatterBuilder>
     {
@@ -116,7 +116,7 @@ namespace Java.Time.Format
 
     #region DateTimeParseException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeParseException.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/format/DateTimeParseException.html"/>
     /// </summary>
     public partial class DateTimeParseException : Java.Time.DateTimeException
     {
@@ -133,7 +133,7 @@ namespace Java.Time.Format
 
     #region DecimalStyle
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/format/DecimalStyle.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/format/DecimalStyle.html"/>
     /// </summary>
     public partial class DecimalStyle : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DecimalStyle>
     {
@@ -177,7 +177,7 @@ namespace Java.Time.Format
 
     #region FormatStyle
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/format/FormatStyle.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/format/FormatStyle.html"/>
     /// </summary>
     public partial class FormatStyle : Java.Lang.Enum<Java.Time.Format.FormatStyle>
     {
@@ -221,7 +221,7 @@ namespace Java.Time.Format
 
     #region ResolverStyle
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/format/ResolverStyle.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/format/ResolverStyle.html"/>
     /// </summary>
     public partial class ResolverStyle : Java.Lang.Enum<Java.Time.Format.ResolverStyle>
     {
@@ -265,7 +265,7 @@ namespace Java.Time.Format
 
     #region SignStyle
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/format/SignStyle.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/format/SignStyle.html"/>
     /// </summary>
     public partial class SignStyle : Java.Lang.Enum<Java.Time.Format.SignStyle>
     {
@@ -309,7 +309,7 @@ namespace Java.Time.Format
 
     #region TextStyle
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/format/TextStyle.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/format/TextStyle.html"/>
     /// </summary>
     public partial class TextStyle : Java.Lang.Enum<Java.Time.Format.TextStyle>
     {

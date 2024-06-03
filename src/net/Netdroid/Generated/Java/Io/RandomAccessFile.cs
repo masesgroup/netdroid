@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#%3Cinit%3E(java.io.File,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#%3Cinit%3E(java.io.File,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -40,7 +40,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -78,28 +78,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#getChannel()"/> 
-        /// </summary>
-        public Java.Nio.Channels.FileChannel Channel
-        {
-            get { return IExecuteWithSignature<Java.Nio.Channels.FileChannel>("getChannel", "()Ljava/nio/channels/FileChannel;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#getFD()"/> 
-        /// </summary>
-        public Java.Io.FileDescriptor FD
-        {
-            get { return IExecuteWithSignature<Java.Io.FileDescriptor>("getFD", "()Ljava/io/FileDescriptor;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#getFilePointer()"/> 
-        /// </summary>
-        public long FilePointer
-        {
-            get { return IExecuteWithSignature<long>("getFilePointer", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#readBoolean()"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#readBoolean()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -108,7 +87,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("readBoolean", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#readByte()"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#readByte()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -117,7 +96,7 @@ namespace Java.Io
             return IExecuteWithSignature<byte>("readByte", "()B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#readChar()"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#readChar()"/>
         /// </summary>
         /// <returns><see cref="char"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -126,7 +105,7 @@ namespace Java.Io
             return IExecuteWithSignature<char>("readChar", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#readDouble()"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#readDouble()"/>
         /// </summary>
         /// <returns><see cref="double"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -135,7 +114,7 @@ namespace Java.Io
             return IExecuteWithSignature<double>("readDouble", "()D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#readFloat()"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#readFloat()"/>
         /// </summary>
         /// <returns><see cref="float"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -144,7 +123,7 @@ namespace Java.Io
             return IExecuteWithSignature<float>("readFloat", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#readInt()"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#readInt()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -153,7 +132,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("readInt", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#readUnsignedByte()"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#readUnsignedByte()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -162,7 +141,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("readUnsignedByte", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#readUnsignedShort()"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#readUnsignedShort()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -171,7 +150,16 @@ namespace Java.Io
             return IExecuteWithSignature<int>("readUnsignedShort", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#readLine()"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#getFD()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.FileDescriptor"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Io.FileDescriptor GetFD()
+        {
+            return IExecuteWithSignature<Java.Io.FileDescriptor>("getFD", "()Ljava/io/FileDescriptor;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#readLine()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -180,7 +168,7 @@ namespace Java.Io
             return IExecuteWithSignature<Java.Lang.String>("readLine", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#readUTF()"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#readUTF()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -189,7 +177,15 @@ namespace Java.Io
             return IExecuteWithSignature<Java.Lang.String>("readUTF", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#readLong()"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#getChannel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Nio.Channels.FileChannel"/></returns>
+        public Java.Nio.Channels.FileChannel GetChannel()
+        {
+            return IExecuteWithSignature<Java.Nio.Channels.FileChannel>("getChannel", "()Ljava/nio/channels/FileChannel;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#readLong()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -198,7 +194,7 @@ namespace Java.Io
             return IExecuteWithSignature<long>("readLong", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#readShort()"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#readShort()"/>
         /// </summary>
         /// <returns><see cref="short"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -207,7 +203,7 @@ namespace Java.Io
             return IExecuteWithSignature<short>("readShort", "()S");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#readFully(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#readFully(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -218,7 +214,7 @@ namespace Java.Io
             IExecute("readFully", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#readFully(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#readFully(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -227,7 +223,7 @@ namespace Java.Io
             IExecuteWithSignature("readFully", "([B)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#writeBoolean(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#writeBoolean(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -236,7 +232,7 @@ namespace Java.Io
             IExecuteWithSignature("writeBoolean", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#writeByte(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#writeByte(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -245,7 +241,7 @@ namespace Java.Io
             IExecuteWithSignature("writeByte", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#writeBytes(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#writeBytes(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -254,7 +250,7 @@ namespace Java.Io
             IExecuteWithSignature("writeBytes", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#writeChar(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#writeChar(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -263,7 +259,7 @@ namespace Java.Io
             IExecuteWithSignature("writeChar", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#writeChars(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#writeChars(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -272,7 +268,7 @@ namespace Java.Io
             IExecuteWithSignature("writeChars", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#writeDouble(double)"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#writeDouble(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -281,7 +277,7 @@ namespace Java.Io
             IExecuteWithSignature("writeDouble", "(D)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#writeFloat(float)"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#writeFloat(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -290,7 +286,7 @@ namespace Java.Io
             IExecuteWithSignature("writeFloat", "(F)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#writeInt(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#writeInt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -299,7 +295,7 @@ namespace Java.Io
             IExecuteWithSignature("writeInt", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#writeLong(long)"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#writeLong(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -308,7 +304,7 @@ namespace Java.Io
             IExecuteWithSignature("writeLong", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#writeShort(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#writeShort(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -317,7 +313,7 @@ namespace Java.Io
             IExecuteWithSignature("writeShort", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#writeUTF(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#writeUTF(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -326,7 +322,7 @@ namespace Java.Io
             IExecuteWithSignature("writeUTF", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#read()"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#read()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -335,7 +331,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("read", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#read(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#read(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -347,7 +343,7 @@ namespace Java.Io
             return IExecute<int>("read", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#read(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#read(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="int"/></returns>
@@ -357,7 +353,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("read", "([B)I", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#skipBytes(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#skipBytes(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -367,7 +363,16 @@ namespace Java.Io
             return IExecuteWithSignature<int>("skipBytes", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#length()"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#getFilePointer()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public long GetFilePointer()
+        {
+            return IExecuteWithSignature<long>("getFilePointer", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#length()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -376,7 +381,7 @@ namespace Java.Io
             return IExecuteWithSignature<long>("length", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#setLength(long)"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#setLength(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -385,7 +390,7 @@ namespace Java.Io
             IExecuteWithSignature("setLength", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
@@ -393,7 +398,7 @@ namespace Java.Io
             IExecuteWithSignature("close", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#seek(long)"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#seek(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -402,7 +407,7 @@ namespace Java.Io
             IExecuteWithSignature("seek", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#write(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#write(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -413,7 +418,7 @@ namespace Java.Io
             IExecute("write", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#write(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#write(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -422,7 +427,7 @@ namespace Java.Io
             IExecuteWithSignature("write", "([B)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html#write(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#write(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>

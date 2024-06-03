@@ -60,7 +60,7 @@ namespace Android.Bluetooth
         /// </summary>
         /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothGatt"/></param>
         /// <param name="arg1"><see cref="Android.Bluetooth.BluetoothGattCharacteristic"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnCharacteristicChanged(Android.Bluetooth.BluetoothGatt arg0, Android.Bluetooth.BluetoothGattCharacteristic arg1)
         {
             IExecute("onCharacteristicChanged", arg0, arg1);
@@ -82,7 +82,7 @@ namespace Android.Bluetooth
         /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothGatt"/></param>
         /// <param name="arg1"><see cref="Android.Bluetooth.BluetoothGattCharacteristic"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnCharacteristicRead(Android.Bluetooth.BluetoothGatt arg0, Android.Bluetooth.BluetoothGattCharacteristic arg1, int arg2)
         {
             IExecute("onCharacteristicRead", arg0, arg1, arg2);
@@ -124,7 +124,7 @@ namespace Android.Bluetooth
         /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothGatt"/></param>
         /// <param name="arg1"><see cref="Android.Bluetooth.BluetoothGattDescriptor"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnDescriptorRead(Android.Bluetooth.BluetoothGatt arg0, Android.Bluetooth.BluetoothGattDescriptor arg1, int arg2)
         {
             IExecute("onDescriptorRead", arg0, arg1, arg2);

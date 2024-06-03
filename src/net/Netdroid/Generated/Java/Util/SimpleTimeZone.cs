@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SimpleTimeZone.html#%3Cinit%3E(int,java.lang.String,int,int,int,int,int,int,int,int,int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SimpleTimeZone.html#%3Cinit%3E(int,java.lang.String,int,int,int,int,int,int,int,int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -50,7 +50,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SimpleTimeZone.html#%3Cinit%3E(int,java.lang.String,int,int,int,int,int,int,int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SimpleTimeZone.html#%3Cinit%3E(int,java.lang.String,int,int,int,int,int,int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -68,7 +68,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SimpleTimeZone.html#%3Cinit%3E(int,java.lang.String,int,int,int,int,int,int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SimpleTimeZone.html#%3Cinit%3E(int,java.lang.String,int,int,int,int,int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -85,7 +85,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SimpleTimeZone.html#%3Cinit%3E(int,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SimpleTimeZone.html#%3Cinit%3E(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -102,19 +102,19 @@ namespace Java.Util
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SimpleTimeZone.html#STANDARD_TIME"/>
+        /// <see href="https://developer.android.com/reference/java/util/SimpleTimeZone.html#STANDARD_TIME"/>
         /// </summary>
         public static int STANDARD_TIME { get { if (!_STANDARD_TIMEReady) { _STANDARD_TIMEContent = SGetField<int>(LocalBridgeClazz, "STANDARD_TIME"); _STANDARD_TIMEReady = true; } return _STANDARD_TIMEContent; } }
         private static int _STANDARD_TIMEContent = default;
         private static bool _STANDARD_TIMEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SimpleTimeZone.html#UTC_TIME"/>
+        /// <see href="https://developer.android.com/reference/java/util/SimpleTimeZone.html#UTC_TIME"/>
         /// </summary>
         public static int UTC_TIME { get { if (!_UTC_TIMEReady) { _UTC_TIMEContent = SGetField<int>(LocalBridgeClazz, "UTC_TIME"); _UTC_TIMEReady = true; } return _UTC_TIMEContent; } }
         private static int _UTC_TIMEContent = default;
         private static bool _UTC_TIMEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SimpleTimeZone.html#WALL_TIME"/>
+        /// <see href="https://developer.android.com/reference/java/util/SimpleTimeZone.html#WALL_TIME"/>
         /// </summary>
         public static int WALL_TIME { get { if (!_WALL_TIMEReady) { _WALL_TIMEContent = SGetField<int>(LocalBridgeClazz, "WALL_TIME"); _WALL_TIMEReady = true; } return _WALL_TIMEContent; } }
         private static int _WALL_TIMEContent = default;
@@ -128,7 +128,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SimpleTimeZone.html#setDSTSavings(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SimpleTimeZone.html#setDSTSavings(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void SetDSTSavings(int arg0)
@@ -136,7 +136,7 @@ namespace Java.Util
             IExecuteWithSignature("setDSTSavings", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SimpleTimeZone.html#setEndRule(int,int,int,int,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SimpleTimeZone.html#setEndRule(int,int,int,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -148,7 +148,7 @@ namespace Java.Util
             IExecute("setEndRule", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SimpleTimeZone.html#setEndRule(int,int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SimpleTimeZone.html#setEndRule(int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -159,7 +159,7 @@ namespace Java.Util
             IExecute("setEndRule", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SimpleTimeZone.html#setEndRule(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SimpleTimeZone.html#setEndRule(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -169,7 +169,7 @@ namespace Java.Util
             IExecute("setEndRule", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SimpleTimeZone.html#setStartRule(int,int,int,int,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SimpleTimeZone.html#setStartRule(int,int,int,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -181,7 +181,7 @@ namespace Java.Util
             IExecute("setStartRule", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SimpleTimeZone.html#setStartRule(int,int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SimpleTimeZone.html#setStartRule(int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -192,7 +192,7 @@ namespace Java.Util
             IExecute("setStartRule", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SimpleTimeZone.html#setStartRule(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SimpleTimeZone.html#setStartRule(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -202,7 +202,7 @@ namespace Java.Util
             IExecute("setStartRule", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SimpleTimeZone.html#setStartYear(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SimpleTimeZone.html#setStartYear(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void SetStartYear(int arg0)

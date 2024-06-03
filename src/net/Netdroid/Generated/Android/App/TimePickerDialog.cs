@@ -127,7 +127,7 @@ namespace Android.App
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onTimeSet", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.TimePicker>>>(OnTimeSetEventHandler));
+                AddEventHandler("onTimeSet", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.TimePicker>>>(OnTimeSetEventHandler));
 
             }
 
@@ -135,7 +135,7 @@ namespace Android.App
             /// Handler for <see href="https://developer.android.com/reference/android/app/TimePickerDialog.OnTimeSetListener.html#onTimeSet(android.widget.TimePicker,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTimeSet"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Widget.TimePicker, int, int> OnOnTimeSet { get; set; } = null;
+            public global::System.Action<Android.Widget.TimePicker, int, int> OnOnTimeSet { get; set; } = null;
 
             void OnTimeSetEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.TimePicker>> data)
             {

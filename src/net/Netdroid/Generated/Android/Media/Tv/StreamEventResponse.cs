@@ -65,25 +65,28 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/StreamEventResponse.html#getData()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/StreamEventResponse.html#getData()"/>
         /// </summary>
-        public byte[] Data
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetData()
         {
-            get { return IExecuteWithSignatureArray<byte>("getData", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getData", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/StreamEventResponse.html#getEventId()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/StreamEventResponse.html#getEventId()"/>
         /// </summary>
-        public int EventId
+        /// <returns><see cref="int"/></returns>
+        public int GetEventId()
         {
-            get { return IExecuteWithSignature<int>("getEventId", "()I"); }
+            return IExecuteWithSignature<int>("getEventId", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/StreamEventResponse.html#getNptMillis()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/StreamEventResponse.html#getNptMillis()"/>
         /// </summary>
-        public long NptMillis
+        /// <returns><see cref="long"/></returns>
+        public long GetNptMillis()
         {
-            get { return IExecuteWithSignature<long>("getNptMillis", "()J"); }
+            return IExecuteWithSignature<long>("getNptMillis", "()J");
         }
 
         #endregion

@@ -46,7 +46,7 @@ namespace Java.Nio
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#allocate(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#allocate(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
@@ -55,7 +55,7 @@ namespace Java.Nio
             return SExecuteWithSignature<Java.Nio.FloatBuffer>(LocalBridgeClazz, "allocate", "(I)Ljava/nio/FloatBuffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#wrap(float[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#wrap(float[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -66,7 +66,7 @@ namespace Java.Nio
             return SExecute<Java.Nio.FloatBuffer>(LocalBridgeClazz, "wrap", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#wrap(float[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#wrap(float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
@@ -79,7 +79,7 @@ namespace Java.Nio
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#get()"/>
         /// </summary>
         /// <returns><see cref="float"/></returns>
         public float Get()
@@ -87,7 +87,7 @@ namespace Java.Nio
             return IExecuteWithSignature<float>("get", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#get(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#get(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="float"/></returns>
@@ -96,7 +96,7 @@ namespace Java.Nio
             return IExecuteWithSignature<float>("get", "(I)F", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#order()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#order()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
         public Java.Nio.ByteOrder Order()
@@ -104,7 +104,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ByteOrder>("order", "()Ljava/nio/ByteOrder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#asReadOnlyBuffer()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#asReadOnlyBuffer()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer AsReadOnlyBuffer()
@@ -112,7 +112,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.FloatBuffer>("asReadOnlyBuffer", "()Ljava/nio/FloatBuffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#compact()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#compact()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer Compact()
@@ -120,7 +120,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.FloatBuffer>("compact", "()Ljava/nio/FloatBuffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#put(float)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#put(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
@@ -129,7 +129,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.FloatBuffer>("put", "(F)Ljava/nio/FloatBuffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#put(int,float)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#put(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -139,7 +139,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.FloatBuffer>("put", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#put(float[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#put(float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
@@ -148,7 +148,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.FloatBuffer>("put", "([F)Ljava/nio/FloatBuffer;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -157,7 +157,7 @@ namespace Java.Nio
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#compareTo(java.nio.FloatBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#compareTo(java.nio.FloatBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.FloatBuffer"/></param>
         /// <returns><see cref="int"/></returns>
@@ -166,7 +166,7 @@ namespace Java.Nio
             return IExecuteWithSignature<int>("compareTo", "(Ljava/nio/FloatBuffer;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#mismatch(java.nio.FloatBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#mismatch(java.nio.FloatBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.FloatBuffer"/></param>
         /// <returns><see cref="int"/></returns>
@@ -175,7 +175,7 @@ namespace Java.Nio
             return IExecuteWithSignature<int>("mismatch", "(Ljava/nio/FloatBuffer;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#get(float[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#get(float[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -186,7 +186,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.FloatBuffer>("get", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#get(float[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#get(float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
@@ -195,7 +195,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.FloatBuffer>("get", "([F)Ljava/nio/FloatBuffer;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#get(int,float[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#get(int,float[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -207,7 +207,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.FloatBuffer>("get", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#get(int,float[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#get(int,float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -217,7 +217,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.FloatBuffer>("get", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#put(float[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#put(float[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -228,7 +228,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.FloatBuffer>("put", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#put(int,float[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#put(int,float[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -240,7 +240,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.FloatBuffer>("put", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#put(int,float[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#put(int,float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -250,7 +250,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.FloatBuffer>("put", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#put(int,java.nio.FloatBuffer,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#put(int,java.nio.FloatBuffer,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Nio.FloatBuffer"/></param>
@@ -262,7 +262,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.FloatBuffer>("put", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html#put(java.nio.FloatBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#put(java.nio.FloatBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.FloatBuffer"/></param>
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>

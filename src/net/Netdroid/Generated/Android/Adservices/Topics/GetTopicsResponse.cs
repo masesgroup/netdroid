@@ -46,11 +46,12 @@ namespace Android.Adservices.Topics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/topics/GetTopicsResponse.html#getTopics()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/topics/GetTopicsResponse.html#getTopics()"/>
         /// </summary>
-        public Java.Util.List<Android.Adservices.Topics.Topic> Topics
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Adservices.Topics.Topic> GetTopics()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Adservices.Topics.Topic>>("getTopics", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Adservices.Topics.Topic>>("getTopics", "()Ljava/util/List;");
         }
 
         #endregion

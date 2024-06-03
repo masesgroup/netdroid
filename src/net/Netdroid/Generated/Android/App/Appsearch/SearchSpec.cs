@@ -148,130 +148,12 @@ namespace Android.App.Appsearch
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getAdvancedRankingExpression()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getJoinSpec()"/>
         /// </summary>
-        public Java.Lang.String AdvancedRankingExpression
+        /// <returns><see cref="Android.App.Appsearch.JoinSpec"/></returns>
+        public Android.App.Appsearch.JoinSpec GetJoinSpec()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAdvancedRankingExpression", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getFilterNamespaces()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> FilterNamespaces
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getFilterNamespaces", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getFilterPackageNames()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> FilterPackageNames
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getFilterPackageNames", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getFilterSchemas()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> FilterSchemas
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getFilterSchemas", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getJoinSpec()"/> 
-        /// </summary>
-        public Android.App.Appsearch.JoinSpec JoinSpec
-        {
-            get { return IExecuteWithSignature<Android.App.Appsearch.JoinSpec>("getJoinSpec", "()Landroid/app/appsearch/JoinSpec;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getMaxSnippetSize()"/> 
-        /// </summary>
-        public int MaxSnippetSize
-        {
-            get { return IExecuteWithSignature<int>("getMaxSnippetSize", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getOrder()"/> 
-        /// </summary>
-        public int Order
-        {
-            get { return IExecuteWithSignature<int>("getOrder", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getProjectionPaths()"/> 
-        /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Util.List<Android.App.Appsearch.PropertyPath>> ProjectionPaths
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Android.App.Appsearch.PropertyPath>>>("getProjectionPaths", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getProjections()"/> 
-        /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> Projections
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getProjections", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getPropertyWeightPaths()"/> 
-        /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Util.Map<Android.App.Appsearch.PropertyPath, Java.Lang.Double>> PropertyWeightPaths
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Map<Android.App.Appsearch.PropertyPath, Java.Lang.Double>>>("getPropertyWeightPaths", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getPropertyWeights()"/> 
-        /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Util.Map<Java.Lang.String, Java.Lang.Double>> PropertyWeights
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Map<Java.Lang.String, Java.Lang.Double>>>("getPropertyWeights", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getRankingStrategy()"/> 
-        /// </summary>
-        public int RankingStrategy
-        {
-            get { return IExecuteWithSignature<int>("getRankingStrategy", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getResultCountPerPage()"/> 
-        /// </summary>
-        public int ResultCountPerPage
-        {
-            get { return IExecuteWithSignature<int>("getResultCountPerPage", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getResultGroupingLimit()"/> 
-        /// </summary>
-        public int ResultGroupingLimit
-        {
-            get { return IExecuteWithSignature<int>("getResultGroupingLimit", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getResultGroupingTypeFlags()"/> 
-        /// </summary>
-        public int ResultGroupingTypeFlags
-        {
-            get { return IExecuteWithSignature<int>("getResultGroupingTypeFlags", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getSnippetCount()"/> 
-        /// </summary>
-        public int SnippetCount
-        {
-            get { return IExecuteWithSignature<int>("getSnippetCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getSnippetCountPerProperty()"/> 
-        /// </summary>
-        public int SnippetCountPerProperty
-        {
-            get { return IExecuteWithSignature<int>("getSnippetCountPerProperty", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getTermMatch()"/> 
-        /// </summary>
-        public int TermMatch
-        {
-            get { return IExecuteWithSignature<int>("getTermMatch", "()I"); }
+            return IExecuteWithSignature<Android.App.Appsearch.JoinSpec>("getJoinSpec", "()Landroid/app/appsearch/JoinSpec;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#isListFilterQueryLanguageEnabled()"/>
@@ -296,6 +178,142 @@ namespace Android.App.Appsearch
         public bool IsVerbatimSearchEnabled()
         {
             return IExecuteWithSignature<bool>("isVerbatimSearchEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getMaxSnippetSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxSnippetSize()
+        {
+            return IExecuteWithSignature<int>("getMaxSnippetSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getOrder()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOrder()
+        {
+            return IExecuteWithSignature<int>("getOrder", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getRankingStrategy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRankingStrategy()
+        {
+            return IExecuteWithSignature<int>("getRankingStrategy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getResultCountPerPage()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetResultCountPerPage()
+        {
+            return IExecuteWithSignature<int>("getResultCountPerPage", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getResultGroupingLimit()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetResultGroupingLimit()
+        {
+            return IExecuteWithSignature<int>("getResultGroupingLimit", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getResultGroupingTypeFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetResultGroupingTypeFlags()
+        {
+            return IExecuteWithSignature<int>("getResultGroupingTypeFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getSnippetCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSnippetCount()
+        {
+            return IExecuteWithSignature<int>("getSnippetCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getSnippetCountPerProperty()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSnippetCountPerProperty()
+        {
+            return IExecuteWithSignature<int>("getSnippetCountPerProperty", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getTermMatch()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTermMatch()
+        {
+            return IExecuteWithSignature<int>("getTermMatch", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getAdvancedRankingExpression()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAdvancedRankingExpression()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAdvancedRankingExpression", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getFilterNamespaces()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetFilterNamespaces()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getFilterNamespaces", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getFilterPackageNames()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetFilterPackageNames()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getFilterPackageNames", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getFilterSchemas()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetFilterSchemas()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getFilterSchemas", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getProjectionPaths()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.List<Android.App.Appsearch.PropertyPath>> GetProjectionPaths()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Android.App.Appsearch.PropertyPath>>>("getProjectionPaths", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getProjections()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> GetProjections()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getProjections", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getPropertyWeightPaths()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.Map<Android.App.Appsearch.PropertyPath, Java.Lang.Double>> GetPropertyWeightPaths()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Map<Android.App.Appsearch.PropertyPath, Java.Lang.Double>>>("getPropertyWeightPaths", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getPropertyWeights()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.Map<Java.Lang.String, Java.Lang.Double>> GetPropertyWeights()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Map<Java.Lang.String, Java.Lang.Double>>>("getPropertyWeights", "()Ljava/util/Map;");
         }
 
         #endregion

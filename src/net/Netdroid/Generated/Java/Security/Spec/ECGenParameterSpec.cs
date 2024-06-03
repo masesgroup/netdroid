@@ -30,7 +30,7 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECGenParameterSpec.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECGenParameterSpec.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public ECGenParameterSpec(Java.Lang.String arg0)

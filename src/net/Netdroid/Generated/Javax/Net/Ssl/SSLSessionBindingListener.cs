@@ -27,7 +27,7 @@ namespace Javax.Net.Ssl
 {
     #region ISSLSessionBindingListener
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.javax.net.ssl.SSLSessionBindingListener implementing <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionBindingListener.html"/>
+    /// .NET interface for org.mases.netdroid.generated.javax.net.ssl.SSLSessionBindingListener implementing <see href="https://developer.android.com/reference/javax/net/ssl/SSLSessionBindingListener.html"/>
     /// </summary>
     public partial interface ISSLSessionBindingListener
     {
@@ -68,16 +68,16 @@ namespace Javax.Net.Ssl
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("valueBound", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>>>(ValueBoundEventHandler));
-            AddEventHandler("valueUnbound", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>>>(ValueUnboundEventHandler));
+            AddEventHandler("valueBound", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>>>(ValueBoundEventHandler));
+            AddEventHandler("valueUnbound", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>>>(ValueUnboundEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueBound(javax.net.ssl.SSLSessionBindingEvent)"/>
+        /// Handler for <see href="https://developer.android.com/reference/javax/net/ssl/SSLSessionBindingListener.html#valueBound(javax.net.ssl.SSLSessionBindingEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnValueBound"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Net.Ssl.SSLSessionBindingEvent> OnValueBound { get; set; } = null;
+        public global::System.Action<Javax.Net.Ssl.SSLSessionBindingEvent> OnValueBound { get; set; } = null;
 
         void ValueBoundEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>> data)
         {
@@ -86,7 +86,7 @@ namespace Javax.Net.Ssl
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueBound(javax.net.ssl.SSLSessionBindingEvent)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSessionBindingListener.html#valueBound(javax.net.ssl.SSLSessionBindingEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSessionBindingEvent"/></param>
         public virtual void ValueBound(Javax.Net.Ssl.SSLSessionBindingEvent arg0)
@@ -95,10 +95,10 @@ namespace Javax.Net.Ssl
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueUnbound(javax.net.ssl.SSLSessionBindingEvent)"/>
+        /// Handler for <see href="https://developer.android.com/reference/javax/net/ssl/SSLSessionBindingListener.html#valueUnbound(javax.net.ssl.SSLSessionBindingEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnValueUnbound"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Net.Ssl.SSLSessionBindingEvent> OnValueUnbound { get; set; } = null;
+        public global::System.Action<Javax.Net.Ssl.SSLSessionBindingEvent> OnValueUnbound { get; set; } = null;
 
         void ValueUnboundEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>> data)
         {
@@ -107,7 +107,7 @@ namespace Javax.Net.Ssl
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueUnbound(javax.net.ssl.SSLSessionBindingEvent)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSessionBindingListener.html#valueUnbound(javax.net.ssl.SSLSessionBindingEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSessionBindingEvent"/></param>
         public virtual void ValueUnbound(Javax.Net.Ssl.SSLSessionBindingEvent arg0)
@@ -146,7 +146,7 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueBound(javax.net.ssl.SSLSessionBindingEvent)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSessionBindingListener.html#valueBound(javax.net.ssl.SSLSessionBindingEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSessionBindingEvent"/></param>
         public override void ValueBound(Javax.Net.Ssl.SSLSessionBindingEvent arg0)
@@ -154,7 +154,7 @@ namespace Javax.Net.Ssl
             IExecuteWithSignature("valueBound", "(Ljavax/net/ssl/SSLSessionBindingEvent;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueUnbound(javax.net.ssl.SSLSessionBindingEvent)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSessionBindingListener.html#valueUnbound(javax.net.ssl.SSLSessionBindingEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSessionBindingEvent"/></param>
         public override void ValueUnbound(Javax.Net.Ssl.SSLSessionBindingEvent arg0)

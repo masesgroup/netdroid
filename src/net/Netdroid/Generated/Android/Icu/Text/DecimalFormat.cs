@@ -110,152 +110,45 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getCurrencyPluralInfo()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setCurrencyPluralInfo(android.icu.text.CurrencyPluralInfo)"/>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getParseMaxDigits()"/>
         /// </summary>
-        public Android.Icu.Text.CurrencyPluralInfo CurrencyPluralInfo
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetParseMaxDigits()
         {
-            get { return IExecuteWithSignature<Android.Icu.Text.CurrencyPluralInfo>("getCurrencyPluralInfo", "()Landroid/icu/text/CurrencyPluralInfo;"); } set { IExecuteWithSignature("setCurrencyPluralInfo", "(Landroid/icu/text/CurrencyPluralInfo;)V", value); }
+            return IExecuteWithSignature<int>("getParseMaxDigits", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getCurrencyUsage()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setCurrencyUsage(android.icu.util.Currency.CurrencyUsage)"/>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getMathContextICU()"/>
         /// </summary>
-        public Android.Icu.Util.Currency.CurrencyUsage CurrencyUsage
+        /// <returns><see cref="Android.Icu.Math.MathContext"/></returns>
+        public Android.Icu.Math.MathContext GetMathContextICU()
         {
-            get { return IExecuteWithSignature<Android.Icu.Util.Currency.CurrencyUsage>("getCurrencyUsage", "()Landroid/icu/util/Currency$CurrencyUsage;"); } set { IExecuteWithSignature("setCurrencyUsage", "(Landroid/icu/util/Currency$CurrencyUsage;)V", value); }
+            return IExecuteWithSignature<Android.Icu.Math.MathContext>("getMathContextICU", "()Landroid/icu/math/MathContext;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getDecimalFormatSymbols()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setDecimalFormatSymbols(android.icu.text.DecimalFormatSymbols)"/>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getCurrencyPluralInfo()"/>
         /// </summary>
-        public Android.Icu.Text.DecimalFormatSymbols DecimalFormatSymbols
+        /// <returns><see cref="Android.Icu.Text.CurrencyPluralInfo"/></returns>
+        public Android.Icu.Text.CurrencyPluralInfo GetCurrencyPluralInfo()
         {
-            get { return IExecuteWithSignature<Android.Icu.Text.DecimalFormatSymbols>("getDecimalFormatSymbols", "()Landroid/icu/text/DecimalFormatSymbols;"); } set { IExecuteWithSignature("setDecimalFormatSymbols", "(Landroid/icu/text/DecimalFormatSymbols;)V", value); }
+            return IExecuteWithSignature<Android.Icu.Text.CurrencyPluralInfo>("getCurrencyPluralInfo", "()Landroid/icu/text/CurrencyPluralInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getFormatWidth()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setFormatWidth(int)"/>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getDecimalFormatSymbols()"/>
         /// </summary>
-        public int FormatWidth
+        /// <returns><see cref="Android.Icu.Text.DecimalFormatSymbols"/></returns>
+        public Android.Icu.Text.DecimalFormatSymbols GetDecimalFormatSymbols()
         {
-            get { return IExecuteWithSignature<int>("getFormatWidth", "()I"); } set { IExecuteWithSignature("setFormatWidth", "(I)V", value); }
+            return IExecuteWithSignature<Android.Icu.Text.DecimalFormatSymbols>("getDecimalFormatSymbols", "()Landroid/icu/text/DecimalFormatSymbols;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getGroupingSize()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setGroupingSize(int)"/>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getCurrencyUsage()"/>
         /// </summary>
-        public int GroupingSize
+        /// <returns><see cref="Android.Icu.Util.Currency.CurrencyUsage"/></returns>
+        public Android.Icu.Util.Currency.CurrencyUsage GetCurrencyUsage()
         {
-            get { return IExecuteWithSignature<int>("getGroupingSize", "()I"); } set { IExecuteWithSignature("setGroupingSize", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getMathContext()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setMathContext(java.math.MathContext)"/>
-        /// </summary>
-        public Java.Math.MathContext MathContext
-        {
-            get { return IExecuteWithSignature<Java.Math.MathContext>("getMathContext", "()Ljava/math/MathContext;"); } set { IExecuteWithSignature("setMathContext", "(Ljava/math/MathContext;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getMathContextICU()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setMathContextICU(android.icu.math.MathContext)"/>
-        /// </summary>
-        public Android.Icu.Math.MathContext MathContextICU
-        {
-            get { return IExecuteWithSignature<Android.Icu.Math.MathContext>("getMathContextICU", "()Landroid/icu/math/MathContext;"); } set { IExecuteWithSignature("setMathContextICU", "(Landroid/icu/math/MathContext;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getMaximumSignificantDigits()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setMaximumSignificantDigits(int)"/>
-        /// </summary>
-        public int MaximumSignificantDigits
-        {
-            get { return IExecuteWithSignature<int>("getMaximumSignificantDigits", "()I"); } set { IExecuteWithSignature("setMaximumSignificantDigits", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getMinimumExponentDigits()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setMinimumExponentDigits(byte)"/>
-        /// </summary>
-        public byte MinimumExponentDigits
-        {
-            get { return IExecuteWithSignature<byte>("getMinimumExponentDigits", "()B"); } set { IExecuteWithSignature("setMinimumExponentDigits", "(B)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getMinimumGroupingDigits()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setMinimumGroupingDigits(int)"/>
-        /// </summary>
-        public int MinimumGroupingDigits
-        {
-            get { return IExecuteWithSignature<int>("getMinimumGroupingDigits", "()I"); } set { IExecuteWithSignature("setMinimumGroupingDigits", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getMinimumSignificantDigits()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setMinimumSignificantDigits(int)"/>
-        /// </summary>
-        public int MinimumSignificantDigits
-        {
-            get { return IExecuteWithSignature<int>("getMinimumSignificantDigits", "()I"); } set { IExecuteWithSignature("setMinimumSignificantDigits", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getMultiplier()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setMultiplier(int)"/>
-        /// </summary>
-        public int Multiplier
-        {
-            get { return IExecuteWithSignature<int>("getMultiplier", "()I"); } set { IExecuteWithSignature("setMultiplier", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getNegativePrefix()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setNegativePrefix(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String NegativePrefix
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNegativePrefix", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setNegativePrefix", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getNegativeSuffix()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setNegativeSuffix(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String NegativeSuffix
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNegativeSuffix", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setNegativeSuffix", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getPadCharacter()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setPadCharacter(char)"/>
-        /// </summary>
-        public char PadCharacter
-        {
-            get { return IExecuteWithSignature<char>("getPadCharacter", "()C"); } set { IExecuteWithSignature("setPadCharacter", "(C)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getPadPosition()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setPadPosition(int)"/>
-        /// </summary>
-        public int PadPosition
-        {
-            get { return IExecuteWithSignature<int>("getPadPosition", "()I"); } set { IExecuteWithSignature("setPadPosition", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getParseMaxDigits()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setParseMaxDigits(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int ParseMaxDigits
-        {
-            get { return IExecuteWithSignature<int>("getParseMaxDigits", "()I"); } set { IExecuteWithSignature("setParseMaxDigits", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getPositivePrefix()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setPositivePrefix(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String PositivePrefix
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPositivePrefix", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPositivePrefix", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getPositiveSuffix()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setPositiveSuffix(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String PositiveSuffix
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPositiveSuffix", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPositiveSuffix", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getRoundingIncrement()"/> 
-        /// </summary>
-        public Java.Math.BigDecimal RoundingIncrement
-        {
-            get { return IExecuteWithSignature<Java.Math.BigDecimal>("getRoundingIncrement", "()Ljava/math/BigDecimal;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getSecondaryGroupingSize()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setSecondaryGroupingSize(int)"/>
-        /// </summary>
-        public int SecondaryGroupingSize
-        {
-            get { return IExecuteWithSignature<int>("getSecondaryGroupingSize", "()I"); } set { IExecuteWithSignature("setSecondaryGroupingSize", "(I)V", value); }
+            return IExecuteWithSignature<Android.Icu.Util.Currency.CurrencyUsage>("getCurrencyUsage", "()Landroid/icu/util/Currency$CurrencyUsage;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#areSignificantDigitsUsed()"/>
@@ -330,6 +223,118 @@ namespace Android.Icu.Text
             return IExecuteWithSignature<bool>("isSignAlwaysShown", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getMinimumExponentDigits()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte GetMinimumExponentDigits()
+        {
+            return IExecuteWithSignature<byte>("getMinimumExponentDigits", "()B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getPadCharacter()"/>
+        /// </summary>
+        /// <returns><see cref="char"/></returns>
+        public char GetPadCharacter()
+        {
+            return IExecuteWithSignature<char>("getPadCharacter", "()C");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getFormatWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFormatWidth()
+        {
+            return IExecuteWithSignature<int>("getFormatWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getGroupingSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGroupingSize()
+        {
+            return IExecuteWithSignature<int>("getGroupingSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getMaximumSignificantDigits()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaximumSignificantDigits()
+        {
+            return IExecuteWithSignature<int>("getMaximumSignificantDigits", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getMinimumGroupingDigits()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinimumGroupingDigits()
+        {
+            return IExecuteWithSignature<int>("getMinimumGroupingDigits", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getMinimumSignificantDigits()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinimumSignificantDigits()
+        {
+            return IExecuteWithSignature<int>("getMinimumSignificantDigits", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getMultiplier()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMultiplier()
+        {
+            return IExecuteWithSignature<int>("getMultiplier", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getPadPosition()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPadPosition()
+        {
+            return IExecuteWithSignature<int>("getPadPosition", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getSecondaryGroupingSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSecondaryGroupingSize()
+        {
+            return IExecuteWithSignature<int>("getSecondaryGroupingSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getNegativePrefix()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNegativePrefix()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getNegativePrefix", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getNegativeSuffix()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNegativeSuffix()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getNegativeSuffix", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getPositivePrefix()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPositivePrefix()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPositivePrefix", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getPositiveSuffix()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPositiveSuffix()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPositiveSuffix", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#toLocalizedPattern()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -346,6 +351,22 @@ namespace Android.Icu.Text
             return IExecuteWithSignature<Java.Lang.String>("toPattern", "()Ljava/lang/String;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getRoundingIncrement()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
+        public Java.Math.BigDecimal GetRoundingIncrement()
+        {
+            return IExecuteWithSignature<Java.Math.BigDecimal>("getRoundingIncrement", "()Ljava/math/BigDecimal;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getMathContext()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Math.MathContext"/></returns>
+        public Java.Math.MathContext GetMathContext()
+        {
+            return IExecuteWithSignature<Java.Math.MathContext>("getMathContext", "()Ljava/math/MathContext;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#applyLocalizedPattern(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -360,6 +381,30 @@ namespace Android.Icu.Text
         public void ApplyPattern(Java.Lang.String arg0)
         {
             IExecuteWithSignature("applyPattern", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setCurrencyPluralInfo(android.icu.text.CurrencyPluralInfo)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Icu.Text.CurrencyPluralInfo"/></param>
+        public void SetCurrencyPluralInfo(Android.Icu.Text.CurrencyPluralInfo arg0)
+        {
+            IExecuteWithSignature("setCurrencyPluralInfo", "(Landroid/icu/text/CurrencyPluralInfo;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setCurrencyUsage(android.icu.util.Currency.CurrencyUsage)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Icu.Util.Currency.CurrencyUsage"/></param>
+        public void SetCurrencyUsage(Android.Icu.Util.Currency.CurrencyUsage arg0)
+        {
+            IExecuteWithSignature("setCurrencyUsage", "(Landroid/icu/util/Currency$CurrencyUsage;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setDecimalFormatSymbols(android.icu.text.DecimalFormatSymbols)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Icu.Text.DecimalFormatSymbols"/></param>
+        public void SetDecimalFormatSymbols(Android.Icu.Text.DecimalFormatSymbols arg0)
+        {
+            IExecuteWithSignature("setDecimalFormatSymbols", "(Landroid/icu/text/DecimalFormatSymbols;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setDecimalPatternMatchRequired(boolean)"/>
@@ -386,6 +431,110 @@ namespace Android.Icu.Text
             IExecuteWithSignature("setExponentSignAlwaysShown", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setFormatWidth(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetFormatWidth(int arg0)
+        {
+            IExecuteWithSignature("setFormatWidth", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setGroupingSize(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetGroupingSize(int arg0)
+        {
+            IExecuteWithSignature("setGroupingSize", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setMathContext(java.math.MathContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.MathContext"/></param>
+        public void SetMathContext(Java.Math.MathContext arg0)
+        {
+            IExecuteWithSignature("setMathContext", "(Ljava/math/MathContext;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setMathContextICU(android.icu.math.MathContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Icu.Math.MathContext"/></param>
+        public void SetMathContextICU(Android.Icu.Math.MathContext arg0)
+        {
+            IExecuteWithSignature("setMathContextICU", "(Landroid/icu/math/MathContext;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setMaximumSignificantDigits(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMaximumSignificantDigits(int arg0)
+        {
+            IExecuteWithSignature("setMaximumSignificantDigits", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setMinimumExponentDigits(byte)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        public void SetMinimumExponentDigits(byte arg0)
+        {
+            IExecuteWithSignature("setMinimumExponentDigits", "(B)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setMinimumGroupingDigits(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMinimumGroupingDigits(int arg0)
+        {
+            IExecuteWithSignature("setMinimumGroupingDigits", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setMinimumSignificantDigits(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMinimumSignificantDigits(int arg0)
+        {
+            IExecuteWithSignature("setMinimumSignificantDigits", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setMultiplier(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMultiplier(int arg0)
+        {
+            IExecuteWithSignature("setMultiplier", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setNegativePrefix(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetNegativePrefix(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setNegativePrefix", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setNegativeSuffix(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetNegativeSuffix(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setNegativeSuffix", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setPadCharacter(char)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        public void SetPadCharacter(char arg0)
+        {
+            IExecuteWithSignature("setPadCharacter", "(C)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setPadPosition(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetPadPosition(int arg0)
+        {
+            IExecuteWithSignature("setPadPosition", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setParseBigDecimal(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -408,6 +557,22 @@ namespace Android.Icu.Text
         public void SetParseNoExponent(bool arg0)
         {
             IExecuteWithSignature("setParseNoExponent", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setPositivePrefix(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetPositivePrefix(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setPositivePrefix", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setPositiveSuffix(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetPositiveSuffix(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setPositiveSuffix", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setRoundingIncrement(android.icu.math.BigDecimal)"/>
@@ -442,6 +607,14 @@ namespace Android.Icu.Text
             IExecuteWithSignature("setScientificNotation", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setSecondaryGroupingSize(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetSecondaryGroupingSize(int arg0)
+        {
+            IExecuteWithSignature("setSecondaryGroupingSize", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setSignAlwaysShown(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -456,6 +629,15 @@ namespace Android.Icu.Text
         public void SetSignificantDigitsUsed(bool arg0)
         {
             IExecuteWithSignature("setSignificantDigitsUsed", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setParseMaxDigits(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetParseMaxDigits(int arg0)
+        {
+            IExecuteWithSignature("setParseMaxDigits", "(I)V", arg0);
         }
 
         #endregion

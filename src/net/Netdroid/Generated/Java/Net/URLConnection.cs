@@ -42,21 +42,15 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getDefaultAllowUserInteraction()"/> <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#setDefaultAllowUserInteraction(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getDefaultAllowUserInteraction()"/>
         /// </summary>
-        public static bool DefaultAllowUserInteraction
+        /// <returns><see cref="bool"/></returns>
+        public static bool GetDefaultAllowUserInteraction()
         {
-            get { return SExecuteWithSignature<bool>(LocalBridgeClazz, "getDefaultAllowUserInteraction", "()Z"); } set { SExecuteWithSignature(LocalBridgeClazz, "setDefaultAllowUserInteraction", "(Z)V", value); }
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "getDefaultAllowUserInteraction", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getFileNameMap()"/> <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#setFileNameMap(java.net.FileNameMap)"/>
-        /// </summary>
-        public static Java.Net.FileNameMap FileNameMap
-        {
-            get { return SExecuteWithSignature<Java.Net.FileNameMap>(LocalBridgeClazz, "getFileNameMap", "()Ljava/net/FileNameMap;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setFileNameMap", "(Ljava/net/FileNameMap;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getDefaultUseCaches(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getDefaultUseCaches(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -65,17 +59,17 @@ namespace Java.Net
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "getDefaultUseCaches", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getDefaultRequestProperty(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getDefaultRequestProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String GetDefaultRequestProperty(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDefaultRequestProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#guessContentTypeFromName(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#guessContentTypeFromName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -84,7 +78,7 @@ namespace Java.Net
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "guessContentTypeFromName", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#guessContentTypeFromStream(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#guessContentTypeFromStream(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -94,7 +88,15 @@ namespace Java.Net
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "guessContentTypeFromStream", "(Ljava/io/InputStream;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#setContentHandlerFactory(java.net.ContentHandlerFactory)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getFileNameMap()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.FileNameMap"/></returns>
+        public static Java.Net.FileNameMap GetFileNameMap()
+        {
+            return SExecuteWithSignature<Java.Net.FileNameMap>(LocalBridgeClazz, "getFileNameMap", "()Ljava/net/FileNameMap;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#setContentHandlerFactory(java.net.ContentHandlerFactory)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.ContentHandlerFactory"/></param>
         public static void SetContentHandlerFactory(Java.Net.ContentHandlerFactory arg0)
@@ -102,17 +104,25 @@ namespace Java.Net
             SExecuteWithSignature(LocalBridgeClazz, "setContentHandlerFactory", "(Ljava/net/ContentHandlerFactory;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#setDefaultRequestProperty(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#setDefaultAllowUserInteraction(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public static void SetDefaultAllowUserInteraction(bool arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setDefaultAllowUserInteraction", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#setDefaultRequestProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void SetDefaultRequestProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             SExecute(LocalBridgeClazz, "setDefaultRequestProperty", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#setDefaultUseCaches(java.lang.String,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#setDefaultUseCaches(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -120,166 +130,20 @@ namespace Java.Net
         {
             SExecute(LocalBridgeClazz, "setDefaultUseCaches", arg0, arg1);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#setFileNameMap(java.net.FileNameMap)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.FileNameMap"/></param>
+        public static void SetFileNameMap(Java.Net.FileNameMap arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setFileNameMap", "(Ljava/net/FileNameMap;)V", arg0);
+        }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getAllowUserInteraction()"/> <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#setAllowUserInteraction(boolean)"/>
-        /// </summary>
-        public bool AllowUserInteraction
-        {
-            get { return IExecuteWithSignature<bool>("getAllowUserInteraction", "()Z"); } set { IExecuteWithSignature("setAllowUserInteraction", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getConnectTimeout()"/> <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#setConnectTimeout(int)"/>
-        /// </summary>
-        public int ConnectTimeout
-        {
-            get { return IExecuteWithSignature<int>("getConnectTimeout", "()I"); } set { IExecuteWithSignature("setConnectTimeout", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getContent()"/> 
-        /// </summary>
-        public object Content
-        {
-            get { return IExecuteWithSignature("getContent", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getContentEncoding()"/> 
-        /// </summary>
-        public Java.Lang.String ContentEncoding
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getContentEncoding", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getContentLength()"/> 
-        /// </summary>
-        public int ContentLength
-        {
-            get { return IExecuteWithSignature<int>("getContentLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getContentLengthLong()"/> 
-        /// </summary>
-        public long ContentLengthLong
-        {
-            get { return IExecuteWithSignature<long>("getContentLengthLong", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getContentType()"/> 
-        /// </summary>
-        public Java.Lang.String ContentType
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getContentType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getDate()"/> 
-        /// </summary>
-        public long Date
-        {
-            get { return IExecuteWithSignature<long>("getDate", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getDefaultUseCaches()"/> <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#setDefaultUseCaches(boolean)"/>
-        /// </summary>
-        public bool DefaultUseCaches
-        {
-            get { return IExecuteWithSignature<bool>("getDefaultUseCaches", "()Z"); } set { IExecuteWithSignature("setDefaultUseCaches", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getDoInput()"/> <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#setDoInput(boolean)"/>
-        /// </summary>
-        public bool DoInput
-        {
-            get { return IExecuteWithSignature<bool>("getDoInput", "()Z"); } set { IExecuteWithSignature("setDoInput", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getDoOutput()"/> <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#setDoOutput(boolean)"/>
-        /// </summary>
-        public bool DoOutput
-        {
-            get { return IExecuteWithSignature<bool>("getDoOutput", "()Z"); } set { IExecuteWithSignature("setDoOutput", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getExpiration()"/> 
-        /// </summary>
-        public long Expiration
-        {
-            get { return IExecuteWithSignature<long>("getExpiration", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getHeaderFields()"/> 
-        /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> HeaderFields
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getHeaderFields", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getIfModifiedSince()"/> <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#setIfModifiedSince(long)"/>
-        /// </summary>
-        public long IfModifiedSince
-        {
-            get { return IExecuteWithSignature<long>("getIfModifiedSince", "()J"); } set { IExecuteWithSignature("setIfModifiedSince", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getInputStream()"/> 
-        /// </summary>
-        public Java.Io.InputStream InputStream
-        {
-            get { return IExecuteWithSignature<Java.Io.InputStream>("getInputStream", "()Ljava/io/InputStream;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getLastModified()"/> 
-        /// </summary>
-        public long LastModified
-        {
-            get { return IExecuteWithSignature<long>("getLastModified", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getOutputStream()"/> 
-        /// </summary>
-        public Java.Io.OutputStream OutputStream
-        {
-            get { return IExecuteWithSignature<Java.Io.OutputStream>("getOutputStream", "()Ljava/io/OutputStream;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getPermission()"/> 
-        /// </summary>
-        public Java.Security.Permission Permission
-        {
-            get { return IExecuteWithSignature<Java.Security.Permission>("getPermission", "()Ljava/security/Permission;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getReadTimeout()"/> <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#setReadTimeout(int)"/>
-        /// </summary>
-        public int ReadTimeout
-        {
-            get { return IExecuteWithSignature<int>("getReadTimeout", "()I"); } set { IExecuteWithSignature("setReadTimeout", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getRequestProperties()"/> 
-        /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> RequestProperties
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getRequestProperties", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getURL()"/> 
-        /// </summary>
-        public Java.Net.URL URL
-        {
-            get { return IExecuteWithSignature<Java.Net.URL>("getURL", "()Ljava/net/URL;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getUseCaches()"/> <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#setUseCaches(boolean)"/>
-        /// </summary>
-        public bool UseCaches
-        {
-            get { return IExecuteWithSignature<bool>("getUseCaches", "()Z"); } set { IExecuteWithSignature("setUseCaches", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#connect()"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#connect()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Connect()
@@ -287,7 +151,63 @@ namespace Java.Net
             IExecuteWithSignature("connect", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getHeaderFieldInt(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getAllowUserInteraction()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetAllowUserInteraction()
+        {
+            return IExecuteWithSignature<bool>("getAllowUserInteraction", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getDefaultUseCaches()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetDefaultUseCaches()
+        {
+            return IExecuteWithSignature<bool>("getDefaultUseCaches", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getDoInput()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetDoInput()
+        {
+            return IExecuteWithSignature<bool>("getDoInput", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getDoOutput()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetDoOutput()
+        {
+            return IExecuteWithSignature<bool>("getDoOutput", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getUseCaches()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetUseCaches()
+        {
+            return IExecuteWithSignature<bool>("getUseCaches", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getConnectTimeout()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetConnectTimeout()
+        {
+            return IExecuteWithSignature<int>("getConnectTimeout", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getContentLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetContentLength()
+        {
+            return IExecuteWithSignature<int>("getContentLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getHeaderFieldInt(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -297,7 +217,42 @@ namespace Java.Net
             return IExecute<int>("getHeaderFieldInt", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getContent(java.lang.Class[])"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getReadTimeout()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetReadTimeout()
+        {
+            return IExecuteWithSignature<int>("getReadTimeout", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getInputStream()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Io.InputStream GetInputStream()
+        {
+            return IExecuteWithSignature<Java.Io.InputStream>("getInputStream", "()Ljava/io/InputStream;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getOutputStream()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.OutputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Io.OutputStream GetOutputStream()
+        {
+            return IExecuteWithSignature<Java.Io.OutputStream>("getOutputStream", "()Ljava/io/OutputStream;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getContent()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public object GetContent()
+        {
+            return IExecuteWithSignature("getContent", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getContent(java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="object"/></returns>
@@ -307,7 +262,23 @@ namespace Java.Net
             return IExecuteWithSignature("getContent", "([Ljava/lang/Class;)Ljava/lang/Object;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getHeaderField(int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getContentEncoding()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetContentEncoding()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getContentEncoding", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getContentType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetContentType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getContentType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getHeaderField(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -316,7 +287,7 @@ namespace Java.Net
             return IExecuteWithSignature<Java.Lang.String>("getHeaderField", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getHeaderField(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getHeaderField(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -325,7 +296,7 @@ namespace Java.Net
             return IExecuteWithSignature<Java.Lang.String>("getHeaderField", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getHeaderFieldKey(int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getHeaderFieldKey(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -334,7 +305,7 @@ namespace Java.Net
             return IExecuteWithSignature<Java.Lang.String>("getHeaderFieldKey", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getRequestProperty(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getRequestProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -343,7 +314,64 @@ namespace Java.Net
             return IExecuteWithSignature<Java.Lang.String>("getRequestProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getHeaderFieldDate(java.lang.String,long)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getURL()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.URL"/></returns>
+        public Java.Net.URL GetURL()
+        {
+            return IExecuteWithSignature<Java.Net.URL>("getURL", "()Ljava/net/URL;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getPermission()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Permission"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Security.Permission GetPermission()
+        {
+            return IExecuteWithSignature<Java.Security.Permission>("getPermission", "()Ljava/security/Permission;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getHeaderFields()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> GetHeaderFields()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getHeaderFields", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getRequestProperties()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> GetRequestProperties()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getRequestProperties", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getContentLengthLong()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetContentLengthLong()
+        {
+            return IExecuteWithSignature<long>("getContentLengthLong", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getDate()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDate()
+        {
+            return IExecuteWithSignature<long>("getDate", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getExpiration()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetExpiration()
+        {
+            return IExecuteWithSignature<long>("getExpiration", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getHeaderFieldDate(java.lang.String,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -353,7 +381,7 @@ namespace Java.Net
             return IExecute<long>("getHeaderFieldDate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getHeaderFieldLong(java.lang.String,long)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getHeaderFieldLong(java.lang.String,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -363,7 +391,23 @@ namespace Java.Net
             return IExecute<long>("getHeaderFieldLong", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#addRequestProperty(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getIfModifiedSince()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetIfModifiedSince()
+        {
+            return IExecuteWithSignature<long>("getIfModifiedSince", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getLastModified()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLastModified()
+        {
+            return IExecuteWithSignature<long>("getLastModified", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#addRequestProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -372,13 +416,77 @@ namespace Java.Net
             IExecute("addRequestProperty", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#setRequestProperty(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#setAllowUserInteraction(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetAllowUserInteraction(bool arg0)
+        {
+            IExecuteWithSignature("setAllowUserInteraction", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#setConnectTimeout(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetConnectTimeout(int arg0)
+        {
+            IExecuteWithSignature("setConnectTimeout", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#setDefaultUseCaches(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetDefaultUseCaches(bool arg0)
+        {
+            IExecuteWithSignature("setDefaultUseCaches", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#setDoInput(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetDoInput(bool arg0)
+        {
+            IExecuteWithSignature("setDoInput", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#setDoOutput(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetDoOutput(bool arg0)
+        {
+            IExecuteWithSignature("setDoOutput", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#setIfModifiedSince(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetIfModifiedSince(long arg0)
+        {
+            IExecuteWithSignature("setIfModifiedSince", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#setReadTimeout(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetReadTimeout(int arg0)
+        {
+            IExecuteWithSignature("setReadTimeout", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#setRequestProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetRequestProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecute("setRequestProperty", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#setUseCaches(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetUseCaches(bool arg0)
+        {
+            IExecuteWithSignature("setUseCaches", "(Z)V", arg0);
         }
 
         #endregion

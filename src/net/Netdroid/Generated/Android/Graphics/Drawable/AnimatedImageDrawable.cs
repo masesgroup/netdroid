@@ -56,13 +56,6 @@ namespace Android.Graphics.Drawable
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/AnimatedImageDrawable.html#getRepeatCount()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/AnimatedImageDrawable.html#setRepeatCount(int)"/>
-        /// </summary>
-        public int RepeatCount
-        {
-            get { return IExecuteWithSignature<int>("getRepeatCount", "()I"); } set { IExecuteWithSignature("setRepeatCount", "(I)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/AnimatedImageDrawable.html#isRunning()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -80,6 +73,14 @@ namespace Android.Graphics.Drawable
             return IExecuteWithSignature<bool>("unregisterAnimationCallback", "(Landroid/graphics/drawable/Animatable2$AnimationCallback;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/AnimatedImageDrawable.html#getRepeatCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRepeatCount()
+        {
+            return IExecuteWithSignature<int>("getRepeatCount", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/AnimatedImageDrawable.html#clearAnimationCallbacks()"/>
         /// </summary>
         public void ClearAnimationCallbacks()
@@ -93,6 +94,14 @@ namespace Android.Graphics.Drawable
         public void RegisterAnimationCallback(Android.Graphics.Drawable.Animatable2.AnimationCallback arg0)
         {
             IExecuteWithSignature("registerAnimationCallback", "(Landroid/graphics/drawable/Animatable2$AnimationCallback;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/AnimatedImageDrawable.html#setRepeatCount(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetRepeatCount(int arg0)
+        {
+            IExecuteWithSignature("setRepeatCount", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/AnimatedImageDrawable.html#start()"/>

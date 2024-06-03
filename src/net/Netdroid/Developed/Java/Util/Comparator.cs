@@ -59,8 +59,8 @@ namespace Java.Util
         /// </summary>
         public Comparator()
         {
-            AddEventHandler("compare", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(CompareEventHandler)); OnCompare = Compare;
-            AddEventHandler("equals", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(EqualsEventHandler)); OnEquals = Equals;
+            AddEventHandler("compare", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(CompareEventHandler)); OnCompare = Compare;
+            AddEventHandler("equals", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(EqualsEventHandler)); OnEquals = Equals;
         }
 
         /// <summary>
@@ -105,7 +105,7 @@ namespace Java.Util
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#compare(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        public System.Func<T, T, int> OnCompare { get; set; }
+        public global::System.Func<T, T, int> OnCompare { get; set; }
 
         void CompareEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
@@ -130,7 +130,7 @@ namespace Java.Util
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#equals(java.lang.Object)"/>
         /// </summary>
-        public System.Func<object, bool> OnEquals { get; set; }
+        public global::System.Func<object, bool> OnEquals { get; set; }
 
         void EqualsEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {

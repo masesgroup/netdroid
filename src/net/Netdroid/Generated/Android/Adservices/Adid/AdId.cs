@@ -61,19 +61,20 @@ namespace Android.Adservices.Adid
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adid/AdId.html#getAdId()"/> 
-        /// </summary>
-        public Java.Lang.String GetAdId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAdId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adid/AdId.html#isLimitAdTrackingEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsLimitAdTrackingEnabled()
         {
             return IExecuteWithSignature<bool>("isLimitAdTrackingEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adid/AdId.html#getAdId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAdId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAdId", "()Ljava/lang/String;");
         }
 
         #endregion

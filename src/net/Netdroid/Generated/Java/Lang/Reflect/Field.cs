@@ -50,42 +50,7 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#getDeclaringClass()"/> 
-        /// </summary>
-        public Java.Lang.Class DeclaringClass
-        {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#getGenericType()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Type GenericType
-        {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Type>("getGenericType", "()Ljava/lang/reflect/Type;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#getModifiers()"/> 
-        /// </summary>
-        public int Modifiers
-        {
-            get { return IExecuteWithSignature<int>("getModifiers", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.Class Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getType", "()Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#getBoolean(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#getBoolean(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -96,7 +61,7 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature<bool>("getBoolean", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#isEnumConstant()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#isEnumConstant()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEnumConstant()
@@ -104,7 +69,7 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature<bool>("isEnumConstant", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#isSynthetic()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#isSynthetic()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsSynthetic()
@@ -112,7 +77,7 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature<bool>("isSynthetic", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#getByte(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#getByte(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="byte"/></returns>
@@ -123,7 +88,7 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature<byte>("getByte", "(Ljava/lang/Object;)B", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#getChar(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#getChar(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="char"/></returns>
@@ -134,7 +99,7 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature<char>("getChar", "(Ljava/lang/Object;)C", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#getDouble(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#getDouble(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="double"/></returns>
@@ -145,7 +110,7 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature<double>("getDouble", "(Ljava/lang/Object;)D", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#getFloat(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#getFloat(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="float"/></returns>
@@ -156,7 +121,7 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature<float>("getFloat", "(Ljava/lang/Object;)F", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#getInt(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#getInt(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -167,7 +132,31 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature<int>("getInt", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#get(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#getModifiers()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetModifiers()
+        {
+            return IExecuteWithSignature<int>("getModifiers", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#getDeclaringClass()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetDeclaringClass()
+        {
+            return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.Class>("getType", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#get(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -178,7 +167,23 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#toGenericString()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#getGenericType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Type"/></returns>
+        public Java.Lang.Reflect.Type GetGenericType()
+        {
+            return IExecuteWithSignature<Java.Lang.Reflect.Type>("getGenericType", "()Ljava/lang/reflect/Type;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#toGenericString()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToGenericString()
@@ -186,7 +191,7 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature<Java.Lang.String>("toGenericString", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#getLong(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#getLong(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="long"/></returns>
@@ -197,7 +202,7 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature<long>("getLong", "(Ljava/lang/Object;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#getShort(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#getShort(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="short"/></returns>
@@ -208,7 +213,7 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature<short>("getShort", "(Ljava/lang/Object;)S", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#set(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#set(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -219,7 +224,7 @@ namespace Java.Lang.Reflect
             IExecute("set", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#setBoolean(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#setBoolean(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -230,7 +235,7 @@ namespace Java.Lang.Reflect
             IExecute("setBoolean", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#setByte(java.lang.Object,byte)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#setByte(java.lang.Object,byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -241,7 +246,7 @@ namespace Java.Lang.Reflect
             IExecute("setByte", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#setChar(java.lang.Object,char)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#setChar(java.lang.Object,char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="char"/></param>
@@ -252,7 +257,7 @@ namespace Java.Lang.Reflect
             IExecute("setChar", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#setDouble(java.lang.Object,double)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#setDouble(java.lang.Object,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -263,7 +268,7 @@ namespace Java.Lang.Reflect
             IExecute("setDouble", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#setFloat(java.lang.Object,float)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#setFloat(java.lang.Object,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -274,7 +279,7 @@ namespace Java.Lang.Reflect
             IExecute("setFloat", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#setInt(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#setInt(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -285,7 +290,7 @@ namespace Java.Lang.Reflect
             IExecute("setInt", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#setLong(java.lang.Object,long)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#setLong(java.lang.Object,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -296,7 +301,7 @@ namespace Java.Lang.Reflect
             IExecute("setLong", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Field.html#setShort(java.lang.Object,short)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#setShort(java.lang.Object,short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="short"/></param>

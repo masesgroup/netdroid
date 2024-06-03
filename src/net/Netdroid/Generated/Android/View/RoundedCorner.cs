@@ -87,25 +87,12 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/RoundedCorner.html#getCenter()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/RoundedCorner.html#getCenter()"/>
         /// </summary>
-        public Android.Graphics.Point Center
+        /// <returns><see cref="Android.Graphics.Point"/></returns>
+        public Android.Graphics.Point GetCenter()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Point>("getCenter", "()Landroid/graphics/Point;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/RoundedCorner.html#getPosition()"/> 
-        /// </summary>
-        public int Position
-        {
-            get { return IExecuteWithSignature<int>("getPosition", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/RoundedCorner.html#getRadius()"/> 
-        /// </summary>
-        public int Radius
-        {
-            get { return IExecuteWithSignature<int>("getRadius", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.Point>("getCenter", "()Landroid/graphics/Point;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/RoundedCorner.html#describeContents()"/>
@@ -114,6 +101,22 @@ namespace Android.View
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/RoundedCorner.html#getPosition()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPosition()
+        {
+            return IExecuteWithSignature<int>("getPosition", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/RoundedCorner.html#getRadius()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRadius()
+        {
+            return IExecuteWithSignature<int>("getRadius", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/RoundedCorner.html#writeToParcel(android.os.Parcel,int)"/>

@@ -54,11 +54,12 @@ namespace Android.Security.Identity
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/identity/AccessControlProfileId.html#getId()"/> 
+        /// <see href="https://developer.android.com/reference/android/security/identity/AccessControlProfileId.html#getId()"/>
         /// </summary>
-        public int Id
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
         {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
+            return IExecuteWithSignature<int>("getId", "()I");
         }
 
         #endregion

@@ -52,60 +52,20 @@ namespace Android.Hardware.Display
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.html#getDensityDpi()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.html#getSurface()"/>
         /// </summary>
-        public int DensityDpi
+        /// <returns><see cref="Android.View.Surface"/></returns>
+        public Android.View.Surface GetSurface()
         {
-            get { return IExecuteWithSignature<int>("getDensityDpi", "()I"); }
+            return IExecuteWithSignature<Android.View.Surface>("getSurface", "()Landroid/view/Surface;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.html#getDisplayCategories()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.html#getRequestedRefreshRate()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> DisplayCategories
+        /// <returns><see cref="float"/></returns>
+        public float GetRequestedRefreshRate()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getDisplayCategories", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.html#getFlags()"/> 
-        /// </summary>
-        public int Flags
-        {
-            get { return IExecuteWithSignature<int>("getFlags", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.html#getHeight()"/> 
-        /// </summary>
-        public int Height
-        {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.html#getRequestedRefreshRate()"/> 
-        /// </summary>
-        public float RequestedRefreshRate
-        {
-            get { return IExecuteWithSignature<float>("getRequestedRefreshRate", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.html#getSurface()"/> 
-        /// </summary>
-        public Android.View.Surface Surface
-        {
-            get { return IExecuteWithSignature<Android.View.Surface>("getSurface", "()Landroid/view/Surface;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.html#getWidth()"/> 
-        /// </summary>
-        public int Width
-        {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
+            return IExecuteWithSignature<float>("getRequestedRefreshRate", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.html#describeContents()"/>
@@ -114,6 +74,54 @@ namespace Android.Hardware.Display
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.html#getDensityDpi()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDensityDpi()
+        {
+            return IExecuteWithSignature<int>("getDensityDpi", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.html#getFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFlags()
+        {
+            return IExecuteWithSignature<int>("getFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.html#getHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHeight()
+        {
+            return IExecuteWithSignature<int>("getHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.html#getWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWidth()
+        {
+            return IExecuteWithSignature<int>("getWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.html#getDisplayCategories()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetDisplayCategories()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getDisplayCategories", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.html#writeToParcel(android.os.Parcel,int)"/>

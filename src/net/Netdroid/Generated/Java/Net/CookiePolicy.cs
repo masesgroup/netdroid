@@ -56,19 +56,19 @@ namespace Java.Net
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/CookiePolicy.html#ACCEPT_ALL"/>
+        /// <see href="https://developer.android.com/reference/java/net/CookiePolicy.html#ACCEPT_ALL"/>
         /// </summary>
         public static Java.Net.CookiePolicy ACCEPT_ALL { get { if (!_ACCEPT_ALLReady) { _ACCEPT_ALLContent = SGetField<Java.Net.CookiePolicy>(LocalBridgeClazz, "ACCEPT_ALL"); _ACCEPT_ALLReady = true; } return _ACCEPT_ALLContent; } }
         private static Java.Net.CookiePolicy _ACCEPT_ALLContent = default;
         private static bool _ACCEPT_ALLReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/CookiePolicy.html#ACCEPT_NONE"/>
+        /// <see href="https://developer.android.com/reference/java/net/CookiePolicy.html#ACCEPT_NONE"/>
         /// </summary>
         public static Java.Net.CookiePolicy ACCEPT_NONE { get { if (!_ACCEPT_NONEReady) { _ACCEPT_NONEContent = SGetField<Java.Net.CookiePolicy>(LocalBridgeClazz, "ACCEPT_NONE"); _ACCEPT_NONEReady = true; } return _ACCEPT_NONEContent; } }
         private static Java.Net.CookiePolicy _ACCEPT_NONEContent = default;
         private static bool _ACCEPT_NONEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/CookiePolicy.html#ACCEPT_ORIGINAL_SERVER"/>
+        /// <see href="https://developer.android.com/reference/java/net/CookiePolicy.html#ACCEPT_ORIGINAL_SERVER"/>
         /// </summary>
         public static Java.Net.CookiePolicy ACCEPT_ORIGINAL_SERVER { get { if (!_ACCEPT_ORIGINAL_SERVERReady) { _ACCEPT_ORIGINAL_SERVERContent = SGetField<Java.Net.CookiePolicy>(LocalBridgeClazz, "ACCEPT_ORIGINAL_SERVER"); _ACCEPT_ORIGINAL_SERVERReady = true; } return _ACCEPT_ORIGINAL_SERVERContent; } }
         private static Java.Net.CookiePolicy _ACCEPT_ORIGINAL_SERVERContent = default;
@@ -82,7 +82,7 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/CookiePolicy.html#shouldAccept(java.net.URI,java.net.HttpCookie)"/>
+        /// <see href="https://developer.android.com/reference/java/net/CookiePolicy.html#shouldAccept(java.net.URI,java.net.HttpCookie)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <param name="arg1"><see cref="Java.Net.HttpCookie"/></param>

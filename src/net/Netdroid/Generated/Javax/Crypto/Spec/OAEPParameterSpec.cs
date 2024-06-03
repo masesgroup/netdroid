@@ -30,7 +30,7 @@ namespace Javax.Crypto.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/OAEPParameterSpec.html#%3Cinit%3E(java.lang.String,java.lang.String,java.security.spec.AlgorithmParameterSpec,javax.crypto.spec.PSource)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/OAEPParameterSpec.html#%3Cinit%3E(java.lang.String,java.lang.String,java.security.spec.AlgorithmParameterSpec,javax.crypto.spec.PSource)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -49,7 +49,7 @@ namespace Javax.Crypto.Spec
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/OAEPParameterSpec.html#DEFAULT"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/OAEPParameterSpec.html#DEFAULT"/>
         /// </summary>
         public static Javax.Crypto.Spec.OAEPParameterSpec DEFAULT { get { if (!_DEFAULTReady) { _DEFAULTContent = SGetField<Javax.Crypto.Spec.OAEPParameterSpec>(LocalBridgeClazz, "DEFAULT"); _DEFAULTReady = true; } return _DEFAULTContent; } }
         private static Javax.Crypto.Spec.OAEPParameterSpec _DEFAULTContent = default;
@@ -63,32 +63,36 @@ namespace Javax.Crypto.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/OAEPParameterSpec.html#getDigestAlgorithm()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/OAEPParameterSpec.html#getDigestAlgorithm()"/>
         /// </summary>
-        public Java.Lang.String DigestAlgorithm
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDigestAlgorithm()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDigestAlgorithm", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getDigestAlgorithm", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/OAEPParameterSpec.html#getMGFAlgorithm()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/OAEPParameterSpec.html#getMGFAlgorithm()"/>
         /// </summary>
-        public Java.Lang.String MGFAlgorithm
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMGFAlgorithm()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMGFAlgorithm", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getMGFAlgorithm", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/OAEPParameterSpec.html#getMGFParameters()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/OAEPParameterSpec.html#getMGFParameters()"/>
         /// </summary>
-        public Java.Security.Spec.AlgorithmParameterSpec MGFParameters
+        /// <returns><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></returns>
+        public Java.Security.Spec.AlgorithmParameterSpec GetMGFParameters()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getMGFParameters", "()Ljava/security/spec/AlgorithmParameterSpec;"); }
+            return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getMGFParameters", "()Ljava/security/spec/AlgorithmParameterSpec;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/OAEPParameterSpec.html#getPSource()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/OAEPParameterSpec.html#getPSource()"/>
         /// </summary>
-        public Javax.Crypto.Spec.PSource PSource
+        /// <returns><see cref="Javax.Crypto.Spec.PSource"/></returns>
+        public Javax.Crypto.Spec.PSource GetPSource()
         {
-            get { return IExecuteWithSignature<Javax.Crypto.Spec.PSource>("getPSource", "()Ljavax/crypto/spec/PSource;"); }
+            return IExecuteWithSignature<Javax.Crypto.Spec.PSource>("getPSource", "()Ljavax/crypto/spec/PSource;");
         }
 
         #endregion

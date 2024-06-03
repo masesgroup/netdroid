@@ -72,11 +72,12 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/EdECPublicKey.html#getPoint()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/EdECPublicKey.html#getPoint()"/>
         /// </summary>
-        public Java.Security.Spec.EdECPoint Point
+        /// <returns><see cref="Java.Security.Spec.EdECPoint"/></returns>
+        public Java.Security.Spec.EdECPoint GetPoint()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.EdECPoint>("getPoint", "()Ljava/security/spec/EdECPoint;"); }
+            return IExecuteWithSignature<Java.Security.Spec.EdECPoint>("getPoint", "()Ljava/security/spec/EdECPoint;");
         }
 
         #endregion

@@ -76,26 +76,28 @@ namespace Android.Hardware
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/BatteryState.html#getCapacity()"/> 
-        /// </summary>
-        public float Capacity
-        {
-            get { return IExecuteWithSignature<float>("getCapacity", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/BatteryState.html#getStatus()"/> 
-        /// </summary>
-        public int Status
-        {
-            get { return IExecuteWithSignature<int>("getStatus", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/BatteryState.html#isPresent()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsPresent()
         {
             return IExecuteWithSignature<bool>("isPresent", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/BatteryState.html#getCapacity()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetCapacity()
+        {
+            return IExecuteWithSignature<float>("getCapacity", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/BatteryState.html#getStatus()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStatus()
+        {
+            return IExecuteWithSignature<int>("getStatus", "()I");
         }
 
         #endregion

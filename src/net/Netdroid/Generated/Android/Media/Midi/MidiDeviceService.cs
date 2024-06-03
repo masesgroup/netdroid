@@ -52,26 +52,28 @@ namespace Android.Media.Midi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceService.html#getDeviceInfo()"/> 
-        /// </summary>
-        public Android.Media.Midi.MidiDeviceInfo DeviceInfo
-        {
-            get { return IExecuteWithSignature<Android.Media.Midi.MidiDeviceInfo>("getDeviceInfo", "()Landroid/media/midi/MidiDeviceInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceService.html#getOutputPortReceivers()"/> 
-        /// </summary>
-        public Android.Media.Midi.MidiReceiver[] OutputPortReceivers
-        {
-            get { return IExecuteWithSignatureArray<Android.Media.Midi.MidiReceiver>("getOutputPortReceivers", "()[Landroid/media/midi/MidiReceiver;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceService.html#onGetInputPortReceivers()"/>
         /// </summary>
         /// <returns><see cref="Android.Media.Midi.MidiReceiver"/></returns>
         public Android.Media.Midi.MidiReceiver[] OnGetInputPortReceivers()
         {
             return IExecuteWithSignatureArray<Android.Media.Midi.MidiReceiver>("onGetInputPortReceivers", "()[Landroid/media/midi/MidiReceiver;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceService.html#getDeviceInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.Midi.MidiDeviceInfo"/></returns>
+        public Android.Media.Midi.MidiDeviceInfo GetDeviceInfo()
+        {
+            return IExecuteWithSignature<Android.Media.Midi.MidiDeviceInfo>("getDeviceInfo", "()Landroid/media/midi/MidiDeviceInfo;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceService.html#getOutputPortReceivers()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.Midi.MidiReceiver"/></returns>
+        public Android.Media.Midi.MidiReceiver[] GetOutputPortReceivers()
+        {
+            return IExecuteWithSignatureArray<Android.Media.Midi.MidiReceiver>("getOutputPortReceivers", "()[Landroid/media/midi/MidiReceiver;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceService.html#onClose()"/>

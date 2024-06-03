@@ -38,6 +38,14 @@ namespace Java.Lang
             return ValueOf(clrValue);
         }
 
+        #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Float"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable<Java.Lang.Float>(Java.Lang.Float t) => t.Cast<Java.Lang.Comparable<Java.Lang.Float>>();
+
+        #endregion
+
         /// <summary>
         /// Converter from <see cref="Float"/> to <see cref="float"/>
         /// </summary>

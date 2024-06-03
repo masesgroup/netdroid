@@ -34,7 +34,7 @@ namespace Android.Net.Sip
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Net.Sip.SipProfile"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public SipAudioCall(Android.Content.Context arg0, Android.Net.Sip.SipProfile arg1)
             : base(arg0, arg1)
         {
@@ -56,34 +56,28 @@ namespace Android.Net.Sip
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#getLocalProfile()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#getLocalProfile()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Net.Sip.SipProfile LocalProfile
+        /// <returns><see cref="Android.Net.Sip.SipProfile"/></returns>
+        [global::System.Obsolete()]
+        public Android.Net.Sip.SipProfile GetLocalProfile()
         {
-            get { return IExecuteWithSignature<Android.Net.Sip.SipProfile>("getLocalProfile", "()Landroid/net/sip/SipProfile;"); }
+            return IExecuteWithSignature<Android.Net.Sip.SipProfile>("getLocalProfile", "()Landroid/net/sip/SipProfile;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#getPeerProfile()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#getPeerProfile()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Net.Sip.SipProfile PeerProfile
+        /// <returns><see cref="Android.Net.Sip.SipProfile"/></returns>
+        [global::System.Obsolete()]
+        public Android.Net.Sip.SipProfile GetPeerProfile()
         {
-            get { return IExecuteWithSignature<Android.Net.Sip.SipProfile>("getPeerProfile", "()Landroid/net/sip/SipProfile;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#getState()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int State
-        {
-            get { return IExecuteWithSignature<int>("getState", "()I"); }
+            return IExecuteWithSignature<Android.Net.Sip.SipProfile>("getPeerProfile", "()Landroid/net/sip/SipProfile;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#isInCall()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsInCall()
         {
             return IExecuteWithSignature<bool>("isInCall", "()Z");
@@ -92,7 +86,7 @@ namespace Android.Net.Sip
         /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#isMuted()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsMuted()
         {
             return IExecuteWithSignature<bool>("isMuted", "()Z");
@@ -101,17 +95,26 @@ namespace Android.Net.Sip
         /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#isOnHold()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsOnHold()
         {
             return IExecuteWithSignature<bool>("isOnHold", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#getState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetState()
+        {
+            return IExecuteWithSignature<int>("getState", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#answerCall(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Android.Net.Sip.SipException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AnswerCall(int arg0)
         {
             IExecuteWithSignature("answerCall", "(I)V", arg0);
@@ -122,7 +125,7 @@ namespace Android.Net.Sip
         /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Android.Net.Sip.SipException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AttachCall(Android.Net.Sip.SipSession arg0, Java.Lang.String arg1)
         {
             IExecute("attachCall", arg0, arg1);
@@ -130,7 +133,7 @@ namespace Android.Net.Sip
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#close()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
@@ -140,7 +143,7 @@ namespace Android.Net.Sip
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Android.Net.Sip.SipException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ContinueCall(int arg0)
         {
             IExecuteWithSignature("continueCall", "(I)V", arg0);
@@ -149,7 +152,7 @@ namespace Android.Net.Sip
         /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#endCall()"/>
         /// </summary>
         /// <exception cref="Android.Net.Sip.SipException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void EndCall()
         {
             IExecuteWithSignature("endCall", "()V");
@@ -159,7 +162,7 @@ namespace Android.Net.Sip
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Android.Net.Sip.SipException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void HoldCall(int arg0)
         {
             IExecuteWithSignature("holdCall", "(I)V", arg0);
@@ -171,7 +174,7 @@ namespace Android.Net.Sip
         /// <param name="arg1"><see cref="Android.Net.Sip.SipSession"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Android.Net.Sip.SipException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void MakeCall(Android.Net.Sip.SipProfile arg0, Android.Net.Sip.SipSession arg1, int arg2)
         {
             IExecute("makeCall", arg0, arg1, arg2);
@@ -181,7 +184,7 @@ namespace Android.Net.Sip
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.Os.Message"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SendDtmf(int arg0, Android.Os.Message arg1)
         {
             IExecute("sendDtmf", arg0, arg1);
@@ -190,7 +193,7 @@ namespace Android.Net.Sip
         /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#sendDtmf(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SendDtmf(int arg0)
         {
             IExecuteWithSignature("sendDtmf", "(I)V", arg0);
@@ -200,7 +203,7 @@ namespace Android.Net.Sip
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall.Listener"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetListener(Android.Net.Sip.SipAudioCall.Listener arg0, bool arg1)
         {
             IExecute("setListener", arg0, arg1);
@@ -209,7 +212,7 @@ namespace Android.Net.Sip
         /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#setListener(android.net.sip.SipAudioCall.Listener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall.Listener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetListener(Android.Net.Sip.SipAudioCall.Listener arg0)
         {
             IExecuteWithSignature("setListener", "(Landroid/net/sip/SipAudioCall$Listener;)V", arg0);
@@ -218,7 +221,7 @@ namespace Android.Net.Sip
         /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#setSpeakerMode(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSpeakerMode(bool arg0)
         {
             IExecuteWithSignature("setSpeakerMode", "(Z)V", arg0);
@@ -226,7 +229,7 @@ namespace Android.Net.Sip
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#startAudio()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartAudio()
         {
             IExecuteWithSignature("startAudio", "()V");
@@ -234,7 +237,7 @@ namespace Android.Net.Sip
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#toggleMute()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ToggleMute()
         {
             IExecuteWithSignature("toggleMute", "()V");
@@ -264,282 +267,11 @@ namespace Android.Net.Sip
 
             #region Instance methods
             /// <summary>
-            /// Handlers initializer for <see cref="Listener"/>
-            /// </summary>
-            protected virtual void InitializeHandlers()
-            {
-                AddEventHandler("onCallBusy", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipAudioCall>>>(OnCallBusyEventHandler));
-                AddEventHandler("onCallEnded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipAudioCall>>>(OnCallEndedEventHandler));
-                AddEventHandler("onCallEstablished", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipAudioCall>>>(OnCallEstablishedEventHandler));
-                AddEventHandler("onCallHeld", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipAudioCall>>>(OnCallHeldEventHandler));
-                AddEventHandler("onCalling", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipAudioCall>>>(OnCallingEventHandler));
-                AddEventHandler("onChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipAudioCall>>>(OnChangedEventHandler));
-                AddEventHandler("onError", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipAudioCall>>>(OnErrorEventHandler));
-                AddEventHandler("onReadyToCall", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipAudioCall>>>(OnReadyToCallEventHandler));
-                AddEventHandler("onRinging", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipAudioCall>>>(OnRingingEventHandler));
-                AddEventHandler("onRingingBack", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipAudioCall>>>(OnRingingBackEventHandler));
-
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onCallBusy(android.net.sip.SipAudioCall)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnCallBusy"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipAudioCall> OnOnCallBusy { get; set; } = null;
-
-            void OnCallBusyEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipAudioCall>> data)
-            {
-                var methodToExecute = (OnOnCallBusy != null) ? OnOnCallBusy : OnCallBusy;
-                methodToExecute.Invoke(data.EventData.TypedEventData);
-            }
-
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onCallBusy(android.net.sip.SipAudioCall)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall"/></param>
-            [System.Obsolete()]
-            public virtual void OnCallBusy(Android.Net.Sip.SipAudioCall arg0)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onCallEnded(android.net.sip.SipAudioCall)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnCallEnded"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipAudioCall> OnOnCallEnded { get; set; } = null;
-
-            void OnCallEndedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipAudioCall>> data)
-            {
-                var methodToExecute = (OnOnCallEnded != null) ? OnOnCallEnded : OnCallEnded;
-                methodToExecute.Invoke(data.EventData.TypedEventData);
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onCallEnded(android.net.sip.SipAudioCall)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall"/></param>
-            [System.Obsolete()]
-            public virtual void OnCallEnded(Android.Net.Sip.SipAudioCall arg0)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onCallEstablished(android.net.sip.SipAudioCall)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnCallEstablished"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipAudioCall> OnOnCallEstablished { get; set; } = null;
-
-            void OnCallEstablishedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipAudioCall>> data)
-            {
-                var methodToExecute = (OnOnCallEstablished != null) ? OnOnCallEstablished : OnCallEstablished;
-                methodToExecute.Invoke(data.EventData.TypedEventData);
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onCallEstablished(android.net.sip.SipAudioCall)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall"/></param>
-            [System.Obsolete()]
-            public virtual void OnCallEstablished(Android.Net.Sip.SipAudioCall arg0)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onCallHeld(android.net.sip.SipAudioCall)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnCallHeld"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipAudioCall> OnOnCallHeld { get; set; } = null;
-
-            void OnCallHeldEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipAudioCall>> data)
-            {
-                var methodToExecute = (OnOnCallHeld != null) ? OnOnCallHeld : OnCallHeld;
-                methodToExecute.Invoke(data.EventData.TypedEventData);
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onCallHeld(android.net.sip.SipAudioCall)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall"/></param>
-            [System.Obsolete()]
-            public virtual void OnCallHeld(Android.Net.Sip.SipAudioCall arg0)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onCalling(android.net.sip.SipAudioCall)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnCalling"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipAudioCall> OnOnCalling { get; set; } = null;
-
-            void OnCallingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipAudioCall>> data)
-            {
-                var methodToExecute = (OnOnCalling != null) ? OnOnCalling : OnCalling;
-                methodToExecute.Invoke(data.EventData.TypedEventData);
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onCalling(android.net.sip.SipAudioCall)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall"/></param>
-            [System.Obsolete()]
-            public virtual void OnCalling(Android.Net.Sip.SipAudioCall arg0)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onChanged(android.net.sip.SipAudioCall)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipAudioCall> OnOnChanged { get; set; } = null;
-
-            void OnChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipAudioCall>> data)
-            {
-                var methodToExecute = (OnOnChanged != null) ? OnOnChanged : OnChanged;
-                methodToExecute.Invoke(data.EventData.TypedEventData);
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onChanged(android.net.sip.SipAudioCall)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall"/></param>
-            [System.Obsolete()]
-            public virtual void OnChanged(Android.Net.Sip.SipAudioCall arg0)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onError(android.net.sip.SipAudioCall,int,java.lang.String)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnError"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipAudioCall, int, Java.Lang.String> OnOnError { get; set; } = null;
-
-            void OnErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipAudioCall>> data)
-            {
-                var methodToExecute = (OnOnError != null) ? OnOnError : OnError;
-                methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<Java.Lang.String>(1));
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onError(android.net.sip.SipAudioCall,int,java.lang.String)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
-            public virtual void OnError(Android.Net.Sip.SipAudioCall arg0, int arg1, Java.Lang.String arg2)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onReadyToCall(android.net.sip.SipAudioCall)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnReadyToCall"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipAudioCall> OnOnReadyToCall { get; set; } = null;
-
-            void OnReadyToCallEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipAudioCall>> data)
-            {
-                var methodToExecute = (OnOnReadyToCall != null) ? OnOnReadyToCall : OnReadyToCall;
-                methodToExecute.Invoke(data.EventData.TypedEventData);
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onReadyToCall(android.net.sip.SipAudioCall)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall"/></param>
-            [System.Obsolete()]
-            public virtual void OnReadyToCall(Android.Net.Sip.SipAudioCall arg0)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onRinging(android.net.sip.SipAudioCall,android.net.sip.SipProfile)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnRinging"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipAudioCall, Android.Net.Sip.SipProfile> OnOnRinging { get; set; } = null;
-
-            void OnRingingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipAudioCall>> data)
-            {
-                var methodToExecute = (OnOnRinging != null) ? OnOnRinging : OnRinging;
-                methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Android.Net.Sip.SipProfile>(0));
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onRinging(android.net.sip.SipAudioCall,android.net.sip.SipProfile)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall"/></param>
-            /// <param name="arg1"><see cref="Android.Net.Sip.SipProfile"/></param>
-            [System.Obsolete()]
-            public virtual void OnRinging(Android.Net.Sip.SipAudioCall arg0, Android.Net.Sip.SipProfile arg1)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onRingingBack(android.net.sip.SipAudioCall)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnRingingBack"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipAudioCall> OnOnRingingBack { get; set; } = null;
-
-            void OnRingingBackEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipAudioCall>> data)
-            {
-                var methodToExecute = (OnOnRingingBack != null) ? OnOnRingingBack : OnRingingBack;
-                methodToExecute.Invoke(data.EventData.TypedEventData);
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onRingingBack(android.net.sip.SipAudioCall)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall"/></param>
-            [System.Obsolete()]
-            public virtual void OnRingingBack(Android.Net.Sip.SipAudioCall arg0)
-            {
-                
-            }
-
-            #endregion
-
-            #region Nested classes
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ListenerDirect
-        public partial class ListenerDirect
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onCallBusy(android.net.sip.SipAudioCall)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall"/></param>
-            [System.Obsolete()]
-            public override void OnCallBusy(Android.Net.Sip.SipAudioCall arg0)
+            [global::System.Obsolete()]
+            public void OnCallBusy(Android.Net.Sip.SipAudioCall arg0)
             {
                 IExecuteWithSignature("onCallBusy", "(Landroid/net/sip/SipAudioCall;)V", arg0);
             }
@@ -547,8 +279,8 @@ namespace Android.Net.Sip
             /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onCallEnded(android.net.sip.SipAudioCall)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall"/></param>
-            [System.Obsolete()]
-            public override void OnCallEnded(Android.Net.Sip.SipAudioCall arg0)
+            [global::System.Obsolete()]
+            public void OnCallEnded(Android.Net.Sip.SipAudioCall arg0)
             {
                 IExecuteWithSignature("onCallEnded", "(Landroid/net/sip/SipAudioCall;)V", arg0);
             }
@@ -556,8 +288,8 @@ namespace Android.Net.Sip
             /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onCallEstablished(android.net.sip.SipAudioCall)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall"/></param>
-            [System.Obsolete()]
-            public override void OnCallEstablished(Android.Net.Sip.SipAudioCall arg0)
+            [global::System.Obsolete()]
+            public void OnCallEstablished(Android.Net.Sip.SipAudioCall arg0)
             {
                 IExecuteWithSignature("onCallEstablished", "(Landroid/net/sip/SipAudioCall;)V", arg0);
             }
@@ -565,8 +297,8 @@ namespace Android.Net.Sip
             /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onCallHeld(android.net.sip.SipAudioCall)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall"/></param>
-            [System.Obsolete()]
-            public override void OnCallHeld(Android.Net.Sip.SipAudioCall arg0)
+            [global::System.Obsolete()]
+            public void OnCallHeld(Android.Net.Sip.SipAudioCall arg0)
             {
                 IExecuteWithSignature("onCallHeld", "(Landroid/net/sip/SipAudioCall;)V", arg0);
             }
@@ -574,8 +306,8 @@ namespace Android.Net.Sip
             /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onCalling(android.net.sip.SipAudioCall)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall"/></param>
-            [System.Obsolete()]
-            public override void OnCalling(Android.Net.Sip.SipAudioCall arg0)
+            [global::System.Obsolete()]
+            public void OnCalling(Android.Net.Sip.SipAudioCall arg0)
             {
                 IExecuteWithSignature("onCalling", "(Landroid/net/sip/SipAudioCall;)V", arg0);
             }
@@ -583,8 +315,8 @@ namespace Android.Net.Sip
             /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onChanged(android.net.sip.SipAudioCall)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall"/></param>
-            [System.Obsolete()]
-            public override void OnChanged(Android.Net.Sip.SipAudioCall arg0)
+            [global::System.Obsolete()]
+            public void OnChanged(Android.Net.Sip.SipAudioCall arg0)
             {
                 IExecuteWithSignature("onChanged", "(Landroid/net/sip/SipAudioCall;)V", arg0);
             }
@@ -594,8 +326,8 @@ namespace Android.Net.Sip
             /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall"/></param>
             /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
-            public override void OnError(Android.Net.Sip.SipAudioCall arg0, int arg1, Java.Lang.String arg2)
+            [global::System.Obsolete()]
+            public void OnError(Android.Net.Sip.SipAudioCall arg0, int arg1, Java.Lang.String arg2)
             {
                 IExecute("onError", arg0, arg1, arg2);
             }
@@ -603,8 +335,8 @@ namespace Android.Net.Sip
             /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onReadyToCall(android.net.sip.SipAudioCall)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall"/></param>
-            [System.Obsolete()]
-            public override void OnReadyToCall(Android.Net.Sip.SipAudioCall arg0)
+            [global::System.Obsolete()]
+            public void OnReadyToCall(Android.Net.Sip.SipAudioCall arg0)
             {
                 IExecuteWithSignature("onReadyToCall", "(Landroid/net/sip/SipAudioCall;)V", arg0);
             }
@@ -613,8 +345,8 @@ namespace Android.Net.Sip
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall"/></param>
             /// <param name="arg1"><see cref="Android.Net.Sip.SipProfile"/></param>
-            [System.Obsolete()]
-            public override void OnRinging(Android.Net.Sip.SipAudioCall arg0, Android.Net.Sip.SipProfile arg1)
+            [global::System.Obsolete()]
+            public void OnRinging(Android.Net.Sip.SipAudioCall arg0, Android.Net.Sip.SipProfile arg1)
             {
                 IExecute("onRinging", arg0, arg1);
             }
@@ -622,8 +354,8 @@ namespace Android.Net.Sip
             /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onRingingBack(android.net.sip.SipAudioCall)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Sip.SipAudioCall"/></param>
-            [System.Obsolete()]
-            public override void OnRingingBack(Android.Net.Sip.SipAudioCall arg0)
+            [global::System.Obsolete()]
+            public void OnRingingBack(Android.Net.Sip.SipAudioCall arg0)
             {
                 IExecuteWithSignature("onRingingBack", "(Landroid/net/sip/SipAudioCall;)V", arg0);
             }

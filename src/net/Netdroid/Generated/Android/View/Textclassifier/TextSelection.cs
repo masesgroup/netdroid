@@ -52,46 +52,20 @@ namespace Android.View.Textclassifier
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.html#getEntityCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.html#getExtras()"/>
         /// </summary>
-        public int EntityCount
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<int>("getEntityCount", "()I"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.html#getExtras()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.html#getTextClassification()"/>
         /// </summary>
-        public Android.Os.Bundle Extras
+        /// <returns><see cref="Android.View.Textclassifier.TextClassification"/></returns>
+        public Android.View.Textclassifier.TextClassification GetTextClassification()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.html#getId()"/> 
-        /// </summary>
-        public Java.Lang.String Id
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.html#getSelectionEndIndex()"/> 
-        /// </summary>
-        public int SelectionEndIndex
-        {
-            get { return IExecuteWithSignature<int>("getSelectionEndIndex", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.html#getSelectionStartIndex()"/> 
-        /// </summary>
-        public int SelectionStartIndex
-        {
-            get { return IExecuteWithSignature<int>("getSelectionStartIndex", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.html#getTextClassification()"/> 
-        /// </summary>
-        public Android.View.Textclassifier.TextClassification TextClassification
-        {
-            get { return IExecute<Android.View.Textclassifier.TextClassification>("getTextClassification"); }
+            return IExecute<Android.View.Textclassifier.TextClassification>("getTextClassification");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.html#getConfidenceScore(java.lang.String)"/>
@@ -111,6 +85,30 @@ namespace Android.View.Textclassifier
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.html#getEntityCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEntityCount()
+        {
+            return IExecuteWithSignature<int>("getEntityCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.html#getSelectionEndIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSelectionEndIndex()
+        {
+            return IExecuteWithSignature<int>("getSelectionEndIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.html#getSelectionStartIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSelectionStartIndex()
+        {
+            return IExecuteWithSignature<int>("getSelectionStartIndex", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.html#getEntity(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -118,6 +116,14 @@ namespace Android.View.Textclassifier
         public Java.Lang.String GetEntity(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getEntity", "(I)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.html#writeToParcel(android.os.Parcel,int)"/>
@@ -244,46 +250,20 @@ namespace Android.View.Textclassifier
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.Request.html#getCallingPackageName()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.Request.html#getExtras()"/>
             /// </summary>
-            public Java.Lang.String CallingPackageName
+            /// <returns><see cref="Android.Os.Bundle"/></returns>
+            public Android.Os.Bundle GetExtras()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getCallingPackageName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.Request.html#getDefaultLocales()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.Request.html#getDefaultLocales()"/>
             /// </summary>
-            public Android.Os.LocaleList DefaultLocales
+            /// <returns><see cref="Android.Os.LocaleList"/></returns>
+            public Android.Os.LocaleList GetDefaultLocales()
             {
-                get { return IExecuteWithSignature<Android.Os.LocaleList>("getDefaultLocales", "()Landroid/os/LocaleList;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.Request.html#getEndIndex()"/> 
-            /// </summary>
-            public int EndIndex
-            {
-                get { return IExecuteWithSignature<int>("getEndIndex", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.Request.html#getExtras()"/> 
-            /// </summary>
-            public Android.Os.Bundle Extras
-            {
-                get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.Request.html#getStartIndex()"/> 
-            /// </summary>
-            public int StartIndex
-            {
-                get { return IExecuteWithSignature<int>("getStartIndex", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.Request.html#getText()"/> 
-            /// </summary>
-            public Java.Lang.CharSequence Text
-            {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature<Android.Os.LocaleList>("getDefaultLocales", "()Landroid/os/LocaleList;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.Request.html#shouldIncludeTextClassification()"/>
@@ -300,6 +280,38 @@ namespace Android.View.Textclassifier
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.Request.html#getEndIndex()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetEndIndex()
+            {
+                return IExecuteWithSignature<int>("getEndIndex", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.Request.html#getStartIndex()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetStartIndex()
+            {
+                return IExecuteWithSignature<int>("getStartIndex", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.Request.html#getText()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetText()
+            {
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.Request.html#getCallingPackageName()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetCallingPackageName()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getCallingPackageName", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextSelection.Request.html#writeToParcel(android.os.Parcel,int)"/>

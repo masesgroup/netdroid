@@ -42,11 +42,12 @@ namespace Android.Icu.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/MeasureFormat.html#getCurrencyFormat()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/MeasureFormat.html#getCurrencyFormat()"/>
         /// </summary>
-        public static Android.Icu.Text.MeasureFormat CurrencyFormat
+        /// <returns><see cref="Android.Icu.Text.MeasureFormat"/></returns>
+        public static Android.Icu.Text.MeasureFormat GetCurrencyFormat()
         {
-            get { return SExecuteWithSignature<Android.Icu.Text.MeasureFormat>(LocalBridgeClazz, "getCurrencyFormat", "()Landroid/icu/text/MeasureFormat;"); }
+            return SExecuteWithSignature<Android.Icu.Text.MeasureFormat>(LocalBridgeClazz, "getCurrencyFormat", "()Landroid/icu/text/MeasureFormat;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MeasureFormat.html#getCurrencyFormat(android.icu.util.ULocale)"/>
@@ -113,25 +114,28 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/MeasureFormat.html#getLocale()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/MeasureFormat.html#getWidth()"/>
         /// </summary>
-        public Android.Icu.Util.ULocale Locale
+        /// <returns><see cref="Android.Icu.Text.MeasureFormat.FormatWidth"/></returns>
+        public Android.Icu.Text.MeasureFormat.FormatWidth GetWidth()
         {
-            get { return IExecuteWithSignature<Android.Icu.Util.ULocale>("getLocale", "()Landroid/icu/util/ULocale;"); }
+            return IExecuteWithSignature<Android.Icu.Text.MeasureFormat.FormatWidth>("getWidth", "()Landroid/icu/text/MeasureFormat$FormatWidth;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/MeasureFormat.html#getNumberFormat()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/MeasureFormat.html#getNumberFormat()"/>
         /// </summary>
-        public Android.Icu.Text.NumberFormat NumberFormat
+        /// <returns><see cref="Android.Icu.Text.NumberFormat"/></returns>
+        public Android.Icu.Text.NumberFormat GetNumberFormat()
         {
-            get { return IExecuteWithSignature<Android.Icu.Text.NumberFormat>("getNumberFormat", "()Landroid/icu/text/NumberFormat;"); }
+            return IExecuteWithSignature<Android.Icu.Text.NumberFormat>("getNumberFormat", "()Landroid/icu/text/NumberFormat;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/MeasureFormat.html#getWidth()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/MeasureFormat.html#getLocale()"/>
         /// </summary>
-        public Android.Icu.Text.MeasureFormat.FormatWidth Width
+        /// <returns><see cref="Android.Icu.Util.ULocale"/></returns>
+        public Android.Icu.Util.ULocale GetLocale()
         {
-            get { return IExecuteWithSignature<Android.Icu.Text.MeasureFormat.FormatWidth>("getWidth", "()Landroid/icu/text/MeasureFormat$FormatWidth;"); }
+            return IExecuteWithSignature<Android.Icu.Util.ULocale>("getLocale", "()Landroid/icu/util/ULocale;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MeasureFormat.html#formatMeasures(android.icu.util.Measure[])"/>

@@ -40,35 +40,35 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#THEME_DEVICE_DEFAULT_DARK"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int THEME_DEVICE_DEFAULT_DARK { get { if (!_THEME_DEVICE_DEFAULT_DARKReady) { _THEME_DEVICE_DEFAULT_DARKContent = SGetField<int>(LocalBridgeClazz, "THEME_DEVICE_DEFAULT_DARK"); _THEME_DEVICE_DEFAULT_DARKReady = true; } return _THEME_DEVICE_DEFAULT_DARKContent; } }
         private static int _THEME_DEVICE_DEFAULT_DARKContent = default;
         private static bool _THEME_DEVICE_DEFAULT_DARKReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#THEME_DEVICE_DEFAULT_LIGHT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int THEME_DEVICE_DEFAULT_LIGHT { get { if (!_THEME_DEVICE_DEFAULT_LIGHTReady) { _THEME_DEVICE_DEFAULT_LIGHTContent = SGetField<int>(LocalBridgeClazz, "THEME_DEVICE_DEFAULT_LIGHT"); _THEME_DEVICE_DEFAULT_LIGHTReady = true; } return _THEME_DEVICE_DEFAULT_LIGHTContent; } }
         private static int _THEME_DEVICE_DEFAULT_LIGHTContent = default;
         private static bool _THEME_DEVICE_DEFAULT_LIGHTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#THEME_HOLO_DARK"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int THEME_HOLO_DARK { get { if (!_THEME_HOLO_DARKReady) { _THEME_HOLO_DARKContent = SGetField<int>(LocalBridgeClazz, "THEME_HOLO_DARK"); _THEME_HOLO_DARKReady = true; } return _THEME_HOLO_DARKContent; } }
         private static int _THEME_HOLO_DARKContent = default;
         private static bool _THEME_HOLO_DARKReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#THEME_HOLO_LIGHT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int THEME_HOLO_LIGHT { get { if (!_THEME_HOLO_LIGHTReady) { _THEME_HOLO_LIGHTContent = SGetField<int>(LocalBridgeClazz, "THEME_HOLO_LIGHT"); _THEME_HOLO_LIGHTReady = true; } return _THEME_HOLO_LIGHTContent; } }
         private static int _THEME_HOLO_LIGHTContent = default;
         private static bool _THEME_HOLO_LIGHTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#THEME_TRADITIONAL"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int THEME_TRADITIONAL { get { if (!_THEME_TRADITIONALReady) { _THEME_TRADITIONALContent = SGetField<int>(LocalBridgeClazz, "THEME_TRADITIONAL"); _THEME_TRADITIONALReady = true; } return _THEME_TRADITIONALContent; } }
         private static int _THEME_TRADITIONALContent = default;
         private static bool _THEME_TRADITIONALReady = false; // this is used because in case of generics 
@@ -81,13 +81,6 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#getListView()"/> 
-        /// </summary>
-        public Android.Widget.ListView ListView
-        {
-            get { return IExecuteWithSignature<Android.Widget.ListView>("getListView", "()Landroid/widget/ListView;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#getButton(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -95,6 +88,14 @@ namespace Android.App
         public Android.Widget.Button GetButton(int arg0)
         {
             return IExecuteWithSignature<Android.Widget.Button>("getButton", "(I)Landroid/widget/Button;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#getListView()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Widget.ListView"/></returns>
+        public Android.Widget.ListView GetListView()
+        {
+            return IExecuteWithSignature<Android.Widget.ListView>("getListView", "()Landroid/widget/ListView;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton(int,java.lang.CharSequence,android.content.DialogInterface.OnClickListener)"/>
@@ -121,7 +122,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Android.Content.DialogInterface.OnClickListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetButton(Java.Lang.CharSequence arg0, Android.Content.DialogInterface.OnClickListener arg1)
         {
             IExecute("setButton", arg0, arg1);
@@ -131,7 +132,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Android.Os.Message"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetButton(Java.Lang.CharSequence arg0, Android.Os.Message arg1)
         {
             IExecute("setButton", arg0, arg1);
@@ -141,7 +142,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Android.Content.DialogInterface.OnClickListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetButton2(Java.Lang.CharSequence arg0, Android.Content.DialogInterface.OnClickListener arg1)
         {
             IExecute("setButton2", arg0, arg1);
@@ -151,7 +152,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Android.Os.Message"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetButton2(Java.Lang.CharSequence arg0, Android.Os.Message arg1)
         {
             IExecute("setButton2", arg0, arg1);
@@ -161,7 +162,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Android.Content.DialogInterface.OnClickListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetButton3(Java.Lang.CharSequence arg0, Android.Content.DialogInterface.OnClickListener arg1)
         {
             IExecute("setButton3", arg0, arg1);
@@ -171,7 +172,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Android.Os.Message"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetButton3(Java.Lang.CharSequence arg0, Android.Os.Message arg1)
         {
             IExecute("setButton3", arg0, arg1);
@@ -286,13 +287,6 @@ namespace Android.App
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#getContext()"/> 
-            /// </summary>
-            public Android.Content.Context Context
-            {
-                get { return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#create()"/>
             /// </summary>
             /// <returns><see cref="Android.App.AlertDialog"/></returns>
@@ -379,7 +373,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
             /// <returns><see cref="Android.App.AlertDialog.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.AlertDialog.Builder SetInverseBackgroundForced(bool arg0)
             {
                 return IExecuteWithSignature<Android.App.AlertDialog.Builder>("setInverseBackgroundForced", "(Z)Landroid/app/AlertDialog$Builder;", arg0);
@@ -632,6 +626,14 @@ namespace Android.App
             public Android.App.AlertDialog.Builder SetView(int arg0)
             {
                 return IExecuteWithSignature<Android.App.AlertDialog.Builder>("setView", "(I)Landroid/app/AlertDialog$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#getContext()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Content.Context"/></returns>
+            public Android.Content.Context GetContext()
+            {
+                return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;");
             }
 
             #endregion

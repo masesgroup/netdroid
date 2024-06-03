@@ -94,46 +94,20 @@ namespace Android.Telecom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallAttributes.html#getAddress()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/CallAttributes.html#getAddress()"/>
         /// </summary>
-        public Android.Net.Uri Address
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetAddress()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getAddress", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getAddress", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallAttributes.html#getCallCapabilities()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/CallAttributes.html#getPhoneAccountHandle()"/>
         /// </summary>
-        public int CallCapabilities
+        /// <returns><see cref="Android.Telecom.PhoneAccountHandle"/></returns>
+        public Android.Telecom.PhoneAccountHandle GetPhoneAccountHandle()
         {
-            get { return IExecuteWithSignature<int>("getCallCapabilities", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallAttributes.html#getCallType()"/> 
-        /// </summary>
-        public int CallType
-        {
-            get { return IExecuteWithSignature<int>("getCallType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallAttributes.html#getDirection()"/> 
-        /// </summary>
-        public int Direction
-        {
-            get { return IExecuteWithSignature<int>("getDirection", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallAttributes.html#getDisplayName()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence DisplayName
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getDisplayName", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallAttributes.html#getPhoneAccountHandle()"/> 
-        /// </summary>
-        public Android.Telecom.PhoneAccountHandle PhoneAccountHandle
-        {
-            get { return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getPhoneAccountHandle", "()Landroid/telecom/PhoneAccountHandle;"); }
+            return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getPhoneAccountHandle", "()Landroid/telecom/PhoneAccountHandle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallAttributes.html#describeContents()"/>
@@ -142,6 +116,38 @@ namespace Android.Telecom
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/CallAttributes.html#getCallCapabilities()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCallCapabilities()
+        {
+            return IExecuteWithSignature<int>("getCallCapabilities", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/CallAttributes.html#getCallType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCallType()
+        {
+            return IExecuteWithSignature<int>("getCallType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/CallAttributes.html#getDirection()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDirection()
+        {
+            return IExecuteWithSignature<int>("getDirection", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/CallAttributes.html#getDisplayName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetDisplayName()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getDisplayName", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallAttributes.html#writeToParcel(android.os.Parcel,int)"/>

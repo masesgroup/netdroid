@@ -42,7 +42,7 @@ namespace Java.Security
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyFactory.html#getInstance(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyFactory.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -54,7 +54,7 @@ namespace Java.Security
             return SExecute<Java.Security.KeyFactory>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyFactory.html#getInstance(java.lang.String,java.security.Provider)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyFactory.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
@@ -65,7 +65,7 @@ namespace Java.Security
             return SExecute<Java.Security.KeyFactory>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyFactory.html#getInstance(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyFactory.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.KeyFactory"/></returns>
@@ -79,33 +79,27 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyFactory.html#getAlgorithm()"/> 
-        /// </summary>
-        public Java.Lang.String Algorithm
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyFactory.html#getProvider()"/> 
-        /// </summary>
-        public Java.Security.Provider Provider
-        {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyFactory.html#getKeySpec(java.security.Key,java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyFactory.html#getKeySpec(java.security.Key,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Key"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Security.Spec.IKeySpec"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Security.Spec.InvalidKeySpecException"/>
-        public T GetKeySpec<T>(Java.Security.Key arg0, Java.Lang.Class arg1) where T: Java.Security.Spec.IKeySpec, new()
+        public T GetKeySpec<T>(Java.Security.Key arg0, Java.Lang.Class arg1) where T : Java.Security.Spec.IKeySpec, new()
         {
             return IExecute<T>("getKeySpec", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyFactory.html#translateKey(java.security.Key)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyFactory.html#getAlgorithm()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAlgorithm()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/KeyFactory.html#translateKey(java.security.Key)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Key"/></param>
         /// <returns><see cref="Java.Security.Key"/></returns>
@@ -115,7 +109,7 @@ namespace Java.Security
             return IExecuteWithSignature<Java.Security.Key>("translateKey", "(Ljava/security/Key;)Ljava/security/Key;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyFactory.html#generatePrivate(java.security.spec.KeySpec)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyFactory.html#generatePrivate(java.security.spec.KeySpec)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Spec.KeySpec"/></param>
         /// <returns><see cref="Java.Security.PrivateKey"/></returns>
@@ -125,7 +119,15 @@ namespace Java.Security
             return IExecuteWithSignature<Java.Security.PrivateKey>("generatePrivate", "(Ljava/security/spec/KeySpec;)Ljava/security/PrivateKey;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyFactory.html#generatePublic(java.security.spec.KeySpec)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyFactory.html#getProvider()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Provider"/></returns>
+        public Java.Security.Provider GetProvider()
+        {
+            return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/KeyFactory.html#generatePublic(java.security.spec.KeySpec)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Spec.KeySpec"/></param>
         /// <returns><see cref="Java.Security.PublicKey"/></returns>

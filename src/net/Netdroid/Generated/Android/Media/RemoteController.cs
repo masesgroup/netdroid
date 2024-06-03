@@ -36,7 +36,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Media.RemoteController.OnClientUpdateListener"/></param>
         /// <param name="arg2"><see cref="Android.Os.Looper"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public RemoteController(Android.Content.Context arg0, Android.Media.RemoteController.OnClientUpdateListener arg1, Android.Os.Looper arg2)
             : base(arg0, arg1, arg2)
         {
@@ -47,7 +47,7 @@ namespace Android.Media
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Media.RemoteController.OnClientUpdateListener"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public RemoteController(Android.Content.Context arg0, Android.Media.RemoteController.OnClientUpdateListener arg1)
             : base(arg0, arg1)
         {
@@ -63,14 +63,14 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteController.html#POSITION_SYNCHRONIZATION_CHECK"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int POSITION_SYNCHRONIZATION_CHECK { get { if (!_POSITION_SYNCHRONIZATION_CHECKReady) { _POSITION_SYNCHRONIZATION_CHECKContent = SGetField<int>(LocalBridgeClazz, "POSITION_SYNCHRONIZATION_CHECK"); _POSITION_SYNCHRONIZATION_CHECKReady = true; } return _POSITION_SYNCHRONIZATION_CHECKContent; } }
         private static int _POSITION_SYNCHRONIZATION_CHECKContent = default;
         private static bool _POSITION_SYNCHRONIZATION_CHECKReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteController.html#POSITION_SYNCHRONIZATION_NONE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int POSITION_SYNCHRONIZATION_NONE { get { if (!_POSITION_SYNCHRONIZATION_NONEReady) { _POSITION_SYNCHRONIZATION_NONEContent = SGetField<int>(LocalBridgeClazz, "POSITION_SYNCHRONIZATION_NONE"); _POSITION_SYNCHRONIZATION_NONEReady = true; } return _POSITION_SYNCHRONIZATION_NONEContent; } }
         private static int _POSITION_SYNCHRONIZATION_NONEContent = default;
         private static bool _POSITION_SYNCHRONIZATION_NONEReady = false; // this is used because in case of generics 
@@ -83,18 +83,10 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/RemoteController.html#getEstimatedMediaPosition()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public long EstimatedMediaPosition
-        {
-            get { return IExecuteWithSignature<long>("getEstimatedMediaPosition", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteController.html#editMetadata()"/>
         /// </summary>
         /// <returns><see cref="Android.Media.RemoteController.MetadataEditor"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Media.RemoteController.MetadataEditor EditMetadata()
         {
             return IExecuteWithSignature<Android.Media.RemoteController.MetadataEditor>("editMetadata", "()Landroid/media/RemoteController$MetadataEditor;");
@@ -103,7 +95,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/RemoteController.html#clearArtworkConfiguration()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool ClearArtworkConfiguration()
         {
             return IExecuteWithSignature<bool>("clearArtworkConfiguration", "()Z");
@@ -114,7 +106,7 @@ namespace Android.Media
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool SeekTo(long arg0)
         {
             return IExecuteWithSignature<bool>("seekTo", "(J)Z", arg0);
@@ -125,7 +117,7 @@ namespace Android.Media
         /// <param name="arg0"><see cref="Android.View.KeyEvent"/></param>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool SendMediaKeyEvent(Android.View.KeyEvent arg0)
         {
             return IExecuteWithSignature<bool>("sendMediaKeyEvent", "(Landroid/view/KeyEvent;)Z", arg0);
@@ -137,7 +129,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool SetArtworkConfiguration(int arg0, int arg1)
         {
             return IExecute<bool>("setArtworkConfiguration", arg0, arg1);
@@ -148,10 +140,19 @@ namespace Android.Media
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool SetSynchronizationMode(int arg0)
         {
             return IExecuteWithSignature<bool>("setSynchronizationMode", "(I)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RemoteController.html#getEstimatedMediaPosition()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        [global::System.Obsolete()]
+        public long GetEstimatedMediaPosition()
+        {
+            return IExecuteWithSignature<long>("getEstimatedMediaPosition", "()J");
         }
 
         #endregion
@@ -213,11 +214,11 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onClientChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnClientChangeEventHandler));
-                AddEventHandler("onClientMetadataUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.RemoteController.MetadataEditor>>>(OnClientMetadataUpdateEventHandler));
-                AddEventHandler("onClientPlaybackStateUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnClientPlaybackStateUpdateEventHandler));
-                AddEventHandler("onClientPlaybackStateUpdate1", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnClientPlaybackStateUpdate1EventHandler));
-                AddEventHandler("onClientTransportControlUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnClientTransportControlUpdateEventHandler));
+                AddEventHandler("onClientChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnClientChangeEventHandler));
+                AddEventHandler("onClientMetadataUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.RemoteController.MetadataEditor>>>(OnClientMetadataUpdateEventHandler));
+                AddEventHandler("onClientPlaybackStateUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnClientPlaybackStateUpdateEventHandler));
+                AddEventHandler("onClientPlaybackStateUpdate1", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnClientPlaybackStateUpdate1EventHandler));
+                AddEventHandler("onClientTransportControlUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnClientTransportControlUpdateEventHandler));
 
             }
 
@@ -225,7 +226,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/RemoteController.OnClientUpdateListener.html#onClientChange(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnClientChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<bool> OnOnClientChange { get; set; } = null;
+            public global::System.Action<bool> OnOnClientChange { get; set; } = null;
 
             void OnClientChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
             {
@@ -237,7 +238,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/RemoteController.OnClientUpdateListener.html#onClientChange(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnClientChange(bool arg0)
             {
                 
@@ -247,7 +248,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/RemoteController.OnClientUpdateListener.html#onClientMetadataUpdate(android.media.RemoteController.MetadataEditor)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnClientMetadataUpdate"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.RemoteController.MetadataEditor> OnOnClientMetadataUpdate { get; set; } = null;
+            public global::System.Action<Android.Media.RemoteController.MetadataEditor> OnOnClientMetadataUpdate { get; set; } = null;
 
             void OnClientMetadataUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.RemoteController.MetadataEditor>> data)
             {
@@ -259,7 +260,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/RemoteController.OnClientUpdateListener.html#onClientMetadataUpdate(android.media.RemoteController.MetadataEditor)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Media.RemoteController.MetadataEditor"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnClientMetadataUpdate(Android.Media.RemoteController.MetadataEditor arg0)
             {
                 
@@ -269,7 +270,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/RemoteController.OnClientUpdateListener.html#onClientPlaybackStateUpdate(int,long,long,float)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnClientPlaybackStateUpdate"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int, long, long, float> OnOnClientPlaybackStateUpdate { get; set; } = null;
+            public global::System.Action<int, long, long, float> OnOnClientPlaybackStateUpdate { get; set; } = null;
 
             void OnClientPlaybackStateUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -284,7 +285,7 @@ namespace Android.Media
             /// <param name="arg1"><see cref="long"/></param>
             /// <param name="arg2"><see cref="long"/></param>
             /// <param name="arg3"><see cref="float"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnClientPlaybackStateUpdate(int arg0, long arg1, long arg2, float arg3)
             {
                 
@@ -294,7 +295,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/RemoteController.OnClientUpdateListener.html#onClientPlaybackStateUpdate(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnClientPlaybackStateUpdate1"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnClientPlaybackStateUpdate1 { get; set; } = null;
+            public global::System.Action<int> OnOnClientPlaybackStateUpdate1 { get; set; } = null;
 
             void OnClientPlaybackStateUpdate1EventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -306,7 +307,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/RemoteController.OnClientUpdateListener.html#onClientPlaybackStateUpdate(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnClientPlaybackStateUpdate(int arg0)
             {
                 
@@ -316,7 +317,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/RemoteController.OnClientUpdateListener.html#onClientTransportControlUpdate(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnClientTransportControlUpdate"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnClientTransportControlUpdate { get; set; } = null;
+            public global::System.Action<int> OnOnClientTransportControlUpdate { get; set; } = null;
 
             void OnClientTransportControlUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -328,7 +329,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/RemoteController.OnClientUpdateListener.html#onClientTransportControlUpdate(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnClientTransportControlUpdate(int arg0)
             {
                 
@@ -368,7 +369,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/RemoteController.OnClientUpdateListener.html#onClientChange(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnClientChange(bool arg0)
             {
                 IExecuteWithSignature("onClientChange", "(Z)V", arg0);
@@ -377,7 +378,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/RemoteController.OnClientUpdateListener.html#onClientMetadataUpdate(android.media.RemoteController.MetadataEditor)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Media.RemoteController.MetadataEditor"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnClientMetadataUpdate(Android.Media.RemoteController.MetadataEditor arg0)
             {
                 IExecuteWithSignature("onClientMetadataUpdate", "(Landroid/media/RemoteController$MetadataEditor;)V", arg0);
@@ -389,7 +390,7 @@ namespace Android.Media
             /// <param name="arg1"><see cref="long"/></param>
             /// <param name="arg2"><see cref="long"/></param>
             /// <param name="arg3"><see cref="float"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnClientPlaybackStateUpdate(int arg0, long arg1, long arg2, float arg3)
             {
                 IExecute("onClientPlaybackStateUpdate", arg0, arg1, arg2, arg3);
@@ -398,7 +399,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/RemoteController.OnClientUpdateListener.html#onClientPlaybackStateUpdate(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnClientPlaybackStateUpdate(int arg0)
             {
                 IExecuteWithSignature("onClientPlaybackStateUpdate", "(I)V", arg0);
@@ -407,7 +408,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/RemoteController.OnClientUpdateListener.html#onClientTransportControlUpdate(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnClientTransportControlUpdate(int arg0)
             {
                 IExecuteWithSignature("onClientTransportControlUpdate", "(I)V", arg0);

@@ -30,7 +30,7 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#%3Cinit%3E(int,int,java.net.InetAddress)"/>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#%3Cinit%3E(int,int,java.net.InetAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -41,7 +41,7 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#%3Cinit%3E(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#%3Cinit%3E(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -51,7 +51,7 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -72,11 +72,11 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#setSocketFactory(java.net.SocketImplFactory)"/>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#setSocketFactory(java.net.SocketImplFactory)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketImplFactory"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void SetSocketFactory(Java.Net.SocketImplFactory arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setSocketFactory", "(Ljava/net/SocketImplFactory;)V", arg0);
@@ -86,56 +86,7 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#getChannel()"/> 
-        /// </summary>
-        public Java.Nio.Channels.ServerSocketChannel Channel
-        {
-            get { return IExecuteWithSignature<Java.Nio.Channels.ServerSocketChannel>("getChannel", "()Ljava/nio/channels/ServerSocketChannel;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#getInetAddress()"/> 
-        /// </summary>
-        public Java.Net.InetAddress InetAddress
-        {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getInetAddress", "()Ljava/net/InetAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#getLocalPort()"/> 
-        /// </summary>
-        public int LocalPort
-        {
-            get { return IExecuteWithSignature<int>("getLocalPort", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#getLocalSocketAddress()"/> 
-        /// </summary>
-        public Java.Net.SocketAddress LocalSocketAddress
-        {
-            get { return IExecuteWithSignature<Java.Net.SocketAddress>("getLocalSocketAddress", "()Ljava/net/SocketAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#getReceiveBufferSize()"/> <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#setReceiveBufferSize(int)"/>
-        /// </summary>
-        public int ReceiveBufferSize
-        {
-            get { return IExecuteWithSignature<int>("getReceiveBufferSize", "()I"); } set { IExecuteWithSignature("setReceiveBufferSize", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#getReuseAddress()"/> <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#setReuseAddress(boolean)"/>
-        /// </summary>
-        public bool ReuseAddress
-        {
-            get { return IExecuteWithSignature<bool>("getReuseAddress", "()Z"); } set { IExecuteWithSignature("setReuseAddress", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#getSoTimeout()"/> <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#setSoTimeout(int)"/>
-        /// </summary>
-        public int SoTimeout
-        {
-            get { return IExecuteWithSignature<int>("getSoTimeout", "()I"); } set { IExecuteWithSignature("setSoTimeout", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#setOption(java.net.SocketOption,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#setOption(java.net.SocketOption,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
         /// <param name="arg1"><typeparamref name="T"/></param>
@@ -147,7 +98,7 @@ namespace Java.Net
             return IExecute<Java.Net.ServerSocket>("setOption", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#getOption(java.net.SocketOption)"/>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#getOption(java.net.SocketOption)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
         /// <typeparam name="T"></typeparam>
@@ -158,7 +109,16 @@ namespace Java.Net
             return IExecuteWithSignature<T>("getOption", "(Ljava/net/SocketOption;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#isBound()"/>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#getReuseAddress()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Net.SocketException"/>
+        public bool GetReuseAddress()
+        {
+            return IExecuteWithSignature<bool>("getReuseAddress", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#isBound()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsBound()
@@ -166,7 +126,7 @@ namespace Java.Net
             return IExecuteWithSignature<bool>("isBound", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#isClosed()"/>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#isClosed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsClosed()
@@ -174,7 +134,23 @@ namespace Java.Net
             return IExecuteWithSignature<bool>("isClosed", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#accept()"/>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#getLocalPort()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLocalPort()
+        {
+            return IExecuteWithSignature<int>("getLocalPort", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#getInetAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        public Java.Net.InetAddress GetInetAddress()
+        {
+            return IExecuteWithSignature<Java.Net.InetAddress>("getInetAddress", "()Ljava/net/InetAddress;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#accept()"/>
         /// </summary>
         /// <returns><see cref="Java.Net.Socket"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -183,7 +159,23 @@ namespace Java.Net
             return IExecuteWithSignature<Java.Net.Socket>("accept", "()Ljava/net/Socket;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#supportedOptions()"/>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#getLocalSocketAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.SocketAddress"/></returns>
+        public Java.Net.SocketAddress GetLocalSocketAddress()
+        {
+            return IExecuteWithSignature<Java.Net.SocketAddress>("getLocalSocketAddress", "()Ljava/net/SocketAddress;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#getChannel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Nio.Channels.ServerSocketChannel"/></returns>
+        public Java.Nio.Channels.ServerSocketChannel GetChannel()
+        {
+            return IExecuteWithSignature<Java.Nio.Channels.ServerSocketChannel>("getChannel", "()Ljava/nio/channels/ServerSocketChannel;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#supportedOptions()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Net.SocketOption<object>> SupportedOptions()
@@ -191,7 +183,43 @@ namespace Java.Net
             return IExecuteWithSignature<Java.Util.Set<Java.Net.SocketOption<object>>>("supportedOptions", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#bind(java.net.SocketAddress,int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#getReceiveBufferSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Net.SocketException"/>
+        public int GetReceiveBufferSize()
+        {
+            return IExecuteWithSignature<int>("getReceiveBufferSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#getSoTimeout()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public int GetSoTimeout()
+        {
+            return IExecuteWithSignature<int>("getSoTimeout", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#setReceiveBufferSize(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Net.SocketException"/>
+        public void SetReceiveBufferSize(int arg0)
+        {
+            IExecuteWithSignature("setReceiveBufferSize", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#setSoTimeout(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Net.SocketException"/>
+        public void SetSoTimeout(int arg0)
+        {
+            IExecuteWithSignature("setSoTimeout", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#bind(java.net.SocketAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -201,7 +229,7 @@ namespace Java.Net
             IExecute("bind", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#bind(java.net.SocketAddress)"/>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#bind(java.net.SocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -210,7 +238,7 @@ namespace Java.Net
             IExecuteWithSignature("bind", "(Ljava/net/SocketAddress;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
@@ -218,7 +246,7 @@ namespace Java.Net
             IExecuteWithSignature("close", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#setPerformancePreferences(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#setPerformancePreferences(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -226,6 +254,15 @@ namespace Java.Net
         public void SetPerformancePreferences(int arg0, int arg1, int arg2)
         {
             IExecute("setPerformancePreferences", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#setReuseAddress(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <exception cref="Java.Net.SocketException"/>
+        public void SetReuseAddress(bool arg0)
+        {
+            IExecuteWithSignature("setReuseAddress", "(Z)V", arg0);
         }
 
         #endregion

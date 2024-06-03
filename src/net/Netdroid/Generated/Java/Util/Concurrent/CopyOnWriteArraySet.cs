@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArraySet.html#%3Cinit%3E(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArraySet.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public CopyOnWriteArraySet(Java.Util.Collection arg0)
@@ -73,7 +73,7 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArraySet.html#%3Cinit%3E(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArraySet.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public CopyOnWriteArraySet(Java.Util.Collection<E> arg0)

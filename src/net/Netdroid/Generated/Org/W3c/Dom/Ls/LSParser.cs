@@ -56,31 +56,31 @@ namespace Org.W3c.Dom.Ls
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_APPEND_AS_CHILDREN"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#ACTION_APPEND_AS_CHILDREN"/>
         /// </summary>
         public static short ACTION_APPEND_AS_CHILDREN { get { if (!_ACTION_APPEND_AS_CHILDRENReady) { _ACTION_APPEND_AS_CHILDRENContent = SGetField<short>(LocalBridgeClazz, "ACTION_APPEND_AS_CHILDREN"); _ACTION_APPEND_AS_CHILDRENReady = true; } return _ACTION_APPEND_AS_CHILDRENContent; } }
         private static short _ACTION_APPEND_AS_CHILDRENContent = default;
         private static bool _ACTION_APPEND_AS_CHILDRENReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_INSERT_AFTER"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#ACTION_INSERT_AFTER"/>
         /// </summary>
         public static short ACTION_INSERT_AFTER { get { if (!_ACTION_INSERT_AFTERReady) { _ACTION_INSERT_AFTERContent = SGetField<short>(LocalBridgeClazz, "ACTION_INSERT_AFTER"); _ACTION_INSERT_AFTERReady = true; } return _ACTION_INSERT_AFTERContent; } }
         private static short _ACTION_INSERT_AFTERContent = default;
         private static bool _ACTION_INSERT_AFTERReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_INSERT_BEFORE"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#ACTION_INSERT_BEFORE"/>
         /// </summary>
         public static short ACTION_INSERT_BEFORE { get { if (!_ACTION_INSERT_BEFOREReady) { _ACTION_INSERT_BEFOREContent = SGetField<short>(LocalBridgeClazz, "ACTION_INSERT_BEFORE"); _ACTION_INSERT_BEFOREReady = true; } return _ACTION_INSERT_BEFOREContent; } }
         private static short _ACTION_INSERT_BEFOREContent = default;
         private static bool _ACTION_INSERT_BEFOREReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_REPLACE"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#ACTION_REPLACE"/>
         /// </summary>
         public static short ACTION_REPLACE { get { if (!_ACTION_REPLACEReady) { _ACTION_REPLACEContent = SGetField<short>(LocalBridgeClazz, "ACTION_REPLACE"); _ACTION_REPLACEReady = true; } return _ACTION_REPLACEContent; } }
         private static short _ACTION_REPLACEContent = default;
         private static bool _ACTION_REPLACEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_REPLACE_CHILDREN"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#ACTION_REPLACE_CHILDREN"/>
         /// </summary>
         public static short ACTION_REPLACE_CHILDREN { get { if (!_ACTION_REPLACE_CHILDRENReady) { _ACTION_REPLACE_CHILDRENContent = SGetField<short>(LocalBridgeClazz, "ACTION_REPLACE_CHILDREN"); _ACTION_REPLACE_CHILDRENReady = true; } return _ACTION_REPLACE_CHILDRENContent; } }
         private static short _ACTION_REPLACE_CHILDRENContent = default;
@@ -94,35 +94,23 @@ namespace Org.W3c.Dom.Ls
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#getAsync()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#getAsync()"/>
         /// </summary>
-        public bool Async
+        /// <returns><see cref="bool"/></returns>
+        public bool GetAsync()
         {
-            get { return IExecuteWithSignature<bool>("getAsync", "()Z"); }
+            return IExecuteWithSignature<bool>("getAsync", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#getBusy()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#getBusy()"/>
         /// </summary>
-        public bool Busy
+        /// <returns><see cref="bool"/></returns>
+        public bool GetBusy()
         {
-            get { return IExecuteWithSignature<bool>("getBusy", "()Z"); }
+            return IExecuteWithSignature<bool>("getBusy", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#getDomConfig()"/> 
-        /// </summary>
-        public Org.W3c.Dom.DOMConfiguration DomConfig
-        {
-            get { return IExecuteWithSignature<Org.W3c.Dom.DOMConfiguration>("getDomConfig", "()Lorg/w3c/dom/DOMConfiguration;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#getFilter()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#setFilter(org.w3c.dom.ls.LSParserFilter)"/>
-        /// </summary>
-        public Org.W3c.Dom.Ls.LSParserFilter Filter
-        {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Ls.LSParserFilter>("getFilter", "()Lorg/w3c/dom/ls/LSParserFilter;"); } set { IExecuteWithSignature("setFilter", "(Lorg/w3c/dom/ls/LSParserFilter;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#parse(org.w3c.dom.ls.LSInput)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#parse(org.w3c.dom.ls.LSInput)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Ls.LSInput"/></param>
         /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
@@ -133,7 +121,7 @@ namespace Org.W3c.Dom.Ls
             return IExecuteWithSignature<Org.W3c.Dom.Document>("parse", "(Lorg/w3c/dom/ls/LSInput;)Lorg/w3c/dom/Document;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#parseURI(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#parseURI(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
@@ -144,7 +132,23 @@ namespace Org.W3c.Dom.Ls
             return IExecuteWithSignature<Org.W3c.Dom.Document>("parseURI", "(Ljava/lang/String;)Lorg/w3c/dom/Document;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#parseWithContext(org.w3c.dom.ls.LSInput,org.w3c.dom.Node,short)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#getDomConfig()"/>
+        /// </summary>
+        /// <returns><see cref="Org.W3c.Dom.DOMConfiguration"/></returns>
+        public Org.W3c.Dom.DOMConfiguration GetDomConfig()
+        {
+            return IExecuteWithSignature<Org.W3c.Dom.DOMConfiguration>("getDomConfig", "()Lorg/w3c/dom/DOMConfiguration;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#getFilter()"/>
+        /// </summary>
+        /// <returns><see cref="Org.W3c.Dom.Ls.LSParserFilter"/></returns>
+        public Org.W3c.Dom.Ls.LSParserFilter GetFilter()
+        {
+            return IExecuteWithSignature<Org.W3c.Dom.Ls.LSParserFilter>("getFilter", "()Lorg/w3c/dom/ls/LSParserFilter;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#parseWithContext(org.w3c.dom.ls.LSInput,org.w3c.dom.Node,short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Ls.LSInput"/></param>
         /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
@@ -157,11 +161,19 @@ namespace Org.W3c.Dom.Ls
             return IExecute<Org.W3c.Dom.Node>("parseWithContext", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#abort()"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#abort()"/>
         /// </summary>
         public void Abort()
         {
             IExecuteWithSignature("abort", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#setFilter(org.w3c.dom.ls.LSParserFilter)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Ls.LSParserFilter"/></param>
+        public void SetFilter(Org.W3c.Dom.Ls.LSParserFilter arg0)
+        {
+            IExecuteWithSignature("setFilter", "(Lorg/w3c/dom/ls/LSParserFilter;)V", arg0);
         }
 
         #endregion

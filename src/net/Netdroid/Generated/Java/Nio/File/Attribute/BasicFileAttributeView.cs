@@ -64,7 +64,7 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributeView.html#name()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/BasicFileAttributeView.html#name()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
@@ -72,7 +72,7 @@ namespace Java.Nio.File.Attribute
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributeView.html#readAttributes()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/BasicFileAttributeView.html#readAttributes()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -81,7 +81,7 @@ namespace Java.Nio.File.Attribute
             return IExecuteWithSignature<Java.Nio.File.Attribute.BasicFileAttributes>("readAttributes", "()Ljava/nio/file/attribute/BasicFileAttributes;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributeView.html#setTimes(java.nio.file.attribute.FileTime,java.nio.file.attribute.FileTime,java.nio.file.attribute.FileTime)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/BasicFileAttributeView.html#setTimes(java.nio.file.attribute.FileTime,java.nio.file.attribute.FileTime,java.nio.file.attribute.FileTime)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Attribute.FileTime"/></param>

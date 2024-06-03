@@ -64,7 +64,7 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/HapticFeedbackConstants.html#FLAG_IGNORE_GLOBAL_SETTING"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FLAG_IGNORE_GLOBAL_SETTING { get { if (!_FLAG_IGNORE_GLOBAL_SETTINGReady) { _FLAG_IGNORE_GLOBAL_SETTINGContent = SGetField<int>(LocalBridgeClazz, "FLAG_IGNORE_GLOBAL_SETTING"); _FLAG_IGNORE_GLOBAL_SETTINGReady = true; } return _FLAG_IGNORE_GLOBAL_SETTINGContent; } }
         private static int _FLAG_IGNORE_GLOBAL_SETTINGContent = default;
         private static bool _FLAG_IGNORE_GLOBAL_SETTINGReady = false; // this is used because in case of generics 

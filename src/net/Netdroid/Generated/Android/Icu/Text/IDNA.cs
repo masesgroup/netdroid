@@ -303,13 +303,6 @@ namespace Android.Icu.Text
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/text/IDNA.Info.html#getErrors()"/> 
-            /// </summary>
-            public Java.Util.Set<Android.Icu.Text.IDNA.Error> Errors
-            {
-                get { return IExecuteWithSignature<Java.Util.Set<Android.Icu.Text.IDNA.Error>>("getErrors", "()Ljava/util/Set;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/IDNA.Info.html#hasErrors()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
@@ -324,6 +317,14 @@ namespace Android.Icu.Text
             public bool IsTransitionalDifferent()
             {
                 return IExecuteWithSignature<bool>("isTransitionalDifferent", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/icu/text/IDNA.Info.html#getErrors()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.Set"/></returns>
+            public Java.Util.Set<Android.Icu.Text.IDNA.Error> GetErrors()
+            {
+                return IExecuteWithSignature<Java.Util.Set<Android.Icu.Text.IDNA.Error>>("getErrors", "()Ljava/util/Set;");
             }
 
             #endregion

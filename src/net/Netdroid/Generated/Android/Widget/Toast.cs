@@ -89,54 +89,61 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toast.html#getDuration()"/> <see href="https://developer.android.com/reference/android/widget/Toast.html#setDuration(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Toast.html#getView()"/>
         /// </summary>
-        public int Duration
+        /// <returns><see cref="Android.View.View"/></returns>
+        [global::System.Obsolete()]
+        public Android.View.View GetView()
         {
-            get { return IExecuteWithSignature<int>("getDuration", "()I"); } set { IExecuteWithSignature("setDuration", "(I)V", value); }
+            return IExecuteWithSignature<Android.View.View>("getView", "()Landroid/view/View;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toast.html#getGravity()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/Toast.html#getHorizontalMargin()"/>
         /// </summary>
-        public int Gravity
+        /// <returns><see cref="float"/></returns>
+        public float GetHorizontalMargin()
         {
-            get { return IExecuteWithSignature<int>("getGravity", "()I"); }
+            return IExecuteWithSignature<float>("getHorizontalMargin", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toast.html#getHorizontalMargin()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/Toast.html#getVerticalMargin()"/>
         /// </summary>
-        public float HorizontalMargin
+        /// <returns><see cref="float"/></returns>
+        public float GetVerticalMargin()
         {
-            get { return IExecuteWithSignature<float>("getHorizontalMargin", "()F"); }
+            return IExecuteWithSignature<float>("getVerticalMargin", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toast.html#getVerticalMargin()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/Toast.html#getDuration()"/>
         /// </summary>
-        public float VerticalMargin
+        /// <returns><see cref="int"/></returns>
+        public int GetDuration()
         {
-            get { return IExecuteWithSignature<float>("getVerticalMargin", "()F"); }
+            return IExecuteWithSignature<int>("getDuration", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toast.html#getView()"/> <see href="https://developer.android.com/reference/android/widget/Toast.html#setView(android.view.View)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Toast.html#getGravity()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.View.View View
+        /// <returns><see cref="int"/></returns>
+        public int GetGravity()
         {
-            get { return IExecuteWithSignature<Android.View.View>("getView", "()Landroid/view/View;"); } set { IExecuteWithSignature("setView", "(Landroid/view/View;)V", value); }
+            return IExecuteWithSignature<int>("getGravity", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toast.html#getXOffset()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/Toast.html#getXOffset()"/>
         /// </summary>
-        public int XOffset
+        /// <returns><see cref="int"/></returns>
+        public int GetXOffset()
         {
-            get { return IExecuteWithSignature<int>("getXOffset", "()I"); }
+            return IExecuteWithSignature<int>("getXOffset", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toast.html#getYOffset()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/Toast.html#getYOffset()"/>
         /// </summary>
-        public int YOffset
+        /// <returns><see cref="int"/></returns>
+        public int GetYOffset()
         {
-            get { return IExecuteWithSignature<int>("getYOffset", "()I"); }
+            return IExecuteWithSignature<int>("getYOffset", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Toast.html#addCallback(android.widget.Toast.Callback)"/>
@@ -160,6 +167,14 @@ namespace Android.Widget
         public void RemoveCallback(Android.Widget.Toast.Callback arg0)
         {
             IExecuteWithSignature("removeCallback", "(Landroid/widget/Toast$Callback;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toast.html#setDuration(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDuration(int arg0)
+        {
+            IExecuteWithSignature("setDuration", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Toast.html#setGravity(int,int,int)"/>
@@ -195,6 +210,15 @@ namespace Android.Widget
         public void SetText(Java.Lang.CharSequence arg0)
         {
             IExecuteWithSignature("setText", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toast.html#setView(android.view.View)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        [global::System.Obsolete()]
+        public void SetView(Android.View.View arg0)
+        {
+            IExecuteWithSignature("setView", "(Landroid/view/View;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Toast.html#show()"/>

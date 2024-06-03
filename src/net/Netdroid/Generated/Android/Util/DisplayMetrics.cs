@@ -44,7 +44,7 @@ namespace Android.Util
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/DisplayMetrics.html#scaledDensity"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public float scaledDensity { get { return IGetField<float>("scaledDensity"); } set { ISetField("scaledDensity", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/DisplayMetrics.html#xdpi"/>

@@ -94,34 +94,6 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/LabeledIntent.html#getIconResource()"/> 
-        /// </summary>
-        public int IconResource
-        {
-            get { return IExecuteWithSignature<int>("getIconResource", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/LabeledIntent.html#getLabelResource()"/> 
-        /// </summary>
-        public int LabelResource
-        {
-            get { return IExecuteWithSignature<int>("getLabelResource", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/LabeledIntent.html#getNonLocalizedLabel()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence NonLocalizedLabel
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getNonLocalizedLabel", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/LabeledIntent.html#getSourcePackage()"/> 
-        /// </summary>
-        public Java.Lang.String SourcePackage
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSourcePackage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LabeledIntent.html#loadIcon(android.content.pm.PackageManager)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Pm.PackageManager"/></param>
@@ -131,6 +103,30 @@ namespace Android.Content.Pm
             return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("loadIcon", "(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/LabeledIntent.html#getIconResource()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetIconResource()
+        {
+            return IExecuteWithSignature<int>("getIconResource", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/LabeledIntent.html#getLabelResource()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLabelResource()
+        {
+            return IExecuteWithSignature<int>("getLabelResource", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/LabeledIntent.html#getNonLocalizedLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetNonLocalizedLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getNonLocalizedLabel", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LabeledIntent.html#loadLabel(android.content.pm.PackageManager)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Pm.PackageManager"/></param>
@@ -138,6 +134,14 @@ namespace Android.Content.Pm
         public Java.Lang.CharSequence LoadLabel(Android.Content.Pm.PackageManager arg0)
         {
             return IExecuteWithSignature<Java.Lang.CharSequence>("loadLabel", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/LabeledIntent.html#getSourcePackage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSourcePackage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSourcePackage", "()Ljava/lang/String;");
         }
 
         #endregion

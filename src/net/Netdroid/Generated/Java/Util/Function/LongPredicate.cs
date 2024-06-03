@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region ILongPredicate
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.LongPredicate implementing <see href="https://developer.android.com/reference/java.base/java/util/function/LongPredicate.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.LongPredicate implementing <see href="https://developer.android.com/reference/java/util/function/LongPredicate.html"/>
     /// </summary>
     public partial interface ILongPredicate
     {
@@ -68,18 +68,18 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(TestEventHandler));
-            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>>>(AndEventHandler));
-            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
-            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>>>(OrEventHandler));
+            AddEventHandler("test", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(TestEventHandler));
+            AddEventHandler("and", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>>>(AndEventHandler));
+            AddEventHandler("negate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
+            AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>>>(OrEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/LongPredicate.html#test(long)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/LongPredicate.html#test(long)"/>
         /// </summary>
         /// <remarks>If <see cref="OnTest"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<long, bool> OnTest { get; set; } = null;
+        public global::System.Func<long, bool> OnTest { get; set; } = null;
 
         void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
         {
@@ -89,7 +89,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongPredicate.html#test(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongPredicate.html#test(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -98,7 +98,7 @@ namespace Java.Util.Function
             return default;
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongPredicate.html#and(java.util.function.LongPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongPredicate.html#and(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
@@ -109,10 +109,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/LongPredicate.html#and(java.util.function.LongPredicate)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/LongPredicate.html#and(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAnd"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.LongPredicate, Java.Util.Function.LongPredicate> OnAnd { get; set; } = null;
+        public global::System.Func<Java.Util.Function.LongPredicate, Java.Util.Function.LongPredicate> OnAnd { get; set; } = null;
 
         void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>> data)
         {
@@ -122,7 +122,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongPredicate.html#and(java.util.function.LongPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongPredicate.html#and(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
@@ -132,7 +132,7 @@ namespace Java.Util.Function
             return AndDefault(arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongPredicate.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongPredicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
@@ -142,10 +142,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/LongPredicate.html#negate()"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/LongPredicate.html#negate()"/>
         /// </summary>
         /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.LongPredicate> OnNegate { get; set; } = null;
+        public global::System.Func<Java.Util.Function.LongPredicate> OnNegate { get; set; } = null;
 
         void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -155,7 +155,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongPredicate.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongPredicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
@@ -164,7 +164,7 @@ namespace Java.Util.Function
             return NegateDefault();
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongPredicate.html#or(java.util.function.LongPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongPredicate.html#or(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
@@ -175,10 +175,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/LongPredicate.html#or(java.util.function.LongPredicate)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/LongPredicate.html#or(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOr"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.LongPredicate, Java.Util.Function.LongPredicate> OnOr { get; set; } = null;
+        public global::System.Func<Java.Util.Function.LongPredicate, Java.Util.Function.LongPredicate> OnOr { get; set; } = null;
 
         void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>> data)
         {
@@ -188,7 +188,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongPredicate.html#or(java.util.function.LongPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongPredicate.html#or(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
@@ -229,7 +229,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongPredicate.html#test(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongPredicate.html#test(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -238,7 +238,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<bool>("test", "(J)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongPredicate.html#and(java.util.function.LongPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongPredicate.html#and(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
@@ -247,7 +247,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.LongPredicateDirect, Java.Util.Function.LongPredicate>("and", "(Ljava/util/function/LongPredicate;)Ljava/util/function/LongPredicate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongPredicate.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongPredicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
         public override Java.Util.Function.LongPredicate Negate()
@@ -255,7 +255,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.LongPredicateDirect, Java.Util.Function.LongPredicate>("negate", "()Ljava/util/function/LongPredicate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongPredicate.html#or(java.util.function.LongPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongPredicate.html#or(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>

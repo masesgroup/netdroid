@@ -64,60 +64,132 @@ namespace Org.W3c.Dom.Ls
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSInput.html#getBaseURI()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSInput.html#setBaseURI(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#getCertifiedText()"/>
         /// </summary>
-        public Java.Lang.String BaseURI
+        /// <returns><see cref="bool"/></returns>
+        public bool GetCertifiedText()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getBaseURI", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setBaseURI", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<bool>("getCertifiedText", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSInput.html#getByteStream()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSInput.html#setByteStream(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#getByteStream()"/>
         /// </summary>
-        public Java.Io.InputStream ByteStream
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        public Java.Io.InputStream GetByteStream()
         {
-            get { return IExecuteWithSignature<Java.Io.InputStream>("getByteStream", "()Ljava/io/InputStream;"); } set { IExecuteWithSignature("setByteStream", "(Ljava/io/InputStream;)V", value); }
+            return IExecuteWithSignature<Java.Io.InputStream>("getByteStream", "()Ljava/io/InputStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSInput.html#getCertifiedText()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSInput.html#setCertifiedText(boolean)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#getCharacterStream()"/>
         /// </summary>
-        public bool CertifiedText
+        /// <returns><see cref="Java.Io.Reader"/></returns>
+        public Java.Io.Reader GetCharacterStream()
         {
-            get { return IExecuteWithSignature<bool>("getCertifiedText", "()Z"); } set { IExecuteWithSignature("setCertifiedText", "(Z)V", value); }
+            return IExecuteWithSignature<Java.Io.Reader>("getCharacterStream", "()Ljava/io/Reader;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSInput.html#getCharacterStream()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSInput.html#setCharacterStream(java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#getBaseURI()"/>
         /// </summary>
-        public Java.Io.Reader CharacterStream
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetBaseURI()
         {
-            get { return IExecuteWithSignature<Java.Io.Reader>("getCharacterStream", "()Ljava/io/Reader;"); } set { IExecuteWithSignature("setCharacterStream", "(Ljava/io/Reader;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getBaseURI", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSInput.html#getEncoding()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSInput.html#setEncoding(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#getEncoding()"/>
         /// </summary>
-        public Java.Lang.String Encoding
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEncoding()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setEncoding", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSInput.html#getPublicId()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSInput.html#setPublicId(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#getPublicId()"/>
         /// </summary>
-        public Java.Lang.String PublicId
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPublicId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPublicId", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSInput.html#getStringData()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSInput.html#setStringData(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#getStringData()"/>
         /// </summary>
-        public Java.Lang.String StringData
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetStringData()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getStringData", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setStringData", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getStringData", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSInput.html#getSystemId()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSInput.html#setSystemId(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#getSystemId()"/>
         /// </summary>
-        public Java.Lang.String SystemId
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSystemId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#setBaseURI(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetBaseURI(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setBaseURI", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#setByteStream(java.io.InputStream)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        public void SetByteStream(Java.Io.InputStream arg0)
+        {
+            IExecuteWithSignature("setByteStream", "(Ljava/io/InputStream;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#setCertifiedText(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetCertifiedText(bool arg0)
+        {
+            IExecuteWithSignature("setCertifiedText", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#setCharacterStream(java.io.Reader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        public void SetCharacterStream(Java.Io.Reader arg0)
+        {
+            IExecuteWithSignature("setCharacterStream", "(Ljava/io/Reader;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#setEncoding(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetEncoding(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setEncoding", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#setPublicId(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetPublicId(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setPublicId", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#setStringData(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetStringData(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setStringData", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#setSystemId(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetSystemId(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

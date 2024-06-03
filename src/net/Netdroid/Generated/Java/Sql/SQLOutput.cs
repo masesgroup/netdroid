@@ -64,7 +64,7 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeArray(java.sql.Array)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeArray(java.sql.Array)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Array"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -73,7 +73,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeArray", "(Ljava/sql/Array;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeAsciiStream(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeAsciiStream(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -82,7 +82,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeAsciiStream", "(Ljava/io/InputStream;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeBigDecimal(java.math.BigDecimal)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeBigDecimal(java.math.BigDecimal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigDecimal"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -91,7 +91,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeBigDecimal", "(Ljava/math/BigDecimal;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeBinaryStream(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeBinaryStream(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -100,7 +100,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeBinaryStream", "(Ljava/io/InputStream;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeBlob(java.sql.Blob)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeBlob(java.sql.Blob)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Blob"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -109,7 +109,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeBlob", "(Ljava/sql/Blob;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeBoolean(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeBoolean(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -118,7 +118,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeBoolean", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeByte(byte)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeByte(byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -127,7 +127,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeByte", "(B)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeBytes(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeBytes(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -136,7 +136,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeBytes", "([B)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeCharacterStream(java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeCharacterStream(java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -145,7 +145,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeCharacterStream", "(Ljava/io/Reader;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeClob(java.sql.Clob)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeClob(java.sql.Clob)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Clob"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -154,7 +154,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeClob", "(Ljava/sql/Clob;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeDate(java.sql.Date)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeDate(java.sql.Date)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Date"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -163,7 +163,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeDate", "(Ljava/sql/Date;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeDouble(double)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeDouble(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -172,7 +172,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeDouble", "(D)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeFloat(float)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeFloat(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -181,7 +181,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeFloat", "(F)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeInt(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeInt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -190,7 +190,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeInt", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeLong(long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeLong(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -199,7 +199,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeLong", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeNClob(java.sql.NClob)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeNClob(java.sql.NClob)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.NClob"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -208,7 +208,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeNClob", "(Ljava/sql/NClob;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeNString(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeNString(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -217,7 +217,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeNString", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeObject(java.sql.SQLData)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeObject(java.sql.SQLData)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.SQLData"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -226,7 +226,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeObject", "(Ljava/sql/SQLData;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeRef(java.sql.Ref)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeRef(java.sql.Ref)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Ref"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -235,7 +235,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeRef", "(Ljava/sql/Ref;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeRowId(java.sql.RowId)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeRowId(java.sql.RowId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.RowId"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -244,7 +244,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeRowId", "(Ljava/sql/RowId;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeShort(short)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeShort(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -253,7 +253,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeShort", "(S)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeSQLXML(java.sql.SQLXML)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeSQLXML(java.sql.SQLXML)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.SQLXML"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -262,7 +262,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeSQLXML", "(Ljava/sql/SQLXML;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeString(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeString(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -271,7 +271,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeString", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeStruct(java.sql.Struct)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeStruct(java.sql.Struct)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Struct"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -280,7 +280,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeStruct", "(Ljava/sql/Struct;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeTime(java.sql.Time)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeTime(java.sql.Time)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Time"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -289,7 +289,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeTime", "(Ljava/sql/Time;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeTimestamp(java.sql.Timestamp)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeTimestamp(java.sql.Timestamp)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Timestamp"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -298,7 +298,7 @@ namespace Java.Sql
             IExecuteWithSignature("writeTimestamp", "(Ljava/sql/Timestamp;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeURL(java.net.URL)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html#writeURL(java.net.URL)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         /// <exception cref="Java.Sql.SQLException"/>

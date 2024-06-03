@@ -85,39 +85,30 @@ namespace Android.Nfc.Tech
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/Ndef.html#getCachedNdefMessage()"/> 
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/Ndef.html#getCachedNdefMessage()"/>
         /// </summary>
-        public Android.Nfc.NdefMessage CachedNdefMessage
+        /// <returns><see cref="Android.Nfc.NdefMessage"/></returns>
+        public Android.Nfc.NdefMessage GetCachedNdefMessage()
         {
-            get { return IExecuteWithSignature<Android.Nfc.NdefMessage>("getCachedNdefMessage", "()Landroid/nfc/NdefMessage;"); }
+            return IExecuteWithSignature<Android.Nfc.NdefMessage>("getCachedNdefMessage", "()Landroid/nfc/NdefMessage;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/Ndef.html#getMaxSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/Ndef.html#getNdefMessage()"/>
         /// </summary>
-        public int MaxSize
+        /// <returns><see cref="Android.Nfc.NdefMessage"/></returns>
+        /// <exception cref="Android.Nfc.FormatException"/>
+        /// <exception cref="Java.Io.IOException"/>
+        public Android.Nfc.NdefMessage GetNdefMessage()
         {
-            get { return IExecuteWithSignature<int>("getMaxSize", "()I"); }
+            return IExecuteWithSignature<Android.Nfc.NdefMessage>("getNdefMessage", "()Landroid/nfc/NdefMessage;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/Ndef.html#getNdefMessage()"/> 
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/Ndef.html#getTag()"/>
         /// </summary>
-        public Android.Nfc.NdefMessage NdefMessage
+        /// <returns><see cref="Android.Nfc.Tag"/></returns>
+        public Android.Nfc.Tag GetTag()
         {
-            get { return IExecuteWithSignature<Android.Nfc.NdefMessage>("getNdefMessage", "()Landroid/nfc/NdefMessage;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/Ndef.html#getTag()"/> 
-        /// </summary>
-        public Android.Nfc.Tag Tag
-        {
-            get { return IExecuteWithSignature<Android.Nfc.Tag>("getTag", "()Landroid/nfc/Tag;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/Ndef.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.String Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Nfc.Tag>("getTag", "()Landroid/nfc/Tag;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/tech/Ndef.html#canMakeReadOnly()"/>
@@ -151,6 +142,22 @@ namespace Android.Nfc.Tech
         public bool MakeReadOnly()
         {
             return IExecuteWithSignature<bool>("makeReadOnly", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/Ndef.html#getMaxSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxSize()
+        {
+            return IExecuteWithSignature<int>("getMaxSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/Ndef.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/tech/Ndef.html#close()"/>

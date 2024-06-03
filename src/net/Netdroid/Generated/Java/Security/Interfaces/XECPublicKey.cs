@@ -72,11 +72,12 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/XECPublicKey.html#getU()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/XECPublicKey.html#getU()"/>
         /// </summary>
-        public Java.Math.BigInteger U
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetU()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getU", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getU", "()Ljava/math/BigInteger;");
         }
 
         #endregion

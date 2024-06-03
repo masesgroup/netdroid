@@ -64,7 +64,7 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMImplementationSource.html#getDOMImplementation(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMImplementationSource.html#getDOMImplementation(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.DOMImplementation"/></returns>
@@ -73,7 +73,7 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Org.W3c.Dom.DOMImplementation>("getDOMImplementation", "(Ljava/lang/String;)Lorg/w3c/dom/DOMImplementation;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMImplementationSource.html#getDOMImplementationList(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMImplementationSource.html#getDOMImplementationList(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.DOMImplementationList"/></returns>

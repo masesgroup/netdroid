@@ -46,11 +46,13 @@ namespace Android.Net.Http
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/UploadDataProvider.html#getLength()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/http/UploadDataProvider.html#getLength()"/>
         /// </summary>
-        public long Length
+        /// <returns><see cref="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public long GetLength()
         {
-            get { return IExecuteWithSignature<long>("getLength", "()J"); }
+            return IExecuteWithSignature<long>("getLength", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/UploadDataProvider.html#read(android.net.http.UploadDataSink,java.nio.ByteBuffer)"/>

@@ -42,7 +42,7 @@ namespace Org.Xml.Sax.Helpers
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLReaderFactory.html#createXMLReader()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLReaderFactory.html#createXMLReader()"/>
         /// </summary>
         /// <returns><see cref="Org.Xml.Sax.XMLReader"/></returns>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
@@ -51,7 +51,7 @@ namespace Org.Xml.Sax.Helpers
             return SExecuteWithSignature<Org.Xml.Sax.XMLReader>(LocalBridgeClazz, "createXMLReader", "()Lorg/xml/sax/XMLReader;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLReaderFactory.html#createXMLReader(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLReaderFactory.html#createXMLReader(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.Xml.Sax.XMLReader"/></returns>

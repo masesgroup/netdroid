@@ -90,11 +90,12 @@ namespace Android.App.Admin
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/PolicyUpdateResult.html#getResultCode()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/admin/PolicyUpdateResult.html#getResultCode()"/>
         /// </summary>
-        public int ResultCode
+        /// <returns><see cref="int"/></returns>
+        public int GetResultCode()
         {
-            get { return IExecuteWithSignature<int>("getResultCode", "()I"); }
+            return IExecuteWithSignature<int>("getResultCode", "()I");
         }
 
         #endregion

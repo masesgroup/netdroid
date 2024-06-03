@@ -84,109 +84,124 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getShowText()"/> <see href="https://developer.android.com/reference/android/widget/Switch.html#setShowText(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getThumbTintList()"/>
         /// </summary>
-        public bool ShowText
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetThumbTintList()
         {
-            get { return IExecuteWithSignature<bool>("getShowText", "()Z"); } set { IExecuteWithSignature("setShowText", "(Z)V", value); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getThumbTintList", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getSplitTrack()"/> <see href="https://developer.android.com/reference/android/widget/Switch.html#setSplitTrack(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getTrackTintList()"/>
         /// </summary>
-        public bool SplitTrack
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetTrackTintList()
         {
-            get { return IExecuteWithSignature<bool>("getSplitTrack", "()Z"); } set { IExecuteWithSignature("setSplitTrack", "(Z)V", value); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getTrackTintList", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getSwitchMinWidth()"/> <see href="https://developer.android.com/reference/android/widget/Switch.html#setSwitchMinWidth(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getThumbTintBlendMode()"/>
         /// </summary>
-        public int SwitchMinWidth
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        public Android.Graphics.BlendMode GetThumbTintBlendMode()
         {
-            get { return IExecuteWithSignature<int>("getSwitchMinWidth", "()I"); } set { IExecuteWithSignature("setSwitchMinWidth", "(I)V", value); }
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getThumbTintBlendMode", "()Landroid/graphics/BlendMode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getSwitchPadding()"/> <see href="https://developer.android.com/reference/android/widget/Switch.html#setSwitchPadding(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getTrackTintBlendMode()"/>
         /// </summary>
-        public int SwitchPadding
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        public Android.Graphics.BlendMode GetTrackTintBlendMode()
         {
-            get { return IExecuteWithSignature<int>("getSwitchPadding", "()I"); } set { IExecuteWithSignature("setSwitchPadding", "(I)V", value); }
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getTrackTintBlendMode", "()Landroid/graphics/BlendMode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getTextOff()"/> <see href="https://developer.android.com/reference/android/widget/Switch.html#setTextOff(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getThumbDrawable()"/>
         /// </summary>
-        public Java.Lang.CharSequence TextOff
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetThumbDrawable()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTextOff", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setTextOff", "(Ljava/lang/CharSequence;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getThumbDrawable", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getTextOn()"/> <see href="https://developer.android.com/reference/android/widget/Switch.html#setTextOn(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getTrackDrawable()"/>
         /// </summary>
-        public Java.Lang.CharSequence TextOn
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetTrackDrawable()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTextOn", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setTextOn", "(Ljava/lang/CharSequence;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getTrackDrawable", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getThumbDrawable()"/> <see href="https://developer.android.com/reference/android/widget/Switch.html#setThumbDrawable(android.graphics.drawable.Drawable)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getThumbTintMode()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable ThumbDrawable
+        /// <returns><see cref="Android.Graphics.PorterDuff.Mode"/></returns>
+        public Android.Graphics.PorterDuff.Mode GetThumbTintMode()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getThumbDrawable", "()Landroid/graphics/drawable/Drawable;"); } set { IExecuteWithSignature("setThumbDrawable", "(Landroid/graphics/drawable/Drawable;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getThumbTintMode", "()Landroid/graphics/PorterDuff$Mode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getThumbTextPadding()"/> <see href="https://developer.android.com/reference/android/widget/Switch.html#setThumbTextPadding(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getTrackTintMode()"/>
         /// </summary>
-        public int ThumbTextPadding
+        /// <returns><see cref="Android.Graphics.PorterDuff.Mode"/></returns>
+        public Android.Graphics.PorterDuff.Mode GetTrackTintMode()
         {
-            get { return IExecuteWithSignature<int>("getThumbTextPadding", "()I"); } set { IExecuteWithSignature("setThumbTextPadding", "(I)V", value); }
+            return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getTrackTintMode", "()Landroid/graphics/PorterDuff$Mode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getThumbTintBlendMode()"/> <see href="https://developer.android.com/reference/android/widget/Switch.html#setThumbTintBlendMode(android.graphics.BlendMode)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getShowText()"/>
         /// </summary>
-        public Android.Graphics.BlendMode ThumbTintBlendMode
+        /// <returns><see cref="bool"/></returns>
+        public bool GetShowText()
         {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getThumbTintBlendMode", "()Landroid/graphics/BlendMode;"); } set { IExecuteWithSignature("setThumbTintBlendMode", "(Landroid/graphics/BlendMode;)V", value); }
+            return IExecuteWithSignature<bool>("getShowText", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getThumbTintList()"/> <see href="https://developer.android.com/reference/android/widget/Switch.html#setThumbTintList(android.content.res.ColorStateList)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getSplitTrack()"/>
         /// </summary>
-        public Android.Content.Res.ColorStateList ThumbTintList
+        /// <returns><see cref="bool"/></returns>
+        public bool GetSplitTrack()
         {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getThumbTintList", "()Landroid/content/res/ColorStateList;"); } set { IExecuteWithSignature("setThumbTintList", "(Landroid/content/res/ColorStateList;)V", value); }
+            return IExecuteWithSignature<bool>("getSplitTrack", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getThumbTintMode()"/> <see href="https://developer.android.com/reference/android/widget/Switch.html#setThumbTintMode(android.graphics.PorterDuff.Mode)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getSwitchMinWidth()"/>
         /// </summary>
-        public Android.Graphics.PorterDuff.Mode ThumbTintMode
+        /// <returns><see cref="int"/></returns>
+        public int GetSwitchMinWidth()
         {
-            get { return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getThumbTintMode", "()Landroid/graphics/PorterDuff$Mode;"); } set { IExecuteWithSignature("setThumbTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", value); }
+            return IExecuteWithSignature<int>("getSwitchMinWidth", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getTrackDrawable()"/> <see href="https://developer.android.com/reference/android/widget/Switch.html#setTrackDrawable(android.graphics.drawable.Drawable)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getSwitchPadding()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable TrackDrawable
+        /// <returns><see cref="int"/></returns>
+        public int GetSwitchPadding()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getTrackDrawable", "()Landroid/graphics/drawable/Drawable;"); } set { IExecuteWithSignature("setTrackDrawable", "(Landroid/graphics/drawable/Drawable;)V", value); }
+            return IExecuteWithSignature<int>("getSwitchPadding", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getTrackTintBlendMode()"/> <see href="https://developer.android.com/reference/android/widget/Switch.html#setTrackTintBlendMode(android.graphics.BlendMode)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getThumbTextPadding()"/>
         /// </summary>
-        public Android.Graphics.BlendMode TrackTintBlendMode
+        /// <returns><see cref="int"/></returns>
+        public int GetThumbTextPadding()
         {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getTrackTintBlendMode", "()Landroid/graphics/BlendMode;"); } set { IExecuteWithSignature("setTrackTintBlendMode", "(Landroid/graphics/BlendMode;)V", value); }
+            return IExecuteWithSignature<int>("getThumbTextPadding", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getTrackTintList()"/> <see href="https://developer.android.com/reference/android/widget/Switch.html#setTrackTintList(android.content.res.ColorStateList)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getTextOff()"/>
         /// </summary>
-        public Android.Content.Res.ColorStateList TrackTintList
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTextOff()
         {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getTrackTintList", "()Landroid/content/res/ColorStateList;"); } set { IExecuteWithSignature("setTrackTintList", "(Landroid/content/res/ColorStateList;)V", value); }
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTextOff", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getTrackTintMode()"/> <see href="https://developer.android.com/reference/android/widget/Switch.html#setTrackTintMode(android.graphics.PorterDuff.Mode)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#getTextOn()"/>
         /// </summary>
-        public Android.Graphics.PorterDuff.Mode TrackTintMode
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTextOn()
         {
-            get { return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getTrackTintMode", "()Landroid/graphics/PorterDuff$Mode;"); } set { IExecuteWithSignature("setTrackTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", value); }
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTextOn", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Switch.html#onMeasure(int,int)"/>
@@ -196,6 +211,38 @@ namespace Android.Widget
         public void OnMeasure(int arg0, int arg1)
         {
             IExecute("onMeasure", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#setShowText(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetShowText(bool arg0)
+        {
+            IExecuteWithSignature("setShowText", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#setSplitTrack(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetSplitTrack(bool arg0)
+        {
+            IExecuteWithSignature("setSplitTrack", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#setSwitchMinWidth(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetSwitchMinWidth(int arg0)
+        {
+            IExecuteWithSignature("setSwitchMinWidth", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#setSwitchPadding(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetSwitchPadding(int arg0)
+        {
+            IExecuteWithSignature("setSwitchPadding", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Switch.html#setSwitchTextAppearance(android.content.Context,int)"/>
@@ -224,6 +271,30 @@ namespace Android.Widget
             IExecuteWithSignature("setSwitchTypeface", "(Landroid/graphics/Typeface;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#setTextOff(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetTextOff(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setTextOff", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#setTextOn(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetTextOn(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setTextOn", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#setThumbDrawable(android.graphics.drawable.Drawable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
+        public void SetThumbDrawable(Android.Graphics.Drawable.Drawable arg0)
+        {
+            IExecuteWithSignature("setThumbDrawable", "(Landroid/graphics/drawable/Drawable;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Switch.html#setThumbIcon(android.graphics.drawable.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Drawable.Icon"/></param>
@@ -240,6 +311,46 @@ namespace Android.Widget
             IExecuteWithSignature("setThumbResource", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#setThumbTextPadding(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetThumbTextPadding(int arg0)
+        {
+            IExecuteWithSignature("setThumbTextPadding", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#setThumbTintBlendMode(android.graphics.BlendMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.BlendMode"/></param>
+        public void SetThumbTintBlendMode(Android.Graphics.BlendMode arg0)
+        {
+            IExecuteWithSignature("setThumbTintBlendMode", "(Landroid/graphics/BlendMode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#setThumbTintList(android.content.res.ColorStateList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.ColorStateList"/></param>
+        public void SetThumbTintList(Android.Content.Res.ColorStateList arg0)
+        {
+            IExecuteWithSignature("setThumbTintList", "(Landroid/content/res/ColorStateList;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#setThumbTintMode(android.graphics.PorterDuff.Mode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.PorterDuff.Mode"/></param>
+        public void SetThumbTintMode(Android.Graphics.PorterDuff.Mode arg0)
+        {
+            IExecuteWithSignature("setThumbTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#setTrackDrawable(android.graphics.drawable.Drawable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
+        public void SetTrackDrawable(Android.Graphics.Drawable.Drawable arg0)
+        {
+            IExecuteWithSignature("setTrackDrawable", "(Landroid/graphics/drawable/Drawable;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Switch.html#setTrackIcon(android.graphics.drawable.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Drawable.Icon"/></param>
@@ -254,6 +365,30 @@ namespace Android.Widget
         public void SetTrackResource(int arg0)
         {
             IExecuteWithSignature("setTrackResource", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#setTrackTintBlendMode(android.graphics.BlendMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.BlendMode"/></param>
+        public void SetTrackTintBlendMode(Android.Graphics.BlendMode arg0)
+        {
+            IExecuteWithSignature("setTrackTintBlendMode", "(Landroid/graphics/BlendMode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#setTrackTintList(android.content.res.ColorStateList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.ColorStateList"/></param>
+        public void SetTrackTintList(Android.Content.Res.ColorStateList arg0)
+        {
+            IExecuteWithSignature("setTrackTintList", "(Landroid/content/res/ColorStateList;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Switch.html#setTrackTintMode(android.graphics.PorterDuff.Mode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.PorterDuff.Mode"/></param>
+        public void SetTrackTintMode(Android.Graphics.PorterDuff.Mode arg0)
+        {
+            IExecuteWithSignature("setTrackTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", arg0);
         }
 
         #endregion

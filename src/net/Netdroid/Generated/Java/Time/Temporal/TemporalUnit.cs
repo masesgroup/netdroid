@@ -64,25 +64,18 @@ namespace Java.Time.Temporal
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalUnit.html#getDuration()"/> 
-        /// </summary>
-        public Java.Time.Duration Duration
-        {
-            get { return IExecuteWithSignature<Java.Time.Duration>("getDuration", "()Ljava/time/Duration;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalUnit.html#addTo(java.time.temporal.Temporal,long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalUnit.html#addTo(java.time.temporal.Temporal,long)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="R"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <typeparam name="R"><see cref="Java.Time.Temporal.ITemporal"/></typeparam>
         /// <returns><typeparamref name="R"/></returns>
-        public R AddTo<R>(R arg0, long arg1) where R: Java.Time.Temporal.ITemporal, new()
+        public R AddTo<R>(R arg0, long arg1) where R : Java.Time.Temporal.ITemporal, new()
         {
             return IExecute<R>("addTo", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalUnit.html#isDateBased()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalUnit.html#isDateBased()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsDateBased()
@@ -90,7 +83,7 @@ namespace Java.Time.Temporal
             return IExecuteWithSignature<bool>("isDateBased", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalUnit.html#isDurationEstimated()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalUnit.html#isDurationEstimated()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsDurationEstimated()
@@ -98,7 +91,7 @@ namespace Java.Time.Temporal
             return IExecuteWithSignature<bool>("isDurationEstimated", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalUnit.html#isTimeBased()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalUnit.html#isTimeBased()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsTimeBased()
@@ -106,7 +99,15 @@ namespace Java.Time.Temporal
             return IExecuteWithSignature<bool>("isTimeBased", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalUnit.html#between(java.time.temporal.Temporal,java.time.temporal.Temporal)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalUnit.html#getDuration()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.Duration"/></returns>
+        public Java.Time.Duration GetDuration()
+        {
+            return IExecuteWithSignature<Java.Time.Duration>("getDuration", "()Ljava/time/Duration;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalUnit.html#between(java.time.temporal.Temporal,java.time.temporal.Temporal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.Temporal"/></param>
@@ -116,7 +117,7 @@ namespace Java.Time.Temporal
             return IExecute<long>("between", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalUnit.html#isSupportedBy(java.time.temporal.Temporal)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalUnit.html#isSupportedBy(java.time.temporal.Temporal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
         /// <returns><see cref="bool"/></returns>

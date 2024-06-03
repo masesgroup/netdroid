@@ -124,11 +124,12 @@ namespace Android.Text.Style
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/text/style/LeadingMarginSpan.LeadingMarginSpan2.html#getLeadingMarginLineCount()"/> 
+            /// <see href="https://developer.android.com/reference/android/text/style/LeadingMarginSpan.LeadingMarginSpan2.html#getLeadingMarginLineCount()"/>
             /// </summary>
-            public int LeadingMarginLineCount
+            /// <returns><see cref="int"/></returns>
+            public int GetLeadingMarginLineCount()
             {
-                get { return IExecuteWithSignature<int>("getLeadingMarginLineCount", "()I"); }
+                return IExecuteWithSignature<int>("getLeadingMarginLineCount", "()I");
             }
 
             #endregion
@@ -195,13 +196,6 @@ namespace Android.Text.Style
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/text/style/LeadingMarginSpan.Standard.html#getSpanTypeId()"/> 
-            /// </summary>
-            public int SpanTypeId
-            {
-                get { return IExecuteWithSignature<int>("getSpanTypeId", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LeadingMarginSpan.Standard.html#describeContents()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
@@ -217,6 +211,14 @@ namespace Android.Text.Style
             public int GetLeadingMargin(bool arg0)
             {
                 return IExecuteWithSignature<int>("getLeadingMargin", "(Z)I", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/style/LeadingMarginSpan.Standard.html#getSpanTypeId()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetSpanTypeId()
+            {
+                return IExecuteWithSignature<int>("getSpanTypeId", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LeadingMarginSpan.Standard.html#drawLeadingMargin(android.graphics.Canvas,android.graphics.Paint,int,int,int,int,int,java.lang.CharSequence,int,int,boolean,android.text.Layout)"/>

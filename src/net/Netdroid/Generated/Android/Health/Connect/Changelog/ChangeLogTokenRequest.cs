@@ -52,26 +52,29 @@ namespace Android.Health.Connect.Changelog
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogTokenRequest.html#getDataOriginFilters()"/> 
-        /// </summary>
-        public Java.Util.Set<Android.Health.Connect.Datatypes.DataOrigin> DataOriginFilters
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Android.Health.Connect.Datatypes.DataOrigin>>("getDataOriginFilters", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogTokenRequest.html#getRecordTypes()"/> 
-        /// </summary>
-        public Java.Util.Set RecordTypes
-        {
-            get { return IExecuteWithSignature<Java.Util.Set>("getRecordTypes", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogTokenRequest.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogTokenRequest.html#getDataOriginFilters()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Android.Health.Connect.Datatypes.DataOrigin> GetDataOriginFilters()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Android.Health.Connect.Datatypes.DataOrigin>>("getDataOriginFilters", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogTokenRequest.html#getRecordTypes()"/>
+        /// </summary>
+        /// <typeparam name="ReturnExtendsAndroid_Health_Connect_Datatypes_Record"><see cref="Android.Health.Connect.Datatypes.Record"/></typeparam>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.Class> GetRecordTypes<ReturnExtendsAndroid_Health_Connect_Datatypes_Record>() where ReturnExtendsAndroid_Health_Connect_Datatypes_Record : Android.Health.Connect.Datatypes.Record
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.Class>>("getRecordTypes", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogTokenRequest.html#writeToParcel(android.os.Parcel,int)"/>

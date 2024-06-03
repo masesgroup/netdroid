@@ -60,18 +60,20 @@ namespace Android.App.Sdksandbox
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SandboxedSdk.html#getInterface()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SandboxedSdk.html#getSharedLibraryInfo()"/>
         /// </summary>
-        public Android.Os.IBinder Interface
+        /// <returns><see cref="Android.Content.Pm.SharedLibraryInfo"/></returns>
+        public Android.Content.Pm.SharedLibraryInfo GetSharedLibraryInfo()
         {
-            get { return IExecuteWithSignature<Android.Os.IBinder>("getInterface", "()Landroid/os/IBinder;"); }
+            return IExecuteWithSignature<Android.Content.Pm.SharedLibraryInfo>("getSharedLibraryInfo", "()Landroid/content/pm/SharedLibraryInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SandboxedSdk.html#getSharedLibraryInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SandboxedSdk.html#getInterface()"/>
         /// </summary>
-        public Android.Content.Pm.SharedLibraryInfo SharedLibraryInfo
+        /// <returns><see cref="Android.Os.IBinder"/></returns>
+        public Android.Os.IBinder GetInterface()
         {
-            get { return IExecuteWithSignature<Android.Content.Pm.SharedLibraryInfo>("getSharedLibraryInfo", "()Landroid/content/pm/SharedLibraryInfo;"); }
+            return IExecuteWithSignature<Android.Os.IBinder>("getInterface", "()Landroid/os/IBinder;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SandboxedSdk.html#describeContents()"/>

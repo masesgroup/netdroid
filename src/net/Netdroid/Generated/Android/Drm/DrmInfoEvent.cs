@@ -36,7 +36,7 @@ namespace Android.Drm
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="Java.Util.HashMap"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public DrmInfoEvent(int arg0, int arg1, Java.Lang.String arg2, Java.Util.HashMap<Java.Lang.String, object> arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -47,7 +47,7 @@ namespace Android.Drm
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public DrmInfoEvent(int arg0, int arg1, Java.Lang.String arg2)
             : base(arg0, arg1, arg2)
         {
@@ -63,42 +63,42 @@ namespace Android.Drm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmInfoEvent.html#TYPE_ACCOUNT_ALREADY_REGISTERED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TYPE_ACCOUNT_ALREADY_REGISTERED { get { if (!_TYPE_ACCOUNT_ALREADY_REGISTEREDReady) { _TYPE_ACCOUNT_ALREADY_REGISTEREDContent = SGetField<int>(LocalBridgeClazz, "TYPE_ACCOUNT_ALREADY_REGISTERED"); _TYPE_ACCOUNT_ALREADY_REGISTEREDReady = true; } return _TYPE_ACCOUNT_ALREADY_REGISTEREDContent; } }
         private static int _TYPE_ACCOUNT_ALREADY_REGISTEREDContent = default;
         private static bool _TYPE_ACCOUNT_ALREADY_REGISTEREDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmInfoEvent.html#TYPE_ALREADY_REGISTERED_BY_ANOTHER_ACCOUNT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TYPE_ALREADY_REGISTERED_BY_ANOTHER_ACCOUNT { get { if (!_TYPE_ALREADY_REGISTERED_BY_ANOTHER_ACCOUNTReady) { _TYPE_ALREADY_REGISTERED_BY_ANOTHER_ACCOUNTContent = SGetField<int>(LocalBridgeClazz, "TYPE_ALREADY_REGISTERED_BY_ANOTHER_ACCOUNT"); _TYPE_ALREADY_REGISTERED_BY_ANOTHER_ACCOUNTReady = true; } return _TYPE_ALREADY_REGISTERED_BY_ANOTHER_ACCOUNTContent; } }
         private static int _TYPE_ALREADY_REGISTERED_BY_ANOTHER_ACCOUNTContent = default;
         private static bool _TYPE_ALREADY_REGISTERED_BY_ANOTHER_ACCOUNTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmInfoEvent.html#TYPE_REMOVE_RIGHTS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TYPE_REMOVE_RIGHTS { get { if (!_TYPE_REMOVE_RIGHTSReady) { _TYPE_REMOVE_RIGHTSContent = SGetField<int>(LocalBridgeClazz, "TYPE_REMOVE_RIGHTS"); _TYPE_REMOVE_RIGHTSReady = true; } return _TYPE_REMOVE_RIGHTSContent; } }
         private static int _TYPE_REMOVE_RIGHTSContent = default;
         private static bool _TYPE_REMOVE_RIGHTSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmInfoEvent.html#TYPE_RIGHTS_INSTALLED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TYPE_RIGHTS_INSTALLED { get { if (!_TYPE_RIGHTS_INSTALLEDReady) { _TYPE_RIGHTS_INSTALLEDContent = SGetField<int>(LocalBridgeClazz, "TYPE_RIGHTS_INSTALLED"); _TYPE_RIGHTS_INSTALLEDReady = true; } return _TYPE_RIGHTS_INSTALLEDContent; } }
         private static int _TYPE_RIGHTS_INSTALLEDContent = default;
         private static bool _TYPE_RIGHTS_INSTALLEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmInfoEvent.html#TYPE_RIGHTS_REMOVED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TYPE_RIGHTS_REMOVED { get { if (!_TYPE_RIGHTS_REMOVEDReady) { _TYPE_RIGHTS_REMOVEDContent = SGetField<int>(LocalBridgeClazz, "TYPE_RIGHTS_REMOVED"); _TYPE_RIGHTS_REMOVEDReady = true; } return _TYPE_RIGHTS_REMOVEDContent; } }
         private static int _TYPE_RIGHTS_REMOVEDContent = default;
         private static bool _TYPE_RIGHTS_REMOVEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmInfoEvent.html#TYPE_WAIT_FOR_RIGHTS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TYPE_WAIT_FOR_RIGHTS { get { if (!_TYPE_WAIT_FOR_RIGHTSReady) { _TYPE_WAIT_FOR_RIGHTSContent = SGetField<int>(LocalBridgeClazz, "TYPE_WAIT_FOR_RIGHTS"); _TYPE_WAIT_FOR_RIGHTSReady = true; } return _TYPE_WAIT_FOR_RIGHTSContent; } }
         private static int _TYPE_WAIT_FOR_RIGHTSContent = default;
         private static bool _TYPE_WAIT_FOR_RIGHTSReady = false; // this is used because in case of generics 

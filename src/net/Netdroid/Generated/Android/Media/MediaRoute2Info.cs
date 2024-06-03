@@ -208,95 +208,20 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getClientPackageName()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getIconUri()"/>
         /// </summary>
-        public Java.Lang.String ClientPackageName
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetIconUri()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getClientPackageName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getIconUri", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getConnectionState()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getExtras()"/>
         /// </summary>
-        public int ConnectionState
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<int>("getConnectionState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getDeduplicationIds()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> DeduplicationIds
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getDeduplicationIds", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getDescription()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Description
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getDescription", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getExtras()"/> 
-        /// </summary>
-        public Android.Os.Bundle Extras
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getFeatures()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> Features
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getFeatures", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getIconUri()"/> 
-        /// </summary>
-        public Android.Net.Uri IconUri
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getIconUri", "()Landroid/net/Uri;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getId()"/> 
-        /// </summary>
-        public Java.Lang.String Id
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getName", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getVolume()"/> 
-        /// </summary>
-        public int Volume
-        {
-            get { return IExecuteWithSignature<int>("getVolume", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getVolumeHandling()"/> 
-        /// </summary>
-        public int VolumeHandling
-        {
-            get { return IExecuteWithSignature<int>("getVolumeHandling", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getVolumeMax()"/> 
-        /// </summary>
-        public int VolumeMax
-        {
-            get { return IExecuteWithSignature<int>("getVolumeMax", "()I"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#isSystemRoute()"/>
@@ -313,6 +238,94 @@ namespace Android.Media
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getConnectionState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetConnectionState()
+        {
+            return IExecuteWithSignature<int>("getConnectionState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getVolume()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVolume()
+        {
+            return IExecuteWithSignature<int>("getVolume", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getVolumeHandling()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVolumeHandling()
+        {
+            return IExecuteWithSignature<int>("getVolumeHandling", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getVolumeMax()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVolumeMax()
+        {
+            return IExecuteWithSignature<int>("getVolumeMax", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getName", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getClientPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetClientPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getClientPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getFeatures()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetFeatures()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getFeatures", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getDeduplicationIds()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetDeduplicationIds()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getDeduplicationIds", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#writeToParcel(android.os.Parcel,int)"/>

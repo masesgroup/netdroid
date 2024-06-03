@@ -70,53 +70,20 @@ namespace Android.Service.Quicksettings
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#getActivityLaunchForClick()"/> <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#setActivityLaunchForClick(android.app.PendingIntent)"/>
+        /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#getActivityLaunchForClick()"/>
         /// </summary>
-        public Android.App.PendingIntent ActivityLaunchForClick
+        /// <returns><see cref="Android.App.PendingIntent"/></returns>
+        public Android.App.PendingIntent GetActivityLaunchForClick()
         {
-            get { return IExecuteWithSignature<Android.App.PendingIntent>("getActivityLaunchForClick", "()Landroid/app/PendingIntent;"); } set { IExecuteWithSignature("setActivityLaunchForClick", "(Landroid/app/PendingIntent;)V", value); }
+            return IExecuteWithSignature<Android.App.PendingIntent>("getActivityLaunchForClick", "()Landroid/app/PendingIntent;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#getContentDescription()"/> <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#setContentDescription(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#getIcon()"/>
         /// </summary>
-        public Java.Lang.CharSequence ContentDescription
+        /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
+        public Android.Graphics.Drawable.Icon GetIcon()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setContentDescription", "(Ljava/lang/CharSequence;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#getIcon()"/> <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#setIcon(android.graphics.drawable.Icon)"/>
-        /// </summary>
-        public Android.Graphics.Drawable.Icon Icon
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;"); } set { IExecuteWithSignature("setIcon", "(Landroid/graphics/drawable/Icon;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#getLabel()"/> <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#setLabel(java.lang.CharSequence)"/>
-        /// </summary>
-        public Java.Lang.CharSequence Label
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setLabel", "(Ljava/lang/CharSequence;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#getState()"/> <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#setState(int)"/>
-        /// </summary>
-        public int State
-        {
-            get { return IExecuteWithSignature<int>("getState", "()I"); } set { IExecuteWithSignature("setState", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#getStateDescription()"/> <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#setStateDescription(java.lang.CharSequence)"/>
-        /// </summary>
-        public Java.Lang.CharSequence StateDescription
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getStateDescription", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setStateDescription", "(Ljava/lang/CharSequence;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#getSubtitle()"/> <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#setSubtitle(java.lang.CharSequence)"/>
-        /// </summary>
-        public Java.Lang.CharSequence Subtitle
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getSubtitle", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setSubtitle", "(Ljava/lang/CharSequence;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#describeContents()"/>
@@ -125,6 +92,102 @@ namespace Android.Service.Quicksettings
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#getState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetState()
+        {
+            return IExecuteWithSignature<int>("getState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#getContentDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetContentDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#getLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#getStateDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetStateDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getStateDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#getSubtitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetSubtitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getSubtitle", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#setActivityLaunchForClick(android.app.PendingIntent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.PendingIntent"/></param>
+        public void SetActivityLaunchForClick(Android.App.PendingIntent arg0)
+        {
+            IExecuteWithSignature("setActivityLaunchForClick", "(Landroid/app/PendingIntent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#setContentDescription(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetContentDescription(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setContentDescription", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#setIcon(android.graphics.drawable.Icon)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Icon"/></param>
+        public void SetIcon(Android.Graphics.Drawable.Icon arg0)
+        {
+            IExecuteWithSignature("setIcon", "(Landroid/graphics/drawable/Icon;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#setLabel(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetLabel(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setLabel", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#setState(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetState(int arg0)
+        {
+            IExecuteWithSignature("setState", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#setStateDescription(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetStateDescription(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setStateDescription", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#setSubtitle(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetSubtitle(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setSubtitle", "(Ljava/lang/CharSequence;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/quicksettings/Tile.html#updateTile()"/>

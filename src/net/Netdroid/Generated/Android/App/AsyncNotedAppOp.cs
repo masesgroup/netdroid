@@ -52,47 +52,52 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/AsyncNotedAppOp.html#getAttributionTag()"/> 
-        /// </summary>
-        public Java.Lang.String AttributionTag
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAttributionTag", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/AsyncNotedAppOp.html#getMessage()"/> 
-        /// </summary>
-        public Java.Lang.String Message
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMessage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/AsyncNotedAppOp.html#getNotingUid()"/> 
-        /// </summary>
-        public int NotingUid
-        {
-            get { return IExecuteWithSignature<int>("getNotingUid", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/AsyncNotedAppOp.html#getOp()"/> 
-        /// </summary>
-        public Java.Lang.String Op
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getOp", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/AsyncNotedAppOp.html#getTime()"/> 
-        /// </summary>
-        public long Time
-        {
-            get { return IExecuteWithSignature<long>("getTime", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AsyncNotedAppOp.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AsyncNotedAppOp.html#getNotingUid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNotingUid()
+        {
+            return IExecuteWithSignature<int>("getNotingUid", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AsyncNotedAppOp.html#getAttributionTag()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAttributionTag()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAttributionTag", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AsyncNotedAppOp.html#getMessage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMessage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMessage", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AsyncNotedAppOp.html#getOp()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetOp()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getOp", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AsyncNotedAppOp.html#getTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTime()
+        {
+            return IExecuteWithSignature<long>("getTime", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AsyncNotedAppOp.html#writeToParcel(android.os.Parcel,int)"/>

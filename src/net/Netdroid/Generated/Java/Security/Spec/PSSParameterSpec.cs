@@ -30,7 +30,7 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/PSSParameterSpec.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/PSSParameterSpec.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public PSSParameterSpec(int arg0)
@@ -38,7 +38,7 @@ namespace Java.Security.Spec
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/PSSParameterSpec.html#%3Cinit%3E(java.lang.String,java.lang.String,java.security.spec.AlgorithmParameterSpec,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/PSSParameterSpec.html#%3Cinit%3E(java.lang.String,java.lang.String,java.security.spec.AlgorithmParameterSpec,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -58,13 +58,13 @@ namespace Java.Security.Spec
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/PSSParameterSpec.html#TRAILER_FIELD_BC"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/PSSParameterSpec.html#TRAILER_FIELD_BC"/>
         /// </summary>
         public static int TRAILER_FIELD_BC { get { if (!_TRAILER_FIELD_BCReady) { _TRAILER_FIELD_BCContent = SGetField<int>(LocalBridgeClazz, "TRAILER_FIELD_BC"); _TRAILER_FIELD_BCReady = true; } return _TRAILER_FIELD_BCContent; } }
         private static int _TRAILER_FIELD_BCContent = default;
         private static bool _TRAILER_FIELD_BCReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/PSSParameterSpec.html#DEFAULT"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/PSSParameterSpec.html#DEFAULT"/>
         /// </summary>
         public static Java.Security.Spec.PSSParameterSpec DEFAULT { get { if (!_DEFAULTReady) { _DEFAULTContent = SGetField<Java.Security.Spec.PSSParameterSpec>(LocalBridgeClazz, "DEFAULT"); _DEFAULTReady = true; } return _DEFAULTContent; } }
         private static Java.Security.Spec.PSSParameterSpec _DEFAULTContent = default;
@@ -78,39 +78,44 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/PSSParameterSpec.html#getDigestAlgorithm()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/PSSParameterSpec.html#getSaltLength()"/>
         /// </summary>
-        public Java.Lang.String DigestAlgorithm
+        /// <returns><see cref="int"/></returns>
+        public int GetSaltLength()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDigestAlgorithm", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<int>("getSaltLength", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/PSSParameterSpec.html#getMGFAlgorithm()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/PSSParameterSpec.html#getTrailerField()"/>
         /// </summary>
-        public Java.Lang.String MGFAlgorithm
+        /// <returns><see cref="int"/></returns>
+        public int GetTrailerField()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMGFAlgorithm", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<int>("getTrailerField", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/PSSParameterSpec.html#getMGFParameters()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/PSSParameterSpec.html#getDigestAlgorithm()"/>
         /// </summary>
-        public Java.Security.Spec.AlgorithmParameterSpec MGFParameters
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDigestAlgorithm()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getMGFParameters", "()Ljava/security/spec/AlgorithmParameterSpec;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getDigestAlgorithm", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/PSSParameterSpec.html#getSaltLength()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/PSSParameterSpec.html#getMGFAlgorithm()"/>
         /// </summary>
-        public int SaltLength
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMGFAlgorithm()
         {
-            get { return IExecuteWithSignature<int>("getSaltLength", "()I"); }
+            return IExecuteWithSignature<Java.Lang.String>("getMGFAlgorithm", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/PSSParameterSpec.html#getTrailerField()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/PSSParameterSpec.html#getMGFParameters()"/>
         /// </summary>
-        public int TrailerField
+        /// <returns><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></returns>
+        public Java.Security.Spec.AlgorithmParameterSpec GetMGFParameters()
         {
-            get { return IExecuteWithSignature<int>("getTrailerField", "()I"); }
+            return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getMGFParameters", "()Ljava/security/spec/AlgorithmParameterSpec;");
         }
 
         #endregion

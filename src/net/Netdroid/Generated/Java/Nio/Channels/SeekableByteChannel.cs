@@ -64,7 +64,7 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SeekableByteChannel.html#read(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SeekableByteChannel.html#read(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="int"/></returns>
@@ -74,7 +74,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<int>("read", "(Ljava/nio/ByteBuffer;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SeekableByteChannel.html#write(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SeekableByteChannel.html#write(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="int"/></returns>
@@ -84,7 +84,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<int>("write", "(Ljava/nio/ByteBuffer;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SeekableByteChannel.html#position(long)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SeekableByteChannel.html#position(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Nio.Channels.SeekableByteChannel"/></returns>
@@ -94,7 +94,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.SeekableByteChannel>("position", "(J)Ljava/nio/channels/SeekableByteChannel;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SeekableByteChannel.html#truncate(long)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SeekableByteChannel.html#truncate(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Nio.Channels.SeekableByteChannel"/></returns>
@@ -104,7 +104,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.SeekableByteChannel>("truncate", "(J)Ljava/nio/channels/SeekableByteChannel;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SeekableByteChannel.html#position()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SeekableByteChannel.html#position()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -113,7 +113,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<long>("position", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SeekableByteChannel.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SeekableByteChannel.html#size()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>

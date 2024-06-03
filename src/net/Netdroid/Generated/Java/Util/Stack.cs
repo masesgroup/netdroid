@@ -46,7 +46,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Stack.html#empty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Stack.html#empty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool Empty()
@@ -54,7 +54,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("empty", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Stack.html#push(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Stack.html#push(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -63,7 +63,7 @@ namespace Java.Util
             return IExecuteWithSignature("push", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Stack.html#peek()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Stack.html#peek()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Peek()
@@ -71,7 +71,7 @@ namespace Java.Util
             return IExecuteWithSignature("peek", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Stack.html#pop()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Stack.html#pop()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Pop()
@@ -79,7 +79,7 @@ namespace Java.Util
             return IExecuteWithSignature("pop", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Stack.html#search(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Stack.html#search(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -123,7 +123,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Stack.html#empty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Stack.html#empty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool Empty()
@@ -131,7 +131,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("empty", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Stack.html#push(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Stack.html#push(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><typeparamref name="E"/></returns>
@@ -140,7 +140,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("push", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Stack.html#peek()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Stack.html#peek()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Peek()
@@ -148,7 +148,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("peek", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Stack.html#pop()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Stack.html#pop()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Pop()
@@ -156,7 +156,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("pop", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Stack.html#search(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Stack.html#search(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>

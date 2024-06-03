@@ -54,13 +54,13 @@ namespace Java.Time
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#MAX"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#MAX"/>
         /// </summary>
         public static Java.Time.OffsetDateTime MAX { get { if (!_MAXReady) { _MAXContent = SGetField<Java.Time.OffsetDateTime>(LocalBridgeClazz, "MAX"); _MAXReady = true; } return _MAXContent; } }
         private static Java.Time.OffsetDateTime _MAXContent = default;
         private static bool _MAXReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#MIN"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#MIN"/>
         /// </summary>
         public static Java.Time.OffsetDateTime MIN { get { if (!_MINReady) { _MINContent = SGetField<Java.Time.OffsetDateTime>(LocalBridgeClazz, "MIN"); _MINReady = true; } return _MINContent; } }
         private static Java.Time.OffsetDateTime _MINContent = default;
@@ -70,7 +70,7 @@ namespace Java.Time
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#from(java.time.temporal.TemporalAccessor)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#from(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -79,7 +79,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.OffsetDateTime>(LocalBridgeClazz, "from", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#now()"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#now()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
         public static Java.Time.OffsetDateTime Now()
@@ -87,7 +87,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.OffsetDateTime>(LocalBridgeClazz, "now", "()Ljava/time/OffsetDateTime;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#now(java.time.Clock)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#now(java.time.Clock)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Clock"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -96,7 +96,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.OffsetDateTime>(LocalBridgeClazz, "now", "(Ljava/time/Clock;)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#now(java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#now(java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -105,7 +105,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.OffsetDateTime>(LocalBridgeClazz, "now", "(Ljava/time/ZoneId;)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#of(int,int,int,int,int,int,int,java.time.ZoneOffset)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#of(int,int,int,int,int,int,int,java.time.ZoneOffset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -121,7 +121,7 @@ namespace Java.Time
             return SExecute<Java.Time.OffsetDateTime>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#of(java.time.LocalDate,java.time.LocalTime,java.time.ZoneOffset)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#of(java.time.LocalDate,java.time.LocalTime,java.time.ZoneOffset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.LocalDate"/></param>
         /// <param name="arg1"><see cref="Java.Time.LocalTime"/></param>
@@ -132,7 +132,7 @@ namespace Java.Time
             return SExecute<Java.Time.OffsetDateTime>(LocalBridgeClazz, "of", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#of(java.time.LocalDateTime,java.time.ZoneOffset)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#of(java.time.LocalDateTime,java.time.ZoneOffset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
         /// <param name="arg1"><see cref="Java.Time.ZoneOffset"/></param>
@@ -142,7 +142,7 @@ namespace Java.Time
             return SExecute<Java.Time.OffsetDateTime>(LocalBridgeClazz, "of", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#ofInstant(java.time.Instant,java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#ofInstant(java.time.Instant,java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
         /// <param name="arg1"><see cref="Java.Time.ZoneId"/></param>
@@ -152,7 +152,7 @@ namespace Java.Time
             return SExecute<Java.Time.OffsetDateTime>(LocalBridgeClazz, "ofInstant", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#parse(java.lang.CharSequence,java.time.format.DateTimeFormatter)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#parse(java.lang.CharSequence,java.time.format.DateTimeFormatter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Time.Format.DateTimeFormatter"/></param>
@@ -162,7 +162,7 @@ namespace Java.Time
             return SExecute<Java.Time.OffsetDateTime>(LocalBridgeClazz, "parse", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#parse(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#parse(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -175,84 +175,7 @@ namespace Java.Time
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#getDayOfMonth()"/> 
-        /// </summary>
-        public int DayOfMonth
-        {
-            get { return IExecuteWithSignature<int>("getDayOfMonth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#getDayOfWeek()"/> 
-        /// </summary>
-        public Java.Time.DayOfWeek DayOfWeek
-        {
-            get { return IExecuteWithSignature<Java.Time.DayOfWeek>("getDayOfWeek", "()Ljava/time/DayOfWeek;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#getDayOfYear()"/> 
-        /// </summary>
-        public int DayOfYear
-        {
-            get { return IExecuteWithSignature<int>("getDayOfYear", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#getHour()"/> 
-        /// </summary>
-        public int Hour
-        {
-            get { return IExecuteWithSignature<int>("getHour", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#getMinute()"/> 
-        /// </summary>
-        public int Minute
-        {
-            get { return IExecuteWithSignature<int>("getMinute", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#getMonth()"/> 
-        /// </summary>
-        public Java.Time.Month Month
-        {
-            get { return IExecuteWithSignature<Java.Time.Month>("getMonth", "()Ljava/time/Month;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#getMonthValue()"/> 
-        /// </summary>
-        public int MonthValue
-        {
-            get { return IExecuteWithSignature<int>("getMonthValue", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#getNano()"/> 
-        /// </summary>
-        public int Nano
-        {
-            get { return IExecuteWithSignature<int>("getNano", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#getOffset()"/> 
-        /// </summary>
-        public Java.Time.ZoneOffset Offset
-        {
-            get { return IExecuteWithSignature<Java.Time.ZoneOffset>("getOffset", "()Ljava/time/ZoneOffset;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#getSecond()"/> 
-        /// </summary>
-        public int Second
-        {
-            get { return IExecuteWithSignature<int>("getSecond", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#getYear()"/> 
-        /// </summary>
-        public int Year
-        {
-            get { return IExecuteWithSignature<int>("getYear", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#query(java.time.temporal.TemporalQuery)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#query(java.time.temporal.TemporalQuery)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
         /// <typeparam name="R"></typeparam>
@@ -262,7 +185,7 @@ namespace Java.Time
             return IExecuteWithSignature<R>("query", "(Ljava/time/temporal/TemporalQuery;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#isAfter(java.time.OffsetDateTime)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#isAfter(java.time.OffsetDateTime)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.OffsetDateTime"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -271,7 +194,7 @@ namespace Java.Time
             return IExecuteWithSignature<bool>("isAfter", "(Ljava/time/OffsetDateTime;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#isBefore(java.time.OffsetDateTime)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#isBefore(java.time.OffsetDateTime)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.OffsetDateTime"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -280,7 +203,7 @@ namespace Java.Time
             return IExecuteWithSignature<bool>("isBefore", "(Ljava/time/OffsetDateTime;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#isEqual(java.time.OffsetDateTime)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#isEqual(java.time.OffsetDateTime)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.OffsetDateTime"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -289,7 +212,7 @@ namespace Java.Time
             return IExecuteWithSignature<bool>("isEqual", "(Ljava/time/OffsetDateTime;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#isSupported(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#isSupported(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -298,7 +221,7 @@ namespace Java.Time
             return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalField;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#isSupported(java.time.temporal.TemporalUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#isSupported(java.time.temporal.TemporalUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -307,7 +230,7 @@ namespace Java.Time
             return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalUnit;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -316,7 +239,7 @@ namespace Java.Time
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#compareTo(java.time.OffsetDateTime)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#compareTo(java.time.OffsetDateTime)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.OffsetDateTime"/></param>
         /// <returns><see cref="int"/></returns>
@@ -325,7 +248,7 @@ namespace Java.Time
             return IExecuteWithSignature<int>("compareTo", "(Ljava/time/OffsetDateTime;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#get(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#get(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="int"/></returns>
@@ -334,7 +257,71 @@ namespace Java.Time
             return IExecuteWithSignature<int>("get", "(Ljava/time/temporal/TemporalField;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#format(java.time.format.DateTimeFormatter)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getDayOfMonth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDayOfMonth()
+        {
+            return IExecuteWithSignature<int>("getDayOfMonth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getDayOfYear()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDayOfYear()
+        {
+            return IExecuteWithSignature<int>("getDayOfYear", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getHour()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHour()
+        {
+            return IExecuteWithSignature<int>("getHour", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getMinute()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinute()
+        {
+            return IExecuteWithSignature<int>("getMinute", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getMonthValue()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMonthValue()
+        {
+            return IExecuteWithSignature<int>("getMonthValue", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getNano()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNano()
+        {
+            return IExecuteWithSignature<int>("getNano", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getSecond()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSecond()
+        {
+            return IExecuteWithSignature<int>("getSecond", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getYear()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetYear()
+        {
+            return IExecuteWithSignature<int>("getYear", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#format(java.time.format.DateTimeFormatter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.DateTimeFormatter"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -343,7 +330,15 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Lang.String>("format", "(Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#toInstant()"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getDayOfWeek()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.DayOfWeek"/></returns>
+        public Java.Time.DayOfWeek GetDayOfWeek()
+        {
+            return IExecuteWithSignature<Java.Time.DayOfWeek>("getDayOfWeek", "()Ljava/time/DayOfWeek;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#toInstant()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant ToInstant()
@@ -351,7 +346,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Instant>("toInstant", "()Ljava/time/Instant;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#toLocalDate()"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#toLocalDate()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public Java.Time.LocalDate ToLocalDate()
@@ -359,7 +354,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.LocalDate>("toLocalDate", "()Ljava/time/LocalDate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#toLocalDateTime()"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#toLocalDateTime()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
         public Java.Time.LocalDateTime ToLocalDateTime()
@@ -367,7 +362,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.LocalDateTime>("toLocalDateTime", "()Ljava/time/LocalDateTime;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#toLocalTime()"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#toLocalTime()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public Java.Time.LocalTime ToLocalTime()
@@ -375,7 +370,15 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.LocalTime>("toLocalTime", "()Ljava/time/LocalTime;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#minusDays(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getMonth()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.Month"/></returns>
+        public Java.Time.Month GetMonth()
+        {
+            return IExecuteWithSignature<Java.Time.Month>("getMonth", "()Ljava/time/Month;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#minusDays(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -384,7 +387,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("minusDays", "(J)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#minusHours(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#minusHours(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -393,7 +396,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("minusHours", "(J)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#minusMinutes(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#minusMinutes(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -402,7 +405,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("minusMinutes", "(J)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#minusMonths(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#minusMonths(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -411,7 +414,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("minusMonths", "(J)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#minusNanos(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#minusNanos(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -420,7 +423,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("minusNanos", "(J)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#minusSeconds(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#minusSeconds(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -429,7 +432,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("minusSeconds", "(J)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#minusWeeks(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#minusWeeks(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -438,7 +441,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("minusWeeks", "(J)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#minusYears(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#minusYears(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -447,7 +450,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("minusYears", "(J)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#plusDays(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#plusDays(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -456,7 +459,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("plusDays", "(J)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#plusHours(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#plusHours(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -465,7 +468,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("plusHours", "(J)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#plusMinutes(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#plusMinutes(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -474,7 +477,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("plusMinutes", "(J)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#plusMonths(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#plusMonths(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -483,7 +486,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("plusMonths", "(J)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#plusNanos(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#plusNanos(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -492,7 +495,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("plusNanos", "(J)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#plusSeconds(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#plusSeconds(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -501,7 +504,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("plusSeconds", "(J)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#plusWeeks(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#plusWeeks(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -510,7 +513,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("plusWeeks", "(J)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#plusYears(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#plusYears(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -519,7 +522,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("plusYears", "(J)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#truncatedTo(java.time.temporal.TemporalUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#truncatedTo(java.time.temporal.TemporalUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -528,7 +531,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("truncatedTo", "(Ljava/time/temporal/TemporalUnit;)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#withDayOfMonth(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#withDayOfMonth(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -537,7 +540,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("withDayOfMonth", "(I)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#withDayOfYear(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#withDayOfYear(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -546,7 +549,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("withDayOfYear", "(I)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#withHour(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#withHour(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -555,7 +558,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("withHour", "(I)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#withMinute(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#withMinute(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -564,7 +567,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("withMinute", "(I)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#withMonth(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#withMonth(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -573,7 +576,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("withMonth", "(I)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#withNano(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#withNano(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -582,7 +585,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("withNano", "(I)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#withOffsetSameInstant(java.time.ZoneOffset)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#withOffsetSameInstant(java.time.ZoneOffset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneOffset"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -591,7 +594,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("withOffsetSameInstant", "(Ljava/time/ZoneOffset;)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#withOffsetSameLocal(java.time.ZoneOffset)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#withOffsetSameLocal(java.time.ZoneOffset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneOffset"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -600,7 +603,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("withOffsetSameLocal", "(Ljava/time/ZoneOffset;)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#withSecond(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#withSecond(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -609,7 +612,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("withSecond", "(I)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#withYear(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#withYear(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -618,7 +621,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("withYear", "(I)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#toOffsetTime()"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#toOffsetTime()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime ToOffsetTime()
@@ -626,7 +629,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetTime>("toOffsetTime", "()Ljava/time/OffsetTime;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#adjustInto(java.time.temporal.Temporal)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#adjustInto(java.time.temporal.Temporal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
@@ -635,7 +638,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("adjustInto", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#minus(java.time.temporal.TemporalAmount)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#minus(java.time.temporal.TemporalAmount)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAmount"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
@@ -644,7 +647,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("minus", "(Ljava/time/temporal/TemporalAmount;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#minus(long,java.time.temporal.TemporalUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#minus(long,java.time.temporal.TemporalUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
@@ -654,7 +657,7 @@ namespace Java.Time
             return IExecute<Java.Time.Temporal.Temporal>("minus", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#plus(java.time.temporal.TemporalAmount)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#plus(java.time.temporal.TemporalAmount)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAmount"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
@@ -663,7 +666,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("plus", "(Ljava/time/temporal/TemporalAmount;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#plus(long,java.time.temporal.TemporalUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#plus(long,java.time.temporal.TemporalUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
@@ -673,7 +676,7 @@ namespace Java.Time
             return IExecute<Java.Time.Temporal.Temporal>("plus", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#with(java.time.temporal.TemporalAdjuster)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#with(java.time.temporal.TemporalAdjuster)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAdjuster"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
@@ -682,7 +685,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("with", "(Ljava/time/temporal/TemporalAdjuster;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#with(java.time.temporal.TemporalField,long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#with(java.time.temporal.TemporalField,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -692,7 +695,7 @@ namespace Java.Time
             return IExecute<Java.Time.Temporal.Temporal>("with", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#range(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#range(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
@@ -701,7 +704,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("range", "(Ljava/time/temporal/TemporalField;)Ljava/time/temporal/ValueRange;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#atZoneSameInstant(java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#atZoneSameInstant(java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -710,7 +713,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("atZoneSameInstant", "(Ljava/time/ZoneId;)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#atZoneSimilarLocal(java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#atZoneSimilarLocal(java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -719,7 +722,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("atZoneSimilarLocal", "(Ljava/time/ZoneId;)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#toZonedDateTime()"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#toZonedDateTime()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime ToZonedDateTime()
@@ -727,7 +730,15 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("toZonedDateTime", "()Ljava/time/ZonedDateTime;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#getLong(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getOffset()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
+        public Java.Time.ZoneOffset GetOffset()
+        {
+            return IExecuteWithSignature<Java.Time.ZoneOffset>("getOffset", "()Ljava/time/ZoneOffset;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getLong(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="long"/></returns>
@@ -736,7 +747,7 @@ namespace Java.Time
             return IExecuteWithSignature<long>("getLong", "(Ljava/time/temporal/TemporalField;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#toEpochSecond()"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#toEpochSecond()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long ToEpochSecond()
@@ -744,7 +755,7 @@ namespace Java.Time
             return IExecuteWithSignature<long>("toEpochSecond", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>

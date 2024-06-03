@@ -46,43 +46,43 @@ namespace Java.Time
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html#FRIDAY"/>
+        /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#FRIDAY"/>
         /// </summary>
         public static Java.Time.DayOfWeek FRIDAY { get { if (!_FRIDAYReady) { _FRIDAYContent = SGetField<Java.Time.DayOfWeek>(LocalBridgeClazz, "FRIDAY"); _FRIDAYReady = true; } return _FRIDAYContent; } }
         private static Java.Time.DayOfWeek _FRIDAYContent = default;
         private static bool _FRIDAYReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html#MONDAY"/>
+        /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#MONDAY"/>
         /// </summary>
         public static Java.Time.DayOfWeek MONDAY { get { if (!_MONDAYReady) { _MONDAYContent = SGetField<Java.Time.DayOfWeek>(LocalBridgeClazz, "MONDAY"); _MONDAYReady = true; } return _MONDAYContent; } }
         private static Java.Time.DayOfWeek _MONDAYContent = default;
         private static bool _MONDAYReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html#SATURDAY"/>
+        /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#SATURDAY"/>
         /// </summary>
         public static Java.Time.DayOfWeek SATURDAY { get { if (!_SATURDAYReady) { _SATURDAYContent = SGetField<Java.Time.DayOfWeek>(LocalBridgeClazz, "SATURDAY"); _SATURDAYReady = true; } return _SATURDAYContent; } }
         private static Java.Time.DayOfWeek _SATURDAYContent = default;
         private static bool _SATURDAYReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html#SUNDAY"/>
+        /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#SUNDAY"/>
         /// </summary>
         public static Java.Time.DayOfWeek SUNDAY { get { if (!_SUNDAYReady) { _SUNDAYContent = SGetField<Java.Time.DayOfWeek>(LocalBridgeClazz, "SUNDAY"); _SUNDAYReady = true; } return _SUNDAYContent; } }
         private static Java.Time.DayOfWeek _SUNDAYContent = default;
         private static bool _SUNDAYReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html#THURSDAY"/>
+        /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#THURSDAY"/>
         /// </summary>
         public static Java.Time.DayOfWeek THURSDAY { get { if (!_THURSDAYReady) { _THURSDAYContent = SGetField<Java.Time.DayOfWeek>(LocalBridgeClazz, "THURSDAY"); _THURSDAYReady = true; } return _THURSDAYContent; } }
         private static Java.Time.DayOfWeek _THURSDAYContent = default;
         private static bool _THURSDAYReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html#TUESDAY"/>
+        /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#TUESDAY"/>
         /// </summary>
         public static Java.Time.DayOfWeek TUESDAY { get { if (!_TUESDAYReady) { _TUESDAYContent = SGetField<Java.Time.DayOfWeek>(LocalBridgeClazz, "TUESDAY"); _TUESDAYReady = true; } return _TUESDAYContent; } }
         private static Java.Time.DayOfWeek _TUESDAYContent = default;
         private static bool _TUESDAYReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html#WEDNESDAY"/>
+        /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#WEDNESDAY"/>
         /// </summary>
         public static Java.Time.DayOfWeek WEDNESDAY { get { if (!_WEDNESDAYReady) { _WEDNESDAYContent = SGetField<Java.Time.DayOfWeek>(LocalBridgeClazz, "WEDNESDAY"); _WEDNESDAYReady = true; } return _WEDNESDAYContent; } }
         private static Java.Time.DayOfWeek _WEDNESDAYContent = default;
@@ -92,7 +92,7 @@ namespace Java.Time
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html#from(java.time.temporal.TemporalAccessor)"/>
+        /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#from(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
         /// <returns><see cref="Java.Time.DayOfWeek"/></returns>
@@ -101,7 +101,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.DayOfWeek>(LocalBridgeClazz, "from", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/DayOfWeek;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html#of(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#of(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.DayOfWeek"/></returns>
@@ -110,7 +110,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.DayOfWeek>(LocalBridgeClazz, "of", "(I)Ljava/time/DayOfWeek;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Time.DayOfWeek"/></returns>
@@ -119,7 +119,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.DayOfWeek>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/DayOfWeek;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html#values()"/>
+        /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#values()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.DayOfWeek"/></returns>
         public static Java.Time.DayOfWeek[] Values()
@@ -131,14 +131,7 @@ namespace Java.Time
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html#getValue()"/> 
-        /// </summary>
-        public int Value
-        {
-            get { return IExecuteWithSignature<int>("getValue", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html#query(java.time.temporal.TemporalQuery)"/>
+        /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#query(java.time.temporal.TemporalQuery)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
         /// <typeparam name="R"></typeparam>
@@ -148,7 +141,7 @@ namespace Java.Time
             return IExecuteWithSignature<R>("query", "(Ljava/time/temporal/TemporalQuery;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html#isSupported(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#isSupported(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -157,7 +150,7 @@ namespace Java.Time
             return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalField;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html#get(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#get(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="int"/></returns>
@@ -166,7 +159,15 @@ namespace Java.Time
             return IExecuteWithSignature<int>("get", "(Ljava/time/temporal/TemporalField;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#getValue()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetValue()
+        {
+            return IExecuteWithSignature<int>("getValue", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
@@ -176,7 +177,7 @@ namespace Java.Time
             return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html#minus(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#minus(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.DayOfWeek"/></returns>
@@ -185,7 +186,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.DayOfWeek>("minus", "(J)Ljava/time/DayOfWeek;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html#plus(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#plus(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.DayOfWeek"/></returns>
@@ -194,7 +195,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.DayOfWeek>("plus", "(J)Ljava/time/DayOfWeek;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html#adjustInto(java.time.temporal.Temporal)"/>
+        /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#adjustInto(java.time.temporal.Temporal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
@@ -203,7 +204,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("adjustInto", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html#range(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#range(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
@@ -212,7 +213,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("range", "(Ljava/time/temporal/TemporalField;)Ljava/time/temporal/ValueRange;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html#getLong(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#getLong(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="long"/></returns>

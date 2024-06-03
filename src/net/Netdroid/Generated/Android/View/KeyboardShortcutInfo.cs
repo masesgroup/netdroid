@@ -72,32 +72,12 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/KeyboardShortcutInfo.html#getBaseCharacter()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/KeyboardShortcutInfo.html#getBaseCharacter()"/>
         /// </summary>
-        public char BaseCharacter
+        /// <returns><see cref="char"/></returns>
+        public char GetBaseCharacter()
         {
-            get { return IExecuteWithSignature<char>("getBaseCharacter", "()C"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/KeyboardShortcutInfo.html#getKeycode()"/> 
-        /// </summary>
-        public int Keycode
-        {
-            get { return IExecuteWithSignature<int>("getKeycode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/KeyboardShortcutInfo.html#getLabel()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Label
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/KeyboardShortcutInfo.html#getModifiers()"/> 
-        /// </summary>
-        public int Modifiers
-        {
-            get { return IExecuteWithSignature<int>("getModifiers", "()I"); }
+            return IExecuteWithSignature<char>("getBaseCharacter", "()C");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyboardShortcutInfo.html#describeContents()"/>
@@ -106,6 +86,30 @@ namespace Android.View
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyboardShortcutInfo.html#getKeycode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetKeycode()
+        {
+            return IExecuteWithSignature<int>("getKeycode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyboardShortcutInfo.html#getModifiers()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetModifiers()
+        {
+            return IExecuteWithSignature<int>("getModifiers", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyboardShortcutInfo.html#getLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyboardShortcutInfo.html#writeToParcel(android.os.Parcel,int)"/>

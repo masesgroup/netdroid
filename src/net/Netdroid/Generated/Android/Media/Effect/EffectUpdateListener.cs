@@ -68,7 +68,7 @@ namespace Android.Media.Effect
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("onEffectUpdated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Effect.Effect>>>(OnEffectUpdatedEventHandler));
+            AddEventHandler("onEffectUpdated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Effect.Effect>>>(OnEffectUpdatedEventHandler));
 
         }
 
@@ -76,7 +76,7 @@ namespace Android.Media.Effect
         /// Handler for <see href="https://developer.android.com/reference/android/media/effect/EffectUpdateListener.html#onEffectUpdated(android.media.effect.Effect,java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnEffectUpdated"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Media.Effect.Effect, object> OnOnEffectUpdated { get; set; } = null;
+        public global::System.Action<Android.Media.Effect.Effect, object> OnOnEffectUpdated { get; set; } = null;
 
         void OnEffectUpdatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.Effect.Effect>> data)
         {

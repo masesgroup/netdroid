@@ -52,47 +52,52 @@ namespace Android.App.Usage
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/ExternalStorageStats.html#getAppBytes()"/> 
-        /// </summary>
-        public long AppBytes
-        {
-            get { return IExecuteWithSignature<long>("getAppBytes", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/ExternalStorageStats.html#getAudioBytes()"/> 
-        /// </summary>
-        public long AudioBytes
-        {
-            get { return IExecuteWithSignature<long>("getAudioBytes", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/ExternalStorageStats.html#getImageBytes()"/> 
-        /// </summary>
-        public long ImageBytes
-        {
-            get { return IExecuteWithSignature<long>("getImageBytes", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/ExternalStorageStats.html#getTotalBytes()"/> 
-        /// </summary>
-        public long TotalBytes
-        {
-            get { return IExecuteWithSignature<long>("getTotalBytes", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/ExternalStorageStats.html#getVideoBytes()"/> 
-        /// </summary>
-        public long VideoBytes
-        {
-            get { return IExecuteWithSignature<long>("getVideoBytes", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/ExternalStorageStats.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/ExternalStorageStats.html#getAppBytes()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetAppBytes()
+        {
+            return IExecuteWithSignature<long>("getAppBytes", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/ExternalStorageStats.html#getAudioBytes()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetAudioBytes()
+        {
+            return IExecuteWithSignature<long>("getAudioBytes", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/ExternalStorageStats.html#getImageBytes()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetImageBytes()
+        {
+            return IExecuteWithSignature<long>("getImageBytes", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/ExternalStorageStats.html#getTotalBytes()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTotalBytes()
+        {
+            return IExecuteWithSignature<long>("getTotalBytes", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/ExternalStorageStats.html#getVideoBytes()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetVideoBytes()
+        {
+            return IExecuteWithSignature<long>("getVideoBytes", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/ExternalStorageStats.html#writeToParcel(android.os.Parcel,int)"/>

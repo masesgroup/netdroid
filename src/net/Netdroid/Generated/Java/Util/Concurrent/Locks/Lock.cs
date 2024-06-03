@@ -64,7 +64,7 @@ namespace Java.Util.Concurrent.Locks
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/Lock.html#tryLock()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/Lock.html#tryLock()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool TryLock()
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("tryLock", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/Lock.html#tryLock(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/Lock.html#tryLock(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -83,7 +83,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecute<bool>("tryLock", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/Lock.html#newCondition()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/Lock.html#newCondition()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.Locks.Condition"/></returns>
         public Java.Util.Concurrent.Locks.Condition NewCondition()
@@ -91,14 +91,14 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<Java.Util.Concurrent.Locks.Condition>("newCondition", "()Ljava/util/concurrent/locks/Condition;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/Lock.html#lock()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/Lock.html#lock()"/>
         /// </summary>
         public void LockMethod()
         {
             IExecuteWithSignature("lock", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/Lock.html#lockInterruptibly()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/Lock.html#lockInterruptibly()"/>
         /// </summary>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void LockInterruptibly()
@@ -106,7 +106,7 @@ namespace Java.Util.Concurrent.Locks
             IExecuteWithSignature("lockInterruptibly", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/Lock.html#unlock()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/Lock.html#unlock()"/>
         /// </summary>
         public void Unlock()
         {

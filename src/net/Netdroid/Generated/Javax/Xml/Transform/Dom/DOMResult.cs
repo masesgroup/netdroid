@@ -30,7 +30,7 @@ namespace Javax.Xml.Transform.Dom
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/dom/DOMResult.html#%3Cinit%3E(org.w3c.dom.Node,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/dom/DOMResult.html#%3Cinit%3E(org.w3c.dom.Node,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -39,7 +39,7 @@ namespace Javax.Xml.Transform.Dom
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/dom/DOMResult.html#%3Cinit%3E(org.w3c.dom.Node,org.w3c.dom.Node,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/dom/DOMResult.html#%3Cinit%3E(org.w3c.dom.Node,org.w3c.dom.Node,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
         /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
@@ -49,7 +49,7 @@ namespace Javax.Xml.Transform.Dom
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/dom/DOMResult.html#%3Cinit%3E(org.w3c.dom.Node,org.w3c.dom.Node)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/dom/DOMResult.html#%3Cinit%3E(org.w3c.dom.Node,org.w3c.dom.Node)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
         /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
@@ -58,7 +58,7 @@ namespace Javax.Xml.Transform.Dom
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/dom/DOMResult.html#%3Cinit%3E(org.w3c.dom.Node)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/dom/DOMResult.html#%3Cinit%3E(org.w3c.dom.Node)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
         public DOMResult(Org.W3c.Dom.Node arg0)
@@ -74,7 +74,7 @@ namespace Javax.Xml.Transform.Dom
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/dom/DOMResult.html#FEATURE"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/dom/DOMResult.html#FEATURE"/>
         /// </summary>
         public static Java.Lang.String FEATURE { get { if (!_FEATUREReady) { _FEATUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE"); _FEATUREReady = true; } return _FEATUREContent; } }
         private static Java.Lang.String _FEATUREContent = default;
@@ -88,25 +88,52 @@ namespace Javax.Xml.Transform.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/dom/DOMResult.html#getNextSibling()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/dom/DOMResult.html#setNextSibling(org.w3c.dom.Node)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/dom/DOMResult.html#getSystemId()"/>
         /// </summary>
-        public Org.W3c.Dom.Node NextSibling
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSystemId()
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Node>("getNextSibling", "()Lorg/w3c/dom/Node;"); } set { IExecuteWithSignature("setNextSibling", "(Lorg/w3c/dom/Node;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/dom/DOMResult.html#getNode()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/dom/DOMResult.html#setNode(org.w3c.dom.Node)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/dom/DOMResult.html#getNextSibling()"/>
         /// </summary>
-        public Org.W3c.Dom.Node Node
+        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
+        public Org.W3c.Dom.Node GetNextSibling()
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Node>("getNode", "()Lorg/w3c/dom/Node;"); } set { IExecuteWithSignature("setNode", "(Lorg/w3c/dom/Node;)V", value); }
+            return IExecuteWithSignature<Org.W3c.Dom.Node>("getNextSibling", "()Lorg/w3c/dom/Node;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/dom/DOMResult.html#getSystemId()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/dom/DOMResult.html#setSystemId(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/dom/DOMResult.html#getNode()"/>
         /// </summary>
-        public Java.Lang.String SystemId
+        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
+        public Org.W3c.Dom.Node GetNode()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Org.W3c.Dom.Node>("getNode", "()Lorg/w3c/dom/Node;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/dom/DOMResult.html#setNextSibling(org.w3c.dom.Node)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        public void SetNextSibling(Org.W3c.Dom.Node arg0)
+        {
+            IExecuteWithSignature("setNextSibling", "(Lorg/w3c/dom/Node;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/dom/DOMResult.html#setNode(org.w3c.dom.Node)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        public void SetNode(Org.W3c.Dom.Node arg0)
+        {
+            IExecuteWithSignature("setNode", "(Lorg/w3c/dom/Node;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/dom/DOMResult.html#setSystemId(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetSystemId(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

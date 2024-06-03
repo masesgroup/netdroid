@@ -52,26 +52,28 @@ namespace Android.Companion.Virtual
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/companion/virtual/VirtualDevice.html#getDeviceId()"/> 
-        /// </summary>
-        public int DeviceId
-        {
-            get { return IExecuteWithSignature<int>("getDeviceId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/companion/virtual/VirtualDevice.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/virtual/VirtualDevice.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/virtual/VirtualDevice.html#getDeviceId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDeviceId()
+        {
+            return IExecuteWithSignature<int>("getDeviceId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/virtual/VirtualDevice.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/virtual/VirtualDevice.html#writeToParcel(android.os.Parcel,int)"/>

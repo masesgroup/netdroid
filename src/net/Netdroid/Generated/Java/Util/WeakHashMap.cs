@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/WeakHashMap.html#%3Cinit%3E(int,float)"/>
+        /// <see href="https://developer.android.com/reference/java/util/WeakHashMap.html#%3Cinit%3E(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -39,7 +39,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/WeakHashMap.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/WeakHashMap.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public WeakHashMap(int arg0)
@@ -47,7 +47,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/WeakHashMap.html#%3Cinit%3E(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/util/WeakHashMap.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public WeakHashMap(Java.Util.Map arg0)
@@ -86,7 +86,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/WeakHashMap.html#%3Cinit%3E(int,float)"/>
+        /// <see href="https://developer.android.com/reference/java/util/WeakHashMap.html#%3Cinit%3E(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -95,7 +95,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/WeakHashMap.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/WeakHashMap.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public WeakHashMap(int arg0)
@@ -103,7 +103,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/WeakHashMap.html#%3Cinit%3E(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/util/WeakHashMap.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public WeakHashMap(Java.Util.Map<K, V> arg0)

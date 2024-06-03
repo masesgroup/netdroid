@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#%3Cinit%3E(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#%3Cinit%3E(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public SplittableRandom(long arg0)
@@ -54,7 +54,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#nextInt()"/>
+        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#nextInt()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int NextInt()
@@ -62,24 +62,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("nextInt", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#split()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Random.RandomGenerator.SplittableGenerator"/></returns>
-        public Java.Util.Random.RandomGenerator.SplittableGenerator Split()
-        {
-            return IExecuteWithSignature<Java.Util.Random.RandomGenerator.SplittableGenerator>("split", "()Ljava/util/random/RandomGenerator$SplittableGenerator;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#split(java.util.random.RandomGenerator.SplittableGenerator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Random.RandomGenerator.SplittableGenerator"/></param>
-        /// <returns><see cref="Java.Util.Random.RandomGenerator.SplittableGenerator"/></returns>
-        public Java.Util.Random.RandomGenerator.SplittableGenerator Split(Java.Util.Random.RandomGenerator.SplittableGenerator arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Random.RandomGenerator.SplittableGenerator>("split", "(Ljava/util/random/RandomGenerator$SplittableGenerator;)Ljava/util/random/RandomGenerator$SplittableGenerator;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#doubles()"/>
+        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#doubles()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Doubles()
@@ -87,7 +70,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("doubles", "()Ljava/util/stream/DoubleStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#doubles(double,double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#doubles(double,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -97,7 +80,7 @@ namespace Java.Util
             return IExecute<Java.Util.Stream.DoubleStream>("doubles", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#doubles(long,double,double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#doubles(long,double,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -108,7 +91,7 @@ namespace Java.Util
             return IExecute<Java.Util.Stream.DoubleStream>("doubles", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#doubles(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#doubles(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
@@ -117,7 +100,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("doubles", "(J)Ljava/util/stream/DoubleStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#ints()"/>
+        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#ints()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Ints()
@@ -125,7 +108,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("ints", "()Ljava/util/stream/IntStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#ints(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#ints(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -135,7 +118,7 @@ namespace Java.Util
             return IExecute<Java.Util.Stream.IntStream>("ints", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#ints(long,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#ints(long,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -146,7 +129,7 @@ namespace Java.Util
             return IExecute<Java.Util.Stream.IntStream>("ints", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#ints(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#ints(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
@@ -155,7 +138,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("ints", "(J)Ljava/util/stream/IntStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#longs()"/>
+        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#longs()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Longs()
@@ -163,7 +146,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("longs", "()Ljava/util/stream/LongStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#longs(long,long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#longs(long,long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -174,7 +157,7 @@ namespace Java.Util
             return IExecute<Java.Util.Stream.LongStream>("longs", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#longs(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#longs(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -184,7 +167,7 @@ namespace Java.Util
             return IExecute<Java.Util.Stream.LongStream>("longs", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#longs(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#longs(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
@@ -193,43 +176,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("longs", "(J)Ljava/util/stream/LongStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#splits()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<Java.Util.Random.RandomGenerator.SplittableGenerator> Splits()
-        {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Util.Random.RandomGenerator.SplittableGenerator>>("splits", "()Ljava/util/stream/Stream;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#splits(java.util.random.RandomGenerator.SplittableGenerator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Random.RandomGenerator.SplittableGenerator"/></param>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<Java.Util.Random.RandomGenerator.SplittableGenerator> Splits(Java.Util.Random.RandomGenerator.SplittableGenerator arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Util.Random.RandomGenerator.SplittableGenerator>>("splits", "(Ljava/util/random/RandomGenerator$SplittableGenerator;)Ljava/util/stream/Stream;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#splits(long,java.util.random.RandomGenerator.SplittableGenerator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Random.RandomGenerator.SplittableGenerator"/></param>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<Java.Util.Random.RandomGenerator.SplittableGenerator> Splits(long arg0, Java.Util.Random.RandomGenerator.SplittableGenerator arg1)
-        {
-            return IExecute<Java.Util.Stream.Stream<Java.Util.Random.RandomGenerator.SplittableGenerator>>("splits", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#splits(long)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<Java.Util.Random.RandomGenerator.SplittableGenerator> Splits(long arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Util.Random.RandomGenerator.SplittableGenerator>>("splits", "(J)Ljava/util/stream/Stream;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#nextLong()"/>
+        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#nextLong()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long NextLong()
@@ -237,7 +184,7 @@ namespace Java.Util
             return IExecuteWithSignature<long>("nextLong", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SplittableRandom.html#nextBytes(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#nextBytes(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public void NextBytes(byte[] arg0)

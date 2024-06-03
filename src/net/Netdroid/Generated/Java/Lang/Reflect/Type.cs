@@ -64,11 +64,12 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Type.html#getTypeName()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Type.html#getTypeName()"/>
         /// </summary>
-        public Java.Lang.String TypeName
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTypeName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTypeName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getTypeName", "()Ljava/lang/String;");
         }
 
         #endregion

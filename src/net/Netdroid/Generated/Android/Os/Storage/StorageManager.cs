@@ -76,34 +76,6 @@ namespace Android.Os.Storage
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#getPrimaryStorageVolume()"/> 
-        /// </summary>
-        public Android.Os.Storage.StorageVolume PrimaryStorageVolume
-        {
-            get { return IExecuteWithSignature<Android.Os.Storage.StorageVolume>("getPrimaryStorageVolume", "()Landroid/os/storage/StorageVolume;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#getRecentStorageVolumes()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Os.Storage.StorageVolume> RecentStorageVolumes
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Os.Storage.StorageVolume>>("getRecentStorageVolumes", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#getStorageVolumes()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Os.Storage.StorageVolume> StorageVolumes
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Os.Storage.StorageVolume>>("getStorageVolumes", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#getStorageVolumesIncludingSharedProfiles()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Os.Storage.StorageVolume> StorageVolumesIncludingSharedProfiles
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Os.Storage.StorageVolume>>("getStorageVolumesIncludingSharedProfiles", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#getManageSpaceActivityIntent(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -124,6 +96,14 @@ namespace Android.Os.Storage
         public Android.Os.ParcelFileDescriptor OpenProxyFileDescriptor(int arg0, Android.Os.ProxyFileDescriptorCallback arg1, Android.Os.Handler arg2)
         {
             return IExecute<Android.Os.ParcelFileDescriptor>("openProxyFileDescriptor", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#getPrimaryStorageVolume()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.Storage.StorageVolume"/></returns>
+        public Android.Os.Storage.StorageVolume GetPrimaryStorageVolume()
+        {
+            return IExecuteWithSignature<Android.Os.Storage.StorageVolume>("getPrimaryStorageVolume", "()Landroid/os/storage/StorageVolume;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#getStorageVolume(android.net.Uri)"/>
@@ -228,6 +208,30 @@ namespace Android.Os.Storage
         public Java.Lang.String GetMountedObbPath(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getMountedObbPath", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#getRecentStorageVolumes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Os.Storage.StorageVolume> GetRecentStorageVolumes()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Os.Storage.StorageVolume>>("getRecentStorageVolumes", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#getStorageVolumes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Os.Storage.StorageVolume> GetStorageVolumes()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Os.Storage.StorageVolume>>("getStorageVolumes", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#getStorageVolumesIncludingSharedProfiles()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Os.Storage.StorageVolume> GetStorageVolumesIncludingSharedProfiles()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Os.Storage.StorageVolume>>("getStorageVolumesIncludingSharedProfiles", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#getUuidForPath(java.io.File)"/>

@@ -46,19 +46,21 @@ namespace Android.Opengl
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/opengl/EGLObjectHandle.html#getHandle()"/> 
+        /// <see href="https://developer.android.com/reference/android/opengl/EGLObjectHandle.html#getHandle()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int Handle
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetHandle()
         {
-            get { return IExecuteWithSignature<int>("getHandle", "()I"); }
+            return IExecuteWithSignature<int>("getHandle", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/opengl/EGLObjectHandle.html#getNativeHandle()"/> 
+        /// <see href="https://developer.android.com/reference/android/opengl/EGLObjectHandle.html#getNativeHandle()"/>
         /// </summary>
-        public long NativeHandle
+        /// <returns><see cref="long"/></returns>
+        public long GetNativeHandle()
         {
-            get { return IExecuteWithSignature<long>("getNativeHandle", "()J"); }
+            return IExecuteWithSignature<long>("getNativeHandle", "()J");
         }
 
         #endregion

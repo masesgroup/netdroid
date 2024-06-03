@@ -64,18 +64,20 @@ namespace Android.Text.Style
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/DynamicDrawableSpan.html#getDrawable()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/style/DynamicDrawableSpan.html#getDrawable()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable Drawable
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetDrawable()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawable", "()Landroid/graphics/drawable/Drawable;"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawable", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/DynamicDrawableSpan.html#getVerticalAlignment()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/style/DynamicDrawableSpan.html#getVerticalAlignment()"/>
         /// </summary>
-        public int VerticalAlignment
+        /// <returns><see cref="int"/></returns>
+        public int GetVerticalAlignment()
         {
-            get { return IExecuteWithSignature<int>("getVerticalAlignment", "()I"); }
+            return IExecuteWithSignature<int>("getVerticalAlignment", "()I");
         }
 
         #endregion

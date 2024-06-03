@@ -46,18 +46,20 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/InstantRecord.html#getTime()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/InstantRecord.html#getTime()"/>
         /// </summary>
-        public Java.Time.Instant Time
+        /// <returns><see cref="Java.Time.Instant"/></returns>
+        public Java.Time.Instant GetTime()
         {
-            get { return IExecuteWithSignature<Java.Time.Instant>("getTime", "()Ljava/time/Instant;"); }
+            return IExecuteWithSignature<Java.Time.Instant>("getTime", "()Ljava/time/Instant;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/InstantRecord.html#getZoneOffset()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/InstantRecord.html#getZoneOffset()"/>
         /// </summary>
-        public Java.Time.ZoneOffset ZoneOffset
+        /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
+        public Java.Time.ZoneOffset GetZoneOffset()
         {
-            get { return IExecuteWithSignature<Java.Time.ZoneOffset>("getZoneOffset", "()Ljava/time/ZoneOffset;"); }
+            return IExecuteWithSignature<Java.Time.ZoneOffset>("getZoneOffset", "()Ljava/time/ZoneOffset;");
         }
 
         #endregion

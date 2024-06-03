@@ -30,7 +30,7 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECPoint.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECPoint.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
@@ -47,7 +47,7 @@ namespace Java.Security.Spec
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECPoint.html#POINT_INFINITY"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECPoint.html#POINT_INFINITY"/>
         /// </summary>
         public static Java.Security.Spec.ECPoint POINT_INFINITY { get { if (!_POINT_INFINITYReady) { _POINT_INFINITYContent = SGetField<Java.Security.Spec.ECPoint>(LocalBridgeClazz, "POINT_INFINITY"); _POINT_INFINITYReady = true; } return _POINT_INFINITYContent; } }
         private static Java.Security.Spec.ECPoint _POINT_INFINITYContent = default;
@@ -61,18 +61,20 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECPoint.html#getAffineX()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECPoint.html#getAffineX()"/>
         /// </summary>
-        public Java.Math.BigInteger AffineX
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetAffineX()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getAffineX", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getAffineX", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECPoint.html#getAffineY()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECPoint.html#getAffineY()"/>
         /// </summary>
-        public Java.Math.BigInteger AffineY
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetAffineY()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getAffineY", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getAffineY", "()Ljava/math/BigInteger;");
         }
 
         #endregion

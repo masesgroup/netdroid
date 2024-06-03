@@ -42,7 +42,7 @@ namespace Java.Nio.Channels
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Channels.html#newInputStream(java.nio.channels.AsynchronousByteChannel)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Channels.html#newInputStream(java.nio.channels.AsynchronousByteChannel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.AsynchronousByteChannel"/></param>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
@@ -51,7 +51,7 @@ namespace Java.Nio.Channels
             return SExecuteWithSignature<Java.Io.InputStream>(LocalBridgeClazz, "newInputStream", "(Ljava/nio/channels/AsynchronousByteChannel;)Ljava/io/InputStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Channels.html#newInputStream(java.nio.channels.ReadableByteChannel)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Channels.html#newInputStream(java.nio.channels.ReadableByteChannel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.ReadableByteChannel"/></param>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
@@ -60,7 +60,7 @@ namespace Java.Nio.Channels
             return SExecuteWithSignature<Java.Io.InputStream>(LocalBridgeClazz, "newInputStream", "(Ljava/nio/channels/ReadableByteChannel;)Ljava/io/InputStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Channels.html#newOutputStream(java.nio.channels.AsynchronousByteChannel)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Channels.html#newOutputStream(java.nio.channels.AsynchronousByteChannel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.AsynchronousByteChannel"/></param>
         /// <returns><see cref="Java.Io.OutputStream"/></returns>
@@ -69,7 +69,7 @@ namespace Java.Nio.Channels
             return SExecuteWithSignature<Java.Io.OutputStream>(LocalBridgeClazz, "newOutputStream", "(Ljava/nio/channels/AsynchronousByteChannel;)Ljava/io/OutputStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Channels.html#newOutputStream(java.nio.channels.WritableByteChannel)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Channels.html#newOutputStream(java.nio.channels.WritableByteChannel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.WritableByteChannel"/></param>
         /// <returns><see cref="Java.Io.OutputStream"/></returns>
@@ -78,7 +78,7 @@ namespace Java.Nio.Channels
             return SExecuteWithSignature<Java.Io.OutputStream>(LocalBridgeClazz, "newOutputStream", "(Ljava/nio/channels/WritableByteChannel;)Ljava/io/OutputStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Channels.html#newReader(java.nio.channels.ReadableByteChannel,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Channels.html#newReader(java.nio.channels.ReadableByteChannel,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.ReadableByteChannel"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -88,7 +88,7 @@ namespace Java.Nio.Channels
             return SExecute<Java.Io.Reader>(LocalBridgeClazz, "newReader", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Channels.html#newReader(java.nio.channels.ReadableByteChannel,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Channels.html#newReader(java.nio.channels.ReadableByteChannel,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.ReadableByteChannel"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -98,7 +98,7 @@ namespace Java.Nio.Channels
             return SExecute<Java.Io.Reader>(LocalBridgeClazz, "newReader", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Channels.html#newReader(java.nio.channels.ReadableByteChannel,java.nio.charset.CharsetDecoder,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Channels.html#newReader(java.nio.channels.ReadableByteChannel,java.nio.charset.CharsetDecoder,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.ReadableByteChannel"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.CharsetDecoder"/></param>
@@ -109,7 +109,7 @@ namespace Java.Nio.Channels
             return SExecute<Java.Io.Reader>(LocalBridgeClazz, "newReader", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Channels.html#newWriter(java.nio.channels.WritableByteChannel,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Channels.html#newWriter(java.nio.channels.WritableByteChannel,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.WritableByteChannel"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -119,7 +119,7 @@ namespace Java.Nio.Channels
             return SExecute<Java.Io.Writer>(LocalBridgeClazz, "newWriter", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Channels.html#newWriter(java.nio.channels.WritableByteChannel,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Channels.html#newWriter(java.nio.channels.WritableByteChannel,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.WritableByteChannel"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -129,7 +129,7 @@ namespace Java.Nio.Channels
             return SExecute<Java.Io.Writer>(LocalBridgeClazz, "newWriter", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Channels.html#newWriter(java.nio.channels.WritableByteChannel,java.nio.charset.CharsetEncoder,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Channels.html#newWriter(java.nio.channels.WritableByteChannel,java.nio.charset.CharsetEncoder,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.WritableByteChannel"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.CharsetEncoder"/></param>
@@ -140,7 +140,7 @@ namespace Java.Nio.Channels
             return SExecute<Java.Io.Writer>(LocalBridgeClazz, "newWriter", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Channels.html#newChannel(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Channels.html#newChannel(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <returns><see cref="Java.Nio.Channels.ReadableByteChannel"/></returns>
@@ -149,7 +149,7 @@ namespace Java.Nio.Channels
             return SExecuteWithSignature<Java.Nio.Channels.ReadableByteChannel>(LocalBridgeClazz, "newChannel", "(Ljava/io/InputStream;)Ljava/nio/channels/ReadableByteChannel;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Channels.html#newChannel(java.io.OutputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Channels.html#newChannel(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <returns><see cref="Java.Nio.Channels.WritableByteChannel"/></returns>

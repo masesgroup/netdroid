@@ -50,15 +50,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyAsLongEventHandler));
+            AddEventHandler("applyAsLong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyAsLongEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApplyAsLong"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<object, long> OnApplyAsLong { get; set; } = null;
+        public global::System.Func<object, long> OnApplyAsLong { get; set; } = null;
 
         void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {
@@ -68,7 +68,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="long"/></returns>
@@ -108,7 +108,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="long"/></returns>
@@ -129,7 +129,7 @@ namespace Java.Util.Function
 
     #region IToLongFunction<T>
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.ToLongFunction implementing <see href="https://developer.android.com/reference/java.base/java/util/function/ToLongFunction.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.ToLongFunction implementing <see href="https://developer.android.com/reference/java/util/function/ToLongFunction.html"/>
     /// </summary>
     public partial interface IToLongFunction<T>
     {
@@ -170,15 +170,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsLongEventHandler));
+            AddEventHandler("applyAsLong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsLongEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApplyAsLong"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<T, long> OnApplyAsLong { get; set; } = null;
+        public global::System.Func<T, long> OnApplyAsLong { get; set; } = null;
 
         void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
@@ -188,7 +188,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><see cref="long"/></returns>
@@ -228,7 +228,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><see cref="long"/></returns>

@@ -46,7 +46,7 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/PermissionCollection.html#implies(java.security.Permission)"/>
+        /// <see href="https://developer.android.com/reference/java/security/PermissionCollection.html#implies(java.security.Permission)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -55,7 +55,7 @@ namespace Java.Security
             return IExecuteWithSignature<bool>("implies", "(Ljava/security/Permission;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/PermissionCollection.html#elements()"/>
+        /// <see href="https://developer.android.com/reference/java/security/PermissionCollection.html#elements()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<Java.Security.Permission> Elements()
@@ -63,7 +63,7 @@ namespace Java.Security
             return IExecuteWithSignature<Java.Util.Enumeration<Java.Security.Permission>>("elements", "()Ljava/util/Enumeration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/PermissionCollection.html#add(java.security.Permission)"/>
+        /// <see href="https://developer.android.com/reference/java/security/PermissionCollection.html#add(java.security.Permission)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
         public void Add(Java.Security.Permission arg0)
@@ -71,7 +71,7 @@ namespace Java.Security
             IExecuteWithSignature("add", "(Ljava/security/Permission;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/PermissionCollection.html#isReadOnly()"/>
+        /// <see href="https://developer.android.com/reference/java/security/PermissionCollection.html#isReadOnly()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
@@ -79,7 +79,7 @@ namespace Java.Security
             return IExecuteWithSignature<bool>("isReadOnly", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/PermissionCollection.html#elementsAsStream()"/>
+        /// <see href="https://developer.android.com/reference/java/security/PermissionCollection.html#elementsAsStream()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Security.Permission> ElementsAsStream()
@@ -87,7 +87,7 @@ namespace Java.Security
             return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Security.Permission>>("elementsAsStream", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/PermissionCollection.html#setReadOnly()"/>
+        /// <see href="https://developer.android.com/reference/java/security/PermissionCollection.html#setReadOnly()"/>
         /// </summary>
         public void SetReadOnly()
         {

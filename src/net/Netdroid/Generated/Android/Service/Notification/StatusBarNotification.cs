@@ -50,7 +50,7 @@ namespace Android.Service.Notification
         /// <param name="arg7"><see cref="Android.App.Notification"/></param>
         /// <param name="arg8"><see cref="Android.Os.UserHandle"/></param>
         /// <param name="arg9"><see cref="long"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public StatusBarNotification(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3, int arg4, int arg5, int arg6, Android.App.Notification arg7, Android.Os.UserHandle arg8, long arg9)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9)
         {
@@ -78,89 +78,20 @@ namespace Android.Service.Notification
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getGroupKey()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getNotification()"/>
         /// </summary>
-        public Java.Lang.String GroupKey
+        /// <returns><see cref="Android.App.Notification"/></returns>
+        public Android.App.Notification GetNotification()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getGroupKey", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.App.Notification>("getNotification", "()Landroid/app/Notification;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getId()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getUser()"/>
         /// </summary>
-        public int Id
+        /// <returns><see cref="Android.Os.UserHandle"/></returns>
+        public Android.Os.UserHandle GetUser()
         {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getKey()"/> 
-        /// </summary>
-        public Java.Lang.String Key
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getNotification()"/> 
-        /// </summary>
-        public Android.App.Notification Notification
-        {
-            get { return IExecuteWithSignature<Android.App.Notification>("getNotification", "()Landroid/app/Notification;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getOpPkg()"/> 
-        /// </summary>
-        public Java.Lang.String OpPkg
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getOpPkg", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getOverrideGroupKey()"/> <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#setOverrideGroupKey(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String OverrideGroupKey
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getOverrideGroupKey", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setOverrideGroupKey", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String PackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getPostTime()"/> 
-        /// </summary>
-        public long PostTime
-        {
-            get { return IExecuteWithSignature<long>("getPostTime", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getTag()"/> 
-        /// </summary>
-        public Java.Lang.String Tag
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTag", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getUid()"/> 
-        /// </summary>
-        public int Uid
-        {
-            get { return IExecuteWithSignature<int>("getUid", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getUser()"/> 
-        /// </summary>
-        public Android.Os.UserHandle User
-        {
-            get { return IExecuteWithSignature<Android.Os.UserHandle>("getUser", "()Landroid/os/UserHandle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getUserId()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int UserId
-        {
-            get { return IExecuteWithSignature<int>("getUserId", "()I"); }
+            return IExecuteWithSignature<Android.Os.UserHandle>("getUser", "()Landroid/os/UserHandle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#clone()"/>
@@ -209,6 +140,95 @@ namespace Android.Service.Notification
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getUid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetUid()
+        {
+            return IExecuteWithSignature<int>("getUid", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getUserId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetUserId()
+        {
+            return IExecuteWithSignature<int>("getUserId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getGroupKey()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetGroupKey()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getGroupKey", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getKey()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetKey()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getOpPkg()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetOpPkg()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getOpPkg", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getOverrideGroupKey()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetOverrideGroupKey()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getOverrideGroupKey", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getTag()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTag()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTag", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getPostTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetPostTime()
+        {
+            return IExecuteWithSignature<long>("getPostTime", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#setOverrideGroupKey(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetOverrideGroupKey(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setOverrideGroupKey", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#writeToParcel(android.os.Parcel,int)"/>

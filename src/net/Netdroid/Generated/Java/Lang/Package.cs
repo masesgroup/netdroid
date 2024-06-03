@@ -42,131 +42,69 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Package.html#getPackages()"/> 
-        /// </summary>
-        public static Java.Lang.Package[] Packages
-        {
-            get { return SExecuteWithSignatureArray<Java.Lang.Package>(LocalBridgeClazz, "getPackages", "()[Ljava/lang/Package;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Package.html#getPackage(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Package.html#getPackage(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Package"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.Package GetPackage(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.Package>(LocalBridgeClazz, "getPackage", "(Ljava/lang/String;)Ljava/lang/Package;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Package.html#getPackages()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Package"/></returns>
+        public static Java.Lang.Package[] GetPackages()
+        {
+            return SExecuteWithSignatureArray<Java.Lang.Package>(LocalBridgeClazz, "getPackages", "()[Ljava/lang/Package;");
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Package.html#getAnnotations()"/> 
-        /// </summary>
-        public Java.Lang.Annotation.Annotation[] Annotations
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getAnnotations", "()[Ljava/lang/annotation/Annotation;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Package.html#getDeclaredAnnotations()"/> 
-        /// </summary>
-        public Java.Lang.Annotation.Annotation[] DeclaredAnnotations
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Package.html#getImplementationTitle()"/> 
-        /// </summary>
-        public Java.Lang.String ImplementationTitle
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getImplementationTitle", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Package.html#getImplementationVendor()"/> 
-        /// </summary>
-        public Java.Lang.String ImplementationVendor
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getImplementationVendor", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Package.html#getImplementationVersion()"/> 
-        /// </summary>
-        public Java.Lang.String ImplementationVersion
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getImplementationVersion", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Package.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Package.html#getSpecificationTitle()"/> 
-        /// </summary>
-        public Java.Lang.String SpecificationTitle
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSpecificationTitle", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Package.html#getSpecificationVendor()"/> 
-        /// </summary>
-        public Java.Lang.String SpecificationVendor
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSpecificationVendor", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Package.html#getSpecificationVersion()"/> 
-        /// </summary>
-        public Java.Lang.String SpecificationVersion
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSpecificationVersion", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Package.html#getAnnotation(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Package.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        public A GetAnnotation<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.IAnnotation, new()
+        public A GetAnnotation<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
         {
             return IExecuteWithSignature<A>("getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Package.html#getDeclaredAnnotation(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Package.html#getDeclaredAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        public A GetDeclaredAnnotation<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.IAnnotation, new()
+        public A GetDeclaredAnnotation<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
         {
             return IExecuteWithSignature<A>("getDeclaredAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Package.html#getAnnotationsByType(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Package.html#getAnnotationsByType(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        public A[] GetAnnotationsByType<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.IAnnotation, new()
+        public A[] GetAnnotationsByType<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
         {
             return IExecuteWithSignatureArray<A>("getAnnotationsByType", "(Ljava/lang/Class;)[Ljava/lang/annotation/Annotation;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Package.html#getDeclaredAnnotationsByType(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Package.html#getDeclaredAnnotationsByType(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        public A[] GetDeclaredAnnotationsByType<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.IAnnotation, new()
+        public A[] GetDeclaredAnnotationsByType<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
         {
             return IExecuteWithSignatureArray<A>("getDeclaredAnnotationsByType", "(Ljava/lang/Class;)[Ljava/lang/annotation/Annotation;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Package.html#isAnnotationPresent(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Package.html#isAnnotationPresent(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -175,7 +113,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isAnnotationPresent", "(Ljava/lang/Class;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Package.html#isCompatibleWith(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Package.html#isCompatibleWith(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -185,7 +123,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isCompatibleWith", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Package.html#isSealed()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Package.html#isSealed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsSealed()
@@ -193,13 +131,85 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isSealed", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Package.html#isSealed(java.net.URL)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Package.html#isSealed(java.net.URL)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         /// <returns><see cref="bool"/></returns>
         public bool IsSealed(Java.Net.URL arg0)
         {
             return IExecuteWithSignature<bool>("isSealed", "(Ljava/net/URL;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Package.html#getAnnotations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
+        public Java.Lang.Annotation.Annotation[] GetAnnotations()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getAnnotations", "()[Ljava/lang/annotation/Annotation;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Package.html#getDeclaredAnnotations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
+        public Java.Lang.Annotation.Annotation[] GetDeclaredAnnotations()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Package.html#getImplementationTitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetImplementationTitle()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getImplementationTitle", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Package.html#getImplementationVendor()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetImplementationVendor()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getImplementationVendor", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Package.html#getImplementationVersion()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetImplementationVersion()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getImplementationVersion", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Package.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Package.html#getSpecificationTitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSpecificationTitle()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSpecificationTitle", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Package.html#getSpecificationVendor()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSpecificationVendor()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSpecificationVendor", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Package.html#getSpecificationVersion()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSpecificationVersion()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSpecificationVersion", "()Ljava/lang/String;");
         }
 
         #endregion

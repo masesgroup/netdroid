@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent.Locks
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#%3Cinit%3E(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.html#%3Cinit%3E(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public ReentrantReadWriteLock(bool arg0)
@@ -62,35 +62,7 @@ namespace Java.Util.Concurrent.Locks
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#getQueueLength()"/> 
-        /// </summary>
-        public int QueueLength
-        {
-            get { return IExecuteWithSignature<int>("getQueueLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#getReadHoldCount()"/> 
-        /// </summary>
-        public int ReadHoldCount
-        {
-            get { return IExecuteWithSignature<int>("getReadHoldCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#getReadLockCount()"/> 
-        /// </summary>
-        public int ReadLockCount
-        {
-            get { return IExecuteWithSignature<int>("getReadLockCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#getWriteHoldCount()"/> 
-        /// </summary>
-        public int WriteHoldCount
-        {
-            get { return IExecuteWithSignature<int>("getWriteHoldCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#hasWaiters(java.util.concurrent.locks.Condition)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.html#hasWaiters(java.util.concurrent.locks.Condition)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Locks.Condition"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -99,7 +71,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("hasWaiters", "(Ljava/util/concurrent/locks/Condition;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#isWriteLocked()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.html#isWriteLocked()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsWriteLocked()
@@ -107,7 +79,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("isWriteLocked", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#isWriteLockedByCurrentThread()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.html#isWriteLockedByCurrentThread()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsWriteLockedByCurrentThread()
@@ -115,7 +87,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("isWriteLockedByCurrentThread", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#hasQueuedThread(java.lang.Thread)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.html#hasQueuedThread(java.lang.Thread)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -124,7 +96,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("hasQueuedThread", "(Ljava/lang/Thread;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#hasQueuedThreads()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.html#hasQueuedThreads()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasQueuedThreads()
@@ -132,7 +104,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("hasQueuedThreads", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#isFair()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.html#isFair()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsFair()
@@ -140,7 +112,31 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("isFair", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#getWaitQueueLength(java.util.concurrent.locks.Condition)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.html#getQueueLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetQueueLength()
+        {
+            return IExecuteWithSignature<int>("getQueueLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.html#getReadHoldCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetReadHoldCount()
+        {
+            return IExecuteWithSignature<int>("getReadHoldCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.html#getReadLockCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetReadLockCount()
+        {
+            return IExecuteWithSignature<int>("getReadLockCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.html#getWaitQueueLength(java.util.concurrent.locks.Condition)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Locks.Condition"/></param>
         /// <returns><see cref="int"/></returns>
@@ -149,7 +145,15 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<int>("getWaitQueueLength", "(Ljava/util/concurrent/locks/Condition;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#readLock()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.html#getWriteHoldCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWriteHoldCount()
+        {
+            return IExecuteWithSignature<int>("getWriteHoldCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.html#readLock()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
         public Java.Util.Concurrent.Locks.Lock ReadLockMethod()
@@ -157,7 +161,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<Java.Util.Concurrent.Locks.Lock>("readLock", "()Ljava/util/concurrent/locks/Lock;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#writeLock()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.html#writeLock()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
         public Java.Util.Concurrent.Locks.Lock WriteLockMethod()
@@ -197,7 +201,7 @@ namespace Java.Util.Concurrent.Locks
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#tryLock()"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#tryLock()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
             public bool TryLock()
@@ -205,7 +209,7 @@ namespace Java.Util.Concurrent.Locks
                 return IExecuteWithSignature<bool>("tryLock", "()Z");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#tryLock(long,java.util.concurrent.TimeUnit)"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#tryLock(long,java.util.concurrent.TimeUnit)"/>
             /// </summary>
             /// <param name="arg0"><see cref="long"/></param>
             /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -216,7 +220,7 @@ namespace Java.Util.Concurrent.Locks
                 return IExecute<bool>("tryLock", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#newCondition()"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#newCondition()"/>
             /// </summary>
             /// <returns><see cref="Java.Util.Concurrent.Locks.Condition"/></returns>
             public Java.Util.Concurrent.Locks.Condition NewCondition()
@@ -224,14 +228,14 @@ namespace Java.Util.Concurrent.Locks
                 return IExecuteWithSignature<Java.Util.Concurrent.Locks.Condition>("newCondition", "()Ljava/util/concurrent/locks/Condition;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#lock()"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#lock()"/>
             /// </summary>
             public void Lock()
             {
                 IExecuteWithSignature("lock", "()V");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#lockInterruptibly()"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#lockInterruptibly()"/>
             /// </summary>
             /// <exception cref="Java.Lang.InterruptedException"/>
             public void LockInterruptibly()
@@ -239,7 +243,7 @@ namespace Java.Util.Concurrent.Locks
                 IExecuteWithSignature("lockInterruptibly", "()V");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#unlock()"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#unlock()"/>
             /// </summary>
             public void Unlock()
             {
@@ -285,14 +289,7 @@ namespace Java.Util.Concurrent.Locks
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#getHoldCount()"/> 
-            /// </summary>
-            public int HoldCount
-            {
-                get { return IExecuteWithSignature<int>("getHoldCount", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#isHeldByCurrentThread()"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#isHeldByCurrentThread()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
             public bool IsHeldByCurrentThread()
@@ -300,7 +297,7 @@ namespace Java.Util.Concurrent.Locks
                 return IExecuteWithSignature<bool>("isHeldByCurrentThread", "()Z");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#tryLock()"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#tryLock()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
             public bool TryLock()
@@ -308,7 +305,7 @@ namespace Java.Util.Concurrent.Locks
                 return IExecuteWithSignature<bool>("tryLock", "()Z");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#tryLock(long,java.util.concurrent.TimeUnit)"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#tryLock(long,java.util.concurrent.TimeUnit)"/>
             /// </summary>
             /// <param name="arg0"><see cref="long"/></param>
             /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -319,7 +316,15 @@ namespace Java.Util.Concurrent.Locks
                 return IExecute<bool>("tryLock", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#newCondition()"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#getHoldCount()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetHoldCount()
+            {
+                return IExecuteWithSignature<int>("getHoldCount", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#newCondition()"/>
             /// </summary>
             /// <returns><see cref="Java.Util.Concurrent.Locks.Condition"/></returns>
             public Java.Util.Concurrent.Locks.Condition NewCondition()
@@ -327,14 +332,14 @@ namespace Java.Util.Concurrent.Locks
                 return IExecuteWithSignature<Java.Util.Concurrent.Locks.Condition>("newCondition", "()Ljava/util/concurrent/locks/Condition;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#lock()"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#lock()"/>
             /// </summary>
             public void Lock()
             {
                 IExecuteWithSignature("lock", "()V");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#lockInterruptibly()"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#lockInterruptibly()"/>
             /// </summary>
             /// <exception cref="Java.Lang.InterruptedException"/>
             public void LockInterruptibly()
@@ -342,7 +347,7 @@ namespace Java.Util.Concurrent.Locks
                 IExecuteWithSignature("lockInterruptibly", "()V");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#unlock()"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#unlock()"/>
             /// </summary>
             public void Unlock()
             {

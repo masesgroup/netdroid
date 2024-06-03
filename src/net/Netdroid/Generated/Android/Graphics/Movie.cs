@@ -46,7 +46,7 @@ namespace Android.Graphics
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Android.Graphics.Movie"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Graphics.Movie DecodeFile(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Android.Graphics.Movie>(LocalBridgeClazz, "decodeFile", "(Ljava/lang/String;)Landroid/graphics/Movie;", arg0);
@@ -56,7 +56,7 @@ namespace Android.Graphics
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <returns><see cref="Android.Graphics.Movie"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Graphics.Movie DecodeStream(Java.Io.InputStream arg0)
         {
             return SExecuteWithSignature<Android.Graphics.Movie>(LocalBridgeClazz, "decodeStream", "(Ljava/io/InputStream;)Landroid/graphics/Movie;", arg0);
@@ -68,7 +68,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Android.Graphics.Movie"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Graphics.Movie DecodeByteArray(byte[] arg0, int arg1, int arg2)
         {
             return SExecute<Android.Graphics.Movie>(LocalBridgeClazz, "decodeByteArray", arg0, arg1, arg2);
@@ -81,7 +81,7 @@ namespace Android.Graphics
         /// <see href="https://developer.android.com/reference/android/graphics/Movie.html#isOpaque()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsOpaque()
         {
             return IExecuteWithSignature<bool>("isOpaque", "()Z");
@@ -91,7 +91,7 @@ namespace Android.Graphics
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool SetTime(int arg0)
         {
             return IExecuteWithSignature<bool>("setTime", "(I)Z", arg0);
@@ -100,7 +100,7 @@ namespace Android.Graphics
         /// <see href="https://developer.android.com/reference/android/graphics/Movie.html#duration()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int Duration()
         {
             return IExecuteWithSignature<int>("duration", "()I");
@@ -109,7 +109,7 @@ namespace Android.Graphics
         /// <see href="https://developer.android.com/reference/android/graphics/Movie.html#height()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int Height()
         {
             return IExecuteWithSignature<int>("height", "()I");
@@ -118,7 +118,7 @@ namespace Android.Graphics
         /// <see href="https://developer.android.com/reference/android/graphics/Movie.html#width()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int Width()
         {
             return IExecuteWithSignature<int>("width", "()I");
@@ -130,7 +130,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="float"/></param>
         /// <param name="arg3"><see cref="Android.Graphics.Paint"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Draw(Android.Graphics.Canvas arg0, float arg1, float arg2, Android.Graphics.Paint arg3)
         {
             IExecute("draw", arg0, arg1, arg2, arg3);
@@ -141,7 +141,7 @@ namespace Android.Graphics
         /// <param name="arg0"><see cref="Android.Graphics.Canvas"/></param>
         /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Draw(Android.Graphics.Canvas arg0, float arg1, float arg2)
         {
             IExecute("draw", arg0, arg1, arg2);

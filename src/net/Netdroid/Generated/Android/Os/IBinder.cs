@@ -108,23 +108,17 @@ namespace Android.Os
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/IBinder.html#getSuggestedMaxIpcSizeBytes()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/IBinder.html#getSuggestedMaxIpcSizeBytes()"/>
         /// </summary>
-        public static int SuggestedMaxIpcSizeBytes
+        /// <returns><see cref="int"/></returns>
+        public static int GetSuggestedMaxIpcSizeBytes()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getSuggestedMaxIpcSizeBytes", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getSuggestedMaxIpcSizeBytes", "()I");
         }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/IBinder.html#getInterfaceDescriptor()"/> 
-        /// </summary>
-        public Java.Lang.String InterfaceDescriptor
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInterfaceDescriptor", "()Ljava/lang/String;"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/IBinder.html#queryLocalInterface(java.lang.String)"/>
         /// </summary>
@@ -172,6 +166,15 @@ namespace Android.Os
         public bool UnlinkToDeath(Android.Os.IBinder.DeathRecipient arg0, int arg1)
         {
             return IExecute<bool>("unlinkToDeath", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/IBinder.html#getInterfaceDescriptor()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <exception cref="Android.Os.RemoteException"/>
+        public Java.Lang.String GetInterfaceDescriptor()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getInterfaceDescriptor", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/IBinder.html#dump(java.io.FileDescriptor,java.lang.String[])"/>

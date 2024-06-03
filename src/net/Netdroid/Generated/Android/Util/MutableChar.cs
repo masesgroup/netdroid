@@ -33,7 +33,7 @@ namespace Android.Util
         /// <see href="https://developer.android.com/reference/android/util/MutableChar.html#%3Cinit%3E(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public MutableChar(char arg0)
             : base(arg0)
         {
@@ -49,7 +49,7 @@ namespace Android.Util
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/MutableChar.html#value"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public char value { get { return IGetField<char>("value"); } set { ISetField("value", value); } }
 
         #endregion

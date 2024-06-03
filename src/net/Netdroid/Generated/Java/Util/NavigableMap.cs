@@ -46,7 +46,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#ceilingEntry(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#ceilingEntry(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
@@ -55,7 +55,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Map.Entry>("ceilingEntry", "(Ljava/lang/Object;)Ljava/util/Map$Entry;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#firstEntry()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#firstEntry()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry FirstEntry()
@@ -63,7 +63,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Map.Entry>("firstEntry", "()Ljava/util/Map$Entry;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#floorEntry(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#floorEntry(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
@@ -72,7 +72,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Map.Entry>("floorEntry", "(Ljava/lang/Object;)Ljava/util/Map$Entry;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#higherEntry(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#higherEntry(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
@@ -81,7 +81,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Map.Entry>("higherEntry", "(Ljava/lang/Object;)Ljava/util/Map$Entry;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#lastEntry()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#lastEntry()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry LastEntry()
@@ -89,7 +89,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Map.Entry>("lastEntry", "()Ljava/util/Map$Entry;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#lowerEntry(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#lowerEntry(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
@@ -98,7 +98,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Map.Entry>("lowerEntry", "(Ljava/lang/Object;)Ljava/util/Map$Entry;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#pollFirstEntry()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#pollFirstEntry()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry PollFirstEntry()
@@ -106,7 +106,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Map.Entry>("pollFirstEntry", "()Ljava/util/Map$Entry;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#pollLastEntry()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#pollLastEntry()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry PollLastEntry()
@@ -114,7 +114,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Map.Entry>("pollLastEntry", "()Ljava/util/Map$Entry;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#descendingMap()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#descendingMap()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap DescendingMap()
@@ -122,7 +122,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.NavigableMap>("descendingMap", "()Ljava/util/NavigableMap;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#headMap(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#headMap(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -132,7 +132,7 @@ namespace Java.Util
             return IExecute<Java.Util.NavigableMap>("headMap", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -144,7 +144,7 @@ namespace Java.Util
             return IExecute<Java.Util.NavigableMap>("subMap", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#tailMap(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#tailMap(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -154,7 +154,7 @@ namespace Java.Util
             return IExecute<Java.Util.NavigableMap>("tailMap", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#descendingKeySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#descendingKeySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet DescendingKeySet()
@@ -162,7 +162,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.NavigableSet>("descendingKeySet", "()Ljava/util/NavigableSet;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#navigableKeySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#navigableKeySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet NavigableKeySet()
@@ -170,7 +170,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.NavigableSet>("navigableKeySet", "()Ljava/util/NavigableSet;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#headMap(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#headMap(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
@@ -179,7 +179,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.SortedMap>("headMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#subMap(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#subMap(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -189,7 +189,7 @@ namespace Java.Util
             return IExecute<Java.Util.SortedMap>("subMap", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#tailMap(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#tailMap(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
@@ -198,7 +198,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.SortedMap>("tailMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#ceilingKey(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#ceilingKey(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -207,7 +207,7 @@ namespace Java.Util
             return IExecuteWithSignature("ceilingKey", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#floorKey(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#floorKey(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -216,7 +216,7 @@ namespace Java.Util
             return IExecuteWithSignature("floorKey", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#higherKey(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#higherKey(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -225,7 +225,7 @@ namespace Java.Util
             return IExecuteWithSignature("higherKey", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#lowerKey(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#lowerKey(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -287,7 +287,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#ceilingEntry(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#ceilingEntry(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
@@ -296,7 +296,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Map.Entry<K, V>>("ceilingEntry", "(Ljava/lang/Object;)Ljava/util/Map$Entry;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#firstEntry()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#firstEntry()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> FirstEntry()
@@ -304,7 +304,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Map.Entry<K, V>>("firstEntry", "()Ljava/util/Map$Entry;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#floorEntry(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#floorEntry(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
@@ -313,7 +313,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Map.Entry<K, V>>("floorEntry", "(Ljava/lang/Object;)Ljava/util/Map$Entry;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#higherEntry(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#higherEntry(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
@@ -322,7 +322,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Map.Entry<K, V>>("higherEntry", "(Ljava/lang/Object;)Ljava/util/Map$Entry;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#lastEntry()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#lastEntry()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> LastEntry()
@@ -330,7 +330,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Map.Entry<K, V>>("lastEntry", "()Ljava/util/Map$Entry;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#lowerEntry(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#lowerEntry(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
@@ -339,7 +339,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Map.Entry<K, V>>("lowerEntry", "(Ljava/lang/Object;)Ljava/util/Map$Entry;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#pollFirstEntry()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#pollFirstEntry()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> PollFirstEntry()
@@ -347,7 +347,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Map.Entry<K, V>>("pollFirstEntry", "()Ljava/util/Map$Entry;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#pollLastEntry()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#pollLastEntry()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> PollLastEntry()
@@ -355,7 +355,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Map.Entry<K, V>>("pollLastEntry", "()Ljava/util/Map$Entry;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#descendingMap()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#descendingMap()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap<K, V> DescendingMap()
@@ -363,7 +363,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.NavigableMap<K, V>>("descendingMap", "()Ljava/util/NavigableMap;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#headMap(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#headMap(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -373,7 +373,7 @@ namespace Java.Util
             return IExecute<Java.Util.NavigableMap<K, V>>("headMap", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -385,7 +385,7 @@ namespace Java.Util
             return IExecute<Java.Util.NavigableMap<K, V>>("subMap", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#tailMap(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#tailMap(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -395,7 +395,7 @@ namespace Java.Util
             return IExecute<Java.Util.NavigableMap<K, V>>("tailMap", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#descendingKeySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#descendingKeySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<K> DescendingKeySet()
@@ -403,7 +403,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.NavigableSet<K>>("descendingKeySet", "()Ljava/util/NavigableSet;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#navigableKeySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#navigableKeySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<K> NavigableKeySet()
@@ -411,7 +411,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.NavigableSet<K>>("navigableKeySet", "()Ljava/util/NavigableSet;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#headMap(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#headMap(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
@@ -420,7 +420,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.SortedMap<K, V>>("headMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#subMap(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#subMap(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="K"/></param>
@@ -430,7 +430,7 @@ namespace Java.Util
             return IExecute<Java.Util.SortedMap<K, V>>("subMap", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#tailMap(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#tailMap(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
@@ -439,7 +439,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.SortedMap<K, V>>("tailMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#ceilingKey(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#ceilingKey(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <returns><typeparamref name="K"/></returns>
@@ -448,7 +448,7 @@ namespace Java.Util
             return IExecuteWithSignature<K>("ceilingKey", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#floorKey(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#floorKey(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <returns><typeparamref name="K"/></returns>
@@ -457,7 +457,7 @@ namespace Java.Util
             return IExecuteWithSignature<K>("floorKey", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#higherKey(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#higherKey(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <returns><typeparamref name="K"/></returns>
@@ -466,7 +466,7 @@ namespace Java.Util
             return IExecuteWithSignature<K>("higherKey", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableMap.html#lowerKey(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableMap.html#lowerKey(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <returns><typeparamref name="K"/></returns>

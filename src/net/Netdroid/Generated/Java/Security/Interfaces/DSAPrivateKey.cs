@@ -64,9 +64,9 @@ namespace Java.Security.Interfaces
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/DSAPrivateKey.html#serialVersionUID"/>
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/DSAPrivateKey.html#serialVersionUID"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static long serialVersionUID { get { if (!_serialVersionUIDReady) { _serialVersionUIDContent = SGetField<long>(LocalBridgeClazz, "serialVersionUID"); _serialVersionUIDReady = true; } return _serialVersionUIDContent; } }
         private static long _serialVersionUIDContent = default;
         private static bool _serialVersionUIDReady = false; // this is used because in case of generics 
@@ -79,11 +79,12 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/DSAPrivateKey.html#getX()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/DSAPrivateKey.html#getX()"/>
         /// </summary>
-        public Java.Math.BigInteger X
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetX()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getX", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getX", "()Ljava/math/BigInteger;");
         }
 
         #endregion

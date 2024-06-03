@@ -53,7 +53,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg2"><typeparamref name="T"/></param>
         /// <param name="arg3"><see cref="bool"/></param>
         /// <typeparam name="T"><see cref="Android.Graphics.Drawable.Drawable, Android.Graphics.Drawable.IAnimatable"/></typeparam>
-        public void AddTransition<T>(int arg0, int arg1, T arg2, bool arg3) where T: Android.Graphics.Drawable.Drawable, Android.Graphics.Drawable.IAnimatable, new()
+        public void AddTransition<T>(int arg0, int arg1, T arg2, bool arg3) where T : Android.Graphics.Drawable.Drawable, Android.Graphics.Drawable.IAnimatable, new()
         {
             IExecute("addTransition", arg0, arg1, arg2, arg3);
         }

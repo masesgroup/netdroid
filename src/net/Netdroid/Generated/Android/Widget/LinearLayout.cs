@@ -120,53 +120,12 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#getBaselineAlignedChildIndex()"/> <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#setBaselineAlignedChildIndex(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#getDividerDrawable()"/>
         /// </summary>
-        public int BaselineAlignedChildIndex
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetDividerDrawable()
         {
-            get { return IExecuteWithSignature<int>("getBaselineAlignedChildIndex", "()I"); } set { IExecuteWithSignature("setBaselineAlignedChildIndex", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#getDividerDrawable()"/> <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#setDividerDrawable(android.graphics.drawable.Drawable)"/>
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable DividerDrawable
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDividerDrawable", "()Landroid/graphics/drawable/Drawable;"); } set { IExecuteWithSignature("setDividerDrawable", "(Landroid/graphics/drawable/Drawable;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#getDividerPadding()"/> <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#setDividerPadding(int)"/>
-        /// </summary>
-        public int DividerPadding
-        {
-            get { return IExecuteWithSignature<int>("getDividerPadding", "()I"); } set { IExecuteWithSignature("setDividerPadding", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#getGravity()"/> <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#setGravity(int)"/>
-        /// </summary>
-        public int Gravity
-        {
-            get { return IExecuteWithSignature<int>("getGravity", "()I"); } set { IExecuteWithSignature("setGravity", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#getOrientation()"/> <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#setOrientation(int)"/>
-        /// </summary>
-        public int Orientation
-        {
-            get { return IExecuteWithSignature<int>("getOrientation", "()I"); } set { IExecuteWithSignature("setOrientation", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#getShowDividers()"/> <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#setShowDividers(int)"/>
-        /// </summary>
-        public int ShowDividers
-        {
-            get { return IExecuteWithSignature<int>("getShowDividers", "()I"); } set { IExecuteWithSignature("setShowDividers", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#getWeightSum()"/> <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#setWeightSum(float)"/>
-        /// </summary>
-        public float WeightSum
-        {
-            get { return IExecuteWithSignature<float>("getWeightSum", "()F"); } set { IExecuteWithSignature("setWeightSum", "(F)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDividerDrawable", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#isBaselineAligned()"/>
@@ -185,12 +144,92 @@ namespace Android.Widget
             return IExecuteWithSignature<bool>("isMeasureWithLargestChildEnabled", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#getWeightSum()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetWeightSum()
+        {
+            return IExecuteWithSignature<float>("getWeightSum", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#getBaselineAlignedChildIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBaselineAlignedChildIndex()
+        {
+            return IExecuteWithSignature<int>("getBaselineAlignedChildIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#getDividerPadding()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDividerPadding()
+        {
+            return IExecuteWithSignature<int>("getDividerPadding", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#getGravity()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGravity()
+        {
+            return IExecuteWithSignature<int>("getGravity", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#getOrientation()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOrientation()
+        {
+            return IExecuteWithSignature<int>("getOrientation", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#getShowDividers()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetShowDividers()
+        {
+            return IExecuteWithSignature<int>("getShowDividers", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#setBaselineAligned(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetBaselineAligned(bool arg0)
         {
             IExecuteWithSignature("setBaselineAligned", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#setBaselineAlignedChildIndex(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetBaselineAlignedChildIndex(int arg0)
+        {
+            IExecuteWithSignature("setBaselineAlignedChildIndex", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#setDividerDrawable(android.graphics.drawable.Drawable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
+        public void SetDividerDrawable(Android.Graphics.Drawable.Drawable arg0)
+        {
+            IExecuteWithSignature("setDividerDrawable", "(Landroid/graphics/drawable/Drawable;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#setDividerPadding(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDividerPadding(int arg0)
+        {
+            IExecuteWithSignature("setDividerPadding", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#setGravity(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetGravity(int arg0)
+        {
+            IExecuteWithSignature("setGravity", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#setHorizontalGravity(int)"/>
@@ -209,12 +248,36 @@ namespace Android.Widget
             IExecuteWithSignature("setMeasureWithLargestChildEnabled", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#setOrientation(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetOrientation(int arg0)
+        {
+            IExecuteWithSignature("setOrientation", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#setShowDividers(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetShowDividers(int arg0)
+        {
+            IExecuteWithSignature("setShowDividers", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#setVerticalGravity(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void SetVerticalGravity(int arg0)
         {
             IExecuteWithSignature("setVerticalGravity", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/LinearLayout.html#setWeightSum(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetWeightSum(float arg0)
+        {
+            IExecuteWithSignature("setWeightSum", "(F)V", arg0);
         }
 
         #endregion

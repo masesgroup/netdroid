@@ -132,7 +132,7 @@ namespace Android.Appwidget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetProviderInfo.html#label"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String label { get { return IGetField<Java.Lang.String>("label"); } set { ISetField("label", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetProviderInfo.html#CREATOR"/>
@@ -209,26 +209,20 @@ namespace Android.Appwidget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetProviderInfo.html#getActivityInfo()"/> 
-        /// </summary>
-        public Android.Content.Pm.ActivityInfo ActivityInfo
-        {
-            get { return IExecuteWithSignature<Android.Content.Pm.ActivityInfo>("getActivityInfo", "()Landroid/content/pm/ActivityInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetProviderInfo.html#getProfile()"/> 
-        /// </summary>
-        public Android.Os.UserHandle Profile
-        {
-            get { return IExecuteWithSignature<Android.Os.UserHandle>("getProfile", "()Landroid/os/UserHandle;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetProviderInfo.html#clone()"/>
         /// </summary>
         /// <returns><see cref="Android.Appwidget.AppWidgetProviderInfo"/></returns>
         public Android.Appwidget.AppWidgetProviderInfo Clone()
         {
             return IExecuteWithSignature<Android.Appwidget.AppWidgetProviderInfo>("clone", "()Landroid/appwidget/AppWidgetProviderInfo;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetProviderInfo.html#getActivityInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Pm.ActivityInfo"/></returns>
+        public Android.Content.Pm.ActivityInfo GetActivityInfo()
+        {
+            return IExecuteWithSignature<Android.Content.Pm.ActivityInfo>("getActivityInfo", "()Landroid/content/pm/ActivityInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetProviderInfo.html#loadIcon(android.content.Context,int)"/>
@@ -249,6 +243,14 @@ namespace Android.Appwidget
         public Android.Graphics.Drawable.Drawable LoadPreviewImage(Android.Content.Context arg0, int arg1)
         {
             return IExecute<Android.Graphics.Drawable.Drawable>("loadPreviewImage", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetProviderInfo.html#getProfile()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.UserHandle"/></returns>
+        public Android.Os.UserHandle GetProfile()
+        {
+            return IExecuteWithSignature<Android.Os.UserHandle>("getProfile", "()Landroid/os/UserHandle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetProviderInfo.html#loadDescription(android.content.Context)"/>

@@ -194,47 +194,52 @@ namespace Android.Telecom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/DisconnectCause.html#getCode()"/> 
-        /// </summary>
-        public int Code
-        {
-            get { return IExecuteWithSignature<int>("getCode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/DisconnectCause.html#getDescription()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Description
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getDescription", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/DisconnectCause.html#getLabel()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Label
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/DisconnectCause.html#getReason()"/> 
-        /// </summary>
-        public Java.Lang.String Reason
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getReason", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/DisconnectCause.html#getTone()"/> 
-        /// </summary>
-        public int Tone
-        {
-            get { return IExecuteWithSignature<int>("getTone", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/DisconnectCause.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/DisconnectCause.html#getCode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCode()
+        {
+            return IExecuteWithSignature<int>("getCode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/DisconnectCause.html#getTone()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTone()
+        {
+            return IExecuteWithSignature<int>("getTone", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/DisconnectCause.html#getDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/DisconnectCause.html#getLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/DisconnectCause.html#getReason()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetReason()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getReason", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/DisconnectCause.html#writeToParcel(android.os.Parcel,int)"/>

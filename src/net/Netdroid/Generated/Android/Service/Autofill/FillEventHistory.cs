@@ -52,19 +52,13 @@ namespace Android.Service.Autofill
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.html#getClientState()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.html#getClientState()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Os.Bundle ClientState
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        [global::System.Obsolete()]
+        public Android.Os.Bundle GetClientState()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getClientState", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.html#getEvents()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Service.Autofill.FillEventHistory.Event> Events
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Service.Autofill.FillEventHistory.Event>>("getEvents", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getClientState", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.html#describeContents()"/>
@@ -73,6 +67,14 @@ namespace Android.Service.Autofill
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.html#getEvents()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Service.Autofill.FillEventHistory.Event> GetEvents()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Service.Autofill.FillEventHistory.Event>>("getEvents", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.html#writeToParcel(android.os.Parcel,int)"/>
@@ -216,74 +218,84 @@ namespace Android.Service.Autofill
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getChangedFields()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getClientState()"/>
             /// </summary>
-            public Java.Util.Map<Android.View.Autofill.AutofillId, Java.Lang.String> ChangedFields
+            /// <returns><see cref="Android.Os.Bundle"/></returns>
+            public Android.Os.Bundle GetClientState()
             {
-                get { return IExecuteWithSignature<Java.Util.Map<Android.View.Autofill.AutofillId, Java.Lang.String>>("getChangedFields", "()Ljava/util/Map;"); }
+                return IExecuteWithSignature<Android.Os.Bundle>("getClientState", "()Landroid/os/Bundle;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getClientState()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getNoSaveUiReason()"/>
             /// </summary>
-            public Android.Os.Bundle ClientState
+            /// <returns><see cref="int"/></returns>
+            public int GetNoSaveUiReason()
             {
-                get { return IExecuteWithSignature<Android.Os.Bundle>("getClientState", "()Landroid/os/Bundle;"); }
+                return IExecuteWithSignature<int>("getNoSaveUiReason", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getDatasetId()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getType()"/>
             /// </summary>
-            public Java.Lang.String DatasetId
+            /// <returns><see cref="int"/></returns>
+            public int GetType()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getDatasetId", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<int>("getType", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getFieldsClassification()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getUiType()"/>
             /// </summary>
-            public Java.Util.Map<Android.View.Autofill.AutofillId, Android.Service.Autofill.FieldClassification> FieldsClassification
+            /// <returns><see cref="int"/></returns>
+            public int GetUiType()
             {
-                get { return IExecuteWithSignature<Java.Util.Map<Android.View.Autofill.AutofillId, Android.Service.Autofill.FieldClassification>>("getFieldsClassification", "()Ljava/util/Map;"); }
+                return IExecuteWithSignature<int>("getUiType", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getIgnoredDatasetIds()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getDatasetId()"/>
             /// </summary>
-            public Java.Util.Set<Java.Lang.String> IgnoredDatasetIds
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetDatasetId()
             {
-                get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getIgnoredDatasetIds", "()Ljava/util/Set;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getDatasetId", "()Ljava/lang/String;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getManuallyEnteredField()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getFieldsClassification()"/>
             /// </summary>
-            public Java.Util.Map<Android.View.Autofill.AutofillId, Java.Util.Set<Java.Lang.String>> ManuallyEnteredField
+            /// <returns><see cref="Java.Util.Map"/></returns>
+            public Java.Util.Map<Android.View.Autofill.AutofillId, Android.Service.Autofill.FieldClassification> GetFieldsClassification()
             {
-                get { return IExecuteWithSignature<Java.Util.Map<Android.View.Autofill.AutofillId, Java.Util.Set<Java.Lang.String>>>("getManuallyEnteredField", "()Ljava/util/Map;"); }
+                return IExecuteWithSignature<Java.Util.Map<Android.View.Autofill.AutofillId, Android.Service.Autofill.FieldClassification>>("getFieldsClassification", "()Ljava/util/Map;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getNoSaveUiReason()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getChangedFields()"/>
             /// </summary>
-            public int NoSaveUiReason
+            /// <returns><see cref="Java.Util.Map"/></returns>
+            public Java.Util.Map<Android.View.Autofill.AutofillId, Java.Lang.String> GetChangedFields()
             {
-                get { return IExecuteWithSignature<int>("getNoSaveUiReason", "()I"); }
+                return IExecuteWithSignature<Java.Util.Map<Android.View.Autofill.AutofillId, Java.Lang.String>>("getChangedFields", "()Ljava/util/Map;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getSelectedDatasetIds()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getManuallyEnteredField()"/>
             /// </summary>
-            public Java.Util.Set<Java.Lang.String> SelectedDatasetIds
+            /// <returns><see cref="Java.Util.Map"/></returns>
+            public Java.Util.Map<Android.View.Autofill.AutofillId, Java.Util.Set<Java.Lang.String>> GetManuallyEnteredField()
             {
-                get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSelectedDatasetIds", "()Ljava/util/Set;"); }
+                return IExecuteWithSignature<Java.Util.Map<Android.View.Autofill.AutofillId, Java.Util.Set<Java.Lang.String>>>("getManuallyEnteredField", "()Ljava/util/Map;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getType()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getIgnoredDatasetIds()"/>
             /// </summary>
-            public int Type
+            /// <returns><see cref="Java.Util.Set"/></returns>
+            public Java.Util.Set<Java.Lang.String> GetIgnoredDatasetIds()
             {
-                get { return IExecuteWithSignature<int>("getType", "()I"); }
+                return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getIgnoredDatasetIds", "()Ljava/util/Set;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getUiType()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getSelectedDatasetIds()"/>
             /// </summary>
-            public int UiType
+            /// <returns><see cref="Java.Util.Set"/></returns>
+            public Java.Util.Set<Java.Lang.String> GetSelectedDatasetIds()
             {
-                get { return IExecuteWithSignature<int>("getUiType", "()I"); }
+                return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSelectedDatasetIds", "()Ljava/util/Set;");
             }
 
             #endregion

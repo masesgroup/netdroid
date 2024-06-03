@@ -88,47 +88,52 @@ namespace Android.Telephony.Data
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/RouteSelectionDescriptor.html#getDataNetworkName()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> DataNetworkName
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getDataNetworkName", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/RouteSelectionDescriptor.html#getPrecedence()"/> 
-        /// </summary>
-        public int Precedence
-        {
-            get { return IExecuteWithSignature<int>("getPrecedence", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/RouteSelectionDescriptor.html#getSessionType()"/> 
-        /// </summary>
-        public int SessionType
-        {
-            get { return IExecuteWithSignature<int>("getSessionType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/RouteSelectionDescriptor.html#getSliceInfo()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Telephony.Data.NetworkSliceInfo> SliceInfo
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telephony.Data.NetworkSliceInfo>>("getSliceInfo", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/RouteSelectionDescriptor.html#getSscMode()"/> 
-        /// </summary>
-        public int SscMode
-        {
-            get { return IExecuteWithSignature<int>("getSscMode", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/data/RouteSelectionDescriptor.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/RouteSelectionDescriptor.html#getPrecedence()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPrecedence()
+        {
+            return IExecuteWithSignature<int>("getPrecedence", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/RouteSelectionDescriptor.html#getSessionType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSessionType()
+        {
+            return IExecuteWithSignature<int>("getSessionType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/RouteSelectionDescriptor.html#getSscMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSscMode()
+        {
+            return IExecuteWithSignature<int>("getSscMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/RouteSelectionDescriptor.html#getSliceInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telephony.Data.NetworkSliceInfo> GetSliceInfo()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telephony.Data.NetworkSliceInfo>>("getSliceInfo", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/RouteSelectionDescriptor.html#getDataNetworkName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetDataNetworkName()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getDataNetworkName", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/data/RouteSelectionDescriptor.html#writeToParcel(android.os.Parcel,int)"/>

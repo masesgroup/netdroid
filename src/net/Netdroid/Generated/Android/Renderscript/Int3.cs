@@ -35,7 +35,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Int3(int arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -51,17 +51,17 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Int3.html#x"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int x { get { return IGetField<int>("x"); } set { ISetField("x", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Int3.html#y"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int y { get { return IGetField<int>("y"); } set { ISetField("y", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Int3.html#z"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int z { get { return IGetField<int>("z"); } set { ISetField("z", value); } }
 
         #endregion

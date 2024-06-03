@@ -142,57 +142,41 @@ namespace Android.Media.Audiofx
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.html#getCaptureSizeRange()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.html#getMaxCaptureRate()"/>
         /// </summary>
-        public static int[] CaptureSizeRange
+        /// <returns><see cref="int"/></returns>
+        public static int GetMaxCaptureRate()
         {
-            get { return SExecuteWithSignatureArray<int>(LocalBridgeClazz, "getCaptureSizeRange", "()[I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxCaptureRate", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.html#getMaxCaptureRate()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.html#getCaptureSizeRange()"/>
         /// </summary>
-        public static int MaxCaptureRate
+        /// <returns><see cref="int"/></returns>
+        public static int[] GetCaptureSizeRange()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxCaptureRate", "()I"); }
+            return SExecuteWithSignatureArray<int>(LocalBridgeClazz, "getCaptureSizeRange", "()[I");
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.html#getCaptureSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.html#getEnabled()"/>
         /// </summary>
-        public int CaptureSize
+        /// <returns><see cref="bool"/></returns>
+        public bool GetEnabled()
         {
-            get { return IExecuteWithSignature<int>("getCaptureSize", "()I"); }
+            return IExecuteWithSignature<bool>("getEnabled", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.html#getEnabled()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.html#getCaptureSize()"/>
         /// </summary>
-        public bool Enabled
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        public int GetCaptureSize()
         {
-            get { return IExecuteWithSignature<bool>("getEnabled", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.html#getMeasurementMode()"/> 
-        /// </summary>
-        public int MeasurementMode
-        {
-            get { return IExecuteWithSignature<int>("getMeasurementMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.html#getSamplingRate()"/> 
-        /// </summary>
-        public int SamplingRate
-        {
-            get { return IExecuteWithSignature<int>("getSamplingRate", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.html#getScalingMode()"/> 
-        /// </summary>
-        public int ScalingMode
-        {
-            get { return IExecuteWithSignature<int>("getScalingMode", "()I"); }
+            return IExecuteWithSignature<int>("getCaptureSize", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.html#getFft(byte[])"/>
@@ -205,6 +189,15 @@ namespace Android.Media.Audiofx
             return IExecuteWithSignature<int>("getFft", "([B)I", new object[] { arg0 });
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.html#getMeasurementMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        public int GetMeasurementMode()
+        {
+            return IExecuteWithSignature<int>("getMeasurementMode", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.html#getMeasurementPeakRms(android.media.audiofx.Visualizer.MeasurementPeakRms)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.Audiofx.Visualizer.MeasurementPeakRms"/></param>
@@ -212,6 +205,24 @@ namespace Android.Media.Audiofx
         public int GetMeasurementPeakRms(Android.Media.Audiofx.Visualizer.MeasurementPeakRms arg0)
         {
             return IExecuteWithSignature<int>("getMeasurementPeakRms", "(Landroid/media/audiofx/Visualizer$MeasurementPeakRms;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.html#getSamplingRate()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        public int GetSamplingRate()
+        {
+            return IExecuteWithSignature<int>("getSamplingRate", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.html#getScalingMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        public int GetScalingMode()
+        {
+            return IExecuteWithSignature<int>("getScalingMode", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.html#getWaveForm(byte[])"/>
@@ -350,8 +361,8 @@ namespace Android.Media.Audiofx
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onFftDataCapture", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.Visualizer>>>(OnFftDataCaptureEventHandler));
-                AddEventHandler("onWaveFormDataCapture", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.Visualizer>>>(OnWaveFormDataCaptureEventHandler));
+                AddEventHandler("onFftDataCapture", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.Visualizer>>>(OnFftDataCaptureEventHandler));
+                AddEventHandler("onWaveFormDataCapture", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.Visualizer>>>(OnWaveFormDataCaptureEventHandler));
 
             }
 
@@ -359,7 +370,7 @@ namespace Android.Media.Audiofx
             /// Handler for <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.OnDataCaptureListener.html#onFftDataCapture(android.media.audiofx.Visualizer,byte[],int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFftDataCapture"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.Audiofx.Visualizer, byte[], int> OnOnFftDataCapture { get; set; } = null;
+            public global::System.Action<Android.Media.Audiofx.Visualizer, byte[], int> OnOnFftDataCapture { get; set; } = null;
 
             void OnFftDataCaptureEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.Visualizer>> data)
             {
@@ -382,7 +393,7 @@ namespace Android.Media.Audiofx
             /// Handler for <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.OnDataCaptureListener.html#onWaveFormDataCapture(android.media.audiofx.Visualizer,byte[],int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnWaveFormDataCapture"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.Audiofx.Visualizer, byte[], int> OnOnWaveFormDataCapture { get; set; } = null;
+            public global::System.Action<Android.Media.Audiofx.Visualizer, byte[], int> OnOnWaveFormDataCapture { get; set; } = null;
 
             void OnWaveFormDataCaptureEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.Visualizer>> data)
             {

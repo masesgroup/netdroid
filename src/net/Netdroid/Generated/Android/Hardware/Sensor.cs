@@ -214,7 +214,7 @@ namespace Android.Hardware
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#TYPE_ORIENTATION"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TYPE_ORIENTATION { get { if (!_TYPE_ORIENTATIONReady) { _TYPE_ORIENTATIONContent = SGetField<int>(LocalBridgeClazz, "TYPE_ORIENTATION"); _TYPE_ORIENTATIONReady = true; } return _TYPE_ORIENTATIONContent; } }
         private static int _TYPE_ORIENTATIONContent = default;
         private static bool _TYPE_ORIENTATIONReady = false; // this is used because in case of generics 
@@ -275,7 +275,7 @@ namespace Android.Hardware
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#TYPE_TEMPERATURE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TYPE_TEMPERATURE { get { if (!_TYPE_TEMPERATUREReady) { _TYPE_TEMPERATUREContent = SGetField<int>(LocalBridgeClazz, "TYPE_TEMPERATURE"); _TYPE_TEMPERATUREReady = true; } return _TYPE_TEMPERATUREContent; } }
         private static int _TYPE_TEMPERATUREContent = default;
         private static bool _TYPE_TEMPERATUREReady = false; // this is used because in case of generics 
@@ -420,7 +420,7 @@ namespace Android.Hardware
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#STRING_TYPE_ORIENTATION"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String STRING_TYPE_ORIENTATION { get { if (!_STRING_TYPE_ORIENTATIONReady) { _STRING_TYPE_ORIENTATIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "STRING_TYPE_ORIENTATION"); _STRING_TYPE_ORIENTATIONReady = true; } return _STRING_TYPE_ORIENTATIONContent; } }
         private static Java.Lang.String _STRING_TYPE_ORIENTATIONContent = default;
         private static bool _STRING_TYPE_ORIENTATIONReady = false; // this is used because in case of generics 
@@ -481,7 +481,7 @@ namespace Android.Hardware
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#STRING_TYPE_TEMPERATURE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String STRING_TYPE_TEMPERATURE { get { if (!_STRING_TYPE_TEMPERATUREReady) { _STRING_TYPE_TEMPERATUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "STRING_TYPE_TEMPERATURE"); _STRING_TYPE_TEMPERATUREReady = true; } return _STRING_TYPE_TEMPERATUREContent; } }
         private static Java.Lang.String _STRING_TYPE_TEMPERATUREContent = default;
         private static bool _STRING_TYPE_TEMPERATUREReady = false; // this is used because in case of generics 
@@ -493,111 +493,6 @@ namespace Android.Hardware
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getFifoMaxEventCount()"/> 
-        /// </summary>
-        public int FifoMaxEventCount
-        {
-            get { return IExecuteWithSignature<int>("getFifoMaxEventCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getFifoReservedEventCount()"/> 
-        /// </summary>
-        public int FifoReservedEventCount
-        {
-            get { return IExecuteWithSignature<int>("getFifoReservedEventCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getHighestDirectReportRateLevel()"/> 
-        /// </summary>
-        public int HighestDirectReportRateLevel
-        {
-            get { return IExecuteWithSignature<int>("getHighestDirectReportRateLevel", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getId()"/> 
-        /// </summary>
-        public int Id
-        {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getMaxDelay()"/> 
-        /// </summary>
-        public int MaxDelay
-        {
-            get { return IExecuteWithSignature<int>("getMaxDelay", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getMaximumRange()"/> 
-        /// </summary>
-        public float MaximumRange
-        {
-            get { return IExecuteWithSignature<float>("getMaximumRange", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getMinDelay()"/> 
-        /// </summary>
-        public int MinDelay
-        {
-            get { return IExecuteWithSignature<int>("getMinDelay", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getPower()"/> 
-        /// </summary>
-        public float Power
-        {
-            get { return IExecuteWithSignature<float>("getPower", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getReportingMode()"/> 
-        /// </summary>
-        public int ReportingMode
-        {
-            get { return IExecuteWithSignature<int>("getReportingMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getResolution()"/> 
-        /// </summary>
-        public float Resolution
-        {
-            get { return IExecuteWithSignature<float>("getResolution", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getStringType()"/> 
-        /// </summary>
-        public Java.Lang.String StringType
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getStringType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getVendor()"/> 
-        /// </summary>
-        public Java.Lang.String Vendor
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVendor", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getVersion()"/> 
-        /// </summary>
-        public int Version
-        {
-            get { return IExecuteWithSignature<int>("getVersion", "()I"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#isAdditionalInfoSupported()"/>
         /// </summary>
@@ -630,6 +525,126 @@ namespace Android.Hardware
         public bool IsWakeUpSensor()
         {
             return IExecuteWithSignature<bool>("isWakeUpSensor", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getMaximumRange()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetMaximumRange()
+        {
+            return IExecuteWithSignature<float>("getMaximumRange", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getPower()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetPower()
+        {
+            return IExecuteWithSignature<float>("getPower", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getResolution()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetResolution()
+        {
+            return IExecuteWithSignature<float>("getResolution", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getFifoMaxEventCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFifoMaxEventCount()
+        {
+            return IExecuteWithSignature<int>("getFifoMaxEventCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getFifoReservedEventCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFifoReservedEventCount()
+        {
+            return IExecuteWithSignature<int>("getFifoReservedEventCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getHighestDirectReportRateLevel()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHighestDirectReportRateLevel()
+        {
+            return IExecuteWithSignature<int>("getHighestDirectReportRateLevel", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getMaxDelay()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxDelay()
+        {
+            return IExecuteWithSignature<int>("getMaxDelay", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getMinDelay()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinDelay()
+        {
+            return IExecuteWithSignature<int>("getMinDelay", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getReportingMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetReportingMode()
+        {
+            return IExecuteWithSignature<int>("getReportingMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getVersion()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVersion()
+        {
+            return IExecuteWithSignature<int>("getVersion", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getStringType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetStringType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getStringType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#getVendor()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetVendor()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getVendor", "()Ljava/lang/String;");
         }
 
         #endregion

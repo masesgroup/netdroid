@@ -52,48 +52,6 @@ namespace Android.Net.Vcn
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnGatewayConnectionConfig.html#getExposedCapabilities()"/> 
-        /// </summary>
-        public int[] ExposedCapabilities
-        {
-            get { return IExecuteWithSignatureArray<int>("getExposedCapabilities", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnGatewayConnectionConfig.html#getGatewayConnectionName()"/> 
-        /// </summary>
-        public Java.Lang.String GatewayConnectionName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getGatewayConnectionName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnGatewayConnectionConfig.html#getMaxMtu()"/> 
-        /// </summary>
-        public int MaxMtu
-        {
-            get { return IExecuteWithSignature<int>("getMaxMtu", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnGatewayConnectionConfig.html#getMinUdpPort4500NatTimeoutSeconds()"/> 
-        /// </summary>
-        public int MinUdpPort4500NatTimeoutSeconds
-        {
-            get { return IExecuteWithSignature<int>("getMinUdpPort4500NatTimeoutSeconds", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnGatewayConnectionConfig.html#getRetryIntervalsMillis()"/> 
-        /// </summary>
-        public long[] RetryIntervalsMillis
-        {
-            get { return IExecuteWithSignatureArray<long>("getRetryIntervalsMillis", "()[J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnGatewayConnectionConfig.html#getVcnUnderlyingNetworkPriorities()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Net.Vcn.VcnUnderlyingNetworkTemplate> VcnUnderlyingNetworkPriorities
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Vcn.VcnUnderlyingNetworkTemplate>>("getVcnUnderlyingNetworkPriorities", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/vcn/VcnGatewayConnectionConfig.html#hasGatewayOption(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -101,6 +59,54 @@ namespace Android.Net.Vcn
         public bool HasGatewayOption(int arg0)
         {
             return IExecuteWithSignature<bool>("hasGatewayOption", "(I)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnGatewayConnectionConfig.html#getMaxMtu()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxMtu()
+        {
+            return IExecuteWithSignature<int>("getMaxMtu", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnGatewayConnectionConfig.html#getMinUdpPort4500NatTimeoutSeconds()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinUdpPort4500NatTimeoutSeconds()
+        {
+            return IExecuteWithSignature<int>("getMinUdpPort4500NatTimeoutSeconds", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnGatewayConnectionConfig.html#getExposedCapabilities()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetExposedCapabilities()
+        {
+            return IExecuteWithSignatureArray<int>("getExposedCapabilities", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnGatewayConnectionConfig.html#getGatewayConnectionName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetGatewayConnectionName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getGatewayConnectionName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnGatewayConnectionConfig.html#getVcnUnderlyingNetworkPriorities()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Vcn.VcnUnderlyingNetworkTemplate> GetVcnUnderlyingNetworkPriorities()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Vcn.VcnUnderlyingNetworkTemplate>>("getVcnUnderlyingNetworkPriorities", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnGatewayConnectionConfig.html#getRetryIntervalsMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long[] GetRetryIntervalsMillis()
+        {
+            return IExecuteWithSignatureArray<long>("getRetryIntervalsMillis", "()[J");
         }
 
         #endregion

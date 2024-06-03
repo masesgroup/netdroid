@@ -46,60 +46,74 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/JarURLConnection.html#getAttributes()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/JarURLConnection.html#getJarFile()"/>
         /// </summary>
-        public Java.Util.Jar.Attributes Attributes
+        /// <returns><see cref="Java.Util.Jar.JarFile"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.Jar.JarFile GetJarFile()
         {
-            get { return IExecuteWithSignature<Java.Util.Jar.Attributes>("getAttributes", "()Ljava/util/jar/Attributes;"); }
+            return IExecuteWithSignature<Java.Util.Jar.JarFile>("getJarFile", "()Ljava/util/jar/JarFile;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/JarURLConnection.html#getCertificates()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/JarURLConnection.html#getEntryName()"/>
         /// </summary>
-        public Java.Security.Cert.Certificate[] Certificates
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEntryName()
         {
-            get { return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getCertificates", "()[Ljava/security/cert/Certificate;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getEntryName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/JarURLConnection.html#getEntryName()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/JarURLConnection.html#getJarFileURL()"/>
         /// </summary>
-        public Java.Lang.String EntryName
+        /// <returns><see cref="Java.Net.URL"/></returns>
+        public Java.Net.URL GetJarFileURL()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEntryName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Net.URL>("getJarFileURL", "()Ljava/net/URL;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/JarURLConnection.html#getJarEntry()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/JarURLConnection.html#getCertificates()"/>
         /// </summary>
-        public Java.Util.Jar.JarEntry JarEntry
+        /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Security.Cert.Certificate[] GetCertificates()
         {
-            get { return IExecuteWithSignature<Java.Util.Jar.JarEntry>("getJarEntry", "()Ljava/util/jar/JarEntry;"); }
+            return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getCertificates", "()[Ljava/security/cert/Certificate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/JarURLConnection.html#getJarFile()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/JarURLConnection.html#getAttributes()"/>
         /// </summary>
-        public Java.Util.Jar.JarFile JarFile
+        /// <returns><see cref="Java.Util.Jar.Attributes"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.Jar.Attributes GetAttributes()
         {
-            get { return IExecuteWithSignature<Java.Util.Jar.JarFile>("getJarFile", "()Ljava/util/jar/JarFile;"); }
+            return IExecuteWithSignature<Java.Util.Jar.Attributes>("getAttributes", "()Ljava/util/jar/Attributes;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/JarURLConnection.html#getJarFileURL()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/JarURLConnection.html#getMainAttributes()"/>
         /// </summary>
-        public Java.Net.URL JarFileURL
+        /// <returns><see cref="Java.Util.Jar.Attributes"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.Jar.Attributes GetMainAttributes()
         {
-            get { return IExecuteWithSignature<Java.Net.URL>("getJarFileURL", "()Ljava/net/URL;"); }
+            return IExecuteWithSignature<Java.Util.Jar.Attributes>("getMainAttributes", "()Ljava/util/jar/Attributes;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/JarURLConnection.html#getMainAttributes()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/JarURLConnection.html#getJarEntry()"/>
         /// </summary>
-        public Java.Util.Jar.Attributes MainAttributes
+        /// <returns><see cref="Java.Util.Jar.JarEntry"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.Jar.JarEntry GetJarEntry()
         {
-            get { return IExecuteWithSignature<Java.Util.Jar.Attributes>("getMainAttributes", "()Ljava/util/jar/Attributes;"); }
+            return IExecuteWithSignature<Java.Util.Jar.JarEntry>("getJarEntry", "()Ljava/util/jar/JarEntry;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/JarURLConnection.html#getManifest()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/JarURLConnection.html#getManifest()"/>
         /// </summary>
-        public Java.Util.Jar.Manifest Manifest
+        /// <returns><see cref="Java.Util.Jar.Manifest"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.Jar.Manifest GetManifest()
         {
-            get { return IExecuteWithSignature<Java.Util.Jar.Manifest>("getManifest", "()Ljava/util/jar/Manifest;"); }
+            return IExecuteWithSignature<Java.Util.Jar.Manifest>("getManifest", "()Ljava/util/jar/Manifest;");
         }
 
         #endregion

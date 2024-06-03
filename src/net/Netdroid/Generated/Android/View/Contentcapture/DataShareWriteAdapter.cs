@@ -68,9 +68,9 @@ namespace Android.View.Contentcapture
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("onRejected", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnRejectedEventHandler));
-            AddEventHandler("onWrite", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Os.ParcelFileDescriptor>>>(OnWriteEventHandler));
-            AddEventHandler("onError", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnErrorEventHandler));
+            AddEventHandler("onRejected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnRejectedEventHandler));
+            AddEventHandler("onWrite", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Os.ParcelFileDescriptor>>>(OnWriteEventHandler));
+            AddEventHandler("onError", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnErrorEventHandler));
 
         }
 
@@ -78,7 +78,7 @@ namespace Android.View.Contentcapture
         /// Handler for <see href="https://developer.android.com/reference/android/view/contentcapture/DataShareWriteAdapter.html#onRejected()"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnRejected"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnOnRejected { get; set; } = null;
+        public global::System.Action OnOnRejected { get; set; } = null;
 
         void OnRejectedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -98,7 +98,7 @@ namespace Android.View.Contentcapture
         /// Handler for <see href="https://developer.android.com/reference/android/view/contentcapture/DataShareWriteAdapter.html#onWrite(android.os.ParcelFileDescriptor)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnWrite"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Os.ParcelFileDescriptor> OnOnWrite { get; set; } = null;
+        public global::System.Action<Android.Os.ParcelFileDescriptor> OnOnWrite { get; set; } = null;
 
         void OnWriteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Os.ParcelFileDescriptor>> data)
         {
@@ -128,7 +128,7 @@ namespace Android.View.Contentcapture
         /// Handler for <see href="https://developer.android.com/reference/android/view/contentcapture/DataShareWriteAdapter.html#onError(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnError"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int> OnOnError { get; set; } = null;
+        public global::System.Action<int> OnOnError { get; set; } = null;
 
         void OnErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {

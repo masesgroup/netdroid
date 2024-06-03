@@ -30,19 +30,19 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#%3Cinit%3E(byte[],int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#%3Cinit%3E(byte[],int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public String(byte[] arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#%3Cinit%3E(byte[],int,int,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#%3Cinit%3E(byte[],int,int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -54,7 +54,7 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#%3Cinit%3E(byte[],int,int,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#%3Cinit%3E(byte[],int,int,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -65,7 +65,7 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#%3Cinit%3E(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#%3Cinit%3E(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -75,17 +75,17 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#%3Cinit%3E(byte[],int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#%3Cinit%3E(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public String(byte[] arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#%3Cinit%3E(byte[],java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#%3Cinit%3E(byte[],java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -95,7 +95,7 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#%3Cinit%3E(byte[],java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#%3Cinit%3E(byte[],java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -104,7 +104,7 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#%3Cinit%3E(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#%3Cinit%3E(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public String(byte[] arg0)
@@ -112,7 +112,7 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#%3Cinit%3E(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#%3Cinit%3E(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -122,7 +122,7 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#%3Cinit%3E(char[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#%3Cinit%3E(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         public String(char[] arg0)
@@ -130,7 +130,7 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#%3Cinit%3E(int[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#%3Cinit%3E(int[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -140,7 +140,7 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public String(Java.Lang.String arg0)
@@ -148,7 +148,7 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#%3Cinit%3E(java.lang.StringBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#%3Cinit%3E(java.lang.StringBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.StringBuffer"/></param>
         public String(Java.Lang.StringBuffer arg0)
@@ -156,7 +156,7 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#%3Cinit%3E(java.lang.StringBuilder)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#%3Cinit%3E(java.lang.StringBuilder)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.StringBuilder"/></param>
         public String(Java.Lang.StringBuilder arg0)
@@ -188,7 +188,7 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#copyValueOf(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#copyValueOf(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -199,7 +199,7 @@ namespace Java.Lang
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "copyValueOf", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#copyValueOf(char[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#copyValueOf(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -208,7 +208,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "copyValueOf", "([C)Ljava/lang/String;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#format(java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#format(java.lang.String,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -218,7 +218,7 @@ namespace Java.Lang
             if (arg1.Length == 0) return SExecute<Java.Lang.String>(LocalBridgeClazz, "format", arg0); else return SExecute<Java.Lang.String>(LocalBridgeClazz, "format", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#format(java.util.Locale,java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#format(java.util.Locale,java.lang.String,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -229,7 +229,7 @@ namespace Java.Lang
             if (arg2.Length == 0) return SExecute<Java.Lang.String>(LocalBridgeClazz, "format", arg0, arg1); else return SExecute<Java.Lang.String>(LocalBridgeClazz, "format", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#join(java.lang.CharSequence,java.lang.CharSequence[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#join(java.lang.CharSequence,java.lang.CharSequence[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
@@ -239,18 +239,18 @@ namespace Java.Lang
             if (arg1.Length == 0) return SExecute<Java.Lang.String>(LocalBridgeClazz, "join", arg0); else return SExecute<Java.Lang.String>(LocalBridgeClazz, "join", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#join(java.lang.CharSequence,java.lang.Iterable)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#join(java.lang.CharSequence,java.lang.Iterable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="Arg1ExtendsJava_Lang_CharSequence"><see cref="Java.Lang.CharSequence"/></typeparam>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        public static Java.Lang.String Join<Arg1ExtendsJava_Lang_CharSequence>(Java.Lang.CharSequence arg0, Java.Lang.Iterable<Arg1ExtendsJava_Lang_CharSequence> arg1) where Arg1ExtendsJava_Lang_CharSequence: Java.Lang.CharSequence
+        public static Java.Lang.String Join<Arg1ExtendsJava_Lang_CharSequence>(Java.Lang.CharSequence arg0, Java.Lang.Iterable<Arg1ExtendsJava_Lang_CharSequence> arg1) where Arg1ExtendsJava_Lang_CharSequence : Java.Lang.CharSequence
         {
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "join", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#valueOf(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#valueOf(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -259,7 +259,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "valueOf", "(Z)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#valueOf(char)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#valueOf(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -268,7 +268,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "valueOf", "(C)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#valueOf(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#valueOf(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -279,7 +279,7 @@ namespace Java.Lang
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "valueOf", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#valueOf(char[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#valueOf(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -288,7 +288,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "valueOf", "([C)Ljava/lang/String;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#valueOf(double)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#valueOf(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -297,7 +297,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "valueOf", "(D)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#valueOf(float)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#valueOf(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -306,7 +306,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "valueOf", "(F)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#valueOf(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#valueOf(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -315,7 +315,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "valueOf", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#valueOf(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#valueOf(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -324,7 +324,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "valueOf", "(Ljava/lang/Object;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#valueOf(long)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#valueOf(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -337,26 +337,19 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#getBytes()"/> 
-        /// </summary>
-        public byte[] Bytes
-        {
-            get { return IExecuteWithSignatureArray<byte>("getBytes", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#transform(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#transform(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="R"></typeparam>
         /// <typeparam name="Arg0objectSuperJava_Lang_String"><see cref="Java.Lang.String"/></typeparam>
         /// <typeparam name="Arg0ExtendsR"><typeparamref name="R"/></typeparam>
         /// <returns><typeparamref name="R"/></returns>
-        public R Transform<R, Arg0objectSuperJava_Lang_String, Arg0ExtendsR>(Java.Util.Function.Function<Arg0objectSuperJava_Lang_String, Arg0ExtendsR> arg0) where Arg0objectSuperJava_Lang_String: Java.Lang.String where Arg0ExtendsR: R
+        public R Transform<R, Arg0objectSuperJava_Lang_String, Arg0ExtendsR>(Java.Util.Function.Function<Arg0objectSuperJava_Lang_String, Arg0ExtendsR> arg0) where Arg0objectSuperJava_Lang_String : Java.Lang.String where Arg0ExtendsR : R
         {
             return IExecuteWithSignature<R>("transform", "(Ljava/util/function/Function;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#contains(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#contains(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -365,7 +358,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/CharSequence;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#contentEquals(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#contentEquals(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -374,7 +367,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("contentEquals", "(Ljava/lang/CharSequence;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#contentEquals(java.lang.StringBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#contentEquals(java.lang.StringBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.StringBuffer"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -383,7 +376,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("contentEquals", "(Ljava/lang/StringBuffer;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#endsWith(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#endsWith(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -392,7 +385,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("endsWith", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#equalsIgnoreCase(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#equalsIgnoreCase(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -401,7 +394,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("equalsIgnoreCase", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#isBlank()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#isBlank()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsBlank()
@@ -409,7 +402,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isBlank", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#isEmpty()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#isEmpty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
@@ -417,7 +410,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#matches(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#matches(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -426,7 +419,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("matches", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#regionMatches(boolean,int,java.lang.String,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#regionMatches(boolean,int,java.lang.String,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -439,7 +432,7 @@ namespace Java.Lang
             return IExecute<bool>("regionMatches", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#regionMatches(int,java.lang.String,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#regionMatches(int,java.lang.String,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -451,7 +444,7 @@ namespace Java.Lang
             return IExecute<bool>("regionMatches", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#startsWith(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#startsWith(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -461,7 +454,7 @@ namespace Java.Lang
             return IExecute<bool>("startsWith", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#startsWith(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#startsWith(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -470,7 +463,15 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("startsWith", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#getBytes(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#getBytes()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetBytes()
+        {
+            return IExecuteWithSignatureArray<byte>("getBytes", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#getBytes(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="byte"/></returns>
@@ -480,7 +481,7 @@ namespace Java.Lang
             return IExecuteWithSignatureArray<byte>("getBytes", "(Ljava/lang/String;)[B", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#getBytes(java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#getBytes(java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Charset.Charset"/></param>
         /// <returns><see cref="byte"/></returns>
@@ -489,7 +490,7 @@ namespace Java.Lang
             return IExecuteWithSignatureArray<byte>("getBytes", "(Ljava/nio/charset/Charset;)[B", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#charAt(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#charAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="char"/></returns>
@@ -498,7 +499,7 @@ namespace Java.Lang
             return IExecuteWithSignature<char>("charAt", "(I)C", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#toCharArray()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#toCharArray()"/>
         /// </summary>
         /// <returns><see cref="char"/></returns>
         public char[] ToCharArray()
@@ -506,7 +507,7 @@ namespace Java.Lang
             return IExecuteWithSignatureArray<char>("toCharArray", "()[C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#codePointAt(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#codePointAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -515,7 +516,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("codePointAt", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#codePointBefore(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#codePointBefore(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -524,7 +525,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("codePointBefore", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#codePointCount(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#codePointCount(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -534,7 +535,7 @@ namespace Java.Lang
             return IExecute<int>("codePointCount", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -543,7 +544,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#compareTo(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#compareTo(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
@@ -552,7 +553,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#compareToIgnoreCase(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#compareToIgnoreCase(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
@@ -561,7 +562,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("compareToIgnoreCase", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#indexOf(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#indexOf(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -571,7 +572,7 @@ namespace Java.Lang
             return IExecute<int>("indexOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#indexOf(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#indexOf(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -580,7 +581,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("indexOf", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#indexOf(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#indexOf(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -590,7 +591,7 @@ namespace Java.Lang
             return IExecute<int>("indexOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#indexOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#indexOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
@@ -599,7 +600,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#lastIndexOf(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#lastIndexOf(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -609,7 +610,7 @@ namespace Java.Lang
             return IExecute<int>("lastIndexOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#lastIndexOf(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#lastIndexOf(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -618,7 +619,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("lastIndexOf", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#lastIndexOf(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#lastIndexOf(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -628,7 +629,7 @@ namespace Java.Lang
             return IExecute<int>("lastIndexOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#lastIndexOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#lastIndexOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
@@ -637,7 +638,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#length()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#length()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Length()
@@ -645,7 +646,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("length", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#offsetByCodePoints(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#offsetByCodePoints(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -655,7 +656,7 @@ namespace Java.Lang
             return IExecute<int>("offsetByCodePoints", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#subSequence(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#subSequence(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -665,7 +666,7 @@ namespace Java.Lang
             return IExecute<Java.Lang.CharSequence>("subSequence", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
         /// <returns><see cref="object"/></returns>
@@ -675,7 +676,7 @@ namespace Java.Lang
             return IExecuteWithSignature("resolveConstantDesc", "(Ljava/lang/invoke/MethodHandles$Lookup;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#concat(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#concat(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -684,7 +685,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("concat", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#formatted(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#formatted(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -693,7 +694,7 @@ namespace Java.Lang
             if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.String>("formatted", "([Ljava/lang/Object;)Ljava/lang/String;"); else return IExecuteWithSignature<Java.Lang.String>("formatted", "([Ljava/lang/Object;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#indent(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#indent(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -702,7 +703,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("indent", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#repeat(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#repeat(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -711,7 +712,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("repeat", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#replace(char,char)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#replace(char,char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="char"/></param>
@@ -721,7 +722,7 @@ namespace Java.Lang
             return IExecute<Java.Lang.String>("replace", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#replace(java.lang.CharSequence,java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#replace(java.lang.CharSequence,java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
@@ -731,7 +732,7 @@ namespace Java.Lang
             return IExecute<Java.Lang.String>("replace", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#replaceAll(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#replaceAll(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -741,7 +742,7 @@ namespace Java.Lang
             return IExecute<Java.Lang.String>("replaceAll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#replaceFirst(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#replaceFirst(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -751,7 +752,7 @@ namespace Java.Lang
             return IExecute<Java.Lang.String>("replaceFirst", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#strip()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#strip()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Strip()
@@ -759,7 +760,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("strip", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#stripIndent()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#stripIndent()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String StripIndent()
@@ -767,7 +768,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("stripIndent", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#stripLeading()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#stripLeading()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String StripLeading()
@@ -775,7 +776,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("stripLeading", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#stripTrailing()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#stripTrailing()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String StripTrailing()
@@ -783,7 +784,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("stripTrailing", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#substring(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#substring(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -793,7 +794,7 @@ namespace Java.Lang
             return IExecute<Java.Lang.String>("substring", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#substring(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#substring(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -802,7 +803,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("substring", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#toLowerCase()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#toLowerCase()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToLowerCase()
@@ -810,7 +811,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("toLowerCase", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#toLowerCase(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#toLowerCase(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -819,7 +820,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("toLowerCase", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#toUpperCase()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#toUpperCase()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToUpperCase()
@@ -827,7 +828,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("toUpperCase", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#toUpperCase(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#toUpperCase(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -836,7 +837,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("toUpperCase", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#translateEscapes()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#translateEscapes()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String TranslateEscapes()
@@ -844,7 +845,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("translateEscapes", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#trim()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#trim()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Trim()
@@ -852,7 +853,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("trim", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#split(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#split(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -862,7 +863,7 @@ namespace Java.Lang
             return IExecuteArray<Java.Lang.String>("split", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#split(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#split(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -871,7 +872,7 @@ namespace Java.Lang
             return IExecuteWithSignatureArray<Java.Lang.String>("split", "(Ljava/lang/String;)[Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#describeConstable()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#describeConstable()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<Java.Lang.String> DescribeConstable()
@@ -879,7 +880,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Util.Optional<Java.Lang.String>>("describeConstable", "()Ljava/util/Optional;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#chars()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#chars()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Chars()
@@ -887,7 +888,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("chars", "()Ljava/util/stream/IntStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#codePoints()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#codePoints()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream CodePoints()
@@ -895,7 +896,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("codePoints", "()Ljava/util/stream/IntStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#lines()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#lines()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Lang.String> Lines()
@@ -903,7 +904,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Lang.String>>("lines", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#intern()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#intern()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Intern()
@@ -911,19 +912,19 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("intern", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#getBytes(int,int,byte[],int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#getBytes(int,int,byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="byte"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void GetBytes(int arg0, int arg1, byte[] arg2, int arg3)
         {
             IExecute("getBytes", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#getChars(int,int,char[],int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#getChars(int,int,char[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>

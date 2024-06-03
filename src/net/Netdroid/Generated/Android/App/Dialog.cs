@@ -67,77 +67,22 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#getActionBar()"/> 
-        /// </summary>
-        public Android.App.ActionBar ActionBar
-        {
-            get { return IExecuteWithSignature<Android.App.ActionBar>("getActionBar", "()Landroid/app/ActionBar;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#getContext()"/> 
-        /// </summary>
-        public Android.Content.Context Context
-        {
-            get { return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#getCurrentFocus()"/> 
-        /// </summary>
-        public Android.View.View CurrentFocus
-        {
-            get { return IExecuteWithSignature<Android.View.View>("getCurrentFocus", "()Landroid/view/View;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#getLayoutInflater()"/> 
-        /// </summary>
-        public Android.View.LayoutInflater LayoutInflater
-        {
-            get { return IExecuteWithSignature<Android.View.LayoutInflater>("getLayoutInflater", "()Landroid/view/LayoutInflater;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#getOnBackInvokedDispatcher()"/> 
-        /// </summary>
-        public Android.Window.OnBackInvokedDispatcher OnBackInvokedDispatcher
-        {
-            get { return IExecuteWithSignature<Android.Window.OnBackInvokedDispatcher>("getOnBackInvokedDispatcher", "()Landroid/window/OnBackInvokedDispatcher;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#getOwnerActivity()"/> <see href="https://developer.android.com/reference/android/app/Dialog.html#setOwnerActivity(android.app.Activity)"/>
-        /// </summary>
-        public Android.App.Activity OwnerActivity
-        {
-            get { return IExecuteWithSignature<Android.App.Activity>("getOwnerActivity", "()Landroid/app/Activity;"); } set { IExecuteWithSignature("setOwnerActivity", "(Landroid/app/Activity;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#getSearchEvent()"/> 
-        /// </summary>
-        public Android.View.SearchEvent SearchEvent
-        {
-            get { return IExecuteWithSignature<Android.View.SearchEvent>("getSearchEvent", "()Landroid/view/SearchEvent;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#getVolumeControlStream()"/> <see href="https://developer.android.com/reference/android/app/Dialog.html#setVolumeControlStream(int)"/>
-        /// </summary>
-        public int VolumeControlStream
-        {
-            get { return IExecuteWithSignature<int>("getVolumeControlStream", "()I"); } set { IExecuteWithSignature("setVolumeControlStream", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#getWindow()"/> 
-        /// </summary>
-        public Android.View.Window Window
-        {
-            get { return IExecuteWithSignature<Android.View.Window>("getWindow", "()Landroid/view/Window;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#findViewById(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <typeparam name="T"><see cref="Android.View.View"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T FindViewById<T>(int arg0) where T: Android.View.View
+        public T FindViewById<T>(int arg0) where T : Android.View.View
         {
             return IExecuteWithSignature<T>("findViewById", "(I)Landroid/view/View;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#getActionBar()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.ActionBar"/></returns>
+        public Android.App.ActionBar GetActionBar()
+        {
+            return IExecuteWithSignature<Android.App.ActionBar>("getActionBar", "()Landroid/app/ActionBar;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#onSaveInstanceState()"/>
@@ -167,6 +112,22 @@ namespace Android.App
             return IExecuteWithSignature<Android.View.ActionMode>("onWindowStartingActionMode", "(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#getLayoutInflater()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.LayoutInflater"/></returns>
+        public Android.View.LayoutInflater GetLayoutInflater()
+        {
+            return IExecuteWithSignature<Android.View.LayoutInflater>("getLayoutInflater", "()Landroid/view/LayoutInflater;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#getCurrentFocus()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.View"/></returns>
+        public Android.View.View GetCurrentFocus()
+        {
+            return IExecuteWithSignature<Android.View.View>("getCurrentFocus", "()Landroid/view/View;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#onCreatePanelView(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -174,6 +135,22 @@ namespace Android.App
         public Android.View.View OnCreatePanelView(int arg0)
         {
             return IExecuteWithSignature<Android.View.View>("onCreatePanelView", "(I)Landroid/view/View;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#getWindow()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Window"/></returns>
+        public Android.View.Window GetWindow()
+        {
+            return IExecuteWithSignature<Android.View.Window>("getWindow", "()Landroid/view/Window;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#getOnBackInvokedDispatcher()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Window.OnBackInvokedDispatcher"/></returns>
+        public Android.Window.OnBackInvokedDispatcher GetOnBackInvokedDispatcher()
+        {
+            return IExecuteWithSignature<Android.Window.OnBackInvokedDispatcher>("getOnBackInvokedDispatcher", "()Landroid/window/OnBackInvokedDispatcher;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#dispatchGenericMotionEvent(android.view.MotionEvent)"/>
@@ -415,9 +392,33 @@ namespace Android.App
         /// <param name="arg0"><see cref="int"/></param>
         /// <typeparam name="T"><see cref="Android.View.View"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T RequireViewById<T>(int arg0) where T: Android.View.View
+        public T RequireViewById<T>(int arg0) where T : Android.View.View
         {
             return IExecuteWithSignature<T>("requireViewById", "(I)Landroid/view/View;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#getOwnerActivity()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.Activity"/></returns>
+        public Android.App.Activity GetOwnerActivity()
+        {
+            return IExecuteWithSignature<Android.App.Activity>("getOwnerActivity", "()Landroid/app/Activity;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#getContext()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Context"/></returns>
+        public Android.Content.Context GetContext()
+        {
+            return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#getSearchEvent()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.SearchEvent"/></returns>
+        public Android.View.SearchEvent GetSearchEvent()
+        {
+            return IExecuteWithSignature<Android.View.SearchEvent>("getSearchEvent", "()Landroid/view/SearchEvent;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#requestWindowFeature(int)"/>
@@ -427,6 +428,14 @@ namespace Android.App
         public bool RequestWindowFeature(int arg0)
         {
             return IExecuteWithSignature<bool>("requestWindowFeature", "(I)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#getVolumeControlStream()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVolumeControlStream()
+        {
+            return IExecuteWithSignature<int>("getVolumeControlStream", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#setFeatureDrawable(int,android.graphics.drawable.Drawable)"/>
@@ -463,6 +472,22 @@ namespace Android.App
         public void SetFeatureDrawableUri(int arg0, Android.Net.Uri arg1)
         {
             IExecute("setFeatureDrawableUri", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#setOwnerActivity(android.app.Activity)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.Activity"/></param>
+        public void SetOwnerActivity(Android.App.Activity arg0)
+        {
+            IExecuteWithSignature("setOwnerActivity", "(Landroid/app/Activity;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#setVolumeControlStream(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetVolumeControlStream(int arg0)
+        {
+            IExecuteWithSignature("setVolumeControlStream", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#addContentView(android.view.View,android.view.ViewGroup.LayoutParams)"/>
@@ -541,7 +566,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#onBackPressed()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnBackPressed()
         {
             IExecuteWithSignature("onBackPressed", "()V");

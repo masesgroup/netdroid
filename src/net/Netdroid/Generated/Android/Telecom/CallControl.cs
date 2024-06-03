@@ -46,11 +46,12 @@ namespace Android.Telecom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallControl.html#getCallId()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/CallControl.html#getCallId()"/>
         /// </summary>
-        public Android.Os.ParcelUuid CallId
+        /// <returns><see cref="Android.Os.ParcelUuid"/></returns>
+        public Android.Os.ParcelUuid GetCallId()
         {
-            get { return IExecuteWithSignature<Android.Os.ParcelUuid>("getCallId", "()Landroid/os/ParcelUuid;"); }
+            return IExecuteWithSignature<Android.Os.ParcelUuid>("getCallId", "()Landroid/os/ParcelUuid;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallControl.html#answer(int,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>

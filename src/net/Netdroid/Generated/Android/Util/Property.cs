@@ -66,20 +66,6 @@ namespace Android.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/Property.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/Property.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.Class Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getType", "()Ljava/lang/Class;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Property.html#get(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -95,6 +81,22 @@ namespace Android.Util
         public bool IsReadOnly()
         {
             return IExecuteWithSignature<bool>("isReadOnly", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/Property.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.Class>("getType", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/Property.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Property.html#set(java.lang.Object,java.lang.Object)"/>
@@ -161,20 +163,6 @@ namespace Android.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/Property.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/Property.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.Class Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getType", "()Ljava/lang/Class;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Property.html#get(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
@@ -190,6 +178,22 @@ namespace Android.Util
         public bool IsReadOnly()
         {
             return IExecuteWithSignature<bool>("isReadOnly", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/Property.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.Class>("getType", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/Property.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Property.html#set(java.lang.Object,java.lang.Object)"/>

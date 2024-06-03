@@ -27,7 +27,7 @@ namespace Java.Util.Prefs
 {
     #region IPreferenceChangeListener
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.prefs.PreferenceChangeListener implementing <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/PreferenceChangeListener.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.prefs.PreferenceChangeListener implementing <see href="https://developer.android.com/reference/java/util/prefs/PreferenceChangeListener.html"/>
     /// </summary>
     public partial interface IPreferenceChangeListener
     {
@@ -68,15 +68,15 @@ namespace Java.Util.Prefs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("preferenceChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.PreferenceChangeEvent>>>(PreferenceChangeEventHandler));
+            AddEventHandler("preferenceChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.PreferenceChangeEvent>>>(PreferenceChangeEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/PreferenceChangeListener.html#preferenceChange(java.util.prefs.PreferenceChangeEvent)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/prefs/PreferenceChangeListener.html#preferenceChange(java.util.prefs.PreferenceChangeEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnPreferenceChange"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Util.Prefs.PreferenceChangeEvent> OnPreferenceChange { get; set; } = null;
+        public global::System.Action<Java.Util.Prefs.PreferenceChangeEvent> OnPreferenceChange { get; set; } = null;
 
         void PreferenceChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Prefs.PreferenceChangeEvent>> data)
         {
@@ -85,7 +85,7 @@ namespace Java.Util.Prefs
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/PreferenceChangeListener.html#preferenceChange(java.util.prefs.PreferenceChangeEvent)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/PreferenceChangeListener.html#preferenceChange(java.util.prefs.PreferenceChangeEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Prefs.PreferenceChangeEvent"/></param>
         public virtual void PreferenceChange(Java.Util.Prefs.PreferenceChangeEvent arg0)
@@ -124,7 +124,7 @@ namespace Java.Util.Prefs
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/PreferenceChangeListener.html#preferenceChange(java.util.prefs.PreferenceChangeEvent)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/PreferenceChangeListener.html#preferenceChange(java.util.prefs.PreferenceChangeEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Prefs.PreferenceChangeEvent"/></param>
         public override void PreferenceChange(Java.Util.Prefs.PreferenceChangeEvent arg0)

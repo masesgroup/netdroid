@@ -48,37 +48,39 @@ namespace Android.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Proxy.html#getDefaultHost()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/Proxy.html#getDefaultPort()"/>
         /// </summary>
-        [System.Obsolete()]
-        public static Java.Lang.String DefaultHost
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public static int GetDefaultPort()
         {
-            get { return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDefaultHost", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Proxy.html#getDefaultPort()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public static int DefaultPort
-        {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getDefaultPort", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getDefaultPort", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/Proxy.html#getPort(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int GetPort(Android.Content.Context arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getPort", "(Landroid/content/Context;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Proxy.html#getDefaultHost()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public static Java.Lang.String GetDefaultHost()
+        {
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDefaultHost", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/Proxy.html#getHost(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String GetHost(Android.Content.Context arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getHost", "(Landroid/content/Context;)Ljava/lang/String;", arg0);

@@ -30,7 +30,7 @@ namespace Javax.Crypto.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/PBEParameterSpec.html#%3Cinit%3E(byte[],int,java.security.spec.AlgorithmParameterSpec)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/PBEParameterSpec.html#%3Cinit%3E(byte[],int,java.security.spec.AlgorithmParameterSpec)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -40,7 +40,7 @@ namespace Javax.Crypto.Spec
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/PBEParameterSpec.html#%3Cinit%3E(byte[],int)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/PBEParameterSpec.html#%3Cinit%3E(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -65,25 +65,28 @@ namespace Javax.Crypto.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/PBEParameterSpec.html#getIterationCount()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/PBEParameterSpec.html#getSalt()"/>
         /// </summary>
-        public int IterationCount
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetSalt()
         {
-            get { return IExecuteWithSignature<int>("getIterationCount", "()I"); }
+            return IExecuteWithSignatureArray<byte>("getSalt", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/PBEParameterSpec.html#getParameterSpec()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/PBEParameterSpec.html#getIterationCount()"/>
         /// </summary>
-        public Java.Security.Spec.AlgorithmParameterSpec ParameterSpec
+        /// <returns><see cref="int"/></returns>
+        public int GetIterationCount()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getParameterSpec", "()Ljava/security/spec/AlgorithmParameterSpec;"); }
+            return IExecuteWithSignature<int>("getIterationCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/PBEParameterSpec.html#getSalt()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/PBEParameterSpec.html#getParameterSpec()"/>
         /// </summary>
-        public byte[] Salt
+        /// <returns><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></returns>
+        public Java.Security.Spec.AlgorithmParameterSpec GetParameterSpec()
         {
-            get { return IExecuteWithSignatureArray<byte>("getSalt", "()[B"); }
+            return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getParameterSpec", "()Ljava/security/spec/AlgorithmParameterSpec;");
         }
 
         #endregion

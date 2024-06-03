@@ -94,20 +94,6 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/MacAddress.html#getAddressType()"/> 
-        /// </summary>
-        public int AddressType
-        {
-            get { return IExecuteWithSignature<int>("getAddressType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/MacAddress.html#getLinkLocalIpv6FromEui48Mac()"/> 
-        /// </summary>
-        public Java.Net.Inet6Address LinkLocalIpv6FromEui48Mac
-        {
-            get { return IExecuteWithSignature<Java.Net.Inet6Address>("getLinkLocalIpv6FromEui48Mac", "()Ljava/net/Inet6Address;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/MacAddress.html#isLocallyAssigned()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -142,12 +128,28 @@ namespace Android.Net
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/MacAddress.html#getAddressType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAddressType()
+        {
+            return IExecuteWithSignature<int>("getAddressType", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/MacAddress.html#toOuiString()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToOuiString()
         {
             return IExecuteWithSignature<Java.Lang.String>("toOuiString", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/MacAddress.html#getLinkLocalIpv6FromEui48Mac()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.Inet6Address"/></returns>
+        public Java.Net.Inet6Address GetLinkLocalIpv6FromEui48Mac()
+        {
+            return IExecuteWithSignature<Java.Net.Inet6Address>("getLinkLocalIpv6FromEui48Mac", "()Ljava/net/Inet6Address;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/MacAddress.html#writeToParcel(android.os.Parcel,int)"/>

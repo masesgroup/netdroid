@@ -30,7 +30,7 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECFieldFp.html#%3Cinit%3E(java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECFieldFp.html#%3Cinit%3E(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         public ECFieldFp(Java.Math.BigInteger arg0)
@@ -54,18 +54,20 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECFieldFp.html#getFieldSize()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECFieldFp.html#getFieldSize()"/>
         /// </summary>
-        public int FieldSize
+        /// <returns><see cref="int"/></returns>
+        public int GetFieldSize()
         {
-            get { return IExecuteWithSignature<int>("getFieldSize", "()I"); }
+            return IExecuteWithSignature<int>("getFieldSize", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECFieldFp.html#getP()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECFieldFp.html#getP()"/>
         /// </summary>
-        public Java.Math.BigInteger P
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetP()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getP", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getP", "()Ljava/math/BigInteger;");
         }
 
         #endregion

@@ -56,25 +56,28 @@ namespace Android.Hardware.Camera2.Params
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OisSample.html#getTimestamp()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OisSample.html#getXshift()"/>
         /// </summary>
-        public long Timestamp
+        /// <returns><see cref="float"/></returns>
+        public float GetXshift()
         {
-            get { return IExecuteWithSignature<long>("getTimestamp", "()J"); }
+            return IExecuteWithSignature<float>("getXshift", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OisSample.html#getXshift()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OisSample.html#getYshift()"/>
         /// </summary>
-        public float Xshift
+        /// <returns><see cref="float"/></returns>
+        public float GetYshift()
         {
-            get { return IExecuteWithSignature<float>("getXshift", "()F"); }
+            return IExecuteWithSignature<float>("getYshift", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OisSample.html#getYshift()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OisSample.html#getTimestamp()"/>
         /// </summary>
-        public float Yshift
+        /// <returns><see cref="long"/></returns>
+        public long GetTimestamp()
         {
-            get { return IExecuteWithSignature<float>("getYshift", "()F"); }
+            return IExecuteWithSignature<long>("getTimestamp", "()J");
         }
 
         #endregion

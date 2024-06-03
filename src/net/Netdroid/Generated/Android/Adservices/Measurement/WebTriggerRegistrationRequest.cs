@@ -52,18 +52,12 @@ namespace Android.Adservices.Measurement
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebTriggerRegistrationRequest.html#getDestination()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebTriggerRegistrationRequest.html#getDestination()"/>
         /// </summary>
-        public Android.Net.Uri Destination
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetDestination()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getDestination", "()Landroid/net/Uri;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebTriggerRegistrationRequest.html#getTriggerParams()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Adservices.Measurement.WebTriggerParams> TriggerParams
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Adservices.Measurement.WebTriggerParams>>("getTriggerParams", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getDestination", "()Landroid/net/Uri;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebTriggerRegistrationRequest.html#describeContents()"/>
@@ -72,6 +66,14 @@ namespace Android.Adservices.Measurement
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebTriggerRegistrationRequest.html#getTriggerParams()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Adservices.Measurement.WebTriggerParams> GetTriggerParams()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Adservices.Measurement.WebTriggerParams>>("getTriggerParams", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebTriggerRegistrationRequest.html#writeToParcel(android.os.Parcel,int)"/>

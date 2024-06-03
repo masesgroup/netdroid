@@ -40,63 +40,63 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CONJ_TRANSPOSE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CONJ_TRANSPOSE { get { if (!_CONJ_TRANSPOSEReady) { _CONJ_TRANSPOSEContent = SGetField<int>(LocalBridgeClazz, "CONJ_TRANSPOSE"); _CONJ_TRANSPOSEReady = true; } return _CONJ_TRANSPOSEContent; } }
         private static int _CONJ_TRANSPOSEContent = default;
         private static bool _CONJ_TRANSPOSEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#LEFT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int LEFT { get { if (!_LEFTReady) { _LEFTContent = SGetField<int>(LocalBridgeClazz, "LEFT"); _LEFTReady = true; } return _LEFTContent; } }
         private static int _LEFTContent = default;
         private static bool _LEFTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#LOWER"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int LOWER { get { if (!_LOWERReady) { _LOWERContent = SGetField<int>(LocalBridgeClazz, "LOWER"); _LOWERReady = true; } return _LOWERContent; } }
         private static int _LOWERContent = default;
         private static bool _LOWERReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#NO_TRANSPOSE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int NO_TRANSPOSE { get { if (!_NO_TRANSPOSEReady) { _NO_TRANSPOSEContent = SGetField<int>(LocalBridgeClazz, "NO_TRANSPOSE"); _NO_TRANSPOSEReady = true; } return _NO_TRANSPOSEContent; } }
         private static int _NO_TRANSPOSEContent = default;
         private static bool _NO_TRANSPOSEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#NON_UNIT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int NON_UNIT { get { if (!_NON_UNITReady) { _NON_UNITContent = SGetField<int>(LocalBridgeClazz, "NON_UNIT"); _NON_UNITReady = true; } return _NON_UNITContent; } }
         private static int _NON_UNITContent = default;
         private static bool _NON_UNITReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#RIGHT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int RIGHT { get { if (!_RIGHTReady) { _RIGHTContent = SGetField<int>(LocalBridgeClazz, "RIGHT"); _RIGHTReady = true; } return _RIGHTContent; } }
         private static int _RIGHTContent = default;
         private static bool _RIGHTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#TRANSPOSE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TRANSPOSE { get { if (!_TRANSPOSEReady) { _TRANSPOSEContent = SGetField<int>(LocalBridgeClazz, "TRANSPOSE"); _TRANSPOSEReady = true; } return _TRANSPOSEContent; } }
         private static int _TRANSPOSEContent = default;
         private static bool _TRANSPOSEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#UNIT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int UNIT { get { if (!_UNITReady) { _UNITContent = SGetField<int>(LocalBridgeClazz, "UNIT"); _UNITReady = true; } return _UNITContent; } }
         private static int _UNITContent = default;
         private static bool _UNITReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#UPPER"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int UPPER { get { if (!_UPPERReady) { _UPPERContent = SGetField<int>(LocalBridgeClazz, "UPPER"); _UPPERReady = true; } return _UPPERContent; } }
         private static int _UPPERContent = default;
         private static bool _UPPERReady = false; // this is used because in case of generics 
@@ -109,7 +109,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.ScriptIntrinsicBLAS"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.ScriptIntrinsicBLAS Create(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.ScriptIntrinsicBLAS>(LocalBridgeClazz, "create", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/ScriptIntrinsicBLAS;", arg0);
@@ -128,7 +128,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void BNNM(Android.Renderscript.Allocation arg0, int arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4, int arg5, int arg6)
         {
             IExecute("BNNM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -146,7 +146,7 @@ namespace Android.Renderscript
         /// <param name="arg7"><see cref="Android.Renderscript.Float2"/></param>
         /// <param name="arg8"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg9"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CGBMV(int arg0, int arg1, int arg2, Android.Renderscript.Float2 arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6, Android.Renderscript.Float2 arg7, Android.Renderscript.Allocation arg8, int arg9)
         {
             IExecute("CGBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
@@ -161,7 +161,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Float2"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CGEMM(int arg0, int arg1, Android.Renderscript.Float2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Float2 arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("CGEMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -177,7 +177,7 @@ namespace Android.Renderscript
         /// <param name="arg5"><see cref="Android.Renderscript.Float2"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg7"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CGEMV(int arg0, Android.Renderscript.Float2 arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Float2 arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
             IExecute("CGEMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -191,7 +191,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CGERC(Android.Renderscript.Float2 arg0, Android.Renderscript.Allocation arg1, int arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Allocation arg5)
         {
             IExecute("CGERC", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -205,7 +205,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CGERU(Android.Renderscript.Float2 arg0, Android.Renderscript.Allocation arg1, int arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Allocation arg5)
         {
             IExecute("CGERU", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -222,7 +222,7 @@ namespace Android.Renderscript
         /// <param name="arg6"><see cref="Android.Renderscript.Float2"/></param>
         /// <param name="arg7"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg8"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CHBMV(int arg0, int arg1, Android.Renderscript.Float2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5, Android.Renderscript.Float2 arg6, Android.Renderscript.Allocation arg7, int arg8)
         {
             IExecute("CHBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
@@ -237,7 +237,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Float2"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CHEMM(int arg0, int arg1, Android.Renderscript.Float2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Float2 arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("CHEMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -253,7 +253,7 @@ namespace Android.Renderscript
         /// <param name="arg5"><see cref="Android.Renderscript.Float2"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg7"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CHEMV(int arg0, Android.Renderscript.Float2 arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Float2 arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
             IExecute("CHEMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -266,7 +266,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CHER(int arg0, float arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4)
         {
             IExecute("CHER", arg0, arg1, arg2, arg3, arg4);
@@ -281,7 +281,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CHER2(int arg0, Android.Renderscript.Float2 arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4, int arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("CHER2", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -296,7 +296,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="float"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CHER2K(int arg0, int arg1, Android.Renderscript.Float2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, float arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("CHER2K", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -310,7 +310,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="float"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CHERK(int arg0, int arg1, float arg2, Android.Renderscript.Allocation arg3, float arg4, Android.Renderscript.Allocation arg5)
         {
             IExecute("CHERK", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -326,7 +326,7 @@ namespace Android.Renderscript
         /// <param name="arg5"><see cref="Android.Renderscript.Float2"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg7"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CHPMV(int arg0, Android.Renderscript.Float2 arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Float2 arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
             IExecute("CHPMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -339,7 +339,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CHPR(int arg0, float arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4)
         {
             IExecute("CHPR", arg0, arg1, arg2, arg3, arg4);
@@ -354,7 +354,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CHPR2(int arg0, Android.Renderscript.Float2 arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4, int arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("CHPR2", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -369,7 +369,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Float2"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CSYMM(int arg0, int arg1, Android.Renderscript.Float2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Float2 arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("CSYMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -384,7 +384,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Float2"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CSYR2K(int arg0, int arg1, Android.Renderscript.Float2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Float2 arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("CSYR2K", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -398,7 +398,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Float2"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CSYRK(int arg0, int arg1, Android.Renderscript.Float2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Float2 arg4, Android.Renderscript.Allocation arg5)
         {
             IExecute("CSYRK", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -413,7 +413,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg6"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CTBMV(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6)
         {
             IExecute("CTBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -428,7 +428,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg6"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CTBSV(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6)
         {
             IExecute("CTBSV", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -442,7 +442,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CTPMV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
             IExecute("CTPMV", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -456,7 +456,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CTPSV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
             IExecute("CTPSV", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -471,7 +471,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Float2"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CTRMM(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Float2 arg4, Android.Renderscript.Allocation arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("CTRMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -485,7 +485,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CTRMV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
             IExecute("CTRMV", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -500,7 +500,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Float2"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CTRSM(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Float2 arg4, Android.Renderscript.Allocation arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("CTRSM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -514,7 +514,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CTRSV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
             IExecute("CTRSV", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -532,7 +532,7 @@ namespace Android.Renderscript
         /// <param name="arg7"><see cref="double"/></param>
         /// <param name="arg8"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg9"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DGBMV(int arg0, int arg1, int arg2, double arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6, double arg7, Android.Renderscript.Allocation arg8, int arg9)
         {
             IExecute("DGBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
@@ -547,7 +547,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="double"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DGEMM(int arg0, int arg1, double arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, double arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("DGEMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -563,7 +563,7 @@ namespace Android.Renderscript
         /// <param name="arg5"><see cref="double"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg7"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DGEMV(int arg0, double arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, double arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
             IExecute("DGEMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -577,7 +577,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DGER(double arg0, Android.Renderscript.Allocation arg1, int arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Allocation arg5)
         {
             IExecute("DGER", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -594,7 +594,7 @@ namespace Android.Renderscript
         /// <param name="arg6"><see cref="double"/></param>
         /// <param name="arg7"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg8"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DSBMV(int arg0, int arg1, double arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5, double arg6, Android.Renderscript.Allocation arg7, int arg8)
         {
             IExecute("DSBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
@@ -610,7 +610,7 @@ namespace Android.Renderscript
         /// <param name="arg5"><see cref="double"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg7"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DSPMV(int arg0, double arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, double arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
             IExecute("DSPMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -623,7 +623,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DSPR(int arg0, double arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4)
         {
             IExecute("DSPR", arg0, arg1, arg2, arg3, arg4);
@@ -638,7 +638,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DSPR2(int arg0, double arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4, int arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("DSPR2", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -653,7 +653,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="double"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DSYMM(int arg0, int arg1, double arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, double arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("DSYMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -669,7 +669,7 @@ namespace Android.Renderscript
         /// <param name="arg5"><see cref="double"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg7"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DSYMV(int arg0, double arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, double arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
             IExecute("DSYMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -682,7 +682,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DSYR(int arg0, double arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4)
         {
             IExecute("DSYR", arg0, arg1, arg2, arg3, arg4);
@@ -697,7 +697,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DSYR2(int arg0, double arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4, int arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("DSYR2", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -712,7 +712,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="double"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DSYR2K(int arg0, int arg1, double arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, double arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("DSYR2K", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -726,7 +726,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="double"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DSYRK(int arg0, int arg1, double arg2, Android.Renderscript.Allocation arg3, double arg4, Android.Renderscript.Allocation arg5)
         {
             IExecute("DSYRK", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -741,7 +741,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg6"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DTBMV(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6)
         {
             IExecute("DTBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -756,7 +756,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg6"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DTBSV(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6)
         {
             IExecute("DTBSV", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -770,7 +770,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DTPMV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
             IExecute("DTPMV", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -784,7 +784,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DTPSV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
             IExecute("DTPSV", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -799,7 +799,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="double"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DTRMM(int arg0, int arg1, int arg2, int arg3, double arg4, Android.Renderscript.Allocation arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("DTRMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -813,7 +813,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DTRMV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
             IExecute("DTRMV", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -828,7 +828,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="double"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DTRSM(int arg0, int arg1, int arg2, int arg3, double arg4, Android.Renderscript.Allocation arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("DTRSM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -842,7 +842,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DTRSV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
             IExecute("DTRSV", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -860,7 +860,7 @@ namespace Android.Renderscript
         /// <param name="arg7"><see cref="float"/></param>
         /// <param name="arg8"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg9"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SGBMV(int arg0, int arg1, int arg2, float arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6, float arg7, Android.Renderscript.Allocation arg8, int arg9)
         {
             IExecute("SGBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
@@ -875,7 +875,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="float"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SGEMM(int arg0, int arg1, float arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, float arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("SGEMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -891,7 +891,7 @@ namespace Android.Renderscript
         /// <param name="arg5"><see cref="float"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg7"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SGEMV(int arg0, float arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, float arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
             IExecute("SGEMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -905,7 +905,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SGER(float arg0, Android.Renderscript.Allocation arg1, int arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Allocation arg5)
         {
             IExecute("SGER", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -922,7 +922,7 @@ namespace Android.Renderscript
         /// <param name="arg6"><see cref="float"/></param>
         /// <param name="arg7"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg8"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SSBMV(int arg0, int arg1, float arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5, float arg6, Android.Renderscript.Allocation arg7, int arg8)
         {
             IExecute("SSBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
@@ -938,7 +938,7 @@ namespace Android.Renderscript
         /// <param name="arg5"><see cref="float"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg7"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SSPMV(int arg0, float arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, float arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
             IExecute("SSPMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -951,7 +951,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SSPR(int arg0, float arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4)
         {
             IExecute("SSPR", arg0, arg1, arg2, arg3, arg4);
@@ -966,7 +966,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SSPR2(int arg0, float arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4, int arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("SSPR2", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -981,7 +981,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="float"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SSYMM(int arg0, int arg1, float arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, float arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("SSYMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -997,7 +997,7 @@ namespace Android.Renderscript
         /// <param name="arg5"><see cref="float"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg7"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SSYMV(int arg0, float arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, float arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
             IExecute("SSYMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -1010,7 +1010,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SSYR(int arg0, float arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4)
         {
             IExecute("SSYR", arg0, arg1, arg2, arg3, arg4);
@@ -1025,7 +1025,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SSYR2(int arg0, float arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4, int arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("SSYR2", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1040,7 +1040,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="float"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SSYR2K(int arg0, int arg1, float arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, float arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("SSYR2K", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1054,7 +1054,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="float"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SSYRK(int arg0, int arg1, float arg2, Android.Renderscript.Allocation arg3, float arg4, Android.Renderscript.Allocation arg5)
         {
             IExecute("SSYRK", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1069,7 +1069,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg6"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void STBMV(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6)
         {
             IExecute("STBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1084,7 +1084,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg6"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void STBSV(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6)
         {
             IExecute("STBSV", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1098,7 +1098,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void STPMV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
             IExecute("STPMV", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1112,7 +1112,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void STPSV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
             IExecute("STPSV", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1127,7 +1127,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="float"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void STRMM(int arg0, int arg1, int arg2, int arg3, float arg4, Android.Renderscript.Allocation arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("STRMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1141,7 +1141,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void STRMV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
             IExecute("STRMV", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1156,7 +1156,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="float"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void STRSM(int arg0, int arg1, int arg2, int arg3, float arg4, Android.Renderscript.Allocation arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("STRSM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1170,7 +1170,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void STRSV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
             IExecute("STRSV", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1188,7 +1188,7 @@ namespace Android.Renderscript
         /// <param name="arg7"><see cref="Android.Renderscript.Double2"/></param>
         /// <param name="arg8"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg9"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZGBMV(int arg0, int arg1, int arg2, Android.Renderscript.Double2 arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6, Android.Renderscript.Double2 arg7, Android.Renderscript.Allocation arg8, int arg9)
         {
             IExecute("ZGBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
@@ -1203,7 +1203,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Double2"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZGEMM(int arg0, int arg1, Android.Renderscript.Double2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Double2 arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("ZGEMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1219,7 +1219,7 @@ namespace Android.Renderscript
         /// <param name="arg5"><see cref="Android.Renderscript.Double2"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg7"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZGEMV(int arg0, Android.Renderscript.Double2 arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Double2 arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
             IExecute("ZGEMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -1233,7 +1233,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZGERC(Android.Renderscript.Double2 arg0, Android.Renderscript.Allocation arg1, int arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Allocation arg5)
         {
             IExecute("ZGERC", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1247,7 +1247,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZGERU(Android.Renderscript.Double2 arg0, Android.Renderscript.Allocation arg1, int arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Allocation arg5)
         {
             IExecute("ZGERU", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1264,7 +1264,7 @@ namespace Android.Renderscript
         /// <param name="arg6"><see cref="Android.Renderscript.Double2"/></param>
         /// <param name="arg7"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg8"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZHBMV(int arg0, int arg1, Android.Renderscript.Double2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5, Android.Renderscript.Double2 arg6, Android.Renderscript.Allocation arg7, int arg8)
         {
             IExecute("ZHBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
@@ -1279,7 +1279,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Double2"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZHEMM(int arg0, int arg1, Android.Renderscript.Double2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Double2 arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("ZHEMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1295,7 +1295,7 @@ namespace Android.Renderscript
         /// <param name="arg5"><see cref="Android.Renderscript.Double2"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg7"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZHEMV(int arg0, Android.Renderscript.Double2 arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Double2 arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
             IExecute("ZHEMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -1308,7 +1308,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZHER(int arg0, double arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4)
         {
             IExecute("ZHER", arg0, arg1, arg2, arg3, arg4);
@@ -1323,7 +1323,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZHER2(int arg0, Android.Renderscript.Double2 arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4, int arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("ZHER2", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1338,7 +1338,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="double"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZHER2K(int arg0, int arg1, Android.Renderscript.Double2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, double arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("ZHER2K", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1352,7 +1352,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="double"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZHERK(int arg0, int arg1, double arg2, Android.Renderscript.Allocation arg3, double arg4, Android.Renderscript.Allocation arg5)
         {
             IExecute("ZHERK", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1368,7 +1368,7 @@ namespace Android.Renderscript
         /// <param name="arg5"><see cref="Android.Renderscript.Double2"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg7"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZHPMV(int arg0, Android.Renderscript.Double2 arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Double2 arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
             IExecute("ZHPMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -1381,7 +1381,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZHPR(int arg0, double arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4)
         {
             IExecute("ZHPR", arg0, arg1, arg2, arg3, arg4);
@@ -1396,7 +1396,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZHPR2(int arg0, Android.Renderscript.Double2 arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4, int arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("ZHPR2", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1411,7 +1411,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Double2"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZSYMM(int arg0, int arg1, Android.Renderscript.Double2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Double2 arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("ZSYMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1426,7 +1426,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Double2"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZSYR2K(int arg0, int arg1, Android.Renderscript.Double2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Double2 arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("ZSYR2K", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1440,7 +1440,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Double2"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZSYRK(int arg0, int arg1, Android.Renderscript.Double2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Double2 arg4, Android.Renderscript.Allocation arg5)
         {
             IExecute("ZSYRK", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1455,7 +1455,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg6"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZTBMV(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6)
         {
             IExecute("ZTBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1470,7 +1470,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg6"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZTBSV(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6)
         {
             IExecute("ZTBSV", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1484,7 +1484,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZTPMV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
             IExecute("ZTPMV", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1498,7 +1498,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZTPSV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
             IExecute("ZTPSV", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1513,7 +1513,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Double2"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZTRMM(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Double2 arg4, Android.Renderscript.Allocation arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("ZTRMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1527,7 +1527,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZTRMV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
             IExecute("ZTRMV", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1542,7 +1542,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Double2"/></param>
         /// <param name="arg5"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg6"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZTRSM(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Double2 arg4, Android.Renderscript.Allocation arg5, Android.Renderscript.Allocation arg6)
         {
             IExecute("ZTRSM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1556,7 +1556,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ZTRSV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
             IExecute("ZTRSV", arg0, arg1, arg2, arg3, arg4, arg5);

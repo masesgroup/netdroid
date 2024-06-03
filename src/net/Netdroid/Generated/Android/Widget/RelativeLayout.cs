@@ -222,18 +222,28 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/RelativeLayout.html#getGravity()"/> <see href="https://developer.android.com/reference/android/widget/RelativeLayout.html#setGravity(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/RelativeLayout.html#getGravity()"/>
         /// </summary>
-        public int Gravity
+        /// <returns><see cref="int"/></returns>
+        public int GetGravity()
         {
-            get { return IExecuteWithSignature<int>("getGravity", "()I"); } set { IExecuteWithSignature("setGravity", "(I)V", value); }
+            return IExecuteWithSignature<int>("getGravity", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/RelativeLayout.html#getIgnoreGravity()"/> <see href="https://developer.android.com/reference/android/widget/RelativeLayout.html#setIgnoreGravity(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/RelativeLayout.html#getIgnoreGravity()"/>
         /// </summary>
-        public int IgnoreGravity
+        /// <returns><see cref="int"/></returns>
+        public int GetIgnoreGravity()
         {
-            get { return IExecuteWithSignature<int>("getIgnoreGravity", "()I"); } set { IExecuteWithSignature("setIgnoreGravity", "(I)V", value); }
+            return IExecuteWithSignature<int>("getIgnoreGravity", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/RelativeLayout.html#setGravity(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetGravity(int arg0)
+        {
+            IExecuteWithSignature("setGravity", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RelativeLayout.html#setHorizontalGravity(int)"/>
@@ -242,6 +252,14 @@ namespace Android.Widget
         public void SetHorizontalGravity(int arg0)
         {
             IExecuteWithSignature("setHorizontalGravity", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/RelativeLayout.html#setIgnoreGravity(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetIgnoreGravity(int arg0)
+        {
+            IExecuteWithSignature("setIgnoreGravity", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RelativeLayout.html#setVerticalGravity(int)"/>
@@ -322,13 +340,6 @@ namespace Android.Widget
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/widget/RelativeLayout.LayoutParams.html#getRules()"/> 
-            /// </summary>
-            public int[] Rules
-            {
-                get { return IExecuteWithSignatureArray<int>("getRules", "()[I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/RelativeLayout.LayoutParams.html#getRule(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -336,6 +347,14 @@ namespace Android.Widget
             public int GetRule(int arg0)
             {
                 return IExecuteWithSignature<int>("getRule", "(I)I", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/widget/RelativeLayout.LayoutParams.html#getRules()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int[] GetRules()
+            {
+                return IExecuteWithSignatureArray<int>("getRules", "()[I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/RelativeLayout.LayoutParams.html#debug(java.lang.String)"/>

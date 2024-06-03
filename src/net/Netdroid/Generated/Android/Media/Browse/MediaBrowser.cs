@@ -69,32 +69,28 @@ namespace Android.Media.Browse
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.html#getExtras()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.html#getServiceComponent()"/>
         /// </summary>
-        public Android.Os.Bundle Extras
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        public Android.Content.ComponentName GetServiceComponent()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Android.Content.ComponentName>("getServiceComponent", "()Landroid/content/ComponentName;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.html#getRoot()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.html#getSessionToken()"/>
         /// </summary>
-        public Java.Lang.String Root
+        /// <returns><see cref="Android.Media.Session.MediaSession.Token"/></returns>
+        public Android.Media.Session.MediaSession.Token GetSessionToken()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRoot", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Media.Session.MediaSession.Token>("getSessionToken", "()Landroid/media/session/MediaSession$Token;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.html#getServiceComponent()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.html#getExtras()"/>
         /// </summary>
-        public Android.Content.ComponentName ServiceComponent
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getServiceComponent", "()Landroid/content/ComponentName;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.html#getSessionToken()"/> 
-        /// </summary>
-        public Android.Media.Session.MediaSession.Token SessionToken
-        {
-            get { return IExecuteWithSignature<Android.Media.Session.MediaSession.Token>("getSessionToken", "()Landroid/media/session/MediaSession$Token;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.html#isConnected()"/>
@@ -103,6 +99,14 @@ namespace Android.Media.Browse
         public bool IsConnected()
         {
             return IExecuteWithSignature<bool>("isConnected", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.html#getRoot()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetRoot()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getRoot", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.html#connect()"/>
@@ -314,25 +318,12 @@ namespace Android.Media.Browse
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.MediaItem.html#getDescription()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.MediaItem.html#getDescription()"/>
             /// </summary>
-            public Android.Media.MediaDescription Description
+            /// <returns><see cref="Android.Media.MediaDescription"/></returns>
+            public Android.Media.MediaDescription GetDescription()
             {
-                get { return IExecuteWithSignature<Android.Media.MediaDescription>("getDescription", "()Landroid/media/MediaDescription;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.MediaItem.html#getFlags()"/> 
-            /// </summary>
-            public int Flags
-            {
-                get { return IExecuteWithSignature<int>("getFlags", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.MediaItem.html#getMediaId()"/> 
-            /// </summary>
-            public Java.Lang.String MediaId
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getMediaId", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Android.Media.MediaDescription>("getDescription", "()Landroid/media/MediaDescription;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.MediaItem.html#isBrowsable()"/>
@@ -357,6 +348,22 @@ namespace Android.Media.Browse
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.MediaItem.html#getFlags()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetFlags()
+            {
+                return IExecuteWithSignature<int>("getFlags", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.MediaItem.html#getMediaId()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetMediaId()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getMediaId", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.MediaItem.html#writeToParcel(android.os.Parcel,int)"/>

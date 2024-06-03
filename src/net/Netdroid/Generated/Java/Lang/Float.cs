@@ -30,29 +30,29 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#%3Cinit%3E(double)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#%3Cinit%3E(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Float(double arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#%3Cinit%3E(float)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#%3Cinit%3E(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Float(float arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Lang.NumberFormatException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Float(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -70,67 +70,67 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#MAX_VALUE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#MAX_VALUE"/>
         /// </summary>
         public static float MAX_VALUE { get { if (!_MAX_VALUEReady) { _MAX_VALUEContent = SGetField<float>(LocalBridgeClazz, "MAX_VALUE"); _MAX_VALUEReady = true; } return _MAX_VALUEContent; } }
         private static float _MAX_VALUEContent = default;
         private static bool _MAX_VALUEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#MIN_NORMAL"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#MIN_NORMAL"/>
         /// </summary>
         public static float MIN_NORMAL { get { if (!_MIN_NORMALReady) { _MIN_NORMALContent = SGetField<float>(LocalBridgeClazz, "MIN_NORMAL"); _MIN_NORMALReady = true; } return _MIN_NORMALContent; } }
         private static float _MIN_NORMALContent = default;
         private static bool _MIN_NORMALReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#MIN_VALUE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#MIN_VALUE"/>
         /// </summary>
         public static float MIN_VALUE { get { if (!_MIN_VALUEReady) { _MIN_VALUEContent = SGetField<float>(LocalBridgeClazz, "MIN_VALUE"); _MIN_VALUEReady = true; } return _MIN_VALUEContent; } }
         private static float _MIN_VALUEContent = default;
         private static bool _MIN_VALUEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#NaN"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#NaN"/>
         /// </summary>
         public static float NaN { get { if (!_NaNReady) { _NaNContent = SGetField<float>(LocalBridgeClazz, "NaN"); _NaNReady = true; } return _NaNContent; } }
         private static float _NaNContent = default;
         private static bool _NaNReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#NEGATIVE_INFINITY"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#NEGATIVE_INFINITY"/>
         /// </summary>
         public static float NEGATIVE_INFINITY { get { if (!_NEGATIVE_INFINITYReady) { _NEGATIVE_INFINITYContent = SGetField<float>(LocalBridgeClazz, "NEGATIVE_INFINITY"); _NEGATIVE_INFINITYReady = true; } return _NEGATIVE_INFINITYContent; } }
         private static float _NEGATIVE_INFINITYContent = default;
         private static bool _NEGATIVE_INFINITYReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#POSITIVE_INFINITY"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#POSITIVE_INFINITY"/>
         /// </summary>
         public static float POSITIVE_INFINITY { get { if (!_POSITIVE_INFINITYReady) { _POSITIVE_INFINITYContent = SGetField<float>(LocalBridgeClazz, "POSITIVE_INFINITY"); _POSITIVE_INFINITYReady = true; } return _POSITIVE_INFINITYContent; } }
         private static float _POSITIVE_INFINITYContent = default;
         private static bool _POSITIVE_INFINITYReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#BYTES"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#BYTES"/>
         /// </summary>
         public static int BYTES { get { if (!_BYTESReady) { _BYTESContent = SGetField<int>(LocalBridgeClazz, "BYTES"); _BYTESReady = true; } return _BYTESContent; } }
         private static int _BYTESContent = default;
         private static bool _BYTESReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#MAX_EXPONENT"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#MAX_EXPONENT"/>
         /// </summary>
         public static int MAX_EXPONENT { get { if (!_MAX_EXPONENTReady) { _MAX_EXPONENTContent = SGetField<int>(LocalBridgeClazz, "MAX_EXPONENT"); _MAX_EXPONENTReady = true; } return _MAX_EXPONENTContent; } }
         private static int _MAX_EXPONENTContent = default;
         private static bool _MAX_EXPONENTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#MIN_EXPONENT"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#MIN_EXPONENT"/>
         /// </summary>
         public static int MIN_EXPONENT { get { if (!_MIN_EXPONENTReady) { _MIN_EXPONENTContent = SGetField<int>(LocalBridgeClazz, "MIN_EXPONENT"); _MIN_EXPONENTReady = true; } return _MIN_EXPONENTContent; } }
         private static int _MIN_EXPONENTContent = default;
         private static bool _MIN_EXPONENTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#SIZE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#SIZE"/>
         /// </summary>
         public static int SIZE { get { if (!_SIZEReady) { _SIZEContent = SGetField<int>(LocalBridgeClazz, "SIZE"); _SIZEReady = true; } return _SIZEContent; } }
         private static int _SIZEContent = default;
         private static bool _SIZEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#TYPE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#TYPE"/>
         /// </summary>
         public static Java.Lang.Class TYPE { get { if (!_TYPEReady) { _TYPEContent = SGetField<Java.Lang.Class>(LocalBridgeClazz, "TYPE"); _TYPEReady = true; } return _TYPEContent; } }
         private static Java.Lang.Class _TYPEContent = default;
@@ -140,7 +140,7 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#isFinite(float)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#isFinite(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -149,7 +149,7 @@ namespace Java.Lang
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isFinite", "(F)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#isInfinite(float)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#isInfinite(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -158,7 +158,7 @@ namespace Java.Lang
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isInfinite", "(F)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#isNaN(float)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#isNaN(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -167,7 +167,7 @@ namespace Java.Lang
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isNaN", "(F)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#max(float,float)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#max(float,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -177,7 +177,7 @@ namespace Java.Lang
             return SExecute<float>(LocalBridgeClazz, "max", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#min(float,float)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#min(float,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -187,7 +187,7 @@ namespace Java.Lang
             return SExecute<float>(LocalBridgeClazz, "min", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#parseFloat(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#parseFloat(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="float"/></returns>
@@ -197,7 +197,7 @@ namespace Java.Lang
             return SExecuteWithSignature<float>(LocalBridgeClazz, "parseFloat", "(Ljava/lang/String;)F", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#sum(float,float)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#sum(float,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -207,7 +207,7 @@ namespace Java.Lang
             return SExecute<float>(LocalBridgeClazz, "sum", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#compare(float,float)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#compare(float,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -217,7 +217,7 @@ namespace Java.Lang
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#floatToIntBits(float)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#floatToIntBits(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see cref="int"/></returns>
@@ -226,7 +226,7 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "floatToIntBits", "(F)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#hashCode(float)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#hashCode(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see cref="int"/></returns>
@@ -235,7 +235,7 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "(F)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#valueOf(float)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#valueOf(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see cref="Java.Lang.Float"/></returns>
@@ -244,7 +244,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.Float>(LocalBridgeClazz, "valueOf", "(F)Ljava/lang/Float;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Float"/></returns>
@@ -254,7 +254,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.Float>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/Float;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#toHexString(float)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#toHexString(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -263,7 +263,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toHexString", "(F)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#toString(float)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#toString(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -272,7 +272,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(F)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#intBitsToFloat(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#intBitsToFloat(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="float"/></returns>
@@ -281,7 +281,7 @@ namespace Java.Lang
             return SExecuteWithSignature<float>(LocalBridgeClazz, "intBitsToFloat", "(I)F", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#floatToRawIntBits(float)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#floatToRawIntBits(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see cref="int"/></returns>
@@ -294,7 +294,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#isInfinite()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#isInfinite()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsInfinite()
@@ -302,7 +302,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isInfinite", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#isNaN()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#isNaN()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsNaN()
@@ -310,7 +310,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isNaN", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#compareTo(java.lang.Float)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#compareTo(java.lang.Float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Float"/></param>
         /// <returns><see cref="int"/></returns>
@@ -319,7 +319,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Float;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -328,7 +328,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
         /// <returns><see cref="object"/></returns>
@@ -338,7 +338,7 @@ namespace Java.Lang
             return IExecuteWithSignature("resolveConstantDesc", "(Ljava/lang/invoke/MethodHandles$Lookup;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#describeConstable()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Float.html#describeConstable()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<Java.Lang.Float> DescribeConstable()

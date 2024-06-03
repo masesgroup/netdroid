@@ -40,14 +40,14 @@ namespace Android.Os
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/AsyncTask.html#SERIAL_EXECUTOR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Util.Concurrent.Executor SERIAL_EXECUTOR { get { if (!_SERIAL_EXECUTORReady) { _SERIAL_EXECUTORContent = SGetField<Java.Util.Concurrent.Executor>(LocalBridgeClazz, "SERIAL_EXECUTOR"); _SERIAL_EXECUTORReady = true; } return _SERIAL_EXECUTORContent; } }
         private static Java.Util.Concurrent.Executor _SERIAL_EXECUTORContent = default;
         private static bool _SERIAL_EXECUTORReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/AsyncTask.html#THREAD_POOL_EXECUTOR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Util.Concurrent.Executor THREAD_POOL_EXECUTOR { get { if (!_THREAD_POOL_EXECUTORReady) { _THREAD_POOL_EXECUTORContent = SGetField<Java.Util.Concurrent.Executor>(LocalBridgeClazz, "THREAD_POOL_EXECUTOR"); _THREAD_POOL_EXECUTORReady = true; } return _THREAD_POOL_EXECUTORContent; } }
         private static Java.Util.Concurrent.Executor _THREAD_POOL_EXECUTORContent = default;
         private static bool _THREAD_POOL_EXECUTORReady = false; // this is used because in case of generics 
@@ -59,7 +59,7 @@ namespace Android.Os
         /// <see href="https://developer.android.com/reference/android/os/AsyncTask.html#execute(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void Execute(Java.Lang.Runnable arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "execute", "(Ljava/lang/Runnable;)V", arg0);
@@ -69,19 +69,11 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/AsyncTask.html#getStatus()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Os.AsyncTask.Status GetStatus
-        {
-            get { return IExecuteWithSignature<Android.Os.AsyncTask.Status>("getStatus", "()Landroid/os/AsyncTask$Status;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/AsyncTask.html#execute(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Android.Os.AsyncTask"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Os.AsyncTask Execute(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecuteWithSignature<Android.Os.AsyncTask>("execute", "([Ljava/lang/Object;)Landroid/os/AsyncTask;"); else return IExecuteWithSignature<Android.Os.AsyncTask>("execute", "([Ljava/lang/Object;)Landroid/os/AsyncTask;", arg0);
@@ -92,17 +84,26 @@ namespace Android.Os
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="Android.Os.AsyncTask"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Os.AsyncTask ExecuteOnExecutor(Java.Util.Concurrent.Executor arg0, params object[] arg1)
         {
             if (arg1.Length == 0) return IExecute<Android.Os.AsyncTask>("executeOnExecutor", arg0); else return IExecute<Android.Os.AsyncTask>("executeOnExecutor", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/AsyncTask.html#getStatus()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.AsyncTask.Status"/></returns>
+        [global::System.Obsolete()]
+        public Android.Os.AsyncTask.Status GetStatus()
+        {
+            return IExecuteWithSignature<Android.Os.AsyncTask.Status>("getStatus", "()Landroid/os/AsyncTask$Status;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/AsyncTask.html#cancel(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool Cancel(bool arg0)
         {
             return IExecuteWithSignature<bool>("cancel", "(Z)Z", arg0);
@@ -111,7 +112,7 @@ namespace Android.Os
         /// <see href="https://developer.android.com/reference/android/os/AsyncTask.html#isCancelled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsCancelled()
         {
             return IExecuteWithSignature<bool>("isCancelled", "()Z");
@@ -122,7 +123,7 @@ namespace Android.Os
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
         /// <exception cref="Java.Lang.InterruptedException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public object Get()
         {
             return IExecuteWithSignature("get", "()Ljava/lang/Object;");
@@ -136,7 +137,7 @@ namespace Android.Os
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public object Get(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             return IExecute("get", arg0, arg1);
@@ -160,21 +161,21 @@ namespace Android.Os
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/AsyncTask.Status.html#FINISHED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Os.AsyncTask.Status FINISHED { get { if (!_FINISHEDReady) { _FINISHEDContent = SGetField<Android.Os.AsyncTask.Status>(LocalBridgeClazz, "FINISHED"); _FINISHEDReady = true; } return _FINISHEDContent; } }
             private static Android.Os.AsyncTask.Status _FINISHEDContent = default;
             private static bool _FINISHEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/AsyncTask.Status.html#PENDING"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Os.AsyncTask.Status PENDING { get { if (!_PENDINGReady) { _PENDINGContent = SGetField<Android.Os.AsyncTask.Status>(LocalBridgeClazz, "PENDING"); _PENDINGReady = true; } return _PENDINGContent; } }
             private static Android.Os.AsyncTask.Status _PENDINGContent = default;
             private static bool _PENDINGReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/AsyncTask.Status.html#RUNNING"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Os.AsyncTask.Status RUNNING { get { if (!_RUNNINGReady) { _RUNNINGContent = SGetField<Android.Os.AsyncTask.Status>(LocalBridgeClazz, "RUNNING"); _RUNNINGReady = true; } return _RUNNINGContent; } }
             private static Android.Os.AsyncTask.Status _RUNNINGContent = default;
             private static bool _RUNNINGReady = false; // this is used because in case of generics 
@@ -240,14 +241,14 @@ namespace Android.Os
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/AsyncTask.html#SERIAL_EXECUTOR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Util.Concurrent.Executor SERIAL_EXECUTOR { get { if (!_SERIAL_EXECUTORReady) { _SERIAL_EXECUTORContent = SGetField<Java.Util.Concurrent.Executor>(LocalBridgeClazz, "SERIAL_EXECUTOR"); _SERIAL_EXECUTORReady = true; } return _SERIAL_EXECUTORContent; } }
         private static Java.Util.Concurrent.Executor _SERIAL_EXECUTORContent = default;
         private static bool _SERIAL_EXECUTORReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/AsyncTask.html#THREAD_POOL_EXECUTOR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Util.Concurrent.Executor THREAD_POOL_EXECUTOR { get { if (!_THREAD_POOL_EXECUTORReady) { _THREAD_POOL_EXECUTORContent = SGetField<Java.Util.Concurrent.Executor>(LocalBridgeClazz, "THREAD_POOL_EXECUTOR"); _THREAD_POOL_EXECUTORReady = true; } return _THREAD_POOL_EXECUTORContent; } }
         private static Java.Util.Concurrent.Executor _THREAD_POOL_EXECUTORContent = default;
         private static bool _THREAD_POOL_EXECUTORReady = false; // this is used because in case of generics 
@@ -259,7 +260,7 @@ namespace Android.Os
         /// <see href="https://developer.android.com/reference/android/os/AsyncTask.html#execute(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void Execute(Java.Lang.Runnable arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "execute", "(Ljava/lang/Runnable;)V", arg0);
@@ -269,19 +270,11 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/AsyncTask.html#getStatus()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Os.AsyncTask.Status GetStatus
-        {
-            get { return IExecuteWithSignature<Android.Os.AsyncTask.Status>("getStatus", "()Landroid/os/AsyncTask$Status;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/AsyncTask.html#execute(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="Params"/></param>
         /// <returns><see cref="Android.Os.AsyncTask"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Os.AsyncTask<Params, Progress, Result> Execute(params Params[] arg0)
         {
             if (arg0.Length == 0) return IExecuteWithSignature<Android.Os.AsyncTask<Params, Progress, Result>>("execute", "([Ljava/lang/Object;)Landroid/os/AsyncTask;"); else return IExecuteWithSignature<Android.Os.AsyncTask<Params, Progress, Result>>("execute", "([Ljava/lang/Object;)Landroid/os/AsyncTask;", arg0);
@@ -292,17 +285,26 @@ namespace Android.Os
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <param name="arg1"><typeparamref name="Params"/></param>
         /// <returns><see cref="Android.Os.AsyncTask"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Os.AsyncTask<Params, Progress, Result> ExecuteOnExecutor(Java.Util.Concurrent.Executor arg0, params Params[] arg1)
         {
             if (arg1.Length == 0) return IExecute<Android.Os.AsyncTask<Params, Progress, Result>>("executeOnExecutor", arg0); else return IExecute<Android.Os.AsyncTask<Params, Progress, Result>>("executeOnExecutor", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/AsyncTask.html#getStatus()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.AsyncTask.Status"/></returns>
+        [global::System.Obsolete()]
+        public Android.Os.AsyncTask.Status GetStatus()
+        {
+            return IExecuteWithSignature<Android.Os.AsyncTask.Status>("getStatus", "()Landroid/os/AsyncTask$Status;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/AsyncTask.html#cancel(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool Cancel(bool arg0)
         {
             return IExecuteWithSignature<bool>("cancel", "(Z)Z", arg0);
@@ -311,7 +313,7 @@ namespace Android.Os
         /// <see href="https://developer.android.com/reference/android/os/AsyncTask.html#isCancelled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsCancelled()
         {
             return IExecuteWithSignature<bool>("isCancelled", "()Z");
@@ -322,7 +324,7 @@ namespace Android.Os
         /// <returns><typeparamref name="Result"/></returns>
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
         /// <exception cref="Java.Lang.InterruptedException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Result Get()
         {
             return IExecuteWithSignature<Result>("get", "()Ljava/lang/Object;");
@@ -336,7 +338,7 @@ namespace Android.Os
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
         /// <exception cref="Java.Lang.InterruptedException"/>
         /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Result Get(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             return IExecute<Result>("get", arg0, arg1);

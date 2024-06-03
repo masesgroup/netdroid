@@ -42,7 +42,7 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLDecoder.html#decode(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLDecoder.html#decode(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -53,7 +53,7 @@ namespace Java.Net
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "decode", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLDecoder.html#decode(java.lang.String,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLDecoder.html#decode(java.lang.String,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -63,11 +63,11 @@ namespace Java.Net
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "decode", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLDecoder.html#decode(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLDecoder.html#decode(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String Decode(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "decode", "(Ljava/lang/String;)Ljava/lang/String;", arg0);

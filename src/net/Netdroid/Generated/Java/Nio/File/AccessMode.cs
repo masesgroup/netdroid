@@ -38,19 +38,19 @@ namespace Java.Nio.File
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/AccessMode.html#EXECUTE"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/AccessMode.html#EXECUTE"/>
         /// </summary>
         public static Java.Nio.File.AccessMode EXECUTE { get { if (!_EXECUTEReady) { _EXECUTEContent = SGetField<Java.Nio.File.AccessMode>(LocalBridgeClazz, "EXECUTE"); _EXECUTEReady = true; } return _EXECUTEContent; } }
         private static Java.Nio.File.AccessMode _EXECUTEContent = default;
         private static bool _EXECUTEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/AccessMode.html#READ"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/AccessMode.html#READ"/>
         /// </summary>
         public static Java.Nio.File.AccessMode READ { get { if (!_READReady) { _READContent = SGetField<Java.Nio.File.AccessMode>(LocalBridgeClazz, "READ"); _READReady = true; } return _READContent; } }
         private static Java.Nio.File.AccessMode _READContent = default;
         private static bool _READReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/AccessMode.html#WRITE"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/AccessMode.html#WRITE"/>
         /// </summary>
         public static Java.Nio.File.AccessMode WRITE { get { if (!_WRITEReady) { _WRITEContent = SGetField<Java.Nio.File.AccessMode>(LocalBridgeClazz, "WRITE"); _WRITEReady = true; } return _WRITEContent; } }
         private static Java.Nio.File.AccessMode _WRITEContent = default;
@@ -60,7 +60,7 @@ namespace Java.Nio.File
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/AccessMode.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/AccessMode.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Nio.File.AccessMode"/></returns>
@@ -69,7 +69,7 @@ namespace Java.Nio.File
             return SExecuteWithSignature<Java.Nio.File.AccessMode>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/nio/file/AccessMode;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/AccessMode.html#values()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/AccessMode.html#values()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.File.AccessMode"/></returns>
         public static Java.Nio.File.AccessMode[] Values()

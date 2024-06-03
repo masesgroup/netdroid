@@ -53,7 +53,7 @@ namespace Android.View.Accessibility
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#obtain()"/>
         /// </summary>
         /// <returns><see cref="Android.View.Accessibility.AccessibilityRecord"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.View.Accessibility.AccessibilityRecord Obtain()
         {
             return SExecuteWithSignature<Android.View.Accessibility.AccessibilityRecord>(LocalBridgeClazz, "obtain", "()Landroid/view/accessibility/AccessibilityRecord;");
@@ -63,7 +63,7 @@ namespace Android.View.Accessibility
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Accessibility.AccessibilityRecord"/></param>
         /// <returns><see cref="Android.View.Accessibility.AccessibilityRecord"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.View.Accessibility.AccessibilityRecord Obtain(Android.View.Accessibility.AccessibilityRecord arg0)
         {
             return SExecuteWithSignature<Android.View.Accessibility.AccessibilityRecord>(LocalBridgeClazz, "obtain", "(Landroid/view/accessibility/AccessibilityRecord;)Landroid/view/accessibility/AccessibilityRecord;", arg0);
@@ -73,144 +73,20 @@ namespace Android.View.Accessibility
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getAddedCount()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setAddedCount(int)"/>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getParcelableData()"/>
         /// </summary>
-        public int AddedCount
+        /// <returns><see cref="Android.Os.Parcelable"/></returns>
+        public Android.Os.Parcelable GetParcelableData()
         {
-            get { return IExecuteWithSignature<int>("getAddedCount", "()I"); } set { IExecuteWithSignature("setAddedCount", "(I)V", value); }
+            return IExecuteWithSignature<Android.Os.Parcelable>("getParcelableData", "()Landroid/os/Parcelable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getBeforeText()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setBeforeText(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getSource()"/>
         /// </summary>
-        public Java.Lang.CharSequence BeforeText
+        /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo"/></returns>
+        public Android.View.Accessibility.AccessibilityNodeInfo GetSource()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getBeforeText", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setBeforeText", "(Ljava/lang/CharSequence;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getClassName()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setClassName(java.lang.CharSequence)"/>
-        /// </summary>
-        public Java.Lang.CharSequence ClassName
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getClassName", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setClassName", "(Ljava/lang/CharSequence;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getContentDescription()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setContentDescription(java.lang.CharSequence)"/>
-        /// </summary>
-        public Java.Lang.CharSequence ContentDescription
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setContentDescription", "(Ljava/lang/CharSequence;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getCurrentItemIndex()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setCurrentItemIndex(int)"/>
-        /// </summary>
-        public int CurrentItemIndex
-        {
-            get { return IExecuteWithSignature<int>("getCurrentItemIndex", "()I"); } set { IExecuteWithSignature("setCurrentItemIndex", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getDisplayId()"/> 
-        /// </summary>
-        public int DisplayId
-        {
-            get { return IExecuteWithSignature<int>("getDisplayId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getFromIndex()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setFromIndex(int)"/>
-        /// </summary>
-        public int FromIndex
-        {
-            get { return IExecuteWithSignature<int>("getFromIndex", "()I"); } set { IExecuteWithSignature("setFromIndex", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getItemCount()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setItemCount(int)"/>
-        /// </summary>
-        public int ItemCount
-        {
-            get { return IExecuteWithSignature<int>("getItemCount", "()I"); } set { IExecuteWithSignature("setItemCount", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getMaxScrollX()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setMaxScrollX(int)"/>
-        /// </summary>
-        public int MaxScrollX
-        {
-            get { return IExecuteWithSignature<int>("getMaxScrollX", "()I"); } set { IExecuteWithSignature("setMaxScrollX", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getMaxScrollY()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setMaxScrollY(int)"/>
-        /// </summary>
-        public int MaxScrollY
-        {
-            get { return IExecuteWithSignature<int>("getMaxScrollY", "()I"); } set { IExecuteWithSignature("setMaxScrollY", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getParcelableData()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setParcelableData(android.os.Parcelable)"/>
-        /// </summary>
-        public Android.Os.Parcelable ParcelableData
-        {
-            get { return IExecuteWithSignature<Android.Os.Parcelable>("getParcelableData", "()Landroid/os/Parcelable;"); } set { IExecuteWithSignature("setParcelableData", "(Landroid/os/Parcelable;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getRemovedCount()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setRemovedCount(int)"/>
-        /// </summary>
-        public int RemovedCount
-        {
-            get { return IExecuteWithSignature<int>("getRemovedCount", "()I"); } set { IExecuteWithSignature("setRemovedCount", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getScrollDeltaX()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setScrollDeltaX(int)"/>
-        /// </summary>
-        public int ScrollDeltaX
-        {
-            get { return IExecuteWithSignature<int>("getScrollDeltaX", "()I"); } set { IExecuteWithSignature("setScrollDeltaX", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getScrollDeltaY()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setScrollDeltaY(int)"/>
-        /// </summary>
-        public int ScrollDeltaY
-        {
-            get { return IExecuteWithSignature<int>("getScrollDeltaY", "()I"); } set { IExecuteWithSignature("setScrollDeltaY", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getScrollX()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setScrollX(int)"/>
-        /// </summary>
-        public int ScrollX
-        {
-            get { return IExecuteWithSignature<int>("getScrollX", "()I"); } set { IExecuteWithSignature("setScrollX", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getScrollY()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setScrollY(int)"/>
-        /// </summary>
-        public int ScrollY
-        {
-            get { return IExecuteWithSignature<int>("getScrollY", "()I"); } set { IExecuteWithSignature("setScrollY", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getSource()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setSource(android.view.View)"/>
-        /// </summary>
-        public Android.View.Accessibility.AccessibilityNodeInfo Source
-        {
-            get { return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo>("getSource", "()Landroid/view/accessibility/AccessibilityNodeInfo;"); } set { IExecuteWithSignature("setSource", "(Landroid/view/View;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getText()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.CharSequence> Text
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.CharSequence>>("getText", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getToIndex()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setToIndex(int)"/>
-        /// </summary>
-        public int ToIndex
-        {
-            get { return IExecuteWithSignature<int>("getToIndex", "()I"); } set { IExecuteWithSignature("setToIndex", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getWindowId()"/> 
-        /// </summary>
-        public int WindowId
-        {
-            get { return IExecuteWithSignature<int>("getWindowId", "()I"); }
+            return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo>("getSource", "()Landroid/view/accessibility/AccessibilityNodeInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getSource(int)"/>
@@ -262,12 +138,172 @@ namespace Android.View.Accessibility
             return IExecuteWithSignature<bool>("isScrollable", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getAddedCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAddedCount()
+        {
+            return IExecuteWithSignature<int>("getAddedCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getCurrentItemIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrentItemIndex()
+        {
+            return IExecuteWithSignature<int>("getCurrentItemIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getDisplayId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDisplayId()
+        {
+            return IExecuteWithSignature<int>("getDisplayId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getFromIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFromIndex()
+        {
+            return IExecuteWithSignature<int>("getFromIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getItemCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetItemCount()
+        {
+            return IExecuteWithSignature<int>("getItemCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getMaxScrollX()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxScrollX()
+        {
+            return IExecuteWithSignature<int>("getMaxScrollX", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getMaxScrollY()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxScrollY()
+        {
+            return IExecuteWithSignature<int>("getMaxScrollY", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getRemovedCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRemovedCount()
+        {
+            return IExecuteWithSignature<int>("getRemovedCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getScrollDeltaX()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetScrollDeltaX()
+        {
+            return IExecuteWithSignature<int>("getScrollDeltaX", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getScrollDeltaY()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetScrollDeltaY()
+        {
+            return IExecuteWithSignature<int>("getScrollDeltaY", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getScrollX()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetScrollX()
+        {
+            return IExecuteWithSignature<int>("getScrollX", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getScrollY()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetScrollY()
+        {
+            return IExecuteWithSignature<int>("getScrollY", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getToIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetToIndex()
+        {
+            return IExecuteWithSignature<int>("getToIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getWindowId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWindowId()
+        {
+            return IExecuteWithSignature<int>("getWindowId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getBeforeText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetBeforeText()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getBeforeText", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getClassName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetClassName()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getClassName", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getContentDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetContentDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.CharSequence> GetText()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.CharSequence>>("getText", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#recycle()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Recycle()
         {
             IExecuteWithSignature("recycle", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setAddedCount(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetAddedCount(int arg0)
+        {
+            IExecuteWithSignature("setAddedCount", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setBeforeText(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetBeforeText(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setBeforeText", "(Ljava/lang/CharSequence;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setChecked(boolean)"/>
@@ -278,12 +314,44 @@ namespace Android.View.Accessibility
             IExecuteWithSignature("setChecked", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setClassName(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetClassName(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setClassName", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setContentDescription(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetContentDescription(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setContentDescription", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setCurrentItemIndex(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetCurrentItemIndex(int arg0)
+        {
+            IExecuteWithSignature("setCurrentItemIndex", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetEnabled(bool arg0)
         {
             IExecuteWithSignature("setEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setFromIndex(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetFromIndex(int arg0)
+        {
+            IExecuteWithSignature("setFromIndex", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setFullScreen(boolean)"/>
@@ -294,12 +362,52 @@ namespace Android.View.Accessibility
             IExecuteWithSignature("setFullScreen", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setItemCount(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetItemCount(int arg0)
+        {
+            IExecuteWithSignature("setItemCount", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setMaxScrollX(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMaxScrollX(int arg0)
+        {
+            IExecuteWithSignature("setMaxScrollX", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setMaxScrollY(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMaxScrollY(int arg0)
+        {
+            IExecuteWithSignature("setMaxScrollY", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setParcelableData(android.os.Parcelable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Parcelable"/></param>
+        public void SetParcelableData(Android.Os.Parcelable arg0)
+        {
+            IExecuteWithSignature("setParcelableData", "(Landroid/os/Parcelable;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setPassword(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetPassword(bool arg0)
         {
             IExecuteWithSignature("setPassword", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setRemovedCount(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetRemovedCount(int arg0)
+        {
+            IExecuteWithSignature("setRemovedCount", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setScrollable(boolean)"/>
@@ -310,6 +418,38 @@ namespace Android.View.Accessibility
             IExecuteWithSignature("setScrollable", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setScrollDeltaX(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetScrollDeltaX(int arg0)
+        {
+            IExecuteWithSignature("setScrollDeltaX", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setScrollDeltaY(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetScrollDeltaY(int arg0)
+        {
+            IExecuteWithSignature("setScrollDeltaY", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setScrollX(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetScrollX(int arg0)
+        {
+            IExecuteWithSignature("setScrollX", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setScrollY(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetScrollY(int arg0)
+        {
+            IExecuteWithSignature("setScrollY", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setSource(android.view.View,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
@@ -317,6 +457,22 @@ namespace Android.View.Accessibility
         public void SetSource(Android.View.View arg0, int arg1)
         {
             IExecute("setSource", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setSource(android.view.View)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        public void SetSource(Android.View.View arg0)
+        {
+            IExecuteWithSignature("setSource", "(Landroid/view/View;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setToIndex(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetToIndex(int arg0)
+        {
+            IExecuteWithSignature("setToIndex", "(I)V", arg0);
         }
 
         #endregion

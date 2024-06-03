@@ -63,18 +63,20 @@ namespace Android.Webkit
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebMessage.html#getData()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/WebMessage.html#getPorts()"/>
         /// </summary>
-        public Java.Lang.String Data
+        /// <returns><see cref="Android.Webkit.WebMessagePort"/></returns>
+        public Android.Webkit.WebMessagePort[] GetPorts()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getData", "()Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<Android.Webkit.WebMessagePort>("getPorts", "()[Landroid/webkit/WebMessagePort;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebMessage.html#getPorts()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/WebMessage.html#getData()"/>
         /// </summary>
-        public Android.Webkit.WebMessagePort[] Ports
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetData()
         {
-            get { return IExecuteWithSignatureArray<Android.Webkit.WebMessagePort>("getPorts", "()[Landroid/webkit/WebMessagePort;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getData", "()Ljava/lang/String;");
         }
 
         #endregion

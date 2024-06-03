@@ -116,7 +116,7 @@ namespace Android.Text
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool IsGraphic(char arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isGraphic", "(C)Z", arg0);
@@ -300,7 +300,7 @@ namespace Android.Text
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         /// <param name="arg4"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.CharSequence CommaEllipsize(Java.Lang.CharSequence arg0, Android.Text.TextPaint arg1, float arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
             return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "commaEllipsize", arg0, arg1, arg2, arg3, arg4);
@@ -357,7 +357,7 @@ namespace Android.Text
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.CharSequence GetReverse(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
             return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getReverse", arg0, arg1, arg2);

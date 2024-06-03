@@ -36,7 +36,7 @@ namespace Android.Preference
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public RingtonePreference(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -47,7 +47,7 @@ namespace Android.Preference
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public RingtonePreference(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -57,7 +57,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public RingtonePreference(Android.Content.Context arg0, Android.Util.AttributeSet arg1)
             : base(arg0, arg1)
         {
@@ -66,7 +66,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/RingtonePreference.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public RingtonePreference(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -88,28 +88,22 @@ namespace Android.Preference
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/RingtonePreference.html#getRingtoneType()"/> <see href="https://developer.android.com/reference/android/preference/RingtonePreference.html#setRingtoneType(int)"/>
+        /// <see href="https://developer.android.com/reference/android/preference/RingtonePreference.html#getShowDefault()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int RingtoneType
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetShowDefault()
         {
-            get { return IExecuteWithSignature<int>("getRingtoneType", "()I"); } set { IExecuteWithSignature("setRingtoneType", "(I)V", value); }
+            return IExecuteWithSignature<bool>("getShowDefault", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/RingtonePreference.html#getShowDefault()"/> <see href="https://developer.android.com/reference/android/preference/RingtonePreference.html#setShowDefault(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/preference/RingtonePreference.html#getShowSilent()"/>
         /// </summary>
-        [System.Obsolete()]
-        public bool ShowDefault
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetShowSilent()
         {
-            get { return IExecuteWithSignature<bool>("getShowDefault", "()Z"); } set { IExecuteWithSignature("setShowDefault", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/RingtonePreference.html#getShowSilent()"/> <see href="https://developer.android.com/reference/android/preference/RingtonePreference.html#setShowSilent(boolean)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public bool ShowSilent
-        {
-            get { return IExecuteWithSignature<bool>("getShowSilent", "()Z"); } set { IExecuteWithSignature("setShowSilent", "(Z)V", value); }
+            return IExecuteWithSignature<bool>("getShowSilent", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/RingtonePreference.html#onActivityResult(int,int,android.content.Intent)"/>
@@ -118,10 +112,46 @@ namespace Android.Preference
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.Content.Intent"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnActivityResult(int arg0, int arg1, Android.Content.Intent arg2)
         {
             return IExecute<bool>("onActivityResult", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/RingtonePreference.html#getRingtoneType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetRingtoneType()
+        {
+            return IExecuteWithSignature<int>("getRingtoneType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/RingtonePreference.html#setRingtoneType(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetRingtoneType(int arg0)
+        {
+            IExecuteWithSignature("setRingtoneType", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/RingtonePreference.html#setShowDefault(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        public void SetShowDefault(bool arg0)
+        {
+            IExecuteWithSignature("setShowDefault", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/RingtonePreference.html#setShowSilent(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        public void SetShowSilent(bool arg0)
+        {
+            IExecuteWithSignature("setShowSilent", "(Z)V", arg0);
         }
 
         #endregion

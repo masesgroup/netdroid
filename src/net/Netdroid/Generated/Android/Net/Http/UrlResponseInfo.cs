@@ -46,53 +46,12 @@ namespace Android.Net.Http
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/UrlResponseInfo.html#getHeaders()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/http/UrlResponseInfo.html#getHeaders()"/>
         /// </summary>
-        public Android.Net.Http.HeaderBlock Headers
+        /// <returns><see cref="Android.Net.Http.HeaderBlock"/></returns>
+        public Android.Net.Http.HeaderBlock GetHeaders()
         {
-            get { return IExecuteWithSignature<Android.Net.Http.HeaderBlock>("getHeaders", "()Landroid/net/http/HeaderBlock;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/UrlResponseInfo.html#getHttpStatusCode()"/> 
-        /// </summary>
-        public int HttpStatusCode
-        {
-            get { return IExecuteWithSignature<int>("getHttpStatusCode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/UrlResponseInfo.html#getHttpStatusText()"/> 
-        /// </summary>
-        public Java.Lang.String HttpStatusText
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHttpStatusText", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/UrlResponseInfo.html#getNegotiatedProtocol()"/> 
-        /// </summary>
-        public Java.Lang.String NegotiatedProtocol
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNegotiatedProtocol", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/UrlResponseInfo.html#getReceivedByteCount()"/> 
-        /// </summary>
-        public long ReceivedByteCount
-        {
-            get { return IExecuteWithSignature<long>("getReceivedByteCount", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/UrlResponseInfo.html#getUrl()"/> 
-        /// </summary>
-        public Java.Lang.String Url
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUrl", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/UrlResponseInfo.html#getUrlChain()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> UrlChain
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getUrlChain", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Net.Http.HeaderBlock>("getHeaders", "()Landroid/net/http/HeaderBlock;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/UrlResponseInfo.html#wasCached()"/>
@@ -101,6 +60,54 @@ namespace Android.Net.Http
         public bool WasCached()
         {
             return IExecuteWithSignature<bool>("wasCached", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/UrlResponseInfo.html#getHttpStatusCode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHttpStatusCode()
+        {
+            return IExecuteWithSignature<int>("getHttpStatusCode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/UrlResponseInfo.html#getHttpStatusText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetHttpStatusText()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getHttpStatusText", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/UrlResponseInfo.html#getNegotiatedProtocol()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNegotiatedProtocol()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getNegotiatedProtocol", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/UrlResponseInfo.html#getUrl()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUrl()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUrl", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/UrlResponseInfo.html#getUrlChain()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetUrlChain()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getUrlChain", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/UrlResponseInfo.html#getReceivedByteCount()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetReceivedByteCount()
+        {
+            return IExecuteWithSignature<long>("getReceivedByteCount", "()J");
         }
 
         #endregion

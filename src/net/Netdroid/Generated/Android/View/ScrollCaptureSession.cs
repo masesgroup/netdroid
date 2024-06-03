@@ -56,25 +56,28 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureSession.html#getPositionInWindow()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureSession.html#getPositionInWindow()"/>
         /// </summary>
-        public Android.Graphics.Point PositionInWindow
+        /// <returns><see cref="Android.Graphics.Point"/></returns>
+        public Android.Graphics.Point GetPositionInWindow()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Point>("getPositionInWindow", "()Landroid/graphics/Point;"); }
+            return IExecuteWithSignature<Android.Graphics.Point>("getPositionInWindow", "()Landroid/graphics/Point;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureSession.html#getScrollBounds()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureSession.html#getScrollBounds()"/>
         /// </summary>
-        public Android.Graphics.Rect ScrollBounds
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetScrollBounds()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getScrollBounds", "()Landroid/graphics/Rect;"); }
+            return IExecuteWithSignature<Android.Graphics.Rect>("getScrollBounds", "()Landroid/graphics/Rect;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureSession.html#getSurface()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureSession.html#getSurface()"/>
         /// </summary>
-        public Android.View.Surface Surface
+        /// <returns><see cref="Android.View.Surface"/></returns>
+        public Android.View.Surface GetSurface()
         {
-            get { return IExecuteWithSignature<Android.View.Surface>("getSurface", "()Landroid/view/Surface;"); }
+            return IExecuteWithSignature<Android.View.Surface>("getSurface", "()Landroid/view/Surface;");
         }
 
         #endregion

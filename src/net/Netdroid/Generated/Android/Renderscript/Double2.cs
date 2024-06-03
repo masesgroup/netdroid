@@ -34,7 +34,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Double2(double arg0, double arg1)
             : base(arg0, arg1)
         {
@@ -50,12 +50,12 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Double2.html#x"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public double x { get { return IGetField<double>("x"); } set { ISetField("x", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Double2.html#y"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public double y { get { return IGetField<double>("y"); } set { ISetField("y", value); } }
 
         #endregion

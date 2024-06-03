@@ -199,18 +199,20 @@ namespace Android.Graphics
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/HardwareBufferRenderer.RenderResult.html#getFence()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/HardwareBufferRenderer.RenderResult.html#getFence()"/>
             /// </summary>
-            public Android.Hardware.SyncFence Fence
+            /// <returns><see cref="Android.Hardware.SyncFence"/></returns>
+            public Android.Hardware.SyncFence GetFence()
             {
-                get { return IExecuteWithSignature<Android.Hardware.SyncFence>("getFence", "()Landroid/hardware/SyncFence;"); }
+                return IExecuteWithSignature<Android.Hardware.SyncFence>("getFence", "()Landroid/hardware/SyncFence;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/HardwareBufferRenderer.RenderResult.html#getStatus()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/HardwareBufferRenderer.RenderResult.html#getStatus()"/>
             /// </summary>
-            public int Status
+            /// <returns><see cref="int"/></returns>
+            public int GetStatus()
             {
-                get { return IExecuteWithSignature<int>("getStatus", "()I"); }
+                return IExecuteWithSignature<int>("getStatus", "()I");
             }
 
             #endregion

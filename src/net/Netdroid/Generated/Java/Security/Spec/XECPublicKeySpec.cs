@@ -30,7 +30,7 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/XECPublicKeySpec.html#%3Cinit%3E(java.security.spec.AlgorithmParameterSpec,java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/XECPublicKeySpec.html#%3Cinit%3E(java.security.spec.AlgorithmParameterSpec,java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
         /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
@@ -55,18 +55,20 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/XECPublicKeySpec.html#getParams()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/XECPublicKeySpec.html#getU()"/>
         /// </summary>
-        public Java.Security.Spec.AlgorithmParameterSpec Params
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetU()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getParams", "()Ljava/security/spec/AlgorithmParameterSpec;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getU", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/XECPublicKeySpec.html#getU()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/XECPublicKeySpec.html#getParams()"/>
         /// </summary>
-        public Java.Math.BigInteger U
+        /// <returns><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></returns>
+        public Java.Security.Spec.AlgorithmParameterSpec GetParams()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getU", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getParams", "()Ljava/security/spec/AlgorithmParameterSpec;");
         }
 
         #endregion

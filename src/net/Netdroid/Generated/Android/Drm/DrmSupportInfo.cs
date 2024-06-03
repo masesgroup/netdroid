@@ -46,42 +46,46 @@ namespace Android.Drm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/drm/DrmSupportInfo.html#getDescriprition()"/> 
+        /// <see href="https://developer.android.com/reference/android/drm/DrmSupportInfo.html#getDescriprition()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String Descriprition
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetDescriprition()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescriprition", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getDescriprition", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/drm/DrmSupportInfo.html#getDescription()"/> <see href="https://developer.android.com/reference/android/drm/DrmSupportInfo.html#setDescription(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/drm/DrmSupportInfo.html#getDescription()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String Description
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetDescription()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDescription", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/drm/DrmSupportInfo.html#getFileSuffixIterator()"/> 
+        /// <see href="https://developer.android.com/reference/android/drm/DrmSupportInfo.html#getFileSuffixIterator()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Util.Iterator<Java.Lang.String> FileSuffixIterator
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        [global::System.Obsolete()]
+        public Java.Util.Iterator<Java.Lang.String> GetFileSuffixIterator()
         {
-            get { return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("getFileSuffixIterator", "()Ljava/util/Iterator;"); }
+            return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("getFileSuffixIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/drm/DrmSupportInfo.html#getMimeTypeIterator()"/> 
+        /// <see href="https://developer.android.com/reference/android/drm/DrmSupportInfo.html#getMimeTypeIterator()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Util.Iterator<Java.Lang.String> MimeTypeIterator
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        [global::System.Obsolete()]
+        public Java.Util.Iterator<Java.Lang.String> GetMimeTypeIterator()
         {
-            get { return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("getMimeTypeIterator", "()Ljava/util/Iterator;"); }
+            return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("getMimeTypeIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmSupportInfo.html#addFileSuffix(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddFileSuffix(Java.Lang.String arg0)
         {
             IExecuteWithSignature("addFileSuffix", "(Ljava/lang/String;)V", arg0);
@@ -90,10 +94,19 @@ namespace Android.Drm
         /// <see href="https://developer.android.com/reference/android/drm/DrmSupportInfo.html#addMimeType(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddMimeType(Java.Lang.String arg0)
         {
             IExecuteWithSignature("addMimeType", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/drm/DrmSupportInfo.html#setDescription(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [global::System.Obsolete()]
+        public void SetDescription(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setDescription", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

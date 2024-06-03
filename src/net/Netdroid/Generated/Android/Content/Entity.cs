@@ -54,18 +54,20 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Entity.html#getEntityValues()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/Entity.html#getEntityValues()"/>
         /// </summary>
-        public Android.Content.ContentValues EntityValues
+        /// <returns><see cref="Android.Content.ContentValues"/></returns>
+        public Android.Content.ContentValues GetEntityValues()
         {
-            get { return IExecuteWithSignature<Android.Content.ContentValues>("getEntityValues", "()Landroid/content/ContentValues;"); }
+            return IExecuteWithSignature<Android.Content.ContentValues>("getEntityValues", "()Landroid/content/ContentValues;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Entity.html#getSubValues()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/Entity.html#getSubValues()"/>
         /// </summary>
-        public Java.Util.ArrayList<Android.Content.Entity.NamedContentValues> SubValues
+        /// <returns><see cref="Java.Util.ArrayList"/></returns>
+        public Java.Util.ArrayList<Android.Content.Entity.NamedContentValues> GetSubValues()
         {
-            get { return IExecuteWithSignature<Java.Util.ArrayList<Android.Content.Entity.NamedContentValues>>("getSubValues", "()Ljava/util/ArrayList;"); }
+            return IExecuteWithSignature<Java.Util.ArrayList<Android.Content.Entity.NamedContentValues>>("getSubValues", "()Ljava/util/ArrayList;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Entity.html#addSubValue(android.net.Uri,android.content.ContentValues)"/>

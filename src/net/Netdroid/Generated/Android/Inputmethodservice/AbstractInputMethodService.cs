@@ -46,13 +46,6 @@ namespace Android.Inputmethodservice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/inputmethodservice/AbstractInputMethodService.html#getKeyDispatcherState()"/> 
-        /// </summary>
-        public Android.View.KeyEvent.DispatcherState KeyDispatcherState
-        {
-            get { return IExecuteWithSignature<Android.View.KeyEvent.DispatcherState>("getKeyDispatcherState", "()Landroid/view/KeyEvent$DispatcherState;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/AbstractInputMethodService.html#onCreateInputMethodInterface()"/>
         /// </summary>
         /// <returns><see cref="Android.Inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl"/></returns>
@@ -67,6 +60,14 @@ namespace Android.Inputmethodservice
         public Android.Inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl OnCreateInputMethodSessionInterface()
         {
             return IExecuteWithSignature<Android.Inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl>("onCreateInputMethodSessionInterface", "()Landroid/inputmethodservice/AbstractInputMethodService$AbstractInputMethodSessionImpl;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/AbstractInputMethodService.html#getKeyDispatcherState()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.KeyEvent.DispatcherState"/></returns>
+        public Android.View.KeyEvent.DispatcherState GetKeyDispatcherState()
+        {
+            return IExecuteWithSignature<Android.View.KeyEvent.DispatcherState>("getKeyDispatcherState", "()Landroid/view/KeyEvent$DispatcherState;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/AbstractInputMethodService.html#onGenericMotionEvent(android.view.MotionEvent)"/>

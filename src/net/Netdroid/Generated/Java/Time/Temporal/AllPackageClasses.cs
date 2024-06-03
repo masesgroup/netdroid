@@ -28,7 +28,7 @@ namespace Java.Time.Temporal
 {
     #region ChronoField
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/ChronoField.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/temporal/ChronoField.html"/>
     /// </summary>
     public partial class ChronoField : Java.Lang.Enum<Java.Time.Temporal.ChronoField>
     {
@@ -72,7 +72,7 @@ namespace Java.Time.Temporal
 
     #region ChronoUnit
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/ChronoUnit.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/temporal/ChronoUnit.html"/>
     /// </summary>
     public partial class ChronoUnit : Java.Lang.Enum<Java.Time.Temporal.ChronoUnit>
     {
@@ -116,7 +116,7 @@ namespace Java.Time.Temporal
 
     #region IsoFields
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/IsoFields.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/temporal/IsoFields.html"/>
     /// </summary>
     public partial class IsoFields : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IsoFields>
     {
@@ -160,7 +160,7 @@ namespace Java.Time.Temporal
 
     #region JulianFields
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/JulianFields.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/temporal/JulianFields.html"/>
     /// </summary>
     public partial class JulianFields : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JulianFields>
     {
@@ -204,7 +204,7 @@ namespace Java.Time.Temporal
 
     #region Temporal
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/Temporal.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/temporal/Temporal.html"/>
     /// </summary>
     public partial class Temporal : Java.Time.Temporal.TemporalAccessor
     {
@@ -212,12 +212,12 @@ namespace Java.Time.Temporal
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Temporal class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Temporal class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Temporal() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Temporal class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Temporal class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Temporal(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -250,7 +250,7 @@ namespace Java.Time.Temporal
 
     #region TemporalAccessor
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAccessor.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalAccessor.html"/>
     /// </summary>
     public partial class TemporalAccessor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TemporalAccessor>
     {
@@ -258,12 +258,12 @@ namespace Java.Time.Temporal
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("TemporalAccessor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TemporalAccessor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TemporalAccessor() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("TemporalAccessor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TemporalAccessor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TemporalAccessor(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -296,7 +296,7 @@ namespace Java.Time.Temporal
 
     #region TemporalAdjuster
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAdjuster.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalAdjuster.html"/>
     /// </summary>
     public partial class TemporalAdjuster : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TemporalAdjuster>
     {
@@ -304,12 +304,12 @@ namespace Java.Time.Temporal
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("TemporalAdjuster class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TemporalAdjuster class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TemporalAdjuster() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("TemporalAdjuster class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TemporalAdjuster class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TemporalAdjuster(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -342,7 +342,7 @@ namespace Java.Time.Temporal
 
     #region TemporalAdjusters
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAdjusters.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalAdjusters.html"/>
     /// </summary>
     public partial class TemporalAdjusters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TemporalAdjusters>
     {
@@ -386,7 +386,7 @@ namespace Java.Time.Temporal
 
     #region TemporalAmount
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAmount.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalAmount.html"/>
     /// </summary>
     public partial class TemporalAmount : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TemporalAmount>
     {
@@ -394,12 +394,12 @@ namespace Java.Time.Temporal
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("TemporalAmount class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TemporalAmount class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TemporalAmount() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("TemporalAmount class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TemporalAmount class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TemporalAmount(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -432,7 +432,7 @@ namespace Java.Time.Temporal
 
     #region TemporalField
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalField.html"/>
     /// </summary>
     public partial class TemporalField : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TemporalField>
     {
@@ -440,12 +440,12 @@ namespace Java.Time.Temporal
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("TemporalField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TemporalField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TemporalField() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("TemporalField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TemporalField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TemporalField(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -478,7 +478,7 @@ namespace Java.Time.Temporal
 
     #region TemporalQueries
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalQueries.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalQueries.html"/>
     /// </summary>
     public partial class TemporalQueries : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TemporalQueries>
     {
@@ -522,7 +522,7 @@ namespace Java.Time.Temporal
 
     #region TemporalQuery
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalQuery.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalQuery.html"/>
     /// </summary>
     public partial class TemporalQuery : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TemporalQuery>
     {
@@ -530,12 +530,12 @@ namespace Java.Time.Temporal
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("TemporalQuery class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TemporalQuery class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TemporalQuery() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("TemporalQuery class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TemporalQuery class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TemporalQuery(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -568,7 +568,7 @@ namespace Java.Time.Temporal
 
     #region TemporalQuery<R>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalQuery.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalQuery.html"/>
     /// </summary>
     /// <typeparam name="R"></typeparam>
     public partial class TemporalQuery<R> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TemporalQuery<R>>
@@ -577,12 +577,12 @@ namespace Java.Time.Temporal
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("TemporalQuery class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TemporalQuery class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TemporalQuery() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("TemporalQuery class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TemporalQuery class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TemporalQuery(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -615,7 +615,7 @@ namespace Java.Time.Temporal
 
     #region TemporalUnit
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalUnit.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalUnit.html"/>
     /// </summary>
     public partial class TemporalUnit : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TemporalUnit>
     {
@@ -623,12 +623,12 @@ namespace Java.Time.Temporal
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("TemporalUnit class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TemporalUnit class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TemporalUnit() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("TemporalUnit class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TemporalUnit class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TemporalUnit(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -661,7 +661,7 @@ namespace Java.Time.Temporal
 
     #region UnsupportedTemporalTypeException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/UnsupportedTemporalTypeException.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/temporal/UnsupportedTemporalTypeException.html"/>
     /// </summary>
     public partial class UnsupportedTemporalTypeException : Java.Time.DateTimeException
     {
@@ -678,7 +678,7 @@ namespace Java.Time.Temporal
 
     #region ValueRange
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/ValueRange.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/temporal/ValueRange.html"/>
     /// </summary>
     public partial class ValueRange : Java.Io.Serializable
     {
@@ -722,7 +722,7 @@ namespace Java.Time.Temporal
 
     #region WeekFields
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/WeekFields.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/temporal/WeekFields.html"/>
     /// </summary>
     public partial class WeekFields : Java.Io.Serializable
     {

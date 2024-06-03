@@ -70,25 +70,28 @@ namespace Android.View.Animation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/Transformation.html#getAlpha()"/> <see href="https://developer.android.com/reference/android/view/animation/Transformation.html#setAlpha(float)"/>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Transformation.html#getMatrix()"/>
         /// </summary>
-        public float Alpha
+        /// <returns><see cref="Android.Graphics.Matrix"/></returns>
+        public Android.Graphics.Matrix GetMatrix()
         {
-            get { return IExecuteWithSignature<float>("getAlpha", "()F"); } set { IExecuteWithSignature("setAlpha", "(F)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Matrix>("getMatrix", "()Landroid/graphics/Matrix;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/Transformation.html#getMatrix()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/animation/Transformation.html#getAlpha()"/>
         /// </summary>
-        public Android.Graphics.Matrix Matrix
+        /// <returns><see cref="float"/></returns>
+        public float GetAlpha()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Matrix>("getMatrix", "()Landroid/graphics/Matrix;"); }
+            return IExecuteWithSignature<float>("getAlpha", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/Transformation.html#getTransformationType()"/> <see href="https://developer.android.com/reference/android/view/animation/Transformation.html#setTransformationType(int)"/>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Transformation.html#getTransformationType()"/>
         /// </summary>
-        public int TransformationType
+        /// <returns><see cref="int"/></returns>
+        public int GetTransformationType()
         {
-            get { return IExecuteWithSignature<int>("getTransformationType", "()I"); } set { IExecuteWithSignature("setTransformationType", "(I)V", value); }
+            return IExecuteWithSignature<int>("getTransformationType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/animation/Transformation.html#toShortString()"/>
@@ -120,6 +123,22 @@ namespace Android.View.Animation
         public void Set(Android.View.Animation.Transformation arg0)
         {
             IExecuteWithSignature("set", "(Landroid/view/animation/Transformation;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Transformation.html#setAlpha(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetAlpha(float arg0)
+        {
+            IExecuteWithSignature("setAlpha", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Transformation.html#setTransformationType(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetTransformationType(int arg0)
+        {
+            IExecuteWithSignature("setTransformationType", "(I)V", arg0);
         }
 
         #endregion

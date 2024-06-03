@@ -30,7 +30,7 @@ namespace Javax.Crypto.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/PBEKeySpec.html#%3Cinit%3E(char[],byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/PBEKeySpec.html#%3Cinit%3E(char[],byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -41,7 +41,7 @@ namespace Javax.Crypto.Spec
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/PBEKeySpec.html#%3Cinit%3E(char[],byte[],int)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/PBEKeySpec.html#%3Cinit%3E(char[],byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -51,7 +51,7 @@ namespace Javax.Crypto.Spec
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/PBEKeySpec.html#%3Cinit%3E(char[])"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/PBEKeySpec.html#%3Cinit%3E(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         public PBEKeySpec(char[] arg0)
@@ -75,35 +75,39 @@ namespace Javax.Crypto.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/PBEKeySpec.html#getIterationCount()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/PBEKeySpec.html#getSalt()"/>
         /// </summary>
-        public int IterationCount
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetSalt()
         {
-            get { return IExecuteWithSignature<int>("getIterationCount", "()I"); }
+            return IExecuteWithSignatureArray<byte>("getSalt", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/PBEKeySpec.html#getKeyLength()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/PBEKeySpec.html#getPassword()"/>
         /// </summary>
-        public int KeyLength
+        /// <returns><see cref="char"/></returns>
+        public char[] GetPassword()
         {
-            get { return IExecuteWithSignature<int>("getKeyLength", "()I"); }
+            return IExecuteWithSignatureArray<char>("getPassword", "()[C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/PBEKeySpec.html#getPassword()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/PBEKeySpec.html#getIterationCount()"/>
         /// </summary>
-        public char[] Password
+        /// <returns><see cref="int"/></returns>
+        public int GetIterationCount()
         {
-            get { return IExecuteWithSignatureArray<char>("getPassword", "()[C"); }
+            return IExecuteWithSignature<int>("getIterationCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/PBEKeySpec.html#getSalt()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/PBEKeySpec.html#getKeyLength()"/>
         /// </summary>
-        public byte[] Salt
+        /// <returns><see cref="int"/></returns>
+        public int GetKeyLength()
         {
-            get { return IExecuteWithSignatureArray<byte>("getSalt", "()[B"); }
+            return IExecuteWithSignature<int>("getKeyLength", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/PBEKeySpec.html#clearPassword()"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/PBEKeySpec.html#clearPassword()"/>
         /// </summary>
         public void ClearPassword()
         {

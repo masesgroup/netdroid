@@ -88,32 +88,12 @@ namespace Android.View.Autofill
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillValue.html#getDateValue()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillValue.html#getToggleValue()"/>
         /// </summary>
-        public long DateValue
+        /// <returns><see cref="bool"/></returns>
+        public bool GetToggleValue()
         {
-            get { return IExecuteWithSignature<long>("getDateValue", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillValue.html#getListValue()"/> 
-        /// </summary>
-        public int ListValue
-        {
-            get { return IExecuteWithSignature<int>("getListValue", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillValue.html#getTextValue()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence TextValue
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTextValue", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillValue.html#getToggleValue()"/> 
-        /// </summary>
-        public bool ToggleValue
-        {
-            get { return IExecuteWithSignature<bool>("getToggleValue", "()Z"); }
+            return IExecuteWithSignature<bool>("getToggleValue", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillValue.html#isDate()"/>
@@ -154,6 +134,30 @@ namespace Android.View.Autofill
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillValue.html#getListValue()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetListValue()
+        {
+            return IExecuteWithSignature<int>("getListValue", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillValue.html#getTextValue()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTextValue()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTextValue", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillValue.html#getDateValue()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDateValue()
+        {
+            return IExecuteWithSignature<long>("getDateValue", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillValue.html#writeToParcel(android.os.Parcel,int)"/>

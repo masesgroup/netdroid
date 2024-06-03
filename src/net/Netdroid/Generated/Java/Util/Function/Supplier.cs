@@ -50,15 +50,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("get", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEventHandler));
+            AddEventHandler("get", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Supplier.html#get()"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/Supplier.html#get()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGet"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<object> OnGet { get; set; } = null;
+        public global::System.Func<object> OnGet { get; set; } = null;
 
         void GetEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -68,7 +68,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Supplier.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Supplier.html#get()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public virtual object Get()
@@ -107,7 +107,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Supplier.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Supplier.html#get()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public override object Get()
@@ -127,7 +127,7 @@ namespace Java.Util.Function
 
     #region ISupplier<T>
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.Supplier implementing <see href="https://developer.android.com/reference/java.base/java/util/function/Supplier.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.Supplier implementing <see href="https://developer.android.com/reference/java/util/function/Supplier.html"/>
     /// </summary>
     public partial interface ISupplier<T>
     {
@@ -168,15 +168,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("get", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEventHandler));
+            AddEventHandler("get", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Supplier.html#get()"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/Supplier.html#get()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGet"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<T> OnGet { get; set; } = null;
+        public global::System.Func<T> OnGet { get; set; } = null;
 
         void GetEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -186,7 +186,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Supplier.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Supplier.html#get()"/>
         /// </summary>
         /// <returns><typeparamref name="T"/></returns>
         public virtual T Get()
@@ -225,7 +225,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Supplier.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Supplier.html#get()"/>
         /// </summary>
         /// <returns><typeparamref name="T"/></returns>
         public override T Get()

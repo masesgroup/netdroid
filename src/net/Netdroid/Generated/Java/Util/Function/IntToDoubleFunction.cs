@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region IIntToDoubleFunction
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.IntToDoubleFunction implementing <see href="https://developer.android.com/reference/java.base/java/util/function/IntToDoubleFunction.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.IntToDoubleFunction implementing <see href="https://developer.android.com/reference/java/util/function/IntToDoubleFunction.html"/>
     /// </summary>
     public partial interface IIntToDoubleFunction
     {
@@ -68,15 +68,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyAsDoubleEventHandler));
+            AddEventHandler("applyAsDouble", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyAsDoubleEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/IntToDoubleFunction.html#applyAsDouble(int)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/IntToDoubleFunction.html#applyAsDouble(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApplyAsDouble"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, double> OnApplyAsDouble { get; set; } = null;
+        public global::System.Func<int, double> OnApplyAsDouble { get; set; } = null;
 
         void ApplyAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -86,7 +86,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntToDoubleFunction.html#applyAsDouble(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntToDoubleFunction.html#applyAsDouble(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="double"/></returns>
@@ -126,7 +126,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntToDoubleFunction.html#applyAsDouble(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntToDoubleFunction.html#applyAsDouble(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="double"/></returns>

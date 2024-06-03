@@ -56,18 +56,12 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/SelectGesture.html#getGranularity()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/SelectGesture.html#getSelectionArea()"/>
         /// </summary>
-        public int Granularity
+        /// <returns><see cref="Android.Graphics.RectF"/></returns>
+        public Android.Graphics.RectF GetSelectionArea()
         {
-            get { return IExecuteWithSignature<int>("getGranularity", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/SelectGesture.html#getSelectionArea()"/> 
-        /// </summary>
-        public Android.Graphics.RectF SelectionArea
-        {
-            get { return IExecuteWithSignature<Android.Graphics.RectF>("getSelectionArea", "()Landroid/graphics/RectF;"); }
+            return IExecuteWithSignature<Android.Graphics.RectF>("getSelectionArea", "()Landroid/graphics/RectF;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/SelectGesture.html#describeContents()"/>
@@ -76,6 +70,14 @@ namespace Android.View.Inputmethod
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/SelectGesture.html#getGranularity()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGranularity()
+        {
+            return IExecuteWithSignature<int>("getGranularity", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/SelectGesture.html#writeToParcel(android.os.Parcel,int)"/>

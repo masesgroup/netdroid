@@ -65,11 +65,12 @@ namespace Android.Service.Controls.Actions
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/actions/ModeAction.html#getNewMode()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/actions/ModeAction.html#getNewMode()"/>
         /// </summary>
-        public int NewMode
+        /// <returns><see cref="int"/></returns>
+        public int GetNewMode()
         {
-            get { return IExecuteWithSignature<int>("getNewMode", "()I"); }
+            return IExecuteWithSignature<int>("getNewMode", "()I");
         }
 
         #endregion

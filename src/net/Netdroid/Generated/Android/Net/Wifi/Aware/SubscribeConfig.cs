@@ -64,18 +64,12 @@ namespace Android.Net.Wifi.Aware
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/SubscribeConfig.html#getInstantCommunicationBand()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/SubscribeConfig.html#getPairingConfig()"/>
         /// </summary>
-        public int InstantCommunicationBand
+        /// <returns><see cref="Android.Net.Wifi.Aware.AwarePairingConfig"/></returns>
+        public Android.Net.Wifi.Aware.AwarePairingConfig GetPairingConfig()
         {
-            get { return IExecuteWithSignature<int>("getInstantCommunicationBand", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/SubscribeConfig.html#getPairingConfig()"/> 
-        /// </summary>
-        public Android.Net.Wifi.Aware.AwarePairingConfig PairingConfig
-        {
-            get { return IExecuteWithSignature<Android.Net.Wifi.Aware.AwarePairingConfig>("getPairingConfig", "()Landroid/net/wifi/aware/AwarePairingConfig;"); }
+            return IExecuteWithSignature<Android.Net.Wifi.Aware.AwarePairingConfig>("getPairingConfig", "()Landroid/net/wifi/aware/AwarePairingConfig;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/SubscribeConfig.html#isInstantCommunicationModeEnabled()"/>
@@ -92,6 +86,14 @@ namespace Android.Net.Wifi.Aware
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/SubscribeConfig.html#getInstantCommunicationBand()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInstantCommunicationBand()
+        {
+            return IExecuteWithSignature<int>("getInstantCommunicationBand", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/SubscribeConfig.html#writeToParcel(android.os.Parcel,int)"/>

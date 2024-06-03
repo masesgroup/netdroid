@@ -38,19 +38,19 @@ namespace Java.Time.Temporal
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/WeekFields.html#WEEK_BASED_YEARS"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/WeekFields.html#WEEK_BASED_YEARS"/>
         /// </summary>
         public static Java.Time.Temporal.TemporalUnit WEEK_BASED_YEARS { get { if (!_WEEK_BASED_YEARSReady) { _WEEK_BASED_YEARSContent = SGetField<Java.Time.Temporal.TemporalUnit>(LocalBridgeClazz, "WEEK_BASED_YEARS"); _WEEK_BASED_YEARSReady = true; } return _WEEK_BASED_YEARSContent; } }
         private static Java.Time.Temporal.TemporalUnit _WEEK_BASED_YEARSContent = default;
         private static bool _WEEK_BASED_YEARSReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/WeekFields.html#ISO"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/WeekFields.html#ISO"/>
         /// </summary>
         public static Java.Time.Temporal.WeekFields ISO { get { if (!_ISOReady) { _ISOContent = SGetField<Java.Time.Temporal.WeekFields>(LocalBridgeClazz, "ISO"); _ISOReady = true; } return _ISOContent; } }
         private static Java.Time.Temporal.WeekFields _ISOContent = default;
         private static bool _ISOReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/WeekFields.html#SUNDAY_START"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/WeekFields.html#SUNDAY_START"/>
         /// </summary>
         public static Java.Time.Temporal.WeekFields SUNDAY_START { get { if (!_SUNDAY_STARTReady) { _SUNDAY_STARTContent = SGetField<Java.Time.Temporal.WeekFields>(LocalBridgeClazz, "SUNDAY_START"); _SUNDAY_STARTReady = true; } return _SUNDAY_STARTContent; } }
         private static Java.Time.Temporal.WeekFields _SUNDAY_STARTContent = default;
@@ -60,7 +60,7 @@ namespace Java.Time.Temporal
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/WeekFields.html#of(java.time.DayOfWeek,int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/WeekFields.html#of(java.time.DayOfWeek,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.DayOfWeek"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -70,7 +70,7 @@ namespace Java.Time.Temporal
             return SExecute<Java.Time.Temporal.WeekFields>(LocalBridgeClazz, "of", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/WeekFields.html#of(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/WeekFields.html#of(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Time.Temporal.WeekFields"/></returns>
@@ -83,21 +83,23 @@ namespace Java.Time.Temporal
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/WeekFields.html#getFirstDayOfWeek()"/> 
+        /// <see href="https://developer.android.com/reference/java/time/temporal/WeekFields.html#getMinimalDaysInFirstWeek()"/>
         /// </summary>
-        public Java.Time.DayOfWeek FirstDayOfWeek
+        /// <returns><see cref="int"/></returns>
+        public int GetMinimalDaysInFirstWeek()
         {
-            get { return IExecuteWithSignature<Java.Time.DayOfWeek>("getFirstDayOfWeek", "()Ljava/time/DayOfWeek;"); }
+            return IExecuteWithSignature<int>("getMinimalDaysInFirstWeek", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/WeekFields.html#getMinimalDaysInFirstWeek()"/> 
+        /// <see href="https://developer.android.com/reference/java/time/temporal/WeekFields.html#getFirstDayOfWeek()"/>
         /// </summary>
-        public int MinimalDaysInFirstWeek
+        /// <returns><see cref="Java.Time.DayOfWeek"/></returns>
+        public Java.Time.DayOfWeek GetFirstDayOfWeek()
         {
-            get { return IExecuteWithSignature<int>("getMinimalDaysInFirstWeek", "()I"); }
+            return IExecuteWithSignature<Java.Time.DayOfWeek>("getFirstDayOfWeek", "()Ljava/time/DayOfWeek;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/WeekFields.html#dayOfWeek()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/WeekFields.html#dayOfWeek()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
         public Java.Time.Temporal.TemporalField DayOfWeek()
@@ -105,7 +107,7 @@ namespace Java.Time.Temporal
             return IExecuteWithSignature<Java.Time.Temporal.TemporalField>("dayOfWeek", "()Ljava/time/temporal/TemporalField;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/WeekFields.html#weekBasedYear()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/WeekFields.html#weekBasedYear()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
         public Java.Time.Temporal.TemporalField WeekBasedYear()
@@ -113,7 +115,7 @@ namespace Java.Time.Temporal
             return IExecuteWithSignature<Java.Time.Temporal.TemporalField>("weekBasedYear", "()Ljava/time/temporal/TemporalField;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/WeekFields.html#weekOfMonth()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/WeekFields.html#weekOfMonth()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
         public Java.Time.Temporal.TemporalField WeekOfMonth()
@@ -121,7 +123,7 @@ namespace Java.Time.Temporal
             return IExecuteWithSignature<Java.Time.Temporal.TemporalField>("weekOfMonth", "()Ljava/time/temporal/TemporalField;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/WeekFields.html#weekOfWeekBasedYear()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/WeekFields.html#weekOfWeekBasedYear()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
         public Java.Time.Temporal.TemporalField WeekOfWeekBasedYear()
@@ -129,7 +131,7 @@ namespace Java.Time.Temporal
             return IExecuteWithSignature<Java.Time.Temporal.TemporalField>("weekOfWeekBasedYear", "()Ljava/time/temporal/TemporalField;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/WeekFields.html#weekOfYear()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/WeekFields.html#weekOfYear()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
         public Java.Time.Temporal.TemporalField WeekOfYear()

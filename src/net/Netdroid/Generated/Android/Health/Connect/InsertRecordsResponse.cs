@@ -46,11 +46,12 @@ namespace Android.Health.Connect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/InsertRecordsResponse.html#getRecords()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/InsertRecordsResponse.html#getRecords()"/>
         /// </summary>
-        public Java.Util.List<Android.Health.Connect.Datatypes.Record> Records
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Health.Connect.Datatypes.Record> GetRecords()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.Record>>("getRecords", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.Record>>("getRecords", "()Ljava/util/List;");
         }
 
         #endregion

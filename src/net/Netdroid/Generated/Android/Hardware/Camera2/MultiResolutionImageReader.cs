@@ -56,13 +56,6 @@ namespace Android.Hardware.Camera2
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/MultiResolutionImageReader.html#getSurface()"/> 
-        /// </summary>
-        public Android.View.Surface Surface
-        {
-            get { return IExecuteWithSignature<Android.View.Surface>("getSurface", "()Landroid/view/Surface;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/MultiResolutionImageReader.html#getStreamInfoForImageReader(android.media.ImageReader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.ImageReader"/></param>
@@ -70,6 +63,14 @@ namespace Android.Hardware.Camera2
         public Android.Hardware.Camera2.Params.MultiResolutionStreamInfo GetStreamInfoForImageReader(Android.Media.ImageReader arg0)
         {
             return IExecuteWithSignature<Android.Hardware.Camera2.Params.MultiResolutionStreamInfo>("getStreamInfoForImageReader", "(Landroid/media/ImageReader;)Landroid/hardware/camera2/params/MultiResolutionStreamInfo;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/MultiResolutionImageReader.html#getSurface()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Surface"/></returns>
+        public Android.View.Surface GetSurface()
+        {
+            return IExecuteWithSignature<Android.View.Surface>("getSurface", "()Landroid/view/Surface;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/MultiResolutionImageReader.html#close()"/>

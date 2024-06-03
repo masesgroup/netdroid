@@ -46,34 +46,6 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Edits.html#getCoarseChangesIterator()"/> 
-        /// </summary>
-        public Android.Icu.Text.Edits.Iterator CoarseChangesIterator
-        {
-            get { return IExecuteWithSignature<Android.Icu.Text.Edits.Iterator>("getCoarseChangesIterator", "()Landroid/icu/text/Edits$Iterator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Edits.html#getCoarseIterator()"/> 
-        /// </summary>
-        public Android.Icu.Text.Edits.Iterator CoarseIterator
-        {
-            get { return IExecuteWithSignature<Android.Icu.Text.Edits.Iterator>("getCoarseIterator", "()Landroid/icu/text/Edits$Iterator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Edits.html#getFineChangesIterator()"/> 
-        /// </summary>
-        public Android.Icu.Text.Edits.Iterator FineChangesIterator
-        {
-            get { return IExecuteWithSignature<Android.Icu.Text.Edits.Iterator>("getFineChangesIterator", "()Landroid/icu/text/Edits$Iterator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Edits.html#getFineIterator()"/> 
-        /// </summary>
-        public Android.Icu.Text.Edits.Iterator FineIterator
-        {
-            get { return IExecuteWithSignature<Android.Icu.Text.Edits.Iterator>("getFineIterator", "()Landroid/icu/text/Edits$Iterator;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Edits.html#mergeAndAppend(android.icu.text.Edits,android.icu.text.Edits)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Text.Edits"/></param>
@@ -82,6 +54,38 @@ namespace Android.Icu.Text
         public Android.Icu.Text.Edits MergeAndAppend(Android.Icu.Text.Edits arg0, Android.Icu.Text.Edits arg1)
         {
             return IExecute<Android.Icu.Text.Edits>("mergeAndAppend", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Edits.html#getCoarseChangesIterator()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.Edits.Iterator"/></returns>
+        public Android.Icu.Text.Edits.Iterator GetCoarseChangesIterator()
+        {
+            return IExecuteWithSignature<Android.Icu.Text.Edits.Iterator>("getCoarseChangesIterator", "()Landroid/icu/text/Edits$Iterator;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Edits.html#getCoarseIterator()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.Edits.Iterator"/></returns>
+        public Android.Icu.Text.Edits.Iterator GetCoarseIterator()
+        {
+            return IExecuteWithSignature<Android.Icu.Text.Edits.Iterator>("getCoarseIterator", "()Landroid/icu/text/Edits$Iterator;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Edits.html#getFineChangesIterator()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.Edits.Iterator"/></returns>
+        public Android.Icu.Text.Edits.Iterator GetFineChangesIterator()
+        {
+            return IExecuteWithSignature<Android.Icu.Text.Edits.Iterator>("getFineChangesIterator", "()Landroid/icu/text/Edits$Iterator;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Edits.html#getFineIterator()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.Edits.Iterator"/></returns>
+        public Android.Icu.Text.Edits.Iterator GetFineIterator()
+        {
+            return IExecuteWithSignature<Android.Icu.Text.Edits.Iterator>("getFineIterator", "()Landroid/icu/text/Edits$Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Edits.html#hasChanges()"/>

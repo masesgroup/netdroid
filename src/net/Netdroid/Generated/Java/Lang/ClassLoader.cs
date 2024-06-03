@@ -42,21 +42,7 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html#getPlatformClassLoader()"/> 
-        /// </summary>
-        public static Java.Lang.ClassLoader PlatformClassLoader
-        {
-            get { return SExecuteWithSignature<Java.Lang.ClassLoader>(LocalBridgeClazz, "getPlatformClassLoader", "()Ljava/lang/ClassLoader;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html#getSystemClassLoader()"/> 
-        /// </summary>
-        public static Java.Lang.ClassLoader SystemClassLoader
-        {
-            get { return SExecuteWithSignature<Java.Lang.ClassLoader>(LocalBridgeClazz, "getSystemClassLoader", "()Ljava/lang/ClassLoader;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html#getSystemResourceAsStream(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassLoader.html#getSystemResourceAsStream(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
@@ -65,7 +51,23 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Io.InputStream>(LocalBridgeClazz, "getSystemResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html#getSystemResource(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassLoader.html#getPlatformClassLoader()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.ClassLoader"/></returns>
+        public static Java.Lang.ClassLoader GetPlatformClassLoader()
+        {
+            return SExecuteWithSignature<Java.Lang.ClassLoader>(LocalBridgeClazz, "getPlatformClassLoader", "()Ljava/lang/ClassLoader;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassLoader.html#getSystemClassLoader()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.ClassLoader"/></returns>
+        public static Java.Lang.ClassLoader GetSystemClassLoader()
+        {
+            return SExecuteWithSignature<Java.Lang.ClassLoader>(LocalBridgeClazz, "getSystemClassLoader", "()Ljava/lang/ClassLoader;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassLoader.html#getSystemResource(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Net.URL"/></returns>
@@ -74,7 +76,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Net.URL>(LocalBridgeClazz, "getSystemResource", "(Ljava/lang/String;)Ljava/net/URL;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html#getSystemResources(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassLoader.html#getSystemResources(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
@@ -88,28 +90,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html#getDefinedPackages()"/> 
-        /// </summary>
-        public Java.Lang.Package[] DefinedPackages
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Package>("getDefinedPackages", "()[Ljava/lang/Package;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html#getParent()"/> 
-        /// </summary>
-        public Java.Lang.ClassLoader Parent
-        {
-            get { return IExecuteWithSignature<Java.Lang.ClassLoader>("getParent", "()Ljava/lang/ClassLoader;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html#isRegisteredAsParallelCapable()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassLoader.html#isRegisteredAsParallelCapable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsRegisteredAsParallelCapable()
@@ -117,7 +98,15 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isRegisteredAsParallelCapable", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html#getDefinedPackage(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassLoader.html#getParent()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.ClassLoader"/></returns>
+        public Java.Lang.ClassLoader GetParent()
+        {
+            return IExecuteWithSignature<Java.Lang.ClassLoader>("getParent", "()Ljava/lang/ClassLoader;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassLoader.html#getDefinedPackage(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Package"/></returns>
@@ -126,7 +115,15 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.Package>("getDefinedPackage", "(Ljava/lang/String;)Ljava/lang/Package;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html#getResourceAsStream(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassLoader.html#getDefinedPackages()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Package"/></returns>
+        public Java.Lang.Package[] GetDefinedPackages()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Package>("getDefinedPackages", "()[Ljava/lang/Package;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassLoader.html#getResourceAsStream(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
@@ -135,7 +132,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Io.InputStream>("getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html#loadClass(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassLoader.html#loadClass(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
@@ -145,7 +142,15 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.Class>("loadClass", "(Ljava/lang/String;)Ljava/lang/Class;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html#getResource(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassLoader.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassLoader.html#getResource(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Net.URL"/></returns>
@@ -154,7 +159,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Net.URL>("getResource", "(Ljava/lang/String;)Ljava/net/URL;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html#getResources(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassLoader.html#getResources(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
@@ -164,7 +169,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Util.Enumeration<Java.Net.URL>>("getResources", "(Ljava/lang/String;)Ljava/util/Enumeration;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html#resources(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassLoader.html#resources(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
@@ -173,14 +178,14 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Net.URL>>("resources", "(Ljava/lang/String;)Ljava/util/stream/Stream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html#clearAssertionStatus()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassLoader.html#clearAssertionStatus()"/>
         /// </summary>
         public void ClearAssertionStatus()
         {
             IExecuteWithSignature("clearAssertionStatus", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html#setClassAssertionStatus(java.lang.String,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassLoader.html#setClassAssertionStatus(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -189,7 +194,7 @@ namespace Java.Lang
             IExecute("setClassAssertionStatus", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html#setDefaultAssertionStatus(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassLoader.html#setDefaultAssertionStatus(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetDefaultAssertionStatus(bool arg0)
@@ -197,7 +202,7 @@ namespace Java.Lang
             IExecuteWithSignature("setDefaultAssertionStatus", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html#setPackageAssertionStatus(java.lang.String,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassLoader.html#setPackageAssertionStatus(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>

@@ -57,32 +57,36 @@ namespace Android.Adservices.Customaudience
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/AddCustomAudienceOverrideRequest.html#getBiddingLogicJs()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/AddCustomAudienceOverrideRequest.html#getTrustedBiddingSignals()"/>
         /// </summary>
-        public Java.Lang.String BiddingLogicJs
+        /// <returns><see cref="Android.Adservices.Common.AdSelectionSignals"/></returns>
+        public Android.Adservices.Common.AdSelectionSignals GetTrustedBiddingSignals()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getBiddingLogicJs", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Adservices.Common.AdSelectionSignals>("getTrustedBiddingSignals", "()Landroid/adservices/common/AdSelectionSignals;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/AddCustomAudienceOverrideRequest.html#getBuyer()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/AddCustomAudienceOverrideRequest.html#getBuyer()"/>
         /// </summary>
-        public Android.Adservices.Common.AdTechIdentifier Buyer
+        /// <returns><see cref="Android.Adservices.Common.AdTechIdentifier"/></returns>
+        public Android.Adservices.Common.AdTechIdentifier GetBuyer()
         {
-            get { return IExecuteWithSignature<Android.Adservices.Common.AdTechIdentifier>("getBuyer", "()Landroid/adservices/common/AdTechIdentifier;"); }
+            return IExecuteWithSignature<Android.Adservices.Common.AdTechIdentifier>("getBuyer", "()Landroid/adservices/common/AdTechIdentifier;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/AddCustomAudienceOverrideRequest.html#getName()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/AddCustomAudienceOverrideRequest.html#getBiddingLogicJs()"/>
         /// </summary>
-        public Java.Lang.String Name
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetBiddingLogicJs()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getBiddingLogicJs", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/AddCustomAudienceOverrideRequest.html#getTrustedBiddingSignals()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/AddCustomAudienceOverrideRequest.html#getName()"/>
         /// </summary>
-        public Android.Adservices.Common.AdSelectionSignals TrustedBiddingSignals
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
         {
-            get { return IExecuteWithSignature<Android.Adservices.Common.AdSelectionSignals>("getTrustedBiddingSignals", "()Landroid/adservices/common/AdSelectionSignals;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
 
         #endregion

@@ -130,109 +130,12 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getBottomEdgeEffectColor()"/> <see href="https://developer.android.com/reference/android/widget/AbsListView.html#setBottomEdgeEffectColor(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getSelector()"/>
         /// </summary>
-        public int BottomEdgeEffectColor
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetSelector()
         {
-            get { return IExecuteWithSignature<int>("getBottomEdgeEffectColor", "()I"); } set { IExecuteWithSignature("setBottomEdgeEffectColor", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getCacheColorHint()"/> <see href="https://developer.android.com/reference/android/widget/AbsListView.html#setCacheColorHint(int)"/>
-        /// </summary>
-        public int CacheColorHint
-        {
-            get { return IExecuteWithSignature<int>("getCacheColorHint", "()I"); } set { IExecuteWithSignature("setCacheColorHint", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getCheckedItemCount()"/> 
-        /// </summary>
-        public int CheckedItemCount
-        {
-            get { return IExecuteWithSignature<int>("getCheckedItemCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getCheckedItemIds()"/> 
-        /// </summary>
-        public long[] CheckedItemIds
-        {
-            get { return IExecuteWithSignatureArray<long>("getCheckedItemIds", "()[J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getCheckedItemPosition()"/> 
-        /// </summary>
-        public int CheckedItemPosition
-        {
-            get { return IExecuteWithSignature<int>("getCheckedItemPosition", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getCheckedItemPositions()"/> 
-        /// </summary>
-        public Android.Util.SparseBooleanArray CheckedItemPositions
-        {
-            get { return IExecuteWithSignature<Android.Util.SparseBooleanArray>("getCheckedItemPositions", "()Landroid/util/SparseBooleanArray;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getChoiceMode()"/> <see href="https://developer.android.com/reference/android/widget/AbsListView.html#setChoiceMode(int)"/>
-        /// </summary>
-        public int ChoiceMode
-        {
-            get { return IExecuteWithSignature<int>("getChoiceMode", "()I"); } set { IExecuteWithSignature("setChoiceMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getListPaddingBottom()"/> 
-        /// </summary>
-        public int ListPaddingBottom
-        {
-            get { return IExecuteWithSignature<int>("getListPaddingBottom", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getListPaddingLeft()"/> 
-        /// </summary>
-        public int ListPaddingLeft
-        {
-            get { return IExecuteWithSignature<int>("getListPaddingLeft", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getListPaddingRight()"/> 
-        /// </summary>
-        public int ListPaddingRight
-        {
-            get { return IExecuteWithSignature<int>("getListPaddingRight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getListPaddingTop()"/> 
-        /// </summary>
-        public int ListPaddingTop
-        {
-            get { return IExecuteWithSignature<int>("getListPaddingTop", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getSelector()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable Selector
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getSelector", "()Landroid/graphics/drawable/Drawable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getTextFilter()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence TextFilter
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTextFilter", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getTopEdgeEffectColor()"/> <see href="https://developer.android.com/reference/android/widget/AbsListView.html#setTopEdgeEffectColor(int)"/>
-        /// </summary>
-        public int TopEdgeEffectColor
-        {
-            get { return IExecuteWithSignature<int>("getTopEdgeEffectColor", "()I"); } set { IExecuteWithSignature("setTopEdgeEffectColor", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getTranscriptMode()"/> <see href="https://developer.android.com/reference/android/widget/AbsListView.html#setTranscriptMode(int)"/>
-        /// </summary>
-        public int TranscriptMode
-        {
-            get { return IExecuteWithSignature<int>("getTranscriptMode", "()I"); } set { IExecuteWithSignature("setTranscriptMode", "(I)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getSelector", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#onSaveInstanceState()"/>
@@ -241,6 +144,14 @@ namespace Android.Widget
         public Android.Os.Parcelable OnSaveInstanceState()
         {
             return IExecuteWithSignature<Android.Os.Parcelable>("onSaveInstanceState", "()Landroid/os/Parcelable;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getCheckedItemPositions()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Util.SparseBooleanArray"/></returns>
+        public Android.Util.SparseBooleanArray GetCheckedItemPositions()
+        {
+            return IExecuteWithSignature<Android.Util.SparseBooleanArray>("getCheckedItemPositions", "()Landroid/util/SparseBooleanArray;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#canScrollList(int)"/>
@@ -350,6 +261,94 @@ namespace Android.Widget
             return IExecuteWithSignature<bool>("verifyDrawable", "(Landroid/graphics/drawable/Drawable;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getBottomEdgeEffectColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBottomEdgeEffectColor()
+        {
+            return IExecuteWithSignature<int>("getBottomEdgeEffectColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getCacheColorHint()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCacheColorHint()
+        {
+            return IExecuteWithSignature<int>("getCacheColorHint", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getCheckedItemCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCheckedItemCount()
+        {
+            return IExecuteWithSignature<int>("getCheckedItemCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getCheckedItemPosition()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCheckedItemPosition()
+        {
+            return IExecuteWithSignature<int>("getCheckedItemPosition", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getChoiceMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChoiceMode()
+        {
+            return IExecuteWithSignature<int>("getChoiceMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getListPaddingBottom()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetListPaddingBottom()
+        {
+            return IExecuteWithSignature<int>("getListPaddingBottom", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getListPaddingLeft()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetListPaddingLeft()
+        {
+            return IExecuteWithSignature<int>("getListPaddingLeft", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getListPaddingRight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetListPaddingRight()
+        {
+            return IExecuteWithSignature<int>("getListPaddingRight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getListPaddingTop()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetListPaddingTop()
+        {
+            return IExecuteWithSignature<int>("getListPaddingTop", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getTopEdgeEffectColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTopEdgeEffectColor()
+        {
+            return IExecuteWithSignature<int>("getTopEdgeEffectColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getTranscriptMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTranscriptMode()
+        {
+            return IExecuteWithSignature<int>("getTranscriptMode", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#pointToPosition(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -360,6 +359,14 @@ namespace Android.Widget
             return IExecute<int>("pointToPosition", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getTextFilter()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTextFilter()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTextFilter", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#pointToRowId(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -368,6 +375,14 @@ namespace Android.Widget
         public long PointToRowId(int arg0, int arg1)
         {
             return IExecute<long>("pointToRowId", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getCheckedItemIds()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long[] GetCheckedItemIds()
+        {
+            return IExecuteWithSignatureArray<long>("getCheckedItemIds", "()[J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#afterTextChanged(android.text.Editable)"/>
@@ -506,6 +521,30 @@ namespace Android.Widget
         public void SetAdapter(Android.Widget.ListAdapter arg0)
         {
             IExecuteWithSignature("setAdapter", "(Landroid/widget/ListAdapter;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#setBottomEdgeEffectColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetBottomEdgeEffectColor(int arg0)
+        {
+            IExecuteWithSignature("setBottomEdgeEffectColor", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#setCacheColorHint(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetCacheColorHint(int arg0)
+        {
+            IExecuteWithSignature("setCacheColorHint", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#setChoiceMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetChoiceMode(int arg0)
+        {
+            IExecuteWithSignature("setChoiceMode", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#setDrawSelectorOnTop(boolean)"/>
@@ -679,6 +718,22 @@ namespace Android.Widget
             IExecuteWithSignature("setTextFilterEnabled", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#setTopEdgeEffectColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetTopEdgeEffectColor(int arg0)
+        {
+            IExecuteWithSignature("setTopEdgeEffectColor", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#setTranscriptMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetTranscriptMode(int arg0)
+        {
+            IExecuteWithSignature("setTranscriptMode", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#setVelocityScale(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -827,11 +882,11 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onActionItemClicked", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ActionMode>>>(OnActionItemClickedEventHandler));
-                AddEventHandler("onCreateActionMode", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ActionMode>>>(OnCreateActionModeEventHandler));
-                AddEventHandler("onPrepareActionMode", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ActionMode>>>(OnPrepareActionModeEventHandler));
-                AddEventHandler("onDestroyActionMode", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ActionMode>>>(OnDestroyActionModeEventHandler));
-                AddEventHandler("onItemCheckedStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ActionMode>>>(OnItemCheckedStateChangedEventHandler));
+                AddEventHandler("onActionItemClicked", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ActionMode>>>(OnActionItemClickedEventHandler));
+                AddEventHandler("onCreateActionMode", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ActionMode>>>(OnCreateActionModeEventHandler));
+                AddEventHandler("onPrepareActionMode", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ActionMode>>>(OnPrepareActionModeEventHandler));
+                AddEventHandler("onDestroyActionMode", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ActionMode>>>(OnDestroyActionModeEventHandler));
+                AddEventHandler("onItemCheckedStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ActionMode>>>(OnItemCheckedStateChangedEventHandler));
 
             }
 
@@ -839,7 +894,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/view/ActionMode.Callback.html#onActionItemClicked(android.view.ActionMode,android.view.MenuItem)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnActionItemClicked"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.ActionMode, Android.View.MenuItem, bool> OnOnActionItemClicked { get; set; } = null;
+            public global::System.Func<Android.View.ActionMode, Android.View.MenuItem, bool> OnOnActionItemClicked { get; set; } = null;
 
             void OnActionItemClickedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.ActionMode>> data)
             {
@@ -863,7 +918,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/view/ActionMode.Callback.html#onCreateActionMode(android.view.ActionMode,android.view.Menu)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCreateActionMode"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.ActionMode, Android.View.Menu, bool> OnOnCreateActionMode { get; set; } = null;
+            public global::System.Func<Android.View.ActionMode, Android.View.Menu, bool> OnOnCreateActionMode { get; set; } = null;
 
             void OnCreateActionModeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.ActionMode>> data)
             {
@@ -887,7 +942,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/view/ActionMode.Callback.html#onPrepareActionMode(android.view.ActionMode,android.view.Menu)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPrepareActionMode"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.ActionMode, Android.View.Menu, bool> OnOnPrepareActionMode { get; set; } = null;
+            public global::System.Func<Android.View.ActionMode, Android.View.Menu, bool> OnOnPrepareActionMode { get; set; } = null;
 
             void OnPrepareActionModeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.ActionMode>> data)
             {
@@ -911,7 +966,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/view/ActionMode.Callback.html#onDestroyActionMode(android.view.ActionMode)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDestroyActionMode"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.ActionMode> OnOnDestroyActionMode { get; set; } = null;
+            public global::System.Action<Android.View.ActionMode> OnOnDestroyActionMode { get; set; } = null;
 
             void OnDestroyActionModeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.ActionMode>> data)
             {
@@ -932,7 +987,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/AbsListView.MultiChoiceModeListener.html#onItemCheckedStateChanged(android.view.ActionMode,int,long,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnItemCheckedStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.ActionMode, int, long, bool> OnOnItemCheckedStateChanged { get; set; } = null;
+            public global::System.Action<Android.View.ActionMode, int, long, bool> OnOnItemCheckedStateChanged { get; set; } = null;
 
             void OnItemCheckedStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.ActionMode>> data)
             {
@@ -1067,8 +1122,8 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onScroll", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.AbsListView>>>(OnScrollEventHandler));
-                AddEventHandler("onScrollStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.AbsListView>>>(OnScrollStateChangedEventHandler));
+                AddEventHandler("onScroll", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.AbsListView>>>(OnScrollEventHandler));
+                AddEventHandler("onScrollStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.AbsListView>>>(OnScrollStateChangedEventHandler));
 
             }
 
@@ -1076,7 +1131,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/AbsListView.OnScrollListener.html#onScroll(android.widget.AbsListView,int,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScroll"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Widget.AbsListView, int, int, int> OnOnScroll { get; set; } = null;
+            public global::System.Action<Android.Widget.AbsListView, int, int, int> OnOnScroll { get; set; } = null;
 
             void OnScrollEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.AbsListView>> data)
             {
@@ -1100,7 +1155,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/AbsListView.OnScrollListener.html#onScrollStateChanged(android.widget.AbsListView,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScrollStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Widget.AbsListView, int> OnOnScrollStateChanged { get; set; } = null;
+            public global::System.Action<Android.Widget.AbsListView, int> OnOnScrollStateChanged { get; set; } = null;
 
             void OnScrollStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.AbsListView>> data)
             {
@@ -1204,7 +1259,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onMovedToScrapHeap", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnMovedToScrapHeapEventHandler));
+                AddEventHandler("onMovedToScrapHeap", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnMovedToScrapHeapEventHandler));
 
             }
 
@@ -1212,7 +1267,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/AbsListView.RecyclerListener.html#onMovedToScrapHeap(android.view.View)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnMovedToScrapHeap"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.View> OnOnMovedToScrapHeap { get; set; } = null;
+            public global::System.Action<Android.View.View> OnOnMovedToScrapHeap { get; set; } = null;
 
             void OnMovedToScrapHeapEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
             {

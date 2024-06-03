@@ -63,11 +63,12 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ViewSwitcher.html#getNextView()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/ViewSwitcher.html#getNextView()"/>
         /// </summary>
-        public Android.View.View NextView
+        /// <returns><see cref="Android.View.View"/></returns>
+        public Android.View.View GetNextView()
         {
-            get { return IExecuteWithSignature<Android.View.View>("getNextView", "()Landroid/view/View;"); }
+            return IExecuteWithSignature<Android.View.View>("getNextView", "()Landroid/view/View;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ViewSwitcher.html#reset()"/>

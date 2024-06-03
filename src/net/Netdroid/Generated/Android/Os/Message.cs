@@ -158,32 +158,12 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Message.html#getCallback()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/Message.html#getData()"/>
         /// </summary>
-        public Java.Lang.Runnable Callback
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetData()
         {
-            get { return IExecuteWithSignature<Java.Lang.Runnable>("getCallback", "()Ljava/lang/Runnable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Message.html#getData()"/> <see href="https://developer.android.com/reference/android/os/Message.html#setData(android.os.Bundle)"/>
-        /// </summary>
-        public Android.Os.Bundle Data
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getData", "()Landroid/os/Bundle;"); } set { IExecuteWithSignature("setData", "(Landroid/os/Bundle;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Message.html#getTarget()"/> <see href="https://developer.android.com/reference/android/os/Message.html#setTarget(android.os.Handler)"/>
-        /// </summary>
-        public Android.Os.Handler Target
-        {
-            get { return IExecuteWithSignature<Android.Os.Handler>("getTarget", "()Landroid/os/Handler;"); } set { IExecuteWithSignature("setTarget", "(Landroid/os/Handler;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Message.html#getWhen()"/> 
-        /// </summary>
-        public long When
-        {
-            get { return IExecuteWithSignature<long>("getWhen", "()J"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getData", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Message.html#peekData()"/>
@@ -192,6 +172,14 @@ namespace Android.Os
         public Android.Os.Bundle PeekData()
         {
             return IExecuteWithSignature<Android.Os.Bundle>("peekData", "()Landroid/os/Bundle;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Message.html#getTarget()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.Handler"/></returns>
+        public Android.Os.Handler GetTarget()
+        {
+            return IExecuteWithSignature<Android.Os.Handler>("getTarget", "()Landroid/os/Handler;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Message.html#isAsynchronous()"/>
@@ -208,6 +196,22 @@ namespace Android.Os
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Message.html#getCallback()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Runnable"/></returns>
+        public Java.Lang.Runnable GetCallback()
+        {
+            return IExecuteWithSignature<Java.Lang.Runnable>("getCallback", "()Ljava/lang/Runnable;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Message.html#getWhen()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetWhen()
+        {
+            return IExecuteWithSignature<long>("getWhen", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Message.html#copyFrom(android.os.Message)"/>
@@ -238,6 +242,22 @@ namespace Android.Os
         public void SetAsynchronous(bool arg0)
         {
             IExecuteWithSignature("setAsynchronous", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Message.html#setData(android.os.Bundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
+        public void SetData(Android.Os.Bundle arg0)
+        {
+            IExecuteWithSignature("setData", "(Landroid/os/Bundle;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Message.html#setTarget(android.os.Handler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Handler"/></param>
+        public void SetTarget(Android.Os.Handler arg0)
+        {
+            IExecuteWithSignature("setTarget", "(Landroid/os/Handler;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Message.html#writeToParcel(android.os.Parcel,int)"/>

@@ -69,7 +69,7 @@ namespace Org.Apache.Http.Conn.Ssl
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Net.Ssl.SSLSession"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool Verify(Java.Lang.String arg0, Javax.Net.Ssl.SSLSession arg1)
         {
             return IExecute<bool>("verify", arg0, arg1);
@@ -81,7 +81,7 @@ namespace Org.Apache.Http.Conn.Ssl
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Javax.Net.Ssl.SSLException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Verify(Java.Lang.String arg0, Java.Lang.String[] arg1, Java.Lang.String[] arg2)
         {
             IExecute("verify", arg0, arg1, arg2);
@@ -92,7 +92,7 @@ namespace Org.Apache.Http.Conn.Ssl
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.X509Certificate"/></param>
         /// <exception cref="Javax.Net.Ssl.SSLException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Verify(Java.Lang.String arg0, Java.Security.Cert.X509Certificate arg1)
         {
             IExecute("verify", arg0, arg1);
@@ -103,7 +103,7 @@ namespace Org.Apache.Http.Conn.Ssl
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Net.Ssl.SSLSocket"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Verify(Java.Lang.String arg0, Javax.Net.Ssl.SSLSocket arg1)
         {
             IExecute("verify", arg0, arg1);

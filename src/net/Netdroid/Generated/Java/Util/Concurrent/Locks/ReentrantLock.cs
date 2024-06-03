@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent.Locks
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantLock.html#%3Cinit%3E(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantLock.html#%3Cinit%3E(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public ReentrantLock(bool arg0)
@@ -62,21 +62,7 @@ namespace Java.Util.Concurrent.Locks
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantLock.html#getHoldCount()"/> 
-        /// </summary>
-        public int HoldCount
-        {
-            get { return IExecuteWithSignature<int>("getHoldCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantLock.html#getQueueLength()"/> 
-        /// </summary>
-        public int QueueLength
-        {
-            get { return IExecuteWithSignature<int>("getQueueLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantLock.html#hasWaiters(java.util.concurrent.locks.Condition)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantLock.html#hasWaiters(java.util.concurrent.locks.Condition)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Locks.Condition"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -85,7 +71,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("hasWaiters", "(Ljava/util/concurrent/locks/Condition;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantLock.html#isHeldByCurrentThread()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantLock.html#isHeldByCurrentThread()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsHeldByCurrentThread()
@@ -93,7 +79,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("isHeldByCurrentThread", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantLock.html#isLocked()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantLock.html#isLocked()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsLocked()
@@ -101,7 +87,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("isLocked", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantLock.html#tryLock()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantLock.html#tryLock()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool TryLock()
@@ -109,7 +95,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("tryLock", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantLock.html#tryLock(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantLock.html#tryLock(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -120,7 +106,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecute<bool>("tryLock", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantLock.html#hasQueuedThread(java.lang.Thread)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantLock.html#hasQueuedThread(java.lang.Thread)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -129,7 +115,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("hasQueuedThread", "(Ljava/lang/Thread;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantLock.html#hasQueuedThreads()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantLock.html#hasQueuedThreads()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasQueuedThreads()
@@ -137,7 +123,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("hasQueuedThreads", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantLock.html#isFair()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantLock.html#isFair()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsFair()
@@ -145,7 +131,23 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("isFair", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantLock.html#getWaitQueueLength(java.util.concurrent.locks.Condition)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantLock.html#getQueueLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetQueueLength()
+        {
+            return IExecuteWithSignature<int>("getQueueLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantLock.html#getHoldCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHoldCount()
+        {
+            return IExecuteWithSignature<int>("getHoldCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantLock.html#getWaitQueueLength(java.util.concurrent.locks.Condition)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Locks.Condition"/></param>
         /// <returns><see cref="int"/></returns>
@@ -154,7 +156,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<int>("getWaitQueueLength", "(Ljava/util/concurrent/locks/Condition;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantLock.html#newCondition()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantLock.html#newCondition()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.Locks.Condition"/></returns>
         public Java.Util.Concurrent.Locks.Condition NewCondition()
@@ -162,14 +164,14 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<Java.Util.Concurrent.Locks.Condition>("newCondition", "()Ljava/util/concurrent/locks/Condition;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantLock.html#lock()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantLock.html#lock()"/>
         /// </summary>
         public void Lock()
         {
             IExecuteWithSignature("lock", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantLock.html#lockInterruptibly()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantLock.html#lockInterruptibly()"/>
         /// </summary>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void LockInterruptibly()
@@ -177,7 +179,7 @@ namespace Java.Util.Concurrent.Locks
             IExecuteWithSignature("lockInterruptibly", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantLock.html#unlock()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantLock.html#unlock()"/>
         /// </summary>
         public void Unlock()
         {

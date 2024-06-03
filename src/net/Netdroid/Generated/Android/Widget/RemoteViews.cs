@@ -156,27 +156,6 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#getLayoutId()"/> 
-        /// </summary>
-        public int LayoutId
-        {
-            get { return IExecuteWithSignature<int>("getLayoutId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#getPackage()"/> 
-        /// </summary>
-        public Java.Lang.String Package
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#getViewId()"/> 
-        /// </summary>
-        public int ViewId
-        {
-            get { return IExecuteWithSignature<int>("getViewId", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#apply(android.content.Context,android.view.ViewGroup)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -190,7 +169,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#clone()"/>
         /// </summary>
         /// <returns><see cref="Android.Widget.RemoteViews"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Widget.RemoteViews Clone()
         {
             return IExecuteWithSignature<Android.Widget.RemoteViews>("clone", "()Landroid/widget/RemoteViews;");
@@ -200,7 +179,7 @@ namespace Android.Widget
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnLoadClass(Java.Lang.Class arg0)
         {
             return IExecuteWithSignature<bool>("onLoadClass", "(Ljava/lang/Class;)Z", arg0);
@@ -212,6 +191,30 @@ namespace Android.Widget
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#getLayoutId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLayoutId()
+        {
+            return IExecuteWithSignature<int>("getLayoutId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#getViewId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetViewId()
+        {
+            return IExecuteWithSignature<int>("getViewId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#getPackage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackage", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#addStableView(int,android.widget.RemoteViews,int)"/>
@@ -769,7 +772,7 @@ namespace Android.Widget
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.Content.Intent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetRemoteAdapter(int arg0, int arg1, Android.Content.Intent arg2)
         {
             IExecute("setRemoteAdapter", arg0, arg1, arg2);
@@ -1005,7 +1008,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#showNext(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ShowNext(int arg0)
         {
             IExecuteWithSignature("showNext", "(I)V", arg0);
@@ -1014,7 +1017,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#showPrevious(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ShowPrevious(int arg0)
         {
             IExecuteWithSignature("showPrevious", "(I)V", arg0);
@@ -1090,20 +1093,6 @@ namespace Android.Widget
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.RemoteCollectionItems.html#getItemCount()"/> 
-            /// </summary>
-            public int ItemCount
-            {
-                get { return IExecuteWithSignature<int>("getItemCount", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.RemoteCollectionItems.html#getViewTypeCount()"/> 
-            /// </summary>
-            public int ViewTypeCount
-            {
-                get { return IExecuteWithSignature<int>("getViewTypeCount", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.RemoteCollectionItems.html#getItemView(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -1127,6 +1116,22 @@ namespace Android.Widget
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.RemoteCollectionItems.html#getItemCount()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetItemCount()
+            {
+                return IExecuteWithSignature<int>("getItemCount", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.RemoteCollectionItems.html#getViewTypeCount()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetViewTypeCount()
+            {
+                return IExecuteWithSignature<int>("getViewTypeCount", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.RemoteCollectionItems.html#getItemId(int)"/>
@@ -1343,11 +1348,12 @@ namespace Android.Widget
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.RemoteViewOutlineProvider.html#getRadius()"/> 
+            /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.RemoteViewOutlineProvider.html#getRadius()"/>
             /// </summary>
-            public float Radius
+            /// <returns><see cref="float"/></returns>
+            public float GetRadius()
             {
-                get { return IExecuteWithSignature<float>("getRadius", "()F"); }
+                return IExecuteWithSignature<float>("getRadius", "()F");
             }
 
             #endregion

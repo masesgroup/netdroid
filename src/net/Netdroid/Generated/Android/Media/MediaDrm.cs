@@ -49,7 +49,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#EVENT_KEY_EXPIRED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int EVENT_KEY_EXPIRED { get { if (!_EVENT_KEY_EXPIREDReady) { _EVENT_KEY_EXPIREDContent = SGetField<int>(LocalBridgeClazz, "EVENT_KEY_EXPIRED"); _EVENT_KEY_EXPIREDReady = true; } return _EVENT_KEY_EXPIREDContent; } }
         private static int _EVENT_KEY_EXPIREDContent = default;
         private static bool _EVENT_KEY_EXPIREDReady = false; // this is used because in case of generics 
@@ -62,7 +62,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#EVENT_PROVISION_REQUIRED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int EVENT_PROVISION_REQUIRED { get { if (!_EVENT_PROVISION_REQUIREDReady) { _EVENT_PROVISION_REQUIREDContent = SGetField<int>(LocalBridgeClazz, "EVENT_PROVISION_REQUIRED"); _EVENT_PROVISION_REQUIREDReady = true; } return _EVENT_PROVISION_REQUIREDContent; } }
         private static int _EVENT_PROVISION_REQUIREDContent = default;
         private static bool _EVENT_PROVISION_REQUIREDReady = false; // this is used because in case of generics 
@@ -233,20 +233,6 @@ namespace Android.Media
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getMaxSecurityLevel()"/> 
-        /// </summary>
-        public static int MaxSecurityLevel
-        {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxSecurityLevel", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getSupportedCryptoSchemes()"/> 
-        /// </summary>
-        public static Java.Util.List<Java.Util.UUID> SupportedCryptoSchemes
-        {
-            get { return SExecuteWithSignature<Java.Util.List<Java.Util.UUID>>(LocalBridgeClazz, "getSupportedCryptoSchemes", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#isCryptoSchemeSupported(java.util.UUID,java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.UUID"/></param>
@@ -276,82 +262,26 @@ namespace Android.Media
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isCryptoSchemeSupported", "(Ljava/util/UUID;)Z", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getMaxSecurityLevel()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public static int GetMaxSecurityLevel()
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxSecurityLevel", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getSupportedCryptoSchemes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public static Java.Util.List<Java.Util.UUID> GetSupportedCryptoSchemes()
+        {
+            return SExecuteWithSignature<Java.Util.List<Java.Util.UUID>>(LocalBridgeClazz, "getSupportedCryptoSchemes", "()Ljava/util/List;");
+        }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getConnectedHdcpLevel()"/> 
-        /// </summary>
-        public int ConnectedHdcpLevel
-        {
-            get { return IExecuteWithSignature<int>("getConnectedHdcpLevel", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getProvisionRequest()"/> 
-        /// </summary>
-        public Android.Media.MediaDrm.ProvisionRequest GetProvisionRequest
-        {
-            get { return IExecuteWithSignature<Android.Media.MediaDrm.ProvisionRequest>("getProvisionRequest", "()Landroid/media/MediaDrm$ProvisionRequest;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getLogMessages()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Media.MediaDrm.LogMessage> LogMessages
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.MediaDrm.LogMessage>>("getLogMessages", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getMaxHdcpLevel()"/> 
-        /// </summary>
-        public int MaxHdcpLevel
-        {
-            get { return IExecuteWithSignature<int>("getMaxHdcpLevel", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getMaxSessionCount()"/> 
-        /// </summary>
-        public int MaxSessionCount
-        {
-            get { return IExecuteWithSignature<int>("getMaxSessionCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getMetrics()"/> 
-        /// </summary>
-        public Android.Os.PersistableBundle Metrics
-        {
-            get { return IExecuteWithSignature<Android.Os.PersistableBundle>("getMetrics", "()Landroid/os/PersistableBundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getOfflineLicenseKeySetIds()"/> 
-        /// </summary>
-        public Java.Util.List<byte[]> OfflineLicenseKeySetIds
-        {
-            get { return IExecuteWithSignature<Java.Util.List<byte[]>>("getOfflineLicenseKeySetIds", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getOpenSessionCount()"/> 
-        /// </summary>
-        public int OpenSessionCount
-        {
-            get { return IExecuteWithSignature<int>("getOpenSessionCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getSecureStopIds()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Util.List<byte[]> SecureStopIds
-        {
-            get { return IExecuteWithSignature<Java.Util.List<byte[]>>("getSecureStopIds", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getSecureStops()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Util.List<byte[]> SecureStops
-        {
-            get { return IExecuteWithSignature<Java.Util.List<byte[]>>("getSecureStops", "()Ljava/util/List;"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getCryptoSession(byte[],java.lang.String,java.lang.String)"/>
         /// </summary>
@@ -385,6 +315,22 @@ namespace Android.Media
         public Android.Media.MediaDrm.PlaybackComponent GetPlaybackComponent(byte[] arg0)
         {
             return IExecuteWithSignature<Android.Media.MediaDrm.PlaybackComponent>("getPlaybackComponent", "([B)Landroid/media/MediaDrm$PlaybackComponent;", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getProvisionRequest()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.MediaDrm.ProvisionRequest"/></returns>
+        public Android.Media.MediaDrm.ProvisionRequest GetProvisionRequest()
+        {
+            return IExecuteWithSignature<Android.Media.MediaDrm.ProvisionRequest>("getProvisionRequest", "()Landroid/media/MediaDrm$ProvisionRequest;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getMetrics()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.PersistableBundle"/></returns>
+        public Android.Os.PersistableBundle GetMetrics()
+        {
+            return IExecuteWithSignature<Android.Os.PersistableBundle>("getMetrics", "()Landroid/os/PersistableBundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#requiresSecureDecoder(java.lang.String)"/>
@@ -440,7 +386,7 @@ namespace Android.Media
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="byte"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public byte[] GetSecureStop(byte[] arg0)
         {
             return IExecuteWithSignatureArray<byte>("getSecureStop", "([B)[B", new object[] { arg0 });
@@ -458,6 +404,30 @@ namespace Android.Media
             return IExecuteArray<byte>("provideKeyResponse", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getConnectedHdcpLevel()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetConnectedHdcpLevel()
+        {
+            return IExecuteWithSignature<int>("getConnectedHdcpLevel", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getMaxHdcpLevel()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxHdcpLevel()
+        {
+            return IExecuteWithSignature<int>("getMaxHdcpLevel", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getMaxSessionCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxSessionCount()
+        {
+            return IExecuteWithSignature<int>("getMaxSessionCount", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getOfflineLicenseState(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -465,6 +435,14 @@ namespace Android.Media
         public int GetOfflineLicenseState(byte[] arg0)
         {
             return IExecuteWithSignature<int>("getOfflineLicenseState", "([B)I", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getOpenSessionCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOpenSessionCount()
+        {
+            return IExecuteWithSignature<int>("getOpenSessionCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getSecurityLevel(byte[])"/>
@@ -494,10 +472,44 @@ namespace Android.Media
             return IExecuteWithSignature<Java.Util.HashMap<Java.Lang.String, Java.Lang.String>>("queryKeyStatus", "([B)Ljava/util/HashMap;", new object[] { arg0 });
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getLogMessages()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.MediaDrm.LogMessage> GetLogMessages()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.MediaDrm.LogMessage>>("getLogMessages", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getOfflineLicenseKeySetIds()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<byte[]> GetOfflineLicenseKeySetIds()
+        {
+            return IExecuteWithSignature<Java.Util.List<byte[]>>("getOfflineLicenseKeySetIds", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getSecureStopIds()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        [global::System.Obsolete()]
+        public Java.Util.List<byte[]> GetSecureStopIds()
+        {
+            return IExecuteWithSignature<Java.Util.List<byte[]>>("getSecureStopIds", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getSecureStops()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        [global::System.Obsolete()]
+        public Java.Util.List<byte[]> GetSecureStops()
+        {
+            return IExecuteWithSignature<Java.Util.List<byte[]>>("getSecureStops", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#releaseSecureStops(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ReleaseSecureStops(byte[] arg0)
         {
             IExecuteWithSignature("releaseSecureStops", "([B)V", new object[] { arg0 });
@@ -505,7 +517,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#removeAllSecureStops()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemoveAllSecureStops()
         {
             IExecuteWithSignature("removeAllSecureStops", "()V");
@@ -530,7 +542,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#removeSecureStop(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemoveSecureStop(byte[] arg0)
         {
             IExecuteWithSignature("removeSecureStop", "([B)V", new object[] { arg0 });
@@ -617,7 +629,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#release()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Release()
         {
             IExecuteWithSignature("release", "()V");
@@ -625,7 +637,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#releaseAllSecureStops()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ReleaseAllSecureStops()
         {
             IExecuteWithSignature("releaseAllSecureStops", "()V");
@@ -1105,25 +1117,28 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.KeyRequest.html#getData()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.KeyRequest.html#getData()"/>
             /// </summary>
-            public byte[] Data
+            /// <returns><see cref="byte"/></returns>
+            public byte[] GetData()
             {
-                get { return IExecuteWithSignatureArray<byte>("getData", "()[B"); }
+                return IExecuteWithSignatureArray<byte>("getData", "()[B");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.KeyRequest.html#getDefaultUrl()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.KeyRequest.html#getRequestType()"/>
             /// </summary>
-            public Java.Lang.String DefaultUrl
+            /// <returns><see cref="int"/></returns>
+            public int GetRequestType()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getDefaultUrl", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<int>("getRequestType", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.KeyRequest.html#getRequestType()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.KeyRequest.html#getDefaultUrl()"/>
             /// </summary>
-            public int RequestType
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetDefaultUrl()
             {
-                get { return IExecuteWithSignature<int>("getRequestType", "()I"); }
+                return IExecuteWithSignature<Java.Lang.String>("getDefaultUrl", "()Ljava/lang/String;");
             }
 
             #endregion
@@ -1193,18 +1208,20 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.KeyStatus.html#getKeyId()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.KeyStatus.html#getKeyId()"/>
             /// </summary>
-            public byte[] KeyId
+            /// <returns><see cref="byte"/></returns>
+            public byte[] GetKeyId()
             {
-                get { return IExecuteWithSignatureArray<byte>("getKeyId", "()[B"); }
+                return IExecuteWithSignatureArray<byte>("getKeyId", "()[B");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.KeyStatus.html#getStatusCode()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.KeyStatus.html#getStatusCode()"/>
             /// </summary>
-            public int StatusCode
+            /// <returns><see cref="int"/></returns>
+            public int GetStatusCode()
             {
-                get { return IExecuteWithSignature<int>("getStatusCode", "()I"); }
+                return IExecuteWithSignature<int>("getStatusCode", "()I");
             }
 
             #endregion
@@ -1238,25 +1255,28 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.LogMessage.html#getMessage()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.LogMessage.html#getPriority()"/>
             /// </summary>
-            public Java.Lang.String Message
+            /// <returns><see cref="int"/></returns>
+            public int GetPriority()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getMessage", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<int>("getPriority", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.LogMessage.html#getPriority()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.LogMessage.html#getMessage()"/>
             /// </summary>
-            public int Priority
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetMessage()
             {
-                get { return IExecuteWithSignature<int>("getPriority", "()I"); }
+                return IExecuteWithSignature<Java.Lang.String>("getMessage", "()Ljava/lang/String;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.LogMessage.html#getTimestampMillis()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.LogMessage.html#getTimestampMillis()"/>
             /// </summary>
-            public long TimestampMillis
+            /// <returns><see cref="long"/></returns>
+            public long GetTimestampMillis()
             {
-                get { return IExecuteWithSignature<long>("getTimestampMillis", "()J"); }
+                return IExecuteWithSignature<long>("getTimestampMillis", "()J");
             }
 
             #endregion
@@ -1566,7 +1586,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onEvent", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaDrm>>>(OnEventEventHandler));
+                AddEventHandler("onEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaDrm>>>(OnEventEventHandler));
 
             }
 
@@ -1574,7 +1594,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaDrm.OnEventListener.html#onEvent(android.media.MediaDrm,byte[],int,int,byte[])"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnEvent"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaDrm, byte[], int, int, byte[]> OnOnEvent { get; set; } = null;
+            public global::System.Action<Android.Media.MediaDrm, byte[], int, int, byte[]> OnOnEvent { get; set; } = null;
 
             void OnEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaDrm>> data)
             {
@@ -1673,7 +1693,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onExpirationUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaDrm>>>(OnExpirationUpdateEventHandler));
+                AddEventHandler("onExpirationUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaDrm>>>(OnExpirationUpdateEventHandler));
 
             }
 
@@ -1681,7 +1701,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaDrm.OnExpirationUpdateListener.html#onExpirationUpdate(android.media.MediaDrm,byte[],long)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnExpirationUpdate"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaDrm, byte[], long> OnOnExpirationUpdate { get; set; } = null;
+            public global::System.Action<Android.Media.MediaDrm, byte[], long> OnOnExpirationUpdate { get; set; } = null;
 
             void OnExpirationUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaDrm>> data)
             {
@@ -1776,7 +1796,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onKeyStatusChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaDrm>>>(OnKeyStatusChangeEventHandler));
+                AddEventHandler("onKeyStatusChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaDrm>>>(OnKeyStatusChangeEventHandler));
 
             }
 
@@ -1784,7 +1804,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaDrm.OnKeyStatusChangeListener.html#onKeyStatusChange(android.media.MediaDrm,byte[],java.util.List,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnKeyStatusChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaDrm, byte[], Java.Util.List<Android.Media.MediaDrm.KeyStatus>, bool> OnOnKeyStatusChange { get; set; } = null;
+            public global::System.Action<Android.Media.MediaDrm, byte[], Java.Util.List<Android.Media.MediaDrm.KeyStatus>, bool> OnOnKeyStatusChange { get; set; } = null;
 
             void OnKeyStatusChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaDrm>> data)
             {
@@ -1881,7 +1901,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onSessionLostState", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaDrm>>>(OnSessionLostStateEventHandler));
+                AddEventHandler("onSessionLostState", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaDrm>>>(OnSessionLostStateEventHandler));
 
             }
 
@@ -1889,7 +1909,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaDrm.OnSessionLostStateListener.html#onSessionLostState(android.media.MediaDrm,byte[])"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSessionLostState"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaDrm, byte[]> OnOnSessionLostState { get; set; } = null;
+            public global::System.Action<Android.Media.MediaDrm, byte[]> OnOnSessionLostState { get; set; } = null;
 
             void OnSessionLostStateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaDrm>> data)
             {
@@ -1978,11 +1998,20 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.PlaybackComponent.html#getLogSessionId()"/> <see href="https://developer.android.com/reference/android/media/MediaDrm.PlaybackComponent.html#setLogSessionId(android.media.metrics.LogSessionId)"/>
+            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.PlaybackComponent.html#getLogSessionId()"/>
             /// </summary>
-            public Android.Media.Metrics.LogSessionId LogSessionId
+            /// <returns><see cref="Android.Media.Metrics.LogSessionId"/></returns>
+            public Android.Media.Metrics.LogSessionId GetLogSessionId()
             {
-                get { return IExecuteWithSignature<Android.Media.Metrics.LogSessionId>("getLogSessionId", "()Landroid/media/metrics/LogSessionId;"); } set { IExecuteWithSignature("setLogSessionId", "(Landroid/media/metrics/LogSessionId;)V", value); }
+                return IExecuteWithSignature<Android.Media.Metrics.LogSessionId>("getLogSessionId", "()Landroid/media/metrics/LogSessionId;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.PlaybackComponent.html#setLogSessionId(android.media.metrics.LogSessionId)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Media.Metrics.LogSessionId"/></param>
+            public void SetLogSessionId(Android.Media.Metrics.LogSessionId arg0)
+            {
+                IExecuteWithSignature("setLogSessionId", "(Landroid/media/metrics/LogSessionId;)V", arg0);
             }
 
             #endregion
@@ -2016,18 +2045,20 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.ProvisionRequest.html#getData()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.ProvisionRequest.html#getData()"/>
             /// </summary>
-            public byte[] Data
+            /// <returns><see cref="byte"/></returns>
+            public byte[] GetData()
             {
-                get { return IExecuteWithSignatureArray<byte>("getData", "()[B"); }
+                return IExecuteWithSignatureArray<byte>("getData", "()[B");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.ProvisionRequest.html#getDefaultUrl()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaDrm.ProvisionRequest.html#getDefaultUrl()"/>
             /// </summary>
-            public Java.Lang.String DefaultUrl
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetDefaultUrl()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getDefaultUrl", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getDefaultUrl", "()Ljava/lang/String;");
             }
 
             #endregion

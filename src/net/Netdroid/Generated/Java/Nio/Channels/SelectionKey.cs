@@ -38,25 +38,25 @@ namespace Java.Nio.Channels
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectionKey.html#OP_ACCEPT"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectionKey.html#OP_ACCEPT"/>
         /// </summary>
         public static int OP_ACCEPT { get { if (!_OP_ACCEPTReady) { _OP_ACCEPTContent = SGetField<int>(LocalBridgeClazz, "OP_ACCEPT"); _OP_ACCEPTReady = true; } return _OP_ACCEPTContent; } }
         private static int _OP_ACCEPTContent = default;
         private static bool _OP_ACCEPTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectionKey.html#OP_CONNECT"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectionKey.html#OP_CONNECT"/>
         /// </summary>
         public static int OP_CONNECT { get { if (!_OP_CONNECTReady) { _OP_CONNECTContent = SGetField<int>(LocalBridgeClazz, "OP_CONNECT"); _OP_CONNECTReady = true; } return _OP_CONNECTContent; } }
         private static int _OP_CONNECTContent = default;
         private static bool _OP_CONNECTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectionKey.html#OP_READ"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectionKey.html#OP_READ"/>
         /// </summary>
         public static int OP_READ { get { if (!_OP_READReady) { _OP_READContent = SGetField<int>(LocalBridgeClazz, "OP_READ"); _OP_READReady = true; } return _OP_READContent; } }
         private static int _OP_READContent = default;
         private static bool _OP_READReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectionKey.html#OP_WRITE"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectionKey.html#OP_WRITE"/>
         /// </summary>
         public static int OP_WRITE { get { if (!_OP_WRITEReady) { _OP_WRITEContent = SGetField<int>(LocalBridgeClazz, "OP_WRITE"); _OP_WRITEReady = true; } return _OP_WRITEContent; } }
         private static int _OP_WRITEContent = default;
@@ -70,7 +70,7 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectionKey.html#isValid()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectionKey.html#isValid()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsValid()
@@ -78,7 +78,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<bool>("isValid", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectionKey.html#interestOps()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectionKey.html#interestOps()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int InterestOps()
@@ -86,7 +86,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<int>("interestOps", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectionKey.html#readyOps()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectionKey.html#readyOps()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int ReadyOps()
@@ -94,7 +94,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<int>("readyOps", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectionKey.html#channel()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectionKey.html#channel()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.SelectableChannel"/></returns>
         public Java.Nio.Channels.SelectableChannel Channel()
@@ -102,7 +102,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.SelectableChannel>("channel", "()Ljava/nio/channels/SelectableChannel;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectionKey.html#interestOps(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectionKey.html#interestOps(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.Channels.SelectionKey"/></returns>
@@ -111,7 +111,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.SelectionKey>("interestOps", "(I)Ljava/nio/channels/SelectionKey;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectionKey.html#selector()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectionKey.html#selector()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.Selector"/></returns>
         public Java.Nio.Channels.Selector Selector()
@@ -119,14 +119,14 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.Selector>("selector", "()Ljava/nio/channels/Selector;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectionKey.html#cancel()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectionKey.html#cancel()"/>
         /// </summary>
         public void Cancel()
         {
             IExecuteWithSignature("cancel", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectionKey.html#isAcceptable()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectionKey.html#isAcceptable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsAcceptable()
@@ -134,7 +134,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<bool>("isAcceptable", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectionKey.html#isConnectable()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectionKey.html#isConnectable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsConnectable()
@@ -142,7 +142,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<bool>("isConnectable", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectionKey.html#isReadable()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectionKey.html#isReadable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsReadable()
@@ -150,7 +150,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<bool>("isReadable", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectionKey.html#isWritable()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectionKey.html#isWritable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsWritable()
@@ -158,7 +158,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<bool>("isWritable", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectionKey.html#attach(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectionKey.html#attach(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -167,7 +167,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature("attach", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectionKey.html#attachment()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectionKey.html#attachment()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Attachment()
@@ -175,7 +175,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature("attachment", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectionKey.html#interestOpsAnd(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectionKey.html#interestOpsAnd(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -184,7 +184,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<int>("interestOpsAnd", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectionKey.html#interestOpsOr(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectionKey.html#interestOpsOr(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>

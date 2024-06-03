@@ -30,7 +30,7 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/AccessControlContext.html#%3Cinit%3E(java.security.AccessControlContext,java.security.DomainCombiner)"/>
+        /// <see href="https://developer.android.com/reference/java/security/AccessControlContext.html#%3Cinit%3E(java.security.AccessControlContext,java.security.DomainCombiner)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.AccessControlContext"/></param>
         /// <param name="arg1"><see cref="Java.Security.DomainCombiner"/></param>
@@ -39,7 +39,7 @@ namespace Java.Security
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/AccessControlContext.html#%3Cinit%3E(java.security.ProtectionDomain[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/AccessControlContext.html#%3Cinit%3E(java.security.ProtectionDomain[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.ProtectionDomain"/></param>
         public AccessControlContext(Java.Security.ProtectionDomain[] arg0)
@@ -63,14 +63,15 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/AccessControlContext.html#getDomainCombiner()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/AccessControlContext.html#getDomainCombiner()"/>
         /// </summary>
-        public Java.Security.DomainCombiner DomainCombiner
+        /// <returns><see cref="Java.Security.DomainCombiner"/></returns>
+        public Java.Security.DomainCombiner GetDomainCombiner()
         {
-            get { return IExecuteWithSignature<Java.Security.DomainCombiner>("getDomainCombiner", "()Ljava/security/DomainCombiner;"); }
+            return IExecuteWithSignature<Java.Security.DomainCombiner>("getDomainCombiner", "()Ljava/security/DomainCombiner;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/AccessControlContext.html#checkPermission(java.security.Permission)"/>
+        /// <see href="https://developer.android.com/reference/java/security/AccessControlContext.html#checkPermission(java.security.Permission)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
         /// <exception cref="Java.Security.AccessControlException"/>

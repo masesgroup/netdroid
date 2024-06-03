@@ -55,32 +55,12 @@ namespace Android.Nfc.Tech
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/NfcB.html#getApplicationData()"/> 
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/NfcB.html#getTag()"/>
         /// </summary>
-        public byte[] ApplicationData
+        /// <returns><see cref="Android.Nfc.Tag"/></returns>
+        public Android.Nfc.Tag GetTag()
         {
-            get { return IExecuteWithSignatureArray<byte>("getApplicationData", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/NfcB.html#getMaxTransceiveLength()"/> 
-        /// </summary>
-        public int MaxTransceiveLength
-        {
-            get { return IExecuteWithSignature<int>("getMaxTransceiveLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/NfcB.html#getProtocolInfo()"/> 
-        /// </summary>
-        public byte[] ProtocolInfo
-        {
-            get { return IExecuteWithSignatureArray<byte>("getProtocolInfo", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/NfcB.html#getTag()"/> 
-        /// </summary>
-        public Android.Nfc.Tag Tag
-        {
-            get { return IExecuteWithSignature<Android.Nfc.Tag>("getTag", "()Landroid/nfc/Tag;"); }
+            return IExecuteWithSignature<Android.Nfc.Tag>("getTag", "()Landroid/nfc/Tag;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/tech/NfcB.html#isConnected()"/>
@@ -91,6 +71,22 @@ namespace Android.Nfc.Tech
             return IExecuteWithSignature<bool>("isConnected", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/NfcB.html#getApplicationData()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetApplicationData()
+        {
+            return IExecuteWithSignatureArray<byte>("getApplicationData", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/NfcB.html#getProtocolInfo()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetProtocolInfo()
+        {
+            return IExecuteWithSignatureArray<byte>("getProtocolInfo", "()[B");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/tech/NfcB.html#transceive(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -99,6 +95,14 @@ namespace Android.Nfc.Tech
         public byte[] Transceive(byte[] arg0)
         {
             return IExecuteWithSignatureArray<byte>("transceive", "([B)[B", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/NfcB.html#getMaxTransceiveLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxTransceiveLength()
+        {
+            return IExecuteWithSignature<int>("getMaxTransceiveLength", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/tech/NfcB.html#close()"/>

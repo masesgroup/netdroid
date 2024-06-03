@@ -42,7 +42,7 @@ namespace Java.Lang.Ref
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Cleaner.html#create()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/Cleaner.html#create()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Ref.Cleaner"/></returns>
         public static Java.Lang.Ref.Cleaner Create()
@@ -50,7 +50,7 @@ namespace Java.Lang.Ref
             return SExecuteWithSignature<Java.Lang.Ref.Cleaner>(LocalBridgeClazz, "create", "()Ljava/lang/ref/Cleaner;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Cleaner.html#create(java.util.concurrent.ThreadFactory)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/Cleaner.html#create(java.util.concurrent.ThreadFactory)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
         /// <returns><see cref="Java.Lang.Ref.Cleaner"/></returns>
@@ -63,7 +63,7 @@ namespace Java.Lang.Ref
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Cleaner.html#register(java.lang.Object,java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/Cleaner.html#register(java.lang.Object,java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
@@ -97,7 +97,7 @@ namespace Java.Lang.Ref
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Cleaner.Cleanable.html#clean()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/ref/Cleaner.Cleanable.html#clean()"/>
             /// </summary>
             public void Clean()
             {

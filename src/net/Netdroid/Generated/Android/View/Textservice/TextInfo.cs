@@ -90,40 +90,44 @@ namespace Android.View.Textservice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textservice/TextInfo.html#getCharSequence()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence CharSequence
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getCharSequence", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textservice/TextInfo.html#getCookie()"/> 
-        /// </summary>
-        public int Cookie
-        {
-            get { return IExecuteWithSignature<int>("getCookie", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textservice/TextInfo.html#getSequence()"/> 
-        /// </summary>
-        public int Sequence
-        {
-            get { return IExecuteWithSignature<int>("getSequence", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textservice/TextInfo.html#getText()"/> 
-        /// </summary>
-        public Java.Lang.String Text
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/TextInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textservice/TextInfo.html#getCookie()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCookie()
+        {
+            return IExecuteWithSignature<int>("getCookie", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textservice/TextInfo.html#getSequence()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSequence()
+        {
+            return IExecuteWithSignature<int>("getSequence", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textservice/TextInfo.html#getCharSequence()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetCharSequence()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getCharSequence", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textservice/TextInfo.html#getText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetText()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/TextInfo.html#writeToParcel(android.os.Parcel,int)"/>

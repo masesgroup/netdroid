@@ -142,132 +142,6 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getAuthority()"/> 
-        /// </summary>
-        public Java.Lang.String Authority
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAuthority", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getEncodedAuthority()"/> 
-        /// </summary>
-        public Java.Lang.String EncodedAuthority
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEncodedAuthority", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getEncodedFragment()"/> 
-        /// </summary>
-        public Java.Lang.String EncodedFragment
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEncodedFragment", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getEncodedPath()"/> 
-        /// </summary>
-        public Java.Lang.String EncodedPath
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEncodedPath", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getEncodedQuery()"/> 
-        /// </summary>
-        public Java.Lang.String EncodedQuery
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEncodedQuery", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getEncodedSchemeSpecificPart()"/> 
-        /// </summary>
-        public Java.Lang.String EncodedSchemeSpecificPart
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEncodedSchemeSpecificPart", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getEncodedUserInfo()"/> 
-        /// </summary>
-        public Java.Lang.String EncodedUserInfo
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEncodedUserInfo", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getFragment()"/> 
-        /// </summary>
-        public Java.Lang.String Fragment
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFragment", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getHost()"/> 
-        /// </summary>
-        public Java.Lang.String Host
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHost", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getLastPathSegment()"/> 
-        /// </summary>
-        public Java.Lang.String LastPathSegment
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLastPathSegment", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getPath()"/> 
-        /// </summary>
-        public Java.Lang.String Path
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPath", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getPathSegments()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> PathSegments
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getPathSegments", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getPort()"/> 
-        /// </summary>
-        public int Port
-        {
-            get { return IExecuteWithSignature<int>("getPort", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getQuery()"/> 
-        /// </summary>
-        public Java.Lang.String Query
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getQuery", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getQueryParameterNames()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> QueryParameterNames
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getQueryParameterNames", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getScheme()"/> 
-        /// </summary>
-        public Java.Lang.String Scheme
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getScheme", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getSchemeSpecificPart()"/> 
-        /// </summary>
-        public Java.Lang.String SchemeSpecificPart
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSchemeSpecificPart", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getUserInfo()"/> 
-        /// </summary>
-        public Java.Lang.String UserInfo
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUserInfo", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/Uri.html#buildUpon()"/>
         /// </summary>
         /// <returns><see cref="Android.Net.Uri.Builder"/></returns>
@@ -290,6 +164,142 @@ namespace Android.Net
         public bool IsRelative()
         {
             return IExecuteWithSignature<bool>("isRelative", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getPort()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPort()
+        {
+            return IExecuteWithSignature<int>("getPort", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getAuthority()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAuthority()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAuthority", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getEncodedAuthority()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEncodedAuthority()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getEncodedAuthority", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getEncodedFragment()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEncodedFragment()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getEncodedFragment", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getEncodedPath()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEncodedPath()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getEncodedPath", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getEncodedQuery()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEncodedQuery()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getEncodedQuery", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getEncodedSchemeSpecificPart()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEncodedSchemeSpecificPart()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getEncodedSchemeSpecificPart", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getEncodedUserInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEncodedUserInfo()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getEncodedUserInfo", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getFragment()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFragment()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFragment", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getHost()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetHost()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getHost", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getLastPathSegment()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetLastPathSegment()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getLastPathSegment", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getPath()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPath()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPath", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getQuery()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetQuery()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getQuery", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getScheme()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetScheme()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getScheme", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getSchemeSpecificPart()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSchemeSpecificPart()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSchemeSpecificPart", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getUserInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUserInfo()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUserInfo", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getPathSegments()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetPathSegments()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getPathSegments", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/Uri.html#normalizeScheme()"/>
@@ -360,6 +370,14 @@ namespace Android.Net
         public Java.Util.List<Java.Lang.String> GetQueryParameters(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getQueryParameters", "(Ljava/lang/String;)Ljava/util/List;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Uri.html#getQueryParameterNames()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetQueryParameterNames()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getQueryParameterNames", "()Ljava/util/Set;");
         }
 
         #endregion

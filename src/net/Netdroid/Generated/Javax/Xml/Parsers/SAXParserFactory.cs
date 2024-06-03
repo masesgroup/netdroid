@@ -42,7 +42,7 @@ namespace Javax.Xml.Parsers
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/SAXParserFactory.html#newDefaultInstance()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html#newDefaultInstance()"/>
         /// </summary>
         /// <returns><see cref="Javax.Xml.Parsers.SAXParserFactory"/></returns>
         public static Javax.Xml.Parsers.SAXParserFactory NewDefaultInstance()
@@ -50,7 +50,7 @@ namespace Javax.Xml.Parsers
             return SExecuteWithSignature<Javax.Xml.Parsers.SAXParserFactory>(LocalBridgeClazz, "newDefaultInstance", "()Ljavax/xml/parsers/SAXParserFactory;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/SAXParserFactory.html#newDefaultNSInstance()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html#newDefaultNSInstance()"/>
         /// </summary>
         /// <returns><see cref="Javax.Xml.Parsers.SAXParserFactory"/></returns>
         public static Javax.Xml.Parsers.SAXParserFactory NewDefaultNSInstance()
@@ -58,7 +58,7 @@ namespace Javax.Xml.Parsers
             return SExecuteWithSignature<Javax.Xml.Parsers.SAXParserFactory>(LocalBridgeClazz, "newDefaultNSInstance", "()Ljavax/xml/parsers/SAXParserFactory;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/SAXParserFactory.html#newInstance()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html#newInstance()"/>
         /// </summary>
         /// <returns><see cref="Javax.Xml.Parsers.SAXParserFactory"/></returns>
         public static Javax.Xml.Parsers.SAXParserFactory NewInstance()
@@ -66,7 +66,7 @@ namespace Javax.Xml.Parsers
             return SExecuteWithSignature<Javax.Xml.Parsers.SAXParserFactory>(LocalBridgeClazz, "newInstance", "()Ljavax/xml/parsers/SAXParserFactory;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/SAXParserFactory.html#newInstance(java.lang.String,java.lang.ClassLoader)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html#newInstance(java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
@@ -76,7 +76,7 @@ namespace Javax.Xml.Parsers
             return SExecute<Javax.Xml.Parsers.SAXParserFactory>(LocalBridgeClazz, "newInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/SAXParserFactory.html#newNSInstance()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html#newNSInstance()"/>
         /// </summary>
         /// <returns><see cref="Javax.Xml.Parsers.SAXParserFactory"/></returns>
         public static Javax.Xml.Parsers.SAXParserFactory NewNSInstance()
@@ -84,7 +84,7 @@ namespace Javax.Xml.Parsers
             return SExecuteWithSignature<Javax.Xml.Parsers.SAXParserFactory>(LocalBridgeClazz, "newNSInstance", "()Ljavax/xml/parsers/SAXParserFactory;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/SAXParserFactory.html#newNSInstance(java.lang.String,java.lang.ClassLoader)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html#newNSInstance(java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
@@ -98,14 +98,7 @@ namespace Javax.Xml.Parsers
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/SAXParserFactory.html#getSchema()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/SAXParserFactory.html#setSchema(javax.xml.validation.Schema)"/>
-        /// </summary>
-        public Javax.Xml.Validation.Schema Schema
-        {
-            get { return IExecuteWithSignature<Javax.Xml.Validation.Schema>("getSchema", "()Ljavax/xml/validation/Schema;"); } set { IExecuteWithSignature("setSchema", "(Ljavax/xml/validation/Schema;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/SAXParserFactory.html#getFeature(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html#getFeature(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -117,7 +110,7 @@ namespace Javax.Xml.Parsers
             return IExecuteWithSignature<bool>("getFeature", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/SAXParserFactory.html#newSAXParser()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html#newSAXParser()"/>
         /// </summary>
         /// <returns><see cref="Javax.Xml.Parsers.SAXParser"/></returns>
         /// <exception cref="Javax.Xml.Parsers.ParserConfigurationException"/>
@@ -127,7 +120,7 @@ namespace Javax.Xml.Parsers
             return IExecuteWithSignature<Javax.Xml.Parsers.SAXParser>("newSAXParser", "()Ljavax/xml/parsers/SAXParser;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/SAXParserFactory.html#setFeature(java.lang.String,boolean)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html#setFeature(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -139,7 +132,7 @@ namespace Javax.Xml.Parsers
             IExecute("setFeature", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/SAXParserFactory.html#isNamespaceAware()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html#isNamespaceAware()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsNamespaceAware()
@@ -147,7 +140,7 @@ namespace Javax.Xml.Parsers
             return IExecuteWithSignature<bool>("isNamespaceAware", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/SAXParserFactory.html#isValidating()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html#isValidating()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsValidating()
@@ -155,7 +148,7 @@ namespace Javax.Xml.Parsers
             return IExecuteWithSignature<bool>("isValidating", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/SAXParserFactory.html#isXIncludeAware()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html#isXIncludeAware()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsXIncludeAware()
@@ -163,7 +156,15 @@ namespace Javax.Xml.Parsers
             return IExecuteWithSignature<bool>("isXIncludeAware", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/SAXParserFactory.html#setNamespaceAware(boolean)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html#getSchema()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Xml.Validation.Schema"/></returns>
+        public Javax.Xml.Validation.Schema GetSchema()
+        {
+            return IExecuteWithSignature<Javax.Xml.Validation.Schema>("getSchema", "()Ljavax/xml/validation/Schema;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html#setNamespaceAware(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetNamespaceAware(bool arg0)
@@ -171,7 +172,15 @@ namespace Javax.Xml.Parsers
             IExecuteWithSignature("setNamespaceAware", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/SAXParserFactory.html#setValidating(boolean)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html#setSchema(javax.xml.validation.Schema)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Validation.Schema"/></param>
+        public void SetSchema(Javax.Xml.Validation.Schema arg0)
+        {
+            IExecuteWithSignature("setSchema", "(Ljavax/xml/validation/Schema;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html#setValidating(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetValidating(bool arg0)
@@ -179,7 +188,7 @@ namespace Javax.Xml.Parsers
             IExecuteWithSignature("setValidating", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/SAXParserFactory.html#setXIncludeAware(boolean)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html#setXIncludeAware(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetXIncludeAware(bool arg0)

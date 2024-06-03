@@ -36,7 +36,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public ZoomButton(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -47,7 +47,7 @@ namespace Android.Widget
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public ZoomButton(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -57,7 +57,7 @@ namespace Android.Widget
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public ZoomButton(Android.Content.Context arg0, Android.Util.AttributeSet arg1)
             : base(arg0, arg1)
         {
@@ -66,7 +66,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/ZoomButton.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public ZoomButton(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -92,7 +92,7 @@ namespace Android.Widget
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnLongClick(Android.View.View arg0)
         {
             return IExecuteWithSignature<bool>("onLongClick", "(Landroid/view/View;)Z", arg0);
@@ -101,7 +101,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/ZoomButton.html#setZoomSpeed(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetZoomSpeed(long arg0)
         {
             IExecuteWithSignature("setZoomSpeed", "(J)V", arg0);

@@ -30,7 +30,7 @@ namespace Javax.Net.Ssl
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/CertPathTrustManagerParameters.html#%3Cinit%3E(java.security.cert.CertPathParameters)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/CertPathTrustManagerParameters.html#%3Cinit%3E(java.security.cert.CertPathParameters)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.CertPathParameters"/></param>
         public CertPathTrustManagerParameters(Java.Security.Cert.CertPathParameters arg0)
@@ -54,11 +54,12 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/CertPathTrustManagerParameters.html#getParameters()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/CertPathTrustManagerParameters.html#getParameters()"/>
         /// </summary>
-        public Java.Security.Cert.CertPathParameters Parameters
+        /// <returns><see cref="Java.Security.Cert.CertPathParameters"/></returns>
+        public Java.Security.Cert.CertPathParameters GetParameters()
         {
-            get { return IExecuteWithSignature<Java.Security.Cert.CertPathParameters>("getParameters", "()Ljava/security/cert/CertPathParameters;"); }
+            return IExecuteWithSignature<Java.Security.Cert.CertPathParameters>("getParameters", "()Ljava/security/cert/CertPathParameters;");
         }
 
         #endregion

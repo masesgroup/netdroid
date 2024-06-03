@@ -52,11 +52,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/WheelchairPushesRecord.html#getCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/WheelchairPushesRecord.html#getCount()"/>
         /// </summary>
-        public long Count
+        /// <returns><see cref="long"/></returns>
+        public long GetCount()
         {
-            get { return IExecuteWithSignature<long>("getCount", "()J"); }
+            return IExecuteWithSignature<long>("getCount", "()J");
         }
 
         #endregion

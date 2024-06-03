@@ -30,7 +30,7 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECParameterSpec.html#%3Cinit%3E(java.security.spec.EllipticCurve,java.security.spec.ECPoint,java.math.BigInteger,int)"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECParameterSpec.html#%3Cinit%3E(java.security.spec.EllipticCurve,java.security.spec.ECPoint,java.math.BigInteger,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Spec.EllipticCurve"/></param>
         /// <param name="arg1"><see cref="Java.Security.Spec.ECPoint"/></param>
@@ -57,32 +57,36 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECParameterSpec.html#getCofactor()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECParameterSpec.html#getCofactor()"/>
         /// </summary>
-        public int Cofactor
+        /// <returns><see cref="int"/></returns>
+        public int GetCofactor()
         {
-            get { return IExecuteWithSignature<int>("getCofactor", "()I"); }
+            return IExecuteWithSignature<int>("getCofactor", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECParameterSpec.html#getCurve()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECParameterSpec.html#getOrder()"/>
         /// </summary>
-        public Java.Security.Spec.EllipticCurve Curve
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetOrder()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.EllipticCurve>("getCurve", "()Ljava/security/spec/EllipticCurve;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getOrder", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECParameterSpec.html#getGenerator()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECParameterSpec.html#getGenerator()"/>
         /// </summary>
-        public Java.Security.Spec.ECPoint Generator
+        /// <returns><see cref="Java.Security.Spec.ECPoint"/></returns>
+        public Java.Security.Spec.ECPoint GetGenerator()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.ECPoint>("getGenerator", "()Ljava/security/spec/ECPoint;"); }
+            return IExecuteWithSignature<Java.Security.Spec.ECPoint>("getGenerator", "()Ljava/security/spec/ECPoint;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECParameterSpec.html#getOrder()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECParameterSpec.html#getCurve()"/>
         /// </summary>
-        public Java.Math.BigInteger Order
+        /// <returns><see cref="Java.Security.Spec.EllipticCurve"/></returns>
+        public Java.Security.Spec.EllipticCurve GetCurve()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getOrder", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Security.Spec.EllipticCurve>("getCurve", "()Ljava/security/spec/EllipticCurve;");
         }
 
         #endregion

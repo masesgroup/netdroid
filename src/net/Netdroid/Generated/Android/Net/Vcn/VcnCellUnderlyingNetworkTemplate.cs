@@ -46,74 +46,84 @@ namespace Android.Net.Vcn
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate.html#getCbs()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate.html#getCbs()"/>
         /// </summary>
-        public int Cbs
+        /// <returns><see cref="int"/></returns>
+        public int GetCbs()
         {
-            get { return IExecuteWithSignature<int>("getCbs", "()I"); }
+            return IExecuteWithSignature<int>("getCbs", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate.html#getDun()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate.html#getDun()"/>
         /// </summary>
-        public int Dun
+        /// <returns><see cref="int"/></returns>
+        public int GetDun()
         {
-            get { return IExecuteWithSignature<int>("getDun", "()I"); }
+            return IExecuteWithSignature<int>("getDun", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate.html#getIms()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate.html#getIms()"/>
         /// </summary>
-        public int Ims
+        /// <returns><see cref="int"/></returns>
+        public int GetIms()
         {
-            get { return IExecuteWithSignature<int>("getIms", "()I"); }
+            return IExecuteWithSignature<int>("getIms", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate.html#getInternet()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate.html#getInternet()"/>
         /// </summary>
-        public int Internet
+        /// <returns><see cref="int"/></returns>
+        public int GetInternet()
         {
-            get { return IExecuteWithSignature<int>("getInternet", "()I"); }
+            return IExecuteWithSignature<int>("getInternet", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate.html#getMms()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate.html#getMms()"/>
         /// </summary>
-        public int Mms
+        /// <returns><see cref="int"/></returns>
+        public int GetMms()
         {
-            get { return IExecuteWithSignature<int>("getMms", "()I"); }
+            return IExecuteWithSignature<int>("getMms", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate.html#getOperatorPlmnIds()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate.html#getOpportunistic()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> OperatorPlmnIds
+        /// <returns><see cref="int"/></returns>
+        public int GetOpportunistic()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getOperatorPlmnIds", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<int>("getOpportunistic", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate.html#getOpportunistic()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate.html#getRcs()"/>
         /// </summary>
-        public int Opportunistic
+        /// <returns><see cref="int"/></returns>
+        public int GetRcs()
         {
-            get { return IExecuteWithSignature<int>("getOpportunistic", "()I"); }
+            return IExecuteWithSignature<int>("getRcs", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate.html#getRcs()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate.html#getRoaming()"/>
         /// </summary>
-        public int Rcs
+        /// <returns><see cref="int"/></returns>
+        public int GetRoaming()
         {
-            get { return IExecuteWithSignature<int>("getRcs", "()I"); }
+            return IExecuteWithSignature<int>("getRoaming", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate.html#getRoaming()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate.html#getSimSpecificCarrierIds()"/>
         /// </summary>
-        public int Roaming
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.Integer> GetSimSpecificCarrierIds()
         {
-            get { return IExecuteWithSignature<int>("getRoaming", "()I"); }
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>("getSimSpecificCarrierIds", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate.html#getSimSpecificCarrierIds()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnCellUnderlyingNetworkTemplate.html#getOperatorPlmnIds()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.Integer> SimSpecificCarrierIds
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetOperatorPlmnIds()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>("getSimSpecificCarrierIds", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getOperatorPlmnIds", "()Ljava/util/Set;");
         }
 
         #endregion

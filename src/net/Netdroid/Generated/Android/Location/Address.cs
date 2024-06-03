@@ -60,130 +60,12 @@ namespace Android.Location
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Address.html#getAdminArea()"/> <see href="https://developer.android.com/reference/android/location/Address.html#setAdminArea(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#getExtras()"/>
         /// </summary>
-        public Java.Lang.String AdminArea
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAdminArea", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAdminArea", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Address.html#getCountryCode()"/> <see href="https://developer.android.com/reference/android/location/Address.html#setCountryCode(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String CountryCode
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCountryCode", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCountryCode", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Address.html#getCountryName()"/> <see href="https://developer.android.com/reference/android/location/Address.html#setCountryName(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String CountryName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCountryName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCountryName", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Address.html#getExtras()"/> <see href="https://developer.android.com/reference/android/location/Address.html#setExtras(android.os.Bundle)"/>
-        /// </summary>
-        public Android.Os.Bundle Extras
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); } set { IExecuteWithSignature("setExtras", "(Landroid/os/Bundle;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Address.html#getFeatureName()"/> <see href="https://developer.android.com/reference/android/location/Address.html#setFeatureName(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String FeatureName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFeatureName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setFeatureName", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Address.html#getLatitude()"/> <see href="https://developer.android.com/reference/android/location/Address.html#setLatitude(double)"/>
-        /// </summary>
-        public double Latitude
-        {
-            get { return IExecuteWithSignature<double>("getLatitude", "()D"); } set { IExecuteWithSignature("setLatitude", "(D)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Address.html#getLocale()"/> 
-        /// </summary>
-        public Java.Util.Locale Locale
-        {
-            get { return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Address.html#getLocality()"/> <see href="https://developer.android.com/reference/android/location/Address.html#setLocality(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Locality
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLocality", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setLocality", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Address.html#getLongitude()"/> <see href="https://developer.android.com/reference/android/location/Address.html#setLongitude(double)"/>
-        /// </summary>
-        public double Longitude
-        {
-            get { return IExecuteWithSignature<double>("getLongitude", "()D"); } set { IExecuteWithSignature("setLongitude", "(D)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Address.html#getMaxAddressLineIndex()"/> 
-        /// </summary>
-        public int MaxAddressLineIndex
-        {
-            get { return IExecuteWithSignature<int>("getMaxAddressLineIndex", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Address.html#getPhone()"/> <see href="https://developer.android.com/reference/android/location/Address.html#setPhone(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Phone
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPhone", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPhone", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Address.html#getPostalCode()"/> <see href="https://developer.android.com/reference/android/location/Address.html#setPostalCode(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String PostalCode
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPostalCode", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPostalCode", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Address.html#getPremises()"/> <see href="https://developer.android.com/reference/android/location/Address.html#setPremises(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Premises
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPremises", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPremises", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Address.html#getSubAdminArea()"/> <see href="https://developer.android.com/reference/android/location/Address.html#setSubAdminArea(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String SubAdminArea
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSubAdminArea", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSubAdminArea", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Address.html#getSubLocality()"/> <see href="https://developer.android.com/reference/android/location/Address.html#setSubLocality(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String SubLocality
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSubLocality", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSubLocality", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Address.html#getSubThoroughfare()"/> <see href="https://developer.android.com/reference/android/location/Address.html#setSubThoroughfare(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String SubThoroughfare
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSubThoroughfare", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSubThoroughfare", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Address.html#getThoroughfare()"/> <see href="https://developer.android.com/reference/android/location/Address.html#setThoroughfare(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Thoroughfare
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getThoroughfare", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setThoroughfare", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Address.html#getUrl()"/> <see href="https://developer.android.com/reference/android/location/Address.html#setUrl(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Url
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUrl", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setUrl", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Address.html#hasLatitude()"/>
@@ -202,12 +84,36 @@ namespace Android.Location
             return IExecuteWithSignature<bool>("hasLongitude", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#getLatitude()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetLatitude()
+        {
+            return IExecuteWithSignature<double>("getLatitude", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#getLongitude()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetLongitude()
+        {
+            return IExecuteWithSignature<double>("getLongitude", "()D");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Address.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#getMaxAddressLineIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxAddressLineIndex()
+        {
+            return IExecuteWithSignature<int>("getMaxAddressLineIndex", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Address.html#getAddressLine(int)"/>
@@ -217,6 +123,118 @@ namespace Android.Location
         public Java.Lang.String GetAddressLine(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getAddressLine", "(I)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#getAdminArea()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAdminArea()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAdminArea", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#getCountryCode()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCountryCode()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCountryCode", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#getCountryName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCountryName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCountryName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#getFeatureName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFeatureName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFeatureName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#getLocality()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetLocality()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getLocality", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#getPhone()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPhone()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPhone", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#getPostalCode()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPostalCode()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPostalCode", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#getPremises()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPremises()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPremises", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#getSubAdminArea()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSubAdminArea()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSubAdminArea", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#getSubLocality()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSubLocality()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSubLocality", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#getSubThoroughfare()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSubThoroughfare()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSubThoroughfare", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#getThoroughfare()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetThoroughfare()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getThoroughfare", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#getUrl()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUrl()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUrl", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#getLocale()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public Java.Util.Locale GetLocale()
+        {
+            return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Address.html#clearLatitude()"/>
@@ -240,6 +258,134 @@ namespace Android.Location
         public void SetAddressLine(int arg0, Java.Lang.String arg1)
         {
             IExecute("setAddressLine", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#setAdminArea(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetAdminArea(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setAdminArea", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#setCountryCode(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetCountryCode(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setCountryCode", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#setCountryName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetCountryName(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setCountryName", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#setExtras(android.os.Bundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
+        public void SetExtras(Android.Os.Bundle arg0)
+        {
+            IExecuteWithSignature("setExtras", "(Landroid/os/Bundle;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#setFeatureName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetFeatureName(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setFeatureName", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#setLatitude(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        public void SetLatitude(double arg0)
+        {
+            IExecuteWithSignature("setLatitude", "(D)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#setLocality(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetLocality(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setLocality", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#setLongitude(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        public void SetLongitude(double arg0)
+        {
+            IExecuteWithSignature("setLongitude", "(D)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#setPhone(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetPhone(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setPhone", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#setPostalCode(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetPostalCode(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setPostalCode", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#setPremises(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetPremises(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setPremises", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#setSubAdminArea(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetSubAdminArea(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSubAdminArea", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#setSubLocality(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetSubLocality(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSubLocality", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#setSubThoroughfare(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetSubThoroughfare(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSubThoroughfare", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#setThoroughfare(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetThoroughfare(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setThoroughfare", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Address.html#setUrl(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetUrl(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setUrl", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Address.html#writeToParcel(android.os.Parcel,int)"/>

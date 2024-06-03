@@ -42,35 +42,35 @@ namespace Java.Lang.Invoke
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#acquireFence()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#acquireFence()"/>
         /// </summary>
         public static void AcquireFence()
         {
             SExecuteWithSignature(LocalBridgeClazz, "acquireFence", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#fullFence()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#fullFence()"/>
         /// </summary>
         public static void FullFence()
         {
             SExecuteWithSignature(LocalBridgeClazz, "fullFence", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#loadLoadFence()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#loadLoadFence()"/>
         /// </summary>
         public static void LoadLoadFence()
         {
             SExecuteWithSignature(LocalBridgeClazz, "loadLoadFence", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#releaseFence()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#releaseFence()"/>
         /// </summary>
         public static void ReleaseFence()
         {
             SExecuteWithSignature(LocalBridgeClazz, "releaseFence", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#storeStoreFence()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#storeStoreFence()"/>
         /// </summary>
         public static void StoreStoreFence()
         {
@@ -81,7 +81,7 @@ namespace Java.Lang.Invoke
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#withInvokeBehavior()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#withInvokeBehavior()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Invoke.VarHandle"/></returns>
         public Java.Lang.Invoke.VarHandle WithInvokeBehavior()
@@ -89,7 +89,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<Java.Lang.Invoke.VarHandle>("withInvokeBehavior", "()Ljava/lang/invoke/VarHandle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#withInvokeExactBehavior()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#withInvokeExactBehavior()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Invoke.VarHandle"/></returns>
         public Java.Lang.Invoke.VarHandle WithInvokeExactBehavior()
@@ -97,7 +97,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<Java.Lang.Invoke.VarHandle>("withInvokeExactBehavior", "()Ljava/lang/invoke/VarHandle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#hasInvokeExactBehavior()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#hasInvokeExactBehavior()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasInvokeExactBehavior()
@@ -105,7 +105,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<bool>("hasInvokeExactBehavior", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#isAccessModeSupported(java.lang.invoke.VarHandle.AccessMode)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#isAccessModeSupported(java.lang.invoke.VarHandle.AccessMode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -114,7 +114,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<bool>("isAccessModeSupported", "(Ljava/lang/invoke/VarHandle$AccessMode;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#accessModeType(java.lang.invoke.VarHandle.AccessMode)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#accessModeType(java.lang.invoke.VarHandle.AccessMode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
@@ -123,7 +123,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("accessModeType", "(Ljava/lang/invoke/VarHandle$AccessMode;)Ljava/lang/invoke/MethodType;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#compareAndSet(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#compareAndSet(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -132,7 +132,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature<bool>("compareAndSet", "([Ljava/lang/Object;)Z"); else return IExecuteWithSignature<bool>("compareAndSet", "([Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#weakCompareAndSet(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#weakCompareAndSet(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -141,7 +141,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature<bool>("weakCompareAndSet", "([Ljava/lang/Object;)Z"); else return IExecuteWithSignature<bool>("weakCompareAndSet", "([Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#weakCompareAndSetAcquire(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#weakCompareAndSetAcquire(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -150,7 +150,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature<bool>("weakCompareAndSetAcquire", "([Ljava/lang/Object;)Z"); else return IExecuteWithSignature<bool>("weakCompareAndSetAcquire", "([Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#weakCompareAndSetPlain(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#weakCompareAndSetPlain(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -159,7 +159,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature<bool>("weakCompareAndSetPlain", "([Ljava/lang/Object;)Z"); else return IExecuteWithSignature<bool>("weakCompareAndSetPlain", "([Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#weakCompareAndSetRelease(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#weakCompareAndSetRelease(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -168,7 +168,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature<bool>("weakCompareAndSetRelease", "([Ljava/lang/Object;)Z"); else return IExecuteWithSignature<bool>("weakCompareAndSetRelease", "([Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#compareAndExchange(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#compareAndExchange(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -177,7 +177,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("compareAndExchange", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("compareAndExchange", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#compareAndExchangeAcquire(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#compareAndExchangeAcquire(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -186,7 +186,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("compareAndExchangeAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("compareAndExchangeAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#compareAndExchangeRelease(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#compareAndExchangeRelease(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -195,7 +195,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("compareAndExchangeRelease", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("compareAndExchangeRelease", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#get(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#get(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -204,7 +204,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("get", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("get", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#getAcquire(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#getAcquire(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -213,7 +213,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("getAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#getAndAdd(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#getAndAdd(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -222,7 +222,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("getAndAdd", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndAdd", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#getAndAddAcquire(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#getAndAddAcquire(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -231,7 +231,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("getAndAddAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndAddAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#getAndAddRelease(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#getAndAddRelease(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -240,7 +240,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("getAndAddRelease", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndAddRelease", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseAnd(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#getAndBitwiseAnd(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -249,7 +249,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("getAndBitwiseAnd", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndBitwiseAnd", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseAndAcquire(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#getAndBitwiseAndAcquire(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -258,7 +258,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("getAndBitwiseAndAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndBitwiseAndAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseAndRelease(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#getAndBitwiseAndRelease(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -267,7 +267,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("getAndBitwiseAndRelease", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndBitwiseAndRelease", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseOr(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#getAndBitwiseOr(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -276,7 +276,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("getAndBitwiseOr", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndBitwiseOr", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseOrAcquire(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#getAndBitwiseOrAcquire(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -285,7 +285,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("getAndBitwiseOrAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndBitwiseOrAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseOrRelease(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#getAndBitwiseOrRelease(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -294,7 +294,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("getAndBitwiseOrRelease", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndBitwiseOrRelease", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseXor(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#getAndBitwiseXor(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -303,7 +303,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("getAndBitwiseXor", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndBitwiseXor", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseXorAcquire(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#getAndBitwiseXorAcquire(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -312,7 +312,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("getAndBitwiseXorAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndBitwiseXorAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseXorRelease(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#getAndBitwiseXorRelease(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -321,7 +321,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("getAndBitwiseXorRelease", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndBitwiseXorRelease", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#getAndSet(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#getAndSet(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -330,7 +330,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("getAndSet", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndSet", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#getAndSetAcquire(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#getAndSetAcquire(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -339,7 +339,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("getAndSetAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndSetAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#getAndSetRelease(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#getAndSetRelease(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -348,7 +348,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("getAndSetRelease", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndSetRelease", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#getOpaque(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#getOpaque(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -357,7 +357,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("getOpaque", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getOpaque", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#getVolatile(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#getVolatile(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -366,7 +366,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("getVolatile", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getVolatile", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#set(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#set(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void Set(params object[] arg0)
@@ -374,7 +374,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) IExecuteWithSignature("set", "([Ljava/lang/Object;)V"); else IExecuteWithSignature("set", "([Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#setOpaque(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#setOpaque(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void SetOpaque(params object[] arg0)
@@ -382,7 +382,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) IExecuteWithSignature("setOpaque", "([Ljava/lang/Object;)V"); else IExecuteWithSignature("setOpaque", "([Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#setRelease(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#setRelease(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void SetRelease(params object[] arg0)
@@ -390,7 +390,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) IExecuteWithSignature("setRelease", "([Ljava/lang/Object;)V"); else IExecuteWithSignature("setRelease", "([Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#setVolatile(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#setVolatile(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void SetVolatile(params object[] arg0)
@@ -398,7 +398,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) IExecuteWithSignature("setVolatile", "([Ljava/lang/Object;)V"); else IExecuteWithSignature("setVolatile", "([Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#varType()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#varType()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class VarType()
@@ -406,7 +406,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<Java.Lang.Class>("varType", "()Ljava/lang/Class;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#toMethodHandle(java.lang.invoke.VarHandle.AccessMode)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#toMethodHandle(java.lang.invoke.VarHandle.AccessMode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
@@ -415,20 +415,12 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("toMethodHandle", "(Ljava/lang/invoke/VarHandle$AccessMode;)Ljava/lang/invoke/MethodHandle;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#coordinateTypes()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#coordinateTypes()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Lang.Class> CoordinateTypes()
         {
             return IExecuteWithSignature<Java.Util.List<Java.Lang.Class>>("coordinateTypes", "()Ljava/util/List;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html#describeConstable()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Lang.Invoke.VarHandle.VarHandleDesc> DescribeConstable()
-        {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Lang.Invoke.VarHandle.VarHandleDesc>>("describeConstable", "()Ljava/util/Optional;");
         }
 
         #endregion
@@ -447,187 +439,187 @@ namespace Java.Lang.Invoke
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#COMPARE_AND_EXCHANGE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#COMPARE_AND_EXCHANGE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode COMPARE_AND_EXCHANGE { get { if (!_COMPARE_AND_EXCHANGEReady) { _COMPARE_AND_EXCHANGEContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "COMPARE_AND_EXCHANGE"); _COMPARE_AND_EXCHANGEReady = true; } return _COMPARE_AND_EXCHANGEContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _COMPARE_AND_EXCHANGEContent = default;
             private static bool _COMPARE_AND_EXCHANGEReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#COMPARE_AND_EXCHANGE_ACQUIRE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#COMPARE_AND_EXCHANGE_ACQUIRE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode COMPARE_AND_EXCHANGE_ACQUIRE { get { if (!_COMPARE_AND_EXCHANGE_ACQUIREReady) { _COMPARE_AND_EXCHANGE_ACQUIREContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "COMPARE_AND_EXCHANGE_ACQUIRE"); _COMPARE_AND_EXCHANGE_ACQUIREReady = true; } return _COMPARE_AND_EXCHANGE_ACQUIREContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _COMPARE_AND_EXCHANGE_ACQUIREContent = default;
             private static bool _COMPARE_AND_EXCHANGE_ACQUIREReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#COMPARE_AND_EXCHANGE_RELEASE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#COMPARE_AND_EXCHANGE_RELEASE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode COMPARE_AND_EXCHANGE_RELEASE { get { if (!_COMPARE_AND_EXCHANGE_RELEASEReady) { _COMPARE_AND_EXCHANGE_RELEASEContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "COMPARE_AND_EXCHANGE_RELEASE"); _COMPARE_AND_EXCHANGE_RELEASEReady = true; } return _COMPARE_AND_EXCHANGE_RELEASEContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _COMPARE_AND_EXCHANGE_RELEASEContent = default;
             private static bool _COMPARE_AND_EXCHANGE_RELEASEReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#COMPARE_AND_SET"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#COMPARE_AND_SET"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode COMPARE_AND_SET { get { if (!_COMPARE_AND_SETReady) { _COMPARE_AND_SETContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "COMPARE_AND_SET"); _COMPARE_AND_SETReady = true; } return _COMPARE_AND_SETContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _COMPARE_AND_SETContent = default;
             private static bool _COMPARE_AND_SETReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#GET"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET { get { if (!_GETReady) { _GETContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "GET"); _GETReady = true; } return _GETContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _GETContent = default;
             private static bool _GETReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_ACQUIRE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#GET_ACQUIRE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_ACQUIRE { get { if (!_GET_ACQUIREReady) { _GET_ACQUIREContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "GET_ACQUIRE"); _GET_ACQUIREReady = true; } return _GET_ACQUIREContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _GET_ACQUIREContent = default;
             private static bool _GET_ACQUIREReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_ADD"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_ADD"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_ADD { get { if (!_GET_AND_ADDReady) { _GET_AND_ADDContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "GET_AND_ADD"); _GET_AND_ADDReady = true; } return _GET_AND_ADDContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _GET_AND_ADDContent = default;
             private static bool _GET_AND_ADDReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_ADD_ACQUIRE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_ADD_ACQUIRE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_ADD_ACQUIRE { get { if (!_GET_AND_ADD_ACQUIREReady) { _GET_AND_ADD_ACQUIREContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "GET_AND_ADD_ACQUIRE"); _GET_AND_ADD_ACQUIREReady = true; } return _GET_AND_ADD_ACQUIREContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _GET_AND_ADD_ACQUIREContent = default;
             private static bool _GET_AND_ADD_ACQUIREReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_ADD_RELEASE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_ADD_RELEASE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_ADD_RELEASE { get { if (!_GET_AND_ADD_RELEASEReady) { _GET_AND_ADD_RELEASEContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "GET_AND_ADD_RELEASE"); _GET_AND_ADD_RELEASEReady = true; } return _GET_AND_ADD_RELEASEContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _GET_AND_ADD_RELEASEContent = default;
             private static bool _GET_AND_ADD_RELEASEReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_AND"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_AND"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_AND { get { if (!_GET_AND_BITWISE_ANDReady) { _GET_AND_BITWISE_ANDContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "GET_AND_BITWISE_AND"); _GET_AND_BITWISE_ANDReady = true; } return _GET_AND_BITWISE_ANDContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _GET_AND_BITWISE_ANDContent = default;
             private static bool _GET_AND_BITWISE_ANDReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_AND_ACQUIRE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_AND_ACQUIRE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_AND_ACQUIRE { get { if (!_GET_AND_BITWISE_AND_ACQUIREReady) { _GET_AND_BITWISE_AND_ACQUIREContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "GET_AND_BITWISE_AND_ACQUIRE"); _GET_AND_BITWISE_AND_ACQUIREReady = true; } return _GET_AND_BITWISE_AND_ACQUIREContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _GET_AND_BITWISE_AND_ACQUIREContent = default;
             private static bool _GET_AND_BITWISE_AND_ACQUIREReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_AND_RELEASE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_AND_RELEASE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_AND_RELEASE { get { if (!_GET_AND_BITWISE_AND_RELEASEReady) { _GET_AND_BITWISE_AND_RELEASEContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "GET_AND_BITWISE_AND_RELEASE"); _GET_AND_BITWISE_AND_RELEASEReady = true; } return _GET_AND_BITWISE_AND_RELEASEContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _GET_AND_BITWISE_AND_RELEASEContent = default;
             private static bool _GET_AND_BITWISE_AND_RELEASEReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_OR"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_OR"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_OR { get { if (!_GET_AND_BITWISE_ORReady) { _GET_AND_BITWISE_ORContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "GET_AND_BITWISE_OR"); _GET_AND_BITWISE_ORReady = true; } return _GET_AND_BITWISE_ORContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _GET_AND_BITWISE_ORContent = default;
             private static bool _GET_AND_BITWISE_ORReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_OR_ACQUIRE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_OR_ACQUIRE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_OR_ACQUIRE { get { if (!_GET_AND_BITWISE_OR_ACQUIREReady) { _GET_AND_BITWISE_OR_ACQUIREContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "GET_AND_BITWISE_OR_ACQUIRE"); _GET_AND_BITWISE_OR_ACQUIREReady = true; } return _GET_AND_BITWISE_OR_ACQUIREContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _GET_AND_BITWISE_OR_ACQUIREContent = default;
             private static bool _GET_AND_BITWISE_OR_ACQUIREReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_OR_RELEASE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_OR_RELEASE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_OR_RELEASE { get { if (!_GET_AND_BITWISE_OR_RELEASEReady) { _GET_AND_BITWISE_OR_RELEASEContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "GET_AND_BITWISE_OR_RELEASE"); _GET_AND_BITWISE_OR_RELEASEReady = true; } return _GET_AND_BITWISE_OR_RELEASEContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _GET_AND_BITWISE_OR_RELEASEContent = default;
             private static bool _GET_AND_BITWISE_OR_RELEASEReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_XOR"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_XOR"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_XOR { get { if (!_GET_AND_BITWISE_XORReady) { _GET_AND_BITWISE_XORContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "GET_AND_BITWISE_XOR"); _GET_AND_BITWISE_XORReady = true; } return _GET_AND_BITWISE_XORContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _GET_AND_BITWISE_XORContent = default;
             private static bool _GET_AND_BITWISE_XORReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_XOR_ACQUIRE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_XOR_ACQUIRE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_XOR_ACQUIRE { get { if (!_GET_AND_BITWISE_XOR_ACQUIREReady) { _GET_AND_BITWISE_XOR_ACQUIREContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "GET_AND_BITWISE_XOR_ACQUIRE"); _GET_AND_BITWISE_XOR_ACQUIREReady = true; } return _GET_AND_BITWISE_XOR_ACQUIREContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _GET_AND_BITWISE_XOR_ACQUIREContent = default;
             private static bool _GET_AND_BITWISE_XOR_ACQUIREReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_XOR_RELEASE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_XOR_RELEASE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_XOR_RELEASE { get { if (!_GET_AND_BITWISE_XOR_RELEASEReady) { _GET_AND_BITWISE_XOR_RELEASEContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "GET_AND_BITWISE_XOR_RELEASE"); _GET_AND_BITWISE_XOR_RELEASEReady = true; } return _GET_AND_BITWISE_XOR_RELEASEContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _GET_AND_BITWISE_XOR_RELEASEContent = default;
             private static bool _GET_AND_BITWISE_XOR_RELEASEReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_SET"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_SET"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_SET { get { if (!_GET_AND_SETReady) { _GET_AND_SETContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "GET_AND_SET"); _GET_AND_SETReady = true; } return _GET_AND_SETContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _GET_AND_SETContent = default;
             private static bool _GET_AND_SETReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_SET_ACQUIRE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_SET_ACQUIRE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_SET_ACQUIRE { get { if (!_GET_AND_SET_ACQUIREReady) { _GET_AND_SET_ACQUIREContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "GET_AND_SET_ACQUIRE"); _GET_AND_SET_ACQUIREReady = true; } return _GET_AND_SET_ACQUIREContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _GET_AND_SET_ACQUIREContent = default;
             private static bool _GET_AND_SET_ACQUIREReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_SET_RELEASE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_SET_RELEASE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_SET_RELEASE { get { if (!_GET_AND_SET_RELEASEReady) { _GET_AND_SET_RELEASEContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "GET_AND_SET_RELEASE"); _GET_AND_SET_RELEASEReady = true; } return _GET_AND_SET_RELEASEContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _GET_AND_SET_RELEASEContent = default;
             private static bool _GET_AND_SET_RELEASEReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_OPAQUE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#GET_OPAQUE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_OPAQUE { get { if (!_GET_OPAQUEReady) { _GET_OPAQUEContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "GET_OPAQUE"); _GET_OPAQUEReady = true; } return _GET_OPAQUEContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _GET_OPAQUEContent = default;
             private static bool _GET_OPAQUEReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_VOLATILE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#GET_VOLATILE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_VOLATILE { get { if (!_GET_VOLATILEReady) { _GET_VOLATILEContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "GET_VOLATILE"); _GET_VOLATILEReady = true; } return _GET_VOLATILEContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _GET_VOLATILEContent = default;
             private static bool _GET_VOLATILEReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#SET"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#SET"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode SET { get { if (!_SETReady) { _SETContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "SET"); _SETReady = true; } return _SETContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _SETContent = default;
             private static bool _SETReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#SET_OPAQUE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#SET_OPAQUE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode SET_OPAQUE { get { if (!_SET_OPAQUEReady) { _SET_OPAQUEContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "SET_OPAQUE"); _SET_OPAQUEReady = true; } return _SET_OPAQUEContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _SET_OPAQUEContent = default;
             private static bool _SET_OPAQUEReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#SET_RELEASE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#SET_RELEASE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode SET_RELEASE { get { if (!_SET_RELEASEReady) { _SET_RELEASEContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "SET_RELEASE"); _SET_RELEASEReady = true; } return _SET_RELEASEContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _SET_RELEASEContent = default;
             private static bool _SET_RELEASEReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#SET_VOLATILE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#SET_VOLATILE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode SET_VOLATILE { get { if (!_SET_VOLATILEReady) { _SET_VOLATILEContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "SET_VOLATILE"); _SET_VOLATILEReady = true; } return _SET_VOLATILEContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _SET_VOLATILEContent = default;
             private static bool _SET_VOLATILEReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode WEAK_COMPARE_AND_SET { get { if (!_WEAK_COMPARE_AND_SETReady) { _WEAK_COMPARE_AND_SETContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "WEAK_COMPARE_AND_SET"); _WEAK_COMPARE_AND_SETReady = true; } return _WEAK_COMPARE_AND_SETContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _WEAK_COMPARE_AND_SETContent = default;
             private static bool _WEAK_COMPARE_AND_SETReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET_ACQUIRE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET_ACQUIRE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode WEAK_COMPARE_AND_SET_ACQUIRE { get { if (!_WEAK_COMPARE_AND_SET_ACQUIREReady) { _WEAK_COMPARE_AND_SET_ACQUIREContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "WEAK_COMPARE_AND_SET_ACQUIRE"); _WEAK_COMPARE_AND_SET_ACQUIREReady = true; } return _WEAK_COMPARE_AND_SET_ACQUIREContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _WEAK_COMPARE_AND_SET_ACQUIREContent = default;
             private static bool _WEAK_COMPARE_AND_SET_ACQUIREReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET_PLAIN"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET_PLAIN"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode WEAK_COMPARE_AND_SET_PLAIN { get { if (!_WEAK_COMPARE_AND_SET_PLAINReady) { _WEAK_COMPARE_AND_SET_PLAINContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "WEAK_COMPARE_AND_SET_PLAIN"); _WEAK_COMPARE_AND_SET_PLAINReady = true; } return _WEAK_COMPARE_AND_SET_PLAINContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _WEAK_COMPARE_AND_SET_PLAINContent = default;
             private static bool _WEAK_COMPARE_AND_SET_PLAINReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET_RELEASE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET_RELEASE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode WEAK_COMPARE_AND_SET_RELEASE { get { if (!_WEAK_COMPARE_AND_SET_RELEASEReady) { _WEAK_COMPARE_AND_SET_RELEASEContent = SGetField<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "WEAK_COMPARE_AND_SET_RELEASE"); _WEAK_COMPARE_AND_SET_RELEASEReady = true; } return _WEAK_COMPARE_AND_SET_RELEASEContent; } }
             private static Java.Lang.Invoke.VarHandle.AccessMode _WEAK_COMPARE_AND_SET_RELEASEContent = default;
@@ -637,7 +629,7 @@ namespace Java.Lang.Invoke
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#valueFromMethodName(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#valueFromMethodName(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></returns>
@@ -646,7 +638,7 @@ namespace Java.Lang.Invoke
                 return SExecuteWithSignature<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "valueFromMethodName", "(Ljava/lang/String;)Ljava/lang/invoke/VarHandle$AccessMode;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#valueOf(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></returns>
@@ -655,7 +647,7 @@ namespace Java.Lang.Invoke
                 return SExecuteWithSignature<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/invoke/VarHandle$AccessMode;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#values()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#values()"/>
             /// </summary>
             /// <returns><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></returns>
             public static Java.Lang.Invoke.VarHandle.AccessMode[] Values()
@@ -667,7 +659,7 @@ namespace Java.Lang.Invoke
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html#methodName()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html#methodName()"/>
             /// </summary>
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String MethodName()

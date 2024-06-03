@@ -184,13 +184,6 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#getPriority()"/> <see href="https://developer.android.com/reference/android/content/IntentFilter.html#setPriority(int)"/>
-        /// </summary>
-        public int Priority
-        {
-            get { return IExecuteWithSignature<int>("getPriority", "()I"); } set { IExecuteWithSignature("setPriority", "(I)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#getDataAuthority(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -352,6 +345,14 @@ namespace Android.Content
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#getPriority()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPriority()
+        {
+            return IExecuteWithSignature<int>("getPriority", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#match(android.content.ContentResolver,android.content.Intent,boolean,java.lang.String)"/>
@@ -561,6 +562,14 @@ namespace Android.Content
             IExecuteWithSignature("addDataType", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#setPriority(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetPriority(int arg0)
+        {
+            IExecuteWithSignature("setPriority", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#writeToParcel(android.os.Parcel,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
@@ -665,18 +674,12 @@ namespace Android.Content
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/IntentFilter.AuthorityEntry.html#getHost()"/> 
+            /// <see href="https://developer.android.com/reference/android/content/IntentFilter.AuthorityEntry.html#getPort()"/>
             /// </summary>
-            public Java.Lang.String Host
+            /// <returns><see cref="int"/></returns>
+            public int GetPort()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getHost", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/IntentFilter.AuthorityEntry.html#getPort()"/> 
-            /// </summary>
-            public int Port
-            {
-                get { return IExecuteWithSignature<int>("getPort", "()I"); }
+                return IExecuteWithSignature<int>("getPort", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/IntentFilter.AuthorityEntry.html#match(android.net.Uri)"/>
@@ -686,6 +689,14 @@ namespace Android.Content
             public int Match(Android.Net.Uri arg0)
             {
                 return IExecuteWithSignature<int>("match", "(Landroid/net/Uri;)I", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/IntentFilter.AuthorityEntry.html#getHost()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetHost()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getHost", "()Ljava/lang/String;");
             }
 
             #endregion

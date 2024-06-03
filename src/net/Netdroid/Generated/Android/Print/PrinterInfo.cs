@@ -70,39 +70,20 @@ namespace Android.Print
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrinterInfo.html#getCapabilities()"/> 
+        /// <see href="https://developer.android.com/reference/android/print/PrinterInfo.html#getCapabilities()"/>
         /// </summary>
-        public Android.Print.PrinterCapabilitiesInfo Capabilities
+        /// <returns><see cref="Android.Print.PrinterCapabilitiesInfo"/></returns>
+        public Android.Print.PrinterCapabilitiesInfo GetCapabilities()
         {
-            get { return IExecuteWithSignature<Android.Print.PrinterCapabilitiesInfo>("getCapabilities", "()Landroid/print/PrinterCapabilitiesInfo;"); }
+            return IExecuteWithSignature<Android.Print.PrinterCapabilitiesInfo>("getCapabilities", "()Landroid/print/PrinterCapabilitiesInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrinterInfo.html#getDescription()"/> 
+        /// <see href="https://developer.android.com/reference/android/print/PrinterInfo.html#getId()"/>
         /// </summary>
-        public Java.Lang.String Description
+        /// <returns><see cref="Android.Print.PrinterId"/></returns>
+        public Android.Print.PrinterId GetId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrinterInfo.html#getId()"/> 
-        /// </summary>
-        public Android.Print.PrinterId Id
-        {
-            get { return IExecuteWithSignature<Android.Print.PrinterId>("getId", "()Landroid/print/PrinterId;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrinterInfo.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrinterInfo.html#getStatus()"/> 
-        /// </summary>
-        public int Status
-        {
-            get { return IExecuteWithSignature<int>("getStatus", "()I"); }
+            return IExecuteWithSignature<Android.Print.PrinterId>("getId", "()Landroid/print/PrinterId;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrinterInfo.html#describeContents()"/>
@@ -111,6 +92,30 @@ namespace Android.Print
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PrinterInfo.html#getStatus()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStatus()
+        {
+            return IExecuteWithSignature<int>("getStatus", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PrinterInfo.html#getDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PrinterInfo.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrinterInfo.html#writeToParcel(android.os.Parcel,int)"/>

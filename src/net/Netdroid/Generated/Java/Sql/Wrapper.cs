@@ -64,7 +64,7 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Wrapper.html#unwrap(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Wrapper.html#unwrap(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"></typeparam>
@@ -75,7 +75,7 @@ namespace Java.Sql
             return IExecuteWithSignature<T>("unwrap", "(Ljava/lang/Class;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Wrapper.html#isWrapperFor(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Wrapper.html#isWrapperFor(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="bool"/></returns>

@@ -52,40 +52,20 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Person.html#getIcon()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Icon Icon
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Person.html#getKey()"/> 
-        /// </summary>
-        public Java.Lang.String Key
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Person.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getName", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Person.html#getUri()"/> 
-        /// </summary>
-        public Java.Lang.String Uri
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUri", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Person.html#toBuilder()"/>
         /// </summary>
         /// <returns><see cref="Android.App.Person.Builder"/></returns>
         public Android.App.Person.Builder ToBuilder()
         {
             return IExecuteWithSignature<Android.App.Person.Builder>("toBuilder", "()Landroid/app/Person$Builder;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Person.html#getIcon()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
+        public Android.Graphics.Drawable.Icon GetIcon()
+        {
+            return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Person.html#isBot()"/>
@@ -110,6 +90,30 @@ namespace Android.App
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Person.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getName", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Person.html#getKey()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetKey()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Person.html#getUri()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUri()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUri", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Person.html#writeToParcel(android.os.Parcel,int)"/>

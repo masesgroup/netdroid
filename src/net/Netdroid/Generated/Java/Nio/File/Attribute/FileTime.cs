@@ -42,7 +42,7 @@ namespace Java.Nio.File.Attribute
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileTime.html#from(java.time.Instant)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/FileTime.html#from(java.time.Instant)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
         /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
@@ -51,7 +51,7 @@ namespace Java.Nio.File.Attribute
             return SExecuteWithSignature<Java.Nio.File.Attribute.FileTime>(LocalBridgeClazz, "from", "(Ljava/time/Instant;)Ljava/nio/file/attribute/FileTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileTime.html#from(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/FileTime.html#from(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -61,7 +61,7 @@ namespace Java.Nio.File.Attribute
             return SExecute<Java.Nio.File.Attribute.FileTime>(LocalBridgeClazz, "from", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileTime.html#fromMillis(long)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/FileTime.html#fromMillis(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
@@ -74,7 +74,7 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileTime.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/FileTime.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -83,7 +83,7 @@ namespace Java.Nio.File.Attribute
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileTime.html#compareTo(java.nio.file.attribute.FileTime)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/FileTime.html#compareTo(java.nio.file.attribute.FileTime)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
         /// <returns><see cref="int"/></returns>
@@ -92,7 +92,7 @@ namespace Java.Nio.File.Attribute
             return IExecuteWithSignature<int>("compareTo", "(Ljava/nio/file/attribute/FileTime;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileTime.html#toInstant()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/FileTime.html#toInstant()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant ToInstant()
@@ -100,7 +100,7 @@ namespace Java.Nio.File.Attribute
             return IExecuteWithSignature<Java.Time.Instant>("toInstant", "()Ljava/time/Instant;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileTime.html#to(java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/FileTime.html#to(java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
         /// <returns><see cref="long"/></returns>
@@ -109,7 +109,7 @@ namespace Java.Nio.File.Attribute
             return IExecuteWithSignature<long>("to", "(Ljava/util/concurrent/TimeUnit;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileTime.html#toMillis()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/FileTime.html#toMillis()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long ToMillis()

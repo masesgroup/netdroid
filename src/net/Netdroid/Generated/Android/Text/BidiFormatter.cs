@@ -42,11 +42,12 @@ namespace Android.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/BidiFormatter.html#getInstance()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/BidiFormatter.html#getInstance()"/>
         /// </summary>
-        public static Android.Text.BidiFormatter Instance
+        /// <returns><see cref="Android.Text.BidiFormatter"/></returns>
+        public static Android.Text.BidiFormatter GetInstance()
         {
-            get { return SExecuteWithSignature<Android.Text.BidiFormatter>(LocalBridgeClazz, "getInstance", "()Landroid/text/BidiFormatter;"); }
+            return SExecuteWithSignature<Android.Text.BidiFormatter>(LocalBridgeClazz, "getInstance", "()Landroid/text/BidiFormatter;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/BidiFormatter.html#getInstance(boolean)"/>
@@ -71,11 +72,12 @@ namespace Android.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/BidiFormatter.html#getStereoReset()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/BidiFormatter.html#getStereoReset()"/>
         /// </summary>
-        public bool StereoReset
+        /// <returns><see cref="bool"/></returns>
+        public bool GetStereoReset()
         {
-            get { return IExecuteWithSignature<bool>("getStereoReset", "()Z"); }
+            return IExecuteWithSignature<bool>("getStereoReset", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/BidiFormatter.html#isRtl(java.lang.CharSequence)"/>

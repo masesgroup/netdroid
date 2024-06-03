@@ -54,11 +54,12 @@ namespace Android.Media.Effect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/effect/EffectContext.html#getFactory()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/effect/EffectContext.html#getFactory()"/>
         /// </summary>
-        public Android.Media.Effect.EffectFactory Factory
+        /// <returns><see cref="Android.Media.Effect.EffectFactory"/></returns>
+        public Android.Media.Effect.EffectFactory GetFactory()
         {
-            get { return IExecuteWithSignature<Android.Media.Effect.EffectFactory>("getFactory", "()Landroid/media/effect/EffectFactory;"); }
+            return IExecuteWithSignature<Android.Media.Effect.EffectFactory>("getFactory", "()Landroid/media/effect/EffectFactory;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/effect/EffectContext.html#release()"/>

@@ -52,25 +52,12 @@ namespace Android.Service.Autofill
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/SaveRequest.html#getClientState()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/SaveRequest.html#getClientState()"/>
         /// </summary>
-        public Android.Os.Bundle ClientState
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetClientState()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getClientState", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/SaveRequest.html#getDatasetIds()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> DatasetIds
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getDatasetIds", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/SaveRequest.html#getFillContexts()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Service.Autofill.FillContext> FillContexts
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Service.Autofill.FillContext>>("getFillContexts", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getClientState", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/SaveRequest.html#describeContents()"/>
@@ -79,6 +66,22 @@ namespace Android.Service.Autofill
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/autofill/SaveRequest.html#getFillContexts()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Service.Autofill.FillContext> GetFillContexts()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Service.Autofill.FillContext>>("getFillContexts", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/autofill/SaveRequest.html#getDatasetIds()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetDatasetIds()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getDatasetIds", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/SaveRequest.html#writeToParcel(android.os.Parcel,int)"/>

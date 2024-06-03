@@ -29,6 +29,25 @@ namespace Android.Content
     public partial class AbstractThreadedSyncAdapter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#%3Cinit%3E(android.content.Context,boolean,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        public AbstractThreadedSyncAdapter(Android.Content.Context arg0, bool arg1, bool arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#%3Cinit%3E(android.content.Context,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        public AbstractThreadedSyncAdapter(Android.Content.Context arg0, bool arg1)
+            : base(arg0, arg1)
+        {
+        }
 
         #endregion
 
@@ -37,6 +56,13 @@ namespace Android.Content
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#LOG_SYNC_DETAILS"/>
+        /// </summary>
+        [global::System.Obsolete()]
+        public static int LOG_SYNC_DETAILS { get { if (!_LOG_SYNC_DETAILSReady) { _LOG_SYNC_DETAILSContent = SGetField<int>(LocalBridgeClazz, "LOG_SYNC_DETAILS"); _LOG_SYNC_DETAILSReady = true; } return _LOG_SYNC_DETAILSContent; } }
+        private static int _LOG_SYNC_DETAILSContent = default;
+        private static bool _LOG_SYNC_DETAILSReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -46,33 +72,6 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="AbstractThreadedSyncAdapter"/>
-        /// </summary>
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("onPerformSync", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Accounts.Account>>>(OnPerformSyncEventHandler));
-            AddEventHandler("getContext", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetContextEventHandler));
-            AddEventHandler("onUnsyncableAccount", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnUnsyncableAccountEventHandler));
-            AddEventHandler("getSyncAdapterBinder", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetSyncAdapterBinderEventHandler));
-            AddEventHandler("onSecurityException", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Accounts.Account>>>(OnSecurityExceptionEventHandler));
-            AddEventHandler("onSyncCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnSyncCanceledEventHandler));
-            AddEventHandler("onSyncCanceled1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.Thread>>>(OnSyncCanceled1EventHandler));
-
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#onPerformSync(android.accounts.Account,android.os.Bundle,java.lang.String,android.content.ContentProviderClient,android.content.SyncResult)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnPerformSync"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Accounts.Account, Android.Os.Bundle, Java.Lang.String, Android.Content.ContentProviderClient, Android.Content.SyncResult> OnOnPerformSync { get; set; } = null;
-
-        void OnPerformSyncEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Accounts.Account>> data)
-        {
-            var methodToExecute = (OnOnPerformSync != null) ? OnOnPerformSync : OnPerformSync;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Android.Os.Bundle>(0), data.EventData.GetAt<Java.Lang.String>(1), data.EventData.GetAt<Android.Content.ContentProviderClient>(2), data.EventData.GetAt<Android.Content.SyncResult>(3));
-        }
-
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#onPerformSync(android.accounts.Account,android.os.Bundle,java.lang.String,android.content.ContentProviderClient,android.content.SyncResult)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Accounts.Account"/></param>
@@ -80,205 +79,33 @@ namespace Android.Content
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="Android.Content.ContentProviderClient"/></param>
         /// <param name="arg4"><see cref="Android.Content.SyncResult"/></param>
-        public virtual void OnPerformSync(Android.Accounts.Account arg0, Android.Os.Bundle arg1, Java.Lang.String arg2, Android.Content.ContentProviderClient arg3, Android.Content.SyncResult arg4)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#getContext()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetContext"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.Content.Context> OnGetContext { get; set; } = null;
-
-        void GetContextEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetContext != null) ? OnGetContext : GetContext;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#getContext()"/>
-        /// </summary>
-        /// <returns><see cref="Android.Content.Context"/></returns>
-        public virtual Android.Content.Context GetContext()
-        {
-            return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#onUnsyncableAccount()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnUnsyncableAccount"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnOnUnsyncableAccount { get; set; } = null;
-
-        void OnUnsyncableAccountEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnOnUnsyncableAccount != null) ? OnOnUnsyncableAccount : OnUnsyncableAccount;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#onUnsyncableAccount()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        public virtual bool OnUnsyncableAccount()
-        {
-            return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#getSyncAdapterBinder()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetSyncAdapterBinder"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.Os.IBinder> OnGetSyncAdapterBinder { get; set; } = null;
-
-        void GetSyncAdapterBinderEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetSyncAdapterBinder != null) ? OnGetSyncAdapterBinder : GetSyncAdapterBinder;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#getSyncAdapterBinder()"/>
-        /// </summary>
-        /// <returns><see cref="Android.Os.IBinder"/></returns>
-        public virtual Android.Os.IBinder GetSyncAdapterBinder()
-        {
-            return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#onSecurityException(android.accounts.Account,android.os.Bundle,java.lang.String,android.content.SyncResult)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnSecurityException"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Accounts.Account, Android.Os.Bundle, Java.Lang.String, Android.Content.SyncResult> OnOnSecurityException { get; set; } = null;
-
-        void OnSecurityExceptionEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Accounts.Account>> data)
-        {
-            var methodToExecute = (OnOnSecurityException != null) ? OnOnSecurityException : OnSecurityException;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Android.Os.Bundle>(0), data.EventData.GetAt<Java.Lang.String>(1), data.EventData.GetAt<Android.Content.SyncResult>(2));
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#onSecurityException(android.accounts.Account,android.os.Bundle,java.lang.String,android.content.SyncResult)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Accounts.Account"/></param>
-        /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Android.Content.SyncResult"/></param>
-        public virtual void OnSecurityException(Android.Accounts.Account arg0, Android.Os.Bundle arg1, Java.Lang.String arg2, Android.Content.SyncResult arg3)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#onSyncCanceled()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnSyncCanceled"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnOnSyncCanceled { get; set; } = null;
-
-        void OnSyncCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnOnSyncCanceled != null) ? OnOnSyncCanceled : OnSyncCanceled;
-            methodToExecute.Invoke();
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#onSyncCanceled()"/>
-        /// </summary>
-        public virtual void OnSyncCanceled()
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#onSyncCanceled(java.lang.Thread)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnSyncCanceled1"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.Thread> OnOnSyncCanceled1 { get; set; } = null;
-
-        void OnSyncCanceled1EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.Thread>> data)
-        {
-            var methodToExecute = (OnOnSyncCanceled1 != null) ? OnOnSyncCanceled1 : OnSyncCanceled;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#onSyncCanceled(java.lang.Thread)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
-        public virtual void OnSyncCanceled(Java.Lang.Thread arg0)
-        {
-            
-        }
-
-        #endregion
-
-        #region Nested classes
-
-        #endregion
-
-        // TODO: complete the class
-    }
-    #endregion
-
-    #region AbstractThreadedSyncAdapterDirect
-    public partial class AbstractThreadedSyncAdapterDirect
-    {
-        #region Constructors
-
-        #endregion
-
-        #region Class/Interface conversion operators
-
-        #endregion
-
-        #region Fields
-
-        #endregion
-
-        #region Static methods
-
-        #endregion
-
-        #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#getContext()"/> 
-        /// </summary>
-        public Android.Content.Context Context
-        {
-            get { return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#getSyncAdapterBinder()"/> 
-        /// </summary>
-        public Android.Os.IBinder SyncAdapterBinder
-        {
-            get { return IExecuteWithSignature<Android.Os.IBinder>("getSyncAdapterBinder", "()Landroid/os/IBinder;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#onPerformSync(android.accounts.Account,android.os.Bundle,java.lang.String,android.content.ContentProviderClient,android.content.SyncResult)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Accounts.Account"/></param>
-        /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Android.Content.ContentProviderClient"/></param>
-        /// <param name="arg4"><see cref="Android.Content.SyncResult"/></param>
-        public override void OnPerformSync(Android.Accounts.Account arg0, Android.Os.Bundle arg1, Java.Lang.String arg2, Android.Content.ContentProviderClient arg3, Android.Content.SyncResult arg4)
+        public void OnPerformSync(Android.Accounts.Account arg0, Android.Os.Bundle arg1, Java.Lang.String arg2, Android.Content.ContentProviderClient arg3, Android.Content.SyncResult arg4)
         {
             IExecute("onPerformSync", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#getContext()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Context"/></returns>
+        public Android.Content.Context GetContext()
+        {
+            return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#onUnsyncableAccount()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        public override bool OnUnsyncableAccount()
+        public bool OnUnsyncableAccount()
         {
             return IExecuteWithSignature<bool>("onUnsyncableAccount", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#getSyncAdapterBinder()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.IBinder"/></returns>
+        public Android.Os.IBinder GetSyncAdapterBinder()
+        {
+            return IExecuteWithSignature<Android.Os.IBinder>("getSyncAdapterBinder", "()Landroid/os/IBinder;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#onSecurityException(android.accounts.Account,android.os.Bundle,java.lang.String,android.content.SyncResult)"/>
@@ -287,14 +114,14 @@ namespace Android.Content
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="Android.Content.SyncResult"/></param>
-        public override void OnSecurityException(Android.Accounts.Account arg0, Android.Os.Bundle arg1, Java.Lang.String arg2, Android.Content.SyncResult arg3)
+        public void OnSecurityException(Android.Accounts.Account arg0, Android.Os.Bundle arg1, Java.Lang.String arg2, Android.Content.SyncResult arg3)
         {
             IExecute("onSecurityException", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#onSyncCanceled()"/>
         /// </summary>
-        public override void OnSyncCanceled()
+        public void OnSyncCanceled()
         {
             IExecuteWithSignature("onSyncCanceled", "()V");
         }
@@ -302,7 +129,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#onSyncCanceled(java.lang.Thread)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
-        public override void OnSyncCanceled(Java.Lang.Thread arg0)
+        public void OnSyncCanceled(Java.Lang.Thread arg0)
         {
             IExecuteWithSignature("onSyncCanceled", "(Ljava/lang/Thread;)V", arg0);
         }

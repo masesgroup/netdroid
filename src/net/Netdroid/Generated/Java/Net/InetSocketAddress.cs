@@ -30,7 +30,7 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/InetSocketAddress.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/InetSocketAddress.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public InetSocketAddress(int arg0)
@@ -38,7 +38,7 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/InetSocketAddress.html#%3Cinit%3E(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/InetSocketAddress.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -47,7 +47,7 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/InetSocketAddress.html#%3Cinit%3E(java.net.InetAddress,int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/InetSocketAddress.html#%3Cinit%3E(java.net.InetAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -68,7 +68,7 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/InetSocketAddress.html#createUnresolved(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/InetSocketAddress.html#createUnresolved(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -82,40 +82,44 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/InetSocketAddress.html#getAddress()"/> 
-        /// </summary>
-        public Java.Net.InetAddress Address
-        {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getAddress", "()Ljava/net/InetAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/InetSocketAddress.html#getHostName()"/> 
-        /// </summary>
-        public Java.Lang.String HostName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHostName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/InetSocketAddress.html#getHostString()"/> 
-        /// </summary>
-        public Java.Lang.String HostString
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHostString", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/InetSocketAddress.html#getPort()"/> 
-        /// </summary>
-        public int Port
-        {
-            get { return IExecuteWithSignature<int>("getPort", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/InetSocketAddress.html#isUnresolved()"/>
+        /// <see href="https://developer.android.com/reference/java/net/InetSocketAddress.html#isUnresolved()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsUnresolved()
         {
             return IExecuteWithSignature<bool>("isUnresolved", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/InetSocketAddress.html#getPort()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPort()
+        {
+            return IExecuteWithSignature<int>("getPort", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/InetSocketAddress.html#getHostName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetHostName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getHostName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/InetSocketAddress.html#getHostString()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetHostString()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getHostString", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/InetSocketAddress.html#getAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        public Java.Net.InetAddress GetAddress()
+        {
+            return IExecuteWithSignature<Java.Net.InetAddress>("getAddress", "()Ljava/net/InetAddress;");
         }
 
         #endregion

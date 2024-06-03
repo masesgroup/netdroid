@@ -55,18 +55,20 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/BlendModeColorFilter.html#getColor()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/BlendModeColorFilter.html#getMode()"/>
         /// </summary>
-        public int Color
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        public Android.Graphics.BlendMode GetMode()
         {
-            get { return IExecuteWithSignature<int>("getColor", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getMode", "()Landroid/graphics/BlendMode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/BlendModeColorFilter.html#getMode()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/BlendModeColorFilter.html#getColor()"/>
         /// </summary>
-        public Android.Graphics.BlendMode Mode
+        /// <returns><see cref="int"/></returns>
+        public int GetColor()
         {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getMode", "()Landroid/graphics/BlendMode;"); }
+            return IExecuteWithSignature<int>("getColor", "()I");
         }
 
         #endregion

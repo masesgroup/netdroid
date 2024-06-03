@@ -85,27 +85,6 @@ namespace Android.Accessibilityservice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/TouchInteractionController.html#getDisplayId()"/> 
-        /// </summary>
-        public int DisplayId
-        {
-            get { return IExecuteWithSignature<int>("getDisplayId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/TouchInteractionController.html#getMaxPointerCount()"/> 
-        /// </summary>
-        public int MaxPointerCount
-        {
-            get { return IExecuteWithSignature<int>("getMaxPointerCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/TouchInteractionController.html#getState()"/> 
-        /// </summary>
-        public int State
-        {
-            get { return IExecuteWithSignature<int>("getState", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/TouchInteractionController.html#unregisterCallback(android.accessibilityservice.TouchInteractionController.Callback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Accessibilityservice.TouchInteractionController.Callback"/></param>
@@ -113,6 +92,30 @@ namespace Android.Accessibilityservice
         public bool UnregisterCallback(Android.Accessibilityservice.TouchInteractionController.Callback arg0)
         {
             return IExecuteWithSignature<bool>("unregisterCallback", "(Landroid/accessibilityservice/TouchInteractionController$Callback;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/TouchInteractionController.html#getDisplayId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDisplayId()
+        {
+            return IExecuteWithSignature<int>("getDisplayId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/TouchInteractionController.html#getMaxPointerCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxPointerCount()
+        {
+            return IExecuteWithSignature<int>("getMaxPointerCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/TouchInteractionController.html#getState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetState()
+        {
+            return IExecuteWithSignature<int>("getState", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/TouchInteractionController.html#performClick()"/>

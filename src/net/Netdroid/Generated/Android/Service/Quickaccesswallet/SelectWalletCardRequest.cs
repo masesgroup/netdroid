@@ -60,19 +60,20 @@ namespace Android.Service.Quickaccesswallet
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/SelectWalletCardRequest.html#getCardId()"/> 
-        /// </summary>
-        public Java.Lang.String CardId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCardId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/SelectWalletCardRequest.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/SelectWalletCardRequest.html#getCardId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCardId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCardId", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/SelectWalletCardRequest.html#writeToParcel(android.os.Parcel,int)"/>

@@ -56,25 +56,28 @@ namespace Android.App.Appsearch.Observer
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/SchemaChangeInfo.html#getChangedSchemaNames()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/SchemaChangeInfo.html#getDatabaseName()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> ChangedSchemaNames
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDatabaseName()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getChangedSchemaNames", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getDatabaseName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/SchemaChangeInfo.html#getDatabaseName()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/SchemaChangeInfo.html#getPackageName()"/>
         /// </summary>
-        public Java.Lang.String DatabaseName
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDatabaseName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/SchemaChangeInfo.html#getPackageName()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/SchemaChangeInfo.html#getChangedSchemaNames()"/>
         /// </summary>
-        public Java.Lang.String PackageName
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetChangedSchemaNames()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getChangedSchemaNames", "()Ljava/util/Set;");
         }
 
         #endregion

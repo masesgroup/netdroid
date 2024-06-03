@@ -42,7 +42,7 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/NetworkInterface.html#getByIndex(int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/NetworkInterface.html#getByIndex(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Net.NetworkInterface"/></returns>
@@ -52,7 +52,7 @@ namespace Java.Net
             return SExecuteWithSignature<Java.Net.NetworkInterface>(LocalBridgeClazz, "getByIndex", "(I)Ljava/net/NetworkInterface;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/NetworkInterface.html#getByInetAddress(java.net.InetAddress)"/>
+        /// <see href="https://developer.android.com/reference/java/net/NetworkInterface.html#getByInetAddress(java.net.InetAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
         /// <returns><see cref="Java.Net.NetworkInterface"/></returns>
@@ -62,7 +62,7 @@ namespace Java.Net
             return SExecuteWithSignature<Java.Net.NetworkInterface>(LocalBridgeClazz, "getByInetAddress", "(Ljava/net/InetAddress;)Ljava/net/NetworkInterface;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/NetworkInterface.html#getByName(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/NetworkInterface.html#getByName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Net.NetworkInterface"/></returns>
@@ -72,7 +72,7 @@ namespace Java.Net
             return SExecuteWithSignature<Java.Net.NetworkInterface>(LocalBridgeClazz, "getByName", "(Ljava/lang/String;)Ljava/net/NetworkInterface;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/NetworkInterface.html#getNetworkInterfaces()"/>
+        /// <see href="https://developer.android.com/reference/java/net/NetworkInterface.html#getNetworkInterfaces()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         /// <exception cref="Java.Net.SocketException"/>
@@ -81,7 +81,7 @@ namespace Java.Net
             return SExecuteWithSignature<Java.Util.Enumeration<Java.Net.NetworkInterface>>(LocalBridgeClazz, "getNetworkInterfaces", "()Ljava/util/Enumeration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/NetworkInterface.html#networkInterfaces()"/>
+        /// <see href="https://developer.android.com/reference/java/net/NetworkInterface.html#networkInterfaces()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         /// <exception cref="Java.Net.SocketException"/>
@@ -94,56 +94,7 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/NetworkInterface.html#getDisplayName()"/> 
-        /// </summary>
-        public Java.Lang.String DisplayName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/NetworkInterface.html#getHardwareAddress()"/> 
-        /// </summary>
-        public byte[] HardwareAddress
-        {
-            get { return IExecuteWithSignatureArray<byte>("getHardwareAddress", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/NetworkInterface.html#getIndex()"/> 
-        /// </summary>
-        public int Index
-        {
-            get { return IExecuteWithSignature<int>("getIndex", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/NetworkInterface.html#getInterfaceAddresses()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Net.InterfaceAddress> InterfaceAddresses
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Net.InterfaceAddress>>("getInterfaceAddresses", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/NetworkInterface.html#getMTU()"/> 
-        /// </summary>
-        public int MTU
-        {
-            get { return IExecuteWithSignature<int>("getMTU", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/NetworkInterface.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/NetworkInterface.html#getParent()"/> 
-        /// </summary>
-        public Java.Net.NetworkInterface Parent
-        {
-            get { return IExecuteWithSignature<Java.Net.NetworkInterface>("getParent", "()Ljava/net/NetworkInterface;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/NetworkInterface.html#isLoopback()"/>
+        /// <see href="https://developer.android.com/reference/java/net/NetworkInterface.html#isLoopback()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Net.SocketException"/>
@@ -152,7 +103,7 @@ namespace Java.Net
             return IExecuteWithSignature<bool>("isLoopback", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/NetworkInterface.html#isPointToPoint()"/>
+        /// <see href="https://developer.android.com/reference/java/net/NetworkInterface.html#isPointToPoint()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Net.SocketException"/>
@@ -161,7 +112,7 @@ namespace Java.Net
             return IExecuteWithSignature<bool>("isPointToPoint", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/NetworkInterface.html#isUp()"/>
+        /// <see href="https://developer.android.com/reference/java/net/NetworkInterface.html#isUp()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Net.SocketException"/>
@@ -170,7 +121,7 @@ namespace Java.Net
             return IExecuteWithSignature<bool>("isUp", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/NetworkInterface.html#isVirtual()"/>
+        /// <see href="https://developer.android.com/reference/java/net/NetworkInterface.html#isVirtual()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsVirtual()
@@ -178,7 +129,7 @@ namespace Java.Net
             return IExecuteWithSignature<bool>("isVirtual", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/NetworkInterface.html#supportsMulticast()"/>
+        /// <see href="https://developer.android.com/reference/java/net/NetworkInterface.html#supportsMulticast()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Net.SocketException"/>
@@ -187,7 +138,57 @@ namespace Java.Net
             return IExecuteWithSignature<bool>("supportsMulticast", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/NetworkInterface.html#getInetAddresses()"/>
+        /// <see href="https://developer.android.com/reference/java/net/NetworkInterface.html#getHardwareAddress()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Java.Net.SocketException"/>
+        public byte[] GetHardwareAddress()
+        {
+            return IExecuteWithSignatureArray<byte>("getHardwareAddress", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/NetworkInterface.html#getIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetIndex()
+        {
+            return IExecuteWithSignature<int>("getIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/NetworkInterface.html#getMTU()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Net.SocketException"/>
+        public int GetMTU()
+        {
+            return IExecuteWithSignature<int>("getMTU", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/NetworkInterface.html#getDisplayName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/NetworkInterface.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/NetworkInterface.html#getParent()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.NetworkInterface"/></returns>
+        public Java.Net.NetworkInterface GetParent()
+        {
+            return IExecuteWithSignature<Java.Net.NetworkInterface>("getParent", "()Ljava/net/NetworkInterface;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/NetworkInterface.html#getInetAddresses()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<Java.Net.InetAddress> GetInetAddresses()
@@ -195,7 +196,7 @@ namespace Java.Net
             return IExecuteWithSignature<Java.Util.Enumeration<Java.Net.InetAddress>>("getInetAddresses", "()Ljava/util/Enumeration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/NetworkInterface.html#getSubInterfaces()"/>
+        /// <see href="https://developer.android.com/reference/java/net/NetworkInterface.html#getSubInterfaces()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<Java.Net.NetworkInterface> GetSubInterfaces()
@@ -203,7 +204,15 @@ namespace Java.Net
             return IExecuteWithSignature<Java.Util.Enumeration<Java.Net.NetworkInterface>>("getSubInterfaces", "()Ljava/util/Enumeration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/NetworkInterface.html#inetAddresses()"/>
+        /// <see href="https://developer.android.com/reference/java/net/NetworkInterface.html#getInterfaceAddresses()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Net.InterfaceAddress> GetInterfaceAddresses()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Net.InterfaceAddress>>("getInterfaceAddresses", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/NetworkInterface.html#inetAddresses()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Net.InetAddress> InetAddresses()
@@ -211,7 +220,7 @@ namespace Java.Net
             return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Net.InetAddress>>("inetAddresses", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/NetworkInterface.html#subInterfaces()"/>
+        /// <see href="https://developer.android.com/reference/java/net/NetworkInterface.html#subInterfaces()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Net.NetworkInterface> SubInterfaces()

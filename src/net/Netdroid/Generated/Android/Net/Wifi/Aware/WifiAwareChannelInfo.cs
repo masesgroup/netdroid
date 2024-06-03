@@ -52,33 +52,36 @@ namespace Android.Net.Wifi.Aware
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareChannelInfo.html#getChannelBandwidth()"/> 
-        /// </summary>
-        public int ChannelBandwidth
-        {
-            get { return IExecuteWithSignature<int>("getChannelBandwidth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareChannelInfo.html#getChannelFrequencyMhz()"/> 
-        /// </summary>
-        public int ChannelFrequencyMhz
-        {
-            get { return IExecuteWithSignature<int>("getChannelFrequencyMhz", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareChannelInfo.html#getSpatialStreamCount()"/> 
-        /// </summary>
-        public int SpatialStreamCount
-        {
-            get { return IExecuteWithSignature<int>("getSpatialStreamCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareChannelInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareChannelInfo.html#getChannelBandwidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChannelBandwidth()
+        {
+            return IExecuteWithSignature<int>("getChannelBandwidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareChannelInfo.html#getChannelFrequencyMhz()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChannelFrequencyMhz()
+        {
+            return IExecuteWithSignature<int>("getChannelFrequencyMhz", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareChannelInfo.html#getSpatialStreamCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSpatialStreamCount()
+        {
+            return IExecuteWithSignature<int>("getSpatialStreamCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareChannelInfo.html#writeToParcel(android.os.Parcel,int)"/>

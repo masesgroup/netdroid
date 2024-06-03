@@ -46,13 +46,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDataSource.html#getSize()"/> 
-        /// </summary>
-        public long Size
-        {
-            get { return IExecuteWithSignature<long>("getSize", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDataSource.html#readAt(long,byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -64,6 +57,15 @@ namespace Android.Media
         public int ReadAt(long arg0, byte[] arg1, int arg2, int arg3)
         {
             return IExecute<int>("readAt", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDataSource.html#getSize()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public long GetSize()
+        {
+            return IExecuteWithSignature<long>("getSize", "()J");
         }
 
         #endregion

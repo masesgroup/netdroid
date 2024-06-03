@@ -107,7 +107,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#isRunningInTestHarness()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool IsRunningInTestHarness()
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isRunningInTestHarness", "()Z");
@@ -149,76 +149,6 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getAppTasks()"/> 
-        /// </summary>
-        public Java.Util.List<Android.App.ActivityManager.AppTask> AppTasks
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.ActivityManager.AppTask>>("getAppTasks", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getAppTaskThumbnailSize()"/> 
-        /// </summary>
-        public Android.Util.Size AppTaskThumbnailSize
-        {
-            get { return IExecuteWithSignature<Android.Util.Size>("getAppTaskThumbnailSize", "()Landroid/util/Size;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getDeviceConfigurationInfo()"/> 
-        /// </summary>
-        public Android.Content.Pm.ConfigurationInfo DeviceConfigurationInfo
-        {
-            get { return IExecuteWithSignature<Android.Content.Pm.ConfigurationInfo>("getDeviceConfigurationInfo", "()Landroid/content/pm/ConfigurationInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getLargeMemoryClass()"/> 
-        /// </summary>
-        public int LargeMemoryClass
-        {
-            get { return IExecuteWithSignature<int>("getLargeMemoryClass", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getLauncherLargeIconDensity()"/> 
-        /// </summary>
-        public int LauncherLargeIconDensity
-        {
-            get { return IExecuteWithSignature<int>("getLauncherLargeIconDensity", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getLauncherLargeIconSize()"/> 
-        /// </summary>
-        public int LauncherLargeIconSize
-        {
-            get { return IExecuteWithSignature<int>("getLauncherLargeIconSize", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getLockTaskModeState()"/> 
-        /// </summary>
-        public int LockTaskModeState
-        {
-            get { return IExecuteWithSignature<int>("getLockTaskModeState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getMemoryClass()"/> 
-        /// </summary>
-        public int MemoryClass
-        {
-            get { return IExecuteWithSignature<int>("getMemoryClass", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getProcessesInErrorState()"/> 
-        /// </summary>
-        public Java.Util.List<Android.App.ActivityManager.ProcessErrorStateInfo> ProcessesInErrorState
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.ActivityManager.ProcessErrorStateInfo>>("getProcessesInErrorState", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getRunningAppProcesses()"/> 
-        /// </summary>
-        public Java.Util.List<Android.App.ActivityManager.RunningAppProcessInfo> RunningAppProcesses
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.ActivityManager.RunningAppProcessInfo>>("getRunningAppProcesses", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getRunningServiceControlPanel(android.content.ComponentName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
@@ -229,6 +159,14 @@ namespace Android.App
             return IExecuteWithSignature<Android.App.PendingIntent>("getRunningServiceControlPanel", "(Landroid/content/ComponentName;)Landroid/app/PendingIntent;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getDeviceConfigurationInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Pm.ConfigurationInfo"/></returns>
+        public Android.Content.Pm.ConfigurationInfo GetDeviceConfigurationInfo()
+        {
+            return IExecuteWithSignature<Android.Content.Pm.ConfigurationInfo>("getDeviceConfigurationInfo", "()Landroid/content/pm/ConfigurationInfo;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getProcessMemoryInfo(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -236,6 +174,14 @@ namespace Android.App
         public Android.Os.Debug.MemoryInfo[] GetProcessMemoryInfo(int[] arg0)
         {
             return IExecuteWithSignatureArray<Android.Os.Debug.MemoryInfo>("getProcessMemoryInfo", "([I)[Landroid/os/Debug$MemoryInfo;", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getAppTaskThumbnailSize()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Util.Size"/></returns>
+        public Android.Util.Size GetAppTaskThumbnailSize()
+        {
+            return IExecuteWithSignature<Android.Util.Size>("getAppTaskThumbnailSize", "()Landroid/util/Size;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#clearApplicationUserData()"/>
@@ -268,7 +214,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#isInLockTaskMode()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsInLockTaskMode()
         {
             return IExecuteWithSignature<bool>("isInLockTaskMode", "()Z");
@@ -294,16 +240,80 @@ namespace Android.App
             return IExecute<int>("addAppTask", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getLargeMemoryClass()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLargeMemoryClass()
+        {
+            return IExecuteWithSignature<int>("getLargeMemoryClass", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getLauncherLargeIconDensity()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLauncherLargeIconDensity()
+        {
+            return IExecuteWithSignature<int>("getLauncherLargeIconDensity", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getLauncherLargeIconSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLauncherLargeIconSize()
+        {
+            return IExecuteWithSignature<int>("getLauncherLargeIconSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getLockTaskModeState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLockTaskModeState()
+        {
+            return IExecuteWithSignature<int>("getLockTaskModeState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getMemoryClass()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMemoryClass()
+        {
+            return IExecuteWithSignature<int>("getMemoryClass", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getAppTasks()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.ActivityManager.AppTask> GetAppTasks()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.ActivityManager.AppTask>>("getAppTasks", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getProcessesInErrorState()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.ActivityManager.ProcessErrorStateInfo> GetProcessesInErrorState()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.ActivityManager.ProcessErrorStateInfo>>("getProcessesInErrorState", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getRecentTasks(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
         /// <exception cref="Java.Lang.SecurityException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.List<Android.App.ActivityManager.RecentTaskInfo> GetRecentTasks(int arg0, int arg1)
         {
             return IExecute<Java.Util.List<Android.App.ActivityManager.RecentTaskInfo>>("getRecentTasks", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getRunningAppProcesses()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.ActivityManager.RunningAppProcessInfo> GetRunningAppProcesses()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.ActivityManager.RunningAppProcessInfo>>("getRunningAppProcesses", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getRunningServices(int)"/>
@@ -311,7 +321,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
         /// <exception cref="Java.Lang.SecurityException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.List<Android.App.ActivityManager.RunningServiceInfo> GetRunningServices(int arg0)
         {
             return IExecuteWithSignature<Java.Util.List<Android.App.ActivityManager.RunningServiceInfo>>("getRunningServices", "(I)Ljava/util/List;", arg0);
@@ -322,7 +332,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
         /// <exception cref="Java.Lang.SecurityException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.List<Android.App.ActivityManager.RunningTaskInfo> GetRunningTasks(int arg0)
         {
             return IExecuteWithSignature<Java.Util.List<Android.App.ActivityManager.RunningTaskInfo>>("getRunningTasks", "(I)Ljava/util/List;", arg0);
@@ -401,7 +411,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#restartPackage(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RestartPackage(Java.Lang.String arg0)
         {
             IExecuteWithSignature("restartPackage", "(Ljava/lang/String;)V", arg0);
@@ -447,11 +457,12 @@ namespace Android.App
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.AppTask.html#getTaskInfo()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.AppTask.html#getTaskInfo()"/>
             /// </summary>
-            public Android.App.ActivityManager.RecentTaskInfo TaskInfo
+            /// <returns><see cref="Android.App.ActivityManager.RecentTaskInfo"/></returns>
+            public Android.App.ActivityManager.RecentTaskInfo GetTaskInfo()
             {
-                get { return IExecuteWithSignature<Android.App.ActivityManager.RecentTaskInfo>("getTaskInfo", "()Landroid/app/ActivityManager$RecentTaskInfo;"); }
+                return IExecuteWithSignature<Android.App.ActivityManager.RecentTaskInfo>("getTaskInfo", "()Landroid/app/ActivityManager$RecentTaskInfo;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.AppTask.html#finishAndRemoveTask()"/>
@@ -713,22 +724,22 @@ namespace Android.App
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RecentTaskInfo.html#affiliatedTaskId"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int affiliatedTaskId { get { return IGetField<int>("affiliatedTaskId"); } set { ISetField("affiliatedTaskId", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RecentTaskInfo.html#id"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int id { get { return IGetField<int>("id"); } set { ISetField("id", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RecentTaskInfo.html#persistentId"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int persistentId { get { return IGetField<int>("persistentId"); } set { ISetField("persistentId", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RecentTaskInfo.html#description"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Java.Lang.CharSequence description { get { return IGetField<Java.Lang.CharSequence>("description"); } set { ISetField("description", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RecentTaskInfo.html#CREATOR"/>
@@ -851,7 +862,7 @@ namespace Android.App
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningAppProcessInfo.html#IMPORTANCE_BACKGROUND"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int IMPORTANCE_BACKGROUND { get { if (!_IMPORTANCE_BACKGROUNDReady) { _IMPORTANCE_BACKGROUNDContent = SGetField<int>(LocalBridgeClazz, "IMPORTANCE_BACKGROUND"); _IMPORTANCE_BACKGROUNDReady = true; } return _IMPORTANCE_BACKGROUNDContent; } }
             private static int _IMPORTANCE_BACKGROUNDContent = default;
             private static bool _IMPORTANCE_BACKGROUNDReady = false; // this is used because in case of generics 
@@ -870,7 +881,7 @@ namespace Android.App
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningAppProcessInfo.html#IMPORTANCE_EMPTY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int IMPORTANCE_EMPTY { get { if (!_IMPORTANCE_EMPTYReady) { _IMPORTANCE_EMPTYContent = SGetField<int>(LocalBridgeClazz, "IMPORTANCE_EMPTY"); _IMPORTANCE_EMPTYReady = true; } return _IMPORTANCE_EMPTYContent; } }
             private static int _IMPORTANCE_EMPTYContent = default;
             private static bool _IMPORTANCE_EMPTYReady = false; // this is used because in case of generics 
@@ -919,7 +930,7 @@ namespace Android.App
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningAppProcessInfo.html#IMPORTANCE_TOP_SLEEPING_PRE_28"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int IMPORTANCE_TOP_SLEEPING_PRE_28 { get { if (!_IMPORTANCE_TOP_SLEEPING_PRE_28Ready) { _IMPORTANCE_TOP_SLEEPING_PRE_28Content = SGetField<int>(LocalBridgeClazz, "IMPORTANCE_TOP_SLEEPING_PRE_28"); _IMPORTANCE_TOP_SLEEPING_PRE_28Ready = true; } return _IMPORTANCE_TOP_SLEEPING_PRE_28Content; } }
             private static int _IMPORTANCE_TOP_SLEEPING_PRE_28Content = default;
             private static bool _IMPORTANCE_TOP_SLEEPING_PRE_28Ready = false; // this is used because in case of generics 
@@ -1152,22 +1163,22 @@ namespace Android.App
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningTaskInfo.html#thumbnail"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Graphics.Bitmap thumbnail { get { return IGetField<Android.Graphics.Bitmap>("thumbnail"); } set { ISetField("thumbnail", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningTaskInfo.html#id"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int id { get { return IGetField<int>("id"); } set { ISetField("id", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningTaskInfo.html#numRunning"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int numRunning { get { return IGetField<int>("numRunning"); } set { ISetField("numRunning", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningTaskInfo.html#description"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Java.Lang.CharSequence description { get { return IGetField<Java.Lang.CharSequence>("description"); } set { ISetField("description", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningTaskInfo.html#CREATOR"/>
@@ -1237,7 +1248,7 @@ namespace Android.App
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Android.Graphics.Bitmap"/></param>
             /// <param name="arg2"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public TaskDescription(Java.Lang.String arg0, Android.Graphics.Bitmap arg1, int arg2)
                 : base(arg0, arg1, arg2)
             {
@@ -1247,7 +1258,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Android.Graphics.Bitmap"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public TaskDescription(Java.Lang.String arg0, Android.Graphics.Bitmap arg1)
                 : base(arg0, arg1)
             {
@@ -1258,7 +1269,7 @@ namespace Android.App
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public TaskDescription(Java.Lang.String arg0, int arg1, int arg2)
                 : base(arg0, arg1, arg2)
             {
@@ -1268,7 +1279,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public TaskDescription(Java.Lang.String arg0, int arg1)
                 : base(arg0, arg1)
             {
@@ -1277,7 +1288,7 @@ namespace Android.App
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public TaskDescription(Java.Lang.String arg0)
                 : base(arg0)
             {
@@ -1305,47 +1316,13 @@ namespace Android.App
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#getBackgroundColor()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#getIcon()"/>
             /// </summary>
-            public int BackgroundColor
+            /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+            [global::System.Obsolete()]
+            public Android.Graphics.Bitmap GetIcon()
             {
-                get { return IExecuteWithSignature<int>("getBackgroundColor", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#getIcon()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Android.Graphics.Bitmap Icon
-            {
-                get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getIcon", "()Landroid/graphics/Bitmap;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#getLabel()"/> 
-            /// </summary>
-            public Java.Lang.String Label
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getLabel", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#getNavigationBarColor()"/> 
-            /// </summary>
-            public int NavigationBarColor
-            {
-                get { return IExecuteWithSignature<int>("getNavigationBarColor", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#getPrimaryColor()"/> 
-            /// </summary>
-            public int PrimaryColor
-            {
-                get { return IExecuteWithSignature<int>("getPrimaryColor", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#getStatusBarColor()"/> 
-            /// </summary>
-            public int StatusBarColor
-            {
-                get { return IExecuteWithSignature<int>("getStatusBarColor", "()I"); }
+                return IExecuteWithSignature<Android.Graphics.Bitmap>("getIcon", "()Landroid/graphics/Bitmap;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#describeContents()"/>
@@ -1354,6 +1331,46 @@ namespace Android.App
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#getBackgroundColor()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetBackgroundColor()
+            {
+                return IExecuteWithSignature<int>("getBackgroundColor", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#getNavigationBarColor()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetNavigationBarColor()
+            {
+                return IExecuteWithSignature<int>("getNavigationBarColor", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#getPrimaryColor()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetPrimaryColor()
+            {
+                return IExecuteWithSignature<int>("getPrimaryColor", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#getStatusBarColor()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetStatusBarColor()
+            {
+                return IExecuteWithSignature<int>("getStatusBarColor", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#getLabel()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetLabel()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getLabel", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#readFromParcel(android.os.Parcel)"/>

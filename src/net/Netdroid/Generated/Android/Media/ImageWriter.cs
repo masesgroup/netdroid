@@ -67,61 +67,68 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ImageWriter.html#getDataSpace()"/> 
-        /// </summary>
-        public int DataSpace
-        {
-            get { return IExecuteWithSignature<int>("getDataSpace", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ImageWriter.html#getFormat()"/> 
-        /// </summary>
-        public int Format
-        {
-            get { return IExecuteWithSignature<int>("getFormat", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ImageWriter.html#getHardwareBufferFormat()"/> 
-        /// </summary>
-        public int HardwareBufferFormat
-        {
-            get { return IExecuteWithSignature<int>("getHardwareBufferFormat", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ImageWriter.html#getHeight()"/> 
-        /// </summary>
-        public int Height
-        {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ImageWriter.html#getMaxImages()"/> 
-        /// </summary>
-        public int MaxImages
-        {
-            get { return IExecuteWithSignature<int>("getMaxImages", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ImageWriter.html#getUsage()"/> 
-        /// </summary>
-        public long Usage
-        {
-            get { return IExecuteWithSignature<long>("getUsage", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ImageWriter.html#getWidth()"/> 
-        /// </summary>
-        public int Width
-        {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ImageWriter.html#dequeueInputImage()"/>
         /// </summary>
         /// <returns><see cref="Android.Media.Image"/></returns>
         public Android.Media.Image DequeueInputImage()
         {
             return IExecuteWithSignature<Android.Media.Image>("dequeueInputImage", "()Landroid/media/Image;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ImageWriter.html#getDataSpace()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDataSpace()
+        {
+            return IExecuteWithSignature<int>("getDataSpace", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ImageWriter.html#getFormat()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFormat()
+        {
+            return IExecuteWithSignature<int>("getFormat", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ImageWriter.html#getHardwareBufferFormat()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHardwareBufferFormat()
+        {
+            return IExecuteWithSignature<int>("getHardwareBufferFormat", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ImageWriter.html#getHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHeight()
+        {
+            return IExecuteWithSignature<int>("getHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ImageWriter.html#getMaxImages()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxImages()
+        {
+            return IExecuteWithSignature<int>("getMaxImages", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ImageWriter.html#getWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWidth()
+        {
+            return IExecuteWithSignature<int>("getWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ImageWriter.html#getUsage()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetUsage()
+        {
+            return IExecuteWithSignature<long>("getUsage", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ImageWriter.html#close()"/>
@@ -278,7 +285,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onImageReleased", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.ImageWriter>>>(OnImageReleasedEventHandler));
+                AddEventHandler("onImageReleased", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.ImageWriter>>>(OnImageReleasedEventHandler));
 
             }
 
@@ -286,7 +293,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/ImageWriter.OnImageReleasedListener.html#onImageReleased(android.media.ImageWriter)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnImageReleased"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.ImageWriter> OnOnImageReleased { get; set; } = null;
+            public global::System.Action<Android.Media.ImageWriter> OnOnImageReleased { get; set; } = null;
 
             void OnImageReleasedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.ImageWriter>> data)
             {

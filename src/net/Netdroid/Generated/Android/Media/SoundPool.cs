@@ -35,7 +35,7 @@ namespace Android.Media
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public SoundPool(int arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -318,7 +318,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onLoadComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.SoundPool>>>(OnLoadCompleteEventHandler));
+                AddEventHandler("onLoadComplete", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.SoundPool>>>(OnLoadCompleteEventHandler));
 
             }
 
@@ -326,7 +326,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/SoundPool.OnLoadCompleteListener.html#onLoadComplete(android.media.SoundPool,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnLoadComplete"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.SoundPool, int, int> OnOnLoadComplete { get; set; } = null;
+            public global::System.Action<Android.Media.SoundPool, int, int> OnOnLoadComplete { get; set; } = null;
 
             void OnLoadCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.SoundPool>> data)
             {

@@ -85,13 +85,6 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/CollationElementIterator.html#getOffset()"/> <see href="https://developer.android.com/reference/android/icu/text/CollationElementIterator.html#setOffset(int)"/>
-        /// </summary>
-        public int Offset
-        {
-            get { return IExecuteWithSignature<int>("getOffset", "()I"); } set { IExecuteWithSignature("setOffset", "(I)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/CollationElementIterator.html#getMaxExpansion(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -99,6 +92,14 @@ namespace Android.Icu.Text
         public int GetMaxExpansion(int arg0)
         {
             return IExecuteWithSignature<int>("getMaxExpansion", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/CollationElementIterator.html#getOffset()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOffset()
+        {
+            return IExecuteWithSignature<int>("getOffset", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/CollationElementIterator.html#next()"/>
@@ -122,6 +123,14 @@ namespace Android.Icu.Text
         public void Reset()
         {
             IExecuteWithSignature("reset", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/CollationElementIterator.html#setOffset(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetOffset(int arg0)
+        {
+            IExecuteWithSignature("setOffset", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/CollationElementIterator.html#setText(android.icu.text.UCharacterIterator)"/>

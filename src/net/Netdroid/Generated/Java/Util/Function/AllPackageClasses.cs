@@ -28,7 +28,7 @@ namespace Java.Util.Function
 {
     #region BiConsumer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiConsumer.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/BiConsumer.html"/>
     /// </summary>
     public partial class BiConsumer : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -37,10 +37,13 @@ namespace Java.Util.Function
         /// </summary>
         public BiConsumer() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.BiConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.BiConsumer";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -62,10 +65,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.BiConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.BiConsumer";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -87,7 +93,7 @@ namespace Java.Util.Function
 
     #region BiConsumer<T, U>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiConsumer.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/BiConsumer.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="U"></typeparam>
@@ -98,10 +104,13 @@ namespace Java.Util.Function
         /// </summary>
         public BiConsumer() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.BiConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.BiConsumer";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -123,10 +132,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.BiConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.BiConsumer";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -148,7 +160,7 @@ namespace Java.Util.Function
 
     #region BiFunction
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/BiFunction.html"/>
     /// </summary>
     public partial class BiFunction : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -157,10 +169,13 @@ namespace Java.Util.Function
         /// </summary>
         public BiFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.BiFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.BiFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -182,10 +197,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.BiFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.BiFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -207,7 +225,7 @@ namespace Java.Util.Function
 
     #region BiFunction<T, U, R>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/BiFunction.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="U"></typeparam>
@@ -219,10 +237,13 @@ namespace Java.Util.Function
         /// </summary>
         public BiFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.BiFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.BiFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -244,10 +265,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.BiFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.BiFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -269,7 +293,7 @@ namespace Java.Util.Function
 
     #region BinaryOperator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/BinaryOperator.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/BinaryOperator.html"/>
     /// </summary>
     public partial class BinaryOperator : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -278,10 +302,13 @@ namespace Java.Util.Function
         /// </summary>
         public BinaryOperator() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.BinaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.BinaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -303,10 +330,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.BinaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.BinaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -328,7 +358,7 @@ namespace Java.Util.Function
 
     #region BinaryOperator<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/BinaryOperator.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/BinaryOperator.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class BinaryOperator<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
@@ -338,10 +368,13 @@ namespace Java.Util.Function
         /// </summary>
         public BinaryOperator() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.BinaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.BinaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -363,10 +396,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.BinaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.BinaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -388,7 +424,7 @@ namespace Java.Util.Function
 
     #region BiPredicate
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html"/>
     /// </summary>
     public partial class BiPredicate : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -397,10 +433,13 @@ namespace Java.Util.Function
         /// </summary>
         public BiPredicate() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.BiPredicate";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.BiPredicate";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -422,10 +461,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.BiPredicate";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.BiPredicate";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -447,7 +489,7 @@ namespace Java.Util.Function
 
     #region BiPredicate<T, U>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="U"></typeparam>
@@ -458,10 +500,13 @@ namespace Java.Util.Function
         /// </summary>
         public BiPredicate() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.BiPredicate";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.BiPredicate";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -483,10 +528,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.BiPredicate";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.BiPredicate";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -508,7 +556,7 @@ namespace Java.Util.Function
 
     #region BooleanSupplier
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/BooleanSupplier.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/BooleanSupplier.html"/>
     /// </summary>
     public partial class BooleanSupplier : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -517,10 +565,13 @@ namespace Java.Util.Function
         /// </summary>
         public BooleanSupplier() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.BooleanSupplier";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.BooleanSupplier";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -542,10 +593,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.BooleanSupplier";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.BooleanSupplier";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -567,7 +621,7 @@ namespace Java.Util.Function
 
     #region Consumer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/Consumer.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/Consumer.html"/>
     /// </summary>
     public partial class Consumer : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -576,10 +630,13 @@ namespace Java.Util.Function
         /// </summary>
         public Consumer() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.Consumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.Consumer";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -601,10 +658,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.Consumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.Consumer";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -626,7 +686,7 @@ namespace Java.Util.Function
 
     #region Consumer<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/Consumer.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/Consumer.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class Consumer<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
@@ -636,10 +696,13 @@ namespace Java.Util.Function
         /// </summary>
         public Consumer() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.Consumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.Consumer";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -661,10 +724,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.Consumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.Consumer";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -686,7 +752,7 @@ namespace Java.Util.Function
 
     #region DoubleBinaryOperator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleBinaryOperator.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/DoubleBinaryOperator.html"/>
     /// </summary>
     public partial class DoubleBinaryOperator : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -695,10 +761,13 @@ namespace Java.Util.Function
         /// </summary>
         public DoubleBinaryOperator() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.DoubleBinaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.DoubleBinaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -720,10 +789,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.DoubleBinaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.DoubleBinaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -745,7 +817,7 @@ namespace Java.Util.Function
 
     #region DoubleConsumer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleConsumer.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/DoubleConsumer.html"/>
     /// </summary>
     public partial class DoubleConsumer : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -754,10 +826,13 @@ namespace Java.Util.Function
         /// </summary>
         public DoubleConsumer() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.DoubleConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.DoubleConsumer";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -779,10 +854,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.DoubleConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.DoubleConsumer";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -804,7 +882,7 @@ namespace Java.Util.Function
 
     #region DoubleFunction
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/DoubleFunction.html"/>
     /// </summary>
     public partial class DoubleFunction : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -813,10 +891,13 @@ namespace Java.Util.Function
         /// </summary>
         public DoubleFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.DoubleFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.DoubleFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -838,10 +919,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.DoubleFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.DoubleFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -863,7 +947,7 @@ namespace Java.Util.Function
 
     #region DoubleFunction<R>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/DoubleFunction.html"/>
     /// </summary>
     /// <typeparam name="R"></typeparam>
     public partial class DoubleFunction<R> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
@@ -873,10 +957,13 @@ namespace Java.Util.Function
         /// </summary>
         public DoubleFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.DoubleFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.DoubleFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -898,10 +985,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.DoubleFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.DoubleFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -923,7 +1013,7 @@ namespace Java.Util.Function
 
     #region DoublePredicate
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoublePredicate.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/DoublePredicate.html"/>
     /// </summary>
     public partial class DoublePredicate : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -932,10 +1022,13 @@ namespace Java.Util.Function
         /// </summary>
         public DoublePredicate() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.DoublePredicate";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.DoublePredicate";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -957,10 +1050,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.DoublePredicate";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.DoublePredicate";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -982,7 +1078,7 @@ namespace Java.Util.Function
 
     #region DoubleSupplier
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleSupplier.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/DoubleSupplier.html"/>
     /// </summary>
     public partial class DoubleSupplier : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -991,10 +1087,13 @@ namespace Java.Util.Function
         /// </summary>
         public DoubleSupplier() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.DoubleSupplier";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.DoubleSupplier";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1016,10 +1115,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.DoubleSupplier";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.DoubleSupplier";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1041,7 +1143,7 @@ namespace Java.Util.Function
 
     #region DoubleToIntFunction
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleToIntFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/DoubleToIntFunction.html"/>
     /// </summary>
     public partial class DoubleToIntFunction : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -1050,10 +1152,13 @@ namespace Java.Util.Function
         /// </summary>
         public DoubleToIntFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.DoubleToIntFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.DoubleToIntFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1075,10 +1180,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.DoubleToIntFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.DoubleToIntFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1100,7 +1208,7 @@ namespace Java.Util.Function
 
     #region DoubleToLongFunction
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleToLongFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/DoubleToLongFunction.html"/>
     /// </summary>
     public partial class DoubleToLongFunction : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -1109,10 +1217,13 @@ namespace Java.Util.Function
         /// </summary>
         public DoubleToLongFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.DoubleToLongFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.DoubleToLongFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1134,10 +1245,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.DoubleToLongFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.DoubleToLongFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1159,7 +1273,7 @@ namespace Java.Util.Function
 
     #region DoubleUnaryOperator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleUnaryOperator.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/DoubleUnaryOperator.html"/>
     /// </summary>
     public partial class DoubleUnaryOperator : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -1168,10 +1282,13 @@ namespace Java.Util.Function
         /// </summary>
         public DoubleUnaryOperator() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.DoubleUnaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.DoubleUnaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1193,10 +1310,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.DoubleUnaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.DoubleUnaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1218,7 +1338,7 @@ namespace Java.Util.Function
 
     #region Function
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/Function.html"/>
     /// </summary>
     public partial class Function : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -1227,10 +1347,13 @@ namespace Java.Util.Function
         /// </summary>
         public Function() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.Function";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.Function";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1252,10 +1375,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.Function";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.Function";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1277,7 +1403,7 @@ namespace Java.Util.Function
 
     #region Function<T, R>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/Function.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="R"></typeparam>
@@ -1288,10 +1414,13 @@ namespace Java.Util.Function
         /// </summary>
         public Function() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.Function";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.Function";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1313,10 +1442,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.Function";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.Function";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1338,7 +1470,7 @@ namespace Java.Util.Function
 
     #region IntBinaryOperator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntBinaryOperator.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/IntBinaryOperator.html"/>
     /// </summary>
     public partial class IntBinaryOperator : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -1347,10 +1479,13 @@ namespace Java.Util.Function
         /// </summary>
         public IntBinaryOperator() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.IntBinaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.IntBinaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1372,10 +1507,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.IntBinaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.IntBinaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1397,7 +1535,7 @@ namespace Java.Util.Function
 
     #region IntConsumer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntConsumer.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/IntConsumer.html"/>
     /// </summary>
     public partial class IntConsumer : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -1406,10 +1544,13 @@ namespace Java.Util.Function
         /// </summary>
         public IntConsumer() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.IntConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.IntConsumer";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1431,10 +1572,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.IntConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.IntConsumer";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1456,7 +1600,7 @@ namespace Java.Util.Function
 
     #region IntFunction
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/IntFunction.html"/>
     /// </summary>
     public partial class IntFunction : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -1465,10 +1609,13 @@ namespace Java.Util.Function
         /// </summary>
         public IntFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.IntFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.IntFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1490,10 +1637,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.IntFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.IntFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1515,7 +1665,7 @@ namespace Java.Util.Function
 
     #region IntFunction<R>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/IntFunction.html"/>
     /// </summary>
     /// <typeparam name="R"></typeparam>
     public partial class IntFunction<R> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
@@ -1525,10 +1675,13 @@ namespace Java.Util.Function
         /// </summary>
         public IntFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.IntFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.IntFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1550,10 +1703,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.IntFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.IntFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1575,7 +1731,7 @@ namespace Java.Util.Function
 
     #region IntPredicate
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntPredicate.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/IntPredicate.html"/>
     /// </summary>
     public partial class IntPredicate : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -1584,10 +1740,13 @@ namespace Java.Util.Function
         /// </summary>
         public IntPredicate() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.IntPredicate";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.IntPredicate";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1609,10 +1768,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.IntPredicate";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.IntPredicate";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1634,7 +1796,7 @@ namespace Java.Util.Function
 
     #region IntSupplier
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntSupplier.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/IntSupplier.html"/>
     /// </summary>
     public partial class IntSupplier : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -1643,10 +1805,13 @@ namespace Java.Util.Function
         /// </summary>
         public IntSupplier() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.IntSupplier";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.IntSupplier";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1668,10 +1833,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.IntSupplier";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.IntSupplier";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1693,7 +1861,7 @@ namespace Java.Util.Function
 
     #region IntToDoubleFunction
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntToDoubleFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/IntToDoubleFunction.html"/>
     /// </summary>
     public partial class IntToDoubleFunction : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -1702,10 +1870,13 @@ namespace Java.Util.Function
         /// </summary>
         public IntToDoubleFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.IntToDoubleFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.IntToDoubleFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1727,10 +1898,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.IntToDoubleFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.IntToDoubleFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1752,7 +1926,7 @@ namespace Java.Util.Function
 
     #region IntToLongFunction
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntToLongFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/IntToLongFunction.html"/>
     /// </summary>
     public partial class IntToLongFunction : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -1761,10 +1935,13 @@ namespace Java.Util.Function
         /// </summary>
         public IntToLongFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.IntToLongFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.IntToLongFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1786,10 +1963,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.IntToLongFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.IntToLongFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1811,7 +1991,7 @@ namespace Java.Util.Function
 
     #region IntUnaryOperator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntUnaryOperator.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/IntUnaryOperator.html"/>
     /// </summary>
     public partial class IntUnaryOperator : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -1820,10 +2000,13 @@ namespace Java.Util.Function
         /// </summary>
         public IntUnaryOperator() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.IntUnaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.IntUnaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1845,10 +2028,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.IntUnaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.IntUnaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1870,7 +2056,7 @@ namespace Java.Util.Function
 
     #region LongBinaryOperator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongBinaryOperator.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/LongBinaryOperator.html"/>
     /// </summary>
     public partial class LongBinaryOperator : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -1879,10 +2065,13 @@ namespace Java.Util.Function
         /// </summary>
         public LongBinaryOperator() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.LongBinaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.LongBinaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1904,10 +2093,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.LongBinaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.LongBinaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1929,7 +2121,7 @@ namespace Java.Util.Function
 
     #region LongConsumer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongConsumer.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/LongConsumer.html"/>
     /// </summary>
     public partial class LongConsumer : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -1938,10 +2130,13 @@ namespace Java.Util.Function
         /// </summary>
         public LongConsumer() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.LongConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.LongConsumer";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1963,10 +2158,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.LongConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.LongConsumer";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1988,7 +2186,7 @@ namespace Java.Util.Function
 
     #region LongFunction
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/LongFunction.html"/>
     /// </summary>
     public partial class LongFunction : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -1997,10 +2195,13 @@ namespace Java.Util.Function
         /// </summary>
         public LongFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.LongFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.LongFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -2022,10 +2223,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.LongFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.LongFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -2047,7 +2251,7 @@ namespace Java.Util.Function
 
     #region LongFunction<R>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/LongFunction.html"/>
     /// </summary>
     /// <typeparam name="R"></typeparam>
     public partial class LongFunction<R> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
@@ -2057,10 +2261,13 @@ namespace Java.Util.Function
         /// </summary>
         public LongFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.LongFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.LongFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -2082,10 +2289,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.LongFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.LongFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -2107,7 +2317,7 @@ namespace Java.Util.Function
 
     #region LongPredicate
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongPredicate.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/LongPredicate.html"/>
     /// </summary>
     public partial class LongPredicate : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -2116,10 +2326,13 @@ namespace Java.Util.Function
         /// </summary>
         public LongPredicate() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.LongPredicate";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.LongPredicate";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -2141,10 +2354,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.LongPredicate";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.LongPredicate";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -2166,7 +2382,7 @@ namespace Java.Util.Function
 
     #region LongSupplier
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongSupplier.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/LongSupplier.html"/>
     /// </summary>
     public partial class LongSupplier : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -2175,10 +2391,13 @@ namespace Java.Util.Function
         /// </summary>
         public LongSupplier() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.LongSupplier";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.LongSupplier";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -2200,10 +2419,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.LongSupplier";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.LongSupplier";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -2225,7 +2447,7 @@ namespace Java.Util.Function
 
     #region LongToDoubleFunction
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongToDoubleFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/LongToDoubleFunction.html"/>
     /// </summary>
     public partial class LongToDoubleFunction : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -2234,10 +2456,13 @@ namespace Java.Util.Function
         /// </summary>
         public LongToDoubleFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.LongToDoubleFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.LongToDoubleFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -2259,10 +2484,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.LongToDoubleFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.LongToDoubleFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -2284,7 +2512,7 @@ namespace Java.Util.Function
 
     #region LongToIntFunction
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongToIntFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/LongToIntFunction.html"/>
     /// </summary>
     public partial class LongToIntFunction : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -2293,10 +2521,13 @@ namespace Java.Util.Function
         /// </summary>
         public LongToIntFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.LongToIntFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.LongToIntFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -2318,10 +2549,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.LongToIntFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.LongToIntFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -2343,7 +2577,7 @@ namespace Java.Util.Function
 
     #region LongUnaryOperator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongUnaryOperator.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/LongUnaryOperator.html"/>
     /// </summary>
     public partial class LongUnaryOperator : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -2352,10 +2586,13 @@ namespace Java.Util.Function
         /// </summary>
         public LongUnaryOperator() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.LongUnaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.LongUnaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -2377,10 +2614,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.LongUnaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.LongUnaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -2402,7 +2642,7 @@ namespace Java.Util.Function
 
     #region ObjDoubleConsumer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/ObjDoubleConsumer.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/ObjDoubleConsumer.html"/>
     /// </summary>
     public partial class ObjDoubleConsumer : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -2411,10 +2651,13 @@ namespace Java.Util.Function
         /// </summary>
         public ObjDoubleConsumer() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.ObjDoubleConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.ObjDoubleConsumer";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -2436,10 +2679,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.ObjDoubleConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.ObjDoubleConsumer";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -2461,7 +2707,7 @@ namespace Java.Util.Function
 
     #region ObjDoubleConsumer<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/ObjDoubleConsumer.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/ObjDoubleConsumer.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class ObjDoubleConsumer<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
@@ -2471,10 +2717,13 @@ namespace Java.Util.Function
         /// </summary>
         public ObjDoubleConsumer() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.ObjDoubleConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.ObjDoubleConsumer";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -2496,10 +2745,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.ObjDoubleConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.ObjDoubleConsumer";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -2521,7 +2773,7 @@ namespace Java.Util.Function
 
     #region ObjIntConsumer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/ObjIntConsumer.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/ObjIntConsumer.html"/>
     /// </summary>
     public partial class ObjIntConsumer : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -2530,10 +2782,13 @@ namespace Java.Util.Function
         /// </summary>
         public ObjIntConsumer() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.ObjIntConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.ObjIntConsumer";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -2555,10 +2810,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.ObjIntConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.ObjIntConsumer";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -2580,7 +2838,7 @@ namespace Java.Util.Function
 
     #region ObjIntConsumer<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/ObjIntConsumer.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/ObjIntConsumer.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class ObjIntConsumer<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
@@ -2590,10 +2848,13 @@ namespace Java.Util.Function
         /// </summary>
         public ObjIntConsumer() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.ObjIntConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.ObjIntConsumer";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -2615,10 +2876,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.ObjIntConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.ObjIntConsumer";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -2640,7 +2904,7 @@ namespace Java.Util.Function
 
     #region ObjLongConsumer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/ObjLongConsumer.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/ObjLongConsumer.html"/>
     /// </summary>
     public partial class ObjLongConsumer : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -2649,10 +2913,13 @@ namespace Java.Util.Function
         /// </summary>
         public ObjLongConsumer() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.ObjLongConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.ObjLongConsumer";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -2674,10 +2941,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.ObjLongConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.ObjLongConsumer";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -2699,7 +2969,7 @@ namespace Java.Util.Function
 
     #region ObjLongConsumer<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/ObjLongConsumer.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/ObjLongConsumer.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class ObjLongConsumer<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
@@ -2709,10 +2979,13 @@ namespace Java.Util.Function
         /// </summary>
         public ObjLongConsumer() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.ObjLongConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.ObjLongConsumer";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -2734,10 +3007,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.ObjLongConsumer";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.ObjLongConsumer";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -2759,7 +3035,7 @@ namespace Java.Util.Function
 
     #region Predicate
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html"/>
     /// </summary>
     public partial class Predicate : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -2768,10 +3044,13 @@ namespace Java.Util.Function
         /// </summary>
         public Predicate() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.Predicate";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.Predicate";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -2793,10 +3072,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.Predicate";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.Predicate";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -2818,7 +3100,7 @@ namespace Java.Util.Function
 
     #region Predicate<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class Predicate<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
@@ -2828,10 +3110,13 @@ namespace Java.Util.Function
         /// </summary>
         public Predicate() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.Predicate";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.Predicate";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -2853,10 +3138,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.Predicate";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.Predicate";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -2878,7 +3166,7 @@ namespace Java.Util.Function
 
     #region Supplier
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/Supplier.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/Supplier.html"/>
     /// </summary>
     public partial class Supplier : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -2887,10 +3175,13 @@ namespace Java.Util.Function
         /// </summary>
         public Supplier() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.Supplier";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.Supplier";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -2912,10 +3203,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.Supplier";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.Supplier";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -2937,7 +3231,7 @@ namespace Java.Util.Function
 
     #region Supplier<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/Supplier.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/Supplier.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class Supplier<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
@@ -2947,10 +3241,13 @@ namespace Java.Util.Function
         /// </summary>
         public Supplier() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.Supplier";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.Supplier";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -2972,10 +3269,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.Supplier";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.Supplier";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -2997,7 +3297,7 @@ namespace Java.Util.Function
 
     #region ToDoubleBiFunction
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToDoubleBiFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/ToDoubleBiFunction.html"/>
     /// </summary>
     public partial class ToDoubleBiFunction : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -3006,10 +3306,13 @@ namespace Java.Util.Function
         /// </summary>
         public ToDoubleBiFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.ToDoubleBiFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.ToDoubleBiFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -3031,10 +3334,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.ToDoubleBiFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.ToDoubleBiFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -3056,7 +3362,7 @@ namespace Java.Util.Function
 
     #region ToDoubleBiFunction<T, U>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToDoubleBiFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/ToDoubleBiFunction.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="U"></typeparam>
@@ -3067,10 +3373,13 @@ namespace Java.Util.Function
         /// </summary>
         public ToDoubleBiFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.ToDoubleBiFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.ToDoubleBiFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -3092,10 +3401,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.ToDoubleBiFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.ToDoubleBiFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -3117,7 +3429,7 @@ namespace Java.Util.Function
 
     #region ToDoubleFunction
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToDoubleFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/ToDoubleFunction.html"/>
     /// </summary>
     public partial class ToDoubleFunction : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -3126,10 +3438,13 @@ namespace Java.Util.Function
         /// </summary>
         public ToDoubleFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.ToDoubleFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.ToDoubleFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -3151,10 +3466,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.ToDoubleFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.ToDoubleFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -3176,7 +3494,7 @@ namespace Java.Util.Function
 
     #region ToDoubleFunction<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToDoubleFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/ToDoubleFunction.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class ToDoubleFunction<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
@@ -3186,10 +3504,13 @@ namespace Java.Util.Function
         /// </summary>
         public ToDoubleFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.ToDoubleFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.ToDoubleFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -3211,10 +3532,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.ToDoubleFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.ToDoubleFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -3236,7 +3560,7 @@ namespace Java.Util.Function
 
     #region ToIntBiFunction
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToIntBiFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/ToIntBiFunction.html"/>
     /// </summary>
     public partial class ToIntBiFunction : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -3245,10 +3569,13 @@ namespace Java.Util.Function
         /// </summary>
         public ToIntBiFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.ToIntBiFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.ToIntBiFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -3270,10 +3597,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.ToIntBiFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.ToIntBiFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -3295,7 +3625,7 @@ namespace Java.Util.Function
 
     #region ToIntBiFunction<T, U>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToIntBiFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/ToIntBiFunction.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="U"></typeparam>
@@ -3306,10 +3636,13 @@ namespace Java.Util.Function
         /// </summary>
         public ToIntBiFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.ToIntBiFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.ToIntBiFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -3331,10 +3664,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.ToIntBiFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.ToIntBiFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -3356,7 +3692,7 @@ namespace Java.Util.Function
 
     #region ToIntFunction
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToIntFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/ToIntFunction.html"/>
     /// </summary>
     public partial class ToIntFunction : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -3365,10 +3701,13 @@ namespace Java.Util.Function
         /// </summary>
         public ToIntFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.ToIntFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.ToIntFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -3390,10 +3729,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.ToIntFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.ToIntFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -3415,7 +3757,7 @@ namespace Java.Util.Function
 
     #region ToIntFunction<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToIntFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/ToIntFunction.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class ToIntFunction<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
@@ -3425,10 +3767,13 @@ namespace Java.Util.Function
         /// </summary>
         public ToIntFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.ToIntFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.ToIntFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -3450,10 +3795,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.ToIntFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.ToIntFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -3475,7 +3823,7 @@ namespace Java.Util.Function
 
     #region ToLongBiFunction
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToLongBiFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/ToLongBiFunction.html"/>
     /// </summary>
     public partial class ToLongBiFunction : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -3484,10 +3832,13 @@ namespace Java.Util.Function
         /// </summary>
         public ToLongBiFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.ToLongBiFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.ToLongBiFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -3509,10 +3860,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.ToLongBiFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.ToLongBiFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -3534,7 +3888,7 @@ namespace Java.Util.Function
 
     #region ToLongBiFunction<T, U>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToLongBiFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/ToLongBiFunction.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="U"></typeparam>
@@ -3545,10 +3899,13 @@ namespace Java.Util.Function
         /// </summary>
         public ToLongBiFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.ToLongBiFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.ToLongBiFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -3570,10 +3927,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.ToLongBiFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.ToLongBiFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -3595,7 +3955,7 @@ namespace Java.Util.Function
 
     #region ToLongFunction
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToLongFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/ToLongFunction.html"/>
     /// </summary>
     public partial class ToLongFunction : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -3604,10 +3964,13 @@ namespace Java.Util.Function
         /// </summary>
         public ToLongFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.ToLongFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.ToLongFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -3629,10 +3992,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.ToLongFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.ToLongFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -3654,7 +4020,7 @@ namespace Java.Util.Function
 
     #region ToLongFunction<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToLongFunction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/ToLongFunction.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class ToLongFunction<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
@@ -3664,10 +4030,13 @@ namespace Java.Util.Function
         /// </summary>
         public ToLongFunction() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.ToLongFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.ToLongFunction";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -3689,10 +4058,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.ToLongFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.ToLongFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -3714,7 +4086,7 @@ namespace Java.Util.Function
 
     #region UnaryOperator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/UnaryOperator.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/UnaryOperator.html"/>
     /// </summary>
     public partial class UnaryOperator : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -3723,10 +4095,13 @@ namespace Java.Util.Function
         /// </summary>
         public UnaryOperator() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.UnaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.UnaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -3748,10 +4123,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.UnaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.UnaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -3773,7 +4151,7 @@ namespace Java.Util.Function
 
     #region UnaryOperator<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/function/UnaryOperator.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/function/UnaryOperator.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class UnaryOperator<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
@@ -3783,10 +4161,13 @@ namespace Java.Util.Function
         /// </summary>
         public UnaryOperator() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.UnaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.function.UnaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -3808,10 +4189,13 @@ namespace Java.Util.Function
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.function.UnaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.UnaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>

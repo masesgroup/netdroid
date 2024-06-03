@@ -58,26 +58,12 @@ namespace Android.Service.Dreams
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/dreams/DreamService.html#getWindow()"/> 
-        /// </summary>
-        public Android.View.Window Window
-        {
-            get { return IExecuteWithSignature<Android.View.Window>("getWindow", "()Landroid/view/Window;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/dreams/DreamService.html#getWindowManager()"/> 
-        /// </summary>
-        public Android.View.WindowManager WindowManager
-        {
-            get { return IExecuteWithSignature<Android.View.WindowManager>("getWindowManager", "()Landroid/view/WindowManager;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/dreams/DreamService.html#findViewById(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <typeparam name="T"><see cref="Android.View.View"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T FindViewById<T>(int arg0) where T: Android.View.View
+        public T FindViewById<T>(int arg0) where T : Android.View.View
         {
             return IExecuteWithSignature<T>("findViewById", "(I)Landroid/view/View;", arg0);
         }
@@ -108,6 +94,22 @@ namespace Android.Service.Dreams
         public Android.View.View OnCreatePanelView(int arg0)
         {
             return IExecuteWithSignature<Android.View.View>("onCreatePanelView", "(I)Landroid/view/View;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/dreams/DreamService.html#getWindow()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Window"/></returns>
+        public Android.View.Window GetWindow()
+        {
+            return IExecuteWithSignature<Android.View.Window>("getWindow", "()Landroid/view/Window;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/dreams/DreamService.html#getWindowManager()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.WindowManager"/></returns>
+        public Android.View.WindowManager GetWindowManager()
+        {
+            return IExecuteWithSignature<Android.View.WindowManager>("getWindowManager", "()Landroid/view/WindowManager;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/dreams/DreamService.html#dispatchGenericMotionEvent(android.view.MotionEvent)"/>
@@ -251,7 +253,7 @@ namespace Android.Service.Dreams
         /// <param name="arg0"><see cref="int"/></param>
         /// <typeparam name="T"><see cref="Android.View.View"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T RequireViewById<T>(int arg0) where T: Android.View.View
+        public T RequireViewById<T>(int arg0) where T : Android.View.View
         {
             return IExecuteWithSignature<T>("requireViewById", "(I)Landroid/view/View;", arg0);
         }

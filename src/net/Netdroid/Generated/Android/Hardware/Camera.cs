@@ -40,35 +40,35 @@ namespace Android.Hardware
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#CAMERA_ERROR_EVICTED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CAMERA_ERROR_EVICTED { get { if (!_CAMERA_ERROR_EVICTEDReady) { _CAMERA_ERROR_EVICTEDContent = SGetField<int>(LocalBridgeClazz, "CAMERA_ERROR_EVICTED"); _CAMERA_ERROR_EVICTEDReady = true; } return _CAMERA_ERROR_EVICTEDContent; } }
         private static int _CAMERA_ERROR_EVICTEDContent = default;
         private static bool _CAMERA_ERROR_EVICTEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#CAMERA_ERROR_SERVER_DIED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CAMERA_ERROR_SERVER_DIED { get { if (!_CAMERA_ERROR_SERVER_DIEDReady) { _CAMERA_ERROR_SERVER_DIEDContent = SGetField<int>(LocalBridgeClazz, "CAMERA_ERROR_SERVER_DIED"); _CAMERA_ERROR_SERVER_DIEDReady = true; } return _CAMERA_ERROR_SERVER_DIEDContent; } }
         private static int _CAMERA_ERROR_SERVER_DIEDContent = default;
         private static bool _CAMERA_ERROR_SERVER_DIEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#CAMERA_ERROR_UNKNOWN"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CAMERA_ERROR_UNKNOWN { get { if (!_CAMERA_ERROR_UNKNOWNReady) { _CAMERA_ERROR_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "CAMERA_ERROR_UNKNOWN"); _CAMERA_ERROR_UNKNOWNReady = true; } return _CAMERA_ERROR_UNKNOWNContent; } }
         private static int _CAMERA_ERROR_UNKNOWNContent = default;
         private static bool _CAMERA_ERROR_UNKNOWNReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#ACTION_NEW_PICTURE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String ACTION_NEW_PICTURE { get { if (!_ACTION_NEW_PICTUREReady) { _ACTION_NEW_PICTUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_NEW_PICTURE"); _ACTION_NEW_PICTUREReady = true; } return _ACTION_NEW_PICTUREContent; } }
         private static Java.Lang.String _ACTION_NEW_PICTUREContent = default;
         private static bool _ACTION_NEW_PICTUREReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#ACTION_NEW_VIDEO"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String ACTION_NEW_VIDEO { get { if (!_ACTION_NEW_VIDEOReady) { _ACTION_NEW_VIDEOContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_NEW_VIDEO"); _ACTION_NEW_VIDEOReady = true; } return _ACTION_NEW_VIDEOContent; } }
         private static Java.Lang.String _ACTION_NEW_VIDEOContent = default;
         private static bool _ACTION_NEW_VIDEOReady = false; // this is used because in case of generics 
@@ -77,18 +77,10 @@ namespace Android.Hardware
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#getNumberOfCameras()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public static int NumberOfCameras
-        {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getNumberOfCameras", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#open()"/>
         /// </summary>
         /// <returns><see cref="Android.Hardware.Camera"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Hardware.Camera Open()
         {
             return SExecuteWithSignature<Android.Hardware.Camera>(LocalBridgeClazz, "open", "()Landroid/hardware/Camera;");
@@ -98,17 +90,26 @@ namespace Android.Hardware
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Android.Hardware.Camera"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Hardware.Camera Open(int arg0)
         {
             return SExecuteWithSignature<Android.Hardware.Camera>(LocalBridgeClazz, "open", "(I)Landroid/hardware/Camera;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#getNumberOfCameras()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public static int GetNumberOfCameras()
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getNumberOfCameras", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#getCameraInfo(int,android.hardware.Camera.CameraInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.Hardware.Camera.CameraInfo"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void GetCameraInfo(int arg0, Android.Hardware.Camera.CameraInfo arg1)
         {
             SExecute(LocalBridgeClazz, "getCameraInfo", arg0, arg1);
@@ -118,19 +119,20 @@ namespace Android.Hardware
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#getParameters()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#getParameters()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Hardware.Camera.Parameters GetParameters
+        /// <returns><see cref="Android.Hardware.Camera.Parameters"/></returns>
+        [global::System.Obsolete()]
+        public Android.Hardware.Camera.Parameters GetParameters()
         {
-            get { return IExecuteWithSignature<Android.Hardware.Camera.Parameters>("getParameters", "()Landroid/hardware/Camera$Parameters;"); }
+            return IExecuteWithSignature<Android.Hardware.Camera.Parameters>("getParameters", "()Landroid/hardware/Camera$Parameters;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#enableShutterSound(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool EnableShutterSound(bool arg0)
         {
             return IExecuteWithSignature<bool>("enableShutterSound", "(Z)Z", arg0);
@@ -138,7 +140,7 @@ namespace Android.Hardware
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#lock()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Lock()
         {
             IExecuteWithSignature("lock", "()V");
@@ -147,7 +149,7 @@ namespace Android.Hardware
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#reconnect()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Reconnect()
         {
             IExecuteWithSignature("reconnect", "()V");
@@ -156,7 +158,7 @@ namespace Android.Hardware
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#setDisplayOrientation(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetDisplayOrientation(int arg0)
         {
             IExecuteWithSignature("setDisplayOrientation", "(I)V", arg0);
@@ -166,7 +168,7 @@ namespace Android.Hardware
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.SurfaceTexture"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetPreviewTexture(Android.Graphics.SurfaceTexture arg0)
         {
             IExecuteWithSignature("setPreviewTexture", "(Landroid/graphics/SurfaceTexture;)V", arg0);
@@ -174,7 +176,7 @@ namespace Android.Hardware
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#startPreview()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartPreview()
         {
             IExecuteWithSignature("startPreview", "()V");
@@ -183,7 +185,7 @@ namespace Android.Hardware
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#startSmoothZoom(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartSmoothZoom(int arg0)
         {
             IExecuteWithSignature("startSmoothZoom", "(I)V", arg0);
@@ -191,7 +193,7 @@ namespace Android.Hardware
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#stopSmoothZoom()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StopSmoothZoom()
         {
             IExecuteWithSignature("stopSmoothZoom", "()V");
@@ -199,7 +201,7 @@ namespace Android.Hardware
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#unlock()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Unlock()
         {
             IExecuteWithSignature("unlock", "()V");
@@ -208,7 +210,7 @@ namespace Android.Hardware
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#addCallbackBuffer(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddCallbackBuffer(byte[] arg0)
         {
             IExecuteWithSignature("addCallbackBuffer", "([B)V", new object[] { arg0 });
@@ -217,7 +219,7 @@ namespace Android.Hardware
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#autoFocus(android.hardware.Camera.AutoFocusCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Hardware.Camera.AutoFocusCallback"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AutoFocus(Android.Hardware.Camera.AutoFocusCallback arg0)
         {
             IExecuteWithSignature("autoFocus", "(Landroid/hardware/Camera$AutoFocusCallback;)V", arg0);
@@ -225,7 +227,7 @@ namespace Android.Hardware
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#cancelAutoFocus()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CancelAutoFocus()
         {
             IExecuteWithSignature("cancelAutoFocus", "()V");
@@ -233,7 +235,7 @@ namespace Android.Hardware
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#release()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Release()
         {
             IExecuteWithSignature("release", "()V");
@@ -242,7 +244,7 @@ namespace Android.Hardware
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#setErrorCallback(android.hardware.Camera.ErrorCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Hardware.Camera.ErrorCallback"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetErrorCallback(Android.Hardware.Camera.ErrorCallback arg0)
         {
             IExecuteWithSignature("setErrorCallback", "(Landroid/hardware/Camera$ErrorCallback;)V", arg0);
@@ -251,7 +253,7 @@ namespace Android.Hardware
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#setFaceDetectionListener(android.hardware.Camera.FaceDetectionListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Hardware.Camera.FaceDetectionListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetFaceDetectionListener(Android.Hardware.Camera.FaceDetectionListener arg0)
         {
             IExecuteWithSignature("setFaceDetectionListener", "(Landroid/hardware/Camera$FaceDetectionListener;)V", arg0);
@@ -260,7 +262,7 @@ namespace Android.Hardware
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#setOneShotPreviewCallback(android.hardware.Camera.PreviewCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Hardware.Camera.PreviewCallback"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetOneShotPreviewCallback(Android.Hardware.Camera.PreviewCallback arg0)
         {
             IExecuteWithSignature("setOneShotPreviewCallback", "(Landroid/hardware/Camera$PreviewCallback;)V", arg0);
@@ -269,7 +271,7 @@ namespace Android.Hardware
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#setPreviewCallback(android.hardware.Camera.PreviewCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Hardware.Camera.PreviewCallback"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetPreviewCallback(Android.Hardware.Camera.PreviewCallback arg0)
         {
             IExecuteWithSignature("setPreviewCallback", "(Landroid/hardware/Camera$PreviewCallback;)V", arg0);
@@ -278,7 +280,7 @@ namespace Android.Hardware
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#setPreviewCallbackWithBuffer(android.hardware.Camera.PreviewCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Hardware.Camera.PreviewCallback"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetPreviewCallbackWithBuffer(Android.Hardware.Camera.PreviewCallback arg0)
         {
             IExecuteWithSignature("setPreviewCallbackWithBuffer", "(Landroid/hardware/Camera$PreviewCallback;)V", arg0);
@@ -288,7 +290,7 @@ namespace Android.Hardware
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.SurfaceHolder"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetPreviewDisplay(Android.View.SurfaceHolder arg0)
         {
             IExecuteWithSignature("setPreviewDisplay", "(Landroid/view/SurfaceHolder;)V", arg0);
@@ -297,7 +299,7 @@ namespace Android.Hardware
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#setZoomChangeListener(android.hardware.Camera.OnZoomChangeListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Hardware.Camera.OnZoomChangeListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetZoomChangeListener(Android.Hardware.Camera.OnZoomChangeListener arg0)
         {
             IExecuteWithSignature("setZoomChangeListener", "(Landroid/hardware/Camera$OnZoomChangeListener;)V", arg0);
@@ -305,7 +307,7 @@ namespace Android.Hardware
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#startFaceDetection()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartFaceDetection()
         {
             IExecuteWithSignature("startFaceDetection", "()V");
@@ -313,7 +315,7 @@ namespace Android.Hardware
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#stopFaceDetection()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StopFaceDetection()
         {
             IExecuteWithSignature("stopFaceDetection", "()V");
@@ -321,7 +323,7 @@ namespace Android.Hardware
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#stopPreview()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StopPreview()
         {
             IExecuteWithSignature("stopPreview", "()V");
@@ -333,7 +335,7 @@ namespace Android.Hardware
         /// <param name="arg1"><see cref="Android.Hardware.Camera.PictureCallback"/></param>
         /// <param name="arg2"><see cref="Android.Hardware.Camera.PictureCallback"/></param>
         /// <param name="arg3"><see cref="Android.Hardware.Camera.PictureCallback"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void TakePicture(Android.Hardware.Camera.ShutterCallback arg0, Android.Hardware.Camera.PictureCallback arg1, Android.Hardware.Camera.PictureCallback arg2, Android.Hardware.Camera.PictureCallback arg3)
         {
             IExecute("takePicture", arg0, arg1, arg2, arg3);
@@ -344,7 +346,7 @@ namespace Android.Hardware
         /// <param name="arg0"><see cref="Android.Hardware.Camera.ShutterCallback"/></param>
         /// <param name="arg1"><see cref="Android.Hardware.Camera.PictureCallback"/></param>
         /// <param name="arg2"><see cref="Android.Hardware.Camera.PictureCallback"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void TakePicture(Android.Hardware.Camera.ShutterCallback arg0, Android.Hardware.Camera.PictureCallback arg1, Android.Hardware.Camera.PictureCallback arg2)
         {
             IExecute("takePicture", arg0, arg1, arg2);
@@ -353,7 +355,7 @@ namespace Android.Hardware
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#setAutoFocusMoveCallback(android.hardware.Camera.AutoFocusMoveCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Hardware.Camera.AutoFocusMoveCallback"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetAutoFocusMoveCallback(Android.Hardware.Camera.AutoFocusMoveCallback arg0)
         {
             IExecuteWithSignature("setAutoFocusMoveCallback", "(Landroid/hardware/Camera$AutoFocusMoveCallback;)V", arg0);
@@ -362,7 +364,7 @@ namespace Android.Hardware
         /// <see href="https://developer.android.com/reference/android/hardware/Camera.html#setParameters(android.hardware.Camera.Parameters)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Hardware.Camera.Parameters"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetParameters(Android.Hardware.Camera.Parameters arg0)
         {
             IExecuteWithSignature("setParameters", "(Landroid/hardware/Camera$Parameters;)V", arg0);
@@ -380,7 +382,7 @@ namespace Android.Hardware
             /// </summary>
             /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
             /// <param name="arg1"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Area(Android.Graphics.Rect arg0, int arg1)
                 : base(arg0, arg1)
             {
@@ -396,12 +398,12 @@ namespace Android.Hardware
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Area.html#rect"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Graphics.Rect rect { get { return IGetField<Android.Graphics.Rect>("rect"); } set { ISetField("rect", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Area.html#weight"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int weight { get { return IGetField<int>("weight"); } set { ISetField("weight", value); } }
 
             #endregion
@@ -447,7 +449,7 @@ namespace Android.Hardware
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
             /// <param name="arg1"><see cref="Android.Hardware.Camera"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnAutoFocus(bool arg0, Android.Hardware.Camera arg1)
             {
                 IExecute("onAutoFocus", arg0, arg1);
@@ -488,7 +490,7 @@ namespace Android.Hardware
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
             /// <param name="arg1"><see cref="Android.Hardware.Camera"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnAutoFocusMoving(bool arg0, Android.Hardware.Camera arg1)
             {
                 IExecute("onAutoFocusMoving", arg0, arg1);
@@ -519,29 +521,29 @@ namespace Android.Hardware
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.CameraInfo.html#canDisableShutterSound"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public bool canDisableShutterSound { get { return IGetField<bool>("canDisableShutterSound"); } set { ISetField("canDisableShutterSound", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.CameraInfo.html#facing"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int facing { get { return IGetField<int>("facing"); } set { ISetField("facing", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.CameraInfo.html#orientation"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int orientation { get { return IGetField<int>("orientation"); } set { ISetField("orientation", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.CameraInfo.html#CAMERA_FACING_BACK"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int CAMERA_FACING_BACK { get { if (!_CAMERA_FACING_BACKReady) { _CAMERA_FACING_BACKContent = SGetField<int>(LocalBridgeClazz, "CAMERA_FACING_BACK"); _CAMERA_FACING_BACKReady = true; } return _CAMERA_FACING_BACKContent; } }
             private static int _CAMERA_FACING_BACKContent = default;
             private static bool _CAMERA_FACING_BACKReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.CameraInfo.html#CAMERA_FACING_FRONT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int CAMERA_FACING_FRONT { get { if (!_CAMERA_FACING_FRONTReady) { _CAMERA_FACING_FRONTContent = SGetField<int>(LocalBridgeClazz, "CAMERA_FACING_FRONT"); _CAMERA_FACING_FRONTReady = true; } return _CAMERA_FACING_FRONTContent; } }
             private static int _CAMERA_FACING_FRONTContent = default;
             private static bool _CAMERA_FACING_FRONTReady = false; // this is used because in case of generics 
@@ -589,7 +591,7 @@ namespace Android.Hardware
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="Android.Hardware.Camera"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnError(int arg0, Android.Hardware.Camera arg1)
             {
                 IExecute("onError", arg0, arg1);
@@ -620,32 +622,32 @@ namespace Android.Hardware
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Face.html#leftEye"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Graphics.Point leftEye { get { return IGetField<Android.Graphics.Point>("leftEye"); } set { ISetField("leftEye", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Face.html#mouth"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Graphics.Point mouth { get { return IGetField<Android.Graphics.Point>("mouth"); } set { ISetField("mouth", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Face.html#rightEye"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Graphics.Point rightEye { get { return IGetField<Android.Graphics.Point>("rightEye"); } set { ISetField("rightEye", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Face.html#rect"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Graphics.Rect rect { get { return IGetField<Android.Graphics.Rect>("rect"); } set { ISetField("rect", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Face.html#id"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int id { get { return IGetField<int>("id"); } set { ISetField("id", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Face.html#score"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int score { get { return IGetField<int>("score"); } set { ISetField("score", value); } }
 
             #endregion
@@ -691,7 +693,7 @@ namespace Android.Hardware
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onFaceDetection", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Hardware.Camera.Face[]>>>(OnFaceDetectionEventHandler));
+                AddEventHandler("onFaceDetection", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Hardware.Camera.Face[]>>>(OnFaceDetectionEventHandler));
 
             }
 
@@ -699,7 +701,7 @@ namespace Android.Hardware
             /// Handler for <see href="https://developer.android.com/reference/android/hardware/Camera.FaceDetectionListener.html#onFaceDetection(android.hardware.Camera.Face[],android.hardware.Camera)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFaceDetection"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Hardware.Camera.Face[], Android.Hardware.Camera> OnOnFaceDetection { get; set; } = null;
+            public global::System.Action<Android.Hardware.Camera.Face[], Android.Hardware.Camera> OnOnFaceDetection { get; set; } = null;
 
             void OnFaceDetectionEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Hardware.Camera.Face[]>> data)
             {
@@ -712,7 +714,7 @@ namespace Android.Hardware
             /// </summary>
             /// <param name="arg0"><see cref="Android.Hardware.Camera.Face"/></param>
             /// <param name="arg1"><see cref="Android.Hardware.Camera"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnFaceDetection(Android.Hardware.Camera.Face[] arg0, Android.Hardware.Camera arg1)
             {
                 
@@ -753,7 +755,7 @@ namespace Android.Hardware
             /// </summary>
             /// <param name="arg0"><see cref="Android.Hardware.Camera.Face"/></param>
             /// <param name="arg1"><see cref="Android.Hardware.Camera"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnFaceDetection(Android.Hardware.Camera.Face[] arg0, Android.Hardware.Camera arg1)
             {
                 IExecute("onFaceDetection", arg0, arg1);
@@ -794,7 +796,7 @@ namespace Android.Hardware
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onZoomChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnZoomChangeEventHandler));
+                AddEventHandler("onZoomChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnZoomChangeEventHandler));
 
             }
 
@@ -802,7 +804,7 @@ namespace Android.Hardware
             /// Handler for <see href="https://developer.android.com/reference/android/hardware/Camera.OnZoomChangeListener.html#onZoomChange(int,boolean,android.hardware.Camera)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnZoomChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int, bool, Android.Hardware.Camera> OnOnZoomChange { get; set; } = null;
+            public global::System.Action<int, bool, Android.Hardware.Camera> OnOnZoomChange { get; set; } = null;
 
             void OnZoomChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -816,7 +818,7 @@ namespace Android.Hardware
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="bool"/></param>
             /// <param name="arg2"><see cref="Android.Hardware.Camera"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnZoomChange(int arg0, bool arg1, Android.Hardware.Camera arg2)
             {
                 
@@ -858,7 +860,7 @@ namespace Android.Hardware
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="bool"/></param>
             /// <param name="arg2"><see cref="Android.Hardware.Camera"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnZoomChange(int arg0, bool arg1, Android.Hardware.Camera arg2)
             {
                 IExecute("onZoomChange", arg0, arg1, arg2);
@@ -889,385 +891,385 @@ namespace Android.Hardware
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#FOCUS_DISTANCE_FAR_INDEX"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int FOCUS_DISTANCE_FAR_INDEX { get { if (!_FOCUS_DISTANCE_FAR_INDEXReady) { _FOCUS_DISTANCE_FAR_INDEXContent = SGetField<int>(LocalBridgeClazz, "FOCUS_DISTANCE_FAR_INDEX"); _FOCUS_DISTANCE_FAR_INDEXReady = true; } return _FOCUS_DISTANCE_FAR_INDEXContent; } }
             private static int _FOCUS_DISTANCE_FAR_INDEXContent = default;
             private static bool _FOCUS_DISTANCE_FAR_INDEXReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#FOCUS_DISTANCE_NEAR_INDEX"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int FOCUS_DISTANCE_NEAR_INDEX { get { if (!_FOCUS_DISTANCE_NEAR_INDEXReady) { _FOCUS_DISTANCE_NEAR_INDEXContent = SGetField<int>(LocalBridgeClazz, "FOCUS_DISTANCE_NEAR_INDEX"); _FOCUS_DISTANCE_NEAR_INDEXReady = true; } return _FOCUS_DISTANCE_NEAR_INDEXContent; } }
             private static int _FOCUS_DISTANCE_NEAR_INDEXContent = default;
             private static bool _FOCUS_DISTANCE_NEAR_INDEXReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#FOCUS_DISTANCE_OPTIMAL_INDEX"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int FOCUS_DISTANCE_OPTIMAL_INDEX { get { if (!_FOCUS_DISTANCE_OPTIMAL_INDEXReady) { _FOCUS_DISTANCE_OPTIMAL_INDEXContent = SGetField<int>(LocalBridgeClazz, "FOCUS_DISTANCE_OPTIMAL_INDEX"); _FOCUS_DISTANCE_OPTIMAL_INDEXReady = true; } return _FOCUS_DISTANCE_OPTIMAL_INDEXContent; } }
             private static int _FOCUS_DISTANCE_OPTIMAL_INDEXContent = default;
             private static bool _FOCUS_DISTANCE_OPTIMAL_INDEXReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#PREVIEW_FPS_MAX_INDEX"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int PREVIEW_FPS_MAX_INDEX { get { if (!_PREVIEW_FPS_MAX_INDEXReady) { _PREVIEW_FPS_MAX_INDEXContent = SGetField<int>(LocalBridgeClazz, "PREVIEW_FPS_MAX_INDEX"); _PREVIEW_FPS_MAX_INDEXReady = true; } return _PREVIEW_FPS_MAX_INDEXContent; } }
             private static int _PREVIEW_FPS_MAX_INDEXContent = default;
             private static bool _PREVIEW_FPS_MAX_INDEXReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#PREVIEW_FPS_MIN_INDEX"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int PREVIEW_FPS_MIN_INDEX { get { if (!_PREVIEW_FPS_MIN_INDEXReady) { _PREVIEW_FPS_MIN_INDEXContent = SGetField<int>(LocalBridgeClazz, "PREVIEW_FPS_MIN_INDEX"); _PREVIEW_FPS_MIN_INDEXReady = true; } return _PREVIEW_FPS_MIN_INDEXContent; } }
             private static int _PREVIEW_FPS_MIN_INDEXContent = default;
             private static bool _PREVIEW_FPS_MIN_INDEXReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#ANTIBANDING_50HZ"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String ANTIBANDING_50HZ { get { if (!_ANTIBANDING_50HZReady) { _ANTIBANDING_50HZContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ANTIBANDING_50HZ"); _ANTIBANDING_50HZReady = true; } return _ANTIBANDING_50HZContent; } }
             private static Java.Lang.String _ANTIBANDING_50HZContent = default;
             private static bool _ANTIBANDING_50HZReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#ANTIBANDING_60HZ"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String ANTIBANDING_60HZ { get { if (!_ANTIBANDING_60HZReady) { _ANTIBANDING_60HZContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ANTIBANDING_60HZ"); _ANTIBANDING_60HZReady = true; } return _ANTIBANDING_60HZContent; } }
             private static Java.Lang.String _ANTIBANDING_60HZContent = default;
             private static bool _ANTIBANDING_60HZReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#ANTIBANDING_AUTO"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String ANTIBANDING_AUTO { get { if (!_ANTIBANDING_AUTOReady) { _ANTIBANDING_AUTOContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ANTIBANDING_AUTO"); _ANTIBANDING_AUTOReady = true; } return _ANTIBANDING_AUTOContent; } }
             private static Java.Lang.String _ANTIBANDING_AUTOContent = default;
             private static bool _ANTIBANDING_AUTOReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#ANTIBANDING_OFF"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String ANTIBANDING_OFF { get { if (!_ANTIBANDING_OFFReady) { _ANTIBANDING_OFFContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ANTIBANDING_OFF"); _ANTIBANDING_OFFReady = true; } return _ANTIBANDING_OFFContent; } }
             private static Java.Lang.String _ANTIBANDING_OFFContent = default;
             private static bool _ANTIBANDING_OFFReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#EFFECT_AQUA"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String EFFECT_AQUA { get { if (!_EFFECT_AQUAReady) { _EFFECT_AQUAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EFFECT_AQUA"); _EFFECT_AQUAReady = true; } return _EFFECT_AQUAContent; } }
             private static Java.Lang.String _EFFECT_AQUAContent = default;
             private static bool _EFFECT_AQUAReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#EFFECT_BLACKBOARD"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String EFFECT_BLACKBOARD { get { if (!_EFFECT_BLACKBOARDReady) { _EFFECT_BLACKBOARDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EFFECT_BLACKBOARD"); _EFFECT_BLACKBOARDReady = true; } return _EFFECT_BLACKBOARDContent; } }
             private static Java.Lang.String _EFFECT_BLACKBOARDContent = default;
             private static bool _EFFECT_BLACKBOARDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#EFFECT_MONO"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String EFFECT_MONO { get { if (!_EFFECT_MONOReady) { _EFFECT_MONOContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EFFECT_MONO"); _EFFECT_MONOReady = true; } return _EFFECT_MONOContent; } }
             private static Java.Lang.String _EFFECT_MONOContent = default;
             private static bool _EFFECT_MONOReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#EFFECT_NEGATIVE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String EFFECT_NEGATIVE { get { if (!_EFFECT_NEGATIVEReady) { _EFFECT_NEGATIVEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EFFECT_NEGATIVE"); _EFFECT_NEGATIVEReady = true; } return _EFFECT_NEGATIVEContent; } }
             private static Java.Lang.String _EFFECT_NEGATIVEContent = default;
             private static bool _EFFECT_NEGATIVEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#EFFECT_NONE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String EFFECT_NONE { get { if (!_EFFECT_NONEReady) { _EFFECT_NONEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EFFECT_NONE"); _EFFECT_NONEReady = true; } return _EFFECT_NONEContent; } }
             private static Java.Lang.String _EFFECT_NONEContent = default;
             private static bool _EFFECT_NONEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#EFFECT_POSTERIZE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String EFFECT_POSTERIZE { get { if (!_EFFECT_POSTERIZEReady) { _EFFECT_POSTERIZEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EFFECT_POSTERIZE"); _EFFECT_POSTERIZEReady = true; } return _EFFECT_POSTERIZEContent; } }
             private static Java.Lang.String _EFFECT_POSTERIZEContent = default;
             private static bool _EFFECT_POSTERIZEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#EFFECT_SEPIA"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String EFFECT_SEPIA { get { if (!_EFFECT_SEPIAReady) { _EFFECT_SEPIAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EFFECT_SEPIA"); _EFFECT_SEPIAReady = true; } return _EFFECT_SEPIAContent; } }
             private static Java.Lang.String _EFFECT_SEPIAContent = default;
             private static bool _EFFECT_SEPIAReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#EFFECT_SOLARIZE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String EFFECT_SOLARIZE { get { if (!_EFFECT_SOLARIZEReady) { _EFFECT_SOLARIZEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EFFECT_SOLARIZE"); _EFFECT_SOLARIZEReady = true; } return _EFFECT_SOLARIZEContent; } }
             private static Java.Lang.String _EFFECT_SOLARIZEContent = default;
             private static bool _EFFECT_SOLARIZEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#EFFECT_WHITEBOARD"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String EFFECT_WHITEBOARD { get { if (!_EFFECT_WHITEBOARDReady) { _EFFECT_WHITEBOARDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EFFECT_WHITEBOARD"); _EFFECT_WHITEBOARDReady = true; } return _EFFECT_WHITEBOARDContent; } }
             private static Java.Lang.String _EFFECT_WHITEBOARDContent = default;
             private static bool _EFFECT_WHITEBOARDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#FLASH_MODE_AUTO"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String FLASH_MODE_AUTO { get { if (!_FLASH_MODE_AUTOReady) { _FLASH_MODE_AUTOContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FLASH_MODE_AUTO"); _FLASH_MODE_AUTOReady = true; } return _FLASH_MODE_AUTOContent; } }
             private static Java.Lang.String _FLASH_MODE_AUTOContent = default;
             private static bool _FLASH_MODE_AUTOReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#FLASH_MODE_OFF"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String FLASH_MODE_OFF { get { if (!_FLASH_MODE_OFFReady) { _FLASH_MODE_OFFContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FLASH_MODE_OFF"); _FLASH_MODE_OFFReady = true; } return _FLASH_MODE_OFFContent; } }
             private static Java.Lang.String _FLASH_MODE_OFFContent = default;
             private static bool _FLASH_MODE_OFFReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#FLASH_MODE_ON"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String FLASH_MODE_ON { get { if (!_FLASH_MODE_ONReady) { _FLASH_MODE_ONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FLASH_MODE_ON"); _FLASH_MODE_ONReady = true; } return _FLASH_MODE_ONContent; } }
             private static Java.Lang.String _FLASH_MODE_ONContent = default;
             private static bool _FLASH_MODE_ONReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#FLASH_MODE_RED_EYE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String FLASH_MODE_RED_EYE { get { if (!_FLASH_MODE_RED_EYEReady) { _FLASH_MODE_RED_EYEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FLASH_MODE_RED_EYE"); _FLASH_MODE_RED_EYEReady = true; } return _FLASH_MODE_RED_EYEContent; } }
             private static Java.Lang.String _FLASH_MODE_RED_EYEContent = default;
             private static bool _FLASH_MODE_RED_EYEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#FLASH_MODE_TORCH"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String FLASH_MODE_TORCH { get { if (!_FLASH_MODE_TORCHReady) { _FLASH_MODE_TORCHContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FLASH_MODE_TORCH"); _FLASH_MODE_TORCHReady = true; } return _FLASH_MODE_TORCHContent; } }
             private static Java.Lang.String _FLASH_MODE_TORCHContent = default;
             private static bool _FLASH_MODE_TORCHReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#FOCUS_MODE_AUTO"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String FOCUS_MODE_AUTO { get { if (!_FOCUS_MODE_AUTOReady) { _FOCUS_MODE_AUTOContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FOCUS_MODE_AUTO"); _FOCUS_MODE_AUTOReady = true; } return _FOCUS_MODE_AUTOContent; } }
             private static Java.Lang.String _FOCUS_MODE_AUTOContent = default;
             private static bool _FOCUS_MODE_AUTOReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#FOCUS_MODE_CONTINUOUS_PICTURE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String FOCUS_MODE_CONTINUOUS_PICTURE { get { if (!_FOCUS_MODE_CONTINUOUS_PICTUREReady) { _FOCUS_MODE_CONTINUOUS_PICTUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FOCUS_MODE_CONTINUOUS_PICTURE"); _FOCUS_MODE_CONTINUOUS_PICTUREReady = true; } return _FOCUS_MODE_CONTINUOUS_PICTUREContent; } }
             private static Java.Lang.String _FOCUS_MODE_CONTINUOUS_PICTUREContent = default;
             private static bool _FOCUS_MODE_CONTINUOUS_PICTUREReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#FOCUS_MODE_CONTINUOUS_VIDEO"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String FOCUS_MODE_CONTINUOUS_VIDEO { get { if (!_FOCUS_MODE_CONTINUOUS_VIDEOReady) { _FOCUS_MODE_CONTINUOUS_VIDEOContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FOCUS_MODE_CONTINUOUS_VIDEO"); _FOCUS_MODE_CONTINUOUS_VIDEOReady = true; } return _FOCUS_MODE_CONTINUOUS_VIDEOContent; } }
             private static Java.Lang.String _FOCUS_MODE_CONTINUOUS_VIDEOContent = default;
             private static bool _FOCUS_MODE_CONTINUOUS_VIDEOReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#FOCUS_MODE_EDOF"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String FOCUS_MODE_EDOF { get { if (!_FOCUS_MODE_EDOFReady) { _FOCUS_MODE_EDOFContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FOCUS_MODE_EDOF"); _FOCUS_MODE_EDOFReady = true; } return _FOCUS_MODE_EDOFContent; } }
             private static Java.Lang.String _FOCUS_MODE_EDOFContent = default;
             private static bool _FOCUS_MODE_EDOFReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#FOCUS_MODE_FIXED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String FOCUS_MODE_FIXED { get { if (!_FOCUS_MODE_FIXEDReady) { _FOCUS_MODE_FIXEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FOCUS_MODE_FIXED"); _FOCUS_MODE_FIXEDReady = true; } return _FOCUS_MODE_FIXEDContent; } }
             private static Java.Lang.String _FOCUS_MODE_FIXEDContent = default;
             private static bool _FOCUS_MODE_FIXEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#FOCUS_MODE_INFINITY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String FOCUS_MODE_INFINITY { get { if (!_FOCUS_MODE_INFINITYReady) { _FOCUS_MODE_INFINITYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FOCUS_MODE_INFINITY"); _FOCUS_MODE_INFINITYReady = true; } return _FOCUS_MODE_INFINITYContent; } }
             private static Java.Lang.String _FOCUS_MODE_INFINITYContent = default;
             private static bool _FOCUS_MODE_INFINITYReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#FOCUS_MODE_MACRO"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String FOCUS_MODE_MACRO { get { if (!_FOCUS_MODE_MACROReady) { _FOCUS_MODE_MACROContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FOCUS_MODE_MACRO"); _FOCUS_MODE_MACROReady = true; } return _FOCUS_MODE_MACROContent; } }
             private static Java.Lang.String _FOCUS_MODE_MACROContent = default;
             private static bool _FOCUS_MODE_MACROReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#SCENE_MODE_ACTION"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SCENE_MODE_ACTION { get { if (!_SCENE_MODE_ACTIONReady) { _SCENE_MODE_ACTIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCENE_MODE_ACTION"); _SCENE_MODE_ACTIONReady = true; } return _SCENE_MODE_ACTIONContent; } }
             private static Java.Lang.String _SCENE_MODE_ACTIONContent = default;
             private static bool _SCENE_MODE_ACTIONReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#SCENE_MODE_AUTO"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SCENE_MODE_AUTO { get { if (!_SCENE_MODE_AUTOReady) { _SCENE_MODE_AUTOContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCENE_MODE_AUTO"); _SCENE_MODE_AUTOReady = true; } return _SCENE_MODE_AUTOContent; } }
             private static Java.Lang.String _SCENE_MODE_AUTOContent = default;
             private static bool _SCENE_MODE_AUTOReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#SCENE_MODE_BARCODE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SCENE_MODE_BARCODE { get { if (!_SCENE_MODE_BARCODEReady) { _SCENE_MODE_BARCODEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCENE_MODE_BARCODE"); _SCENE_MODE_BARCODEReady = true; } return _SCENE_MODE_BARCODEContent; } }
             private static Java.Lang.String _SCENE_MODE_BARCODEContent = default;
             private static bool _SCENE_MODE_BARCODEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#SCENE_MODE_BEACH"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SCENE_MODE_BEACH { get { if (!_SCENE_MODE_BEACHReady) { _SCENE_MODE_BEACHContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCENE_MODE_BEACH"); _SCENE_MODE_BEACHReady = true; } return _SCENE_MODE_BEACHContent; } }
             private static Java.Lang.String _SCENE_MODE_BEACHContent = default;
             private static bool _SCENE_MODE_BEACHReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#SCENE_MODE_CANDLELIGHT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SCENE_MODE_CANDLELIGHT { get { if (!_SCENE_MODE_CANDLELIGHTReady) { _SCENE_MODE_CANDLELIGHTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCENE_MODE_CANDLELIGHT"); _SCENE_MODE_CANDLELIGHTReady = true; } return _SCENE_MODE_CANDLELIGHTContent; } }
             private static Java.Lang.String _SCENE_MODE_CANDLELIGHTContent = default;
             private static bool _SCENE_MODE_CANDLELIGHTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#SCENE_MODE_FIREWORKS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SCENE_MODE_FIREWORKS { get { if (!_SCENE_MODE_FIREWORKSReady) { _SCENE_MODE_FIREWORKSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCENE_MODE_FIREWORKS"); _SCENE_MODE_FIREWORKSReady = true; } return _SCENE_MODE_FIREWORKSContent; } }
             private static Java.Lang.String _SCENE_MODE_FIREWORKSContent = default;
             private static bool _SCENE_MODE_FIREWORKSReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#SCENE_MODE_HDR"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SCENE_MODE_HDR { get { if (!_SCENE_MODE_HDRReady) { _SCENE_MODE_HDRContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCENE_MODE_HDR"); _SCENE_MODE_HDRReady = true; } return _SCENE_MODE_HDRContent; } }
             private static Java.Lang.String _SCENE_MODE_HDRContent = default;
             private static bool _SCENE_MODE_HDRReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#SCENE_MODE_LANDSCAPE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SCENE_MODE_LANDSCAPE { get { if (!_SCENE_MODE_LANDSCAPEReady) { _SCENE_MODE_LANDSCAPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCENE_MODE_LANDSCAPE"); _SCENE_MODE_LANDSCAPEReady = true; } return _SCENE_MODE_LANDSCAPEContent; } }
             private static Java.Lang.String _SCENE_MODE_LANDSCAPEContent = default;
             private static bool _SCENE_MODE_LANDSCAPEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#SCENE_MODE_NIGHT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SCENE_MODE_NIGHT { get { if (!_SCENE_MODE_NIGHTReady) { _SCENE_MODE_NIGHTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCENE_MODE_NIGHT"); _SCENE_MODE_NIGHTReady = true; } return _SCENE_MODE_NIGHTContent; } }
             private static Java.Lang.String _SCENE_MODE_NIGHTContent = default;
             private static bool _SCENE_MODE_NIGHTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#SCENE_MODE_NIGHT_PORTRAIT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SCENE_MODE_NIGHT_PORTRAIT { get { if (!_SCENE_MODE_NIGHT_PORTRAITReady) { _SCENE_MODE_NIGHT_PORTRAITContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCENE_MODE_NIGHT_PORTRAIT"); _SCENE_MODE_NIGHT_PORTRAITReady = true; } return _SCENE_MODE_NIGHT_PORTRAITContent; } }
             private static Java.Lang.String _SCENE_MODE_NIGHT_PORTRAITContent = default;
             private static bool _SCENE_MODE_NIGHT_PORTRAITReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#SCENE_MODE_PARTY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SCENE_MODE_PARTY { get { if (!_SCENE_MODE_PARTYReady) { _SCENE_MODE_PARTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCENE_MODE_PARTY"); _SCENE_MODE_PARTYReady = true; } return _SCENE_MODE_PARTYContent; } }
             private static Java.Lang.String _SCENE_MODE_PARTYContent = default;
             private static bool _SCENE_MODE_PARTYReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#SCENE_MODE_PORTRAIT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SCENE_MODE_PORTRAIT { get { if (!_SCENE_MODE_PORTRAITReady) { _SCENE_MODE_PORTRAITContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCENE_MODE_PORTRAIT"); _SCENE_MODE_PORTRAITReady = true; } return _SCENE_MODE_PORTRAITContent; } }
             private static Java.Lang.String _SCENE_MODE_PORTRAITContent = default;
             private static bool _SCENE_MODE_PORTRAITReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#SCENE_MODE_SNOW"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SCENE_MODE_SNOW { get { if (!_SCENE_MODE_SNOWReady) { _SCENE_MODE_SNOWContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCENE_MODE_SNOW"); _SCENE_MODE_SNOWReady = true; } return _SCENE_MODE_SNOWContent; } }
             private static Java.Lang.String _SCENE_MODE_SNOWContent = default;
             private static bool _SCENE_MODE_SNOWReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#SCENE_MODE_SPORTS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SCENE_MODE_SPORTS { get { if (!_SCENE_MODE_SPORTSReady) { _SCENE_MODE_SPORTSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCENE_MODE_SPORTS"); _SCENE_MODE_SPORTSReady = true; } return _SCENE_MODE_SPORTSContent; } }
             private static Java.Lang.String _SCENE_MODE_SPORTSContent = default;
             private static bool _SCENE_MODE_SPORTSReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#SCENE_MODE_STEADYPHOTO"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SCENE_MODE_STEADYPHOTO { get { if (!_SCENE_MODE_STEADYPHOTOReady) { _SCENE_MODE_STEADYPHOTOContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCENE_MODE_STEADYPHOTO"); _SCENE_MODE_STEADYPHOTOReady = true; } return _SCENE_MODE_STEADYPHOTOContent; } }
             private static Java.Lang.String _SCENE_MODE_STEADYPHOTOContent = default;
             private static bool _SCENE_MODE_STEADYPHOTOReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#SCENE_MODE_SUNSET"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SCENE_MODE_SUNSET { get { if (!_SCENE_MODE_SUNSETReady) { _SCENE_MODE_SUNSETContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCENE_MODE_SUNSET"); _SCENE_MODE_SUNSETReady = true; } return _SCENE_MODE_SUNSETContent; } }
             private static Java.Lang.String _SCENE_MODE_SUNSETContent = default;
             private static bool _SCENE_MODE_SUNSETReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#SCENE_MODE_THEATRE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SCENE_MODE_THEATRE { get { if (!_SCENE_MODE_THEATREReady) { _SCENE_MODE_THEATREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCENE_MODE_THEATRE"); _SCENE_MODE_THEATREReady = true; } return _SCENE_MODE_THEATREContent; } }
             private static Java.Lang.String _SCENE_MODE_THEATREContent = default;
             private static bool _SCENE_MODE_THEATREReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#WHITE_BALANCE_AUTO"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WHITE_BALANCE_AUTO { get { if (!_WHITE_BALANCE_AUTOReady) { _WHITE_BALANCE_AUTOContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WHITE_BALANCE_AUTO"); _WHITE_BALANCE_AUTOReady = true; } return _WHITE_BALANCE_AUTOContent; } }
             private static Java.Lang.String _WHITE_BALANCE_AUTOContent = default;
             private static bool _WHITE_BALANCE_AUTOReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#WHITE_BALANCE_CLOUDY_DAYLIGHT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WHITE_BALANCE_CLOUDY_DAYLIGHT { get { if (!_WHITE_BALANCE_CLOUDY_DAYLIGHTReady) { _WHITE_BALANCE_CLOUDY_DAYLIGHTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WHITE_BALANCE_CLOUDY_DAYLIGHT"); _WHITE_BALANCE_CLOUDY_DAYLIGHTReady = true; } return _WHITE_BALANCE_CLOUDY_DAYLIGHTContent; } }
             private static Java.Lang.String _WHITE_BALANCE_CLOUDY_DAYLIGHTContent = default;
             private static bool _WHITE_BALANCE_CLOUDY_DAYLIGHTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#WHITE_BALANCE_DAYLIGHT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WHITE_BALANCE_DAYLIGHT { get { if (!_WHITE_BALANCE_DAYLIGHTReady) { _WHITE_BALANCE_DAYLIGHTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WHITE_BALANCE_DAYLIGHT"); _WHITE_BALANCE_DAYLIGHTReady = true; } return _WHITE_BALANCE_DAYLIGHTContent; } }
             private static Java.Lang.String _WHITE_BALANCE_DAYLIGHTContent = default;
             private static bool _WHITE_BALANCE_DAYLIGHTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#WHITE_BALANCE_FLUORESCENT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WHITE_BALANCE_FLUORESCENT { get { if (!_WHITE_BALANCE_FLUORESCENTReady) { _WHITE_BALANCE_FLUORESCENTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WHITE_BALANCE_FLUORESCENT"); _WHITE_BALANCE_FLUORESCENTReady = true; } return _WHITE_BALANCE_FLUORESCENTContent; } }
             private static Java.Lang.String _WHITE_BALANCE_FLUORESCENTContent = default;
             private static bool _WHITE_BALANCE_FLUORESCENTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#WHITE_BALANCE_INCANDESCENT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WHITE_BALANCE_INCANDESCENT { get { if (!_WHITE_BALANCE_INCANDESCENTReady) { _WHITE_BALANCE_INCANDESCENTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WHITE_BALANCE_INCANDESCENT"); _WHITE_BALANCE_INCANDESCENTReady = true; } return _WHITE_BALANCE_INCANDESCENTContent; } }
             private static Java.Lang.String _WHITE_BALANCE_INCANDESCENTContent = default;
             private static bool _WHITE_BALANCE_INCANDESCENTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#WHITE_BALANCE_SHADE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WHITE_BALANCE_SHADE { get { if (!_WHITE_BALANCE_SHADEReady) { _WHITE_BALANCE_SHADEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WHITE_BALANCE_SHADE"); _WHITE_BALANCE_SHADEReady = true; } return _WHITE_BALANCE_SHADEContent; } }
             private static Java.Lang.String _WHITE_BALANCE_SHADEContent = default;
             private static bool _WHITE_BALANCE_SHADEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#WHITE_BALANCE_TWILIGHT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WHITE_BALANCE_TWILIGHT { get { if (!_WHITE_BALANCE_TWILIGHTReady) { _WHITE_BALANCE_TWILIGHTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WHITE_BALANCE_TWILIGHT"); _WHITE_BALANCE_TWILIGHTReady = true; } return _WHITE_BALANCE_TWILIGHTContent; } }
             private static Java.Lang.String _WHITE_BALANCE_TWILIGHTContent = default;
             private static bool _WHITE_BALANCE_TWILIGHTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#WHITE_BALANCE_WARM_FLUORESCENT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WHITE_BALANCE_WARM_FLUORESCENT { get { if (!_WHITE_BALANCE_WARM_FLUORESCENTReady) { _WHITE_BALANCE_WARM_FLUORESCENTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WHITE_BALANCE_WARM_FLUORESCENT"); _WHITE_BALANCE_WARM_FLUORESCENTReady = true; } return _WHITE_BALANCE_WARM_FLUORESCENTContent; } }
             private static Java.Lang.String _WHITE_BALANCE_WARM_FLUORESCENTContent = default;
             private static bool _WHITE_BALANCE_WARM_FLUORESCENTReady = false; // this is used because in case of generics 
@@ -1280,386 +1282,73 @@ namespace Android.Hardware
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getAntibanding()"/> <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setAntibanding(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getJpegThumbnailSize()"/>
             /// </summary>
-            [System.Obsolete()]
-            public Java.Lang.String Antibanding
+            /// <returns><see cref="Android.Hardware.Camera.Size"/></returns>
+            [global::System.Obsolete()]
+            public Android.Hardware.Camera.Size GetJpegThumbnailSize()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getAntibanding", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAntibanding", "(Ljava/lang/String;)V", value); }
+                return IExecuteWithSignature<Android.Hardware.Camera.Size>("getJpegThumbnailSize", "()Landroid/hardware/Camera$Size;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getAutoExposureLock()"/> <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setAutoExposureLock(boolean)"/>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getPictureSize()"/>
             /// </summary>
-            [System.Obsolete()]
-            public bool AutoExposureLock
+            /// <returns><see cref="Android.Hardware.Camera.Size"/></returns>
+            [global::System.Obsolete()]
+            public Android.Hardware.Camera.Size GetPictureSize()
             {
-                get { return IExecuteWithSignature<bool>("getAutoExposureLock", "()Z"); } set { IExecuteWithSignature("setAutoExposureLock", "(Z)V", value); }
+                return IExecuteWithSignature<Android.Hardware.Camera.Size>("getPictureSize", "()Landroid/hardware/Camera$Size;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getAutoWhiteBalanceLock()"/> <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setAutoWhiteBalanceLock(boolean)"/>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getPreferredPreviewSizeForVideo()"/>
             /// </summary>
-            [System.Obsolete()]
-            public bool AutoWhiteBalanceLock
+            /// <returns><see cref="Android.Hardware.Camera.Size"/></returns>
+            [global::System.Obsolete()]
+            public Android.Hardware.Camera.Size GetPreferredPreviewSizeForVideo()
             {
-                get { return IExecuteWithSignature<bool>("getAutoWhiteBalanceLock", "()Z"); } set { IExecuteWithSignature("setAutoWhiteBalanceLock", "(Z)V", value); }
+                return IExecuteWithSignature<Android.Hardware.Camera.Size>("getPreferredPreviewSizeForVideo", "()Landroid/hardware/Camera$Size;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getColorEffect()"/> <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setColorEffect(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getPreviewSize()"/>
             /// </summary>
-            [System.Obsolete()]
-            public Java.Lang.String ColorEffect
+            /// <returns><see cref="Android.Hardware.Camera.Size"/></returns>
+            [global::System.Obsolete()]
+            public Android.Hardware.Camera.Size GetPreviewSize()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getColorEffect", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setColorEffect", "(Ljava/lang/String;)V", value); }
+                return IExecuteWithSignature<Android.Hardware.Camera.Size>("getPreviewSize", "()Landroid/hardware/Camera$Size;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getExposureCompensation()"/> <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setExposureCompensation(int)"/>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getAutoExposureLock()"/>
             /// </summary>
-            [System.Obsolete()]
-            public int ExposureCompensation
+            /// <returns><see cref="bool"/></returns>
+            [global::System.Obsolete()]
+            public bool GetAutoExposureLock()
             {
-                get { return IExecuteWithSignature<int>("getExposureCompensation", "()I"); } set { IExecuteWithSignature("setExposureCompensation", "(I)V", value); }
+                return IExecuteWithSignature<bool>("getAutoExposureLock", "()Z");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getExposureCompensationStep()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getAutoWhiteBalanceLock()"/>
             /// </summary>
-            [System.Obsolete()]
-            public float ExposureCompensationStep
+            /// <returns><see cref="bool"/></returns>
+            [global::System.Obsolete()]
+            public bool GetAutoWhiteBalanceLock()
             {
-                get { return IExecuteWithSignature<float>("getExposureCompensationStep", "()F"); }
+                return IExecuteWithSignature<bool>("getAutoWhiteBalanceLock", "()Z");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getFlashMode()"/> <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setFlashMode(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getVideoStabilization()"/>
             /// </summary>
-            [System.Obsolete()]
-            public Java.Lang.String FlashMode
+            /// <returns><see cref="bool"/></returns>
+            [global::System.Obsolete()]
+            public bool GetVideoStabilization()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getFlashMode", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setFlashMode", "(Ljava/lang/String;)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getFocalLength()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public float FocalLength
-            {
-                get { return IExecuteWithSignature<float>("getFocalLength", "()F"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getFocusAreas()"/> <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setFocusAreas(java.util.List)"/>
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Util.List<Android.Hardware.Camera.Area> FocusAreas
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera.Area>>("getFocusAreas", "()Ljava/util/List;"); } set { IExecuteWithSignature("setFocusAreas", "(Ljava/util/List;)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getFocusMode()"/> <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setFocusMode(java.lang.String)"/>
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Lang.String FocusMode
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getFocusMode", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setFocusMode", "(Ljava/lang/String;)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getHorizontalViewAngle()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public float HorizontalViewAngle
-            {
-                get { return IExecuteWithSignature<float>("getHorizontalViewAngle", "()F"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getJpegQuality()"/> <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setJpegQuality(int)"/>
-            /// </summary>
-            [System.Obsolete()]
-            public int JpegQuality
-            {
-                get { return IExecuteWithSignature<int>("getJpegQuality", "()I"); } set { IExecuteWithSignature("setJpegQuality", "(I)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getJpegThumbnailQuality()"/> <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setJpegThumbnailQuality(int)"/>
-            /// </summary>
-            [System.Obsolete()]
-            public int JpegThumbnailQuality
-            {
-                get { return IExecuteWithSignature<int>("getJpegThumbnailQuality", "()I"); } set { IExecuteWithSignature("setJpegThumbnailQuality", "(I)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getJpegThumbnailSize()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Android.Hardware.Camera.Size JpegThumbnailSize
-            {
-                get { return IExecuteWithSignature<Android.Hardware.Camera.Size>("getJpegThumbnailSize", "()Landroid/hardware/Camera$Size;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getMaxExposureCompensation()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public int MaxExposureCompensation
-            {
-                get { return IExecuteWithSignature<int>("getMaxExposureCompensation", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getMaxNumDetectedFaces()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public int MaxNumDetectedFaces
-            {
-                get { return IExecuteWithSignature<int>("getMaxNumDetectedFaces", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getMaxNumFocusAreas()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public int MaxNumFocusAreas
-            {
-                get { return IExecuteWithSignature<int>("getMaxNumFocusAreas", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getMaxNumMeteringAreas()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public int MaxNumMeteringAreas
-            {
-                get { return IExecuteWithSignature<int>("getMaxNumMeteringAreas", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getMaxZoom()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public int MaxZoom
-            {
-                get { return IExecuteWithSignature<int>("getMaxZoom", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getMeteringAreas()"/> <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setMeteringAreas(java.util.List)"/>
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Util.List<Android.Hardware.Camera.Area> MeteringAreas
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera.Area>>("getMeteringAreas", "()Ljava/util/List;"); } set { IExecuteWithSignature("setMeteringAreas", "(Ljava/util/List;)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getMinExposureCompensation()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public int MinExposureCompensation
-            {
-                get { return IExecuteWithSignature<int>("getMinExposureCompensation", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getPictureFormat()"/> <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setPictureFormat(int)"/>
-            /// </summary>
-            [System.Obsolete()]
-            public int PictureFormat
-            {
-                get { return IExecuteWithSignature<int>("getPictureFormat", "()I"); } set { IExecuteWithSignature("setPictureFormat", "(I)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getPictureSize()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Android.Hardware.Camera.Size PictureSize
-            {
-                get { return IExecuteWithSignature<Android.Hardware.Camera.Size>("getPictureSize", "()Landroid/hardware/Camera$Size;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getPreferredPreviewSizeForVideo()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Android.Hardware.Camera.Size PreferredPreviewSizeForVideo
-            {
-                get { return IExecuteWithSignature<Android.Hardware.Camera.Size>("getPreferredPreviewSizeForVideo", "()Landroid/hardware/Camera$Size;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getPreviewFormat()"/> <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setPreviewFormat(int)"/>
-            /// </summary>
-            [System.Obsolete()]
-            public int PreviewFormat
-            {
-                get { return IExecuteWithSignature<int>("getPreviewFormat", "()I"); } set { IExecuteWithSignature("setPreviewFormat", "(I)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getPreviewFrameRate()"/> <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setPreviewFrameRate(int)"/>
-            /// </summary>
-            [System.Obsolete()]
-            public int PreviewFrameRate
-            {
-                get { return IExecuteWithSignature<int>("getPreviewFrameRate", "()I"); } set { IExecuteWithSignature("setPreviewFrameRate", "(I)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getPreviewSize()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Android.Hardware.Camera.Size PreviewSize
-            {
-                get { return IExecuteWithSignature<Android.Hardware.Camera.Size>("getPreviewSize", "()Landroid/hardware/Camera$Size;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSceneMode()"/> <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setSceneMode(java.lang.String)"/>
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Lang.String SceneMode
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getSceneMode", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSceneMode", "(Ljava/lang/String;)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedAntibanding()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Util.List<Java.Lang.String> SupportedAntibanding
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedAntibanding", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedColorEffects()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Util.List<Java.Lang.String> SupportedColorEffects
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedColorEffects", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedFlashModes()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Util.List<Java.Lang.String> SupportedFlashModes
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedFlashModes", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedFocusModes()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Util.List<Java.Lang.String> SupportedFocusModes
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedFocusModes", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedJpegThumbnailSizes()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Util.List<Android.Hardware.Camera.Size> SupportedJpegThumbnailSizes
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera.Size>>("getSupportedJpegThumbnailSizes", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedPictureFormats()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Util.List<Java.Lang.Integer> SupportedPictureFormats
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getSupportedPictureFormats", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedPictureSizes()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Util.List<Android.Hardware.Camera.Size> SupportedPictureSizes
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera.Size>>("getSupportedPictureSizes", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedPreviewFormats()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Util.List<Java.Lang.Integer> SupportedPreviewFormats
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getSupportedPreviewFormats", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedPreviewFpsRange()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Util.List<int[]> SupportedPreviewFpsRange
-            {
-                get { return IExecuteWithSignature<Java.Util.List<int[]>>("getSupportedPreviewFpsRange", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedPreviewFrameRates()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Util.List<Java.Lang.Integer> SupportedPreviewFrameRates
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getSupportedPreviewFrameRates", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedPreviewSizes()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Util.List<Android.Hardware.Camera.Size> SupportedPreviewSizes
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera.Size>>("getSupportedPreviewSizes", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedSceneModes()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Util.List<Java.Lang.String> SupportedSceneModes
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedSceneModes", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedVideoSizes()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Util.List<Android.Hardware.Camera.Size> SupportedVideoSizes
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera.Size>>("getSupportedVideoSizes", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedWhiteBalance()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Util.List<Java.Lang.String> SupportedWhiteBalance
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedWhiteBalance", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getVerticalViewAngle()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public float VerticalViewAngle
-            {
-                get { return IExecuteWithSignature<float>("getVerticalViewAngle", "()F"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getVideoStabilization()"/> <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setVideoStabilization(boolean)"/>
-            /// </summary>
-            [System.Obsolete()]
-            public bool VideoStabilization
-            {
-                get { return IExecuteWithSignature<bool>("getVideoStabilization", "()Z"); } set { IExecuteWithSignature("setVideoStabilization", "(Z)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getWhiteBalance()"/> <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setWhiteBalance(java.lang.String)"/>
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Lang.String WhiteBalance
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getWhiteBalance", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setWhiteBalance", "(Ljava/lang/String;)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getZoom()"/> <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setZoom(int)"/>
-            /// </summary>
-            [System.Obsolete()]
-            public int Zoom
-            {
-                get { return IExecuteWithSignature<int>("getZoom", "()I"); } set { IExecuteWithSignature("setZoom", "(I)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getZoomRatios()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Util.List<Java.Lang.Integer> ZoomRatios
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getZoomRatios", "()Ljava/util/List;"); }
+                return IExecuteWithSignature<bool>("getVideoStabilization", "()Z");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#isAutoExposureLockSupported()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public bool IsAutoExposureLockSupported()
             {
                 return IExecuteWithSignature<bool>("isAutoExposureLockSupported", "()Z");
@@ -1668,7 +1357,7 @@ namespace Android.Hardware
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#isAutoWhiteBalanceLockSupported()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public bool IsAutoWhiteBalanceLockSupported()
             {
                 return IExecuteWithSignature<bool>("isAutoWhiteBalanceLockSupported", "()Z");
@@ -1677,7 +1366,7 @@ namespace Android.Hardware
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#isSmoothZoomSupported()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public bool IsSmoothZoomSupported()
             {
                 return IExecuteWithSignature<bool>("isSmoothZoomSupported", "()Z");
@@ -1686,7 +1375,7 @@ namespace Android.Hardware
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#isVideoSnapshotSupported()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public bool IsVideoSnapshotSupported()
             {
                 return IExecuteWithSignature<bool>("isVideoSnapshotSupported", "()Z");
@@ -1695,7 +1384,7 @@ namespace Android.Hardware
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#isVideoStabilizationSupported()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public bool IsVideoStabilizationSupported()
             {
                 return IExecuteWithSignature<bool>("isVideoStabilizationSupported", "()Z");
@@ -1704,26 +1393,179 @@ namespace Android.Hardware
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#isZoomSupported()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public bool IsZoomSupported()
             {
                 return IExecuteWithSignature<bool>("isZoomSupported", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getExposureCompensationStep()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            [global::System.Obsolete()]
+            public float GetExposureCompensationStep()
+            {
+                return IExecuteWithSignature<float>("getExposureCompensationStep", "()F");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getFocalLength()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            [global::System.Obsolete()]
+            public float GetFocalLength()
+            {
+                return IExecuteWithSignature<float>("getFocalLength", "()F");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getHorizontalViewAngle()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            [global::System.Obsolete()]
+            public float GetHorizontalViewAngle()
+            {
+                return IExecuteWithSignature<float>("getHorizontalViewAngle", "()F");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getVerticalViewAngle()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            [global::System.Obsolete()]
+            public float GetVerticalViewAngle()
+            {
+                return IExecuteWithSignature<float>("getVerticalViewAngle", "()F");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getExposureCompensation()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetExposureCompensation()
+            {
+                return IExecuteWithSignature<int>("getExposureCompensation", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getInt(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="int"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int GetInt(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<int>("getInt", "(Ljava/lang/String;)I", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getJpegQuality()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetJpegQuality()
+            {
+                return IExecuteWithSignature<int>("getJpegQuality", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getJpegThumbnailQuality()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetJpegThumbnailQuality()
+            {
+                return IExecuteWithSignature<int>("getJpegThumbnailQuality", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getMaxExposureCompensation()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetMaxExposureCompensation()
+            {
+                return IExecuteWithSignature<int>("getMaxExposureCompensation", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getMaxNumDetectedFaces()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetMaxNumDetectedFaces()
+            {
+                return IExecuteWithSignature<int>("getMaxNumDetectedFaces", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getMaxNumFocusAreas()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetMaxNumFocusAreas()
+            {
+                return IExecuteWithSignature<int>("getMaxNumFocusAreas", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getMaxNumMeteringAreas()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetMaxNumMeteringAreas()
+            {
+                return IExecuteWithSignature<int>("getMaxNumMeteringAreas", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getMaxZoom()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetMaxZoom()
+            {
+                return IExecuteWithSignature<int>("getMaxZoom", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getMinExposureCompensation()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetMinExposureCompensation()
+            {
+                return IExecuteWithSignature<int>("getMinExposureCompensation", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getPictureFormat()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetPictureFormat()
+            {
+                return IExecuteWithSignature<int>("getPictureFormat", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getPreviewFormat()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetPreviewFormat()
+            {
+                return IExecuteWithSignature<int>("getPreviewFormat", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getPreviewFrameRate()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetPreviewFrameRate()
+            {
+                return IExecuteWithSignature<int>("getPreviewFrameRate", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getZoom()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetZoom()
+            {
+                return IExecuteWithSignature<int>("getZoom", "()I");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#flatten()"/>
             /// </summary>
             /// <returns><see cref="Java.Lang.String"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Java.Lang.String Flatten()
             {
                 return IExecuteWithSignature<Java.Lang.String>("flatten", "()Ljava/lang/String;");
@@ -1733,16 +1575,223 @@ namespace Android.Hardware
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Lang.String"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Java.Lang.String Get(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Java.Lang.String>("get", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getAntibanding()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            [global::System.Obsolete()]
+            public Java.Lang.String GetAntibanding()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getAntibanding", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getColorEffect()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            [global::System.Obsolete()]
+            public Java.Lang.String GetColorEffect()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getColorEffect", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getFlashMode()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            [global::System.Obsolete()]
+            public Java.Lang.String GetFlashMode()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getFlashMode", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getFocusMode()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            [global::System.Obsolete()]
+            public Java.Lang.String GetFocusMode()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getFocusMode", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSceneMode()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            [global::System.Obsolete()]
+            public Java.Lang.String GetSceneMode()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getSceneMode", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getWhiteBalance()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            [global::System.Obsolete()]
+            public Java.Lang.String GetWhiteBalance()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getWhiteBalance", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getFocusAreas()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            [global::System.Obsolete()]
+            public Java.Util.List<Android.Hardware.Camera.Area> GetFocusAreas()
+            {
+                return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera.Area>>("getFocusAreas", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getMeteringAreas()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            [global::System.Obsolete()]
+            public Java.Util.List<Android.Hardware.Camera.Area> GetMeteringAreas()
+            {
+                return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera.Area>>("getMeteringAreas", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedJpegThumbnailSizes()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            [global::System.Obsolete()]
+            public Java.Util.List<Android.Hardware.Camera.Size> GetSupportedJpegThumbnailSizes()
+            {
+                return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera.Size>>("getSupportedJpegThumbnailSizes", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedPictureSizes()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            [global::System.Obsolete()]
+            public Java.Util.List<Android.Hardware.Camera.Size> GetSupportedPictureSizes()
+            {
+                return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera.Size>>("getSupportedPictureSizes", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedPreviewSizes()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            [global::System.Obsolete()]
+            public Java.Util.List<Android.Hardware.Camera.Size> GetSupportedPreviewSizes()
+            {
+                return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera.Size>>("getSupportedPreviewSizes", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedVideoSizes()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            [global::System.Obsolete()]
+            public Java.Util.List<Android.Hardware.Camera.Size> GetSupportedVideoSizes()
+            {
+                return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera.Size>>("getSupportedVideoSizes", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedPreviewFpsRange()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            [global::System.Obsolete()]
+            public Java.Util.List<int[]> GetSupportedPreviewFpsRange()
+            {
+                return IExecuteWithSignature<Java.Util.List<int[]>>("getSupportedPreviewFpsRange", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedPictureFormats()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            [global::System.Obsolete()]
+            public Java.Util.List<Java.Lang.Integer> GetSupportedPictureFormats()
+            {
+                return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getSupportedPictureFormats", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedPreviewFormats()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            [global::System.Obsolete()]
+            public Java.Util.List<Java.Lang.Integer> GetSupportedPreviewFormats()
+            {
+                return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getSupportedPreviewFormats", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedPreviewFrameRates()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            [global::System.Obsolete()]
+            public Java.Util.List<Java.Lang.Integer> GetSupportedPreviewFrameRates()
+            {
+                return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getSupportedPreviewFrameRates", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getZoomRatios()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            [global::System.Obsolete()]
+            public Java.Util.List<Java.Lang.Integer> GetZoomRatios()
+            {
+                return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getZoomRatios", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedAntibanding()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            [global::System.Obsolete()]
+            public Java.Util.List<Java.Lang.String> GetSupportedAntibanding()
+            {
+                return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedAntibanding", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedColorEffects()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            [global::System.Obsolete()]
+            public Java.Util.List<Java.Lang.String> GetSupportedColorEffects()
+            {
+                return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedColorEffects", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedFlashModes()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            [global::System.Obsolete()]
+            public Java.Util.List<Java.Lang.String> GetSupportedFlashModes()
+            {
+                return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedFlashModes", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedFocusModes()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            [global::System.Obsolete()]
+            public Java.Util.List<Java.Lang.String> GetSupportedFocusModes()
+            {
+                return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedFocusModes", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedSceneModes()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            [global::System.Obsolete()]
+            public Java.Util.List<Java.Lang.String> GetSupportedSceneModes()
+            {
+                return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedSceneModes", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getSupportedWhiteBalance()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            [global::System.Obsolete()]
+            public Java.Util.List<Java.Lang.String> GetSupportedWhiteBalance()
+            {
+                return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedWhiteBalance", "()Ljava/util/List;");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getFocusDistances(float[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="float"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void GetFocusDistances(float[] arg0)
             {
                 IExecuteWithSignature("getFocusDistances", "([F)V", new object[] { arg0 });
@@ -1751,7 +1800,7 @@ namespace Android.Hardware
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#getPreviewFpsRange(int[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void GetPreviewFpsRange(int[] arg0)
             {
                 IExecuteWithSignature("getPreviewFpsRange", "([I)V", new object[] { arg0 });
@@ -1760,7 +1809,7 @@ namespace Android.Hardware
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#remove(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void Remove(Java.Lang.String arg0)
             {
                 IExecuteWithSignature("remove", "(Ljava/lang/String;)V", arg0);
@@ -1768,7 +1817,7 @@ namespace Android.Hardware
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#removeGpsData()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void RemoveGpsData()
             {
                 IExecuteWithSignature("removeGpsData", "()V");
@@ -1778,7 +1827,7 @@ namespace Android.Hardware
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void Set(Java.Lang.String arg0, int arg1)
             {
                 IExecute("set", arg0, arg1);
@@ -1788,16 +1837,88 @@ namespace Android.Hardware
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void Set(Java.Lang.String arg0, Java.Lang.String arg1)
             {
                 IExecute("set", arg0, arg1);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setAntibanding(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            [global::System.Obsolete()]
+            public void SetAntibanding(Java.Lang.String arg0)
+            {
+                IExecuteWithSignature("setAntibanding", "(Ljava/lang/String;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setAutoExposureLock(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            [global::System.Obsolete()]
+            public void SetAutoExposureLock(bool arg0)
+            {
+                IExecuteWithSignature("setAutoExposureLock", "(Z)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setAutoWhiteBalanceLock(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            [global::System.Obsolete()]
+            public void SetAutoWhiteBalanceLock(bool arg0)
+            {
+                IExecuteWithSignature("setAutoWhiteBalanceLock", "(Z)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setColorEffect(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            [global::System.Obsolete()]
+            public void SetColorEffect(Java.Lang.String arg0)
+            {
+                IExecuteWithSignature("setColorEffect", "(Ljava/lang/String;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setExposureCompensation(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            [global::System.Obsolete()]
+            public void SetExposureCompensation(int arg0)
+            {
+                IExecuteWithSignature("setExposureCompensation", "(I)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setFlashMode(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            [global::System.Obsolete()]
+            public void SetFlashMode(Java.Lang.String arg0)
+            {
+                IExecuteWithSignature("setFlashMode", "(Ljava/lang/String;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setFocusAreas(java.util.List)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.List"/></param>
+            [global::System.Obsolete()]
+            public void SetFocusAreas(Java.Util.List<Android.Hardware.Camera.Area> arg0)
+            {
+                IExecuteWithSignature("setFocusAreas", "(Ljava/util/List;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setFocusMode(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            [global::System.Obsolete()]
+            public void SetFocusMode(Java.Lang.String arg0)
+            {
+                IExecuteWithSignature("setFocusMode", "(Ljava/lang/String;)V", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setGpsAltitude(double)"/>
             /// </summary>
             /// <param name="arg0"><see cref="double"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void SetGpsAltitude(double arg0)
             {
                 IExecuteWithSignature("setGpsAltitude", "(D)V", arg0);
@@ -1806,7 +1927,7 @@ namespace Android.Hardware
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setGpsLatitude(double)"/>
             /// </summary>
             /// <param name="arg0"><see cref="double"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void SetGpsLatitude(double arg0)
             {
                 IExecuteWithSignature("setGpsLatitude", "(D)V", arg0);
@@ -1815,7 +1936,7 @@ namespace Android.Hardware
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setGpsLongitude(double)"/>
             /// </summary>
             /// <param name="arg0"><see cref="double"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void SetGpsLongitude(double arg0)
             {
                 IExecuteWithSignature("setGpsLongitude", "(D)V", arg0);
@@ -1824,7 +1945,7 @@ namespace Android.Hardware
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setGpsProcessingMethod(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void SetGpsProcessingMethod(Java.Lang.String arg0)
             {
                 IExecuteWithSignature("setGpsProcessingMethod", "(Ljava/lang/String;)V", arg0);
@@ -1833,47 +1954,101 @@ namespace Android.Hardware
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setGpsTimestamp(long)"/>
             /// </summary>
             /// <param name="arg0"><see cref="long"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void SetGpsTimestamp(long arg0)
             {
                 IExecuteWithSignature("setGpsTimestamp", "(J)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setJpegQuality(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            [global::System.Obsolete()]
+            public void SetJpegQuality(int arg0)
+            {
+                IExecuteWithSignature("setJpegQuality", "(I)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setJpegThumbnailQuality(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            [global::System.Obsolete()]
+            public void SetJpegThumbnailQuality(int arg0)
+            {
+                IExecuteWithSignature("setJpegThumbnailQuality", "(I)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setJpegThumbnailSize(int,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void SetJpegThumbnailSize(int arg0, int arg1)
             {
                 IExecute("setJpegThumbnailSize", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setMeteringAreas(java.util.List)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.List"/></param>
+            [global::System.Obsolete()]
+            public void SetMeteringAreas(Java.Util.List<Android.Hardware.Camera.Area> arg0)
+            {
+                IExecuteWithSignature("setMeteringAreas", "(Ljava/util/List;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setPictureFormat(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            [global::System.Obsolete()]
+            public void SetPictureFormat(int arg0)
+            {
+                IExecuteWithSignature("setPictureFormat", "(I)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setPictureSize(int,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void SetPictureSize(int arg0, int arg1)
             {
                 IExecute("setPictureSize", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setPreviewFormat(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            [global::System.Obsolete()]
+            public void SetPreviewFormat(int arg0)
+            {
+                IExecuteWithSignature("setPreviewFormat", "(I)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setPreviewFpsRange(int,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void SetPreviewFpsRange(int arg0, int arg1)
             {
                 IExecute("setPreviewFpsRange", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setPreviewFrameRate(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            [global::System.Obsolete()]
+            public void SetPreviewFrameRate(int arg0)
+            {
+                IExecuteWithSignature("setPreviewFrameRate", "(I)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setPreviewSize(int,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void SetPreviewSize(int arg0, int arg1)
             {
                 IExecute("setPreviewSize", arg0, arg1);
@@ -1882,7 +2057,7 @@ namespace Android.Hardware
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setRecordingHint(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void SetRecordingHint(bool arg0)
             {
                 IExecuteWithSignature("setRecordingHint", "(Z)V", arg0);
@@ -1891,16 +2066,52 @@ namespace Android.Hardware
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setRotation(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void SetRotation(int arg0)
             {
                 IExecuteWithSignature("setRotation", "(I)V", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setSceneMode(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            [global::System.Obsolete()]
+            public void SetSceneMode(Java.Lang.String arg0)
+            {
+                IExecuteWithSignature("setSceneMode", "(Ljava/lang/String;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setVideoStabilization(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            [global::System.Obsolete()]
+            public void SetVideoStabilization(bool arg0)
+            {
+                IExecuteWithSignature("setVideoStabilization", "(Z)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setWhiteBalance(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            [global::System.Obsolete()]
+            public void SetWhiteBalance(Java.Lang.String arg0)
+            {
+                IExecuteWithSignature("setWhiteBalance", "(Ljava/lang/String;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#setZoom(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            [global::System.Obsolete()]
+            public void SetZoom(int arg0)
+            {
+                IExecuteWithSignature("setZoom", "(I)V", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Parameters.html#unflatten(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void Unflatten(Java.Lang.String arg0)
             {
                 IExecuteWithSignature("unflatten", "(Ljava/lang/String;)V", arg0);
@@ -1941,7 +2152,7 @@ namespace Android.Hardware
             /// </summary>
             /// <param name="arg0"><see cref="byte"/></param>
             /// <param name="arg1"><see cref="Android.Hardware.Camera"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnPictureTaken(byte[] arg0, Android.Hardware.Camera arg1)
             {
                 IExecute("onPictureTaken", arg0, arg1);
@@ -1982,7 +2193,7 @@ namespace Android.Hardware
             /// </summary>
             /// <param name="arg0"><see cref="byte"/></param>
             /// <param name="arg1"><see cref="Android.Hardware.Camera"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnPreviewFrame(byte[] arg0, Android.Hardware.Camera arg1)
             {
                 IExecute("onPreviewFrame", arg0, arg1);
@@ -2021,7 +2232,7 @@ namespace Android.Hardware
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.ShutterCallback.html#onShutter()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnShutter()
             {
                 IExecuteWithSignature("onShutter", "()V");
@@ -2047,7 +2258,7 @@ namespace Android.Hardware
             /// <param name="arg0"><see cref="Android.Hardware.Camera"/></param>
             /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Size(Android.Hardware.Camera arg0, int arg1, int arg2)
                 : base(arg0, arg1, arg2)
             {
@@ -2063,12 +2274,12 @@ namespace Android.Hardware
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Size.html#height"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int height { get { return IGetField<int>("height"); } set { ISetField("height", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/Camera.Size.html#width"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int width { get { return IGetField<int>("width"); } set { ISetField("width", value); } }
 
             #endregion

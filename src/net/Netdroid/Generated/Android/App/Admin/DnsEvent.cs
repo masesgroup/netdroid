@@ -52,25 +52,28 @@ namespace Android.App.Admin
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/DnsEvent.html#getHostname()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/admin/DnsEvent.html#getTotalResolvedAddressCount()"/>
         /// </summary>
-        public Java.Lang.String Hostname
+        /// <returns><see cref="int"/></returns>
+        public int GetTotalResolvedAddressCount()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHostname", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<int>("getTotalResolvedAddressCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/DnsEvent.html#getInetAddresses()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/admin/DnsEvent.html#getHostname()"/>
         /// </summary>
-        public Java.Util.List<Java.Net.InetAddress> InetAddresses
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetHostname()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Net.InetAddress>>("getInetAddresses", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getHostname", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/DnsEvent.html#getTotalResolvedAddressCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/admin/DnsEvent.html#getInetAddresses()"/>
         /// </summary>
-        public int TotalResolvedAddressCount
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Net.InetAddress> GetInetAddresses()
         {
-            get { return IExecuteWithSignature<int>("getTotalResolvedAddressCount", "()I"); }
+            return IExecuteWithSignature<Java.Util.List<Java.Net.InetAddress>>("getInetAddresses", "()Ljava/util/List;");
         }
 
         #endregion

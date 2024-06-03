@@ -42,7 +42,7 @@ namespace Java.Io
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/InputStream.html#nullInputStream()"/>
+        /// <see href="https://developer.android.com/reference/java/io/InputStream.html#nullInputStream()"/>
         /// </summary>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         public static Java.Io.InputStream NullInputStream()
@@ -54,7 +54,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/InputStream.html#read()"/>
+        /// <see href="https://developer.android.com/reference/java/io/InputStream.html#read()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -63,7 +63,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("read", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/InputStream.html#markSupported()"/>
+        /// <see href="https://developer.android.com/reference/java/io/InputStream.html#markSupported()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool MarkSupported()
@@ -71,7 +71,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("markSupported", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/InputStream.html#readAllBytes()"/>
+        /// <see href="https://developer.android.com/reference/java/io/InputStream.html#readAllBytes()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -80,7 +80,7 @@ namespace Java.Io
             return IExecuteWithSignatureArray<byte>("readAllBytes", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/InputStream.html#readNBytes(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/InputStream.html#readNBytes(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="byte"/></returns>
@@ -90,7 +90,7 @@ namespace Java.Io
             return IExecuteWithSignatureArray<byte>("readNBytes", "(I)[B", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/InputStream.html#available()"/>
+        /// <see href="https://developer.android.com/reference/java/io/InputStream.html#available()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -99,7 +99,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("available", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/InputStream.html#read(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/InputStream.html#read(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -111,7 +111,7 @@ namespace Java.Io
             return IExecute<int>("read", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/InputStream.html#read(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/InputStream.html#read(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="int"/></returns>
@@ -121,7 +121,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("read", "([B)I", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/InputStream.html#readNBytes(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/InputStream.html#readNBytes(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -133,7 +133,7 @@ namespace Java.Io
             return IExecute<int>("readNBytes", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/InputStream.html#skip(long)"/>
+        /// <see href="https://developer.android.com/reference/java/io/InputStream.html#skip(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
@@ -143,7 +143,7 @@ namespace Java.Io
             return IExecuteWithSignature<long>("skip", "(J)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/InputStream.html#transferTo(java.io.OutputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/io/InputStream.html#transferTo(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <returns><see cref="long"/></returns>
@@ -153,7 +153,7 @@ namespace Java.Io
             return IExecuteWithSignature<long>("transferTo", "(Ljava/io/OutputStream;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/InputStream.html#mark(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/InputStream.html#mark(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void Mark(int arg0)
@@ -161,7 +161,7 @@ namespace Java.Io
             IExecuteWithSignature("mark", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/InputStream.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/java/io/InputStream.html#reset()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Reset()
@@ -169,7 +169,7 @@ namespace Java.Io
             IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/InputStream.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/io/InputStream.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
@@ -177,7 +177,7 @@ namespace Java.Io
             IExecuteWithSignature("close", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/InputStream.html#skipNBytes(long)"/>
+        /// <see href="https://developer.android.com/reference/java/io/InputStream.html#skipNBytes(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Java.Io.IOException"/>

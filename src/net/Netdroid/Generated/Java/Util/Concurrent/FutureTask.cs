@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/FutureTask.html#%3Cinit%3E(java.lang.Runnable,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/FutureTask.html#%3Cinit%3E(java.lang.Runnable,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -39,7 +39,7 @@ namespace Java.Util.Concurrent
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/FutureTask.html#%3Cinit%3E(java.util.concurrent.Callable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/FutureTask.html#%3Cinit%3E(java.util.concurrent.Callable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
         public FutureTask(Java.Util.Concurrent.Callable arg0)
@@ -63,7 +63,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/FutureTask.html#cancel(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/FutureTask.html#cancel(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("cancel", "(Z)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/FutureTask.html#isCancelled()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/FutureTask.html#isCancelled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsCancelled()
@@ -80,7 +80,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isCancelled", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/FutureTask.html#isDone()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/FutureTask.html#isDone()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsDone()
@@ -88,7 +88,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isDone", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/FutureTask.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/FutureTask.html#get()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -98,7 +98,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("get", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/FutureTask.html#get(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/FutureTask.html#get(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -111,7 +111,7 @@ namespace Java.Util.Concurrent
             return IExecute("get", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/FutureTask.html#run()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/FutureTask.html#run()"/>
         /// </summary>
         public void Run()
         {
@@ -133,7 +133,7 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/FutureTask.html#%3Cinit%3E(java.lang.Runnable,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/FutureTask.html#%3Cinit%3E(java.lang.Runnable,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -142,7 +142,7 @@ namespace Java.Util.Concurrent
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/FutureTask.html#%3Cinit%3E(java.util.concurrent.Callable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/FutureTask.html#%3Cinit%3E(java.util.concurrent.Callable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
         public FutureTask(Java.Util.Concurrent.Callable<V> arg0)
@@ -170,7 +170,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/FutureTask.html#cancel(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/FutureTask.html#cancel(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -179,7 +179,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("cancel", "(Z)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/FutureTask.html#isCancelled()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/FutureTask.html#isCancelled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsCancelled()
@@ -187,7 +187,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isCancelled", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/FutureTask.html#isDone()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/FutureTask.html#isDone()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsDone()
@@ -195,7 +195,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isDone", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/FutureTask.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/FutureTask.html#get()"/>
         /// </summary>
         /// <returns><typeparamref name="V"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -205,7 +205,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<V>("get", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/FutureTask.html#get(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/FutureTask.html#get(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -218,7 +218,7 @@ namespace Java.Util.Concurrent
             return IExecute<V>("get", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/FutureTask.html#run()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/FutureTask.html#run()"/>
         /// </summary>
         public void Run()
         {

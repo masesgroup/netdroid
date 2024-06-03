@@ -56,19 +56,20 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthWcdma.html#getEcNo()"/> 
-        /// </summary>
-        public int EcNo
-        {
-            get { return IExecuteWithSignature<int>("getEcNo", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthWcdma.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthWcdma.html#getEcNo()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEcNo()
+        {
+            return IExecuteWithSignature<int>("getEcNo", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthWcdma.html#writeToParcel(android.os.Parcel,int)"/>

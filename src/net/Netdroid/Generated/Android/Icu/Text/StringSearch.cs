@@ -96,18 +96,12 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/StringSearch.html#getCollator()"/> <see href="https://developer.android.com/reference/android/icu/text/StringSearch.html#setCollator(android.icu.text.RuleBasedCollator)"/>
+        /// <see href="https://developer.android.com/reference/android/icu/text/StringSearch.html#getCollator()"/>
         /// </summary>
-        public Android.Icu.Text.RuleBasedCollator Collator
+        /// <returns><see cref="Android.Icu.Text.RuleBasedCollator"/></returns>
+        public Android.Icu.Text.RuleBasedCollator GetCollator()
         {
-            get { return IExecuteWithSignature<Android.Icu.Text.RuleBasedCollator>("getCollator", "()Landroid/icu/text/RuleBasedCollator;"); } set { IExecuteWithSignature("setCollator", "(Landroid/icu/text/RuleBasedCollator;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/StringSearch.html#getPattern()"/> <see href="https://developer.android.com/reference/android/icu/text/StringSearch.html#setPattern(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Pattern
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPattern", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPattern", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Android.Icu.Text.RuleBasedCollator>("getCollator", "()Landroid/icu/text/RuleBasedCollator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/StringSearch.html#isCanonical()"/>
@@ -118,12 +112,36 @@ namespace Android.Icu.Text
             return IExecuteWithSignature<bool>("isCanonical", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/StringSearch.html#getPattern()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPattern()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPattern", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/StringSearch.html#setCanonical(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetCanonical(bool arg0)
         {
             IExecuteWithSignature("setCanonical", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/StringSearch.html#setCollator(android.icu.text.RuleBasedCollator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Icu.Text.RuleBasedCollator"/></param>
+        public void SetCollator(Android.Icu.Text.RuleBasedCollator arg0)
+        {
+            IExecuteWithSignature("setCollator", "(Landroid/icu/text/RuleBasedCollator;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/StringSearch.html#setPattern(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetPattern(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setPattern", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

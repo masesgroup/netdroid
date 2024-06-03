@@ -52,18 +52,20 @@ namespace Android.App.Admin
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/ConnectEvent.html#getInetAddress()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/admin/ConnectEvent.html#getPort()"/>
         /// </summary>
-        public Java.Net.InetAddress InetAddress
+        /// <returns><see cref="int"/></returns>
+        public int GetPort()
         {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getInetAddress", "()Ljava/net/InetAddress;"); }
+            return IExecuteWithSignature<int>("getPort", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/ConnectEvent.html#getPort()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/admin/ConnectEvent.html#getInetAddress()"/>
         /// </summary>
-        public int Port
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        public Java.Net.InetAddress GetInetAddress()
         {
-            get { return IExecuteWithSignature<int>("getPort", "()I"); }
+            return IExecuteWithSignature<Java.Net.InetAddress>("getInetAddress", "()Ljava/net/InetAddress;");
         }
 
         #endregion

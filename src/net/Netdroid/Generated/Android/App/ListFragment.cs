@@ -46,36 +46,49 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ListFragment.html#getListAdapter()"/> <see href="https://developer.android.com/reference/android/app/ListFragment.html#setListAdapter(android.widget.ListAdapter)"/>
+        /// <see href="https://developer.android.com/reference/android/app/ListFragment.html#getListAdapter()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Widget.ListAdapter ListAdapter
+        /// <returns><see cref="Android.Widget.ListAdapter"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.ListAdapter GetListAdapter()
         {
-            get { return IExecuteWithSignature<Android.Widget.ListAdapter>("getListAdapter", "()Landroid/widget/ListAdapter;"); } set { IExecuteWithSignature("setListAdapter", "(Landroid/widget/ListAdapter;)V", value); }
+            return IExecuteWithSignature<Android.Widget.ListAdapter>("getListAdapter", "()Landroid/widget/ListAdapter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ListFragment.html#getListView()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/ListFragment.html#getListAdapter()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Widget.ListView ListView
+        /// <returns><see cref="Android.Widget.ListAdapter"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.ListAdapter GetListAdapterDirect()
         {
-            get { return IExecuteWithSignature<Android.Widget.ListView>("getListView", "()Landroid/widget/ListView;"); }
+            return IExecuteWithSignature<Android.Widget.ListAdapterDirect, Android.Widget.ListAdapter>("getListAdapter", "()Landroid/widget/ListAdapter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ListFragment.html#getSelectedItemId()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/ListFragment.html#getListView()"/>
         /// </summary>
-        [System.Obsolete()]
-        public long SelectedItemId
+        /// <returns><see cref="Android.Widget.ListView"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.ListView GetListView()
         {
-            get { return IExecuteWithSignature<long>("getSelectedItemId", "()J"); }
+            return IExecuteWithSignature<Android.Widget.ListView>("getListView", "()Landroid/widget/ListView;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ListFragment.html#getSelectedItemPosition()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/ListFragment.html#getSelectedItemPosition()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int SelectedItemPosition
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetSelectedItemPosition()
         {
-            get { return IExecuteWithSignature<int>("getSelectedItemPosition", "()I"); }
+            return IExecuteWithSignature<int>("getSelectedItemPosition", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ListFragment.html#getSelectedItemId()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        [global::System.Obsolete()]
+        public long GetSelectedItemId()
+        {
+            return IExecuteWithSignature<long>("getSelectedItemId", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ListFragment.html#onListItemClick(android.widget.ListView,android.view.View,int,long)"/>
@@ -84,7 +97,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.View.View"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="long"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnListItemClick(Android.Widget.ListView arg0, Android.View.View arg1, int arg2, long arg3)
         {
             IExecute("onListItemClick", arg0, arg1, arg2, arg3);
@@ -93,16 +106,25 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ListFragment.html#setEmptyText(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetEmptyText(Java.Lang.CharSequence arg0)
         {
             IExecuteWithSignature("setEmptyText", "(Ljava/lang/CharSequence;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ListFragment.html#setListAdapter(android.widget.ListAdapter)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Widget.ListAdapter"/></param>
+        [global::System.Obsolete()]
+        public void SetListAdapter(Android.Widget.ListAdapter arg0)
+        {
+            IExecuteWithSignature("setListAdapter", "(Landroid/widget/ListAdapter;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ListFragment.html#setListShown(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetListShown(bool arg0)
         {
             IExecuteWithSignature("setListShown", "(Z)V", arg0);
@@ -111,7 +133,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ListFragment.html#setListShownNoAnimation(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetListShownNoAnimation(bool arg0)
         {
             IExecuteWithSignature("setListShownNoAnimation", "(Z)V", arg0);
@@ -120,7 +142,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ListFragment.html#setSelection(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSelection(int arg0)
         {
             IExecuteWithSignature("setSelection", "(I)V", arg0);

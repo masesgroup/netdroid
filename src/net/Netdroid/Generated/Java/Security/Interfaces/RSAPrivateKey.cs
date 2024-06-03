@@ -64,9 +64,9 @@ namespace Java.Security.Interfaces
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/RSAPrivateKey.html#serialVersionUID"/>
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/RSAPrivateKey.html#serialVersionUID"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static long serialVersionUID { get { if (!_serialVersionUIDReady) { _serialVersionUIDContent = SGetField<long>(LocalBridgeClazz, "serialVersionUID"); _serialVersionUIDReady = true; } return _serialVersionUIDContent; } }
         private static long _serialVersionUIDContent = default;
         private static bool _serialVersionUIDReady = false; // this is used because in case of generics 
@@ -79,11 +79,12 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/RSAPrivateKey.html#getPrivateExponent()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/RSAPrivateKey.html#getPrivateExponent()"/>
         /// </summary>
-        public Java.Math.BigInteger PrivateExponent
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetPrivateExponent()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getPrivateExponent", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getPrivateExponent", "()Ljava/math/BigInteger;");
         }
 
         #endregion

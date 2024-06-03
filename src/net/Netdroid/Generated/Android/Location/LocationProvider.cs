@@ -40,21 +40,21 @@ namespace Android.Location
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationProvider.html#AVAILABLE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int AVAILABLE { get { if (!_AVAILABLEReady) { _AVAILABLEContent = SGetField<int>(LocalBridgeClazz, "AVAILABLE"); _AVAILABLEReady = true; } return _AVAILABLEContent; } }
         private static int _AVAILABLEContent = default;
         private static bool _AVAILABLEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationProvider.html#OUT_OF_SERVICE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int OUT_OF_SERVICE { get { if (!_OUT_OF_SERVICEReady) { _OUT_OF_SERVICEContent = SGetField<int>(LocalBridgeClazz, "OUT_OF_SERVICE"); _OUT_OF_SERVICEReady = true; } return _OUT_OF_SERVICEContent; } }
         private static int _OUT_OF_SERVICEContent = default;
         private static bool _OUT_OF_SERVICEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationProvider.html#TEMPORARILY_UNAVAILABLE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TEMPORARILY_UNAVAILABLE { get { if (!_TEMPORARILY_UNAVAILABLEReady) { _TEMPORARILY_UNAVAILABLEContent = SGetField<int>(LocalBridgeClazz, "TEMPORARILY_UNAVAILABLE"); _TEMPORARILY_UNAVAILABLEReady = true; } return _TEMPORARILY_UNAVAILABLEContent; } }
         private static int _TEMPORARILY_UNAVAILABLEContent = default;
         private static bool _TEMPORARILY_UNAVAILABLEReady = false; // this is used because in case of generics 
@@ -67,34 +67,10 @@ namespace Android.Location
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/LocationProvider.html#getAccuracy()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int Accuracy
-        {
-            get { return IExecuteWithSignature<int>("getAccuracy", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/LocationProvider.html#getName()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/LocationProvider.html#getPowerRequirement()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int PowerRequirement
-        {
-            get { return IExecuteWithSignature<int>("getPowerRequirement", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationProvider.html#hasMonetaryCost()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool HasMonetaryCost()
         {
             return IExecuteWithSignature<bool>("hasMonetaryCost", "()Z");
@@ -104,7 +80,7 @@ namespace Android.Location
         /// </summary>
         /// <param name="arg0"><see cref="Android.Location.Criteria"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool MeetsCriteria(Android.Location.Criteria arg0)
         {
             return IExecuteWithSignature<bool>("meetsCriteria", "(Landroid/location/Criteria;)Z", arg0);
@@ -113,7 +89,7 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/LocationProvider.html#requiresCell()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool RequiresCell()
         {
             return IExecuteWithSignature<bool>("requiresCell", "()Z");
@@ -122,7 +98,7 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/LocationProvider.html#requiresNetwork()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool RequiresNetwork()
         {
             return IExecuteWithSignature<bool>("requiresNetwork", "()Z");
@@ -131,7 +107,7 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/LocationProvider.html#requiresSatellite()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool RequiresSatellite()
         {
             return IExecuteWithSignature<bool>("requiresSatellite", "()Z");
@@ -140,7 +116,7 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/LocationProvider.html#supportsAltitude()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool SupportsAltitude()
         {
             return IExecuteWithSignature<bool>("supportsAltitude", "()Z");
@@ -149,7 +125,7 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/LocationProvider.html#supportsBearing()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool SupportsBearing()
         {
             return IExecuteWithSignature<bool>("supportsBearing", "()Z");
@@ -158,10 +134,37 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/LocationProvider.html#supportsSpeed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool SupportsSpeed()
         {
             return IExecuteWithSignature<bool>("supportsSpeed", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/LocationProvider.html#getAccuracy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetAccuracy()
+        {
+            return IExecuteWithSignature<int>("getAccuracy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/LocationProvider.html#getPowerRequirement()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetPowerRequirement()
+        {
+            return IExecuteWithSignature<int>("getPowerRequirement", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/LocationProvider.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
 
         #endregion

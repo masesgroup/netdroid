@@ -27,7 +27,7 @@ namespace Javax.Sql
 {
     #region IStatementEventListener
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.javax.sql.StatementEventListener implementing <see href="https://developer.android.com/reference/java.sql/javax/sql/StatementEventListener.html"/>
+    /// .NET interface for org.mases.netdroid.generated.javax.sql.StatementEventListener implementing <see href="https://developer.android.com/reference/javax/sql/StatementEventListener.html"/>
     /// </summary>
     public partial interface IStatementEventListener
     {
@@ -68,16 +68,16 @@ namespace Javax.Sql
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("statementClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>>>(StatementClosedEventHandler));
-            AddEventHandler("statementErrorOccurred", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>>>(StatementErrorOccurredEventHandler));
+            AddEventHandler("statementClosed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>>>(StatementClosedEventHandler));
+            AddEventHandler("statementErrorOccurred", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>>>(StatementErrorOccurredEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.sql/javax/sql/StatementEventListener.html#statementClosed(javax.sql.StatementEvent)"/>
+        /// Handler for <see href="https://developer.android.com/reference/javax/sql/StatementEventListener.html#statementClosed(javax.sql.StatementEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnStatementClosed"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Sql.StatementEvent> OnStatementClosed { get; set; } = null;
+        public global::System.Action<Javax.Sql.StatementEvent> OnStatementClosed { get; set; } = null;
 
         void StatementClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>> data)
         {
@@ -86,7 +86,7 @@ namespace Javax.Sql
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/StatementEventListener.html#statementClosed(javax.sql.StatementEvent)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/StatementEventListener.html#statementClosed(javax.sql.StatementEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.StatementEvent"/></param>
         public virtual void StatementClosed(Javax.Sql.StatementEvent arg0)
@@ -95,10 +95,10 @@ namespace Javax.Sql
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.sql/javax/sql/StatementEventListener.html#statementErrorOccurred(javax.sql.StatementEvent)"/>
+        /// Handler for <see href="https://developer.android.com/reference/javax/sql/StatementEventListener.html#statementErrorOccurred(javax.sql.StatementEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnStatementErrorOccurred"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Sql.StatementEvent> OnStatementErrorOccurred { get; set; } = null;
+        public global::System.Action<Javax.Sql.StatementEvent> OnStatementErrorOccurred { get; set; } = null;
 
         void StatementErrorOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>> data)
         {
@@ -107,7 +107,7 @@ namespace Javax.Sql
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/StatementEventListener.html#statementErrorOccurred(javax.sql.StatementEvent)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/StatementEventListener.html#statementErrorOccurred(javax.sql.StatementEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.StatementEvent"/></param>
         public virtual void StatementErrorOccurred(Javax.Sql.StatementEvent arg0)
@@ -146,7 +146,7 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/StatementEventListener.html#statementClosed(javax.sql.StatementEvent)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/StatementEventListener.html#statementClosed(javax.sql.StatementEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.StatementEvent"/></param>
         public override void StatementClosed(Javax.Sql.StatementEvent arg0)
@@ -154,7 +154,7 @@ namespace Javax.Sql
             IExecuteWithSignature("statementClosed", "(Ljavax/sql/StatementEvent;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/StatementEventListener.html#statementErrorOccurred(javax.sql.StatementEvent)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/StatementEventListener.html#statementErrorOccurred(javax.sql.StatementEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.StatementEvent"/></param>
         public override void StatementErrorOccurred(Javax.Sql.StatementEvent arg0)

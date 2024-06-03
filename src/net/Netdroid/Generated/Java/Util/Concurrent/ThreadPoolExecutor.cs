@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.RejectedExecutionHandler)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.RejectedExecutionHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -43,7 +43,7 @@ namespace Java.Util.Concurrent
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.ThreadFactory,java.util.concurrent.RejectedExecutionHandler)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.ThreadFactory,java.util.concurrent.RejectedExecutionHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -57,7 +57,7 @@ namespace Java.Util.Concurrent
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.ThreadFactory)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.ThreadFactory)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -98,77 +98,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#getActiveCount()"/> 
-        /// </summary>
-        public int ActiveCount
-        {
-            get { return IExecuteWithSignature<int>("getActiveCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#getCompletedTaskCount()"/> 
-        /// </summary>
-        public long CompletedTaskCount
-        {
-            get { return IExecuteWithSignature<long>("getCompletedTaskCount", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#getCorePoolSize()"/> <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#setCorePoolSize(int)"/>
-        /// </summary>
-        public int CorePoolSize
-        {
-            get { return IExecuteWithSignature<int>("getCorePoolSize", "()I"); } set { IExecuteWithSignature("setCorePoolSize", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#getLargestPoolSize()"/> 
-        /// </summary>
-        public int LargestPoolSize
-        {
-            get { return IExecuteWithSignature<int>("getLargestPoolSize", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#getMaximumPoolSize()"/> <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#setMaximumPoolSize(int)"/>
-        /// </summary>
-        public int MaximumPoolSize
-        {
-            get { return IExecuteWithSignature<int>("getMaximumPoolSize", "()I"); } set { IExecuteWithSignature("setMaximumPoolSize", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#getPoolSize()"/> 
-        /// </summary>
-        public int PoolSize
-        {
-            get { return IExecuteWithSignature<int>("getPoolSize", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#getQueue()"/> 
-        /// </summary>
-        public Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> Queue
-        {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable>>("getQueue", "()Ljava/util/concurrent/BlockingQueue;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#getRejectedExecutionHandler()"/> <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#setRejectedExecutionHandler(java.util.concurrent.RejectedExecutionHandler)"/>
-        /// </summary>
-        public Java.Util.Concurrent.RejectedExecutionHandler RejectedExecutionHandler
-        {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.RejectedExecutionHandler>("getRejectedExecutionHandler", "()Ljava/util/concurrent/RejectedExecutionHandler;"); } set { IExecuteWithSignature("setRejectedExecutionHandler", "(Ljava/util/concurrent/RejectedExecutionHandler;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#getTaskCount()"/> 
-        /// </summary>
-        public long TaskCount
-        {
-            get { return IExecuteWithSignature<long>("getTaskCount", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#getThreadFactory()"/> <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#setThreadFactory(java.util.concurrent.ThreadFactory)"/>
-        /// </summary>
-        public Java.Util.Concurrent.ThreadFactory ThreadFactory
-        {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.ThreadFactory>("getThreadFactory", "()Ljava/util/concurrent/ThreadFactory;"); } set { IExecuteWithSignature("setThreadFactory", "(Ljava/util/concurrent/ThreadFactory;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#allowsCoreThreadTimeOut()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#allowsCoreThreadTimeOut()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool AllowsCoreThreadTimeOut()
@@ -176,7 +106,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("allowsCoreThreadTimeOut", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#isTerminating()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#isTerminating()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsTerminating()
@@ -184,7 +114,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isTerminating", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#prestartCoreThread()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#prestartCoreThread()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool PrestartCoreThread()
@@ -192,7 +122,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("prestartCoreThread", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#remove(java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#remove(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -201,7 +131,47 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Runnable;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#prestartAllCoreThreads()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getActiveCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetActiveCount()
+        {
+            return IExecuteWithSignature<int>("getActiveCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getCorePoolSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCorePoolSize()
+        {
+            return IExecuteWithSignature<int>("getCorePoolSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getLargestPoolSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLargestPoolSize()
+        {
+            return IExecuteWithSignature<int>("getLargestPoolSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getMaximumPoolSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaximumPoolSize()
+        {
+            return IExecuteWithSignature<int>("getMaximumPoolSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getPoolSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPoolSize()
+        {
+            return IExecuteWithSignature<int>("getPoolSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#prestartAllCoreThreads()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int PrestartAllCoreThreads()
@@ -209,7 +179,39 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("prestartAllCoreThreads", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#getKeepAliveTime(java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getQueue()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Concurrent.BlockingQueue"/></returns>
+        public Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> GetQueue()
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable>>("getQueue", "()Ljava/util/concurrent/BlockingQueue;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getRejectedExecutionHandler()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Concurrent.RejectedExecutionHandler"/></returns>
+        public Java.Util.Concurrent.RejectedExecutionHandler GetRejectedExecutionHandler()
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.RejectedExecutionHandler>("getRejectedExecutionHandler", "()Ljava/util/concurrent/RejectedExecutionHandler;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getThreadFactory()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Concurrent.ThreadFactory"/></returns>
+        public Java.Util.Concurrent.ThreadFactory GetThreadFactory()
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.ThreadFactory>("getThreadFactory", "()Ljava/util/concurrent/ThreadFactory;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getCompletedTaskCount()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetCompletedTaskCount()
+        {
+            return IExecuteWithSignature<long>("getCompletedTaskCount", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getKeepAliveTime(java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
         /// <returns><see cref="long"/></returns>
@@ -218,7 +220,15 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<long>("getKeepAliveTime", "(Ljava/util/concurrent/TimeUnit;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#allowCoreThreadTimeOut(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getTaskCount()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTaskCount()
+        {
+            return IExecuteWithSignature<long>("getTaskCount", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#allowCoreThreadTimeOut(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void AllowCoreThreadTimeOut(bool arg0)
@@ -226,20 +236,52 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("allowCoreThreadTimeOut", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#purge()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#purge()"/>
         /// </summary>
         public void Purge()
         {
             IExecuteWithSignature("purge", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html#setKeepAliveTime(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#setCorePoolSize(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetCorePoolSize(int arg0)
+        {
+            IExecuteWithSignature("setCorePoolSize", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#setKeepAliveTime(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
         public void SetKeepAliveTime(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             IExecute("setKeepAliveTime", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#setMaximumPoolSize(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMaximumPoolSize(int arg0)
+        {
+            IExecuteWithSignature("setMaximumPoolSize", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#setRejectedExecutionHandler(java.util.concurrent.RejectedExecutionHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.RejectedExecutionHandler"/></param>
+        public void SetRejectedExecutionHandler(Java.Util.Concurrent.RejectedExecutionHandler arg0)
+        {
+            IExecuteWithSignature("setRejectedExecutionHandler", "(Ljava/util/concurrent/RejectedExecutionHandler;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#setThreadFactory(java.util.concurrent.ThreadFactory)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
+        public void SetThreadFactory(Java.Util.Concurrent.ThreadFactory arg0)
+        {
+            IExecuteWithSignature("setThreadFactory", "(Ljava/util/concurrent/ThreadFactory;)V", arg0);
         }
 
         #endregion
@@ -266,7 +308,7 @@ namespace Java.Util.Concurrent
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.AbortPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.AbortPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
             /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadPoolExecutor"/></param>
@@ -306,7 +348,7 @@ namespace Java.Util.Concurrent
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.CallerRunsPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.CallerRunsPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
             /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadPoolExecutor"/></param>
@@ -346,7 +388,7 @@ namespace Java.Util.Concurrent
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.DiscardOldestPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.DiscardOldestPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
             /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadPoolExecutor"/></param>
@@ -386,7 +428,7 @@ namespace Java.Util.Concurrent
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.DiscardPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.DiscardPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
             /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadPoolExecutor"/></param>

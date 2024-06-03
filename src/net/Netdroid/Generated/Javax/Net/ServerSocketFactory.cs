@@ -42,18 +42,19 @@ namespace Javax.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ServerSocketFactory.html#getDefault()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ServerSocketFactory.html#getDefault()"/>
         /// </summary>
-        public static Javax.Net.ServerSocketFactory Default
+        /// <returns><see cref="Javax.Net.ServerSocketFactory"/></returns>
+        public static Javax.Net.ServerSocketFactory GetDefault()
         {
-            get { return SExecuteWithSignature<Javax.Net.ServerSocketFactory>(LocalBridgeClazz, "getDefault", "()Ljavax/net/ServerSocketFactory;"); }
+            return SExecuteWithSignature<Javax.Net.ServerSocketFactory>(LocalBridgeClazz, "getDefault", "()Ljavax/net/ServerSocketFactory;");
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ServerSocketFactory.html#createServerSocket(int,int,java.net.InetAddress)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ServerSocketFactory.html#createServerSocket(int,int,java.net.InetAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -65,7 +66,7 @@ namespace Javax.Net
             return IExecute<Java.Net.ServerSocket>("createServerSocket", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ServerSocketFactory.html#createServerSocket(int,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ServerSocketFactory.html#createServerSocket(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -76,7 +77,7 @@ namespace Javax.Net
             return IExecute<Java.Net.ServerSocket>("createServerSocket", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ServerSocketFactory.html#createServerSocket(int)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ServerSocketFactory.html#createServerSocket(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Net.ServerSocket"/></returns>
@@ -86,7 +87,7 @@ namespace Javax.Net
             return IExecuteWithSignature<Java.Net.ServerSocket>("createServerSocket", "(I)Ljava/net/ServerSocket;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ServerSocketFactory.html#createServerSocket()"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ServerSocketFactory.html#createServerSocket()"/>
         /// </summary>
         /// <returns><see cref="Java.Net.ServerSocket"/></returns>
         /// <exception cref="Java.Io.IOException"/>

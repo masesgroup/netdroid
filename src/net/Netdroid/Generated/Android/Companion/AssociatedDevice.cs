@@ -52,25 +52,28 @@ namespace Android.Companion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/companion/AssociatedDevice.html#getBleDevice()"/> 
+        /// <see href="https://developer.android.com/reference/android/companion/AssociatedDevice.html#getBluetoothDevice()"/>
         /// </summary>
-        public Android.Bluetooth.Le.ScanResult BleDevice
+        /// <returns><see cref="Android.Bluetooth.BluetoothDevice"/></returns>
+        public Android.Bluetooth.BluetoothDevice GetBluetoothDevice()
         {
-            get { return IExecuteWithSignature<Android.Bluetooth.Le.ScanResult>("getBleDevice", "()Landroid/bluetooth/le/ScanResult;"); }
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothDevice>("getBluetoothDevice", "()Landroid/bluetooth/BluetoothDevice;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/companion/AssociatedDevice.html#getBluetoothDevice()"/> 
+        /// <see href="https://developer.android.com/reference/android/companion/AssociatedDevice.html#getBleDevice()"/>
         /// </summary>
-        public Android.Bluetooth.BluetoothDevice BluetoothDevice
+        /// <returns><see cref="Android.Bluetooth.Le.ScanResult"/></returns>
+        public Android.Bluetooth.Le.ScanResult GetBleDevice()
         {
-            get { return IExecuteWithSignature<Android.Bluetooth.BluetoothDevice>("getBluetoothDevice", "()Landroid/bluetooth/BluetoothDevice;"); }
+            return IExecuteWithSignature<Android.Bluetooth.Le.ScanResult>("getBleDevice", "()Landroid/bluetooth/le/ScanResult;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/companion/AssociatedDevice.html#getWifiDevice()"/> 
+        /// <see href="https://developer.android.com/reference/android/companion/AssociatedDevice.html#getWifiDevice()"/>
         /// </summary>
-        public Android.Net.Wifi.ScanResult WifiDevice
+        /// <returns><see cref="Android.Net.Wifi.ScanResult"/></returns>
+        public Android.Net.Wifi.ScanResult GetWifiDevice()
         {
-            get { return IExecuteWithSignature<Android.Net.Wifi.ScanResult>("getWifiDevice", "()Landroid/net/wifi/ScanResult;"); }
+            return IExecuteWithSignature<Android.Net.Wifi.ScanResult>("getWifiDevice", "()Landroid/net/wifi/ScanResult;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociatedDevice.html#describeContents()"/>

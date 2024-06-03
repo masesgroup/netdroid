@@ -64,33 +64,36 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoRequest.html#getOption()"/> 
-        /// </summary>
-        public int Option
-        {
-            get { return IExecuteWithSignature<int>("getOption", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoRequest.html#getRequestId()"/> 
-        /// </summary>
-        public int RequestId
-        {
-            get { return IExecuteWithSignature<int>("getRequestId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoRequest.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoRequest.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoRequest.html#getOption()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOption()
+        {
+            return IExecuteWithSignature<int>("getOption", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoRequest.html#getRequestId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRequestId()
+        {
+            return IExecuteWithSignature<int>("getRequestId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoRequest.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoRequest.html#writeToParcel(android.os.Parcel,int)"/>

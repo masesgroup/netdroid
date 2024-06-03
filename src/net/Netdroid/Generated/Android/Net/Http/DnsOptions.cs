@@ -64,46 +64,52 @@ namespace Android.Net.Http
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.html#getStaleDnsOptions()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.html#getStaleDnsOptions()"/>
         /// </summary>
-        public Android.Net.Http.DnsOptions.StaleDnsOptions GetStaleDnsOptions
+        /// <returns><see cref="Android.Net.Http.DnsOptions.StaleDnsOptions"/></returns>
+        public Android.Net.Http.DnsOptions.StaleDnsOptions GetStaleDnsOptions()
         {
-            get { return IExecuteWithSignature<Android.Net.Http.DnsOptions.StaleDnsOptions>("getStaleDnsOptions", "()Landroid/net/http/DnsOptions$StaleDnsOptions;"); }
+            return IExecuteWithSignature<Android.Net.Http.DnsOptions.StaleDnsOptions>("getStaleDnsOptions", "()Landroid/net/http/DnsOptions$StaleDnsOptions;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.html#getPersistHostCache()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.html#getPersistHostCache()"/>
         /// </summary>
-        public int PersistHostCache
+        /// <returns><see cref="int"/></returns>
+        public int GetPersistHostCache()
         {
-            get { return IExecuteWithSignature<int>("getPersistHostCache", "()I"); }
+            return IExecuteWithSignature<int>("getPersistHostCache", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.html#getPersistHostCachePeriod()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.html#getPreestablishConnectionsToStaleDnsResults()"/>
         /// </summary>
-        public Java.Time.Duration PersistHostCachePeriod
+        /// <returns><see cref="int"/></returns>
+        public int GetPreestablishConnectionsToStaleDnsResults()
         {
-            get { return IExecuteWithSignature<Java.Time.Duration>("getPersistHostCachePeriod", "()Ljava/time/Duration;"); }
+            return IExecuteWithSignature<int>("getPreestablishConnectionsToStaleDnsResults", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.html#getPreestablishConnectionsToStaleDnsResults()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.html#getStaleDns()"/>
         /// </summary>
-        public int PreestablishConnectionsToStaleDnsResults
+        /// <returns><see cref="int"/></returns>
+        public int GetStaleDns()
         {
-            get { return IExecuteWithSignature<int>("getPreestablishConnectionsToStaleDnsResults", "()I"); }
+            return IExecuteWithSignature<int>("getStaleDns", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.html#getStaleDns()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.html#getUseHttpStackDnsResolver()"/>
         /// </summary>
-        public int StaleDns
+        /// <returns><see cref="int"/></returns>
+        public int GetUseHttpStackDnsResolver()
         {
-            get { return IExecuteWithSignature<int>("getStaleDns", "()I"); }
+            return IExecuteWithSignature<int>("getUseHttpStackDnsResolver", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.html#getUseHttpStackDnsResolver()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.html#getPersistHostCachePeriod()"/>
         /// </summary>
-        public int UseHttpStackDnsResolver
+        /// <returns><see cref="Java.Time.Duration"/></returns>
+        public Java.Time.Duration GetPersistHostCachePeriod()
         {
-            get { return IExecuteWithSignature<int>("getUseHttpStackDnsResolver", "()I"); }
+            return IExecuteWithSignature<Java.Time.Duration>("getPersistHostCachePeriod", "()Ljava/time/Duration;");
         }
 
         #endregion
@@ -223,32 +229,36 @@ namespace Android.Net.Http
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.StaleDnsOptions.html#getAllowCrossNetworkUsage()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.StaleDnsOptions.html#getAllowCrossNetworkUsage()"/>
             /// </summary>
-            public int AllowCrossNetworkUsage
+            /// <returns><see cref="int"/></returns>
+            public int GetAllowCrossNetworkUsage()
             {
-                get { return IExecuteWithSignature<int>("getAllowCrossNetworkUsage", "()I"); }
+                return IExecuteWithSignature<int>("getAllowCrossNetworkUsage", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.StaleDnsOptions.html#getFreshLookupTimeout()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.StaleDnsOptions.html#getUseStaleOnNameNotResolved()"/>
             /// </summary>
-            public Java.Time.Duration FreshLookupTimeout
+            /// <returns><see cref="int"/></returns>
+            public int GetUseStaleOnNameNotResolved()
             {
-                get { return IExecuteWithSignature<Java.Time.Duration>("getFreshLookupTimeout", "()Ljava/time/Duration;"); }
+                return IExecuteWithSignature<int>("getUseStaleOnNameNotResolved", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.StaleDnsOptions.html#getMaxExpiredDelay()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.StaleDnsOptions.html#getFreshLookupTimeout()"/>
             /// </summary>
-            public Java.Time.Duration MaxExpiredDelay
+            /// <returns><see cref="Java.Time.Duration"/></returns>
+            public Java.Time.Duration GetFreshLookupTimeout()
             {
-                get { return IExecuteWithSignature<Java.Time.Duration>("getMaxExpiredDelay", "()Ljava/time/Duration;"); }
+                return IExecuteWithSignature<Java.Time.Duration>("getFreshLookupTimeout", "()Ljava/time/Duration;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.StaleDnsOptions.html#getUseStaleOnNameNotResolved()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.StaleDnsOptions.html#getMaxExpiredDelay()"/>
             /// </summary>
-            public int UseStaleOnNameNotResolved
+            /// <returns><see cref="Java.Time.Duration"/></returns>
+            public Java.Time.Duration GetMaxExpiredDelay()
             {
-                get { return IExecuteWithSignature<int>("getUseStaleOnNameNotResolved", "()I"); }
+                return IExecuteWithSignature<Java.Time.Duration>("getMaxExpiredDelay", "()Ljava/time/Duration;");
             }
 
             #endregion

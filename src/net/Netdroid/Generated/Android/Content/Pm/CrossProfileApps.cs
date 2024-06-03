@@ -52,13 +52,6 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/CrossProfileApps.html#getTargetUserProfiles()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Os.UserHandle> TargetUserProfiles
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Os.UserHandle>>("getTargetUserProfiles", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/CrossProfileApps.html#createRequestInteractAcrossProfilesIntent()"/>
         /// </summary>
         /// <returns><see cref="Android.Content.Intent"/></returns>
@@ -99,6 +92,14 @@ namespace Android.Content.Pm
         public Java.Lang.CharSequence GetProfileSwitchingLabel(Android.Os.UserHandle arg0)
         {
             return IExecuteWithSignature<Java.Lang.CharSequence>("getProfileSwitchingLabel", "(Landroid/os/UserHandle;)Ljava/lang/CharSequence;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/CrossProfileApps.html#getTargetUserProfiles()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Os.UserHandle> GetTargetUserProfiles()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Os.UserHandle>>("getTargetUserProfiles", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/CrossProfileApps.html#startActivity(android.content.Intent,android.os.UserHandle,android.app.Activity,android.os.Bundle)"/>

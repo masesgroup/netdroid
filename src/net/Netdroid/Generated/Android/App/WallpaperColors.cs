@@ -111,32 +111,28 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/WallpaperColors.html#getColorHints()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/WallpaperColors.html#getPrimaryColor()"/>
         /// </summary>
-        public int ColorHints
+        /// <returns><see cref="Android.Graphics.Color"/></returns>
+        public Android.Graphics.Color GetPrimaryColor()
         {
-            get { return IExecuteWithSignature<int>("getColorHints", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.Color>("getPrimaryColor", "()Landroid/graphics/Color;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/WallpaperColors.html#getPrimaryColor()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/WallpaperColors.html#getSecondaryColor()"/>
         /// </summary>
-        public Android.Graphics.Color PrimaryColor
+        /// <returns><see cref="Android.Graphics.Color"/></returns>
+        public Android.Graphics.Color GetSecondaryColor()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Color>("getPrimaryColor", "()Landroid/graphics/Color;"); }
+            return IExecuteWithSignature<Android.Graphics.Color>("getSecondaryColor", "()Landroid/graphics/Color;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/WallpaperColors.html#getSecondaryColor()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/WallpaperColors.html#getTertiaryColor()"/>
         /// </summary>
-        public Android.Graphics.Color SecondaryColor
+        /// <returns><see cref="Android.Graphics.Color"/></returns>
+        public Android.Graphics.Color GetTertiaryColor()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Color>("getSecondaryColor", "()Landroid/graphics/Color;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/WallpaperColors.html#getTertiaryColor()"/> 
-        /// </summary>
-        public Android.Graphics.Color TertiaryColor
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Color>("getTertiaryColor", "()Landroid/graphics/Color;"); }
+            return IExecuteWithSignature<Android.Graphics.Color>("getTertiaryColor", "()Landroid/graphics/Color;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperColors.html#describeContents()"/>
@@ -145,6 +141,14 @@ namespace Android.App
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/WallpaperColors.html#getColorHints()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetColorHints()
+        {
+            return IExecuteWithSignature<int>("getColorHints", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperColors.html#writeToParcel(android.os.Parcel,int)"/>

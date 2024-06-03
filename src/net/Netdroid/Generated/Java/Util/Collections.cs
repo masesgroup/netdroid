@@ -38,19 +38,19 @@ namespace Java.Util
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#EMPTY_LIST"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#EMPTY_LIST"/>
         /// </summary>
         public static Java.Util.List EMPTY_LIST { get { if (!_EMPTY_LISTReady) { _EMPTY_LISTContent = SGetField<Java.Util.List>(LocalBridgeClazz, "EMPTY_LIST"); _EMPTY_LISTReady = true; } return _EMPTY_LISTContent; } }
         private static Java.Util.List _EMPTY_LISTContent = default;
         private static bool _EMPTY_LISTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#EMPTY_MAP"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#EMPTY_MAP"/>
         /// </summary>
         public static Java.Util.Map EMPTY_MAP { get { if (!_EMPTY_MAPReady) { _EMPTY_MAPContent = SGetField<Java.Util.Map>(LocalBridgeClazz, "EMPTY_MAP"); _EMPTY_MAPReady = true; } return _EMPTY_MAPContent; } }
         private static Java.Util.Map _EMPTY_MAPContent = default;
         private static bool _EMPTY_MAPReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#EMPTY_SET"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#EMPTY_SET"/>
         /// </summary>
         public static Java.Util.Set EMPTY_SET { get { if (!_EMPTY_SETReady) { _EMPTY_SETContent = SGetField<Java.Util.Set>(LocalBridgeClazz, "EMPTY_SET"); _EMPTY_SETReady = true; } return _EMPTY_SETContent; } }
         private static Java.Util.Set _EMPTY_SETContent = default;
@@ -60,7 +60,7 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#checkedCollection(java.util.Collection,java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#checkedCollection(java.util.Collection,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -71,7 +71,7 @@ namespace Java.Util
             return SExecute<Java.Util.Collection<E>>(LocalBridgeClazz, "checkedCollection", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#checkedList(java.util.List,java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#checkedList(java.util.List,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -82,7 +82,7 @@ namespace Java.Util
             return SExecute<Java.Util.List<E>>(LocalBridgeClazz, "checkedList", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#checkedNavigableSet(java.util.NavigableSet,java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#checkedNavigableSet(java.util.NavigableSet,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.NavigableSet"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -93,7 +93,7 @@ namespace Java.Util
             return SExecute<Java.Util.NavigableSet<E>>(LocalBridgeClazz, "checkedNavigableSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#emptyNavigableSet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#emptyNavigableSet()"/>
         /// </summary>
         /// <typeparam name="E"></typeparam>
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
@@ -102,7 +102,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.NavigableSet<E>>(LocalBridgeClazz, "emptyNavigableSet", "()Ljava/util/NavigableSet;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#checkedQueue(java.util.Queue,java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#checkedQueue(java.util.Queue,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Queue"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -113,7 +113,7 @@ namespace Java.Util
             return SExecute<Java.Util.Queue<E>>(LocalBridgeClazz, "checkedQueue", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#checkedSet(java.util.Set,java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#checkedSet(java.util.Set,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -124,7 +124,7 @@ namespace Java.Util
             return SExecute<Java.Util.Set<E>>(LocalBridgeClazz, "checkedSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#newSetFromMap(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#newSetFromMap(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <typeparam name="E"></typeparam>
@@ -134,7 +134,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Set<E>>(LocalBridgeClazz, "newSetFromMap", "(Ljava/util/Map;)Ljava/util/Set;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#checkedSortedSet(java.util.SortedSet,java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#checkedSortedSet(java.util.SortedSet,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -145,7 +145,7 @@ namespace Java.Util
             return SExecute<Java.Util.SortedSet<E>>(LocalBridgeClazz, "checkedSortedSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#emptySortedSet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#emptySortedSet()"/>
         /// </summary>
         /// <typeparam name="E"></typeparam>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
@@ -154,7 +154,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.SortedSet<E>>(LocalBridgeClazz, "emptySortedSet", "()Ljava/util/SortedSet;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#checkedMap(java.util.Map,java.lang.Class,java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#checkedMap(java.util.Map,java.lang.Class,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -167,7 +167,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "checkedMap", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#singletonMap(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#singletonMap(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -179,7 +179,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "singletonMap", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#synchronizedMap(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#synchronizedMap(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <typeparam name="K"></typeparam>
@@ -190,7 +190,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "synchronizedMap", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#unmodifiableMap(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#unmodifiableMap(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <typeparam name="K"></typeparam>
@@ -198,12 +198,12 @@ namespace Java.Util
         /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> UnmodifiableMap<K, V, Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK: K where Arg0ExtendsV: V
+        public static Java.Util.Map<K, V> UnmodifiableMap<K, V, Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
         {
             return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "unmodifiableMap", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#checkedNavigableMap(java.util.NavigableMap,java.lang.Class,java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#checkedNavigableMap(java.util.NavigableMap,java.lang.Class,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.NavigableMap"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -216,7 +216,7 @@ namespace Java.Util
             return SExecute<Java.Util.NavigableMap<K, V>>(LocalBridgeClazz, "checkedNavigableMap", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#synchronizedNavigableMap(java.util.NavigableMap)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#synchronizedNavigableMap(java.util.NavigableMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.NavigableMap"/></param>
         /// <typeparam name="K"></typeparam>
@@ -227,19 +227,19 @@ namespace Java.Util
             return SExecute<Java.Util.NavigableMap<K, V>>(LocalBridgeClazz, "synchronizedNavigableMap", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#unmodifiableNavigableMap(java.util.NavigableMap)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#unmodifiableNavigableMap(java.util.NavigableMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.NavigableMap"/></param>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
-        public static Java.Util.NavigableMap<K, V> UnmodifiableNavigableMap<K, V, Arg0ExtendsV>(Java.Util.NavigableMap<K, Arg0ExtendsV> arg0) where Arg0ExtendsV: V
+        public static Java.Util.NavigableMap<K, V> UnmodifiableNavigableMap<K, V, Arg0ExtendsV>(Java.Util.NavigableMap<K, Arg0ExtendsV> arg0) where Arg0ExtendsV : V
         {
             return SExecute<Java.Util.NavigableMap<K, V>>(LocalBridgeClazz, "unmodifiableNavigableMap", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#checkedSortedMap(java.util.SortedMap,java.lang.Class,java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#checkedSortedMap(java.util.SortedMap,java.lang.Class,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedMap"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -252,7 +252,7 @@ namespace Java.Util
             return SExecute<Java.Util.SortedMap<K, V>>(LocalBridgeClazz, "checkedSortedMap", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#synchronizedSortedMap(java.util.SortedMap)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#synchronizedSortedMap(java.util.SortedMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedMap"/></param>
         /// <typeparam name="K"></typeparam>
@@ -263,19 +263,19 @@ namespace Java.Util
             return SExecute<Java.Util.SortedMap<K, V>>(LocalBridgeClazz, "synchronizedSortedMap", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#unmodifiableSortedMap(java.util.SortedMap)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#unmodifiableSortedMap(java.util.SortedMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedMap"/></param>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
-        public static Java.Util.SortedMap<K, V> UnmodifiableSortedMap<K, V, Arg0ExtendsV>(Java.Util.SortedMap<K, Arg0ExtendsV> arg0) where Arg0ExtendsV: V
+        public static Java.Util.SortedMap<K, V> UnmodifiableSortedMap<K, V, Arg0ExtendsV>(Java.Util.SortedMap<K, Arg0ExtendsV> arg0) where Arg0ExtendsV : V
         {
             return SExecute<Java.Util.SortedMap<K, V>>(LocalBridgeClazz, "unmodifiableSortedMap", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#sort(java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#sort(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <typeparam name="T"></typeparam>
@@ -284,41 +284,41 @@ namespace Java.Util
             SExecuteWithSignature(LocalBridgeClazz, "sort", "(Ljava/util/List;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#max(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#max(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T Max<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
+        public static T Max<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
             return SExecute<T>(LocalBridgeClazz, "max", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#min(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#min(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T Min<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
+        public static T Min<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
             return SExecute<T>(LocalBridgeClazz, "min", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#addAll(java.util.Collection,java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#addAll(java.util.Collection,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><typeparamref name="T"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public static bool AddAll<Arg0objectSuperT, T>(Java.Util.Collection<Arg0objectSuperT> arg0, params T[] arg1) where Arg0objectSuperT: T
+        public static bool AddAll<Arg0objectSuperT, T>(Java.Util.Collection<Arg0objectSuperT> arg0, params T[] arg1) where Arg0objectSuperT : T
         {
             if (arg1.Length == 0) return SExecute<bool>(LocalBridgeClazz, "addAll", arg0); else return SExecute<bool>(LocalBridgeClazz, "addAll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#replaceAll(java.util.List,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#replaceAll(java.util.List,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><typeparamref name="T"/></param>
@@ -330,7 +330,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "replaceAll", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#binarySearch(java.util.List,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#binarySearch(java.util.List,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><typeparamref name="T"/></param>
@@ -338,12 +338,12 @@ namespace Java.Util
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="int"/></returns>
-        public static int BinarySearch<Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_, Arg0objectSuperT, T>(Java.Util.List<Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_> arg0, T arg1) where Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_: Java.Lang.Comparable<Arg0objectSuperT> where Arg0objectSuperT: T
+        public static int BinarySearch<Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_, Arg0objectSuperT, T>(Java.Util.List<Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_> arg0, T arg1) where Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_ : Java.Lang.Comparable<Arg0objectSuperT> where Arg0objectSuperT : T
         {
             return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#list(java.util.Enumeration)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#list(java.util.Enumeration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
         /// <typeparam name="T"></typeparam>
@@ -353,7 +353,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.ArrayList<T>>(LocalBridgeClazz, "list", "(Ljava/util/Enumeration;)Ljava/util/ArrayList;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#synchronizedCollection(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#synchronizedCollection(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="T"></typeparam>
@@ -363,18 +363,18 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Collection<T>>(LocalBridgeClazz, "synchronizedCollection", "(Ljava/util/Collection;)Ljava/util/Collection;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#unmodifiableCollection(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#unmodifiableCollection(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
-        public static Java.Util.Collection<T> UnmodifiableCollection<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
+        public static Java.Util.Collection<T> UnmodifiableCollection<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
             return SExecuteWithSignature<Java.Util.Collection<T>>(LocalBridgeClazz, "unmodifiableCollection", "(Ljava/util/Collection;)Ljava/util/Collection;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#emptyEnumeration()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#emptyEnumeration()"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
@@ -383,7 +383,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Enumeration<T>>(LocalBridgeClazz, "emptyEnumeration", "()Ljava/util/Enumeration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#enumeration(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#enumeration(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="T"></typeparam>
@@ -393,7 +393,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Enumeration<T>>(LocalBridgeClazz, "enumeration", "(Ljava/util/Collection;)Ljava/util/Enumeration;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#emptyIterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#emptyIterator()"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
@@ -402,7 +402,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Iterator<T>>(LocalBridgeClazz, "emptyIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#nCopies(int,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#nCopies(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><typeparamref name="T"/></param>
@@ -413,7 +413,7 @@ namespace Java.Util
             return SExecute<Java.Util.List<T>>(LocalBridgeClazz, "nCopies", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#singletonList(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#singletonList(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <typeparam name="T"></typeparam>
@@ -423,7 +423,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.List<T>>(LocalBridgeClazz, "singletonList", "(Ljava/lang/Object;)Ljava/util/List;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#synchronizedList(java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#synchronizedList(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <typeparam name="T"></typeparam>
@@ -433,18 +433,18 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.List<T>>(LocalBridgeClazz, "synchronizedList", "(Ljava/util/List;)Ljava/util/List;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#unmodifiableList(java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#unmodifiableList(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<T> UnmodifiableList<T, Arg0ExtendsT>(Java.Util.List<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
+        public static Java.Util.List<T> UnmodifiableList<T, Arg0ExtendsT>(Java.Util.List<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
             return SExecuteWithSignature<Java.Util.List<T>>(LocalBridgeClazz, "unmodifiableList", "(Ljava/util/List;)Ljava/util/List;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#emptyListIterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#emptyListIterator()"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
@@ -453,7 +453,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.ListIterator<T>>(LocalBridgeClazz, "emptyListIterator", "()Ljava/util/ListIterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#synchronizedNavigableSet(java.util.NavigableSet)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#synchronizedNavigableSet(java.util.NavigableSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.NavigableSet"/></param>
         /// <typeparam name="T"></typeparam>
@@ -463,7 +463,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.NavigableSet<T>>(LocalBridgeClazz, "synchronizedNavigableSet", "(Ljava/util/NavigableSet;)Ljava/util/NavigableSet;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#unmodifiableNavigableSet(java.util.NavigableSet)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#unmodifiableNavigableSet(java.util.NavigableSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.NavigableSet"/></param>
         /// <typeparam name="T"></typeparam>
@@ -473,7 +473,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.NavigableSet<T>>(LocalBridgeClazz, "unmodifiableNavigableSet", "(Ljava/util/NavigableSet;)Ljava/util/NavigableSet;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#asLifoQueue(java.util.Deque)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#asLifoQueue(java.util.Deque)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Deque"/></param>
         /// <typeparam name="T"></typeparam>
@@ -483,7 +483,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Queue<T>>(LocalBridgeClazz, "asLifoQueue", "(Ljava/util/Deque;)Ljava/util/Queue;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#singleton(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#singleton(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <typeparam name="T"></typeparam>
@@ -493,7 +493,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Set<T>>(LocalBridgeClazz, "singleton", "(Ljava/lang/Object;)Ljava/util/Set;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#synchronizedSet(java.util.Set)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#synchronizedSet(java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <typeparam name="T"></typeparam>
@@ -503,18 +503,18 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Set<T>>(LocalBridgeClazz, "synchronizedSet", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#unmodifiableSet(java.util.Set)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#unmodifiableSet(java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public static Java.Util.Set<T> UnmodifiableSet<T, Arg0ExtendsT>(Java.Util.Set<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
+        public static Java.Util.Set<T> UnmodifiableSet<T, Arg0ExtendsT>(Java.Util.Set<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
             return SExecuteWithSignature<Java.Util.Set<T>>(LocalBridgeClazz, "unmodifiableSet", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#synchronizedSortedSet(java.util.SortedSet)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#synchronizedSortedSet(java.util.SortedSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
         /// <typeparam name="T"></typeparam>
@@ -524,7 +524,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.SortedSet<T>>(LocalBridgeClazz, "synchronizedSortedSet", "(Ljava/util/SortedSet;)Ljava/util/SortedSet;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#unmodifiableSortedSet(java.util.SortedSet)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#unmodifiableSortedSet(java.util.SortedSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
         /// <typeparam name="T"></typeparam>
@@ -534,30 +534,30 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.SortedSet<T>>(LocalBridgeClazz, "unmodifiableSortedSet", "(Ljava/util/SortedSet;)Ljava/util/SortedSet;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#copy(java.util.List,java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#copy(java.util.List,java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
-        public static void Copy<Arg0objectSuperT, T, Arg1ExtendsT>(Java.Util.List<Arg0objectSuperT> arg0, Java.Util.List<Arg1ExtendsT> arg1) where Arg0objectSuperT: T where Arg1ExtendsT: T
+        public static void Copy<Arg0objectSuperT, T, Arg1ExtendsT>(Java.Util.List<Arg0objectSuperT> arg0, Java.Util.List<Arg1ExtendsT> arg1) where Arg0objectSuperT : T where Arg1ExtendsT : T
         {
             SExecute(LocalBridgeClazz, "copy", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#fill(java.util.List,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#fill(java.util.List,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><typeparamref name="T"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="T"></typeparam>
-        public static void Fill<Arg0objectSuperT, T>(Java.Util.List<Arg0objectSuperT> arg0, T arg1) where Arg0objectSuperT: T
+        public static void Fill<Arg0objectSuperT, T>(Java.Util.List<Arg0objectSuperT> arg0, T arg1) where Arg0objectSuperT : T
         {
             SExecute(LocalBridgeClazz, "fill", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#disjoint(java.util.Collection,java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#disjoint(java.util.Collection,java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
@@ -567,7 +567,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "disjoint", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#emptyMap()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#emptyMap()"/>
         /// </summary>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
@@ -577,7 +577,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "emptyMap");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#emptyNavigableMap()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#emptyNavigableMap()"/>
         /// </summary>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
@@ -587,7 +587,7 @@ namespace Java.Util
             return SExecute<Java.Util.NavigableMap<K, V>>(LocalBridgeClazz, "emptyNavigableMap");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#emptySortedMap()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#emptySortedMap()"/>
         /// </summary>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
@@ -597,7 +597,7 @@ namespace Java.Util
             return SExecute<Java.Util.SortedMap<K, V>>(LocalBridgeClazz, "emptySortedMap");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#emptyList()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#emptyList()"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
@@ -606,7 +606,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.List<T>>(LocalBridgeClazz, "emptyList", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#emptySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#emptySet()"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
@@ -615,7 +615,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Set<T>>(LocalBridgeClazz, "emptySet", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#frequency(java.util.Collection,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#frequency(java.util.Collection,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -625,7 +625,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "frequency", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#indexOfSubList(java.util.List,java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#indexOfSubList(java.util.List,java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
@@ -635,7 +635,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "indexOfSubList", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#lastIndexOfSubList(java.util.List,java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#lastIndexOfSubList(java.util.List,java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
@@ -645,7 +645,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "lastIndexOfSubList", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#reverse(java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#reverse(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         public static void Reverse(Java.Util.List<object> arg0)
@@ -653,7 +653,7 @@ namespace Java.Util
             SExecuteWithSignature(LocalBridgeClazz, "reverse", "(Ljava/util/List;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#rotate(java.util.List,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#rotate(java.util.List,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -662,7 +662,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "rotate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#shuffle(java.util.List,java.util.Random)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#shuffle(java.util.List,java.util.Random)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.Random"/></param>
@@ -671,7 +671,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "shuffle", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#shuffle(java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#shuffle(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         public static void Shuffle(Java.Util.List<object> arg0)
@@ -679,7 +679,7 @@ namespace Java.Util
             SExecuteWithSignature(LocalBridgeClazz, "shuffle", "(Ljava/util/List;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collections.html#swap(java.util.List,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#swap(java.util.List,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="int"/></param>

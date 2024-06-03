@@ -107,27 +107,6 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#getDateFormat()"/> 
-        /// </summary>
-        public Android.Icu.Text.DateFormat DateFormat
-        {
-            get { return IExecuteWithSignature<Android.Icu.Text.DateFormat>("getDateFormat", "()Landroid/icu/text/DateFormat;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#getDateIntervalInfo()"/> <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#setDateIntervalInfo(android.icu.text.DateIntervalInfo)"/>
-        /// </summary>
-        public Android.Icu.Text.DateIntervalInfo DateIntervalInfo
-        {
-            get { return IExecuteWithSignature<Android.Icu.Text.DateIntervalInfo>("getDateIntervalInfo", "()Landroid/icu/text/DateIntervalInfo;"); } set { IExecuteWithSignature("setDateIntervalInfo", "(Landroid/icu/text/DateIntervalInfo;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#getTimeZone()"/> <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#setTimeZone(android.icu.util.TimeZone)"/>
-        /// </summary>
-        public Android.Icu.Util.TimeZone TimeZone
-        {
-            get { return IExecuteWithSignature<Android.Icu.Util.TimeZone>("getTimeZone", "()Landroid/icu/util/TimeZone;"); } set { IExecuteWithSignature("setTimeZone", "(Landroid/icu/util/TimeZone;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#formatToValue(android.icu.util.Calendar,android.icu.util.Calendar)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Util.Calendar"/></param>
@@ -147,6 +126,14 @@ namespace Android.Icu.Text
             return IExecuteWithSignature<Android.Icu.Text.DateIntervalFormat.FormattedDateInterval>("formatToValue", "(Landroid/icu/util/DateInterval;)Landroid/icu/text/DateIntervalFormat$FormattedDateInterval;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#getDateIntervalInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.DateIntervalInfo"/></returns>
+        public Android.Icu.Text.DateIntervalInfo GetDateIntervalInfo()
+        {
+            return IExecuteWithSignature<Android.Icu.Text.DateIntervalInfo>("getDateIntervalInfo", "()Landroid/icu/text/DateIntervalInfo;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#getContext(android.icu.text.DisplayContext.Type)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Text.DisplayContext.Type"/></param>
@@ -154,6 +141,14 @@ namespace Android.Icu.Text
         public Android.Icu.Text.DisplayContext GetContext(Android.Icu.Text.DisplayContext.Type arg0)
         {
             return IExecuteWithSignature<Android.Icu.Text.DisplayContext>("getContext", "(Landroid/icu/text/DisplayContext$Type;)Landroid/icu/text/DisplayContext;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#getTimeZone()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Util.TimeZone"/></returns>
+        public Android.Icu.Util.TimeZone GetTimeZone()
+        {
+            return IExecuteWithSignature<Android.Icu.Util.TimeZone>("getTimeZone", "()Landroid/icu/util/TimeZone;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#format(android.icu.util.Calendar,android.icu.util.Calendar,java.lang.StringBuffer,java.text.FieldPosition)"/>
@@ -179,12 +174,36 @@ namespace Android.Icu.Text
             return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#getDateFormat()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.DateFormat"/></returns>
+        public Android.Icu.Text.DateFormat GetDateFormat()
+        {
+            return IExecuteWithSignature<Android.Icu.Text.DateFormat>("getDateFormat", "()Landroid/icu/text/DateFormat;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#setContext(android.icu.text.DisplayContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Text.DisplayContext"/></param>
         public void SetContext(Android.Icu.Text.DisplayContext arg0)
         {
             IExecuteWithSignature("setContext", "(Landroid/icu/text/DisplayContext;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#setDateIntervalInfo(android.icu.text.DateIntervalInfo)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Icu.Text.DateIntervalInfo"/></param>
+        public void SetDateIntervalInfo(Android.Icu.Text.DateIntervalInfo arg0)
+        {
+            IExecuteWithSignature("setDateIntervalInfo", "(Landroid/icu/text/DateIntervalInfo;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#setTimeZone(android.icu.util.TimeZone)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Icu.Util.TimeZone"/></param>
+        public void SetTimeZone(Android.Icu.Util.TimeZone arg0)
+        {
+            IExecuteWithSignature("setTimeZone", "(Landroid/icu/util/TimeZone;)V", arg0);
         }
 
         #endregion
@@ -216,7 +235,7 @@ namespace Android.Icu.Text
             /// <param name="arg0"><typeparamref name="A"/></param>
             /// <typeparam name="A"><see cref="Java.Lang.IAppendable"/></typeparam>
             /// <returns><typeparamref name="A"/></returns>
-            public A AppendTo<A>(A arg0) where A: Java.Lang.IAppendable, new()
+            public A AppendTo<A>(A arg0) where A : Java.Lang.IAppendable, new()
             {
                 return IExecuteWithSignature<A>("appendTo", "(Ljava/lang/Appendable;)Ljava/lang/Appendable;", arg0);
             }

@@ -46,11 +46,12 @@ namespace Android.View.Autofill
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/autofill/VirtualViewFillInfo.html#getAutofillHints()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/autofill/VirtualViewFillInfo.html#getAutofillHints()"/>
         /// </summary>
-        public Java.Lang.String[] AutofillHints
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetAutofillHints()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getAutofillHints", "()[Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getAutofillHints", "()[Ljava/lang/String;");
         }
 
         #endregion

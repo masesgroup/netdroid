@@ -42,7 +42,7 @@ namespace Java.Lang.Ref
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Reference.html#reachabilityFence(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/Reference.html#reachabilityFence(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public static void ReachabilityFence(object arg0)
@@ -54,7 +54,7 @@ namespace Java.Lang.Ref
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Reference.html#enqueue()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/Reference.html#enqueue()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool Enqueue()
@@ -62,16 +62,16 @@ namespace Java.Lang.Ref
             return IExecuteWithSignature<bool>("enqueue", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Reference.html#isEnqueued()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/Reference.html#isEnqueued()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsEnqueued()
         {
             return IExecuteWithSignature<bool>("isEnqueued", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Reference.html#refersTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/Reference.html#refersTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -80,7 +80,7 @@ namespace Java.Lang.Ref
             return IExecuteWithSignature<bool>("refersTo", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Reference.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/Reference.html#get()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Get()
@@ -88,7 +88,7 @@ namespace Java.Lang.Ref
             return IExecuteWithSignature("get", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Reference.html#clear()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/Reference.html#clear()"/>
         /// </summary>
         public void Clear()
         {
@@ -126,7 +126,7 @@ namespace Java.Lang.Ref
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Reference.html#reachabilityFence(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/Reference.html#reachabilityFence(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public static void ReachabilityFence(object arg0)
@@ -138,7 +138,7 @@ namespace Java.Lang.Ref
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Reference.html#enqueue()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/Reference.html#enqueue()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool Enqueue()
@@ -146,16 +146,16 @@ namespace Java.Lang.Ref
             return IExecuteWithSignature<bool>("enqueue", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Reference.html#isEnqueued()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/Reference.html#isEnqueued()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsEnqueued()
         {
             return IExecuteWithSignature<bool>("isEnqueued", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Reference.html#refersTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/Reference.html#refersTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -164,7 +164,7 @@ namespace Java.Lang.Ref
             return IExecuteWithSignature<bool>("refersTo", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Reference.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/Reference.html#get()"/>
         /// </summary>
         /// <returns><typeparamref name="T"/></returns>
         public T Get()
@@ -172,7 +172,7 @@ namespace Java.Lang.Ref
             return IExecuteWithSignature<T>("get", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Reference.html#clear()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/Reference.html#clear()"/>
         /// </summary>
         public void Clear()
         {

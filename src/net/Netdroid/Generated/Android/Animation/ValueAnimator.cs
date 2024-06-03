@@ -60,20 +60,6 @@ namespace Android.Animation
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#getDurationScale()"/> 
-        /// </summary>
-        public static float DurationScale
-        {
-            get { return SExecuteWithSignature<float>(LocalBridgeClazz, "getDurationScale", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#getFrameDelay()"/> <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#setFrameDelay(long)"/>
-        /// </summary>
-        public static long FrameDelay
-        {
-            get { return SExecuteWithSignature<long>(LocalBridgeClazz, "getFrameDelay", "()J"); } set { SExecuteWithSignature(LocalBridgeClazz, "setFrameDelay", "(J)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#ofArgb(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -145,51 +131,73 @@ namespace Android.Animation
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "unregisterDurationScaleChangeListener", "(Landroid/animation/ValueAnimator$DurationScaleChangeListener;)Z", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#getDurationScale()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public static float GetDurationScale()
+        {
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "getDurationScale", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#getFrameDelay()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public static long GetFrameDelay()
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getFrameDelay", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#setFrameDelay(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public static void SetFrameDelay(long arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setFrameDelay", "(J)V", arg0);
+        }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#getAnimatedFraction()"/> 
+        /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#getValues()"/>
         /// </summary>
-        public float AnimatedFraction
+        /// <returns><see cref="Android.Animation.PropertyValuesHolder"/></returns>
+        public Android.Animation.PropertyValuesHolder[] GetValues()
         {
-            get { return IExecuteWithSignature<float>("getAnimatedFraction", "()F"); }
+            return IExecuteWithSignatureArray<Android.Animation.PropertyValuesHolder>("getValues", "()[Landroid/animation/PropertyValuesHolder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#getAnimatedValue()"/> 
+        /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#getAnimatedFraction()"/>
         /// </summary>
-        public object AnimatedValue
+        /// <returns><see cref="float"/></returns>
+        public float GetAnimatedFraction()
         {
-            get { return IExecuteWithSignature("getAnimatedValue", "()Ljava/lang/Object;"); }
+            return IExecuteWithSignature<float>("getAnimatedFraction", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#getCurrentPlayTime()"/> <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#setCurrentPlayTime(long)"/>
+        /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#getRepeatCount()"/>
         /// </summary>
-        public long CurrentPlayTime
+        /// <returns><see cref="int"/></returns>
+        public int GetRepeatCount()
         {
-            get { return IExecuteWithSignature<long>("getCurrentPlayTime", "()J"); } set { IExecuteWithSignature("setCurrentPlayTime", "(J)V", value); }
+            return IExecuteWithSignature<int>("getRepeatCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#getRepeatCount()"/> <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#setRepeatCount(int)"/>
+        /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#getRepeatMode()"/>
         /// </summary>
-        public int RepeatCount
+        /// <returns><see cref="int"/></returns>
+        public int GetRepeatMode()
         {
-            get { return IExecuteWithSignature<int>("getRepeatCount", "()I"); } set { IExecuteWithSignature("setRepeatCount", "(I)V", value); }
+            return IExecuteWithSignature<int>("getRepeatMode", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#getRepeatMode()"/> <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#setRepeatMode(int)"/>
+        /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#getAnimatedValue()"/>
         /// </summary>
-        public int RepeatMode
+        /// <returns><see cref="object"/></returns>
+        public object GetAnimatedValue()
         {
-            get { return IExecuteWithSignature<int>("getRepeatMode", "()I"); } set { IExecuteWithSignature("setRepeatMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#getValues()"/> <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#setValues(android.animation.PropertyValuesHolder[])"/>
-        /// </summary>
-        public Android.Animation.PropertyValuesHolder[] Values
-        {
-            get { return IExecuteWithSignatureArray<Android.Animation.PropertyValuesHolder>("getValues", "()[Landroid/animation/PropertyValuesHolder;"); } set { IExecuteWithSignature("setValues", "([Landroid/animation/PropertyValuesHolder;)V", value); }
+            return IExecuteWithSignature("getAnimatedValue", "()Ljava/lang/Object;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#getAnimatedValue(java.lang.String)"/>
@@ -199,6 +207,14 @@ namespace Android.Animation
         public object GetAnimatedValue(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("getAnimatedValue", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#getCurrentPlayTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetCurrentPlayTime()
+        {
+            return IExecuteWithSignature<long>("getCurrentPlayTime", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#addUpdateListener(android.animation.ValueAnimator.AnimatorUpdateListener)"/>
@@ -239,6 +255,14 @@ namespace Android.Animation
             IExecuteWithSignature("setCurrentFraction", "(F)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#setCurrentPlayTime(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetCurrentPlayTime(long arg0)
+        {
+            IExecuteWithSignature("setCurrentPlayTime", "(J)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#setEvaluator(android.animation.TypeEvaluator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Animation.TypeEvaluator"/></param>
@@ -270,6 +294,30 @@ namespace Android.Animation
         {
             if (arg0.Length == 0) IExecuteWithSignature("setObjectValues", "([Ljava/lang/Object;)V"); else IExecuteWithSignature("setObjectValues", "([Ljava/lang/Object;)V", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#setRepeatCount(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetRepeatCount(int arg0)
+        {
+            IExecuteWithSignature("setRepeatCount", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#setRepeatMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetRepeatMode(int arg0)
+        {
+            IExecuteWithSignature("setRepeatMode", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#setValues(android.animation.PropertyValuesHolder[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Animation.PropertyValuesHolder"/></param>
+        public void SetValues(params Android.Animation.PropertyValuesHolder[] arg0)
+        {
+            if (arg0.Length == 0) IExecuteWithSignature("setValues", "([Landroid/animation/PropertyValuesHolder;)V"); else IExecuteWithSignature("setValues", "([Landroid/animation/PropertyValuesHolder;)V", arg0);
+        }
 
         #endregion
 
@@ -299,7 +347,7 @@ namespace Android.Animation
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onAnimationUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.ValueAnimator>>>(OnAnimationUpdateEventHandler));
+                AddEventHandler("onAnimationUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.ValueAnimator>>>(OnAnimationUpdateEventHandler));
 
             }
 
@@ -307,7 +355,7 @@ namespace Android.Animation
             /// Handler for <see href="https://developer.android.com/reference/android/animation/ValueAnimator.AnimatorUpdateListener.html#onAnimationUpdate(android.animation.ValueAnimator)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAnimationUpdate"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Animation.ValueAnimator> OnOnAnimationUpdate { get; set; } = null;
+            public global::System.Action<Android.Animation.ValueAnimator> OnOnAnimationUpdate { get; set; } = null;
 
             void OnAnimationUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Animation.ValueAnimator>> data)
             {
@@ -398,7 +446,7 @@ namespace Android.Animation
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<float>>>(OnChangedEventHandler));
+                AddEventHandler("onChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<float>>>(OnChangedEventHandler));
 
             }
 
@@ -406,7 +454,7 @@ namespace Android.Animation
             /// Handler for <see href="https://developer.android.com/reference/android/animation/ValueAnimator.DurationScaleChangeListener.html#onChanged(float)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<float> OnOnChanged { get; set; } = null;
+            public global::System.Action<float> OnOnChanged { get; set; } = null;
 
             void OnChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<float>> data)
             {

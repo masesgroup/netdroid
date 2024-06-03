@@ -52,26 +52,28 @@ namespace Android.Net.Vcn
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnConfig.html#getGatewayConnectionConfigs()"/> 
-        /// </summary>
-        public Java.Util.Set<Android.Net.Vcn.VcnGatewayConnectionConfig> GatewayConnectionConfigs
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Android.Net.Vcn.VcnGatewayConnectionConfig>>("getGatewayConnectionConfigs", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnConfig.html#getRestrictedUnderlyingNetworkTransports()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.Integer> RestrictedUnderlyingNetworkTransports
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>("getRestrictedUnderlyingNetworkTransports", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/vcn/VcnConfig.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnConfig.html#getGatewayConnectionConfigs()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Android.Net.Vcn.VcnGatewayConnectionConfig> GetGatewayConnectionConfigs()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Android.Net.Vcn.VcnGatewayConnectionConfig>>("getGatewayConnectionConfigs", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnConfig.html#getRestrictedUnderlyingNetworkTransports()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.Integer> GetRestrictedUnderlyingNetworkTransports()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>("getRestrictedUnderlyingNetworkTransports", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/vcn/VcnConfig.html#writeToParcel(android.os.Parcel,int)"/>

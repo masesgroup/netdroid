@@ -64,46 +64,52 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Entity.html#getInputEncoding()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Entity.html#getInputEncoding()"/>
         /// </summary>
-        public Java.Lang.String InputEncoding
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetInputEncoding()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInputEncoding", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getInputEncoding", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Entity.html#getNotationName()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Entity.html#getNotationName()"/>
         /// </summary>
-        public Java.Lang.String NotationName
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNotationName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNotationName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getNotationName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Entity.html#getPublicId()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Entity.html#getPublicId()"/>
         /// </summary>
-        public Java.Lang.String PublicId
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPublicId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Entity.html#getSystemId()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Entity.html#getSystemId()"/>
         /// </summary>
-        public Java.Lang.String SystemId
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSystemId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Entity.html#getXmlEncoding()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Entity.html#getXmlEncoding()"/>
         /// </summary>
-        public Java.Lang.String XmlEncoding
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetXmlEncoding()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getXmlEncoding", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getXmlEncoding", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Entity.html#getXmlVersion()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Entity.html#getXmlVersion()"/>
         /// </summary>
-        public Java.Lang.String XmlVersion
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetXmlVersion()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getXmlVersion", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getXmlVersion", "()Ljava/lang/String;");
         }
 
         #endregion

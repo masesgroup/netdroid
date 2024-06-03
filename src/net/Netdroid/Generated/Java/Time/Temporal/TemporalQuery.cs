@@ -46,7 +46,7 @@ namespace Java.Time.Temporal
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalQuery.html#queryFrom(java.time.temporal.TemporalAccessor)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalQuery.html#queryFrom(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
         /// <returns><see cref="object"/></returns>
@@ -108,7 +108,7 @@ namespace Java.Time.Temporal
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalQuery.html#queryFrom(java.time.temporal.TemporalAccessor)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalQuery.html#queryFrom(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
         /// <returns><typeparamref name="R"/></returns>

@@ -40,21 +40,21 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataEditor.html#BITMAP_KEY_ARTWORK"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int BITMAP_KEY_ARTWORK { get { if (!_BITMAP_KEY_ARTWORKReady) { _BITMAP_KEY_ARTWORKContent = SGetField<int>(LocalBridgeClazz, "BITMAP_KEY_ARTWORK"); _BITMAP_KEY_ARTWORKReady = true; } return _BITMAP_KEY_ARTWORKContent; } }
         private static int _BITMAP_KEY_ARTWORKContent = default;
         private static bool _BITMAP_KEY_ARTWORKReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataEditor.html#RATING_KEY_BY_OTHERS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int RATING_KEY_BY_OTHERS { get { if (!_RATING_KEY_BY_OTHERSReady) { _RATING_KEY_BY_OTHERSContent = SGetField<int>(LocalBridgeClazz, "RATING_KEY_BY_OTHERS"); _RATING_KEY_BY_OTHERSReady = true; } return _RATING_KEY_BY_OTHERSContent; } }
         private static int _RATING_KEY_BY_OTHERSContent = default;
         private static bool _RATING_KEY_BY_OTHERSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataEditor.html#RATING_KEY_BY_USER"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int RATING_KEY_BY_USER { get { if (!_RATING_KEY_BY_USERReady) { _RATING_KEY_BY_USERContent = SGetField<int>(LocalBridgeClazz, "RATING_KEY_BY_USER"); _RATING_KEY_BY_USERReady = true; } return _RATING_KEY_BY_USERContent; } }
         private static int _RATING_KEY_BY_USERContent = default;
         private static bool _RATING_KEY_BY_USERReady = false; // this is used because in case of generics 
@@ -67,17 +67,9 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaMetadataEditor.html#getEditableKeys()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int[] EditableKeys
-        {
-            get { return IExecuteWithSignatureArray<int>("getEditableKeys", "()[I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataEditor.html#apply()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Apply()
         {
             IExecuteWithSignature("apply", "()V");
@@ -89,7 +81,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Graphics.Bitmap"/></param>
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Graphics.Bitmap GetBitmap(int arg0, Android.Graphics.Bitmap arg1)
         {
             return IExecute<Android.Graphics.Bitmap>("getBitmap", arg0, arg1);
@@ -101,7 +93,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Graphics.Bitmap"/></param>
         /// <returns><see cref="Android.Media.MediaMetadataEditor"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Media.MediaMetadataEditor PutBitmap(int arg0, Android.Graphics.Bitmap arg1)
         {
             return IExecute<Android.Media.MediaMetadataEditor>("putBitmap", arg0, arg1);
@@ -113,7 +105,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see cref="Android.Media.MediaMetadataEditor"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Media.MediaMetadataEditor PutLong(int arg0, long arg1)
         {
             return IExecute<Android.Media.MediaMetadataEditor>("putLong", arg0, arg1);
@@ -125,7 +117,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="Android.Media.MediaMetadataEditor"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Media.MediaMetadataEditor PutObject(int arg0, object arg1)
         {
             return IExecute<Android.Media.MediaMetadataEditor>("putObject", arg0, arg1);
@@ -137,10 +129,19 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Android.Media.MediaMetadataEditor"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Media.MediaMetadataEditor PutString(int arg0, Java.Lang.String arg1)
         {
             return IExecute<Android.Media.MediaMetadataEditor>("putString", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaMetadataEditor.html#getEditableKeys()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int[] GetEditableKeys()
+        {
+            return IExecuteWithSignatureArray<int>("getEditableKeys", "()[I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataEditor.html#getObject(int,java.lang.Object)"/>
@@ -149,7 +150,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public object GetObject(int arg0, object arg1)
         {
             return IExecute("getObject", arg0, arg1);
@@ -161,7 +162,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String GetString(int arg0, Java.Lang.String arg1)
         {
             return IExecute<Java.Lang.String>("getString", arg0, arg1);
@@ -173,7 +174,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public long GetLong(int arg0, long arg1)
         {
             return IExecute<long>("getLong", arg0, arg1);
@@ -182,7 +183,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataEditor.html#addEditableKey(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddEditableKey(int arg0)
         {
             IExecuteWithSignature("addEditableKey", "(I)V", arg0);
@@ -190,7 +191,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataEditor.html#clear()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Clear()
         {
             IExecuteWithSignature("clear", "()V");
@@ -198,7 +199,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataEditor.html#removeEditableKeys()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemoveEditableKeys()
         {
             IExecuteWithSignature("removeEditableKeys", "()V");

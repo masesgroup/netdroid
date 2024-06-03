@@ -64,7 +64,7 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/MulticastChannel.html#join(java.net.InetAddress,java.net.NetworkInterface,java.net.InetAddress)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/MulticastChannel.html#join(java.net.InetAddress,java.net.NetworkInterface,java.net.InetAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
         /// <param name="arg1"><see cref="Java.Net.NetworkInterface"/></param>
@@ -76,7 +76,7 @@ namespace Java.Nio.Channels
             return IExecute<Java.Nio.Channels.MembershipKey>("join", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/MulticastChannel.html#join(java.net.InetAddress,java.net.NetworkInterface)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/MulticastChannel.html#join(java.net.InetAddress,java.net.NetworkInterface)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
         /// <param name="arg1"><see cref="Java.Net.NetworkInterface"/></param>
@@ -87,7 +87,7 @@ namespace Java.Nio.Channels
             return IExecute<Java.Nio.Channels.MembershipKey>("join", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/MulticastChannel.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/MulticastChannel.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Close()

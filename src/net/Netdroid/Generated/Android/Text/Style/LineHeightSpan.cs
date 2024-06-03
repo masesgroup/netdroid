@@ -133,26 +133,28 @@ namespace Android.Text.Style
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/text/style/LineHeightSpan.Standard.html#getHeight()"/> 
-            /// </summary>
-            public int Height
-            {
-                get { return IExecuteWithSignature<int>("getHeight", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/text/style/LineHeightSpan.Standard.html#getSpanTypeId()"/> 
-            /// </summary>
-            public int SpanTypeId
-            {
-                get { return IExecuteWithSignature<int>("getSpanTypeId", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LineHeightSpan.Standard.html#describeContents()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/style/LineHeightSpan.Standard.html#getHeight()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetHeight()
+            {
+                return IExecuteWithSignature<int>("getHeight", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/style/LineHeightSpan.Standard.html#getSpanTypeId()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetSpanTypeId()
+            {
+                return IExecuteWithSignature<int>("getSpanTypeId", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LineHeightSpan.Standard.html#chooseHeight(java.lang.CharSequence,int,int,int,int,android.graphics.Paint.FontMetricsInt)"/>

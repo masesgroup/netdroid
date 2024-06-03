@@ -56,9 +56,9 @@ namespace Java.Security.Interfaces
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#serialVersionUID"/>
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#serialVersionUID"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static long serialVersionUID { get { if (!_serialVersionUIDReady) { _serialVersionUIDContent = SGetField<long>(LocalBridgeClazz, "serialVersionUID"); _serialVersionUIDReady = true; } return _serialVersionUIDContent; } }
         private static long _serialVersionUIDContent = default;
         private static bool _serialVersionUIDReady = false; // this is used because in case of generics 
@@ -71,53 +71,60 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getCrtCoefficient()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getCrtCoefficient()"/>
         /// </summary>
-        public Java.Math.BigInteger CrtCoefficient
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetCrtCoefficient()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getCrtCoefficient", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getCrtCoefficient", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getOtherPrimeInfo()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPrimeExponentP()"/>
         /// </summary>
-        public Java.Security.Spec.RSAOtherPrimeInfo[] OtherPrimeInfo
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetPrimeExponentP()
         {
-            get { return IExecuteWithSignatureArray<Java.Security.Spec.RSAOtherPrimeInfo>("getOtherPrimeInfo", "()[Ljava/security/spec/RSAOtherPrimeInfo;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getPrimeExponentP", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPrimeExponentP()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPrimeExponentQ()"/>
         /// </summary>
-        public Java.Math.BigInteger PrimeExponentP
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetPrimeExponentQ()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getPrimeExponentP", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getPrimeExponentQ", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPrimeExponentQ()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPrimeP()"/>
         /// </summary>
-        public Java.Math.BigInteger PrimeExponentQ
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetPrimeP()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getPrimeExponentQ", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getPrimeP", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPrimeP()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPrimeQ()"/>
         /// </summary>
-        public Java.Math.BigInteger PrimeP
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetPrimeQ()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getPrimeP", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getPrimeQ", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPrimeQ()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPublicExponent()"/>
         /// </summary>
-        public Java.Math.BigInteger PrimeQ
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetPublicExponent()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getPrimeQ", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getPublicExponent", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPublicExponent()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getOtherPrimeInfo()"/>
         /// </summary>
-        public Java.Math.BigInteger PublicExponent
+        /// <returns><see cref="Java.Security.Spec.RSAOtherPrimeInfo"/></returns>
+        public Java.Security.Spec.RSAOtherPrimeInfo[] GetOtherPrimeInfo()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getPublicExponent", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignatureArray<Java.Security.Spec.RSAOtherPrimeInfo>("getOtherPrimeInfo", "()[Ljava/security/spec/RSAOtherPrimeInfo;");
         }
 
         #endregion

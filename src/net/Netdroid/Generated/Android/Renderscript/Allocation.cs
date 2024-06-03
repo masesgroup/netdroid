@@ -40,56 +40,56 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_GRAPHICS_CONSTANTS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int USAGE_GRAPHICS_CONSTANTS { get { if (!_USAGE_GRAPHICS_CONSTANTSReady) { _USAGE_GRAPHICS_CONSTANTSContent = SGetField<int>(LocalBridgeClazz, "USAGE_GRAPHICS_CONSTANTS"); _USAGE_GRAPHICS_CONSTANTSReady = true; } return _USAGE_GRAPHICS_CONSTANTSContent; } }
         private static int _USAGE_GRAPHICS_CONSTANTSContent = default;
         private static bool _USAGE_GRAPHICS_CONSTANTSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_GRAPHICS_RENDER_TARGET"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int USAGE_GRAPHICS_RENDER_TARGET { get { if (!_USAGE_GRAPHICS_RENDER_TARGETReady) { _USAGE_GRAPHICS_RENDER_TARGETContent = SGetField<int>(LocalBridgeClazz, "USAGE_GRAPHICS_RENDER_TARGET"); _USAGE_GRAPHICS_RENDER_TARGETReady = true; } return _USAGE_GRAPHICS_RENDER_TARGETContent; } }
         private static int _USAGE_GRAPHICS_RENDER_TARGETContent = default;
         private static bool _USAGE_GRAPHICS_RENDER_TARGETReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_GRAPHICS_TEXTURE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int USAGE_GRAPHICS_TEXTURE { get { if (!_USAGE_GRAPHICS_TEXTUREReady) { _USAGE_GRAPHICS_TEXTUREContent = SGetField<int>(LocalBridgeClazz, "USAGE_GRAPHICS_TEXTURE"); _USAGE_GRAPHICS_TEXTUREReady = true; } return _USAGE_GRAPHICS_TEXTUREContent; } }
         private static int _USAGE_GRAPHICS_TEXTUREContent = default;
         private static bool _USAGE_GRAPHICS_TEXTUREReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_GRAPHICS_VERTEX"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int USAGE_GRAPHICS_VERTEX { get { if (!_USAGE_GRAPHICS_VERTEXReady) { _USAGE_GRAPHICS_VERTEXContent = SGetField<int>(LocalBridgeClazz, "USAGE_GRAPHICS_VERTEX"); _USAGE_GRAPHICS_VERTEXReady = true; } return _USAGE_GRAPHICS_VERTEXContent; } }
         private static int _USAGE_GRAPHICS_VERTEXContent = default;
         private static bool _USAGE_GRAPHICS_VERTEXReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_IO_INPUT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int USAGE_IO_INPUT { get { if (!_USAGE_IO_INPUTReady) { _USAGE_IO_INPUTContent = SGetField<int>(LocalBridgeClazz, "USAGE_IO_INPUT"); _USAGE_IO_INPUTReady = true; } return _USAGE_IO_INPUTContent; } }
         private static int _USAGE_IO_INPUTContent = default;
         private static bool _USAGE_IO_INPUTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_IO_OUTPUT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int USAGE_IO_OUTPUT { get { if (!_USAGE_IO_OUTPUTReady) { _USAGE_IO_OUTPUTContent = SGetField<int>(LocalBridgeClazz, "USAGE_IO_OUTPUT"); _USAGE_IO_OUTPUTReady = true; } return _USAGE_IO_OUTPUTContent; } }
         private static int _USAGE_IO_OUTPUTContent = default;
         private static bool _USAGE_IO_OUTPUTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_SCRIPT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int USAGE_SCRIPT { get { if (!_USAGE_SCRIPTReady) { _USAGE_SCRIPTContent = SGetField<int>(LocalBridgeClazz, "USAGE_SCRIPT"); _USAGE_SCRIPTReady = true; } return _USAGE_SCRIPTContent; } }
         private static int _USAGE_SCRIPTContent = default;
         private static bool _USAGE_SCRIPTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_SHARED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int USAGE_SHARED { get { if (!_USAGE_SHAREDReady) { _USAGE_SHAREDContent = SGetField<int>(LocalBridgeClazz, "USAGE_SHARED"); _USAGE_SHAREDReady = true; } return _USAGE_SHAREDContent; } }
         private static int _USAGE_SHAREDContent = default;
         private static bool _USAGE_SHAREDReady = false; // this is used because in case of generics 
@@ -105,7 +105,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="Android.Renderscript.Allocation.MipmapControl"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Android.Renderscript.Allocation"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Allocation CreateCubemapFromBitmap(Android.Renderscript.RenderScript arg0, Android.Graphics.Bitmap arg1, Android.Renderscript.Allocation.MipmapControl arg2, int arg3)
         {
             return SExecute<Android.Renderscript.Allocation>(LocalBridgeClazz, "createCubemapFromBitmap", arg0, arg1, arg2, arg3);
@@ -116,7 +116,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <param name="arg1"><see cref="Android.Graphics.Bitmap"/></param>
         /// <returns><see cref="Android.Renderscript.Allocation"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Allocation CreateCubemapFromBitmap(Android.Renderscript.RenderScript arg0, Android.Graphics.Bitmap arg1)
         {
             return SExecute<Android.Renderscript.Allocation>(LocalBridgeClazz, "createCubemapFromBitmap", arg0, arg1);
@@ -134,7 +134,7 @@ namespace Android.Renderscript
         /// <param name="arg7"><see cref="Android.Renderscript.Allocation.MipmapControl"/></param>
         /// <param name="arg8"><see cref="int"/></param>
         /// <returns><see cref="Android.Renderscript.Allocation"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Allocation CreateCubemapFromCubeFaces(Android.Renderscript.RenderScript arg0, Android.Graphics.Bitmap arg1, Android.Graphics.Bitmap arg2, Android.Graphics.Bitmap arg3, Android.Graphics.Bitmap arg4, Android.Graphics.Bitmap arg5, Android.Graphics.Bitmap arg6, Android.Renderscript.Allocation.MipmapControl arg7, int arg8)
         {
             return SExecute<Android.Renderscript.Allocation>(LocalBridgeClazz, "createCubemapFromCubeFaces", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
@@ -150,7 +150,7 @@ namespace Android.Renderscript
         /// <param name="arg5"><see cref="Android.Graphics.Bitmap"/></param>
         /// <param name="arg6"><see cref="Android.Graphics.Bitmap"/></param>
         /// <returns><see cref="Android.Renderscript.Allocation"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Allocation CreateCubemapFromCubeFaces(Android.Renderscript.RenderScript arg0, Android.Graphics.Bitmap arg1, Android.Graphics.Bitmap arg2, Android.Graphics.Bitmap arg3, Android.Graphics.Bitmap arg4, Android.Graphics.Bitmap arg5, Android.Graphics.Bitmap arg6)
         {
             return SExecute<Android.Renderscript.Allocation>(LocalBridgeClazz, "createCubemapFromCubeFaces", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -163,7 +163,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="Android.Renderscript.Allocation.MipmapControl"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Android.Renderscript.Allocation"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Allocation CreateFromBitmap(Android.Renderscript.RenderScript arg0, Android.Graphics.Bitmap arg1, Android.Renderscript.Allocation.MipmapControl arg2, int arg3)
         {
             return SExecute<Android.Renderscript.Allocation>(LocalBridgeClazz, "createFromBitmap", arg0, arg1, arg2, arg3);
@@ -174,7 +174,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <param name="arg1"><see cref="Android.Graphics.Bitmap"/></param>
         /// <returns><see cref="Android.Renderscript.Allocation"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Allocation CreateFromBitmap(Android.Renderscript.RenderScript arg0, Android.Graphics.Bitmap arg1)
         {
             return SExecute<Android.Renderscript.Allocation>(LocalBridgeClazz, "createFromBitmap", arg0, arg1);
@@ -188,7 +188,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="Android.Renderscript.Allocation.MipmapControl"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <returns><see cref="Android.Renderscript.Allocation"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Allocation CreateFromBitmapResource(Android.Renderscript.RenderScript arg0, Android.Content.Res.Resources arg1, int arg2, Android.Renderscript.Allocation.MipmapControl arg3, int arg4)
         {
             return SExecute<Android.Renderscript.Allocation>(LocalBridgeClazz, "createFromBitmapResource", arg0, arg1, arg2, arg3, arg4);
@@ -200,7 +200,7 @@ namespace Android.Renderscript
         /// <param name="arg1"><see cref="Android.Content.Res.Resources"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Android.Renderscript.Allocation"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Allocation CreateFromBitmapResource(Android.Renderscript.RenderScript arg0, Android.Content.Res.Resources arg1, int arg2)
         {
             return SExecute<Android.Renderscript.Allocation>(LocalBridgeClazz, "createFromBitmapResource", arg0, arg1, arg2);
@@ -212,7 +212,7 @@ namespace Android.Renderscript
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Android.Renderscript.Allocation"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Allocation CreateFromString(Android.Renderscript.RenderScript arg0, Java.Lang.String arg1, int arg2)
         {
             return SExecute<Android.Renderscript.Allocation>(LocalBridgeClazz, "createFromString", arg0, arg1, arg2);
@@ -225,7 +225,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Android.Renderscript.Allocation"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Allocation CreateSized(Android.Renderscript.RenderScript arg0, Android.Renderscript.Element arg1, int arg2, int arg3)
         {
             return SExecute<Android.Renderscript.Allocation>(LocalBridgeClazz, "createSized", arg0, arg1, arg2, arg3);
@@ -237,7 +237,7 @@ namespace Android.Renderscript
         /// <param name="arg1"><see cref="Android.Renderscript.Element"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Android.Renderscript.Allocation"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Allocation CreateSized(Android.Renderscript.RenderScript arg0, Android.Renderscript.Element arg1, int arg2)
         {
             return SExecute<Android.Renderscript.Allocation>(LocalBridgeClazz, "createSized", arg0, arg1, arg2);
@@ -250,7 +250,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="Android.Renderscript.Allocation.MipmapControl"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Android.Renderscript.Allocation"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Allocation CreateTyped(Android.Renderscript.RenderScript arg0, Android.Renderscript.Type arg1, Android.Renderscript.Allocation.MipmapControl arg2, int arg3)
         {
             return SExecute<Android.Renderscript.Allocation>(LocalBridgeClazz, "createTyped", arg0, arg1, arg2, arg3);
@@ -262,7 +262,7 @@ namespace Android.Renderscript
         /// <param name="arg1"><see cref="Android.Renderscript.Type"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Android.Renderscript.Allocation"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Allocation CreateTyped(Android.Renderscript.RenderScript arg0, Android.Renderscript.Type arg1, int arg2)
         {
             return SExecute<Android.Renderscript.Allocation>(LocalBridgeClazz, "createTyped", arg0, arg1, arg2);
@@ -273,7 +273,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Type"/></param>
         /// <returns><see cref="Android.Renderscript.Allocation"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Allocation CreateTyped(Android.Renderscript.RenderScript arg0, Android.Renderscript.Type arg1)
         {
             return SExecute<Android.Renderscript.Allocation>(LocalBridgeClazz, "createTyped", arg0, arg1);
@@ -286,7 +286,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Android.Renderscript.Allocation"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Allocation[] CreateAllocations(Android.Renderscript.RenderScript arg0, Android.Renderscript.Type arg1, int arg2, int arg3)
         {
             return SExecuteArray<Android.Renderscript.Allocation>(LocalBridgeClazz, "createAllocations", arg0, arg1, arg2, arg3);
@@ -296,74 +296,82 @@ namespace Android.Renderscript
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#getByteBuffer()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#getElement()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Nio.ByteBuffer ByteBuffer
+        /// <returns><see cref="Android.Renderscript.Element"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Element GetElement()
         {
-            get { return IExecuteWithSignature<Java.Nio.ByteBuffer>("getByteBuffer", "()Ljava/nio/ByteBuffer;"); }
+            return IExecuteWithSignature<Android.Renderscript.Element>("getElement", "()Landroid/renderscript/Element;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#getBytesSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#getType()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int BytesSize
+        /// <returns><see cref="Android.Renderscript.Type"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Type GetType()
         {
-            get { return IExecuteWithSignature<int>("getBytesSize", "()I"); }
+            return IExecuteWithSignature<Android.Renderscript.Type>("getType", "()Landroid/renderscript/Type;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#getElement()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#getSurface()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Element Element
+        /// <returns><see cref="Android.View.Surface"/></returns>
+        [global::System.Obsolete()]
+        public Android.View.Surface GetSurface()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Element>("getElement", "()Landroid/renderscript/Element;"); }
+            return IExecuteWithSignature<Android.View.Surface>("getSurface", "()Landroid/view/Surface;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#getStride()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#getBytesSize()"/>
         /// </summary>
-        [System.Obsolete()]
-        public long Stride
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetBytesSize()
         {
-            get { return IExecuteWithSignature<long>("getStride", "()J"); }
+            return IExecuteWithSignature<int>("getBytesSize", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#getSurface()"/> <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#setSurface(android.view.Surface)"/>
+        /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#getUsage()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.View.Surface Surface
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetUsage()
         {
-            get { return IExecuteWithSignature<Android.View.Surface>("getSurface", "()Landroid/view/Surface;"); } set { IExecuteWithSignature("setSurface", "(Landroid/view/Surface;)V", value); }
+            return IExecuteWithSignature<int>("getUsage", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#getTimeStamp()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#getByteBuffer()"/>
         /// </summary>
-        [System.Obsolete()]
-        public long TimeStamp
+        /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
+        [global::System.Obsolete()]
+        public Java.Nio.ByteBuffer GetByteBuffer()
         {
-            get { return IExecuteWithSignature<long>("getTimeStamp", "()J"); }
+            return IExecuteWithSignature<Java.Nio.ByteBuffer>("getByteBuffer", "()Ljava/nio/ByteBuffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#getType()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#getStride()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Type Type
+        /// <returns><see cref="long"/></returns>
+        [global::System.Obsolete()]
+        public long GetStride()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Type>("getType", "()Landroid/renderscript/Type;"); }
+            return IExecuteWithSignature<long>("getStride", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#getUsage()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#getTimeStamp()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int Usage
+        /// <returns><see cref="long"/></returns>
+        [global::System.Obsolete()]
+        public long GetTimeStamp()
         {
-            get { return IExecuteWithSignature<int>("getUsage", "()I"); }
+            return IExecuteWithSignature<long>("getTimeStamp", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#resize(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Resize(int arg0)
         {
             IExecuteWithSignature("resize", "(I)V", arg0);
@@ -375,7 +383,7 @@ namespace Android.Renderscript
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy1DRangeFrom(int arg0, int arg1, Android.Renderscript.Allocation arg2, int arg3)
         {
             IExecute("copy1DRangeFrom", arg0, arg1, arg2, arg3);
@@ -386,7 +394,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="byte"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy1DRangeFrom(int arg0, int arg1, byte[] arg2)
         {
             IExecute("copy1DRangeFrom", arg0, arg1, arg2);
@@ -397,7 +405,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy1DRangeFrom(int arg0, int arg1, float[] arg2)
         {
             IExecute("copy1DRangeFrom", arg0, arg1, arg2);
@@ -408,7 +416,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy1DRangeFrom(int arg0, int arg1, int[] arg2)
         {
             IExecute("copy1DRangeFrom", arg0, arg1, arg2);
@@ -419,7 +427,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy1DRangeFrom(int arg0, int arg1, object arg2)
         {
             IExecute("copy1DRangeFrom", arg0, arg1, arg2);
@@ -430,7 +438,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="short"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy1DRangeFrom(int arg0, int arg1, short[] arg2)
         {
             IExecute("copy1DRangeFrom", arg0, arg1, arg2);
@@ -441,7 +449,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="byte"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy1DRangeFromUnchecked(int arg0, int arg1, byte[] arg2)
         {
             IExecute("copy1DRangeFromUnchecked", arg0, arg1, arg2);
@@ -452,7 +460,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy1DRangeFromUnchecked(int arg0, int arg1, float[] arg2)
         {
             IExecute("copy1DRangeFromUnchecked", arg0, arg1, arg2);
@@ -463,7 +471,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy1DRangeFromUnchecked(int arg0, int arg1, int[] arg2)
         {
             IExecute("copy1DRangeFromUnchecked", arg0, arg1, arg2);
@@ -474,7 +482,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy1DRangeFromUnchecked(int arg0, int arg1, object arg2)
         {
             IExecute("copy1DRangeFromUnchecked", arg0, arg1, arg2);
@@ -485,7 +493,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="short"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy1DRangeFromUnchecked(int arg0, int arg1, short[] arg2)
         {
             IExecute("copy1DRangeFromUnchecked", arg0, arg1, arg2);
@@ -496,7 +504,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="byte"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy1DRangeTo(int arg0, int arg1, byte[] arg2)
         {
             IExecute("copy1DRangeTo", arg0, arg1, arg2);
@@ -507,7 +515,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy1DRangeTo(int arg0, int arg1, float[] arg2)
         {
             IExecute("copy1DRangeTo", arg0, arg1, arg2);
@@ -518,7 +526,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy1DRangeTo(int arg0, int arg1, int[] arg2)
         {
             IExecute("copy1DRangeTo", arg0, arg1, arg2);
@@ -529,7 +537,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy1DRangeTo(int arg0, int arg1, object arg2)
         {
             IExecute("copy1DRangeTo", arg0, arg1, arg2);
@@ -540,7 +548,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="short"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy1DRangeTo(int arg0, int arg1, short[] arg2)
         {
             IExecute("copy1DRangeTo", arg0, arg1, arg2);
@@ -551,7 +559,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="byte"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy1DRangeToUnchecked(int arg0, int arg1, byte[] arg2)
         {
             IExecute("copy1DRangeToUnchecked", arg0, arg1, arg2);
@@ -562,7 +570,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy1DRangeToUnchecked(int arg0, int arg1, float[] arg2)
         {
             IExecute("copy1DRangeToUnchecked", arg0, arg1, arg2);
@@ -573,7 +581,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy1DRangeToUnchecked(int arg0, int arg1, int[] arg2)
         {
             IExecute("copy1DRangeToUnchecked", arg0, arg1, arg2);
@@ -584,7 +592,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy1DRangeToUnchecked(int arg0, int arg1, object arg2)
         {
             IExecute("copy1DRangeToUnchecked", arg0, arg1, arg2);
@@ -595,7 +603,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="short"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy1DRangeToUnchecked(int arg0, int arg1, short[] arg2)
         {
             IExecute("copy1DRangeToUnchecked", arg0, arg1, arg2);
@@ -606,7 +614,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.Graphics.Bitmap"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy2DRangeFrom(int arg0, int arg1, Android.Graphics.Bitmap arg2)
         {
             IExecute("copy2DRangeFrom", arg0, arg1, arg2);
@@ -621,7 +629,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Allocation arg4, int arg5, int arg6)
         {
             IExecute("copy2DRangeFrom", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -634,7 +642,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="byte"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, byte[] arg4)
         {
             IExecute("copy2DRangeFrom", arg0, arg1, arg2, arg3, arg4);
@@ -647,7 +655,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, float[] arg4)
         {
             IExecute("copy2DRangeFrom", arg0, arg1, arg2, arg3, arg4);
@@ -660,7 +668,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, int[] arg4)
         {
             IExecute("copy2DRangeFrom", arg0, arg1, arg2, arg3, arg4);
@@ -673,7 +681,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="object"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, object arg4)
         {
             IExecute("copy2DRangeFrom", arg0, arg1, arg2, arg3, arg4);
@@ -686,7 +694,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="short"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, short[] arg4)
         {
             IExecute("copy2DRangeFrom", arg0, arg1, arg2, arg3, arg4);
@@ -699,7 +707,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="byte"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy2DRangeTo(int arg0, int arg1, int arg2, int arg3, byte[] arg4)
         {
             IExecute("copy2DRangeTo", arg0, arg1, arg2, arg3, arg4);
@@ -712,7 +720,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy2DRangeTo(int arg0, int arg1, int arg2, int arg3, float[] arg4)
         {
             IExecute("copy2DRangeTo", arg0, arg1, arg2, arg3, arg4);
@@ -725,7 +733,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy2DRangeTo(int arg0, int arg1, int arg2, int arg3, int[] arg4)
         {
             IExecute("copy2DRangeTo", arg0, arg1, arg2, arg3, arg4);
@@ -738,7 +746,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="object"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy2DRangeTo(int arg0, int arg1, int arg2, int arg3, object arg4)
         {
             IExecute("copy2DRangeTo", arg0, arg1, arg2, arg3, arg4);
@@ -751,7 +759,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="short"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy2DRangeTo(int arg0, int arg1, int arg2, int arg3, short[] arg4)
         {
             IExecute("copy2DRangeTo", arg0, arg1, arg2, arg3, arg4);
@@ -769,7 +777,7 @@ namespace Android.Renderscript
         /// <param name="arg7"><see cref="int"/></param>
         /// <param name="arg8"><see cref="int"/></param>
         /// <param name="arg9"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy3DRangeFrom(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, Android.Renderscript.Allocation arg6, int arg7, int arg8, int arg9)
         {
             IExecute("copy3DRangeFrom", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
@@ -784,7 +792,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="object"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy3DRangeFrom(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, object arg6)
         {
             IExecute("copy3DRangeFrom", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -799,7 +807,7 @@ namespace Android.Renderscript
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="object"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Copy3DRangeTo(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, object arg6)
         {
             IExecute("copy3DRangeTo", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -808,7 +816,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(android.graphics.Bitmap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Bitmap"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CopyFrom(Android.Graphics.Bitmap arg0)
         {
             IExecuteWithSignature("copyFrom", "(Landroid/graphics/Bitmap;)V", arg0);
@@ -817,7 +825,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(android.renderscript.Allocation)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CopyFrom(Android.Renderscript.Allocation arg0)
         {
             IExecuteWithSignature("copyFrom", "(Landroid/renderscript/Allocation;)V", arg0);
@@ -826,7 +834,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(android.renderscript.BaseObj[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.BaseObj"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CopyFrom(Android.Renderscript.BaseObj[] arg0)
         {
             IExecuteWithSignature("copyFrom", "([Landroid/renderscript/BaseObj;)V", new object[] { arg0 });
@@ -835,7 +843,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CopyFrom(byte[] arg0)
         {
             IExecuteWithSignature("copyFrom", "([B)V", new object[] { arg0 });
@@ -844,7 +852,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CopyFrom(float[] arg0)
         {
             IExecuteWithSignature("copyFrom", "([F)V", new object[] { arg0 });
@@ -853,7 +861,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CopyFrom(int[] arg0)
         {
             IExecuteWithSignature("copyFrom", "([I)V", new object[] { arg0 });
@@ -862,7 +870,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CopyFrom(object arg0)
         {
             IExecuteWithSignature("copyFrom", "(Ljava/lang/Object;)V", arg0);
@@ -871,7 +879,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(short[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CopyFrom(short[] arg0)
         {
             IExecuteWithSignature("copyFrom", "([S)V", new object[] { arg0 });
@@ -880,7 +888,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFromUnchecked(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CopyFromUnchecked(byte[] arg0)
         {
             IExecuteWithSignature("copyFromUnchecked", "([B)V", new object[] { arg0 });
@@ -889,7 +897,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFromUnchecked(float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CopyFromUnchecked(float[] arg0)
         {
             IExecuteWithSignature("copyFromUnchecked", "([F)V", new object[] { arg0 });
@@ -898,7 +906,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFromUnchecked(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CopyFromUnchecked(int[] arg0)
         {
             IExecuteWithSignature("copyFromUnchecked", "([I)V", new object[] { arg0 });
@@ -907,7 +915,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFromUnchecked(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CopyFromUnchecked(object arg0)
         {
             IExecuteWithSignature("copyFromUnchecked", "(Ljava/lang/Object;)V", arg0);
@@ -916,7 +924,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFromUnchecked(short[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CopyFromUnchecked(short[] arg0)
         {
             IExecuteWithSignature("copyFromUnchecked", "([S)V", new object[] { arg0 });
@@ -925,7 +933,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyTo(android.graphics.Bitmap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Bitmap"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CopyTo(Android.Graphics.Bitmap arg0)
         {
             IExecuteWithSignature("copyTo", "(Landroid/graphics/Bitmap;)V", arg0);
@@ -934,7 +942,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyTo(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CopyTo(byte[] arg0)
         {
             IExecuteWithSignature("copyTo", "([B)V", new object[] { arg0 });
@@ -943,7 +951,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyTo(float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CopyTo(float[] arg0)
         {
             IExecuteWithSignature("copyTo", "([F)V", new object[] { arg0 });
@@ -952,7 +960,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyTo(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CopyTo(int[] arg0)
         {
             IExecuteWithSignature("copyTo", "([I)V", new object[] { arg0 });
@@ -961,7 +969,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CopyTo(object arg0)
         {
             IExecuteWithSignature("copyTo", "(Ljava/lang/Object;)V", arg0);
@@ -970,7 +978,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyTo(short[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CopyTo(short[] arg0)
         {
             IExecuteWithSignature("copyTo", "([S)V", new object[] { arg0 });
@@ -978,7 +986,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#generateMipmaps()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void GenerateMipmaps()
         {
             IExecuteWithSignature("generateMipmaps", "()V");
@@ -986,7 +994,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#ioReceive()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void IoReceive()
         {
             IExecuteWithSignature("ioReceive", "()V");
@@ -994,7 +1002,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#ioSend()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void IoSend()
         {
             IExecuteWithSignature("ioSend", "()V");
@@ -1003,7 +1011,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#setAutoPadding(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetAutoPadding(bool arg0)
         {
             IExecuteWithSignature("setAutoPadding", "(Z)V", arg0);
@@ -1013,7 +1021,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.FieldPacker"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetFromFieldPacker(int arg0, Android.Renderscript.FieldPacker arg1)
         {
             IExecute("setFromFieldPacker", arg0, arg1);
@@ -1024,7 +1032,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.Renderscript.FieldPacker"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetFromFieldPacker(int arg0, int arg1, Android.Renderscript.FieldPacker arg2)
         {
             IExecute("setFromFieldPacker", arg0, arg1, arg2);
@@ -1037,7 +1045,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Android.Renderscript.FieldPacker"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetFromFieldPacker(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.FieldPacker arg4)
         {
             IExecute("setFromFieldPacker", arg0, arg1, arg2, arg3, arg4);
@@ -1046,16 +1054,25 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#setOnBufferAvailableListener(android.renderscript.Allocation.OnBufferAvailableListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation.OnBufferAvailableListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetOnBufferAvailableListener(Android.Renderscript.Allocation.OnBufferAvailableListener arg0)
         {
             IExecuteWithSignature("setOnBufferAvailableListener", "(Landroid/renderscript/Allocation$OnBufferAvailableListener;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#setSurface(android.view.Surface)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Surface"/></param>
+        [global::System.Obsolete()]
+        public void SetSurface(Android.View.Surface arg0)
+        {
+            IExecuteWithSignature("setSurface", "(Landroid/view/Surface;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#syncAll(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SyncAll(int arg0)
         {
             IExecuteWithSignature("syncAll", "(I)V", arg0);
@@ -1079,21 +1096,21 @@ namespace Android.Renderscript
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.MipmapControl.html#MIPMAP_FULL"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Allocation.MipmapControl MIPMAP_FULL { get { if (!_MIPMAP_FULLReady) { _MIPMAP_FULLContent = SGetField<Android.Renderscript.Allocation.MipmapControl>(LocalBridgeClazz, "MIPMAP_FULL"); _MIPMAP_FULLReady = true; } return _MIPMAP_FULLContent; } }
             private static Android.Renderscript.Allocation.MipmapControl _MIPMAP_FULLContent = default;
             private static bool _MIPMAP_FULLReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.MipmapControl.html#MIPMAP_NONE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Allocation.MipmapControl MIPMAP_NONE { get { if (!_MIPMAP_NONEReady) { _MIPMAP_NONEContent = SGetField<Android.Renderscript.Allocation.MipmapControl>(LocalBridgeClazz, "MIPMAP_NONE"); _MIPMAP_NONEReady = true; } return _MIPMAP_NONEContent; } }
             private static Android.Renderscript.Allocation.MipmapControl _MIPMAP_NONEContent = default;
             private static bool _MIPMAP_NONEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.MipmapControl.html#MIPMAP_ON_SYNC_TO_TEXTURE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Allocation.MipmapControl MIPMAP_ON_SYNC_TO_TEXTURE { get { if (!_MIPMAP_ON_SYNC_TO_TEXTUREReady) { _MIPMAP_ON_SYNC_TO_TEXTUREContent = SGetField<Android.Renderscript.Allocation.MipmapControl>(LocalBridgeClazz, "MIPMAP_ON_SYNC_TO_TEXTURE"); _MIPMAP_ON_SYNC_TO_TEXTUREReady = true; } return _MIPMAP_ON_SYNC_TO_TEXTUREContent; } }
             private static Android.Renderscript.Allocation.MipmapControl _MIPMAP_ON_SYNC_TO_TEXTUREContent = default;
             private static bool _MIPMAP_ON_SYNC_TO_TEXTUREReady = false; // this is used because in case of generics 
@@ -1158,7 +1175,7 @@ namespace Android.Renderscript
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onBufferAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Renderscript.Allocation>>>(OnBufferAvailableEventHandler));
+                AddEventHandler("onBufferAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Renderscript.Allocation>>>(OnBufferAvailableEventHandler));
 
             }
 
@@ -1166,7 +1183,7 @@ namespace Android.Renderscript
             /// Handler for <see href="https://developer.android.com/reference/android/renderscript/Allocation.OnBufferAvailableListener.html#onBufferAvailable(android.renderscript.Allocation)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnBufferAvailable"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Renderscript.Allocation> OnOnBufferAvailable { get; set; } = null;
+            public global::System.Action<Android.Renderscript.Allocation> OnOnBufferAvailable { get; set; } = null;
 
             void OnBufferAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Renderscript.Allocation>> data)
             {
@@ -1178,7 +1195,7 @@ namespace Android.Renderscript
             /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.OnBufferAvailableListener.html#onBufferAvailable(android.renderscript.Allocation)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnBufferAvailable(Android.Renderscript.Allocation arg0)
             {
                 
@@ -1218,7 +1235,7 @@ namespace Android.Renderscript
             /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.OnBufferAvailableListener.html#onBufferAvailable(android.renderscript.Allocation)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnBufferAvailable(Android.Renderscript.Allocation arg0)
             {
                 IExecuteWithSignature("onBufferAvailable", "(Landroid/renderscript/Allocation;)V", arg0);

@@ -70,33 +70,28 @@ namespace Android.Gesture
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/gesture/GestureStore.html#getGestureEntries()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> GestureEntries
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getGestureEntries", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/gesture/GestureStore.html#getOrientationStyle()"/> <see href="https://developer.android.com/reference/android/gesture/GestureStore.html#setOrientationStyle(int)"/>
-        /// </summary>
-        public int OrientationStyle
-        {
-            get { return IExecuteWithSignature<int>("getOrientationStyle", "()I"); } set { IExecuteWithSignature("setOrientationStyle", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/gesture/GestureStore.html#getSequenceType()"/> <see href="https://developer.android.com/reference/android/gesture/GestureStore.html#setSequenceType(int)"/>
-        /// </summary>
-        public int SequenceType
-        {
-            get { return IExecuteWithSignature<int>("getSequenceType", "()I"); } set { IExecuteWithSignature("setSequenceType", "(I)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/GestureStore.html#hasChanged()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasChanged()
         {
             return IExecuteWithSignature<bool>("hasChanged", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureStore.html#getOrientationStyle()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOrientationStyle()
+        {
+            return IExecuteWithSignature<int>("getOrientationStyle", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureStore.html#getSequenceType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSequenceType()
+        {
+            return IExecuteWithSignature<int>("getSequenceType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/GestureStore.html#getGestures(java.lang.String)"/>
@@ -115,6 +110,14 @@ namespace Android.Gesture
         public Java.Util.ArrayList<Android.Gesture.Prediction> Recognize(Android.Gesture.Gesture arg0)
         {
             return IExecuteWithSignature<Java.Util.ArrayList<Android.Gesture.Prediction>>("recognize", "(Landroid/gesture/Gesture;)Ljava/util/ArrayList;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureStore.html#getGestureEntries()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetGestureEntries()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getGestureEntries", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/GestureStore.html#addGesture(java.lang.String,android.gesture.Gesture)"/>
@@ -179,6 +182,22 @@ namespace Android.Gesture
         public void Save(Java.Io.OutputStream arg0)
         {
             IExecuteWithSignature("save", "(Ljava/io/OutputStream;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureStore.html#setOrientationStyle(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetOrientationStyle(int arg0)
+        {
+            IExecuteWithSignature("setOrientationStyle", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureStore.html#setSequenceType(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetSequenceType(int arg0)
+        {
+            IExecuteWithSignature("setSequenceType", "(I)V", arg0);
         }
 
         #endregion

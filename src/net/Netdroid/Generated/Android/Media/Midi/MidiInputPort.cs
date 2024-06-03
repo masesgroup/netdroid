@@ -50,11 +50,12 @@ namespace Android.Media.Midi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/midi/MidiInputPort.html#getPortNumber()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/midi/MidiInputPort.html#getPortNumber()"/>
         /// </summary>
-        public int PortNumber
+        /// <returns><see cref="int"/></returns>
+        public int GetPortNumber()
         {
-            get { return IExecuteWithSignature<int>("getPortNumber", "()I"); }
+            return IExecuteWithSignature<int>("getPortNumber", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/midi/MidiInputPort.html#close()"/>

@@ -74,20 +74,6 @@ namespace Android.Se.Omapi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/se/omapi/SEService.html#getReaders()"/> 
-        /// </summary>
-        public Android.Se.Omapi.Reader[] Readers
-        {
-            get { return IExecuteWithSignatureArray<Android.Se.Omapi.Reader>("getReaders", "()[Landroid/se/omapi/Reader;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/se/omapi/SEService.html#getVersion()"/> 
-        /// </summary>
-        public Java.Lang.String Version
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVersion", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/se/omapi/SEService.html#getUiccReader(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -97,12 +83,28 @@ namespace Android.Se.Omapi
             return IExecuteWithSignature<Android.Se.Omapi.Reader>("getUiccReader", "(I)Landroid/se/omapi/Reader;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/se/omapi/SEService.html#getReaders()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Se.Omapi.Reader"/></returns>
+        public Android.Se.Omapi.Reader[] GetReaders()
+        {
+            return IExecuteWithSignatureArray<Android.Se.Omapi.Reader>("getReaders", "()[Landroid/se/omapi/Reader;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/se/omapi/SEService.html#isConnected()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsConnected()
         {
             return IExecuteWithSignature<bool>("isConnected", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/se/omapi/SEService.html#getVersion()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetVersion()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getVersion", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/se/omapi/SEService.html#shutdown()"/>
@@ -140,7 +142,7 @@ namespace Android.Se.Omapi
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onConnected", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnConnectedEventHandler));
+                AddEventHandler("onConnected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnConnectedEventHandler));
 
             }
 
@@ -148,7 +150,7 @@ namespace Android.Se.Omapi
             /// Handler for <see href="https://developer.android.com/reference/android/se/omapi/SEService.OnConnectedListener.html#onConnected()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnConnected"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnConnected { get; set; } = null;
+            public global::System.Action OnOnConnected { get; set; } = null;
 
             void OnConnectedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {

@@ -82,7 +82,7 @@ namespace Android.Companion
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#EXTRA_DEVICE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_DEVICE { get { if (!_EXTRA_DEVICEReady) { _EXTRA_DEVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_DEVICE"); _EXTRA_DEVICEReady = true; } return _EXTRA_DEVICEContent; } }
         private static Java.Lang.String _EXTRA_DEVICEContent = default;
         private static bool _EXTRA_DEVICEReady = false; // this is used because in case of generics 
@@ -94,21 +94,6 @@ namespace Android.Companion
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#getAssociations()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Util.List<Java.Lang.String> Associations
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getAssociations", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#getMyAssociations()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Companion.AssociationInfo> MyAssociations
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Companion.AssociationInfo>>("getMyAssociations", "()Ljava/util/List;"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#buildAssociationCancellationIntent()"/>
         /// </summary>
@@ -132,10 +117,27 @@ namespace Android.Companion
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool HasNotificationAccess(Android.Content.ComponentName arg0)
         {
             return IExecuteWithSignature<bool>("hasNotificationAccess", "(Landroid/content/ComponentName;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#getMyAssociations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Companion.AssociationInfo> GetMyAssociations()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Companion.AssociationInfo>>("getMyAssociations", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#getAssociations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        [global::System.Obsolete()]
+        public Java.Util.List<Java.Lang.String> GetAssociations()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getAssociations", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#associate(android.companion.AssociationRequest,android.companion.CompanionDeviceManager.Callback,android.os.Handler)"/>
@@ -198,7 +200,7 @@ namespace Android.Companion
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#disassociate(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Disassociate(Java.Lang.String arg0)
         {
             IExecuteWithSignature("disassociate", "(Ljava/lang/String;)V", arg0);
@@ -301,7 +303,7 @@ namespace Android.Companion
             /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.Callback.html#onDeviceFound(android.content.IntentSender)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.IntentSender"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnDeviceFound(Android.Content.IntentSender arg0)
             {
                 IExecuteWithSignature("onDeviceFound", "(Landroid/content/IntentSender;)V", arg0);

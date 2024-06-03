@@ -28,7 +28,7 @@ namespace Org.W3c.Dom.Ls
 {
     #region DOMImplementationLS
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/DOMImplementationLS.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/DOMImplementationLS.html"/>
     /// </summary>
     public partial class DOMImplementationLS : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMImplementationLS>
     {
@@ -36,12 +36,12 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DOMImplementationLS class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMImplementationLS class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMImplementationLS() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DOMImplementationLS class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMImplementationLS class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMImplementationLS(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,7 +74,7 @@ namespace Org.W3c.Dom.Ls
 
     #region LSException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSException.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSException.html"/>
     /// </summary>
     public partial class LSException : Java.Lang.RuntimeException
     {
@@ -91,7 +91,7 @@ namespace Org.W3c.Dom.Ls
 
     #region LSInput
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSInput.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html"/>
     /// </summary>
     public partial class LSInput : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LSInput>
     {
@@ -99,12 +99,12 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("LSInput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("LSInput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LSInput() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("LSInput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("LSInput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LSInput(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -137,7 +137,7 @@ namespace Org.W3c.Dom.Ls
 
     #region LSOutput
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSOutput.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSOutput.html"/>
     /// </summary>
     public partial class LSOutput : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LSOutput>
     {
@@ -145,12 +145,12 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("LSOutput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("LSOutput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LSOutput() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("LSOutput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("LSOutput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LSOutput(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -183,7 +183,7 @@ namespace Org.W3c.Dom.Ls
 
     #region LSParser
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html"/>
     /// </summary>
     public partial class LSParser : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LSParser>
     {
@@ -191,12 +191,12 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("LSParser class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("LSParser class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LSParser() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("LSParser class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("LSParser class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LSParser(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -229,7 +229,7 @@ namespace Org.W3c.Dom.Ls
 
     #region LSParserFilter
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParserFilter.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParserFilter.html"/>
     /// </summary>
     public partial class LSParserFilter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LSParserFilter>
     {
@@ -237,12 +237,12 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("LSParserFilter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("LSParserFilter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LSParserFilter() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("LSParserFilter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("LSParserFilter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LSParserFilter(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -275,7 +275,7 @@ namespace Org.W3c.Dom.Ls
 
     #region LSResourceResolver
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSResourceResolver.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSResourceResolver.html"/>
     /// </summary>
     public partial class LSResourceResolver : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LSResourceResolver>
     {
@@ -283,12 +283,12 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("LSResourceResolver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("LSResourceResolver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LSResourceResolver() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("LSResourceResolver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("LSResourceResolver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LSResourceResolver(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -321,7 +321,7 @@ namespace Org.W3c.Dom.Ls
 
     #region LSSerializer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSSerializer.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSSerializer.html"/>
     /// </summary>
     public partial class LSSerializer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LSSerializer>
     {
@@ -329,12 +329,12 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("LSSerializer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("LSSerializer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LSSerializer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("LSSerializer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("LSSerializer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LSSerializer(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

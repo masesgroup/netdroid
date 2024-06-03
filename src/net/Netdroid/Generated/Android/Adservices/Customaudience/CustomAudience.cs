@@ -52,67 +52,44 @@ namespace Android.Adservices.Customaudience
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getActivationTime()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getUserBiddingSignals()"/>
         /// </summary>
-        public Java.Time.Instant ActivationTime
+        /// <returns><see cref="Android.Adservices.Common.AdSelectionSignals"/></returns>
+        public Android.Adservices.Common.AdSelectionSignals GetUserBiddingSignals()
         {
-            get { return IExecuteWithSignature<Java.Time.Instant>("getActivationTime", "()Ljava/time/Instant;"); }
+            return IExecuteWithSignature<Android.Adservices.Common.AdSelectionSignals>("getUserBiddingSignals", "()Landroid/adservices/common/AdSelectionSignals;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getAds()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getBuyer()"/>
         /// </summary>
-        public Java.Util.List<Android.Adservices.Common.AdData> Ads
+        /// <returns><see cref="Android.Adservices.Common.AdTechIdentifier"/></returns>
+        public Android.Adservices.Common.AdTechIdentifier GetBuyer()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Adservices.Common.AdData>>("getAds", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Adservices.Common.AdTechIdentifier>("getBuyer", "()Landroid/adservices/common/AdTechIdentifier;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getBiddingLogicUri()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getTrustedBiddingData()"/>
         /// </summary>
-        public Android.Net.Uri BiddingLogicUri
+        /// <returns><see cref="Android.Adservices.Customaudience.TrustedBiddingData"/></returns>
+        public Android.Adservices.Customaudience.TrustedBiddingData GetTrustedBiddingData()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getBiddingLogicUri", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Adservices.Customaudience.TrustedBiddingData>("getTrustedBiddingData", "()Landroid/adservices/customaudience/TrustedBiddingData;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getBuyer()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getBiddingLogicUri()"/>
         /// </summary>
-        public Android.Adservices.Common.AdTechIdentifier Buyer
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetBiddingLogicUri()
         {
-            get { return IExecuteWithSignature<Android.Adservices.Common.AdTechIdentifier>("getBuyer", "()Landroid/adservices/common/AdTechIdentifier;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getBiddingLogicUri", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getDailyUpdateUri()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getDailyUpdateUri()"/>
         /// </summary>
-        public Android.Net.Uri DailyUpdateUri
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetDailyUpdateUri()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getDailyUpdateUri", "()Landroid/net/Uri;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getExpirationTime()"/> 
-        /// </summary>
-        public Java.Time.Instant ExpirationTime
-        {
-            get { return IExecuteWithSignature<Java.Time.Instant>("getExpirationTime", "()Ljava/time/Instant;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getTrustedBiddingData()"/> 
-        /// </summary>
-        public Android.Adservices.Customaudience.TrustedBiddingData TrustedBiddingData
-        {
-            get { return IExecuteWithSignature<Android.Adservices.Customaudience.TrustedBiddingData>("getTrustedBiddingData", "()Landroid/adservices/customaudience/TrustedBiddingData;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getUserBiddingSignals()"/> 
-        /// </summary>
-        public Android.Adservices.Common.AdSelectionSignals UserBiddingSignals
-        {
-            get { return IExecuteWithSignature<Android.Adservices.Common.AdSelectionSignals>("getUserBiddingSignals", "()Landroid/adservices/common/AdSelectionSignals;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getDailyUpdateUri", "()Landroid/net/Uri;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#describeContents()"/>
@@ -121,6 +98,38 @@ namespace Android.Adservices.Customaudience
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getActivationTime()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.Instant"/></returns>
+        public Java.Time.Instant GetActivationTime()
+        {
+            return IExecuteWithSignature<Java.Time.Instant>("getActivationTime", "()Ljava/time/Instant;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getExpirationTime()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.Instant"/></returns>
+        public Java.Time.Instant GetExpirationTime()
+        {
+            return IExecuteWithSignature<Java.Time.Instant>("getExpirationTime", "()Ljava/time/Instant;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getAds()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Adservices.Common.AdData> GetAds()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Adservices.Common.AdData>>("getAds", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#writeToParcel(android.os.Parcel,int)"/>

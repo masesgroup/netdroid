@@ -140,95 +140,52 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getAnimationStyle()"/> <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setAnimationStyle(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getBackground()"/>
         /// </summary>
-        public int AnimationStyle
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetBackground()
         {
-            get { return IExecuteWithSignature<int>("getAnimationStyle", "()I"); } set { IExecuteWithSignature("setAnimationStyle", "(I)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getBackground", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getBackground()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getEpicenterBounds()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable Background
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetEpicenterBounds()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getBackground", "()Landroid/graphics/drawable/Drawable;"); }
+            return IExecuteWithSignature<Android.Graphics.Rect>("getEpicenterBounds", "()Landroid/graphics/Rect;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getContentView()"/> <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setContentView(android.view.View)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getEnterTransition()"/>
         /// </summary>
-        public Android.View.View ContentView
+        /// <returns><see cref="Android.Transition.Transition"/></returns>
+        public Android.Transition.Transition GetEnterTransition()
         {
-            get { return IExecuteWithSignature<Android.View.View>("getContentView", "()Landroid/view/View;"); } set { IExecuteWithSignature("setContentView", "(Landroid/view/View;)V", value); }
+            return IExecuteWithSignature<Android.Transition.Transition>("getEnterTransition", "()Landroid/transition/Transition;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getElevation()"/> <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setElevation(float)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getExitTransition()"/>
         /// </summary>
-        public float Elevation
+        /// <returns><see cref="Android.Transition.Transition"/></returns>
+        public Android.Transition.Transition GetExitTransition()
         {
-            get { return IExecuteWithSignature<float>("getElevation", "()F"); } set { IExecuteWithSignature("setElevation", "(F)V", value); }
+            return IExecuteWithSignature<Android.Transition.Transition>("getExitTransition", "()Landroid/transition/Transition;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getEnterTransition()"/> <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setEnterTransition(android.transition.Transition)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getContentView()"/>
         /// </summary>
-        public Android.Transition.Transition EnterTransition
+        /// <returns><see cref="Android.View.View"/></returns>
+        public Android.View.View GetContentView()
         {
-            get { return IExecuteWithSignature<Android.Transition.Transition>("getEnterTransition", "()Landroid/transition/Transition;"); } set { IExecuteWithSignature("setEnterTransition", "(Landroid/transition/Transition;)V", value); }
+            return IExecuteWithSignature<Android.View.View>("getContentView", "()Landroid/view/View;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getEpicenterBounds()"/> <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setEpicenterBounds(android.graphics.Rect)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getOverlapAnchor()"/>
         /// </summary>
-        public Android.Graphics.Rect EpicenterBounds
+        /// <returns><see cref="bool"/></returns>
+        public bool GetOverlapAnchor()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getEpicenterBounds", "()Landroid/graphics/Rect;"); } set { IExecuteWithSignature("setEpicenterBounds", "(Landroid/graphics/Rect;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getExitTransition()"/> <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setExitTransition(android.transition.Transition)"/>
-        /// </summary>
-        public Android.Transition.Transition ExitTransition
-        {
-            get { return IExecuteWithSignature<Android.Transition.Transition>("getExitTransition", "()Landroid/transition/Transition;"); } set { IExecuteWithSignature("setExitTransition", "(Landroid/transition/Transition;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getHeight()"/> <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setHeight(int)"/>
-        /// </summary>
-        public int Height
-        {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); } set { IExecuteWithSignature("setHeight", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getInputMethodMode()"/> <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setInputMethodMode(int)"/>
-        /// </summary>
-        public int InputMethodMode
-        {
-            get { return IExecuteWithSignature<int>("getInputMethodMode", "()I"); } set { IExecuteWithSignature("setInputMethodMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getOverlapAnchor()"/> <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setOverlapAnchor(boolean)"/>
-        /// </summary>
-        public bool OverlapAnchor
-        {
-            get { return IExecuteWithSignature<bool>("getOverlapAnchor", "()Z"); } set { IExecuteWithSignature("setOverlapAnchor", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getSoftInputMode()"/> <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setSoftInputMode(int)"/>
-        /// </summary>
-        public int SoftInputMode
-        {
-            get { return IExecuteWithSignature<int>("getSoftInputMode", "()I"); } set { IExecuteWithSignature("setSoftInputMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getWidth()"/> <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setWidth(int)"/>
-        /// </summary>
-        public int Width
-        {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); } set { IExecuteWithSignature("setWidth", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getWindowLayoutType()"/> <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setWindowLayoutType(int)"/>
-        /// </summary>
-        public int WindowLayoutType
-        {
-            get { return IExecuteWithSignature<int>("getWindowLayoutType", "()I"); } set { IExecuteWithSignature("setWindowLayoutType", "(I)V", value); }
+            return IExecuteWithSignature<bool>("getOverlapAnchor", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#isAboveAnchor()"/>
@@ -319,6 +276,38 @@ namespace Android.Widget
             return IExecuteWithSignature<bool>("isTouchModal", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getElevation()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetElevation()
+        {
+            return IExecuteWithSignature<float>("getElevation", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getAnimationStyle()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAnimationStyle()
+        {
+            return IExecuteWithSignature<int>("getAnimationStyle", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHeight()
+        {
+            return IExecuteWithSignature<int>("getHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getInputMethodMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInputMethodMode()
+        {
+            return IExecuteWithSignature<int>("getInputMethodMode", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getMaxAvailableHeight(android.view.View,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
@@ -349,11 +338,43 @@ namespace Android.Widget
             return IExecuteWithSignature<int>("getMaxAvailableHeight", "(Landroid/view/View;)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getSoftInputMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSoftInputMode()
+        {
+            return IExecuteWithSignature<int>("getSoftInputMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWidth()
+        {
+            return IExecuteWithSignature<int>("getWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getWindowLayoutType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWindowLayoutType()
+        {
+            return IExecuteWithSignature<int>("getWindowLayoutType", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#dismiss()"/>
         /// </summary>
         public void Dismiss()
         {
             IExecuteWithSignature("dismiss", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setAnimationStyle(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetAnimationStyle(int arg0)
+        {
+            IExecuteWithSignature("setAnimationStyle", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setAttachedInDecor(boolean)"/>
@@ -380,6 +401,46 @@ namespace Android.Widget
             IExecuteWithSignature("setClippingEnabled", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setContentView(android.view.View)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        public void SetContentView(Android.View.View arg0)
+        {
+            IExecuteWithSignature("setContentView", "(Landroid/view/View;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setElevation(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetElevation(float arg0)
+        {
+            IExecuteWithSignature("setElevation", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setEnterTransition(android.transition.Transition)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Transition.Transition"/></param>
+        public void SetEnterTransition(Android.Transition.Transition arg0)
+        {
+            IExecuteWithSignature("setEnterTransition", "(Landroid/transition/Transition;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setEpicenterBounds(android.graphics.Rect)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
+        public void SetEpicenterBounds(Android.Graphics.Rect arg0)
+        {
+            IExecuteWithSignature("setEpicenterBounds", "(Landroid/graphics/Rect;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setExitTransition(android.transition.Transition)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Transition.Transition"/></param>
+        public void SetExitTransition(Android.Transition.Transition arg0)
+        {
+            IExecuteWithSignature("setExitTransition", "(Landroid/transition/Transition;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setFocusable(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -388,11 +449,27 @@ namespace Android.Widget
             IExecuteWithSignature("setFocusable", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setHeight(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetHeight(int arg0)
+        {
+            IExecuteWithSignature("setHeight", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setIgnoreCheekPress()"/>
         /// </summary>
         public void SetIgnoreCheekPress()
         {
             IExecuteWithSignature("setIgnoreCheekPress", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setInputMethodMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetInputMethodMode(int arg0)
+        {
+            IExecuteWithSignature("setInputMethodMode", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setIsClippedToScreen(boolean)"/>
@@ -427,6 +504,22 @@ namespace Android.Widget
             IExecuteWithSignature("setOutsideTouchable", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setOverlapAnchor(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetOverlapAnchor(bool arg0)
+        {
+            IExecuteWithSignature("setOverlapAnchor", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setSoftInputMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetSoftInputMode(int arg0)
+        {
+            IExecuteWithSignature("setSoftInputMode", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setSplitTouchEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -459,14 +552,30 @@ namespace Android.Widget
             IExecuteWithSignature("setTouchModal", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setWidth(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetWidth(int arg0)
+        {
+            IExecuteWithSignature("setWidth", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setWindowLayoutMode(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetWindowLayoutMode(int arg0, int arg1)
         {
             IExecute("setWindowLayoutMode", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setWindowLayoutType(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetWindowLayoutType(int arg0)
+        {
+            IExecuteWithSignature("setWindowLayoutType", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#showAsDropDown(android.view.View,int,int,int)"/>
@@ -598,7 +707,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDismiss", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnDismissEventHandler));
+                AddEventHandler("onDismiss", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnDismissEventHandler));
 
             }
 
@@ -606,7 +715,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/PopupWindow.OnDismissListener.html#onDismiss()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDismiss"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnDismiss { get; set; } = null;
+            public global::System.Action OnOnDismiss { get; set; } = null;
 
             void OnDismissEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {

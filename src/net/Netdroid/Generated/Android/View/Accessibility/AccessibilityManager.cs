@@ -72,35 +72,6 @@ namespace Android.View.Accessibility
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#getAccessibilityFocusColor()"/> 
-        /// </summary>
-        public int AccessibilityFocusColor
-        {
-            get { return IExecuteWithSignature<int>("getAccessibilityFocusColor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#getAccessibilityFocusStrokeWidth()"/> 
-        /// </summary>
-        public int AccessibilityFocusStrokeWidth
-        {
-            get { return IExecuteWithSignature<int>("getAccessibilityFocusStrokeWidth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#getAccessibilityServiceList()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Util.List<Android.Content.Pm.ServiceInfo> AccessibilityServiceList
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ServiceInfo>>("getAccessibilityServiceList", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#getInstalledAccessibilityServiceList()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Accessibilityservice.AccessibilityServiceInfo> InstalledAccessibilityServiceList
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Accessibilityservice.AccessibilityServiceInfo>>("getInstalledAccessibilityServiceList", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#addAccessibilityStateChangeListener(android.view.accessibility.AccessibilityManager.AccessibilityStateChangeListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Accessibility.AccessibilityManager.AccessibilityStateChangeListener"/></param>
@@ -187,6 +158,22 @@ namespace Android.View.Accessibility
             return IExecuteWithSignature<bool>("removeTouchExplorationStateChangeListener", "(Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#getAccessibilityFocusColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAccessibilityFocusColor()
+        {
+            return IExecuteWithSignature<int>("getAccessibilityFocusColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#getAccessibilityFocusStrokeWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAccessibilityFocusStrokeWidth()
+        {
+            return IExecuteWithSignature<int>("getAccessibilityFocusStrokeWidth", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#getRecommendedTimeoutMillis(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -204,6 +191,23 @@ namespace Android.View.Accessibility
         public Java.Util.List<Android.Accessibilityservice.AccessibilityServiceInfo> GetEnabledAccessibilityServiceList(int arg0)
         {
             return IExecuteWithSignature<Java.Util.List<Android.Accessibilityservice.AccessibilityServiceInfo>>("getEnabledAccessibilityServiceList", "(I)Ljava/util/List;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#getInstalledAccessibilityServiceList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Accessibilityservice.AccessibilityServiceInfo> GetInstalledAccessibilityServiceList()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Accessibilityservice.AccessibilityServiceInfo>>("getInstalledAccessibilityServiceList", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#getAccessibilityServiceList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        [global::System.Obsolete()]
+        public Java.Util.List<Android.Content.Pm.ServiceInfo> GetAccessibilityServiceList()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ServiceInfo>>("getAccessibilityServiceList", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#addAccessibilityRequestPreparer(android.view.accessibility.AccessibilityRequestPreparer)"/>
@@ -309,7 +313,7 @@ namespace Android.View.Accessibility
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onAccessibilityServicesStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.Accessibility.AccessibilityManager>>>(OnAccessibilityServicesStateChangedEventHandler));
+                AddEventHandler("onAccessibilityServicesStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.Accessibility.AccessibilityManager>>>(OnAccessibilityServicesStateChangedEventHandler));
 
             }
 
@@ -317,7 +321,7 @@ namespace Android.View.Accessibility
             /// Handler for <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener.html#onAccessibilityServicesStateChanged(android.view.accessibility.AccessibilityManager)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAccessibilityServicesStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.Accessibility.AccessibilityManager> OnOnAccessibilityServicesStateChanged { get; set; } = null;
+            public global::System.Action<Android.View.Accessibility.AccessibilityManager> OnOnAccessibilityServicesStateChanged { get; set; } = null;
 
             void OnAccessibilityServicesStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.Accessibility.AccessibilityManager>> data)
             {
@@ -408,7 +412,7 @@ namespace Android.View.Accessibility
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onAccessibilityStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnAccessibilityStateChangedEventHandler));
+                AddEventHandler("onAccessibilityStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnAccessibilityStateChangedEventHandler));
 
             }
 
@@ -416,7 +420,7 @@ namespace Android.View.Accessibility
             /// Handler for <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener.html#onAccessibilityStateChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAccessibilityStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<bool> OnOnAccessibilityStateChanged { get; set; } = null;
+            public global::System.Action<bool> OnOnAccessibilityStateChanged { get; set; } = null;
 
             void OnAccessibilityStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
             {
@@ -507,7 +511,7 @@ namespace Android.View.Accessibility
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onAudioDescriptionRequestedChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnAudioDescriptionRequestedChangedEventHandler));
+                AddEventHandler("onAudioDescriptionRequestedChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnAudioDescriptionRequestedChangedEventHandler));
 
             }
 
@@ -515,7 +519,7 @@ namespace Android.View.Accessibility
             /// Handler for <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener.html#onAudioDescriptionRequestedChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAudioDescriptionRequestedChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<bool> OnOnAudioDescriptionRequestedChanged { get; set; } = null;
+            public global::System.Action<bool> OnOnAudioDescriptionRequestedChanged { get; set; } = null;
 
             void OnAudioDescriptionRequestedChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
             {
@@ -606,7 +610,7 @@ namespace Android.View.Accessibility
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onTouchExplorationStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnTouchExplorationStateChangedEventHandler));
+                AddEventHandler("onTouchExplorationStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnTouchExplorationStateChangedEventHandler));
 
             }
 
@@ -614,7 +618,7 @@ namespace Android.View.Accessibility
             /// Handler for <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener.html#onTouchExplorationStateChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTouchExplorationStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<bool> OnOnTouchExplorationStateChanged { get; set; } = null;
+            public global::System.Action<bool> OnOnTouchExplorationStateChanged { get; set; } = null;
 
             void OnTouchExplorationStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
             {

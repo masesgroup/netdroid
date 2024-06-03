@@ -64,13 +64,6 @@ namespace Android.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/Dumpable.html#getDumpableName()"/> 
-        /// </summary>
-        public Java.Lang.String DumpableName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDumpableName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Dumpable.html#dump(java.io.PrintWriter,java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PrintWriter"/></param>
@@ -78,6 +71,14 @@ namespace Android.Util
         public void Dump(Java.Io.PrintWriter arg0, Java.Lang.String[] arg1)
         {
             IExecute("dump", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/Dumpable.html#getDumpableName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDumpableName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDumpableName", "()Ljava/lang/String;");
         }
 
         #endregion

@@ -56,27 +56,6 @@ namespace Android.Os
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/LocaleList.html#getAdjustedDefault()"/> 
-        /// </summary>
-        public static Android.Os.LocaleList AdjustedDefault
-        {
-            get { return SExecuteWithSignature<Android.Os.LocaleList>(LocalBridgeClazz, "getAdjustedDefault", "()Landroid/os/LocaleList;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/LocaleList.html#getDefault()"/> <see href="https://developer.android.com/reference/android/os/LocaleList.html#setDefault(android.os.LocaleList)"/>
-        /// </summary>
-        public static Android.Os.LocaleList Default
-        {
-            get { return SExecuteWithSignature<Android.Os.LocaleList>(LocalBridgeClazz, "getDefault", "()Landroid/os/LocaleList;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Landroid/os/LocaleList;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/LocaleList.html#getEmptyLocaleList()"/> 
-        /// </summary>
-        public static Android.Os.LocaleList EmptyLocaleList
-        {
-            get { return SExecuteWithSignature<Android.Os.LocaleList>(LocalBridgeClazz, "getEmptyLocaleList", "()Landroid/os/LocaleList;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/LocaleList.html#forLanguageTags(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -84,6 +63,30 @@ namespace Android.Os
         public static Android.Os.LocaleList ForLanguageTags(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Android.Os.LocaleList>(LocalBridgeClazz, "forLanguageTags", "(Ljava/lang/String;)Landroid/os/LocaleList;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/LocaleList.html#getAdjustedDefault()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.LocaleList"/></returns>
+        public static Android.Os.LocaleList GetAdjustedDefault()
+        {
+            return SExecuteWithSignature<Android.Os.LocaleList>(LocalBridgeClazz, "getAdjustedDefault", "()Landroid/os/LocaleList;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/LocaleList.html#getDefault()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.LocaleList"/></returns>
+        public static Android.Os.LocaleList GetDefault()
+        {
+            return SExecuteWithSignature<Android.Os.LocaleList>(LocalBridgeClazz, "getDefault", "()Landroid/os/LocaleList;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/LocaleList.html#getEmptyLocaleList()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.LocaleList"/></returns>
+        public static Android.Os.LocaleList GetEmptyLocaleList()
+        {
+            return SExecuteWithSignature<Android.Os.LocaleList>(LocalBridgeClazz, "getEmptyLocaleList", "()Landroid/os/LocaleList;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/LocaleList.html#isPseudoLocale(android.icu.util.ULocale)"/>
@@ -103,6 +106,14 @@ namespace Android.Os
         public static bool MatchesLanguageAndScript(Java.Util.Locale arg0, Java.Util.Locale arg1)
         {
             return SExecute<bool>(LocalBridgeClazz, "matchesLanguageAndScript", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/LocaleList.html#setDefault(android.os.LocaleList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.LocaleList"/></param>
+        public static void SetDefault(Android.Os.LocaleList arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Landroid/os/LocaleList;)V", arg0);
         }
 
         #endregion

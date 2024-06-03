@@ -64,7 +64,7 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/AlgorithmConstraints.html#permits(java.util.Set,java.lang.String,java.security.AlgorithmParameters)"/>
+        /// <see href="https://developer.android.com/reference/java/security/AlgorithmConstraints.html#permits(java.util.Set,java.lang.String,java.security.AlgorithmParameters)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -75,7 +75,7 @@ namespace Java.Security
             return IExecute<bool>("permits", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/AlgorithmConstraints.html#permits(java.util.Set,java.lang.String,java.security.Key,java.security.AlgorithmParameters)"/>
+        /// <see href="https://developer.android.com/reference/java/security/AlgorithmConstraints.html#permits(java.util.Set,java.lang.String,java.security.Key,java.security.AlgorithmParameters)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -87,7 +87,7 @@ namespace Java.Security
             return IExecute<bool>("permits", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/AlgorithmConstraints.html#permits(java.util.Set,java.security.Key)"/>
+        /// <see href="https://developer.android.com/reference/java/security/AlgorithmConstraints.html#permits(java.util.Set,java.security.Key)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <param name="arg1"><see cref="Java.Security.Key"/></param>

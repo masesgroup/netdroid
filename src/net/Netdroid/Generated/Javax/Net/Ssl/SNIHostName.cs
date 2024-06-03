@@ -30,7 +30,7 @@ namespace Javax.Net.Ssl
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SNIHostName.html#%3Cinit%3E(byte[])"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SNIHostName.html#%3Cinit%3E(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public SNIHostName(byte[] arg0)
@@ -38,7 +38,7 @@ namespace Javax.Net.Ssl
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SNIHostName.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SNIHostName.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public SNIHostName(Java.Lang.String arg0)
@@ -58,7 +58,7 @@ namespace Javax.Net.Ssl
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SNIHostName.html#createSNIMatcher(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SNIHostName.html#createSNIMatcher(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Net.Ssl.SNIMatcher"/></returns>
@@ -71,11 +71,12 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SNIHostName.html#getAsciiName()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SNIHostName.html#getAsciiName()"/>
         /// </summary>
-        public Java.Lang.String AsciiName
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAsciiName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAsciiName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getAsciiName", "()Ljava/lang/String;");
         }
 
         #endregion

@@ -28,7 +28,7 @@ namespace Org.W3c.Dom
 {
     #region Attr
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Attr.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/Attr.html"/>
     /// </summary>
     public partial class Attr : Org.W3c.Dom.Node
     {
@@ -36,12 +36,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Attr class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Attr class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Attr() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Attr class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Attr class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Attr(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,7 +74,7 @@ namespace Org.W3c.Dom
 
     #region CDATASection
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/CDATASection.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/CDATASection.html"/>
     /// </summary>
     public partial class CDATASection : Org.W3c.Dom.Text
     {
@@ -82,12 +82,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CDATASection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CDATASection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CDATASection() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CDATASection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CDATASection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CDATASection(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -120,7 +120,7 @@ namespace Org.W3c.Dom
 
     #region CharacterData
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/CharacterData.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/CharacterData.html"/>
     /// </summary>
     public partial class CharacterData : Org.W3c.Dom.Node
     {
@@ -128,12 +128,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CharacterData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CharacterData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CharacterData() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CharacterData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CharacterData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CharacterData(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -166,7 +166,7 @@ namespace Org.W3c.Dom
 
     #region Comment
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Comment.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/Comment.html"/>
     /// </summary>
     public partial class Comment : Org.W3c.Dom.CharacterData
     {
@@ -174,12 +174,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Comment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Comment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Comment() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Comment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Comment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Comment(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -212,7 +212,7 @@ namespace Org.W3c.Dom
 
     #region Document
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html"/>
     /// </summary>
     public partial class Document : Org.W3c.Dom.Node
     {
@@ -220,12 +220,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Document class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Document class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Document() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Document class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Document class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Document(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -258,7 +258,7 @@ namespace Org.W3c.Dom
 
     #region DocumentFragment
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DocumentFragment.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/DocumentFragment.html"/>
     /// </summary>
     public partial class DocumentFragment : Org.W3c.Dom.Node
     {
@@ -266,12 +266,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DocumentFragment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DocumentFragment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DocumentFragment() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DocumentFragment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DocumentFragment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DocumentFragment(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -304,7 +304,7 @@ namespace Org.W3c.Dom
 
     #region DocumentType
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DocumentType.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/DocumentType.html"/>
     /// </summary>
     public partial class DocumentType : Org.W3c.Dom.Node
     {
@@ -312,12 +312,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DocumentType class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DocumentType class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DocumentType() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DocumentType class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DocumentType class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DocumentType(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -350,7 +350,7 @@ namespace Org.W3c.Dom
 
     #region DOMConfiguration
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMConfiguration.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMConfiguration.html"/>
     /// </summary>
     public partial class DOMConfiguration : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMConfiguration>
     {
@@ -358,12 +358,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DOMConfiguration class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMConfiguration class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMConfiguration() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DOMConfiguration class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMConfiguration class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMConfiguration(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -396,7 +396,7 @@ namespace Org.W3c.Dom
 
     #region DOMError
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMError.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMError.html"/>
     /// </summary>
     public partial class DOMError : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMError>
     {
@@ -404,12 +404,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DOMError class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMError class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMError() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DOMError class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMError class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMError(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -442,7 +442,7 @@ namespace Org.W3c.Dom
 
     #region DOMErrorHandler
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMErrorHandler.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMErrorHandler.html"/>
     /// </summary>
     public partial class DOMErrorHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMErrorHandler>
     {
@@ -450,12 +450,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DOMErrorHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMErrorHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMErrorHandler() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DOMErrorHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMErrorHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMErrorHandler(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -488,7 +488,7 @@ namespace Org.W3c.Dom
 
     #region DOMException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMException.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMException.html"/>
     /// </summary>
     public partial class DOMException : Java.Lang.RuntimeException
     {
@@ -505,7 +505,7 @@ namespace Org.W3c.Dom
 
     #region DOMImplementation
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMImplementation.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMImplementation.html"/>
     /// </summary>
     public partial class DOMImplementation : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMImplementation>
     {
@@ -513,12 +513,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DOMImplementation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMImplementation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMImplementation() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DOMImplementation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMImplementation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMImplementation(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -551,7 +551,7 @@ namespace Org.W3c.Dom
 
     #region DOMImplementationList
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMImplementationList.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMImplementationList.html"/>
     /// </summary>
     public partial class DOMImplementationList : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMImplementationList>
     {
@@ -559,12 +559,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DOMImplementationList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMImplementationList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMImplementationList() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DOMImplementationList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMImplementationList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMImplementationList(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -597,7 +597,7 @@ namespace Org.W3c.Dom
 
     #region DOMImplementationSource
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMImplementationSource.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMImplementationSource.html"/>
     /// </summary>
     public partial class DOMImplementationSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMImplementationSource>
     {
@@ -605,12 +605,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DOMImplementationSource class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMImplementationSource class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMImplementationSource() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DOMImplementationSource class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMImplementationSource class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMImplementationSource(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -643,7 +643,7 @@ namespace Org.W3c.Dom
 
     #region DOMLocator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMLocator.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMLocator.html"/>
     /// </summary>
     public partial class DOMLocator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMLocator>
     {
@@ -651,12 +651,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DOMLocator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMLocator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMLocator() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DOMLocator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMLocator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMLocator(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -689,7 +689,7 @@ namespace Org.W3c.Dom
 
     #region DOMStringList
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMStringList.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMStringList.html"/>
     /// </summary>
     public partial class DOMStringList : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMStringList>
     {
@@ -697,12 +697,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DOMStringList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMStringList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMStringList() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DOMStringList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMStringList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMStringList(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -735,7 +735,7 @@ namespace Org.W3c.Dom
 
     #region Element
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Element.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/Element.html"/>
     /// </summary>
     public partial class Element : Org.W3c.Dom.Node
     {
@@ -743,12 +743,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Element class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Element class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Element() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Element class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Element class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Element(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -781,7 +781,7 @@ namespace Org.W3c.Dom
 
     #region Entity
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Entity.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/Entity.html"/>
     /// </summary>
     public partial class Entity : Org.W3c.Dom.Node
     {
@@ -789,12 +789,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Entity class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Entity class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Entity() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Entity class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Entity class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Entity(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -827,7 +827,7 @@ namespace Org.W3c.Dom
 
     #region EntityReference
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/EntityReference.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/EntityReference.html"/>
     /// </summary>
     public partial class EntityReference : Org.W3c.Dom.Node
     {
@@ -835,12 +835,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("EntityReference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("EntityReference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EntityReference() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("EntityReference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("EntityReference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EntityReference(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -873,7 +873,7 @@ namespace Org.W3c.Dom
 
     #region NamedNodeMap
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/NamedNodeMap.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/NamedNodeMap.html"/>
     /// </summary>
     public partial class NamedNodeMap : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NamedNodeMap>
     {
@@ -881,12 +881,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("NamedNodeMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("NamedNodeMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NamedNodeMap() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("NamedNodeMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("NamedNodeMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NamedNodeMap(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -919,7 +919,7 @@ namespace Org.W3c.Dom
 
     #region NameList
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/NameList.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/NameList.html"/>
     /// </summary>
     public partial class NameList : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NameList>
     {
@@ -927,12 +927,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("NameList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("NameList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NameList() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("NameList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("NameList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NameList(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -965,7 +965,7 @@ namespace Org.W3c.Dom
 
     #region Node
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Node.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/Node.html"/>
     /// </summary>
     public partial class Node : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Node>
     {
@@ -973,12 +973,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Node class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Node class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Node() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Node class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Node class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Node(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1011,7 +1011,7 @@ namespace Org.W3c.Dom
 
     #region NodeList
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/NodeList.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/NodeList.html"/>
     /// </summary>
     public partial class NodeList : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NodeList>
     {
@@ -1019,12 +1019,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("NodeList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("NodeList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NodeList() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("NodeList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("NodeList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NodeList(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1057,7 +1057,7 @@ namespace Org.W3c.Dom
 
     #region Notation
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Notation.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/Notation.html"/>
     /// </summary>
     public partial class Notation : Org.W3c.Dom.Node
     {
@@ -1065,12 +1065,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Notation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Notation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Notation() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Notation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Notation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Notation(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1103,7 +1103,7 @@ namespace Org.W3c.Dom
 
     #region ProcessingInstruction
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ProcessingInstruction.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/ProcessingInstruction.html"/>
     /// </summary>
     public partial class ProcessingInstruction : Org.W3c.Dom.Node
     {
@@ -1111,12 +1111,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ProcessingInstruction class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ProcessingInstruction class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ProcessingInstruction() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ProcessingInstruction class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ProcessingInstruction class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ProcessingInstruction(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1149,7 +1149,7 @@ namespace Org.W3c.Dom
 
     #region Text
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Text.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/Text.html"/>
     /// </summary>
     public partial class Text : Org.W3c.Dom.CharacterData
     {
@@ -1157,12 +1157,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Text class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Text class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Text() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Text class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Text class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Text(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1195,7 +1195,7 @@ namespace Org.W3c.Dom
 
     #region TypeInfo
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/TypeInfo.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/TypeInfo.html"/>
     /// </summary>
     public partial class TypeInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TypeInfo>
     {
@@ -1203,12 +1203,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("TypeInfo class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TypeInfo class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TypeInfo() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("TypeInfo class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TypeInfo class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TypeInfo(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1241,7 +1241,7 @@ namespace Org.W3c.Dom
 
     #region UserDataHandler
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/UserDataHandler.html"/>
+    /// <see href="https://developer.android.com/reference/org/w3c/dom/UserDataHandler.html"/>
     /// </summary>
     public partial class UserDataHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<UserDataHandler>
     {
@@ -1249,12 +1249,12 @@ namespace Org.W3c.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("UserDataHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("UserDataHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public UserDataHandler() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("UserDataHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("UserDataHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public UserDataHandler(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

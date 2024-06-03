@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -63,7 +63,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#readBoolean()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#readBoolean()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -72,7 +72,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("readBoolean", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#readByte()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#readByte()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -81,7 +81,7 @@ namespace Java.Io
             return IExecuteWithSignature<byte>("readByte", "()B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#readChar()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#readChar()"/>
         /// </summary>
         /// <returns><see cref="char"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -90,7 +90,7 @@ namespace Java.Io
             return IExecuteWithSignature<char>("readChar", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#readDouble()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#readDouble()"/>
         /// </summary>
         /// <returns><see cref="double"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -99,7 +99,7 @@ namespace Java.Io
             return IExecuteWithSignature<double>("readDouble", "()D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#readObject()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#readObject()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -109,7 +109,7 @@ namespace Java.Io
             return IExecuteWithSignature("readObject", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#readFloat()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#readFloat()"/>
         /// </summary>
         /// <returns><see cref="float"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -118,7 +118,7 @@ namespace Java.Io
             return IExecuteWithSignature<float>("readFloat", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#readInt()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#readInt()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -127,7 +127,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("readInt", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#readUnsignedByte()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#readUnsignedByte()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -136,7 +136,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("readUnsignedByte", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#readUnsignedShort()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#readUnsignedShort()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -145,7 +145,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("readUnsignedShort", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#skipBytes(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#skipBytes(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -155,7 +155,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("skipBytes", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#readFields()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#readFields()"/>
         /// </summary>
         /// <returns><see cref="Java.Io.ObjectInputStream.GetField"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -165,7 +165,7 @@ namespace Java.Io
             return IExecuteWithSignature<Java.Io.ObjectInputStream.GetField>("readFields", "()Ljava/io/ObjectInputStream$GetField;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#readUnshared()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#readUnshared()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -175,17 +175,17 @@ namespace Java.Io
             return IExecuteWithSignature("readUnshared", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#readLine()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#readLine()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String ReadLine()
         {
             return IExecuteWithSignature<Java.Lang.String>("readLine", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#readUTF()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#readUTF()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -194,7 +194,7 @@ namespace Java.Io
             return IExecuteWithSignature<Java.Lang.String>("readUTF", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#readLong()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#readLong()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -203,7 +203,7 @@ namespace Java.Io
             return IExecuteWithSignature<long>("readLong", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#readShort()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#readShort()"/>
         /// </summary>
         /// <returns><see cref="short"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -212,7 +212,7 @@ namespace Java.Io
             return IExecuteWithSignature<short>("readShort", "()S");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#defaultReadObject()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#defaultReadObject()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
@@ -221,7 +221,7 @@ namespace Java.Io
             IExecuteWithSignature("defaultReadObject", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#readFully(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#readFully(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -232,7 +232,7 @@ namespace Java.Io
             IExecute("readFully", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#readFully(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#readFully(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -241,7 +241,7 @@ namespace Java.Io
             IExecuteWithSignature("readFully", "([B)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#registerValidation(java.io.ObjectInputValidation,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#registerValidation(java.io.ObjectInputValidation,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.ObjectInputValidation"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -276,14 +276,7 @@ namespace Java.Io
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.GetField.html#getObjectStreamClass()"/> 
-            /// </summary>
-            public Java.Io.ObjectStreamClass ObjectStreamClass
-            {
-                get { return IExecuteWithSignature<Java.Io.ObjectStreamClass>("getObjectStreamClass", "()Ljava/io/ObjectStreamClass;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.GetField.html#defaulted(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.GetField.html#defaulted(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="bool"/></returns>
@@ -293,7 +286,7 @@ namespace Java.Io
                 return IExecuteWithSignature<bool>("defaulted", "(Ljava/lang/String;)Z", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,boolean)"/>
+            /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.GetField.html#get(java.lang.String,boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="bool"/></param>
@@ -304,7 +297,7 @@ namespace Java.Io
                 return IExecute<bool>("get", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,byte)"/>
+            /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.GetField.html#get(java.lang.String,byte)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="byte"/></param>
@@ -315,7 +308,7 @@ namespace Java.Io
                 return IExecute<byte>("get", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,char)"/>
+            /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.GetField.html#get(java.lang.String,char)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="char"/></param>
@@ -326,7 +319,7 @@ namespace Java.Io
                 return IExecute<char>("get", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,double)"/>
+            /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.GetField.html#get(java.lang.String,double)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="double"/></param>
@@ -337,7 +330,7 @@ namespace Java.Io
                 return IExecute<double>("get", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,float)"/>
+            /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.GetField.html#get(java.lang.String,float)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="float"/></param>
@@ -348,7 +341,7 @@ namespace Java.Io
                 return IExecute<float>("get", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,int)"/>
+            /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.GetField.html#get(java.lang.String,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="int"/></param>
@@ -359,7 +352,15 @@ namespace Java.Io
                 return IExecute<int>("get", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,java.lang.Object)"/>
+            /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.GetField.html#getObjectStreamClass()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Io.ObjectStreamClass"/></returns>
+            public Java.Io.ObjectStreamClass GetObjectStreamClass()
+            {
+                return IExecuteWithSignature<Java.Io.ObjectStreamClass>("getObjectStreamClass", "()Ljava/io/ObjectStreamClass;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.GetField.html#get(java.lang.String,java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="object"/></param>
@@ -370,7 +371,7 @@ namespace Java.Io
                 return IExecute("get", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,long)"/>
+            /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.GetField.html#get(java.lang.String,long)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="long"/></param>
@@ -381,7 +382,7 @@ namespace Java.Io
                 return IExecute<long>("get", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,short)"/>
+            /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.GetField.html#get(java.lang.String,short)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="short"/></param>

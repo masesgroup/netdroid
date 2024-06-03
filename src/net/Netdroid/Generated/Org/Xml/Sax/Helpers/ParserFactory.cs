@@ -42,7 +42,7 @@ namespace Org.Xml.Sax.Helpers
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserFactory.html#makeParser()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserFactory.html#makeParser()"/>
         /// </summary>
         /// <returns><see cref="Org.Xml.Sax.Parser"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
@@ -55,7 +55,7 @@ namespace Org.Xml.Sax.Helpers
             return SExecuteWithSignature<Org.Xml.Sax.Parser>(LocalBridgeClazz, "makeParser", "()Lorg/xml/sax/Parser;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserFactory.html#makeParser(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserFactory.html#makeParser(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.Xml.Sax.Parser"/></returns>

@@ -52,40 +52,44 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/VerifiedInputEvent.html#getDeviceId()"/> 
-        /// </summary>
-        public int DeviceId
-        {
-            get { return IExecuteWithSignature<int>("getDeviceId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/VerifiedInputEvent.html#getDisplayId()"/> 
-        /// </summary>
-        public int DisplayId
-        {
-            get { return IExecuteWithSignature<int>("getDisplayId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/VerifiedInputEvent.html#getEventTimeNanos()"/> 
-        /// </summary>
-        public long EventTimeNanos
-        {
-            get { return IExecuteWithSignature<long>("getEventTimeNanos", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/VerifiedInputEvent.html#getSource()"/> 
-        /// </summary>
-        public int Source
-        {
-            get { return IExecuteWithSignature<int>("getSource", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/VerifiedInputEvent.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/VerifiedInputEvent.html#getDeviceId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDeviceId()
+        {
+            return IExecuteWithSignature<int>("getDeviceId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/VerifiedInputEvent.html#getDisplayId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDisplayId()
+        {
+            return IExecuteWithSignature<int>("getDisplayId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/VerifiedInputEvent.html#getSource()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSource()
+        {
+            return IExecuteWithSignature<int>("getSource", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/VerifiedInputEvent.html#getEventTimeNanos()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetEventTimeNanos()
+        {
+            return IExecuteWithSignature<long>("getEventTimeNanos", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/VerifiedInputEvent.html#writeToParcel(android.os.Parcel,int)"/>

@@ -42,11 +42,12 @@ namespace Android.Webkit
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebStorage.html#getInstance()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/WebStorage.html#getInstance()"/>
         /// </summary>
-        public static Android.Webkit.WebStorage Instance
+        /// <returns><see cref="Android.Webkit.WebStorage"/></returns>
+        public static Android.Webkit.WebStorage GetInstance()
         {
-            get { return SExecuteWithSignature<Android.Webkit.WebStorage>(LocalBridgeClazz, "getInstance", "()Landroid/webkit/WebStorage;"); }
+            return SExecuteWithSignature<Android.Webkit.WebStorage>(LocalBridgeClazz, "getInstance", "()Landroid/webkit/WebStorage;");
         }
 
         #endregion
@@ -98,7 +99,7 @@ namespace Android.Webkit
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetQuotaForOrigin(Java.Lang.String arg0, long arg1)
         {
             IExecute("setQuotaForOrigin", arg0, arg1);
@@ -128,25 +129,28 @@ namespace Android.Webkit
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/webkit/WebStorage.Origin.html#getOrigin()"/> 
+            /// <see href="https://developer.android.com/reference/android/webkit/WebStorage.Origin.html#getOrigin()"/>
             /// </summary>
-            public Java.Lang.String GetOrigin
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetOrigin()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getOrigin", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getOrigin", "()Ljava/lang/String;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/webkit/WebStorage.Origin.html#getQuota()"/> 
+            /// <see href="https://developer.android.com/reference/android/webkit/WebStorage.Origin.html#getQuota()"/>
             /// </summary>
-            public long Quota
+            /// <returns><see cref="long"/></returns>
+            public long GetQuota()
             {
-                get { return IExecuteWithSignature<long>("getQuota", "()J"); }
+                return IExecuteWithSignature<long>("getQuota", "()J");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/webkit/WebStorage.Origin.html#getUsage()"/> 
+            /// <see href="https://developer.android.com/reference/android/webkit/WebStorage.Origin.html#getUsage()"/>
             /// </summary>
-            public long Usage
+            /// <returns><see cref="long"/></returns>
+            public long GetUsage()
             {
-                get { return IExecuteWithSignature<long>("getUsage", "()J"); }
+                return IExecuteWithSignature<long>("getUsage", "()J");
             }
 
             #endregion
@@ -183,7 +187,7 @@ namespace Android.Webkit
             /// <see href="https://developer.android.com/reference/android/webkit/WebStorage.QuotaUpdater.html#updateQuota(long)"/>
             /// </summary>
             /// <param name="arg0"><see cref="long"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void UpdateQuota(long arg0)
             {
                 IExecuteWithSignature("updateQuota", "(J)V", arg0);

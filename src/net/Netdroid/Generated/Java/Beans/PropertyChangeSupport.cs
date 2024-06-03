@@ -30,7 +30,7 @@ namespace Java.Beans
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeSupport.html#%3Cinit%3E(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public PropertyChangeSupport(object arg0)
@@ -54,14 +54,7 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeSupport.html#getPropertyChangeListeners()"/> 
-        /// </summary>
-        public Java.Beans.PropertyChangeListener[] PropertyChangeListeners
-        {
-            get { return IExecuteWithSignatureArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", "()[Ljava/beans/PropertyChangeListener;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeSupport.html#hasListeners(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#hasListeners(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -70,7 +63,15 @@ namespace Java.Beans
             return IExecuteWithSignature<bool>("hasListeners", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeSupport.html#getPropertyChangeListeners(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#getPropertyChangeListeners()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
+        public Java.Beans.PropertyChangeListener[] GetPropertyChangeListeners()
+        {
+            return IExecuteWithSignatureArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", "()[Ljava/beans/PropertyChangeListener;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#getPropertyChangeListeners(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
@@ -79,7 +80,7 @@ namespace Java.Beans
             return IExecuteWithSignatureArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", "(Ljava/lang/String;)[Ljava/beans/PropertyChangeListener;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeSupport.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
@@ -87,7 +88,7 @@ namespace Java.Beans
             IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeSupport.html#addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
@@ -96,7 +97,7 @@ namespace Java.Beans
             IExecute("addPropertyChangeListener", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeSupport.html#fireIndexedPropertyChange(java.lang.String,int,boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#fireIndexedPropertyChange(java.lang.String,int,boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -107,7 +108,7 @@ namespace Java.Beans
             IExecute("fireIndexedPropertyChange", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeSupport.html#fireIndexedPropertyChange(java.lang.String,int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#fireIndexedPropertyChange(java.lang.String,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -118,7 +119,7 @@ namespace Java.Beans
             IExecute("fireIndexedPropertyChange", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeSupport.html#fireIndexedPropertyChange(java.lang.String,int,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#fireIndexedPropertyChange(java.lang.String,int,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -129,7 +130,7 @@ namespace Java.Beans
             IExecute("fireIndexedPropertyChange", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeSupport.html#firePropertyChange(java.beans.PropertyChangeEvent)"/>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#firePropertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
         public void FirePropertyChange(Java.Beans.PropertyChangeEvent arg0)
@@ -137,7 +138,7 @@ namespace Java.Beans
             IExecuteWithSignature("firePropertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeSupport.html#firePropertyChange(java.lang.String,boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#firePropertyChange(java.lang.String,boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -147,7 +148,7 @@ namespace Java.Beans
             IExecute("firePropertyChange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeSupport.html#firePropertyChange(java.lang.String,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#firePropertyChange(java.lang.String,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -157,7 +158,7 @@ namespace Java.Beans
             IExecute("firePropertyChange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeSupport.html#firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -167,7 +168,7 @@ namespace Java.Beans
             IExecute("firePropertyChange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeSupport.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
@@ -175,7 +176,7 @@ namespace Java.Beans
             IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeSupport.html#removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>

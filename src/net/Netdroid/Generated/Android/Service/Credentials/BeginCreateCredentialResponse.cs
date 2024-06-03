@@ -52,18 +52,12 @@ namespace Android.Service.Credentials
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/credentials/BeginCreateCredentialResponse.html#getCreateEntries()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/credentials/BeginCreateCredentialResponse.html#getRemoteCreateEntry()"/>
         /// </summary>
-        public Java.Util.List<Android.Service.Credentials.CreateEntry> CreateEntries
+        /// <returns><see cref="Android.Service.Credentials.RemoteEntry"/></returns>
+        public Android.Service.Credentials.RemoteEntry GetRemoteCreateEntry()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Service.Credentials.CreateEntry>>("getCreateEntries", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/credentials/BeginCreateCredentialResponse.html#getRemoteCreateEntry()"/> 
-        /// </summary>
-        public Android.Service.Credentials.RemoteEntry RemoteCreateEntry
-        {
-            get { return IExecuteWithSignature<Android.Service.Credentials.RemoteEntry>("getRemoteCreateEntry", "()Landroid/service/credentials/RemoteEntry;"); }
+            return IExecuteWithSignature<Android.Service.Credentials.RemoteEntry>("getRemoteCreateEntry", "()Landroid/service/credentials/RemoteEntry;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/credentials/BeginCreateCredentialResponse.html#describeContents()"/>
@@ -72,6 +66,14 @@ namespace Android.Service.Credentials
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/credentials/BeginCreateCredentialResponse.html#getCreateEntries()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Service.Credentials.CreateEntry> GetCreateEntries()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Service.Credentials.CreateEntry>>("getCreateEntries", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/credentials/BeginCreateCredentialResponse.html#writeToParcel(android.os.Parcel,int)"/>

@@ -54,11 +54,12 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ContextWrapper.html#getBaseContext()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/ContextWrapper.html#getBaseContext()"/>
         /// </summary>
-        public Android.Content.Context BaseContext
+        /// <returns><see cref="Android.Content.Context"/></returns>
+        public Android.Content.Context GetBaseContext()
         {
-            get { return IExecuteWithSignature<Android.Content.Context>("getBaseContext", "()Landroid/content/Context;"); }
+            return IExecuteWithSignature<Android.Content.Context>("getBaseContext", "()Landroid/content/Context;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContextWrapper.html#sendOrderedBroadcast(android.content.Intent,int,java.lang.String,java.lang.String,android.content.BroadcastReceiver,android.os.Handler,java.lang.String,android.os.Bundle,android.os.Bundle)"/>

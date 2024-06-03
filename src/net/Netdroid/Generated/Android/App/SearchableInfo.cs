@@ -52,137 +52,12 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getHintId()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getSearchActivity()"/>
         /// </summary>
-        public int HintId
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        public Android.Content.ComponentName GetSearchActivity()
         {
-            get { return IExecuteWithSignature<int>("getHintId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getImeOptions()"/> 
-        /// </summary>
-        public int ImeOptions
-        {
-            get { return IExecuteWithSignature<int>("getImeOptions", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getInputType()"/> 
-        /// </summary>
-        public int InputType
-        {
-            get { return IExecuteWithSignature<int>("getInputType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getSearchActivity()"/> 
-        /// </summary>
-        public Android.Content.ComponentName SearchActivity
-        {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getSearchActivity", "()Landroid/content/ComponentName;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getSettingsDescriptionId()"/> 
-        /// </summary>
-        public int SettingsDescriptionId
-        {
-            get { return IExecuteWithSignature<int>("getSettingsDescriptionId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getSuggestAuthority()"/> 
-        /// </summary>
-        public Java.Lang.String SuggestAuthority
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSuggestAuthority", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getSuggestIntentAction()"/> 
-        /// </summary>
-        public Java.Lang.String SuggestIntentAction
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSuggestIntentAction", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getSuggestIntentData()"/> 
-        /// </summary>
-        public Java.Lang.String SuggestIntentData
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSuggestIntentData", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getSuggestPackage()"/> 
-        /// </summary>
-        public Java.Lang.String SuggestPackage
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSuggestPackage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getSuggestPath()"/> 
-        /// </summary>
-        public Java.Lang.String SuggestPath
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSuggestPath", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getSuggestSelection()"/> 
-        /// </summary>
-        public Java.Lang.String SuggestSelection
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSuggestSelection", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getSuggestThreshold()"/> 
-        /// </summary>
-        public int SuggestThreshold
-        {
-            get { return IExecuteWithSignature<int>("getSuggestThreshold", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getVoiceLanguageId()"/> 
-        /// </summary>
-        public int VoiceLanguageId
-        {
-            get { return IExecuteWithSignature<int>("getVoiceLanguageId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getVoiceLanguageModeId()"/> 
-        /// </summary>
-        public int VoiceLanguageModeId
-        {
-            get { return IExecuteWithSignature<int>("getVoiceLanguageModeId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getVoiceMaxResults()"/> 
-        /// </summary>
-        public int VoiceMaxResults
-        {
-            get { return IExecuteWithSignature<int>("getVoiceMaxResults", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getVoicePromptTextId()"/> 
-        /// </summary>
-        public int VoicePromptTextId
-        {
-            get { return IExecuteWithSignature<int>("getVoicePromptTextId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getVoiceSearchEnabled()"/> 
-        /// </summary>
-        public bool VoiceSearchEnabled
-        {
-            get { return IExecuteWithSignature<bool>("getVoiceSearchEnabled", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getVoiceSearchLaunchRecognizer()"/> 
-        /// </summary>
-        public bool VoiceSearchLaunchRecognizer
-        {
-            get { return IExecuteWithSignature<bool>("getVoiceSearchLaunchRecognizer", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getVoiceSearchLaunchWebSearch()"/> 
-        /// </summary>
-        public bool VoiceSearchLaunchWebSearch
-        {
-            get { return IExecuteWithSignature<bool>("getVoiceSearchLaunchWebSearch", "()Z"); }
+            return IExecuteWithSignature<Android.Content.ComponentName>("getSearchActivity", "()Landroid/content/ComponentName;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#autoUrlDetect()"/>
@@ -191,6 +66,30 @@ namespace Android.App
         public bool AutoUrlDetect()
         {
             return IExecuteWithSignature<bool>("autoUrlDetect", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getVoiceSearchEnabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetVoiceSearchEnabled()
+        {
+            return IExecuteWithSignature<bool>("getVoiceSearchEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getVoiceSearchLaunchRecognizer()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetVoiceSearchLaunchRecognizer()
+        {
+            return IExecuteWithSignature<bool>("getVoiceSearchLaunchRecognizer", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getVoiceSearchLaunchWebSearch()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetVoiceSearchLaunchWebSearch()
+        {
+            return IExecuteWithSignature<bool>("getVoiceSearchLaunchWebSearch", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#queryAfterZeroResults()"/>
@@ -231,6 +130,126 @@ namespace Android.App
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getHintId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHintId()
+        {
+            return IExecuteWithSignature<int>("getHintId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getImeOptions()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetImeOptions()
+        {
+            return IExecuteWithSignature<int>("getImeOptions", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getInputType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInputType()
+        {
+            return IExecuteWithSignature<int>("getInputType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getSettingsDescriptionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSettingsDescriptionId()
+        {
+            return IExecuteWithSignature<int>("getSettingsDescriptionId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getSuggestThreshold()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSuggestThreshold()
+        {
+            return IExecuteWithSignature<int>("getSuggestThreshold", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getVoiceLanguageId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVoiceLanguageId()
+        {
+            return IExecuteWithSignature<int>("getVoiceLanguageId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getVoiceLanguageModeId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVoiceLanguageModeId()
+        {
+            return IExecuteWithSignature<int>("getVoiceLanguageModeId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getVoiceMaxResults()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVoiceMaxResults()
+        {
+            return IExecuteWithSignature<int>("getVoiceMaxResults", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getVoicePromptTextId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVoicePromptTextId()
+        {
+            return IExecuteWithSignature<int>("getVoicePromptTextId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getSuggestAuthority()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSuggestAuthority()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSuggestAuthority", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getSuggestIntentAction()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSuggestIntentAction()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSuggestIntentAction", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getSuggestIntentData()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSuggestIntentData()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSuggestIntentData", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getSuggestPackage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSuggestPackage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSuggestPackage", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getSuggestPath()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSuggestPath()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSuggestPath", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#getSuggestSelection()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSuggestSelection()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSuggestSelection", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/SearchableInfo.html#writeToParcel(android.os.Parcel,int)"/>

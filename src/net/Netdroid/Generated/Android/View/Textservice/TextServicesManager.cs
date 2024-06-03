@@ -46,18 +46,12 @@ namespace Android.View.Textservice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textservice/TextServicesManager.html#getCurrentSpellCheckerInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/textservice/TextServicesManager.html#getCurrentSpellCheckerInfo()"/>
         /// </summary>
-        public Android.View.Textservice.SpellCheckerInfo CurrentSpellCheckerInfo
+        /// <returns><see cref="Android.View.Textservice.SpellCheckerInfo"/></returns>
+        public Android.View.Textservice.SpellCheckerInfo GetCurrentSpellCheckerInfo()
         {
-            get { return IExecuteWithSignature<Android.View.Textservice.SpellCheckerInfo>("getCurrentSpellCheckerInfo", "()Landroid/view/textservice/SpellCheckerInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textservice/TextServicesManager.html#getEnabledSpellCheckerInfos()"/> 
-        /// </summary>
-        public Java.Util.List<Android.View.Textservice.SpellCheckerInfo> EnabledSpellCheckerInfos
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.View.Textservice.SpellCheckerInfo>>("getEnabledSpellCheckerInfos", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.View.Textservice.SpellCheckerInfo>("getCurrentSpellCheckerInfo", "()Landroid/view/textservice/SpellCheckerInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/TextServicesManager.html#newSpellCheckerSession(android.os.Bundle,java.util.Locale,android.view.textservice.SpellCheckerSession.SpellCheckerSessionListener,boolean)"/>
@@ -89,6 +83,14 @@ namespace Android.View.Textservice
         public bool IsSpellCheckerEnabled()
         {
             return IExecuteWithSignature<bool>("isSpellCheckerEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textservice/TextServicesManager.html#getEnabledSpellCheckerInfos()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.View.Textservice.SpellCheckerInfo> GetEnabledSpellCheckerInfos()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.View.Textservice.SpellCheckerInfo>>("getEnabledSpellCheckerInfos", "()Ljava/util/List;");
         }
 
         #endregion

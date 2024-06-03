@@ -252,25 +252,22 @@ namespace Android.Media.Audiofx
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/AudioEffect.html#getEnabled()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/AudioEffect.html#getDescriptor()"/>
         /// </summary>
-        public bool Enabled
+        /// <returns><see cref="Android.Media.Audiofx.AudioEffect.Descriptor"/></returns>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        public Android.Media.Audiofx.AudioEffect.Descriptor GetDescriptor()
         {
-            get { return IExecuteWithSignature<bool>("getEnabled", "()Z"); }
+            return IExecuteWithSignature<Android.Media.Audiofx.AudioEffect.Descriptor>("getDescriptor", "()Landroid/media/audiofx/AudioEffect$Descriptor;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/AudioEffect.html#getDescriptor()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/AudioEffect.html#getEnabled()"/>
         /// </summary>
-        public Android.Media.Audiofx.AudioEffect.Descriptor GetDescriptor
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        public bool GetEnabled()
         {
-            get { return IExecuteWithSignature<Android.Media.Audiofx.AudioEffect.Descriptor>("getDescriptor", "()Landroid/media/audiofx/AudioEffect$Descriptor;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/AudioEffect.html#getId()"/> 
-        /// </summary>
-        public int Id
-        {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
+            return IExecuteWithSignature<bool>("getEnabled", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/AudioEffect.html#hasControl()"/>
@@ -280,6 +277,15 @@ namespace Android.Media.Audiofx
         public bool HasControl()
         {
             return IExecuteWithSignature<bool>("hasControl", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/AudioEffect.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/AudioEffect.html#setEnabled(boolean)"/>
@@ -406,7 +412,7 @@ namespace Android.Media.Audiofx
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onControlStatusChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.AudioEffect>>>(OnControlStatusChangeEventHandler));
+                AddEventHandler("onControlStatusChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.AudioEffect>>>(OnControlStatusChangeEventHandler));
 
             }
 
@@ -414,7 +420,7 @@ namespace Android.Media.Audiofx
             /// Handler for <see href="https://developer.android.com/reference/android/media/audiofx/AudioEffect.OnControlStatusChangeListener.html#onControlStatusChange(android.media.audiofx.AudioEffect,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnControlStatusChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.Audiofx.AudioEffect, bool> OnOnControlStatusChange { get; set; } = null;
+            public global::System.Action<Android.Media.Audiofx.AudioEffect, bool> OnOnControlStatusChange { get; set; } = null;
 
             void OnControlStatusChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.AudioEffect>> data)
             {
@@ -507,7 +513,7 @@ namespace Android.Media.Audiofx
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onEnableStatusChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.AudioEffect>>>(OnEnableStatusChangeEventHandler));
+                AddEventHandler("onEnableStatusChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.AudioEffect>>>(OnEnableStatusChangeEventHandler));
 
             }
 
@@ -515,7 +521,7 @@ namespace Android.Media.Audiofx
             /// Handler for <see href="https://developer.android.com/reference/android/media/audiofx/AudioEffect.OnEnableStatusChangeListener.html#onEnableStatusChange(android.media.audiofx.AudioEffect,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnEnableStatusChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.Audiofx.AudioEffect, bool> OnOnEnableStatusChange { get; set; } = null;
+            public global::System.Action<Android.Media.Audiofx.AudioEffect, bool> OnOnEnableStatusChange { get; set; } = null;
 
             void OnEnableStatusChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.AudioEffect>> data)
             {

@@ -42,7 +42,7 @@ namespace Java.Time.Temporal
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalQueries.html#chronology()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalQueries.html#chronology()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
         public static Java.Time.Temporal.TemporalQuery<Java.Time.Chrono.Chronology> Chronology()
@@ -50,7 +50,7 @@ namespace Java.Time.Temporal
             return SExecuteWithSignature<Java.Time.Temporal.TemporalQuery<Java.Time.Chrono.Chronology>>(LocalBridgeClazz, "chronology", "()Ljava/time/temporal/TemporalQuery;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalQueries.html#localDate()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalQueries.html#localDate()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
         public static Java.Time.Temporal.TemporalQuery<Java.Time.LocalDate> LocalDate()
@@ -58,7 +58,7 @@ namespace Java.Time.Temporal
             return SExecuteWithSignature<Java.Time.Temporal.TemporalQuery<Java.Time.LocalDate>>(LocalBridgeClazz, "localDate", "()Ljava/time/temporal/TemporalQuery;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalQueries.html#localTime()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalQueries.html#localTime()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
         public static Java.Time.Temporal.TemporalQuery<Java.Time.LocalTime> LocalTime()
@@ -66,7 +66,7 @@ namespace Java.Time.Temporal
             return SExecuteWithSignature<Java.Time.Temporal.TemporalQuery<Java.Time.LocalTime>>(LocalBridgeClazz, "localTime", "()Ljava/time/temporal/TemporalQuery;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalQueries.html#precision()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalQueries.html#precision()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
         public static Java.Time.Temporal.TemporalQuery<Java.Time.Temporal.TemporalUnit> Precision()
@@ -74,7 +74,7 @@ namespace Java.Time.Temporal
             return SExecuteWithSignature<Java.Time.Temporal.TemporalQuery<Java.Time.Temporal.TemporalUnit>>(LocalBridgeClazz, "precision", "()Ljava/time/temporal/TemporalQuery;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalQueries.html#zone()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalQueries.html#zone()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
         public static Java.Time.Temporal.TemporalQuery<Java.Time.ZoneId> Zone()
@@ -82,7 +82,7 @@ namespace Java.Time.Temporal
             return SExecuteWithSignature<Java.Time.Temporal.TemporalQuery<Java.Time.ZoneId>>(LocalBridgeClazz, "zone", "()Ljava/time/temporal/TemporalQuery;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalQueries.html#zoneId()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalQueries.html#zoneId()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
         public static Java.Time.Temporal.TemporalQuery<Java.Time.ZoneId> ZoneId()
@@ -90,7 +90,7 @@ namespace Java.Time.Temporal
             return SExecuteWithSignature<Java.Time.Temporal.TemporalQuery<Java.Time.ZoneId>>(LocalBridgeClazz, "zoneId", "()Ljava/time/temporal/TemporalQuery;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalQueries.html#offset()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalQueries.html#offset()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
         public static Java.Time.Temporal.TemporalQuery<Java.Time.ZoneOffset> Offset()

@@ -76,46 +76,28 @@ namespace Android.View.Autofill
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillManager.html#getAutofillServiceComponentName()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillManager.html#getAutofillServiceComponentName()"/>
         /// </summary>
-        public Android.Content.ComponentName AutofillServiceComponentName
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        public Android.Content.ComponentName GetAutofillServiceComponentName()
         {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getAutofillServiceComponentName", "()Landroid/content/ComponentName;"); }
+            return IExecuteWithSignature<Android.Content.ComponentName>("getAutofillServiceComponentName", "()Landroid/content/ComponentName;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillManager.html#getAvailableFieldClassificationAlgorithms()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillManager.html#getUserData()"/>
         /// </summary>
-        public Java.Util.List<Java.Lang.String> AvailableFieldClassificationAlgorithms
+        /// <returns><see cref="Android.Service.Autofill.UserData"/></returns>
+        public Android.Service.Autofill.UserData GetUserData()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getAvailableFieldClassificationAlgorithms", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Service.Autofill.UserData>("getUserData", "()Landroid/service/autofill/UserData;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillManager.html#getDefaultFieldClassificationAlgorithm()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillManager.html#getNextAutofillId()"/>
         /// </summary>
-        public Java.Lang.String DefaultFieldClassificationAlgorithm
+        /// <returns><see cref="Android.View.Autofill.AutofillId"/></returns>
+        public Android.View.Autofill.AutofillId GetNextAutofillId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDefaultFieldClassificationAlgorithm", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillManager.html#getNextAutofillId()"/> 
-        /// </summary>
-        public Android.View.Autofill.AutofillId NextAutofillId
-        {
-            get { return IExecuteWithSignature<Android.View.Autofill.AutofillId>("getNextAutofillId", "()Landroid/view/autofill/AutofillId;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillManager.html#getUserData()"/> <see href="https://developer.android.com/reference/android/view/autofill/AutofillManager.html#setUserData(android.service.autofill.UserData)"/>
-        /// </summary>
-        public Android.Service.Autofill.UserData UserData
-        {
-            get { return IExecuteWithSignature<Android.Service.Autofill.UserData>("getUserData", "()Landroid/service/autofill/UserData;"); } set { IExecuteWithSignature("setUserData", "(Landroid/service/autofill/UserData;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillManager.html#getUserDataId()"/> 
-        /// </summary>
-        public Java.Lang.String UserDataId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUserDataId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.View.Autofill.AutofillId>("getNextAutofillId", "()Landroid/view/autofill/AutofillId;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillManager.html#hasEnabledAutofillServices()"/>
@@ -167,6 +149,30 @@ namespace Android.View.Autofill
         public bool ShowAutofillDialog(Android.View.View arg0)
         {
             return IExecuteWithSignature<bool>("showAutofillDialog", "(Landroid/view/View;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillManager.html#getDefaultFieldClassificationAlgorithm()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDefaultFieldClassificationAlgorithm()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDefaultFieldClassificationAlgorithm", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillManager.html#getUserDataId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUserDataId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUserDataId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillManager.html#getAvailableFieldClassificationAlgorithms()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetAvailableFieldClassificationAlgorithms()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getAvailableFieldClassificationAlgorithms", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillManager.html#cancel()"/>
@@ -312,6 +318,14 @@ namespace Android.View.Autofill
         public void RequestAutofill(Android.View.View arg0)
         {
             IExecuteWithSignature("requestAutofill", "(Landroid/view/View;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillManager.html#setUserData(android.service.autofill.UserData)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Service.Autofill.UserData"/></param>
+        public void SetUserData(Android.Service.Autofill.UserData arg0)
+        {
+            IExecuteWithSignature("setUserData", "(Landroid/service/autofill/UserData;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillManager.html#unregisterCallback(android.view.autofill.AutofillManager.AutofillCallback)"/>

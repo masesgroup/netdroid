@@ -68,7 +68,7 @@ namespace Android.Webkit
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("onDownloadStart", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnDownloadStartEventHandler));
+            AddEventHandler("onDownloadStart", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnDownloadStartEventHandler));
 
         }
 
@@ -76,7 +76,7 @@ namespace Android.Webkit
         /// Handler for <see href="https://developer.android.com/reference/android/webkit/DownloadListener.html#onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnDownloadStart"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String, Java.Lang.String, Java.Lang.String, Java.Lang.String, long> OnOnDownloadStart { get; set; } = null;
+        public global::System.Action<Java.Lang.String, Java.Lang.String, Java.Lang.String, Java.Lang.String, long> OnOnDownloadStart { get; set; } = null;
 
         void OnDownloadStartEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {

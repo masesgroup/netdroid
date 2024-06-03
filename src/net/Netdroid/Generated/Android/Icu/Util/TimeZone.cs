@@ -132,25 +132,12 @@ namespace Android.Icu.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getAvailableIDs()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getDefault()"/>
         /// </summary>
-        public static Java.Lang.String[] AvailableIDs
+        /// <returns><see cref="Android.Icu.Util.TimeZone"/></returns>
+        public static Android.Icu.Util.TimeZone GetDefault()
         {
-            get { return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getAvailableIDs", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getDefault()"/> 
-        /// </summary>
-        public static Android.Icu.Util.TimeZone Default
-        {
-            get { return SExecuteWithSignature<Android.Icu.Util.TimeZone>(LocalBridgeClazz, "getDefault", "()Landroid/icu/util/TimeZone;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getTZDataVersion()"/> 
-        /// </summary>
-        public static Java.Lang.String TZDataVersion
-        {
-            get { return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getTZDataVersion", "()Ljava/lang/String;"); }
+            return SExecuteWithSignature<Android.Icu.Util.TimeZone>(LocalBridgeClazz, "getDefault", "()Landroid/icu/util/TimeZone;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getFrozenTimeZone(java.lang.String)"/>
@@ -238,6 +225,14 @@ namespace Android.Icu.Util
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getRegion", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getTZDataVersion()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String GetTZDataVersion()
+        {
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getTZDataVersion", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getWindowsID(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -245,6 +240,14 @@ namespace Android.Icu.Util
         public static Java.Lang.String GetWindowsID(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getWindowsID", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getAvailableIDs()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String[] GetAvailableIDs()
+        {
+            return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getAvailableIDs", "()[Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getAvailableIDs(int)"/>
@@ -280,34 +283,6 @@ namespace Android.Icu.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getDisplayName()"/> 
-        /// </summary>
-        public Java.Lang.String DisplayName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getDSTSavings()"/> 
-        /// </summary>
-        public int DSTSavings
-        {
-            get { return IExecuteWithSignature<int>("getDSTSavings", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getID()"/> <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#setID(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String ID
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getID", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setID", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getRawOffset()"/> <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#setRawOffset(int)"/>
-        /// </summary>
-        public int RawOffset
-        {
-            get { return IExecuteWithSignature<int>("getRawOffset", "()I"); } set { IExecuteWithSignature("setRawOffset", "(I)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#inDaylightTime(java.util.Date)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Date"/></param>
@@ -339,6 +314,22 @@ namespace Android.Icu.Util
             return IExecute<int>("getOffset", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getRawOffset()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRawOffset()
+        {
+            return IExecuteWithSignature<int>("getRawOffset", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#setRawOffset(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetRawOffset(int arg0)
+        {
+            IExecuteWithSignature("setRawOffset", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#hasSameRules(android.icu.util.TimeZone)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Util.TimeZone"/></param>
@@ -362,6 +353,14 @@ namespace Android.Icu.Util
         public bool ObservesDaylightTime()
         {
             return IExecuteWithSignature<bool>("observesDaylightTime", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getDisplayName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getDisplayName(android.icu.util.ULocale)"/>
@@ -390,6 +389,14 @@ namespace Android.Icu.Util
         public Java.Lang.String GetDisplayName(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getDSTSavings()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDSTSavings()
+        {
+            return IExecuteWithSignature<int>("getDSTSavings", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getOffset(long)"/>
@@ -439,6 +446,14 @@ namespace Android.Icu.Util
             return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getID()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetID()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getID", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getOffset(long,boolean,int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -447,6 +462,14 @@ namespace Android.Icu.Util
         public void GetOffset(long arg0, bool arg1, int[] arg2)
         {
             IExecute("getOffset", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#setID(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetID(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setID", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

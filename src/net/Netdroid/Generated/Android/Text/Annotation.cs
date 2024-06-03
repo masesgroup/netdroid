@@ -63,33 +63,36 @@ namespace Android.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Annotation.html#getKey()"/> 
-        /// </summary>
-        public Java.Lang.String Key
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Annotation.html#getSpanTypeId()"/> 
-        /// </summary>
-        public int SpanTypeId
-        {
-            get { return IExecuteWithSignature<int>("getSpanTypeId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Annotation.html#getValue()"/> 
-        /// </summary>
-        public Java.Lang.String Value
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Annotation.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Annotation.html#getSpanTypeId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSpanTypeId()
+        {
+            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Annotation.html#getKey()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetKey()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Annotation.html#getValue()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetValue()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Annotation.html#writeToParcel(android.os.Parcel,int)"/>

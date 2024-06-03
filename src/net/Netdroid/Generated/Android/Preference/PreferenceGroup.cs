@@ -36,7 +36,7 @@ namespace Android.Preference
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public PreferenceGroup(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -47,7 +47,7 @@ namespace Android.Preference
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public PreferenceGroup(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -57,7 +57,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public PreferenceGroup(Android.Content.Context arg0, Android.Util.AttributeSet arg1)
             : base(arg0, arg1)
         {
@@ -79,19 +79,11 @@ namespace Android.Preference
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/PreferenceGroup.html#getPreferenceCount()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int PreferenceCount
-        {
-            get { return IExecuteWithSignature<int>("getPreferenceCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceGroup.html#findPreference(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="Android.Preference.Preference"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Preference.Preference FindPreference(Java.Lang.CharSequence arg0)
         {
             return IExecuteWithSignature<Android.Preference.Preference>("findPreference", "(Ljava/lang/CharSequence;)Landroid/preference/Preference;", arg0);
@@ -101,7 +93,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Android.Preference.Preference"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Preference.Preference GetPreference(int arg0)
         {
             return IExecuteWithSignature<Android.Preference.Preference>("getPreference", "(I)Landroid/preference/Preference;", arg0);
@@ -111,7 +103,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Android.Preference.Preference"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool AddPreference(Android.Preference.Preference arg0)
         {
             return IExecuteWithSignature<bool>("addPreference", "(Landroid/preference/Preference;)Z", arg0);
@@ -120,7 +112,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceGroup.html#isOrderingAsAdded()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsOrderingAsAdded()
         {
             return IExecuteWithSignature<bool>("isOrderingAsAdded", "()Z");
@@ -130,16 +122,25 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Android.Preference.Preference"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool RemovePreference(Android.Preference.Preference arg0)
         {
             return IExecuteWithSignature<bool>("removePreference", "(Landroid/preference/Preference;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/PreferenceGroup.html#getPreferenceCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetPreferenceCount()
+        {
+            return IExecuteWithSignature<int>("getPreferenceCount", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceGroup.html#addItemFromInflater(android.preference.Preference)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Preference.Preference"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddItemFromInflater(Android.Preference.Preference arg0)
         {
             IExecuteWithSignature("addItemFromInflater", "(Landroid/preference/Preference;)V", arg0);
@@ -147,7 +148,7 @@ namespace Android.Preference
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceGroup.html#removeAll()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemoveAll()
         {
             IExecuteWithSignature("removeAll", "()V");
@@ -156,7 +157,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceGroup.html#setOrderingAsAdded(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetOrderingAsAdded(bool arg0)
         {
             IExecuteWithSignature("setOrderingAsAdded", "(Z)V", arg0);

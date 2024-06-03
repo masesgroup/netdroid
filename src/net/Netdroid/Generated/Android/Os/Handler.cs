@@ -33,7 +33,7 @@ namespace Android.Os
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#%3Cinit%3E(android.os.Handler.Callback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Handler.Callback"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Handler(Android.Os.Handler.Callback arg0)
             : base(arg0)
         {
@@ -91,13 +91,6 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Handler.html#getLooper()"/> 
-        /// </summary>
-        public Android.Os.Looper Looper
-        {
-            get { return IExecuteWithSignature<Android.Os.Looper>("getLooper", "()Landroid/os/Looper;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#sendMessageAtTime(android.os.Message,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Message"/></param>
@@ -106,6 +99,14 @@ namespace Android.Os
         public bool SendMessageAtTime(Android.Os.Message arg0, long arg1)
         {
             return IExecute<bool>("sendMessageAtTime", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Handler.html#getLooper()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.Looper"/></returns>
+        public Android.Os.Looper GetLooper()
+        {
+            return IExecuteWithSignature<Android.Os.Looper>("getLooper", "()Landroid/os/Looper;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#obtainMessage()"/>

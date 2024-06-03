@@ -56,25 +56,25 @@ namespace Org.W3c.Dom.Ls
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParserFilter.html#FILTER_ACCEPT"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParserFilter.html#FILTER_ACCEPT"/>
         /// </summary>
         public static short FILTER_ACCEPT { get { if (!_FILTER_ACCEPTReady) { _FILTER_ACCEPTContent = SGetField<short>(LocalBridgeClazz, "FILTER_ACCEPT"); _FILTER_ACCEPTReady = true; } return _FILTER_ACCEPTContent; } }
         private static short _FILTER_ACCEPTContent = default;
         private static bool _FILTER_ACCEPTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParserFilter.html#FILTER_INTERRUPT"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParserFilter.html#FILTER_INTERRUPT"/>
         /// </summary>
         public static short FILTER_INTERRUPT { get { if (!_FILTER_INTERRUPTReady) { _FILTER_INTERRUPTContent = SGetField<short>(LocalBridgeClazz, "FILTER_INTERRUPT"); _FILTER_INTERRUPTReady = true; } return _FILTER_INTERRUPTContent; } }
         private static short _FILTER_INTERRUPTContent = default;
         private static bool _FILTER_INTERRUPTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParserFilter.html#FILTER_REJECT"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParserFilter.html#FILTER_REJECT"/>
         /// </summary>
         public static short FILTER_REJECT { get { if (!_FILTER_REJECTReady) { _FILTER_REJECTContent = SGetField<short>(LocalBridgeClazz, "FILTER_REJECT"); _FILTER_REJECTReady = true; } return _FILTER_REJECTContent; } }
         private static short _FILTER_REJECTContent = default;
         private static bool _FILTER_REJECTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParserFilter.html#FILTER_SKIP"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParserFilter.html#FILTER_SKIP"/>
         /// </summary>
         public static short FILTER_SKIP { get { if (!_FILTER_SKIPReady) { _FILTER_SKIPContent = SGetField<short>(LocalBridgeClazz, "FILTER_SKIP"); _FILTER_SKIPReady = true; } return _FILTER_SKIPContent; } }
         private static short _FILTER_SKIPContent = default;
@@ -88,14 +88,15 @@ namespace Org.W3c.Dom.Ls
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParserFilter.html#getWhatToShow()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParserFilter.html#getWhatToShow()"/>
         /// </summary>
-        public int WhatToShow
+        /// <returns><see cref="int"/></returns>
+        public int GetWhatToShow()
         {
-            get { return IExecuteWithSignature<int>("getWhatToShow", "()I"); }
+            return IExecuteWithSignature<int>("getWhatToShow", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParserFilter.html#acceptNode(org.w3c.dom.Node)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParserFilter.html#acceptNode(org.w3c.dom.Node)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
         /// <returns><see cref="short"/></returns>
@@ -104,7 +105,7 @@ namespace Org.W3c.Dom.Ls
             return IExecuteWithSignature<short>("acceptNode", "(Lorg/w3c/dom/Node;)S", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParserFilter.html#startElement(org.w3c.dom.Element)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParserFilter.html#startElement(org.w3c.dom.Element)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Element"/></param>
         /// <returns><see cref="short"/></returns>

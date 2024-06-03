@@ -68,7 +68,7 @@ namespace Android.Sax
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("start", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Attributes>>>(StartEventHandler));
+            AddEventHandler("start", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Attributes>>>(StartEventHandler));
 
         }
 
@@ -76,7 +76,7 @@ namespace Android.Sax
         /// Handler for <see href="https://developer.android.com/reference/android/sax/StartElementListener.html#start(org.xml.sax.Attributes)"/>
         /// </summary>
         /// <remarks>If <see cref="OnStart"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Org.Xml.Sax.Attributes> OnStart { get; set; } = null;
+        public global::System.Action<Org.Xml.Sax.Attributes> OnStart { get; set; } = null;
 
         void StartEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Attributes>> data)
         {

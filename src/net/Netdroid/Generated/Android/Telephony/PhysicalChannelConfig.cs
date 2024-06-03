@@ -64,21 +64,21 @@ namespace Android.Telephony
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#CONNECTION_PRIMARY_SERVING"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CONNECTION_PRIMARY_SERVING { get { if (!_CONNECTION_PRIMARY_SERVINGReady) { _CONNECTION_PRIMARY_SERVINGContent = SGetField<int>(LocalBridgeClazz, "CONNECTION_PRIMARY_SERVING"); _CONNECTION_PRIMARY_SERVINGReady = true; } return _CONNECTION_PRIMARY_SERVINGContent; } }
         private static int _CONNECTION_PRIMARY_SERVINGContent = default;
         private static bool _CONNECTION_PRIMARY_SERVINGReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#CONNECTION_SECONDARY_SERVING"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CONNECTION_SECONDARY_SERVING { get { if (!_CONNECTION_SECONDARY_SERVINGReady) { _CONNECTION_SECONDARY_SERVINGContent = SGetField<int>(LocalBridgeClazz, "CONNECTION_SECONDARY_SERVING"); _CONNECTION_SECONDARY_SERVINGReady = true; } return _CONNECTION_SECONDARY_SERVINGContent; } }
         private static int _CONNECTION_SECONDARY_SERVINGContent = default;
         private static bool _CONNECTION_SECONDARY_SERVINGReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#CONNECTION_UNKNOWN"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CONNECTION_UNKNOWN { get { if (!_CONNECTION_UNKNOWNReady) { _CONNECTION_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "CONNECTION_UNKNOWN"); _CONNECTION_UNKNOWNReady = true; } return _CONNECTION_UNKNOWNContent; } }
         private static int _CONNECTION_UNKNOWNContent = default;
         private static bool _CONNECTION_UNKNOWNReady = false; // this is used because in case of generics 
@@ -109,82 +109,92 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#getBand()"/> 
-        /// </summary>
-        public int Band
-        {
-            get { return IExecuteWithSignature<int>("getBand", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#getCellBandwidthDownlinkKhz()"/> 
-        /// </summary>
-        public int CellBandwidthDownlinkKhz
-        {
-            get { return IExecuteWithSignature<int>("getCellBandwidthDownlinkKhz", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#getCellBandwidthUplinkKhz()"/> 
-        /// </summary>
-        public int CellBandwidthUplinkKhz
-        {
-            get { return IExecuteWithSignature<int>("getCellBandwidthUplinkKhz", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#getConnectionStatus()"/> 
-        /// </summary>
-        public int ConnectionStatus
-        {
-            get { return IExecuteWithSignature<int>("getConnectionStatus", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#getDownlinkChannelNumber()"/> 
-        /// </summary>
-        public int DownlinkChannelNumber
-        {
-            get { return IExecuteWithSignature<int>("getDownlinkChannelNumber", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#getDownlinkFrequencyKhz()"/> 
-        /// </summary>
-        public int DownlinkFrequencyKhz
-        {
-            get { return IExecuteWithSignature<int>("getDownlinkFrequencyKhz", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#getNetworkType()"/> 
-        /// </summary>
-        public int NetworkType
-        {
-            get { return IExecuteWithSignature<int>("getNetworkType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#getPhysicalCellId()"/> 
-        /// </summary>
-        public int PhysicalCellId
-        {
-            get { return IExecuteWithSignature<int>("getPhysicalCellId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#getUplinkChannelNumber()"/> 
-        /// </summary>
-        public int UplinkChannelNumber
-        {
-            get { return IExecuteWithSignature<int>("getUplinkChannelNumber", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#getUplinkFrequencyKhz()"/> 
-        /// </summary>
-        public int UplinkFrequencyKhz
-        {
-            get { return IExecuteWithSignature<int>("getUplinkFrequencyKhz", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#getBand()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBand()
+        {
+            return IExecuteWithSignature<int>("getBand", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#getCellBandwidthDownlinkKhz()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCellBandwidthDownlinkKhz()
+        {
+            return IExecuteWithSignature<int>("getCellBandwidthDownlinkKhz", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#getCellBandwidthUplinkKhz()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCellBandwidthUplinkKhz()
+        {
+            return IExecuteWithSignature<int>("getCellBandwidthUplinkKhz", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#getConnectionStatus()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetConnectionStatus()
+        {
+            return IExecuteWithSignature<int>("getConnectionStatus", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#getDownlinkChannelNumber()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDownlinkChannelNumber()
+        {
+            return IExecuteWithSignature<int>("getDownlinkChannelNumber", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#getDownlinkFrequencyKhz()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDownlinkFrequencyKhz()
+        {
+            return IExecuteWithSignature<int>("getDownlinkFrequencyKhz", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#getNetworkType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNetworkType()
+        {
+            return IExecuteWithSignature<int>("getNetworkType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#getPhysicalCellId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPhysicalCellId()
+        {
+            return IExecuteWithSignature<int>("getPhysicalCellId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#getUplinkChannelNumber()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetUplinkChannelNumber()
+        {
+            return IExecuteWithSignature<int>("getUplinkChannelNumber", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#getUplinkFrequencyKhz()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetUplinkFrequencyKhz()
+        {
+            return IExecuteWithSignature<int>("getUplinkFrequencyKhz", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#writeToParcel(android.os.Parcel,int)"/>

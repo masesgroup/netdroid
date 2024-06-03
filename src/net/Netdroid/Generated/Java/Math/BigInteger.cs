@@ -30,7 +30,7 @@ namespace Java.Math
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#%3Cinit%3E(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -40,7 +40,7 @@ namespace Java.Math
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#%3Cinit%3E(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public BigInteger(byte[] arg0)
@@ -48,7 +48,7 @@ namespace Java.Math
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#%3Cinit%3E(int,byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(int,byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -59,7 +59,7 @@ namespace Java.Math
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#%3Cinit%3E(int,byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(int,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -68,7 +68,7 @@ namespace Java.Math
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#%3Cinit%3E(int,int,java.util.Random)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(int,int,java.util.Random)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -78,7 +78,7 @@ namespace Java.Math
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#%3Cinit%3E(int,java.util.Random)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(int,java.util.Random)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Random"/></param>
@@ -87,7 +87,7 @@ namespace Java.Math
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#%3Cinit%3E(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -96,7 +96,7 @@ namespace Java.Math
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public BigInteger(Java.Lang.String arg0)
@@ -116,25 +116,25 @@ namespace Java.Math
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#ONE"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#ONE"/>
         /// </summary>
         public static Java.Math.BigInteger ONE { get { if (!_ONEReady) { _ONEContent = SGetField<Java.Math.BigInteger>(LocalBridgeClazz, "ONE"); _ONEReady = true; } return _ONEContent; } }
         private static Java.Math.BigInteger _ONEContent = default;
         private static bool _ONEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#TEN"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#TEN"/>
         /// </summary>
         public static Java.Math.BigInteger TEN { get { if (!_TENReady) { _TENContent = SGetField<Java.Math.BigInteger>(LocalBridgeClazz, "TEN"); _TENReady = true; } return _TENContent; } }
         private static Java.Math.BigInteger _TENContent = default;
         private static bool _TENReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#TWO"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#TWO"/>
         /// </summary>
         public static Java.Math.BigInteger TWO { get { if (!_TWOReady) { _TWOContent = SGetField<Java.Math.BigInteger>(LocalBridgeClazz, "TWO"); _TWOReady = true; } return _TWOContent; } }
         private static Java.Math.BigInteger _TWOContent = default;
         private static bool _TWOReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#ZERO"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#ZERO"/>
         /// </summary>
         public static Java.Math.BigInteger ZERO { get { if (!_ZEROReady) { _ZEROContent = SGetField<Java.Math.BigInteger>(LocalBridgeClazz, "ZERO"); _ZEROReady = true; } return _ZEROContent; } }
         private static Java.Math.BigInteger _ZEROContent = default;
@@ -144,7 +144,7 @@ namespace Java.Math
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#probablePrime(int,java.util.Random)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#probablePrime(int,java.util.Random)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Random"/></param>
@@ -154,7 +154,7 @@ namespace Java.Math
             return SExecute<Java.Math.BigInteger>(LocalBridgeClazz, "probablePrime", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#valueOf(long)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#valueOf(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -167,14 +167,7 @@ namespace Java.Math
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#getLowestSetBit()"/> 
-        /// </summary>
-        public int LowestSetBit
-        {
-            get { return IExecuteWithSignature<int>("getLowestSetBit", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#isProbablePrime(int)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#isProbablePrime(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -183,7 +176,7 @@ namespace Java.Math
             return IExecuteWithSignature<bool>("isProbablePrime", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#testBit(int)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#testBit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -192,7 +185,7 @@ namespace Java.Math
             return IExecuteWithSignature<bool>("testBit", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#byteValueExact()"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#byteValueExact()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
         public byte ByteValueExact()
@@ -200,7 +193,7 @@ namespace Java.Math
             return IExecuteWithSignature<byte>("byteValueExact", "()B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#toByteArray()"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#toByteArray()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
         public byte[] ToByteArray()
@@ -208,7 +201,7 @@ namespace Java.Math
             return IExecuteWithSignatureArray<byte>("toByteArray", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#bitCount()"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#bitCount()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int BitCount()
@@ -216,7 +209,7 @@ namespace Java.Math
             return IExecuteWithSignature<int>("bitCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#bitLength()"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#bitLength()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int BitLength()
@@ -224,7 +217,7 @@ namespace Java.Math
             return IExecuteWithSignature<int>("bitLength", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -233,7 +226,7 @@ namespace Java.Math
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#compareTo(java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#compareTo(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <returns><see cref="int"/></returns>
@@ -242,7 +235,15 @@ namespace Java.Math
             return IExecuteWithSignature<int>("compareTo", "(Ljava/math/BigInteger;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#intValueExact()"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#getLowestSetBit()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLowestSetBit()
+        {
+            return IExecuteWithSignature<int>("getLowestSetBit", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#intValueExact()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int IntValueExact()
@@ -250,7 +251,7 @@ namespace Java.Math
             return IExecuteWithSignature<int>("intValueExact", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#signum()"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#signum()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Signum()
@@ -258,7 +259,7 @@ namespace Java.Math
             return IExecuteWithSignature<int>("signum", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#toString(int)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#toString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -267,7 +268,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Lang.String>("toString", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#abs()"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#abs()"/>
         /// </summary>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Abs()
@@ -275,7 +276,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("abs", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#add(java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#add(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -284,7 +285,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("add", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#and(java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#and(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -293,7 +294,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("and", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#andNot(java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#andNot(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -302,7 +303,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("andNot", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#clearBit(int)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#clearBit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -311,7 +312,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("clearBit", "(I)Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#divide(java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#divide(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -320,7 +321,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("divide", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#flipBit(int)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#flipBit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -329,7 +330,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("flipBit", "(I)Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#gcd(java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#gcd(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -338,7 +339,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("gcd", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#max(java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#max(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -347,7 +348,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("max", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#min(java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#min(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -356,7 +357,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("min", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#mod(java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#mod(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -365,7 +366,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("mod", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#modInverse(java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#modInverse(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -374,7 +375,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("modInverse", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#modPow(java.math.BigInteger,java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#modPow(java.math.BigInteger,java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
@@ -384,7 +385,7 @@ namespace Java.Math
             return IExecute<Java.Math.BigInteger>("modPow", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#multiply(java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#multiply(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -393,7 +394,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("multiply", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Negate()
@@ -401,7 +402,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("negate", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#nextProbablePrime()"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#nextProbablePrime()"/>
         /// </summary>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger NextProbablePrime()
@@ -409,7 +410,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("nextProbablePrime", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#not()"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#not()"/>
         /// </summary>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Not()
@@ -417,7 +418,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("not", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#or(java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#or(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -426,7 +427,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("or", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#pow(int)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#pow(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -435,7 +436,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("pow", "(I)Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#remainder(java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#remainder(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -444,7 +445,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("remainder", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#setBit(int)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#setBit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -453,7 +454,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("setBit", "(I)Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#shiftLeft(int)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#shiftLeft(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -462,7 +463,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("shiftLeft", "(I)Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#shiftRight(int)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#shiftRight(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -471,7 +472,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("shiftRight", "(I)Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#sqrt()"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#sqrt()"/>
         /// </summary>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Sqrt()
@@ -479,7 +480,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("sqrt", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#subtract(java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#subtract(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -488,7 +489,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("subtract", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#xor(java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#xor(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -497,7 +498,7 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigInteger>("xor", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#divideAndRemainder(java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#divideAndRemainder(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -506,7 +507,7 @@ namespace Java.Math
             return IExecuteWithSignatureArray<Java.Math.BigInteger>("divideAndRemainder", "(Ljava/math/BigInteger;)[Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#sqrtAndRemainder()"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#sqrtAndRemainder()"/>
         /// </summary>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger[] SqrtAndRemainder()
@@ -514,7 +515,7 @@ namespace Java.Math
             return IExecuteWithSignatureArray<Java.Math.BigInteger>("sqrtAndRemainder", "()[Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#longValueExact()"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#longValueExact()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long LongValueExact()
@@ -522,7 +523,7 @@ namespace Java.Math
             return IExecuteWithSignature<long>("longValueExact", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html#shortValueExact()"/>
+        /// <see href="https://developer.android.com/reference/java/math/BigInteger.html#shortValueExact()"/>
         /// </summary>
         /// <returns><see cref="short"/></returns>
         public short ShortValueExact()

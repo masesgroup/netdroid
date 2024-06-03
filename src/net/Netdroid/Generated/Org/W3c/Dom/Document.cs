@@ -64,77 +64,55 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#getDoctype()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#getStrictErrorChecking()"/>
         /// </summary>
-        public Org.W3c.Dom.DocumentType Doctype
+        /// <returns><see cref="bool"/></returns>
+        public bool GetStrictErrorChecking()
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.DocumentType>("getDoctype", "()Lorg/w3c/dom/DocumentType;"); }
+            return IExecuteWithSignature<bool>("getStrictErrorChecking", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#getDocumentElement()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#getXmlStandalone()"/>
         /// </summary>
-        public Org.W3c.Dom.Element DocumentElement
+        /// <returns><see cref="bool"/></returns>
+        public bool GetXmlStandalone()
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Element>("getDocumentElement", "()Lorg/w3c/dom/Element;"); }
+            return IExecuteWithSignature<bool>("getXmlStandalone", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#getDocumentURI()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#setDocumentURI(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#getDocumentURI()"/>
         /// </summary>
-        public Java.Lang.String DocumentURI
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDocumentURI()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDocumentURI", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDocumentURI", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getDocumentURI", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#getDomConfig()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#getInputEncoding()"/>
         /// </summary>
-        public Org.W3c.Dom.DOMConfiguration DomConfig
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetInputEncoding()
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.DOMConfiguration>("getDomConfig", "()Lorg/w3c/dom/DOMConfiguration;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getInputEncoding", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#getImplementation()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#getXmlEncoding()"/>
         /// </summary>
-        public Org.W3c.Dom.DOMImplementation Implementation
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetXmlEncoding()
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.DOMImplementation>("getImplementation", "()Lorg/w3c/dom/DOMImplementation;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getXmlEncoding", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#getInputEncoding()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#getXmlVersion()"/>
         /// </summary>
-        public Java.Lang.String InputEncoding
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetXmlVersion()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInputEncoding", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getXmlVersion", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#getStrictErrorChecking()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#setStrictErrorChecking(boolean)"/>
-        /// </summary>
-        public bool StrictErrorChecking
-        {
-            get { return IExecuteWithSignature<bool>("getStrictErrorChecking", "()Z"); } set { IExecuteWithSignature("setStrictErrorChecking", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#getXmlEncoding()"/> 
-        /// </summary>
-        public Java.Lang.String XmlEncoding
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getXmlEncoding", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#getXmlStandalone()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#setXmlStandalone(boolean)"/>
-        /// </summary>
-        public bool XmlStandalone
-        {
-            get { return IExecuteWithSignature<bool>("getXmlStandalone", "()Z"); } set { IExecuteWithSignature("setXmlStandalone", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#getXmlVersion()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#setXmlVersion(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String XmlVersion
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getXmlVersion", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setXmlVersion", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#createAttribute(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#createAttribute(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Attr"/></returns>
@@ -144,7 +122,7 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Org.W3c.Dom.Attr>("createAttribute", "(Ljava/lang/String;)Lorg/w3c/dom/Attr;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#createAttributeNS(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#createAttributeNS(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -155,7 +133,7 @@ namespace Org.W3c.Dom
             return IExecute<Org.W3c.Dom.Attr>("createAttributeNS", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#createCDATASection(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#createCDATASection(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.CDATASection"/></returns>
@@ -165,7 +143,7 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Org.W3c.Dom.CDATASection>("createCDATASection", "(Ljava/lang/String;)Lorg/w3c/dom/CDATASection;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#createComment(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#createComment(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Comment"/></returns>
@@ -174,7 +152,7 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Org.W3c.Dom.Comment>("createComment", "(Ljava/lang/String;)Lorg/w3c/dom/Comment;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#createDocumentFragment()"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#createDocumentFragment()"/>
         /// </summary>
         /// <returns><see cref="Org.W3c.Dom.DocumentFragment"/></returns>
         public Org.W3c.Dom.DocumentFragment CreateDocumentFragment()
@@ -182,7 +160,31 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Org.W3c.Dom.DocumentFragment>("createDocumentFragment", "()Lorg/w3c/dom/DocumentFragment;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#createElement(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#getDoctype()"/>
+        /// </summary>
+        /// <returns><see cref="Org.W3c.Dom.DocumentType"/></returns>
+        public Org.W3c.Dom.DocumentType GetDoctype()
+        {
+            return IExecuteWithSignature<Org.W3c.Dom.DocumentType>("getDoctype", "()Lorg/w3c/dom/DocumentType;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#getDomConfig()"/>
+        /// </summary>
+        /// <returns><see cref="Org.W3c.Dom.DOMConfiguration"/></returns>
+        public Org.W3c.Dom.DOMConfiguration GetDomConfig()
+        {
+            return IExecuteWithSignature<Org.W3c.Dom.DOMConfiguration>("getDomConfig", "()Lorg/w3c/dom/DOMConfiguration;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#getImplementation()"/>
+        /// </summary>
+        /// <returns><see cref="Org.W3c.Dom.DOMImplementation"/></returns>
+        public Org.W3c.Dom.DOMImplementation GetImplementation()
+        {
+            return IExecuteWithSignature<Org.W3c.Dom.DOMImplementation>("getImplementation", "()Lorg/w3c/dom/DOMImplementation;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#createElement(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Element"/></returns>
@@ -192,7 +194,7 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Org.W3c.Dom.Element>("createElement", "(Ljava/lang/String;)Lorg/w3c/dom/Element;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#createElementNS(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#createElementNS(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -203,7 +205,15 @@ namespace Org.W3c.Dom
             return IExecute<Org.W3c.Dom.Element>("createElementNS", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#getElementById(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#getDocumentElement()"/>
+        /// </summary>
+        /// <returns><see cref="Org.W3c.Dom.Element"/></returns>
+        public Org.W3c.Dom.Element GetDocumentElement()
+        {
+            return IExecuteWithSignature<Org.W3c.Dom.Element>("getDocumentElement", "()Lorg/w3c/dom/Element;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#getElementById(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Element"/></returns>
@@ -212,7 +222,7 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Org.W3c.Dom.Element>("getElementById", "(Ljava/lang/String;)Lorg/w3c/dom/Element;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#createEntityReference(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#createEntityReference(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.EntityReference"/></returns>
@@ -222,7 +232,7 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Org.W3c.Dom.EntityReference>("createEntityReference", "(Ljava/lang/String;)Lorg/w3c/dom/EntityReference;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#adoptNode(org.w3c.dom.Node)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#adoptNode(org.w3c.dom.Node)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
@@ -232,7 +242,7 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Org.W3c.Dom.Node>("adoptNode", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#importNode(org.w3c.dom.Node,boolean)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#importNode(org.w3c.dom.Node,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -243,7 +253,7 @@ namespace Org.W3c.Dom
             return IExecute<Org.W3c.Dom.Node>("importNode", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#renameNode(org.w3c.dom.Node,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#renameNode(org.w3c.dom.Node,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -255,7 +265,7 @@ namespace Org.W3c.Dom
             return IExecute<Org.W3c.Dom.Node>("renameNode", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#getElementsByTagName(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#getElementsByTagName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.NodeList"/></returns>
@@ -264,7 +274,7 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Org.W3c.Dom.NodeList>("getElementsByTagName", "(Ljava/lang/String;)Lorg/w3c/dom/NodeList;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#getElementsByTagNameNS(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#getElementsByTagNameNS(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -274,7 +284,7 @@ namespace Org.W3c.Dom
             return IExecute<Org.W3c.Dom.NodeList>("getElementsByTagNameNS", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#createProcessingInstruction(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#createProcessingInstruction(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -285,7 +295,7 @@ namespace Org.W3c.Dom
             return IExecute<Org.W3c.Dom.ProcessingInstruction>("createProcessingInstruction", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#createTextNode(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#createTextNode(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Text"/></returns>
@@ -294,11 +304,45 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Org.W3c.Dom.Text>("createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Document.html#normalizeDocument()"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#normalizeDocument()"/>
         /// </summary>
         public void NormalizeDocument()
         {
             IExecuteWithSignature("normalizeDocument", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#setDocumentURI(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetDocumentURI(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setDocumentURI", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#setStrictErrorChecking(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetStrictErrorChecking(bool arg0)
+        {
+            IExecuteWithSignature("setStrictErrorChecking", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#setXmlStandalone(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        public void SetXmlStandalone(bool arg0)
+        {
+            IExecuteWithSignature("setXmlStandalone", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#setXmlVersion(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        public void SetXmlVersion(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setXmlVersion", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

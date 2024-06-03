@@ -42,11 +42,12 @@ namespace Android.Webkit
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/TracingController.html#getInstance()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/TracingController.html#getInstance()"/>
         /// </summary>
-        public static Android.Webkit.TracingController Instance
+        /// <returns><see cref="Android.Webkit.TracingController"/></returns>
+        public static Android.Webkit.TracingController GetInstance()
         {
-            get { return SExecuteWithSignature<Android.Webkit.TracingController>(LocalBridgeClazz, "getInstance", "()Landroid/webkit/TracingController;"); }
+            return SExecuteWithSignature<Android.Webkit.TracingController>(LocalBridgeClazz, "getInstance", "()Landroid/webkit/TracingController;");
         }
 
         #endregion

@@ -38,25 +38,25 @@ namespace Java.Sql
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ClientInfoStatus.html#REASON_UNKNOWN"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ClientInfoStatus.html#REASON_UNKNOWN"/>
         /// </summary>
         public static Java.Sql.ClientInfoStatus REASON_UNKNOWN { get { if (!_REASON_UNKNOWNReady) { _REASON_UNKNOWNContent = SGetField<Java.Sql.ClientInfoStatus>(LocalBridgeClazz, "REASON_UNKNOWN"); _REASON_UNKNOWNReady = true; } return _REASON_UNKNOWNContent; } }
         private static Java.Sql.ClientInfoStatus _REASON_UNKNOWNContent = default;
         private static bool _REASON_UNKNOWNReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ClientInfoStatus.html#REASON_UNKNOWN_PROPERTY"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ClientInfoStatus.html#REASON_UNKNOWN_PROPERTY"/>
         /// </summary>
         public static Java.Sql.ClientInfoStatus REASON_UNKNOWN_PROPERTY { get { if (!_REASON_UNKNOWN_PROPERTYReady) { _REASON_UNKNOWN_PROPERTYContent = SGetField<Java.Sql.ClientInfoStatus>(LocalBridgeClazz, "REASON_UNKNOWN_PROPERTY"); _REASON_UNKNOWN_PROPERTYReady = true; } return _REASON_UNKNOWN_PROPERTYContent; } }
         private static Java.Sql.ClientInfoStatus _REASON_UNKNOWN_PROPERTYContent = default;
         private static bool _REASON_UNKNOWN_PROPERTYReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ClientInfoStatus.html#REASON_VALUE_INVALID"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ClientInfoStatus.html#REASON_VALUE_INVALID"/>
         /// </summary>
         public static Java.Sql.ClientInfoStatus REASON_VALUE_INVALID { get { if (!_REASON_VALUE_INVALIDReady) { _REASON_VALUE_INVALIDContent = SGetField<Java.Sql.ClientInfoStatus>(LocalBridgeClazz, "REASON_VALUE_INVALID"); _REASON_VALUE_INVALIDReady = true; } return _REASON_VALUE_INVALIDContent; } }
         private static Java.Sql.ClientInfoStatus _REASON_VALUE_INVALIDContent = default;
         private static bool _REASON_VALUE_INVALIDReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ClientInfoStatus.html#REASON_VALUE_TRUNCATED"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ClientInfoStatus.html#REASON_VALUE_TRUNCATED"/>
         /// </summary>
         public static Java.Sql.ClientInfoStatus REASON_VALUE_TRUNCATED { get { if (!_REASON_VALUE_TRUNCATEDReady) { _REASON_VALUE_TRUNCATEDContent = SGetField<Java.Sql.ClientInfoStatus>(LocalBridgeClazz, "REASON_VALUE_TRUNCATED"); _REASON_VALUE_TRUNCATEDReady = true; } return _REASON_VALUE_TRUNCATEDContent; } }
         private static Java.Sql.ClientInfoStatus _REASON_VALUE_TRUNCATEDContent = default;
@@ -66,7 +66,7 @@ namespace Java.Sql
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ClientInfoStatus.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ClientInfoStatus.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.ClientInfoStatus"/></returns>
@@ -75,7 +75,7 @@ namespace Java.Sql
             return SExecuteWithSignature<Java.Sql.ClientInfoStatus>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/sql/ClientInfoStatus;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ClientInfoStatus.html#values()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ClientInfoStatus.html#values()"/>
         /// </summary>
         /// <returns><see cref="Java.Sql.ClientInfoStatus"/></returns>
         public static Java.Sql.ClientInfoStatus[] Values()

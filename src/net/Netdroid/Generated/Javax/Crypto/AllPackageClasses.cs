@@ -28,7 +28,7 @@ namespace Javax.Crypto
 {
     #region AEADBadTagException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/AEADBadTagException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/AEADBadTagException.html"/>
     /// </summary>
     public partial class AEADBadTagException : Javax.Crypto.BadPaddingException
     {
@@ -45,7 +45,7 @@ namespace Javax.Crypto
 
     #region BadPaddingException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/BadPaddingException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/BadPaddingException.html"/>
     /// </summary>
     public partial class BadPaddingException : Java.Security.GeneralSecurityException
     {
@@ -62,7 +62,7 @@ namespace Javax.Crypto
 
     #region Cipher
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/Cipher.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/Cipher.html"/>
     /// </summary>
     public partial class Cipher : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Cipher>
     {
@@ -106,7 +106,7 @@ namespace Javax.Crypto
 
     #region CipherInputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/CipherInputStream.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/CipherInputStream.html"/>
     /// </summary>
     public partial class CipherInputStream : Java.Io.FilterInputStream
     {
@@ -150,7 +150,7 @@ namespace Javax.Crypto
 
     #region CipherOutputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/CipherOutputStream.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/CipherOutputStream.html"/>
     /// </summary>
     public partial class CipherOutputStream : Java.Io.FilterOutputStream
     {
@@ -194,7 +194,7 @@ namespace Javax.Crypto
 
     #region CipherSpi
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/CipherSpi.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/CipherSpi.html"/>
     /// </summary>
     public partial class CipherSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CipherSpi>
     {
@@ -202,12 +202,12 @@ namespace Javax.Crypto
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CipherSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CipherSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CipherSpi() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CipherSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CipherSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CipherSpi(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -240,7 +240,7 @@ namespace Javax.Crypto
 
     #region EncryptedPrivateKeyInfo
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/EncryptedPrivateKeyInfo.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/EncryptedPrivateKeyInfo.html"/>
     /// </summary>
     public partial class EncryptedPrivateKeyInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EncryptedPrivateKeyInfo>
     {
@@ -284,7 +284,7 @@ namespace Javax.Crypto
 
     #region ExemptionMechanism
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/ExemptionMechanism.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/ExemptionMechanism.html"/>
     /// </summary>
     public partial class ExemptionMechanism : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ExemptionMechanism>
     {
@@ -328,7 +328,7 @@ namespace Javax.Crypto
 
     #region ExemptionMechanismException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/ExemptionMechanismException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/ExemptionMechanismException.html"/>
     /// </summary>
     public partial class ExemptionMechanismException : Java.Security.GeneralSecurityException
     {
@@ -345,7 +345,7 @@ namespace Javax.Crypto
 
     #region ExemptionMechanismSpi
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/ExemptionMechanismSpi.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/ExemptionMechanismSpi.html"/>
     /// </summary>
     public partial class ExemptionMechanismSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ExemptionMechanismSpi>
     {
@@ -353,12 +353,12 @@ namespace Javax.Crypto
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ExemptionMechanismSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ExemptionMechanismSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ExemptionMechanismSpi() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ExemptionMechanismSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ExemptionMechanismSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ExemptionMechanismSpi(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -391,7 +391,7 @@ namespace Javax.Crypto
 
     #region IllegalBlockSizeException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/IllegalBlockSizeException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/IllegalBlockSizeException.html"/>
     /// </summary>
     public partial class IllegalBlockSizeException : Java.Security.GeneralSecurityException
     {
@@ -408,7 +408,7 @@ namespace Javax.Crypto
 
     #region KeyAgreement
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/KeyAgreement.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/KeyAgreement.html"/>
     /// </summary>
     public partial class KeyAgreement : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyAgreement>
     {
@@ -452,7 +452,7 @@ namespace Javax.Crypto
 
     #region KeyAgreementSpi
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/KeyAgreementSpi.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/KeyAgreementSpi.html"/>
     /// </summary>
     public partial class KeyAgreementSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyAgreementSpi>
     {
@@ -460,12 +460,12 @@ namespace Javax.Crypto
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("KeyAgreementSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("KeyAgreementSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public KeyAgreementSpi() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("KeyAgreementSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("KeyAgreementSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public KeyAgreementSpi(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -498,7 +498,7 @@ namespace Javax.Crypto
 
     #region KeyGenerator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/KeyGenerator.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/KeyGenerator.html"/>
     /// </summary>
     public partial class KeyGenerator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyGenerator>
     {
@@ -542,7 +542,7 @@ namespace Javax.Crypto
 
     #region KeyGeneratorSpi
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/KeyGeneratorSpi.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/KeyGeneratorSpi.html"/>
     /// </summary>
     public partial class KeyGeneratorSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyGeneratorSpi>
     {
@@ -550,12 +550,12 @@ namespace Javax.Crypto
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("KeyGeneratorSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("KeyGeneratorSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public KeyGeneratorSpi() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("KeyGeneratorSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("KeyGeneratorSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public KeyGeneratorSpi(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -588,7 +588,7 @@ namespace Javax.Crypto
 
     #region Mac
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/Mac.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/Mac.html"/>
     /// </summary>
     public partial class Mac : Java.Lang.Cloneable
     {
@@ -632,7 +632,7 @@ namespace Javax.Crypto
 
     #region MacSpi
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/MacSpi.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/MacSpi.html"/>
     /// </summary>
     public partial class MacSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MacSpi>
     {
@@ -640,12 +640,12 @@ namespace Javax.Crypto
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("MacSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("MacSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MacSpi() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("MacSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("MacSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MacSpi(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -678,7 +678,7 @@ namespace Javax.Crypto
 
     #region NoSuchPaddingException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/NoSuchPaddingException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/NoSuchPaddingException.html"/>
     /// </summary>
     public partial class NoSuchPaddingException : Java.Security.GeneralSecurityException
     {
@@ -695,7 +695,7 @@ namespace Javax.Crypto
 
     #region NullCipher
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/NullCipher.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/NullCipher.html"/>
     /// </summary>
     public partial class NullCipher : Javax.Crypto.Cipher
     {
@@ -739,7 +739,7 @@ namespace Javax.Crypto
 
     #region SealedObject
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/SealedObject.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/SealedObject.html"/>
     /// </summary>
     public partial class SealedObject : Java.Io.Serializable
     {
@@ -783,7 +783,7 @@ namespace Javax.Crypto
 
     #region SecretKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/SecretKey.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/SecretKey.html"/>
     /// </summary>
     public partial class SecretKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SecretKey>
     {
@@ -791,12 +791,12 @@ namespace Javax.Crypto
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SecretKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SecretKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SecretKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SecretKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SecretKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SecretKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -829,7 +829,7 @@ namespace Javax.Crypto
 
     #region SecretKeyFactory
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/SecretKeyFactory.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/SecretKeyFactory.html"/>
     /// </summary>
     public partial class SecretKeyFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SecretKeyFactory>
     {
@@ -873,7 +873,7 @@ namespace Javax.Crypto
 
     #region SecretKeyFactorySpi
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/SecretKeyFactorySpi.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/SecretKeyFactorySpi.html"/>
     /// </summary>
     public partial class SecretKeyFactorySpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SecretKeyFactorySpi>
     {
@@ -881,12 +881,12 @@ namespace Javax.Crypto
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SecretKeyFactorySpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SecretKeyFactorySpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SecretKeyFactorySpi() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SecretKeyFactorySpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SecretKeyFactorySpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SecretKeyFactorySpi(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -919,7 +919,7 @@ namespace Javax.Crypto
 
     #region ShortBufferException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/ShortBufferException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/ShortBufferException.html"/>
     /// </summary>
     public partial class ShortBufferException : Java.Security.GeneralSecurityException
     {

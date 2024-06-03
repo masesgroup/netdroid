@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region ILongConsumer
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.LongConsumer implementing <see href="https://developer.android.com/reference/java.base/java/util/function/LongConsumer.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.LongConsumer implementing <see href="https://developer.android.com/reference/java/util/function/LongConsumer.html"/>
     /// </summary>
     public partial interface ILongConsumer
     {
@@ -68,16 +68,16 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(AcceptEventHandler));
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongConsumer>>>(AndThenEventHandler));
+            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(AcceptEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongConsumer>>>(AndThenEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/LongConsumer.html#accept(long)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/LongConsumer.html#accept(long)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<long> OnAccept { get; set; } = null;
+        public global::System.Action<long> OnAccept { get; set; } = null;
 
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
         {
@@ -86,7 +86,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongConsumer.html#accept(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongConsumer.html#accept(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public virtual void Accept(long arg0)
@@ -94,7 +94,7 @@ namespace Java.Util.Function
             
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.LongConsumer"/></returns>
@@ -105,10 +105,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.LongConsumer, Java.Util.Function.LongConsumer> OnAndThen { get; set; } = null;
+        public global::System.Func<Java.Util.Function.LongConsumer, Java.Util.Function.LongConsumer> OnAndThen { get; set; } = null;
 
         void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.LongConsumer>> data)
         {
@@ -118,7 +118,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.LongConsumer"/></returns>
@@ -159,7 +159,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongConsumer.html#accept(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongConsumer.html#accept(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public override void Accept(long arg0)
@@ -167,7 +167,7 @@ namespace Java.Util.Function
             IExecuteWithSignature("accept", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.LongConsumer"/></returns>

@@ -46,7 +46,7 @@ namespace Java.Nio.Charset
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CharsetDecoder.html#isAutoDetecting()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CharsetDecoder.html#isAutoDetecting()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsAutoDetecting()
@@ -54,7 +54,7 @@ namespace Java.Nio.Charset
             return IExecuteWithSignature<bool>("isAutoDetecting", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CharsetDecoder.html#isCharsetDetected()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CharsetDecoder.html#isCharsetDetected()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsCharsetDetected()
@@ -62,7 +62,7 @@ namespace Java.Nio.Charset
             return IExecuteWithSignature<bool>("isCharsetDetected", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CharsetDecoder.html#averageCharsPerByte()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CharsetDecoder.html#averageCharsPerByte()"/>
         /// </summary>
         /// <returns><see cref="float"/></returns>
         public float AverageCharsPerByte()
@@ -70,7 +70,7 @@ namespace Java.Nio.Charset
             return IExecuteWithSignature<float>("averageCharsPerByte", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CharsetDecoder.html#maxCharsPerByte()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CharsetDecoder.html#maxCharsPerByte()"/>
         /// </summary>
         /// <returns><see cref="float"/></returns>
         public float MaxCharsPerByte()
@@ -78,7 +78,7 @@ namespace Java.Nio.Charset
             return IExecuteWithSignature<float>("maxCharsPerByte", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CharsetDecoder.html#replacement()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CharsetDecoder.html#replacement()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Replacement()
@@ -86,7 +86,7 @@ namespace Java.Nio.Charset
             return IExecuteWithSignature<Java.Lang.String>("replacement", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CharsetDecoder.html#decode(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CharsetDecoder.html#decode(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
@@ -96,7 +96,7 @@ namespace Java.Nio.Charset
             return IExecuteWithSignature<Java.Nio.CharBuffer>("decode", "(Ljava/nio/ByteBuffer;)Ljava/nio/CharBuffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CharsetDecoder.html#charset()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CharsetDecoder.html#charset()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Charset.Charset"/></returns>
         public Java.Nio.Charset.Charset Charset()
@@ -104,7 +104,7 @@ namespace Java.Nio.Charset
             return IExecuteWithSignature<Java.Nio.Charset.Charset>("charset", "()Ljava/nio/charset/Charset;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CharsetDecoder.html#onMalformedInput(java.nio.charset.CodingErrorAction)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CharsetDecoder.html#onMalformedInput(java.nio.charset.CodingErrorAction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Charset.CodingErrorAction"/></param>
         /// <returns><see cref="Java.Nio.Charset.CharsetDecoder"/></returns>
@@ -113,7 +113,7 @@ namespace Java.Nio.Charset
             return IExecuteWithSignature<Java.Nio.Charset.CharsetDecoder>("onMalformedInput", "(Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetDecoder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CharsetDecoder.html#onUnmappableCharacter(java.nio.charset.CodingErrorAction)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CharsetDecoder.html#onUnmappableCharacter(java.nio.charset.CodingErrorAction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Charset.CodingErrorAction"/></param>
         /// <returns><see cref="Java.Nio.Charset.CharsetDecoder"/></returns>
@@ -122,7 +122,7 @@ namespace Java.Nio.Charset
             return IExecuteWithSignature<Java.Nio.Charset.CharsetDecoder>("onUnmappableCharacter", "(Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetDecoder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CharsetDecoder.html#replaceWith(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CharsetDecoder.html#replaceWith(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Nio.Charset.CharsetDecoder"/></returns>
@@ -131,7 +131,7 @@ namespace Java.Nio.Charset
             return IExecuteWithSignature<Java.Nio.Charset.CharsetDecoder>("replaceWith", "(Ljava/lang/String;)Ljava/nio/charset/CharsetDecoder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CharsetDecoder.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CharsetDecoder.html#reset()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Charset.CharsetDecoder"/></returns>
         public Java.Nio.Charset.CharsetDecoder Reset()
@@ -139,7 +139,7 @@ namespace Java.Nio.Charset
             return IExecuteWithSignature<Java.Nio.Charset.CharsetDecoder>("reset", "()Ljava/nio/charset/CharsetDecoder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CharsetDecoder.html#decode(java.nio.ByteBuffer,java.nio.CharBuffer,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CharsetDecoder.html#decode(java.nio.ByteBuffer,java.nio.CharBuffer,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="Java.Nio.CharBuffer"/></param>
@@ -150,7 +150,7 @@ namespace Java.Nio.Charset
             return IExecute<Java.Nio.Charset.CoderResult>("decode", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CharsetDecoder.html#flush(java.nio.CharBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CharsetDecoder.html#flush(java.nio.CharBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.CharBuffer"/></param>
         /// <returns><see cref="Java.Nio.Charset.CoderResult"/></returns>
@@ -159,7 +159,7 @@ namespace Java.Nio.Charset
             return IExecuteWithSignature<Java.Nio.Charset.CoderResult>("flush", "(Ljava/nio/CharBuffer;)Ljava/nio/charset/CoderResult;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CharsetDecoder.html#detectedCharset()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CharsetDecoder.html#detectedCharset()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Charset.Charset"/></returns>
         public Java.Nio.Charset.Charset DetectedCharset()
@@ -167,7 +167,7 @@ namespace Java.Nio.Charset
             return IExecuteWithSignature<Java.Nio.Charset.Charset>("detectedCharset", "()Ljava/nio/charset/Charset;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CharsetDecoder.html#malformedInputAction()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CharsetDecoder.html#malformedInputAction()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Charset.CodingErrorAction"/></returns>
         public Java.Nio.Charset.CodingErrorAction MalformedInputAction()
@@ -175,7 +175,7 @@ namespace Java.Nio.Charset
             return IExecuteWithSignature<Java.Nio.Charset.CodingErrorAction>("malformedInputAction", "()Ljava/nio/charset/CodingErrorAction;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CharsetDecoder.html#unmappableCharacterAction()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CharsetDecoder.html#unmappableCharacterAction()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Charset.CodingErrorAction"/></returns>
         public Java.Nio.Charset.CodingErrorAction UnmappableCharacterAction()

@@ -55,11 +55,12 @@ namespace Android.Health.Connect.Datatypes.Units
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Percentage.html#getValue()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Percentage.html#getValue()"/>
         /// </summary>
-        public double Value
+        /// <returns><see cref="double"/></returns>
+        public double GetValue()
         {
-            get { return IExecuteWithSignature<double>("getValue", "()D"); }
+            return IExecuteWithSignature<double>("getValue", "()D");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Percentage.html#compareTo(android.health.connect.datatypes.units.Percentage)"/>

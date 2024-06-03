@@ -50,39 +50,44 @@ namespace Android.Os
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Binder.html#getCallingPid()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/Binder.html#getCallingUserHandle()"/>
         /// </summary>
-        public static int CallingPid
+        /// <returns><see cref="Android.Os.UserHandle"/></returns>
+        public static Android.Os.UserHandle GetCallingUserHandle()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getCallingPid", "()I"); }
+            return SExecuteWithSignature<Android.Os.UserHandle>(LocalBridgeClazz, "getCallingUserHandle", "()Landroid/os/UserHandle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Binder.html#getCallingUid()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/Binder.html#getCallingUidOrThrow()"/>
         /// </summary>
-        public static int CallingUid
+        /// <returns><see cref="int"/></returns>
+        public static int GetCallingUidOrThrow()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getCallingUid", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getCallingUidOrThrow", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Binder.html#getCallingUidOrThrow()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/Binder.html#getCallingPid()"/>
         /// </summary>
-        public static int CallingUidOrThrow
+        /// <returns><see cref="int"/></returns>
+        public static int GetCallingPid()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getCallingUidOrThrow", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getCallingPid", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Binder.html#getCallingUserHandle()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/Binder.html#getCallingUid()"/>
         /// </summary>
-        public static Android.Os.UserHandle CallingUserHandle
+        /// <returns><see cref="int"/></returns>
+        public static int GetCallingUid()
         {
-            get { return SExecuteWithSignature<Android.Os.UserHandle>(LocalBridgeClazz, "getCallingUserHandle", "()Landroid/os/UserHandle;"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getCallingUid", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Binder.html#getCallingWorkSourceUid()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/Binder.html#getCallingWorkSourceUid()"/>
         /// </summary>
-        public static int CallingWorkSourceUid
+        /// <returns><see cref="int"/></returns>
+        public static int GetCallingWorkSourceUid()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getCallingWorkSourceUid", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getCallingWorkSourceUid", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Binder.html#clearCallingIdentity()"/>
@@ -144,13 +149,6 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Binder.html#getInterfaceDescriptor()"/> 
-        /// </summary>
-        public Java.Lang.String InterfaceDescriptor
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInterfaceDescriptor", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Binder.html#queryLocalInterface(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -197,6 +195,14 @@ namespace Android.Os
         public bool Transact(int arg0, Android.Os.Parcel arg1, Android.Os.Parcel arg2, int arg3)
         {
             return IExecute<bool>("transact", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Binder.html#getInterfaceDescriptor()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetInterfaceDescriptor()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getInterfaceDescriptor", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Binder.html#attachInterface(android.os.IInterface,java.lang.String)"/>

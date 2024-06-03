@@ -42,14 +42,15 @@ namespace Java.Security
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#getDefaultType()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#getDefaultType()"/>
         /// </summary>
-        public static Java.Lang.String DefaultType
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String GetDefaultType()
         {
-            get { return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDefaultType", "()Ljava/lang/String;"); }
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDefaultType", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#getInstance(java.io.File,char[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#getInstance(java.io.File,char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <param name="arg1"><see cref="char"/></param>
@@ -63,7 +64,7 @@ namespace Java.Security
             return SExecute<Java.Security.KeyStore>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#getInstance(java.io.File,java.security.KeyStore.LoadStoreParameter)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#getInstance(java.io.File,java.security.KeyStore.LoadStoreParameter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <param name="arg1"><see cref="Java.Security.KeyStore.LoadStoreParameter"/></param>
@@ -77,7 +78,7 @@ namespace Java.Security
             return SExecute<Java.Security.KeyStore>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#getInstance(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -89,7 +90,7 @@ namespace Java.Security
             return SExecute<Java.Security.KeyStore>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#getInstance(java.lang.String,java.security.Provider)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
@@ -100,7 +101,7 @@ namespace Java.Security
             return SExecute<Java.Security.KeyStore>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#getInstance(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.KeyStore"/></returns>
@@ -114,21 +115,7 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#getProvider()"/> 
-        /// </summary>
-        public Java.Security.Provider Provider
-        {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.String Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#containsAlias(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#containsAlias(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -138,7 +125,7 @@ namespace Java.Security
             return IExecuteWithSignature<bool>("containsAlias", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#entryInstanceOf(java.lang.String,java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#entryInstanceOf(java.lang.String,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -149,7 +136,7 @@ namespace Java.Security
             return IExecute<bool>("entryInstanceOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#isCertificateEntry(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#isCertificateEntry(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -159,7 +146,7 @@ namespace Java.Security
             return IExecuteWithSignature<bool>("isCertificateEntry", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#isKeyEntry(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#isKeyEntry(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -169,7 +156,7 @@ namespace Java.Security
             return IExecuteWithSignature<bool>("isKeyEntry", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#size()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
@@ -178,7 +165,7 @@ namespace Java.Security
             return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#getCertificateAlias(java.security.cert.Certificate)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#getCertificateAlias(java.security.cert.Certificate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -188,7 +175,15 @@ namespace Java.Security
             return IExecuteWithSignature<Java.Lang.String>("getCertificateAlias", "(Ljava/security/cert/Certificate;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#getCertificate(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#getCertificate(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
@@ -198,7 +193,7 @@ namespace Java.Security
             return IExecuteWithSignature<Java.Security.Cert.Certificate>("getCertificate", "(Ljava/lang/String;)Ljava/security/cert/Certificate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#getCertificateChain(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#getCertificateChain(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
@@ -208,7 +203,7 @@ namespace Java.Security
             return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getCertificateChain", "(Ljava/lang/String;)[Ljava/security/cert/Certificate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#getKey(java.lang.String,char[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#getKey(java.lang.String,char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="char"/></param>
@@ -221,7 +216,7 @@ namespace Java.Security
             return IExecute<Java.Security.Key>("getKey", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#getEntry(java.lang.String,java.security.KeyStore.ProtectionParameter)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#getEntry(java.lang.String,java.security.KeyStore.ProtectionParameter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.KeyStore.ProtectionParameter"/></param>
@@ -234,7 +229,15 @@ namespace Java.Security
             return IExecute<Java.Security.KeyStore.Entry>("getEntry", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#getCreationDate(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#getProvider()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Provider"/></returns>
+        public Java.Security.Provider GetProvider()
+        {
+            return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#getCreationDate(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Date"/></returns>
@@ -244,7 +247,7 @@ namespace Java.Security
             return IExecuteWithSignature<Java.Util.Date>("getCreationDate", "(Ljava/lang/String;)Ljava/util/Date;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#aliases()"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#aliases()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
@@ -253,7 +256,7 @@ namespace Java.Security
             return IExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>("aliases", "()Ljava/util/Enumeration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#deleteEntry(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#deleteEntry(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Security.KeyStoreException"/>
@@ -262,7 +265,7 @@ namespace Java.Security
             IExecuteWithSignature("deleteEntry", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#load(java.io.InputStream,char[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#load(java.io.InputStream,char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="char"/></param>
@@ -274,7 +277,7 @@ namespace Java.Security
             IExecute("load", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#load(java.security.KeyStore.LoadStoreParameter)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#load(java.security.KeyStore.LoadStoreParameter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.KeyStore.LoadStoreParameter"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -285,7 +288,7 @@ namespace Java.Security
             IExecuteWithSignature("load", "(Ljava/security/KeyStore$LoadStoreParameter;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#setCertificateEntry(java.lang.String,java.security.cert.Certificate)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#setCertificateEntry(java.lang.String,java.security.cert.Certificate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.Certificate"/></param>
@@ -295,7 +298,7 @@ namespace Java.Security
             IExecute("setCertificateEntry", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#setEntry(java.lang.String,java.security.KeyStore.Entry,java.security.KeyStore.ProtectionParameter)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#setEntry(java.lang.String,java.security.KeyStore.Entry,java.security.KeyStore.ProtectionParameter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.KeyStore.Entry"/></param>
@@ -306,7 +309,7 @@ namespace Java.Security
             IExecute("setEntry", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#setKeyEntry(java.lang.String,byte[],java.security.cert.Certificate[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#setKeyEntry(java.lang.String,byte[],java.security.cert.Certificate[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -317,7 +320,7 @@ namespace Java.Security
             IExecute("setKeyEntry", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#setKeyEntry(java.lang.String,java.security.Key,char[],java.security.cert.Certificate[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#setKeyEntry(java.lang.String,java.security.Key,char[],java.security.cert.Certificate[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Key"/></param>
@@ -329,7 +332,7 @@ namespace Java.Security
             IExecute("setKeyEntry", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#store(java.io.OutputStream,char[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#store(java.io.OutputStream,char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="char"/></param>
@@ -342,7 +345,7 @@ namespace Java.Security
             IExecute("store", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.html#store(java.security.KeyStore.LoadStoreParameter)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#store(java.security.KeyStore.LoadStoreParameter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.KeyStore.LoadStoreParameter"/></param>
         /// <exception cref="Java.Security.KeyStoreException"/>
@@ -374,7 +377,7 @@ namespace Java.Security
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.Builder.html#newInstance(java.io.File,java.security.KeyStore.ProtectionParameter)"/>
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.Builder.html#newInstance(java.io.File,java.security.KeyStore.ProtectionParameter)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Io.File"/></param>
             /// <param name="arg1"><see cref="Java.Security.KeyStore.ProtectionParameter"/></param>
@@ -384,7 +387,7 @@ namespace Java.Security
                 return SExecute<Java.Security.KeyStore.Builder>(LocalBridgeClazz, "newInstance", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.Builder.html#newInstance(java.lang.String,java.security.Provider,java.io.File,java.security.KeyStore.ProtectionParameter)"/>
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.Builder.html#newInstance(java.lang.String,java.security.Provider,java.io.File,java.security.KeyStore.ProtectionParameter)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
@@ -396,7 +399,7 @@ namespace Java.Security
                 return SExecute<Java.Security.KeyStore.Builder>(LocalBridgeClazz, "newInstance", arg0, arg1, arg2, arg3);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.Builder.html#newInstance(java.lang.String,java.security.Provider,java.security.KeyStore.ProtectionParameter)"/>
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.Builder.html#newInstance(java.lang.String,java.security.Provider,java.security.KeyStore.ProtectionParameter)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
@@ -407,7 +410,7 @@ namespace Java.Security
                 return SExecute<Java.Security.KeyStore.Builder>(LocalBridgeClazz, "newInstance", arg0, arg1, arg2);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.Builder.html#newInstance(java.security.KeyStore,java.security.KeyStore.ProtectionParameter)"/>
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.Builder.html#newInstance(java.security.KeyStore,java.security.KeyStore.ProtectionParameter)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Security.KeyStore"/></param>
             /// <param name="arg1"><see cref="Java.Security.KeyStore.ProtectionParameter"/></param>
@@ -421,14 +424,16 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.Builder.html#getKeyStore()"/> 
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.Builder.html#getKeyStore()"/>
             /// </summary>
-            public Java.Security.KeyStore GetKeyStore
+            /// <returns><see cref="Java.Security.KeyStore"/></returns>
+            /// <exception cref="Java.Security.KeyStoreException"/>
+            public Java.Security.KeyStore GetKeyStore()
             {
-                get { return IExecuteWithSignature<Java.Security.KeyStore>("getKeyStore", "()Ljava/security/KeyStore;"); }
+                return IExecuteWithSignature<Java.Security.KeyStore>("getKeyStore", "()Ljava/security/KeyStore;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.Builder.html#getProtectionParameter(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.Builder.html#getProtectionParameter(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Security.KeyStore.ProtectionParameter"/></returns>
@@ -453,7 +458,7 @@ namespace Java.Security
         {
             #region Constructors
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.CallbackHandlerProtection.html#%3Cinit%3E(javax.security.auth.callback.CallbackHandler)"/>
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.CallbackHandlerProtection.html#%3Cinit%3E(javax.security.auth.callback.CallbackHandler)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
             public CallbackHandlerProtection(Javax.Security.Auth.Callback.CallbackHandler arg0)
@@ -477,11 +482,12 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.CallbackHandlerProtection.html#getCallbackHandler()"/> 
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.CallbackHandlerProtection.html#getCallbackHandler()"/>
             /// </summary>
-            public Javax.Security.Auth.Callback.CallbackHandler CallbackHandler
+            /// <returns><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></returns>
+            public Javax.Security.Auth.Callback.CallbackHandler GetCallbackHandler()
             {
-                get { return IExecuteWithSignature<Javax.Security.Auth.Callback.CallbackHandler>("getCallbackHandler", "()Ljavax/security/auth/callback/CallbackHandler;"); }
+                return IExecuteWithSignature<Javax.Security.Auth.Callback.CallbackHandler>("getCallbackHandler", "()Ljavax/security/auth/callback/CallbackHandler;");
             }
 
             #endregion
@@ -515,11 +521,12 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.Entry.html#getAttributes()"/> 
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.Entry.html#getAttributes()"/>
             /// </summary>
-            public Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> Attributes
+            /// <returns><see cref="Java.Util.Set"/></returns>
+            public Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> GetAttributes()
             {
-                get { return IExecuteWithSignature<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes", "()Ljava/util/Set;"); }
+                return IExecuteWithSignature<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes", "()Ljava/util/Set;");
             }
 
             #endregion
@@ -546,18 +553,20 @@ namespace Java.Security
 
                 #region Instance methods
                 /// <summary>
-                /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.Entry.Attribute.html#getName()"/> 
+                /// <see href="https://developer.android.com/reference/java/security/KeyStore.Entry.Attribute.html#getName()"/>
                 /// </summary>
-                public Java.Lang.String Name
+                /// <returns><see cref="Java.Lang.String"/></returns>
+                public Java.Lang.String GetName()
                 {
-                    get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+                    return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
                 }
                 /// <summary>
-                /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.Entry.Attribute.html#getValue()"/> 
+                /// <see href="https://developer.android.com/reference/java/security/KeyStore.Entry.Attribute.html#getValue()"/>
                 /// </summary>
-                public Java.Lang.String Value
+                /// <returns><see cref="Java.Lang.String"/></returns>
+                public Java.Lang.String GetValue()
                 {
-                    get { return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;"); }
+                    return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;");
                 }
 
                 #endregion
@@ -598,11 +607,12 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.LoadStoreParameter.html#getProtectionParameter()"/> 
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.LoadStoreParameter.html#getProtectionParameter()"/>
             /// </summary>
-            public Java.Security.KeyStore.ProtectionParameter GetProtectionParameter
+            /// <returns><see cref="Java.Security.KeyStore.ProtectionParameter"/></returns>
+            public Java.Security.KeyStore.ProtectionParameter GetProtectionParameter()
             {
-                get { return IExecuteWithSignature<Java.Security.KeyStore.ProtectionParameter>("getProtectionParameter", "()Ljava/security/KeyStore$ProtectionParameter;"); }
+                return IExecuteWithSignature<Java.Security.KeyStore.ProtectionParameter>("getProtectionParameter", "()Ljava/security/KeyStore$ProtectionParameter;");
             }
 
             #endregion
@@ -620,7 +630,7 @@ namespace Java.Security
         {
             #region Constructors
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.PasswordProtection.html#%3Cinit%3E(char[],java.lang.String,java.security.spec.AlgorithmParameterSpec)"/>
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.PasswordProtection.html#%3Cinit%3E(char[],java.lang.String,java.security.spec.AlgorithmParameterSpec)"/>
             /// </summary>
             /// <param name="arg0"><see cref="char"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -630,7 +640,7 @@ namespace Java.Security
             {
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.PasswordProtection.html#%3Cinit%3E(char[])"/>
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.PasswordProtection.html#%3Cinit%3E(char[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="char"/></param>
             public PasswordProtection(char[] arg0)
@@ -658,28 +668,23 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.PasswordProtection.html#getPassword()"/> 
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.PasswordProtection.html#getProtectionAlgorithm()"/>
             /// </summary>
-            public char[] Password
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetProtectionAlgorithm()
             {
-                get { return IExecuteWithSignatureArray<char>("getPassword", "()[C"); }
+                return IExecuteWithSignature<Java.Lang.String>("getProtectionAlgorithm", "()Ljava/lang/String;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.PasswordProtection.html#getProtectionAlgorithm()"/> 
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.PasswordProtection.html#getProtectionParameters()"/>
             /// </summary>
-            public Java.Lang.String ProtectionAlgorithm
+            /// <returns><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></returns>
+            public Java.Security.Spec.AlgorithmParameterSpec GetProtectionParameters()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getProtectionAlgorithm", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getProtectionParameters", "()Ljava/security/spec/AlgorithmParameterSpec;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.PasswordProtection.html#getProtectionParameters()"/> 
-            /// </summary>
-            public Java.Security.Spec.AlgorithmParameterSpec ProtectionParameters
-            {
-                get { return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getProtectionParameters", "()Ljava/security/spec/AlgorithmParameterSpec;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.PasswordProtection.html#isDestroyed()"/>
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.PasswordProtection.html#isDestroyed()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
             public bool IsDestroyed()
@@ -687,7 +692,15 @@ namespace Java.Security
                 return IExecuteWithSignature<bool>("isDestroyed", "()Z");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.PasswordProtection.html#destroy()"/>
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.PasswordProtection.html#getPassword()"/>
+            /// </summary>
+            /// <returns><see cref="char"/></returns>
+            public char[] GetPassword()
+            {
+                return IExecuteWithSignatureArray<char>("getPassword", "()[C");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.PasswordProtection.html#destroy()"/>
             /// </summary>
             /// <exception cref="Javax.Security.Auth.DestroyFailedException"/>
             public void Destroy()
@@ -710,7 +723,7 @@ namespace Java.Security
         {
             #region Constructors
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.PrivateKeyEntry.html#%3Cinit%3E(java.security.PrivateKey,java.security.cert.Certificate[],java.util.Set)"/>
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.PrivateKeyEntry.html#%3Cinit%3E(java.security.PrivateKey,java.security.cert.Certificate[],java.util.Set)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Security.PrivateKey"/></param>
             /// <param name="arg1"><see cref="Java.Security.Cert.Certificate"/></param>
@@ -720,7 +733,7 @@ namespace Java.Security
             {
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.PrivateKeyEntry.html#%3Cinit%3E(java.security.PrivateKey,java.security.cert.Certificate[])"/>
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.PrivateKeyEntry.html#%3Cinit%3E(java.security.PrivateKey,java.security.cert.Certificate[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Security.PrivateKey"/></param>
             /// <param name="arg1"><see cref="Java.Security.Cert.Certificate"/></param>
@@ -745,32 +758,36 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.PrivateKeyEntry.html#getAttributes()"/> 
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.PrivateKeyEntry.html#getCertificate()"/>
             /// </summary>
-            public Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> Attributes
+            /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
+            public Java.Security.Cert.Certificate GetCertificate()
             {
-                get { return IExecuteWithSignature<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes", "()Ljava/util/Set;"); }
+                return IExecuteWithSignature<Java.Security.Cert.Certificate>("getCertificate", "()Ljava/security/cert/Certificate;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.PrivateKeyEntry.html#getCertificate()"/> 
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.PrivateKeyEntry.html#getCertificateChain()"/>
             /// </summary>
-            public Java.Security.Cert.Certificate Certificate
+            /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
+            public Java.Security.Cert.Certificate[] GetCertificateChain()
             {
-                get { return IExecuteWithSignature<Java.Security.Cert.Certificate>("getCertificate", "()Ljava/security/cert/Certificate;"); }
+                return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getCertificateChain", "()[Ljava/security/cert/Certificate;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.PrivateKeyEntry.html#getCertificateChain()"/> 
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.PrivateKeyEntry.html#getPrivateKey()"/>
             /// </summary>
-            public Java.Security.Cert.Certificate[] CertificateChain
+            /// <returns><see cref="Java.Security.PrivateKey"/></returns>
+            public Java.Security.PrivateKey GetPrivateKey()
             {
-                get { return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getCertificateChain", "()[Ljava/security/cert/Certificate;"); }
+                return IExecuteWithSignature<Java.Security.PrivateKey>("getPrivateKey", "()Ljava/security/PrivateKey;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.PrivateKeyEntry.html#getPrivateKey()"/> 
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.PrivateKeyEntry.html#getAttributes()"/>
             /// </summary>
-            public Java.Security.PrivateKey PrivateKey
+            /// <returns><see cref="Java.Util.Set"/></returns>
+            public Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> GetAttributes()
             {
-                get { return IExecuteWithSignature<Java.Security.PrivateKey>("getPrivateKey", "()Ljava/security/PrivateKey;"); }
+                return IExecuteWithSignature<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes", "()Ljava/util/Set;");
             }
 
             #endregion
@@ -819,7 +836,7 @@ namespace Java.Security
         {
             #region Constructors
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.SecretKeyEntry.html#%3Cinit%3E(javax.crypto.SecretKey,java.util.Set)"/>
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.SecretKeyEntry.html#%3Cinit%3E(javax.crypto.SecretKey,java.util.Set)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Crypto.SecretKey"/></param>
             /// <param name="arg1"><see cref="Java.Util.Set"/></param>
@@ -828,7 +845,7 @@ namespace Java.Security
             {
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.SecretKeyEntry.html#%3Cinit%3E(javax.crypto.SecretKey)"/>
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.SecretKeyEntry.html#%3Cinit%3E(javax.crypto.SecretKey)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Crypto.SecretKey"/></param>
             public SecretKeyEntry(Javax.Crypto.SecretKey arg0)
@@ -852,18 +869,20 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.SecretKeyEntry.html#getAttributes()"/> 
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.SecretKeyEntry.html#getAttributes()"/>
             /// </summary>
-            public Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> Attributes
+            /// <returns><see cref="Java.Util.Set"/></returns>
+            public Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> GetAttributes()
             {
-                get { return IExecuteWithSignature<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes", "()Ljava/util/Set;"); }
+                return IExecuteWithSignature<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes", "()Ljava/util/Set;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.SecretKeyEntry.html#getSecretKey()"/> 
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.SecretKeyEntry.html#getSecretKey()"/>
             /// </summary>
-            public Javax.Crypto.SecretKey SecretKey
+            /// <returns><see cref="Javax.Crypto.SecretKey"/></returns>
+            public Javax.Crypto.SecretKey GetSecretKey()
             {
-                get { return IExecuteWithSignature<Javax.Crypto.SecretKey>("getSecretKey", "()Ljavax/crypto/SecretKey;"); }
+                return IExecuteWithSignature<Javax.Crypto.SecretKey>("getSecretKey", "()Ljavax/crypto/SecretKey;");
             }
 
             #endregion
@@ -881,7 +900,7 @@ namespace Java.Security
         {
             #region Constructors
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.TrustedCertificateEntry.html#%3Cinit%3E(java.security.cert.Certificate,java.util.Set)"/>
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.TrustedCertificateEntry.html#%3Cinit%3E(java.security.cert.Certificate,java.util.Set)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
             /// <param name="arg1"><see cref="Java.Util.Set"/></param>
@@ -890,7 +909,7 @@ namespace Java.Security
             {
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.TrustedCertificateEntry.html#%3Cinit%3E(java.security.cert.Certificate)"/>
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.TrustedCertificateEntry.html#%3Cinit%3E(java.security.cert.Certificate)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
             public TrustedCertificateEntry(Java.Security.Cert.Certificate arg0)
@@ -914,18 +933,20 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.TrustedCertificateEntry.html#getAttributes()"/> 
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.TrustedCertificateEntry.html#getTrustedCertificate()"/>
             /// </summary>
-            public Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> Attributes
+            /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
+            public Java.Security.Cert.Certificate GetTrustedCertificate()
             {
-                get { return IExecuteWithSignature<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes", "()Ljava/util/Set;"); }
+                return IExecuteWithSignature<Java.Security.Cert.Certificate>("getTrustedCertificate", "()Ljava/security/cert/Certificate;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStore.TrustedCertificateEntry.html#getTrustedCertificate()"/> 
+            /// <see href="https://developer.android.com/reference/java/security/KeyStore.TrustedCertificateEntry.html#getAttributes()"/>
             /// </summary>
-            public Java.Security.Cert.Certificate TrustedCertificate
+            /// <returns><see cref="Java.Util.Set"/></returns>
+            public Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> GetAttributes()
             {
-                get { return IExecuteWithSignature<Java.Security.Cert.Certificate>("getTrustedCertificate", "()Ljava/security/cert/Certificate;"); }
+                return IExecuteWithSignature<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes", "()Ljava/util/Set;");
             }
 
             #endregion

@@ -36,7 +36,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Gallery(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -47,7 +47,7 @@ namespace Android.Widget
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Gallery(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -57,7 +57,7 @@ namespace Android.Widget
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Gallery(Android.Content.Context arg0, Android.Util.AttributeSet arg1)
             : base(arg0, arg1)
         {
@@ -66,7 +66,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/Gallery.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Gallery(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -92,7 +92,7 @@ namespace Android.Widget
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.MotionEvent"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnDown(Android.View.MotionEvent arg0)
         {
             return IExecuteWithSignature<bool>("onDown", "(Landroid/view/MotionEvent;)Z", arg0);
@@ -105,7 +105,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="float"/></param>
         /// <param name="arg3"><see cref="float"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnFling(Android.View.MotionEvent arg0, Android.View.MotionEvent arg1, float arg2, float arg3)
         {
             return IExecute<bool>("onFling", arg0, arg1, arg2, arg3);
@@ -118,7 +118,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="float"/></param>
         /// <param name="arg3"><see cref="float"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnScroll(Android.View.MotionEvent arg0, Android.View.MotionEvent arg1, float arg2, float arg3)
         {
             return IExecute<bool>("onScroll", arg0, arg1, arg2, arg3);
@@ -128,7 +128,7 @@ namespace Android.Widget
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.MotionEvent"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnSingleTapUp(Android.View.MotionEvent arg0)
         {
             return IExecuteWithSignature<bool>("onSingleTapUp", "(Landroid/view/MotionEvent;)Z", arg0);
@@ -137,7 +137,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/Gallery.html#onLongPress(android.view.MotionEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.MotionEvent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnLongPress(Android.View.MotionEvent arg0)
         {
             IExecuteWithSignature("onLongPress", "(Landroid/view/MotionEvent;)V", arg0);
@@ -146,7 +146,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/Gallery.html#onShowPress(android.view.MotionEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.MotionEvent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnShowPress(Android.View.MotionEvent arg0)
         {
             IExecuteWithSignature("onShowPress", "(Landroid/view/MotionEvent;)V", arg0);
@@ -155,7 +155,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/Gallery.html#setAnimationDuration(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetAnimationDuration(int arg0)
         {
             IExecuteWithSignature("setAnimationDuration", "(I)V", arg0);
@@ -164,7 +164,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/Gallery.html#setCallbackDuringFling(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetCallbackDuringFling(bool arg0)
         {
             IExecuteWithSignature("setCallbackDuringFling", "(Z)V", arg0);
@@ -173,7 +173,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/Gallery.html#setGravity(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetGravity(int arg0)
         {
             IExecuteWithSignature("setGravity", "(I)V", arg0);
@@ -182,7 +182,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/Gallery.html#setSpacing(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSpacing(int arg0)
         {
             IExecuteWithSignature("setSpacing", "(I)V", arg0);
@@ -191,7 +191,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/Gallery.html#setUnselectedAlpha(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetUnselectedAlpha(float arg0)
         {
             IExecuteWithSignature("setUnselectedAlpha", "(F)V", arg0);
@@ -209,7 +209,7 @@ namespace Android.Widget
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Context"/></param>
             /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public LayoutParams(Android.Content.Context arg0, Android.Util.AttributeSet arg1)
                 : base(arg0, arg1)
             {
@@ -218,7 +218,7 @@ namespace Android.Widget
             /// <see href="https://developer.android.com/reference/android/widget/Gallery.LayoutParams.html#%3Cinit%3E(android.view.ViewGroup.LayoutParams)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.View.ViewGroup.LayoutParams"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public LayoutParams(Android.View.ViewGroup.LayoutParams arg0)
                 : base(arg0)
             {
@@ -228,7 +228,7 @@ namespace Android.Widget
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public LayoutParams(int arg0, int arg1)
                 : base(arg0, arg1)
             {

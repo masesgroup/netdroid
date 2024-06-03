@@ -30,7 +30,7 @@ namespace Java.Sql
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Timestamp.html#%3Cinit%3E(int,int,int,int,int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Timestamp.html#%3Cinit%3E(int,int,int,int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -39,13 +39,13 @@ namespace Java.Sql
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Timestamp(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Timestamp.html#%3Cinit%3E(long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Timestamp.html#%3Cinit%3E(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public Timestamp(long arg0)
@@ -65,7 +65,7 @@ namespace Java.Sql
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Timestamp.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Timestamp.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Timestamp"/></returns>
@@ -74,7 +74,7 @@ namespace Java.Sql
             return SExecuteWithSignature<Java.Sql.Timestamp>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/sql/Timestamp;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Timestamp.html#valueOf(java.time.LocalDateTime)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Timestamp.html#valueOf(java.time.LocalDateTime)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
         /// <returns><see cref="Java.Sql.Timestamp"/></returns>
@@ -87,14 +87,7 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Timestamp.html#getNanos()"/> <see href="https://developer.android.com/reference/java.sql/java/sql/Timestamp.html#setNanos(int)"/>
-        /// </summary>
-        public int Nanos
-        {
-            get { return IExecuteWithSignature<int>("getNanos", "()I"); } set { IExecuteWithSignature("setNanos", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Timestamp.html#after(java.sql.Timestamp)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Timestamp.html#after(java.sql.Timestamp)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Timestamp"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -103,7 +96,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("after", "(Ljava/sql/Timestamp;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Timestamp.html#before(java.sql.Timestamp)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Timestamp.html#before(java.sql.Timestamp)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Timestamp"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -112,7 +105,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("before", "(Ljava/sql/Timestamp;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Timestamp.html#compareTo(java.sql.Timestamp)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Timestamp.html#compareTo(java.sql.Timestamp)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Timestamp"/></param>
         /// <returns><see cref="int"/></returns>
@@ -121,12 +114,28 @@ namespace Java.Sql
             return IExecuteWithSignature<int>("compareTo", "(Ljava/sql/Timestamp;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Timestamp.html#toLocalDateTime()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Timestamp.html#getNanos()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNanos()
+        {
+            return IExecuteWithSignature<int>("getNanos", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Timestamp.html#toLocalDateTime()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
         public Java.Time.LocalDateTime ToLocalDateTime()
         {
             return IExecuteWithSignature<Java.Time.LocalDateTime>("toLocalDateTime", "()Ljava/time/LocalDateTime;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Timestamp.html#setNanos(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetNanos(int arg0)
+        {
+            IExecuteWithSignature("setNanos", "(I)V", arg0);
         }
 
         #endregion

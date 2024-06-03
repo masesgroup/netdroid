@@ -61,34 +61,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ApplicationMediaCapabilities.html#getSupportedHdrTypes()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> SupportedHdrTypes
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedHdrTypes", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ApplicationMediaCapabilities.html#getSupportedVideoMimeTypes()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> SupportedVideoMimeTypes
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedVideoMimeTypes", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ApplicationMediaCapabilities.html#getUnsupportedHdrTypes()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> UnsupportedHdrTypes
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getUnsupportedHdrTypes", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ApplicationMediaCapabilities.html#getUnsupportedVideoMimeTypes()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> UnsupportedVideoMimeTypes
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getUnsupportedVideoMimeTypes", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ApplicationMediaCapabilities.html#isFormatSpecified(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -122,6 +94,38 @@ namespace Android.Media
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ApplicationMediaCapabilities.html#getSupportedHdrTypes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetSupportedHdrTypes()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedHdrTypes", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ApplicationMediaCapabilities.html#getSupportedVideoMimeTypes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetSupportedVideoMimeTypes()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedVideoMimeTypes", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ApplicationMediaCapabilities.html#getUnsupportedHdrTypes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetUnsupportedHdrTypes()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getUnsupportedHdrTypes", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ApplicationMediaCapabilities.html#getUnsupportedVideoMimeTypes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetUnsupportedVideoMimeTypes()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getUnsupportedVideoMimeTypes", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ApplicationMediaCapabilities.html#writeToParcel(android.os.Parcel,int)"/>

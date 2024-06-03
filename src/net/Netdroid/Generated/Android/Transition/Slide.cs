@@ -63,11 +63,20 @@ namespace Android.Transition
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/Slide.html#getSlideEdge()"/> <see href="https://developer.android.com/reference/android/transition/Slide.html#setSlideEdge(int)"/>
+        /// <see href="https://developer.android.com/reference/android/transition/Slide.html#getSlideEdge()"/>
         /// </summary>
-        public int SlideEdge
+        /// <returns><see cref="int"/></returns>
+        public int GetSlideEdge()
         {
-            get { return IExecuteWithSignature<int>("getSlideEdge", "()I"); } set { IExecuteWithSignature("setSlideEdge", "(I)V", value); }
+            return IExecuteWithSignature<int>("getSlideEdge", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/Slide.html#setSlideEdge(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetSlideEdge(int arg0)
+        {
+            IExecuteWithSignature("setSlideEdge", "(I)V", arg0);
         }
 
         #endregion

@@ -64,7 +64,7 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathChecker.html#isForwardCheckingSupported()"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertPathChecker.html#isForwardCheckingSupported()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsForwardCheckingSupported()
@@ -72,7 +72,7 @@ namespace Java.Security.Cert
             return IExecuteWithSignature<bool>("isForwardCheckingSupported", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathChecker.html#check(java.security.cert.Certificate)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertPathChecker.html#check(java.security.cert.Certificate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
         /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
@@ -81,7 +81,7 @@ namespace Java.Security.Cert
             IExecuteWithSignature("check", "(Ljava/security/cert/Certificate;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathChecker.html#init(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertPathChecker.html#init(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>

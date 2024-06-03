@@ -348,18 +348,12 @@ namespace Android.Icu.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getAvailableLocales()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getInstance()"/>
         /// </summary>
-        public static Java.Util.Locale[] AvailableLocales
+        /// <returns><see cref="Android.Icu.Util.Calendar"/></returns>
+        public static Android.Icu.Util.Calendar GetInstance()
         {
-            get { return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Util.Calendar Instance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Util.Calendar>(LocalBridgeClazz, "getInstance", "()Landroid/icu/util/Calendar;"); }
+            return SExecuteWithSignature<Android.Icu.Util.Calendar>(LocalBridgeClazz, "getInstance", "()Landroid/icu/util/Calendar;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getInstance(android.icu.util.TimeZone,android.icu.util.ULocale)"/>
@@ -428,80 +422,18 @@ namespace Android.Icu.Util
         {
             return SExecuteArray<Java.Lang.String>(LocalBridgeClazz, "getKeywordValuesForLocale", arg0, arg1, arg2);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getAvailableLocales()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public static Java.Util.Locale[] GetAvailableLocales()
+        {
+            return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;");
+        }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getFieldCount()"/> 
-        /// </summary>
-        public int FieldCount
-        {
-            get { return IExecuteWithSignature<int>("getFieldCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getFirstDayOfWeek()"/> <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#setFirstDayOfWeek(int)"/>
-        /// </summary>
-        public int FirstDayOfWeek
-        {
-            get { return IExecuteWithSignature<int>("getFirstDayOfWeek", "()I"); } set { IExecuteWithSignature("setFirstDayOfWeek", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getWeekData()"/> 
-        /// </summary>
-        public Android.Icu.Util.Calendar.WeekData GetWeekData
-        {
-            get { return IExecuteWithSignature<Android.Icu.Util.Calendar.WeekData>("getWeekData", "()Landroid/icu/util/Calendar$WeekData;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getMinimalDaysInFirstWeek()"/> <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#setMinimalDaysInFirstWeek(int)"/>
-        /// </summary>
-        public int MinimalDaysInFirstWeek
-        {
-            get { return IExecuteWithSignature<int>("getMinimalDaysInFirstWeek", "()I"); } set { IExecuteWithSignature("setMinimalDaysInFirstWeek", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getRepeatedWallTimeOption()"/> <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#setRepeatedWallTimeOption(int)"/>
-        /// </summary>
-        public int RepeatedWallTimeOption
-        {
-            get { return IExecuteWithSignature<int>("getRepeatedWallTimeOption", "()I"); } set { IExecuteWithSignature("setRepeatedWallTimeOption", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getSkippedWallTimeOption()"/> <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#setSkippedWallTimeOption(int)"/>
-        /// </summary>
-        public int SkippedWallTimeOption
-        {
-            get { return IExecuteWithSignature<int>("getSkippedWallTimeOption", "()I"); } set { IExecuteWithSignature("setSkippedWallTimeOption", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getTime()"/> <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#setTime(java.util.Date)"/>
-        /// </summary>
-        public Java.Util.Date Time
-        {
-            get { return IExecuteWithSignature<Java.Util.Date>("getTime", "()Ljava/util/Date;"); } set { IExecuteWithSignature("setTime", "(Ljava/util/Date;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getTimeInMillis()"/> <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#setTimeInMillis(long)"/>
-        /// </summary>
-        public long TimeInMillis
-        {
-            get { return IExecuteWithSignature<long>("getTimeInMillis", "()J"); } set { IExecuteWithSignature("setTimeInMillis", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getTimeZone()"/> <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#setTimeZone(android.icu.util.TimeZone)"/>
-        /// </summary>
-        public Android.Icu.Util.TimeZone TimeZone
-        {
-            get { return IExecuteWithSignature<Android.Icu.Util.TimeZone>("getTimeZone", "()Landroid/icu/util/TimeZone;"); } set { IExecuteWithSignature("setTimeZone", "(Landroid/icu/util/TimeZone;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.String Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getDateTimeFormat(int,int,android.icu.util.ULocale)"/>
         /// </summary>
@@ -532,6 +464,22 @@ namespace Android.Icu.Util
         public Android.Icu.Util.Calendar SetWeekData(Android.Icu.Util.Calendar.WeekData arg0)
         {
             return IExecuteWithSignature<Android.Icu.Util.Calendar>("setWeekData", "(Landroid/icu/util/Calendar$WeekData;)Landroid/icu/util/Calendar;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getWeekData()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Util.Calendar.WeekData"/></returns>
+        public Android.Icu.Util.Calendar.WeekData GetWeekData()
+        {
+            return IExecuteWithSignature<Android.Icu.Util.Calendar.WeekData>("getWeekData", "()Landroid/icu/util/Calendar$WeekData;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getTimeZone()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Util.TimeZone"/></returns>
+        public Android.Icu.Util.TimeZone GetTimeZone()
+        {
+            return IExecuteWithSignature<Android.Icu.Util.TimeZone>("getTimeZone", "()Landroid/icu/util/TimeZone;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#after(java.lang.Object)"/>
@@ -604,6 +552,14 @@ namespace Android.Icu.Util
             return IExecuteWithSignature<int>("get", "(I)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getFieldCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFieldCount()
+        {
+            return IExecuteWithSignature<int>("getFieldCount", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getGreatestMinimum(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -638,6 +594,14 @@ namespace Android.Icu.Util
         public int GetMinimum(int arg0)
         {
             return IExecuteWithSignature<int>("getMinimum", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getTime()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Date"/></returns>
+        public Java.Util.Date GetTime()
+        {
+            return IExecuteWithSignature<Java.Util.Date>("getTime", "()Ljava/util/Date;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#clear()"/>
@@ -708,6 +672,14 @@ namespace Android.Icu.Util
             IExecute("set", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#setTime(java.util.Date)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Date"/></param>
+        public void SetTime(Java.Util.Date arg0)
+        {
+            IExecuteWithSignature("setTime", "(Ljava/util/Date;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#compareTo(android.icu.util.Calendar)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Util.Calendar"/></param>
@@ -754,6 +726,38 @@ namespace Android.Icu.Util
             return IExecuteWithSignature<int>("getActualMinimum", "(I)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getFirstDayOfWeek()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFirstDayOfWeek()
+        {
+            return IExecuteWithSignature<int>("getFirstDayOfWeek", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getMinimalDaysInFirstWeek()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinimalDaysInFirstWeek()
+        {
+            return IExecuteWithSignature<int>("getMinimalDaysInFirstWeek", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getRepeatedWallTimeOption()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRepeatedWallTimeOption()
+        {
+            return IExecuteWithSignature<int>("getRepeatedWallTimeOption", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getSkippedWallTimeOption()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSkippedWallTimeOption()
+        {
+            return IExecuteWithSignature<int>("getSkippedWallTimeOption", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getDisplayName(android.icu.util.ULocale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Util.ULocale"/></param>
@@ -770,6 +774,22 @@ namespace Android.Icu.Util
         public Java.Lang.String GetDisplayName(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getTimeInMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTimeInMillis()
+        {
+            return IExecuteWithSignature<long>("getTimeInMillis", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#add(int,int)"/>
@@ -790,12 +810,60 @@ namespace Android.Icu.Util
             IExecute("roll", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#setFirstDayOfWeek(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetFirstDayOfWeek(int arg0)
+        {
+            IExecuteWithSignature("setFirstDayOfWeek", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#setLenient(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetLenient(bool arg0)
         {
             IExecuteWithSignature("setLenient", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#setMinimalDaysInFirstWeek(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMinimalDaysInFirstWeek(int arg0)
+        {
+            IExecuteWithSignature("setMinimalDaysInFirstWeek", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#setRepeatedWallTimeOption(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetRepeatedWallTimeOption(int arg0)
+        {
+            IExecuteWithSignature("setRepeatedWallTimeOption", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#setSkippedWallTimeOption(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetSkippedWallTimeOption(int arg0)
+        {
+            IExecuteWithSignature("setSkippedWallTimeOption", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#setTimeInMillis(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetTimeInMillis(long arg0)
+        {
+            IExecuteWithSignature("setTimeInMillis", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#setTimeZone(android.icu.util.TimeZone)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Icu.Util.TimeZone"/></param>
+        public void SetTimeZone(Android.Icu.Util.TimeZone arg0)
+        {
+            IExecuteWithSignature("setTimeZone", "(Landroid/icu/util/TimeZone;)V", arg0);
         }
 
         #endregion

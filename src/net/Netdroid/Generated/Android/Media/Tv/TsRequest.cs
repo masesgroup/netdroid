@@ -62,11 +62,12 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TsRequest.html#getTsPid()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/TsRequest.html#getTsPid()"/>
         /// </summary>
-        public int TsPid
+        /// <returns><see cref="int"/></returns>
+        public int GetTsPid()
         {
-            get { return IExecuteWithSignature<int>("getTsPid", "()I"); }
+            return IExecuteWithSignature<int>("getTsPid", "()I");
         }
 
         #endregion

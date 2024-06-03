@@ -60,131 +60,6 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getDisplayCutout()"/> 
-        /// </summary>
-        public Android.View.DisplayCutout DisplayCutout
-        {
-            get { return IExecuteWithSignature<Android.View.DisplayCutout>("getDisplayCutout", "()Landroid/view/DisplayCutout;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getDisplayShape()"/> 
-        /// </summary>
-        public Android.View.DisplayShape DisplayShape
-        {
-            get { return IExecuteWithSignature<Android.View.DisplayShape>("getDisplayShape", "()Landroid/view/DisplayShape;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getMandatorySystemGestureInsets()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Graphics.Insets MandatorySystemGestureInsets
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Insets>("getMandatorySystemGestureInsets", "()Landroid/graphics/Insets;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getPrivacyIndicatorBounds()"/> 
-        /// </summary>
-        public Android.Graphics.Rect PrivacyIndicatorBounds
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getPrivacyIndicatorBounds", "()Landroid/graphics/Rect;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getStableInsetBottom()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int StableInsetBottom
-        {
-            get { return IExecuteWithSignature<int>("getStableInsetBottom", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getStableInsetLeft()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int StableInsetLeft
-        {
-            get { return IExecuteWithSignature<int>("getStableInsetLeft", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getStableInsetRight()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int StableInsetRight
-        {
-            get { return IExecuteWithSignature<int>("getStableInsetRight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getStableInsets()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Graphics.Insets StableInsets
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Insets>("getStableInsets", "()Landroid/graphics/Insets;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getStableInsetTop()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int StableInsetTop
-        {
-            get { return IExecuteWithSignature<int>("getStableInsetTop", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getSystemGestureInsets()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Graphics.Insets SystemGestureInsets
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Insets>("getSystemGestureInsets", "()Landroid/graphics/Insets;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getSystemWindowInsetBottom()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int SystemWindowInsetBottom
-        {
-            get { return IExecuteWithSignature<int>("getSystemWindowInsetBottom", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getSystemWindowInsetLeft()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int SystemWindowInsetLeft
-        {
-            get { return IExecuteWithSignature<int>("getSystemWindowInsetLeft", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getSystemWindowInsetRight()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int SystemWindowInsetRight
-        {
-            get { return IExecuteWithSignature<int>("getSystemWindowInsetRight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getSystemWindowInsets()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Graphics.Insets SystemWindowInsets
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Insets>("getSystemWindowInsets", "()Landroid/graphics/Insets;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getSystemWindowInsetTop()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int SystemWindowInsetTop
-        {
-            get { return IExecuteWithSignature<int>("getSystemWindowInsetTop", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getTappableElementInsets()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Graphics.Insets TappableElementInsets
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Insets>("getTappableElementInsets", "()Landroid/graphics/Insets;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getInsets(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -203,6 +78,75 @@ namespace Android.View
             return IExecuteWithSignature<Android.Graphics.Insets>("getInsetsIgnoringVisibility", "(I)Landroid/graphics/Insets;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getMandatorySystemGestureInsets()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Insets"/></returns>
+        [global::System.Obsolete()]
+        public Android.Graphics.Insets GetMandatorySystemGestureInsets()
+        {
+            return IExecuteWithSignature<Android.Graphics.Insets>("getMandatorySystemGestureInsets", "()Landroid/graphics/Insets;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getStableInsets()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Insets"/></returns>
+        [global::System.Obsolete()]
+        public Android.Graphics.Insets GetStableInsets()
+        {
+            return IExecuteWithSignature<Android.Graphics.Insets>("getStableInsets", "()Landroid/graphics/Insets;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getSystemGestureInsets()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Insets"/></returns>
+        [global::System.Obsolete()]
+        public Android.Graphics.Insets GetSystemGestureInsets()
+        {
+            return IExecuteWithSignature<Android.Graphics.Insets>("getSystemGestureInsets", "()Landroid/graphics/Insets;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getSystemWindowInsets()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Insets"/></returns>
+        [global::System.Obsolete()]
+        public Android.Graphics.Insets GetSystemWindowInsets()
+        {
+            return IExecuteWithSignature<Android.Graphics.Insets>("getSystemWindowInsets", "()Landroid/graphics/Insets;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getTappableElementInsets()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Insets"/></returns>
+        [global::System.Obsolete()]
+        public Android.Graphics.Insets GetTappableElementInsets()
+        {
+            return IExecuteWithSignature<Android.Graphics.Insets>("getTappableElementInsets", "()Landroid/graphics/Insets;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getPrivacyIndicatorBounds()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetPrivacyIndicatorBounds()
+        {
+            return IExecuteWithSignature<Android.Graphics.Rect>("getPrivacyIndicatorBounds", "()Landroid/graphics/Rect;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getDisplayCutout()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.DisplayCutout"/></returns>
+        public Android.View.DisplayCutout GetDisplayCutout()
+        {
+            return IExecuteWithSignature<Android.View.DisplayCutout>("getDisplayCutout", "()Landroid/view/DisplayCutout;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getDisplayShape()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.DisplayShape"/></returns>
+        public Android.View.DisplayShape GetDisplayShape()
+        {
+            return IExecuteWithSignature<Android.View.DisplayShape>("getDisplayShape", "()Landroid/view/DisplayShape;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getRoundedCorner(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -215,7 +159,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#consumeDisplayCutout()"/>
         /// </summary>
         /// <returns><see cref="Android.View.WindowInsets"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.View.WindowInsets ConsumeDisplayCutout()
         {
             return IExecuteWithSignature<Android.View.WindowInsets>("consumeDisplayCutout", "()Landroid/view/WindowInsets;");
@@ -224,7 +168,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#consumeStableInsets()"/>
         /// </summary>
         /// <returns><see cref="Android.View.WindowInsets"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.View.WindowInsets ConsumeStableInsets()
         {
             return IExecuteWithSignature<Android.View.WindowInsets>("consumeStableInsets", "()Landroid/view/WindowInsets;");
@@ -233,7 +177,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#consumeSystemWindowInsets()"/>
         /// </summary>
         /// <returns><see cref="Android.View.WindowInsets"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.View.WindowInsets ConsumeSystemWindowInsets()
         {
             return IExecuteWithSignature<Android.View.WindowInsets>("consumeSystemWindowInsets", "()Landroid/view/WindowInsets;");
@@ -264,7 +208,7 @@ namespace Android.View
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
         /// <returns><see cref="Android.View.WindowInsets"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.View.WindowInsets ReplaceSystemWindowInsets(Android.Graphics.Rect arg0)
         {
             return IExecuteWithSignature<Android.View.WindowInsets>("replaceSystemWindowInsets", "(Landroid/graphics/Rect;)Landroid/view/WindowInsets;", arg0);
@@ -277,7 +221,7 @@ namespace Android.View
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Android.View.WindowInsets"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.View.WindowInsets ReplaceSystemWindowInsets(int arg0, int arg1, int arg2, int arg3)
         {
             return IExecute<Android.View.WindowInsets>("replaceSystemWindowInsets", arg0, arg1, arg2, arg3);
@@ -294,7 +238,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#hasStableInsets()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool HasStableInsets()
         {
             return IExecuteWithSignature<bool>("hasStableInsets", "()Z");
@@ -303,7 +247,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#hasSystemWindowInsets()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool HasSystemWindowInsets()
         {
             return IExecuteWithSignature<bool>("hasSystemWindowInsets", "()Z");
@@ -332,6 +276,78 @@ namespace Android.View
         public bool IsVisible(int arg0)
         {
             return IExecuteWithSignature<bool>("isVisible", "(I)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getStableInsetBottom()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetStableInsetBottom()
+        {
+            return IExecuteWithSignature<int>("getStableInsetBottom", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getStableInsetLeft()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetStableInsetLeft()
+        {
+            return IExecuteWithSignature<int>("getStableInsetLeft", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getStableInsetRight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetStableInsetRight()
+        {
+            return IExecuteWithSignature<int>("getStableInsetRight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getStableInsetTop()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetStableInsetTop()
+        {
+            return IExecuteWithSignature<int>("getStableInsetTop", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getSystemWindowInsetBottom()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetSystemWindowInsetBottom()
+        {
+            return IExecuteWithSignature<int>("getSystemWindowInsetBottom", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getSystemWindowInsetLeft()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetSystemWindowInsetLeft()
+        {
+            return IExecuteWithSignature<int>("getSystemWindowInsetLeft", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getSystemWindowInsetRight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetSystemWindowInsetRight()
+        {
+            return IExecuteWithSignature<int>("getSystemWindowInsetRight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getSystemWindowInsetTop()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetSystemWindowInsetTop()
+        {
+            return IExecuteWithSignature<int>("getSystemWindowInsetTop", "()I");
         }
 
         #endregion
@@ -417,7 +433,7 @@ namespace Android.View
             /// </summary>
             /// <param name="arg0"><see cref="Android.Graphics.Insets"/></param>
             /// <returns><see cref="Android.View.WindowInsets.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.View.WindowInsets.Builder SetMandatorySystemGestureInsets(Android.Graphics.Insets arg0)
             {
                 return IExecuteWithSignature<Android.View.WindowInsets.Builder>("setMandatorySystemGestureInsets", "(Landroid/graphics/Insets;)Landroid/view/WindowInsets$Builder;", arg0);
@@ -446,7 +462,7 @@ namespace Android.View
             /// </summary>
             /// <param name="arg0"><see cref="Android.Graphics.Insets"/></param>
             /// <returns><see cref="Android.View.WindowInsets.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.View.WindowInsets.Builder SetStableInsets(Android.Graphics.Insets arg0)
             {
                 return IExecuteWithSignature<Android.View.WindowInsets.Builder>("setStableInsets", "(Landroid/graphics/Insets;)Landroid/view/WindowInsets$Builder;", arg0);
@@ -456,7 +472,7 @@ namespace Android.View
             /// </summary>
             /// <param name="arg0"><see cref="Android.Graphics.Insets"/></param>
             /// <returns><see cref="Android.View.WindowInsets.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.View.WindowInsets.Builder SetSystemGestureInsets(Android.Graphics.Insets arg0)
             {
                 return IExecuteWithSignature<Android.View.WindowInsets.Builder>("setSystemGestureInsets", "(Landroid/graphics/Insets;)Landroid/view/WindowInsets$Builder;", arg0);
@@ -466,7 +482,7 @@ namespace Android.View
             /// </summary>
             /// <param name="arg0"><see cref="Android.Graphics.Insets"/></param>
             /// <returns><see cref="Android.View.WindowInsets.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.View.WindowInsets.Builder SetSystemWindowInsets(Android.Graphics.Insets arg0)
             {
                 return IExecuteWithSignature<Android.View.WindowInsets.Builder>("setSystemWindowInsets", "(Landroid/graphics/Insets;)Landroid/view/WindowInsets$Builder;", arg0);
@@ -476,7 +492,7 @@ namespace Android.View
             /// </summary>
             /// <param name="arg0"><see cref="Android.Graphics.Insets"/></param>
             /// <returns><see cref="Android.View.WindowInsets.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.View.WindowInsets.Builder SetTappableElementInsets(Android.Graphics.Insets arg0)
             {
                 return IExecuteWithSignature<Android.View.WindowInsets.Builder>("setTappableElementInsets", "(Landroid/graphics/Insets;)Landroid/view/WindowInsets$Builder;", arg0);

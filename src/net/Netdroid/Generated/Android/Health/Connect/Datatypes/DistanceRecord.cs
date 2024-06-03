@@ -52,11 +52,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/DistanceRecord.html#getDistance()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/DistanceRecord.html#getDistance()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Length Distance
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Length"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Length GetDistance()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Length>("getDistance", "()Landroid/health/connect/datatypes/units/Length;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Length>("getDistance", "()Landroid/health/connect/datatypes/units/Length;");
         }
 
         #endregion

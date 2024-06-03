@@ -62,33 +62,36 @@ namespace Android.Credentials
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/credentials/CredentialDescription.html#getCredentialEntries()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Service.Credentials.CredentialEntry> CredentialEntries
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Service.Credentials.CredentialEntry>>("getCredentialEntries", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/credentials/CredentialDescription.html#getSupportedElementKeys()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> SupportedElementKeys
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSupportedElementKeys", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/credentials/CredentialDescription.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.String Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/credentials/CredentialDescription.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/credentials/CredentialDescription.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/credentials/CredentialDescription.html#getCredentialEntries()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Service.Credentials.CredentialEntry> GetCredentialEntries()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Service.Credentials.CredentialEntry>>("getCredentialEntries", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/credentials/CredentialDescription.html#getSupportedElementKeys()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetSupportedElementKeys()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSupportedElementKeys", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/credentials/CredentialDescription.html#writeToParcel(android.os.Parcel,int)"/>

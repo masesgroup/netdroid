@@ -57,7 +57,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/ActionProvider.html#onCreateActionView()"/>
         /// </summary>
         /// <returns><see cref="Android.View.View"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.View.View OnCreateActionView()
         {
             return IExecuteWithSignature<Android.View.View>("onCreateActionView", "()Landroid/view/View;");
@@ -155,7 +155,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onActionProviderVisibilityChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnActionProviderVisibilityChangedEventHandler));
+                AddEventHandler("onActionProviderVisibilityChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnActionProviderVisibilityChangedEventHandler));
 
             }
 
@@ -163,7 +163,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/ActionProvider.VisibilityListener.html#onActionProviderVisibilityChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnActionProviderVisibilityChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<bool> OnOnActionProviderVisibilityChanged { get; set; } = null;
+            public global::System.Action<bool> OnOnActionProviderVisibilityChanged { get; set; } = null;
 
             void OnActionProviderVisibilityChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
             {

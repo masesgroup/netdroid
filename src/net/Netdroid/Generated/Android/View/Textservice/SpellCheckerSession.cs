@@ -52,11 +52,12 @@ namespace Android.View.Textservice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.html#getSpellChecker()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.html#getSpellChecker()"/>
         /// </summary>
-        public Android.View.Textservice.SpellCheckerInfo SpellChecker
+        /// <returns><see cref="Android.View.Textservice.SpellCheckerInfo"/></returns>
+        public Android.View.Textservice.SpellCheckerInfo GetSpellChecker()
         {
-            get { return IExecuteWithSignature<Android.View.Textservice.SpellCheckerInfo>("getSpellChecker", "()Landroid/view/textservice/SpellCheckerInfo;"); }
+            return IExecuteWithSignature<Android.View.Textservice.SpellCheckerInfo>("getSpellChecker", "()Landroid/view/textservice/SpellCheckerInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.html#isSessionDisconnected()"/>
@@ -94,7 +95,7 @@ namespace Android.View.Textservice
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Textservice.TextInfo"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void GetSuggestions(Android.View.Textservice.TextInfo arg0, int arg1)
         {
             IExecute("getSuggestions", arg0, arg1);
@@ -105,7 +106,7 @@ namespace Android.View.Textservice
         /// <param name="arg0"><see cref="Android.View.Textservice.TextInfo"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void GetSuggestions(Android.View.Textservice.TextInfo[] arg0, int arg1, bool arg2)
         {
             IExecute("getSuggestions", arg0, arg1, arg2);
@@ -139,8 +140,8 @@ namespace Android.View.Textservice
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onGetSentenceSuggestions", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.Textservice.SentenceSuggestionsInfo[]>>>(OnGetSentenceSuggestionsEventHandler));
-                AddEventHandler("onGetSuggestions", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.Textservice.SuggestionsInfo[]>>>(OnGetSuggestionsEventHandler));
+                AddEventHandler("onGetSentenceSuggestions", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.Textservice.SentenceSuggestionsInfo[]>>>(OnGetSentenceSuggestionsEventHandler));
+                AddEventHandler("onGetSuggestions", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.Textservice.SuggestionsInfo[]>>>(OnGetSuggestionsEventHandler));
 
             }
 
@@ -148,7 +149,7 @@ namespace Android.View.Textservice
             /// Handler for <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.SpellCheckerSessionListener.html#onGetSentenceSuggestions(android.view.textservice.SentenceSuggestionsInfo[])"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGetSentenceSuggestions"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.Textservice.SentenceSuggestionsInfo[]> OnOnGetSentenceSuggestions { get; set; } = null;
+            public global::System.Action<Android.View.Textservice.SentenceSuggestionsInfo[]> OnOnGetSentenceSuggestions { get; set; } = null;
 
             void OnGetSentenceSuggestionsEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.Textservice.SentenceSuggestionsInfo[]>> data)
             {
@@ -169,7 +170,7 @@ namespace Android.View.Textservice
             /// Handler for <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.SpellCheckerSessionListener.html#onGetSuggestions(android.view.textservice.SuggestionsInfo[])"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGetSuggestions"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.Textservice.SuggestionsInfo[]> OnOnGetSuggestions { get; set; } = null;
+            public global::System.Action<Android.View.Textservice.SuggestionsInfo[]> OnOnGetSuggestions { get; set; } = null;
 
             void OnGetSuggestionsEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.Textservice.SuggestionsInfo[]>> data)
             {
@@ -264,25 +265,12 @@ namespace Android.View.Textservice
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.SpellCheckerSessionParams.html#getExtras()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.SpellCheckerSessionParams.html#getExtras()"/>
             /// </summary>
-            public Android.Os.Bundle Extras
+            /// <returns><see cref="Android.Os.Bundle"/></returns>
+            public Android.Os.Bundle GetExtras()
             {
-                get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.SpellCheckerSessionParams.html#getLocale()"/> 
-            /// </summary>
-            public Java.Util.Locale Locale
-            {
-                get { return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.SpellCheckerSessionParams.html#getSupportedAttributes()"/> 
-            /// </summary>
-            public int SupportedAttributes
-            {
-                get { return IExecuteWithSignature<int>("getSupportedAttributes", "()I"); }
+                return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.SpellCheckerSessionParams.html#shouldReferToSpellCheckerLanguageSettings()"/>
@@ -291,6 +279,22 @@ namespace Android.View.Textservice
             public bool ShouldReferToSpellCheckerLanguageSettings()
             {
                 return IExecuteWithSignature<bool>("shouldReferToSpellCheckerLanguageSettings", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.SpellCheckerSessionParams.html#getSupportedAttributes()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetSupportedAttributes()
+            {
+                return IExecuteWithSignature<int>("getSupportedAttributes", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.SpellCheckerSessionParams.html#getLocale()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.Locale"/></returns>
+            public Java.Util.Locale GetLocale()
+            {
+                return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;");
             }
 
             #endregion

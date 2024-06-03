@@ -46,7 +46,7 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Constructor.html#newInstance(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Constructor.html#newInstance(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -94,7 +94,7 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Constructor.html#newInstance(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Constructor.html#newInstance(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><typeparamref name="T"/></returns>

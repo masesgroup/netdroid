@@ -64,21 +64,7 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Extension.html#getCriticalExtensionOIDs()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> CriticalExtensionOIDs
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getCriticalExtensionOIDs", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Extension.html#getNonCriticalExtensionOIDs()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> NonCriticalExtensionOIDs
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getNonCriticalExtensionOIDs", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Extension.html#hasUnsupportedCriticalExtension()"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Extension.html#hasUnsupportedCriticalExtension()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasUnsupportedCriticalExtension()
@@ -86,13 +72,29 @@ namespace Java.Security.Cert
             return IExecuteWithSignature<bool>("hasUnsupportedCriticalExtension", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Extension.html#getExtensionValue(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Extension.html#getExtensionValue(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="byte"/></returns>
         public byte[] GetExtensionValue(Java.Lang.String arg0)
         {
             return IExecuteWithSignatureArray<byte>("getExtensionValue", "(Ljava/lang/String;)[B", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Extension.html#getCriticalExtensionOIDs()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetCriticalExtensionOIDs()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getCriticalExtensionOIDs", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Extension.html#getNonCriticalExtensionOIDs()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetNonCriticalExtensionOIDs()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getNonCriticalExtensionOIDs", "()Ljava/util/Set;");
         }
 
         #endregion

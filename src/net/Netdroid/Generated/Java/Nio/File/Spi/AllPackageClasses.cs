@@ -28,7 +28,7 @@ namespace Java.Nio.File.Spi
 {
     #region FileSystemProvider
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html"/>
     /// </summary>
     public partial class FileSystemProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileSystemProvider>
     {
@@ -36,12 +36,12 @@ namespace Java.Nio.File.Spi
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("FileSystemProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileSystemProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileSystemProvider() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("FileSystemProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileSystemProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileSystemProvider(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,7 +74,7 @@ namespace Java.Nio.File.Spi
 
     #region FileTypeDetector
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileTypeDetector.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileTypeDetector.html"/>
     /// </summary>
     public partial class FileTypeDetector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileTypeDetector>
     {
@@ -82,12 +82,12 @@ namespace Java.Nio.File.Spi
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("FileTypeDetector class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileTypeDetector class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileTypeDetector() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("FileTypeDetector class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileTypeDetector class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileTypeDetector(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

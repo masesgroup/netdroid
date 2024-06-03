@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent.Atomic
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#%3Cinit%3E(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public AtomicReference(object arg0)
@@ -54,28 +54,7 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#getAcquire()"/> 
-        /// </summary>
-        public object Acquire
-        {
-            get { return IExecuteWithSignature("getAcquire", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#getOpaque()"/> <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#setOpaque(java.lang.Object)"/>
-        /// </summary>
-        public object Opaque
-        {
-            get { return IExecuteWithSignature("getOpaque", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setOpaque", "(Ljava/lang/Object;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#getPlain()"/> <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#setPlain(java.lang.Object)"/>
-        /// </summary>
-        public object Plain
-        {
-            get { return IExecuteWithSignature("getPlain", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setPlain", "(Ljava/lang/Object;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#compareAndSet(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#compareAndSet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -85,18 +64,18 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("compareAndSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool WeakCompareAndSet(object arg0, object arg1)
         {
             return IExecute<bool>("weakCompareAndSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetAcquire(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetAcquire(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -106,7 +85,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetAcquire", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetPlain(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetPlain(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -116,7 +95,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetPlain", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetRelease(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetRelease(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -126,7 +105,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetRelease", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetVolatile(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetVolatile(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -136,7 +115,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetVolatile", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#accumulateAndGet(java.lang.Object,java.util.function.BinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#accumulateAndGet(java.lang.Object,java.util.function.BinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BinaryOperator"/></param>
@@ -146,7 +125,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute("accumulateAndGet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#compareAndExchange(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#compareAndExchange(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -156,7 +135,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute("compareAndExchange", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#compareAndExchangeAcquire(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#compareAndExchangeAcquire(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -166,7 +145,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute("compareAndExchangeAcquire", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#compareAndExchangeRelease(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#compareAndExchangeRelease(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -176,7 +155,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute("compareAndExchangeRelease", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#get()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Get()
@@ -184,7 +163,15 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature("get", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#getAndAccumulate(java.lang.Object,java.util.function.BinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#getAcquire()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object GetAcquire()
+        {
+            return IExecuteWithSignature("getAcquire", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#getAndAccumulate(java.lang.Object,java.util.function.BinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BinaryOperator"/></param>
@@ -194,7 +181,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute("getAndAccumulate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#getAndSet(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#getAndSet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -203,7 +190,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature("getAndSet", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#getAndUpdate(java.util.function.UnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#getAndUpdate(java.util.function.UnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
         /// <returns><see cref="object"/></returns>
@@ -212,7 +199,23 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature("getAndUpdate", "(Ljava/util/function/UnaryOperator;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#updateAndGet(java.util.function.UnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#getOpaque()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object GetOpaque()
+        {
+            return IExecuteWithSignature("getOpaque", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#getPlain()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object GetPlain()
+        {
+            return IExecuteWithSignature("getPlain", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#updateAndGet(java.util.function.UnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
         /// <returns><see cref="object"/></returns>
@@ -221,7 +224,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature("updateAndGet", "(Ljava/util/function/UnaryOperator;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#lazySet(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#lazySet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void LazySet(object arg0)
@@ -229,7 +232,7 @@ namespace Java.Util.Concurrent.Atomic
             IExecuteWithSignature("lazySet", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#set(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#set(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void Set(object arg0)
@@ -237,7 +240,23 @@ namespace Java.Util.Concurrent.Atomic
             IExecuteWithSignature("set", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#setRelease(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#setOpaque(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        public void SetOpaque(object arg0)
+        {
+            IExecuteWithSignature("setOpaque", "(Ljava/lang/Object;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#setPlain(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        public void SetPlain(object arg0)
+        {
+            IExecuteWithSignature("setPlain", "(Ljava/lang/Object;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#setRelease(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void SetRelease(object arg0)
@@ -260,7 +279,7 @@ namespace Java.Util.Concurrent.Atomic
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#%3Cinit%3E(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         public AtomicReference(V arg0)
@@ -288,28 +307,7 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#getAcquire()"/> 
-        /// </summary>
-        public V Acquire
-        {
-            get { return IExecuteWithSignature<V>("getAcquire", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#getOpaque()"/> <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#setOpaque(java.lang.Object)"/>
-        /// </summary>
-        public V Opaque
-        {
-            get { return IExecuteWithSignature<V>("getOpaque", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setOpaque", "(Ljava/lang/Object;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#getPlain()"/> <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#setPlain(java.lang.Object)"/>
-        /// </summary>
-        public V Plain
-        {
-            get { return IExecuteWithSignature<V>("getPlain", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setPlain", "(Ljava/lang/Object;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#compareAndSet(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#compareAndSet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -319,18 +317,18 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("compareAndSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool WeakCompareAndSet(V arg0, V arg1)
         {
             return IExecute<bool>("weakCompareAndSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetAcquire(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetAcquire(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -340,7 +338,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetAcquire", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetPlain(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetPlain(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -350,7 +348,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetPlain", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetRelease(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetRelease(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -360,7 +358,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetRelease", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetVolatile(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetVolatile(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -370,7 +368,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetVolatile", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#accumulateAndGet(java.lang.Object,java.util.function.BinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#accumulateAndGet(java.lang.Object,java.util.function.BinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BinaryOperator"/></param>
@@ -380,7 +378,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<V>("accumulateAndGet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#compareAndExchange(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#compareAndExchange(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -390,7 +388,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<V>("compareAndExchange", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#compareAndExchangeAcquire(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#compareAndExchangeAcquire(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -400,7 +398,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<V>("compareAndExchangeAcquire", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#compareAndExchangeRelease(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#compareAndExchangeRelease(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -410,7 +408,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<V>("compareAndExchangeRelease", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#get()"/>
         /// </summary>
         /// <returns><typeparamref name="V"/></returns>
         public V Get()
@@ -418,7 +416,15 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<V>("get", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#getAndAccumulate(java.lang.Object,java.util.function.BinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#getAcquire()"/>
+        /// </summary>
+        /// <returns><typeparamref name="V"/></returns>
+        public V GetAcquire()
+        {
+            return IExecuteWithSignature<V>("getAcquire", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#getAndAccumulate(java.lang.Object,java.util.function.BinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BinaryOperator"/></param>
@@ -428,7 +434,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<V>("getAndAccumulate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#getAndSet(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#getAndSet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <returns><typeparamref name="V"/></returns>
@@ -437,7 +443,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<V>("getAndSet", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#getAndUpdate(java.util.function.UnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#getAndUpdate(java.util.function.UnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
         /// <returns><typeparamref name="V"/></returns>
@@ -446,7 +452,23 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<V>("getAndUpdate", "(Ljava/util/function/UnaryOperator;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#updateAndGet(java.util.function.UnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#getOpaque()"/>
+        /// </summary>
+        /// <returns><typeparamref name="V"/></returns>
+        public V GetOpaque()
+        {
+            return IExecuteWithSignature<V>("getOpaque", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#getPlain()"/>
+        /// </summary>
+        /// <returns><typeparamref name="V"/></returns>
+        public V GetPlain()
+        {
+            return IExecuteWithSignature<V>("getPlain", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#updateAndGet(java.util.function.UnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
         /// <returns><typeparamref name="V"/></returns>
@@ -455,7 +477,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<V>("updateAndGet", "(Ljava/util/function/UnaryOperator;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#lazySet(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#lazySet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         public void LazySet(V arg0)
@@ -463,7 +485,7 @@ namespace Java.Util.Concurrent.Atomic
             IExecuteWithSignature("lazySet", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#set(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#set(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         public void Set(V arg0)
@@ -471,7 +493,23 @@ namespace Java.Util.Concurrent.Atomic
             IExecuteWithSignature("set", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#setRelease(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#setOpaque(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="V"/></param>
+        public void SetOpaque(V arg0)
+        {
+            IExecuteWithSignature("setOpaque", "(Ljava/lang/Object;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#setPlain(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="V"/></param>
+        public void SetPlain(V arg0)
+        {
+            IExecuteWithSignature("setPlain", "(Ljava/lang/Object;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#setRelease(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         public void SetRelease(V arg0)

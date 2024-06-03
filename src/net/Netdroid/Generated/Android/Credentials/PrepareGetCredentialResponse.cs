@@ -46,11 +46,12 @@ namespace Android.Credentials
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/credentials/PrepareGetCredentialResponse.html#getPendingGetCredentialHandle()"/> 
+        /// <see href="https://developer.android.com/reference/android/credentials/PrepareGetCredentialResponse.html#getPendingGetCredentialHandle()"/>
         /// </summary>
-        public Android.Credentials.PrepareGetCredentialResponse.PendingGetCredentialHandle GetPendingGetCredentialHandle
+        /// <returns><see cref="Android.Credentials.PrepareGetCredentialResponse.PendingGetCredentialHandle"/></returns>
+        public Android.Credentials.PrepareGetCredentialResponse.PendingGetCredentialHandle GetPendingGetCredentialHandle()
         {
-            get { return IExecuteWithSignature<Android.Credentials.PrepareGetCredentialResponse.PendingGetCredentialHandle>("getPendingGetCredentialHandle", "()Landroid/credentials/PrepareGetCredentialResponse$PendingGetCredentialHandle;"); }
+            return IExecuteWithSignature<Android.Credentials.PrepareGetCredentialResponse.PendingGetCredentialHandle>("getPendingGetCredentialHandle", "()Landroid/credentials/PrepareGetCredentialResponse$PendingGetCredentialHandle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/credentials/PrepareGetCredentialResponse.html#hasAuthenticationResults()"/>

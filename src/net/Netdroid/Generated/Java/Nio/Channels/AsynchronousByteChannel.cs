@@ -64,31 +64,31 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousByteChannel.html#read(java.nio.ByteBuffer,java.lang.Object,java.nio.channels.CompletionHandler)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousByteChannel.html#read(java.nio.ByteBuffer,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><typeparamref name="A"/></param>
         /// <param name="arg2"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
         /// <typeparam name="A"></typeparam>
         /// <typeparam name="Arg2objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Read<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg2objectSuperA> arg2) where Arg2objectSuperA: A
+        public void Read<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg2objectSuperA> arg2) where Arg2objectSuperA : A
         {
             IExecute("read", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousByteChannel.html#write(java.nio.ByteBuffer,java.lang.Object,java.nio.channels.CompletionHandler)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousByteChannel.html#write(java.nio.ByteBuffer,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><typeparamref name="A"/></param>
         /// <param name="arg2"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
         /// <typeparam name="A"></typeparam>
         /// <typeparam name="Arg2objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Write<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg2objectSuperA> arg2) where Arg2objectSuperA: A
+        public void Write<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg2objectSuperA> arg2) where Arg2objectSuperA : A
         {
             IExecute("write", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousByteChannel.html#read(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousByteChannel.html#read(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
@@ -97,7 +97,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Util.Concurrent.Future<Java.Lang.Integer>>("read", "(Ljava/nio/ByteBuffer;)Ljava/util/concurrent/Future;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousByteChannel.html#write(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousByteChannel.html#write(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>

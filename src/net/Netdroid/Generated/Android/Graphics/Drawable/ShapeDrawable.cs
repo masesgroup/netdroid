@@ -54,25 +54,28 @@ namespace Android.Graphics.Drawable
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/ShapeDrawable.html#getShaderFactory()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/ShapeDrawable.html#getShaderFactory()"/>
         /// </summary>
-        public Android.Graphics.Drawable.ShapeDrawable.ShaderFactory GetShaderFactory
+        /// <returns><see cref="Android.Graphics.Drawable.ShapeDrawable.ShaderFactory"/></returns>
+        public Android.Graphics.Drawable.ShapeDrawable.ShaderFactory GetShaderFactory()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.ShapeDrawable.ShaderFactory>("getShaderFactory", "()Landroid/graphics/drawable/ShapeDrawable$ShaderFactory;"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.ShapeDrawable.ShaderFactory>("getShaderFactory", "()Landroid/graphics/drawable/ShapeDrawable$ShaderFactory;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/ShapeDrawable.html#getPaint()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/ShapeDrawable.html#getShape()"/>
         /// </summary>
-        public Android.Graphics.Paint Paint
+        /// <returns><see cref="Android.Graphics.Drawable.Shapes.Shape"/></returns>
+        public Android.Graphics.Drawable.Shapes.Shape GetShape()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Paint>("getPaint", "()Landroid/graphics/Paint;"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Shapes.Shape>("getShape", "()Landroid/graphics/drawable/shapes/Shape;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/ShapeDrawable.html#getShape()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/ShapeDrawable.html#setShape(android.graphics.drawable.shapes.Shape)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/ShapeDrawable.html#getPaint()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Shapes.Shape Shape
+        /// <returns><see cref="Android.Graphics.Paint"/></returns>
+        public Android.Graphics.Paint GetPaint()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Shapes.Shape>("getShape", "()Landroid/graphics/drawable/shapes/Shape;"); } set { IExecuteWithSignature("setShape", "(Landroid/graphics/drawable/shapes/Shape;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Paint>("getPaint", "()Landroid/graphics/Paint;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/ShapeDrawable.html#setIntrinsicHeight(int)"/>
@@ -116,6 +119,14 @@ namespace Android.Graphics.Drawable
         public void SetShaderFactory(Android.Graphics.Drawable.ShapeDrawable.ShaderFactory arg0)
         {
             IExecuteWithSignature("setShaderFactory", "(Landroid/graphics/drawable/ShapeDrawable$ShaderFactory;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/ShapeDrawable.html#setShape(android.graphics.drawable.shapes.Shape)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Shapes.Shape"/></param>
+        public void SetShape(Android.Graphics.Drawable.Shapes.Shape arg0)
+        {
+            IExecuteWithSignature("setShape", "(Landroid/graphics/drawable/shapes/Shape;)V", arg0);
         }
 
         #endregion

@@ -66,19 +66,20 @@ namespace Android.Service.Quickaccesswallet
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletServiceEvent.html#getEventType()"/> 
-        /// </summary>
-        public int EventType
-        {
-            get { return IExecuteWithSignature<int>("getEventType", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletServiceEvent.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletServiceEvent.html#getEventType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEventType()
+        {
+            return IExecuteWithSignature<int>("getEventType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletServiceEvent.html#writeToParcel(android.os.Parcel,int)"/>

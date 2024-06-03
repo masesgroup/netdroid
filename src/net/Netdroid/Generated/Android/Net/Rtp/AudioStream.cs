@@ -34,7 +34,7 @@ namespace Android.Net.Rtp
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
         /// <exception cref="Java.Net.SocketException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public AudioStream(Java.Net.InetAddress arg0)
             : base(arg0)
         {
@@ -56,37 +56,58 @@ namespace Android.Net.Rtp
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/rtp/AudioStream.html#getCodec()"/> <see href="https://developer.android.com/reference/android/net/rtp/AudioStream.html#setCodec(android.net.rtp.AudioCodec)"/>
+        /// <see href="https://developer.android.com/reference/android/net/rtp/AudioStream.html#getCodec()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Net.Rtp.AudioCodec Codec
+        /// <returns><see cref="Android.Net.Rtp.AudioCodec"/></returns>
+        [global::System.Obsolete()]
+        public Android.Net.Rtp.AudioCodec GetCodec()
         {
-            get { return IExecuteWithSignature<Android.Net.Rtp.AudioCodec>("getCodec", "()Landroid/net/rtp/AudioCodec;"); } set { IExecuteWithSignature("setCodec", "(Landroid/net/rtp/AudioCodec;)V", value); }
+            return IExecuteWithSignature<Android.Net.Rtp.AudioCodec>("getCodec", "()Landroid/net/rtp/AudioCodec;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/rtp/AudioStream.html#getDtmfType()"/> <see href="https://developer.android.com/reference/android/net/rtp/AudioStream.html#setDtmfType(int)"/>
+        /// <see href="https://developer.android.com/reference/android/net/rtp/AudioStream.html#getGroup()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int DtmfType
+        /// <returns><see cref="Android.Net.Rtp.AudioGroup"/></returns>
+        [global::System.Obsolete()]
+        public Android.Net.Rtp.AudioGroup GetGroup()
         {
-            get { return IExecuteWithSignature<int>("getDtmfType", "()I"); } set { IExecuteWithSignature("setDtmfType", "(I)V", value); }
+            return IExecuteWithSignature<Android.Net.Rtp.AudioGroup>("getGroup", "()Landroid/net/rtp/AudioGroup;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/rtp/AudioStream.html#getGroup()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/rtp/AudioStream.html#getDtmfType()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Net.Rtp.AudioGroup Group
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetDtmfType()
         {
-            get { return IExecuteWithSignature<Android.Net.Rtp.AudioGroup>("getGroup", "()Landroid/net/rtp/AudioGroup;"); }
+            return IExecuteWithSignature<int>("getDtmfType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/AudioStream.html#join(android.net.rtp.AudioGroup)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Rtp.AudioGroup"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Join(Android.Net.Rtp.AudioGroup arg0)
         {
             IExecuteWithSignature("join", "(Landroid/net/rtp/AudioGroup;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/rtp/AudioStream.html#setCodec(android.net.rtp.AudioCodec)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Rtp.AudioCodec"/></param>
+        [global::System.Obsolete()]
+        public void SetCodec(Android.Net.Rtp.AudioCodec arg0)
+        {
+            IExecuteWithSignature("setCodec", "(Landroid/net/rtp/AudioCodec;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/rtp/AudioStream.html#setDtmfType(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetDtmfType(int arg0)
+        {
+            IExecuteWithSignature("setDtmfType", "(I)V", arg0);
         }
 
         #endregion

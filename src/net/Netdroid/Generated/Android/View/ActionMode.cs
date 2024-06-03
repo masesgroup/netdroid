@@ -64,60 +64,44 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#getCustomView()"/> <see href="https://developer.android.com/reference/android/view/ActionMode.html#setCustomView(android.view.View)"/>
+        /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#getMenu()"/>
         /// </summary>
-        public Android.View.View CustomView
+        /// <returns><see cref="Android.View.Menu"/></returns>
+        public Android.View.Menu GetMenu()
         {
-            get { return IExecuteWithSignature<Android.View.View>("getCustomView", "()Landroid/view/View;"); } set { IExecuteWithSignature("setCustomView", "(Landroid/view/View;)V", value); }
+            return IExecuteWithSignature<Android.View.Menu>("getMenu", "()Landroid/view/Menu;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#getMenu()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#getMenuInflater()"/>
         /// </summary>
-        public Android.View.Menu Menu
+        /// <returns><see cref="Android.View.MenuInflater"/></returns>
+        public Android.View.MenuInflater GetMenuInflater()
         {
-            get { return IExecuteWithSignature<Android.View.Menu>("getMenu", "()Landroid/view/Menu;"); }
+            return IExecuteWithSignature<Android.View.MenuInflater>("getMenuInflater", "()Landroid/view/MenuInflater;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#getMenuInflater()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#getCustomView()"/>
         /// </summary>
-        public Android.View.MenuInflater MenuInflater
+        /// <returns><see cref="Android.View.View"/></returns>
+        public Android.View.View GetCustomView()
         {
-            get { return IExecuteWithSignature<Android.View.MenuInflater>("getMenuInflater", "()Landroid/view/MenuInflater;"); }
+            return IExecuteWithSignature<Android.View.View>("getCustomView", "()Landroid/view/View;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#getSubtitle()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#getSubtitle()"/>
         /// </summary>
-        public Java.Lang.CharSequence Subtitle
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetSubtitle()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getSubtitle", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getSubtitle", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#getTag()"/> <see href="https://developer.android.com/reference/android/view/ActionMode.html#setTag(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#getTitle()"/>
         /// </summary>
-        public object Tag
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTitle()
         {
-            get { return IExecuteWithSignature("getTag", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setTag", "(Ljava/lang/Object;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#getTitle()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Title
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#getTitleOptionalHint()"/> <see href="https://developer.android.com/reference/android/view/ActionMode.html#setTitleOptionalHint(boolean)"/>
-        /// </summary>
-        public bool TitleOptionalHint
-        {
-            get { return IExecuteWithSignature<bool>("getTitleOptionalHint", "()Z"); } set { IExecuteWithSignature("setTitleOptionalHint", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#getType()"/> <see href="https://developer.android.com/reference/android/view/ActionMode.html#setType(int)"/>
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); } set { IExecuteWithSignature("setType", "(I)V", value); }
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#finish()"/>
@@ -132,6 +116,14 @@ namespace Android.View
         public void Invalidate()
         {
             IExecuteWithSignature("invalidate", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#setCustomView(android.view.View)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        public void SetCustomView(Android.View.View arg0)
+        {
+            IExecuteWithSignature("setCustomView", "(Landroid/view/View;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#setSubtitle(int)"/>
@@ -166,12 +158,36 @@ namespace Android.View
             IExecuteWithSignature("setTitle", "(Ljava/lang/CharSequence;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#getTitleOptionalHint()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetTitleOptionalHint()
+        {
+            return IExecuteWithSignature<bool>("getTitleOptionalHint", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#isTitleOptional()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsTitleOptional()
         {
             return IExecuteWithSignature<bool>("isTitleOptional", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#getTag()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object GetTag()
+        {
+            return IExecuteWithSignature("getTag", "()Ljava/lang/Object;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#hide(long)"/>
@@ -195,6 +211,30 @@ namespace Android.View
         public void OnWindowFocusChanged(bool arg0)
         {
             IExecuteWithSignature("onWindowFocusChanged", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#setTag(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        public void SetTag(object arg0)
+        {
+            IExecuteWithSignature("setTag", "(Ljava/lang/Object;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#setTitleOptionalHint(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetTitleOptionalHint(bool arg0)
+        {
+            IExecuteWithSignature("setTitleOptionalHint", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#setType(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetType(int arg0)
+        {
+            IExecuteWithSignature("setType", "(I)V", arg0);
         }
 
         #endregion

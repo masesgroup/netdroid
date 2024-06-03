@@ -50,7 +50,7 @@ namespace Java.Io
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/OutputStream.html#nullOutputStream()"/>
+        /// <see href="https://developer.android.com/reference/java/io/OutputStream.html#nullOutputStream()"/>
         /// </summary>
         /// <returns><see cref="Java.Io.OutputStream"/></returns>
         public static Java.Io.OutputStream NullOutputStream()
@@ -62,7 +62,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/OutputStream.html#write(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/OutputStream.html#write(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -71,7 +71,7 @@ namespace Java.Io
             IExecuteWithSignature("write", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/OutputStream.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/io/OutputStream.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
@@ -79,7 +79,7 @@ namespace Java.Io
             IExecuteWithSignature("close", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/OutputStream.html#flush()"/>
+        /// <see href="https://developer.android.com/reference/java/io/OutputStream.html#flush()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Flush()
@@ -87,7 +87,7 @@ namespace Java.Io
             IExecuteWithSignature("flush", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/OutputStream.html#write(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/OutputStream.html#write(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -98,7 +98,7 @@ namespace Java.Io
             IExecute("write", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/OutputStream.html#write(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/OutputStream.html#write(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <exception cref="Java.Io.IOException"/>

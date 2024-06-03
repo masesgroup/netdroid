@@ -46,18 +46,11 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/DrmInitData.html#getSchemeInitDataCount()"/> 
-        /// </summary>
-        public int SchemeInitDataCount
-        {
-            get { return IExecuteWithSignature<int>("getSchemeInitDataCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/DrmInitData.html#get(java.util.UUID)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.UUID"/></param>
         /// <returns><see cref="Android.Media.DrmInitData.SchemeInitData"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Media.DrmInitData.SchemeInitData Get(Java.Util.UUID arg0)
         {
             return IExecuteWithSignature<Android.Media.DrmInitData.SchemeInitData>("get", "(Ljava/util/UUID;)Landroid/media/DrmInitData$SchemeInitData;", arg0);
@@ -70,6 +63,14 @@ namespace Android.Media
         public Android.Media.DrmInitData.SchemeInitData GetSchemeInitDataAt(int arg0)
         {
             return IExecuteWithSignature<Android.Media.DrmInitData.SchemeInitData>("getSchemeInitDataAt", "(I)Landroid/media/DrmInitData$SchemeInitData;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/DrmInitData.html#getSchemeInitDataCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSchemeInitDataCount()
+        {
+            return IExecuteWithSignature<int>("getSchemeInitDataCount", "()I");
         }
 
         #endregion

@@ -55,11 +55,12 @@ namespace Android.Health.Connect.Datatypes.Units
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Velocity.html#getInMetersPerSecond()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Velocity.html#getInMetersPerSecond()"/>
         /// </summary>
-        public double InMetersPerSecond
+        /// <returns><see cref="double"/></returns>
+        public double GetInMetersPerSecond()
         {
-            get { return IExecuteWithSignature<double>("getInMetersPerSecond", "()D"); }
+            return IExecuteWithSignature<double>("getInMetersPerSecond", "()D");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Velocity.html#compareTo(android.health.connect.datatypes.units.Velocity)"/>

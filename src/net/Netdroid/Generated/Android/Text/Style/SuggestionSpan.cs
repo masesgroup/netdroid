@@ -120,28 +120,28 @@ namespace Android.Text.Style
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#ACTION_SUGGESTION_PICKED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String ACTION_SUGGESTION_PICKED { get { if (!_ACTION_SUGGESTION_PICKEDReady) { _ACTION_SUGGESTION_PICKEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_SUGGESTION_PICKED"); _ACTION_SUGGESTION_PICKEDReady = true; } return _ACTION_SUGGESTION_PICKEDContent; } }
         private static Java.Lang.String _ACTION_SUGGESTION_PICKEDContent = default;
         private static bool _ACTION_SUGGESTION_PICKEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#SUGGESTION_SPAN_PICKED_AFTER"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String SUGGESTION_SPAN_PICKED_AFTER { get { if (!_SUGGESTION_SPAN_PICKED_AFTERReady) { _SUGGESTION_SPAN_PICKED_AFTERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SUGGESTION_SPAN_PICKED_AFTER"); _SUGGESTION_SPAN_PICKED_AFTERReady = true; } return _SUGGESTION_SPAN_PICKED_AFTERContent; } }
         private static Java.Lang.String _SUGGESTION_SPAN_PICKED_AFTERContent = default;
         private static bool _SUGGESTION_SPAN_PICKED_AFTERReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#SUGGESTION_SPAN_PICKED_BEFORE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String SUGGESTION_SPAN_PICKED_BEFORE { get { if (!_SUGGESTION_SPAN_PICKED_BEFOREReady) { _SUGGESTION_SPAN_PICKED_BEFOREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SUGGESTION_SPAN_PICKED_BEFORE"); _SUGGESTION_SPAN_PICKED_BEFOREReady = true; } return _SUGGESTION_SPAN_PICKED_BEFOREContent; } }
         private static Java.Lang.String _SUGGESTION_SPAN_PICKED_BEFOREContent = default;
         private static bool _SUGGESTION_SPAN_PICKED_BEFOREReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#SUGGESTION_SPAN_PICKED_HASHCODE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String SUGGESTION_SPAN_PICKED_HASHCODE { get { if (!_SUGGESTION_SPAN_PICKED_HASHCODEReady) { _SUGGESTION_SPAN_PICKED_HASHCODEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SUGGESTION_SPAN_PICKED_HASHCODE"); _SUGGESTION_SPAN_PICKED_HASHCODEReady = true; } return _SUGGESTION_SPAN_PICKED_HASHCODEContent; } }
         private static Java.Lang.String _SUGGESTION_SPAN_PICKED_HASHCODEContent = default;
         private static bool _SUGGESTION_SPAN_PICKED_HASHCODEReady = false; // this is used because in case of generics 
@@ -154,55 +154,69 @@ namespace Android.Text.Style
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#getFlags()"/> <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#setFlags(int)"/>
-        /// </summary>
-        public int Flags
-        {
-            get { return IExecuteWithSignature<int>("getFlags", "()I"); } set { IExecuteWithSignature("setFlags", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#getLocale()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String Locale
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLocale", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#getLocaleObject()"/> 
-        /// </summary>
-        public Java.Util.Locale LocaleObject
-        {
-            get { return IExecuteWithSignature<Java.Util.Locale>("getLocaleObject", "()Ljava/util/Locale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#getSpanTypeId()"/> 
-        /// </summary>
-        public int SpanTypeId
-        {
-            get { return IExecuteWithSignature<int>("getSpanTypeId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#getSuggestions()"/> 
-        /// </summary>
-        public Java.Lang.String[] Suggestions
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getSuggestions", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#getUnderlineColor()"/> 
-        /// </summary>
-        public int UnderlineColor
-        {
-            get { return IExecuteWithSignature<int>("getUnderlineColor", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#getFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFlags()
+        {
+            return IExecuteWithSignature<int>("getFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#getSpanTypeId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSpanTypeId()
+        {
+            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#getUnderlineColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetUnderlineColor()
+        {
+            return IExecuteWithSignature<int>("getUnderlineColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#getLocale()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetLocale()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getLocale", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#getSuggestions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetSuggestions()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getSuggestions", "()[Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#getLocaleObject()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public Java.Util.Locale GetLocaleObject()
+        {
+            return IExecuteWithSignature<Java.Util.Locale>("getLocaleObject", "()Ljava/util/Locale;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#setFlags(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetFlags(int arg0)
+        {
+            IExecuteWithSignature("setFlags", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#writeToParcel(android.os.Parcel,int)"/>

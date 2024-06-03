@@ -63,11 +63,12 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/RadioGroup.html#getCheckedRadioButtonId()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/RadioGroup.html#getCheckedRadioButtonId()"/>
         /// </summary>
-        public int CheckedRadioButtonId
+        /// <returns><see cref="int"/></returns>
+        public int GetCheckedRadioButtonId()
         {
-            get { return IExecuteWithSignature<int>("getCheckedRadioButtonId", "()I"); }
+            return IExecuteWithSignature<int>("getCheckedRadioButtonId", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RadioGroup.html#check(int)"/>
@@ -196,7 +197,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onCheckedChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.RadioGroup>>>(OnCheckedChangedEventHandler));
+                AddEventHandler("onCheckedChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.RadioGroup>>>(OnCheckedChangedEventHandler));
 
             }
 
@@ -204,7 +205,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/RadioGroup.OnCheckedChangeListener.html#onCheckedChanged(android.widget.RadioGroup,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCheckedChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Widget.RadioGroup, int> OnOnCheckedChanged { get; set; } = null;
+            public global::System.Action<Android.Widget.RadioGroup, int> OnOnCheckedChanged { get; set; } = null;
 
             void OnCheckedChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.RadioGroup>> data)
             {

@@ -63,32 +63,20 @@ namespace Android.View.Displayhash
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/displayhash/VerifiedDisplayHash.html#getBoundsInWindow()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/displayhash/VerifiedDisplayHash.html#getBoundsInWindow()"/>
         /// </summary>
-        public Android.Graphics.Rect BoundsInWindow
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetBoundsInWindow()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getBoundsInWindow", "()Landroid/graphics/Rect;"); }
+            return IExecuteWithSignature<Android.Graphics.Rect>("getBoundsInWindow", "()Landroid/graphics/Rect;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/displayhash/VerifiedDisplayHash.html#getHashAlgorithm()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/displayhash/VerifiedDisplayHash.html#getImageHash()"/>
         /// </summary>
-        public Java.Lang.String HashAlgorithm
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetImageHash()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHashAlgorithm", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/displayhash/VerifiedDisplayHash.html#getImageHash()"/> 
-        /// </summary>
-        public byte[] ImageHash
-        {
-            get { return IExecuteWithSignatureArray<byte>("getImageHash", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/displayhash/VerifiedDisplayHash.html#getTimeMillis()"/> 
-        /// </summary>
-        public long TimeMillis
-        {
-            get { return IExecuteWithSignature<long>("getTimeMillis", "()J"); }
+            return IExecuteWithSignatureArray<byte>("getImageHash", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/displayhash/VerifiedDisplayHash.html#describeContents()"/>
@@ -97,6 +85,22 @@ namespace Android.View.Displayhash
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/displayhash/VerifiedDisplayHash.html#getHashAlgorithm()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetHashAlgorithm()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getHashAlgorithm", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/displayhash/VerifiedDisplayHash.html#getTimeMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTimeMillis()
+        {
+            return IExecuteWithSignature<long>("getTimeMillis", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/displayhash/VerifiedDisplayHash.html#writeToParcel(android.os.Parcel,int)"/>

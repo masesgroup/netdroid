@@ -64,7 +64,7 @@ namespace Java.Lang.Invoke
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.html#descriptorString()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.html#descriptorString()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String DescriptorString()
@@ -96,7 +96,7 @@ namespace Java.Lang.Invoke
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfField.html#isArray()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfField.html#isArray()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
             public bool IsArray()
@@ -104,7 +104,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<bool>("isArray", "()Z");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfField.html#isPrimitive()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfField.html#isPrimitive()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
             public bool IsPrimitive()
@@ -112,7 +112,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<bool>("isPrimitive", "()Z");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfField.html#arrayType()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfField.html#arrayType()"/>
             /// </summary>
             /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></returns>
             public Java.Lang.Invoke.TypeDescriptor.OfField ArrayType()
@@ -120,7 +120,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfField>("arrayType", "()Ljava/lang/invoke/TypeDescriptor$OfField;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfField.html#componentType()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfField.html#componentType()"/>
             /// </summary>
             /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></returns>
             public Java.Lang.Invoke.TypeDescriptor.OfField ComponentType()
@@ -163,7 +163,7 @@ namespace Java.Lang.Invoke
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfField.html#isArray()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfField.html#isArray()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
             public bool IsArray()
@@ -171,7 +171,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<bool>("isArray", "()Z");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfField.html#isPrimitive()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfField.html#isPrimitive()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
             public bool IsPrimitive()
@@ -179,7 +179,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<bool>("isPrimitive", "()Z");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfField.html#arrayType()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfField.html#arrayType()"/>
             /// </summary>
             /// <returns><typeparamref name="F"/></returns>
             public F ArrayType()
@@ -187,7 +187,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<F>("arrayType", "()Ljava/lang/invoke/TypeDescriptor$OfField;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfField.html#componentType()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfField.html#componentType()"/>
             /// </summary>
             /// <returns><typeparamref name="F"/></returns>
             public F ComponentType()
@@ -226,7 +226,7 @@ namespace Java.Lang.Invoke
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterType(int)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterType(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></returns>
@@ -235,7 +235,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfField>("parameterType", "(I)Ljava/lang/invoke/TypeDescriptor$OfField;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfMethod.html#returnType()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#returnType()"/>
             /// </summary>
             /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></returns>
             public Java.Lang.Invoke.TypeDescriptor.OfField ReturnType()
@@ -243,7 +243,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfField>("returnType", "()Ljava/lang/invoke/TypeDescriptor$OfField;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterArray()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterArray()"/>
             /// </summary>
             /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></returns>
             public Java.Lang.Invoke.TypeDescriptor.OfField[] ParameterArray()
@@ -251,7 +251,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignatureArray<Java.Lang.Invoke.TypeDescriptor.OfField>("parameterArray", "()[Ljava/lang/invoke/TypeDescriptor$OfField;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterCount()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterCount()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
             public int ParameterCount()
@@ -259,7 +259,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<int>("parameterCount", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterList()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterList()"/>
             /// </summary>
             /// <returns><see cref="Java.Util.List"/></returns>
             public Java.Util.List ParameterList()
@@ -267,7 +267,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<Java.Util.List>("parameterList", "()Ljava/util/List;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfMethod.html#changeParameterType(int,java.lang.invoke.TypeDescriptor.OfField)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#changeParameterType(int,java.lang.invoke.TypeDescriptor.OfField)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></param>
@@ -277,7 +277,7 @@ namespace Java.Lang.Invoke
                 return IExecute<Java.Lang.Invoke.TypeDescriptor.OfMethod>("changeParameterType", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfMethod.html#changeReturnType(java.lang.invoke.TypeDescriptor.OfField)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#changeReturnType(java.lang.invoke.TypeDescriptor.OfField)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></param>
             /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfMethod"/></returns>
@@ -286,7 +286,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfMethod>("changeReturnType", "(Ljava/lang/invoke/TypeDescriptor$OfField;)Ljava/lang/invoke/TypeDescriptor$OfMethod;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfMethod.html#dropParameterTypes(int,int)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#dropParameterTypes(int,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="int"/></param>
@@ -296,7 +296,7 @@ namespace Java.Lang.Invoke
                 return IExecute<Java.Lang.Invoke.TypeDescriptor.OfMethod>("dropParameterTypes", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfMethod.html#insertParameterTypes(int,java.lang.invoke.TypeDescriptor.OfField[])"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#insertParameterTypes(int,java.lang.invoke.TypeDescriptor.OfField[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></param>
@@ -341,7 +341,7 @@ namespace Java.Lang.Invoke
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterType(int)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterType(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><typeparamref name="F"/></returns>
@@ -350,7 +350,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<F>("parameterType", "(I)Ljava/lang/invoke/TypeDescriptor$OfField;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfMethod.html#returnType()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#returnType()"/>
             /// </summary>
             /// <returns><typeparamref name="F"/></returns>
             public F ReturnType()
@@ -358,7 +358,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<F>("returnType", "()Ljava/lang/invoke/TypeDescriptor$OfField;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterArray()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterArray()"/>
             /// </summary>
             /// <returns><typeparamref name="F"/></returns>
             public F[] ParameterArray()
@@ -366,7 +366,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignatureArray<F>("parameterArray", "()[Ljava/lang/invoke/TypeDescriptor$OfField;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterCount()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterCount()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
             public int ParameterCount()
@@ -374,7 +374,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<int>("parameterCount", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterList()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterList()"/>
             /// </summary>
             /// <returns><see cref="Java.Util.List"/></returns>
             public Java.Util.List<F> ParameterList()
@@ -382,7 +382,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<Java.Util.List<F>>("parameterList", "()Ljava/util/List;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfMethod.html#changeParameterType(int,java.lang.invoke.TypeDescriptor.OfField)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#changeParameterType(int,java.lang.invoke.TypeDescriptor.OfField)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><typeparamref name="F"/></param>
@@ -392,7 +392,7 @@ namespace Java.Lang.Invoke
                 return IExecute<M>("changeParameterType", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfMethod.html#changeReturnType(java.lang.invoke.TypeDescriptor.OfField)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#changeReturnType(java.lang.invoke.TypeDescriptor.OfField)"/>
             /// </summary>
             /// <param name="arg0"><typeparamref name="F"/></param>
             /// <returns><typeparamref name="M"/></returns>
@@ -401,7 +401,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<M>("changeReturnType", "(Ljava/lang/invoke/TypeDescriptor$OfField;)Ljava/lang/invoke/TypeDescriptor$OfMethod;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfMethod.html#dropParameterTypes(int,int)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#dropParameterTypes(int,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="int"/></param>
@@ -411,7 +411,7 @@ namespace Java.Lang.Invoke
                 return IExecute<M>("dropParameterTypes", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfMethod.html#insertParameterTypes(int,java.lang.invoke.TypeDescriptor.OfField[])"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#insertParameterTypes(int,java.lang.invoke.TypeDescriptor.OfField[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><typeparamref name="F"/></param>

@@ -30,7 +30,7 @@ namespace Android.Telephony.Gsm
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/telephony/gsm/GsmCellLocation.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class GsmCellLocation : Android.Telephony.CellLocation
     {
         const string _bridgeClassName = "android.telephony.gsm.GsmCellLocation";
@@ -75,7 +75,7 @@ namespace Android.Telephony.Gsm
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/telephony/gsm/SmsManager.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class SmsManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SmsManager>
     {
         const string _bridgeClassName = "android.telephony.gsm.SmsManager";
@@ -120,7 +120,7 @@ namespace Android.Telephony.Gsm
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/telephony/gsm/SmsMessage.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class SmsMessage : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SmsMessage>
     {
         const string _bridgeClassName = "android.telephony.gsm.SmsMessage";
@@ -161,7 +161,7 @@ namespace Android.Telephony.Gsm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/gsm/SmsMessage.MessageClass.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class MessageClass : Java.Lang.Enum<Android.Telephony.Gsm.SmsMessage.MessageClass>
         {
             const string _bridgeClassName = "android.telephony.gsm.SmsMessage$MessageClass";
@@ -206,7 +206,7 @@ namespace Android.Telephony.Gsm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/gsm/SmsMessage.SubmitPdu.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class SubmitPdu : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SubmitPdu>
         {
             const string _bridgeClassName = "android.telephony.gsm.SmsMessage$SubmitPdu";

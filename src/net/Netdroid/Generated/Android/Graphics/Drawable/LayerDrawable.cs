@@ -72,62 +72,6 @@ namespace Android.Graphics.Drawable
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getBottomPadding()"/> 
-        /// </summary>
-        public int BottomPadding
-        {
-            get { return IExecuteWithSignature<int>("getBottomPadding", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getEndPadding()"/> 
-        /// </summary>
-        public int EndPadding
-        {
-            get { return IExecuteWithSignature<int>("getEndPadding", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLeftPadding()"/> 
-        /// </summary>
-        public int LeftPadding
-        {
-            get { return IExecuteWithSignature<int>("getLeftPadding", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getNumberOfLayers()"/> 
-        /// </summary>
-        public int NumberOfLayers
-        {
-            get { return IExecuteWithSignature<int>("getNumberOfLayers", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getPaddingMode()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setPaddingMode(int)"/>
-        /// </summary>
-        public int PaddingMode
-        {
-            get { return IExecuteWithSignature<int>("getPaddingMode", "()I"); } set { IExecuteWithSignature("setPaddingMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getRightPadding()"/> 
-        /// </summary>
-        public int RightPadding
-        {
-            get { return IExecuteWithSignature<int>("getRightPadding", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getStartPadding()"/> 
-        /// </summary>
-        public int StartPadding
-        {
-            get { return IExecuteWithSignature<int>("getStartPadding", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getTopPadding()"/> 
-        /// </summary>
-        public int TopPadding
-        {
-            get { return IExecuteWithSignature<int>("getTopPadding", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#findDrawableByLayerId(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -172,6 +116,22 @@ namespace Android.Graphics.Drawable
         public int FindIndexByLayerId(int arg0)
         {
             return IExecuteWithSignature<int>("findIndexByLayerId", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getBottomPadding()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBottomPadding()
+        {
+            return IExecuteWithSignature<int>("getBottomPadding", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getEndPadding()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEndPadding()
+        {
+            return IExecuteWithSignature<int>("getEndPadding", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getId(int)"/>
@@ -262,6 +222,54 @@ namespace Android.Graphics.Drawable
         public int GetLayerWidth(int arg0)
         {
             return IExecuteWithSignature<int>("getLayerWidth", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLeftPadding()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLeftPadding()
+        {
+            return IExecuteWithSignature<int>("getLeftPadding", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getNumberOfLayers()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNumberOfLayers()
+        {
+            return IExecuteWithSignature<int>("getNumberOfLayers", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getPaddingMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPaddingMode()
+        {
+            return IExecuteWithSignature<int>("getPaddingMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getRightPadding()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRightPadding()
+        {
+            return IExecuteWithSignature<int>("getRightPadding", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getStartPadding()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStartPadding()
+        {
+            return IExecuteWithSignature<int>("getStartPadding", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getTopPadding()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTopPadding()
+        {
+            return IExecuteWithSignature<int>("getTopPadding", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#invalidateDrawable(android.graphics.drawable.Drawable)"/>
@@ -432,6 +440,14 @@ namespace Android.Graphics.Drawable
         public void SetPadding(int arg0, int arg1, int arg2, int arg3)
         {
             IExecute("setPadding", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setPaddingMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetPaddingMode(int arg0)
+        {
+            IExecuteWithSignature("setPaddingMode", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setPaddingRelative(int,int,int,int)"/>

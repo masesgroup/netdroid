@@ -46,7 +46,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Queue.html#add(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Queue.html#add(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -55,7 +55,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Queue.html#offer(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Queue.html#offer(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -64,7 +64,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Queue.html#element()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Queue.html#element()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Element()
@@ -72,7 +72,7 @@ namespace Java.Util
             return IExecuteWithSignature("element", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Queue.html#peek()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Queue.html#peek()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Peek()
@@ -80,7 +80,7 @@ namespace Java.Util
             return IExecuteWithSignature("peek", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Queue.html#poll()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Queue.html#poll()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Poll()
@@ -88,7 +88,7 @@ namespace Java.Util
             return IExecuteWithSignature("poll", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Queue.html#remove()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Queue.html#remove()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Remove()
@@ -149,7 +149,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Queue.html#add(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Queue.html#add(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -158,7 +158,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Queue.html#offer(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Queue.html#offer(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -167,7 +167,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Queue.html#element()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Queue.html#element()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Element()
@@ -175,7 +175,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("element", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Queue.html#peek()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Queue.html#peek()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Peek()
@@ -183,7 +183,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("peek", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Queue.html#poll()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Queue.html#poll()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Poll()
@@ -191,7 +191,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("poll", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Queue.html#remove()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Queue.html#remove()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Remove()

@@ -64,11 +64,12 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/SubMenu.html#getItem()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/SubMenu.html#getItem()"/>
         /// </summary>
-        public Android.View.MenuItem Item
+        /// <returns><see cref="Android.View.MenuItem"/></returns>
+        public Android.View.MenuItem GetItem()
         {
-            get { return IExecuteWithSignature<Android.View.MenuItem>("getItem", "()Landroid/view/MenuItem;"); }
+            return IExecuteWithSignature<Android.View.MenuItem>("getItem", "()Landroid/view/MenuItem;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/SubMenu.html#setHeaderIcon(android.graphics.drawable.Drawable)"/>

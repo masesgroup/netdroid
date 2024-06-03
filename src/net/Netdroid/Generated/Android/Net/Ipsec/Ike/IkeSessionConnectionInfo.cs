@@ -56,25 +56,28 @@ namespace Android.Net.Ipsec.Ike
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionConnectionInfo.html#getLocalAddress()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionConnectionInfo.html#getNetwork()"/>
         /// </summary>
-        public Java.Net.InetAddress LocalAddress
+        /// <returns><see cref="Android.Net.Network"/></returns>
+        public Android.Net.Network GetNetwork()
         {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getLocalAddress", "()Ljava/net/InetAddress;"); }
+            return IExecuteWithSignature<Android.Net.Network>("getNetwork", "()Landroid/net/Network;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionConnectionInfo.html#getNetwork()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionConnectionInfo.html#getLocalAddress()"/>
         /// </summary>
-        public Android.Net.Network Network
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        public Java.Net.InetAddress GetLocalAddress()
         {
-            get { return IExecuteWithSignature<Android.Net.Network>("getNetwork", "()Landroid/net/Network;"); }
+            return IExecuteWithSignature<Java.Net.InetAddress>("getLocalAddress", "()Ljava/net/InetAddress;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionConnectionInfo.html#getRemoteAddress()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionConnectionInfo.html#getRemoteAddress()"/>
         /// </summary>
-        public Java.Net.InetAddress RemoteAddress
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        public Java.Net.InetAddress GetRemoteAddress()
         {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getRemoteAddress", "()Ljava/net/InetAddress;"); }
+            return IExecuteWithSignature<Java.Net.InetAddress>("getRemoteAddress", "()Ljava/net/InetAddress;");
         }
 
         #endregion

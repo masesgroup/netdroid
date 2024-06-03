@@ -42,7 +42,7 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#isHexDigit(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#isHexDigit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -51,7 +51,7 @@ namespace Java.Util
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isHexDigit", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#fromHexDigit(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#fromHexDigit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -60,7 +60,7 @@ namespace Java.Util
             return SExecuteWithSignature<int>(LocalBridgeClazz, "fromHexDigit", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#fromHexDigits(java.lang.CharSequence,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#fromHexDigits(java.lang.CharSequence,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -71,7 +71,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "fromHexDigits", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#fromHexDigits(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#fromHexDigits(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="int"/></returns>
@@ -80,7 +80,7 @@ namespace Java.Util
             return SExecuteWithSignature<int>(LocalBridgeClazz, "fromHexDigits", "(Ljava/lang/CharSequence;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#of()"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#of()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.HexFormat"/></returns>
         public static Java.Util.HexFormat Of()
@@ -88,7 +88,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.HexFormat>(LocalBridgeClazz, "of", "()Ljava/util/HexFormat;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#ofDelimiter(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#ofDelimiter(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.HexFormat"/></returns>
@@ -97,7 +97,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.HexFormat>(LocalBridgeClazz, "ofDelimiter", "(Ljava/lang/String;)Ljava/util/HexFormat;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#fromHexDigitsToLong(java.lang.CharSequence,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#fromHexDigitsToLong(java.lang.CharSequence,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -108,7 +108,7 @@ namespace Java.Util
             return SExecute<long>(LocalBridgeClazz, "fromHexDigitsToLong", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#fromHexDigitsToLong(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#fromHexDigitsToLong(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="long"/></returns>
@@ -121,7 +121,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#formatHex(java.lang.Appendable,byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#formatHex(java.lang.Appendable,byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="A"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -129,34 +129,34 @@ namespace Java.Util
         /// <param name="arg3"><see cref="int"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.IAppendable"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        public A FormatHex<A>(A arg0, byte[] arg1, int arg2, int arg3) where A: Java.Lang.IAppendable, new()
+        public A FormatHex<A>(A arg0, byte[] arg1, int arg2, int arg3) where A : Java.Lang.IAppendable, new()
         {
             return IExecute<A>("formatHex", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#formatHex(java.lang.Appendable,byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#formatHex(java.lang.Appendable,byte[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="A"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.IAppendable"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        public A FormatHex<A>(A arg0, byte[] arg1) where A: Java.Lang.IAppendable, new()
+        public A FormatHex<A>(A arg0, byte[] arg1) where A : Java.Lang.IAppendable, new()
         {
             return IExecute<A>("formatHex", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#toHexDigits(java.lang.Appendable,byte)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#toHexDigits(java.lang.Appendable,byte)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="A"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.IAppendable"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        public A ToHexDigits<A>(A arg0, byte arg1) where A: Java.Lang.IAppendable, new()
+        public A ToHexDigits<A>(A arg0, byte arg1) where A : Java.Lang.IAppendable, new()
         {
             return IExecute<A>("toHexDigits", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#isUpperCase()"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#isUpperCase()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsUpperCase()
@@ -164,7 +164,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("isUpperCase", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#parseHex(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#parseHex(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -175,7 +175,7 @@ namespace Java.Util
             return IExecuteArray<byte>("parseHex", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#parseHex(java.lang.CharSequence,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#parseHex(java.lang.CharSequence,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -186,7 +186,7 @@ namespace Java.Util
             return IExecuteArray<byte>("parseHex", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#parseHex(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#parseHex(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="byte"/></returns>
@@ -195,7 +195,7 @@ namespace Java.Util
             return IExecuteWithSignatureArray<byte>("parseHex", "(Ljava/lang/CharSequence;)[B", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#toHighHexDigit(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#toHighHexDigit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="char"/></returns>
@@ -204,7 +204,7 @@ namespace Java.Util
             return IExecuteWithSignature<char>("toHighHexDigit", "(I)C", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#toLowHexDigit(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#toLowHexDigit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="char"/></returns>
@@ -213,7 +213,7 @@ namespace Java.Util
             return IExecuteWithSignature<char>("toLowHexDigit", "(I)C", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#delimiter()"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#delimiter()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Delimiter()
@@ -221,7 +221,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("delimiter", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#formatHex(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#formatHex(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -232,7 +232,7 @@ namespace Java.Util
             return IExecute<Java.Lang.String>("formatHex", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#formatHex(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#formatHex(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -241,7 +241,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("formatHex", "([B)Ljava/lang/String;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#prefix()"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#prefix()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Prefix()
@@ -249,7 +249,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("prefix", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#suffix()"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#suffix()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Suffix()
@@ -257,7 +257,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("suffix", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#toHexDigits(byte)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#toHexDigits(byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -266,7 +266,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("toHexDigits", "(B)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#toHexDigits(char)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#toHexDigits(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -275,7 +275,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("toHexDigits", "(C)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#toHexDigits(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#toHexDigits(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -284,7 +284,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("toHexDigits", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#toHexDigits(long,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#toHexDigits(long,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -294,7 +294,7 @@ namespace Java.Util
             return IExecute<Java.Lang.String>("toHexDigits", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#toHexDigits(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#toHexDigits(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -303,7 +303,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("toHexDigits", "(J)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#toHexDigits(short)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#toHexDigits(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -312,7 +312,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("toHexDigits", "(S)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#withDelimiter(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#withDelimiter(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.HexFormat"/></returns>
@@ -321,7 +321,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.HexFormat>("withDelimiter", "(Ljava/lang/String;)Ljava/util/HexFormat;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#withLowerCase()"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#withLowerCase()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.HexFormat"/></returns>
         public Java.Util.HexFormat WithLowerCase()
@@ -329,7 +329,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.HexFormat>("withLowerCase", "()Ljava/util/HexFormat;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#withPrefix(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#withPrefix(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.HexFormat"/></returns>
@@ -338,7 +338,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.HexFormat>("withPrefix", "(Ljava/lang/String;)Ljava/util/HexFormat;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#withSuffix(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#withSuffix(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.HexFormat"/></returns>
@@ -347,7 +347,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.HexFormat>("withSuffix", "(Ljava/lang/String;)Ljava/util/HexFormat;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HexFormat.html#withUpperCase()"/>
+        /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#withUpperCase()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.HexFormat"/></returns>
         public Java.Util.HexFormat WithUpperCase()

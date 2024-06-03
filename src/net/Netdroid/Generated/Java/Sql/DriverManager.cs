@@ -42,29 +42,32 @@ namespace Java.Sql
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html#getLoginTimeout()"/> <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html#setLoginTimeout(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/DriverManager.html#getLoginTimeout()"/>
         /// </summary>
-        public static int LoginTimeout
+        /// <returns><see cref="int"/></returns>
+        public static int GetLoginTimeout()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getLoginTimeout", "()I"); } set { SExecuteWithSignature(LocalBridgeClazz, "setLoginTimeout", "(I)V", value); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getLoginTimeout", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html#getLogStream()"/> <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html#setLogStream(java.io.PrintStream)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/DriverManager.html#getLogStream()"/>
         /// </summary>
-        [System.Obsolete()]
-        public static Java.Io.PrintStream LogStream
+        /// <returns><see cref="Java.Io.PrintStream"/></returns>
+        [global::System.Obsolete()]
+        public static Java.Io.PrintStream GetLogStream()
         {
-            get { return SExecuteWithSignature<Java.Io.PrintStream>(LocalBridgeClazz, "getLogStream", "()Ljava/io/PrintStream;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setLogStream", "(Ljava/io/PrintStream;)V", value); }
+            return SExecuteWithSignature<Java.Io.PrintStream>(LocalBridgeClazz, "getLogStream", "()Ljava/io/PrintStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html#getLogWriter()"/> <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html#setLogWriter(java.io.PrintWriter)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/DriverManager.html#getLogWriter()"/>
         /// </summary>
-        public static Java.Io.PrintWriter LogWriter
+        /// <returns><see cref="Java.Io.PrintWriter"/></returns>
+        public static Java.Io.PrintWriter GetLogWriter()
         {
-            get { return SExecuteWithSignature<Java.Io.PrintWriter>(LocalBridgeClazz, "getLogWriter", "()Ljava/io/PrintWriter;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setLogWriter", "(Ljava/io/PrintWriter;)V", value); }
+            return SExecuteWithSignature<Java.Io.PrintWriter>(LocalBridgeClazz, "getLogWriter", "()Ljava/io/PrintWriter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html#getConnection(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/DriverManager.html#getConnection(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -76,7 +79,7 @@ namespace Java.Sql
             return SExecute<Java.Sql.Connection>(LocalBridgeClazz, "getConnection", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html#getConnection(java.lang.String,java.util.Properties)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/DriverManager.html#getConnection(java.lang.String,java.util.Properties)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Properties"/></param>
@@ -87,7 +90,7 @@ namespace Java.Sql
             return SExecute<Java.Sql.Connection>(LocalBridgeClazz, "getConnection", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html#getConnection(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/DriverManager.html#getConnection(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Connection"/></returns>
@@ -97,7 +100,7 @@ namespace Java.Sql
             return SExecuteWithSignature<Java.Sql.Connection>(LocalBridgeClazz, "getConnection", "(Ljava/lang/String;)Ljava/sql/Connection;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html#getDriver(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/DriverManager.html#getDriver(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Driver"/></returns>
@@ -107,7 +110,7 @@ namespace Java.Sql
             return SExecuteWithSignature<Java.Sql.Driver>(LocalBridgeClazz, "getDriver", "(Ljava/lang/String;)Ljava/sql/Driver;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html#getDrivers()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/DriverManager.html#getDrivers()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public static Java.Util.Enumeration<Java.Sql.Driver> GetDrivers()
@@ -115,7 +118,7 @@ namespace Java.Sql
             return SExecuteWithSignature<Java.Util.Enumeration<Java.Sql.Driver>>(LocalBridgeClazz, "getDrivers", "()Ljava/util/Enumeration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html#drivers()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/DriverManager.html#drivers()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<Java.Sql.Driver> Drivers()
@@ -123,7 +126,7 @@ namespace Java.Sql
             return SExecuteWithSignature<Java.Util.Stream.Stream<Java.Sql.Driver>>(LocalBridgeClazz, "drivers", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html#deregisterDriver(java.sql.Driver)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/DriverManager.html#deregisterDriver(java.sql.Driver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Driver"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -132,7 +135,7 @@ namespace Java.Sql
             SExecuteWithSignature(LocalBridgeClazz, "deregisterDriver", "(Ljava/sql/Driver;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html#println(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/DriverManager.html#println(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public static void Println(Java.Lang.String arg0)
@@ -140,13 +143,38 @@ namespace Java.Sql
             SExecuteWithSignature(LocalBridgeClazz, "println", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html#registerDriver(java.sql.Driver)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/DriverManager.html#registerDriver(java.sql.Driver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Driver"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public static void RegisterDriver(Java.Sql.Driver arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "registerDriver", "(Ljava/sql/Driver;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/DriverManager.html#setLoginTimeout(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public static void SetLoginTimeout(int arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setLoginTimeout", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/DriverManager.html#setLogStream(java.io.PrintStream)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
+        [global::System.Obsolete()]
+        public static void SetLogStream(Java.Io.PrintStream arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setLogStream", "(Ljava/io/PrintStream;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/DriverManager.html#setLogWriter(java.io.PrintWriter)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.PrintWriter"/></param>
+        public static void SetLogWriter(Java.Io.PrintWriter arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setLogWriter", "(Ljava/io/PrintWriter;)V", arg0);
         }
 
         #endregion

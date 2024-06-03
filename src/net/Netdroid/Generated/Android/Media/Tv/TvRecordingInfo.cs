@@ -133,102 +133,28 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getChannelUri()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getChannelUri()"/>
         /// </summary>
-        public Android.Net.Uri ChannelUri
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetChannelUri()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getChannelUri", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getChannelUri", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getContentRatings()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getProgramUri()"/>
         /// </summary>
-        public Java.Util.List<Android.Media.Tv.TvContentRating> ContentRatings
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetProgramUri()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.Tv.TvContentRating>>("getContentRatings", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getProgramUri", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getDescription()"/> <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#setDescription(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getRecordingUri()"/>
         /// </summary>
-        public Java.Lang.String Description
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetRecordingUri()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDescription", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getEndPaddingMillis()"/> 
-        /// </summary>
-        public long EndPaddingMillis
-        {
-            get { return IExecuteWithSignature<long>("getEndPaddingMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getName()"/> <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#setName(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getProgramUri()"/> 
-        /// </summary>
-        public Android.Net.Uri ProgramUri
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getProgramUri", "()Landroid/net/Uri;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getRecordingDurationMillis()"/> 
-        /// </summary>
-        public long RecordingDurationMillis
-        {
-            get { return IExecuteWithSignature<long>("getRecordingDurationMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getRecordingId()"/> 
-        /// </summary>
-        public Java.Lang.String RecordingId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRecordingId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getRecordingStartTimeMillis()"/> 
-        /// </summary>
-        public long RecordingStartTimeMillis
-        {
-            get { return IExecuteWithSignature<long>("getRecordingStartTimeMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getRecordingUri()"/> 
-        /// </summary>
-        public Android.Net.Uri RecordingUri
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getRecordingUri", "()Landroid/net/Uri;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getRepeatDays()"/> 
-        /// </summary>
-        public int RepeatDays
-        {
-            get { return IExecuteWithSignature<int>("getRepeatDays", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getScheduledDurationMillis()"/> 
-        /// </summary>
-        public long ScheduledDurationMillis
-        {
-            get { return IExecuteWithSignature<long>("getScheduledDurationMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getScheduledStartTimeMillis()"/> 
-        /// </summary>
-        public long ScheduledStartTimeMillis
-        {
-            get { return IExecuteWithSignature<long>("getScheduledStartTimeMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getStartPaddingMillis()"/> 
-        /// </summary>
-        public long StartPaddingMillis
-        {
-            get { return IExecuteWithSignature<long>("getStartPaddingMillis", "()J"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getRecordingUri", "()Landroid/net/Uri;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#describeContents()"/>
@@ -237,6 +163,110 @@ namespace Android.Media.Tv
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getRepeatDays()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRepeatDays()
+        {
+            return IExecuteWithSignature<int>("getRepeatDays", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getRecordingId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetRecordingId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getRecordingId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getContentRatings()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.Tv.TvContentRating> GetContentRatings()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.Tv.TvContentRating>>("getContentRatings", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getEndPaddingMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetEndPaddingMillis()
+        {
+            return IExecuteWithSignature<long>("getEndPaddingMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getRecordingDurationMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetRecordingDurationMillis()
+        {
+            return IExecuteWithSignature<long>("getRecordingDurationMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getRecordingStartTimeMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetRecordingStartTimeMillis()
+        {
+            return IExecuteWithSignature<long>("getRecordingStartTimeMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getScheduledDurationMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetScheduledDurationMillis()
+        {
+            return IExecuteWithSignature<long>("getScheduledDurationMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getScheduledStartTimeMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetScheduledStartTimeMillis()
+        {
+            return IExecuteWithSignature<long>("getScheduledStartTimeMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#getStartPaddingMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetStartPaddingMillis()
+        {
+            return IExecuteWithSignature<long>("getStartPaddingMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#setDescription(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetDescription(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setDescription", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#setName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetName(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setName", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingInfo.html#writeToParcel(android.os.Parcel,int)"/>

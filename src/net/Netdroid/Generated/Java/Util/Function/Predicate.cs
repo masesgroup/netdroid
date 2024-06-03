@@ -41,51 +41,25 @@ namespace Java.Util.Function
         #endregion
 
         #region Static methods
-        
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#isEqual(java.lang.Object)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIsEqual"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<object, Java.Util.Function.Predicate> OnIsEqual { get; set; } = null;
-
-        void IsEqualEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
-        {
-            var methodToExecute = (OnIsEqual != null) ? OnIsEqual : IsEqual;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#isEqual(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#isEqual(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public virtual Java.Util.Function.Predicate IsEqual(object arg0)
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static Java.Util.Function.Predicate IsEqual(object arg0)
         {
-            return default;
+            return SExecuteWithSignature<Java.Util.Function.Predicate>(LocalBridgeClazz, "isEqual", "(Ljava/lang/Object;)Ljava/util/function/Predicate;", arg0);
         }
-
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#not(java.util.function.Predicate)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnNot"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Predicate, Java.Util.Function.Predicate> OnNot { get; set; } = null;
-
-        void NotEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate>> data)
-        {
-            var methodToExecute = (OnNot != null) ? OnNot : Not;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#not(java.util.function.Predicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#not(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public virtual Java.Util.Function.Predicate Not(Java.Util.Function.Predicate arg0)
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static Java.Util.Function.Predicate Not(Java.Util.Function.Predicate arg0)
         {
-            return default;
+            return SExecuteWithSignature<Java.Util.Function.Predicate>(LocalBridgeClazz, "not", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
 
         #endregion
@@ -96,18 +70,18 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(TestEventHandler));
-            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate>>>(AndEventHandler));
-            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
-            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate>>>(OrEventHandler));
+            AddEventHandler("test", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(TestEventHandler));
+            AddEventHandler("and", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate>>>(AndEventHandler));
+            AddEventHandler("negate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
+            AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate>>>(OrEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnTest"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<object, bool> OnTest { get; set; } = null;
+        public global::System.Func<object, bool> OnTest { get; set; } = null;
 
         void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {
@@ -117,7 +91,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -126,7 +100,7 @@ namespace Java.Util.Function
             return default;
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
@@ -137,10 +111,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAnd"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Predicate, Java.Util.Function.Predicate> OnAnd { get; set; } = null;
+        public global::System.Func<Java.Util.Function.Predicate, Java.Util.Function.Predicate> OnAnd { get; set; } = null;
 
         void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate>> data)
         {
@@ -150,7 +124,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
@@ -160,7 +134,7 @@ namespace Java.Util.Function
             return AndDefault(arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
@@ -170,10 +144,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#negate()"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/Predicate.html#negate()"/>
         /// </summary>
         /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Predicate> OnNegate { get; set; } = null;
+        public global::System.Func<Java.Util.Function.Predicate> OnNegate { get; set; } = null;
 
         void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -183,7 +157,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
@@ -192,7 +166,7 @@ namespace Java.Util.Function
             return NegateDefault();
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
@@ -203,10 +177,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOr"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Predicate, Java.Util.Function.Predicate> OnOr { get; set; } = null;
+        public global::System.Func<Java.Util.Function.Predicate, Java.Util.Function.Predicate> OnOr { get; set; } = null;
 
         void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate>> data)
         {
@@ -216,7 +190,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
@@ -257,7 +231,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -266,7 +240,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<bool>("test", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
@@ -275,7 +249,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("and", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public override Java.Util.Function.Predicate Negate()
@@ -283,7 +257,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("negate", "()Ljava/util/function/Predicate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
@@ -304,7 +278,7 @@ namespace Java.Util.Function
 
     #region IPredicate<T>
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.Predicate implementing <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.Predicate implementing <see href="https://developer.android.com/reference/java/util/function/Predicate.html"/>
     /// </summary>
     public partial interface IPredicate<T>
     {
@@ -336,52 +310,26 @@ namespace Java.Util.Function
         #endregion
 
         #region Static methods
-        
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#isEqual(java.lang.Object)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIsEqual"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<object, Java.Util.Function.Predicate<T>> OnIsEqual { get; set; } = null;
-
-        void IsEqualEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
-        {
-            var methodToExecute = (OnIsEqual != null) ? OnIsEqual : IsEqual;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#isEqual(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#isEqual(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public virtual Java.Util.Function.Predicate<T> IsEqual(object arg0)
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static Java.Util.Function.Predicate<T> IsEqual(object arg0)
         {
-            return default;
+            return SExecuteWithSignature<Java.Util.Function.Predicate<T>>(LocalBridgeClazz, "isEqual", "(Ljava/lang/Object;)Ljava/util/function/Predicate;", arg0);
         }
-
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#not(java.util.function.Predicate)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnNot<Arg0objectSuperT>"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Predicate<Arg0objectSuperT>, Java.Util.Function.Predicate<T>> OnNot<Arg0objectSuperT> { get; set; } = null;
-
-        void Not<Arg0objectSuperT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate<Arg0objectSuperT>>> data)
-        {
-            var methodToExecute = (OnNot<Arg0objectSuperT> != null) ? OnNot<Arg0objectSuperT> : Not<Arg0objectSuperT>;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#not(java.util.function.Predicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#not(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public virtual Java.Util.Function.Predicate<T> Not<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static Java.Util.Function.Predicate<T> Not<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return default;
+            return SExecuteWithSignature<Java.Util.Function.Predicate<T>>(LocalBridgeClazz, "not", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
 
         #endregion
@@ -392,18 +340,18 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(TestEventHandler));
-            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate<Arg0objectSuperT>>>>(And<Arg0objectSuperT>EventHandler));
-            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
-            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate<Arg0objectSuperT>>>>(Or<Arg0objectSuperT>EventHandler));
+            AddEventHandler("test", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(TestEventHandler));
+            AddEventHandler("and", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate<Arg0objectSuperT>>>>(And<Arg0objectSuperT>EventHandler));
+            AddEventHandler("negate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
+            AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate<Arg0objectSuperT>>>>(Or<Arg0objectSuperT>EventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnTest"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<T, bool> OnTest { get; set; } = null;
+        public global::System.Func<T, bool> OnTest { get; set; } = null;
 
         void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
@@ -413,7 +361,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -422,22 +370,22 @@ namespace Java.Util.Function
             return default;
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.Predicate<T> And<Arg0objectSuperT>Default(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public Java.Util.Function.Predicate<T> And<Arg0objectSuperT>Default(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<Java.Util.Function.Predicate<T>>("andDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAnd<Arg0objectSuperT>"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Predicate<Arg0objectSuperT>, Java.Util.Function.Predicate<T>> OnAnd<Arg0objectSuperT> { get; set; } = null;
+        public global::System.Func<Java.Util.Function.Predicate<Arg0objectSuperT>, Java.Util.Function.Predicate<T>> OnAnd<Arg0objectSuperT> { get; set; } = null;
 
         void And<Arg0objectSuperT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate<Arg0objectSuperT>>> data)
         {
@@ -447,18 +395,18 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="And<Arg0objectSuperT>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.Predicate<T> And<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public virtual Java.Util.Function.Predicate<T> And<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return And<Arg0objectSuperT>Default(arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
@@ -468,10 +416,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#negate()"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/Predicate.html#negate()"/>
         /// </summary>
         /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Predicate<T>> OnNegate { get; set; } = null;
+        public global::System.Func<Java.Util.Function.Predicate<T>> OnNegate { get; set; } = null;
 
         void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -481,7 +429,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
@@ -490,22 +438,22 @@ namespace Java.Util.Function
             return NegateDefault();
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.Predicate<T> Or<Arg0objectSuperT>Default(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public Java.Util.Function.Predicate<T> Or<Arg0objectSuperT>Default(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<Java.Util.Function.Predicate<T>>("orDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOr<Arg0objectSuperT>"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Predicate<Arg0objectSuperT>, Java.Util.Function.Predicate<T>> OnOr<Arg0objectSuperT> { get; set; } = null;
+        public global::System.Func<Java.Util.Function.Predicate<Arg0objectSuperT>, Java.Util.Function.Predicate<T>> OnOr<Arg0objectSuperT> { get; set; } = null;
 
         void Or<Arg0objectSuperT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate<Arg0objectSuperT>>> data)
         {
@@ -515,13 +463,13 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="Or<Arg0objectSuperT>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.Predicate<T> Or<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public virtual Java.Util.Function.Predicate<T> Or<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return Or<Arg0objectSuperT>Default(arg0);
         }
@@ -557,7 +505,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -566,17 +514,17 @@ namespace Java.Util.Function
             return IExecuteWithSignature<bool>("test", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public override Java.Util.Function.Predicate<T> And<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public override Java.Util.Function.Predicate<T> And<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>("and", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public override Java.Util.Function.Predicate<T> Negate()
@@ -584,12 +532,12 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>("negate", "()Ljava/util/function/Predicate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public override Java.Util.Function.Predicate<T> Or<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public override Java.Util.Function.Predicate<T> Or<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>("or", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }

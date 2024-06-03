@@ -30,7 +30,7 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/RuleBasedCollator.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/text/RuleBasedCollator.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Text.ParseException"/>
@@ -55,14 +55,15 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/RuleBasedCollator.html#getRules()"/> 
+        /// <see href="https://developer.android.com/reference/java/text/RuleBasedCollator.html#getRules()"/>
         /// </summary>
-        public Java.Lang.String Rules
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetRules()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRules", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getRules", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/RuleBasedCollator.html#getCollationElementIterator(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/text/RuleBasedCollator.html#getCollationElementIterator(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Text.CollationElementIterator"/></returns>
@@ -71,7 +72,7 @@ namespace Java.Text
             return IExecuteWithSignature<Java.Text.CollationElementIterator>("getCollationElementIterator", "(Ljava/lang/String;)Ljava/text/CollationElementIterator;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/RuleBasedCollator.html#getCollationElementIterator(java.text.CharacterIterator)"/>
+        /// <see href="https://developer.android.com/reference/java/text/RuleBasedCollator.html#getCollationElementIterator(java.text.CharacterIterator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
         /// <returns><see cref="Java.Text.CollationElementIterator"/></returns>

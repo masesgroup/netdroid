@@ -87,18 +87,20 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfoResult.html#getResultCode()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfoResult.html#getTextBoundsInfo()"/>
         /// </summary>
-        public int ResultCode
+        /// <returns><see cref="Android.View.Inputmethod.TextBoundsInfo"/></returns>
+        public Android.View.Inputmethod.TextBoundsInfo GetTextBoundsInfo()
         {
-            get { return IExecuteWithSignature<int>("getResultCode", "()I"); }
+            return IExecuteWithSignature<Android.View.Inputmethod.TextBoundsInfo>("getTextBoundsInfo", "()Landroid/view/inputmethod/TextBoundsInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfoResult.html#getTextBoundsInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfoResult.html#getResultCode()"/>
         /// </summary>
-        public Android.View.Inputmethod.TextBoundsInfo TextBoundsInfo
+        /// <returns><see cref="int"/></returns>
+        public int GetResultCode()
         {
-            get { return IExecuteWithSignature<Android.View.Inputmethod.TextBoundsInfo>("getTextBoundsInfo", "()Landroid/view/inputmethod/TextBoundsInfo;"); }
+            return IExecuteWithSignature<int>("getResultCode", "()I");
         }
 
         #endregion

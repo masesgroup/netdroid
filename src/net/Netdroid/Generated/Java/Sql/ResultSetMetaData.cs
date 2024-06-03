@@ -56,19 +56,19 @@ namespace Java.Sql
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#columnNoNulls"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#columnNoNulls"/>
         /// </summary>
         public static int columnNoNulls { get { if (!_columnNoNullsReady) { _columnNoNullsContent = SGetField<int>(LocalBridgeClazz, "columnNoNulls"); _columnNoNullsReady = true; } return _columnNoNullsContent; } }
         private static int _columnNoNullsContent = default;
         private static bool _columnNoNullsReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#columnNullable"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#columnNullable"/>
         /// </summary>
         public static int columnNullable { get { if (!_columnNullableReady) { _columnNullableContent = SGetField<int>(LocalBridgeClazz, "columnNullable"); _columnNullableReady = true; } return _columnNullableContent; } }
         private static int _columnNullableContent = default;
         private static bool _columnNullableReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#columnNullableUnknown"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#columnNullableUnknown"/>
         /// </summary>
         public static int columnNullableUnknown { get { if (!_columnNullableUnknownReady) { _columnNullableUnknownContent = SGetField<int>(LocalBridgeClazz, "columnNullableUnknown"); _columnNullableUnknownReady = true; } return _columnNullableUnknownContent; } }
         private static int _columnNullableUnknownContent = default;
@@ -82,14 +82,7 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#getColumnCount()"/> 
-        /// </summary>
-        public int ColumnCount
-        {
-            get { return IExecuteWithSignature<int>("getColumnCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#isAutoIncrement(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#isAutoIncrement(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -99,7 +92,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("isAutoIncrement", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#isCaseSensitive(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#isCaseSensitive(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -109,7 +102,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("isCaseSensitive", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#isCurrency(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#isCurrency(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -119,7 +112,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("isCurrency", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#isDefinitelyWritable(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#isDefinitelyWritable(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -129,7 +122,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("isDefinitelyWritable", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#isReadOnly(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#isReadOnly(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -139,7 +132,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("isReadOnly", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#isSearchable(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#isSearchable(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -149,7 +142,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("isSearchable", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#isSigned(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#isSigned(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -159,7 +152,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("isSigned", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#isWritable(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#isWritable(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -169,7 +162,16 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("isWritable", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#getColumnDisplaySize(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#getColumnCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int GetColumnCount()
+        {
+            return IExecuteWithSignature<int>("getColumnCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#getColumnDisplaySize(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -179,7 +181,7 @@ namespace Java.Sql
             return IExecuteWithSignature<int>("getColumnDisplaySize", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#getColumnType(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#getColumnType(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -189,7 +191,7 @@ namespace Java.Sql
             return IExecuteWithSignature<int>("getColumnType", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#getPrecision(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#getPrecision(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -199,7 +201,7 @@ namespace Java.Sql
             return IExecuteWithSignature<int>("getPrecision", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#getScale(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#getScale(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -209,7 +211,7 @@ namespace Java.Sql
             return IExecuteWithSignature<int>("getScale", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#isNullable(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#isNullable(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -219,7 +221,7 @@ namespace Java.Sql
             return IExecuteWithSignature<int>("isNullable", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#getCatalogName(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#getCatalogName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -229,7 +231,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Lang.String>("getCatalogName", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#getColumnClassName(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#getColumnClassName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -239,7 +241,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Lang.String>("getColumnClassName", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#getColumnLabel(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#getColumnLabel(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -249,7 +251,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Lang.String>("getColumnLabel", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#getColumnName(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#getColumnName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -259,7 +261,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Lang.String>("getColumnName", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#getColumnTypeName(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#getColumnTypeName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -269,7 +271,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Lang.String>("getColumnTypeName", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#getSchemaName(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#getSchemaName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -279,7 +281,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Lang.String>("getSchemaName", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html#getTableName(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html#getTableName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>

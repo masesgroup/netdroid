@@ -108,40 +108,28 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/UCharacterIterator.html#getCharacterIterator()"/> 
-        /// </summary>
-        public Java.Text.CharacterIterator CharacterIterator
-        {
-            get { return IExecuteWithSignature<Java.Text.CharacterIterator>("getCharacterIterator", "()Ljava/text/CharacterIterator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/UCharacterIterator.html#getIndex()"/> <see href="https://developer.android.com/reference/android/icu/text/UCharacterIterator.html#setIndex(int)"/>
-        /// </summary>
-        public int Index
-        {
-            get { return IExecuteWithSignature<int>("getIndex", "()I"); } set { IExecuteWithSignature("setIndex", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/UCharacterIterator.html#getLength()"/> 
-        /// </summary>
-        public int Length
-        {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/UCharacterIterator.html#getText()"/> 
-        /// </summary>
-        public Java.Lang.String Text
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UCharacterIterator.html#current()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Current()
         {
             return IExecuteWithSignature<int>("current", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/UCharacterIterator.html#getIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetIndex()
+        {
+            return IExecuteWithSignature<int>("getIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/UCharacterIterator.html#getLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLength()
+        {
+            return IExecuteWithSignature<int>("getLength", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UCharacterIterator.html#getText(char[],int)"/>
@@ -168,6 +156,14 @@ namespace Android.Icu.Text
         public int Previous()
         {
             return IExecuteWithSignature<int>("previous", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/UCharacterIterator.html#setIndex(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetIndex(int arg0)
+        {
+            IExecuteWithSignature("setIndex", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UCharacterIterator.html#getText(char[])"/>
@@ -219,6 +215,22 @@ namespace Android.Icu.Text
         public int PreviousCodePoint()
         {
             return IExecuteWithSignature<int>("previousCodePoint", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/UCharacterIterator.html#getText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetText()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/UCharacterIterator.html#getCharacterIterator()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Text.CharacterIterator"/></returns>
+        public Java.Text.CharacterIterator GetCharacterIterator()
+        {
+            return IExecuteWithSignature<Java.Text.CharacterIterator>("getCharacterIterator", "()Ljava/text/CharacterIterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UCharacterIterator.html#setToLimit()"/>

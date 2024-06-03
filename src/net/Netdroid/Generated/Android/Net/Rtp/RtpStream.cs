@@ -40,21 +40,21 @@ namespace Android.Net.Rtp
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/RtpStream.html#MODE_NORMAL"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MODE_NORMAL { get { if (!_MODE_NORMALReady) { _MODE_NORMALContent = SGetField<int>(LocalBridgeClazz, "MODE_NORMAL"); _MODE_NORMALReady = true; } return _MODE_NORMALContent; } }
         private static int _MODE_NORMALContent = default;
         private static bool _MODE_NORMALReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/RtpStream.html#MODE_RECEIVE_ONLY"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MODE_RECEIVE_ONLY { get { if (!_MODE_RECEIVE_ONLYReady) { _MODE_RECEIVE_ONLYContent = SGetField<int>(LocalBridgeClazz, "MODE_RECEIVE_ONLY"); _MODE_RECEIVE_ONLYReady = true; } return _MODE_RECEIVE_ONLYContent; } }
         private static int _MODE_RECEIVE_ONLYContent = default;
         private static bool _MODE_RECEIVE_ONLYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/RtpStream.html#MODE_SEND_ONLY"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MODE_SEND_ONLY { get { if (!_MODE_SEND_ONLYReady) { _MODE_SEND_ONLYContent = SGetField<int>(LocalBridgeClazz, "MODE_SEND_ONLY"); _MODE_SEND_ONLYReady = true; } return _MODE_SEND_ONLYContent; } }
         private static int _MODE_SEND_ONLYContent = default;
         private static bool _MODE_SEND_ONLYReady = false; // this is used because in case of generics 
@@ -67,60 +67,65 @@ namespace Android.Net.Rtp
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/rtp/RtpStream.html#getLocalAddress()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Net.InetAddress LocalAddress
-        {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getLocalAddress", "()Ljava/net/InetAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/rtp/RtpStream.html#getLocalPort()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int LocalPort
-        {
-            get { return IExecuteWithSignature<int>("getLocalPort", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/rtp/RtpStream.html#getMode()"/> <see href="https://developer.android.com/reference/android/net/rtp/RtpStream.html#setMode(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int Mode
-        {
-            get { return IExecuteWithSignature<int>("getMode", "()I"); } set { IExecuteWithSignature("setMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/rtp/RtpStream.html#getRemoteAddress()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Net.InetAddress RemoteAddress
-        {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getRemoteAddress", "()Ljava/net/InetAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/rtp/RtpStream.html#getRemotePort()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int RemotePort
-        {
-            get { return IExecuteWithSignature<int>("getRemotePort", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/RtpStream.html#isBusy()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsBusy()
         {
             return IExecuteWithSignature<bool>("isBusy", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/rtp/RtpStream.html#getLocalPort()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetLocalPort()
+        {
+            return IExecuteWithSignature<int>("getLocalPort", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/rtp/RtpStream.html#getMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetMode()
+        {
+            return IExecuteWithSignature<int>("getMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/rtp/RtpStream.html#getRemotePort()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetRemotePort()
+        {
+            return IExecuteWithSignature<int>("getRemotePort", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/rtp/RtpStream.html#getLocalAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        [global::System.Obsolete()]
+        public Java.Net.InetAddress GetLocalAddress()
+        {
+            return IExecuteWithSignature<Java.Net.InetAddress>("getLocalAddress", "()Ljava/net/InetAddress;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/rtp/RtpStream.html#getRemoteAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        [global::System.Obsolete()]
+        public Java.Net.InetAddress GetRemoteAddress()
+        {
+            return IExecuteWithSignature<Java.Net.InetAddress>("getRemoteAddress", "()Ljava/net/InetAddress;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/RtpStream.html#associate(java.net.InetAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Associate(Java.Net.InetAddress arg0, int arg1)
         {
             IExecute("associate", arg0, arg1);
@@ -128,10 +133,19 @@ namespace Android.Net.Rtp
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/RtpStream.html#release()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Release()
         {
             IExecuteWithSignature("release", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/rtp/RtpStream.html#setMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetMode(int arg0)
+        {
+            IExecuteWithSignature("setMode", "(I)V", arg0);
         }
 
         #endregion

@@ -87,25 +87,28 @@ namespace Android.Opengl
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/opengl/GLSurfaceView.html#getDebugFlags()"/> <see href="https://developer.android.com/reference/android/opengl/GLSurfaceView.html#setDebugFlags(int)"/>
+        /// <see href="https://developer.android.com/reference/android/opengl/GLSurfaceView.html#getPreserveEGLContextOnPause()"/>
         /// </summary>
-        public int DebugFlags
+        /// <returns><see cref="bool"/></returns>
+        public bool GetPreserveEGLContextOnPause()
         {
-            get { return IExecuteWithSignature<int>("getDebugFlags", "()I"); } set { IExecuteWithSignature("setDebugFlags", "(I)V", value); }
+            return IExecuteWithSignature<bool>("getPreserveEGLContextOnPause", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/opengl/GLSurfaceView.html#getPreserveEGLContextOnPause()"/> <see href="https://developer.android.com/reference/android/opengl/GLSurfaceView.html#setPreserveEGLContextOnPause(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/opengl/GLSurfaceView.html#getDebugFlags()"/>
         /// </summary>
-        public bool PreserveEGLContextOnPause
+        /// <returns><see cref="int"/></returns>
+        public int GetDebugFlags()
         {
-            get { return IExecuteWithSignature<bool>("getPreserveEGLContextOnPause", "()Z"); } set { IExecuteWithSignature("setPreserveEGLContextOnPause", "(Z)V", value); }
+            return IExecuteWithSignature<int>("getDebugFlags", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/opengl/GLSurfaceView.html#getRenderMode()"/> <see href="https://developer.android.com/reference/android/opengl/GLSurfaceView.html#setRenderMode(int)"/>
+        /// <see href="https://developer.android.com/reference/android/opengl/GLSurfaceView.html#getRenderMode()"/>
         /// </summary>
-        public int RenderMode
+        /// <returns><see cref="int"/></returns>
+        public int GetRenderMode()
         {
-            get { return IExecuteWithSignature<int>("getRenderMode", "()I"); } set { IExecuteWithSignature("setRenderMode", "(I)V", value); }
+            return IExecuteWithSignature<int>("getRenderMode", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLSurfaceView.html#onPause()"/>
@@ -135,6 +138,14 @@ namespace Android.Opengl
         public void RequestRender()
         {
             IExecuteWithSignature("requestRender", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/opengl/GLSurfaceView.html#setDebugFlags(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDebugFlags(int arg0)
+        {
+            IExecuteWithSignature("setDebugFlags", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLSurfaceView.html#setEGLConfigChooser(android.opengl.GLSurfaceView.EGLConfigChooser)"/>
@@ -198,12 +209,28 @@ namespace Android.Opengl
             IExecuteWithSignature("setGLWrapper", "(Landroid/opengl/GLSurfaceView$GLWrapper;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/opengl/GLSurfaceView.html#setPreserveEGLContextOnPause(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetPreserveEGLContextOnPause(bool arg0)
+        {
+            IExecuteWithSignature("setPreserveEGLContextOnPause", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLSurfaceView.html#setRenderer(android.opengl.GLSurfaceView.Renderer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Opengl.GLSurfaceView.Renderer"/></param>
         public void SetRenderer(Android.Opengl.GLSurfaceView.Renderer arg0)
         {
             IExecuteWithSignature("setRenderer", "(Landroid/opengl/GLSurfaceView$Renderer;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/opengl/GLSurfaceView.html#setRenderMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetRenderMode(int arg0)
+        {
+            IExecuteWithSignature("setRenderMode", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLSurfaceView.html#surfaceChanged(android.view.SurfaceHolder,int,int,int)"/>
@@ -236,7 +263,7 @@ namespace Android.Opengl
         /// <see href="https://developer.android.com/reference/android/opengl/GLSurfaceView.html#surfaceRedrawNeeded(android.view.SurfaceHolder)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.SurfaceHolder"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SurfaceRedrawNeeded(Android.View.SurfaceHolder arg0)
         {
             IExecuteWithSignature("surfaceRedrawNeeded", "(Landroid/view/SurfaceHolder;)V", arg0);

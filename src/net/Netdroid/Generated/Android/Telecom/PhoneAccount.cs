@@ -230,74 +230,36 @@ namespace Android.Telecom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getAccountHandle()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getIcon()"/>
         /// </summary>
-        public Android.Telecom.PhoneAccountHandle AccountHandle
+        /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
+        public Android.Graphics.Drawable.Icon GetIcon()
         {
-            get { return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getAccountHandle", "()Landroid/telecom/PhoneAccountHandle;"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getAddress()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getAddress()"/>
         /// </summary>
-        public Android.Net.Uri Address
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetAddress()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getAddress", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getAddress", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getCapabilities()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getSubscriptionAddress()"/>
         /// </summary>
-        public int Capabilities
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetSubscriptionAddress()
         {
-            get { return IExecuteWithSignature<int>("getCapabilities", "()I"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getSubscriptionAddress", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getExtras()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getExtras()"/>
         /// </summary>
-        public Android.Os.Bundle Extras
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getHighlightColor()"/> 
-        /// </summary>
-        public int HighlightColor
-        {
-            get { return IExecuteWithSignature<int>("getHighlightColor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getIcon()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Icon Icon
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getLabel()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Label
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getShortDescription()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence ShortDescription
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getShortDescription", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getSubscriptionAddress()"/> 
-        /// </summary>
-        public Android.Net.Uri SubscriptionAddress
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getSubscriptionAddress", "()Landroid/net/Uri;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getSupportedUriSchemes()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> SupportedUriSchemes
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedUriSchemes", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#toBuilder()"/>
@@ -306,6 +268,14 @@ namespace Android.Telecom
         public Android.Telecom.PhoneAccount.Builder ToBuilder()
         {
             return IExecuteWithSignature<Android.Telecom.PhoneAccount.Builder>("toBuilder", "()Landroid/telecom/PhoneAccount$Builder;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getAccountHandle()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Telecom.PhoneAccountHandle"/></returns>
+        public Android.Telecom.PhoneAccountHandle GetAccountHandle()
+        {
+            return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getAccountHandle", "()Landroid/telecom/PhoneAccountHandle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#hasCapabilities(int)"/>
@@ -340,6 +310,46 @@ namespace Android.Telecom
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getCapabilities()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCapabilities()
+        {
+            return IExecuteWithSignature<int>("getCapabilities", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getHighlightColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHighlightColor()
+        {
+            return IExecuteWithSignature<int>("getHighlightColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getShortDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetShortDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getShortDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getSupportedUriSchemes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetSupportedUriSchemes()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedUriSchemes", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#writeToParcel(android.os.Parcel,int)"/>

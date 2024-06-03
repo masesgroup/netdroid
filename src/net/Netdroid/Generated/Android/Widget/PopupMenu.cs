@@ -77,32 +77,44 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/PopupMenu.html#getDragToOpenListener()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/PopupMenu.html#getMenu()"/>
         /// </summary>
-        public Android.View.View.OnTouchListener DragToOpenListener
+        /// <returns><see cref="Android.View.Menu"/></returns>
+        public Android.View.Menu GetMenu()
         {
-            get { return IExecuteWithSignature<Android.View.View.OnTouchListener>("getDragToOpenListener", "()Landroid/view/View$OnTouchListener;"); }
+            return IExecuteWithSignature<Android.View.Menu>("getMenu", "()Landroid/view/Menu;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/PopupMenu.html#getGravity()"/> <see href="https://developer.android.com/reference/android/widget/PopupMenu.html#setGravity(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupMenu.html#getMenuInflater()"/>
         /// </summary>
-        public int Gravity
+        /// <returns><see cref="Android.View.MenuInflater"/></returns>
+        public Android.View.MenuInflater GetMenuInflater()
         {
-            get { return IExecuteWithSignature<int>("getGravity", "()I"); } set { IExecuteWithSignature("setGravity", "(I)V", value); }
+            return IExecuteWithSignature<Android.View.MenuInflater>("getMenuInflater", "()Landroid/view/MenuInflater;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/PopupMenu.html#getMenu()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/PopupMenu.html#getDragToOpenListener()"/>
         /// </summary>
-        public Android.View.Menu Menu
+        /// <returns><see cref="Android.View.View.OnTouchListener"/></returns>
+        public Android.View.View.OnTouchListener GetDragToOpenListener()
         {
-            get { return IExecuteWithSignature<Android.View.Menu>("getMenu", "()Landroid/view/Menu;"); }
+            return IExecuteWithSignature<Android.View.View.OnTouchListener>("getDragToOpenListener", "()Landroid/view/View$OnTouchListener;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/PopupMenu.html#getMenuInflater()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/PopupMenu.html#getDragToOpenListener()"/>
         /// </summary>
-        public Android.View.MenuInflater MenuInflater
+        /// <returns><see cref="Android.View.View.OnTouchListener"/></returns>
+        public Android.View.View.OnTouchListener GetDragToOpenListenerDirect()
         {
-            get { return IExecuteWithSignature<Android.View.MenuInflater>("getMenuInflater", "()Landroid/view/MenuInflater;"); }
+            return IExecuteWithSignature<Android.View.View.OnTouchListenerDirect, Android.View.View.OnTouchListener>("getDragToOpenListener", "()Landroid/view/View$OnTouchListener;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupMenu.html#getGravity()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGravity()
+        {
+            return IExecuteWithSignature<int>("getGravity", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/PopupMenu.html#dismiss()"/>
@@ -126,6 +138,14 @@ namespace Android.Widget
         public void SetForceShowIcon(bool arg0)
         {
             IExecuteWithSignature("setForceShowIcon", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupMenu.html#setGravity(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetGravity(int arg0)
+        {
+            IExecuteWithSignature("setGravity", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/PopupMenu.html#setOnDismissListener(android.widget.PopupMenu.OnDismissListener)"/>
@@ -179,7 +199,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDismiss", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.PopupMenu>>>(OnDismissEventHandler));
+                AddEventHandler("onDismiss", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.PopupMenu>>>(OnDismissEventHandler));
 
             }
 
@@ -187,7 +207,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/PopupMenu.OnDismissListener.html#onDismiss(android.widget.PopupMenu)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDismiss"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Widget.PopupMenu> OnOnDismiss { get; set; } = null;
+            public global::System.Action<Android.Widget.PopupMenu> OnOnDismiss { get; set; } = null;
 
             void OnDismissEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.PopupMenu>> data)
             {
@@ -278,7 +298,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onMenuItemClick", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MenuItem>>>(OnMenuItemClickEventHandler));
+                AddEventHandler("onMenuItemClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MenuItem>>>(OnMenuItemClickEventHandler));
 
             }
 
@@ -286,7 +306,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/PopupMenu.OnMenuItemClickListener.html#onMenuItemClick(android.view.MenuItem)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnMenuItemClick"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MenuItem, bool> OnOnMenuItemClick { get; set; } = null;
+            public global::System.Func<Android.View.MenuItem, bool> OnOnMenuItemClick { get; set; } = null;
 
             void OnMenuItemClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MenuItem>> data)
             {

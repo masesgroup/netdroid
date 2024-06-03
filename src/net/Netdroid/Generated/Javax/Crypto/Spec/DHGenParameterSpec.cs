@@ -30,7 +30,7 @@ namespace Javax.Crypto.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/DHGenParameterSpec.html#%3Cinit%3E(int,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/DHGenParameterSpec.html#%3Cinit%3E(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -55,18 +55,20 @@ namespace Javax.Crypto.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/DHGenParameterSpec.html#getExponentSize()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/DHGenParameterSpec.html#getExponentSize()"/>
         /// </summary>
-        public int ExponentSize
+        /// <returns><see cref="int"/></returns>
+        public int GetExponentSize()
         {
-            get { return IExecuteWithSignature<int>("getExponentSize", "()I"); }
+            return IExecuteWithSignature<int>("getExponentSize", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/DHGenParameterSpec.html#getPrimeSize()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/DHGenParameterSpec.html#getPrimeSize()"/>
         /// </summary>
-        public int PrimeSize
+        /// <returns><see cref="int"/></returns>
+        public int GetPrimeSize()
         {
-            get { return IExecuteWithSignature<int>("getPrimeSize", "()I"); }
+            return IExecuteWithSignature<int>("getPrimeSize", "()I");
         }
 
         #endregion

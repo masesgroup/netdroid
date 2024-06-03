@@ -76,27 +76,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRouter.html#getCategoryCount()"/> 
-        /// </summary>
-        public int CategoryCount
-        {
-            get { return IExecuteWithSignature<int>("getCategoryCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRouter.html#getDefaultRoute()"/> 
-        /// </summary>
-        public Android.Media.MediaRouter.RouteInfo DefaultRoute
-        {
-            get { return IExecuteWithSignature<Android.Media.MediaRouter.RouteInfo>("getDefaultRoute", "()Landroid/media/MediaRouter$RouteInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRouter.html#getRouteCount()"/> 
-        /// </summary>
-        public int RouteCount
-        {
-            get { return IExecuteWithSignature<int>("getRouteCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRouter.html#createRouteCategory(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -126,6 +105,14 @@ namespace Android.Media
             return IExecuteWithSignature<Android.Media.MediaRouter.RouteCategory>("getCategoryAt", "(I)Landroid/media/MediaRouter$RouteCategory;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRouter.html#getDefaultRoute()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.MediaRouter.RouteInfo"/></returns>
+        public Android.Media.MediaRouter.RouteInfo GetDefaultRoute()
+        {
+            return IExecuteWithSignature<Android.Media.MediaRouter.RouteInfo>("getDefaultRoute", "()Landroid/media/MediaRouter$RouteInfo;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRouter.html#getRouteAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -151,6 +138,22 @@ namespace Android.Media
         public Android.Media.MediaRouter.UserRouteInfo CreateUserRoute(Android.Media.MediaRouter.RouteCategory arg0)
         {
             return IExecuteWithSignature<Android.Media.MediaRouter.UserRouteInfo>("createUserRoute", "(Landroid/media/MediaRouter$RouteCategory;)Landroid/media/MediaRouter$UserRouteInfo;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRouter.html#getCategoryCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCategoryCount()
+        {
+            return IExecuteWithSignature<int>("getCategoryCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRouter.html#getRouteCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRouteCount()
+        {
+            return IExecuteWithSignature<int>("getRouteCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRouter.html#addCallback(int,android.media.MediaRouter.Callback,int)"/>
@@ -353,26 +356,28 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteCategory.html#getName()"/> 
-            /// </summary>
-            public Java.Lang.CharSequence Name
-            {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getName", "()Ljava/lang/CharSequence;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteCategory.html#getSupportedTypes()"/> 
-            /// </summary>
-            public int SupportedTypes
-            {
-                get { return IExecuteWithSignature<int>("getSupportedTypes", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteCategory.html#isGroupable()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
             public bool IsGroupable()
             {
                 return IExecuteWithSignature<bool>("isGroupable", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteCategory.html#getSupportedTypes()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetSupportedTypes()
+            {
+                return IExecuteWithSignature<int>("getSupportedTypes", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteCategory.html#getName()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetName()
+            {
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getName", "()Ljava/lang/CharSequence;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteCategory.html#getName(android.content.Context)"/>
@@ -424,13 +429,6 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteGroup.html#getRouteCount()"/> 
-            /// </summary>
-            public int RouteCount
-            {
-                get { return IExecuteWithSignature<int>("getRouteCount", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteGroup.html#getRouteAt(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -438,6 +436,14 @@ namespace Android.Media
             public Android.Media.MediaRouter.RouteInfo GetRouteAt(int arg0)
             {
                 return IExecuteWithSignature<Android.Media.MediaRouter.RouteInfo>("getRouteAt", "(I)Landroid/media/MediaRouter$RouteInfo;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteGroup.html#getRouteCount()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetRouteCount()
+            {
+                return IExecuteWithSignature<int>("getRouteCount", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteGroup.html#addRoute(android.media.MediaRouter.RouteInfo,int)"/>
@@ -568,109 +574,36 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getCategory()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getIconDrawable()"/>
             /// </summary>
-            public Android.Media.MediaRouter.RouteCategory Category
+            /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+            public Android.Graphics.Drawable.Drawable GetIconDrawable()
             {
-                get { return IExecuteWithSignature<Android.Media.MediaRouter.RouteCategory>("getCategory", "()Landroid/media/MediaRouter$RouteCategory;"); }
+                return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getIconDrawable", "()Landroid/graphics/drawable/Drawable;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getDescription()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getCategory()"/>
             /// </summary>
-            public Java.Lang.CharSequence Description
+            /// <returns><see cref="Android.Media.MediaRouter.RouteCategory"/></returns>
+            public Android.Media.MediaRouter.RouteCategory GetCategory()
             {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getDescription", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature<Android.Media.MediaRouter.RouteCategory>("getCategory", "()Landroid/media/MediaRouter$RouteCategory;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getDeviceType()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getGroup()"/>
             /// </summary>
-            public int DeviceType
+            /// <returns><see cref="Android.Media.MediaRouter.RouteGroup"/></returns>
+            public Android.Media.MediaRouter.RouteGroup GetGroup()
             {
-                get { return IExecuteWithSignature<int>("getDeviceType", "()I"); }
+                return IExecuteWithSignature<Android.Media.MediaRouter.RouteGroup>("getGroup", "()Landroid/media/MediaRouter$RouteGroup;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getGroup()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getPresentationDisplay()"/>
             /// </summary>
-            public Android.Media.MediaRouter.RouteGroup Group
+            /// <returns><see cref="Android.View.Display"/></returns>
+            public Android.View.Display GetPresentationDisplay()
             {
-                get { return IExecuteWithSignature<Android.Media.MediaRouter.RouteGroup>("getGroup", "()Landroid/media/MediaRouter$RouteGroup;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getIconDrawable()"/> 
-            /// </summary>
-            public Android.Graphics.Drawable.Drawable IconDrawable
-            {
-                get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getIconDrawable", "()Landroid/graphics/drawable/Drawable;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getName()"/> 
-            /// </summary>
-            public Java.Lang.CharSequence Name
-            {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getName", "()Ljava/lang/CharSequence;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getPlaybackStream()"/> 
-            /// </summary>
-            public int PlaybackStream
-            {
-                get { return IExecuteWithSignature<int>("getPlaybackStream", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getPlaybackType()"/> 
-            /// </summary>
-            public int PlaybackType
-            {
-                get { return IExecuteWithSignature<int>("getPlaybackType", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getPresentationDisplay()"/> 
-            /// </summary>
-            public Android.View.Display PresentationDisplay
-            {
-                get { return IExecuteWithSignature<Android.View.Display>("getPresentationDisplay", "()Landroid/view/Display;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getStatus()"/> 
-            /// </summary>
-            public Java.Lang.CharSequence Status
-            {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getStatus", "()Ljava/lang/CharSequence;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getSupportedTypes()"/> 
-            /// </summary>
-            public int SupportedTypes
-            {
-                get { return IExecuteWithSignature<int>("getSupportedTypes", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getTag()"/> <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#setTag(java.lang.Object)"/>
-            /// </summary>
-            public object Tag
-            {
-                get { return IExecuteWithSignature("getTag", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setTag", "(Ljava/lang/Object;)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getVolume()"/> 
-            /// </summary>
-            public int Volume
-            {
-                get { return IExecuteWithSignature<int>("getVolume", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getVolumeHandling()"/> 
-            /// </summary>
-            public int VolumeHandling
-            {
-                get { return IExecuteWithSignature<int>("getVolumeHandling", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getVolumeMax()"/> 
-            /// </summary>
-            public int VolumeMax
-            {
-                get { return IExecuteWithSignature<int>("getVolumeMax", "()I"); }
+                return IExecuteWithSignature<Android.View.Display>("getPresentationDisplay", "()Landroid/view/Display;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#isConnecting()"/>
@@ -689,6 +622,78 @@ namespace Android.Media
                 return IExecuteWithSignature<bool>("isEnabled", "()Z");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getDeviceType()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetDeviceType()
+            {
+                return IExecuteWithSignature<int>("getDeviceType", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getPlaybackStream()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetPlaybackStream()
+            {
+                return IExecuteWithSignature<int>("getPlaybackStream", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getPlaybackType()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetPlaybackType()
+            {
+                return IExecuteWithSignature<int>("getPlaybackType", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getSupportedTypes()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetSupportedTypes()
+            {
+                return IExecuteWithSignature<int>("getSupportedTypes", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getVolume()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetVolume()
+            {
+                return IExecuteWithSignature<int>("getVolume", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getVolumeHandling()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetVolumeHandling()
+            {
+                return IExecuteWithSignature<int>("getVolumeHandling", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getVolumeMax()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetVolumeMax()
+            {
+                return IExecuteWithSignature<int>("getVolumeMax", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getDescription()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetDescription()
+            {
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getDescription", "()Ljava/lang/CharSequence;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getName()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetName()
+            {
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getName", "()Ljava/lang/CharSequence;");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getName(android.content.Context)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -696,6 +701,22 @@ namespace Android.Media
             public Java.Lang.CharSequence GetName(Android.Content.Context arg0)
             {
                 return IExecuteWithSignature<Java.Lang.CharSequence>("getName", "(Landroid/content/Context;)Ljava/lang/CharSequence;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getStatus()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetStatus()
+            {
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getStatus", "()Ljava/lang/CharSequence;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#getTag()"/>
+            /// </summary>
+            /// <returns><see cref="object"/></returns>
+            public object GetTag()
+            {
+                return IExecuteWithSignature("getTag", "()Ljava/lang/Object;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#requestSetVolume(int)"/>
@@ -712,6 +733,14 @@ namespace Android.Media
             public void RequestUpdateVolume(int arg0)
             {
                 IExecuteWithSignature("requestUpdateVolume", "(I)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.RouteInfo.html#setTag(java.lang.Object)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="object"/></param>
+            public void SetTag(object arg0)
+            {
+                IExecuteWithSignature("setTag", "(Ljava/lang/Object;)V", arg0);
             }
 
             #endregion
@@ -776,11 +805,12 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.UserRouteInfo.html#getRemoteControlClient()"/> <see href="https://developer.android.com/reference/android/media/MediaRouter.UserRouteInfo.html#setRemoteControlClient(android.media.RemoteControlClient)"/>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.UserRouteInfo.html#getRemoteControlClient()"/>
             /// </summary>
-            public Android.Media.RemoteControlClient RemoteControlClient
+            /// <returns><see cref="Android.Media.RemoteControlClient"/></returns>
+            public Android.Media.RemoteControlClient GetRemoteControlClient()
             {
-                get { return IExecuteWithSignature<Android.Media.RemoteControlClient>("getRemoteControlClient", "()Landroid/media/RemoteControlClient;"); } set { IExecuteWithSignature("setRemoteControlClient", "(Landroid/media/RemoteControlClient;)V", value); }
+                return IExecuteWithSignature<Android.Media.RemoteControlClient>("getRemoteControlClient", "()Landroid/media/RemoteControlClient;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter.UserRouteInfo.html#setDescription(java.lang.CharSequence)"/>
@@ -837,6 +867,14 @@ namespace Android.Media
             public void SetPlaybackType(int arg0)
             {
                 IExecuteWithSignature("setPlaybackType", "(I)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.UserRouteInfo.html#setRemoteControlClient(android.media.RemoteControlClient)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Media.RemoteControlClient"/></param>
+            public void SetRemoteControlClient(Android.Media.RemoteControlClient arg0)
+            {
+                IExecuteWithSignature("setRemoteControlClient", "(Landroid/media/RemoteControlClient;)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter.UserRouteInfo.html#setStatus(java.lang.CharSequence)"/>

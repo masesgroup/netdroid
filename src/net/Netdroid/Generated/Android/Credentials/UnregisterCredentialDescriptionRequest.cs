@@ -68,19 +68,20 @@ namespace Android.Credentials
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/credentials/UnregisterCredentialDescriptionRequest.html#getCredentialDescriptions()"/> 
-        /// </summary>
-        public Java.Util.Set<Android.Credentials.CredentialDescription> CredentialDescriptions
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Android.Credentials.CredentialDescription>>("getCredentialDescriptions", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/credentials/UnregisterCredentialDescriptionRequest.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/credentials/UnregisterCredentialDescriptionRequest.html#getCredentialDescriptions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Android.Credentials.CredentialDescription> GetCredentialDescriptions()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Android.Credentials.CredentialDescription>>("getCredentialDescriptions", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/credentials/UnregisterCredentialDescriptionRequest.html#writeToParcel(android.os.Parcel,int)"/>

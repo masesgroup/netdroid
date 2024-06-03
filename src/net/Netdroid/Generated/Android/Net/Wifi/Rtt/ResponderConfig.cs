@@ -73,53 +73,12 @@ namespace Android.Net.Wifi.Rtt
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.html#getCenterFreq0Mhz()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.html#getMacAddress()"/>
         /// </summary>
-        public int CenterFreq0Mhz
+        /// <returns><see cref="Android.Net.MacAddress"/></returns>
+        public Android.Net.MacAddress GetMacAddress()
         {
-            get { return IExecuteWithSignature<int>("getCenterFreq0Mhz", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.html#getCenterFreq1Mhz()"/> 
-        /// </summary>
-        public int CenterFreq1Mhz
-        {
-            get { return IExecuteWithSignature<int>("getCenterFreq1Mhz", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.html#getChannelWidth()"/> 
-        /// </summary>
-        public int ChannelWidth
-        {
-            get { return IExecuteWithSignature<int>("getChannelWidth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.html#getFrequencyMhz()"/> 
-        /// </summary>
-        public int FrequencyMhz
-        {
-            get { return IExecuteWithSignature<int>("getFrequencyMhz", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.html#getMacAddress()"/> 
-        /// </summary>
-        public Android.Net.MacAddress MacAddress
-        {
-            get { return IExecuteWithSignature<Android.Net.MacAddress>("getMacAddress", "()Landroid/net/MacAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.html#getPreamble()"/> 
-        /// </summary>
-        public int Preamble
-        {
-            get { return IExecuteWithSignature<int>("getPreamble", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.html#getResponderType()"/> 
-        /// </summary>
-        public int ResponderType
-        {
-            get { return IExecuteWithSignature<int>("getResponderType", "()I"); }
+            return IExecuteWithSignature<Android.Net.MacAddress>("getMacAddress", "()Landroid/net/MacAddress;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.html#is80211mcSupported()"/>
@@ -136,6 +95,54 @@ namespace Android.Net.Wifi.Rtt
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.html#getCenterFreq0Mhz()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCenterFreq0Mhz()
+        {
+            return IExecuteWithSignature<int>("getCenterFreq0Mhz", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.html#getCenterFreq1Mhz()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCenterFreq1Mhz()
+        {
+            return IExecuteWithSignature<int>("getCenterFreq1Mhz", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.html#getChannelWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChannelWidth()
+        {
+            return IExecuteWithSignature<int>("getChannelWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.html#getFrequencyMhz()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFrequencyMhz()
+        {
+            return IExecuteWithSignature<int>("getFrequencyMhz", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.html#getPreamble()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPreamble()
+        {
+            return IExecuteWithSignature<int>("getPreamble", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.html#getResponderType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetResponderType()
+        {
+            return IExecuteWithSignature<int>("getResponderType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.html#writeToParcel(android.os.Parcel,int)"/>

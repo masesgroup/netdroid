@@ -195,7 +195,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/Surface.html#unlockCanvas(android.graphics.Canvas)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Canvas"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void UnlockCanvas(Android.Graphics.Canvas arg0)
         {
             IExecuteWithSignature("unlockCanvas", "(Landroid/graphics/Canvas;)V", arg0);

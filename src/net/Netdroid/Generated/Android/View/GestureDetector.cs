@@ -64,7 +64,7 @@ namespace Android.View
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.GestureDetector.OnGestureListener"/></param>
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public GestureDetector(Android.View.GestureDetector.OnGestureListener arg0, Android.Os.Handler arg1)
             : base(arg0, arg1)
         {
@@ -73,7 +73,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/GestureDetector.html#%3Cinit%3E(android.view.GestureDetector.OnGestureListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.GestureDetector.OnGestureListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public GestureDetector(Android.View.GestureDetector.OnGestureListener arg0)
             : base(arg0)
         {
@@ -173,7 +173,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onContextClick", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnContextClickEventHandler));
+                AddEventHandler("onContextClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnContextClickEventHandler));
 
             }
 
@@ -181,7 +181,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.OnContextClickListener.html#onContextClick(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnContextClick"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MotionEvent, bool> OnOnContextClick { get; set; } = null;
+            public global::System.Func<Android.View.MotionEvent, bool> OnOnContextClick { get; set; } = null;
 
             void OnContextClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>> data)
             {
@@ -275,9 +275,9 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDoubleTap", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnDoubleTapEventHandler));
-                AddEventHandler("onDoubleTapEvent", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnDoubleTapEventEventHandler));
-                AddEventHandler("onSingleTapConfirmed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnSingleTapConfirmedEventHandler));
+                AddEventHandler("onDoubleTap", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnDoubleTapEventHandler));
+                AddEventHandler("onDoubleTapEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnDoubleTapEventEventHandler));
+                AddEventHandler("onSingleTapConfirmed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnSingleTapConfirmedEventHandler));
 
             }
 
@@ -285,7 +285,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.OnDoubleTapListener.html#onDoubleTap(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDoubleTap"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MotionEvent, bool> OnOnDoubleTap { get; set; } = null;
+            public global::System.Func<Android.View.MotionEvent, bool> OnOnDoubleTap { get; set; } = null;
 
             void OnDoubleTapEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>> data)
             {
@@ -308,7 +308,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.OnDoubleTapListener.html#onDoubleTapEvent(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDoubleTapEvent"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MotionEvent, bool> OnOnDoubleTapEvent { get; set; } = null;
+            public global::System.Func<Android.View.MotionEvent, bool> OnOnDoubleTapEvent { get; set; } = null;
 
             void OnDoubleTapEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>> data)
             {
@@ -331,7 +331,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.OnDoubleTapListener.html#onSingleTapConfirmed(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSingleTapConfirmed"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MotionEvent, bool> OnOnSingleTapConfirmed { get; set; } = null;
+            public global::System.Func<Android.View.MotionEvent, bool> OnOnSingleTapConfirmed { get; set; } = null;
 
             void OnSingleTapConfirmedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>> data)
             {
@@ -443,12 +443,12 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDown", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnDownEventHandler));
-                AddEventHandler("onFling", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnFlingEventHandler));
-                AddEventHandler("onScroll", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnScrollEventHandler));
-                AddEventHandler("onSingleTapUp", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnSingleTapUpEventHandler));
-                AddEventHandler("onLongPress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnLongPressEventHandler));
-                AddEventHandler("onShowPress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnShowPressEventHandler));
+                AddEventHandler("onDown", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnDownEventHandler));
+                AddEventHandler("onFling", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnFlingEventHandler));
+                AddEventHandler("onScroll", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnScrollEventHandler));
+                AddEventHandler("onSingleTapUp", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnSingleTapUpEventHandler));
+                AddEventHandler("onLongPress", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnLongPressEventHandler));
+                AddEventHandler("onShowPress", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnShowPressEventHandler));
 
             }
 
@@ -456,7 +456,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onDown(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDown"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MotionEvent, bool> OnOnDown { get; set; } = null;
+            public global::System.Func<Android.View.MotionEvent, bool> OnOnDown { get; set; } = null;
 
             void OnDownEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>> data)
             {
@@ -479,7 +479,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onFling(android.view.MotionEvent,android.view.MotionEvent,float,float)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFling"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MotionEvent, Android.View.MotionEvent, float, float, bool> OnOnFling { get; set; } = null;
+            public global::System.Func<Android.View.MotionEvent, Android.View.MotionEvent, float, float, bool> OnOnFling { get; set; } = null;
 
             void OnFlingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>> data)
             {
@@ -505,7 +505,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScroll"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MotionEvent, Android.View.MotionEvent, float, float, bool> OnOnScroll { get; set; } = null;
+            public global::System.Func<Android.View.MotionEvent, Android.View.MotionEvent, float, float, bool> OnOnScroll { get; set; } = null;
 
             void OnScrollEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>> data)
             {
@@ -531,7 +531,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onSingleTapUp(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSingleTapUp"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MotionEvent, bool> OnOnSingleTapUp { get; set; } = null;
+            public global::System.Func<Android.View.MotionEvent, bool> OnOnSingleTapUp { get; set; } = null;
 
             void OnSingleTapUpEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>> data)
             {
@@ -554,7 +554,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onLongPress(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnLongPress"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.MotionEvent> OnOnLongPress { get; set; } = null;
+            public global::System.Action<Android.View.MotionEvent> OnOnLongPress { get; set; } = null;
 
             void OnLongPressEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>> data)
             {
@@ -575,7 +575,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onShowPress(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnShowPress"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.MotionEvent> OnOnShowPress { get; set; } = null;
+            public global::System.Action<Android.View.MotionEvent> OnOnShowPress { get; set; } = null;
 
             void OnShowPressEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>> data)
             {
@@ -716,16 +716,16 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onContextClick", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnContextClickEventHandler));
-                AddEventHandler("onDoubleTap", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnDoubleTapEventHandler));
-                AddEventHandler("onDoubleTapEvent", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnDoubleTapEventEventHandler));
-                AddEventHandler("onDown", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnDownEventHandler));
-                AddEventHandler("onFling", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnFlingEventHandler));
-                AddEventHandler("onScroll", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnScrollEventHandler));
-                AddEventHandler("onSingleTapConfirmed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnSingleTapConfirmedEventHandler));
-                AddEventHandler("onSingleTapUp", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnSingleTapUpEventHandler));
-                AddEventHandler("onLongPress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnLongPressEventHandler));
-                AddEventHandler("onShowPress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnShowPressEventHandler));
+                AddEventHandler("onContextClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnContextClickEventHandler));
+                AddEventHandler("onDoubleTap", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnDoubleTapEventHandler));
+                AddEventHandler("onDoubleTapEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnDoubleTapEventEventHandler));
+                AddEventHandler("onDown", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnDownEventHandler));
+                AddEventHandler("onFling", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnFlingEventHandler));
+                AddEventHandler("onScroll", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnScrollEventHandler));
+                AddEventHandler("onSingleTapConfirmed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnSingleTapConfirmedEventHandler));
+                AddEventHandler("onSingleTapUp", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnSingleTapUpEventHandler));
+                AddEventHandler("onLongPress", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnLongPressEventHandler));
+                AddEventHandler("onShowPress", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>>>(OnShowPressEventHandler));
 
             }
 
@@ -733,7 +733,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onContextClick(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnContextClick"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MotionEvent, bool> OnOnContextClick { get; set; } = null;
+            public global::System.Func<Android.View.MotionEvent, bool> OnOnContextClick { get; set; } = null;
 
             void OnContextClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>> data)
             {
@@ -756,7 +756,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onDoubleTap(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDoubleTap"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MotionEvent, bool> OnOnDoubleTap { get; set; } = null;
+            public global::System.Func<Android.View.MotionEvent, bool> OnOnDoubleTap { get; set; } = null;
 
             void OnDoubleTapEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>> data)
             {
@@ -779,7 +779,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onDoubleTapEvent(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDoubleTapEvent"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MotionEvent, bool> OnOnDoubleTapEvent { get; set; } = null;
+            public global::System.Func<Android.View.MotionEvent, bool> OnOnDoubleTapEvent { get; set; } = null;
 
             void OnDoubleTapEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>> data)
             {
@@ -802,7 +802,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onDown(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDown"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MotionEvent, bool> OnOnDown { get; set; } = null;
+            public global::System.Func<Android.View.MotionEvent, bool> OnOnDown { get; set; } = null;
 
             void OnDownEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>> data)
             {
@@ -825,7 +825,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onFling(android.view.MotionEvent,android.view.MotionEvent,float,float)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFling"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MotionEvent, Android.View.MotionEvent, float, float, bool> OnOnFling { get; set; } = null;
+            public global::System.Func<Android.View.MotionEvent, Android.View.MotionEvent, float, float, bool> OnOnFling { get; set; } = null;
 
             void OnFlingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>> data)
             {
@@ -851,7 +851,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScroll"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MotionEvent, Android.View.MotionEvent, float, float, bool> OnOnScroll { get; set; } = null;
+            public global::System.Func<Android.View.MotionEvent, Android.View.MotionEvent, float, float, bool> OnOnScroll { get; set; } = null;
 
             void OnScrollEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>> data)
             {
@@ -877,7 +877,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onSingleTapConfirmed(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSingleTapConfirmed"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MotionEvent, bool> OnOnSingleTapConfirmed { get; set; } = null;
+            public global::System.Func<Android.View.MotionEvent, bool> OnOnSingleTapConfirmed { get; set; } = null;
 
             void OnSingleTapConfirmedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>> data)
             {
@@ -900,7 +900,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onSingleTapUp(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSingleTapUp"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MotionEvent, bool> OnOnSingleTapUp { get; set; } = null;
+            public global::System.Func<Android.View.MotionEvent, bool> OnOnSingleTapUp { get; set; } = null;
 
             void OnSingleTapUpEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>> data)
             {
@@ -923,7 +923,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onLongPress(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnLongPress"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.MotionEvent> OnOnLongPress { get; set; } = null;
+            public global::System.Action<Android.View.MotionEvent> OnOnLongPress { get; set; } = null;
 
             void OnLongPressEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>> data)
             {
@@ -944,7 +944,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onShowPress(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnShowPress"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.MotionEvent> OnOnShowPress { get; set; } = null;
+            public global::System.Action<Android.View.MotionEvent> OnOnShowPress { get; set; } = null;
 
             void OnShowPressEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MotionEvent>> data)
             {

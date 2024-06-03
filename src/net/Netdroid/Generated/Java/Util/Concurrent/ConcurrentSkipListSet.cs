@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#%3Cinit%3E(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public ConcurrentSkipListSet(Java.Util.Collection arg0)
@@ -38,7 +38,7 @@ namespace Java.Util.Concurrent
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#%3Cinit%3E(java.util.SortedSet)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#%3Cinit%3E(java.util.SortedSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
         public ConcurrentSkipListSet(Java.Util.SortedSet arg0)
@@ -74,7 +74,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#ceiling(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#ceiling(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -83,7 +83,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("ceiling", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#first()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#first()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object First()
@@ -91,7 +91,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("first", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#floor(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#floor(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -100,7 +100,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("floor", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#higher(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#higher(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -109,7 +109,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("higher", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#last()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#last()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Last()
@@ -117,7 +117,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("last", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#lower(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#lower(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -126,7 +126,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("lower", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#pollFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#pollFirst()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object PollFirst()
@@ -134,7 +134,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("pollFirst", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#pollLast()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#pollLast()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object PollLast()
@@ -142,7 +142,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("pollLast", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#clone()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#clone()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentSkipListSet"/></returns>
         public Java.Util.Concurrent.ConcurrentSkipListSet Clone()
@@ -150,7 +150,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentSkipListSet>("clone", "()Ljava/util/concurrent/ConcurrentSkipListSet;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#descendingIterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#descendingIterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator DescendingIterator()
@@ -158,7 +158,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Iterator>("descendingIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#descendingSet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#descendingSet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet DescendingSet()
@@ -166,7 +166,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.NavigableSet>("descendingSet", "()Ljava/util/NavigableSet;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#headSet(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#headSet(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -176,7 +176,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.NavigableSet>("headSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#subSet(java.lang.Object,boolean,java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#subSet(java.lang.Object,boolean,java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -188,7 +188,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.NavigableSet>("subSet", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#tailSet(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#tailSet(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -198,7 +198,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.NavigableSet>("tailSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#headSet(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#headSet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
@@ -207,7 +207,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.SortedSet>("headSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#subSet(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#subSet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -217,7 +217,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.SortedSet>("subSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#tailSet(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#tailSet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
@@ -241,7 +241,7 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#%3Cinit%3E(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public ConcurrentSkipListSet(Java.Util.Collection<E> arg0)
@@ -249,7 +249,7 @@ namespace Java.Util.Concurrent
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#%3Cinit%3E(java.util.SortedSet)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#%3Cinit%3E(java.util.SortedSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
         public ConcurrentSkipListSet(Java.Util.SortedSet<E> arg0)
@@ -289,7 +289,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#ceiling(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#ceiling(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><typeparamref name="E"/></returns>
@@ -298,7 +298,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("ceiling", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#first()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#first()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E First()
@@ -306,7 +306,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("first", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#floor(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#floor(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><typeparamref name="E"/></returns>
@@ -315,7 +315,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("floor", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#higher(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#higher(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><typeparamref name="E"/></returns>
@@ -324,7 +324,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("higher", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#last()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#last()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Last()
@@ -332,7 +332,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("last", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#lower(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#lower(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><typeparamref name="E"/></returns>
@@ -341,7 +341,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("lower", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#pollFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#pollFirst()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E PollFirst()
@@ -349,7 +349,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("pollFirst", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#pollLast()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#pollLast()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E PollLast()
@@ -357,7 +357,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("pollLast", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#clone()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#clone()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentSkipListSet"/></returns>
         public Java.Util.Concurrent.ConcurrentSkipListSet<E> Clone()
@@ -365,7 +365,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentSkipListSet<E>>("clone", "()Ljava/util/concurrent/ConcurrentSkipListSet;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#descendingIterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#descendingIterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> DescendingIterator()
@@ -373,7 +373,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Iterator<E>>("descendingIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#descendingSet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#descendingSet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<E> DescendingSet()
@@ -381,7 +381,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.NavigableSet<E>>("descendingSet", "()Ljava/util/NavigableSet;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#headSet(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#headSet(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -391,7 +391,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.NavigableSet<E>>("headSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#subSet(java.lang.Object,boolean,java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#subSet(java.lang.Object,boolean,java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -403,7 +403,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.NavigableSet<E>>("subSet", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#tailSet(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#tailSet(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -413,7 +413,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.NavigableSet<E>>("tailSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#headSet(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#headSet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
@@ -422,7 +422,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.SortedSet>("headSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#subSet(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#subSet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -432,7 +432,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.SortedSet>("subSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html#tailSet(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html#tailSet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>

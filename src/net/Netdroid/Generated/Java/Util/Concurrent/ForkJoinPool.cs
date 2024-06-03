@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public ForkJoinPool(int arg0)
@@ -46,7 +46,7 @@ namespace Java.Util.Concurrent
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html#defaultForkJoinWorkerThreadFactory"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#defaultForkJoinWorkerThreadFactory"/>
         /// </summary>
         public static Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory defaultForkJoinWorkerThreadFactory { get { if (!_defaultForkJoinWorkerThreadFactoryReady) { _defaultForkJoinWorkerThreadFactoryContent = SGetField<Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory>(LocalBridgeClazz, "defaultForkJoinWorkerThreadFactory"); _defaultForkJoinWorkerThreadFactoryReady = true; } return _defaultForkJoinWorkerThreadFactoryContent; } }
         private static Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory _defaultForkJoinWorkerThreadFactoryContent = default;
@@ -56,14 +56,15 @@ namespace Java.Util.Concurrent
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html#getCommonPoolParallelism()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#getCommonPoolParallelism()"/>
         /// </summary>
-        public static int CommonPoolParallelism
+        /// <returns><see cref="int"/></returns>
+        public static int GetCommonPoolParallelism()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getCommonPoolParallelism", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getCommonPoolParallelism", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html#commonPool()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#commonPool()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinPool"/></returns>
         public static Java.Util.Concurrent.ForkJoinPool CommonPool()
@@ -71,7 +72,7 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.ForkJoinPool>(LocalBridgeClazz, "commonPool", "()Ljava/util/concurrent/ForkJoinPool;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html#managedBlock(java.util.concurrent.ForkJoinPool.ManagedBlocker)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#managedBlock(java.util.concurrent.ForkJoinPool.ManagedBlocker)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinPool.ManagedBlocker"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -84,70 +85,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html#getActiveThreadCount()"/> 
-        /// </summary>
-        public int ActiveThreadCount
-        {
-            get { return IExecuteWithSignature<int>("getActiveThreadCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html#getAsyncMode()"/> 
-        /// </summary>
-        public bool AsyncMode
-        {
-            get { return IExecuteWithSignature<bool>("getAsyncMode", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html#getFactory()"/> 
-        /// </summary>
-        public Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory Factory
-        {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory>("getFactory", "()Ljava/util/concurrent/ForkJoinPool$ForkJoinWorkerThreadFactory;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html#getParallelism()"/> 
-        /// </summary>
-        public int Parallelism
-        {
-            get { return IExecuteWithSignature<int>("getParallelism", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html#getPoolSize()"/> 
-        /// </summary>
-        public int PoolSize
-        {
-            get { return IExecuteWithSignature<int>("getPoolSize", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html#getQueuedSubmissionCount()"/> 
-        /// </summary>
-        public int QueuedSubmissionCount
-        {
-            get { return IExecuteWithSignature<int>("getQueuedSubmissionCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html#getQueuedTaskCount()"/> 
-        /// </summary>
-        public long QueuedTaskCount
-        {
-            get { return IExecuteWithSignature<long>("getQueuedTaskCount", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html#getRunningThreadCount()"/> 
-        /// </summary>
-        public int RunningThreadCount
-        {
-            get { return IExecuteWithSignature<int>("getRunningThreadCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html#getStealCount()"/> 
-        /// </summary>
-        public long StealCount
-        {
-            get { return IExecuteWithSignature<long>("getStealCount", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html#submit(java.util.concurrent.ForkJoinTask)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#submit(java.util.concurrent.ForkJoinTask)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         /// <typeparam name="T"></typeparam>
@@ -157,7 +95,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.ForkJoinTask<T>>("submit", "(Ljava/util/concurrent/ForkJoinTask;)Ljava/util/concurrent/ForkJoinTask;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html#invoke(java.util.concurrent.ForkJoinTask)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#invoke(java.util.concurrent.ForkJoinTask)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         /// <typeparam name="T"></typeparam>
@@ -167,7 +105,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<T>("invoke", "(Ljava/util/concurrent/ForkJoinTask;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html#awaitQuiescence(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#awaitQuiescence(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -177,7 +115,15 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("awaitQuiescence", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html#hasQueuedSubmissions()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#getAsyncMode()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetAsyncMode()
+        {
+            return IExecuteWithSignature<bool>("getAsyncMode", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#hasQueuedSubmissions()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasQueuedSubmissions()
@@ -185,7 +131,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("hasQueuedSubmissions", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html#isQuiescent()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#isQuiescent()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsQuiescent()
@@ -193,7 +139,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isQuiescent", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html#isTerminating()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#isTerminating()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsTerminating()
@@ -201,7 +147,71 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isTerminating", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html#execute(java.util.concurrent.ForkJoinTask)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#getActiveThreadCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetActiveThreadCount()
+        {
+            return IExecuteWithSignature<int>("getActiveThreadCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#getParallelism()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetParallelism()
+        {
+            return IExecuteWithSignature<int>("getParallelism", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#getPoolSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPoolSize()
+        {
+            return IExecuteWithSignature<int>("getPoolSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#getQueuedSubmissionCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetQueuedSubmissionCount()
+        {
+            return IExecuteWithSignature<int>("getQueuedSubmissionCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#getRunningThreadCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRunningThreadCount()
+        {
+            return IExecuteWithSignature<int>("getRunningThreadCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#getFactory()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory"/></returns>
+        public Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory GetFactory()
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory>("getFactory", "()Ljava/util/concurrent/ForkJoinPool$ForkJoinWorkerThreadFactory;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#getQueuedTaskCount()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetQueuedTaskCount()
+        {
+            return IExecuteWithSignature<long>("getQueuedTaskCount", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#getStealCount()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetStealCount()
+        {
+            return IExecuteWithSignature<long>("getStealCount", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#execute(java.util.concurrent.ForkJoinTask)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         public void Execute(Java.Util.Concurrent.ForkJoinTask<object> arg0)
@@ -233,7 +243,7 @@ namespace Java.Util.Concurrent
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.html#newThread(java.util.concurrent.ForkJoinPool)"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.html#newThread(java.util.concurrent.ForkJoinPool)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinPool"/></param>
             /// <returns><see cref="Java.Util.Concurrent.ForkJoinWorkerThread"/></returns>
@@ -273,7 +283,7 @@ namespace Java.Util.Concurrent
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.ManagedBlocker.html#block()"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.ManagedBlocker.html#block()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
             /// <exception cref="Java.Lang.InterruptedException"/>
@@ -282,7 +292,7 @@ namespace Java.Util.Concurrent
                 return IExecuteWithSignature<bool>("block", "()Z");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.ManagedBlocker.html#isReleasable()"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.ManagedBlocker.html#isReleasable()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
             public bool IsReleasable()

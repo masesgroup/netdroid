@@ -382,7 +382,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#NUM_STREAMS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int NUM_STREAMS { get { if (!_NUM_STREAMSReady) { _NUM_STREAMSContent = SGetField<int>(LocalBridgeClazz, "NUM_STREAMS"); _NUM_STREAMSReady = true; } return _NUM_STREAMSContent; } }
         private static int _NUM_STREAMSContent = default;
         private static bool _NUM_STREAMSReady = false; // this is used because in case of generics 
@@ -425,49 +425,49 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#ROUTE_ALL"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ROUTE_ALL { get { if (!_ROUTE_ALLReady) { _ROUTE_ALLContent = SGetField<int>(LocalBridgeClazz, "ROUTE_ALL"); _ROUTE_ALLReady = true; } return _ROUTE_ALLContent; } }
         private static int _ROUTE_ALLContent = default;
         private static bool _ROUTE_ALLReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#ROUTE_BLUETOOTH"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ROUTE_BLUETOOTH { get { if (!_ROUTE_BLUETOOTHReady) { _ROUTE_BLUETOOTHContent = SGetField<int>(LocalBridgeClazz, "ROUTE_BLUETOOTH"); _ROUTE_BLUETOOTHReady = true; } return _ROUTE_BLUETOOTHContent; } }
         private static int _ROUTE_BLUETOOTHContent = default;
         private static bool _ROUTE_BLUETOOTHReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#ROUTE_BLUETOOTH_A2DP"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ROUTE_BLUETOOTH_A2DP { get { if (!_ROUTE_BLUETOOTH_A2DPReady) { _ROUTE_BLUETOOTH_A2DPContent = SGetField<int>(LocalBridgeClazz, "ROUTE_BLUETOOTH_A2DP"); _ROUTE_BLUETOOTH_A2DPReady = true; } return _ROUTE_BLUETOOTH_A2DPContent; } }
         private static int _ROUTE_BLUETOOTH_A2DPContent = default;
         private static bool _ROUTE_BLUETOOTH_A2DPReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#ROUTE_BLUETOOTH_SCO"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ROUTE_BLUETOOTH_SCO { get { if (!_ROUTE_BLUETOOTH_SCOReady) { _ROUTE_BLUETOOTH_SCOContent = SGetField<int>(LocalBridgeClazz, "ROUTE_BLUETOOTH_SCO"); _ROUTE_BLUETOOTH_SCOReady = true; } return _ROUTE_BLUETOOTH_SCOContent; } }
         private static int _ROUTE_BLUETOOTH_SCOContent = default;
         private static bool _ROUTE_BLUETOOTH_SCOReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#ROUTE_EARPIECE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ROUTE_EARPIECE { get { if (!_ROUTE_EARPIECEReady) { _ROUTE_EARPIECEContent = SGetField<int>(LocalBridgeClazz, "ROUTE_EARPIECE"); _ROUTE_EARPIECEReady = true; } return _ROUTE_EARPIECEContent; } }
         private static int _ROUTE_EARPIECEContent = default;
         private static bool _ROUTE_EARPIECEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#ROUTE_HEADSET"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ROUTE_HEADSET { get { if (!_ROUTE_HEADSETReady) { _ROUTE_HEADSETContent = SGetField<int>(LocalBridgeClazz, "ROUTE_HEADSET"); _ROUTE_HEADSETReady = true; } return _ROUTE_HEADSETContent; } }
         private static int _ROUTE_HEADSETContent = default;
         private static bool _ROUTE_HEADSETReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#ROUTE_SPEAKER"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ROUTE_SPEAKER { get { if (!_ROUTE_SPEAKERReady) { _ROUTE_SPEAKERContent = SGetField<int>(LocalBridgeClazz, "ROUTE_SPEAKER"); _ROUTE_SPEAKERReady = true; } return _ROUTE_SPEAKERContent; } }
         private static int _ROUTE_SPEAKERContent = default;
         private static bool _ROUTE_SPEAKERReady = false; // this is used because in case of generics 
@@ -552,35 +552,35 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#VIBRATE_SETTING_OFF"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int VIBRATE_SETTING_OFF { get { if (!_VIBRATE_SETTING_OFFReady) { _VIBRATE_SETTING_OFFContent = SGetField<int>(LocalBridgeClazz, "VIBRATE_SETTING_OFF"); _VIBRATE_SETTING_OFFReady = true; } return _VIBRATE_SETTING_OFFContent; } }
         private static int _VIBRATE_SETTING_OFFContent = default;
         private static bool _VIBRATE_SETTING_OFFReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#VIBRATE_SETTING_ON"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int VIBRATE_SETTING_ON { get { if (!_VIBRATE_SETTING_ONReady) { _VIBRATE_SETTING_ONContent = SGetField<int>(LocalBridgeClazz, "VIBRATE_SETTING_ON"); _VIBRATE_SETTING_ONReady = true; } return _VIBRATE_SETTING_ONContent; } }
         private static int _VIBRATE_SETTING_ONContent = default;
         private static bool _VIBRATE_SETTING_ONReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#VIBRATE_SETTING_ONLY_SILENT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int VIBRATE_SETTING_ONLY_SILENT { get { if (!_VIBRATE_SETTING_ONLY_SILENTReady) { _VIBRATE_SETTING_ONLY_SILENTContent = SGetField<int>(LocalBridgeClazz, "VIBRATE_SETTING_ONLY_SILENT"); _VIBRATE_SETTING_ONLY_SILENTReady = true; } return _VIBRATE_SETTING_ONLY_SILENTContent; } }
         private static int _VIBRATE_SETTING_ONLY_SILENTContent = default;
         private static bool _VIBRATE_SETTING_ONLY_SILENTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#VIBRATE_TYPE_NOTIFICATION"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int VIBRATE_TYPE_NOTIFICATION { get { if (!_VIBRATE_TYPE_NOTIFICATIONReady) { _VIBRATE_TYPE_NOTIFICATIONContent = SGetField<int>(LocalBridgeClazz, "VIBRATE_TYPE_NOTIFICATION"); _VIBRATE_TYPE_NOTIFICATIONReady = true; } return _VIBRATE_TYPE_NOTIFICATIONContent; } }
         private static int _VIBRATE_TYPE_NOTIFICATIONContent = default;
         private static bool _VIBRATE_TYPE_NOTIFICATIONReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#VIBRATE_TYPE_RINGER"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int VIBRATE_TYPE_RINGER { get { if (!_VIBRATE_TYPE_RINGERReady) { _VIBRATE_TYPE_RINGERContent = SGetField<int>(LocalBridgeClazz, "VIBRATE_TYPE_RINGER"); _VIBRATE_TYPE_RINGERReady = true; } return _VIBRATE_TYPE_RINGERContent; } }
         private static int _VIBRATE_TYPE_RINGERContent = default;
         private static bool _VIBRATE_TYPE_RINGERReady = false; // this is used because in case of generics 
@@ -611,7 +611,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#ACTION_SCO_AUDIO_STATE_CHANGED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String ACTION_SCO_AUDIO_STATE_CHANGED { get { if (!_ACTION_SCO_AUDIO_STATE_CHANGEDReady) { _ACTION_SCO_AUDIO_STATE_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_SCO_AUDIO_STATE_CHANGED"); _ACTION_SCO_AUDIO_STATE_CHANGEDReady = true; } return _ACTION_SCO_AUDIO_STATE_CHANGEDContent; } }
         private static Java.Lang.String _ACTION_SCO_AUDIO_STATE_CHANGEDContent = default;
         private static bool _ACTION_SCO_AUDIO_STATE_CHANGEDReady = false; // this is used because in case of generics 
@@ -666,14 +666,14 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#EXTRA_VIBRATE_SETTING"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_VIBRATE_SETTING { get { if (!_EXTRA_VIBRATE_SETTINGReady) { _EXTRA_VIBRATE_SETTINGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_VIBRATE_SETTING"); _EXTRA_VIBRATE_SETTINGReady = true; } return _EXTRA_VIBRATE_SETTINGContent; } }
         private static Java.Lang.String _EXTRA_VIBRATE_SETTINGContent = default;
         private static bool _EXTRA_VIBRATE_SETTINGReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#EXTRA_VIBRATE_TYPE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_VIBRATE_TYPE { get { if (!_EXTRA_VIBRATE_TYPEReady) { _EXTRA_VIBRATE_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_VIBRATE_TYPE"); _EXTRA_VIBRATE_TYPEReady = true; } return _EXTRA_VIBRATE_TYPEContent; } }
         private static Java.Lang.String _EXTRA_VIBRATE_TYPEContent = default;
         private static bool _EXTRA_VIBRATE_TYPEReady = false; // this is used because in case of generics 
@@ -716,7 +716,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#VIBRATE_SETTING_CHANGED_ACTION"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String VIBRATE_SETTING_CHANGED_ACTION { get { if (!_VIBRATE_SETTING_CHANGED_ACTIONReady) { _VIBRATE_SETTING_CHANGED_ACTIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "VIBRATE_SETTING_CHANGED_ACTION"); _VIBRATE_SETTING_CHANGED_ACTIONReady = true; } return _VIBRATE_SETTING_CHANGED_ACTIONContent; } }
         private static Java.Lang.String _VIBRATE_SETTING_CHANGED_ACTIONContent = default;
         private static bool _VIBRATE_SETTING_CHANGED_ACTIONReady = false; // this is used because in case of generics 
@@ -758,7 +758,7 @@ namespace Android.Media
         /// <param name="arg0"><see cref="Android.Media.AudioFormat"/></param>
         /// <param name="arg1"><see cref="Android.Media.AudioAttributes"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int GetPlaybackOffloadSupport(Android.Media.AudioFormat arg0, Android.Media.AudioAttributes arg1)
         {
             return SExecute<int>(LocalBridgeClazz, "getPlaybackOffloadSupport", arg0, arg1);
@@ -768,74 +768,12 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getActivePlaybackConfigurations()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getCommunicationDevice()"/>
         /// </summary>
-        public Java.Util.List<Android.Media.AudioPlaybackConfiguration> ActivePlaybackConfigurations
+        /// <returns><see cref="Android.Media.AudioDeviceInfo"/></returns>
+        public Android.Media.AudioDeviceInfo GetCommunicationDevice()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.AudioPlaybackConfiguration>>("getActivePlaybackConfigurations", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getActiveRecordingConfigurations()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Media.AudioRecordingConfiguration> ActiveRecordingConfigurations
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.AudioRecordingConfiguration>>("getActiveRecordingConfigurations", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getAllowedCapturePolicy()"/> <see href="https://developer.android.com/reference/android/media/AudioManager.html#setAllowedCapturePolicy(int)"/>
-        /// </summary>
-        public int AllowedCapturePolicy
-        {
-            get { return IExecuteWithSignature<int>("getAllowedCapturePolicy", "()I"); } set { IExecuteWithSignature("setAllowedCapturePolicy", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getAvailableCommunicationDevices()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Media.AudioDeviceInfo> AvailableCommunicationDevices
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.AudioDeviceInfo>>("getAvailableCommunicationDevices", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getCommunicationDevice()"/> 
-        /// </summary>
-        public Android.Media.AudioDeviceInfo CommunicationDevice
-        {
-            get { return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getCommunicationDevice", "()Landroid/media/AudioDeviceInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getEncodedSurroundMode()"/> 
-        /// </summary>
-        public int EncodedSurroundMode
-        {
-            get { return IExecuteWithSignature<int>("getEncodedSurroundMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getMicrophones()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Media.MicrophoneInfo> Microphones
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.MicrophoneInfo>>("getMicrophones", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getMode()"/> <see href="https://developer.android.com/reference/android/media/AudioManager.html#setMode(int)"/>
-        /// </summary>
-        public int Mode
-        {
-            get { return IExecuteWithSignature<int>("getMode", "()I"); } set { IExecuteWithSignature("setMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getRingerMode()"/> <see href="https://developer.android.com/reference/android/media/AudioManager.html#setRingerMode(int)"/>
-        /// </summary>
-        public int RingerMode
-        {
-            get { return IExecuteWithSignature<int>("getRingerMode", "()I"); } set { IExecuteWithSignature("setRingerMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getSpatializer()"/> 
-        /// </summary>
-        public Android.Media.Spatializer Spatializer
-        {
-            get { return IExecuteWithSignature<Android.Media.Spatializer>("getSpatializer", "()Landroid/media/Spatializer;"); }
+            return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getCommunicationDevice", "()Landroid/media/AudioDeviceInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getDevices(int)"/>
@@ -857,6 +795,14 @@ namespace Android.Media
             return IExecute<Android.Media.AudioMixerAttributes>("getPreferredMixerAttributes", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getSpatializer()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.Spatializer"/></returns>
+        public Android.Media.Spatializer GetSpatializer()
+        {
+            return IExecuteWithSignature<Android.Media.Spatializer>("getSpatializer", "()Landroid/media/Spatializer;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#clearPreferredMixerAttributes(android.media.AudioAttributes,android.media.AudioDeviceInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.AudioAttributes"/></param>
@@ -870,7 +816,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#isBluetoothA2dpOn()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsBluetoothA2dpOn()
         {
             return IExecuteWithSignature<bool>("isBluetoothA2dpOn", "()Z");
@@ -887,7 +833,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#isBluetoothScoOn()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsBluetoothScoOn()
         {
             return IExecuteWithSignature<bool>("isBluetoothScoOn", "()Z");
@@ -928,7 +874,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#isSpeakerphoneOn()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsSpeakerphoneOn()
         {
             return IExecuteWithSignature<bool>("isSpeakerphoneOn", "()Z");
@@ -972,7 +918,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#isWiredHeadsetOn()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsWiredHeadsetOn()
         {
             return IExecuteWithSignature<bool>("isWiredHeadsetOn", "()Z");
@@ -982,7 +928,7 @@ namespace Android.Media
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.RemoteController"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool RegisterRemoteController(Android.Media.RemoteController arg0)
         {
             return IExecuteWithSignature<bool>("registerRemoteController", "(Landroid/media/RemoteController;)Z", arg0);
@@ -1031,7 +977,7 @@ namespace Android.Media
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool ShouldVibrate(int arg0)
         {
             return IExecuteWithSignature<bool>("shouldVibrate", "(I)Z", arg0);
@@ -1052,7 +998,7 @@ namespace Android.Media
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.AudioManager.OnAudioFocusChangeListener"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int AbandonAudioFocus(Android.Media.AudioManager.OnAudioFocusChangeListener arg0)
         {
             return IExecuteWithSignature<int>("abandonAudioFocus", "(Landroid/media/AudioManager$OnAudioFocusChangeListener;)I", arg0);
@@ -1075,6 +1021,14 @@ namespace Android.Media
             return IExecuteWithSignature<int>("generateAudioSessionId", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getAllowedCapturePolicy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAllowedCapturePolicy()
+        {
+            return IExecuteWithSignature<int>("getAllowedCapturePolicy", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getAudioHwSyncForSession(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -1084,11 +1038,35 @@ namespace Android.Media
             return IExecuteWithSignature<int>("getAudioHwSyncForSession", "(I)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getEncodedSurroundMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEncodedSurroundMode()
+        {
+            return IExecuteWithSignature<int>("getEncodedSurroundMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMode()
+        {
+            return IExecuteWithSignature<int>("getMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getRingerMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRingerMode()
+        {
+            return IExecuteWithSignature<int>("getRingerMode", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getRouting(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int GetRouting(int arg0)
         {
             return IExecuteWithSignature<int>("getRouting", "(I)I", arg0);
@@ -1125,7 +1103,7 @@ namespace Android.Media
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int GetVibrateSetting(int arg0)
         {
             return IExecuteWithSignature<int>("getVibrateSetting", "(I)I", arg0);
@@ -1155,7 +1133,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int RequestAudioFocus(Android.Media.AudioManager.OnAudioFocusChangeListener arg0, int arg1, int arg2)
         {
             return IExecute<int>("requestAudioFocus", arg0, arg1, arg2);
@@ -1188,6 +1166,14 @@ namespace Android.Media
             return IExecuteWithSignature<Java.Util.List<Android.Media.AudioDeviceInfo>>("getAudioDevicesForAttributes", "(Landroid/media/AudioAttributes;)Ljava/util/List;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getAvailableCommunicationDevices()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.AudioDeviceInfo> GetAvailableCommunicationDevices()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.AudioDeviceInfo>>("getAvailableCommunicationDevices", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getSupportedMixerAttributes(android.media.AudioDeviceInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.AudioDeviceInfo"/></param>
@@ -1197,6 +1183,14 @@ namespace Android.Media
             return IExecuteWithSignature<Java.Util.List<Android.Media.AudioMixerAttributes>>("getSupportedMixerAttributes", "(Landroid/media/AudioDeviceInfo;)Ljava/util/List;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getActivePlaybackConfigurations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.AudioPlaybackConfiguration> GetActivePlaybackConfigurations()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.AudioPlaybackConfiguration>>("getActivePlaybackConfigurations", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getDirectProfilesForAttributes(android.media.AudioAttributes)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.AudioAttributes"/></param>
@@ -1204,6 +1198,23 @@ namespace Android.Media
         public Java.Util.List<Android.Media.AudioProfile> GetDirectProfilesForAttributes(Android.Media.AudioAttributes arg0)
         {
             return IExecuteWithSignature<Java.Util.List<Android.Media.AudioProfile>>("getDirectProfilesForAttributes", "(Landroid/media/AudioAttributes;)Ljava/util/List;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getActiveRecordingConfigurations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.AudioRecordingConfiguration> GetActiveRecordingConfigurations()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.AudioRecordingConfiguration>>("getActiveRecordingConfigurations", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getMicrophones()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.List<Android.Media.MicrophoneInfo> GetMicrophones()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.MicrophoneInfo>>("getMicrophones", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#addOnCommunicationDeviceChangedListener(java.util.concurrent.Executor,android.media.AudioManager.OnCommunicationDeviceChangedListener)"/>
@@ -1341,7 +1352,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#registerMediaButtonEventReceiver(android.app.PendingIntent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.PendingIntent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RegisterMediaButtonEventReceiver(Android.App.PendingIntent arg0)
         {
             IExecuteWithSignature("registerMediaButtonEventReceiver", "(Landroid/app/PendingIntent;)V", arg0);
@@ -1350,7 +1361,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#registerMediaButtonEventReceiver(android.content.ComponentName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RegisterMediaButtonEventReceiver(Android.Content.ComponentName arg0)
         {
             IExecuteWithSignature("registerMediaButtonEventReceiver", "(Landroid/content/ComponentName;)V", arg0);
@@ -1359,7 +1370,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#registerRemoteControlClient(android.media.RemoteControlClient)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.RemoteControlClient"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RegisterRemoteControlClient(Android.Media.RemoteControlClient arg0)
         {
             IExecuteWithSignature("registerRemoteControlClient", "(Landroid/media/RemoteControlClient;)V", arg0);
@@ -1389,10 +1400,18 @@ namespace Android.Media
             IExecuteWithSignature("removeOnPreferredMixerAttributesChangedListener", "(Landroid/media/AudioManager$OnPreferredMixerAttributesChangedListener;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#setAllowedCapturePolicy(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetAllowedCapturePolicy(int arg0)
+        {
+            IExecuteWithSignature("setAllowedCapturePolicy", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#setBluetoothA2dpOn(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetBluetoothA2dpOn(bool arg0)
         {
             IExecuteWithSignature("setBluetoothA2dpOn", "(Z)V", arg0);
@@ -1414,6 +1433,14 @@ namespace Android.Media
             IExecuteWithSignature("setMicrophoneMute", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#setMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMode(int arg0)
+        {
+            IExecuteWithSignature("setMode", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#setParameters(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -1422,12 +1449,20 @@ namespace Android.Media
             IExecuteWithSignature("setParameters", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#setRingerMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetRingerMode(int arg0)
+        {
+            IExecuteWithSignature("setRingerMode", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#setRouting(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetRouting(int arg0, int arg1, int arg2)
         {
             IExecute("setRouting", arg0, arg1, arg2);
@@ -1436,7 +1471,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#setSpeakerphoneOn(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSpeakerphoneOn(bool arg0)
         {
             IExecuteWithSignature("setSpeakerphoneOn", "(Z)V", arg0);
@@ -1446,7 +1481,7 @@ namespace Android.Media
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetStreamMute(int arg0, bool arg1)
         {
             IExecute("setStreamMute", arg0, arg1);
@@ -1456,7 +1491,7 @@ namespace Android.Media
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetStreamSolo(int arg0, bool arg1)
         {
             IExecute("setStreamSolo", arg0, arg1);
@@ -1476,7 +1511,7 @@ namespace Android.Media
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetVibrateSetting(int arg0, int arg1)
         {
             IExecute("setVibrateSetting", arg0, arg1);
@@ -1485,7 +1520,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#setWiredHeadsetOn(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetWiredHeadsetOn(bool arg0)
         {
             IExecuteWithSignature("setWiredHeadsetOn", "(Z)V", arg0);
@@ -1493,7 +1528,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#startBluetoothSco()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartBluetoothSco()
         {
             IExecuteWithSignature("startBluetoothSco", "()V");
@@ -1501,7 +1536,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#stopBluetoothSco()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StopBluetoothSco()
         {
             IExecuteWithSignature("stopBluetoothSco", "()V");
@@ -1541,7 +1576,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#unregisterMediaButtonEventReceiver(android.app.PendingIntent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.PendingIntent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void UnregisterMediaButtonEventReceiver(Android.App.PendingIntent arg0)
         {
             IExecuteWithSignature("unregisterMediaButtonEventReceiver", "(Landroid/app/PendingIntent;)V", arg0);
@@ -1550,7 +1585,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#unregisterMediaButtonEventReceiver(android.content.ComponentName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void UnregisterMediaButtonEventReceiver(Android.Content.ComponentName arg0)
         {
             IExecuteWithSignature("unregisterMediaButtonEventReceiver", "(Landroid/content/ComponentName;)V", arg0);
@@ -1559,7 +1594,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#unregisterRemoteControlClient(android.media.RemoteControlClient)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.RemoteControlClient"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void UnregisterRemoteControlClient(Android.Media.RemoteControlClient arg0)
         {
             IExecuteWithSignature("unregisterRemoteControlClient", "(Landroid/media/RemoteControlClient;)V", arg0);
@@ -1568,7 +1603,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#unregisterRemoteController(android.media.RemoteController)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.RemoteController"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void UnregisterRemoteController(Android.Media.RemoteController arg0)
         {
             IExecuteWithSignature("unregisterRemoteController", "(Landroid/media/RemoteController;)V", arg0);
@@ -1680,7 +1715,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onAudioFocusChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnAudioFocusChangeEventHandler));
+                AddEventHandler("onAudioFocusChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnAudioFocusChangeEventHandler));
 
             }
 
@@ -1688,7 +1723,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioManager.OnAudioFocusChangeListener.html#onAudioFocusChange(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAudioFocusChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnAudioFocusChange { get; set; } = null;
+            public global::System.Action<int> OnOnAudioFocusChange { get; set; } = null;
 
             void OnAudioFocusChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -1779,7 +1814,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onCommunicationDeviceChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioDeviceInfo>>>(OnCommunicationDeviceChangedEventHandler));
+                AddEventHandler("onCommunicationDeviceChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioDeviceInfo>>>(OnCommunicationDeviceChangedEventHandler));
 
             }
 
@@ -1787,7 +1822,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioManager.OnCommunicationDeviceChangedListener.html#onCommunicationDeviceChanged(android.media.AudioDeviceInfo)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCommunicationDeviceChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.AudioDeviceInfo> OnOnCommunicationDeviceChanged { get; set; } = null;
+            public global::System.Action<Android.Media.AudioDeviceInfo> OnOnCommunicationDeviceChanged { get; set; } = null;
 
             void OnCommunicationDeviceChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.AudioDeviceInfo>> data)
             {
@@ -1878,7 +1913,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onModeChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnModeChangedEventHandler));
+                AddEventHandler("onModeChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnModeChangedEventHandler));
 
             }
 
@@ -1886,7 +1921,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioManager.OnModeChangedListener.html#onModeChanged(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnModeChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnModeChanged { get; set; } = null;
+            public global::System.Action<int> OnOnModeChanged { get; set; } = null;
 
             void OnModeChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -1977,7 +2012,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onPreferredMixerAttributesChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioAttributes>>>(OnPreferredMixerAttributesChangedEventHandler));
+                AddEventHandler("onPreferredMixerAttributesChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioAttributes>>>(OnPreferredMixerAttributesChangedEventHandler));
 
             }
 
@@ -1985,7 +2020,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioManager.OnPreferredMixerAttributesChangedListener.html#onPreferredMixerAttributesChanged(android.media.AudioAttributes,android.media.AudioDeviceInfo,android.media.AudioMixerAttributes)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPreferredMixerAttributesChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.AudioAttributes, Android.Media.AudioDeviceInfo, Android.Media.AudioMixerAttributes> OnOnPreferredMixerAttributesChanged { get; set; } = null;
+            public global::System.Action<Android.Media.AudioAttributes, Android.Media.AudioDeviceInfo, Android.Media.AudioMixerAttributes> OnOnPreferredMixerAttributesChanged { get; set; } = null;
 
             void OnPreferredMixerAttributesChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.AudioAttributes>> data)
             {

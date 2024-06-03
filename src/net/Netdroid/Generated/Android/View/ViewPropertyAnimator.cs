@@ -46,25 +46,12 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewPropertyAnimator.html#getDuration()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/ViewPropertyAnimator.html#getInterpolator()"/>
         /// </summary>
-        public long Duration
+        /// <returns><see cref="Android.Animation.TimeInterpolator"/></returns>
+        public Android.Animation.TimeInterpolator GetInterpolator()
         {
-            get { return IExecuteWithSignature<long>("getDuration", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewPropertyAnimator.html#getInterpolator()"/> 
-        /// </summary>
-        public Android.Animation.TimeInterpolator Interpolator
-        {
-            get { return IExecuteWithSignature<Android.Animation.TimeInterpolator>("getInterpolator", "()Landroid/animation/TimeInterpolator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewPropertyAnimator.html#getStartDelay()"/> 
-        /// </summary>
-        public long StartDelay
-        {
-            get { return IExecuteWithSignature<long>("getStartDelay", "()J"); }
+            return IExecuteWithSignature<Android.Animation.TimeInterpolator>("getInterpolator", "()Landroid/animation/TimeInterpolator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewPropertyAnimator.html#alpha(float)"/>
@@ -352,6 +339,22 @@ namespace Android.View
         public Android.View.ViewPropertyAnimator ZBy(float arg0)
         {
             return IExecuteWithSignature<Android.View.ViewPropertyAnimator>("zBy", "(F)Landroid/view/ViewPropertyAnimator;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewPropertyAnimator.html#getDuration()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDuration()
+        {
+            return IExecuteWithSignature<long>("getDuration", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewPropertyAnimator.html#getStartDelay()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetStartDelay()
+        {
+            return IExecuteWithSignature<long>("getStartDelay", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewPropertyAnimator.html#cancel()"/>

@@ -148,82 +148,52 @@ namespace Android.App.Job
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#getClipData()"/> 
-        /// </summary>
-        public Android.Content.ClipData ClipData
-        {
-            get { return IExecuteWithSignature<Android.Content.ClipData>("getClipData", "()Landroid/content/ClipData;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#getClipGrantFlags()"/> 
-        /// </summary>
-        public int ClipGrantFlags
-        {
-            get { return IExecuteWithSignature<int>("getClipGrantFlags", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#getExtras()"/> 
-        /// </summary>
-        public Android.Os.PersistableBundle Extras
-        {
-            get { return IExecuteWithSignature<Android.Os.PersistableBundle>("getExtras", "()Landroid/os/PersistableBundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#getJobId()"/> 
-        /// </summary>
-        public int JobId
-        {
-            get { return IExecuteWithSignature<int>("getJobId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#getJobNamespace()"/> 
-        /// </summary>
-        public Java.Lang.String JobNamespace
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getJobNamespace", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#getNetwork()"/> 
-        /// </summary>
-        public Android.Net.Network Network
-        {
-            get { return IExecuteWithSignature<Android.Net.Network>("getNetwork", "()Landroid/net/Network;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#getStopReason()"/> 
-        /// </summary>
-        public int StopReason
-        {
-            get { return IExecuteWithSignature<int>("getStopReason", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#getTransientExtras()"/> 
-        /// </summary>
-        public Android.Os.Bundle TransientExtras
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getTransientExtras", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#getTriggeredContentAuthorities()"/> 
-        /// </summary>
-        public Java.Lang.String[] TriggeredContentAuthorities
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getTriggeredContentAuthorities", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#getTriggeredContentUris()"/> 
-        /// </summary>
-        public Android.Net.Uri[] TriggeredContentUris
-        {
-            get { return IExecuteWithSignatureArray<Android.Net.Uri>("getTriggeredContentUris", "()[Landroid/net/Uri;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#dequeueWork()"/>
         /// </summary>
         /// <returns><see cref="Android.App.Job.JobWorkItem"/></returns>
         public Android.App.Job.JobWorkItem DequeueWork()
         {
             return IExecuteWithSignature<Android.App.Job.JobWorkItem>("dequeueWork", "()Landroid/app/job/JobWorkItem;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#getClipData()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.ClipData"/></returns>
+        public Android.Content.ClipData GetClipData()
+        {
+            return IExecuteWithSignature<Android.Content.ClipData>("getClipData", "()Landroid/content/ClipData;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#getNetwork()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.Network"/></returns>
+        public Android.Net.Network GetNetwork()
+        {
+            return IExecuteWithSignature<Android.Net.Network>("getNetwork", "()Landroid/net/Network;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#getTriggeredContentUris()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri[] GetTriggeredContentUris()
+        {
+            return IExecuteWithSignatureArray<Android.Net.Uri>("getTriggeredContentUris", "()[Landroid/net/Uri;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#getTransientExtras()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetTransientExtras()
+        {
+            return IExecuteWithSignature<Android.Os.Bundle>("getTransientExtras", "()Landroid/os/Bundle;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#getExtras()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.PersistableBundle"/></returns>
+        public Android.Os.PersistableBundle GetExtras()
+        {
+            return IExecuteWithSignature<Android.Os.PersistableBundle>("getExtras", "()Landroid/os/PersistableBundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#isExpeditedJob()"/>
@@ -256,6 +226,46 @@ namespace Android.App.Job
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#getClipGrantFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetClipGrantFlags()
+        {
+            return IExecuteWithSignature<int>("getClipGrantFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#getJobId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetJobId()
+        {
+            return IExecuteWithSignature<int>("getJobId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#getStopReason()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStopReason()
+        {
+            return IExecuteWithSignature<int>("getStopReason", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#getJobNamespace()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetJobNamespace()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getJobNamespace", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#getTriggeredContentAuthorities()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetTriggeredContentAuthorities()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getTriggeredContentAuthorities", "()[Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#completeWork(android.app.job.JobWorkItem)"/>

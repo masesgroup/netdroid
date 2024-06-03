@@ -112,7 +112,7 @@ namespace Android.Content.Pm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#GET_ATTRIBUTIONS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int GET_ATTRIBUTIONS { get { if (!_GET_ATTRIBUTIONSReady) { _GET_ATTRIBUTIONSContent = SGetField<int>(LocalBridgeClazz, "GET_ATTRIBUTIONS"); _GET_ATTRIBUTIONSReady = true; } return _GET_ATTRIBUTIONSContent; } }
         private static int _GET_ATTRIBUTIONSContent = default;
         private static bool _GET_ATTRIBUTIONSReady = false; // this is used because in case of generics 
@@ -125,14 +125,14 @@ namespace Android.Content.Pm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#GET_DISABLED_COMPONENTS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int GET_DISABLED_COMPONENTS { get { if (!_GET_DISABLED_COMPONENTSReady) { _GET_DISABLED_COMPONENTSContent = SGetField<int>(LocalBridgeClazz, "GET_DISABLED_COMPONENTS"); _GET_DISABLED_COMPONENTSReady = true; } return _GET_DISABLED_COMPONENTSContent; } }
         private static int _GET_DISABLED_COMPONENTSContent = default;
         private static bool _GET_DISABLED_COMPONENTSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#GET_DISABLED_UNTIL_USED_COMPONENTS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int GET_DISABLED_UNTIL_USED_COMPONENTS { get { if (!_GET_DISABLED_UNTIL_USED_COMPONENTSReady) { _GET_DISABLED_UNTIL_USED_COMPONENTSContent = SGetField<int>(LocalBridgeClazz, "GET_DISABLED_UNTIL_USED_COMPONENTS"); _GET_DISABLED_UNTIL_USED_COMPONENTSReady = true; } return _GET_DISABLED_UNTIL_USED_COMPONENTSContent; } }
         private static int _GET_DISABLED_UNTIL_USED_COMPONENTSContent = default;
         private static bool _GET_DISABLED_UNTIL_USED_COMPONENTSReady = false; // this is used because in case of generics 
@@ -151,7 +151,7 @@ namespace Android.Content.Pm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#GET_INTENT_FILTERS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int GET_INTENT_FILTERS { get { if (!_GET_INTENT_FILTERSReady) { _GET_INTENT_FILTERSContent = SGetField<int>(LocalBridgeClazz, "GET_INTENT_FILTERS"); _GET_INTENT_FILTERSReady = true; } return _GET_INTENT_FILTERSContent; } }
         private static int _GET_INTENT_FILTERSContent = default;
         private static bool _GET_INTENT_FILTERSReady = false; // this is used because in case of generics 
@@ -200,7 +200,7 @@ namespace Android.Content.Pm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#GET_SIGNATURES"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int GET_SIGNATURES { get { if (!_GET_SIGNATURESReady) { _GET_SIGNATURESContent = SGetField<int>(LocalBridgeClazz, "GET_SIGNATURES"); _GET_SIGNATURESReady = true; } return _GET_SIGNATURESContent; } }
         private static int _GET_SIGNATURESContent = default;
         private static bool _GET_SIGNATURESReady = false; // this is used because in case of generics 
@@ -213,7 +213,7 @@ namespace Android.Content.Pm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#GET_UNINSTALLED_PACKAGES"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int GET_UNINSTALLED_PACKAGES { get { if (!_GET_UNINSTALLED_PACKAGESReady) { _GET_UNINSTALLED_PACKAGESContent = SGetField<int>(LocalBridgeClazz, "GET_UNINSTALLED_PACKAGES"); _GET_UNINSTALLED_PACKAGESReady = true; } return _GET_UNINSTALLED_PACKAGESContent; } }
         private static int _GET_UNINSTALLED_PACKAGESContent = default;
         private static bool _GET_UNINSTALLED_PACKAGESReady = false; // this is used because in case of generics 
@@ -568,7 +568,7 @@ namespace Android.Content.Pm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#FEATURE_CONNECTION_SERVICE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String FEATURE_CONNECTION_SERVICE { get { if (!_FEATURE_CONNECTION_SERVICEReady) { _FEATURE_CONNECTION_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_CONNECTION_SERVICE"); _FEATURE_CONNECTION_SERVICEReady = true; } return _FEATURE_CONNECTION_SERVICEContent; } }
         private static Java.Lang.String _FEATURE_CONNECTION_SERVICEContent = default;
         private static bool _FEATURE_CONNECTION_SERVICEReady = false; // this is used because in case of generics 
@@ -1133,7 +1133,7 @@ namespace Android.Content.Pm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#FEATURE_TELEVISION"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String FEATURE_TELEVISION { get { if (!_FEATURE_TELEVISIONReady) { _FEATURE_TELEVISIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_TELEVISION"); _FEATURE_TELEVISIONReady = true; } return _FEATURE_TELEVISIONContent; } }
         private static Java.Lang.String _FEATURE_TELEVISIONContent = default;
         private static bool _FEATURE_TELEVISIONReady = false; // this is used because in case of generics 
@@ -1194,7 +1194,7 @@ namespace Android.Content.Pm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#FEATURE_VR_MODE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String FEATURE_VR_MODE { get { if (!_FEATURE_VR_MODEReady) { _FEATURE_VR_MODEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_VR_MODE"); _FEATURE_VR_MODEReady = true; } return _FEATURE_VR_MODEContent; } }
         private static Java.Lang.String _FEATURE_VR_MODEContent = default;
         private static bool _FEATURE_VR_MODEReady = false; // this is used because in case of generics 
@@ -1339,62 +1339,6 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getBackgroundPermissionOptionLabel()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence BackgroundPermissionOptionLabel
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getBackgroundPermissionOptionLabel", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getDefaultActivityIcon()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable DefaultActivityIcon
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDefaultActivityIcon", "()Landroid/graphics/drawable/Drawable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getInstantAppCookie()"/> 
-        /// </summary>
-        public byte[] InstantAppCookie
-        {
-            get { return IExecuteWithSignatureArray<byte>("getInstantAppCookie", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getInstantAppCookieMaxBytes()"/> 
-        /// </summary>
-        public int InstantAppCookieMaxBytes
-        {
-            get { return IExecuteWithSignature<int>("getInstantAppCookieMaxBytes", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getPackageInstaller()"/> 
-        /// </summary>
-        public Android.Content.Pm.PackageInstaller PackageInstaller
-        {
-            get { return IExecuteWithSignature<Android.Content.Pm.PackageInstaller>("getPackageInstaller", "()Landroid/content/pm/PackageInstaller;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getSuspendedPackageAppExtras()"/> 
-        /// </summary>
-        public Android.Os.Bundle SuspendedPackageAppExtras
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getSuspendedPackageAppExtras", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getSystemAvailableFeatures()"/> 
-        /// </summary>
-        public Android.Content.Pm.FeatureInfo[] SystemAvailableFeatures
-        {
-            get { return IExecuteWithSignatureArray<Android.Content.Pm.FeatureInfo>("getSystemAvailableFeatures", "()[Landroid/content/pm/FeatureInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getSystemSharedLibraryNames()"/> 
-        /// </summary>
-        public Java.Lang.String[] SystemSharedLibraryNames
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getSystemSharedLibraryNames", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getLaunchIntentForPackage(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -1455,6 +1399,14 @@ namespace Android.Content.Pm
             return IExecuteWithSignature<Android.Content.Pm.ChangedPackages>("getChangedPackages", "(I)Landroid/content/pm/ChangedPackages;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getSystemAvailableFeatures()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Pm.FeatureInfo"/></returns>
+        public Android.Content.Pm.FeatureInfo[] GetSystemAvailableFeatures()
+        {
+            return IExecuteWithSignatureArray<Android.Content.Pm.FeatureInfo>("getSystemAvailableFeatures", "()[Landroid/content/pm/FeatureInfo;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getInstrumentationInfo(android.content.ComponentName,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
@@ -1486,6 +1438,14 @@ namespace Android.Content.Pm
         public Android.Content.Pm.PackageInfo GetPackageInfo(Java.Lang.String arg0, int arg1)
         {
             return IExecute<Android.Content.Pm.PackageInfo>("getPackageInfo", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getPackageInstaller()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Pm.PackageInstaller"/></returns>
+        public Android.Content.Pm.PackageInstaller GetPackageInstaller()
+        {
+            return IExecuteWithSignature<Android.Content.Pm.PackageInstaller>("getPackageInstaller", "()Landroid/content/pm/PackageInstaller;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getPermissionGroupInfo(java.lang.String,int)"/>
@@ -1720,6 +1680,14 @@ namespace Android.Content.Pm
             return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getApplicationLogo", "(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getDefaultActivityIcon()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetDefaultActivityIcon()
+        {
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDefaultActivityIcon", "()Landroid/graphics/drawable/Drawable;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getDrawable(java.lang.String,int,android.content.pm.ApplicationInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -1833,6 +1801,14 @@ namespace Android.Content.Pm
             return IExecuteWithSignature<bool>("isSafeMode", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getInstantAppCookie()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetInstantAppCookie()
+        {
+            return IExecuteWithSignatureArray<byte>("getInstantAppCookie", "()[B");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#checkPermission(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -1881,6 +1857,14 @@ namespace Android.Content.Pm
             return IExecuteWithSignature<int>("getComponentEnabledSetting", "(Landroid/content/ComponentName;)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getInstantAppCookieMaxBytes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInstantAppCookieMaxBytes()
+        {
+            return IExecuteWithSignature<int>("getInstantAppCookieMaxBytes", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getPackageUid(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -1898,7 +1882,7 @@ namespace Android.Content.Pm
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int GetPreferredActivities(Java.Util.List<Android.Content.IntentFilter> arg0, Java.Util.List<Android.Content.ComponentName> arg1, Java.Lang.String arg2)
         {
             return IExecute<int>("getPreferredActivities", arg0, arg1, arg2);
@@ -1959,7 +1943,7 @@ namespace Android.Content.Pm
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String GetInstallerPackageName(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getInstallerPackageName", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -1999,6 +1983,14 @@ namespace Android.Content.Pm
         public Java.Lang.String[] GetPackagesForUid(int arg0)
         {
             return IExecuteWithSignatureArray<Java.Lang.String>("getPackagesForUid", "(I)[Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getSystemSharedLibraryNames()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetSystemSharedLibraryNames()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getSystemSharedLibraryNames", "()[Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getInstalledApplications(int)"/>
@@ -2043,7 +2035,7 @@ namespace Android.Content.Pm
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.List<Android.Content.Pm.PackageInfo> GetPreferredPackages(int arg0)
         {
             return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.PackageInfo>>("getPreferredPackages", "(I)Ljava/util/List;", arg0);
@@ -2144,7 +2136,7 @@ namespace Android.Content.Pm
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#addPackageToPreferred(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddPackageToPreferred(Java.Lang.String arg0)
         {
             IExecuteWithSignature("addPackageToPreferred", "(Ljava/lang/String;)V", arg0);
@@ -2156,7 +2148,7 @@ namespace Android.Content.Pm
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.Content.ComponentName"/></param>
         /// <param name="arg3"><see cref="Android.Content.ComponentName"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddPreferredActivity(Android.Content.IntentFilter arg0, int arg1, Android.Content.ComponentName[] arg2, Android.Content.ComponentName arg3)
         {
             IExecute("addPreferredActivity", arg0, arg1, arg2, arg3);
@@ -2172,7 +2164,7 @@ namespace Android.Content.Pm
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#clearPackagePreferredActivities(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ClearPackagePreferredActivities(Java.Lang.String arg0)
         {
             IExecuteWithSignature("clearPackagePreferredActivities", "(Ljava/lang/String;)V", arg0);
@@ -2191,7 +2183,7 @@ namespace Android.Content.Pm
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#removePackageFromPreferred(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemovePackageFromPreferred(Java.Lang.String arg0)
         {
             IExecuteWithSignature("removePackageFromPreferred", "(Ljava/lang/String;)V", arg0);
@@ -2450,6 +2442,14 @@ namespace Android.Content.Pm
             return IExecute<Android.Content.Res.Resources>("getResourcesForApplication", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getSuspendedPackageAppExtras()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetSuspendedPackageAppExtras()
+        {
+            return IExecuteWithSignature<Android.Os.Bundle>("getSuspendedPackageAppExtras", "()Landroid/os/Bundle;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#addWhitelistedRestrictedPermission(java.lang.String,java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -2617,6 +2617,14 @@ namespace Android.Content.Pm
         public int[] GetPackageGids(Java.Lang.String arg0, Android.Content.Pm.PackageManager.PackageInfoFlags arg1)
         {
             return IExecuteArray<int>("getPackageGids", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getBackgroundPermissionOptionLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetBackgroundPermissionOptionLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getBackgroundPermissionOptionLabel", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getInstalledApplications(android.content.pm.PackageManager.ApplicationInfoFlags)"/>
@@ -2884,11 +2892,12 @@ namespace Android.Content.Pm
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ApplicationInfoFlags.html#getValue()"/> 
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ApplicationInfoFlags.html#getValue()"/>
             /// </summary>
-            public long Value
+            /// <returns><see cref="long"/></returns>
+            public long GetValue()
             {
-                get { return IExecuteWithSignature<long>("getValue", "()J"); }
+                return IExecuteWithSignature<long>("getValue", "()J");
             }
 
             #endregion
@@ -2938,25 +2947,12 @@ namespace Android.Content.Pm
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ComponentEnabledSetting.html#getComponentName()"/> 
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ComponentEnabledSetting.html#getComponentName()"/>
             /// </summary>
-            public Android.Content.ComponentName ComponentName
+            /// <returns><see cref="Android.Content.ComponentName"/></returns>
+            public Android.Content.ComponentName GetComponentName()
             {
-                get { return IExecuteWithSignature<Android.Content.ComponentName>("getComponentName", "()Landroid/content/ComponentName;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ComponentEnabledSetting.html#getEnabledFlags()"/> 
-            /// </summary>
-            public int EnabledFlags
-            {
-                get { return IExecuteWithSignature<int>("getEnabledFlags", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ComponentEnabledSetting.html#getEnabledState()"/> 
-            /// </summary>
-            public int EnabledState
-            {
-                get { return IExecuteWithSignature<int>("getEnabledState", "()I"); }
+                return IExecuteWithSignature<Android.Content.ComponentName>("getComponentName", "()Landroid/content/ComponentName;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ComponentEnabledSetting.html#describeContents()"/>
@@ -2965,6 +2961,22 @@ namespace Android.Content.Pm
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ComponentEnabledSetting.html#getEnabledFlags()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetEnabledFlags()
+            {
+                return IExecuteWithSignature<int>("getEnabledFlags", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ComponentEnabledSetting.html#getEnabledState()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetEnabledState()
+            {
+                return IExecuteWithSignature<int>("getEnabledState", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ComponentEnabledSetting.html#writeToParcel(android.os.Parcel,int)"/>
@@ -3016,11 +3028,12 @@ namespace Android.Content.Pm
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ComponentInfoFlags.html#getValue()"/> 
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ComponentInfoFlags.html#getValue()"/>
             /// </summary>
-            public long Value
+            /// <returns><see cref="long"/></returns>
+            public long GetValue()
             {
-                get { return IExecuteWithSignature<long>("getValue", "()J"); }
+                return IExecuteWithSignature<long>("getValue", "()J");
             }
 
             #endregion
@@ -3089,7 +3102,7 @@ namespace Android.Content.Pm
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onChecksumsReady", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Content.Pm.ApkChecksum>>>>(OnChecksumsReadyEventHandler));
+                AddEventHandler("onChecksumsReady", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Content.Pm.ApkChecksum>>>>(OnChecksumsReadyEventHandler));
 
             }
 
@@ -3097,7 +3110,7 @@ namespace Android.Content.Pm
             /// Handler for <see href="https://developer.android.com/reference/android/content/pm/PackageManager.OnChecksumsReadyListener.html#onChecksumsReady(java.util.List)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnChecksumsReady"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Util.List<Android.Content.Pm.ApkChecksum>> OnOnChecksumsReady { get; set; } = null;
+            public global::System.Action<Java.Util.List<Android.Content.Pm.ApkChecksum>> OnOnChecksumsReady { get; set; } = null;
 
             void OnChecksumsReadyEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Content.Pm.ApkChecksum>>> data)
             {
@@ -3193,11 +3206,12 @@ namespace Android.Content.Pm
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.PackageInfoFlags.html#getValue()"/> 
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.PackageInfoFlags.html#getValue()"/>
             /// </summary>
-            public long Value
+            /// <returns><see cref="long"/></returns>
+            public long GetValue()
             {
-                get { return IExecuteWithSignature<long>("getValue", "()J"); }
+                return IExecuteWithSignature<long>("getValue", "()J");
             }
 
             #endregion
@@ -3237,60 +3251,12 @@ namespace Android.Content.Pm
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#getBoolean()"/> 
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#getBoolean()"/>
             /// </summary>
-            public bool Boolean
+            /// <returns><see cref="bool"/></returns>
+            public bool GetBoolean()
             {
-                get { return IExecuteWithSignature<bool>("getBoolean", "()Z"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#getClassName()"/> 
-            /// </summary>
-            public Java.Lang.String ClassName
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getClassName", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#getFloat()"/> 
-            /// </summary>
-            public float Float
-            {
-                get { return IExecuteWithSignature<float>("getFloat", "()F"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#getInteger()"/> 
-            /// </summary>
-            public int Integer
-            {
-                get { return IExecuteWithSignature<int>("getInteger", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#getName()"/> 
-            /// </summary>
-            public Java.Lang.String Name
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#getPackageName()"/> 
-            /// </summary>
-            public Java.Lang.String PackageName
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#getResourceId()"/> 
-            /// </summary>
-            public int ResourceId
-            {
-                get { return IExecuteWithSignature<int>("getResourceId", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#getString()"/> 
-            /// </summary>
-            public Java.Lang.String String
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getString", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<bool>("getBoolean", "()Z");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#isBoolean()"/>
@@ -3333,12 +3299,68 @@ namespace Android.Content.Pm
                 return IExecuteWithSignature<bool>("isString", "()Z");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#getFloat()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            public float GetFloat()
+            {
+                return IExecuteWithSignature<float>("getFloat", "()F");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#describeContents()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#getInteger()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetInteger()
+            {
+                return IExecuteWithSignature<int>("getInteger", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#getResourceId()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetResourceId()
+            {
+                return IExecuteWithSignature<int>("getResourceId", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#getClassName()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetClassName()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getClassName", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#getName()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetName()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#getPackageName()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetPackageName()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#getString()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetString()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getString", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#writeToParcel(android.os.Parcel,int)"/>
@@ -3390,11 +3412,12 @@ namespace Android.Content.Pm
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ResolveInfoFlags.html#getValue()"/> 
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ResolveInfoFlags.html#getValue()"/>
             /// </summary>
-            public long Value
+            /// <returns><see cref="long"/></returns>
+            public long GetValue()
             {
-                get { return IExecuteWithSignature<long>("getValue", "()J"); }
+                return IExecuteWithSignature<long>("getValue", "()J");
             }
 
             #endregion

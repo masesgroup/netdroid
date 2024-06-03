@@ -112,11 +112,12 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/AlarmManager.html#getNextAlarmClock()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/AlarmManager.html#getNextAlarmClock()"/>
         /// </summary>
-        public Android.App.AlarmManager.AlarmClockInfo NextAlarmClock
+        /// <returns><see cref="Android.App.AlarmManager.AlarmClockInfo"/></returns>
+        public Android.App.AlarmManager.AlarmClockInfo GetNextAlarmClock()
         {
-            get { return IExecuteWithSignature<Android.App.AlarmManager.AlarmClockInfo>("getNextAlarmClock", "()Landroid/app/AlarmManager$AlarmClockInfo;"); }
+            return IExecuteWithSignature<Android.App.AlarmManager.AlarmClockInfo>("getNextAlarmClock", "()Landroid/app/AlarmManager$AlarmClockInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlarmManager.html#canScheduleExactAlarms()"/>
@@ -337,18 +338,12 @@ namespace Android.App
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/AlarmManager.AlarmClockInfo.html#getShowIntent()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/AlarmManager.AlarmClockInfo.html#getShowIntent()"/>
             /// </summary>
-            public Android.App.PendingIntent ShowIntent
+            /// <returns><see cref="Android.App.PendingIntent"/></returns>
+            public Android.App.PendingIntent GetShowIntent()
             {
-                get { return IExecuteWithSignature<Android.App.PendingIntent>("getShowIntent", "()Landroid/app/PendingIntent;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/AlarmManager.AlarmClockInfo.html#getTriggerTime()"/> 
-            /// </summary>
-            public long TriggerTime
-            {
-                get { return IExecuteWithSignature<long>("getTriggerTime", "()J"); }
+                return IExecuteWithSignature<Android.App.PendingIntent>("getShowIntent", "()Landroid/app/PendingIntent;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlarmManager.AlarmClockInfo.html#describeContents()"/>
@@ -357,6 +352,14 @@ namespace Android.App
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AlarmManager.AlarmClockInfo.html#getTriggerTime()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetTriggerTime()
+            {
+                return IExecuteWithSignature<long>("getTriggerTime", "()J");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlarmManager.AlarmClockInfo.html#writeToParcel(android.os.Parcel,int)"/>
@@ -403,7 +406,7 @@ namespace Android.App
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onAlarm", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnAlarmEventHandler));
+                AddEventHandler("onAlarm", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnAlarmEventHandler));
 
             }
 
@@ -411,7 +414,7 @@ namespace Android.App
             /// Handler for <see href="https://developer.android.com/reference/android/app/AlarmManager.OnAlarmListener.html#onAlarm()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAlarm"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnAlarm { get; set; } = null;
+            public global::System.Action OnOnAlarm { get; set; } = null;
 
             void OnAlarmEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {

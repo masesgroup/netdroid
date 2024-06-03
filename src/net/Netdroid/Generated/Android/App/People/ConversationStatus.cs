@@ -130,53 +130,12 @@ namespace Android.App.People
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/people/ConversationStatus.html#getActivity()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/people/ConversationStatus.html#getIcon()"/>
         /// </summary>
-        public int Activity
+        /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
+        public Android.Graphics.Drawable.Icon GetIcon()
         {
-            get { return IExecuteWithSignature<int>("getActivity", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/people/ConversationStatus.html#getAvailability()"/> 
-        /// </summary>
-        public int Availability
-        {
-            get { return IExecuteWithSignature<int>("getAvailability", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/people/ConversationStatus.html#getDescription()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Description
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getDescription", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/people/ConversationStatus.html#getEndTimeMillis()"/> 
-        /// </summary>
-        public long EndTimeMillis
-        {
-            get { return IExecuteWithSignature<long>("getEndTimeMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/people/ConversationStatus.html#getIcon()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Icon Icon
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/people/ConversationStatus.html#getId()"/> 
-        /// </summary>
-        public Java.Lang.String Id
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/people/ConversationStatus.html#getStartTimeMillis()"/> 
-        /// </summary>
-        public long StartTimeMillis
-        {
-            get { return IExecuteWithSignature<long>("getStartTimeMillis", "()J"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/people/ConversationStatus.html#describeContents()"/>
@@ -185,6 +144,54 @@ namespace Android.App.People
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/people/ConversationStatus.html#getActivity()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetActivity()
+        {
+            return IExecuteWithSignature<int>("getActivity", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/people/ConversationStatus.html#getAvailability()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAvailability()
+        {
+            return IExecuteWithSignature<int>("getAvailability", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/people/ConversationStatus.html#getDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/people/ConversationStatus.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/people/ConversationStatus.html#getEndTimeMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetEndTimeMillis()
+        {
+            return IExecuteWithSignature<long>("getEndTimeMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/people/ConversationStatus.html#getStartTimeMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetStartTimeMillis()
+        {
+            return IExecuteWithSignature<long>("getStartTimeMillis", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/people/ConversationStatus.html#writeToParcel(android.os.Parcel,int)"/>

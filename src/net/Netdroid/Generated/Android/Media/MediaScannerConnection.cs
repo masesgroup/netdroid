@@ -138,11 +138,102 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
+            /// Handlers initializer for <see cref="MediaScannerConnectionClient"/>
+            /// </summary>
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("onMediaScannerConnected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnMediaScannerConnectedEventHandler));
+                AddEventHandler("onScanCompleted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnScanCompletedEventHandler));
+
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/media/MediaScannerConnection.MediaScannerConnectionClient.html#onMediaScannerConnected()"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnMediaScannerConnected"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action OnOnMediaScannerConnected { get; set; } = null;
+
+            void OnMediaScannerConnectedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+            {
+                var methodToExecute = (OnOnMediaScannerConnected != null) ? OnOnMediaScannerConnected : OnMediaScannerConnected;
+                methodToExecute.Invoke();
+            }
+
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaScannerConnection.MediaScannerConnectionClient.html#onMediaScannerConnected()"/>
             /// </summary>
-            public void OnMediaScannerConnected()
+            public virtual void OnMediaScannerConnected()
+            {
+                
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/media/MediaScannerConnection.OnScanCompletedListener.html#onScanCompleted(java.lang.String,android.net.Uri)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnScanCompleted"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action<Java.Lang.String, Android.Net.Uri> OnOnScanCompleted { get; set; } = null;
+
+            void OnScanCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
+            {
+                var methodToExecute = (OnOnScanCompleted != null) ? OnOnScanCompleted : OnScanCompleted;
+                methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Android.Net.Uri>(0));
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaScannerConnection.OnScanCompletedListener.html#onScanCompleted(java.lang.String,android.net.Uri)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
+            public virtual void OnScanCompleted(Java.Lang.String arg0, Android.Net.Uri arg1)
+            {
+                
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region MediaScannerConnectionClientDirect
+        public partial class MediaScannerConnectionClientDirect
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaScannerConnection.MediaScannerConnectionClient.html#onMediaScannerConnected()"/>
+            /// </summary>
+            public override void OnMediaScannerConnected()
             {
                 IExecuteWithSignature("onMediaScannerConnected", "()V");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaScannerConnection.OnScanCompletedListener.html#onScanCompleted(java.lang.String,android.net.Uri)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
+            public override void OnScanCompleted(Java.Lang.String arg0, Android.Net.Uri arg1)
+            {
+                IExecute("onScanCompleted", arg0, arg1);
             }
 
             #endregion
@@ -180,7 +271,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onScanCompleted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnScanCompletedEventHandler));
+                AddEventHandler("onScanCompleted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnScanCompletedEventHandler));
 
             }
 
@@ -188,7 +279,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaScannerConnection.OnScanCompletedListener.html#onScanCompleted(java.lang.String,android.net.Uri)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScanCompleted"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Lang.String, Android.Net.Uri> OnOnScanCompleted { get; set; } = null;
+            public global::System.Action<Java.Lang.String, Android.Net.Uri> OnOnScanCompleted { get; set; } = null;
 
             void OnScanCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
             {

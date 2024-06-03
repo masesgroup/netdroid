@@ -46,41 +46,6 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/BidiRun.html#getDirection()"/> 
-        /// </summary>
-        public byte Direction
-        {
-            get { return IExecuteWithSignature<byte>("getDirection", "()B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/BidiRun.html#getEmbeddingLevel()"/> 
-        /// </summary>
-        public byte EmbeddingLevel
-        {
-            get { return IExecuteWithSignature<byte>("getEmbeddingLevel", "()B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/BidiRun.html#getLength()"/> 
-        /// </summary>
-        public int Length
-        {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/BidiRun.html#getLimit()"/> 
-        /// </summary>
-        public int Limit
-        {
-            get { return IExecuteWithSignature<int>("getLimit", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/BidiRun.html#getStart()"/> 
-        /// </summary>
-        public int Start
-        {
-            get { return IExecuteWithSignature<int>("getStart", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/BidiRun.html#isEvenRun()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -95,6 +60,46 @@ namespace Android.Icu.Text
         public bool IsOddRun()
         {
             return IExecuteWithSignature<bool>("isOddRun", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/BidiRun.html#getDirection()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte GetDirection()
+        {
+            return IExecuteWithSignature<byte>("getDirection", "()B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/BidiRun.html#getEmbeddingLevel()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte GetEmbeddingLevel()
+        {
+            return IExecuteWithSignature<byte>("getEmbeddingLevel", "()B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/BidiRun.html#getLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLength()
+        {
+            return IExecuteWithSignature<int>("getLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/BidiRun.html#getLimit()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLimit()
+        {
+            return IExecuteWithSignature<int>("getLimit", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/BidiRun.html#getStart()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStart()
+        {
+            return IExecuteWithSignature<int>("getStart", "()I");
         }
 
         #endregion

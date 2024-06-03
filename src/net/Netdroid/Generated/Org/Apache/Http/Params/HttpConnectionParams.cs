@@ -46,7 +46,7 @@ namespace Org.Apache.Http.Params
         /// </summary>
         /// <param name="arg0"><see cref="Org.Apache.Http.Params.HttpParams"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool GetTcpNoDelay(Org.Apache.Http.Params.HttpParams arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "getTcpNoDelay", "(Lorg/apache/http/params/HttpParams;)Z", arg0);
@@ -56,7 +56,7 @@ namespace Org.Apache.Http.Params
         /// </summary>
         /// <param name="arg0"><see cref="Org.Apache.Http.Params.HttpParams"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool IsStaleCheckingEnabled(Org.Apache.Http.Params.HttpParams arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isStaleCheckingEnabled", "(Lorg/apache/http/params/HttpParams;)Z", arg0);
@@ -66,7 +66,7 @@ namespace Org.Apache.Http.Params
         /// </summary>
         /// <param name="arg0"><see cref="Org.Apache.Http.Params.HttpParams"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int GetConnectionTimeout(Org.Apache.Http.Params.HttpParams arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getConnectionTimeout", "(Lorg/apache/http/params/HttpParams;)I", arg0);
@@ -76,7 +76,7 @@ namespace Org.Apache.Http.Params
         /// </summary>
         /// <param name="arg0"><see cref="Org.Apache.Http.Params.HttpParams"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int GetLinger(Org.Apache.Http.Params.HttpParams arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getLinger", "(Lorg/apache/http/params/HttpParams;)I", arg0);
@@ -86,7 +86,7 @@ namespace Org.Apache.Http.Params
         /// </summary>
         /// <param name="arg0"><see cref="Org.Apache.Http.Params.HttpParams"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int GetSocketBufferSize(Org.Apache.Http.Params.HttpParams arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getSocketBufferSize", "(Lorg/apache/http/params/HttpParams;)I", arg0);
@@ -96,7 +96,7 @@ namespace Org.Apache.Http.Params
         /// </summary>
         /// <param name="arg0"><see cref="Org.Apache.Http.Params.HttpParams"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int GetSoTimeout(Org.Apache.Http.Params.HttpParams arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getSoTimeout", "(Lorg/apache/http/params/HttpParams;)I", arg0);
@@ -106,7 +106,7 @@ namespace Org.Apache.Http.Params
         /// </summary>
         /// <param name="arg0"><see cref="Org.Apache.Http.Params.HttpParams"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void SetConnectionTimeout(Org.Apache.Http.Params.HttpParams arg0, int arg1)
         {
             SExecute(LocalBridgeClazz, "setConnectionTimeout", arg0, arg1);
@@ -116,7 +116,7 @@ namespace Org.Apache.Http.Params
         /// </summary>
         /// <param name="arg0"><see cref="Org.Apache.Http.Params.HttpParams"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void SetLinger(Org.Apache.Http.Params.HttpParams arg0, int arg1)
         {
             SExecute(LocalBridgeClazz, "setLinger", arg0, arg1);
@@ -126,7 +126,7 @@ namespace Org.Apache.Http.Params
         /// </summary>
         /// <param name="arg0"><see cref="Org.Apache.Http.Params.HttpParams"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void SetSocketBufferSize(Org.Apache.Http.Params.HttpParams arg0, int arg1)
         {
             SExecute(LocalBridgeClazz, "setSocketBufferSize", arg0, arg1);
@@ -136,7 +136,7 @@ namespace Org.Apache.Http.Params
         /// </summary>
         /// <param name="arg0"><see cref="Org.Apache.Http.Params.HttpParams"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void SetSoTimeout(Org.Apache.Http.Params.HttpParams arg0, int arg1)
         {
             SExecute(LocalBridgeClazz, "setSoTimeout", arg0, arg1);
@@ -146,7 +146,7 @@ namespace Org.Apache.Http.Params
         /// </summary>
         /// <param name="arg0"><see cref="Org.Apache.Http.Params.HttpParams"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void SetStaleCheckingEnabled(Org.Apache.Http.Params.HttpParams arg0, bool arg1)
         {
             SExecute(LocalBridgeClazz, "setStaleCheckingEnabled", arg0, arg1);
@@ -156,7 +156,7 @@ namespace Org.Apache.Http.Params
         /// </summary>
         /// <param name="arg0"><see cref="Org.Apache.Http.Params.HttpParams"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void SetTcpNoDelay(Org.Apache.Http.Params.HttpParams arg0, bool arg1)
         {
             SExecute(LocalBridgeClazz, "setTcpNoDelay", arg0, arg1);

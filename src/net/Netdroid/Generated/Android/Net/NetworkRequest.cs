@@ -52,25 +52,12 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/NetworkRequest.html#getCapabilities()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/NetworkRequest.html#getNetworkSpecifier()"/>
         /// </summary>
-        public int[] Capabilities
+        /// <returns><see cref="Android.Net.NetworkSpecifier"/></returns>
+        public Android.Net.NetworkSpecifier GetNetworkSpecifier()
         {
-            get { return IExecuteWithSignatureArray<int>("getCapabilities", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/NetworkRequest.html#getNetworkSpecifier()"/> 
-        /// </summary>
-        public Android.Net.NetworkSpecifier NetworkSpecifier
-        {
-            get { return IExecuteWithSignature<Android.Net.NetworkSpecifier>("getNetworkSpecifier", "()Landroid/net/NetworkSpecifier;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/NetworkRequest.html#getTransportTypes()"/> 
-        /// </summary>
-        public int[] TransportTypes
-        {
-            get { return IExecuteWithSignatureArray<int>("getTransportTypes", "()[I"); }
+            return IExecuteWithSignature<Android.Net.NetworkSpecifier>("getNetworkSpecifier", "()Landroid/net/NetworkSpecifier;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/NetworkRequest.html#canBeSatisfiedBy(android.net.NetworkCapabilities)"/>
@@ -106,6 +93,22 @@ namespace Android.Net
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/NetworkRequest.html#getCapabilities()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetCapabilities()
+        {
+            return IExecuteWithSignatureArray<int>("getCapabilities", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/NetworkRequest.html#getTransportTypes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetTransportTypes()
+        {
+            return IExecuteWithSignatureArray<int>("getTransportTypes", "()[I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/NetworkRequest.html#writeToParcel(android.os.Parcel,int)"/>
@@ -223,7 +226,7 @@ namespace Android.Net
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Android.Net.NetworkRequest.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Net.NetworkRequest.Builder SetNetworkSpecifier(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.Net.NetworkRequest.Builder>("setNetworkSpecifier", "(Ljava/lang/String;)Landroid/net/NetworkRequest$Builder;", arg0);

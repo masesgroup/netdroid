@@ -28,9 +28,9 @@ namespace Org.Xml.Sax.Helpers
 {
     #region AttributeListImpl
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/AttributeListImpl.html"/>
+    /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributeListImpl.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class AttributeListImpl : Org.Xml.Sax.AttributeList
     {
         const string _bridgeClassName = "org.xml.sax.helpers.AttributeListImpl";
@@ -73,7 +73,7 @@ namespace Org.Xml.Sax.Helpers
 
     #region AttributesImpl
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/AttributesImpl.html"/>
+    /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributesImpl.html"/>
     /// </summary>
     public partial class AttributesImpl : Org.Xml.Sax.Attributes
     {
@@ -117,7 +117,7 @@ namespace Org.Xml.Sax.Helpers
 
     #region DefaultHandler
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/DefaultHandler.html"/>
+    /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/DefaultHandler.html"/>
     /// </summary>
     public partial class DefaultHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DefaultHandler>
     {
@@ -161,7 +161,7 @@ namespace Org.Xml.Sax.Helpers
 
     #region LocatorImpl
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/LocatorImpl.html"/>
+    /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/LocatorImpl.html"/>
     /// </summary>
     public partial class LocatorImpl : Org.Xml.Sax.Locator
     {
@@ -205,7 +205,7 @@ namespace Org.Xml.Sax.Helpers
 
     #region NamespaceSupport
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/NamespaceSupport.html"/>
+    /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/NamespaceSupport.html"/>
     /// </summary>
     public partial class NamespaceSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NamespaceSupport>
     {
@@ -249,7 +249,7 @@ namespace Org.Xml.Sax.Helpers
 
     #region ParserAdapter
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html"/>
+    /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html"/>
     /// </summary>
     public partial class ParserAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -258,10 +258,13 @@ namespace Org.Xml.Sax.Helpers
         /// </summary>
         public ParserAdapter() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.org.xml.sax.helpers.ParserAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.org.xml.sax.helpers.ParserAdapter";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -283,10 +286,13 @@ namespace Org.Xml.Sax.Helpers
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "org.xml.sax.helpers.ParserAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.xml.sax.helpers.ParserAdapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -308,9 +314,9 @@ namespace Org.Xml.Sax.Helpers
 
     #region ParserFactory
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserFactory.html"/>
+    /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserFactory.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ParserFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ParserFactory>
     {
         const string _bridgeClassName = "org.xml.sax.helpers.ParserFactory";
@@ -353,7 +359,7 @@ namespace Org.Xml.Sax.Helpers
 
     #region XMLFilterImpl
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html"/>
+    /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html"/>
     /// </summary>
     public partial class XMLFilterImpl : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XMLFilterImpl>
     {
@@ -397,40 +403,26 @@ namespace Org.Xml.Sax.Helpers
 
     #region XMLReaderAdapter
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html"/>
+    /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLReaderAdapter.html"/>
     /// </summary>
-    public partial class XMLReaderAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class XMLReaderAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XMLReaderAdapter>
     {
+        const string _bridgeClassName = "org.xml.sax.helpers.XMLReaderAdapter";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public XMLReaderAdapter() { InitializeHandlers(); }
-
-    #warning Remember to build the Java class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region XMLReaderAdapterDirect
-    /// <summary>
-    /// Direct override of <see cref="XMLReaderAdapter"/> or its generic type if there is one
-    /// </summary>
-    public partial class XMLReaderAdapterDirect : XMLReaderAdapter
-    {
+        public XMLReaderAdapter() { }
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public override bool AutoInit => false;
+        public XMLReaderAdapter(params object[] args) : base(args) { }
 
-        /// <inheritdoc />
-        protected override void InitializeHandlers() { }
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.xml.sax.helpers.XMLReaderAdapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -447,14 +439,17 @@ namespace Org.Xml.Sax.Helpers
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
     }
     #endregion
 
     #region XMLReaderFactory
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLReaderFactory.html"/>
+    /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLReaderFactory.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class XMLReaderFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XMLReaderFactory>
     {
         const string _bridgeClassName = "org.xml.sax.helpers.XMLReaderFactory";

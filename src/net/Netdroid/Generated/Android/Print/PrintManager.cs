@@ -46,13 +46,6 @@ namespace Android.Print
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintManager.html#getPrintJobs()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Print.PrintJob> PrintJobs
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Print.PrintJob>>("getPrintJobs", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrintManager.html#print(java.lang.String,android.print.PrintDocumentAdapter,android.print.PrintAttributes)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -71,6 +64,14 @@ namespace Android.Print
         public bool IsPrintServiceEnabled(Android.Content.ComponentName arg0)
         {
             return IExecuteWithSignature<bool>("isPrintServiceEnabled", "(Landroid/content/ComponentName;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PrintManager.html#getPrintJobs()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Print.PrintJob> GetPrintJobs()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Print.PrintJob>>("getPrintJobs", "()Ljava/util/List;");
         }
 
         #endregion

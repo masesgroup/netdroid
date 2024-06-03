@@ -55,18 +55,20 @@ namespace Android.Icu.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Measure.html#getNumber()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/util/Measure.html#getUnit()"/>
         /// </summary>
-        public Java.Lang.Number Number
+        /// <returns><see cref="Android.Icu.Util.MeasureUnit"/></returns>
+        public Android.Icu.Util.MeasureUnit GetUnit()
         {
-            get { return IExecuteWithSignature<Java.Lang.Number>("getNumber", "()Ljava/lang/Number;"); }
+            return IExecuteWithSignature<Android.Icu.Util.MeasureUnit>("getUnit", "()Landroid/icu/util/MeasureUnit;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Measure.html#getUnit()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/util/Measure.html#getNumber()"/>
         /// </summary>
-        public Android.Icu.Util.MeasureUnit Unit
+        /// <returns><see cref="Java.Lang.Number"/></returns>
+        public Java.Lang.Number GetNumber()
         {
-            get { return IExecuteWithSignature<Android.Icu.Util.MeasureUnit>("getUnit", "()Landroid/icu/util/MeasureUnit;"); }
+            return IExecuteWithSignature<Java.Lang.Number>("getNumber", "()Ljava/lang/Number;");
         }
 
         #endregion

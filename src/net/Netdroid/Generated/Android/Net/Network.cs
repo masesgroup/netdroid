@@ -61,20 +61,6 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Network.html#getNetworkHandle()"/> 
-        /// </summary>
-        public long NetworkHandle
-        {
-            get { return IExecuteWithSignature<long>("getNetworkHandle", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Network.html#getSocketFactory()"/> 
-        /// </summary>
-        public Javax.Net.SocketFactory SocketFactory
-        {
-            get { return IExecuteWithSignature<Javax.Net.SocketFactory>("getSocketFactory", "()Ljavax/net/SocketFactory;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/Network.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -122,6 +108,22 @@ namespace Android.Net
         public Java.Net.URLConnection OpenConnection(Java.Net.URL arg0)
         {
             return IExecuteWithSignature<Java.Net.URLConnection>("openConnection", "(Ljava/net/URL;)Ljava/net/URLConnection;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Network.html#getSocketFactory()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Net.SocketFactory"/></returns>
+        public Javax.Net.SocketFactory GetSocketFactory()
+        {
+            return IExecuteWithSignature<Javax.Net.SocketFactory>("getSocketFactory", "()Ljavax/net/SocketFactory;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Network.html#getNetworkHandle()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetNetworkHandle()
+        {
+            return IExecuteWithSignature<long>("getNetworkHandle", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/Network.html#bindSocket(java.io.FileDescriptor)"/>

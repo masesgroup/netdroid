@@ -60,11 +60,12 @@ namespace Android.Credentials
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/credentials/GetCredentialResponse.html#getCredential()"/> 
+        /// <see href="https://developer.android.com/reference/android/credentials/GetCredentialResponse.html#getCredential()"/>
         /// </summary>
-        public Android.Credentials.Credential Credential
+        /// <returns><see cref="Android.Credentials.Credential"/></returns>
+        public Android.Credentials.Credential GetCredential()
         {
-            get { return IExecuteWithSignature<Android.Credentials.Credential>("getCredential", "()Landroid/credentials/Credential;"); }
+            return IExecuteWithSignature<Android.Credentials.Credential>("getCredential", "()Landroid/credentials/Credential;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/credentials/GetCredentialResponse.html#describeContents()"/>

@@ -46,32 +46,36 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodPressureRecord.html#getDiastolic()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodPressureRecord.html#getDiastolic()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Pressure Diastolic
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Pressure"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Pressure GetDiastolic()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Pressure>("getDiastolic", "()Landroid/health/connect/datatypes/units/Pressure;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Pressure>("getDiastolic", "()Landroid/health/connect/datatypes/units/Pressure;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodPressureRecord.html#getBodyPosition()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodPressureRecord.html#getSystolic()"/>
         /// </summary>
-        public int GetBodyPosition
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Pressure"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Pressure GetSystolic()
         {
-            get { return IExecuteWithSignature<int>("getBodyPosition", "()I"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Pressure>("getSystolic", "()Landroid/health/connect/datatypes/units/Pressure;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodPressureRecord.html#getMeasurementLocation()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodPressureRecord.html#getBodyPosition()"/>
         /// </summary>
-        public int MeasurementLocation
+        /// <returns><see cref="int"/></returns>
+        public int GetBodyPosition()
         {
-            get { return IExecuteWithSignature<int>("getMeasurementLocation", "()I"); }
+            return IExecuteWithSignature<int>("getBodyPosition", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodPressureRecord.html#getSystolic()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodPressureRecord.html#getMeasurementLocation()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Pressure Systolic
+        /// <returns><see cref="int"/></returns>
+        public int GetMeasurementLocation()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Pressure>("getSystolic", "()Landroid/health/connect/datatypes/units/Pressure;"); }
+            return IExecuteWithSignature<int>("getMeasurementLocation", "()I");
         }
 
         #endregion

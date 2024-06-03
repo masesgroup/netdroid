@@ -64,11 +64,12 @@ namespace Android.Text.Style
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/AlignmentSpan.html#getAlignment()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/style/AlignmentSpan.html#getAlignment()"/>
         /// </summary>
-        public Android.Text.Layout.Alignment Alignment
+        /// <returns><see cref="Android.Text.Layout.Alignment"/></returns>
+        public Android.Text.Layout.Alignment GetAlignment()
         {
-            get { return IExecuteWithSignature<Android.Text.Layout.Alignment>("getAlignment", "()Landroid/text/Layout$Alignment;"); }
+            return IExecuteWithSignature<Android.Text.Layout.Alignment>("getAlignment", "()Landroid/text/Layout$Alignment;");
         }
 
         #endregion
@@ -119,18 +120,12 @@ namespace Android.Text.Style
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/text/style/AlignmentSpan.Standard.html#getAlignment()"/> 
+            /// <see href="https://developer.android.com/reference/android/text/style/AlignmentSpan.Standard.html#getAlignment()"/>
             /// </summary>
-            public Android.Text.Layout.Alignment Alignment
+            /// <returns><see cref="Android.Text.Layout.Alignment"/></returns>
+            public Android.Text.Layout.Alignment GetAlignment()
             {
-                get { return IExecuteWithSignature<Android.Text.Layout.Alignment>("getAlignment", "()Landroid/text/Layout$Alignment;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/text/style/AlignmentSpan.Standard.html#getSpanTypeId()"/> 
-            /// </summary>
-            public int SpanTypeId
-            {
-                get { return IExecuteWithSignature<int>("getSpanTypeId", "()I"); }
+                return IExecuteWithSignature<Android.Text.Layout.Alignment>("getAlignment", "()Landroid/text/Layout$Alignment;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/AlignmentSpan.Standard.html#describeContents()"/>
@@ -139,6 +134,14 @@ namespace Android.Text.Style
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/style/AlignmentSpan.Standard.html#getSpanTypeId()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetSpanTypeId()
+            {
+                return IExecuteWithSignature<int>("getSpanTypeId", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/AlignmentSpan.Standard.html#writeToParcel(android.os.Parcel,int)"/>

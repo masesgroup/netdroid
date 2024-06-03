@@ -58,56 +58,56 @@ namespace Org.Apache.Http.Params
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/CoreConnectionPNames.html#CONNECTION_TIMEOUT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String CONNECTION_TIMEOUT { get { if (!_CONNECTION_TIMEOUTReady) { _CONNECTION_TIMEOUTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CONNECTION_TIMEOUT"); _CONNECTION_TIMEOUTReady = true; } return _CONNECTION_TIMEOUTContent; } }
         private static Java.Lang.String _CONNECTION_TIMEOUTContent = default;
         private static bool _CONNECTION_TIMEOUTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/CoreConnectionPNames.html#MAX_HEADER_COUNT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String MAX_HEADER_COUNT { get { if (!_MAX_HEADER_COUNTReady) { _MAX_HEADER_COUNTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MAX_HEADER_COUNT"); _MAX_HEADER_COUNTReady = true; } return _MAX_HEADER_COUNTContent; } }
         private static Java.Lang.String _MAX_HEADER_COUNTContent = default;
         private static bool _MAX_HEADER_COUNTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/CoreConnectionPNames.html#MAX_LINE_LENGTH"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String MAX_LINE_LENGTH { get { if (!_MAX_LINE_LENGTHReady) { _MAX_LINE_LENGTHContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MAX_LINE_LENGTH"); _MAX_LINE_LENGTHReady = true; } return _MAX_LINE_LENGTHContent; } }
         private static Java.Lang.String _MAX_LINE_LENGTHContent = default;
         private static bool _MAX_LINE_LENGTHReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/CoreConnectionPNames.html#SO_LINGER"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String SO_LINGER { get { if (!_SO_LINGERReady) { _SO_LINGERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SO_LINGER"); _SO_LINGERReady = true; } return _SO_LINGERContent; } }
         private static Java.Lang.String _SO_LINGERContent = default;
         private static bool _SO_LINGERReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/CoreConnectionPNames.html#SO_TIMEOUT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String SO_TIMEOUT { get { if (!_SO_TIMEOUTReady) { _SO_TIMEOUTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SO_TIMEOUT"); _SO_TIMEOUTReady = true; } return _SO_TIMEOUTContent; } }
         private static Java.Lang.String _SO_TIMEOUTContent = default;
         private static bool _SO_TIMEOUTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/CoreConnectionPNames.html#SOCKET_BUFFER_SIZE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String SOCKET_BUFFER_SIZE { get { if (!_SOCKET_BUFFER_SIZEReady) { _SOCKET_BUFFER_SIZEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SOCKET_BUFFER_SIZE"); _SOCKET_BUFFER_SIZEReady = true; } return _SOCKET_BUFFER_SIZEContent; } }
         private static Java.Lang.String _SOCKET_BUFFER_SIZEContent = default;
         private static bool _SOCKET_BUFFER_SIZEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/CoreConnectionPNames.html#STALE_CONNECTION_CHECK"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String STALE_CONNECTION_CHECK { get { if (!_STALE_CONNECTION_CHECKReady) { _STALE_CONNECTION_CHECKContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "STALE_CONNECTION_CHECK"); _STALE_CONNECTION_CHECKReady = true; } return _STALE_CONNECTION_CHECKContent; } }
         private static Java.Lang.String _STALE_CONNECTION_CHECKContent = default;
         private static bool _STALE_CONNECTION_CHECKReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/CoreConnectionPNames.html#TCP_NODELAY"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String TCP_NODELAY { get { if (!_TCP_NODELAYReady) { _TCP_NODELAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TCP_NODELAY"); _TCP_NODELAYReady = true; } return _TCP_NODELAYContent; } }
         private static Java.Lang.String _TCP_NODELAYContent = default;
         private static bool _TCP_NODELAYReady = false; // this is used because in case of generics 

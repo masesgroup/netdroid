@@ -56,18 +56,12 @@ namespace Android.Net.Wifi.Aware
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareNetworkSpecifier.html#getChannelFrequencyMhz()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareNetworkSpecifier.html#getWifiAwareDataPathSecurityConfig()"/>
         /// </summary>
-        public int ChannelFrequencyMhz
+        /// <returns><see cref="Android.Net.Wifi.Aware.WifiAwareDataPathSecurityConfig"/></returns>
+        public Android.Net.Wifi.Aware.WifiAwareDataPathSecurityConfig GetWifiAwareDataPathSecurityConfig()
         {
-            get { return IExecuteWithSignature<int>("getChannelFrequencyMhz", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareNetworkSpecifier.html#getWifiAwareDataPathSecurityConfig()"/> 
-        /// </summary>
-        public Android.Net.Wifi.Aware.WifiAwareDataPathSecurityConfig WifiAwareDataPathSecurityConfig
-        {
-            get { return IExecuteWithSignature<Android.Net.Wifi.Aware.WifiAwareDataPathSecurityConfig>("getWifiAwareDataPathSecurityConfig", "()Landroid/net/wifi/aware/WifiAwareDataPathSecurityConfig;"); }
+            return IExecuteWithSignature<Android.Net.Wifi.Aware.WifiAwareDataPathSecurityConfig>("getWifiAwareDataPathSecurityConfig", "()Landroid/net/wifi/aware/WifiAwareDataPathSecurityConfig;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareNetworkSpecifier.html#canBeSatisfiedBy(android.net.NetworkSpecifier)"/>
@@ -93,6 +87,14 @@ namespace Android.Net.Wifi.Aware
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareNetworkSpecifier.html#getChannelFrequencyMhz()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChannelFrequencyMhz()
+        {
+            return IExecuteWithSignature<int>("getChannelFrequencyMhz", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareNetworkSpecifier.html#writeToParcel(android.os.Parcel,int)"/>

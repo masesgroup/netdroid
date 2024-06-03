@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/IntSummaryStatistics.html#%3Cinit%3E(long,int,int,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/IntSummaryStatistics.html#%3Cinit%3E(long,int,int,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -62,42 +62,47 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/IntSummaryStatistics.html#getAverage()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/IntSummaryStatistics.html#getAverage()"/>
         /// </summary>
-        public double Average
+        /// <returns><see cref="double"/></returns>
+        public double GetAverage()
         {
-            get { return IExecuteWithSignature<double>("getAverage", "()D"); }
+            return IExecuteWithSignature<double>("getAverage", "()D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/IntSummaryStatistics.html#getCount()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/IntSummaryStatistics.html#getMax()"/>
         /// </summary>
-        public long Count
+        /// <returns><see cref="int"/></returns>
+        public int GetMax()
         {
-            get { return IExecuteWithSignature<long>("getCount", "()J"); }
+            return IExecuteWithSignature<int>("getMax", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/IntSummaryStatistics.html#getMax()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/IntSummaryStatistics.html#getMin()"/>
         /// </summary>
-        public int Max
+        /// <returns><see cref="int"/></returns>
+        public int GetMin()
         {
-            get { return IExecuteWithSignature<int>("getMax", "()I"); }
+            return IExecuteWithSignature<int>("getMin", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/IntSummaryStatistics.html#getMin()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/IntSummaryStatistics.html#getCount()"/>
         /// </summary>
-        public int Min
+        /// <returns><see cref="long"/></returns>
+        public long GetCount()
         {
-            get { return IExecuteWithSignature<int>("getMin", "()I"); }
+            return IExecuteWithSignature<long>("getCount", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/IntSummaryStatistics.html#getSum()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/IntSummaryStatistics.html#getSum()"/>
         /// </summary>
-        public long Sum
+        /// <returns><see cref="long"/></returns>
+        public long GetSum()
         {
-            get { return IExecuteWithSignature<long>("getSum", "()J"); }
+            return IExecuteWithSignature<long>("getSum", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/IntSummaryStatistics.html#accept(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/IntSummaryStatistics.html#accept(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void Accept(int arg0)
@@ -105,7 +110,7 @@ namespace Java.Util
             IExecuteWithSignature("accept", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/IntSummaryStatistics.html#combine(java.util.IntSummaryStatistics)"/>
+        /// <see href="https://developer.android.com/reference/java/util/IntSummaryStatistics.html#combine(java.util.IntSummaryStatistics)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.IntSummaryStatistics"/></param>
         public void Combine(Java.Util.IntSummaryStatistics arg0)

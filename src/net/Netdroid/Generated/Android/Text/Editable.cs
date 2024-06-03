@@ -80,13 +80,6 @@ namespace Android.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Editable.html#getFilters()"/> <see href="https://developer.android.com/reference/android/text/Editable.html#setFilters(android.text.InputFilter[])"/>
-        /// </summary>
-        public Android.Text.InputFilter[] Filters
-        {
-            get { return IExecuteWithSignatureArray<Android.Text.InputFilter>("getFilters", "()[Landroid/text/InputFilter;"); } set { IExecuteWithSignature("setFilters", "([Landroid/text/InputFilter;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Editable.html#delete(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -143,6 +136,14 @@ namespace Android.Text
             return IExecute<Android.Text.Editable>("replace", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Editable.html#getFilters()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.InputFilter"/></returns>
+        public Android.Text.InputFilter[] GetFilters()
+        {
+            return IExecuteWithSignatureArray<Android.Text.InputFilter>("getFilters", "()[Landroid/text/InputFilter;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Editable.html#clear()"/>
         /// </summary>
         public void Clear()
@@ -155,6 +156,14 @@ namespace Android.Text
         public void ClearSpans()
         {
             IExecuteWithSignature("clearSpans", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Editable.html#setFilters(android.text.InputFilter[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Text.InputFilter"/></param>
+        public void SetFilters(Android.Text.InputFilter[] arg0)
+        {
+            IExecuteWithSignature("setFilters", "([Landroid/text/InputFilter;)V", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Editable.html#append(char)"/>
@@ -209,11 +218,12 @@ namespace Android.Text
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/text/Editable.Factory.html#getInstance()"/> 
+            /// <see href="https://developer.android.com/reference/android/text/Editable.Factory.html#getInstance()"/>
             /// </summary>
-            public static Android.Text.Editable.Factory Instance
+            /// <returns><see cref="Android.Text.Editable.Factory"/></returns>
+            public static Android.Text.Editable.Factory GetInstance()
             {
-                get { return SExecuteWithSignature<Android.Text.Editable.Factory>(LocalBridgeClazz, "getInstance", "()Landroid/text/Editable$Factory;"); }
+                return SExecuteWithSignature<Android.Text.Editable.Factory>(LocalBridgeClazz, "getInstance", "()Landroid/text/Editable$Factory;");
             }
 
             #endregion

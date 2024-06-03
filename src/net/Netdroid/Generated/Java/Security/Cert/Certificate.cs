@@ -46,28 +46,24 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/Certificate.html#getEncoded()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/Certificate.html#getEncoded()"/>
         /// </summary>
-        public byte[] Encoded
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Java.Security.Cert.CertificateEncodingException"/>
+        public byte[] GetEncoded()
         {
-            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getEncoded", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/Certificate.html#getPublicKey()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/Certificate.html#getPublicKey()"/>
         /// </summary>
-        public Java.Security.PublicKey PublicKey
+        /// <returns><see cref="Java.Security.PublicKey"/></returns>
+        public Java.Security.PublicKey GetPublicKey()
         {
-            get { return IExecuteWithSignature<Java.Security.PublicKey>("getPublicKey", "()Ljava/security/PublicKey;"); }
+            return IExecuteWithSignature<Java.Security.PublicKey>("getPublicKey", "()Ljava/security/PublicKey;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/Certificate.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.String Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/Certificate.html#verify(java.security.PublicKey,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/Certificate.html#verify(java.security.PublicKey,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -81,7 +77,7 @@ namespace Java.Security.Cert
             IExecute("verify", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/Certificate.html#verify(java.security.PublicKey)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/Certificate.html#verify(java.security.PublicKey)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
         /// <exception cref="Java.Security.Cert.CertificateException"/>
@@ -94,7 +90,15 @@ namespace Java.Security.Cert
             IExecuteWithSignature("verify", "(Ljava/security/PublicKey;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/Certificate.html#verify(java.security.PublicKey,java.security.Provider)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/Certificate.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/Certificate.html#verify(java.security.PublicKey,java.security.Provider)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
         /// <param name="arg1"><see cref="Java.Security.Provider"/></param>

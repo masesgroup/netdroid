@@ -46,88 +46,20 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getAllowedAlgorithms()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getIkeTunnelConnectionParams()"/>
         /// </summary>
-        public Java.Util.List<Java.Lang.String> AllowedAlgorithms
+        /// <returns><see cref="Android.Net.Ipsec.Ike.IkeTunnelConnectionParams"/></returns>
+        public Android.Net.Ipsec.Ike.IkeTunnelConnectionParams GetIkeTunnelConnectionParams()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getAllowedAlgorithms", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Net.Ipsec.Ike.IkeTunnelConnectionParams>("getIkeTunnelConnectionParams", "()Landroid/net/ipsec/ike/IkeTunnelConnectionParams;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getIkeTunnelConnectionParams()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getProxyInfo()"/>
         /// </summary>
-        public Android.Net.Ipsec.Ike.IkeTunnelConnectionParams IkeTunnelConnectionParams
+        /// <returns><see cref="Android.Net.ProxyInfo"/></returns>
+        public Android.Net.ProxyInfo GetProxyInfo()
         {
-            get { return IExecuteWithSignature<Android.Net.Ipsec.Ike.IkeTunnelConnectionParams>("getIkeTunnelConnectionParams", "()Landroid/net/ipsec/ike/IkeTunnelConnectionParams;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getMaxMtu()"/> 
-        /// </summary>
-        public int MaxMtu
-        {
-            get { return IExecuteWithSignature<int>("getMaxMtu", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getPassword()"/> 
-        /// </summary>
-        public Java.Lang.String Password
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPassword", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getPresharedKey()"/> 
-        /// </summary>
-        public byte[] PresharedKey
-        {
-            get { return IExecuteWithSignatureArray<byte>("getPresharedKey", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getProxyInfo()"/> 
-        /// </summary>
-        public Android.Net.ProxyInfo ProxyInfo
-        {
-            get { return IExecuteWithSignature<Android.Net.ProxyInfo>("getProxyInfo", "()Landroid/net/ProxyInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getRsaPrivateKey()"/> 
-        /// </summary>
-        public Java.Security.PrivateKey RsaPrivateKey
-        {
-            get { return IExecuteWithSignature<Java.Security.PrivateKey>("getRsaPrivateKey", "()Ljava/security/PrivateKey;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getServerAddr()"/> 
-        /// </summary>
-        public Java.Lang.String ServerAddr
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getServerAddr", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getServerRootCaCert()"/> 
-        /// </summary>
-        public Java.Security.Cert.X509Certificate ServerRootCaCert
-        {
-            get { return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getServerRootCaCert", "()Ljava/security/cert/X509Certificate;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getUserCert()"/> 
-        /// </summary>
-        public Java.Security.Cert.X509Certificate UserCert
-        {
-            get { return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getUserCert", "()Ljava/security/cert/X509Certificate;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getUserIdentity()"/> 
-        /// </summary>
-        public Java.Lang.String UserIdentity
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUserIdentity", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getUsername()"/> 
-        /// </summary>
-        public Java.Lang.String Username
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUsername", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Net.ProxyInfo>("getProxyInfo", "()Landroid/net/ProxyInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#isAutomaticIpVersionSelectionEnabled()"/>
@@ -160,6 +92,86 @@ namespace Android.Net
         public bool IsMetered()
         {
             return IExecuteWithSignature<bool>("isMetered", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getPresharedKey()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetPresharedKey()
+        {
+            return IExecuteWithSignatureArray<byte>("getPresharedKey", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getMaxMtu()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxMtu()
+        {
+            return IExecuteWithSignature<int>("getMaxMtu", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getPassword()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPassword()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPassword", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getServerAddr()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetServerAddr()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getServerAddr", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getUserIdentity()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUserIdentity()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUserIdentity", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getUsername()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUsername()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUsername", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getServerRootCaCert()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Cert.X509Certificate"/></returns>
+        public Java.Security.Cert.X509Certificate GetServerRootCaCert()
+        {
+            return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getServerRootCaCert", "()Ljava/security/cert/X509Certificate;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getUserCert()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Cert.X509Certificate"/></returns>
+        public Java.Security.Cert.X509Certificate GetUserCert()
+        {
+            return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getUserCert", "()Ljava/security/cert/X509Certificate;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getRsaPrivateKey()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.PrivateKey"/></returns>
+        public Java.Security.PrivateKey GetRsaPrivateKey()
+        {
+            return IExecuteWithSignature<Java.Security.PrivateKey>("getRsaPrivateKey", "()Ljava/security/PrivateKey;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/Ikev2VpnProfile.html#getAllowedAlgorithms()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetAllowedAlgorithms()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getAllowedAlgorithms", "()Ljava/util/List;");
         }
 
         #endregion

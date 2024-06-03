@@ -112,7 +112,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onShareTargetSelected", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.ShareActionProvider>>>(OnShareTargetSelectedEventHandler));
+                AddEventHandler("onShareTargetSelected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.ShareActionProvider>>>(OnShareTargetSelectedEventHandler));
 
             }
 
@@ -120,7 +120,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/ShareActionProvider.OnShareTargetSelectedListener.html#onShareTargetSelected(android.widget.ShareActionProvider,android.content.Intent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnShareTargetSelected"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.Widget.ShareActionProvider, Android.Content.Intent, bool> OnOnShareTargetSelected { get; set; } = null;
+            public global::System.Func<Android.Widget.ShareActionProvider, Android.Content.Intent, bool> OnOnShareTargetSelected { get; set; } = null;
 
             void OnShareTargetSelectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.ShareActionProvider>> data)
             {

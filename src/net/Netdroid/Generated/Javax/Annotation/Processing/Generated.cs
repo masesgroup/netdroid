@@ -64,7 +64,7 @@ namespace Javax.Annotation.Processing
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.compiler/javax/annotation/processing/Generated.html#comments()"/>
+        /// <see href="https://developer.android.com/reference/javax/annotation/processing/Generated.html#comments()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Comments()
@@ -72,7 +72,7 @@ namespace Javax.Annotation.Processing
             return IExecuteWithSignature<Java.Lang.String>("comments", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.compiler/javax/annotation/processing/Generated.html#date()"/>
+        /// <see href="https://developer.android.com/reference/javax/annotation/processing/Generated.html#date()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Date()
@@ -80,7 +80,7 @@ namespace Javax.Annotation.Processing
             return IExecuteWithSignature<Java.Lang.String>("date", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.compiler/javax/annotation/processing/Generated.html#value()"/>
+        /// <see href="https://developer.android.com/reference/javax/annotation/processing/Generated.html#value()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] Value()

@@ -46,46 +46,54 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/SecureCacheResponse.html#getCipherSuite()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/SecureCacheResponse.html#getCipherSuite()"/>
         /// </summary>
-        public Java.Lang.String CipherSuite
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCipherSuite()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCipherSuite", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getCipherSuite", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/SecureCacheResponse.html#getLocalCertificateChain()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/SecureCacheResponse.html#getLocalPrincipal()"/>
         /// </summary>
-        public Java.Util.List<Java.Security.Cert.Certificate> LocalCertificateChain
+        /// <returns><see cref="Java.Security.Principal"/></returns>
+        public Java.Security.Principal GetLocalPrincipal()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.Certificate>>("getLocalCertificateChain", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Security.Principal>("getLocalPrincipal", "()Ljava/security/Principal;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/SecureCacheResponse.html#getLocalPrincipal()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/SecureCacheResponse.html#getPeerPrincipal()"/>
         /// </summary>
-        public Java.Security.Principal LocalPrincipal
+        /// <returns><see cref="Java.Security.Principal"/></returns>
+        /// <exception cref="Javax.Net.Ssl.SSLPeerUnverifiedException"/>
+        public Java.Security.Principal GetPeerPrincipal()
         {
-            get { return IExecuteWithSignature<Java.Security.Principal>("getLocalPrincipal", "()Ljava/security/Principal;"); }
+            return IExecuteWithSignature<Java.Security.Principal>("getPeerPrincipal", "()Ljava/security/Principal;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/SecureCacheResponse.html#getPeerPrincipal()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/SecureCacheResponse.html#getLocalCertificateChain()"/>
         /// </summary>
-        public Java.Security.Principal PeerPrincipal
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Security.Cert.Certificate> GetLocalCertificateChain()
         {
-            get { return IExecuteWithSignature<Java.Security.Principal>("getPeerPrincipal", "()Ljava/security/Principal;"); }
+            return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.Certificate>>("getLocalCertificateChain", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/SecureCacheResponse.html#getServerCertificateChain()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/SecureCacheResponse.html#getServerCertificateChain()"/>
         /// </summary>
-        public Java.Util.List<Java.Security.Cert.Certificate> ServerCertificateChain
+        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <exception cref="Javax.Net.Ssl.SSLPeerUnverifiedException"/>
+        public Java.Util.List<Java.Security.Cert.Certificate> GetServerCertificateChain()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.Certificate>>("getServerCertificateChain", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.Certificate>>("getServerCertificateChain", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/SecureCacheResponse.html#getSSLSession()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/SecureCacheResponse.html#getSSLSession()"/>
         /// </summary>
-        public Java.Util.Optional<Javax.Net.Ssl.SSLSession> SSLSession
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional<Javax.Net.Ssl.SSLSession> GetSSLSession()
         {
-            get { return IExecuteWithSignature<Java.Util.Optional<Javax.Net.Ssl.SSLSession>>("getSSLSession", "()Ljava/util/Optional;"); }
+            return IExecuteWithSignature<Java.Util.Optional<Javax.Net.Ssl.SSLSession>>("getSSLSession", "()Ljava/util/Optional;");
         }
 
         #endregion

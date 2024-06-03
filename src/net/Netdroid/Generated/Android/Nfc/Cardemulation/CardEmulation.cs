@@ -103,27 +103,6 @@ namespace Android.Nfc.Cardemulation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getAidsForPreferredPaymentService()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> AidsForPreferredPaymentService
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getAidsForPreferredPaymentService", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getDescriptionForPreferredPaymentService()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence DescriptionForPreferredPaymentService
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getDescriptionForPreferredPaymentService", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getRouteDestinationForPreferredPaymentService()"/> 
-        /// </summary>
-        public Java.Lang.String RouteDestinationForPreferredPaymentService
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRouteDestinationForPreferredPaymentService", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#categoryAllowsForegroundPreference(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -227,6 +206,30 @@ namespace Android.Nfc.Cardemulation
         public int GetSelectionModeForCategory(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<int>("getSelectionModeForCategory", "(Ljava/lang/String;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getDescriptionForPreferredPaymentService()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetDescriptionForPreferredPaymentService()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getDescriptionForPreferredPaymentService", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getRouteDestinationForPreferredPaymentService()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetRouteDestinationForPreferredPaymentService()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getRouteDestinationForPreferredPaymentService", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getAidsForPreferredPaymentService()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetAidsForPreferredPaymentService()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getAidsForPreferredPaymentService", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getAidsForService(android.content.ComponentName,java.lang.String)"/>

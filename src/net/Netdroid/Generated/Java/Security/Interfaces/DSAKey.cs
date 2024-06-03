@@ -64,11 +64,12 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/DSAKey.html#getParams()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/DSAKey.html#getParams()"/>
         /// </summary>
-        public Java.Security.Interfaces.DSAParams Params
+        /// <returns><see cref="Java.Security.Interfaces.DSAParams"/></returns>
+        public Java.Security.Interfaces.DSAParams GetParams()
         {
-            get { return IExecute<Java.Security.Interfaces.DSAParams>("getParams"); }
+            return IExecute<Java.Security.Interfaces.DSAParams>("getParams");
         }
 
         #endregion

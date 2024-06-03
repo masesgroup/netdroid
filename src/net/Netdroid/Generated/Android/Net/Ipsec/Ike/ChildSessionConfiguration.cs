@@ -46,18 +46,20 @@ namespace Android.Net.Ipsec.Ike
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionConfiguration.html#getInboundTrafficSelectors()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionConfiguration.html#getInboundTrafficSelectors()"/>
         /// </summary>
-        public Java.Util.List<Android.Net.Ipsec.Ike.IkeTrafficSelector> InboundTrafficSelectors
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Ipsec.Ike.IkeTrafficSelector> GetInboundTrafficSelectors()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Ipsec.Ike.IkeTrafficSelector>>("getInboundTrafficSelectors", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Ipsec.Ike.IkeTrafficSelector>>("getInboundTrafficSelectors", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionConfiguration.html#getOutboundTrafficSelectors()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionConfiguration.html#getOutboundTrafficSelectors()"/>
         /// </summary>
-        public Java.Util.List<Android.Net.Ipsec.Ike.IkeTrafficSelector> OutboundTrafficSelectors
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Ipsec.Ike.IkeTrafficSelector> GetOutboundTrafficSelectors()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Ipsec.Ike.IkeTrafficSelector>>("getOutboundTrafficSelectors", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Ipsec.Ike.IkeTrafficSelector>>("getOutboundTrafficSelectors", "()Ljava/util/List;");
         }
 
         #endregion

@@ -52,25 +52,28 @@ namespace Android.Widget.Inline
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/inline/InlinePresentationSpec.html#getMaxSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/inline/InlinePresentationSpec.html#getStyle()"/>
         /// </summary>
-        public Android.Util.Size MaxSize
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetStyle()
         {
-            get { return IExecuteWithSignature<Android.Util.Size>("getMaxSize", "()Landroid/util/Size;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getStyle", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/inline/InlinePresentationSpec.html#getMinSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/inline/InlinePresentationSpec.html#getMaxSize()"/>
         /// </summary>
-        public Android.Util.Size MinSize
+        /// <returns><see cref="Android.Util.Size"/></returns>
+        public Android.Util.Size GetMaxSize()
         {
-            get { return IExecuteWithSignature<Android.Util.Size>("getMinSize", "()Landroid/util/Size;"); }
+            return IExecuteWithSignature<Android.Util.Size>("getMaxSize", "()Landroid/util/Size;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/inline/InlinePresentationSpec.html#getStyle()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/inline/InlinePresentationSpec.html#getMinSize()"/>
         /// </summary>
-        public Android.Os.Bundle Style
+        /// <returns><see cref="Android.Util.Size"/></returns>
+        public Android.Util.Size GetMinSize()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getStyle", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Android.Util.Size>("getMinSize", "()Landroid/util/Size;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/inline/InlinePresentationSpec.html#describeContents()"/>

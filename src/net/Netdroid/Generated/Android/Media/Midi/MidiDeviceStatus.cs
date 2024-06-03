@@ -52,11 +52,12 @@ namespace Android.Media.Midi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceStatus.html#getDeviceInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceStatus.html#getDeviceInfo()"/>
         /// </summary>
-        public Android.Media.Midi.MidiDeviceInfo DeviceInfo
+        /// <returns><see cref="Android.Media.Midi.MidiDeviceInfo"/></returns>
+        public Android.Media.Midi.MidiDeviceInfo GetDeviceInfo()
         {
-            get { return IExecuteWithSignature<Android.Media.Midi.MidiDeviceInfo>("getDeviceInfo", "()Landroid/media/midi/MidiDeviceInfo;"); }
+            return IExecuteWithSignature<Android.Media.Midi.MidiDeviceInfo>("getDeviceInfo", "()Landroid/media/midi/MidiDeviceInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceStatus.html#isInputPortOpen(int)"/>

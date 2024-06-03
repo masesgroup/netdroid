@@ -30,7 +30,7 @@ namespace Javax.Net.Ssl
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HandshakeCompletedEvent.html#%3Cinit%3E(javax.net.ssl.SSLSocket,javax.net.ssl.SSLSession)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HandshakeCompletedEvent.html#%3Cinit%3E(javax.net.ssl.SSLSocket,javax.net.ssl.SSLSession)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSocket"/></param>
         /// <param name="arg1"><see cref="Javax.Net.Ssl.SSLSession"/></param>
@@ -55,61 +55,72 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getCipherSuite()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HandshakeCompletedEvent.html#getCipherSuite()"/>
         /// </summary>
-        public Java.Lang.String CipherSuite
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCipherSuite()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCipherSuite", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getCipherSuite", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getLocalCertificates()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HandshakeCompletedEvent.html#getLocalCertificates()"/>
         /// </summary>
-        public Java.Security.Cert.Certificate[] LocalCertificates
+        /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
+        public Java.Security.Cert.Certificate[] GetLocalCertificates()
         {
-            get { return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getLocalCertificates", "()[Ljava/security/cert/Certificate;"); }
+            return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getLocalCertificates", "()[Ljava/security/cert/Certificate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getLocalPrincipal()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HandshakeCompletedEvent.html#getPeerCertificates()"/>
         /// </summary>
-        public Java.Security.Principal LocalPrincipal
+        /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
+        /// <exception cref="Javax.Net.Ssl.SSLPeerUnverifiedException"/>
+        public Java.Security.Cert.Certificate[] GetPeerCertificates()
         {
-            get { return IExecuteWithSignature<Java.Security.Principal>("getLocalPrincipal", "()Ljava/security/Principal;"); }
+            return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getPeerCertificates", "()[Ljava/security/cert/Certificate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getPeerCertificateChain()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HandshakeCompletedEvent.html#getLocalPrincipal()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Javax.Security.Cert.X509Certificate[] PeerCertificateChain
+        /// <returns><see cref="Java.Security.Principal"/></returns>
+        public Java.Security.Principal GetLocalPrincipal()
         {
-            get { return IExecuteWithSignatureArray<Javax.Security.Cert.X509Certificate>("getPeerCertificateChain", "()[Ljavax/security/cert/X509Certificate;"); }
+            return IExecuteWithSignature<Java.Security.Principal>("getLocalPrincipal", "()Ljava/security/Principal;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getPeerCertificates()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HandshakeCompletedEvent.html#getPeerPrincipal()"/>
         /// </summary>
-        public Java.Security.Cert.Certificate[] PeerCertificates
+        /// <returns><see cref="Java.Security.Principal"/></returns>
+        /// <exception cref="Javax.Net.Ssl.SSLPeerUnverifiedException"/>
+        public Java.Security.Principal GetPeerPrincipal()
         {
-            get { return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getPeerCertificates", "()[Ljava/security/cert/Certificate;"); }
+            return IExecuteWithSignature<Java.Security.Principal>("getPeerPrincipal", "()Ljava/security/Principal;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getPeerPrincipal()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HandshakeCompletedEvent.html#getSession()"/>
         /// </summary>
-        public Java.Security.Principal PeerPrincipal
+        /// <returns><see cref="Javax.Net.Ssl.SSLSession"/></returns>
+        public Javax.Net.Ssl.SSLSession GetSession()
         {
-            get { return IExecuteWithSignature<Java.Security.Principal>("getPeerPrincipal", "()Ljava/security/Principal;"); }
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLSession>("getSession", "()Ljavax/net/ssl/SSLSession;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getSession()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HandshakeCompletedEvent.html#getSocket()"/>
         /// </summary>
-        public Javax.Net.Ssl.SSLSession Session
+        /// <returns><see cref="Javax.Net.Ssl.SSLSocket"/></returns>
+        public Javax.Net.Ssl.SSLSocket GetSocket()
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLSession>("getSession", "()Ljavax/net/ssl/SSLSession;"); }
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLSocket>("getSocket", "()Ljavax/net/ssl/SSLSocket;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getSocket()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HandshakeCompletedEvent.html#getPeerCertificateChain()"/>
         /// </summary>
-        public Javax.Net.Ssl.SSLSocket Socket
+        /// <returns><see cref="Javax.Security.Cert.X509Certificate"/></returns>
+        /// <exception cref="Javax.Net.Ssl.SSLPeerUnverifiedException"/>
+        [global::System.Obsolete()]
+        public Javax.Security.Cert.X509Certificate[] GetPeerCertificateChain()
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLSocket>("getSocket", "()Ljavax/net/ssl/SSLSocket;"); }
+            return IExecuteWithSignatureArray<Javax.Security.Cert.X509Certificate>("getPeerCertificateChain", "()[Ljavax/security/cert/X509Certificate;");
         }
 
         #endregion

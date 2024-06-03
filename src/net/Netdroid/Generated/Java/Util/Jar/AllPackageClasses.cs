@@ -28,7 +28,7 @@ namespace Java.Util.Jar
 {
     #region Attributes
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/jar/Attributes.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/jar/Attributes.html"/>
     /// </summary>
     public partial class Attributes : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Attributes>
     {
@@ -68,7 +68,7 @@ namespace Java.Util.Jar
         // TODO: complete the class
         #region Name
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/Attributes.Name.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/Attributes.Name.html"/>
         /// </summary>
         public partial class Name : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Name>
         {
@@ -116,7 +116,7 @@ namespace Java.Util.Jar
 
     #region JarEntry
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarEntry.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/jar/JarEntry.html"/>
     /// </summary>
     public partial class JarEntry : Java.Util.Zip.ZipEntry
     {
@@ -160,7 +160,7 @@ namespace Java.Util.Jar
 
     #region JarException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarException.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/jar/JarException.html"/>
     /// </summary>
     public partial class JarException : Java.Util.Zip.ZipException
     {
@@ -177,7 +177,7 @@ namespace Java.Util.Jar
 
     #region JarFile
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarFile.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/jar/JarFile.html"/>
     /// </summary>
     public partial class JarFile : Java.Util.Zip.ZipFile
     {
@@ -221,7 +221,7 @@ namespace Java.Util.Jar
 
     #region JarInputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarInputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/jar/JarInputStream.html"/>
     /// </summary>
     public partial class JarInputStream : Java.Util.Zip.ZipInputStream
     {
@@ -265,7 +265,7 @@ namespace Java.Util.Jar
 
     #region JarOutputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarOutputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/jar/JarOutputStream.html"/>
     /// </summary>
     public partial class JarOutputStream : Java.Util.Zip.ZipOutputStream
     {
@@ -309,7 +309,7 @@ namespace Java.Util.Jar
 
     #region Manifest
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/jar/Manifest.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/jar/Manifest.html"/>
     /// </summary>
     public partial class Manifest : Java.Lang.Cloneable
     {

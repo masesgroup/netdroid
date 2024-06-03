@@ -71,39 +71,44 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/MailTo.html#getBody()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/MailTo.html#getBody()"/>
         /// </summary>
-        public Java.Lang.String Body
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetBody()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getBody", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getBody", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/MailTo.html#getCc()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/MailTo.html#getCc()"/>
         /// </summary>
-        public Java.Lang.String Cc
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCc()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCc", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getCc", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/MailTo.html#getHeaders()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/MailTo.html#getSubject()"/>
         /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Lang.String> Headers
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSubject()
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getHeaders", "()Ljava/util/Map;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getSubject", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/MailTo.html#getSubject()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/MailTo.html#getTo()"/>
         /// </summary>
-        public Java.Lang.String Subject
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTo()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSubject", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getTo", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/MailTo.html#getTo()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/MailTo.html#getHeaders()"/>
         /// </summary>
-        public Java.Lang.String To
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Lang.String> GetHeaders()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTo", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getHeaders", "()Ljava/util/Map;");
         }
 
         #endregion

@@ -46,32 +46,12 @@ namespace Android.Health.Connect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingFilters.html#getDataOrigins()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingFilters.html#getTimeRangeFilter()"/>
         /// </summary>
-        public Java.Util.Set DataOrigins
+        /// <returns><see cref="Android.Health.Connect.TimeRangeFilter"/></returns>
+        public Android.Health.Connect.TimeRangeFilter GetTimeRangeFilter()
         {
-            get { return IExecuteWithSignature<Java.Util.Set>("getDataOrigins", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingFilters.html#getPageSize()"/> 
-        /// </summary>
-        public int PageSize
-        {
-            get { return IExecuteWithSignature<int>("getPageSize", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingFilters.html#getPageToken()"/> 
-        /// </summary>
-        public long PageToken
-        {
-            get { return IExecuteWithSignature<long>("getPageToken", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingFilters.html#getTimeRangeFilter()"/> 
-        /// </summary>
-        public Android.Health.Connect.TimeRangeFilter TimeRangeFilter
-        {
-            get { return IExecuteWithSignature<Android.Health.Connect.TimeRangeFilter>("getTimeRangeFilter", "()Landroid/health/connect/TimeRangeFilter;"); }
+            return IExecuteWithSignature<Android.Health.Connect.TimeRangeFilter>("getTimeRangeFilter", "()Landroid/health/connect/TimeRangeFilter;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingFilters.html#isAscending()"/>
@@ -80,6 +60,30 @@ namespace Android.Health.Connect
         public bool IsAscending()
         {
             return IExecuteWithSignature<bool>("isAscending", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingFilters.html#getPageSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPageSize()
+        {
+            return IExecuteWithSignature<int>("getPageSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingFilters.html#getDataOrigins()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set GetDataOrigins()
+        {
+            return IExecuteWithSignature<Java.Util.Set>("getDataOrigins", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingFilters.html#getPageToken()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetPageToken()
+        {
+            return IExecuteWithSignature<long>("getPageToken", "()J");
         }
 
         #endregion
@@ -305,32 +309,12 @@ namespace Android.Health.Connect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingFilters.html#getDataOrigins()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingFilters.html#getTimeRangeFilter()"/>
         /// </summary>
-        public Java.Util.Set<Android.Health.Connect.Datatypes.DataOrigin> DataOrigins
+        /// <returns><see cref="Android.Health.Connect.TimeRangeFilter"/></returns>
+        public Android.Health.Connect.TimeRangeFilter GetTimeRangeFilter()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Android.Health.Connect.Datatypes.DataOrigin>>("getDataOrigins", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingFilters.html#getPageSize()"/> 
-        /// </summary>
-        public int PageSize
-        {
-            get { return IExecuteWithSignature<int>("getPageSize", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingFilters.html#getPageToken()"/> 
-        /// </summary>
-        public long PageToken
-        {
-            get { return IExecuteWithSignature<long>("getPageToken", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingFilters.html#getTimeRangeFilter()"/> 
-        /// </summary>
-        public Android.Health.Connect.TimeRangeFilter TimeRangeFilter
-        {
-            get { return IExecuteWithSignature<Android.Health.Connect.TimeRangeFilter>("getTimeRangeFilter", "()Landroid/health/connect/TimeRangeFilter;"); }
+            return IExecuteWithSignature<Android.Health.Connect.TimeRangeFilter>("getTimeRangeFilter", "()Landroid/health/connect/TimeRangeFilter;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingFilters.html#isAscending()"/>
@@ -339,6 +323,30 @@ namespace Android.Health.Connect
         public bool IsAscending()
         {
             return IExecuteWithSignature<bool>("isAscending", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingFilters.html#getPageSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPageSize()
+        {
+            return IExecuteWithSignature<int>("getPageSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingFilters.html#getDataOrigins()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Android.Health.Connect.Datatypes.DataOrigin> GetDataOrigins()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Android.Health.Connect.Datatypes.DataOrigin>>("getDataOrigins", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingFilters.html#getPageToken()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetPageToken()
+        {
+            return IExecuteWithSignature<long>("getPageToken", "()J");
         }
 
         #endregion

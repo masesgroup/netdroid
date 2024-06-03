@@ -131,20 +131,6 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ClipData.html#getDescription()"/> 
-        /// </summary>
-        public Android.Content.ClipDescription Description
-        {
-            get { return IExecuteWithSignature<Android.Content.ClipDescription>("getDescription", "()Landroid/content/ClipDescription;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ClipData.html#getItemCount()"/> 
-        /// </summary>
-        public int ItemCount
-        {
-            get { return IExecuteWithSignature<int>("getItemCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ClipData.html#getItemAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -154,12 +140,28 @@ namespace Android.Content
             return IExecuteWithSignature<Android.Content.ClipData.Item>("getItemAt", "(I)Landroid/content/ClipData$Item;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ClipData.html#getDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.ClipDescription"/></returns>
+        public Android.Content.ClipDescription GetDescription()
+        {
+            return IExecuteWithSignature<Android.Content.ClipDescription>("getDescription", "()Landroid/content/ClipDescription;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ClipData.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ClipData.html#getItemCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetItemCount()
+        {
+            return IExecuteWithSignature<int>("getItemCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ClipData.html#addItem(android.content.ClipData.Item)"/>
@@ -266,39 +268,28 @@ namespace Android.Content
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.html#getHtmlText()"/> 
+            /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.html#getIntent()"/>
             /// </summary>
-            public Java.Lang.String HtmlText
+            /// <returns><see cref="Android.Content.Intent"/></returns>
+            public Android.Content.Intent GetIntent()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getHtmlText", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Android.Content.Intent>("getIntent", "()Landroid/content/Intent;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.html#getIntent()"/> 
+            /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.html#getUri()"/>
             /// </summary>
-            public Android.Content.Intent Intent
+            /// <returns><see cref="Android.Net.Uri"/></returns>
+            public Android.Net.Uri GetUri()
             {
-                get { return IExecuteWithSignature<Android.Content.Intent>("getIntent", "()Landroid/content/Intent;"); }
+                return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.html#getText()"/> 
+            /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.html#getTextLinks()"/>
             /// </summary>
-            public Java.Lang.CharSequence Text
+            /// <returns><see cref="Android.View.Textclassifier.TextLinks"/></returns>
+            public Android.View.Textclassifier.TextLinks GetTextLinks()
             {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.html#getTextLinks()"/> 
-            /// </summary>
-            public Android.View.Textclassifier.TextLinks TextLinks
-            {
-                get { return IExecute<Android.View.Textclassifier.TextLinks>("getTextLinks"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.html#getUri()"/> 
-            /// </summary>
-            public Android.Net.Uri Uri
-            {
-                get { return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;"); }
+                return IExecute<Android.View.Textclassifier.TextLinks>("getTextLinks");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.html#coerceToStyledText(android.content.Context)"/>
@@ -319,6 +310,14 @@ namespace Android.Content
                 return IExecuteWithSignature<Java.Lang.CharSequence>("coerceToText", "(Landroid/content/Context;)Ljava/lang/CharSequence;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.html#getText()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetText()
+            {
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.html#coerceToHtmlText(android.content.Context)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -326,6 +325,14 @@ namespace Android.Content
             public Java.Lang.String CoerceToHtmlText(Android.Content.Context arg0)
             {
                 return IExecuteWithSignature<Java.Lang.String>("coerceToHtmlText", "(Landroid/content/Context;)Ljava/lang/String;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.html#getHtmlText()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetHtmlText()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getHtmlText", "()Ljava/lang/String;");
             }
 
             #endregion

@@ -46,20 +46,21 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SNIMatcher.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SNIMatcher.html#matches(javax.net.ssl.SNIServerName)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SNIMatcher.html#matches(javax.net.ssl.SNIServerName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Net.Ssl.SNIServerName"/></param>
         /// <returns><see cref="bool"/></returns>
         public bool Matches(Javax.Net.Ssl.SNIServerName arg0)
         {
             return IExecuteWithSignature<bool>("matches", "(Ljavax/net/ssl/SNIServerName;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SNIMatcher.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
         }
 
         #endregion

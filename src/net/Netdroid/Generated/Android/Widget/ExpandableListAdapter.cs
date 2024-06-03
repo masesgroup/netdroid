@@ -68,24 +68,24 @@ namespace Android.Widget
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("getChildView", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetChildViewEventHandler));
-            AddEventHandler("getGroupView", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetGroupViewEventHandler));
-            AddEventHandler("areAllItemsEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(AreAllItemsEnabledEventHandler));
-            AddEventHandler("hasStableIds", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(HasStableIdsEventHandler));
-            AddEventHandler("isChildSelectable", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(IsChildSelectableEventHandler));
-            AddEventHandler("isEmpty", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsEmptyEventHandler));
-            AddEventHandler("getChildrenCount", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetChildrenCountEventHandler));
-            AddEventHandler("getGroupCount", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetGroupCountEventHandler));
-            AddEventHandler("getChild", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetChildEventHandler));
-            AddEventHandler("getGroup", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetGroupEventHandler));
-            AddEventHandler("getChildId", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetChildIdEventHandler));
-            AddEventHandler("getCombinedChildId", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(GetCombinedChildIdEventHandler));
-            AddEventHandler("getCombinedGroupId", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(GetCombinedGroupIdEventHandler));
-            AddEventHandler("getGroupId", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetGroupIdEventHandler));
-            AddEventHandler("onGroupCollapsed", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnGroupCollapsedEventHandler));
-            AddEventHandler("onGroupExpanded", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnGroupExpandedEventHandler));
-            AddEventHandler("registerDataSetObserver", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Database.DataSetObserver>>>(RegisterDataSetObserverEventHandler));
-            AddEventHandler("unregisterDataSetObserver", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Database.DataSetObserver>>>(UnregisterDataSetObserverEventHandler));
+            AddEventHandler("getChildView", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetChildViewEventHandler));
+            AddEventHandler("getGroupView", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetGroupViewEventHandler));
+            AddEventHandler("areAllItemsEnabled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(AreAllItemsEnabledEventHandler));
+            AddEventHandler("hasStableIds", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(HasStableIdsEventHandler));
+            AddEventHandler("isChildSelectable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(IsChildSelectableEventHandler));
+            AddEventHandler("isEmpty", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsEmptyEventHandler));
+            AddEventHandler("getChildrenCount", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetChildrenCountEventHandler));
+            AddEventHandler("getGroupCount", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetGroupCountEventHandler));
+            AddEventHandler("getChild", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetChildEventHandler));
+            AddEventHandler("getGroup", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetGroupEventHandler));
+            AddEventHandler("getChildId", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetChildIdEventHandler));
+            AddEventHandler("getCombinedChildId", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(GetCombinedChildIdEventHandler));
+            AddEventHandler("getCombinedGroupId", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(GetCombinedGroupIdEventHandler));
+            AddEventHandler("getGroupId", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetGroupIdEventHandler));
+            AddEventHandler("onGroupCollapsed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnGroupCollapsedEventHandler));
+            AddEventHandler("onGroupExpanded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnGroupExpandedEventHandler));
+            AddEventHandler("registerDataSetObserver", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Database.DataSetObserver>>>(RegisterDataSetObserverEventHandler));
+            AddEventHandler("unregisterDataSetObserver", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Database.DataSetObserver>>>(UnregisterDataSetObserverEventHandler));
 
         }
 
@@ -93,7 +93,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildView(int,int,boolean,android.view.View,android.view.ViewGroup)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetChildView"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, int, bool, Android.View.View, Android.View.ViewGroup, Android.View.View> OnGetChildView { get; set; } = null;
+        public global::System.Func<int, int, bool, Android.View.View, Android.View.ViewGroup, Android.View.View> OnGetChildView { get; set; } = null;
 
         void GetChildViewEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -120,7 +120,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupView(int,boolean,android.view.View,android.view.ViewGroup)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetGroupView"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, bool, Android.View.View, Android.View.ViewGroup, Android.View.View> OnGetGroupView { get; set; } = null;
+        public global::System.Func<int, bool, Android.View.View, Android.View.ViewGroup, Android.View.View> OnGetGroupView { get; set; } = null;
 
         void GetGroupViewEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -146,7 +146,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#areAllItemsEnabled()"/>
         /// </summary>
         /// <remarks>If <see cref="OnAreAllItemsEnabled"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnAreAllItemsEnabled { get; set; } = null;
+        public global::System.Func<bool> OnAreAllItemsEnabled { get; set; } = null;
 
         void AreAllItemsEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -168,7 +168,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#hasStableIds()"/>
         /// </summary>
         /// <remarks>If <see cref="OnHasStableIds"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnHasStableIds { get; set; } = null;
+        public global::System.Func<bool> OnHasStableIds { get; set; } = null;
 
         void HasStableIdsEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -190,7 +190,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#isChildSelectable(int,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnIsChildSelectable"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, int, bool> OnIsChildSelectable { get; set; } = null;
+        public global::System.Func<int, int, bool> OnIsChildSelectable { get; set; } = null;
 
         void IsChildSelectableEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -214,7 +214,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#isEmpty()"/>
         /// </summary>
         /// <remarks>If <see cref="OnIsEmpty"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnIsEmpty { get; set; } = null;
+        public global::System.Func<bool> OnIsEmpty { get; set; } = null;
 
         void IsEmptyEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -236,7 +236,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildrenCount(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetChildrenCount"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, int> OnGetChildrenCount { get; set; } = null;
+        public global::System.Func<int, int> OnGetChildrenCount { get; set; } = null;
 
         void GetChildrenCountEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -259,7 +259,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupCount()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetGroupCount"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int> OnGetGroupCount { get; set; } = null;
+        public global::System.Func<int> OnGetGroupCount { get; set; } = null;
 
         void GetGroupCountEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -281,7 +281,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChild(int,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetChild"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, int, object> OnGetChild { get; set; } = null;
+        public global::System.Func<int, int, object> OnGetChild { get; set; } = null;
 
         void GetChildEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -305,7 +305,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroup(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetGroup"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, object> OnGetGroup { get; set; } = null;
+        public global::System.Func<int, object> OnGetGroup { get; set; } = null;
 
         void GetGroupEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -328,7 +328,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildId(int,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetChildId"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, int, long> OnGetChildId { get; set; } = null;
+        public global::System.Func<int, int, long> OnGetChildId { get; set; } = null;
 
         void GetChildIdEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -352,7 +352,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getCombinedChildId(long,long)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetCombinedChildId"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<long, long, long> OnGetCombinedChildId { get; set; } = null;
+        public global::System.Func<long, long, long> OnGetCombinedChildId { get; set; } = null;
 
         void GetCombinedChildIdEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
         {
@@ -376,7 +376,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getCombinedGroupId(long)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetCombinedGroupId"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<long, long> OnGetCombinedGroupId { get; set; } = null;
+        public global::System.Func<long, long> OnGetCombinedGroupId { get; set; } = null;
 
         void GetCombinedGroupIdEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
         {
@@ -399,7 +399,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupId(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetGroupId"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, long> OnGetGroupId { get; set; } = null;
+        public global::System.Func<int, long> OnGetGroupId { get; set; } = null;
 
         void GetGroupIdEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -422,7 +422,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#onGroupCollapsed(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnGroupCollapsed"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int> OnOnGroupCollapsed { get; set; } = null;
+        public global::System.Action<int> OnOnGroupCollapsed { get; set; } = null;
 
         void OnGroupCollapsedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -443,7 +443,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#onGroupExpanded(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnGroupExpanded"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int> OnOnGroupExpanded { get; set; } = null;
+        public global::System.Action<int> OnOnGroupExpanded { get; set; } = null;
 
         void OnGroupExpandedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -464,7 +464,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#registerDataSetObserver(android.database.DataSetObserver)"/>
         /// </summary>
         /// <remarks>If <see cref="OnRegisterDataSetObserver"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Database.DataSetObserver> OnRegisterDataSetObserver { get; set; } = null;
+        public global::System.Action<Android.Database.DataSetObserver> OnRegisterDataSetObserver { get; set; } = null;
 
         void RegisterDataSetObserverEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Database.DataSetObserver>> data)
         {
@@ -485,7 +485,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#unregisterDataSetObserver(android.database.DataSetObserver)"/>
         /// </summary>
         /// <remarks>If <see cref="OnUnregisterDataSetObserver"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Database.DataSetObserver> OnUnregisterDataSetObserver { get; set; } = null;
+        public global::System.Action<Android.Database.DataSetObserver> OnUnregisterDataSetObserver { get; set; } = null;
 
         void UnregisterDataSetObserverEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Database.DataSetObserver>> data)
         {
@@ -532,13 +532,6 @@ namespace Android.Widget
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupCount()"/> 
-        /// </summary>
-        public int GroupCount
-        {
-            get { return IExecuteWithSignature<int>("getGroupCount", "()I"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildView(int,int,boolean,android.view.View,android.view.ViewGroup)"/>
         /// </summary>
@@ -606,6 +599,14 @@ namespace Android.Widget
         public override int GetChildrenCount(int arg0)
         {
             return IExecuteWithSignature<int>("getChildrenCount", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public override int GetGroupCount()
+        {
+            return IExecuteWithSignature<int>("getGroupCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChild(int,int)"/>

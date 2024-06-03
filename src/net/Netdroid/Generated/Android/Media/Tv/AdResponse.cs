@@ -92,33 +92,36 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/AdResponse.html#getElapsedTimeMillis()"/> 
-        /// </summary>
-        public long ElapsedTimeMillis
-        {
-            get { return IExecuteWithSignature<long>("getElapsedTimeMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/AdResponse.html#getId()"/> 
-        /// </summary>
-        public int Id
-        {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/AdResponse.html#getResponseType()"/> 
-        /// </summary>
-        public int ResponseType
-        {
-            get { return IExecuteWithSignature<int>("getResponseType", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/AdResponse.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/AdResponse.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/AdResponse.html#getResponseType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetResponseType()
+        {
+            return IExecuteWithSignature<int>("getResponseType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/AdResponse.html#getElapsedTimeMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetElapsedTimeMillis()
+        {
+            return IExecuteWithSignature<long>("getElapsedTimeMillis", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/AdResponse.html#writeToParcel(android.os.Parcel,int)"/>

@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/SequenceInputStream.html#%3Cinit%3E(java.io.InputStream,java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/io/SequenceInputStream.html#%3Cinit%3E(java.io.InputStream,java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
@@ -39,7 +39,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/SequenceInputStream.html#%3Cinit%3E(java.util.Enumeration)"/>
+        /// <see href="https://developer.android.com/reference/java/io/SequenceInputStream.html#%3Cinit%3E(java.util.Enumeration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
         public SequenceInputStream(Java.Util.Enumeration arg0)

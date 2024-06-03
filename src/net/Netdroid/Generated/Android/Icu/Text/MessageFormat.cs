@@ -101,46 +101,20 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#getApostropheMode()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#getApostropheMode()"/>
         /// </summary>
-        public Android.Icu.Text.MessagePattern.ApostropheMode ApostropheMode
+        /// <returns><see cref="Android.Icu.Text.MessagePattern.ApostropheMode"/></returns>
+        public Android.Icu.Text.MessagePattern.ApostropheMode GetApostropheMode()
         {
-            get { return IExecuteWithSignature<Android.Icu.Text.MessagePattern.ApostropheMode>("getApostropheMode", "()Landroid/icu/text/MessagePattern$ApostropheMode;"); }
+            return IExecuteWithSignature<Android.Icu.Text.MessagePattern.ApostropheMode>("getApostropheMode", "()Landroid/icu/text/MessagePattern$ApostropheMode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#getArgumentNames()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#getULocale()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> ArgumentNames
+        /// <returns><see cref="Android.Icu.Util.ULocale"/></returns>
+        public Android.Icu.Util.ULocale GetULocale()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getArgumentNames", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#getFormats()"/> <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#setFormats(java.text.Format[])"/>
-        /// </summary>
-        public Java.Text.Format[] Formats
-        {
-            get { return IExecuteWithSignatureArray<Java.Text.Format>("getFormats", "()[Ljava/text/Format;"); } set { IExecuteWithSignature("setFormats", "([Ljava/text/Format;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#getFormatsByArgumentIndex()"/> <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#setFormatsByArgumentIndex(java.text.Format[])"/>
-        /// </summary>
-        public Java.Text.Format[] FormatsByArgumentIndex
-        {
-            get { return IExecuteWithSignatureArray<Java.Text.Format>("getFormatsByArgumentIndex", "()[Ljava/text/Format;"); } set { IExecuteWithSignature("setFormatsByArgumentIndex", "([Ljava/text/Format;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#getLocale()"/> 
-        /// </summary>
-        public Java.Util.Locale Locale
-        {
-            get { return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#getULocale()"/> 
-        /// </summary>
-        public Android.Icu.Util.ULocale ULocale
-        {
-            get { return IExecuteWithSignature<Android.Icu.Util.ULocale>("getULocale", "()Landroid/icu/util/ULocale;"); }
+            return IExecuteWithSignature<Android.Icu.Util.ULocale>("getULocale", "()Landroid/icu/util/ULocale;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#usesNamedArguments()"/>
@@ -210,6 +184,30 @@ namespace Android.Icu.Text
             return IExecuteWithSignature<Java.Text.Format>("getFormatByArgumentName", "(Ljava/lang/String;)Ljava/text/Format;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#getFormats()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Text.Format"/></returns>
+        public Java.Text.Format[] GetFormats()
+        {
+            return IExecuteWithSignatureArray<Java.Text.Format>("getFormats", "()[Ljava/text/Format;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#getFormatsByArgumentIndex()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Text.Format"/></returns>
+        public Java.Text.Format[] GetFormatsByArgumentIndex()
+        {
+            return IExecuteWithSignatureArray<Java.Text.Format>("getFormatsByArgumentIndex", "()[Ljava/text/Format;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#getLocale()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public Java.Util.Locale GetLocale()
+        {
+            return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#parseToMap(java.lang.String,java.text.ParsePosition)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -228,6 +226,14 @@ namespace Android.Icu.Text
         public Java.Util.Map<Java.Lang.String, object> ParseToMap(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, object>>("parseToMap", "(Ljava/lang/String;)Ljava/util/Map;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#getArgumentNames()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetArgumentNames()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getArgumentNames", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#applyPattern(java.lang.String,android.icu.text.MessagePattern.ApostropheMode)"/>
@@ -272,6 +278,22 @@ namespace Android.Icu.Text
         public void SetFormatByArgumentName(Java.Lang.String arg0, Java.Text.Format arg1)
         {
             IExecute("setFormatByArgumentName", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#setFormats(java.text.Format[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.Format"/></param>
+        public void SetFormats(Java.Text.Format[] arg0)
+        {
+            IExecuteWithSignature("setFormats", "([Ljava/text/Format;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#setFormatsByArgumentIndex(java.text.Format[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.Format"/></param>
+        public void SetFormatsByArgumentIndex(Java.Text.Format[] arg0)
+        {
+            IExecuteWithSignature("setFormatsByArgumentIndex", "([Ljava/text/Format;)V", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#setFormatsByArgumentName(java.util.Map)"/>

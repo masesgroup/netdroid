@@ -46,7 +46,7 @@ namespace Android.Database.Sqlite
         /// <param name="arg1"><see cref="Android.Database.Sqlite.SQLiteCursorDriver"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="Android.Database.Sqlite.SQLiteQuery"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public SQLiteCursor(Android.Database.Sqlite.SQLiteDatabase arg0, Android.Database.Sqlite.SQLiteCursorDriver arg1, Java.Lang.String arg2, Android.Database.Sqlite.SQLiteQuery arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -68,11 +68,12 @@ namespace Android.Database.Sqlite
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteCursor.html#getDatabase()"/> 
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteCursor.html#getDatabase()"/>
         /// </summary>
-        public Android.Database.Sqlite.SQLiteDatabase Database
+        /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase"/></returns>
+        public Android.Database.Sqlite.SQLiteDatabase GetDatabase()
         {
-            get { return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase>("getDatabase", "()Landroid/database/sqlite/SQLiteDatabase;"); }
+            return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase>("getDatabase", "()Landroid/database/sqlite/SQLiteDatabase;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteCursor.html#setFillWindowForwardOnly(boolean)"/>

@@ -98,19 +98,20 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ConfigurationInfo.html#getGlEsVersion()"/> 
-        /// </summary>
-        public Java.Lang.String GlEsVersion
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getGlEsVersion", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ConfigurationInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ConfigurationInfo.html#getGlEsVersion()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetGlEsVersion()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getGlEsVersion", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ConfigurationInfo.html#writeToParcel(android.os.Parcel,int)"/>

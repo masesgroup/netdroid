@@ -42,78 +42,122 @@ namespace Javax.Net.Ssl
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HttpsURLConnection.html#getDefaultHostnameVerifier()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HttpsURLConnection.html#setDefaultHostnameVerifier(javax.net.ssl.HostnameVerifier)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getDefaultHostnameVerifier()"/>
         /// </summary>
-        public static Javax.Net.Ssl.HostnameVerifier DefaultHostnameVerifier
+        /// <returns><see cref="Javax.Net.Ssl.HostnameVerifier"/></returns>
+        public static Javax.Net.Ssl.HostnameVerifier GetDefaultHostnameVerifier()
         {
-            get { return SExecuteWithSignature<Javax.Net.Ssl.HostnameVerifier>(LocalBridgeClazz, "getDefaultHostnameVerifier", "()Ljavax/net/ssl/HostnameVerifier;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setDefaultHostnameVerifier", "(Ljavax/net/ssl/HostnameVerifier;)V", value); }
+            return SExecuteWithSignature<Javax.Net.Ssl.HostnameVerifier>(LocalBridgeClazz, "getDefaultHostnameVerifier", "()Ljavax/net/ssl/HostnameVerifier;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HttpsURLConnection.html#getDefaultSSLSocketFactory()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HttpsURLConnection.html#setDefaultSSLSocketFactory(javax.net.ssl.SSLSocketFactory)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getDefaultSSLSocketFactory()"/>
         /// </summary>
-        public static Javax.Net.Ssl.SSLSocketFactory DefaultSSLSocketFactory
+        /// <returns><see cref="Javax.Net.Ssl.SSLSocketFactory"/></returns>
+        public static Javax.Net.Ssl.SSLSocketFactory GetDefaultSSLSocketFactory()
         {
-            get { return SExecuteWithSignature<Javax.Net.Ssl.SSLSocketFactory>(LocalBridgeClazz, "getDefaultSSLSocketFactory", "()Ljavax/net/ssl/SSLSocketFactory;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setDefaultSSLSocketFactory", "(Ljavax/net/ssl/SSLSocketFactory;)V", value); }
+            return SExecuteWithSignature<Javax.Net.Ssl.SSLSocketFactory>(LocalBridgeClazz, "getDefaultSSLSocketFactory", "()Ljavax/net/ssl/SSLSocketFactory;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#setDefaultHostnameVerifier(javax.net.ssl.HostnameVerifier)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.HostnameVerifier"/></param>
+        public static void SetDefaultHostnameVerifier(Javax.Net.Ssl.HostnameVerifier arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setDefaultHostnameVerifier", "(Ljavax/net/ssl/HostnameVerifier;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#setDefaultSSLSocketFactory(javax.net.ssl.SSLSocketFactory)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSocketFactory"/></param>
+        public static void SetDefaultSSLSocketFactory(Javax.Net.Ssl.SSLSocketFactory arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setDefaultSSLSocketFactory", "(Ljavax/net/ssl/SSLSocketFactory;)V", arg0);
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HttpsURLConnection.html#getCipherSuite()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getCipherSuite()"/>
         /// </summary>
-        public Java.Lang.String CipherSuite
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCipherSuite()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCipherSuite", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getCipherSuite", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HttpsURLConnection.html#getHostnameVerifier()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HttpsURLConnection.html#setHostnameVerifier(javax.net.ssl.HostnameVerifier)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getLocalCertificates()"/>
         /// </summary>
-        public Javax.Net.Ssl.HostnameVerifier HostnameVerifier
+        /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
+        public Java.Security.Cert.Certificate[] GetLocalCertificates()
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.HostnameVerifier>("getHostnameVerifier", "()Ljavax/net/ssl/HostnameVerifier;"); } set { IExecuteWithSignature("setHostnameVerifier", "(Ljavax/net/ssl/HostnameVerifier;)V", value); }
+            return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getLocalCertificates", "()[Ljava/security/cert/Certificate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HttpsURLConnection.html#getLocalCertificates()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getServerCertificates()"/>
         /// </summary>
-        public Java.Security.Cert.Certificate[] LocalCertificates
+        /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
+        /// <exception cref="Javax.Net.Ssl.SSLPeerUnverifiedException"/>
+        public Java.Security.Cert.Certificate[] GetServerCertificates()
         {
-            get { return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getLocalCertificates", "()[Ljava/security/cert/Certificate;"); }
+            return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getServerCertificates", "()[Ljava/security/cert/Certificate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HttpsURLConnection.html#getLocalPrincipal()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getLocalPrincipal()"/>
         /// </summary>
-        public Java.Security.Principal LocalPrincipal
+        /// <returns><see cref="Java.Security.Principal"/></returns>
+        public Java.Security.Principal GetLocalPrincipal()
         {
-            get { return IExecuteWithSignature<Java.Security.Principal>("getLocalPrincipal", "()Ljava/security/Principal;"); }
+            return IExecuteWithSignature<Java.Security.Principal>("getLocalPrincipal", "()Ljava/security/Principal;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HttpsURLConnection.html#getPeerPrincipal()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getPeerPrincipal()"/>
         /// </summary>
-        public Java.Security.Principal PeerPrincipal
+        /// <returns><see cref="Java.Security.Principal"/></returns>
+        /// <exception cref="Javax.Net.Ssl.SSLPeerUnverifiedException"/>
+        public Java.Security.Principal GetPeerPrincipal()
         {
-            get { return IExecuteWithSignature<Java.Security.Principal>("getPeerPrincipal", "()Ljava/security/Principal;"); }
+            return IExecuteWithSignature<Java.Security.Principal>("getPeerPrincipal", "()Ljava/security/Principal;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HttpsURLConnection.html#getServerCertificates()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getSSLSession()"/>
         /// </summary>
-        public Java.Security.Cert.Certificate[] ServerCertificates
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional<Javax.Net.Ssl.SSLSession> GetSSLSession()
         {
-            get { return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getServerCertificates", "()[Ljava/security/cert/Certificate;"); }
+            return IExecuteWithSignature<Java.Util.Optional<Javax.Net.Ssl.SSLSession>>("getSSLSession", "()Ljava/util/Optional;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HttpsURLConnection.html#getSSLSession()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getHostnameVerifier()"/>
         /// </summary>
-        public Java.Util.Optional<Javax.Net.Ssl.SSLSession> SSLSession
+        /// <returns><see cref="Javax.Net.Ssl.HostnameVerifier"/></returns>
+        public Javax.Net.Ssl.HostnameVerifier GetHostnameVerifier()
         {
-            get { return IExecuteWithSignature<Java.Util.Optional<Javax.Net.Ssl.SSLSession>>("getSSLSession", "()Ljava/util/Optional;"); }
+            return IExecuteWithSignature<Javax.Net.Ssl.HostnameVerifier>("getHostnameVerifier", "()Ljavax/net/ssl/HostnameVerifier;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HttpsURLConnection.html#getSSLSocketFactory()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HttpsURLConnection.html#setSSLSocketFactory(javax.net.ssl.SSLSocketFactory)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getSSLSocketFactory()"/>
         /// </summary>
-        public Javax.Net.Ssl.SSLSocketFactory SSLSocketFactory
+        /// <returns><see cref="Javax.Net.Ssl.SSLSocketFactory"/></returns>
+        public Javax.Net.Ssl.SSLSocketFactory GetSSLSocketFactory()
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLSocketFactory>("getSSLSocketFactory", "()Ljavax/net/ssl/SSLSocketFactory;"); } set { IExecuteWithSignature("setSSLSocketFactory", "(Ljavax/net/ssl/SSLSocketFactory;)V", value); }
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLSocketFactory>("getSSLSocketFactory", "()Ljavax/net/ssl/SSLSocketFactory;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#setHostnameVerifier(javax.net.ssl.HostnameVerifier)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.HostnameVerifier"/></param>
+        public void SetHostnameVerifier(Javax.Net.Ssl.HostnameVerifier arg0)
+        {
+            IExecuteWithSignature("setHostnameVerifier", "(Ljavax/net/ssl/HostnameVerifier;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#setSSLSocketFactory(javax.net.ssl.SSLSocketFactory)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSocketFactory"/></param>
+        public void SetSSLSocketFactory(Javax.Net.Ssl.SSLSocketFactory arg0)
+        {
+            IExecuteWithSignature("setSSLSocketFactory", "(Ljavax/net/ssl/SSLSocketFactory;)V", arg0);
         }
 
         #endregion

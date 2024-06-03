@@ -56,7 +56,7 @@ namespace Android.Text.Format
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String FormatIpAddress(int arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "formatIpAddress", "(I)Ljava/lang/String;", arg0);

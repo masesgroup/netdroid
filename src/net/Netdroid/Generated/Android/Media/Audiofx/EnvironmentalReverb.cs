@@ -118,81 +118,169 @@ namespace Android.Media.Audiofx
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getDecayHFRatio()"/> <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setDecayHFRatio(short)"/>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getProperties()"/>
         /// </summary>
-        public short DecayHFRatio
+        /// <returns><see cref="Android.Media.Audiofx.EnvironmentalReverb.Settings"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public Android.Media.Audiofx.EnvironmentalReverb.Settings GetProperties()
         {
-            get { return IExecuteWithSignature<short>("getDecayHFRatio", "()S"); } set { IExecuteWithSignature("setDecayHFRatio", "(S)V", value); }
+            return IExecuteWithSignature<Android.Media.Audiofx.EnvironmentalReverb.Settings>("getProperties", "()Landroid/media/audiofx/EnvironmentalReverb$Settings;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getDecayTime()"/> <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setDecayTime(int)"/>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getDecayTime()"/>
         /// </summary>
-        public int DecayTime
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public int GetDecayTime()
         {
-            get { return IExecuteWithSignature<int>("getDecayTime", "()I"); } set { IExecuteWithSignature("setDecayTime", "(I)V", value); }
+            return IExecuteWithSignature<int>("getDecayTime", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getDensity()"/> <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setDensity(short)"/>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getReflectionsDelay()"/>
         /// </summary>
-        public short Density
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public int GetReflectionsDelay()
         {
-            get { return IExecuteWithSignature<short>("getDensity", "()S"); } set { IExecuteWithSignature("setDensity", "(S)V", value); }
+            return IExecuteWithSignature<int>("getReflectionsDelay", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getDiffusion()"/> <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setDiffusion(short)"/>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getReverbDelay()"/>
         /// </summary>
-        public short Diffusion
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public int GetReverbDelay()
         {
-            get { return IExecuteWithSignature<short>("getDiffusion", "()S"); } set { IExecuteWithSignature("setDiffusion", "(S)V", value); }
+            return IExecuteWithSignature<int>("getReverbDelay", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getProperties()"/> <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setProperties(android.media.audiofx.EnvironmentalReverb.Settings)"/>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getDecayHFRatio()"/>
         /// </summary>
-        public Android.Media.Audiofx.EnvironmentalReverb.Settings Properties
+        /// <returns><see cref="short"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public short GetDecayHFRatio()
         {
-            get { return IExecuteWithSignature<Android.Media.Audiofx.EnvironmentalReverb.Settings>("getProperties", "()Landroid/media/audiofx/EnvironmentalReverb$Settings;"); } set { IExecuteWithSignature("setProperties", "(Landroid/media/audiofx/EnvironmentalReverb$Settings;)V", value); }
+            return IExecuteWithSignature<short>("getDecayHFRatio", "()S");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getReflectionsDelay()"/> <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setReflectionsDelay(int)"/>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getDensity()"/>
         /// </summary>
-        public int ReflectionsDelay
+        /// <returns><see cref="short"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public short GetDensity()
         {
-            get { return IExecuteWithSignature<int>("getReflectionsDelay", "()I"); } set { IExecuteWithSignature("setReflectionsDelay", "(I)V", value); }
+            return IExecuteWithSignature<short>("getDensity", "()S");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getReflectionsLevel()"/> <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setReflectionsLevel(short)"/>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getDiffusion()"/>
         /// </summary>
-        public short ReflectionsLevel
+        /// <returns><see cref="short"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public short GetDiffusion()
         {
-            get { return IExecuteWithSignature<short>("getReflectionsLevel", "()S"); } set { IExecuteWithSignature("setReflectionsLevel", "(S)V", value); }
+            return IExecuteWithSignature<short>("getDiffusion", "()S");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getReverbDelay()"/> <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setReverbDelay(int)"/>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getReflectionsLevel()"/>
         /// </summary>
-        public int ReverbDelay
+        /// <returns><see cref="short"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public short GetReflectionsLevel()
         {
-            get { return IExecuteWithSignature<int>("getReverbDelay", "()I"); } set { IExecuteWithSignature("setReverbDelay", "(I)V", value); }
+            return IExecuteWithSignature<short>("getReflectionsLevel", "()S");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getReverbLevel()"/> <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setReverbLevel(short)"/>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getReverbLevel()"/>
         /// </summary>
-        public short ReverbLevel
+        /// <returns><see cref="short"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public short GetReverbLevel()
         {
-            get { return IExecuteWithSignature<short>("getReverbLevel", "()S"); } set { IExecuteWithSignature("setReverbLevel", "(S)V", value); }
+            return IExecuteWithSignature<short>("getReverbLevel", "()S");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getRoomHFLevel()"/> <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setRoomHFLevel(short)"/>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getRoomHFLevel()"/>
         /// </summary>
-        public short RoomHFLevel
+        /// <returns><see cref="short"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public short GetRoomHFLevel()
         {
-            get { return IExecuteWithSignature<short>("getRoomHFLevel", "()S"); } set { IExecuteWithSignature("setRoomHFLevel", "(S)V", value); }
+            return IExecuteWithSignature<short>("getRoomHFLevel", "()S");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getRoomLevel()"/> <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setRoomLevel(short)"/>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getRoomLevel()"/>
         /// </summary>
-        public short RoomLevel
+        /// <returns><see cref="short"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public short GetRoomLevel()
         {
-            get { return IExecuteWithSignature<short>("getRoomLevel", "()S"); } set { IExecuteWithSignature("setRoomLevel", "(S)V", value); }
+            return IExecuteWithSignature<short>("getRoomLevel", "()S");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setDecayHFRatio(short)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public void SetDecayHFRatio(short arg0)
+        {
+            IExecuteWithSignature("setDecayHFRatio", "(S)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setDecayTime(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public void SetDecayTime(int arg0)
+        {
+            IExecuteWithSignature("setDecayTime", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setDensity(short)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public void SetDensity(short arg0)
+        {
+            IExecuteWithSignature("setDensity", "(S)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setDiffusion(short)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public void SetDiffusion(short arg0)
+        {
+            IExecuteWithSignature("setDiffusion", "(S)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setParameterListener(android.media.audiofx.EnvironmentalReverb.OnParameterChangeListener)"/>
@@ -201,6 +289,83 @@ namespace Android.Media.Audiofx
         public void SetParameterListener(Android.Media.Audiofx.EnvironmentalReverb.OnParameterChangeListener arg0)
         {
             IExecuteWithSignature("setParameterListener", "(Landroid/media/audiofx/EnvironmentalReverb$OnParameterChangeListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setProperties(android.media.audiofx.EnvironmentalReverb.Settings)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.Audiofx.EnvironmentalReverb.Settings"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public void SetProperties(Android.Media.Audiofx.EnvironmentalReverb.Settings arg0)
+        {
+            IExecuteWithSignature("setProperties", "(Landroid/media/audiofx/EnvironmentalReverb$Settings;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setReflectionsDelay(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public void SetReflectionsDelay(int arg0)
+        {
+            IExecuteWithSignature("setReflectionsDelay", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setReflectionsLevel(short)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public void SetReflectionsLevel(short arg0)
+        {
+            IExecuteWithSignature("setReflectionsLevel", "(S)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setReverbDelay(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public void SetReverbDelay(int arg0)
+        {
+            IExecuteWithSignature("setReverbDelay", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setReverbLevel(short)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public void SetReverbLevel(short arg0)
+        {
+            IExecuteWithSignature("setReverbLevel", "(S)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setRoomHFLevel(short)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public void SetRoomHFLevel(short arg0)
+        {
+            IExecuteWithSignature("setRoomHFLevel", "(S)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setRoomLevel(short)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public void SetRoomLevel(short arg0)
+        {
+            IExecuteWithSignature("setRoomLevel", "(S)V", arg0);
         }
 
         #endregion
@@ -231,7 +396,7 @@ namespace Android.Media.Audiofx
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onParameterChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.EnvironmentalReverb>>>(OnParameterChangeEventHandler));
+                AddEventHandler("onParameterChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.EnvironmentalReverb>>>(OnParameterChangeEventHandler));
 
             }
 
@@ -239,7 +404,7 @@ namespace Android.Media.Audiofx
             /// Handler for <see href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.OnParameterChangeListener.html#onParameterChange(android.media.audiofx.EnvironmentalReverb,int,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnParameterChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.Audiofx.EnvironmentalReverb, int, int, int> OnOnParameterChange { get; set; } = null;
+            public global::System.Action<Android.Media.Audiofx.EnvironmentalReverb, int, int, int> OnOnParameterChange { get; set; } = null;
 
             void OnParameterChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.EnvironmentalReverb>> data)
             {

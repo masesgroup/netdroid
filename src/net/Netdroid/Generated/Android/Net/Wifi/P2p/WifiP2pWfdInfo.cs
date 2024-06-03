@@ -168,48 +168,6 @@ namespace Android.Net.Wifi.P2p
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pWfdInfo.html#getControlPort()"/> <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pWfdInfo.html#setControlPort(int)"/>
-        /// </summary>
-        public int ControlPort
-        {
-            get { return IExecuteWithSignature<int>("getControlPort", "()I"); } set { IExecuteWithSignature("setControlPort", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pWfdInfo.html#getDeviceInfo()"/> 
-        /// </summary>
-        public int DeviceInfo
-        {
-            get { return IExecuteWithSignature<int>("getDeviceInfo", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pWfdInfo.html#getDeviceType()"/> 
-        /// </summary>
-        public int DeviceType
-        {
-            get { return IExecuteWithSignature<int>("getDeviceType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pWfdInfo.html#getMaxThroughput()"/> <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pWfdInfo.html#setMaxThroughput(int)"/>
-        /// </summary>
-        public int MaxThroughput
-        {
-            get { return IExecuteWithSignature<int>("getMaxThroughput", "()I"); } set { IExecuteWithSignature("setMaxThroughput", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pWfdInfo.html#getR2DeviceInfo()"/> 
-        /// </summary>
-        public int R2DeviceInfo
-        {
-            get { return IExecuteWithSignature<int>("getR2DeviceInfo", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pWfdInfo.html#getR2DeviceType()"/> 
-        /// </summary>
-        public int R2DeviceType
-        {
-            get { return IExecuteWithSignature<int>("getR2DeviceType", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pWfdInfo.html#isContentProtectionSupported()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -284,12 +242,68 @@ namespace Android.Net.Wifi.P2p
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pWfdInfo.html#getControlPort()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetControlPort()
+        {
+            return IExecuteWithSignature<int>("getControlPort", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pWfdInfo.html#getDeviceInfo()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDeviceInfo()
+        {
+            return IExecuteWithSignature<int>("getDeviceInfo", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pWfdInfo.html#getDeviceType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDeviceType()
+        {
+            return IExecuteWithSignature<int>("getDeviceType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pWfdInfo.html#getMaxThroughput()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxThroughput()
+        {
+            return IExecuteWithSignature<int>("getMaxThroughput", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pWfdInfo.html#getR2DeviceInfo()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetR2DeviceInfo()
+        {
+            return IExecuteWithSignature<int>("getR2DeviceInfo", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pWfdInfo.html#getR2DeviceType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetR2DeviceType()
+        {
+            return IExecuteWithSignature<int>("getR2DeviceType", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pWfdInfo.html#setContentProtectionSupported(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetContentProtectionSupported(bool arg0)
         {
             IExecuteWithSignature("setContentProtectionSupported", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pWfdInfo.html#setControlPort(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetControlPort(int arg0)
+        {
+            IExecuteWithSignature("setControlPort", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pWfdInfo.html#setCoupledSinkSupportAtSink(boolean)"/>
@@ -314,6 +328,14 @@ namespace Android.Net.Wifi.P2p
         public void SetEnabled(bool arg0)
         {
             IExecuteWithSignature("setEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pWfdInfo.html#setMaxThroughput(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMaxThroughput(int arg0)
+        {
+            IExecuteWithSignature("setMaxThroughput", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pWfdInfo.html#setSessionAvailable(boolean)"/>

@@ -69,19 +69,20 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/ParcelUuid.html#getUuid()"/> 
-        /// </summary>
-        public Java.Util.UUID Uuid
-        {
-            get { return IExecuteWithSignature<Java.Util.UUID>("getUuid", "()Ljava/util/UUID;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ParcelUuid.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/ParcelUuid.html#getUuid()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.UUID"/></returns>
+        public Java.Util.UUID GetUuid()
+        {
+            return IExecuteWithSignature<Java.Util.UUID>("getUuid", "()Ljava/util/UUID;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ParcelUuid.html#writeToParcel(android.os.Parcel,int)"/>

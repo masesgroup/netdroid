@@ -55,18 +55,20 @@ namespace Android.App.Appsearch
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/PackageIdentifier.html#getPackageName()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/PackageIdentifier.html#getSha256Certificate()"/>
         /// </summary>
-        public Java.Lang.String PackageName
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetSha256Certificate()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<byte>("getSha256Certificate", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/PackageIdentifier.html#getSha256Certificate()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/PackageIdentifier.html#getPackageName()"/>
         /// </summary>
-        public byte[] Sha256Certificate
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
         {
-            get { return IExecuteWithSignatureArray<byte>("getSha256Certificate", "()[B"); }
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
         }
 
         #endregion

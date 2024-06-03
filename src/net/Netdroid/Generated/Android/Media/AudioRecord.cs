@@ -148,130 +148,52 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getActiveMicrophones()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getPreferredDevice()"/>
         /// </summary>
-        public Java.Util.List<Android.Media.MicrophoneInfo> ActiveMicrophones
+        /// <returns><see cref="Android.Media.AudioDeviceInfo"/></returns>
+        public Android.Media.AudioDeviceInfo GetPreferredDevice()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.MicrophoneInfo>>("getActiveMicrophones", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getPreferredDevice", "()Landroid/media/AudioDeviceInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getActiveRecordingConfiguration()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getRoutedDevice()"/>
         /// </summary>
-        public Android.Media.AudioRecordingConfiguration ActiveRecordingConfiguration
+        /// <returns><see cref="Android.Media.AudioDeviceInfo"/></returns>
+        public Android.Media.AudioDeviceInfo GetRoutedDevice()
         {
-            get { return IExecuteWithSignature<Android.Media.AudioRecordingConfiguration>("getActiveRecordingConfiguration", "()Landroid/media/AudioRecordingConfiguration;"); }
+            return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getRoutedDevice", "()Landroid/media/AudioDeviceInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getAudioFormat()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getFormat()"/>
         /// </summary>
-        public int AudioFormat
+        /// <returns><see cref="Android.Media.AudioFormat"/></returns>
+        public Android.Media.AudioFormat GetFormat()
         {
-            get { return IExecuteWithSignature<int>("getAudioFormat", "()I"); }
+            return IExecuteWithSignature<Android.Media.AudioFormat>("getFormat", "()Landroid/media/AudioFormat;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getAudioSessionId()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getActiveRecordingConfiguration()"/>
         /// </summary>
-        public int AudioSessionId
+        /// <returns><see cref="Android.Media.AudioRecordingConfiguration"/></returns>
+        public Android.Media.AudioRecordingConfiguration GetActiveRecordingConfiguration()
         {
-            get { return IExecuteWithSignature<int>("getAudioSessionId", "()I"); }
+            return IExecuteWithSignature<Android.Media.AudioRecordingConfiguration>("getActiveRecordingConfiguration", "()Landroid/media/AudioRecordingConfiguration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getAudioSource()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getLogSessionId()"/>
         /// </summary>
-        public int AudioSource
+        /// <returns><see cref="Android.Media.Metrics.LogSessionId"/></returns>
+        public Android.Media.Metrics.LogSessionId GetLogSessionId()
         {
-            get { return IExecuteWithSignature<int>("getAudioSource", "()I"); }
+            return IExecuteWithSignature<Android.Media.Metrics.LogSessionId>("getLogSessionId", "()Landroid/media/metrics/LogSessionId;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getBufferSizeInFrames()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getMetrics()"/>
         /// </summary>
-        public int BufferSizeInFrames
+        /// <returns><see cref="Android.Os.PersistableBundle"/></returns>
+        public Android.Os.PersistableBundle GetMetrics()
         {
-            get { return IExecuteWithSignature<int>("getBufferSizeInFrames", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getChannelConfiguration()"/> 
-        /// </summary>
-        public int ChannelConfiguration
-        {
-            get { return IExecuteWithSignature<int>("getChannelConfiguration", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getChannelCount()"/> 
-        /// </summary>
-        public int ChannelCount
-        {
-            get { return IExecuteWithSignature<int>("getChannelCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getFormat()"/> 
-        /// </summary>
-        public Android.Media.AudioFormat Format
-        {
-            get { return IExecuteWithSignature<Android.Media.AudioFormat>("getFormat", "()Landroid/media/AudioFormat;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getLogSessionId()"/> <see href="https://developer.android.com/reference/android/media/AudioRecord.html#setLogSessionId(android.media.metrics.LogSessionId)"/>
-        /// </summary>
-        public Android.Media.Metrics.LogSessionId LogSessionId
-        {
-            get { return IExecuteWithSignature<Android.Media.Metrics.LogSessionId>("getLogSessionId", "()Landroid/media/metrics/LogSessionId;"); } set { IExecuteWithSignature("setLogSessionId", "(Landroid/media/metrics/LogSessionId;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getMetrics()"/> 
-        /// </summary>
-        public Android.Os.PersistableBundle Metrics
-        {
-            get { return IExecuteWithSignature<Android.Os.PersistableBundle>("getMetrics", "()Landroid/os/PersistableBundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getNotificationMarkerPosition()"/> 
-        /// </summary>
-        public int NotificationMarkerPosition
-        {
-            get { return IExecuteWithSignature<int>("getNotificationMarkerPosition", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getPositionNotificationPeriod()"/> 
-        /// </summary>
-        public int PositionNotificationPeriod
-        {
-            get { return IExecuteWithSignature<int>("getPositionNotificationPeriod", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getPreferredDevice()"/> 
-        /// </summary>
-        public Android.Media.AudioDeviceInfo PreferredDevice
-        {
-            get { return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getPreferredDevice", "()Landroid/media/AudioDeviceInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getRecordingState()"/> 
-        /// </summary>
-        public int RecordingState
-        {
-            get { return IExecuteWithSignature<int>("getRecordingState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getRoutedDevice()"/> 
-        /// </summary>
-        public Android.Media.AudioDeviceInfo RoutedDevice
-        {
-            get { return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getRoutedDevice", "()Landroid/media/AudioDeviceInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getSampleRate()"/> 
-        /// </summary>
-        public int SampleRate
-        {
-            get { return IExecuteWithSignature<int>("getSampleRate", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getState()"/> 
-        /// </summary>
-        public int State
-        {
-            get { return IExecuteWithSignature<int>("getState", "()I"); }
+            return IExecuteWithSignature<Android.Os.PersistableBundle>("getMetrics", "()Landroid/os/PersistableBundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#isPrivacySensitive()"/>
@@ -307,6 +229,94 @@ namespace Android.Media
         public bool SetPreferredMicrophoneFieldDimension(float arg0)
         {
             return IExecuteWithSignature<bool>("setPreferredMicrophoneFieldDimension", "(F)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getAudioFormat()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAudioFormat()
+        {
+            return IExecuteWithSignature<int>("getAudioFormat", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getAudioSessionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAudioSessionId()
+        {
+            return IExecuteWithSignature<int>("getAudioSessionId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getAudioSource()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAudioSource()
+        {
+            return IExecuteWithSignature<int>("getAudioSource", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getBufferSizeInFrames()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBufferSizeInFrames()
+        {
+            return IExecuteWithSignature<int>("getBufferSizeInFrames", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getChannelConfiguration()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChannelConfiguration()
+        {
+            return IExecuteWithSignature<int>("getChannelConfiguration", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getChannelCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChannelCount()
+        {
+            return IExecuteWithSignature<int>("getChannelCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getNotificationMarkerPosition()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNotificationMarkerPosition()
+        {
+            return IExecuteWithSignature<int>("getNotificationMarkerPosition", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getPositionNotificationPeriod()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPositionNotificationPeriod()
+        {
+            return IExecuteWithSignature<int>("getPositionNotificationPeriod", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getRecordingState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRecordingState()
+        {
+            return IExecuteWithSignature<int>("getRecordingState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getSampleRate()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSampleRate()
+        {
+            return IExecuteWithSignature<int>("getSampleRate", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetState()
+        {
+            return IExecuteWithSignature<int>("getState", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getTimestamp(android.media.AudioTimestamp,int)"/>
@@ -416,11 +426,20 @@ namespace Android.Media
             return IExecuteWithSignature<int>("setPositionNotificationPeriod", "(I)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getActiveMicrophones()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.List<Android.Media.MicrophoneInfo> GetActiveMicrophones()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.MicrophoneInfo>>("getActiveMicrophones", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#addOnRoutingChangedListener(android.media.AudioRecord.OnRoutingChangedListener,android.os.Handler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.AudioRecord.OnRoutingChangedListener"/></param>
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddOnRoutingChangedListener(Android.Media.AudioRecord.OnRoutingChangedListener arg0, Android.Os.Handler arg1)
         {
             IExecute("addOnRoutingChangedListener", arg0, arg1);
@@ -454,7 +473,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#removeOnRoutingChangedListener(android.media.AudioRecord.OnRoutingChangedListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.AudioRecord.OnRoutingChangedListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemoveOnRoutingChangedListener(Android.Media.AudioRecord.OnRoutingChangedListener arg0)
         {
             IExecuteWithSignature("removeOnRoutingChangedListener", "(Landroid/media/AudioRecord$OnRoutingChangedListener;)V", arg0);
@@ -466,6 +485,14 @@ namespace Android.Media
         public void RemoveOnRoutingChangedListener(Android.Media.AudioRouting.OnRoutingChangedListener arg0)
         {
             IExecuteWithSignature("removeOnRoutingChangedListener", "(Landroid/media/AudioRouting$OnRoutingChangedListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#setLogSessionId(android.media.metrics.LogSessionId)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.Metrics.LogSessionId"/></param>
+        public void SetLogSessionId(Android.Media.Metrics.LogSessionId arg0)
+        {
+            IExecuteWithSignature("setLogSessionId", "(Landroid/media/metrics/LogSessionId;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#setRecordPositionUpdateListener(android.media.AudioRecord.OnRecordPositionUpdateListener,android.os.Handler)"/>
@@ -645,7 +672,7 @@ namespace Android.Media
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioRecord.MetricsConstants.html#LATENCY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String LATENCY { get { if (!_LATENCYReady) { _LATENCYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LATENCY"); _LATENCYReady = true; } return _LATENCYContent; } }
             private static Java.Lang.String _LATENCYContent = default;
             private static bool _LATENCYReady = false; // this is used because in case of generics 
@@ -705,8 +732,8 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onMarkerReached", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioRecord>>>(OnMarkerReachedEventHandler));
-                AddEventHandler("onPeriodicNotification", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioRecord>>>(OnPeriodicNotificationEventHandler));
+                AddEventHandler("onMarkerReached", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioRecord>>>(OnMarkerReachedEventHandler));
+                AddEventHandler("onPeriodicNotification", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioRecord>>>(OnPeriodicNotificationEventHandler));
 
             }
 
@@ -714,7 +741,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioRecord.OnRecordPositionUpdateListener.html#onMarkerReached(android.media.AudioRecord)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnMarkerReached"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.AudioRecord> OnOnMarkerReached { get; set; } = null;
+            public global::System.Action<Android.Media.AudioRecord> OnOnMarkerReached { get; set; } = null;
 
             void OnMarkerReachedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.AudioRecord>> data)
             {
@@ -735,7 +762,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioRecord.OnRecordPositionUpdateListener.html#onPeriodicNotification(android.media.AudioRecord)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPeriodicNotification"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.AudioRecord> OnOnPeriodicNotification { get; set; } = null;
+            public global::System.Action<Android.Media.AudioRecord> OnOnPeriodicNotification { get; set; } = null;
 
             void OnPeriodicNotificationEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.AudioRecord>> data)
             {
@@ -834,8 +861,8 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onRoutingChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioRecord>>>(OnRoutingChangedEventHandler));
-                AddEventHandler("onRoutingChanged1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioRouting>>>(OnRoutingChanged1EventHandler));
+                AddEventHandler("onRoutingChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioRecord>>>(OnRoutingChangedEventHandler));
+                AddEventHandler("onRoutingChanged1", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioRouting>>>(OnRoutingChanged1EventHandler));
 
             }
 
@@ -843,7 +870,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioRecord.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioRecord)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnRoutingChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.AudioRecord> OnOnRoutingChanged { get; set; } = null;
+            public global::System.Action<Android.Media.AudioRecord> OnOnRoutingChanged { get; set; } = null;
 
             void OnRoutingChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.AudioRecord>> data)
             {
@@ -855,7 +882,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/AudioRecord.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioRecord)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Media.AudioRecord"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnRoutingChanged(Android.Media.AudioRecord arg0)
             {
                 
@@ -864,7 +891,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/AudioRecord.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioRouting)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Media.AudioRouting"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
             public void OnRoutingChangedDefault(Android.Media.AudioRouting arg0)
             {
@@ -875,7 +902,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioRecord.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioRouting)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnRoutingChanged1"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.AudioRouting> OnOnRoutingChanged1 { get; set; } = null;
+            public global::System.Action<Android.Media.AudioRouting> OnOnRoutingChanged1 { get; set; } = null;
 
             void OnRoutingChanged1EventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.AudioRouting>> data)
             {
@@ -887,7 +914,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/AudioRecord.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioRouting)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Media.AudioRouting"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnRoutingChangedDefault"/>; override the method to implement a different behavior</remarks>
             public virtual void OnRoutingChanged(Android.Media.AudioRouting arg0)
             {
@@ -928,7 +955,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/AudioRecord.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioRecord)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Media.AudioRecord"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnRoutingChanged(Android.Media.AudioRecord arg0)
             {
                 IExecuteWithSignature("onRoutingChanged", "(Landroid/media/AudioRecord;)V", arg0);
@@ -937,7 +964,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/AudioRecord.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioRouting)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Media.AudioRouting"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnRoutingChanged(Android.Media.AudioRouting arg0)
             {
                 IExecuteWithSignature("onRoutingChanged", "(Landroid/media/AudioRouting;)V", arg0);

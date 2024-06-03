@@ -56,25 +56,28 @@ namespace Android.Hardware.Camera2.Params
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MultiResolutionStreamInfo.html#getHeight()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MultiResolutionStreamInfo.html#getHeight()"/>
         /// </summary>
-        public int Height
+        /// <returns><see cref="int"/></returns>
+        public int GetHeight()
         {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
+            return IExecuteWithSignature<int>("getHeight", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MultiResolutionStreamInfo.html#getPhysicalCameraId()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MultiResolutionStreamInfo.html#getWidth()"/>
         /// </summary>
-        public Java.Lang.String PhysicalCameraId
+        /// <returns><see cref="int"/></returns>
+        public int GetWidth()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPhysicalCameraId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<int>("getWidth", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MultiResolutionStreamInfo.html#getWidth()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MultiResolutionStreamInfo.html#getPhysicalCameraId()"/>
         /// </summary>
-        public int Width
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPhysicalCameraId()
         {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
+            return IExecuteWithSignature<Java.Lang.String>("getPhysicalCameraId", "()Ljava/lang/String;");
         }
 
         #endregion

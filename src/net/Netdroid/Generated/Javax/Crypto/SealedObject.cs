@@ -30,7 +30,7 @@ namespace Javax.Crypto
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/SealedObject.html#%3Cinit%3E(java.io.Serializable,javax.crypto.Cipher)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/SealedObject.html#%3Cinit%3E(java.io.Serializable,javax.crypto.Cipher)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Serializable"/></param>
         /// <param name="arg1"><see cref="Javax.Crypto.Cipher"/></param>
@@ -57,14 +57,7 @@ namespace Javax.Crypto
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/SealedObject.html#getAlgorithm()"/> 
-        /// </summary>
-        public Java.Lang.String Algorithm
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/SealedObject.html#getObject(java.security.Key,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/SealedObject.html#getObject(java.security.Key,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Key"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -79,7 +72,7 @@ namespace Javax.Crypto
             return IExecute("getObject", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/SealedObject.html#getObject(java.security.Key)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/SealedObject.html#getObject(java.security.Key)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Key"/></param>
         /// <returns><see cref="object"/></returns>
@@ -92,7 +85,7 @@ namespace Javax.Crypto
             return IExecuteWithSignature("getObject", "(Ljava/security/Key;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/SealedObject.html#getObject(javax.crypto.Cipher)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/SealedObject.html#getObject(javax.crypto.Cipher)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Crypto.Cipher"/></param>
         /// <returns><see cref="object"/></returns>
@@ -103,6 +96,14 @@ namespace Javax.Crypto
         public object GetObject(Javax.Crypto.Cipher arg0)
         {
             return IExecuteWithSignature("getObject", "(Ljavax/crypto/Cipher;)Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/crypto/SealedObject.html#getAlgorithm()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAlgorithm()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;");
         }
 
         #endregion

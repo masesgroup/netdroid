@@ -147,60 +147,12 @@ namespace Android.Hardware.Camera2.Params
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#getDynamicRangeProfile()"/> <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#setDynamicRangeProfile(long)"/>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#getSurface()"/>
         /// </summary>
-        public long DynamicRangeProfile
+        /// <returns><see cref="Android.View.Surface"/></returns>
+        public Android.View.Surface GetSurface()
         {
-            get { return IExecuteWithSignature<long>("getDynamicRangeProfile", "()J"); } set { IExecuteWithSignature("setDynamicRangeProfile", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#getMaxSharedSurfaceCount()"/> 
-        /// </summary>
-        public int MaxSharedSurfaceCount
-        {
-            get { return IExecuteWithSignature<int>("getMaxSharedSurfaceCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#getMirrorMode()"/> <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#setMirrorMode(int)"/>
-        /// </summary>
-        public int MirrorMode
-        {
-            get { return IExecuteWithSignature<int>("getMirrorMode", "()I"); } set { IExecuteWithSignature("setMirrorMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#getStreamUseCase()"/> <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#setStreamUseCase(long)"/>
-        /// </summary>
-        public long StreamUseCase
-        {
-            get { return IExecuteWithSignature<long>("getStreamUseCase", "()J"); } set { IExecuteWithSignature("setStreamUseCase", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#getSurface()"/> 
-        /// </summary>
-        public Android.View.Surface Surface
-        {
-            get { return IExecuteWithSignature<Android.View.Surface>("getSurface", "()Landroid/view/Surface;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#getSurfaceGroupId()"/> 
-        /// </summary>
-        public int SurfaceGroupId
-        {
-            get { return IExecuteWithSignature<int>("getSurfaceGroupId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#getSurfaces()"/> 
-        /// </summary>
-        public Java.Util.List<Android.View.Surface> Surfaces
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.View.Surface>>("getSurfaces", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#getTimestampBase()"/> <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#setTimestampBase(int)"/>
-        /// </summary>
-        public int TimestampBase
-        {
-            get { return IExecuteWithSignature<int>("getTimestampBase", "()I"); } set { IExecuteWithSignature("setTimestampBase", "(I)V", value); }
+            return IExecuteWithSignature<Android.View.Surface>("getSurface", "()Landroid/view/Surface;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#isReadoutTimestampEnabled()"/>
@@ -217,6 +169,62 @@ namespace Android.Hardware.Camera2.Params
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#getMaxSharedSurfaceCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxSharedSurfaceCount()
+        {
+            return IExecuteWithSignature<int>("getMaxSharedSurfaceCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#getMirrorMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMirrorMode()
+        {
+            return IExecuteWithSignature<int>("getMirrorMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#getSurfaceGroupId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSurfaceGroupId()
+        {
+            return IExecuteWithSignature<int>("getSurfaceGroupId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#getTimestampBase()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTimestampBase()
+        {
+            return IExecuteWithSignature<int>("getTimestampBase", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#getSurfaces()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.View.Surface> GetSurfaces()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.View.Surface>>("getSurfaces", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#getDynamicRangeProfile()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDynamicRangeProfile()
+        {
+            return IExecuteWithSignature<long>("getDynamicRangeProfile", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#getStreamUseCase()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetStreamUseCase()
+        {
+            return IExecuteWithSignature<long>("getStreamUseCase", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#addSensorPixelModeUsed(int)"/>
@@ -258,6 +266,22 @@ namespace Android.Hardware.Camera2.Params
             IExecuteWithSignature("removeSurface", "(Landroid/view/Surface;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#setDynamicRangeProfile(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetDynamicRangeProfile(long arg0)
+        {
+            IExecuteWithSignature("setDynamicRangeProfile", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#setMirrorMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMirrorMode(int arg0)
+        {
+            IExecuteWithSignature("setMirrorMode", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#setPhysicalCameraId(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -272,6 +296,22 @@ namespace Android.Hardware.Camera2.Params
         public void SetReadoutTimestampEnabled(bool arg0)
         {
             IExecuteWithSignature("setReadoutTimestampEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#setStreamUseCase(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetStreamUseCase(long arg0)
+        {
+            IExecuteWithSignature("setStreamUseCase", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#setTimestampBase(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetTimestampBase(int arg0)
+        {
+            IExecuteWithSignature("setTimestampBase", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#writeToParcel(android.os.Parcel,int)"/>

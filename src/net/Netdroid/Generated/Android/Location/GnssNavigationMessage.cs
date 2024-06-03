@@ -160,46 +160,12 @@ namespace Android.Location
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssNavigationMessage.html#getData()"/> 
+        /// <see href="https://developer.android.com/reference/android/location/GnssNavigationMessage.html#getData()"/>
         /// </summary>
-        public byte[] Data
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetData()
         {
-            get { return IExecuteWithSignatureArray<byte>("getData", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssNavigationMessage.html#getMessageId()"/> 
-        /// </summary>
-        public int MessageId
-        {
-            get { return IExecuteWithSignature<int>("getMessageId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssNavigationMessage.html#getStatus()"/> 
-        /// </summary>
-        public int Status
-        {
-            get { return IExecuteWithSignature<int>("getStatus", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssNavigationMessage.html#getSubmessageId()"/> 
-        /// </summary>
-        public int SubmessageId
-        {
-            get { return IExecuteWithSignature<int>("getSubmessageId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssNavigationMessage.html#getSvid()"/> 
-        /// </summary>
-        public int Svid
-        {
-            get { return IExecuteWithSignature<int>("getSvid", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssNavigationMessage.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            return IExecuteWithSignatureArray<byte>("getData", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssNavigationMessage.html#describeContents()"/>
@@ -208,6 +174,46 @@ namespace Android.Location
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssNavigationMessage.html#getMessageId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMessageId()
+        {
+            return IExecuteWithSignature<int>("getMessageId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssNavigationMessage.html#getStatus()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStatus()
+        {
+            return IExecuteWithSignature<int>("getStatus", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssNavigationMessage.html#getSubmessageId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSubmessageId()
+        {
+            return IExecuteWithSignature<int>("getSubmessageId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssNavigationMessage.html#getSvid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSvid()
+        {
+            return IExecuteWithSignature<int>("getSvid", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssNavigationMessage.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssNavigationMessage.html#writeToParcel(android.os.Parcel,int)"/>
@@ -237,21 +243,21 @@ namespace Android.Location
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/location/GnssNavigationMessage.Callback.html#STATUS_LOCATION_DISABLED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int STATUS_LOCATION_DISABLED { get { if (!_STATUS_LOCATION_DISABLEDReady) { _STATUS_LOCATION_DISABLEDContent = SGetField<int>(LocalBridgeClazz, "STATUS_LOCATION_DISABLED"); _STATUS_LOCATION_DISABLEDReady = true; } return _STATUS_LOCATION_DISABLEDContent; } }
             private static int _STATUS_LOCATION_DISABLEDContent = default;
             private static bool _STATUS_LOCATION_DISABLEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/location/GnssNavigationMessage.Callback.html#STATUS_NOT_SUPPORTED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int STATUS_NOT_SUPPORTED { get { if (!_STATUS_NOT_SUPPORTEDReady) { _STATUS_NOT_SUPPORTEDContent = SGetField<int>(LocalBridgeClazz, "STATUS_NOT_SUPPORTED"); _STATUS_NOT_SUPPORTEDReady = true; } return _STATUS_NOT_SUPPORTEDContent; } }
             private static int _STATUS_NOT_SUPPORTEDContent = default;
             private static bool _STATUS_NOT_SUPPORTEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/location/GnssNavigationMessage.Callback.html#STATUS_READY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int STATUS_READY { get { if (!_STATUS_READYReady) { _STATUS_READYContent = SGetField<int>(LocalBridgeClazz, "STATUS_READY"); _STATUS_READYReady = true; } return _STATUS_READYContent; } }
             private static int _STATUS_READYContent = default;
             private static bool _STATUS_READYReady = false; // this is used because in case of generics 
@@ -275,7 +281,7 @@ namespace Android.Location
             /// <see href="https://developer.android.com/reference/android/location/GnssNavigationMessage.Callback.html#onStatusChanged(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnStatusChanged(int arg0)
             {
                 IExecuteWithSignature("onStatusChanged", "(I)V", arg0);

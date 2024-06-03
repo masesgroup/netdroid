@@ -64,18 +64,12 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioMixerAttributes.html#getFormat()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioMixerAttributes.html#getFormat()"/>
         /// </summary>
-        public Android.Media.AudioFormat Format
+        /// <returns><see cref="Android.Media.AudioFormat"/></returns>
+        public Android.Media.AudioFormat GetFormat()
         {
-            get { return IExecuteWithSignature<Android.Media.AudioFormat>("getFormat", "()Landroid/media/AudioFormat;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioMixerAttributes.html#getMixerBehavior()"/> 
-        /// </summary>
-        public int MixerBehavior
-        {
-            get { return IExecuteWithSignature<int>("getMixerBehavior", "()I"); }
+            return IExecuteWithSignature<Android.Media.AudioFormat>("getFormat", "()Landroid/media/AudioFormat;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioMixerAttributes.html#describeContents()"/>
@@ -84,6 +78,14 @@ namespace Android.Media
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioMixerAttributes.html#getMixerBehavior()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMixerBehavior()
+        {
+            return IExecuteWithSignature<int>("getMixerBehavior", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioMixerAttributes.html#writeToParcel(android.os.Parcel,int)"/>

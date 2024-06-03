@@ -61,43 +61,48 @@ namespace Android.Graphics.Drawable
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/AdaptiveIconDrawable.html#getExtraInsetFraction()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/AdaptiveIconDrawable.html#getExtraInsetFraction()"/>
         /// </summary>
-        public static float ExtraInsetFraction
+        /// <returns><see cref="float"/></returns>
+        public static float GetExtraInsetFraction()
         {
-            get { return SExecuteWithSignature<float>(LocalBridgeClazz, "getExtraInsetFraction", "()F"); }
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "getExtraInsetFraction", "()F");
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/AdaptiveIconDrawable.html#getBackground()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/AdaptiveIconDrawable.html#getBackground()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable Background
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetBackground()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getBackground", "()Landroid/graphics/drawable/Drawable;"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getBackground", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/AdaptiveIconDrawable.html#getForeground()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/AdaptiveIconDrawable.html#getForeground()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable Foreground
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetForeground()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getForeground", "()Landroid/graphics/drawable/Drawable;"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getForeground", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/AdaptiveIconDrawable.html#getIconMask()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/AdaptiveIconDrawable.html#getMonochrome()"/>
         /// </summary>
-        public Android.Graphics.Path IconMask
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetMonochrome()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Path>("getIconMask", "()Landroid/graphics/Path;"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getMonochrome", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/AdaptiveIconDrawable.html#getMonochrome()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/AdaptiveIconDrawable.html#getIconMask()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable Monochrome
+        /// <returns><see cref="Android.Graphics.Path"/></returns>
+        public Android.Graphics.Path GetIconMask()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getMonochrome", "()Landroid/graphics/drawable/Drawable;"); }
+            return IExecuteWithSignature<Android.Graphics.Path>("getIconMask", "()Landroid/graphics/Path;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/AdaptiveIconDrawable.html#invalidateDrawable(android.graphics.drawable.Drawable)"/>

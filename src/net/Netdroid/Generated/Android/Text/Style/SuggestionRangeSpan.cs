@@ -56,26 +56,36 @@ namespace Android.Text.Style
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/SuggestionRangeSpan.html#getBackgroundColor()"/> <see href="https://developer.android.com/reference/android/text/style/SuggestionRangeSpan.html#setBackgroundColor(int)"/>
-        /// </summary>
-        public int BackgroundColor
-        {
-            get { return IExecuteWithSignature<int>("getBackgroundColor", "()I"); } set { IExecuteWithSignature("setBackgroundColor", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/SuggestionRangeSpan.html#getSpanTypeId()"/> 
-        /// </summary>
-        public int SpanTypeId
-        {
-            get { return IExecuteWithSignature<int>("getSpanTypeId", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/SuggestionRangeSpan.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/SuggestionRangeSpan.html#getBackgroundColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBackgroundColor()
+        {
+            return IExecuteWithSignature<int>("getBackgroundColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/SuggestionRangeSpan.html#getSpanTypeId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSpanTypeId()
+        {
+            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/SuggestionRangeSpan.html#setBackgroundColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetBackgroundColor(int arg0)
+        {
+            IExecuteWithSignature("setBackgroundColor", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/SuggestionRangeSpan.html#writeToParcel(android.os.Parcel,int)"/>

@@ -56,61 +56,68 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthCdma.html#getCdmaDbm()"/> 
-        /// </summary>
-        public int CdmaDbm
-        {
-            get { return IExecuteWithSignature<int>("getCdmaDbm", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthCdma.html#getCdmaEcio()"/> 
-        /// </summary>
-        public int CdmaEcio
-        {
-            get { return IExecuteWithSignature<int>("getCdmaEcio", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthCdma.html#getCdmaLevel()"/> 
-        /// </summary>
-        public int CdmaLevel
-        {
-            get { return IExecuteWithSignature<int>("getCdmaLevel", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthCdma.html#getEvdoDbm()"/> 
-        /// </summary>
-        public int EvdoDbm
-        {
-            get { return IExecuteWithSignature<int>("getEvdoDbm", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthCdma.html#getEvdoEcio()"/> 
-        /// </summary>
-        public int EvdoEcio
-        {
-            get { return IExecuteWithSignature<int>("getEvdoEcio", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthCdma.html#getEvdoLevel()"/> 
-        /// </summary>
-        public int EvdoLevel
-        {
-            get { return IExecuteWithSignature<int>("getEvdoLevel", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthCdma.html#getEvdoSnr()"/> 
-        /// </summary>
-        public int EvdoSnr
-        {
-            get { return IExecuteWithSignature<int>("getEvdoSnr", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthCdma.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthCdma.html#getCdmaDbm()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCdmaDbm()
+        {
+            return IExecuteWithSignature<int>("getCdmaDbm", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthCdma.html#getCdmaEcio()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCdmaEcio()
+        {
+            return IExecuteWithSignature<int>("getCdmaEcio", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthCdma.html#getCdmaLevel()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCdmaLevel()
+        {
+            return IExecuteWithSignature<int>("getCdmaLevel", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthCdma.html#getEvdoDbm()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEvdoDbm()
+        {
+            return IExecuteWithSignature<int>("getEvdoDbm", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthCdma.html#getEvdoEcio()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEvdoEcio()
+        {
+            return IExecuteWithSignature<int>("getEvdoEcio", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthCdma.html#getEvdoLevel()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEvdoLevel()
+        {
+            return IExecuteWithSignature<int>("getEvdoLevel", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthCdma.html#getEvdoSnr()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEvdoSnr()
+        {
+            return IExecuteWithSignature<int>("getEvdoSnr", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthCdma.html#writeToParcel(android.os.Parcel,int)"/>

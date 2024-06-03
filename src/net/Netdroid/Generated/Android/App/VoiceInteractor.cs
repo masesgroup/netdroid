@@ -46,20 +46,6 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.html#getActiveRequests()"/> 
-        /// </summary>
-        public Android.App.VoiceInteractor.Request[] ActiveRequests
-        {
-            get { return IExecuteWithSignatureArray<Android.App.VoiceInteractor.Request>("getActiveRequests", "()[Landroid/app/VoiceInteractor$Request;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.html#getPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String PackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.html#getActiveRequest(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -67,6 +53,14 @@ namespace Android.App
         public Android.App.VoiceInteractor.Request GetActiveRequest(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Android.App.VoiceInteractor.Request>("getActiveRequest", "(Ljava/lang/String;)Landroid/app/VoiceInteractor$Request;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.html#getActiveRequests()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.VoiceInteractor.Request"/></returns>
+        public Android.App.VoiceInteractor.Request[] GetActiveRequests()
+        {
+            return IExecuteWithSignatureArray<Android.App.VoiceInteractor.Request>("getActiveRequests", "()[Landroid/app/VoiceInteractor$Request;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.html#isDestroyed()"/>
@@ -122,6 +116,14 @@ namespace Android.App
         public bool[] SupportsCommands(Java.Lang.String[] arg0)
         {
             return IExecuteWithSignatureArray<bool>("supportsCommands", "([Ljava/lang/String;)[Z", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.html#notifyDirectActionsChanged()"/>
@@ -408,27 +410,6 @@ namespace Android.App
 
                 #region Instance methods
                 /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.PickOptionRequest.Option.html#getExtras()"/> <see href="https://developer.android.com/reference/android/app/VoiceInteractor.PickOptionRequest.Option.html#setExtras(android.os.Bundle)"/>
-                /// </summary>
-                public Android.Os.Bundle Extras
-                {
-                    get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); } set { IExecuteWithSignature("setExtras", "(Landroid/os/Bundle;)V", value); }
-                }
-                /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.PickOptionRequest.Option.html#getIndex()"/> 
-                /// </summary>
-                public int Index
-                {
-                    get { return IExecuteWithSignature<int>("getIndex", "()I"); }
-                }
-                /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.PickOptionRequest.Option.html#getLabel()"/> 
-                /// </summary>
-                public Java.Lang.CharSequence Label
-                {
-                    get { return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;"); }
-                }
-                /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.PickOptionRequest.Option.html#addSynonym(java.lang.CharSequence)"/>
                 /// </summary>
                 /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
@@ -436,6 +417,14 @@ namespace Android.App
                 public Android.App.VoiceInteractor.PickOptionRequest.Option AddSynonym(Java.Lang.CharSequence arg0)
                 {
                     return IExecuteWithSignature<Android.App.VoiceInteractor.PickOptionRequest.Option>("addSynonym", "(Ljava/lang/CharSequence;)Landroid/app/VoiceInteractor$PickOptionRequest$Option;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.PickOptionRequest.Option.html#getExtras()"/>
+                /// </summary>
+                /// <returns><see cref="Android.Os.Bundle"/></returns>
+                public Android.Os.Bundle GetExtras()
+                {
+                    return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.PickOptionRequest.Option.html#countSynonyms()"/>
@@ -454,6 +443,22 @@ namespace Android.App
                     return IExecuteWithSignature<int>("describeContents", "()I");
                 }
                 /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.PickOptionRequest.Option.html#getIndex()"/>
+                /// </summary>
+                /// <returns><see cref="int"/></returns>
+                public int GetIndex()
+                {
+                    return IExecuteWithSignature<int>("getIndex", "()I");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.PickOptionRequest.Option.html#getLabel()"/>
+                /// </summary>
+                /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+                public Java.Lang.CharSequence GetLabel()
+                {
+                    return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;");
+                }
+                /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.PickOptionRequest.Option.html#getSynonymAt(int)"/>
                 /// </summary>
                 /// <param name="arg0"><see cref="int"/></param>
@@ -461,6 +466,14 @@ namespace Android.App
                 public Java.Lang.CharSequence GetSynonymAt(int arg0)
                 {
                     return IExecuteWithSignature<Java.Lang.CharSequence>("getSynonymAt", "(I)Ljava/lang/CharSequence;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.PickOptionRequest.Option.html#setExtras(android.os.Bundle)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
+                public void SetExtras(Android.Os.Bundle arg0)
+                {
+                    IExecuteWithSignature("setExtras", "(Landroid/os/Bundle;)V", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.PickOptionRequest.Option.html#writeToParcel(android.os.Parcel,int)"/>
@@ -533,13 +546,6 @@ namespace Android.App
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.Prompt.html#getVisualPrompt()"/> 
-            /// </summary>
-            public Java.Lang.CharSequence VisualPrompt
-            {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getVisualPrompt", "()Ljava/lang/CharSequence;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.Prompt.html#countVoicePrompts()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
@@ -554,6 +560,14 @@ namespace Android.App
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.Prompt.html#getVisualPrompt()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetVisualPrompt()
+            {
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getVisualPrompt", "()Ljava/lang/CharSequence;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.Prompt.html#getVoicePromptAt(int)"/>
@@ -605,25 +619,28 @@ namespace Android.App
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.Request.html#getActivity()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.Request.html#getActivity()"/>
             /// </summary>
-            public Android.App.Activity Activity
+            /// <returns><see cref="Android.App.Activity"/></returns>
+            public Android.App.Activity GetActivity()
             {
-                get { return IExecuteWithSignature<Android.App.Activity>("getActivity", "()Landroid/app/Activity;"); }
+                return IExecuteWithSignature<Android.App.Activity>("getActivity", "()Landroid/app/Activity;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.Request.html#getContext()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.Request.html#getContext()"/>
             /// </summary>
-            public Android.Content.Context Context
+            /// <returns><see cref="Android.Content.Context"/></returns>
+            public Android.Content.Context GetContext()
             {
-                get { return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;"); }
+                return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.Request.html#getName()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.Request.html#getName()"/>
             /// </summary>
-            public Java.Lang.String Name
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetName()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.Request.html#cancel()"/>

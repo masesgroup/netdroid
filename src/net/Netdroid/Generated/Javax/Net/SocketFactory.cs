@@ -42,18 +42,19 @@ namespace Javax.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/SocketFactory.html#getDefault()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/SocketFactory.html#getDefault()"/>
         /// </summary>
-        public static Javax.Net.SocketFactory Default
+        /// <returns><see cref="Javax.Net.SocketFactory"/></returns>
+        public static Javax.Net.SocketFactory GetDefault()
         {
-            get { return SExecuteWithSignature<Javax.Net.SocketFactory>(LocalBridgeClazz, "getDefault", "()Ljavax/net/SocketFactory;"); }
+            return SExecuteWithSignature<Javax.Net.SocketFactory>(LocalBridgeClazz, "getDefault", "()Ljavax/net/SocketFactory;");
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/SocketFactory.html#createSocket(java.lang.String,int,java.net.InetAddress,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/SocketFactory.html#createSocket(java.lang.String,int,java.net.InetAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -67,7 +68,7 @@ namespace Javax.Net
             return IExecute<Java.Net.Socket>("createSocket", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/SocketFactory.html#createSocket(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/SocketFactory.html#createSocket(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -79,7 +80,7 @@ namespace Javax.Net
             return IExecute<Java.Net.Socket>("createSocket", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/SocketFactory.html#createSocket(java.net.InetAddress,int,java.net.InetAddress,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/SocketFactory.html#createSocket(java.net.InetAddress,int,java.net.InetAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -92,7 +93,7 @@ namespace Javax.Net
             return IExecute<Java.Net.Socket>("createSocket", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/SocketFactory.html#createSocket(java.net.InetAddress,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/SocketFactory.html#createSocket(java.net.InetAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -103,7 +104,7 @@ namespace Javax.Net
             return IExecute<Java.Net.Socket>("createSocket", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/SocketFactory.html#createSocket()"/>
+        /// <see href="https://developer.android.com/reference/javax/net/SocketFactory.html#createSocket()"/>
         /// </summary>
         /// <returns><see cref="Java.Net.Socket"/></returns>
         /// <exception cref="Java.Io.IOException"/>

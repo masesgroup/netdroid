@@ -64,21 +64,22 @@ namespace Java.Util.Zip
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Checksum.html#getValue()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/zip/Checksum.html#getValue()"/>
         /// </summary>
-        public long Value
+        /// <returns><see cref="long"/></returns>
+        public long GetValue()
         {
-            get { return IExecuteWithSignature<long>("getValue", "()J"); }
+            return IExecuteWithSignature<long>("getValue", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Checksum.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Checksum.html#reset()"/>
         /// </summary>
         public void Reset()
         {
             IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Checksum.html#update(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Checksum.html#update(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -88,7 +89,7 @@ namespace Java.Util.Zip
             IExecute("update", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Checksum.html#update(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Checksum.html#update(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void Update(int arg0)
@@ -96,7 +97,7 @@ namespace Java.Util.Zip
             IExecuteWithSignature("update", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Checksum.html#update(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Checksum.html#update(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public void Update(byte[] arg0)
@@ -104,7 +105,7 @@ namespace Java.Util.Zip
             IExecuteWithSignature("update", "([B)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Checksum.html#update(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Checksum.html#update(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         public void Update(Java.Nio.ByteBuffer arg0)

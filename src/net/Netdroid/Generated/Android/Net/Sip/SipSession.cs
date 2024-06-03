@@ -46,60 +46,65 @@ namespace Android.Net.Sip
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.html#getCallId()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.html#getLocalProfile()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String CallId
+        /// <returns><see cref="Android.Net.Sip.SipProfile"/></returns>
+        [global::System.Obsolete()]
+        public Android.Net.Sip.SipProfile GetLocalProfile()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCallId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Net.Sip.SipProfile>("getLocalProfile", "()Landroid/net/sip/SipProfile;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.html#getState()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.html#getPeerProfile()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int GetState
+        /// <returns><see cref="Android.Net.Sip.SipProfile"/></returns>
+        [global::System.Obsolete()]
+        public Android.Net.Sip.SipProfile GetPeerProfile()
         {
-            get { return IExecuteWithSignature<int>("getState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.html#getLocalIp()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String LocalIp
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLocalIp", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.html#getLocalProfile()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Net.Sip.SipProfile LocalProfile
-        {
-            get { return IExecuteWithSignature<Android.Net.Sip.SipProfile>("getLocalProfile", "()Landroid/net/sip/SipProfile;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.html#getPeerProfile()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Net.Sip.SipProfile PeerProfile
-        {
-            get { return IExecuteWithSignature<Android.Net.Sip.SipProfile>("getPeerProfile", "()Landroid/net/sip/SipProfile;"); }
+            return IExecuteWithSignature<Android.Net.Sip.SipProfile>("getPeerProfile", "()Landroid/net/sip/SipProfile;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.html#isInCall()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsInCall()
         {
             return IExecuteWithSignature<bool>("isInCall", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.html#getState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetState()
+        {
+            return IExecuteWithSignature<int>("getState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.html#getCallId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetCallId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCallId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.html#getLocalIp()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetLocalIp()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getLocalIp", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.html#answerCall(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AnswerCall(Java.Lang.String arg0, int arg1)
         {
             IExecute("answerCall", arg0, arg1);
@@ -109,7 +114,7 @@ namespace Android.Net.Sip
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ChangeCall(Java.Lang.String arg0, int arg1)
         {
             IExecute("changeCall", arg0, arg1);
@@ -117,7 +122,7 @@ namespace Android.Net.Sip
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.html#endCall()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void EndCall()
         {
             IExecuteWithSignature("endCall", "()V");
@@ -128,7 +133,7 @@ namespace Android.Net.Sip
         /// <param name="arg0"><see cref="Android.Net.Sip.SipProfile"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void MakeCall(Android.Net.Sip.SipProfile arg0, Java.Lang.String arg1, int arg2)
         {
             IExecute("makeCall", arg0, arg1, arg2);
@@ -137,7 +142,7 @@ namespace Android.Net.Sip
         /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.html#register(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Register(int arg0)
         {
             IExecuteWithSignature("register", "(I)V", arg0);
@@ -146,7 +151,7 @@ namespace Android.Net.Sip
         /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.html#setListener(android.net.sip.SipSession.Listener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Sip.SipSession.Listener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetListener(Android.Net.Sip.SipSession.Listener arg0)
         {
             IExecuteWithSignature("setListener", "(Landroid/net/sip/SipSession$Listener;)V", arg0);
@@ -154,7 +159,7 @@ namespace Android.Net.Sip
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.html#unregister()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Unregister()
         {
             IExecuteWithSignature("unregister", "()V");
@@ -184,335 +189,11 @@ namespace Android.Net.Sip
 
             #region Instance methods
             /// <summary>
-            /// Handlers initializer for <see cref="Listener"/>
-            /// </summary>
-            protected virtual void InitializeHandlers()
-            {
-                AddEventHandler("onCallBusy", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>>>(OnCallBusyEventHandler));
-                AddEventHandler("onCallChangeFailed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>>>(OnCallChangeFailedEventHandler));
-                AddEventHandler("onCallEnded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>>>(OnCallEndedEventHandler));
-                AddEventHandler("onCallEstablished", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>>>(OnCallEstablishedEventHandler));
-                AddEventHandler("onCalling", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>>>(OnCallingEventHandler));
-                AddEventHandler("onError", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>>>(OnErrorEventHandler));
-                AddEventHandler("onRegistering", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>>>(OnRegisteringEventHandler));
-                AddEventHandler("onRegistrationDone", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>>>(OnRegistrationDoneEventHandler));
-                AddEventHandler("onRegistrationFailed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>>>(OnRegistrationFailedEventHandler));
-                AddEventHandler("onRegistrationTimeout", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>>>(OnRegistrationTimeoutEventHandler));
-                AddEventHandler("onRinging", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>>>(OnRingingEventHandler));
-                AddEventHandler("onRingingBack", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>>>(OnRingingBackEventHandler));
-
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onCallBusy(android.net.sip.SipSession)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnCallBusy"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipSession> OnOnCallBusy { get; set; } = null;
-
-            void OnCallBusyEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>> data)
-            {
-                var methodToExecute = (OnOnCallBusy != null) ? OnOnCallBusy : OnCallBusy;
-                methodToExecute.Invoke(data.EventData.TypedEventData);
-            }
-
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onCallBusy(android.net.sip.SipSession)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
-            [System.Obsolete()]
-            public virtual void OnCallBusy(Android.Net.Sip.SipSession arg0)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onCallChangeFailed(android.net.sip.SipSession,int,java.lang.String)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnCallChangeFailed"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipSession, int, Java.Lang.String> OnOnCallChangeFailed { get; set; } = null;
-
-            void OnCallChangeFailedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>> data)
-            {
-                var methodToExecute = (OnOnCallChangeFailed != null) ? OnOnCallChangeFailed : OnCallChangeFailed;
-                methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<Java.Lang.String>(1));
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onCallChangeFailed(android.net.sip.SipSession,int,java.lang.String)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
-            public virtual void OnCallChangeFailed(Android.Net.Sip.SipSession arg0, int arg1, Java.Lang.String arg2)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onCallEnded(android.net.sip.SipSession)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnCallEnded"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipSession> OnOnCallEnded { get; set; } = null;
-
-            void OnCallEndedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>> data)
-            {
-                var methodToExecute = (OnOnCallEnded != null) ? OnOnCallEnded : OnCallEnded;
-                methodToExecute.Invoke(data.EventData.TypedEventData);
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onCallEnded(android.net.sip.SipSession)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
-            [System.Obsolete()]
-            public virtual void OnCallEnded(Android.Net.Sip.SipSession arg0)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onCallEstablished(android.net.sip.SipSession,java.lang.String)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnCallEstablished"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipSession, Java.Lang.String> OnOnCallEstablished { get; set; } = null;
-
-            void OnCallEstablishedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>> data)
-            {
-                var methodToExecute = (OnOnCallEstablished != null) ? OnOnCallEstablished : OnCallEstablished;
-                methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Lang.String>(0));
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onCallEstablished(android.net.sip.SipSession,java.lang.String)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
-            public virtual void OnCallEstablished(Android.Net.Sip.SipSession arg0, Java.Lang.String arg1)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onCalling(android.net.sip.SipSession)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnCalling"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipSession> OnOnCalling { get; set; } = null;
-
-            void OnCallingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>> data)
-            {
-                var methodToExecute = (OnOnCalling != null) ? OnOnCalling : OnCalling;
-                methodToExecute.Invoke(data.EventData.TypedEventData);
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onCalling(android.net.sip.SipSession)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
-            [System.Obsolete()]
-            public virtual void OnCalling(Android.Net.Sip.SipSession arg0)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onError(android.net.sip.SipSession,int,java.lang.String)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnError"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipSession, int, Java.Lang.String> OnOnError { get; set; } = null;
-
-            void OnErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>> data)
-            {
-                var methodToExecute = (OnOnError != null) ? OnOnError : OnError;
-                methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<Java.Lang.String>(1));
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onError(android.net.sip.SipSession,int,java.lang.String)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
-            public virtual void OnError(Android.Net.Sip.SipSession arg0, int arg1, Java.Lang.String arg2)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onRegistering(android.net.sip.SipSession)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnRegistering"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipSession> OnOnRegistering { get; set; } = null;
-
-            void OnRegisteringEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>> data)
-            {
-                var methodToExecute = (OnOnRegistering != null) ? OnOnRegistering : OnRegistering;
-                methodToExecute.Invoke(data.EventData.TypedEventData);
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onRegistering(android.net.sip.SipSession)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
-            [System.Obsolete()]
-            public virtual void OnRegistering(Android.Net.Sip.SipSession arg0)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onRegistrationDone(android.net.sip.SipSession,int)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnRegistrationDone"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipSession, int> OnOnRegistrationDone { get; set; } = null;
-
-            void OnRegistrationDoneEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>> data)
-            {
-                var methodToExecute = (OnOnRegistrationDone != null) ? OnOnRegistrationDone : OnRegistrationDone;
-                methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0));
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onRegistrationDone(android.net.sip.SipSession,int)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            [System.Obsolete()]
-            public virtual void OnRegistrationDone(Android.Net.Sip.SipSession arg0, int arg1)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onRegistrationFailed(android.net.sip.SipSession,int,java.lang.String)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnRegistrationFailed"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipSession, int, Java.Lang.String> OnOnRegistrationFailed { get; set; } = null;
-
-            void OnRegistrationFailedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>> data)
-            {
-                var methodToExecute = (OnOnRegistrationFailed != null) ? OnOnRegistrationFailed : OnRegistrationFailed;
-                methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<Java.Lang.String>(1));
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onRegistrationFailed(android.net.sip.SipSession,int,java.lang.String)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
-            public virtual void OnRegistrationFailed(Android.Net.Sip.SipSession arg0, int arg1, Java.Lang.String arg2)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onRegistrationTimeout(android.net.sip.SipSession)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnRegistrationTimeout"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipSession> OnOnRegistrationTimeout { get; set; } = null;
-
-            void OnRegistrationTimeoutEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>> data)
-            {
-                var methodToExecute = (OnOnRegistrationTimeout != null) ? OnOnRegistrationTimeout : OnRegistrationTimeout;
-                methodToExecute.Invoke(data.EventData.TypedEventData);
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onRegistrationTimeout(android.net.sip.SipSession)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
-            [System.Obsolete()]
-            public virtual void OnRegistrationTimeout(Android.Net.Sip.SipSession arg0)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onRinging(android.net.sip.SipSession,android.net.sip.SipProfile,java.lang.String)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnRinging"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipSession, Android.Net.Sip.SipProfile, Java.Lang.String> OnOnRinging { get; set; } = null;
-
-            void OnRingingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>> data)
-            {
-                var methodToExecute = (OnOnRinging != null) ? OnOnRinging : OnRinging;
-                methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Android.Net.Sip.SipProfile>(0), data.EventData.GetAt<Java.Lang.String>(1));
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onRinging(android.net.sip.SipSession,android.net.sip.SipProfile,java.lang.String)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
-            /// <param name="arg1"><see cref="Android.Net.Sip.SipProfile"/></param>
-            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
-            public virtual void OnRinging(Android.Net.Sip.SipSession arg0, Android.Net.Sip.SipProfile arg1, Java.Lang.String arg2)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onRingingBack(android.net.sip.SipSession)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnRingingBack"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Sip.SipSession> OnOnRingingBack { get; set; } = null;
-
-            void OnRingingBackEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Sip.SipSession>> data)
-            {
-                var methodToExecute = (OnOnRingingBack != null) ? OnOnRingingBack : OnRingingBack;
-                methodToExecute.Invoke(data.EventData.TypedEventData);
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onRingingBack(android.net.sip.SipSession)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
-            [System.Obsolete()]
-            public virtual void OnRingingBack(Android.Net.Sip.SipSession arg0)
-            {
-                
-            }
-
-            #endregion
-
-            #region Nested classes
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ListenerDirect
-        public partial class ListenerDirect
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onCallBusy(android.net.sip.SipSession)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
-            [System.Obsolete()]
-            public override void OnCallBusy(Android.Net.Sip.SipSession arg0)
+            [global::System.Obsolete()]
+            public void OnCallBusy(Android.Net.Sip.SipSession arg0)
             {
                 IExecuteWithSignature("onCallBusy", "(Landroid/net/sip/SipSession;)V", arg0);
             }
@@ -522,8 +203,8 @@ namespace Android.Net.Sip
             /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
             /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
-            public override void OnCallChangeFailed(Android.Net.Sip.SipSession arg0, int arg1, Java.Lang.String arg2)
+            [global::System.Obsolete()]
+            public void OnCallChangeFailed(Android.Net.Sip.SipSession arg0, int arg1, Java.Lang.String arg2)
             {
                 IExecute("onCallChangeFailed", arg0, arg1, arg2);
             }
@@ -531,8 +212,8 @@ namespace Android.Net.Sip
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onCallEnded(android.net.sip.SipSession)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
-            [System.Obsolete()]
-            public override void OnCallEnded(Android.Net.Sip.SipSession arg0)
+            [global::System.Obsolete()]
+            public void OnCallEnded(Android.Net.Sip.SipSession arg0)
             {
                 IExecuteWithSignature("onCallEnded", "(Landroid/net/sip/SipSession;)V", arg0);
             }
@@ -541,8 +222,8 @@ namespace Android.Net.Sip
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
-            public override void OnCallEstablished(Android.Net.Sip.SipSession arg0, Java.Lang.String arg1)
+            [global::System.Obsolete()]
+            public void OnCallEstablished(Android.Net.Sip.SipSession arg0, Java.Lang.String arg1)
             {
                 IExecute("onCallEstablished", arg0, arg1);
             }
@@ -550,8 +231,8 @@ namespace Android.Net.Sip
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onCalling(android.net.sip.SipSession)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
-            [System.Obsolete()]
-            public override void OnCalling(Android.Net.Sip.SipSession arg0)
+            [global::System.Obsolete()]
+            public void OnCalling(Android.Net.Sip.SipSession arg0)
             {
                 IExecuteWithSignature("onCalling", "(Landroid/net/sip/SipSession;)V", arg0);
             }
@@ -561,8 +242,8 @@ namespace Android.Net.Sip
             /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
             /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
-            public override void OnError(Android.Net.Sip.SipSession arg0, int arg1, Java.Lang.String arg2)
+            [global::System.Obsolete()]
+            public void OnError(Android.Net.Sip.SipSession arg0, int arg1, Java.Lang.String arg2)
             {
                 IExecute("onError", arg0, arg1, arg2);
             }
@@ -570,8 +251,8 @@ namespace Android.Net.Sip
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onRegistering(android.net.sip.SipSession)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
-            [System.Obsolete()]
-            public override void OnRegistering(Android.Net.Sip.SipSession arg0)
+            [global::System.Obsolete()]
+            public void OnRegistering(Android.Net.Sip.SipSession arg0)
             {
                 IExecuteWithSignature("onRegistering", "(Landroid/net/sip/SipSession;)V", arg0);
             }
@@ -580,8 +261,8 @@ namespace Android.Net.Sip
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
             /// <param name="arg1"><see cref="int"/></param>
-            [System.Obsolete()]
-            public override void OnRegistrationDone(Android.Net.Sip.SipSession arg0, int arg1)
+            [global::System.Obsolete()]
+            public void OnRegistrationDone(Android.Net.Sip.SipSession arg0, int arg1)
             {
                 IExecute("onRegistrationDone", arg0, arg1);
             }
@@ -591,8 +272,8 @@ namespace Android.Net.Sip
             /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
             /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
-            public override void OnRegistrationFailed(Android.Net.Sip.SipSession arg0, int arg1, Java.Lang.String arg2)
+            [global::System.Obsolete()]
+            public void OnRegistrationFailed(Android.Net.Sip.SipSession arg0, int arg1, Java.Lang.String arg2)
             {
                 IExecute("onRegistrationFailed", arg0, arg1, arg2);
             }
@@ -600,8 +281,8 @@ namespace Android.Net.Sip
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onRegistrationTimeout(android.net.sip.SipSession)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
-            [System.Obsolete()]
-            public override void OnRegistrationTimeout(Android.Net.Sip.SipSession arg0)
+            [global::System.Obsolete()]
+            public void OnRegistrationTimeout(Android.Net.Sip.SipSession arg0)
             {
                 IExecuteWithSignature("onRegistrationTimeout", "(Landroid/net/sip/SipSession;)V", arg0);
             }
@@ -611,8 +292,8 @@ namespace Android.Net.Sip
             /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
             /// <param name="arg1"><see cref="Android.Net.Sip.SipProfile"/></param>
             /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
-            public override void OnRinging(Android.Net.Sip.SipSession arg0, Android.Net.Sip.SipProfile arg1, Java.Lang.String arg2)
+            [global::System.Obsolete()]
+            public void OnRinging(Android.Net.Sip.SipSession arg0, Android.Net.Sip.SipProfile arg1, Java.Lang.String arg2)
             {
                 IExecute("onRinging", arg0, arg1, arg2);
             }
@@ -620,8 +301,8 @@ namespace Android.Net.Sip
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onRingingBack(android.net.sip.SipSession)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Sip.SipSession"/></param>
-            [System.Obsolete()]
-            public override void OnRingingBack(Android.Net.Sip.SipSession arg0)
+            [global::System.Obsolete()]
+            public void OnRingingBack(Android.Net.Sip.SipSession arg0)
             {
                 IExecuteWithSignature("onRingingBack", "(Landroid/net/sip/SipSession;)V", arg0);
             }
@@ -651,77 +332,77 @@ namespace Android.Net.Sip
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.State.html#DEREGISTERING"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int DEREGISTERING { get { if (!_DEREGISTERINGReady) { _DEREGISTERINGContent = SGetField<int>(LocalBridgeClazz, "DEREGISTERING"); _DEREGISTERINGReady = true; } return _DEREGISTERINGContent; } }
             private static int _DEREGISTERINGContent = default;
             private static bool _DEREGISTERINGReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.State.html#IN_CALL"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int IN_CALL { get { if (!_IN_CALLReady) { _IN_CALLContent = SGetField<int>(LocalBridgeClazz, "IN_CALL"); _IN_CALLReady = true; } return _IN_CALLContent; } }
             private static int _IN_CALLContent = default;
             private static bool _IN_CALLReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.State.html#INCOMING_CALL"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int INCOMING_CALL { get { if (!_INCOMING_CALLReady) { _INCOMING_CALLContent = SGetField<int>(LocalBridgeClazz, "INCOMING_CALL"); _INCOMING_CALLReady = true; } return _INCOMING_CALLContent; } }
             private static int _INCOMING_CALLContent = default;
             private static bool _INCOMING_CALLReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.State.html#INCOMING_CALL_ANSWERING"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int INCOMING_CALL_ANSWERING { get { if (!_INCOMING_CALL_ANSWERINGReady) { _INCOMING_CALL_ANSWERINGContent = SGetField<int>(LocalBridgeClazz, "INCOMING_CALL_ANSWERING"); _INCOMING_CALL_ANSWERINGReady = true; } return _INCOMING_CALL_ANSWERINGContent; } }
             private static int _INCOMING_CALL_ANSWERINGContent = default;
             private static bool _INCOMING_CALL_ANSWERINGReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.State.html#NOT_DEFINED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int NOT_DEFINED { get { if (!_NOT_DEFINEDReady) { _NOT_DEFINEDContent = SGetField<int>(LocalBridgeClazz, "NOT_DEFINED"); _NOT_DEFINEDReady = true; } return _NOT_DEFINEDContent; } }
             private static int _NOT_DEFINEDContent = default;
             private static bool _NOT_DEFINEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.State.html#OUTGOING_CALL"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int OUTGOING_CALL { get { if (!_OUTGOING_CALLReady) { _OUTGOING_CALLContent = SGetField<int>(LocalBridgeClazz, "OUTGOING_CALL"); _OUTGOING_CALLReady = true; } return _OUTGOING_CALLContent; } }
             private static int _OUTGOING_CALLContent = default;
             private static bool _OUTGOING_CALLReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.State.html#OUTGOING_CALL_CANCELING"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int OUTGOING_CALL_CANCELING { get { if (!_OUTGOING_CALL_CANCELINGReady) { _OUTGOING_CALL_CANCELINGContent = SGetField<int>(LocalBridgeClazz, "OUTGOING_CALL_CANCELING"); _OUTGOING_CALL_CANCELINGReady = true; } return _OUTGOING_CALL_CANCELINGContent; } }
             private static int _OUTGOING_CALL_CANCELINGContent = default;
             private static bool _OUTGOING_CALL_CANCELINGReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.State.html#OUTGOING_CALL_RING_BACK"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int OUTGOING_CALL_RING_BACK { get { if (!_OUTGOING_CALL_RING_BACKReady) { _OUTGOING_CALL_RING_BACKContent = SGetField<int>(LocalBridgeClazz, "OUTGOING_CALL_RING_BACK"); _OUTGOING_CALL_RING_BACKReady = true; } return _OUTGOING_CALL_RING_BACKContent; } }
             private static int _OUTGOING_CALL_RING_BACKContent = default;
             private static bool _OUTGOING_CALL_RING_BACKReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.State.html#PINGING"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int PINGING { get { if (!_PINGINGReady) { _PINGINGContent = SGetField<int>(LocalBridgeClazz, "PINGING"); _PINGINGReady = true; } return _PINGINGContent; } }
             private static int _PINGINGContent = default;
             private static bool _PINGINGReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.State.html#READY_TO_CALL"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int READY_TO_CALL { get { if (!_READY_TO_CALLReady) { _READY_TO_CALLContent = SGetField<int>(LocalBridgeClazz, "READY_TO_CALL"); _READY_TO_CALLReady = true; } return _READY_TO_CALLContent; } }
             private static int _READY_TO_CALLContent = default;
             private static bool _READY_TO_CALLReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.State.html#REGISTERING"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int REGISTERING { get { if (!_REGISTERINGReady) { _REGISTERINGContent = SGetField<int>(LocalBridgeClazz, "REGISTERING"); _REGISTERINGReady = true; } return _REGISTERINGContent; } }
             private static int _REGISTERINGContent = default;
             private static bool _REGISTERINGReady = false; // this is used because in case of generics 
@@ -734,7 +415,7 @@ namespace Android.Net.Sip
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Java.Lang.String"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String ToString(int arg0)
             {
                 return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(I)Ljava/lang/String;", arg0);

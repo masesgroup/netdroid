@@ -64,7 +64,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/FileFilter.html#accept(java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/java/io/FileFilter.html#accept(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <returns><see cref="bool"/></returns>

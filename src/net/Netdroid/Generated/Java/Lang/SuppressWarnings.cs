@@ -64,7 +64,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SuppressWarnings.html#value()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SuppressWarnings.html#value()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] Value()

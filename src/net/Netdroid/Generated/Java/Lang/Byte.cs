@@ -30,20 +30,20 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#%3Cinit%3E(byte)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Byte.html#%3Cinit%3E(byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Byte(byte arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Byte.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Lang.NumberFormatException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Byte(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -61,31 +61,31 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#MAX_VALUE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Byte.html#MAX_VALUE"/>
         /// </summary>
         public static byte MAX_VALUE { get { if (!_MAX_VALUEReady) { _MAX_VALUEContent = SGetField<byte>(LocalBridgeClazz, "MAX_VALUE"); _MAX_VALUEReady = true; } return _MAX_VALUEContent; } }
         private static byte _MAX_VALUEContent = default;
         private static bool _MAX_VALUEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#MIN_VALUE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Byte.html#MIN_VALUE"/>
         /// </summary>
         public static byte MIN_VALUE { get { if (!_MIN_VALUEReady) { _MIN_VALUEContent = SGetField<byte>(LocalBridgeClazz, "MIN_VALUE"); _MIN_VALUEReady = true; } return _MIN_VALUEContent; } }
         private static byte _MIN_VALUEContent = default;
         private static bool _MIN_VALUEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#BYTES"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Byte.html#BYTES"/>
         /// </summary>
         public static int BYTES { get { if (!_BYTESReady) { _BYTESContent = SGetField<int>(LocalBridgeClazz, "BYTES"); _BYTESReady = true; } return _BYTESContent; } }
         private static int _BYTESContent = default;
         private static bool _BYTESReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#SIZE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Byte.html#SIZE"/>
         /// </summary>
         public static int SIZE { get { if (!_SIZEReady) { _SIZEContent = SGetField<int>(LocalBridgeClazz, "SIZE"); _SIZEReady = true; } return _SIZEContent; } }
         private static int _SIZEContent = default;
         private static bool _SIZEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#TYPE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Byte.html#TYPE"/>
         /// </summary>
         public static Java.Lang.Class TYPE { get { if (!_TYPEReady) { _TYPEContent = SGetField<Java.Lang.Class>(LocalBridgeClazz, "TYPE"); _TYPEReady = true; } return _TYPEContent; } }
         private static Java.Lang.Class _TYPEContent = default;
@@ -95,7 +95,7 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#parseByte(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Byte.html#parseByte(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -106,7 +106,7 @@ namespace Java.Lang
             return SExecute<byte>(LocalBridgeClazz, "parseByte", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#parseByte(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Byte.html#parseByte(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="byte"/></returns>
@@ -116,7 +116,7 @@ namespace Java.Lang
             return SExecuteWithSignature<byte>(LocalBridgeClazz, "parseByte", "(Ljava/lang/String;)B", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#compare(byte,byte)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Byte.html#compare(byte,byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -126,7 +126,7 @@ namespace Java.Lang
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#compareUnsigned(byte,byte)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Byte.html#compareUnsigned(byte,byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -136,7 +136,7 @@ namespace Java.Lang
             return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#hashCode(byte)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Byte.html#hashCode(byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="int"/></returns>
@@ -145,7 +145,7 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "(B)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#toUnsignedInt(byte)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Byte.html#toUnsignedInt(byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="int"/></returns>
@@ -154,7 +154,7 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "toUnsignedInt", "(B)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#decode(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Byte.html#decode(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Byte"/></returns>
@@ -164,7 +164,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.Byte>(LocalBridgeClazz, "decode", "(Ljava/lang/String;)Ljava/lang/Byte;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#valueOf(byte)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Byte.html#valueOf(byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="Java.Lang.Byte"/></returns>
@@ -173,7 +173,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.Byte>(LocalBridgeClazz, "valueOf", "(B)Ljava/lang/Byte;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#valueOf(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Byte.html#valueOf(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -184,7 +184,7 @@ namespace Java.Lang
             return SExecute<Java.Lang.Byte>(LocalBridgeClazz, "valueOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Byte.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Byte"/></returns>
@@ -194,7 +194,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.Byte>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/Byte;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#toString(byte)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Byte.html#toString(byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -203,7 +203,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(B)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#toUnsignedLong(byte)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Byte.html#toUnsignedLong(byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="long"/></returns>
@@ -216,7 +216,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#compareTo(java.lang.Byte)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Byte.html#compareTo(java.lang.Byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Byte"/></param>
         /// <returns><see cref="int"/></returns>
@@ -225,7 +225,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Byte;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Byte.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>

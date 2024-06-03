@@ -52,81 +52,12 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getClientPackageName()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getControlHints()"/>
         /// </summary>
-        public Java.Lang.String ClientPackageName
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetControlHints()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getClientPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getControlHints()"/> 
-        /// </summary>
-        public Android.Os.Bundle ControlHints
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getControlHints", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getDeselectableRoutes()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> DeselectableRoutes
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getDeselectableRoutes", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getId()"/> 
-        /// </summary>
-        public Java.Lang.String Id
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getName", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getSelectableRoutes()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> SelectableRoutes
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSelectableRoutes", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getSelectedRoutes()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> SelectedRoutes
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSelectedRoutes", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getTransferableRoutes()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> TransferableRoutes
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getTransferableRoutes", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getVolume()"/> 
-        /// </summary>
-        public int Volume
-        {
-            get { return IExecuteWithSignature<int>("getVolume", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getVolumeHandling()"/> 
-        /// </summary>
-        public int VolumeHandling
-        {
-            get { return IExecuteWithSignature<int>("getVolumeHandling", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getVolumeMax()"/> 
-        /// </summary>
-        public int VolumeMax
-        {
-            get { return IExecuteWithSignature<int>("getVolumeMax", "()I"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getControlHints", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#describeContents()"/>
@@ -135,6 +66,86 @@ namespace Android.Media
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getVolume()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVolume()
+        {
+            return IExecuteWithSignature<int>("getVolume", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getVolumeHandling()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVolumeHandling()
+        {
+            return IExecuteWithSignature<int>("getVolumeHandling", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getVolumeMax()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVolumeMax()
+        {
+            return IExecuteWithSignature<int>("getVolumeMax", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getName", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getClientPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetClientPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getClientPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getDeselectableRoutes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetDeselectableRoutes()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getDeselectableRoutes", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getSelectableRoutes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetSelectableRoutes()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSelectableRoutes", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getSelectedRoutes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetSelectedRoutes()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSelectedRoutes", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getTransferableRoutes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetTransferableRoutes()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getTransferableRoutes", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#writeToParcel(android.os.Parcel,int)"/>

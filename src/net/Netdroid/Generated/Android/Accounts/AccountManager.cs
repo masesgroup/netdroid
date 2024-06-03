@@ -268,7 +268,7 @@ namespace Android.Accounts
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#LOGIN_ACCOUNTS_CHANGED_ACTION"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String LOGIN_ACCOUNTS_CHANGED_ACTION { get { if (!_LOGIN_ACCOUNTS_CHANGED_ACTIONReady) { _LOGIN_ACCOUNTS_CHANGED_ACTIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LOGIN_ACCOUNTS_CHANGED_ACTION"); _LOGIN_ACCOUNTS_CHANGED_ACTIONReady = true; } return _LOGIN_ACCOUNTS_CHANGED_ACTIONContent; } }
         private static Java.Lang.String _LOGIN_ACCOUNTS_CHANGED_ACTIONContent = default;
         private static bool _LOGIN_ACCOUNTS_CHANGED_ACTIONReady = false; // this is used because in case of generics 
@@ -309,7 +309,7 @@ namespace Android.Accounts
         /// <param name="arg6"><see cref="Java.Lang.String"/></param>
         /// <param name="arg7"><see cref="Android.Os.Bundle"/></param>
         /// <returns><see cref="Android.Content.Intent"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Content.Intent NewChooseAccountIntent(Android.Accounts.Account arg0, Java.Util.ArrayList<Android.Accounts.Account> arg1, Java.Lang.String[] arg2, bool arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String[] arg6, Android.Os.Bundle arg7)
         {
             return SExecute<Android.Content.Intent>(LocalBridgeClazz, "newChooseAccountIntent", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -334,18 +334,12 @@ namespace Android.Accounts
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAccounts()"/> 
+        /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAccounts()"/>
         /// </summary>
-        public Android.Accounts.Account[] Accounts
+        /// <returns><see cref="Android.Accounts.Account"/></returns>
+        public Android.Accounts.Account[] GetAccounts()
         {
-            get { return IExecuteWithSignatureArray<Android.Accounts.Account>("getAccounts", "()[Landroid/accounts/Account;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAuthenticatorTypes()"/> 
-        /// </summary>
-        public Android.Accounts.AuthenticatorDescription[] AuthenticatorTypes
-        {
-            get { return IExecuteWithSignatureArray<Android.Accounts.AuthenticatorDescription>("getAuthenticatorTypes", "()[Landroid/accounts/AuthenticatorDescription;"); }
+            return IExecuteWithSignatureArray<Android.Accounts.Account>("getAccounts", "()[Landroid/accounts/Account;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAccountsByType(java.lang.String)"/>
@@ -479,7 +473,7 @@ namespace Android.Accounts
         /// <param name="arg3"><see cref="Android.Accounts.AccountManagerCallback"/></param>
         /// <param name="arg4"><see cref="Android.Os.Handler"/></param>
         /// <returns><see cref="Android.Accounts.AccountManagerFuture"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Accounts.AccountManagerFuture<Android.Os.Bundle> GetAuthToken(Android.Accounts.Account arg0, Java.Lang.String arg1, bool arg2, Android.Accounts.AccountManagerCallback<Android.Os.Bundle> arg3, Android.Os.Handler arg4)
         {
             return IExecute<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("getAuthToken", arg0, arg1, arg2, arg3, arg4);
@@ -586,10 +580,18 @@ namespace Android.Accounts
         /// <param name="arg1"><see cref="Android.Accounts.AccountManagerCallback"/></param>
         /// <param name="arg2"><see cref="Android.Os.Handler"/></param>
         /// <returns><see cref="Android.Accounts.AccountManagerFuture"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Accounts.AccountManagerFuture<Java.Lang.Boolean> RemoveAccount(Android.Accounts.Account arg0, Android.Accounts.AccountManagerCallback<Java.Lang.Boolean> arg1, Android.Os.Handler arg2)
         {
             return IExecute<Android.Accounts.AccountManagerFuture<Java.Lang.Boolean>>("removeAccount", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAuthenticatorTypes()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Accounts.AuthenticatorDescription"/></returns>
+        public Android.Accounts.AuthenticatorDescription[] GetAuthenticatorTypes()
+        {
+            return IExecuteWithSignatureArray<Android.Accounts.AuthenticatorDescription>("getAuthenticatorTypes", "()[Landroid/accounts/AuthenticatorDescription;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#addAccountExplicitly(android.accounts.Account,java.lang.String,android.os.Bundle,java.util.Map)"/>

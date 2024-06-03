@@ -46,11 +46,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BodyWaterMassRecord.html#getBodyWaterMass()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BodyWaterMassRecord.html#getBodyWaterMass()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass BodyWaterMass
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetBodyWaterMass()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getBodyWaterMass", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getBodyWaterMass", "()Landroid/health/connect/datatypes/units/Mass;");
         }
 
         #endregion

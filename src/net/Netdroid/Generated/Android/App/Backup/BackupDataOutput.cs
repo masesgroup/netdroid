@@ -46,18 +46,12 @@ namespace Android.App.Backup
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/backup/BackupDataOutput.html#getQuota()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/backup/BackupDataOutput.html#getTransportFlags()"/>
         /// </summary>
-        public long Quota
+        /// <returns><see cref="int"/></returns>
+        public int GetTransportFlags()
         {
-            get { return IExecuteWithSignature<long>("getQuota", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/backup/BackupDataOutput.html#getTransportFlags()"/> 
-        /// </summary>
-        public int TransportFlags
-        {
-            get { return IExecuteWithSignature<int>("getTransportFlags", "()I"); }
+            return IExecuteWithSignature<int>("getTransportFlags", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/backup/BackupDataOutput.html#writeEntityData(byte[],int)"/>
@@ -80,6 +74,14 @@ namespace Android.App.Backup
         public int WriteEntityHeader(Java.Lang.String arg0, int arg1)
         {
             return IExecute<int>("writeEntityHeader", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/backup/BackupDataOutput.html#getQuota()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetQuota()
+        {
+            return IExecuteWithSignature<long>("getQuota", "()J");
         }
 
         #endregion

@@ -46,11 +46,12 @@ namespace Javax.Crypto.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/PSource.html#getAlgorithm()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/PSource.html#getAlgorithm()"/>
         /// </summary>
-        public Java.Lang.String Algorithm
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAlgorithm()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;");
         }
 
         #endregion
@@ -61,7 +62,7 @@ namespace Javax.Crypto.Spec
         {
             #region Constructors
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/PSource.PSpecified.html#%3Cinit%3E(byte[])"/>
+            /// <see href="https://developer.android.com/reference/javax/crypto/spec/PSource.PSpecified.html#%3Cinit%3E(byte[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="byte"/></param>
             public PSpecified(byte[] arg0)
@@ -77,7 +78,7 @@ namespace Javax.Crypto.Spec
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/PSource.PSpecified.html#DEFAULT"/>
+            /// <see href="https://developer.android.com/reference/javax/crypto/spec/PSource.PSpecified.html#DEFAULT"/>
             /// </summary>
             public static Javax.Crypto.Spec.PSource.PSpecified DEFAULT { get { if (!_DEFAULTReady) { _DEFAULTContent = SGetField<Javax.Crypto.Spec.PSource.PSpecified>(LocalBridgeClazz, "DEFAULT"); _DEFAULTReady = true; } return _DEFAULTContent; } }
             private static Javax.Crypto.Spec.PSource.PSpecified _DEFAULTContent = default;
@@ -91,11 +92,12 @@ namespace Javax.Crypto.Spec
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/PSource.PSpecified.html#getValue()"/> 
+            /// <see href="https://developer.android.com/reference/javax/crypto/spec/PSource.PSpecified.html#getValue()"/>
             /// </summary>
-            public byte[] Value
+            /// <returns><see cref="byte"/></returns>
+            public byte[] GetValue()
             {
-                get { return IExecuteWithSignatureArray<byte>("getValue", "()[B"); }
+                return IExecuteWithSignatureArray<byte>("getValue", "()[B");
             }
 
             #endregion

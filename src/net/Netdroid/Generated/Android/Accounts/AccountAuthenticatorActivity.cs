@@ -49,7 +49,7 @@ namespace Android.Accounts
         /// <see href="https://developer.android.com/reference/android/accounts/AccountAuthenticatorActivity.html#setAccountAuthenticatorResult(android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetAccountAuthenticatorResult(Android.Os.Bundle arg0)
         {
             IExecuteWithSignature("setAccountAuthenticatorResult", "(Landroid/os/Bundle;)V", arg0);

@@ -30,7 +30,7 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/FieldPosition.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/FieldPosition.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public FieldPosition(int arg0)
@@ -38,7 +38,7 @@ namespace Java.Text
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/FieldPosition.html#%3Cinit%3E(java.text.Format.Field,int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/FieldPosition.html#%3Cinit%3E(java.text.Format.Field,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.Format.Field"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -47,7 +47,7 @@ namespace Java.Text
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/FieldPosition.html#%3Cinit%3E(java.text.Format.Field)"/>
+        /// <see href="https://developer.android.com/reference/java/text/FieldPosition.html#%3Cinit%3E(java.text.Format.Field)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.Format.Field"/></param>
         public FieldPosition(Java.Text.Format.Field arg0)
@@ -71,32 +71,52 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/FieldPosition.html#getBeginIndex()"/> <see href="https://developer.android.com/reference/java.base/java/text/FieldPosition.html#setBeginIndex(int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/FieldPosition.html#getBeginIndex()"/>
         /// </summary>
-        public int BeginIndex
+        /// <returns><see cref="int"/></returns>
+        public int GetBeginIndex()
         {
-            get { return IExecuteWithSignature<int>("getBeginIndex", "()I"); } set { IExecuteWithSignature("setBeginIndex", "(I)V", value); }
+            return IExecuteWithSignature<int>("getBeginIndex", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/FieldPosition.html#getEndIndex()"/> <see href="https://developer.android.com/reference/java.base/java/text/FieldPosition.html#setEndIndex(int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/FieldPosition.html#getEndIndex()"/>
         /// </summary>
-        public int EndIndex
+        /// <returns><see cref="int"/></returns>
+        public int GetEndIndex()
         {
-            get { return IExecuteWithSignature<int>("getEndIndex", "()I"); } set { IExecuteWithSignature("setEndIndex", "(I)V", value); }
+            return IExecuteWithSignature<int>("getEndIndex", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/FieldPosition.html#getField()"/> 
+        /// <see href="https://developer.android.com/reference/java/text/FieldPosition.html#getField()"/>
         /// </summary>
-        public int Field
+        /// <returns><see cref="int"/></returns>
+        public int GetField()
         {
-            get { return IExecuteWithSignature<int>("getField", "()I"); }
+            return IExecuteWithSignature<int>("getField", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/FieldPosition.html#getFieldAttribute()"/> 
+        /// <see href="https://developer.android.com/reference/java/text/FieldPosition.html#getFieldAttribute()"/>
         /// </summary>
-        public Java.Text.Format.Field FieldAttribute
+        /// <returns><see cref="Java.Text.Format.Field"/></returns>
+        public Java.Text.Format.Field GetFieldAttribute()
         {
-            get { return IExecuteWithSignature<Java.Text.Format.Field>("getFieldAttribute", "()Ljava/text/Format$Field;"); }
+            return IExecuteWithSignature<Java.Text.Format.Field>("getFieldAttribute", "()Ljava/text/Format$Field;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/FieldPosition.html#setBeginIndex(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetBeginIndex(int arg0)
+        {
+            IExecuteWithSignature("setBeginIndex", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/FieldPosition.html#setEndIndex(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetEndIndex(int arg0)
+        {
+            IExecuteWithSignature("setEndIndex", "(I)V", arg0);
         }
 
         #endregion

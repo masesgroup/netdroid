@@ -50,7 +50,7 @@ namespace Android.Text
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsAllowed(char arg0)
         {
             return IExecuteWithSignature<bool>("isAllowed", "(C)Z", arg0);
@@ -65,7 +65,7 @@ namespace Android.Text
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.CharSequence Filter(Java.Lang.CharSequence arg0, int arg1, int arg2, Android.Text.Spanned arg3, int arg4, int arg5)
         {
             return IExecute<Java.Lang.CharSequence>("filter", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -74,7 +74,7 @@ namespace Android.Text
         /// <see href="https://developer.android.com/reference/android/text/LoginFilter.html#onInvalidCharacter(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnInvalidCharacter(char arg0)
         {
             IExecuteWithSignature("onInvalidCharacter", "(C)V", arg0);
@@ -82,7 +82,7 @@ namespace Android.Text
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/LoginFilter.html#onStart()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnStart()
         {
             IExecuteWithSignature("onStart", "()V");
@@ -90,7 +90,7 @@ namespace Android.Text
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/LoginFilter.html#onStop()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnStop()
         {
             IExecuteWithSignature("onStop", "()V");
@@ -107,7 +107,7 @@ namespace Android.Text
             /// <see href="https://developer.android.com/reference/android/text/LoginFilter.PasswordFilterGMail.html#%3Cinit%3E(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public PasswordFilterGMail(bool arg0)
                 : base(arg0)
             {
@@ -147,7 +147,7 @@ namespace Android.Text
             /// <see href="https://developer.android.com/reference/android/text/LoginFilter.UsernameFilterGeneric.html#%3Cinit%3E(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public UsernameFilterGeneric(bool arg0)
                 : base(arg0)
             {
@@ -187,7 +187,7 @@ namespace Android.Text
             /// <see href="https://developer.android.com/reference/android/text/LoginFilter.UsernameFilterGMail.html#%3Cinit%3E(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public UsernameFilterGMail(bool arg0)
                 : base(arg0)
             {

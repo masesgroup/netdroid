@@ -30,7 +30,7 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/GZIPInputStream.html#%3Cinit%3E(java.io.InputStream,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/GZIPInputStream.html#%3Cinit%3E(java.io.InputStream,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -40,7 +40,7 @@ namespace Java.Util.Zip
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/GZIPInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/GZIPInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -57,7 +57,7 @@ namespace Java.Util.Zip
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/GZIPInputStream.html#GZIP_MAGIC"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/GZIPInputStream.html#GZIP_MAGIC"/>
         /// </summary>
         public static int GZIP_MAGIC { get { if (!_GZIP_MAGICReady) { _GZIP_MAGICContent = SGetField<int>(LocalBridgeClazz, "GZIP_MAGIC"); _GZIP_MAGICReady = true; } return _GZIP_MAGICContent; } }
         private static int _GZIP_MAGICContent = default;

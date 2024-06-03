@@ -28,7 +28,7 @@ namespace Java.Lang.Runtime
 {
     #region ObjectMethods
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/runtime/ObjectMethods.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/runtime/ObjectMethods.html"/>
     /// </summary>
     public partial class ObjectMethods : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ObjectMethods>
     {

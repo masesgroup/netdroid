@@ -338,18 +338,20 @@ namespace Android.Util.Proto
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/proto/ProtoOutputStream.html#getBytes()"/> 
+        /// <see href="https://developer.android.com/reference/android/util/proto/ProtoOutputStream.html#getBytes()"/>
         /// </summary>
-        public byte[] Bytes
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetBytes()
         {
-            get { return IExecuteWithSignatureArray<byte>("getBytes", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getBytes", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/proto/ProtoOutputStream.html#getRawSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/util/proto/ProtoOutputStream.html#getRawSize()"/>
         /// </summary>
-        public int RawSize
+        /// <returns><see cref="int"/></returns>
+        public int GetRawSize()
         {
-            get { return IExecuteWithSignature<int>("getRawSize", "()I"); }
+            return IExecuteWithSignature<int>("getRawSize", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/proto/ProtoOutputStream.html#start(long)"/>

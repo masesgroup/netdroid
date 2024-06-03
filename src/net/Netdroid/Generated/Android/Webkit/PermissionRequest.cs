@@ -70,18 +70,20 @@ namespace Android.Webkit
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/PermissionRequest.html#getOrigin()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/PermissionRequest.html#getOrigin()"/>
         /// </summary>
-        public Android.Net.Uri Origin
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetOrigin()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getOrigin", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getOrigin", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/PermissionRequest.html#getResources()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/PermissionRequest.html#getResources()"/>
         /// </summary>
-        public Java.Lang.String[] Resources
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetResources()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getResources", "()[Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getResources", "()[Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/PermissionRequest.html#deny()"/>

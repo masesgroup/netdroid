@@ -67,26 +67,28 @@ namespace Android.Print
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PageRange.html#getEnd()"/> 
-        /// </summary>
-        public int End
-        {
-            get { return IExecuteWithSignature<int>("getEnd", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PageRange.html#getStart()"/> 
-        /// </summary>
-        public int Start
-        {
-            get { return IExecuteWithSignature<int>("getStart", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PageRange.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PageRange.html#getEnd()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEnd()
+        {
+            return IExecuteWithSignature<int>("getEnd", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PageRange.html#getStart()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStart()
+        {
+            return IExecuteWithSignature<int>("getStart", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PageRange.html#writeToParcel(android.os.Parcel,int)"/>

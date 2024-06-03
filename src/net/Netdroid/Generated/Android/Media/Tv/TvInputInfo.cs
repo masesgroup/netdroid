@@ -118,52 +118,10 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputInfo.html#getExtras()"/> 
-        /// </summary>
-        public Android.Os.Bundle Extras
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputInfo.html#getId()"/> 
-        /// </summary>
-        public Java.Lang.String Id
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputInfo.html#getParentId()"/> 
-        /// </summary>
-        public Java.Lang.String ParentId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getParentId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputInfo.html#getServiceInfo()"/> 
-        /// </summary>
-        public Android.Content.Pm.ServiceInfo ServiceInfo
-        {
-            get { return IExecuteWithSignature<Android.Content.Pm.ServiceInfo>("getServiceInfo", "()Landroid/content/pm/ServiceInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputInfo.html#getTunerCount()"/> 
-        /// </summary>
-        public int TunerCount
-        {
-            get { return IExecuteWithSignature<int>("getTunerCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputInfo.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvInputInfo.html#createSettingsIntent()"/>
         /// </summary>
         /// <returns><see cref="Android.Content.Intent"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Content.Intent CreateSettingsIntent()
         {
             return IExecuteWithSignature<Android.Content.Intent>("createSettingsIntent", "()Landroid/content/Intent;");
@@ -177,6 +135,14 @@ namespace Android.Media.Tv
             return IExecuteWithSignature<Android.Content.Intent>("createSetupIntent", "()Landroid/content/Intent;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputInfo.html#getServiceInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Pm.ServiceInfo"/></returns>
+        public Android.Content.Pm.ServiceInfo GetServiceInfo()
+        {
+            return IExecuteWithSignature<Android.Content.Pm.ServiceInfo>("getServiceInfo", "()Landroid/content/pm/ServiceInfo;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvInputInfo.html#loadIcon(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -184,6 +150,14 @@ namespace Android.Media.Tv
         public Android.Graphics.Drawable.Drawable LoadIcon(Android.Content.Context arg0)
         {
             return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("loadIcon", "(Landroid/content/Context;)Landroid/graphics/drawable/Drawable;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputInfo.html#getExtras()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
+        {
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvInputInfo.html#canPauseRecording()"/>
@@ -227,6 +201,22 @@ namespace Android.Media.Tv
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputInfo.html#getTunerCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTunerCount()
+        {
+            return IExecuteWithSignature<int>("getTunerCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputInfo.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvInputInfo.html#loadCustomLabel(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -243,6 +233,22 @@ namespace Android.Media.Tv
         public Java.Lang.CharSequence LoadLabel(Android.Content.Context arg0)
         {
             return IExecuteWithSignature<Java.Lang.CharSequence>("loadLabel", "(Landroid/content/Context;)Ljava/lang/CharSequence;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputInfo.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputInfo.html#getParentId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetParentId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getParentId", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvInputInfo.html#writeToParcel(android.os.Parcel,int)"/>

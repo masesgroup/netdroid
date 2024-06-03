@@ -54,25 +54,12 @@ namespace Android.Webkit
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebBackForwardList.html#getCurrentIndex()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/WebBackForwardList.html#getCurrentItem()"/>
         /// </summary>
-        public int CurrentIndex
+        /// <returns><see cref="Android.Webkit.WebHistoryItem"/></returns>
+        public Android.Webkit.WebHistoryItem GetCurrentItem()
         {
-            get { return IExecuteWithSignature<int>("getCurrentIndex", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebBackForwardList.html#getCurrentItem()"/> 
-        /// </summary>
-        public Android.Webkit.WebHistoryItem CurrentItem
-        {
-            get { return IExecuteWithSignature<Android.Webkit.WebHistoryItem>("getCurrentItem", "()Landroid/webkit/WebHistoryItem;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebBackForwardList.html#getSize()"/> 
-        /// </summary>
-        public int Size
-        {
-            get { return IExecuteWithSignature<int>("getSize", "()I"); }
+            return IExecuteWithSignature<Android.Webkit.WebHistoryItem>("getCurrentItem", "()Landroid/webkit/WebHistoryItem;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebBackForwardList.html#getItemAtIndex(int)"/>
@@ -82,6 +69,22 @@ namespace Android.Webkit
         public Android.Webkit.WebHistoryItem GetItemAtIndex(int arg0)
         {
             return IExecuteWithSignature<Android.Webkit.WebHistoryItem>("getItemAtIndex", "(I)Landroid/webkit/WebHistoryItem;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebBackForwardList.html#getCurrentIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrentIndex()
+        {
+            return IExecuteWithSignature<int>("getCurrentIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebBackForwardList.html#getSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSize()
+        {
+            return IExecuteWithSignature<int>("getSize", "()I");
         }
 
         #endregion

@@ -42,7 +42,7 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ServiceLoader.html#load(java.lang.Class,java.lang.ClassLoader)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#load(java.lang.Class,java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
@@ -52,7 +52,7 @@ namespace Java.Util
             return SExecute<Java.Util.ServiceLoader>(LocalBridgeClazz, "load", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ServiceLoader.html#load(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#load(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
@@ -61,7 +61,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.ServiceLoader>(LocalBridgeClazz, "load", "(Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ServiceLoader.html#loadInstalled(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#loadInstalled(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
@@ -74,7 +74,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ServiceLoader.html#iterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
@@ -82,7 +82,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ServiceLoader.html#findFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#findFirst()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional FindFirst()
@@ -90,7 +90,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Optional>("findFirst", "()Ljava/util/Optional;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ServiceLoader.html#reload()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#reload()"/>
         /// </summary>
         public void Reload()
         {
@@ -128,7 +128,7 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ServiceLoader.html#load(java.lang.Class,java.lang.ClassLoader)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#load(java.lang.Class,java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
@@ -138,7 +138,7 @@ namespace Java.Util
             return SExecute<Java.Util.ServiceLoader<S>>(LocalBridgeClazz, "load", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ServiceLoader.html#load(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#load(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
@@ -147,7 +147,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.ServiceLoader<S>>(LocalBridgeClazz, "load", "(Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ServiceLoader.html#loadInstalled(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#loadInstalled(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
@@ -160,7 +160,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ServiceLoader.html#iterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<S> Iterator()
@@ -168,7 +168,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Iterator<S>>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ServiceLoader.html#findFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#findFirst()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<S> FindFirst()
@@ -176,7 +176,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Optional<S>>("findFirst", "()Ljava/util/Optional;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ServiceLoader.html#reload()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#reload()"/>
         /// </summary>
         public void Reload()
         {

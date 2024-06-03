@@ -304,18 +304,12 @@ namespace Android.Telephony.Euicc
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#getEid()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#getEuiccInfo()"/>
         /// </summary>
-        public Java.Lang.String Eid
+        /// <returns><see cref="Android.Telephony.Euicc.EuiccInfo"/></returns>
+        public Android.Telephony.Euicc.EuiccInfo GetEuiccInfo()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEid", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#getEuiccInfo()"/> 
-        /// </summary>
-        public Android.Telephony.Euicc.EuiccInfo EuiccInfo
-        {
-            get { return IExecuteWithSignature<Android.Telephony.Euicc.EuiccInfo>("getEuiccInfo", "()Landroid/telephony/euicc/EuiccInfo;"); }
+            return IExecuteWithSignature<Android.Telephony.Euicc.EuiccInfo>("getEuiccInfo", "()Landroid/telephony/euicc/EuiccInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#createForCardId(int)"/>
@@ -342,6 +336,14 @@ namespace Android.Telephony.Euicc
         public bool IsSimPortAvailable(int arg0)
         {
             return IExecuteWithSignature<bool>("isSimPortAvailable", "(I)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#getEid()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEid()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getEid", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#deleteSubscription(int,android.app.PendingIntent)"/>

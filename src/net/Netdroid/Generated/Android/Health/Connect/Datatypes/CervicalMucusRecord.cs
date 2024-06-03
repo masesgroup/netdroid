@@ -46,18 +46,20 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/CervicalMucusRecord.html#getAppearance()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/CervicalMucusRecord.html#getAppearance()"/>
         /// </summary>
-        public int Appearance
+        /// <returns><see cref="int"/></returns>
+        public int GetAppearance()
         {
-            get { return IExecuteWithSignature<int>("getAppearance", "()I"); }
+            return IExecuteWithSignature<int>("getAppearance", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/CervicalMucusRecord.html#getSensation()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/CervicalMucusRecord.html#getSensation()"/>
         /// </summary>
-        public int Sensation
+        /// <returns><see cref="int"/></returns>
+        public int GetSensation()
         {
-            get { return IExecuteWithSignature<int>("getSensation", "()I"); }
+            return IExecuteWithSignature<int>("getSensation", "()I");
         }
 
         #endregion

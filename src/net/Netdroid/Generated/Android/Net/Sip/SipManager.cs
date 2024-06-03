@@ -40,21 +40,21 @@ namespace Android.Net.Sip
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipManager.html#INCOMING_CALL_RESULT_CODE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int INCOMING_CALL_RESULT_CODE { get { if (!_INCOMING_CALL_RESULT_CODEReady) { _INCOMING_CALL_RESULT_CODEContent = SGetField<int>(LocalBridgeClazz, "INCOMING_CALL_RESULT_CODE"); _INCOMING_CALL_RESULT_CODEReady = true; } return _INCOMING_CALL_RESULT_CODEContent; } }
         private static int _INCOMING_CALL_RESULT_CODEContent = default;
         private static bool _INCOMING_CALL_RESULT_CODEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipManager.html#EXTRA_CALL_ID"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_CALL_ID { get { if (!_EXTRA_CALL_IDReady) { _EXTRA_CALL_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_CALL_ID"); _EXTRA_CALL_IDReady = true; } return _EXTRA_CALL_IDContent; } }
         private static Java.Lang.String _EXTRA_CALL_IDContent = default;
         private static bool _EXTRA_CALL_IDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipManager.html#EXTRA_OFFER_SD"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_OFFER_SD { get { if (!_EXTRA_OFFER_SDReady) { _EXTRA_OFFER_SDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_OFFER_SD"); _EXTRA_OFFER_SDReady = true; } return _EXTRA_OFFER_SDContent; } }
         private static Java.Lang.String _EXTRA_OFFER_SDContent = default;
         private static bool _EXTRA_OFFER_SDReady = false; // this is used because in case of generics 
@@ -67,7 +67,7 @@ namespace Android.Net.Sip
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <returns><see cref="Android.Net.Sip.SipManager"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Net.Sip.SipManager NewInstance(Android.Content.Context arg0)
         {
             return SExecuteWithSignature<Android.Net.Sip.SipManager>(LocalBridgeClazz, "newInstance", "(Landroid/content/Context;)Landroid/net/sip/SipManager;", arg0);
@@ -77,7 +77,7 @@ namespace Android.Net.Sip
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool IsApiSupported(Android.Content.Context arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isApiSupported", "(Landroid/content/Context;)Z", arg0);
@@ -87,7 +87,7 @@ namespace Android.Net.Sip
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool IsIncomingCallIntent(Android.Content.Intent arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isIncomingCallIntent", "(Landroid/content/Intent;)Z", arg0);
@@ -97,7 +97,7 @@ namespace Android.Net.Sip
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool IsSipWifiOnly(Android.Content.Context arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSipWifiOnly", "(Landroid/content/Context;)Z", arg0);
@@ -107,7 +107,7 @@ namespace Android.Net.Sip
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool IsVoipSupported(Android.Content.Context arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isVoipSupported", "(Landroid/content/Context;)Z", arg0);
@@ -117,7 +117,7 @@ namespace Android.Net.Sip
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String GetCallId(Android.Content.Intent arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getCallId", "(Landroid/content/Intent;)Ljava/lang/String;", arg0);
@@ -127,7 +127,7 @@ namespace Android.Net.Sip
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String GetOfferSessionDescription(Android.Content.Intent arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getOfferSessionDescription", "(Landroid/content/Intent;)Ljava/lang/String;", arg0);
@@ -145,7 +145,7 @@ namespace Android.Net.Sip
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Android.Net.Sip.SipAudioCall"/></returns>
         /// <exception cref="Android.Net.Sip.SipException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Net.Sip.SipAudioCall MakeAudioCall(Android.Net.Sip.SipProfile arg0, Android.Net.Sip.SipProfile arg1, Android.Net.Sip.SipAudioCall.Listener arg2, int arg3)
         {
             return IExecute<Android.Net.Sip.SipAudioCall>("makeAudioCall", arg0, arg1, arg2, arg3);
@@ -159,7 +159,7 @@ namespace Android.Net.Sip
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Android.Net.Sip.SipAudioCall"/></returns>
         /// <exception cref="Android.Net.Sip.SipException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Net.Sip.SipAudioCall MakeAudioCall(Java.Lang.String arg0, Java.Lang.String arg1, Android.Net.Sip.SipAudioCall.Listener arg2, int arg3)
         {
             return IExecute<Android.Net.Sip.SipAudioCall>("makeAudioCall", arg0, arg1, arg2, arg3);
@@ -171,7 +171,7 @@ namespace Android.Net.Sip
         /// <param name="arg1"><see cref="Android.Net.Sip.SipAudioCall.Listener"/></param>
         /// <returns><see cref="Android.Net.Sip.SipAudioCall"/></returns>
         /// <exception cref="Android.Net.Sip.SipException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Net.Sip.SipAudioCall TakeAudioCall(Android.Content.Intent arg0, Android.Net.Sip.SipAudioCall.Listener arg1)
         {
             return IExecute<Android.Net.Sip.SipAudioCall>("takeAudioCall", arg0, arg1);
@@ -183,7 +183,7 @@ namespace Android.Net.Sip
         /// <param name="arg1"><see cref="Android.Net.Sip.SipSession.Listener"/></param>
         /// <returns><see cref="Android.Net.Sip.SipSession"/></returns>
         /// <exception cref="Android.Net.Sip.SipException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Net.Sip.SipSession CreateSipSession(Android.Net.Sip.SipProfile arg0, Android.Net.Sip.SipSession.Listener arg1)
         {
             return IExecute<Android.Net.Sip.SipSession>("createSipSession", arg0, arg1);
@@ -194,7 +194,7 @@ namespace Android.Net.Sip
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
         /// <returns><see cref="Android.Net.Sip.SipSession"/></returns>
         /// <exception cref="Android.Net.Sip.SipException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Net.Sip.SipSession GetSessionFor(Android.Content.Intent arg0)
         {
             return IExecuteWithSignature<Android.Net.Sip.SipSession>("getSessionFor", "(Landroid/content/Intent;)Landroid/net/sip/SipSession;", arg0);
@@ -205,7 +205,7 @@ namespace Android.Net.Sip
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Android.Net.Sip.SipException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsOpened(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("isOpened", "(Ljava/lang/String;)Z", arg0);
@@ -216,7 +216,7 @@ namespace Android.Net.Sip
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Android.Net.Sip.SipException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsRegistered(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("isRegistered", "(Ljava/lang/String;)Z", arg0);
@@ -226,7 +226,7 @@ namespace Android.Net.Sip
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Android.Net.Sip.SipException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Close(Java.Lang.String arg0)
         {
             IExecuteWithSignature("close", "(Ljava/lang/String;)V", arg0);
@@ -238,7 +238,7 @@ namespace Android.Net.Sip
         /// <param name="arg1"><see cref="Android.App.PendingIntent"/></param>
         /// <param name="arg2"><see cref="Android.Net.Sip.SipRegistrationListener"/></param>
         /// <exception cref="Android.Net.Sip.SipException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Open(Android.Net.Sip.SipProfile arg0, Android.App.PendingIntent arg1, Android.Net.Sip.SipRegistrationListener arg2)
         {
             IExecute("open", arg0, arg1, arg2);
@@ -248,7 +248,7 @@ namespace Android.Net.Sip
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Sip.SipProfile"/></param>
         /// <exception cref="Android.Net.Sip.SipException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Open(Android.Net.Sip.SipProfile arg0)
         {
             IExecuteWithSignature("open", "(Landroid/net/sip/SipProfile;)V", arg0);
@@ -260,7 +260,7 @@ namespace Android.Net.Sip
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.Net.Sip.SipRegistrationListener"/></param>
         /// <exception cref="Android.Net.Sip.SipException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Register(Android.Net.Sip.SipProfile arg0, int arg1, Android.Net.Sip.SipRegistrationListener arg2)
         {
             IExecute("register", arg0, arg1, arg2);
@@ -271,7 +271,7 @@ namespace Android.Net.Sip
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Android.Net.Sip.SipRegistrationListener"/></param>
         /// <exception cref="Android.Net.Sip.SipException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetRegistrationListener(Java.Lang.String arg0, Android.Net.Sip.SipRegistrationListener arg1)
         {
             IExecute("setRegistrationListener", arg0, arg1);
@@ -282,7 +282,7 @@ namespace Android.Net.Sip
         /// <param name="arg0"><see cref="Android.Net.Sip.SipProfile"/></param>
         /// <param name="arg1"><see cref="Android.Net.Sip.SipRegistrationListener"/></param>
         /// <exception cref="Android.Net.Sip.SipException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Unregister(Android.Net.Sip.SipProfile arg0, Android.Net.Sip.SipRegistrationListener arg1)
         {
             IExecute("unregister", arg0, arg1);

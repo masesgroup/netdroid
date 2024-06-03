@@ -46,41 +46,6 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/ConstrainedFieldPosition.html#getField()"/> 
-        /// </summary>
-        public Java.Text.Format.Field Field
-        {
-            get { return IExecuteWithSignature<Java.Text.Format.Field>("getField", "()Ljava/text/Format$Field;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/ConstrainedFieldPosition.html#getFieldValue()"/> 
-        /// </summary>
-        public object FieldValue
-        {
-            get { return IExecuteWithSignature("getFieldValue", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/ConstrainedFieldPosition.html#getInt64IterationContext()"/> <see href="https://developer.android.com/reference/android/icu/text/ConstrainedFieldPosition.html#setInt64IterationContext(long)"/>
-        /// </summary>
-        public long Int64IterationContext
-        {
-            get { return IExecuteWithSignature<long>("getInt64IterationContext", "()J"); } set { IExecuteWithSignature("setInt64IterationContext", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/ConstrainedFieldPosition.html#getLimit()"/> 
-        /// </summary>
-        public int Limit
-        {
-            get { return IExecuteWithSignature<int>("getLimit", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/ConstrainedFieldPosition.html#getStart()"/> 
-        /// </summary>
-        public int Start
-        {
-            get { return IExecuteWithSignature<int>("getStart", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/ConstrainedFieldPosition.html#matchesField(java.text.Format.Field,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.Format.Field"/></param>
@@ -89,6 +54,46 @@ namespace Android.Icu.Text
         public bool MatchesField(Java.Text.Format.Field arg0, object arg1)
         {
             return IExecute<bool>("matchesField", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/ConstrainedFieldPosition.html#getLimit()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLimit()
+        {
+            return IExecuteWithSignature<int>("getLimit", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/ConstrainedFieldPosition.html#getStart()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStart()
+        {
+            return IExecuteWithSignature<int>("getStart", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/ConstrainedFieldPosition.html#getFieldValue()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object GetFieldValue()
+        {
+            return IExecuteWithSignature("getFieldValue", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/ConstrainedFieldPosition.html#getField()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Text.Format.Field"/></returns>
+        public Java.Text.Format.Field GetField()
+        {
+            return IExecuteWithSignature<Java.Text.Format.Field>("getField", "()Ljava/text/Format$Field;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/ConstrainedFieldPosition.html#getInt64IterationContext()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetInt64IterationContext()
+        {
+            return IExecuteWithSignature<long>("getInt64IterationContext", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/ConstrainedFieldPosition.html#constrainClass(java.lang.Class)"/>
@@ -112,6 +117,14 @@ namespace Android.Icu.Text
         public void Reset()
         {
             IExecuteWithSignature("reset", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/ConstrainedFieldPosition.html#setInt64IterationContext(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetInt64IterationContext(long arg0)
+        {
+            IExecuteWithSignature("setInt64IterationContext", "(J)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/ConstrainedFieldPosition.html#setState(java.text.Format.Field,java.lang.Object,int,int)"/>

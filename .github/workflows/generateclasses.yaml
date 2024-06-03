@@ -12,6 +12,11 @@ on:
         required: true
         default: false
         type: boolean
+      UseLatestJNetReflector:
+        description: 'Shall use latest unpublished version of JNetReflector'
+        required: true
+        default: false
+        type: boolean
         
 # This workflow contains one job called "build_documentation"
 jobs:
@@ -34,6 +39,12 @@ jobs:
         with:
           fetch-depth: '1'
           submodules: 'true'
+
+      - uses: actions/checkout@v4
+        if: ${{ inputs.UseLatestJNetReflector == true }}
+        with:
+          repository: masesgroup/JNet
+          path: JNet
 
       - name: Pre compile
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src\net\Netdroid\Netdroid.csproj
@@ -65,7 +76,21 @@ jobs:
       - name: Clear Java generated files
         run: Remove-Item .\src\jvm\netdroid\src\main\java\org\mases\netdroid\generated\* -Recurse -Force -Exclude README.md
 
-      - run: dotnet tool update --version 2.5.1 -g MASES.JNetReflector
+      - name: Prebuild JNetReflector
+        if: ${{ inputs.UseLatestJNetReflector == true }}
+        run: dotnet build --no-incremental --configuration Release JNet\src\net\JNetReflector\JNetReflector.csproj
+
+      - name: Create Jars of JNetReflector
+        if: ${{ inputs.UseLatestJNetReflector == true }}
+        run: mvn "-Djcobridgepath=../../../binReflector/net8.0/JCOBridge.jar" --file ./JNet/src/jvm/jnet/pom.xml --no-transfer-progress package
+        env:
+          MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
+          MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
+          MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
+
+      - name: Download latest published version of JNetReflector
+        run: dotnet tool update --version 2.5.1 -g MASES.JNetReflector
+        if: ${{ inputs.UseLatestJNetReflector == false }}
 
       - name: Set up Apache Maven Central
         uses: actions/setup-java@v4
@@ -79,9 +104,19 @@ jobs:
           gpg-private-key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }} # Value of the GPG private key to import
           gpg-passphrase: MAVEN_GPG_PASSPHRASE # env variable for GPG private key passphrase
 
-      - name: Build classes
+      - name: Build classes with unpublished JNetReflector
+        if: ${{ inputs.UseLatestJNetReflector == true }}
         shell: cmd
-        run: jnetreflector -TraceLevel 0 -OriginRootPath %ANDROID_HOME%\platforms\android-34-ext8 -DestinationRootPath .\src\ -ConfigurationFile .\src\configuration.json
+        run: |
+          cd JNet\binReflector\net8.0
+          MASES.JNetReflector.exe -TraceLevel 0 -OriginRootPath %ANDROID_HOME%\platforms\android-34-ext8 -DestinationRootPath %GITHUB_WORKSPACE%\src\ -ConfigurationFile %GITHUB_WORKSPACE%\src\configuration.json
+        env:
+          JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
+
+      - name: Build classes with latest published version of JNetReflector
+        if: ${{ inputs.UseLatestJNetReflector == false }}
+        shell: cmd
+        run: jnetreflector -TraceLevel 0 -OriginRootPath %ANDROID_HOME%\platforms\android-34-ext8 -DestinationRootPath %GITHUB_WORKSPACE%\src\ -ConfigurationFile %GITHUB_WORKSPACE%\src\configuration.json
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
           

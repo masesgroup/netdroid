@@ -64,7 +64,7 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/SocketImplFactory.html#createSocketImpl()"/>
+        /// <see href="https://developer.android.com/reference/java/net/SocketImplFactory.html#createSocketImpl()"/>
         /// </summary>
         /// <returns><see cref="Java.Net.SocketImpl"/></returns>
         public Java.Net.SocketImpl CreateSocketImpl()

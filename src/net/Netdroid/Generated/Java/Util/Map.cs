@@ -42,7 +42,7 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#copyOf(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#copyOf(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Java.Util.Map"/></returns>
@@ -51,7 +51,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map>(LocalBridgeClazz, "copyOf", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map Of()
@@ -59,7 +59,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map>(LocalBridgeClazz, "of");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -87,7 +87,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17, arg18, arg19);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -113,7 +113,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -137,7 +137,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -159,7 +159,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -179,7 +179,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -197,7 +197,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -213,7 +213,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -227,7 +227,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -239,7 +239,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -249,7 +249,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map>(LocalBridgeClazz, "of", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#ofEntries(java.util.Map.Entry[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#ofEntries(java.util.Map.Entry[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map.Entry"/></param>
         /// <returns><see cref="Java.Util.Map"/></returns>
@@ -258,7 +258,7 @@ namespace Java.Util
             if (arg0.Length == 0) return SExecute<Java.Util.Map>(LocalBridgeClazz, "ofEntries"); else return SExecute<Java.Util.Map>(LocalBridgeClazz, "ofEntries", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#entry(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#entry(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -272,7 +272,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#containsKey(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#containsKey(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -281,7 +281,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#containsValue(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#containsValue(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -290,7 +290,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("containsValue", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#isEmpty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#isEmpty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
@@ -298,7 +298,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#size()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Size()
@@ -306,7 +306,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#values()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#values()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public Java.Util.Collection Values()
@@ -314,7 +314,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Collection>("values", "()Ljava/util/Collection;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#entrySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#entrySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set EntrySet()
@@ -322,7 +322,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Set>("entrySet", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#keySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#keySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set KeySet()
@@ -330,7 +330,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Set>("keySet", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#get(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#get(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -339,7 +339,7 @@ namespace Java.Util
             return IExecuteWithSignature("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#put(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#put(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -349,7 +349,7 @@ namespace Java.Util
             return IExecute("put", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#remove(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -358,14 +358,14 @@ namespace Java.Util
             return IExecuteWithSignature("remove", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#clear()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#putAll(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#putAll(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public void PutAll(Java.Util.Map arg0)
@@ -373,7 +373,7 @@ namespace Java.Util
             IExecuteWithSignature("putAll", "(Ljava/util/Map;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#remove(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#remove(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -383,7 +383,7 @@ namespace Java.Util
             return IExecute<bool>("remove", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -394,7 +394,7 @@ namespace Java.Util
             return IExecute<bool>("replace", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
@@ -404,7 +404,7 @@ namespace Java.Util
             return IExecute("compute", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
@@ -414,7 +414,7 @@ namespace Java.Util
             return IExecute("computeIfAbsent", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
@@ -424,7 +424,7 @@ namespace Java.Util
             return IExecute("computeIfPresent", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -434,7 +434,7 @@ namespace Java.Util
             return IExecute("getOrDefault", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -445,7 +445,7 @@ namespace Java.Util
             return IExecute("merge", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -455,7 +455,7 @@ namespace Java.Util
             return IExecute("putIfAbsent", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#replace(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#replace(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -465,7 +465,7 @@ namespace Java.Util
             return IExecute("replace", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#forEach(java.util.function.BiConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#forEach(java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
         public void ForEach(Java.Util.Function.BiConsumer arg0)
@@ -473,7 +473,7 @@ namespace Java.Util
             IExecuteWithSignature("forEach", "(Ljava/util/function/BiConsumer;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#replaceAll(java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#replaceAll(java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
         public void ReplaceAll(Java.Util.Function.BiFunction arg0)
@@ -501,7 +501,7 @@ namespace Java.Util
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Map.Entry.html#copyOf(java.util.Map.Entry)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Map.Entry.html#copyOf(java.util.Map.Entry)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Map.Entry"/></param>
             /// <returns><see cref="Java.Util.Map.Entry"/></returns>
@@ -514,21 +514,23 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Map.Entry.html#getKey()"/> 
+            /// <see href="https://developer.android.com/reference/java/util/Map.Entry.html#getKey()"/>
             /// </summary>
-            public object Key
+            /// <returns><see cref="object"/></returns>
+            public object GetKey()
             {
-                get { return IExecuteWithSignature("getKey", "()Ljava/lang/Object;"); }
+                return IExecuteWithSignature("getKey", "()Ljava/lang/Object;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Map.Entry.html#getValue()"/> 
+            /// <see href="https://developer.android.com/reference/java/util/Map.Entry.html#getValue()"/>
             /// </summary>
-            public object Value
+            /// <returns><see cref="object"/></returns>
+            public object GetValue()
             {
-                get { return IExecuteWithSignature("getValue", "()Ljava/lang/Object;"); }
+                return IExecuteWithSignature("getValue", "()Ljava/lang/Object;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Map.Entry.html#setValue(java.lang.Object)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Map.Entry.html#setValue(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
             /// <returns><see cref="object"/></returns>
@@ -568,13 +570,13 @@ namespace Java.Util
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Map.Entry.html#copyOf(java.util.Map.Entry)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Map.Entry.html#copyOf(java.util.Map.Entry)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Map.Entry"/></param>
             /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
             /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
             /// <returns><see cref="Java.Util.Map.Entry"/></returns>
-            public static Java.Util.Map.Entry<K, V> CopyOf<Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map.Entry<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK: K where Arg0ExtendsV: V
+            public static Java.Util.Map.Entry<K, V> CopyOf<Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map.Entry<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
             {
                 return SExecute<Java.Util.Map.Entry<K, V>>(LocalBridgeClazz, "copyOf", arg0);
             }
@@ -583,21 +585,23 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Map.Entry.html#getKey()"/> 
+            /// <see href="https://developer.android.com/reference/java/util/Map.Entry.html#getKey()"/>
             /// </summary>
-            public K Key
+            /// <returns><typeparamref name="K"/></returns>
+            public K GetKey()
             {
-                get { return IExecuteWithSignature<K>("getKey", "()Ljava/lang/Object;"); }
+                return IExecuteWithSignature<K>("getKey", "()Ljava/lang/Object;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Map.Entry.html#getValue()"/> 
+            /// <see href="https://developer.android.com/reference/java/util/Map.Entry.html#getValue()"/>
             /// </summary>
-            public V Value
+            /// <returns><typeparamref name="V"/></returns>
+            public V GetValue()
             {
-                get { return IExecuteWithSignature<V>("getValue", "()Ljava/lang/Object;"); }
+                return IExecuteWithSignature<V>("getValue", "()Ljava/lang/Object;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Map.Entry.html#setValue(java.lang.Object)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Map.Entry.html#setValue(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><typeparamref name="V"/></param>
             /// <returns><typeparamref name="V"/></returns>
@@ -662,18 +666,18 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#copyOf(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#copyOf(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> CopyOf<Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK: K where Arg0ExtendsV: V
+        public static Java.Util.Map<K, V> CopyOf<Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
         {
             return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "copyOf", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> Of()
@@ -681,7 +685,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -709,7 +713,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17, arg18, arg19);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -735,7 +739,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -759,7 +763,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -781,7 +785,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -801,7 +805,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -819,7 +823,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -835,7 +839,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -849,7 +853,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -861,7 +865,7 @@ namespace Java.Util
             return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -871,18 +875,18 @@ namespace Java.Util
             return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#ofEntries(java.util.Map.Entry[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#ofEntries(java.util.Map.Entry[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map.Entry"/></param>
         /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> OfEntries<Arg0ExtendsK, Arg0ExtendsV>(params Java.Util.Map.Entry<Arg0ExtendsK, Arg0ExtendsV>[] arg0) where Arg0ExtendsK: K where Arg0ExtendsV: V
+        public static Java.Util.Map<K, V> OfEntries<Arg0ExtendsK, Arg0ExtendsV>(params Java.Util.Map.Entry<Arg0ExtendsK, Arg0ExtendsV>[] arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
         {
             if (arg0.Length == 0) return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "ofEntries"); else return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "ofEntries", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#entry(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#entry(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -896,7 +900,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#containsKey(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#containsKey(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -905,7 +909,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#containsValue(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#containsValue(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -914,7 +918,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("containsValue", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#isEmpty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#isEmpty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
@@ -922,7 +926,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#size()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Size()
@@ -930,7 +934,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#values()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#values()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public Java.Util.Collection<V> Values()
@@ -938,7 +942,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Collection<V>>("values", "()Ljava/util/Collection;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#entrySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#entrySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Util.Map.Entry<K, V>> EntrySet()
@@ -946,7 +950,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Set<Java.Util.Map.Entry<K, V>>>("entrySet", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#keySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#keySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<K> KeySet()
@@ -954,7 +958,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Set<K>>("keySet", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#get(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#get(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><typeparamref name="V"/></returns>
@@ -963,7 +967,7 @@ namespace Java.Util
             return IExecuteWithSignature<V>("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#put(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#put(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -973,7 +977,7 @@ namespace Java.Util
             return IExecute<V>("put", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#remove(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><typeparamref name="V"/></returns>
@@ -982,24 +986,24 @@ namespace Java.Util
             return IExecuteWithSignature<V>("remove", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#clear()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#putAll(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#putAll(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        public void PutAll<Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK: K where Arg0ExtendsV: V
+        public void PutAll<Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
         {
             IExecuteWithSignature("putAll", "(Ljava/util/Map;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#remove(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#remove(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -1009,7 +1013,7 @@ namespace Java.Util
             return IExecute<bool>("remove", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -1020,7 +1024,7 @@ namespace Java.Util
             return IExecute<bool>("replace", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
@@ -1028,24 +1032,24 @@ namespace Java.Util
         /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
         /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public V Compute<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK: K where Arg1objectSuperV: V where Arg1ExtendsV: V
+        public V Compute<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V
         {
             return IExecute<V>("compute", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
         /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public V ComputeIfAbsent<Arg1objectSuperK, Arg1ExtendsV>(K arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsV> arg1) where Arg1objectSuperK: K where Arg1ExtendsV: V
+        public V ComputeIfAbsent<Arg1objectSuperK, Arg1ExtendsV>(K arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1ExtendsV : V
         {
             return IExecute<V>("computeIfAbsent", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
@@ -1053,12 +1057,12 @@ namespace Java.Util
         /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
         /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public V ComputeIfPresent<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK: K where Arg1objectSuperV: V where Arg1ExtendsV: V
+        public V ComputeIfPresent<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V
         {
             return IExecute<V>("computeIfPresent", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -1068,7 +1072,7 @@ namespace Java.Util
             return IExecute<V>("getOrDefault", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -1076,12 +1080,12 @@ namespace Java.Util
         /// <typeparam name="Arg2objectSuperV"><typeparamref name="V"/></typeparam>
         /// <typeparam name="Arg2ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public V Merge<Arg2objectSuperV, Arg2ExtendsV>(K arg0, V arg1, Java.Util.Function.BiFunction<Arg2objectSuperV, Arg2objectSuperV, Arg2ExtendsV> arg2) where Arg2objectSuperV: V where Arg2ExtendsV: V
+        public V Merge<Arg2objectSuperV, Arg2ExtendsV>(K arg0, V arg1, Java.Util.Function.BiFunction<Arg2objectSuperV, Arg2objectSuperV, Arg2ExtendsV> arg2) where Arg2objectSuperV : V where Arg2ExtendsV : V
         {
             return IExecute<V>("merge", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -1091,7 +1095,7 @@ namespace Java.Util
             return IExecute<V>("putIfAbsent", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#replace(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#replace(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -1101,23 +1105,23 @@ namespace Java.Util
             return IExecute<V>("replace", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#forEach(java.util.function.BiConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#forEach(java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
         /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
         /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
-        public void ForEach<Arg0objectSuperK, Arg0objectSuperV>(Java.Util.Function.BiConsumer<Arg0objectSuperK, Arg0objectSuperV> arg0) where Arg0objectSuperK: K where Arg0objectSuperV: V
+        public void ForEach<Arg0objectSuperK, Arg0objectSuperV>(Java.Util.Function.BiConsumer<Arg0objectSuperK, Arg0objectSuperV> arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V
         {
             IExecuteWithSignature("forEach", "(Ljava/util/function/BiConsumer;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Map.html#replaceAll(java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Map.html#replaceAll(java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
         /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
         /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        public void ReplaceAll<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV>(Java.Util.Function.BiFunction<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV> arg0) where Arg0objectSuperK: K where Arg0objectSuperV: V where Arg0ExtendsV: V
+        public void ReplaceAll<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV>(Java.Util.Function.BiFunction<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV> arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V where Arg0ExtendsV : V
         {
             IExecuteWithSignature("replaceAll", "(Ljava/util/function/BiFunction;)V", arg0);
         }

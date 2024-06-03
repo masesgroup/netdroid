@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public ArrayDeque(int arg0)
@@ -38,7 +38,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#%3Cinit%3E(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public ArrayDeque(Java.Util.Collection arg0)
@@ -74,21 +74,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#getFirst()"/> 
-        /// </summary>
-        public object First
-        {
-            get { return IExecuteWithSignature("getFirst", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#getLast()"/> 
-        /// </summary>
-        public object Last
-        {
-            get { return IExecuteWithSignature("getLast", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#offer(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#offer(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -97,7 +83,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#offerFirst(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#offerFirst(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -106,7 +92,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("offerFirst", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#offerLast(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#offerLast(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -115,7 +101,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("offerLast", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#removeFirstOccurrence(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#removeFirstOccurrence(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -124,7 +110,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("removeFirstOccurrence", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#removeLastOccurrence(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#removeLastOccurrence(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -133,7 +119,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("removeLastOccurrence", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#element()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#element()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Element()
@@ -141,7 +127,23 @@ namespace Java.Util
             return IExecuteWithSignature("element", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#peek()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#getFirst()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object GetFirst()
+        {
+            return IExecuteWithSignature("getFirst", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#getLast()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object GetLast()
+        {
+            return IExecuteWithSignature("getLast", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#peek()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Peek()
@@ -149,7 +151,7 @@ namespace Java.Util
             return IExecuteWithSignature("peek", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#peekFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#peekFirst()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object PeekFirst()
@@ -157,7 +159,7 @@ namespace Java.Util
             return IExecuteWithSignature("peekFirst", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#peekLast()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#peekLast()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object PeekLast()
@@ -165,7 +167,7 @@ namespace Java.Util
             return IExecuteWithSignature("peekLast", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#poll()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#poll()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Poll()
@@ -173,7 +175,7 @@ namespace Java.Util
             return IExecuteWithSignature("poll", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#pollFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#pollFirst()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object PollFirst()
@@ -181,7 +183,7 @@ namespace Java.Util
             return IExecuteWithSignature("pollFirst", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#pollLast()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#pollLast()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object PollLast()
@@ -189,7 +191,7 @@ namespace Java.Util
             return IExecuteWithSignature("pollLast", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#pop()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#pop()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Pop()
@@ -197,7 +199,7 @@ namespace Java.Util
             return IExecuteWithSignature("pop", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#remove()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#remove()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Remove()
@@ -205,7 +207,7 @@ namespace Java.Util
             return IExecuteWithSignature("remove", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#removeFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#removeFirst()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object RemoveFirst()
@@ -213,7 +215,7 @@ namespace Java.Util
             return IExecuteWithSignature("removeFirst", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#removeLast()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#removeLast()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object RemoveLast()
@@ -221,7 +223,7 @@ namespace Java.Util
             return IExecuteWithSignature("removeLast", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#clone()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#clone()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.ArrayDeque"/></returns>
         public Java.Util.ArrayDeque Clone()
@@ -229,7 +231,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.ArrayDeque>("clone", "()Ljava/util/ArrayDeque;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#descendingIterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#descendingIterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator DescendingIterator()
@@ -237,7 +239,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Iterator>("descendingIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#addFirst(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#addFirst(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void AddFirst(object arg0)
@@ -245,7 +247,7 @@ namespace Java.Util
             IExecuteWithSignature("addFirst", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#addLast(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#addLast(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void AddLast(object arg0)
@@ -253,7 +255,7 @@ namespace Java.Util
             IExecuteWithSignature("addLast", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#push(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#push(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void Push(object arg0)
@@ -276,7 +278,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public ArrayDeque(int arg0)
@@ -284,7 +286,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#%3Cinit%3E(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public ArrayDeque(Java.Util.Collection<E> arg0)
@@ -324,21 +326,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#getFirst()"/> 
-        /// </summary>
-        public E First
-        {
-            get { return IExecuteWithSignature<E>("getFirst", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#getLast()"/> 
-        /// </summary>
-        public E Last
-        {
-            get { return IExecuteWithSignature<E>("getLast", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#offer(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#offer(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -347,7 +335,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#offerFirst(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#offerFirst(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -356,7 +344,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("offerFirst", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#offerLast(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#offerLast(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -365,7 +353,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("offerLast", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#removeFirstOccurrence(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#removeFirstOccurrence(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -374,7 +362,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("removeFirstOccurrence", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#removeLastOccurrence(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#removeLastOccurrence(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -383,7 +371,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("removeLastOccurrence", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#element()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#element()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Element()
@@ -391,7 +379,23 @@ namespace Java.Util
             return IExecuteWithSignature<E>("element", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#peek()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#getFirst()"/>
+        /// </summary>
+        /// <returns><typeparamref name="E"/></returns>
+        public E GetFirst()
+        {
+            return IExecuteWithSignature<E>("getFirst", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#getLast()"/>
+        /// </summary>
+        /// <returns><typeparamref name="E"/></returns>
+        public E GetLast()
+        {
+            return IExecuteWithSignature<E>("getLast", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#peek()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Peek()
@@ -399,7 +403,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("peek", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#peekFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#peekFirst()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E PeekFirst()
@@ -407,7 +411,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("peekFirst", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#peekLast()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#peekLast()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E PeekLast()
@@ -415,7 +419,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("peekLast", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#poll()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#poll()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Poll()
@@ -423,7 +427,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("poll", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#pollFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#pollFirst()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E PollFirst()
@@ -431,7 +435,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("pollFirst", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#pollLast()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#pollLast()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E PollLast()
@@ -439,7 +443,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("pollLast", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#pop()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#pop()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Pop()
@@ -447,7 +451,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("pop", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#remove()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#remove()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Remove()
@@ -455,7 +459,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("remove", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#removeFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#removeFirst()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E RemoveFirst()
@@ -463,7 +467,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("removeFirst", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#removeLast()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#removeLast()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E RemoveLast()
@@ -471,7 +475,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("removeLast", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#clone()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#clone()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.ArrayDeque"/></returns>
         public Java.Util.ArrayDeque<E> Clone()
@@ -479,7 +483,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.ArrayDeque<E>>("clone", "()Ljava/util/ArrayDeque;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#descendingIterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#descendingIterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> DescendingIterator()
@@ -487,7 +491,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Iterator<E>>("descendingIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#addFirst(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#addFirst(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void AddFirst(E arg0)
@@ -495,7 +499,7 @@ namespace Java.Util
             IExecuteWithSignature("addFirst", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#addLast(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#addLast(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void AddLast(E arg0)
@@ -503,7 +507,7 @@ namespace Java.Util
             IExecuteWithSignature("addLast", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayDeque.html#push(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayDeque.html#push(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void Push(E arg0)

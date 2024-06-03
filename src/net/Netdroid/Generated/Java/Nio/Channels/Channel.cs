@@ -64,7 +64,7 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Channel.html#isOpen()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Channel.html#isOpen()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsOpen()
@@ -72,7 +72,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<bool>("isOpen", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Channel.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Channel.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Close()

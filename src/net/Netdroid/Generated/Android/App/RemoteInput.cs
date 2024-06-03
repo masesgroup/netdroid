@@ -151,53 +151,20 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#getAllowedDataTypes()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#getExtras()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> AllowedDataTypes
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getAllowedDataTypes", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#getAllowFreeFormInput()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#getAllowFreeFormInput()"/>
         /// </summary>
-        public bool AllowFreeFormInput
+        /// <returns><see cref="bool"/></returns>
+        public bool GetAllowFreeFormInput()
         {
-            get { return IExecuteWithSignature<bool>("getAllowFreeFormInput", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#getChoices()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence[] Choices
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.CharSequence>("getChoices", "()[Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#getEditChoicesBeforeSending()"/> 
-        /// </summary>
-        public int EditChoicesBeforeSending
-        {
-            get { return IExecuteWithSignature<int>("getEditChoicesBeforeSending", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#getExtras()"/> 
-        /// </summary>
-        public Android.Os.Bundle Extras
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#getLabel()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Label
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#getResultKey()"/> 
-        /// </summary>
-        public Java.Lang.String ResultKey
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getResultKey", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<bool>("getAllowFreeFormInput", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#isDataOnly()"/>
@@ -214,6 +181,46 @@ namespace Android.App
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#getEditChoicesBeforeSending()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEditChoicesBeforeSending()
+        {
+            return IExecuteWithSignature<int>("getEditChoicesBeforeSending", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#getLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#getChoices()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence[] GetChoices()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.CharSequence>("getChoices", "()[Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#getResultKey()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetResultKey()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getResultKey", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#getAllowedDataTypes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetAllowedDataTypes()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getAllowedDataTypes", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#writeToParcel(android.os.Parcel,int)"/>
@@ -256,13 +263,6 @@ namespace Android.App
             #endregion
 
             #region Instance methods
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/RemoteInput.Builder.html#getExtras()"/> 
-            /// </summary>
-            public Android.Os.Bundle Extras
-            {
-                get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-            }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/RemoteInput.Builder.html#build()"/>
             /// </summary>
@@ -325,6 +325,14 @@ namespace Android.App
             public Android.App.RemoteInput.Builder SetLabel(Java.Lang.CharSequence arg0)
             {
                 return IExecuteWithSignature<Android.App.RemoteInput.Builder>("setLabel", "(Ljava/lang/CharSequence;)Landroid/app/RemoteInput$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/RemoteInput.Builder.html#getExtras()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Os.Bundle"/></returns>
+            public Android.Os.Bundle GetExtras()
+            {
+                return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
             }
 
             #endregion

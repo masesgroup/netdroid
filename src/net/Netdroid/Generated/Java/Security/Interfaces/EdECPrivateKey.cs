@@ -72,11 +72,12 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/EdECPrivateKey.html#getBytes()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/EdECPrivateKey.html#getBytes()"/>
         /// </summary>
-        public Java.Util.Optional<byte[]> Bytes
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional<byte[]> GetBytes()
         {
-            get { return IExecuteWithSignature<Java.Util.Optional<byte[]>>("getBytes", "()Ljava/util/Optional;"); }
+            return IExecuteWithSignature<Java.Util.Optional<byte[]>>("getBytes", "()Ljava/util/Optional;");
         }
 
         #endregion

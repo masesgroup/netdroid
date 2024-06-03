@@ -64,34 +64,55 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionContext.html#getIds()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSessionContext.html#getSessionCacheSize()"/>
         /// </summary>
-        public Java.Util.Enumeration<byte[]> Ids
+        /// <returns><see cref="int"/></returns>
+        public int GetSessionCacheSize()
         {
-            get { return IExecuteWithSignature<Java.Util.Enumeration<byte[]>>("getIds", "()Ljava/util/Enumeration;"); }
+            return IExecuteWithSignature<int>("getSessionCacheSize", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionContext.html#getSessionCacheSize()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionContext.html#setSessionCacheSize(int)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSessionContext.html#getSessionTimeout()"/>
         /// </summary>
-        public int SessionCacheSize
+        /// <returns><see cref="int"/></returns>
+        public int GetSessionTimeout()
         {
-            get { return IExecuteWithSignature<int>("getSessionCacheSize", "()I"); } set { IExecuteWithSignature("setSessionCacheSize", "(I)V", value); }
+            return IExecuteWithSignature<int>("getSessionTimeout", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionContext.html#getSessionTimeout()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionContext.html#setSessionTimeout(int)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSessionContext.html#getIds()"/>
         /// </summary>
-        public int SessionTimeout
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration<byte[]> GetIds()
         {
-            get { return IExecuteWithSignature<int>("getSessionTimeout", "()I"); } set { IExecuteWithSignature("setSessionTimeout", "(I)V", value); }
+            return IExecuteWithSignature<Java.Util.Enumeration<byte[]>>("getIds", "()Ljava/util/Enumeration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionContext.html#getSession(byte[])"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSessionContext.html#getSession(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="Javax.Net.Ssl.SSLSession"/></returns>
         public Javax.Net.Ssl.SSLSession GetSession(byte[] arg0)
         {
             return IExecuteWithSignature<Javax.Net.Ssl.SSLSession>("getSession", "([B)Ljavax/net/ssl/SSLSession;", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSessionContext.html#setSessionCacheSize(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        public void SetSessionCacheSize(int arg0)
+        {
+            IExecuteWithSignature("setSessionCacheSize", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSessionContext.html#setSessionTimeout(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        public void SetSessionTimeout(int arg0)
+        {
+            IExecuteWithSignature("setSessionTimeout", "(I)V", arg0);
         }
 
         #endregion

@@ -70,26 +70,28 @@ namespace Android.App.Admin
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/SystemUpdateInfo.html#getReceivedTime()"/> 
-        /// </summary>
-        public long ReceivedTime
-        {
-            get { return IExecuteWithSignature<long>("getReceivedTime", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/SystemUpdateInfo.html#getSecurityPatchState()"/> 
-        /// </summary>
-        public int SecurityPatchState
-        {
-            get { return IExecuteWithSignature<int>("getSecurityPatchState", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/SystemUpdateInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/SystemUpdateInfo.html#getSecurityPatchState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSecurityPatchState()
+        {
+            return IExecuteWithSignature<int>("getSecurityPatchState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/SystemUpdateInfo.html#getReceivedTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetReceivedTime()
+        {
+            return IExecuteWithSignature<long>("getReceivedTime", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/SystemUpdateInfo.html#writeToParcel(android.os.Parcel,int)"/>

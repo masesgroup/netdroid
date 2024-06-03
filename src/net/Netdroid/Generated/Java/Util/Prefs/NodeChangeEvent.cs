@@ -30,7 +30,7 @@ namespace Java.Util.Prefs
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/NodeChangeEvent.html#%3Cinit%3E(java.util.prefs.Preferences,java.util.prefs.Preferences)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/NodeChangeEvent.html#%3Cinit%3E(java.util.prefs.Preferences,java.util.prefs.Preferences)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Prefs.Preferences"/></param>
         /// <param name="arg1"><see cref="Java.Util.Prefs.Preferences"/></param>
@@ -55,18 +55,20 @@ namespace Java.Util.Prefs
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/NodeChangeEvent.html#getChild()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/prefs/NodeChangeEvent.html#getChild()"/>
         /// </summary>
-        public Java.Util.Prefs.Preferences Child
+        /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
+        public Java.Util.Prefs.Preferences GetChild()
         {
-            get { return IExecuteWithSignature<Java.Util.Prefs.Preferences>("getChild", "()Ljava/util/prefs/Preferences;"); }
+            return IExecuteWithSignature<Java.Util.Prefs.Preferences>("getChild", "()Ljava/util/prefs/Preferences;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/NodeChangeEvent.html#getParent()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/prefs/NodeChangeEvent.html#getParent()"/>
         /// </summary>
-        public Java.Util.Prefs.Preferences Parent
+        /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
+        public Java.Util.Prefs.Preferences GetParent()
         {
-            get { return IExecuteWithSignature<Java.Util.Prefs.Preferences>("getParent", "()Ljava/util/prefs/Preferences;"); }
+            return IExecuteWithSignature<Java.Util.Prefs.Preferences>("getParent", "()Ljava/util/prefs/Preferences;");
         }
 
         #endregion

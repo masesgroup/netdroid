@@ -57,7 +57,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="byte"/></param>
         /// <param name="arg2"><see cref="Android.Graphics.Rect"/></param>
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public NinePatchDrawable(Android.Graphics.Bitmap arg0, byte[] arg1, Android.Graphics.Rect arg2, Java.Lang.String arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -66,7 +66,7 @@ namespace Android.Graphics.Drawable
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/NinePatchDrawable.html#%3Cinit%3E(android.graphics.NinePatch)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.NinePatch"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public NinePatchDrawable(Android.Graphics.NinePatch arg0)
             : base(arg0)
         {
@@ -88,11 +88,12 @@ namespace Android.Graphics.Drawable
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/NinePatchDrawable.html#getPaint()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/NinePatchDrawable.html#getPaint()"/>
         /// </summary>
-        public Android.Graphics.Paint Paint
+        /// <returns><see cref="Android.Graphics.Paint"/></returns>
+        public Android.Graphics.Paint GetPaint()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Paint>("getPaint", "()Landroid/graphics/Paint;"); }
+            return IExecuteWithSignature<Android.Graphics.Paint>("getPaint", "()Landroid/graphics/Paint;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/NinePatchDrawable.html#setTargetDensity(android.graphics.Canvas)"/>

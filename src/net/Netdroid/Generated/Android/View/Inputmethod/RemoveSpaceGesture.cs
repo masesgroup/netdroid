@@ -56,18 +56,20 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/RemoveSpaceGesture.html#getEndPoint()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/RemoveSpaceGesture.html#getEndPoint()"/>
         /// </summary>
-        public Android.Graphics.PointF EndPoint
+        /// <returns><see cref="Android.Graphics.PointF"/></returns>
+        public Android.Graphics.PointF GetEndPoint()
         {
-            get { return IExecuteWithSignature<Android.Graphics.PointF>("getEndPoint", "()Landroid/graphics/PointF;"); }
+            return IExecuteWithSignature<Android.Graphics.PointF>("getEndPoint", "()Landroid/graphics/PointF;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/RemoveSpaceGesture.html#getStartPoint()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/RemoveSpaceGesture.html#getStartPoint()"/>
         /// </summary>
-        public Android.Graphics.PointF StartPoint
+        /// <returns><see cref="Android.Graphics.PointF"/></returns>
+        public Android.Graphics.PointF GetStartPoint()
         {
-            get { return IExecuteWithSignature<Android.Graphics.PointF>("getStartPoint", "()Landroid/graphics/PointF;"); }
+            return IExecuteWithSignature<Android.Graphics.PointF>("getStartPoint", "()Landroid/graphics/PointF;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/RemoveSpaceGesture.html#describeContents()"/>

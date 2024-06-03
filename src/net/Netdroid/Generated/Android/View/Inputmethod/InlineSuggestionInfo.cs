@@ -76,32 +76,12 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionInfo.html#getAutofillHints()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionInfo.html#getInlinePresentationSpec()"/>
         /// </summary>
-        public Java.Lang.String[] AutofillHints
+        /// <returns><see cref="Android.Widget.Inline.InlinePresentationSpec"/></returns>
+        public Android.Widget.Inline.InlinePresentationSpec GetInlinePresentationSpec()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getAutofillHints", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionInfo.html#getInlinePresentationSpec()"/> 
-        /// </summary>
-        public Android.Widget.Inline.InlinePresentationSpec InlinePresentationSpec
-        {
-            get { return IExecuteWithSignature<Android.Widget.Inline.InlinePresentationSpec>("getInlinePresentationSpec", "()Landroid/widget/inline/InlinePresentationSpec;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionInfo.html#getSource()"/> 
-        /// </summary>
-        public Java.Lang.String Source
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSource", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionInfo.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.String Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Widget.Inline.InlinePresentationSpec>("getInlinePresentationSpec", "()Landroid/widget/inline/InlinePresentationSpec;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionInfo.html#isPinned()"/>
@@ -118,6 +98,30 @@ namespace Android.View.Inputmethod
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionInfo.html#getSource()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSource()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSource", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionInfo.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionInfo.html#getAutofillHints()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetAutofillHints()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getAutofillHints", "()[Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionInfo.html#writeToParcel(android.os.Parcel,int)"/>

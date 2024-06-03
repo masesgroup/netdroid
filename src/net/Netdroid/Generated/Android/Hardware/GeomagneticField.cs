@@ -57,53 +57,60 @@ namespace Android.Hardware
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/GeomagneticField.html#getDeclination()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/GeomagneticField.html#getDeclination()"/>
         /// </summary>
-        public float Declination
+        /// <returns><see cref="float"/></returns>
+        public float GetDeclination()
         {
-            get { return IExecuteWithSignature<float>("getDeclination", "()F"); }
+            return IExecuteWithSignature<float>("getDeclination", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/GeomagneticField.html#getFieldStrength()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/GeomagneticField.html#getFieldStrength()"/>
         /// </summary>
-        public float FieldStrength
+        /// <returns><see cref="float"/></returns>
+        public float GetFieldStrength()
         {
-            get { return IExecuteWithSignature<float>("getFieldStrength", "()F"); }
+            return IExecuteWithSignature<float>("getFieldStrength", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/GeomagneticField.html#getHorizontalStrength()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/GeomagneticField.html#getHorizontalStrength()"/>
         /// </summary>
-        public float HorizontalStrength
+        /// <returns><see cref="float"/></returns>
+        public float GetHorizontalStrength()
         {
-            get { return IExecuteWithSignature<float>("getHorizontalStrength", "()F"); }
+            return IExecuteWithSignature<float>("getHorizontalStrength", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/GeomagneticField.html#getInclination()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/GeomagneticField.html#getInclination()"/>
         /// </summary>
-        public float Inclination
+        /// <returns><see cref="float"/></returns>
+        public float GetInclination()
         {
-            get { return IExecuteWithSignature<float>("getInclination", "()F"); }
+            return IExecuteWithSignature<float>("getInclination", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/GeomagneticField.html#getX()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/GeomagneticField.html#getX()"/>
         /// </summary>
-        public float X
+        /// <returns><see cref="float"/></returns>
+        public float GetX()
         {
-            get { return IExecuteWithSignature<float>("getX", "()F"); }
+            return IExecuteWithSignature<float>("getX", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/GeomagneticField.html#getY()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/GeomagneticField.html#getY()"/>
         /// </summary>
-        public float Y
+        /// <returns><see cref="float"/></returns>
+        public float GetY()
         {
-            get { return IExecuteWithSignature<float>("getY", "()F"); }
+            return IExecuteWithSignature<float>("getY", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/GeomagneticField.html#getZ()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/GeomagneticField.html#getZ()"/>
         /// </summary>
-        public float Z
+        /// <returns><see cref="float"/></returns>
+        public float GetZ()
         {
-            get { return IExecuteWithSignature<float>("getZ", "()F"); }
+            return IExecuteWithSignature<float>("getZ", "()F");
         }
 
         #endregion

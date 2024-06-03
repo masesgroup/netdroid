@@ -38,7 +38,7 @@ namespace Android.Media.Tv
         /// <param name="arg3"><see cref="Android.Net.Uri"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public TableResponse(int arg0, int arg1, int arg2, Android.Net.Uri arg3, int arg4, int arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -66,39 +66,44 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TableResponse.html#getSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/TableResponse.html#getTableUri()"/>
         /// </summary>
-        public int Size
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetTableUri()
         {
-            get { return IExecuteWithSignature<int>("getSize", "()I"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getTableUri", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TableResponse.html#getTableByteArray()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/TableResponse.html#getTableSharedMemory()"/>
         /// </summary>
-        public byte[] TableByteArray
+        /// <returns><see cref="Android.Os.SharedMemory"/></returns>
+        public Android.Os.SharedMemory GetTableSharedMemory()
         {
-            get { return IExecuteWithSignatureArray<byte>("getTableByteArray", "()[B"); }
+            return IExecuteWithSignature<Android.Os.SharedMemory>("getTableSharedMemory", "()Landroid/os/SharedMemory;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TableResponse.html#getTableSharedMemory()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/TableResponse.html#getTableByteArray()"/>
         /// </summary>
-        public Android.Os.SharedMemory TableSharedMemory
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetTableByteArray()
         {
-            get { return IExecuteWithSignature<Android.Os.SharedMemory>("getTableSharedMemory", "()Landroid/os/SharedMemory;"); }
+            return IExecuteWithSignatureArray<byte>("getTableByteArray", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TableResponse.html#getTableUri()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/TableResponse.html#getSize()"/>
         /// </summary>
-        public Android.Net.Uri TableUri
+        /// <returns><see cref="int"/></returns>
+        public int GetSize()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getTableUri", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<int>("getSize", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TableResponse.html#getVersion()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/TableResponse.html#getVersion()"/>
         /// </summary>
-        public int Version
+        /// <returns><see cref="int"/></returns>
+        public int GetVersion()
         {
-            get { return IExecuteWithSignature<int>("getVersion", "()I"); }
+            return IExecuteWithSignature<int>("getVersion", "()I");
         }
 
         #endregion

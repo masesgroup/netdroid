@@ -68,9 +68,9 @@ namespace Android.Database.Sqlite
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("onBegin", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnBeginEventHandler));
-            AddEventHandler("onCommit", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnCommitEventHandler));
-            AddEventHandler("onRollback", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnRollbackEventHandler));
+            AddEventHandler("onBegin", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnBeginEventHandler));
+            AddEventHandler("onCommit", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnCommitEventHandler));
+            AddEventHandler("onRollback", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnRollbackEventHandler));
 
         }
 
@@ -78,7 +78,7 @@ namespace Android.Database.Sqlite
         /// Handler for <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteTransactionListener.html#onBegin()"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnBegin"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnOnBegin { get; set; } = null;
+        public global::System.Action OnOnBegin { get; set; } = null;
 
         void OnBeginEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -98,7 +98,7 @@ namespace Android.Database.Sqlite
         /// Handler for <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteTransactionListener.html#onCommit()"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnCommit"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnOnCommit { get; set; } = null;
+        public global::System.Action OnOnCommit { get; set; } = null;
 
         void OnCommitEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -118,7 +118,7 @@ namespace Android.Database.Sqlite
         /// Handler for <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteTransactionListener.html#onRollback()"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnRollback"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnOnRollback { get; set; } = null;
+        public global::System.Action OnOnRollback { get; set; } = null;
 
         void OnRollbackEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {

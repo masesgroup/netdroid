@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/LineNumberInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/io/LineNumberInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public LineNumberInputStream(Java.Io.InputStream arg0)
@@ -54,11 +54,20 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/LineNumberInputStream.html#getLineNumber()"/> <see href="https://developer.android.com/reference/java.base/java/io/LineNumberInputStream.html#setLineNumber(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/LineNumberInputStream.html#getLineNumber()"/>
         /// </summary>
-        public int LineNumber
+        /// <returns><see cref="int"/></returns>
+        public int GetLineNumber()
         {
-            get { return IExecuteWithSignature<int>("getLineNumber", "()I"); } set { IExecuteWithSignature("setLineNumber", "(I)V", value); }
+            return IExecuteWithSignature<int>("getLineNumber", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/LineNumberInputStream.html#setLineNumber(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetLineNumber(int arg0)
+        {
+            IExecuteWithSignature("setLineNumber", "(I)V", arg0);
         }
 
         #endregion

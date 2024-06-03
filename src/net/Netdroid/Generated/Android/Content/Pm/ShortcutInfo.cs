@@ -122,123 +122,52 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getActivity()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getActivity()"/>
         /// </summary>
-        public Android.Content.ComponentName Activity
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        public Android.Content.ComponentName GetActivity()
         {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getActivity", "()Landroid/content/ComponentName;"); }
+            return IExecuteWithSignature<Android.Content.ComponentName>("getActivity", "()Landroid/content/ComponentName;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getCapabilities()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getIntent()"/>
         /// </summary>
-        public Java.Util.List<Android.Content.Pm.Capability> Capabilities
+        /// <returns><see cref="Android.Content.Intent"/></returns>
+        public Android.Content.Intent GetIntent()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.Capability>>("getCapabilities", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Content.Intent>("getIntent", "()Landroid/content/Intent;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getCategories()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getIntents()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> Categories
+        /// <returns><see cref="Android.Content.Intent"/></returns>
+        public Android.Content.Intent[] GetIntents()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getCategories", "()Ljava/util/Set;"); }
+            return IExecuteWithSignatureArray<Android.Content.Intent>("getIntents", "()[Landroid/content/Intent;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getDisabledMessage()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getLocusId()"/>
         /// </summary>
-        public Java.Lang.CharSequence DisabledMessage
+        /// <returns><see cref="Android.Content.LocusId"/></returns>
+        public Android.Content.LocusId GetLocusId()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getDisabledMessage", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Android.Content.LocusId>("getLocusId", "()Landroid/content/LocusId;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getDisabledReason()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getExtras()"/>
         /// </summary>
-        public int DisabledReason
+        /// <returns><see cref="Android.Os.PersistableBundle"/></returns>
+        public Android.Os.PersistableBundle GetExtras()
         {
-            get { return IExecuteWithSignature<int>("getDisabledReason", "()I"); }
+            return IExecuteWithSignature<Android.Os.PersistableBundle>("getExtras", "()Landroid/os/PersistableBundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getExcludedFromSurfaces()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getUserHandle()"/>
         /// </summary>
-        public int ExcludedFromSurfaces
+        /// <returns><see cref="Android.Os.UserHandle"/></returns>
+        public Android.Os.UserHandle GetUserHandle()
         {
-            get { return IExecuteWithSignature<int>("getExcludedFromSurfaces", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getExtras()"/> 
-        /// </summary>
-        public Android.Os.PersistableBundle Extras
-        {
-            get { return IExecuteWithSignature<Android.Os.PersistableBundle>("getExtras", "()Landroid/os/PersistableBundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getId()"/> 
-        /// </summary>
-        public Java.Lang.String Id
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getIntent()"/> 
-        /// </summary>
-        public Android.Content.Intent Intent
-        {
-            get { return IExecuteWithSignature<Android.Content.Intent>("getIntent", "()Landroid/content/Intent;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getIntents()"/> 
-        /// </summary>
-        public Android.Content.Intent[] Intents
-        {
-            get { return IExecuteWithSignatureArray<Android.Content.Intent>("getIntents", "()[Landroid/content/Intent;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getLastChangedTimestamp()"/> 
-        /// </summary>
-        public long LastChangedTimestamp
-        {
-            get { return IExecuteWithSignature<long>("getLastChangedTimestamp", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getLocusId()"/> 
-        /// </summary>
-        public Android.Content.LocusId LocusId
-        {
-            get { return IExecuteWithSignature<Android.Content.LocusId>("getLocusId", "()Landroid/content/LocusId;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getLongLabel()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence LongLabel
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getLongLabel", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getPackage()"/> 
-        /// </summary>
-        public Java.Lang.String Package
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getRank()"/> 
-        /// </summary>
-        public int Rank
-        {
-            get { return IExecuteWithSignature<int>("getRank", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getShortLabel()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence ShortLabel
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getShortLabel", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getUserHandle()"/> 
-        /// </summary>
-        public Android.Os.UserHandle UserHandle
-        {
-            get { return IExecuteWithSignature<Android.Os.UserHandle>("getUserHandle", "()Landroid/os/UserHandle;"); }
+            return IExecuteWithSignature<Android.Os.UserHandle>("getUserHandle", "()Landroid/os/UserHandle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#hasKeyFieldsOnly()"/>
@@ -314,6 +243,78 @@ namespace Android.Content.Pm
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getDisabledReason()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDisabledReason()
+        {
+            return IExecuteWithSignature<int>("getDisabledReason", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getExcludedFromSurfaces()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetExcludedFromSurfaces()
+        {
+            return IExecuteWithSignature<int>("getExcludedFromSurfaces", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getRank()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRank()
+        {
+            return IExecuteWithSignature<int>("getRank", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getDisabledMessage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetDisabledMessage()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getDisabledMessage", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getLongLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetLongLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getLongLabel", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getShortLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetShortLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getShortLabel", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getPackage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackage", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getCapabilities()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Content.Pm.Capability> GetCapabilities()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.Capability>>("getCapabilities", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getCapabilityParams(android.content.pm.Capability)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Pm.Capability"/></param>
@@ -321,6 +322,22 @@ namespace Android.Content.Pm
         public Java.Util.List<Android.Content.Pm.CapabilityParams> GetCapabilityParams(Android.Content.Pm.Capability arg0)
         {
             return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.CapabilityParams>>("getCapabilityParams", "(Landroid/content/pm/Capability;)Ljava/util/List;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getCategories()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetCategories()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getCategories", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#getLastChangedTimestamp()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLastChangedTimestamp()
+        {
+            return IExecuteWithSignature<long>("getLastChangedTimestamp", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutInfo.html#writeToParcel(android.os.Parcel,int)"/>

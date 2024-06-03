@@ -64,20 +64,6 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getAllPackageInstallerSessions()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Content.Pm.PackageInstaller.SessionInfo> AllPackageInstallerSessions
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.PackageInstaller.SessionInfo>>("getAllPackageInstallerSessions", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getProfiles()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Os.UserHandle> Profiles
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Os.UserHandle>>("getProfiles", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getShortcutIntent(java.lang.String,java.lang.String,android.os.Bundle,android.os.UserHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -218,6 +204,14 @@ namespace Android.Content.Pm
             return IExecute<Java.Util.List<Android.Content.Pm.LauncherActivityInfo>>("getShortcutConfigActivityList", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getAllPackageInstallerSessions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Content.Pm.PackageInstaller.SessionInfo> GetAllPackageInstallerSessions()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.PackageInstaller.SessionInfo>>("getAllPackageInstallerSessions", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getShortcuts(android.content.pm.LauncherApps.ShortcutQuery,android.os.UserHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Pm.LauncherApps.ShortcutQuery"/></param>
@@ -226,6 +220,14 @@ namespace Android.Content.Pm
         public Java.Util.List<Android.Content.Pm.ShortcutInfo> GetShortcuts(Android.Content.Pm.LauncherApps.ShortcutQuery arg0, Android.Os.UserHandle arg1)
         {
             return IExecute<Java.Util.List<Android.Content.Pm.ShortcutInfo>>("getShortcuts", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getProfiles()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Os.UserHandle> GetProfiles()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Os.UserHandle>>("getProfiles", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#pinShortcuts(java.lang.String,java.util.List,android.os.UserHandle)"/>
@@ -420,7 +422,7 @@ namespace Android.Content.Pm
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Android.Os.UserHandle"/></param>
             /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnPackagesSuspended(Java.Lang.String[] arg0, Android.Os.UserHandle arg1, Android.Os.Bundle arg2)
             {
                 IExecute("onPackagesSuspended", arg0, arg1, arg2);
@@ -503,27 +505,6 @@ namespace Android.Content.Pm
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.PinItemRequest.html#getExtras()"/> 
-            /// </summary>
-            public Android.Os.Bundle Extras
-            {
-                get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.PinItemRequest.html#getRequestType()"/> 
-            /// </summary>
-            public int RequestType
-            {
-                get { return IExecuteWithSignature<int>("getRequestType", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.PinItemRequest.html#getShortcutInfo()"/> 
-            /// </summary>
-            public Android.Content.Pm.ShortcutInfo ShortcutInfo
-            {
-                get { return IExecuteWithSignature<Android.Content.Pm.ShortcutInfo>("getShortcutInfo", "()Landroid/content/pm/ShortcutInfo;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.PinItemRequest.html#getAppWidgetProviderInfo(android.content.Context)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -531,6 +512,22 @@ namespace Android.Content.Pm
             public Android.Appwidget.AppWidgetProviderInfo GetAppWidgetProviderInfo(Android.Content.Context arg0)
             {
                 return IExecuteWithSignature<Android.Appwidget.AppWidgetProviderInfo>("getAppWidgetProviderInfo", "(Landroid/content/Context;)Landroid/appwidget/AppWidgetProviderInfo;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.PinItemRequest.html#getShortcutInfo()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Content.Pm.ShortcutInfo"/></returns>
+            public Android.Content.Pm.ShortcutInfo GetShortcutInfo()
+            {
+                return IExecuteWithSignature<Android.Content.Pm.ShortcutInfo>("getShortcutInfo", "()Landroid/content/pm/ShortcutInfo;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.PinItemRequest.html#getExtras()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Os.Bundle"/></returns>
+            public Android.Os.Bundle GetExtras()
+            {
+                return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.PinItemRequest.html#accept()"/>
@@ -564,6 +561,14 @@ namespace Android.Content.Pm
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.PinItemRequest.html#getRequestType()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetRequestType()
+            {
+                return IExecuteWithSignature<int>("getRequestType", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.PinItemRequest.html#writeToParcel(android.os.Parcel,int)"/>

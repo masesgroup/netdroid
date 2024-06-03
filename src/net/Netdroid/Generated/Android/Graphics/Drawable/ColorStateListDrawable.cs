@@ -54,11 +54,12 @@ namespace Android.Graphics.Drawable
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/ColorStateListDrawable.html#getColorStateList()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/ColorStateListDrawable.html#setColorStateList(android.content.res.ColorStateList)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/ColorStateListDrawable.html#getColorStateList()"/>
         /// </summary>
-        public Android.Content.Res.ColorStateList ColorStateList
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetColorStateList()
         {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getColorStateList", "()Landroid/content/res/ColorStateList;"); } set { IExecuteWithSignature("setColorStateList", "(Landroid/content/res/ColorStateList;)V", value); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getColorStateList", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/ColorStateListDrawable.html#clearAlpha()"/>
@@ -84,6 +85,14 @@ namespace Android.Graphics.Drawable
         public void ScheduleDrawable(Android.Graphics.Drawable.Drawable arg0, Java.Lang.Runnable arg1, long arg2)
         {
             IExecute("scheduleDrawable", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/ColorStateListDrawable.html#setColorStateList(android.content.res.ColorStateList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.ColorStateList"/></param>
+        public void SetColorStateList(Android.Content.Res.ColorStateList arg0)
+        {
+            IExecuteWithSignature("setColorStateList", "(Landroid/content/res/ColorStateList;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/ColorStateListDrawable.html#unscheduleDrawable(android.graphics.drawable.Drawable,java.lang.Runnable)"/>

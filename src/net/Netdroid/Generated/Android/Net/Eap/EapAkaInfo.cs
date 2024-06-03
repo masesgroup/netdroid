@@ -46,11 +46,12 @@ namespace Android.Net.Eap
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/eap/EapAkaInfo.html#getReauthId()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/eap/EapAkaInfo.html#getReauthId()"/>
         /// </summary>
-        public byte[] ReauthId
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetReauthId()
         {
-            get { return IExecuteWithSignatureArray<byte>("getReauthId", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getReauthId", "()[B");
         }
 
         #endregion

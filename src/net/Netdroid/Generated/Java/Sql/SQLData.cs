@@ -64,14 +64,16 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLData.html#getSQLTypeName()"/> 
+        /// <see href="https://developer.android.com/reference/java/sql/SQLData.html#getSQLTypeName()"/>
         /// </summary>
-        public Java.Lang.String SQLTypeName
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Lang.String GetSQLTypeName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSQLTypeName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getSQLTypeName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLData.html#readSQL(java.sql.SQLInput,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLData.html#readSQL(java.sql.SQLInput,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.SQLInput"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -81,7 +83,7 @@ namespace Java.Sql
             IExecute("readSQL", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLData.html#writeSQL(java.sql.SQLOutput)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLData.html#writeSQL(java.sql.SQLOutput)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.SQLOutput"/></param>
         /// <exception cref="Java.Sql.SQLException"/>

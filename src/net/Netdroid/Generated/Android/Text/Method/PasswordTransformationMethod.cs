@@ -50,11 +50,12 @@ namespace Android.Text.Method
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/method/PasswordTransformationMethod.html#getInstance()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/method/PasswordTransformationMethod.html#getInstance()"/>
         /// </summary>
-        public static Android.Text.Method.PasswordTransformationMethod Instance
+        /// <returns><see cref="Android.Text.Method.PasswordTransformationMethod"/></returns>
+        public static Android.Text.Method.PasswordTransformationMethod GetInstance()
         {
-            get { return SExecuteWithSignature<Android.Text.Method.PasswordTransformationMethod>(LocalBridgeClazz, "getInstance", "()Landroid/text/method/PasswordTransformationMethod;"); }
+            return SExecuteWithSignature<Android.Text.Method.PasswordTransformationMethod>(LocalBridgeClazz, "getInstance", "()Landroid/text/method/PasswordTransformationMethod;");
         }
 
         #endregion

@@ -64,14 +64,7 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMStringList.html#getLength()"/> 
-        /// </summary>
-        public int Length
-        {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMStringList.html#contains(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMStringList.html#contains(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -80,7 +73,15 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMStringList.html#item(int)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMStringList.html#getLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLength()
+        {
+            return IExecuteWithSignature<int>("getLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMStringList.html#item(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>

@@ -46,11 +46,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/CyclingPedalingCadenceRecord.html#getSamples()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/CyclingPedalingCadenceRecord.html#getSamples()"/>
         /// </summary>
-        public Java.Util.List<Android.Health.Connect.Datatypes.CyclingPedalingCadenceRecord.CyclingPedalingCadenceRecordSample> Samples
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Health.Connect.Datatypes.CyclingPedalingCadenceRecord.CyclingPedalingCadenceRecordSample> GetSamples()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.CyclingPedalingCadenceRecord.CyclingPedalingCadenceRecordSample>>("getSamples", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.CyclingPedalingCadenceRecord.CyclingPedalingCadenceRecordSample>>("getSamples", "()Ljava/util/List;");
         }
 
         #endregion
@@ -170,18 +171,20 @@ namespace Android.Health.Connect.Datatypes
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/CyclingPedalingCadenceRecord.CyclingPedalingCadenceRecordSample.html#getRevolutionsPerMinute()"/> 
+            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/CyclingPedalingCadenceRecord.CyclingPedalingCadenceRecordSample.html#getRevolutionsPerMinute()"/>
             /// </summary>
-            public double RevolutionsPerMinute
+            /// <returns><see cref="double"/></returns>
+            public double GetRevolutionsPerMinute()
             {
-                get { return IExecuteWithSignature<double>("getRevolutionsPerMinute", "()D"); }
+                return IExecuteWithSignature<double>("getRevolutionsPerMinute", "()D");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/CyclingPedalingCadenceRecord.CyclingPedalingCadenceRecordSample.html#getTime()"/> 
+            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/CyclingPedalingCadenceRecord.CyclingPedalingCadenceRecordSample.html#getTime()"/>
             /// </summary>
-            public Java.Time.Instant Time
+            /// <returns><see cref="Java.Time.Instant"/></returns>
+            public Java.Time.Instant GetTime()
             {
-                get { return IExecuteWithSignature<Java.Time.Instant>("getTime", "()Ljava/time/Instant;"); }
+                return IExecuteWithSignature<Java.Time.Instant>("getTime", "()Ljava/time/Instant;");
             }
 
             #endregion

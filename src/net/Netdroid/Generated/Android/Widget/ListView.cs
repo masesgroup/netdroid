@@ -84,68 +84,28 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#getCheckItemIds()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#getDivider()"/>
         /// </summary>
-        [System.Obsolete()]
-        public long[] CheckItemIds
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetDivider()
         {
-            get { return IExecuteWithSignatureArray<long>("getCheckItemIds", "()[J"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDivider", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#getDivider()"/> <see href="https://developer.android.com/reference/android/widget/ListView.html#setDivider(android.graphics.drawable.Drawable)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#getOverscrollFooter()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable Divider
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetOverscrollFooter()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDivider", "()Landroid/graphics/drawable/Drawable;"); } set { IExecuteWithSignature("setDivider", "(Landroid/graphics/drawable/Drawable;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getOverscrollFooter", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#getDividerHeight()"/> <see href="https://developer.android.com/reference/android/widget/ListView.html#setDividerHeight(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#getOverscrollHeader()"/>
         /// </summary>
-        public int DividerHeight
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetOverscrollHeader()
         {
-            get { return IExecuteWithSignature<int>("getDividerHeight", "()I"); } set { IExecuteWithSignature("setDividerHeight", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#getFooterViewsCount()"/> 
-        /// </summary>
-        public int FooterViewsCount
-        {
-            get { return IExecuteWithSignature<int>("getFooterViewsCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#getHeaderViewsCount()"/> 
-        /// </summary>
-        public int HeaderViewsCount
-        {
-            get { return IExecuteWithSignature<int>("getHeaderViewsCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#getItemsCanFocus()"/> <see href="https://developer.android.com/reference/android/widget/ListView.html#setItemsCanFocus(boolean)"/>
-        /// </summary>
-        public bool ItemsCanFocus
-        {
-            get { return IExecuteWithSignature<bool>("getItemsCanFocus", "()Z"); } set { IExecuteWithSignature("setItemsCanFocus", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#getMaxScrollAmount()"/> 
-        /// </summary>
-        public int MaxScrollAmount
-        {
-            get { return IExecuteWithSignature<int>("getMaxScrollAmount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#getOverscrollFooter()"/> <see href="https://developer.android.com/reference/android/widget/ListView.html#setOverscrollFooter(android.graphics.drawable.Drawable)"/>
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable OverscrollFooter
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getOverscrollFooter", "()Landroid/graphics/drawable/Drawable;"); } set { IExecuteWithSignature("setOverscrollFooter", "(Landroid/graphics/drawable/Drawable;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#getOverscrollHeader()"/> <see href="https://developer.android.com/reference/android/widget/ListView.html#setOverscrollHeader(android.graphics.drawable.Drawable)"/>
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable OverscrollHeader
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getOverscrollHeader", "()Landroid/graphics/drawable/Drawable;"); } set { IExecuteWithSignature("setOverscrollHeader", "(Landroid/graphics/drawable/Drawable;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getOverscrollHeader", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ListView.html#areFooterDividersEnabled()"/>
@@ -164,6 +124,14 @@ namespace Android.Widget
             return IExecuteWithSignature<bool>("areHeaderDividersEnabled", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#getItemsCanFocus()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetItemsCanFocus()
+        {
+            return IExecuteWithSignature<bool>("getItemsCanFocus", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ListView.html#removeFooterView(android.view.View)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
@@ -180,6 +148,47 @@ namespace Android.Widget
         public bool RemoveHeaderView(Android.View.View arg0)
         {
             return IExecuteWithSignature<bool>("removeHeaderView", "(Landroid/view/View;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#getDividerHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDividerHeight()
+        {
+            return IExecuteWithSignature<int>("getDividerHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#getFooterViewsCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFooterViewsCount()
+        {
+            return IExecuteWithSignature<int>("getFooterViewsCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#getHeaderViewsCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHeaderViewsCount()
+        {
+            return IExecuteWithSignature<int>("getHeaderViewsCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#getMaxScrollAmount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxScrollAmount()
+        {
+            return IExecuteWithSignature<int>("getMaxScrollAmount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#getCheckItemIds()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        [global::System.Obsolete()]
+        public long[] GetCheckItemIds()
+        {
+            return IExecuteWithSignatureArray<long>("getCheckItemIds", "()[J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ListView.html#addFooterView(android.view.View,java.lang.Object,boolean)"/>
@@ -218,6 +227,22 @@ namespace Android.Widget
             IExecuteWithSignature("addHeaderView", "(Landroid/view/View;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#setDivider(android.graphics.drawable.Drawable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
+        public void SetDivider(Android.Graphics.Drawable.Drawable arg0)
+        {
+            IExecuteWithSignature("setDivider", "(Landroid/graphics/drawable/Drawable;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#setDividerHeight(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDividerHeight(int arg0)
+        {
+            IExecuteWithSignature("setDividerHeight", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ListView.html#setFooterDividersEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -232,6 +257,30 @@ namespace Android.Widget
         public void SetHeaderDividersEnabled(bool arg0)
         {
             IExecuteWithSignature("setHeaderDividersEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#setItemsCanFocus(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetItemsCanFocus(bool arg0)
+        {
+            IExecuteWithSignature("setItemsCanFocus", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#setOverscrollFooter(android.graphics.drawable.Drawable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
+        public void SetOverscrollFooter(Android.Graphics.Drawable.Drawable arg0)
+        {
+            IExecuteWithSignature("setOverscrollFooter", "(Landroid/graphics/drawable/Drawable;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#setOverscrollHeader(android.graphics.drawable.Drawable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
+        public void SetOverscrollHeader(Android.Graphics.Drawable.Drawable arg0)
+        {
+            IExecuteWithSignature("setOverscrollHeader", "(Landroid/graphics/drawable/Drawable;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ListView.html#setSelectionAfterHeaderView()"/>

@@ -190,7 +190,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/DownloadManager.html#COLUMN_LOCAL_FILENAME"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String COLUMN_LOCAL_FILENAME { get { if (!_COLUMN_LOCAL_FILENAMEReady) { _COLUMN_LOCAL_FILENAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "COLUMN_LOCAL_FILENAME"); _COLUMN_LOCAL_FILENAMEReady = true; } return _COLUMN_LOCAL_FILENAMEContent; } }
         private static Java.Lang.String _COLUMN_LOCAL_FILENAMEContent = default;
         private static bool _COLUMN_LOCAL_FILENAMEReady = false; // this is used because in case of generics 
@@ -345,7 +345,7 @@ namespace Android.App
         /// <param name="arg7"><see cref="Android.Net.Uri"/></param>
         /// <param name="arg8"><see cref="Android.Net.Uri"/></param>
         /// <returns><see cref="long"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public long AddCompletedDownload(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2, Java.Lang.String arg3, Java.Lang.String arg4, long arg5, bool arg6, Android.Net.Uri arg7, Android.Net.Uri arg8)
         {
             return IExecute<long>("addCompletedDownload", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
@@ -361,7 +361,7 @@ namespace Android.App
         /// <param name="arg5"><see cref="long"/></param>
         /// <param name="arg6"><see cref="bool"/></param>
         /// <returns><see cref="long"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public long AddCompletedDownload(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2, Java.Lang.String arg3, Java.Lang.String arg4, long arg5, bool arg6)
         {
             return IExecute<long>("addCompletedDownload", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -609,7 +609,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
             /// <returns><see cref="Android.App.DownloadManager.Request"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.DownloadManager.Request SetShowRunningNotification(bool arg0)
             {
                 return IExecuteWithSignature<Android.App.DownloadManager.Request>("setShowRunningNotification", "(Z)Landroid/app/DownloadManager$Request;", arg0);
@@ -628,7 +628,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
             /// <returns><see cref="Android.App.DownloadManager.Request"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.DownloadManager.Request SetVisibleInDownloadsUi(bool arg0)
             {
                 return IExecuteWithSignature<Android.App.DownloadManager.Request>("setVisibleInDownloadsUi", "(Z)Landroid/app/DownloadManager$Request;", arg0);
@@ -636,7 +636,7 @@ namespace Android.App
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/DownloadManager.Request.html#allowScanningByMediaScanner()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void AllowScanningByMediaScanner()
             {
                 IExecuteWithSignature("allowScanningByMediaScanner", "()V");

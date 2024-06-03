@@ -52,13 +52,6 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrengthUpdateRequest.html#getSignalThresholdInfos()"/> 
-        /// </summary>
-        public Java.Util.Collection<Android.Telephony.SignalThresholdInfo> SignalThresholdInfos
-        {
-            get { return IExecuteWithSignature<Java.Util.Collection<Android.Telephony.SignalThresholdInfo>>("getSignalThresholdInfos", "()Ljava/util/Collection;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SignalStrengthUpdateRequest.html#isReportingRequestedWhileIdle()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -73,6 +66,14 @@ namespace Android.Telephony
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrengthUpdateRequest.html#getSignalThresholdInfos()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<Android.Telephony.SignalThresholdInfo> GetSignalThresholdInfos()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Android.Telephony.SignalThresholdInfo>>("getSignalThresholdInfos", "()Ljava/util/Collection;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SignalStrengthUpdateRequest.html#writeToParcel(android.os.Parcel,int)"/>

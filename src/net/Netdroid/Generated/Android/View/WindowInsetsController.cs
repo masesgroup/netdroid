@@ -76,14 +76,14 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#BEHAVIOR_SHOW_BARS_BY_SWIPE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int BEHAVIOR_SHOW_BARS_BY_SWIPE { get { if (!_BEHAVIOR_SHOW_BARS_BY_SWIPEReady) { _BEHAVIOR_SHOW_BARS_BY_SWIPEContent = SGetField<int>(LocalBridgeClazz, "BEHAVIOR_SHOW_BARS_BY_SWIPE"); _BEHAVIOR_SHOW_BARS_BY_SWIPEReady = true; } return _BEHAVIOR_SHOW_BARS_BY_SWIPEContent; } }
         private static int _BEHAVIOR_SHOW_BARS_BY_SWIPEContent = default;
         private static bool _BEHAVIOR_SHOW_BARS_BY_SWIPEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#BEHAVIOR_SHOW_BARS_BY_TOUCH"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int BEHAVIOR_SHOW_BARS_BY_TOUCH { get { if (!_BEHAVIOR_SHOW_BARS_BY_TOUCHReady) { _BEHAVIOR_SHOW_BARS_BY_TOUCHContent = SGetField<int>(LocalBridgeClazz, "BEHAVIOR_SHOW_BARS_BY_TOUCH"); _BEHAVIOR_SHOW_BARS_BY_TOUCHReady = true; } return _BEHAVIOR_SHOW_BARS_BY_TOUCHContent; } }
         private static int _BEHAVIOR_SHOW_BARS_BY_TOUCHContent = default;
         private static bool _BEHAVIOR_SHOW_BARS_BY_TOUCHReady = false; // this is used because in case of generics 
@@ -102,18 +102,20 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#getSystemBarsAppearance()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#getSystemBarsAppearance()"/>
         /// </summary>
-        public int SystemBarsAppearance
+        /// <returns><see cref="int"/></returns>
+        public int GetSystemBarsAppearance()
         {
-            get { return IExecuteWithSignature<int>("getSystemBarsAppearance", "()I"); }
+            return IExecuteWithSignature<int>("getSystemBarsAppearance", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#getSystemBarsBehavior()"/> <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#setSystemBarsBehavior(int)"/>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#getSystemBarsBehavior()"/>
         /// </summary>
-        public int SystemBarsBehavior
+        /// <returns><see cref="int"/></returns>
+        public int GetSystemBarsBehavior()
         {
-            get { return IExecuteWithSignature<int>("getSystemBarsBehavior", "()I"); } set { IExecuteWithSignature("setSystemBarsBehavior", "(I)V", value); }
+            return IExecuteWithSignature<int>("getSystemBarsBehavior", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#addOnControllableInsetsChangedListener(android.view.WindowInsetsController.OnControllableInsetsChangedListener)"/>
@@ -161,6 +163,14 @@ namespace Android.View
             IExecute("setSystemBarsAppearance", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#setSystemBarsBehavior(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetSystemBarsBehavior(int arg0)
+        {
+            IExecuteWithSignature("setSystemBarsBehavior", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#show(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -197,7 +207,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onControllableInsetsChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.WindowInsetsController>>>(OnControllableInsetsChangedEventHandler));
+                AddEventHandler("onControllableInsetsChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.WindowInsetsController>>>(OnControllableInsetsChangedEventHandler));
 
             }
 
@@ -205,7 +215,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/WindowInsetsController.OnControllableInsetsChangedListener.html#onControllableInsetsChanged(android.view.WindowInsetsController,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnControllableInsetsChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.WindowInsetsController, int> OnOnControllableInsetsChanged { get; set; } = null;
+            public global::System.Action<Android.View.WindowInsetsController, int> OnOnControllableInsetsChanged { get; set; } = null;
 
             void OnControllableInsetsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.WindowInsetsController>> data)
             {

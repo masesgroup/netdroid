@@ -92,18 +92,12 @@ namespace Android.Telecom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccountSuggestion.html#getPhoneAccountHandle()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccountSuggestion.html#getPhoneAccountHandle()"/>
         /// </summary>
-        public Android.Telecom.PhoneAccountHandle PhoneAccountHandle
+        /// <returns><see cref="Android.Telecom.PhoneAccountHandle"/></returns>
+        public Android.Telecom.PhoneAccountHandle GetPhoneAccountHandle()
         {
-            get { return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getPhoneAccountHandle", "()Landroid/telecom/PhoneAccountHandle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccountSuggestion.html#getReason()"/> 
-        /// </summary>
-        public int Reason
-        {
-            get { return IExecuteWithSignature<int>("getReason", "()I"); }
+            return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getPhoneAccountHandle", "()Landroid/telecom/PhoneAccountHandle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccountSuggestion.html#shouldAutoSelect()"/>
@@ -120,6 +114,14 @@ namespace Android.Telecom
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccountSuggestion.html#getReason()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetReason()
+        {
+            return IExecuteWithSignature<int>("getReason", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccountSuggestion.html#writeToParcel(android.os.Parcel,int)"/>

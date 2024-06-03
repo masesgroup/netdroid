@@ -55,39 +55,12 @@ namespace Android.Nfc.Tech
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/IsoDep.html#getHiLayerResponse()"/> 
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/IsoDep.html#getTag()"/>
         /// </summary>
-        public byte[] HiLayerResponse
+        /// <returns><see cref="Android.Nfc.Tag"/></returns>
+        public Android.Nfc.Tag GetTag()
         {
-            get { return IExecuteWithSignatureArray<byte>("getHiLayerResponse", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/IsoDep.html#getHistoricalBytes()"/> 
-        /// </summary>
-        public byte[] HistoricalBytes
-        {
-            get { return IExecuteWithSignatureArray<byte>("getHistoricalBytes", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/IsoDep.html#getMaxTransceiveLength()"/> 
-        /// </summary>
-        public int MaxTransceiveLength
-        {
-            get { return IExecuteWithSignature<int>("getMaxTransceiveLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/IsoDep.html#getTag()"/> 
-        /// </summary>
-        public Android.Nfc.Tag Tag
-        {
-            get { return IExecuteWithSignature<Android.Nfc.Tag>("getTag", "()Landroid/nfc/Tag;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/IsoDep.html#getTimeout()"/> <see href="https://developer.android.com/reference/android/nfc/tech/IsoDep.html#setTimeout(int)"/>
-        /// </summary>
-        public int Timeout
-        {
-            get { return IExecuteWithSignature<int>("getTimeout", "()I"); } set { IExecuteWithSignature("setTimeout", "(I)V", value); }
+            return IExecuteWithSignature<Android.Nfc.Tag>("getTag", "()Landroid/nfc/Tag;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/tech/IsoDep.html#isConnected()"/>
@@ -106,6 +79,22 @@ namespace Android.Nfc.Tech
             return IExecuteWithSignature<bool>("isExtendedLengthApduSupported", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/IsoDep.html#getHiLayerResponse()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetHiLayerResponse()
+        {
+            return IExecuteWithSignatureArray<byte>("getHiLayerResponse", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/IsoDep.html#getHistoricalBytes()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetHistoricalBytes()
+        {
+            return IExecuteWithSignatureArray<byte>("getHistoricalBytes", "()[B");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/tech/IsoDep.html#transceive(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -114,6 +103,22 @@ namespace Android.Nfc.Tech
         public byte[] Transceive(byte[] arg0)
         {
             return IExecuteWithSignatureArray<byte>("transceive", "([B)[B", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/IsoDep.html#getMaxTransceiveLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxTransceiveLength()
+        {
+            return IExecuteWithSignature<int>("getMaxTransceiveLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/IsoDep.html#getTimeout()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTimeout()
+        {
+            return IExecuteWithSignature<int>("getTimeout", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/tech/IsoDep.html#close()"/>
@@ -130,6 +135,14 @@ namespace Android.Nfc.Tech
         public void Connect()
         {
             IExecuteWithSignature("connect", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/IsoDep.html#setTimeout(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetTimeout(int arg0)
+        {
+            IExecuteWithSignature("setTimeout", "(I)V", arg0);
         }
 
         #endregion

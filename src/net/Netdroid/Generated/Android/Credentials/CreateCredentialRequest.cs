@@ -52,32 +52,20 @@ namespace Android.Credentials
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/credentials/CreateCredentialRequest.html#getCandidateQueryData()"/> 
+        /// <see href="https://developer.android.com/reference/android/credentials/CreateCredentialRequest.html#getCandidateQueryData()"/>
         /// </summary>
-        public Android.Os.Bundle CandidateQueryData
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetCandidateQueryData()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getCandidateQueryData", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getCandidateQueryData", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/credentials/CreateCredentialRequest.html#getCredentialData()"/> 
+        /// <see href="https://developer.android.com/reference/android/credentials/CreateCredentialRequest.html#getCredentialData()"/>
         /// </summary>
-        public Android.Os.Bundle CredentialData
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetCredentialData()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getCredentialData", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/credentials/CreateCredentialRequest.html#getOrigin()"/> 
-        /// </summary>
-        public Java.Lang.String Origin
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getOrigin", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/credentials/CreateCredentialRequest.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.String Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getCredentialData", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/credentials/CreateCredentialRequest.html#alwaysSendAppInfoToProvider()"/>
@@ -102,6 +90,22 @@ namespace Android.Credentials
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/credentials/CreateCredentialRequest.html#getOrigin()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetOrigin()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getOrigin", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/credentials/CreateCredentialRequest.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/credentials/CreateCredentialRequest.html#writeToParcel(android.os.Parcel,int)"/>

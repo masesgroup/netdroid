@@ -46,18 +46,20 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/TimedText.html#getBounds()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/TimedText.html#getBounds()"/>
         /// </summary>
-        public Android.Graphics.Rect Bounds
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetBounds()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getBounds", "()Landroid/graphics/Rect;"); }
+            return IExecuteWithSignature<Android.Graphics.Rect>("getBounds", "()Landroid/graphics/Rect;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/TimedText.html#getText()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/TimedText.html#getText()"/>
         /// </summary>
-        public Java.Lang.String Text
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetText()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;");
         }
 
         #endregion

@@ -176,25 +176,28 @@ namespace Android.Graphics
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/MeshSpecification.Attribute.html#getName()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/MeshSpecification.Attribute.html#getOffset()"/>
             /// </summary>
-            public Java.Lang.String Name
+            /// <returns><see cref="int"/></returns>
+            public int GetOffset()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<int>("getOffset", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/MeshSpecification.Attribute.html#getOffset()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/MeshSpecification.Attribute.html#getType()"/>
             /// </summary>
-            public int Offset
+            /// <returns><see cref="int"/></returns>
+            public int GetType()
             {
-                get { return IExecuteWithSignature<int>("getOffset", "()I"); }
+                return IExecuteWithSignature<int>("getType", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/MeshSpecification.Attribute.html#getType()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/MeshSpecification.Attribute.html#getName()"/>
             /// </summary>
-            public int Type
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetName()
             {
-                get { return IExecuteWithSignature<int>("getType", "()I"); }
+                return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
 
             #endregion
@@ -237,18 +240,20 @@ namespace Android.Graphics
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/MeshSpecification.Varying.html#getName()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/MeshSpecification.Varying.html#getType()"/>
             /// </summary>
-            public Java.Lang.String Name
+            /// <returns><see cref="int"/></returns>
+            public int GetType()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<int>("getType", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/MeshSpecification.Varying.html#getType()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/MeshSpecification.Varying.html#getName()"/>
             /// </summary>
-            public int Type
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetName()
             {
-                get { return IExecuteWithSignature<int>("getType", "()I"); }
+                return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
 
             #endregion

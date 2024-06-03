@@ -34,7 +34,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public ProgressDialog(Android.Content.Context arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -43,7 +43,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public ProgressDialog(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -59,14 +59,14 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#STYLE_HORIZONTAL"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int STYLE_HORIZONTAL { get { if (!_STYLE_HORIZONTALReady) { _STYLE_HORIZONTALContent = SGetField<int>(LocalBridgeClazz, "STYLE_HORIZONTAL"); _STYLE_HORIZONTALReady = true; } return _STYLE_HORIZONTALContent; } }
         private static int _STYLE_HORIZONTALContent = default;
         private static bool _STYLE_HORIZONTALReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#STYLE_SPINNER"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int STYLE_SPINNER { get { if (!_STYLE_SPINNERReady) { _STYLE_SPINNERContent = SGetField<int>(LocalBridgeClazz, "STYLE_SPINNER"); _STYLE_SPINNERReady = true; } return _STYLE_SPINNERContent; } }
         private static int _STYLE_SPINNERContent = default;
         private static bool _STYLE_SPINNERReady = false; // this is used because in case of generics 
@@ -84,7 +84,7 @@ namespace Android.App
         /// <param name="arg4"><see cref="bool"/></param>
         /// <param name="arg5"><see cref="Android.Content.DialogInterface.OnCancelListener"/></param>
         /// <returns><see cref="Android.App.ProgressDialog"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.App.ProgressDialog Show(Android.Content.Context arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2, bool arg3, bool arg4, Android.Content.DialogInterface.OnCancelListener arg5)
         {
             return SExecute<Android.App.ProgressDialog>(LocalBridgeClazz, "show", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -98,7 +98,7 @@ namespace Android.App
         /// <param name="arg3"><see cref="bool"/></param>
         /// <param name="arg4"><see cref="bool"/></param>
         /// <returns><see cref="Android.App.ProgressDialog"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.App.ProgressDialog Show(Android.Content.Context arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2, bool arg3, bool arg4)
         {
             return SExecute<Android.App.ProgressDialog>(LocalBridgeClazz, "show", arg0, arg1, arg2, arg3, arg4);
@@ -111,7 +111,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg3"><see cref="bool"/></param>
         /// <returns><see cref="Android.App.ProgressDialog"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.App.ProgressDialog Show(Android.Content.Context arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2, bool arg3)
         {
             return SExecute<Android.App.ProgressDialog>(LocalBridgeClazz, "show", arg0, arg1, arg2, arg3);
@@ -123,7 +123,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg2"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="Android.App.ProgressDialog"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.App.ProgressDialog Show(Android.Content.Context arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2)
         {
             return SExecute<Android.App.ProgressDialog>(LocalBridgeClazz, "show", arg0, arg1, arg2);
@@ -133,43 +133,46 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#getMax()"/> <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#setMax(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int Max
-        {
-            get { return IExecuteWithSignature<int>("getMax", "()I"); } set { IExecuteWithSignature("setMax", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#getProgress()"/> <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#setProgress(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int Progress
-        {
-            get { return IExecuteWithSignature<int>("getProgress", "()I"); } set { IExecuteWithSignature("setProgress", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#getSecondaryProgress()"/> <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#setSecondaryProgress(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int SecondaryProgress
-        {
-            get { return IExecuteWithSignature<int>("getSecondaryProgress", "()I"); } set { IExecuteWithSignature("setSecondaryProgress", "(I)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#isIndeterminate()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsIndeterminate()
         {
             return IExecuteWithSignature<bool>("isIndeterminate", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#getMax()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetMax()
+        {
+            return IExecuteWithSignature<int>("getMax", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#getProgress()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetProgress()
+        {
+            return IExecuteWithSignature<int>("getProgress", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#getSecondaryProgress()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetSecondaryProgress()
+        {
+            return IExecuteWithSignature<int>("getSecondaryProgress", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#incrementProgressBy(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void IncrementProgressBy(int arg0)
         {
             IExecuteWithSignature("incrementProgressBy", "(I)V", arg0);
@@ -178,7 +181,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#incrementSecondaryProgressBy(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void IncrementSecondaryProgressBy(int arg0)
         {
             IExecuteWithSignature("incrementSecondaryProgressBy", "(I)V", arg0);
@@ -186,7 +189,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#onStart()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnStart()
         {
             IExecuteWithSignature("onStart", "()V");
@@ -195,7 +198,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#setIndeterminate(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetIndeterminate(bool arg0)
         {
             IExecuteWithSignature("setIndeterminate", "(Z)V", arg0);
@@ -204,16 +207,34 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#setIndeterminateDrawable(android.graphics.drawable.Drawable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetIndeterminateDrawable(Android.Graphics.Drawable.Drawable arg0)
         {
             IExecuteWithSignature("setIndeterminateDrawable", "(Landroid/graphics/drawable/Drawable;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#setMax(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetMax(int arg0)
+        {
+            IExecuteWithSignature("setMax", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#setProgress(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetProgress(int arg0)
+        {
+            IExecuteWithSignature("setProgress", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#setProgressDrawable(android.graphics.drawable.Drawable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetProgressDrawable(Android.Graphics.Drawable.Drawable arg0)
         {
             IExecuteWithSignature("setProgressDrawable", "(Landroid/graphics/drawable/Drawable;)V", arg0);
@@ -222,7 +243,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#setProgressNumberFormat(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetProgressNumberFormat(Java.Lang.String arg0)
         {
             IExecuteWithSignature("setProgressNumberFormat", "(Ljava/lang/String;)V", arg0);
@@ -231,7 +252,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#setProgressPercentFormat(java.text.NumberFormat)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.NumberFormat"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetProgressPercentFormat(Java.Text.NumberFormat arg0)
         {
             IExecuteWithSignature("setProgressPercentFormat", "(Ljava/text/NumberFormat;)V", arg0);
@@ -240,10 +261,19 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#setProgressStyle(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetProgressStyle(int arg0)
         {
             IExecuteWithSignature("setProgressStyle", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ProgressDialog.html#setSecondaryProgress(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetSecondaryProgress(int arg0)
+        {
+            IExecuteWithSignature("setSecondaryProgress", "(I)V", arg0);
         }
 
         #endregion

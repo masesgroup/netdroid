@@ -166,83 +166,6 @@ namespace Org.Xmlpull.V1
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getAttributeCount()"/> 
-        /// </summary>
-        public int AttributeCount
-        {
-            get { return IExecuteWithSignature<int>("getAttributeCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getColumnNumber()"/> 
-        /// </summary>
-        public int ColumnNumber
-        {
-            get { return IExecuteWithSignature<int>("getColumnNumber", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getDepth()"/> 
-        /// </summary>
-        public int Depth
-        {
-            get { return IExecuteWithSignature<int>("getDepth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getEventType()"/> 
-        /// </summary>
-        public int EventType
-        {
-            get { return IExecuteWithSignature<int>("getEventType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getInputEncoding()"/> 
-        /// </summary>
-        public Java.Lang.String InputEncoding
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInputEncoding", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getLineNumber()"/> 
-        /// </summary>
-        public int LineNumber
-        {
-            get { return IExecuteWithSignature<int>("getLineNumber", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getNamespace()"/> 
-        /// </summary>
-        public Java.Lang.String Namespace
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getPositionDescription()"/> 
-        /// </summary>
-        public Java.Lang.String PositionDescription
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPositionDescription", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getPrefix()"/> 
-        /// </summary>
-        public Java.Lang.String Prefix
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPrefix", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getText()"/> 
-        /// </summary>
-        public Java.Lang.String Text
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getFeature(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -286,6 +209,47 @@ namespace Org.Xmlpull.V1
         public char[] GetTextCharacters(int[] arg0)
         {
             return IExecuteWithSignatureArray<char>("getTextCharacters", "([I)[C", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getAttributeCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAttributeCount()
+        {
+            return IExecuteWithSignature<int>("getAttributeCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getColumnNumber()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetColumnNumber()
+        {
+            return IExecuteWithSignature<int>("getColumnNumber", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getDepth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDepth()
+        {
+            return IExecuteWithSignature<int>("getDepth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getEventType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Org.Xmlpull.V1.XmlPullParserException"/>
+        public int GetEventType()
+        {
+            return IExecuteWithSignature<int>("getEventType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getLineNumber()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLineNumber()
+        {
+            return IExecuteWithSignature<int>("getLineNumber", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getNamespaceCount(int)"/>
@@ -392,6 +356,30 @@ namespace Org.Xmlpull.V1
             return IExecute<Java.Lang.String>("getAttributeValue", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getInputEncoding()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetInputEncoding()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getInputEncoding", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getNamespace()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNamespace()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getNamespace(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -419,6 +407,30 @@ namespace Org.Xmlpull.V1
         public Java.Lang.String GetNamespaceUri(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getNamespaceUri", "(I)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getPositionDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPositionDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPositionDescription", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getPrefix()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPrefix()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPrefix", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetText()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#nextText()"/>

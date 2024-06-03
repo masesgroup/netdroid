@@ -42,19 +42,19 @@ namespace Java.Net
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/StandardProtocolFamily.html#INET"/>
+        /// <see href="https://developer.android.com/reference/java/net/StandardProtocolFamily.html#INET"/>
         /// </summary>
         public static Java.Net.StandardProtocolFamily INET { get { if (!_INETReady) { _INETContent = SGetField<Java.Net.StandardProtocolFamily>(LocalBridgeClazz, "INET"); _INETReady = true; } return _INETContent; } }
         private static Java.Net.StandardProtocolFamily _INETContent = default;
         private static bool _INETReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/StandardProtocolFamily.html#INET6"/>
+        /// <see href="https://developer.android.com/reference/java/net/StandardProtocolFamily.html#INET6"/>
         /// </summary>
         public static Java.Net.StandardProtocolFamily INET6 { get { if (!_INET6Ready) { _INET6Content = SGetField<Java.Net.StandardProtocolFamily>(LocalBridgeClazz, "INET6"); _INET6Ready = true; } return _INET6Content; } }
         private static Java.Net.StandardProtocolFamily _INET6Content = default;
         private static bool _INET6Ready = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/StandardProtocolFamily.html#UNIX"/>
+        /// <see href="https://developer.android.com/reference/java/net/StandardProtocolFamily.html#UNIX"/>
         /// </summary>
         public static Java.Net.StandardProtocolFamily UNIX { get { if (!_UNIXReady) { _UNIXContent = SGetField<Java.Net.StandardProtocolFamily>(LocalBridgeClazz, "UNIX"); _UNIXReady = true; } return _UNIXContent; } }
         private static Java.Net.StandardProtocolFamily _UNIXContent = default;
@@ -64,7 +64,7 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/StandardProtocolFamily.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/StandardProtocolFamily.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Net.StandardProtocolFamily"/></returns>
@@ -73,7 +73,7 @@ namespace Java.Net
             return SExecuteWithSignature<Java.Net.StandardProtocolFamily>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/net/StandardProtocolFamily;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/StandardProtocolFamily.html#values()"/>
+        /// <see href="https://developer.android.com/reference/java/net/StandardProtocolFamily.html#values()"/>
         /// </summary>
         /// <returns><see cref="Java.Net.StandardProtocolFamily"/></returns>
         public static Java.Net.StandardProtocolFamily[] Values()

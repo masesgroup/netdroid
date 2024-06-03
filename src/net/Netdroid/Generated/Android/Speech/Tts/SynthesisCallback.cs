@@ -64,13 +64,6 @@ namespace Android.Speech.Tts
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisCallback.html#getMaxBufferSize()"/> 
-        /// </summary>
-        public int MaxBufferSize
-        {
-            get { return IExecuteWithSignature<int>("getMaxBufferSize", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisCallback.html#hasFinished()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -104,6 +97,14 @@ namespace Android.Speech.Tts
         public int Done()
         {
             return IExecuteWithSignature<int>("done", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisCallback.html#getMaxBufferSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxBufferSize()
+        {
+            return IExecuteWithSignature<int>("getMaxBufferSize", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisCallback.html#start(int,int,int)"/>

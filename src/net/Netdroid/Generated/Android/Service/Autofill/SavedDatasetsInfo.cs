@@ -67,18 +67,20 @@ namespace Android.Service.Autofill
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/SavedDatasetsInfo.html#getCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/SavedDatasetsInfo.html#getCount()"/>
         /// </summary>
-        public int Count
+        /// <returns><see cref="int"/></returns>
+        public int GetCount()
         {
-            get { return IExecuteWithSignature<int>("getCount", "()I"); }
+            return IExecuteWithSignature<int>("getCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/SavedDatasetsInfo.html#getType()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/SavedDatasetsInfo.html#getType()"/>
         /// </summary>
-        public Java.Lang.String Type
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetType()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
         }
 
         #endregion

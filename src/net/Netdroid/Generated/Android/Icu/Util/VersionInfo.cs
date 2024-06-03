@@ -319,34 +319,6 @@ namespace Android.Icu.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/VersionInfo.html#getMajor()"/> 
-        /// </summary>
-        public int Major
-        {
-            get { return IExecuteWithSignature<int>("getMajor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/VersionInfo.html#getMicro()"/> 
-        /// </summary>
-        public int Micro
-        {
-            get { return IExecuteWithSignature<int>("getMicro", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/VersionInfo.html#getMilli()"/> 
-        /// </summary>
-        public int Milli
-        {
-            get { return IExecuteWithSignature<int>("getMilli", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/VersionInfo.html#getMinor()"/> 
-        /// </summary>
-        public int Minor
-        {
-            get { return IExecuteWithSignature<int>("getMinor", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/VersionInfo.html#compareTo(android.icu.util.VersionInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Util.VersionInfo"/></param>
@@ -363,6 +335,38 @@ namespace Android.Icu.Util
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/VersionInfo.html#getMajor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMajor()
+        {
+            return IExecuteWithSignature<int>("getMajor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/VersionInfo.html#getMicro()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMicro()
+        {
+            return IExecuteWithSignature<int>("getMicro", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/VersionInfo.html#getMilli()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMilli()
+        {
+            return IExecuteWithSignature<int>("getMilli", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/VersionInfo.html#getMinor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinor()
+        {
+            return IExecuteWithSignature<int>("getMinor", "()I");
         }
 
         #endregion

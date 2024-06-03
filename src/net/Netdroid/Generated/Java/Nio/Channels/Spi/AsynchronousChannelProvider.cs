@@ -42,7 +42,7 @@ namespace Java.Nio.Channels.Spi
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/AsynchronousChannelProvider.html#provider()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/spi/AsynchronousChannelProvider.html#provider()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.Spi.AsynchronousChannelProvider"/></returns>
         public static Java.Nio.Channels.Spi.AsynchronousChannelProvider Provider()
@@ -54,7 +54,7 @@ namespace Java.Nio.Channels.Spi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/AsynchronousChannelProvider.html#openAsynchronousChannelGroup(int,java.util.concurrent.ThreadFactory)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/spi/AsynchronousChannelProvider.html#openAsynchronousChannelGroup(int,java.util.concurrent.ThreadFactory)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
@@ -65,7 +65,7 @@ namespace Java.Nio.Channels.Spi
             return IExecute<Java.Nio.Channels.AsynchronousChannelGroup>("openAsynchronousChannelGroup", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/AsynchronousChannelProvider.html#openAsynchronousChannelGroup(java.util.concurrent.ExecutorService,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/spi/AsynchronousChannelProvider.html#openAsynchronousChannelGroup(java.util.concurrent.ExecutorService,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ExecutorService"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -76,7 +76,7 @@ namespace Java.Nio.Channels.Spi
             return IExecute<Java.Nio.Channels.AsynchronousChannelGroup>("openAsynchronousChannelGroup", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/AsynchronousChannelProvider.html#openAsynchronousServerSocketChannel(java.nio.channels.AsynchronousChannelGroup)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/spi/AsynchronousChannelProvider.html#openAsynchronousServerSocketChannel(java.nio.channels.AsynchronousChannelGroup)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.AsynchronousChannelGroup"/></param>
         /// <returns><see cref="Java.Nio.Channels.AsynchronousServerSocketChannel"/></returns>
@@ -86,7 +86,7 @@ namespace Java.Nio.Channels.Spi
             return IExecuteWithSignature<Java.Nio.Channels.AsynchronousServerSocketChannel>("openAsynchronousServerSocketChannel", "(Ljava/nio/channels/AsynchronousChannelGroup;)Ljava/nio/channels/AsynchronousServerSocketChannel;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/AsynchronousChannelProvider.html#openAsynchronousSocketChannel(java.nio.channels.AsynchronousChannelGroup)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/spi/AsynchronousChannelProvider.html#openAsynchronousSocketChannel(java.nio.channels.AsynchronousChannelGroup)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.AsynchronousChannelGroup"/></param>
         /// <returns><see cref="Java.Nio.Channels.AsynchronousSocketChannel"/></returns>

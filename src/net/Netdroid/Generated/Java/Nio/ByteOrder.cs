@@ -38,13 +38,13 @@ namespace Java.Nio
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteOrder.html#BIG_ENDIAN"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteOrder.html#BIG_ENDIAN"/>
         /// </summary>
         public static Java.Nio.ByteOrder BIG_ENDIAN { get { if (!_BIG_ENDIANReady) { _BIG_ENDIANContent = SGetField<Java.Nio.ByteOrder>(LocalBridgeClazz, "BIG_ENDIAN"); _BIG_ENDIANReady = true; } return _BIG_ENDIANContent; } }
         private static Java.Nio.ByteOrder _BIG_ENDIANContent = default;
         private static bool _BIG_ENDIANReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteOrder.html#LITTLE_ENDIAN"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteOrder.html#LITTLE_ENDIAN"/>
         /// </summary>
         public static Java.Nio.ByteOrder LITTLE_ENDIAN { get { if (!_LITTLE_ENDIANReady) { _LITTLE_ENDIANContent = SGetField<Java.Nio.ByteOrder>(LocalBridgeClazz, "LITTLE_ENDIAN"); _LITTLE_ENDIANReady = true; } return _LITTLE_ENDIANContent; } }
         private static Java.Nio.ByteOrder _LITTLE_ENDIANContent = default;
@@ -54,7 +54,7 @@ namespace Java.Nio
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteOrder.html#nativeOrder()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteOrder.html#nativeOrder()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
         public static Java.Nio.ByteOrder NativeOrder()

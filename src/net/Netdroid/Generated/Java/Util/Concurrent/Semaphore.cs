@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Semaphore.html#%3Cinit%3E(int,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Semaphore.html#%3Cinit%3E(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -39,7 +39,7 @@ namespace Java.Util.Concurrent
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Semaphore.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Semaphore.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public Semaphore(int arg0)
@@ -63,14 +63,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Semaphore.html#getQueueLength()"/> 
-        /// </summary>
-        public int QueueLength
-        {
-            get { return IExecuteWithSignature<int>("getQueueLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Semaphore.html#isFair()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Semaphore.html#isFair()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsFair()
@@ -78,7 +71,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isFair", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Semaphore.html#tryAcquire()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Semaphore.html#tryAcquire()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool TryAcquire()
@@ -86,7 +79,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("tryAcquire", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Semaphore.html#tryAcquire(int,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Semaphore.html#tryAcquire(int,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -98,7 +91,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("tryAcquire", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Semaphore.html#tryAcquire(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Semaphore.html#tryAcquire(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -107,7 +100,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("tryAcquire", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Semaphore.html#tryAcquire(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Semaphore.html#tryAcquire(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -118,7 +111,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("tryAcquire", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Semaphore.html#hasQueuedThreads()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Semaphore.html#hasQueuedThreads()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasQueuedThreads()
@@ -126,7 +119,15 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("hasQueuedThreads", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Semaphore.html#availablePermits()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Semaphore.html#getQueueLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetQueueLength()
+        {
+            return IExecuteWithSignature<int>("getQueueLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Semaphore.html#availablePermits()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int AvailablePermits()
@@ -134,7 +135,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("availablePermits", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Semaphore.html#drainPermits()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Semaphore.html#drainPermits()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DrainPermits()
@@ -142,7 +143,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("drainPermits", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Semaphore.html#acquire()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Semaphore.html#acquire()"/>
         /// </summary>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Acquire()
@@ -150,7 +151,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("acquire", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Semaphore.html#acquire(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Semaphore.html#acquire(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -159,14 +160,14 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("acquire", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Semaphore.html#acquireUninterruptibly()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Semaphore.html#acquireUninterruptibly()"/>
         /// </summary>
         public void AcquireUninterruptibly()
         {
             IExecuteWithSignature("acquireUninterruptibly", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Semaphore.html#acquireUninterruptibly(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Semaphore.html#acquireUninterruptibly(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void AcquireUninterruptibly(int arg0)
@@ -174,14 +175,14 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("acquireUninterruptibly", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Semaphore.html#release()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Semaphore.html#release()"/>
         /// </summary>
         public void Release()
         {
             IExecuteWithSignature("release", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Semaphore.html#release(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Semaphore.html#release(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void Release(int arg0)

@@ -314,7 +314,7 @@ namespace Android.Content.Pm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_IS_GAME"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FLAG_IS_GAME { get { if (!_FLAG_IS_GAMEReady) { _FLAG_IS_GAMEContent = SGetField<int>(LocalBridgeClazz, "FLAG_IS_GAME"); _FLAG_IS_GAMEReady = true; } return _FLAG_IS_GAMEContent; } }
         private static int _FLAG_IS_GAMEContent = default;
         private static bool _FLAG_IS_GAMEReady = false; // this is used because in case of generics 
@@ -381,7 +381,7 @@ namespace Android.Content.Pm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_SUPPORTS_SCREEN_DENSITIES"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FLAG_SUPPORTS_SCREEN_DENSITIES { get { if (!_FLAG_SUPPORTS_SCREEN_DENSITIESReady) { _FLAG_SUPPORTS_SCREEN_DENSITIESContent = SGetField<int>(LocalBridgeClazz, "FLAG_SUPPORTS_SCREEN_DENSITIES"); _FLAG_SUPPORTS_SCREEN_DENSITIESReady = true; } return _FLAG_SUPPORTS_SCREEN_DENSITIESContent; } }
         private static int _FLAG_SUPPORTS_SCREEN_DENSITIESContent = default;
         private static bool _FLAG_SUPPORTS_SCREEN_DENSITIESReady = false; // this is used because in case of generics 
@@ -530,41 +530,6 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getGwpAsanMode()"/> 
-        /// </summary>
-        public int GwpAsanMode
-        {
-            get { return IExecuteWithSignature<int>("getGwpAsanMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getKnownActivityEmbeddingCerts()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> KnownActivityEmbeddingCerts
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getKnownActivityEmbeddingCerts", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getMemtagMode()"/> 
-        /// </summary>
-        public int MemtagMode
-        {
-            get { return IExecuteWithSignature<int>("getMemtagMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getNativeHeapZeroInitialized()"/> 
-        /// </summary>
-        public int NativeHeapZeroInitialized
-        {
-            get { return IExecuteWithSignature<int>("getNativeHeapZeroInitialized", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getRequestRawExternalStorageAccess()"/> 
-        /// </summary>
-        public int RequestRawExternalStorageAccess
-        {
-            get { return IExecuteWithSignature<int>("getRequestRawExternalStorageAccess", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#areAttributionsUserVisible()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -613,6 +578,38 @@ namespace Android.Content.Pm
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getGwpAsanMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGwpAsanMode()
+        {
+            return IExecuteWithSignature<int>("getGwpAsanMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getMemtagMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMemtagMode()
+        {
+            return IExecuteWithSignature<int>("getMemtagMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getNativeHeapZeroInitialized()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNativeHeapZeroInitialized()
+        {
+            return IExecuteWithSignature<int>("getNativeHeapZeroInitialized", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getRequestRawExternalStorageAccess()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRequestRawExternalStorageAccess()
+        {
+            return IExecuteWithSignature<int>("getRequestRawExternalStorageAccess", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#loadDescription(android.content.pm.PackageManager)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Pm.PackageManager"/></param>
@@ -620,6 +617,14 @@ namespace Android.Content.Pm
         public Java.Lang.CharSequence LoadDescription(Android.Content.Pm.PackageManager arg0)
         {
             return IExecuteWithSignature<Java.Lang.CharSequence>("loadDescription", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getKnownActivityEmbeddingCerts()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetKnownActivityEmbeddingCerts()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getKnownActivityEmbeddingCerts", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#dump(android.util.Printer,java.lang.String)"/>

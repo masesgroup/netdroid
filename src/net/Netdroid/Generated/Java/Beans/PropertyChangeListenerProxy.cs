@@ -30,7 +30,7 @@ namespace Java.Beans
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeListenerProxy.html#%3Cinit%3E(java.lang.String,java.beans.PropertyChangeListener)"/>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeListenerProxy.html#%3Cinit%3E(java.lang.String,java.beans.PropertyChangeListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
@@ -59,14 +59,15 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeListenerProxy.html#getPropertyName()"/> 
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeListenerProxy.html#getPropertyName()"/>
         /// </summary>
-        public Java.Lang.String PropertyName
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPropertyName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPropertyName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getPropertyName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeListenerProxy.html#propertyChange(java.beans.PropertyChangeEvent)"/>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeListenerProxy.html#propertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
         public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)

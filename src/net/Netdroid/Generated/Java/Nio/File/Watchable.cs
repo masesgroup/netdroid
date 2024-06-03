@@ -64,7 +64,7 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Watchable.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Watchable.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>
@@ -75,7 +75,7 @@ namespace Java.Nio.File
             if (arg1.Length == 0) return IExecute<Java.Nio.File.WatchKey>("register", arg0); else return IExecute<Java.Nio.File.WatchKey>("register", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Watchable.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind[],java.nio.file.WatchEvent.Modifier[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Watchable.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind[],java.nio.file.WatchEvent.Modifier[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>

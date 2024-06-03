@@ -46,13 +46,6 @@ namespace Android.Graphics.Fonts
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/fonts/FontFamily.html#getSize()"/> 
-        /// </summary>
-        public int Size
-        {
-            get { return IExecuteWithSignature<int>("getSize", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/fonts/FontFamily.html#getFont(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -60,6 +53,14 @@ namespace Android.Graphics.Fonts
         public Android.Graphics.Fonts.Font GetFont(int arg0)
         {
             return IExecuteWithSignature<Android.Graphics.Fonts.Font>("getFont", "(I)Landroid/graphics/fonts/Font;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/fonts/FontFamily.html#getSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSize()
+        {
+            return IExecuteWithSignature<int>("getSize", "()I");
         }
 
         #endregion

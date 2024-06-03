@@ -315,18 +315,20 @@ namespace Android.Animation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#getPropertyName()"/> <see href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#setPropertyName(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#getTarget()"/>
         /// </summary>
-        public Java.Lang.String PropertyName
+        /// <returns><see cref="object"/></returns>
+        public object GetTarget()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPropertyName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPropertyName", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature("getTarget", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#getTarget()"/> 
+        /// <see href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#getPropertyName()"/>
         /// </summary>
-        public object Target
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPropertyName()
         {
-            get { return IExecuteWithSignature("getTarget", "()Ljava/lang/Object;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getPropertyName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#setAutoCancel(boolean)"/>
@@ -343,6 +345,14 @@ namespace Android.Animation
         public void SetProperty(Android.Util.Property arg0)
         {
             IExecuteWithSignature("setProperty", "(Landroid/util/Property;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#setPropertyName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetPropertyName(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setPropertyName", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

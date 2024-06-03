@@ -46,70 +46,78 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/RecordComponent.html#getAccessor()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Method Accessor
-        {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Method>("getAccessor", "()Ljava/lang/reflect/Method;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/RecordComponent.html#getAnnotations()"/> 
-        /// </summary>
-        public Java.Lang.Annotation.Annotation[] Annotations
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getAnnotations", "()[Ljava/lang/annotation/Annotation;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/RecordComponent.html#getDeclaredAnnotations()"/> 
-        /// </summary>
-        public Java.Lang.Annotation.Annotation[] DeclaredAnnotations
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/RecordComponent.html#getDeclaringRecord()"/> 
-        /// </summary>
-        public Java.Lang.Class DeclaringRecord
-        {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getDeclaringRecord", "()Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/RecordComponent.html#getGenericSignature()"/> 
-        /// </summary>
-        public Java.Lang.String GenericSignature
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getGenericSignature", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/RecordComponent.html#getGenericType()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Type GenericType
-        {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Type>("getGenericType", "()Ljava/lang/reflect/Type;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/RecordComponent.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/RecordComponent.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.Class Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getType", "()Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/RecordComponent.html#getAnnotation(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/RecordComponent.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T GetAnnotation<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.IAnnotation, new()
+        public T GetAnnotation<T>(Java.Lang.Class arg0) where T : Java.Lang.Annotation.IAnnotation, new()
         {
             return IExecuteWithSignature<T>("getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/RecordComponent.html#getAnnotations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
+        public Java.Lang.Annotation.Annotation[] GetAnnotations()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getAnnotations", "()[Ljava/lang/annotation/Annotation;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/RecordComponent.html#getDeclaredAnnotations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
+        public Java.Lang.Annotation.Annotation[] GetDeclaredAnnotations()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/RecordComponent.html#getDeclaringRecord()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetDeclaringRecord()
+        {
+            return IExecuteWithSignature<Java.Lang.Class>("getDeclaringRecord", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/RecordComponent.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.Class>("getType", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/RecordComponent.html#getAccessor()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Method"/></returns>
+        public Java.Lang.Reflect.Method GetAccessor()
+        {
+            return IExecuteWithSignature<Java.Lang.Reflect.Method>("getAccessor", "()Ljava/lang/reflect/Method;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/RecordComponent.html#getGenericType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Type"/></returns>
+        public Java.Lang.Reflect.Type GetGenericType()
+        {
+            return IExecuteWithSignature<Java.Lang.Reflect.Type>("getGenericType", "()Ljava/lang/reflect/Type;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/RecordComponent.html#getGenericSignature()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetGenericSignature()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getGenericSignature", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/RecordComponent.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
 
         #endregion

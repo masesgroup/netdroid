@@ -292,49 +292,6 @@ namespace Android.Database.Sqlite
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getAttachedDbs()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Util.Pair<Java.Lang.String, Java.Lang.String>> AttachedDbs
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Util.Pair<Java.Lang.String, Java.Lang.String>>>("getAttachedDbs", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getMaximumSize()"/> 
-        /// </summary>
-        public long MaximumSize
-        {
-            get { return IExecuteWithSignature<long>("getMaximumSize", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getPageSize()"/> <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setPageSize(long)"/>
-        /// </summary>
-        public long PageSize
-        {
-            get { return IExecuteWithSignature<long>("getPageSize", "()J"); } set { IExecuteWithSignature("setPageSize", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getPath()"/> 
-        /// </summary>
-        public Java.Lang.String Path
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPath", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getSyncedTables()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Util.Map<Java.Lang.String, Java.Lang.String> SyncedTables
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getSyncedTables", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getVersion()"/> <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setVersion(int)"/>
-        /// </summary>
-        public int Version
-        {
-            get { return IExecuteWithSignature<int>("getVersion", "()I"); } set { IExecuteWithSignature("setVersion", "(I)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#query(boolean,java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,android.os.CancellationSignal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -529,7 +486,7 @@ namespace Android.Database.Sqlite
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#isDbLockedByOtherThreads()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsDbLockedByOtherThreads()
         {
             return IExecuteWithSignature<bool>("isDbLockedByOtherThreads", "()Z");
@@ -571,7 +528,7 @@ namespace Android.Database.Sqlite
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#yieldIfContended()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool YieldIfContended()
         {
             return IExecuteWithSignature<bool>("yieldIfContended", "()Z");
@@ -605,6 +562,14 @@ namespace Android.Database.Sqlite
             return IExecute<int>("delete", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getVersion()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVersion()
+        {
+            return IExecuteWithSignature<int>("getVersion", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -628,6 +593,47 @@ namespace Android.Database.Sqlite
         public int UpdateWithOnConflict(Java.Lang.String arg0, Android.Content.ContentValues arg1, Java.Lang.String arg2, Java.Lang.String[] arg3, int arg4)
         {
             return IExecute<int>("updateWithOnConflict", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getPath()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPath()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPath", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getAttachedDbs()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Util.Pair<Java.Lang.String, Java.Lang.String>> GetAttachedDbs()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Util.Pair<Java.Lang.String, Java.Lang.String>>>("getAttachedDbs", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getSyncedTables()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        [global::System.Obsolete()]
+        public Java.Util.Map<Java.Lang.String, Java.Lang.String> GetSyncedTables()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getSyncedTables", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getMaximumSize()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetMaximumSize()
+        {
+            return IExecuteWithSignature<long>("getMaximumSize", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getPageSize()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetPageSize()
+        {
+            return IExecuteWithSignature<long>("getPageSize", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#insert(java.lang.String,java.lang.String,android.content.ContentValues)"/>
@@ -775,7 +781,7 @@ namespace Android.Database.Sqlite
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void MarkTableSyncable(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             IExecute("markTableSyncable", arg0, arg1, arg2);
@@ -785,7 +791,7 @@ namespace Android.Database.Sqlite
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void MarkTableSyncable(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecute("markTableSyncable", arg0, arg1);
@@ -830,7 +836,7 @@ namespace Android.Database.Sqlite
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setLockingEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetLockingEnabled(bool arg0)
         {
             IExecuteWithSignature("setLockingEnabled", "(Z)V", arg0);
@@ -844,11 +850,27 @@ namespace Android.Database.Sqlite
             IExecuteWithSignature("setMaxSqlCacheSize", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setPageSize(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetPageSize(long arg0)
+        {
+            IExecuteWithSignature("setPageSize", "(J)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setTransactionSuccessful()"/>
         /// </summary>
         public void SetTransactionSuccessful()
         {
             IExecuteWithSignature("setTransactionSuccessful", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setVersion(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetVersion(int arg0)
+        {
+            IExecuteWithSignature("setVersion", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#validateSql(java.lang.String,android.os.CancellationSignal)"/>
@@ -927,60 +949,68 @@ namespace Android.Database.Sqlite
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.html#getErrorHandler()"/> 
+            /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.html#getErrorHandler()"/>
             /// </summary>
-            public Android.Database.DatabaseErrorHandler ErrorHandler
+            /// <returns><see cref="Android.Database.DatabaseErrorHandler"/></returns>
+            public Android.Database.DatabaseErrorHandler GetErrorHandler()
             {
-                get { return IExecuteWithSignature<Android.Database.DatabaseErrorHandler>("getErrorHandler", "()Landroid/database/DatabaseErrorHandler;"); }
+                return IExecuteWithSignature<Android.Database.DatabaseErrorHandler>("getErrorHandler", "()Landroid/database/DatabaseErrorHandler;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.html#getCursorFactory()"/> 
+            /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.html#getCursorFactory()"/>
             /// </summary>
-            public Android.Database.Sqlite.SQLiteDatabase.CursorFactory GetCursorFactory
+            /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase.CursorFactory"/></returns>
+            public Android.Database.Sqlite.SQLiteDatabase.CursorFactory GetCursorFactory()
             {
-                get { return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase.CursorFactory>("getCursorFactory", "()Landroid/database/sqlite/SQLiteDatabase$CursorFactory;"); }
+                return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase.CursorFactory>("getCursorFactory", "()Landroid/database/sqlite/SQLiteDatabase$CursorFactory;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.html#getIdleConnectionTimeout()"/> 
+            /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.html#getLookasideSlotCount()"/>
             /// </summary>
-            public long IdleConnectionTimeout
+            /// <returns><see cref="int"/></returns>
+            public int GetLookasideSlotCount()
             {
-                get { return IExecuteWithSignature<long>("getIdleConnectionTimeout", "()J"); }
+                return IExecuteWithSignature<int>("getLookasideSlotCount", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.html#getJournalMode()"/> 
+            /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.html#getLookasideSlotSize()"/>
             /// </summary>
-            public Java.Lang.String JournalMode
+            /// <returns><see cref="int"/></returns>
+            public int GetLookasideSlotSize()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getJournalMode", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<int>("getLookasideSlotSize", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.html#getLookasideSlotCount()"/> 
+            /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.html#getOpenFlags()"/>
             /// </summary>
-            public int LookasideSlotCount
+            /// <returns><see cref="int"/></returns>
+            public int GetOpenFlags()
             {
-                get { return IExecuteWithSignature<int>("getLookasideSlotCount", "()I"); }
+                return IExecuteWithSignature<int>("getOpenFlags", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.html#getLookasideSlotSize()"/> 
+            /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.html#getJournalMode()"/>
             /// </summary>
-            public int LookasideSlotSize
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetJournalMode()
             {
-                get { return IExecuteWithSignature<int>("getLookasideSlotSize", "()I"); }
+                return IExecuteWithSignature<Java.Lang.String>("getJournalMode", "()Ljava/lang/String;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.html#getOpenFlags()"/> 
+            /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.html#getSynchronousMode()"/>
             /// </summary>
-            public int OpenFlags
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetSynchronousMode()
             {
-                get { return IExecuteWithSignature<int>("getOpenFlags", "()I"); }
+                return IExecuteWithSignature<Java.Lang.String>("getSynchronousMode", "()Ljava/lang/String;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.html#getSynchronousMode()"/> 
+            /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.html#getIdleConnectionTimeout()"/>
             /// </summary>
-            public Java.Lang.String SynchronousMode
+            /// <returns><see cref="long"/></returns>
+            public long GetIdleConnectionTimeout()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getSynchronousMode", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<long>("getIdleConnectionTimeout", "()J");
             }
 
             #endregion
@@ -1063,7 +1093,7 @@ namespace Android.Database.Sqlite
                 /// </summary>
                 /// <param name="arg0"><see cref="long"/></param>
                 /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder"/></returns>
-                [System.Obsolete()]
+                [global::System.Obsolete()]
                 public Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder SetIdleConnectionTimeout(long arg0)
                 {
                     return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("setIdleConnectionTimeout", "(J)Landroid/database/sqlite/SQLiteDatabase$OpenParams$Builder;", arg0);

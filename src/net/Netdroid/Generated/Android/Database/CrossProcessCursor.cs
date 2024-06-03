@@ -64,11 +64,12 @@ namespace Android.Database
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/CrossProcessCursor.html#getWindow()"/> 
+        /// <see href="https://developer.android.com/reference/android/database/CrossProcessCursor.html#getWindow()"/>
         /// </summary>
-        public Android.Database.CursorWindow Window
+        /// <returns><see cref="Android.Database.CursorWindow"/></returns>
+        public Android.Database.CursorWindow GetWindow()
         {
-            get { return IExecuteWithSignature<Android.Database.CursorWindow>("getWindow", "()Landroid/database/CursorWindow;"); }
+            return IExecuteWithSignature<Android.Database.CursorWindow>("getWindow", "()Landroid/database/CursorWindow;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CrossProcessCursor.html#onMove(int,int)"/>

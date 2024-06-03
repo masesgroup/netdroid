@@ -46,11 +46,12 @@ namespace Android.App
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Application.html#getProcessName()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/Application.html#getProcessName()"/>
         /// </summary>
-        public static Java.Lang.String ProcessName
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String GetProcessName()
         {
-            get { return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getProcessName", "()Ljava/lang/String;"); }
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getProcessName", "()Ljava/lang/String;");
         }
 
         #endregion
@@ -359,7 +360,7 @@ namespace Android.App
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onProvideAssistData", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.App.Activity>>>(OnProvideAssistDataEventHandler));
+                AddEventHandler("onProvideAssistData", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.App.Activity>>>(OnProvideAssistDataEventHandler));
 
             }
 
@@ -367,7 +368,7 @@ namespace Android.App
             /// Handler for <see href="https://developer.android.com/reference/android/app/Application.OnProvideAssistDataListener.html#onProvideAssistData(android.app.Activity,android.os.Bundle)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnProvideAssistData"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.App.Activity, Android.Os.Bundle> OnOnProvideAssistData { get; set; } = null;
+            public global::System.Action<Android.App.Activity, Android.Os.Bundle> OnOnProvideAssistData { get; set; } = null;
 
             void OnProvideAssistDataEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.App.Activity>> data)
             {

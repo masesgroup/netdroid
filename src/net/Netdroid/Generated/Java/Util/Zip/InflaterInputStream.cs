@@ -30,7 +30,7 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/InflaterInputStream.html#%3Cinit%3E(java.io.InputStream,java.util.zip.Inflater,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/InflaterInputStream.html#%3Cinit%3E(java.io.InputStream,java.util.zip.Inflater,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="Java.Util.Zip.Inflater"/></param>
@@ -40,7 +40,7 @@ namespace Java.Util.Zip
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/InflaterInputStream.html#%3Cinit%3E(java.io.InputStream,java.util.zip.Inflater)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/InflaterInputStream.html#%3Cinit%3E(java.io.InputStream,java.util.zip.Inflater)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="Java.Util.Zip.Inflater"/></param>
@@ -49,7 +49,7 @@ namespace Java.Util.Zip
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/InflaterInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/InflaterInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public InflaterInputStream(Java.Io.InputStream arg0)

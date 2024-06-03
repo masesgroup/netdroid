@@ -64,46 +64,52 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DocumentType.html#getEntities()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DocumentType.html#getInternalSubset()"/>
         /// </summary>
-        public Org.W3c.Dom.NamedNodeMap Entities
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetInternalSubset()
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.NamedNodeMap>("getEntities", "()Lorg/w3c/dom/NamedNodeMap;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getInternalSubset", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DocumentType.html#getInternalSubset()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DocumentType.html#getName()"/>
         /// </summary>
-        public Java.Lang.String InternalSubset
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInternalSubset", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DocumentType.html#getName()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DocumentType.html#getPublicId()"/>
         /// </summary>
-        public Java.Lang.String Name
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPublicId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DocumentType.html#getNotations()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DocumentType.html#getSystemId()"/>
         /// </summary>
-        public Org.W3c.Dom.NamedNodeMap Notations
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSystemId()
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.NamedNodeMap>("getNotations", "()Lorg/w3c/dom/NamedNodeMap;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DocumentType.html#getPublicId()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DocumentType.html#getEntities()"/>
         /// </summary>
-        public Java.Lang.String PublicId
+        /// <returns><see cref="Org.W3c.Dom.NamedNodeMap"/></returns>
+        public Org.W3c.Dom.NamedNodeMap GetEntities()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Org.W3c.Dom.NamedNodeMap>("getEntities", "()Lorg/w3c/dom/NamedNodeMap;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DocumentType.html#getSystemId()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DocumentType.html#getNotations()"/>
         /// </summary>
-        public Java.Lang.String SystemId
+        /// <returns><see cref="Org.W3c.Dom.NamedNodeMap"/></returns>
+        public Org.W3c.Dom.NamedNodeMap GetNotations()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Org.W3c.Dom.NamedNodeMap>("getNotations", "()Lorg/w3c/dom/NamedNodeMap;");
         }
 
         #endregion

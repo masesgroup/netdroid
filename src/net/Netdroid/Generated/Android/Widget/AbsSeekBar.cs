@@ -84,81 +84,180 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getKeyProgressIncrement()"/> <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setKeyProgressIncrement(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getThumbTintList()"/>
         /// </summary>
-        public int KeyProgressIncrement
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetThumbTintList()
         {
-            get { return IExecuteWithSignature<int>("getKeyProgressIncrement", "()I"); } set { IExecuteWithSignature("setKeyProgressIncrement", "(I)V", value); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getThumbTintList", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getSplitTrack()"/> <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setSplitTrack(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getTickMarkTintList()"/>
         /// </summary>
-        public bool SplitTrack
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetTickMarkTintList()
         {
-            get { return IExecuteWithSignature<bool>("getSplitTrack", "()Z"); } set { IExecuteWithSignature("setSplitTrack", "(Z)V", value); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getTickMarkTintList", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getThumb()"/> <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setThumb(android.graphics.drawable.Drawable)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getThumbTintBlendMode()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable Thumb
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        public Android.Graphics.BlendMode GetThumbTintBlendMode()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getThumb", "()Landroid/graphics/drawable/Drawable;"); } set { IExecuteWithSignature("setThumb", "(Landroid/graphics/drawable/Drawable;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getThumbTintBlendMode", "()Landroid/graphics/BlendMode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getThumbOffset()"/> <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setThumbOffset(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getTickMarkTintBlendMode()"/>
         /// </summary>
-        public int ThumbOffset
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        public Android.Graphics.BlendMode GetTickMarkTintBlendMode()
         {
-            get { return IExecuteWithSignature<int>("getThumbOffset", "()I"); } set { IExecuteWithSignature("setThumbOffset", "(I)V", value); }
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getTickMarkTintBlendMode", "()Landroid/graphics/BlendMode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getThumbTintBlendMode()"/> <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setThumbTintBlendMode(android.graphics.BlendMode)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getThumb()"/>
         /// </summary>
-        public Android.Graphics.BlendMode ThumbTintBlendMode
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetThumb()
         {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getThumbTintBlendMode", "()Landroid/graphics/BlendMode;"); } set { IExecuteWithSignature("setThumbTintBlendMode", "(Landroid/graphics/BlendMode;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getThumb", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getThumbTintList()"/> <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setThumbTintList(android.content.res.ColorStateList)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getTickMark()"/>
         /// </summary>
-        public Android.Content.Res.ColorStateList ThumbTintList
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetTickMark()
         {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getThumbTintList", "()Landroid/content/res/ColorStateList;"); } set { IExecuteWithSignature("setThumbTintList", "(Landroid/content/res/ColorStateList;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getTickMark", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getThumbTintMode()"/> <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setThumbTintMode(android.graphics.PorterDuff.Mode)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getThumbTintMode()"/>
         /// </summary>
-        public Android.Graphics.PorterDuff.Mode ThumbTintMode
+        /// <returns><see cref="Android.Graphics.PorterDuff.Mode"/></returns>
+        public Android.Graphics.PorterDuff.Mode GetThumbTintMode()
         {
-            get { return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getThumbTintMode", "()Landroid/graphics/PorterDuff$Mode;"); } set { IExecuteWithSignature("setThumbTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getThumbTintMode", "()Landroid/graphics/PorterDuff$Mode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getTickMark()"/> <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setTickMark(android.graphics.drawable.Drawable)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getTickMarkTintMode()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable TickMark
+        /// <returns><see cref="Android.Graphics.PorterDuff.Mode"/></returns>
+        public Android.Graphics.PorterDuff.Mode GetTickMarkTintMode()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getTickMark", "()Landroid/graphics/drawable/Drawable;"); } set { IExecuteWithSignature("setTickMark", "(Landroid/graphics/drawable/Drawable;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getTickMarkTintMode", "()Landroid/graphics/PorterDuff$Mode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getTickMarkTintBlendMode()"/> <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setTickMarkTintBlendMode(android.graphics.BlendMode)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getSplitTrack()"/>
         /// </summary>
-        public Android.Graphics.BlendMode TickMarkTintBlendMode
+        /// <returns><see cref="bool"/></returns>
+        public bool GetSplitTrack()
         {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getTickMarkTintBlendMode", "()Landroid/graphics/BlendMode;"); } set { IExecuteWithSignature("setTickMarkTintBlendMode", "(Landroid/graphics/BlendMode;)V", value); }
+            return IExecuteWithSignature<bool>("getSplitTrack", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getTickMarkTintList()"/> <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setTickMarkTintList(android.content.res.ColorStateList)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getKeyProgressIncrement()"/>
         /// </summary>
-        public Android.Content.Res.ColorStateList TickMarkTintList
+        /// <returns><see cref="int"/></returns>
+        public int GetKeyProgressIncrement()
         {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getTickMarkTintList", "()Landroid/content/res/ColorStateList;"); } set { IExecuteWithSignature("setTickMarkTintList", "(Landroid/content/res/ColorStateList;)V", value); }
+            return IExecuteWithSignature<int>("getKeyProgressIncrement", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getTickMarkTintMode()"/> <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setTickMarkTintMode(android.graphics.PorterDuff.Mode)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#getThumbOffset()"/>
         /// </summary>
-        public Android.Graphics.PorterDuff.Mode TickMarkTintMode
+        /// <returns><see cref="int"/></returns>
+        public int GetThumbOffset()
         {
-            get { return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getTickMarkTintMode", "()Landroid/graphics/PorterDuff$Mode;"); } set { IExecuteWithSignature("setTickMarkTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", value); }
+            return IExecuteWithSignature<int>("getThumbOffset", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setKeyProgressIncrement(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetKeyProgressIncrement(int arg0)
+        {
+            IExecuteWithSignature("setKeyProgressIncrement", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setSplitTrack(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetSplitTrack(bool arg0)
+        {
+            IExecuteWithSignature("setSplitTrack", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setThumb(android.graphics.drawable.Drawable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
+        public void SetThumb(Android.Graphics.Drawable.Drawable arg0)
+        {
+            IExecuteWithSignature("setThumb", "(Landroid/graphics/drawable/Drawable;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setThumbOffset(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetThumbOffset(int arg0)
+        {
+            IExecuteWithSignature("setThumbOffset", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setThumbTintBlendMode(android.graphics.BlendMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.BlendMode"/></param>
+        public void SetThumbTintBlendMode(Android.Graphics.BlendMode arg0)
+        {
+            IExecuteWithSignature("setThumbTintBlendMode", "(Landroid/graphics/BlendMode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setThumbTintList(android.content.res.ColorStateList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.ColorStateList"/></param>
+        public void SetThumbTintList(Android.Content.Res.ColorStateList arg0)
+        {
+            IExecuteWithSignature("setThumbTintList", "(Landroid/content/res/ColorStateList;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setThumbTintMode(android.graphics.PorterDuff.Mode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.PorterDuff.Mode"/></param>
+        public void SetThumbTintMode(Android.Graphics.PorterDuff.Mode arg0)
+        {
+            IExecuteWithSignature("setThumbTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setTickMark(android.graphics.drawable.Drawable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
+        public void SetTickMark(Android.Graphics.Drawable.Drawable arg0)
+        {
+            IExecuteWithSignature("setTickMark", "(Landroid/graphics/drawable/Drawable;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setTickMarkTintBlendMode(android.graphics.BlendMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.BlendMode"/></param>
+        public void SetTickMarkTintBlendMode(Android.Graphics.BlendMode arg0)
+        {
+            IExecuteWithSignature("setTickMarkTintBlendMode", "(Landroid/graphics/BlendMode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setTickMarkTintList(android.content.res.ColorStateList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.ColorStateList"/></param>
+        public void SetTickMarkTintList(Android.Content.Res.ColorStateList arg0)
+        {
+            IExecuteWithSignature("setTickMarkTintList", "(Landroid/content/res/ColorStateList;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AbsSeekBar.html#setTickMarkTintMode(android.graphics.PorterDuff.Mode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.PorterDuff.Mode"/></param>
+        public void SetTickMarkTintMode(Android.Graphics.PorterDuff.Mode arg0)
+        {
+            IExecuteWithSignature("setTickMarkTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", arg0);
         }
 
         #endregion

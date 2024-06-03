@@ -139,39 +139,12 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ClipDescription.html#getClassificationStatus()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/ClipDescription.html#getExtras()"/>
         /// </summary>
-        public int ClassificationStatus
+        /// <returns><see cref="Android.Os.PersistableBundle"/></returns>
+        public Android.Os.PersistableBundle GetExtras()
         {
-            get { return IExecuteWithSignature<int>("getClassificationStatus", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ClipDescription.html#getExtras()"/> <see href="https://developer.android.com/reference/android/content/ClipDescription.html#setExtras(android.os.PersistableBundle)"/>
-        /// </summary>
-        public Android.Os.PersistableBundle Extras
-        {
-            get { return IExecuteWithSignature<Android.Os.PersistableBundle>("getExtras", "()Landroid/os/PersistableBundle;"); } set { IExecuteWithSignature("setExtras", "(Landroid/os/PersistableBundle;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ClipDescription.html#getLabel()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Label
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ClipDescription.html#getMimeTypeCount()"/> 
-        /// </summary>
-        public int MimeTypeCount
-        {
-            get { return IExecuteWithSignature<int>("getMimeTypeCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ClipDescription.html#getTimestamp()"/> 
-        /// </summary>
-        public long Timestamp
-        {
-            get { return IExecuteWithSignature<long>("getTimestamp", "()J"); }
+            return IExecuteWithSignature<Android.Os.PersistableBundle>("getExtras", "()Landroid/os/PersistableBundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ClipDescription.html#hasMimeType(java.lang.String)"/>
@@ -208,6 +181,30 @@ namespace Android.Content
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ClipDescription.html#getClassificationStatus()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetClassificationStatus()
+        {
+            return IExecuteWithSignature<int>("getClassificationStatus", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ClipDescription.html#getMimeTypeCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMimeTypeCount()
+        {
+            return IExecuteWithSignature<int>("getMimeTypeCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ClipDescription.html#getLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ClipDescription.html#getMimeType(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -224,6 +221,22 @@ namespace Android.Content
         public Java.Lang.String[] FilterMimeTypes(Java.Lang.String arg0)
         {
             return IExecuteWithSignatureArray<Java.Lang.String>("filterMimeTypes", "(Ljava/lang/String;)[Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ClipDescription.html#getTimestamp()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTimestamp()
+        {
+            return IExecuteWithSignature<long>("getTimestamp", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ClipDescription.html#setExtras(android.os.PersistableBundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.PersistableBundle"/></param>
+        public void SetExtras(Android.Os.PersistableBundle arg0)
+        {
+            IExecuteWithSignature("setExtras", "(Landroid/os/PersistableBundle;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ClipDescription.html#writeToParcel(android.os.Parcel,int)"/>

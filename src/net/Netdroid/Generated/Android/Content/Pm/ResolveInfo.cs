@@ -116,13 +116,6 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ResolveInfo.html#getIconResource()"/> 
-        /// </summary>
-        public int IconResource
-        {
-            get { return IExecuteWithSignature<int>("getIconResource", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ResolveInfo.html#loadIcon(android.content.pm.PackageManager)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Pm.PackageManager"/></param>
@@ -138,6 +131,14 @@ namespace Android.Content.Pm
         public bool IsCrossProfileIntentForwarderActivity()
         {
             return IExecuteWithSignature<bool>("isCrossProfileIntentForwarderActivity", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ResolveInfo.html#getIconResource()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetIconResource()
+        {
+            return IExecuteWithSignature<int>("getIconResource", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ResolveInfo.html#describeContents()"/>

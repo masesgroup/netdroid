@@ -112,39 +112,28 @@ namespace Android.View.Textclassifier
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationAction.html#getAction()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationAction.html#getAction()"/>
         /// </summary>
-        public Android.App.RemoteAction Action
+        /// <returns><see cref="Android.App.RemoteAction"/></returns>
+        public Android.App.RemoteAction GetAction()
         {
-            get { return IExecuteWithSignature<Android.App.RemoteAction>("getAction", "()Landroid/app/RemoteAction;"); }
+            return IExecuteWithSignature<Android.App.RemoteAction>("getAction", "()Landroid/app/RemoteAction;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationAction.html#getConfidenceScore()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationAction.html#getExtras()"/>
         /// </summary>
-        public float ConfidenceScore
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<float>("getConfidenceScore", "()F"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationAction.html#getExtras()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationAction.html#getConfidenceScore()"/>
         /// </summary>
-        public Android.Os.Bundle Extras
+        /// <returns><see cref="float"/></returns>
+        public float GetConfidenceScore()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationAction.html#getTextReply()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence TextReply
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTextReply", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationAction.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.String Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<float>("getConfidenceScore", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationAction.html#describeContents()"/>
@@ -153,6 +142,22 @@ namespace Android.View.Textclassifier
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationAction.html#getTextReply()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTextReply()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTextReply", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationAction.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/ConversationAction.html#writeToParcel(android.os.Parcel,int)"/>

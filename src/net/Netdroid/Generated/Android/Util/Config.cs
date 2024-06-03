@@ -40,35 +40,35 @@ namespace Android.Util
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Config.html#DEBUG"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool DEBUG { get { if (!_DEBUGReady) { _DEBUGContent = SGetField<bool>(LocalBridgeClazz, "DEBUG"); _DEBUGReady = true; } return _DEBUGContent; } }
         private static bool _DEBUGContent = default;
         private static bool _DEBUGReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Config.html#LOGD"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool LOGD { get { if (!_LOGDReady) { _LOGDContent = SGetField<bool>(LocalBridgeClazz, "LOGD"); _LOGDReady = true; } return _LOGDContent; } }
         private static bool _LOGDContent = default;
         private static bool _LOGDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Config.html#LOGV"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool LOGV { get { if (!_LOGVReady) { _LOGVContent = SGetField<bool>(LocalBridgeClazz, "LOGV"); _LOGVReady = true; } return _LOGVContent; } }
         private static bool _LOGVContent = default;
         private static bool _LOGVReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Config.html#PROFILE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool PROFILE { get { if (!_PROFILEReady) { _PROFILEContent = SGetField<bool>(LocalBridgeClazz, "PROFILE"); _PROFILEReady = true; } return _PROFILEContent; } }
         private static bool _PROFILEContent = default;
         private static bool _PROFILEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Config.html#RELEASE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool RELEASE { get { if (!_RELEASEReady) { _RELEASEContent = SGetField<bool>(LocalBridgeClazz, "RELEASE"); _RELEASEReady = true; } return _RELEASEContent; } }
         private static bool _RELEASEContent = default;
         private static bool _RELEASEReady = false; // this is used because in case of generics 

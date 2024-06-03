@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Properties.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Properties.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public Properties(int arg0)
@@ -38,7 +38,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Properties.html#%3Cinit%3E(java.util.Properties)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Properties.html#%3Cinit%3E(java.util.Properties)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Properties"/></param>
         public Properties(Java.Util.Properties arg0)
@@ -62,7 +62,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Properties.html#getProperty(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Properties.html#getProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -72,7 +72,7 @@ namespace Java.Util
             return IExecute<Java.Lang.String>("getProperty", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Properties.html#getProperty(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Properties.html#getProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -81,7 +81,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("getProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Properties.html#propertyNames()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Properties.html#propertyNames()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<object> PropertyNames()
@@ -89,7 +89,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Enumeration<object>>("propertyNames", "()Ljava/util/Enumeration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Properties.html#stringPropertyNames()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Properties.html#stringPropertyNames()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.String> StringPropertyNames()
@@ -97,7 +97,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("stringPropertyNames", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Properties.html#setProperty(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Properties.html#setProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -107,7 +107,7 @@ namespace Java.Util
             return IExecute("setProperty", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Properties.html#load(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Properties.html#load(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -116,7 +116,7 @@ namespace Java.Util
             IExecuteWithSignature("load", "(Ljava/io/InputStream;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Properties.html#load(java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Properties.html#load(java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -125,7 +125,7 @@ namespace Java.Util
             IExecuteWithSignature("load", "(Ljava/io/Reader;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Properties.html#loadFromXML(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Properties.html#loadFromXML(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -135,7 +135,7 @@ namespace Java.Util
             IExecuteWithSignature("loadFromXML", "(Ljava/io/InputStream;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Properties.html#list(java.io.PrintStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Properties.html#list(java.io.PrintStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
         public void List(Java.Io.PrintStream arg0)
@@ -143,7 +143,7 @@ namespace Java.Util
             IExecuteWithSignature("list", "(Ljava/io/PrintStream;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Properties.html#list(java.io.PrintWriter)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Properties.html#list(java.io.PrintWriter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PrintWriter"/></param>
         public void List(Java.Io.PrintWriter arg0)
@@ -151,17 +151,17 @@ namespace Java.Util
             IExecuteWithSignature("list", "(Ljava/io/PrintWriter;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Properties.html#save(java.io.OutputStream,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Properties.html#save(java.io.OutputStream,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Save(Java.Io.OutputStream arg0, Java.Lang.String arg1)
         {
             IExecute("save", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Properties.html#store(java.io.OutputStream,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Properties.html#store(java.io.OutputStream,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -171,7 +171,7 @@ namespace Java.Util
             IExecute("store", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Properties.html#store(java.io.Writer,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Properties.html#store(java.io.Writer,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -181,7 +181,7 @@ namespace Java.Util
             IExecute("store", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Properties.html#storeToXML(java.io.OutputStream,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Properties.html#storeToXML(java.io.OutputStream,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -192,7 +192,7 @@ namespace Java.Util
             IExecute("storeToXML", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Properties.html#storeToXML(java.io.OutputStream,java.lang.String,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Properties.html#storeToXML(java.io.OutputStream,java.lang.String,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -203,7 +203,7 @@ namespace Java.Util
             IExecute("storeToXML", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Properties.html#storeToXML(java.io.OutputStream,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Properties.html#storeToXML(java.io.OutputStream,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>

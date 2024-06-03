@@ -64,11 +64,12 @@ namespace Javax.Crypto.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/interfaces/DHKey.html#getParams()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/interfaces/DHKey.html#getParams()"/>
         /// </summary>
-        public Javax.Crypto.Spec.DHParameterSpec Params
+        /// <returns><see cref="Javax.Crypto.Spec.DHParameterSpec"/></returns>
+        public Javax.Crypto.Spec.DHParameterSpec GetParams()
         {
-            get { return IExecuteWithSignature<Javax.Crypto.Spec.DHParameterSpec>("getParams", "()Ljavax/crypto/spec/DHParameterSpec;"); }
+            return IExecuteWithSignature<Javax.Crypto.Spec.DHParameterSpec>("getParams", "()Ljavax/crypto/spec/DHParameterSpec;");
         }
 
         #endregion

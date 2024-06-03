@@ -46,11 +46,12 @@ namespace Android.Service.Autofill
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/FieldClassification.html#getMatches()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/FieldClassification.html#getMatches()"/>
         /// </summary>
-        public Java.Util.List<Android.Service.Autofill.FieldClassification.Match> Matches
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Service.Autofill.FieldClassification.Match> GetMatches()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Service.Autofill.FieldClassification.Match>>("getMatches", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Service.Autofill.FieldClassification.Match>>("getMatches", "()Ljava/util/List;");
         }
 
         #endregion
@@ -77,18 +78,20 @@ namespace Android.Service.Autofill
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/autofill/FieldClassification.Match.html#getCategoryId()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/autofill/FieldClassification.Match.html#getScore()"/>
             /// </summary>
-            public Java.Lang.String CategoryId
+            /// <returns><see cref="float"/></returns>
+            public float GetScore()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getCategoryId", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<float>("getScore", "()F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/autofill/FieldClassification.Match.html#getScore()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/autofill/FieldClassification.Match.html#getCategoryId()"/>
             /// </summary>
-            public float Score
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetCategoryId()
             {
-                get { return IExecuteWithSignature<float>("getScore", "()F"); }
+                return IExecuteWithSignature<Java.Lang.String>("getCategoryId", "()Ljava/lang/String;");
             }
 
             #endregion

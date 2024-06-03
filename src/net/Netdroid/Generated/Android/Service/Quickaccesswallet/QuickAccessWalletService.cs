@@ -70,13 +70,6 @@ namespace Android.Service.Quickaccesswallet
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/QuickAccessWalletService.html#getTargetActivityPendingIntent()"/> 
-        /// </summary>
-        public Android.App.PendingIntent TargetActivityPendingIntent
-        {
-            get { return IExecuteWithSignature<Android.App.PendingIntent>("getTargetActivityPendingIntent", "()Landroid/app/PendingIntent;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/QuickAccessWalletService.html#onWalletCardSelected(android.service.quickaccesswallet.SelectWalletCardRequest)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Service.Quickaccesswallet.SelectWalletCardRequest"/></param>
@@ -99,6 +92,14 @@ namespace Android.Service.Quickaccesswallet
         public void OnWalletDismissed()
         {
             IExecuteWithSignature("onWalletDismissed", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/QuickAccessWalletService.html#getTargetActivityPendingIntent()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.PendingIntent"/></returns>
+        public Android.App.PendingIntent GetTargetActivityPendingIntent()
+        {
+            return IExecuteWithSignature<Android.App.PendingIntent>("getTargetActivityPendingIntent", "()Landroid/app/PendingIntent;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/QuickAccessWalletService.html#sendWalletServiceEvent(android.service.quickaccesswallet.WalletServiceEvent)"/>

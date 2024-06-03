@@ -67,25 +67,12 @@ namespace Android.Nfc.Tech
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/NfcBarcode.html#getBarcode()"/> 
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/NfcBarcode.html#getTag()"/>
         /// </summary>
-        public byte[] Barcode
+        /// <returns><see cref="Android.Nfc.Tag"/></returns>
+        public Android.Nfc.Tag GetTag()
         {
-            get { return IExecuteWithSignatureArray<byte>("getBarcode", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/NfcBarcode.html#getTag()"/> 
-        /// </summary>
-        public Android.Nfc.Tag Tag
-        {
-            get { return IExecuteWithSignature<Android.Nfc.Tag>("getTag", "()Landroid/nfc/Tag;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/NfcBarcode.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            return IExecuteWithSignature<Android.Nfc.Tag>("getTag", "()Landroid/nfc/Tag;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/tech/NfcBarcode.html#isConnected()"/>
@@ -94,6 +81,22 @@ namespace Android.Nfc.Tech
         public bool IsConnected()
         {
             return IExecuteWithSignature<bool>("isConnected", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/NfcBarcode.html#getBarcode()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetBarcode()
+        {
+            return IExecuteWithSignatureArray<byte>("getBarcode", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/NfcBarcode.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/tech/NfcBarcode.html#close()"/>

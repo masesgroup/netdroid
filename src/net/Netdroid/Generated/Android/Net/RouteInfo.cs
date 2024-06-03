@@ -70,32 +70,12 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/RouteInfo.html#getDestination()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/RouteInfo.html#getDestination()"/>
         /// </summary>
-        public Android.Net.IpPrefix Destination
+        /// <returns><see cref="Android.Net.IpPrefix"/></returns>
+        public Android.Net.IpPrefix GetDestination()
         {
-            get { return IExecuteWithSignature<Android.Net.IpPrefix>("getDestination", "()Landroid/net/IpPrefix;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/RouteInfo.html#getGateway()"/> 
-        /// </summary>
-        public Java.Net.InetAddress Gateway
-        {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getGateway", "()Ljava/net/InetAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/RouteInfo.html#getInterface()"/> 
-        /// </summary>
-        public Java.Lang.String Interface
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInterface", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/RouteInfo.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            return IExecuteWithSignature<Android.Net.IpPrefix>("getDestination", "()Landroid/net/IpPrefix;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/RouteInfo.html#hasGateway()"/>
@@ -129,6 +109,30 @@ namespace Android.Net
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/RouteInfo.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/RouteInfo.html#getInterface()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetInterface()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getInterface", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/RouteInfo.html#getGateway()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        public Java.Net.InetAddress GetGateway()
+        {
+            return IExecuteWithSignature<Java.Net.InetAddress>("getGateway", "()Ljava/net/InetAddress;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/RouteInfo.html#writeToParcel(android.os.Parcel,int)"/>

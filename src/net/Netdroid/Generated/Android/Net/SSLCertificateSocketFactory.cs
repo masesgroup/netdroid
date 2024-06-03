@@ -33,7 +33,7 @@ namespace Android.Net
         /// <see href="https://developer.android.com/reference/android/net/SSLCertificateSocketFactory.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public SSLCertificateSocketFactory(int arg0)
             : base(arg0)
         {
@@ -55,7 +55,7 @@ namespace Android.Net
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Net.SocketFactory"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Javax.Net.SocketFactory GetDefault(int arg0)
         {
             return SExecuteWithSignature<Javax.Net.SocketFactory>(LocalBridgeClazz, "getDefault", "(I)Ljavax/net/SocketFactory;", arg0);
@@ -66,7 +66,7 @@ namespace Android.Net
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.Net.SSLSessionCache"/></param>
         /// <returns><see cref="Javax.Net.Ssl.SSLSocketFactory"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Javax.Net.Ssl.SSLSocketFactory GetDefault(int arg0, Android.Net.SSLSessionCache arg1)
         {
             return SExecute<Javax.Net.Ssl.SSLSocketFactory>(LocalBridgeClazz, "getDefault", arg0, arg1);
@@ -77,7 +77,7 @@ namespace Android.Net
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.Net.SSLSessionCache"/></param>
         /// <returns><see cref="Javax.Net.Ssl.SSLSocketFactory"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Javax.Net.Ssl.SSLSocketFactory GetInsecure(int arg0, Android.Net.SSLSessionCache arg1)
         {
             return SExecute<Javax.Net.Ssl.SSLSocketFactory>(LocalBridgeClazz, "getInsecure", arg0, arg1);
@@ -91,7 +91,7 @@ namespace Android.Net
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.Socket"/></param>
         /// <returns><see cref="byte"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public byte[] GetNpnSelectedProtocol(Java.Net.Socket arg0)
         {
             return IExecuteWithSignatureArray<byte>("getNpnSelectedProtocol", "(Ljava/net/Socket;)[B", arg0);
@@ -101,7 +101,7 @@ namespace Android.Net
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.Socket"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetHostname(Java.Net.Socket arg0, Java.Lang.String arg1)
         {
             IExecute("setHostname", arg0, arg1);
@@ -110,7 +110,7 @@ namespace Android.Net
         /// <see href="https://developer.android.com/reference/android/net/SSLCertificateSocketFactory.html#setKeyManagers(javax.net.ssl.KeyManager[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Net.Ssl.KeyManager"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetKeyManagers(Javax.Net.Ssl.KeyManager[] arg0)
         {
             IExecuteWithSignature("setKeyManagers", "([Ljavax/net/ssl/KeyManager;)V", new object[] { arg0 });
@@ -119,7 +119,7 @@ namespace Android.Net
         /// <see href="https://developer.android.com/reference/android/net/SSLCertificateSocketFactory.html#setNpnProtocols(byte[][])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetNpnProtocols(byte[][] arg0)
         {
             IExecuteWithSignature("setNpnProtocols", "([[B)V", new object[] { arg0 });
@@ -128,7 +128,7 @@ namespace Android.Net
         /// <see href="https://developer.android.com/reference/android/net/SSLCertificateSocketFactory.html#setTrustManagers(javax.net.ssl.TrustManager[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Net.Ssl.TrustManager"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetTrustManagers(Javax.Net.Ssl.TrustManager[] arg0)
         {
             IExecuteWithSignature("setTrustManagers", "([Ljavax/net/ssl/TrustManager;)V", new object[] { arg0 });
@@ -138,7 +138,7 @@ namespace Android.Net
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.Socket"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetUseSessionTickets(Java.Net.Socket arg0, bool arg1)
         {
             IExecute("setUseSessionTickets", arg0, arg1);

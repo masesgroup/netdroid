@@ -90,36 +90,40 @@ namespace Android.Service.Controls.Templates
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/templates/ControlTemplate.html#getErrorTemplate()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/templates/ControlTemplate.html#getErrorTemplate()"/>
         /// </summary>
-        public static Android.Service.Controls.Templates.ControlTemplate ErrorTemplate
+        /// <returns><see cref="Android.Service.Controls.Templates.ControlTemplate"/></returns>
+        public static Android.Service.Controls.Templates.ControlTemplate GetErrorTemplate()
         {
-            get { return SExecuteWithSignature<Android.Service.Controls.Templates.ControlTemplate>(LocalBridgeClazz, "getErrorTemplate", "()Landroid/service/controls/templates/ControlTemplate;"); }
+            return SExecuteWithSignature<Android.Service.Controls.Templates.ControlTemplate>(LocalBridgeClazz, "getErrorTemplate", "()Landroid/service/controls/templates/ControlTemplate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/templates/ControlTemplate.html#getNoTemplateObject()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/templates/ControlTemplate.html#getNoTemplateObject()"/>
         /// </summary>
-        public static Android.Service.Controls.Templates.ControlTemplate NoTemplateObject
+        /// <returns><see cref="Android.Service.Controls.Templates.ControlTemplate"/></returns>
+        public static Android.Service.Controls.Templates.ControlTemplate GetNoTemplateObject()
         {
-            get { return SExecuteWithSignature<Android.Service.Controls.Templates.ControlTemplate>(LocalBridgeClazz, "getNoTemplateObject", "()Landroid/service/controls/templates/ControlTemplate;"); }
+            return SExecuteWithSignature<Android.Service.Controls.Templates.ControlTemplate>(LocalBridgeClazz, "getNoTemplateObject", "()Landroid/service/controls/templates/ControlTemplate;");
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/templates/ControlTemplate.html#getTemplateId()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/templates/ControlTemplate.html#getTemplateType()"/>
         /// </summary>
-        public Java.Lang.String TemplateId
+        /// <returns><see cref="int"/></returns>
+        public int GetTemplateType()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTemplateId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<int>("getTemplateType", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/templates/ControlTemplate.html#getTemplateType()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/templates/ControlTemplate.html#getTemplateId()"/>
         /// </summary>
-        public int TemplateType
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTemplateId()
         {
-            get { return IExecuteWithSignature<int>("getTemplateType", "()I"); }
+            return IExecuteWithSignature<Java.Lang.String>("getTemplateId", "()Ljava/lang/String;");
         }
 
         #endregion

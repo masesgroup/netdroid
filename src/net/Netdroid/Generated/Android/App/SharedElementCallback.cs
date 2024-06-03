@@ -142,7 +142,7 @@ namespace Android.App
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onSharedElementsReady", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnSharedElementsReadyEventHandler));
+                AddEventHandler("onSharedElementsReady", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnSharedElementsReadyEventHandler));
 
             }
 
@@ -150,7 +150,7 @@ namespace Android.App
             /// Handler for <see href="https://developer.android.com/reference/android/app/SharedElementCallback.OnSharedElementsReadyListener.html#onSharedElementsReady()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSharedElementsReady"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnSharedElementsReady { get; set; } = null;
+            public global::System.Action OnOnSharedElementsReady { get; set; } = null;
 
             void OnSharedElementsReadyEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {

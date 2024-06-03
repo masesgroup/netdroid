@@ -46,27 +46,6 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Camera.html#getLocationX()"/> 
-        /// </summary>
-        public float LocationX
-        {
-            get { return IExecuteWithSignature<float>("getLocationX", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Camera.html#getLocationY()"/> 
-        /// </summary>
-        public float LocationY
-        {
-            get { return IExecuteWithSignature<float>("getLocationY", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Camera.html#getLocationZ()"/> 
-        /// </summary>
-        public float LocationZ
-        {
-            get { return IExecuteWithSignature<float>("getLocationZ", "()F"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Camera.html#dotWithNormal(float,float,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -76,6 +55,30 @@ namespace Android.Graphics
         public float DotWithNormal(float arg0, float arg1, float arg2)
         {
             return IExecute<float>("dotWithNormal", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Camera.html#getLocationX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetLocationX()
+        {
+            return IExecuteWithSignature<float>("getLocationX", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Camera.html#getLocationY()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetLocationY()
+        {
+            return IExecuteWithSignature<float>("getLocationY", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Camera.html#getLocationZ()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetLocationZ()
+        {
+            return IExecuteWithSignature<float>("getLocationZ", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Camera.html#restore()"/>

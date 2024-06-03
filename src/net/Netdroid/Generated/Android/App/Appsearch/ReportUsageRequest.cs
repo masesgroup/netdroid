@@ -46,25 +46,28 @@ namespace Android.App.Appsearch
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/ReportUsageRequest.html#getDocumentId()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/ReportUsageRequest.html#getDocumentId()"/>
         /// </summary>
-        public Java.Lang.String DocumentId
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDocumentId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDocumentId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getDocumentId", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/ReportUsageRequest.html#getNamespace()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/ReportUsageRequest.html#getNamespace()"/>
         /// </summary>
-        public Java.Lang.String Namespace
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNamespace()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/ReportUsageRequest.html#getUsageTimestampMillis()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/ReportUsageRequest.html#getUsageTimestampMillis()"/>
         /// </summary>
-        public long UsageTimestampMillis
+        /// <returns><see cref="long"/></returns>
+        public long GetUsageTimestampMillis()
         {
-            get { return IExecuteWithSignature<long>("getUsageTimestampMillis", "()J"); }
+            return IExecuteWithSignature<long>("getUsageTimestampMillis", "()J");
         }
 
         #endregion

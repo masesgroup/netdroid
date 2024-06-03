@@ -30,20 +30,20 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Lang.NumberFormatException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Short(Java.Lang.String arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#%3Cinit%3E(short)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#%3Cinit%3E(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Short(short arg0)
             : base(arg0)
         {
@@ -61,31 +61,31 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#BYTES"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#BYTES"/>
         /// </summary>
         public static int BYTES { get { if (!_BYTESReady) { _BYTESContent = SGetField<int>(LocalBridgeClazz, "BYTES"); _BYTESReady = true; } return _BYTESContent; } }
         private static int _BYTESContent = default;
         private static bool _BYTESReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#SIZE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#SIZE"/>
         /// </summary>
         public static int SIZE { get { if (!_SIZEReady) { _SIZEContent = SGetField<int>(LocalBridgeClazz, "SIZE"); _SIZEReady = true; } return _SIZEContent; } }
         private static int _SIZEContent = default;
         private static bool _SIZEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#TYPE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#TYPE"/>
         /// </summary>
         public static Java.Lang.Class TYPE { get { if (!_TYPEReady) { _TYPEContent = SGetField<Java.Lang.Class>(LocalBridgeClazz, "TYPE"); _TYPEReady = true; } return _TYPEContent; } }
         private static Java.Lang.Class _TYPEContent = default;
         private static bool _TYPEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#MAX_VALUE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#MAX_VALUE"/>
         /// </summary>
         public static short MAX_VALUE { get { if (!_MAX_VALUEReady) { _MAX_VALUEContent = SGetField<short>(LocalBridgeClazz, "MAX_VALUE"); _MAX_VALUEReady = true; } return _MAX_VALUEContent; } }
         private static short _MAX_VALUEContent = default;
         private static bool _MAX_VALUEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#MIN_VALUE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#MIN_VALUE"/>
         /// </summary>
         public static short MIN_VALUE { get { if (!_MIN_VALUEReady) { _MIN_VALUEContent = SGetField<short>(LocalBridgeClazz, "MIN_VALUE"); _MIN_VALUEReady = true; } return _MIN_VALUEContent; } }
         private static short _MIN_VALUEContent = default;
@@ -95,7 +95,7 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#compare(short,short)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#compare(short,short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="short"/></param>
@@ -105,7 +105,7 @@ namespace Java.Lang
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#compareUnsigned(short,short)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#compareUnsigned(short,short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="short"/></param>
@@ -115,7 +115,7 @@ namespace Java.Lang
             return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#hashCode(short)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#hashCode(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <returns><see cref="int"/></returns>
@@ -124,7 +124,7 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "(S)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#toUnsignedInt(short)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#toUnsignedInt(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <returns><see cref="int"/></returns>
@@ -133,7 +133,7 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "toUnsignedInt", "(S)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#decode(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#decode(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Short"/></returns>
@@ -143,7 +143,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.Short>(LocalBridgeClazz, "decode", "(Ljava/lang/String;)Ljava/lang/Short;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#valueOf(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#valueOf(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -154,7 +154,7 @@ namespace Java.Lang
             return SExecute<Java.Lang.Short>(LocalBridgeClazz, "valueOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Short"/></returns>
@@ -164,7 +164,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.Short>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/Short;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#valueOf(short)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#valueOf(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <returns><see cref="Java.Lang.Short"/></returns>
@@ -173,7 +173,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.Short>(LocalBridgeClazz, "valueOf", "(S)Ljava/lang/Short;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#toString(short)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#toString(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -182,7 +182,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(S)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#toUnsignedLong(short)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#toUnsignedLong(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <returns><see cref="long"/></returns>
@@ -191,7 +191,7 @@ namespace Java.Lang
             return SExecuteWithSignature<long>(LocalBridgeClazz, "toUnsignedLong", "(S)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#parseShort(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#parseShort(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -202,7 +202,7 @@ namespace Java.Lang
             return SExecute<short>(LocalBridgeClazz, "parseShort", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#parseShort(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#parseShort(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="short"/></returns>
@@ -212,7 +212,7 @@ namespace Java.Lang
             return SExecuteWithSignature<short>(LocalBridgeClazz, "parseShort", "(Ljava/lang/String;)S", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#reverseBytes(short)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#reverseBytes(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <returns><see cref="short"/></returns>
@@ -225,7 +225,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -234,7 +234,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#compareTo(java.lang.Short)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Short.html#compareTo(java.lang.Short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Short"/></param>
         /// <returns><see cref="int"/></returns>

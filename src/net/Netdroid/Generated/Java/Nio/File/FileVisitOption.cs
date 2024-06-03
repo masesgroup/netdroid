@@ -38,7 +38,7 @@ namespace Java.Nio.File
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitOption.html#FOLLOW_LINKS"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitOption.html#FOLLOW_LINKS"/>
         /// </summary>
         public static Java.Nio.File.FileVisitOption FOLLOW_LINKS { get { if (!_FOLLOW_LINKSReady) { _FOLLOW_LINKSContent = SGetField<Java.Nio.File.FileVisitOption>(LocalBridgeClazz, "FOLLOW_LINKS"); _FOLLOW_LINKSReady = true; } return _FOLLOW_LINKSContent; } }
         private static Java.Nio.File.FileVisitOption _FOLLOW_LINKSContent = default;
@@ -48,7 +48,7 @@ namespace Java.Nio.File
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitOption.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitOption.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Nio.File.FileVisitOption"/></returns>
@@ -57,7 +57,7 @@ namespace Java.Nio.File
             return SExecuteWithSignature<Java.Nio.File.FileVisitOption>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/nio/file/FileVisitOption;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitOption.html#values()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitOption.html#values()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.File.FileVisitOption"/></returns>
         public static Java.Nio.File.FileVisitOption[] Values()

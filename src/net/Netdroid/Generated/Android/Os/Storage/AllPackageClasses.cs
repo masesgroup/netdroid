@@ -30,38 +30,26 @@ namespace Android.Os.Storage
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/os/storage/OnObbStateChangeListener.html"/>
     /// </summary>
-    public partial class OnObbStateChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class OnObbStateChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OnObbStateChangeListener>
     {
+        const string _bridgeClassName = "android.os.storage.OnObbStateChangeListener";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public OnObbStateChangeListener() { InitializeHandlers(); }
-
-    #warning Remember to build the Java class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region OnObbStateChangeListenerDirect
-    /// <summary>
-    /// Direct override of <see cref="OnObbStateChangeListener"/> or its generic type if there is one
-    /// </summary>
-    public partial class OnObbStateChangeListenerDirect : OnObbStateChangeListener
-    {
+        [global::System.Obsolete("OnObbStateChangeListener class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public OnObbStateChangeListener() { }
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public override bool AutoInit => false;
+        [global::System.Obsolete("OnObbStateChangeListener class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public OnObbStateChangeListener(params object[] args) : base(args) { }
 
-        /// <inheritdoc />
-        protected override void InitializeHandlers() { }
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.os.storage.OnObbStateChangeListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -78,6 +66,9 @@ namespace Android.Os.Storage
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
     }
     #endregion
 

@@ -28,7 +28,7 @@ namespace Java.Util.Prefs
 {
     #region AbstractPreferences
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/AbstractPreferences.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/prefs/AbstractPreferences.html"/>
     /// </summary>
     public partial class AbstractPreferences : Java.Util.Prefs.Preferences
     {
@@ -36,12 +36,12 @@ namespace Java.Util.Prefs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AbstractPreferences class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractPreferences class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractPreferences() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AbstractPreferences class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractPreferences class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractPreferences(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,7 +74,7 @@ namespace Java.Util.Prefs
 
     #region BackingStoreException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/BackingStoreException.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/prefs/BackingStoreException.html"/>
     /// </summary>
     public partial class BackingStoreException : Java.Lang.Exception
     {
@@ -91,7 +91,7 @@ namespace Java.Util.Prefs
 
     #region InvalidPreferencesFormatException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/InvalidPreferencesFormatException.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/prefs/InvalidPreferencesFormatException.html"/>
     /// </summary>
     public partial class InvalidPreferencesFormatException : Java.Lang.Exception
     {
@@ -108,7 +108,7 @@ namespace Java.Util.Prefs
 
     #region NodeChangeEvent
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/NodeChangeEvent.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/prefs/NodeChangeEvent.html"/>
     /// </summary>
     public partial class NodeChangeEvent : Java.Util.EventObject
     {
@@ -152,7 +152,7 @@ namespace Java.Util.Prefs
 
     #region NodeChangeListener
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/NodeChangeListener.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/prefs/NodeChangeListener.html"/>
     /// </summary>
     public partial class NodeChangeListener : Java.Util.EventListener
     {
@@ -161,10 +161,13 @@ namespace Java.Util.Prefs
         /// </summary>
         public NodeChangeListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.prefs.NodeChangeListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.prefs.NodeChangeListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -186,10 +189,13 @@ namespace Java.Util.Prefs
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.prefs.NodeChangeListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.prefs.NodeChangeListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -211,7 +217,7 @@ namespace Java.Util.Prefs
 
     #region PreferenceChangeEvent
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/PreferenceChangeEvent.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/prefs/PreferenceChangeEvent.html"/>
     /// </summary>
     public partial class PreferenceChangeEvent : Java.Util.EventObject
     {
@@ -255,7 +261,7 @@ namespace Java.Util.Prefs
 
     #region PreferenceChangeListener
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/PreferenceChangeListener.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/prefs/PreferenceChangeListener.html"/>
     /// </summary>
     public partial class PreferenceChangeListener : Java.Util.EventListener
     {
@@ -264,10 +270,13 @@ namespace Java.Util.Prefs
         /// </summary>
         public PreferenceChangeListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.util.prefs.PreferenceChangeListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.util.prefs.PreferenceChangeListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -289,10 +298,13 @@ namespace Java.Util.Prefs
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.util.prefs.PreferenceChangeListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.prefs.PreferenceChangeListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -314,7 +326,7 @@ namespace Java.Util.Prefs
 
     #region Preferences
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html"/>
     /// </summary>
     public partial class Preferences : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Preferences>
     {
@@ -322,12 +334,12 @@ namespace Java.Util.Prefs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Preferences class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Preferences class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Preferences() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Preferences class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Preferences class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Preferences(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -360,7 +372,7 @@ namespace Java.Util.Prefs
 
     #region PreferencesFactory
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/PreferencesFactory.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/prefs/PreferencesFactory.html"/>
     /// </summary>
     public partial class PreferencesFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PreferencesFactory>
     {
@@ -368,12 +380,12 @@ namespace Java.Util.Prefs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("PreferencesFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PreferencesFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PreferencesFactory() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("PreferencesFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PreferencesFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PreferencesFactory(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

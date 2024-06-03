@@ -70,26 +70,28 @@ namespace Android.Text.Style
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/BackgroundColorSpan.html#getBackgroundColor()"/> 
-        /// </summary>
-        public int BackgroundColor
-        {
-            get { return IExecuteWithSignature<int>("getBackgroundColor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/BackgroundColorSpan.html#getSpanTypeId()"/> 
-        /// </summary>
-        public int SpanTypeId
-        {
-            get { return IExecuteWithSignature<int>("getSpanTypeId", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/BackgroundColorSpan.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/BackgroundColorSpan.html#getBackgroundColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBackgroundColor()
+        {
+            return IExecuteWithSignature<int>("getBackgroundColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/BackgroundColorSpan.html#getSpanTypeId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSpanTypeId()
+        {
+            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/BackgroundColorSpan.html#writeToParcel(android.os.Parcel,int)"/>

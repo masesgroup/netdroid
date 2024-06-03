@@ -69,7 +69,7 @@ namespace Android.Icu.Text
         /// <param name="arg0"><typeparamref name="A"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.IAppendable"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        public A AppendTo<A>(A arg0) where A: Java.Lang.IAppendable, new()
+        public A AppendTo<A>(A arg0) where A : Java.Lang.IAppendable, new()
         {
             return IExecuteWithSignature<A>("appendTo", "(Ljava/lang/Appendable;)Ljava/lang/Appendable;", arg0);
         }

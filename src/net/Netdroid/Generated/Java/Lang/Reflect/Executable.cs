@@ -54,84 +54,63 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Executable.html#getDeclaringClass()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Executable.html#getModifiers()"/>
         /// </summary>
-        public Java.Lang.Class DeclaringClass
+        /// <returns><see cref="int"/></returns>
+        public int GetModifiers()
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;"); }
+            return IExecuteWithSignature<int>("getModifiers", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Executable.html#getExceptionTypes()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Executable.html#getParameterAnnotations()"/>
         /// </summary>
-        public Java.Lang.Class[] ExceptionTypes
+        /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
+        public Java.Lang.Annotation.Annotation[] GetParameterAnnotations()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getExceptionTypes", "()[Ljava/lang/Class;"); }
+            return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getParameterAnnotations", "()[[Ljava/lang/annotation/Annotation;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Executable.html#getGenericExceptionTypes()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Executable.html#getDeclaringClass()"/>
         /// </summary>
-        public Java.Lang.Reflect.Type[] GenericExceptionTypes
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetDeclaringClass()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getGenericExceptionTypes", "()[Ljava/lang/reflect/Type;"); }
+            return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Executable.html#getGenericParameterTypes()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Executable.html#getExceptionTypes()"/>
         /// </summary>
-        public Java.Lang.Reflect.Type[] GenericParameterTypes
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class[] GetExceptionTypes()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getGenericParameterTypes", "()[Ljava/lang/reflect/Type;"); }
+            return IExecuteWithSignatureArray<Java.Lang.Class>("getExceptionTypes", "()[Ljava/lang/Class;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Executable.html#getModifiers()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Executable.html#getParameterTypes()"/>
         /// </summary>
-        public int Modifiers
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class[] GetParameterTypes()
         {
-            get { return IExecuteWithSignature<int>("getModifiers", "()I"); }
+            return IExecuteWithSignatureArray<Java.Lang.Class>("getParameterTypes", "()[Ljava/lang/Class;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Executable.html#getName()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Executable.html#getTypeParameters()"/>
         /// </summary>
-        public Java.Lang.String Name
+        /// <returns><see cref="Java.Lang.Reflect.TypeVariable"/></returns>
+        public Java.Lang.Reflect.TypeVariable[] GetTypeParameters()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.TypeVariable>("getTypeParameters", "()[Ljava/lang/reflect/TypeVariable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Executable.html#getParameterAnnotations()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Executable.html#getName()"/>
         /// </summary>
-        public Java.Lang.Annotation.Annotation[] ParameterAnnotations
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getParameterAnnotations", "()[[Ljava/lang/annotation/Annotation;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Executable.html#getParameterCount()"/> 
-        /// </summary>
-        public int ParameterCount
-        {
-            get { return IExecuteWithSignature<int>("getParameterCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Executable.html#getParameters()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Parameter[] Parameters
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Parameter>("getParameters", "()[Ljava/lang/reflect/Parameter;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Executable.html#getParameterTypes()"/> 
-        /// </summary>
-        public Java.Lang.Class[] ParameterTypes
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getParameterTypes", "()[Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Executable.html#getTypeParameters()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.TypeVariable[] TypeParameters
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.TypeVariable>("getTypeParameters", "()[Ljava/lang/reflect/TypeVariable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Executable.html#toGenericString()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Executable.html#toGenericString()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToGenericString()
@@ -139,7 +118,7 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature<Java.Lang.String>("toGenericString", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Executable.html#isSynthetic()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Executable.html#isSynthetic()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsSynthetic()
@@ -147,12 +126,44 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature<bool>("isSynthetic", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Executable.html#isVarArgs()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Executable.html#isVarArgs()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsVarArgs()
         {
             return IExecuteWithSignature<bool>("isVarArgs", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Executable.html#getParameterCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetParameterCount()
+        {
+            return IExecuteWithSignature<int>("getParameterCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Executable.html#getParameters()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Parameter"/></returns>
+        public Java.Lang.Reflect.Parameter[] GetParameters()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Parameter>("getParameters", "()[Ljava/lang/reflect/Parameter;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Executable.html#getGenericExceptionTypes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Type"/></returns>
+        public Java.Lang.Reflect.Type[] GetGenericExceptionTypes()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getGenericExceptionTypes", "()[Ljava/lang/reflect/Type;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Executable.html#getGenericParameterTypes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Type"/></returns>
+        public Java.Lang.Reflect.Type[] GetGenericParameterTypes()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getGenericParameterTypes", "()[Ljava/lang/reflect/Type;");
         }
 
         #endregion

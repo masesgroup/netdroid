@@ -59,39 +59,44 @@ namespace Android.Service.Controls.Templates
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/templates/RangeTemplate.html#getCurrentValue()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/templates/RangeTemplate.html#getCurrentValue()"/>
         /// </summary>
-        public float CurrentValue
+        /// <returns><see cref="float"/></returns>
+        public float GetCurrentValue()
         {
-            get { return IExecuteWithSignature<float>("getCurrentValue", "()F"); }
+            return IExecuteWithSignature<float>("getCurrentValue", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/templates/RangeTemplate.html#getFormatString()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/templates/RangeTemplate.html#getMaxValue()"/>
         /// </summary>
-        public Java.Lang.CharSequence FormatString
+        /// <returns><see cref="float"/></returns>
+        public float GetMaxValue()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getFormatString", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<float>("getMaxValue", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/templates/RangeTemplate.html#getMaxValue()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/templates/RangeTemplate.html#getMinValue()"/>
         /// </summary>
-        public float MaxValue
+        /// <returns><see cref="float"/></returns>
+        public float GetMinValue()
         {
-            get { return IExecuteWithSignature<float>("getMaxValue", "()F"); }
+            return IExecuteWithSignature<float>("getMinValue", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/templates/RangeTemplate.html#getMinValue()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/templates/RangeTemplate.html#getStepValue()"/>
         /// </summary>
-        public float MinValue
+        /// <returns><see cref="float"/></returns>
+        public float GetStepValue()
         {
-            get { return IExecuteWithSignature<float>("getMinValue", "()F"); }
+            return IExecuteWithSignature<float>("getStepValue", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/templates/RangeTemplate.html#getStepValue()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/templates/RangeTemplate.html#getFormatString()"/>
         /// </summary>
-        public float StepValue
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetFormatString()
         {
-            get { return IExecuteWithSignature<float>("getStepValue", "()F"); }
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getFormatString", "()Ljava/lang/CharSequence;");
         }
 
         #endregion

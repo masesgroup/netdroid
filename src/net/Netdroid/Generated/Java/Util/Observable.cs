@@ -46,7 +46,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Observable.html#hasChanged()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Observable.html#hasChanged()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasChanged()
@@ -54,7 +54,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasChanged", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Observable.html#countObservers()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Observable.html#countObservers()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int CountObservers()
@@ -62,7 +62,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("countObservers", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Observable.html#addObserver(java.util.Observer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Observable.html#addObserver(java.util.Observer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Observer"/></param>
         public void AddObserver(Java.Util.Observer arg0)
@@ -70,7 +70,7 @@ namespace Java.Util
             IExecuteWithSignature("addObserver", "(Ljava/util/Observer;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Observable.html#deleteObserver(java.util.Observer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Observable.html#deleteObserver(java.util.Observer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Observer"/></param>
         public void DeleteObserver(Java.Util.Observer arg0)
@@ -78,21 +78,21 @@ namespace Java.Util
             IExecuteWithSignature("deleteObserver", "(Ljava/util/Observer;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Observable.html#deleteObservers()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Observable.html#deleteObservers()"/>
         /// </summary>
         public void DeleteObservers()
         {
             IExecuteWithSignature("deleteObservers", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Observable.html#notifyObservers()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Observable.html#notifyObservers()"/>
         /// </summary>
         public void NotifyObservers()
         {
             IExecuteWithSignature("notifyObservers", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Observable.html#notifyObservers(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Observable.html#notifyObservers(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void NotifyObservers(object arg0)

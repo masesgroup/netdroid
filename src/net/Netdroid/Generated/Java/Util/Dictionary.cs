@@ -46,7 +46,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Dictionary.html#isEmpty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Dictionary.html#isEmpty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
@@ -54,7 +54,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Dictionary.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Dictionary.html#size()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Size()
@@ -62,7 +62,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Dictionary.html#keys()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Dictionary.html#keys()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration Keys()
@@ -70,7 +70,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Enumeration>("keys", "()Ljava/util/Enumeration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Dictionary.html#elements()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Dictionary.html#elements()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration Elements()
@@ -78,7 +78,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Enumeration>("elements", "()Ljava/util/Enumeration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Dictionary.html#get(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Dictionary.html#get(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -87,7 +87,7 @@ namespace Java.Util
             return IExecuteWithSignature("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Dictionary.html#put(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Dictionary.html#put(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -97,7 +97,7 @@ namespace Java.Util
             return IExecute("put", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Dictionary.html#remove(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Dictionary.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -141,7 +141,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Dictionary.html#isEmpty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Dictionary.html#isEmpty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
@@ -149,7 +149,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Dictionary.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Dictionary.html#size()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Size()
@@ -157,7 +157,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Dictionary.html#keys()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Dictionary.html#keys()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<K> Keys()
@@ -165,7 +165,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Enumeration<K>>("keys", "()Ljava/util/Enumeration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Dictionary.html#elements()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Dictionary.html#elements()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<V> Elements()
@@ -173,7 +173,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Enumeration<V>>("elements", "()Ljava/util/Enumeration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Dictionary.html#get(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Dictionary.html#get(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><typeparamref name="V"/></returns>
@@ -182,7 +182,7 @@ namespace Java.Util
             return IExecuteWithSignature<V>("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Dictionary.html#put(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Dictionary.html#put(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -192,7 +192,7 @@ namespace Java.Util
             return IExecute<V>("put", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Dictionary.html#remove(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Dictionary.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><typeparamref name="V"/></returns>

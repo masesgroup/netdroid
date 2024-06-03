@@ -72,7 +72,7 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/PosixFileAttributeView.html#name()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/PosixFileAttributeView.html#name()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
@@ -80,7 +80,7 @@ namespace Java.Nio.File.Attribute
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/PosixFileAttributeView.html#setGroup(java.nio.file.attribute.GroupPrincipal)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/PosixFileAttributeView.html#setGroup(java.nio.file.attribute.GroupPrincipal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Attribute.GroupPrincipal"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -89,7 +89,7 @@ namespace Java.Nio.File.Attribute
             IExecuteWithSignature("setGroup", "(Ljava/nio/file/attribute/GroupPrincipal;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/PosixFileAttributeView.html#setPermissions(java.util.Set)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/PosixFileAttributeView.html#setPermissions(java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -98,7 +98,7 @@ namespace Java.Nio.File.Attribute
             IExecuteWithSignature("setPermissions", "(Ljava/util/Set;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/PosixFileAttributeView.html#readAttributes()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/PosixFileAttributeView.html#readAttributes()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></returns>
         /// <exception cref="Java.Io.IOException"/>

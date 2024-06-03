@@ -36,7 +36,7 @@ namespace Android.Preference
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public EditTextPreference(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -47,7 +47,7 @@ namespace Android.Preference
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public EditTextPreference(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -57,7 +57,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public EditTextPreference(Android.Content.Context arg0, Android.Util.AttributeSet arg1)
             : base(arg0, arg1)
         {
@@ -66,7 +66,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/EditTextPreference.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public EditTextPreference(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -88,20 +88,31 @@ namespace Android.Preference
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/EditTextPreference.html#getEditText()"/> 
+        /// <see href="https://developer.android.com/reference/android/preference/EditTextPreference.html#getEditText()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Widget.EditText EditText
+        /// <returns><see cref="Android.Widget.EditText"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.EditText GetEditText()
         {
-            get { return IExecuteWithSignature<Android.Widget.EditText>("getEditText", "()Landroid/widget/EditText;"); }
+            return IExecuteWithSignature<Android.Widget.EditText>("getEditText", "()Landroid/widget/EditText;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/EditTextPreference.html#getText()"/> <see href="https://developer.android.com/reference/android/preference/EditTextPreference.html#setText(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/preference/EditTextPreference.html#getText()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String Text
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetText()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setText", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/EditTextPreference.html#setText(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [global::System.Obsolete()]
+        public void SetText(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setText", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

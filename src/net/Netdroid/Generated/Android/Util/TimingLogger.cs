@@ -34,7 +34,7 @@ namespace Android.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public TimingLogger(Java.Lang.String arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -59,7 +59,7 @@ namespace Android.Util
         /// <see href="https://developer.android.com/reference/android/util/TimingLogger.html#addSplit(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddSplit(Java.Lang.String arg0)
         {
             IExecuteWithSignature("addSplit", "(Ljava/lang/String;)V", arg0);
@@ -67,7 +67,7 @@ namespace Android.Util
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TimingLogger.html#dumpToLog()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DumpToLog()
         {
             IExecuteWithSignature("dumpToLog", "()V");
@@ -75,7 +75,7 @@ namespace Android.Util
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TimingLogger.html#reset()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Reset()
         {
             IExecuteWithSignature("reset", "()V");
@@ -85,7 +85,7 @@ namespace Android.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Reset(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecute("reset", arg0, arg1);

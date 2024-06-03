@@ -46,25 +46,20 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/LocaleManager.html#getApplicationLocales()"/> <see href="https://developer.android.com/reference/android/app/LocaleManager.html#setApplicationLocales(android.os.LocaleList)"/>
+        /// <see href="https://developer.android.com/reference/android/app/LocaleManager.html#getOverrideLocaleConfig()"/>
         /// </summary>
-        public Android.Os.LocaleList ApplicationLocales
+        /// <returns><see cref="Android.App.LocaleConfig"/></returns>
+        public Android.App.LocaleConfig GetOverrideLocaleConfig()
         {
-            get { return IExecuteWithSignature<Android.Os.LocaleList>("getApplicationLocales", "()Landroid/os/LocaleList;"); } set { IExecuteWithSignature("setApplicationLocales", "(Landroid/os/LocaleList;)V", value); }
+            return IExecuteWithSignature<Android.App.LocaleConfig>("getOverrideLocaleConfig", "()Landroid/app/LocaleConfig;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/LocaleManager.html#getOverrideLocaleConfig()"/> <see href="https://developer.android.com/reference/android/app/LocaleManager.html#setOverrideLocaleConfig(android.app.LocaleConfig)"/>
+        /// <see href="https://developer.android.com/reference/android/app/LocaleManager.html#getApplicationLocales()"/>
         /// </summary>
-        public Android.App.LocaleConfig OverrideLocaleConfig
+        /// <returns><see cref="Android.Os.LocaleList"/></returns>
+        public Android.Os.LocaleList GetApplicationLocales()
         {
-            get { return IExecuteWithSignature<Android.App.LocaleConfig>("getOverrideLocaleConfig", "()Landroid/app/LocaleConfig;"); } set { IExecuteWithSignature("setOverrideLocaleConfig", "(Landroid/app/LocaleConfig;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/LocaleManager.html#getSystemLocales()"/> 
-        /// </summary>
-        public Android.Os.LocaleList SystemLocales
-        {
-            get { return IExecuteWithSignature<Android.Os.LocaleList>("getSystemLocales", "()Landroid/os/LocaleList;"); }
+            return IExecuteWithSignature<Android.Os.LocaleList>("getApplicationLocales", "()Landroid/os/LocaleList;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/LocaleManager.html#getApplicationLocales(java.lang.String)"/>
@@ -74,6 +69,30 @@ namespace Android.App
         public Android.Os.LocaleList GetApplicationLocales(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Android.Os.LocaleList>("getApplicationLocales", "(Ljava/lang/String;)Landroid/os/LocaleList;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/LocaleManager.html#getSystemLocales()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.LocaleList"/></returns>
+        public Android.Os.LocaleList GetSystemLocales()
+        {
+            return IExecuteWithSignature<Android.Os.LocaleList>("getSystemLocales", "()Landroid/os/LocaleList;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/LocaleManager.html#setApplicationLocales(android.os.LocaleList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.LocaleList"/></param>
+        public void SetApplicationLocales(Android.Os.LocaleList arg0)
+        {
+            IExecuteWithSignature("setApplicationLocales", "(Landroid/os/LocaleList;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/LocaleManager.html#setOverrideLocaleConfig(android.app.LocaleConfig)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.LocaleConfig"/></param>
+        public void SetOverrideLocaleConfig(Android.App.LocaleConfig arg0)
+        {
+            IExecuteWithSignature("setOverrideLocaleConfig", "(Landroid/app/LocaleConfig;)V", arg0);
         }
 
         #endregion

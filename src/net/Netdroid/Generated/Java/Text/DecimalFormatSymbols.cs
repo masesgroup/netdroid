@@ -30,7 +30,7 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#%3Cinit%3E(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#%3Cinit%3E(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         public DecimalFormatSymbols(Java.Util.Locale arg0)
@@ -58,21 +58,15 @@ namespace Java.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#getAvailableLocales()"/> 
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#getInstance()"/>
         /// </summary>
-        public static Java.Util.Locale[] AvailableLocales
+        /// <returns><see cref="Java.Text.DecimalFormatSymbols"/></returns>
+        public static Java.Text.DecimalFormatSymbols GetInstance()
         {
-            get { return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;"); }
+            return SExecuteWithSignature<Java.Text.DecimalFormatSymbols>(LocalBridgeClazz, "getInstance", "()Ljava/text/DecimalFormatSymbols;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#getInstance()"/> 
-        /// </summary>
-        public static Java.Text.DecimalFormatSymbols Instance
-        {
-            get { return SExecuteWithSignature<Java.Text.DecimalFormatSymbols>(LocalBridgeClazz, "getInstance", "()Ljava/text/DecimalFormatSymbols;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#getInstance(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#getInstance(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Text.DecimalFormatSymbols"/></returns>
@@ -80,121 +74,273 @@ namespace Java.Text
         {
             return SExecuteWithSignature<Java.Text.DecimalFormatSymbols>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;)Ljava/text/DecimalFormatSymbols;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#getAvailableLocales()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public static Java.Util.Locale[] GetAvailableLocales()
+        {
+            return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;");
+        }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#getCurrency()"/> <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#setCurrency(java.util.Currency)"/>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#getDecimalSeparator()"/>
         /// </summary>
-        public Java.Util.Currency Currency
+        /// <returns><see cref="char"/></returns>
+        public char GetDecimalSeparator()
         {
-            get { return IExecuteWithSignature<Java.Util.Currency>("getCurrency", "()Ljava/util/Currency;"); } set { IExecuteWithSignature("setCurrency", "(Ljava/util/Currency;)V", value); }
+            return IExecuteWithSignature<char>("getDecimalSeparator", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#getCurrencySymbol()"/> <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#setCurrencySymbol(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#getDigit()"/>
         /// </summary>
-        public Java.Lang.String CurrencySymbol
+        /// <returns><see cref="char"/></returns>
+        public char GetDigit()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCurrencySymbol", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCurrencySymbol", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<char>("getDigit", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#getDecimalSeparator()"/> <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#setDecimalSeparator(char)"/>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#getGroupingSeparator()"/>
         /// </summary>
-        public char DecimalSeparator
+        /// <returns><see cref="char"/></returns>
+        public char GetGroupingSeparator()
         {
-            get { return IExecuteWithSignature<char>("getDecimalSeparator", "()C"); } set { IExecuteWithSignature("setDecimalSeparator", "(C)V", value); }
+            return IExecuteWithSignature<char>("getGroupingSeparator", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#getDigit()"/> <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#setDigit(char)"/>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#getMinusSign()"/>
         /// </summary>
-        public char Digit
+        /// <returns><see cref="char"/></returns>
+        public char GetMinusSign()
         {
-            get { return IExecuteWithSignature<char>("getDigit", "()C"); } set { IExecuteWithSignature("setDigit", "(C)V", value); }
+            return IExecuteWithSignature<char>("getMinusSign", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#getExponentSeparator()"/> <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#setExponentSeparator(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#getMonetaryDecimalSeparator()"/>
         /// </summary>
-        public Java.Lang.String ExponentSeparator
+        /// <returns><see cref="char"/></returns>
+        public char GetMonetaryDecimalSeparator()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getExponentSeparator", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setExponentSeparator", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<char>("getMonetaryDecimalSeparator", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#getGroupingSeparator()"/> <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#setGroupingSeparator(char)"/>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#getMonetaryGroupingSeparator()"/>
         /// </summary>
-        public char GroupingSeparator
+        /// <returns><see cref="char"/></returns>
+        public char GetMonetaryGroupingSeparator()
         {
-            get { return IExecuteWithSignature<char>("getGroupingSeparator", "()C"); } set { IExecuteWithSignature("setGroupingSeparator", "(C)V", value); }
+            return IExecuteWithSignature<char>("getMonetaryGroupingSeparator", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#getInfinity()"/> <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#setInfinity(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#getPatternSeparator()"/>
         /// </summary>
-        public Java.Lang.String Infinity
+        /// <returns><see cref="char"/></returns>
+        public char GetPatternSeparator()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInfinity", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setInfinity", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<char>("getPatternSeparator", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#getInternationalCurrencySymbol()"/> <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#setInternationalCurrencySymbol(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#getPercent()"/>
         /// </summary>
-        public Java.Lang.String InternationalCurrencySymbol
+        /// <returns><see cref="char"/></returns>
+        public char GetPercent()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInternationalCurrencySymbol", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setInternationalCurrencySymbol", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<char>("getPercent", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#getMinusSign()"/> <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#setMinusSign(char)"/>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#getPerMill()"/>
         /// </summary>
-        public char MinusSign
+        /// <returns><see cref="char"/></returns>
+        public char GetPerMill()
         {
-            get { return IExecuteWithSignature<char>("getMinusSign", "()C"); } set { IExecuteWithSignature("setMinusSign", "(C)V", value); }
+            return IExecuteWithSignature<char>("getPerMill", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#getMonetaryDecimalSeparator()"/> <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#setMonetaryDecimalSeparator(char)"/>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#getZeroDigit()"/>
         /// </summary>
-        public char MonetaryDecimalSeparator
+        /// <returns><see cref="char"/></returns>
+        public char GetZeroDigit()
         {
-            get { return IExecuteWithSignature<char>("getMonetaryDecimalSeparator", "()C"); } set { IExecuteWithSignature("setMonetaryDecimalSeparator", "(C)V", value); }
+            return IExecuteWithSignature<char>("getZeroDigit", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#getMonetaryGroupingSeparator()"/> <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#setMonetaryGroupingSeparator(char)"/>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#getCurrencySymbol()"/>
         /// </summary>
-        public char MonetaryGroupingSeparator
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCurrencySymbol()
         {
-            get { return IExecuteWithSignature<char>("getMonetaryGroupingSeparator", "()C"); } set { IExecuteWithSignature("setMonetaryGroupingSeparator", "(C)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getCurrencySymbol", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#getNaN()"/> <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#setNaN(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#getExponentSeparator()"/>
         /// </summary>
-        public Java.Lang.String NaN
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetExponentSeparator()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNaN", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setNaN", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getExponentSeparator", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#getPatternSeparator()"/> <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#setPatternSeparator(char)"/>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#getInfinity()"/>
         /// </summary>
-        public char PatternSeparator
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetInfinity()
         {
-            get { return IExecuteWithSignature<char>("getPatternSeparator", "()C"); } set { IExecuteWithSignature("setPatternSeparator", "(C)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getInfinity", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#getPercent()"/> <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#setPercent(char)"/>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#getInternationalCurrencySymbol()"/>
         /// </summary>
-        public char Percent
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetInternationalCurrencySymbol()
         {
-            get { return IExecuteWithSignature<char>("getPercent", "()C"); } set { IExecuteWithSignature("setPercent", "(C)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getInternationalCurrencySymbol", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#getPerMill()"/> <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#setPerMill(char)"/>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#getNaN()"/>
         /// </summary>
-        public char PerMill
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNaN()
         {
-            get { return IExecuteWithSignature<char>("getPerMill", "()C"); } set { IExecuteWithSignature("setPerMill", "(C)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getNaN", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#getZeroDigit()"/> <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html#setZeroDigit(char)"/>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#getCurrency()"/>
         /// </summary>
-        public char ZeroDigit
+        /// <returns><see cref="Java.Util.Currency"/></returns>
+        public Java.Util.Currency GetCurrency()
         {
-            get { return IExecuteWithSignature<char>("getZeroDigit", "()C"); } set { IExecuteWithSignature("setZeroDigit", "(C)V", value); }
+            return IExecuteWithSignature<Java.Util.Currency>("getCurrency", "()Ljava/util/Currency;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#setCurrency(java.util.Currency)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Currency"/></param>
+        public void SetCurrency(Java.Util.Currency arg0)
+        {
+            IExecuteWithSignature("setCurrency", "(Ljava/util/Currency;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#setCurrencySymbol(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetCurrencySymbol(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setCurrencySymbol", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#setDecimalSeparator(char)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        public void SetDecimalSeparator(char arg0)
+        {
+            IExecuteWithSignature("setDecimalSeparator", "(C)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#setDigit(char)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        public void SetDigit(char arg0)
+        {
+            IExecuteWithSignature("setDigit", "(C)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#setExponentSeparator(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetExponentSeparator(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setExponentSeparator", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#setGroupingSeparator(char)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        public void SetGroupingSeparator(char arg0)
+        {
+            IExecuteWithSignature("setGroupingSeparator", "(C)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#setInfinity(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetInfinity(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setInfinity", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#setInternationalCurrencySymbol(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetInternationalCurrencySymbol(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setInternationalCurrencySymbol", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#setMinusSign(char)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        public void SetMinusSign(char arg0)
+        {
+            IExecuteWithSignature("setMinusSign", "(C)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#setMonetaryDecimalSeparator(char)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        public void SetMonetaryDecimalSeparator(char arg0)
+        {
+            IExecuteWithSignature("setMonetaryDecimalSeparator", "(C)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#setMonetaryGroupingSeparator(char)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        public void SetMonetaryGroupingSeparator(char arg0)
+        {
+            IExecuteWithSignature("setMonetaryGroupingSeparator", "(C)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#setNaN(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetNaN(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setNaN", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#setPatternSeparator(char)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        public void SetPatternSeparator(char arg0)
+        {
+            IExecuteWithSignature("setPatternSeparator", "(C)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#setPercent(char)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        public void SetPercent(char arg0)
+        {
+            IExecuteWithSignature("setPercent", "(C)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#setPerMill(char)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        public void SetPerMill(char arg0)
+        {
+            IExecuteWithSignature("setPerMill", "(C)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#setZeroDigit(char)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        public void SetZeroDigit(char arg0)
+        {
+            IExecuteWithSignature("setZeroDigit", "(C)V", arg0);
         }
 
         #endregion

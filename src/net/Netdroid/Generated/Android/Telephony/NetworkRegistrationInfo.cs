@@ -136,46 +136,12 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#getAccessNetworkTechnology()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#getCellIdentity()"/>
         /// </summary>
-        public int AccessNetworkTechnology
+        /// <returns><see cref="Android.Telephony.CellIdentity"/></returns>
+        public Android.Telephony.CellIdentity GetCellIdentity()
         {
-            get { return IExecuteWithSignature<int>("getAccessNetworkTechnology", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#getAvailableServices()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.Integer> AvailableServices
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getAvailableServices", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#getCellIdentity()"/> 
-        /// </summary>
-        public Android.Telephony.CellIdentity CellIdentity
-        {
-            get { return IExecuteWithSignature<Android.Telephony.CellIdentity>("getCellIdentity", "()Landroid/telephony/CellIdentity;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#getDomain()"/> 
-        /// </summary>
-        public int Domain
-        {
-            get { return IExecuteWithSignature<int>("getDomain", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#getRegisteredPlmn()"/> 
-        /// </summary>
-        public Java.Lang.String RegisteredPlmn
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRegisteredPlmn", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#getTransportType()"/> 
-        /// </summary>
-        public int TransportType
-        {
-            get { return IExecuteWithSignature<int>("getTransportType", "()I"); }
+            return IExecuteWithSignature<Android.Telephony.CellIdentity>("getCellIdentity", "()Landroid/telephony/CellIdentity;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#isNetworkRegistered()"/>
@@ -205,7 +171,7 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#isRegistered()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsRegistered()
         {
             return IExecuteWithSignature<bool>("isRegistered", "()Z");
@@ -214,7 +180,7 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#isRoaming()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsRoaming()
         {
             return IExecuteWithSignature<bool>("isRoaming", "()Z");
@@ -223,7 +189,7 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#isSearching()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsSearching()
         {
             return IExecuteWithSignature<bool>("isSearching", "()Z");
@@ -235,6 +201,46 @@ namespace Android.Telephony
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#getAccessNetworkTechnology()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAccessNetworkTechnology()
+        {
+            return IExecuteWithSignature<int>("getAccessNetworkTechnology", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#getDomain()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDomain()
+        {
+            return IExecuteWithSignature<int>("getDomain", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#getTransportType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTransportType()
+        {
+            return IExecuteWithSignature<int>("getTransportType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#getRegisteredPlmn()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetRegisteredPlmn()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getRegisteredPlmn", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#getAvailableServices()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.Integer> GetAvailableServices()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getAvailableServices", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#writeToParcel(android.os.Parcel,int)"/>

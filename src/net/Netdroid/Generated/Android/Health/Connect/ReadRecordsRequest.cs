@@ -46,11 +46,12 @@ namespace Android.Health.Connect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequest.html#getRecordType()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequest.html#getRecordType()"/>
         /// </summary>
-        public Java.Lang.Class RecordType
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetRecordType()
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getRecordType", "()Ljava/lang/Class;"); }
+            return IExecuteWithSignature<Java.Lang.Class>("getRecordType", "()Ljava/lang/Class;");
         }
 
         #endregion
@@ -88,11 +89,12 @@ namespace Android.Health.Connect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequest.html#getRecordType()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequest.html#getRecordType()"/>
         /// </summary>
-        public Java.Lang.Class RecordType
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetRecordType()
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getRecordType", "()Ljava/lang/Class;"); }
+            return IExecuteWithSignature<Java.Lang.Class>("getRecordType", "()Ljava/lang/Class;");
         }
 
         #endregion

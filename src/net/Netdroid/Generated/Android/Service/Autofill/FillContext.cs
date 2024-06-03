@@ -52,25 +52,20 @@ namespace Android.Service.Autofill
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/FillContext.html#getFocusedId()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/FillContext.html#getStructure()"/>
         /// </summary>
-        public Android.View.Autofill.AutofillId FocusedId
+        /// <returns><see cref="Android.App.Assist.AssistStructure"/></returns>
+        public Android.App.Assist.AssistStructure GetStructure()
         {
-            get { return IExecuteWithSignature<Android.View.Autofill.AutofillId>("getFocusedId", "()Landroid/view/autofill/AutofillId;"); }
+            return IExecuteWithSignature<Android.App.Assist.AssistStructure>("getStructure", "()Landroid/app/assist/AssistStructure;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/FillContext.html#getRequestId()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/FillContext.html#getFocusedId()"/>
         /// </summary>
-        public int RequestId
+        /// <returns><see cref="Android.View.Autofill.AutofillId"/></returns>
+        public Android.View.Autofill.AutofillId GetFocusedId()
         {
-            get { return IExecuteWithSignature<int>("getRequestId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/FillContext.html#getStructure()"/> 
-        /// </summary>
-        public Android.App.Assist.AssistStructure Structure
-        {
-            get { return IExecuteWithSignature<Android.App.Assist.AssistStructure>("getStructure", "()Landroid/app/assist/AssistStructure;"); }
+            return IExecuteWithSignature<Android.View.Autofill.AutofillId>("getFocusedId", "()Landroid/view/autofill/AutofillId;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/FillContext.html#describeContents()"/>
@@ -79,6 +74,14 @@ namespace Android.Service.Autofill
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/autofill/FillContext.html#getRequestId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRequestId()
+        {
+            return IExecuteWithSignature<int>("getRequestId", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/FillContext.html#writeToParcel(android.os.Parcel,int)"/>

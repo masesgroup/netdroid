@@ -30,7 +30,7 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EdECPrivateKeySpec.html#%3Cinit%3E(java.security.spec.NamedParameterSpec,byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/EdECPrivateKeySpec.html#%3Cinit%3E(java.security.spec.NamedParameterSpec,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Spec.NamedParameterSpec"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -55,18 +55,20 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EdECPrivateKeySpec.html#getBytes()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/EdECPrivateKeySpec.html#getBytes()"/>
         /// </summary>
-        public byte[] Bytes
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetBytes()
         {
-            get { return IExecuteWithSignatureArray<byte>("getBytes", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getBytes", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EdECPrivateKeySpec.html#getParams()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/EdECPrivateKeySpec.html#getParams()"/>
         /// </summary>
-        public Java.Security.Spec.NamedParameterSpec Params
+        /// <returns><see cref="Java.Security.Spec.NamedParameterSpec"/></returns>
+        public Java.Security.Spec.NamedParameterSpec GetParams()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.NamedParameterSpec>("getParams", "()Ljava/security/spec/NamedParameterSpec;"); }
+            return IExecuteWithSignature<Java.Security.Spec.NamedParameterSpec>("getParams", "()Ljava/security/spec/NamedParameterSpec;");
         }
 
         #endregion

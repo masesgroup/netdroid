@@ -46,49 +46,7 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLSelector.html#getCertificateChecking()"/> <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLSelector.html#setCertificateChecking(java.security.cert.X509Certificate)"/>
-        /// </summary>
-        public Java.Security.Cert.X509Certificate CertificateChecking
-        {
-            get { return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getCertificateChecking", "()Ljava/security/cert/X509Certificate;"); } set { IExecuteWithSignature("setCertificateChecking", "(Ljava/security/cert/X509Certificate;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLSelector.html#getDateAndTime()"/> <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLSelector.html#setDateAndTime(java.util.Date)"/>
-        /// </summary>
-        public Java.Util.Date DateAndTime
-        {
-            get { return IExecuteWithSignature<Java.Util.Date>("getDateAndTime", "()Ljava/util/Date;"); } set { IExecuteWithSignature("setDateAndTime", "(Ljava/util/Date;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLSelector.html#getIssuerNames()"/> <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLSelector.html#setIssuerNames(java.util.Collection)"/>
-        /// </summary>
-        public Java.Util.Collection<object> IssuerNames
-        {
-            get { return IExecuteWithSignature<Java.Util.Collection<object>>("getIssuerNames", "()Ljava/util/Collection;"); } set { IExecuteWithSignature("setIssuerNames", "(Ljava/util/Collection;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLSelector.html#getIssuers()"/> <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLSelector.html#setIssuers(java.util.Collection)"/>
-        /// </summary>
-        public Java.Util.Collection<Javax.Security.Auth.X500.X500Principal> Issuers
-        {
-            get { return IExecuteWithSignature<Java.Util.Collection<Javax.Security.Auth.X500.X500Principal>>("getIssuers", "()Ljava/util/Collection;"); } set { IExecuteWithSignature("setIssuers", "(Ljava/util/Collection;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLSelector.html#getMaxCRL()"/> 
-        /// </summary>
-        public Java.Math.BigInteger MaxCRL
-        {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getMaxCRL", "()Ljava/math/BigInteger;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLSelector.html#getMinCRL()"/> 
-        /// </summary>
-        public Java.Math.BigInteger MinCRL
-        {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getMinCRL", "()Ljava/math/BigInteger;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLSelector.html#match(java.security.cert.CRL)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLSelector.html#match(java.security.cert.CRL)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.CRL"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -97,7 +55,55 @@ namespace Java.Security.Cert
             return IExecuteWithSignature<bool>("match", "(Ljava/security/cert/CRL;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLSelector.html#addIssuer(javax.security.auth.x500.X500Principal)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLSelector.html#getMaxCRL()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetMaxCRL()
+        {
+            return IExecuteWithSignature<Java.Math.BigInteger>("getMaxCRL", "()Ljava/math/BigInteger;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLSelector.html#getMinCRL()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetMinCRL()
+        {
+            return IExecuteWithSignature<Java.Math.BigInteger>("getMinCRL", "()Ljava/math/BigInteger;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLSelector.html#getCertificateChecking()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Cert.X509Certificate"/></returns>
+        public Java.Security.Cert.X509Certificate GetCertificateChecking()
+        {
+            return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getCertificateChecking", "()Ljava/security/cert/X509Certificate;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLSelector.html#getIssuerNames()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<object> GetIssuerNames()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<object>>("getIssuerNames", "()Ljava/util/Collection;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLSelector.html#getIssuers()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<Javax.Security.Auth.X500.X500Principal> GetIssuers()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Javax.Security.Auth.X500.X500Principal>>("getIssuers", "()Ljava/util/Collection;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLSelector.html#getDateAndTime()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Date"/></returns>
+        public Java.Util.Date GetDateAndTime()
+        {
+            return IExecuteWithSignature<Java.Util.Date>("getDateAndTime", "()Ljava/util/Date;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLSelector.html#addIssuer(javax.security.auth.x500.X500Principal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Security.Auth.X500.X500Principal"/></param>
         public void AddIssuer(Javax.Security.Auth.X500.X500Principal arg0)
@@ -105,7 +111,7 @@ namespace Java.Security.Cert
             IExecuteWithSignature("addIssuer", "(Ljavax/security/auth/x500/X500Principal;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLSelector.html#addIssuerName(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLSelector.html#addIssuerName(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -114,17 +120,50 @@ namespace Java.Security.Cert
             IExecuteWithSignature("addIssuerName", "([B)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLSelector.html#addIssuerName(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLSelector.html#addIssuerName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddIssuerName(Java.Lang.String arg0)
         {
             IExecuteWithSignature("addIssuerName", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLSelector.html#setMaxCRLNumber(java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLSelector.html#setCertificateChecking(java.security.cert.X509Certificate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
+        public void SetCertificateChecking(Java.Security.Cert.X509Certificate arg0)
+        {
+            IExecuteWithSignature("setCertificateChecking", "(Ljava/security/cert/X509Certificate;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLSelector.html#setDateAndTime(java.util.Date)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Date"/></param>
+        public void SetDateAndTime(Java.Util.Date arg0)
+        {
+            IExecuteWithSignature("setDateAndTime", "(Ljava/util/Date;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLSelector.html#setIssuerNames(java.util.Collection)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void SetIssuerNames(Java.Util.Collection<object> arg0)
+        {
+            IExecuteWithSignature("setIssuerNames", "(Ljava/util/Collection;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLSelector.html#setIssuers(java.util.Collection)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        public void SetIssuers(Java.Util.Collection<Javax.Security.Auth.X500.X500Principal> arg0)
+        {
+            IExecuteWithSignature("setIssuers", "(Ljava/util/Collection;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLSelector.html#setMaxCRLNumber(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         public void SetMaxCRLNumber(Java.Math.BigInteger arg0)
@@ -132,7 +171,7 @@ namespace Java.Security.Cert
             IExecuteWithSignature("setMaxCRLNumber", "(Ljava/math/BigInteger;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLSelector.html#setMinCRLNumber(java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLSelector.html#setMinCRLNumber(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         public void SetMinCRLNumber(Java.Math.BigInteger arg0)

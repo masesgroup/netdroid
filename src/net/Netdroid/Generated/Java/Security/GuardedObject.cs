@@ -30,7 +30,7 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/GuardedObject.html#%3Cinit%3E(java.lang.Object,java.security.Guard)"/>
+        /// <see href="https://developer.android.com/reference/java/security/GuardedObject.html#%3Cinit%3E(java.lang.Object,java.security.Guard)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Security.Guard"/></param>
@@ -55,11 +55,13 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/GuardedObject.html#getObject()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/GuardedObject.html#getObject()"/>
         /// </summary>
-        public object Object
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public object GetObject()
         {
-            get { return IExecuteWithSignature("getObject", "()Ljava/lang/Object;"); }
+            return IExecuteWithSignature("getObject", "()Ljava/lang/Object;");
         }
 
         #endregion

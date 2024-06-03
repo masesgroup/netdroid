@@ -46,7 +46,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Number.html#doubleValue()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Number.html#doubleValue()"/>
         /// </summary>
         /// <returns><see cref="double"/></returns>
         public double DoubleValue()
@@ -54,7 +54,7 @@ namespace Java.Lang
             return IExecuteWithSignature<double>("doubleValue", "()D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Number.html#floatValue()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Number.html#floatValue()"/>
         /// </summary>
         /// <returns><see cref="float"/></returns>
         public float FloatValue()
@@ -62,7 +62,7 @@ namespace Java.Lang
             return IExecuteWithSignature<float>("floatValue", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Number.html#intValue()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Number.html#intValue()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int IntValue()
@@ -70,7 +70,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("intValue", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Number.html#longValue()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Number.html#longValue()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long LongValue()
@@ -78,7 +78,7 @@ namespace Java.Lang
             return IExecuteWithSignature<long>("longValue", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Number.html#byteValue()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Number.html#byteValue()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
         public byte ByteValue()
@@ -86,7 +86,7 @@ namespace Java.Lang
             return IExecuteWithSignature<byte>("byteValue", "()B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Number.html#shortValue()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Number.html#shortValue()"/>
         /// </summary>
         /// <returns><see cref="short"/></returns>
         public short ShortValue()

@@ -46,32 +46,36 @@ namespace Android.Service.Autofill
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/Presentations.html#getDialogPresentation()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/Presentations.html#getInlinePresentation()"/>
         /// </summary>
-        public Android.Widget.RemoteViews DialogPresentation
+        /// <returns><see cref="Android.Service.Autofill.InlinePresentation"/></returns>
+        public Android.Service.Autofill.InlinePresentation GetInlinePresentation()
         {
-            get { return IExecuteWithSignature<Android.Widget.RemoteViews>("getDialogPresentation", "()Landroid/widget/RemoteViews;"); }
+            return IExecuteWithSignature<Android.Service.Autofill.InlinePresentation>("getInlinePresentation", "()Landroid/service/autofill/InlinePresentation;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/Presentations.html#getInlinePresentation()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/Presentations.html#getInlineTooltipPresentation()"/>
         /// </summary>
-        public Android.Service.Autofill.InlinePresentation InlinePresentation
+        /// <returns><see cref="Android.Service.Autofill.InlinePresentation"/></returns>
+        public Android.Service.Autofill.InlinePresentation GetInlineTooltipPresentation()
         {
-            get { return IExecuteWithSignature<Android.Service.Autofill.InlinePresentation>("getInlinePresentation", "()Landroid/service/autofill/InlinePresentation;"); }
+            return IExecuteWithSignature<Android.Service.Autofill.InlinePresentation>("getInlineTooltipPresentation", "()Landroid/service/autofill/InlinePresentation;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/Presentations.html#getInlineTooltipPresentation()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/Presentations.html#getDialogPresentation()"/>
         /// </summary>
-        public Android.Service.Autofill.InlinePresentation InlineTooltipPresentation
+        /// <returns><see cref="Android.Widget.RemoteViews"/></returns>
+        public Android.Widget.RemoteViews GetDialogPresentation()
         {
-            get { return IExecuteWithSignature<Android.Service.Autofill.InlinePresentation>("getInlineTooltipPresentation", "()Landroid/service/autofill/InlinePresentation;"); }
+            return IExecuteWithSignature<Android.Widget.RemoteViews>("getDialogPresentation", "()Landroid/widget/RemoteViews;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/Presentations.html#getMenuPresentation()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/Presentations.html#getMenuPresentation()"/>
         /// </summary>
-        public Android.Widget.RemoteViews MenuPresentation
+        /// <returns><see cref="Android.Widget.RemoteViews"/></returns>
+        public Android.Widget.RemoteViews GetMenuPresentation()
         {
-            get { return IExecuteWithSignature<Android.Widget.RemoteViews>("getMenuPresentation", "()Landroid/widget/RemoteViews;"); }
+            return IExecuteWithSignature<Android.Widget.RemoteViews>("getMenuPresentation", "()Landroid/widget/RemoteViews;");
         }
 
         #endregion

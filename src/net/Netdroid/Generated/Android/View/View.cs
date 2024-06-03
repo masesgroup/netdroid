@@ -268,21 +268,21 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#DRAWING_CACHE_QUALITY_AUTO"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int DRAWING_CACHE_QUALITY_AUTO { get { if (!_DRAWING_CACHE_QUALITY_AUTOReady) { _DRAWING_CACHE_QUALITY_AUTOContent = SGetField<int>(LocalBridgeClazz, "DRAWING_CACHE_QUALITY_AUTO"); _DRAWING_CACHE_QUALITY_AUTOReady = true; } return _DRAWING_CACHE_QUALITY_AUTOContent; } }
         private static int _DRAWING_CACHE_QUALITY_AUTOContent = default;
         private static bool _DRAWING_CACHE_QUALITY_AUTOReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#DRAWING_CACHE_QUALITY_HIGH"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int DRAWING_CACHE_QUALITY_HIGH { get { if (!_DRAWING_CACHE_QUALITY_HIGHReady) { _DRAWING_CACHE_QUALITY_HIGHContent = SGetField<int>(LocalBridgeClazz, "DRAWING_CACHE_QUALITY_HIGH"); _DRAWING_CACHE_QUALITY_HIGHReady = true; } return _DRAWING_CACHE_QUALITY_HIGHContent; } }
         private static int _DRAWING_CACHE_QUALITY_HIGHContent = default;
         private static bool _DRAWING_CACHE_QUALITY_HIGHReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#DRAWING_CACHE_QUALITY_LOW"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int DRAWING_CACHE_QUALITY_LOW { get { if (!_DRAWING_CACHE_QUALITY_LOWReady) { _DRAWING_CACHE_QUALITY_LOWContent = SGetField<int>(LocalBridgeClazz, "DRAWING_CACHE_QUALITY_LOW"); _DRAWING_CACHE_QUALITY_LOWReady = true; } return _DRAWING_CACHE_QUALITY_LOWContent; } }
         private static int _DRAWING_CACHE_QUALITY_LOWContent = default;
         private static bool _DRAWING_CACHE_QUALITY_LOWReady = false; // this is used because in case of generics 
@@ -703,98 +703,98 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#STATUS_BAR_HIDDEN"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int STATUS_BAR_HIDDEN { get { if (!_STATUS_BAR_HIDDENReady) { _STATUS_BAR_HIDDENContent = SGetField<int>(LocalBridgeClazz, "STATUS_BAR_HIDDEN"); _STATUS_BAR_HIDDENReady = true; } return _STATUS_BAR_HIDDENContent; } }
         private static int _STATUS_BAR_HIDDENContent = default;
         private static bool _STATUS_BAR_HIDDENReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#STATUS_BAR_VISIBLE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int STATUS_BAR_VISIBLE { get { if (!_STATUS_BAR_VISIBLEReady) { _STATUS_BAR_VISIBLEContent = SGetField<int>(LocalBridgeClazz, "STATUS_BAR_VISIBLE"); _STATUS_BAR_VISIBLEReady = true; } return _STATUS_BAR_VISIBLEContent; } }
         private static int _STATUS_BAR_VISIBLEContent = default;
         private static bool _STATUS_BAR_VISIBLEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_FULLSCREEN"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SYSTEM_UI_FLAG_FULLSCREEN { get { if (!_SYSTEM_UI_FLAG_FULLSCREENReady) { _SYSTEM_UI_FLAG_FULLSCREENContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_FULLSCREEN"); _SYSTEM_UI_FLAG_FULLSCREENReady = true; } return _SYSTEM_UI_FLAG_FULLSCREENContent; } }
         private static int _SYSTEM_UI_FLAG_FULLSCREENContent = default;
         private static bool _SYSTEM_UI_FLAG_FULLSCREENReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_HIDE_NAVIGATION"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SYSTEM_UI_FLAG_HIDE_NAVIGATION { get { if (!_SYSTEM_UI_FLAG_HIDE_NAVIGATIONReady) { _SYSTEM_UI_FLAG_HIDE_NAVIGATIONContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_HIDE_NAVIGATION"); _SYSTEM_UI_FLAG_HIDE_NAVIGATIONReady = true; } return _SYSTEM_UI_FLAG_HIDE_NAVIGATIONContent; } }
         private static int _SYSTEM_UI_FLAG_HIDE_NAVIGATIONContent = default;
         private static bool _SYSTEM_UI_FLAG_HIDE_NAVIGATIONReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_IMMERSIVE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SYSTEM_UI_FLAG_IMMERSIVE { get { if (!_SYSTEM_UI_FLAG_IMMERSIVEReady) { _SYSTEM_UI_FLAG_IMMERSIVEContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_IMMERSIVE"); _SYSTEM_UI_FLAG_IMMERSIVEReady = true; } return _SYSTEM_UI_FLAG_IMMERSIVEContent; } }
         private static int _SYSTEM_UI_FLAG_IMMERSIVEContent = default;
         private static bool _SYSTEM_UI_FLAG_IMMERSIVEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_IMMERSIVE_STICKY"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SYSTEM_UI_FLAG_IMMERSIVE_STICKY { get { if (!_SYSTEM_UI_FLAG_IMMERSIVE_STICKYReady) { _SYSTEM_UI_FLAG_IMMERSIVE_STICKYContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_IMMERSIVE_STICKY"); _SYSTEM_UI_FLAG_IMMERSIVE_STICKYReady = true; } return _SYSTEM_UI_FLAG_IMMERSIVE_STICKYContent; } }
         private static int _SYSTEM_UI_FLAG_IMMERSIVE_STICKYContent = default;
         private static bool _SYSTEM_UI_FLAG_IMMERSIVE_STICKYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN { get { if (!_SYSTEM_UI_FLAG_LAYOUT_FULLSCREENReady) { _SYSTEM_UI_FLAG_LAYOUT_FULLSCREENContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN"); _SYSTEM_UI_FLAG_LAYOUT_FULLSCREENReady = true; } return _SYSTEM_UI_FLAG_LAYOUT_FULLSCREENContent; } }
         private static int _SYSTEM_UI_FLAG_LAYOUT_FULLSCREENContent = default;
         private static bool _SYSTEM_UI_FLAG_LAYOUT_FULLSCREENReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION { get { if (!_SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATIONReady) { _SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATIONContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION"); _SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATIONReady = true; } return _SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATIONContent; } }
         private static int _SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATIONContent = default;
         private static bool _SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATIONReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_LAYOUT_STABLE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SYSTEM_UI_FLAG_LAYOUT_STABLE { get { if (!_SYSTEM_UI_FLAG_LAYOUT_STABLEReady) { _SYSTEM_UI_FLAG_LAYOUT_STABLEContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_LAYOUT_STABLE"); _SYSTEM_UI_FLAG_LAYOUT_STABLEReady = true; } return _SYSTEM_UI_FLAG_LAYOUT_STABLEContent; } }
         private static int _SYSTEM_UI_FLAG_LAYOUT_STABLEContent = default;
         private static bool _SYSTEM_UI_FLAG_LAYOUT_STABLEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR { get { if (!_SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BARReady) { _SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BARContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR"); _SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BARReady = true; } return _SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BARContent; } }
         private static int _SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BARContent = default;
         private static bool _SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BARReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_LIGHT_STATUS_BAR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SYSTEM_UI_FLAG_LIGHT_STATUS_BAR { get { if (!_SYSTEM_UI_FLAG_LIGHT_STATUS_BARReady) { _SYSTEM_UI_FLAG_LIGHT_STATUS_BARContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_LIGHT_STATUS_BAR"); _SYSTEM_UI_FLAG_LIGHT_STATUS_BARReady = true; } return _SYSTEM_UI_FLAG_LIGHT_STATUS_BARContent; } }
         private static int _SYSTEM_UI_FLAG_LIGHT_STATUS_BARContent = default;
         private static bool _SYSTEM_UI_FLAG_LIGHT_STATUS_BARReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_LOW_PROFILE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SYSTEM_UI_FLAG_LOW_PROFILE { get { if (!_SYSTEM_UI_FLAG_LOW_PROFILEReady) { _SYSTEM_UI_FLAG_LOW_PROFILEContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_LOW_PROFILE"); _SYSTEM_UI_FLAG_LOW_PROFILEReady = true; } return _SYSTEM_UI_FLAG_LOW_PROFILEContent; } }
         private static int _SYSTEM_UI_FLAG_LOW_PROFILEContent = default;
         private static bool _SYSTEM_UI_FLAG_LOW_PROFILEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_VISIBLE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SYSTEM_UI_FLAG_VISIBLE { get { if (!_SYSTEM_UI_FLAG_VISIBLEReady) { _SYSTEM_UI_FLAG_VISIBLEContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_VISIBLE"); _SYSTEM_UI_FLAG_VISIBLEReady = true; } return _SYSTEM_UI_FLAG_VISIBLEContent; } }
         private static int _SYSTEM_UI_FLAG_VISIBLEContent = default;
         private static bool _SYSTEM_UI_FLAG_VISIBLEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_LAYOUT_FLAGS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SYSTEM_UI_LAYOUT_FLAGS { get { if (!_SYSTEM_UI_LAYOUT_FLAGSReady) { _SYSTEM_UI_LAYOUT_FLAGSContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_LAYOUT_FLAGS"); _SYSTEM_UI_LAYOUT_FLAGSReady = true; } return _SYSTEM_UI_LAYOUT_FLAGSContent; } }
         private static int _SYSTEM_UI_LAYOUT_FLAGSContent = default;
         private static bool _SYSTEM_UI_LAYOUT_FLAGSReady = false; // this is used because in case of generics 
@@ -1041,1111 +1041,183 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getAccessibilityClassName()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getStateListAnimator()"/>
         /// </summary>
-        public Java.Lang.CharSequence AccessibilityClassName
+        /// <returns><see cref="Android.Animation.StateListAnimator"/></returns>
+        public Android.Animation.StateListAnimator GetStateListAnimator()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getAccessibilityClassName", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Android.Animation.StateListAnimator>("getStateListAnimator", "()Landroid/animation/StateListAnimator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getAccessibilityLiveRegion()"/> <see href="https://developer.android.com/reference/android/view/View.html#setAccessibilityLiveRegion(int)"/>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getBackgroundTintList()"/>
         /// </summary>
-        public int AccessibilityLiveRegion
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetBackgroundTintList()
         {
-            get { return IExecuteWithSignature<int>("getAccessibilityLiveRegion", "()I"); } set { IExecuteWithSignature("setAccessibilityLiveRegion", "(I)V", value); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getBackgroundTintList", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getAccessibilityNodeProvider()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getForegroundTintList()"/>
         /// </summary>
-        public Android.View.Accessibility.AccessibilityNodeProvider AccessibilityNodeProvider
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetForegroundTintList()
         {
-            get { return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeProvider>("getAccessibilityNodeProvider", "()Landroid/view/accessibility/AccessibilityNodeProvider;"); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getForegroundTintList", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getAccessibilityPaneTitle()"/> <see href="https://developer.android.com/reference/android/view/View.html#setAccessibilityPaneTitle(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getResources()"/>
         /// </summary>
-        public Java.Lang.CharSequence AccessibilityPaneTitle
+        /// <returns><see cref="Android.Content.Res.Resources"/></returns>
+        public Android.Content.Res.Resources GetResources()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getAccessibilityPaneTitle", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setAccessibilityPaneTitle", "(Ljava/lang/CharSequence;)V", value); }
+            return IExecuteWithSignature<Android.Content.Res.Resources>("getResources", "()Landroid/content/res/Resources;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getAccessibilityTraversalAfter()"/> <see href="https://developer.android.com/reference/android/view/View.html#setAccessibilityTraversalAfter(int)"/>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getDrawingCache()"/>
         /// </summary>
-        public int AccessibilityTraversalAfter
+        /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+        [global::System.Obsolete()]
+        public Android.Graphics.Bitmap GetDrawingCache()
         {
-            get { return IExecuteWithSignature<int>("getAccessibilityTraversalAfter", "()I"); } set { IExecuteWithSignature("setAccessibilityTraversalAfter", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getAccessibilityTraversalBefore()"/> <see href="https://developer.android.com/reference/android/view/View.html#setAccessibilityTraversalBefore(int)"/>
-        /// </summary>
-        public int AccessibilityTraversalBefore
-        {
-            get { return IExecuteWithSignature<int>("getAccessibilityTraversalBefore", "()I"); } set { IExecuteWithSignature("setAccessibilityTraversalBefore", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getAllowedHandwritingDelegatePackageName()"/> 
-        /// </summary>
-        public Java.Lang.String AllowedHandwritingDelegatePackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAllowedHandwritingDelegatePackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getAllowedHandwritingDelegatorPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String AllowedHandwritingDelegatorPackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAllowedHandwritingDelegatorPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getAlpha()"/> <see href="https://developer.android.com/reference/android/view/View.html#setAlpha(float)"/>
-        /// </summary>
-        public float Alpha
-        {
-            get { return IExecuteWithSignature<float>("getAlpha", "()F"); } set { IExecuteWithSignature("setAlpha", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getAnimation()"/> <see href="https://developer.android.com/reference/android/view/View.html#setAnimation(android.view.animation.Animation)"/>
-        /// </summary>
-        public Android.View.Animation.Animation Animation
-        {
-            get { return IExecuteWithSignature<Android.View.Animation.Animation>("getAnimation", "()Landroid/view/animation/Animation;"); } set { IExecuteWithSignature("setAnimation", "(Landroid/view/animation/Animation;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getAnimationMatrix()"/> <see href="https://developer.android.com/reference/android/view/View.html#setAnimationMatrix(android.graphics.Matrix)"/>
-        /// </summary>
-        public Android.Graphics.Matrix AnimationMatrix
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Matrix>("getAnimationMatrix", "()Landroid/graphics/Matrix;"); } set { IExecuteWithSignature("setAnimationMatrix", "(Landroid/graphics/Matrix;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getApplicationWindowToken()"/> 
-        /// </summary>
-        public Android.Os.IBinder ApplicationWindowToken
-        {
-            get { return IExecuteWithSignature<Android.Os.IBinder>("getApplicationWindowToken", "()Landroid/os/IBinder;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getAttributeSourceResourceMap()"/> 
-        /// </summary>
-        public Java.Util.Map<Java.Lang.Integer, Java.Lang.Integer> AttributeSourceResourceMap
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.Integer, Java.Lang.Integer>>("getAttributeSourceResourceMap", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getAutofillHints()"/> <see href="https://developer.android.com/reference/android/view/View.html#setAutofillHints(java.lang.String[])"/>
-        /// </summary>
-        public Java.Lang.String[] AutofillHints
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getAutofillHints", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setAutofillHints", "([Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getAutofillId()"/> <see href="https://developer.android.com/reference/android/view/View.html#setAutofillId(android.view.autofill.AutofillId)"/>
-        /// </summary>
-        public Android.View.Autofill.AutofillId AutofillId
-        {
-            get { return IExecuteWithSignature<Android.View.Autofill.AutofillId>("getAutofillId", "()Landroid/view/autofill/AutofillId;"); } set { IExecuteWithSignature("setAutofillId", "(Landroid/view/autofill/AutofillId;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getAutofillType()"/> 
-        /// </summary>
-        public int AutofillType
-        {
-            get { return IExecuteWithSignature<int>("getAutofillType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getAutofillValue()"/> 
-        /// </summary>
-        public Android.View.Autofill.AutofillValue AutofillValue
-        {
-            get { return IExecuteWithSignature<Android.View.Autofill.AutofillValue>("getAutofillValue", "()Landroid/view/autofill/AutofillValue;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getBackground()"/> <see href="https://developer.android.com/reference/android/view/View.html#setBackground(android.graphics.drawable.Drawable)"/>
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable Background
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getBackground", "()Landroid/graphics/drawable/Drawable;"); } set { IExecuteWithSignature("setBackground", "(Landroid/graphics/drawable/Drawable;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getBackgroundTintBlendMode()"/> <see href="https://developer.android.com/reference/android/view/View.html#setBackgroundTintBlendMode(android.graphics.BlendMode)"/>
-        /// </summary>
-        public Android.Graphics.BlendMode BackgroundTintBlendMode
-        {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getBackgroundTintBlendMode", "()Landroid/graphics/BlendMode;"); } set { IExecuteWithSignature("setBackgroundTintBlendMode", "(Landroid/graphics/BlendMode;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getBackgroundTintList()"/> <see href="https://developer.android.com/reference/android/view/View.html#setBackgroundTintList(android.content.res.ColorStateList)"/>
-        /// </summary>
-        public Android.Content.Res.ColorStateList BackgroundTintList
-        {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getBackgroundTintList", "()Landroid/content/res/ColorStateList;"); } set { IExecuteWithSignature("setBackgroundTintList", "(Landroid/content/res/ColorStateList;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getBackgroundTintMode()"/> <see href="https://developer.android.com/reference/android/view/View.html#setBackgroundTintMode(android.graphics.PorterDuff.Mode)"/>
-        /// </summary>
-        public Android.Graphics.PorterDuff.Mode BackgroundTintMode
-        {
-            get { return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getBackgroundTintMode", "()Landroid/graphics/PorterDuff$Mode;"); } set { IExecuteWithSignature("setBackgroundTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getBaseline()"/> 
-        /// </summary>
-        public int Baseline
-        {
-            get { return IExecuteWithSignature<int>("getBaseline", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getBottom()"/> <see href="https://developer.android.com/reference/android/view/View.html#setBottom(int)"/>
-        /// </summary>
-        public int Bottom
-        {
-            get { return IExecuteWithSignature<int>("getBottom", "()I"); } set { IExecuteWithSignature("setBottom", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getCameraDistance()"/> <see href="https://developer.android.com/reference/android/view/View.html#setCameraDistance(float)"/>
-        /// </summary>
-        public float CameraDistance
-        {
-            get { return IExecuteWithSignature<float>("getCameraDistance", "()F"); } set { IExecuteWithSignature("setCameraDistance", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getClipBounds()"/> <see href="https://developer.android.com/reference/android/view/View.html#setClipBounds(android.graphics.Rect)"/>
-        /// </summary>
-        public Android.Graphics.Rect ClipBounds
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getClipBounds", "()Landroid/graphics/Rect;"); } set { IExecuteWithSignature("setClipBounds", "(Landroid/graphics/Rect;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getClipToOutline()"/> <see href="https://developer.android.com/reference/android/view/View.html#setClipToOutline(boolean)"/>
-        /// </summary>
-        public bool ClipToOutline
-        {
-            get { return IExecuteWithSignature<bool>("getClipToOutline", "()Z"); } set { IExecuteWithSignature("setClipToOutline", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getContentCaptureSession()"/> <see href="https://developer.android.com/reference/android/view/View.html#setContentCaptureSession(android.view.contentcapture.ContentCaptureSession)"/>
-        /// </summary>
-        public Android.View.Contentcapture.ContentCaptureSession ContentCaptureSession
-        {
-            get { return IExecuteWithSignature<Android.View.Contentcapture.ContentCaptureSession>("getContentCaptureSession", "()Landroid/view/contentcapture/ContentCaptureSession;"); } set { IExecuteWithSignature("setContentCaptureSession", "(Landroid/view/contentcapture/ContentCaptureSession;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getContentDescription()"/> <see href="https://developer.android.com/reference/android/view/View.html#setContentDescription(java.lang.CharSequence)"/>
-        /// </summary>
-        public Java.Lang.CharSequence ContentDescription
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setContentDescription", "(Ljava/lang/CharSequence;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getContext()"/> 
-        /// </summary>
-        public Android.Content.Context Context
-        {
-            get { return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getDefaultFocusHighlightEnabled()"/> <see href="https://developer.android.com/reference/android/view/View.html#setDefaultFocusHighlightEnabled(boolean)"/>
-        /// </summary>
-        public bool DefaultFocusHighlightEnabled
-        {
-            get { return IExecuteWithSignature<bool>("getDefaultFocusHighlightEnabled", "()Z"); } set { IExecuteWithSignature("setDefaultFocusHighlightEnabled", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getDisplay()"/> 
-        /// </summary>
-        public Android.View.Display Display
-        {
-            get { return IExecuteWithSignature<Android.View.Display>("getDisplay", "()Landroid/view/Display;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getDrawableState()"/> 
-        /// </summary>
-        public int[] DrawableState
-        {
-            get { return IExecuteWithSignatureArray<int>("getDrawableState", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getDrawingCache()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Graphics.Bitmap DrawingCache
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getDrawingCache", "()Landroid/graphics/Bitmap;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getDrawingCacheBackgroundColor()"/> <see href="https://developer.android.com/reference/android/view/View.html#setDrawingCacheBackgroundColor(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int DrawingCacheBackgroundColor
-        {
-            get { return IExecuteWithSignature<int>("getDrawingCacheBackgroundColor", "()I"); } set { IExecuteWithSignature("setDrawingCacheBackgroundColor", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getDrawingCacheQuality()"/> <see href="https://developer.android.com/reference/android/view/View.html#setDrawingCacheQuality(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int DrawingCacheQuality
-        {
-            get { return IExecuteWithSignature<int>("getDrawingCacheQuality", "()I"); } set { IExecuteWithSignature("setDrawingCacheQuality", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getDrawingTime()"/> 
-        /// </summary>
-        public long DrawingTime
-        {
-            get { return IExecuteWithSignature<long>("getDrawingTime", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getElevation()"/> <see href="https://developer.android.com/reference/android/view/View.html#setElevation(float)"/>
-        /// </summary>
-        public float Elevation
-        {
-            get { return IExecuteWithSignature<float>("getElevation", "()F"); } set { IExecuteWithSignature("setElevation", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getExplicitStyle()"/> 
-        /// </summary>
-        public int ExplicitStyle
-        {
-            get { return IExecuteWithSignature<int>("getExplicitStyle", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getFilterTouchesWhenObscured()"/> <see href="https://developer.android.com/reference/android/view/View.html#setFilterTouchesWhenObscured(boolean)"/>
-        /// </summary>
-        public bool FilterTouchesWhenObscured
-        {
-            get { return IExecuteWithSignature<bool>("getFilterTouchesWhenObscured", "()Z"); } set { IExecuteWithSignature("setFilterTouchesWhenObscured", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getFitsSystemWindows()"/> <see href="https://developer.android.com/reference/android/view/View.html#setFitsSystemWindows(boolean)"/>
-        /// </summary>
-        public bool FitsSystemWindows
-        {
-            get { return IExecuteWithSignature<bool>("getFitsSystemWindows", "()Z"); } set { IExecuteWithSignature("setFitsSystemWindows", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getFocusable()"/> 
-        /// </summary>
-        public int Focusable
-        {
-            get { return IExecuteWithSignature<int>("getFocusable", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getForeground()"/> <see href="https://developer.android.com/reference/android/view/View.html#setForeground(android.graphics.drawable.Drawable)"/>
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable Foreground
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getForeground", "()Landroid/graphics/drawable/Drawable;"); } set { IExecuteWithSignature("setForeground", "(Landroid/graphics/drawable/Drawable;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getForegroundGravity()"/> <see href="https://developer.android.com/reference/android/view/View.html#setForegroundGravity(int)"/>
-        /// </summary>
-        public int ForegroundGravity
-        {
-            get { return IExecuteWithSignature<int>("getForegroundGravity", "()I"); } set { IExecuteWithSignature("setForegroundGravity", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getForegroundTintBlendMode()"/> <see href="https://developer.android.com/reference/android/view/View.html#setForegroundTintBlendMode(android.graphics.BlendMode)"/>
-        /// </summary>
-        public Android.Graphics.BlendMode ForegroundTintBlendMode
-        {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getForegroundTintBlendMode", "()Landroid/graphics/BlendMode;"); } set { IExecuteWithSignature("setForegroundTintBlendMode", "(Landroid/graphics/BlendMode;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getForegroundTintList()"/> <see href="https://developer.android.com/reference/android/view/View.html#setForegroundTintList(android.content.res.ColorStateList)"/>
-        /// </summary>
-        public Android.Content.Res.ColorStateList ForegroundTintList
-        {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getForegroundTintList", "()Landroid/content/res/ColorStateList;"); } set { IExecuteWithSignature("setForegroundTintList", "(Landroid/content/res/ColorStateList;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getForegroundTintMode()"/> <see href="https://developer.android.com/reference/android/view/View.html#setForegroundTintMode(android.graphics.PorterDuff.Mode)"/>
-        /// </summary>
-        public Android.Graphics.PorterDuff.Mode ForegroundTintMode
-        {
-            get { return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getForegroundTintMode", "()Landroid/graphics/PorterDuff$Mode;"); } set { IExecuteWithSignature("setForegroundTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getAccessibilityDelegate()"/> 
-        /// </summary>
-        public Android.View.View.AccessibilityDelegate GetAccessibilityDelegate
-        {
-            get { return IExecuteWithSignature<Android.View.View.AccessibilityDelegate>("getAccessibilityDelegate", "()Landroid/view/View$AccessibilityDelegate;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getOnFocusChangeListener()"/> 
-        /// </summary>
-        public Android.View.View.OnFocusChangeListener GetOnFocusChangeListener
-        {
-            get { return IExecuteWithSignature<Android.View.View.OnFocusChangeListener>("getOnFocusChangeListener", "()Landroid/view/View$OnFocusChangeListener;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getHandler()"/> 
-        /// </summary>
-        public Android.Os.Handler Handler
-        {
-            get { return IExecuteWithSignature<Android.Os.Handler>("getHandler", "()Landroid/os/Handler;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getHandwritingBoundsOffsetBottom()"/> 
-        /// </summary>
-        public float HandwritingBoundsOffsetBottom
-        {
-            get { return IExecuteWithSignature<float>("getHandwritingBoundsOffsetBottom", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getHandwritingBoundsOffsetLeft()"/> 
-        /// </summary>
-        public float HandwritingBoundsOffsetLeft
-        {
-            get { return IExecuteWithSignature<float>("getHandwritingBoundsOffsetLeft", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getHandwritingBoundsOffsetRight()"/> 
-        /// </summary>
-        public float HandwritingBoundsOffsetRight
-        {
-            get { return IExecuteWithSignature<float>("getHandwritingBoundsOffsetRight", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getHandwritingBoundsOffsetTop()"/> 
-        /// </summary>
-        public float HandwritingBoundsOffsetTop
-        {
-            get { return IExecuteWithSignature<float>("getHandwritingBoundsOffsetTop", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getHandwritingDelegatorCallback()"/> <see href="https://developer.android.com/reference/android/view/View.html#setHandwritingDelegatorCallback(java.lang.Runnable)"/>
-        /// </summary>
-        public Java.Lang.Runnable HandwritingDelegatorCallback
-        {
-            get { return IExecuteWithSignature<Java.Lang.Runnable>("getHandwritingDelegatorCallback", "()Ljava/lang/Runnable;"); } set { IExecuteWithSignature("setHandwritingDelegatorCallback", "(Ljava/lang/Runnable;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getHeight()"/> 
-        /// </summary>
-        public int Height
-        {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getHorizontalFadingEdgeLength()"/> 
-        /// </summary>
-        public int HorizontalFadingEdgeLength
-        {
-            get { return IExecuteWithSignature<int>("getHorizontalFadingEdgeLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getHorizontalScrollbarThumbDrawable()"/> <see href="https://developer.android.com/reference/android/view/View.html#setHorizontalScrollbarThumbDrawable(android.graphics.drawable.Drawable)"/>
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable HorizontalScrollbarThumbDrawable
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getHorizontalScrollbarThumbDrawable", "()Landroid/graphics/drawable/Drawable;"); } set { IExecuteWithSignature("setHorizontalScrollbarThumbDrawable", "(Landroid/graphics/drawable/Drawable;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getHorizontalScrollbarTrackDrawable()"/> <see href="https://developer.android.com/reference/android/view/View.html#setHorizontalScrollbarTrackDrawable(android.graphics.drawable.Drawable)"/>
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable HorizontalScrollbarTrackDrawable
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getHorizontalScrollbarTrackDrawable", "()Landroid/graphics/drawable/Drawable;"); } set { IExecuteWithSignature("setHorizontalScrollbarTrackDrawable", "(Landroid/graphics/drawable/Drawable;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getId()"/> <see href="https://developer.android.com/reference/android/view/View.html#setId(int)"/>
-        /// </summary>
-        public int Id
-        {
-            get { return IExecuteWithSignature<int>("getId", "()I"); } set { IExecuteWithSignature("setId", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getImportantForAccessibility()"/> <see href="https://developer.android.com/reference/android/view/View.html#setImportantForAccessibility(int)"/>
-        /// </summary>
-        public int ImportantForAccessibility
-        {
-            get { return IExecuteWithSignature<int>("getImportantForAccessibility", "()I"); } set { IExecuteWithSignature("setImportantForAccessibility", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getImportantForAutofill()"/> <see href="https://developer.android.com/reference/android/view/View.html#setImportantForAutofill(int)"/>
-        /// </summary>
-        public int ImportantForAutofill
-        {
-            get { return IExecuteWithSignature<int>("getImportantForAutofill", "()I"); } set { IExecuteWithSignature("setImportantForAutofill", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getImportantForContentCapture()"/> <see href="https://developer.android.com/reference/android/view/View.html#setImportantForContentCapture(int)"/>
-        /// </summary>
-        public int ImportantForContentCapture
-        {
-            get { return IExecuteWithSignature<int>("getImportantForContentCapture", "()I"); } set { IExecuteWithSignature("setImportantForContentCapture", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getKeepScreenOn()"/> <see href="https://developer.android.com/reference/android/view/View.html#setKeepScreenOn(boolean)"/>
-        /// </summary>
-        public bool KeepScreenOn
-        {
-            get { return IExecuteWithSignature<bool>("getKeepScreenOn", "()Z"); } set { IExecuteWithSignature("setKeepScreenOn", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getKeyDispatcherState()"/> 
-        /// </summary>
-        public Android.View.KeyEvent.DispatcherState KeyDispatcherState
-        {
-            get { return IExecuteWithSignature<Android.View.KeyEvent.DispatcherState>("getKeyDispatcherState", "()Landroid/view/KeyEvent$DispatcherState;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getLabelFor()"/> <see href="https://developer.android.com/reference/android/view/View.html#setLabelFor(int)"/>
-        /// </summary>
-        public int LabelFor
-        {
-            get { return IExecuteWithSignature<int>("getLabelFor", "()I"); } set { IExecuteWithSignature("setLabelFor", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getLayerType()"/> 
-        /// </summary>
-        public int LayerType
-        {
-            get { return IExecuteWithSignature<int>("getLayerType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getLayoutDirection()"/> <see href="https://developer.android.com/reference/android/view/View.html#setLayoutDirection(int)"/>
-        /// </summary>
-        public int LayoutDirection
-        {
-            get { return IExecuteWithSignature<int>("getLayoutDirection", "()I"); } set { IExecuteWithSignature("setLayoutDirection", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getLayoutParams()"/> <see href="https://developer.android.com/reference/android/view/View.html#setLayoutParams(android.view.ViewGroup.LayoutParams)"/>
-        /// </summary>
-        public Android.View.ViewGroup.LayoutParams LayoutParams
-        {
-            get { return IExecuteWithSignature<Android.View.ViewGroup.LayoutParams>("getLayoutParams", "()Landroid/view/ViewGroup$LayoutParams;"); } set { IExecuteWithSignature("setLayoutParams", "(Landroid/view/ViewGroup$LayoutParams;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getLeft()"/> <see href="https://developer.android.com/reference/android/view/View.html#setLeft(int)"/>
-        /// </summary>
-        public int Left
-        {
-            get { return IExecuteWithSignature<int>("getLeft", "()I"); } set { IExecuteWithSignature("setLeft", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getMatrix()"/> 
-        /// </summary>
-        public Android.Graphics.Matrix Matrix
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Matrix>("getMatrix", "()Landroid/graphics/Matrix;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getMeasuredHeight()"/> 
-        /// </summary>
-        public int MeasuredHeight
-        {
-            get { return IExecuteWithSignature<int>("getMeasuredHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getMeasuredHeightAndState()"/> 
-        /// </summary>
-        public int MeasuredHeightAndState
-        {
-            get { return IExecuteWithSignature<int>("getMeasuredHeightAndState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getMeasuredState()"/> 
-        /// </summary>
-        public int MeasuredState
-        {
-            get { return IExecuteWithSignature<int>("getMeasuredState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getMeasuredWidth()"/> 
-        /// </summary>
-        public int MeasuredWidth
-        {
-            get { return IExecuteWithSignature<int>("getMeasuredWidth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getMeasuredWidthAndState()"/> 
-        /// </summary>
-        public int MeasuredWidthAndState
-        {
-            get { return IExecuteWithSignature<int>("getMeasuredWidthAndState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getMinimumHeight()"/> <see href="https://developer.android.com/reference/android/view/View.html#setMinimumHeight(int)"/>
-        /// </summary>
-        public int MinimumHeight
-        {
-            get { return IExecuteWithSignature<int>("getMinimumHeight", "()I"); } set { IExecuteWithSignature("setMinimumHeight", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getMinimumWidth()"/> <see href="https://developer.android.com/reference/android/view/View.html#setMinimumWidth(int)"/>
-        /// </summary>
-        public int MinimumWidth
-        {
-            get { return IExecuteWithSignature<int>("getMinimumWidth", "()I"); } set { IExecuteWithSignature("setMinimumWidth", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getNextClusterForwardId()"/> <see href="https://developer.android.com/reference/android/view/View.html#setNextClusterForwardId(int)"/>
-        /// </summary>
-        public int NextClusterForwardId
-        {
-            get { return IExecuteWithSignature<int>("getNextClusterForwardId", "()I"); } set { IExecuteWithSignature("setNextClusterForwardId", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getNextFocusDownId()"/> <see href="https://developer.android.com/reference/android/view/View.html#setNextFocusDownId(int)"/>
-        /// </summary>
-        public int NextFocusDownId
-        {
-            get { return IExecuteWithSignature<int>("getNextFocusDownId", "()I"); } set { IExecuteWithSignature("setNextFocusDownId", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getNextFocusForwardId()"/> <see href="https://developer.android.com/reference/android/view/View.html#setNextFocusForwardId(int)"/>
-        /// </summary>
-        public int NextFocusForwardId
-        {
-            get { return IExecuteWithSignature<int>("getNextFocusForwardId", "()I"); } set { IExecuteWithSignature("setNextFocusForwardId", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getNextFocusLeftId()"/> <see href="https://developer.android.com/reference/android/view/View.html#setNextFocusLeftId(int)"/>
-        /// </summary>
-        public int NextFocusLeftId
-        {
-            get { return IExecuteWithSignature<int>("getNextFocusLeftId", "()I"); } set { IExecuteWithSignature("setNextFocusLeftId", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getNextFocusRightId()"/> <see href="https://developer.android.com/reference/android/view/View.html#setNextFocusRightId(int)"/>
-        /// </summary>
-        public int NextFocusRightId
-        {
-            get { return IExecuteWithSignature<int>("getNextFocusRightId", "()I"); } set { IExecuteWithSignature("setNextFocusRightId", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getNextFocusUpId()"/> <see href="https://developer.android.com/reference/android/view/View.html#setNextFocusUpId(int)"/>
-        /// </summary>
-        public int NextFocusUpId
-        {
-            get { return IExecuteWithSignature<int>("getNextFocusUpId", "()I"); } set { IExecuteWithSignature("setNextFocusUpId", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getOutlineAmbientShadowColor()"/> <see href="https://developer.android.com/reference/android/view/View.html#setOutlineAmbientShadowColor(int)"/>
-        /// </summary>
-        public int OutlineAmbientShadowColor
-        {
-            get { return IExecuteWithSignature<int>("getOutlineAmbientShadowColor", "()I"); } set { IExecuteWithSignature("setOutlineAmbientShadowColor", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getOutlineProvider()"/> <see href="https://developer.android.com/reference/android/view/View.html#setOutlineProvider(android.view.ViewOutlineProvider)"/>
-        /// </summary>
-        public Android.View.ViewOutlineProvider OutlineProvider
-        {
-            get { return IExecuteWithSignature<Android.View.ViewOutlineProvider>("getOutlineProvider", "()Landroid/view/ViewOutlineProvider;"); } set { IExecuteWithSignature("setOutlineProvider", "(Landroid/view/ViewOutlineProvider;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getOutlineSpotShadowColor()"/> <see href="https://developer.android.com/reference/android/view/View.html#setOutlineSpotShadowColor(int)"/>
-        /// </summary>
-        public int OutlineSpotShadowColor
-        {
-            get { return IExecuteWithSignature<int>("getOutlineSpotShadowColor", "()I"); } set { IExecuteWithSignature("setOutlineSpotShadowColor", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getOverlay()"/> 
-        /// </summary>
-        public Android.View.ViewOverlay Overlay
-        {
-            get { return IExecuteWithSignature<Android.View.ViewOverlay>("getOverlay", "()Landroid/view/ViewOverlay;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getOverScrollMode()"/> <see href="https://developer.android.com/reference/android/view/View.html#setOverScrollMode(int)"/>
-        /// </summary>
-        public int OverScrollMode
-        {
-            get { return IExecuteWithSignature<int>("getOverScrollMode", "()I"); } set { IExecuteWithSignature("setOverScrollMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getPaddingBottom()"/> 
-        /// </summary>
-        public int PaddingBottom
-        {
-            get { return IExecuteWithSignature<int>("getPaddingBottom", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getPaddingEnd()"/> 
-        /// </summary>
-        public int PaddingEnd
-        {
-            get { return IExecuteWithSignature<int>("getPaddingEnd", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getPaddingLeft()"/> 
-        /// </summary>
-        public int PaddingLeft
-        {
-            get { return IExecuteWithSignature<int>("getPaddingLeft", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getPaddingRight()"/> 
-        /// </summary>
-        public int PaddingRight
-        {
-            get { return IExecuteWithSignature<int>("getPaddingRight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getPaddingStart()"/> 
-        /// </summary>
-        public int PaddingStart
-        {
-            get { return IExecuteWithSignature<int>("getPaddingStart", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getPaddingTop()"/> 
-        /// </summary>
-        public int PaddingTop
-        {
-            get { return IExecuteWithSignature<int>("getPaddingTop", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getParent()"/> 
-        /// </summary>
-        public Android.View.ViewParent Parent
-        {
-            get { return IExecuteWithSignature<Android.View.ViewParent>("getParent", "()Landroid/view/ViewParent;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getParentForAccessibility()"/> 
-        /// </summary>
-        public Android.View.ViewParent ParentForAccessibility
-        {
-            get { return IExecuteWithSignature<Android.View.ViewParent>("getParentForAccessibility", "()Landroid/view/ViewParent;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getPivotX()"/> <see href="https://developer.android.com/reference/android/view/View.html#setPivotX(float)"/>
-        /// </summary>
-        public float PivotX
-        {
-            get { return IExecuteWithSignature<float>("getPivotX", "()F"); } set { IExecuteWithSignature("setPivotX", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getPivotY()"/> <see href="https://developer.android.com/reference/android/view/View.html#setPivotY(float)"/>
-        /// </summary>
-        public float PivotY
-        {
-            get { return IExecuteWithSignature<float>("getPivotY", "()F"); } set { IExecuteWithSignature("setPivotY", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getPointerIcon()"/> <see href="https://developer.android.com/reference/android/view/View.html#setPointerIcon(android.view.PointerIcon)"/>
-        /// </summary>
-        public Android.View.PointerIcon PointerIcon
-        {
-            get { return IExecuteWithSignature<Android.View.PointerIcon>("getPointerIcon", "()Landroid/view/PointerIcon;"); } set { IExecuteWithSignature("setPointerIcon", "(Landroid/view/PointerIcon;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getPreferKeepClearRects()"/> <see href="https://developer.android.com/reference/android/view/View.html#setPreferKeepClearRects(java.util.List)"/>
-        /// </summary>
-        public Java.Util.List<Android.Graphics.Rect> PreferKeepClearRects
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Graphics.Rect>>("getPreferKeepClearRects", "()Ljava/util/List;"); } set { IExecuteWithSignature("setPreferKeepClearRects", "(Ljava/util/List;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getReceiveContentMimeTypes()"/> 
-        /// </summary>
-        public Java.Lang.String[] ReceiveContentMimeTypes
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getReceiveContentMimeTypes", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getResources()"/> 
-        /// </summary>
-        public Android.Content.Res.Resources Resources
-        {
-            get { return IExecuteWithSignature<Android.Content.Res.Resources>("getResources", "()Landroid/content/res/Resources;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getRevealOnFocusHint()"/> <see href="https://developer.android.com/reference/android/view/View.html#setRevealOnFocusHint(boolean)"/>
-        /// </summary>
-        public bool RevealOnFocusHint
-        {
-            get { return IExecuteWithSignature<bool>("getRevealOnFocusHint", "()Z"); } set { IExecuteWithSignature("setRevealOnFocusHint", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getRight()"/> <see href="https://developer.android.com/reference/android/view/View.html#setRight(int)"/>
-        /// </summary>
-        public int Right
-        {
-            get { return IExecuteWithSignature<int>("getRight", "()I"); } set { IExecuteWithSignature("setRight", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getRootSurfaceControl()"/> 
-        /// </summary>
-        public Android.View.AttachedSurfaceControl RootSurfaceControl
-        {
-            get { return IExecuteWithSignature<Android.View.AttachedSurfaceControl>("getRootSurfaceControl", "()Landroid/view/AttachedSurfaceControl;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getRootView()"/> 
-        /// </summary>
-        public Android.View.View RootView
-        {
-            get { return IExecuteWithSignature<Android.View.View>("getRootView", "()Landroid/view/View;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getRootWindowInsets()"/> 
-        /// </summary>
-        public Android.View.WindowInsets RootWindowInsets
-        {
-            get { return IExecuteWithSignature<Android.View.WindowInsets>("getRootWindowInsets", "()Landroid/view/WindowInsets;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getRotation()"/> <see href="https://developer.android.com/reference/android/view/View.html#setRotation(float)"/>
-        /// </summary>
-        public float Rotation
-        {
-            get { return IExecuteWithSignature<float>("getRotation", "()F"); } set { IExecuteWithSignature("setRotation", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getRotationX()"/> <see href="https://developer.android.com/reference/android/view/View.html#setRotationX(float)"/>
-        /// </summary>
-        public float RotationX
-        {
-            get { return IExecuteWithSignature<float>("getRotationX", "()F"); } set { IExecuteWithSignature("setRotationX", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getRotationY()"/> <see href="https://developer.android.com/reference/android/view/View.html#setRotationY(float)"/>
-        /// </summary>
-        public float RotationY
-        {
-            get { return IExecuteWithSignature<float>("getRotationY", "()F"); } set { IExecuteWithSignature("setRotationY", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getScaleX()"/> <see href="https://developer.android.com/reference/android/view/View.html#setScaleX(float)"/>
-        /// </summary>
-        public float ScaleX
-        {
-            get { return IExecuteWithSignature<float>("getScaleX", "()F"); } set { IExecuteWithSignature("setScaleX", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getScaleY()"/> <see href="https://developer.android.com/reference/android/view/View.html#setScaleY(float)"/>
-        /// </summary>
-        public float ScaleY
-        {
-            get { return IExecuteWithSignature<float>("getScaleY", "()F"); } set { IExecuteWithSignature("setScaleY", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getScrollBarDefaultDelayBeforeFade()"/> <see href="https://developer.android.com/reference/android/view/View.html#setScrollBarDefaultDelayBeforeFade(int)"/>
-        /// </summary>
-        public int ScrollBarDefaultDelayBeforeFade
-        {
-            get { return IExecuteWithSignature<int>("getScrollBarDefaultDelayBeforeFade", "()I"); } set { IExecuteWithSignature("setScrollBarDefaultDelayBeforeFade", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getScrollBarFadeDuration()"/> <see href="https://developer.android.com/reference/android/view/View.html#setScrollBarFadeDuration(int)"/>
-        /// </summary>
-        public int ScrollBarFadeDuration
-        {
-            get { return IExecuteWithSignature<int>("getScrollBarFadeDuration", "()I"); } set { IExecuteWithSignature("setScrollBarFadeDuration", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getScrollBarSize()"/> <see href="https://developer.android.com/reference/android/view/View.html#setScrollBarSize(int)"/>
-        /// </summary>
-        public int ScrollBarSize
-        {
-            get { return IExecuteWithSignature<int>("getScrollBarSize", "()I"); } set { IExecuteWithSignature("setScrollBarSize", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getScrollBarStyle()"/> <see href="https://developer.android.com/reference/android/view/View.html#setScrollBarStyle(int)"/>
-        /// </summary>
-        public int ScrollBarStyle
-        {
-            get { return IExecuteWithSignature<int>("getScrollBarStyle", "()I"); } set { IExecuteWithSignature("setScrollBarStyle", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getScrollCaptureHint()"/> <see href="https://developer.android.com/reference/android/view/View.html#setScrollCaptureHint(int)"/>
-        /// </summary>
-        public int ScrollCaptureHint
-        {
-            get { return IExecuteWithSignature<int>("getScrollCaptureHint", "()I"); } set { IExecuteWithSignature("setScrollCaptureHint", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getScrollIndicators()"/> <see href="https://developer.android.com/reference/android/view/View.html#setScrollIndicators(int)"/>
-        /// </summary>
-        public int ScrollIndicators
-        {
-            get { return IExecuteWithSignature<int>("getScrollIndicators", "()I"); } set { IExecuteWithSignature("setScrollIndicators", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getScrollX()"/> <see href="https://developer.android.com/reference/android/view/View.html#setScrollX(int)"/>
-        /// </summary>
-        public int ScrollX
-        {
-            get { return IExecuteWithSignature<int>("getScrollX", "()I"); } set { IExecuteWithSignature("setScrollX", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getScrollY()"/> <see href="https://developer.android.com/reference/android/view/View.html#setScrollY(int)"/>
-        /// </summary>
-        public int ScrollY
-        {
-            get { return IExecuteWithSignature<int>("getScrollY", "()I"); } set { IExecuteWithSignature("setScrollY", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getSolidColor()"/> 
-        /// </summary>
-        public int SolidColor
-        {
-            get { return IExecuteWithSignature<int>("getSolidColor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getSourceLayoutResId()"/> 
-        /// </summary>
-        public int SourceLayoutResId
-        {
-            get { return IExecuteWithSignature<int>("getSourceLayoutResId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getStateDescription()"/> <see href="https://developer.android.com/reference/android/view/View.html#setStateDescription(java.lang.CharSequence)"/>
-        /// </summary>
-        public Java.Lang.CharSequence StateDescription
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getStateDescription", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setStateDescription", "(Ljava/lang/CharSequence;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getStateListAnimator()"/> <see href="https://developer.android.com/reference/android/view/View.html#setStateListAnimator(android.animation.StateListAnimator)"/>
-        /// </summary>
-        public Android.Animation.StateListAnimator StateListAnimator
-        {
-            get { return IExecuteWithSignature<Android.Animation.StateListAnimator>("getStateListAnimator", "()Landroid/animation/StateListAnimator;"); } set { IExecuteWithSignature("setStateListAnimator", "(Landroid/animation/StateListAnimator;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getSystemGestureExclusionRects()"/> <see href="https://developer.android.com/reference/android/view/View.html#setSystemGestureExclusionRects(java.util.List)"/>
-        /// </summary>
-        public Java.Util.List<Android.Graphics.Rect> SystemGestureExclusionRects
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Graphics.Rect>>("getSystemGestureExclusionRects", "()Ljava/util/List;"); } set { IExecuteWithSignature("setSystemGestureExclusionRects", "(Ljava/util/List;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getSystemUiVisibility()"/> <see href="https://developer.android.com/reference/android/view/View.html#setSystemUiVisibility(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int SystemUiVisibility
-        {
-            get { return IExecuteWithSignature<int>("getSystemUiVisibility", "()I"); } set { IExecuteWithSignature("setSystemUiVisibility", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getTag()"/> <see href="https://developer.android.com/reference/android/view/View.html#setTag(java.lang.Object)"/>
-        /// </summary>
-        public object Tag
-        {
-            get { return IExecuteWithSignature("getTag", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setTag", "(Ljava/lang/Object;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getTextAlignment()"/> <see href="https://developer.android.com/reference/android/view/View.html#setTextAlignment(int)"/>
-        /// </summary>
-        public int TextAlignment
-        {
-            get { return IExecuteWithSignature<int>("getTextAlignment", "()I"); } set { IExecuteWithSignature("setTextAlignment", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getTextDirection()"/> <see href="https://developer.android.com/reference/android/view/View.html#setTextDirection(int)"/>
-        /// </summary>
-        public int TextDirection
-        {
-            get { return IExecuteWithSignature<int>("getTextDirection", "()I"); } set { IExecuteWithSignature("setTextDirection", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getTooltipText()"/> <see href="https://developer.android.com/reference/android/view/View.html#setTooltipText(java.lang.CharSequence)"/>
-        /// </summary>
-        public Java.Lang.CharSequence TooltipText
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTooltipText", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setTooltipText", "(Ljava/lang/CharSequence;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getTop()"/> <see href="https://developer.android.com/reference/android/view/View.html#setTop(int)"/>
-        /// </summary>
-        public int Top
-        {
-            get { return IExecuteWithSignature<int>("getTop", "()I"); } set { IExecuteWithSignature("setTop", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getTouchables()"/> 
-        /// </summary>
-        public Java.Util.ArrayList<Android.View.View> Touchables
-        {
-            get { return IExecuteWithSignature<Java.Util.ArrayList<Android.View.View>>("getTouchables", "()Ljava/util/ArrayList;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getTouchDelegate()"/> <see href="https://developer.android.com/reference/android/view/View.html#setTouchDelegate(android.view.TouchDelegate)"/>
-        /// </summary>
-        public Android.View.TouchDelegate TouchDelegate
-        {
-            get { return IExecuteWithSignature<Android.View.TouchDelegate>("getTouchDelegate", "()Landroid/view/TouchDelegate;"); } set { IExecuteWithSignature("setTouchDelegate", "(Landroid/view/TouchDelegate;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getTransitionAlpha()"/> <see href="https://developer.android.com/reference/android/view/View.html#setTransitionAlpha(float)"/>
-        /// </summary>
-        public float TransitionAlpha
-        {
-            get { return IExecuteWithSignature<float>("getTransitionAlpha", "()F"); } set { IExecuteWithSignature("setTransitionAlpha", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getTransitionName()"/> <see href="https://developer.android.com/reference/android/view/View.html#setTransitionName(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String TransitionName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTransitionName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setTransitionName", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getTranslationX()"/> <see href="https://developer.android.com/reference/android/view/View.html#setTranslationX(float)"/>
-        /// </summary>
-        public float TranslationX
-        {
-            get { return IExecuteWithSignature<float>("getTranslationX", "()F"); } set { IExecuteWithSignature("setTranslationX", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getTranslationY()"/> <see href="https://developer.android.com/reference/android/view/View.html#setTranslationY(float)"/>
-        /// </summary>
-        public float TranslationY
-        {
-            get { return IExecuteWithSignature<float>("getTranslationY", "()F"); } set { IExecuteWithSignature("setTranslationY", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getTranslationZ()"/> <see href="https://developer.android.com/reference/android/view/View.html#setTranslationZ(float)"/>
-        /// </summary>
-        public float TranslationZ
-        {
-            get { return IExecuteWithSignature<float>("getTranslationZ", "()F"); } set { IExecuteWithSignature("setTranslationZ", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getUniqueDrawingId()"/> 
-        /// </summary>
-        public long UniqueDrawingId
-        {
-            get { return IExecuteWithSignature<long>("getUniqueDrawingId", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getVerticalFadingEdgeLength()"/> 
-        /// </summary>
-        public int VerticalFadingEdgeLength
-        {
-            get { return IExecuteWithSignature<int>("getVerticalFadingEdgeLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getVerticalScrollbarPosition()"/> <see href="https://developer.android.com/reference/android/view/View.html#setVerticalScrollbarPosition(int)"/>
-        /// </summary>
-        public int VerticalScrollbarPosition
-        {
-            get { return IExecuteWithSignature<int>("getVerticalScrollbarPosition", "()I"); } set { IExecuteWithSignature("setVerticalScrollbarPosition", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getVerticalScrollbarThumbDrawable()"/> <see href="https://developer.android.com/reference/android/view/View.html#setVerticalScrollbarThumbDrawable(android.graphics.drawable.Drawable)"/>
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable VerticalScrollbarThumbDrawable
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getVerticalScrollbarThumbDrawable", "()Landroid/graphics/drawable/Drawable;"); } set { IExecuteWithSignature("setVerticalScrollbarThumbDrawable", "(Landroid/graphics/drawable/Drawable;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getVerticalScrollbarTrackDrawable()"/> <see href="https://developer.android.com/reference/android/view/View.html#setVerticalScrollbarTrackDrawable(android.graphics.drawable.Drawable)"/>
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable VerticalScrollbarTrackDrawable
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getVerticalScrollbarTrackDrawable", "()Landroid/graphics/drawable/Drawable;"); } set { IExecuteWithSignature("setVerticalScrollbarTrackDrawable", "(Landroid/graphics/drawable/Drawable;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getVerticalScrollbarWidth()"/> 
-        /// </summary>
-        public int VerticalScrollbarWidth
-        {
-            get { return IExecuteWithSignature<int>("getVerticalScrollbarWidth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getViewTranslationResponse()"/> 
-        /// </summary>
-        public Android.View.Translation.ViewTranslationResponse ViewTranslationResponse
-        {
-            get { return IExecuteWithSignature<Android.View.Translation.ViewTranslationResponse>("getViewTranslationResponse", "()Landroid/view/translation/ViewTranslationResponse;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getViewTreeObserver()"/> 
-        /// </summary>
-        public Android.View.ViewTreeObserver ViewTreeObserver
-        {
-            get { return IExecuteWithSignature<Android.View.ViewTreeObserver>("getViewTreeObserver", "()Landroid/view/ViewTreeObserver;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getVisibility()"/> <see href="https://developer.android.com/reference/android/view/View.html#setVisibility(int)"/>
-        /// </summary>
-        public int Visibility
-        {
-            get { return IExecuteWithSignature<int>("getVisibility", "()I"); } set { IExecuteWithSignature("setVisibility", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getWidth()"/> 
-        /// </summary>
-        public int Width
-        {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getWindowId()"/> 
-        /// </summary>
-        public Android.View.WindowId WindowId
-        {
-            get { return IExecuteWithSignature<Android.View.WindowId>("getWindowId", "()Landroid/view/WindowId;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getWindowInsetsController()"/> 
-        /// </summary>
-        public Android.View.WindowInsetsController WindowInsetsController
-        {
-            get { return IExecuteWithSignature<Android.View.WindowInsetsController>("getWindowInsetsController", "()Landroid/view/WindowInsetsController;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getWindowSystemUiVisibility()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int WindowSystemUiVisibility
-        {
-            get { return IExecuteWithSignature<int>("getWindowSystemUiVisibility", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getWindowToken()"/> 
-        /// </summary>
-        public Android.Os.IBinder WindowToken
-        {
-            get { return IExecuteWithSignature<Android.Os.IBinder>("getWindowToken", "()Landroid/os/IBinder;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getWindowVisibility()"/> 
-        /// </summary>
-        public int WindowVisibility
-        {
-            get { return IExecuteWithSignature<int>("getWindowVisibility", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getX()"/> <see href="https://developer.android.com/reference/android/view/View.html#setX(float)"/>
-        /// </summary>
-        public float X
-        {
-            get { return IExecuteWithSignature<float>("getX", "()F"); } set { IExecuteWithSignature("setX", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getY()"/> <see href="https://developer.android.com/reference/android/view/View.html#setY(float)"/>
-        /// </summary>
-        public float Y
-        {
-            get { return IExecuteWithSignature<float>("getY", "()F"); } set { IExecuteWithSignature("setY", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/View.html#getZ()"/> <see href="https://developer.android.com/reference/android/view/View.html#setZ(float)"/>
-        /// </summary>
-        public float Z
-        {
-            get { return IExecuteWithSignature<float>("getZ", "()F"); } set { IExecuteWithSignature("setZ", "(F)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("getDrawingCache", "()Landroid/graphics/Bitmap;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getDrawingCache(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Graphics.Bitmap GetDrawingCache(bool arg0)
         {
             return IExecuteWithSignature<Android.Graphics.Bitmap>("getDrawingCache", "(Z)Landroid/graphics/Bitmap;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getBackgroundTintBlendMode()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        public Android.Graphics.BlendMode GetBackgroundTintBlendMode()
+        {
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getBackgroundTintBlendMode", "()Landroid/graphics/BlendMode;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getForegroundTintBlendMode()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        public Android.Graphics.BlendMode GetForegroundTintBlendMode()
+        {
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getForegroundTintBlendMode", "()Landroid/graphics/BlendMode;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getBackground()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetBackground()
+        {
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getBackground", "()Landroid/graphics/drawable/Drawable;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getForeground()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetForeground()
+        {
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getForeground", "()Landroid/graphics/drawable/Drawable;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getHorizontalScrollbarThumbDrawable()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetHorizontalScrollbarThumbDrawable()
+        {
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getHorizontalScrollbarThumbDrawable", "()Landroid/graphics/drawable/Drawable;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getHorizontalScrollbarTrackDrawable()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetHorizontalScrollbarTrackDrawable()
+        {
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getHorizontalScrollbarTrackDrawable", "()Landroid/graphics/drawable/Drawable;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getVerticalScrollbarThumbDrawable()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetVerticalScrollbarThumbDrawable()
+        {
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getVerticalScrollbarThumbDrawable", "()Landroid/graphics/drawable/Drawable;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getVerticalScrollbarTrackDrawable()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetVerticalScrollbarTrackDrawable()
+        {
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getVerticalScrollbarTrackDrawable", "()Landroid/graphics/drawable/Drawable;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getAnimationMatrix()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Matrix"/></returns>
+        public Android.Graphics.Matrix GetAnimationMatrix()
+        {
+            return IExecuteWithSignature<Android.Graphics.Matrix>("getAnimationMatrix", "()Landroid/graphics/Matrix;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getMatrix()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Matrix"/></returns>
+        public Android.Graphics.Matrix GetMatrix()
+        {
+            return IExecuteWithSignature<Android.Graphics.Matrix>("getMatrix", "()Landroid/graphics/Matrix;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getBackgroundTintMode()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.PorterDuff.Mode"/></returns>
+        public Android.Graphics.PorterDuff.Mode GetBackgroundTintMode()
+        {
+            return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getBackgroundTintMode", "()Landroid/graphics/PorterDuff$Mode;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getForegroundTintMode()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.PorterDuff.Mode"/></returns>
+        public Android.Graphics.PorterDuff.Mode GetForegroundTintMode()
+        {
+            return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getForegroundTintMode", "()Landroid/graphics/PorterDuff$Mode;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getClipBounds()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetClipBounds()
+        {
+            return IExecuteWithSignature<Android.Graphics.Rect>("getClipBounds", "()Landroid/graphics/Rect;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getHandler()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.Handler"/></returns>
+        public Android.Os.Handler GetHandler()
+        {
+            return IExecuteWithSignature<Android.Os.Handler>("getHandler", "()Landroid/os/Handler;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getApplicationWindowToken()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.IBinder"/></returns>
+        public Android.Os.IBinder GetApplicationWindowToken()
+        {
+            return IExecuteWithSignature<Android.Os.IBinder>("getApplicationWindowToken", "()Landroid/os/IBinder;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getWindowToken()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.IBinder"/></returns>
+        public Android.Os.IBinder GetWindowToken()
+        {
+            return IExecuteWithSignature<Android.Os.IBinder>("getWindowToken", "()Landroid/os/IBinder;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#createAccessibilityNodeInfo()"/>
@@ -2154,6 +1226,14 @@ namespace Android.View
         public Android.View.Accessibility.AccessibilityNodeInfo CreateAccessibilityNodeInfo()
         {
             return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo>("createAccessibilityNodeInfo", "()Landroid/view/accessibility/AccessibilityNodeInfo;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getAccessibilityNodeProvider()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeProvider"/></returns>
+        public Android.View.Accessibility.AccessibilityNodeProvider GetAccessibilityNodeProvider()
+        {
+            return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeProvider>("getAccessibilityNodeProvider", "()Landroid/view/accessibility/AccessibilityNodeProvider;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#startActionMode(android.view.ActionMode.Callback,int)"/>
@@ -2175,6 +1255,30 @@ namespace Android.View
             return IExecuteWithSignature<Android.View.ActionMode>("startActionMode", "(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getAnimation()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Animation.Animation"/></returns>
+        public Android.View.Animation.Animation GetAnimation()
+        {
+            return IExecuteWithSignature<Android.View.Animation.Animation>("getAnimation", "()Landroid/view/animation/Animation;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getRootSurfaceControl()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.AttachedSurfaceControl"/></returns>
+        public Android.View.AttachedSurfaceControl GetRootSurfaceControl()
+        {
+            return IExecuteWithSignature<Android.View.AttachedSurfaceControl>("getRootSurfaceControl", "()Landroid/view/AttachedSurfaceControl;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getAutofillValue()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Autofill.AutofillValue"/></returns>
+        public Android.View.Autofill.AutofillValue GetAutofillValue()
+        {
+            return IExecuteWithSignature<Android.View.Autofill.AutofillValue>("getAutofillValue", "()Landroid/view/autofill/AutofillValue;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#onReceiveContent(android.view.ContentInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.ContentInfo"/></param>
@@ -2193,6 +1297,14 @@ namespace Android.View
             return IExecuteWithSignature<Android.View.ContentInfo>("performReceiveContent", "(Landroid/view/ContentInfo;)Landroid/view/ContentInfo;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getDisplay()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Display"/></returns>
+        public Android.View.Display GetDisplay()
+        {
+            return IExecuteWithSignature<Android.View.Display>("getDisplay", "()Landroid/view/Display;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#onCreateInputConnection(android.view.inputmethod.EditorInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Inputmethod.EditorInfo"/></param>
@@ -2200,6 +1312,22 @@ namespace Android.View
         public Android.View.Inputmethod.InputConnection OnCreateInputConnection(Android.View.Inputmethod.EditorInfo arg0)
         {
             return IExecuteWithSignature<Android.View.Inputmethod.InputConnection>("onCreateInputConnection", "(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getKeyDispatcherState()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.KeyEvent.DispatcherState"/></returns>
+        public Android.View.KeyEvent.DispatcherState GetKeyDispatcherState()
+        {
+            return IExecuteWithSignature<Android.View.KeyEvent.DispatcherState>("getKeyDispatcherState", "()Landroid/view/KeyEvent$DispatcherState;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getPointerIcon()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.PointerIcon"/></returns>
+        public Android.View.PointerIcon GetPointerIcon()
+        {
+            return IExecuteWithSignature<Android.View.PointerIcon>("getPointerIcon", "()Landroid/view/PointerIcon;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#onResolvePointerIcon(android.view.MotionEvent,int)"/>
@@ -2210,6 +1338,22 @@ namespace Android.View
         public Android.View.PointerIcon OnResolvePointerIcon(Android.View.MotionEvent arg0, int arg1)
         {
             return IExecute<Android.View.PointerIcon>("onResolvePointerIcon", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getTouchDelegate()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.TouchDelegate"/></returns>
+        public Android.View.TouchDelegate GetTouchDelegate()
+        {
+            return IExecuteWithSignature<Android.View.TouchDelegate>("getTouchDelegate", "()Landroid/view/TouchDelegate;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getViewTranslationResponse()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Translation.ViewTranslationResponse"/></returns>
+        public Android.View.Translation.ViewTranslationResponse GetViewTranslationResponse()
+        {
+            return IExecuteWithSignature<Android.View.Translation.ViewTranslationResponse>("getViewTranslationResponse", "()Landroid/view/translation/ViewTranslationResponse;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#findFocus()"/>
@@ -2229,6 +1373,14 @@ namespace Android.View
             return IExecuteWithSignature<Android.View.View>("focusSearch", "(I)Landroid/view/View;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getRootView()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.View"/></returns>
+        public Android.View.View GetRootView()
+        {
+            return IExecuteWithSignature<Android.View.View>("getRootView", "()Landroid/view/View;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#keyboardNavigationClusterSearch(android.view.View,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
@@ -2239,12 +1391,84 @@ namespace Android.View
             return IExecute<Android.View.View>("keyboardNavigationClusterSearch", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getAccessibilityDelegate()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.View.AccessibilityDelegate"/></returns>
+        public Android.View.View.AccessibilityDelegate GetAccessibilityDelegate()
+        {
+            return IExecuteWithSignature<Android.View.View.AccessibilityDelegate>("getAccessibilityDelegate", "()Landroid/view/View$AccessibilityDelegate;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getOnFocusChangeListener()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.View.OnFocusChangeListener"/></returns>
+        public Android.View.View.OnFocusChangeListener GetOnFocusChangeListener()
+        {
+            return IExecuteWithSignature<Android.View.View.OnFocusChangeListener>("getOnFocusChangeListener", "()Landroid/view/View$OnFocusChangeListener;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getOnFocusChangeListener()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.View.OnFocusChangeListener"/></returns>
+        public Android.View.View.OnFocusChangeListener GetOnFocusChangeListenerDirect()
+        {
+            return IExecuteWithSignature<Android.View.View.OnFocusChangeListenerDirect, Android.View.View.OnFocusChangeListener>("getOnFocusChangeListener", "()Landroid/view/View$OnFocusChangeListener;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getLayoutParams()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.ViewGroup.LayoutParams"/></returns>
+        public Android.View.ViewGroup.LayoutParams GetLayoutParams()
+        {
+            return IExecuteWithSignature<Android.View.ViewGroup.LayoutParams>("getLayoutParams", "()Landroid/view/ViewGroup$LayoutParams;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getOutlineProvider()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.ViewOutlineProvider"/></returns>
+        public Android.View.ViewOutlineProvider GetOutlineProvider()
+        {
+            return IExecuteWithSignature<Android.View.ViewOutlineProvider>("getOutlineProvider", "()Landroid/view/ViewOutlineProvider;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getOverlay()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.ViewOverlay"/></returns>
+        public Android.View.ViewOverlay GetOverlay()
+        {
+            return IExecuteWithSignature<Android.View.ViewOverlay>("getOverlay", "()Landroid/view/ViewOverlay;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getParentForAccessibility()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.ViewParent"/></returns>
+        public Android.View.ViewParent GetParentForAccessibility()
+        {
+            return IExecuteWithSignature<Android.View.ViewParent>("getParentForAccessibility", "()Landroid/view/ViewParent;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#animate()"/>
         /// </summary>
         /// <returns><see cref="Android.View.ViewPropertyAnimator"/></returns>
         public Android.View.ViewPropertyAnimator Animate()
         {
             return IExecuteWithSignature<Android.View.ViewPropertyAnimator>("animate", "()Landroid/view/ViewPropertyAnimator;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getViewTreeObserver()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.ViewTreeObserver"/></returns>
+        public Android.View.ViewTreeObserver GetViewTreeObserver()
+        {
+            return IExecuteWithSignature<Android.View.ViewTreeObserver>("getViewTreeObserver", "()Landroid/view/ViewTreeObserver;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getWindowId()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.WindowId"/></returns>
+        public Android.View.WindowId GetWindowId()
+        {
+            return IExecuteWithSignature<Android.View.WindowId>("getWindowId", "()Landroid/view/WindowId;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#computeSystemWindowInsets(android.view.WindowInsets,android.graphics.Rect)"/>
@@ -2276,6 +1500,14 @@ namespace Android.View
             return IExecute<Android.View.WindowInsets>("dispatchWindowInsetsAnimationProgress", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getRootWindowInsets()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.WindowInsets"/></returns>
+        public Android.View.WindowInsets GetRootWindowInsets()
+        {
+            return IExecuteWithSignature<Android.View.WindowInsets>("getRootWindowInsets", "()Landroid/view/WindowInsets;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#onApplyWindowInsets(android.view.WindowInsets)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.WindowInsets"/></param>
@@ -2293,6 +1525,14 @@ namespace Android.View
         public Android.View.WindowInsetsAnimation.Bounds DispatchWindowInsetsAnimationStart(Android.View.WindowInsetsAnimation arg0, Android.View.WindowInsetsAnimation.Bounds arg1)
         {
             return IExecute<Android.View.WindowInsetsAnimation.Bounds>("dispatchWindowInsetsAnimationStart", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getWindowInsetsController()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.WindowInsetsController"/></returns>
+        public Android.View.WindowInsetsController GetWindowInsetsController()
+        {
+            return IExecuteWithSignature<Android.View.WindowInsetsController>("getWindowInsetsController", "()Landroid/view/WindowInsetsController;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#callOnClick()"/>
@@ -2519,6 +1759,22 @@ namespace Android.View
             return IExecuteWithSignature<bool>("getClipBounds", "(Landroid/graphics/Rect;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getFilterTouchesWhenObscured()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetFilterTouchesWhenObscured()
+        {
+            return IExecuteWithSignature<bool>("getFilterTouchesWhenObscured", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getFitsSystemWindows()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetFitsSystemWindows()
+        {
+            return IExecuteWithSignature<bool>("getFitsSystemWindows", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getGlobalVisibleRect(android.graphics.Rect,android.graphics.Point)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
@@ -2527,6 +1783,14 @@ namespace Android.View
         public bool GetGlobalVisibleRect(Android.Graphics.Rect arg0, Android.Graphics.Point arg1)
         {
             return IExecute<bool>("getGlobalVisibleRect", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getKeepScreenOn()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetKeepScreenOn()
+        {
+            return IExecuteWithSignature<bool>("getKeepScreenOn", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#hasExplicitFocusable()"/>
@@ -2692,7 +1956,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/View.html#isDrawingCacheEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsDrawingCacheEnabled()
         {
             return IExecuteWithSignature<bool>("isDrawingCacheEnabled", "()Z");
@@ -3287,7 +2551,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/View.html#willNotCacheDrawing()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool WillNotCacheDrawing()
         {
             return IExecuteWithSignature<bool>("willNotCacheDrawing", "()Z");
@@ -3306,7 +2570,7 @@ namespace Android.View
         /// <param name="arg0"><see cref="int"/></param>
         /// <typeparam name="T"><see cref="Android.View.View"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T FindViewById<T>(int arg0) where T: Android.View.View
+        public T FindViewById<T>(int arg0) where T : Android.View.View
         {
             return IExecuteWithSignature<T>("findViewById", "(I)Landroid/view/View;", arg0);
         }
@@ -3316,7 +2580,7 @@ namespace Android.View
         /// <param name="arg0"><see cref="object"/></param>
         /// <typeparam name="T"><see cref="Android.View.View"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T FindViewWithTag<T>(object arg0) where T: Android.View.View
+        public T FindViewWithTag<T>(object arg0) where T : Android.View.View
         {
             return IExecuteWithSignature<T>("findViewWithTag", "(Ljava/lang/Object;)Landroid/view/View;", arg0);
         }
@@ -3326,9 +2590,41 @@ namespace Android.View
         /// <param name="arg0"><see cref="int"/></param>
         /// <typeparam name="T"><see cref="Android.View.View"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T RequireViewById<T>(int arg0) where T: Android.View.View
+        public T RequireViewById<T>(int arg0) where T : Android.View.View
         {
             return IExecuteWithSignature<T>("requireViewById", "(I)Landroid/view/View;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getContext()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Context"/></returns>
+        public Android.Content.Context GetContext()
+        {
+            return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getAutofillId()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Autofill.AutofillId"/></returns>
+        public Android.View.Autofill.AutofillId GetAutofillId()
+        {
+            return IExecuteWithSignature<Android.View.Autofill.AutofillId>("getAutofillId", "()Landroid/view/autofill/AutofillId;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getContentCaptureSession()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Contentcapture.ContentCaptureSession"/></returns>
+        public Android.View.Contentcapture.ContentCaptureSession GetContentCaptureSession()
+        {
+            return IExecuteWithSignature<Android.View.Contentcapture.ContentCaptureSession>("getContentCaptureSession", "()Landroid/view/contentcapture/ContentCaptureSession;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getParent()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.ViewParent"/></returns>
+        public Android.View.ViewParent GetParent()
+        {
+            return IExecuteWithSignature<Android.View.ViewParent>("getParent", "()Landroid/view/ViewParent;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#findOnBackInvokedDispatcher()"/>
@@ -3337,6 +2633,22 @@ namespace Android.View
         public Android.Window.OnBackInvokedDispatcher FindOnBackInvokedDispatcher()
         {
             return IExecuteWithSignature<Android.Window.OnBackInvokedDispatcher>("findOnBackInvokedDispatcher", "()Landroid/window/OnBackInvokedDispatcher;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getClipToOutline()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetClipToOutline()
+        {
+            return IExecuteWithSignature<bool>("getClipToOutline", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getDefaultFocusHighlightEnabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetDefaultFocusHighlightEnabled()
+        {
+            return IExecuteWithSignature<bool>("getDefaultFocusHighlightEnabled", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getGlobalVisibleRect(android.graphics.Rect)"/>
@@ -3363,6 +2675,14 @@ namespace Android.View
         public bool GetLocalVisibleRect(Android.Graphics.Rect arg0)
         {
             return IExecuteWithSignature<bool>("getLocalVisibleRect", "(Landroid/graphics/Rect;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getRevealOnFocusHint()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetRevealOnFocusHint()
+        {
+            return IExecuteWithSignature<bool>("getRevealOnFocusHint", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#isFocusable()"/>
@@ -3469,7 +2789,7 @@ namespace Android.View
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool StartDrag(Android.Content.ClipData arg0, Android.View.View.DragShadowBuilder arg1, object arg2, int arg3)
         {
             return IExecute<bool>("startDrag", arg0, arg1, arg2, arg3);
@@ -3485,6 +2805,134 @@ namespace Android.View
         public bool StartDragAndDrop(Android.Content.ClipData arg0, Android.View.View.DragShadowBuilder arg1, object arg2, int arg3)
         {
             return IExecute<bool>("startDragAndDrop", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getBottom()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBottom()
+        {
+            return IExecuteWithSignature<int>("getBottom", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHeight()
+        {
+            return IExecuteWithSignature<int>("getHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getLeft()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLeft()
+        {
+            return IExecuteWithSignature<int>("getLeft", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getMeasuredHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMeasuredHeight()
+        {
+            return IExecuteWithSignature<int>("getMeasuredHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getMeasuredHeightAndState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMeasuredHeightAndState()
+        {
+            return IExecuteWithSignature<int>("getMeasuredHeightAndState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getMeasuredState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMeasuredState()
+        {
+            return IExecuteWithSignature<int>("getMeasuredState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getMeasuredWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMeasuredWidth()
+        {
+            return IExecuteWithSignature<int>("getMeasuredWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getMeasuredWidthAndState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMeasuredWidthAndState()
+        {
+            return IExecuteWithSignature<int>("getMeasuredWidthAndState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getRight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRight()
+        {
+            return IExecuteWithSignature<int>("getRight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getScrollX()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetScrollX()
+        {
+            return IExecuteWithSignature<int>("getScrollX", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getScrollY()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetScrollY()
+        {
+            return IExecuteWithSignature<int>("getScrollY", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getTop()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTop()
+        {
+            return IExecuteWithSignature<int>("getTop", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWidth()
+        {
+            return IExecuteWithSignature<int>("getWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getDrawableState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetDrawableState()
+        {
+            return IExecuteWithSignatureArray<int>("getDrawableState", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getStateDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetStateDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getStateDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getPreferKeepClearRects()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Graphics.Rect> GetPreferKeepClearRects()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Graphics.Rect>>("getPreferKeepClearRects", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#cancelDragAndDrop()"/>
@@ -3539,6 +2987,22 @@ namespace Android.View
             IExecute("saveAttributeDataForStyleable", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setBottom(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetBottom(int arg0)
+        {
+            IExecuteWithSignature("setBottom", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setLeft(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetLeft(int arg0)
+        {
+            IExecuteWithSignature("setLeft", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setLeftTopRightBottom(int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -3558,6 +3022,30 @@ namespace Android.View
             IExecuteWithSignature("setPreferKeepClear", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setPreferKeepClearRects(java.util.List)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public void SetPreferKeepClearRects(Java.Util.List<Android.Graphics.Rect> arg0)
+        {
+            IExecuteWithSignature("setPreferKeepClearRects", "(Ljava/util/List;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setRevealOnFocusHint(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetRevealOnFocusHint(bool arg0)
+        {
+            IExecuteWithSignature("setRevealOnFocusHint", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setRight(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetRight(int arg0)
+        {
+            IExecuteWithSignature("setRight", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setScrollCaptureCallback(android.view.ScrollCaptureCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.ScrollCaptureCallback"/></param>
@@ -3566,12 +3054,616 @@ namespace Android.View
             IExecuteWithSignature("setScrollCaptureCallback", "(Landroid/view/ScrollCaptureCallback;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setTop(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetTop(int arg0)
+        {
+            IExecuteWithSignature("setTop", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setTransitionName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetTransitionName(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setTransitionName", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#updateDragShadow(android.view.View.DragShadowBuilder)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View.DragShadowBuilder"/></param>
         public void UpdateDragShadow(Android.View.View.DragShadowBuilder arg0)
         {
             IExecuteWithSignature("updateDragShadow", "(Landroid/view/View$DragShadowBuilder;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getAlpha()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetAlpha()
+        {
+            return IExecuteWithSignature<float>("getAlpha", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getCameraDistance()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetCameraDistance()
+        {
+            return IExecuteWithSignature<float>("getCameraDistance", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getElevation()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetElevation()
+        {
+            return IExecuteWithSignature<float>("getElevation", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getHandwritingBoundsOffsetBottom()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetHandwritingBoundsOffsetBottom()
+        {
+            return IExecuteWithSignature<float>("getHandwritingBoundsOffsetBottom", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getHandwritingBoundsOffsetLeft()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetHandwritingBoundsOffsetLeft()
+        {
+            return IExecuteWithSignature<float>("getHandwritingBoundsOffsetLeft", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getHandwritingBoundsOffsetRight()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetHandwritingBoundsOffsetRight()
+        {
+            return IExecuteWithSignature<float>("getHandwritingBoundsOffsetRight", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getHandwritingBoundsOffsetTop()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetHandwritingBoundsOffsetTop()
+        {
+            return IExecuteWithSignature<float>("getHandwritingBoundsOffsetTop", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getPivotX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetPivotX()
+        {
+            return IExecuteWithSignature<float>("getPivotX", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getPivotY()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetPivotY()
+        {
+            return IExecuteWithSignature<float>("getPivotY", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getRotation()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetRotation()
+        {
+            return IExecuteWithSignature<float>("getRotation", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getRotationX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetRotationX()
+        {
+            return IExecuteWithSignature<float>("getRotationX", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getRotationY()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetRotationY()
+        {
+            return IExecuteWithSignature<float>("getRotationY", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getScaleX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetScaleX()
+        {
+            return IExecuteWithSignature<float>("getScaleX", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getScaleY()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetScaleY()
+        {
+            return IExecuteWithSignature<float>("getScaleY", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getTransitionAlpha()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetTransitionAlpha()
+        {
+            return IExecuteWithSignature<float>("getTransitionAlpha", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getTranslationX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetTranslationX()
+        {
+            return IExecuteWithSignature<float>("getTranslationX", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getTranslationY()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetTranslationY()
+        {
+            return IExecuteWithSignature<float>("getTranslationY", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getTranslationZ()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetTranslationZ()
+        {
+            return IExecuteWithSignature<float>("getTranslationZ", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetX()
+        {
+            return IExecuteWithSignature<float>("getX", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getY()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetY()
+        {
+            return IExecuteWithSignature<float>("getY", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getZ()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetZ()
+        {
+            return IExecuteWithSignature<float>("getZ", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getAccessibilityLiveRegion()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAccessibilityLiveRegion()
+        {
+            return IExecuteWithSignature<int>("getAccessibilityLiveRegion", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getAccessibilityTraversalAfter()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAccessibilityTraversalAfter()
+        {
+            return IExecuteWithSignature<int>("getAccessibilityTraversalAfter", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getAccessibilityTraversalBefore()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAccessibilityTraversalBefore()
+        {
+            return IExecuteWithSignature<int>("getAccessibilityTraversalBefore", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getAutofillType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAutofillType()
+        {
+            return IExecuteWithSignature<int>("getAutofillType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getBaseline()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBaseline()
+        {
+            return IExecuteWithSignature<int>("getBaseline", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getDrawingCacheBackgroundColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetDrawingCacheBackgroundColor()
+        {
+            return IExecuteWithSignature<int>("getDrawingCacheBackgroundColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getDrawingCacheQuality()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetDrawingCacheQuality()
+        {
+            return IExecuteWithSignature<int>("getDrawingCacheQuality", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getExplicitStyle()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetExplicitStyle()
+        {
+            return IExecuteWithSignature<int>("getExplicitStyle", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getFocusable()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFocusable()
+        {
+            return IExecuteWithSignature<int>("getFocusable", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getForegroundGravity()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetForegroundGravity()
+        {
+            return IExecuteWithSignature<int>("getForegroundGravity", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getHorizontalFadingEdgeLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHorizontalFadingEdgeLength()
+        {
+            return IExecuteWithSignature<int>("getHorizontalFadingEdgeLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getImportantForAccessibility()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetImportantForAccessibility()
+        {
+            return IExecuteWithSignature<int>("getImportantForAccessibility", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getImportantForAutofill()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetImportantForAutofill()
+        {
+            return IExecuteWithSignature<int>("getImportantForAutofill", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getImportantForContentCapture()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetImportantForContentCapture()
+        {
+            return IExecuteWithSignature<int>("getImportantForContentCapture", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getLabelFor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLabelFor()
+        {
+            return IExecuteWithSignature<int>("getLabelFor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getLayerType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLayerType()
+        {
+            return IExecuteWithSignature<int>("getLayerType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getLayoutDirection()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLayoutDirection()
+        {
+            return IExecuteWithSignature<int>("getLayoutDirection", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getMinimumHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinimumHeight()
+        {
+            return IExecuteWithSignature<int>("getMinimumHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getMinimumWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinimumWidth()
+        {
+            return IExecuteWithSignature<int>("getMinimumWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getNextClusterForwardId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNextClusterForwardId()
+        {
+            return IExecuteWithSignature<int>("getNextClusterForwardId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getNextFocusDownId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNextFocusDownId()
+        {
+            return IExecuteWithSignature<int>("getNextFocusDownId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getNextFocusForwardId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNextFocusForwardId()
+        {
+            return IExecuteWithSignature<int>("getNextFocusForwardId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getNextFocusLeftId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNextFocusLeftId()
+        {
+            return IExecuteWithSignature<int>("getNextFocusLeftId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getNextFocusRightId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNextFocusRightId()
+        {
+            return IExecuteWithSignature<int>("getNextFocusRightId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getNextFocusUpId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNextFocusUpId()
+        {
+            return IExecuteWithSignature<int>("getNextFocusUpId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getOutlineAmbientShadowColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOutlineAmbientShadowColor()
+        {
+            return IExecuteWithSignature<int>("getOutlineAmbientShadowColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getOutlineSpotShadowColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOutlineSpotShadowColor()
+        {
+            return IExecuteWithSignature<int>("getOutlineSpotShadowColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getOverScrollMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOverScrollMode()
+        {
+            return IExecuteWithSignature<int>("getOverScrollMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getPaddingBottom()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPaddingBottom()
+        {
+            return IExecuteWithSignature<int>("getPaddingBottom", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getPaddingEnd()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPaddingEnd()
+        {
+            return IExecuteWithSignature<int>("getPaddingEnd", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getPaddingLeft()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPaddingLeft()
+        {
+            return IExecuteWithSignature<int>("getPaddingLeft", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getPaddingRight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPaddingRight()
+        {
+            return IExecuteWithSignature<int>("getPaddingRight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getPaddingStart()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPaddingStart()
+        {
+            return IExecuteWithSignature<int>("getPaddingStart", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getPaddingTop()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPaddingTop()
+        {
+            return IExecuteWithSignature<int>("getPaddingTop", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getScrollBarDefaultDelayBeforeFade()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetScrollBarDefaultDelayBeforeFade()
+        {
+            return IExecuteWithSignature<int>("getScrollBarDefaultDelayBeforeFade", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getScrollBarFadeDuration()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetScrollBarFadeDuration()
+        {
+            return IExecuteWithSignature<int>("getScrollBarFadeDuration", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getScrollBarSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetScrollBarSize()
+        {
+            return IExecuteWithSignature<int>("getScrollBarSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getScrollBarStyle()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetScrollBarStyle()
+        {
+            return IExecuteWithSignature<int>("getScrollBarStyle", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getScrollCaptureHint()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetScrollCaptureHint()
+        {
+            return IExecuteWithSignature<int>("getScrollCaptureHint", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getScrollIndicators()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetScrollIndicators()
+        {
+            return IExecuteWithSignature<int>("getScrollIndicators", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getSolidColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSolidColor()
+        {
+            return IExecuteWithSignature<int>("getSolidColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getSourceLayoutResId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSourceLayoutResId()
+        {
+            return IExecuteWithSignature<int>("getSourceLayoutResId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getSystemUiVisibility()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetSystemUiVisibility()
+        {
+            return IExecuteWithSignature<int>("getSystemUiVisibility", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getTextAlignment()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTextAlignment()
+        {
+            return IExecuteWithSignature<int>("getTextAlignment", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getTextDirection()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTextDirection()
+        {
+            return IExecuteWithSignature<int>("getTextDirection", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getVerticalFadingEdgeLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVerticalFadingEdgeLength()
+        {
+            return IExecuteWithSignature<int>("getVerticalFadingEdgeLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getVerticalScrollbarPosition()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVerticalScrollbarPosition()
+        {
+            return IExecuteWithSignature<int>("getVerticalScrollbarPosition", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getVerticalScrollbarWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVerticalScrollbarWidth()
+        {
+            return IExecuteWithSignature<int>("getVerticalScrollbarWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getVisibility()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVisibility()
+        {
+            return IExecuteWithSignature<int>("getVisibility", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getWindowSystemUiVisibility()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetWindowSystemUiVisibility()
+        {
+            return IExecuteWithSignature<int>("getWindowSystemUiVisibility", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getWindowVisibility()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWindowVisibility()
+        {
+            return IExecuteWithSignature<int>("getWindowVisibility", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getAttributeResolutionStack(int)"/>
@@ -3583,6 +3675,46 @@ namespace Android.View
             return IExecuteWithSignatureArray<int>("getAttributeResolutionStack", "(I)[I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getAccessibilityClassName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetAccessibilityClassName()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getAccessibilityClassName", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getAccessibilityPaneTitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetAccessibilityPaneTitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getAccessibilityPaneTitle", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getContentDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetContentDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getTooltipText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTooltipText()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTooltipText", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getTag()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object GetTag()
+        {
+            return IExecuteWithSignature("getTag", "()Ljava/lang/Object;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getTag(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -3592,6 +3724,54 @@ namespace Android.View
             return IExecuteWithSignature("getTag", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getHandwritingDelegatorCallback()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Runnable"/></returns>
+        public Java.Lang.Runnable GetHandwritingDelegatorCallback()
+        {
+            return IExecuteWithSignature<Java.Lang.Runnable>("getHandwritingDelegatorCallback", "()Ljava/lang/Runnable;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getAllowedHandwritingDelegatePackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAllowedHandwritingDelegatePackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAllowedHandwritingDelegatePackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getAllowedHandwritingDelegatorPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAllowedHandwritingDelegatorPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAllowedHandwritingDelegatorPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getTransitionName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTransitionName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTransitionName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getAutofillHints()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetAutofillHints()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getAutofillHints", "()[Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getReceiveContentMimeTypes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetReceiveContentMimeTypes()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getReceiveContentMimeTypes", "()[Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getFocusables(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -3599,6 +3779,46 @@ namespace Android.View
         public Java.Util.ArrayList<Android.View.View> GetFocusables(int arg0)
         {
             return IExecuteWithSignature<Java.Util.ArrayList<Android.View.View>>("getFocusables", "(I)Ljava/util/ArrayList;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getTouchables()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.ArrayList"/></returns>
+        public Java.Util.ArrayList<Android.View.View> GetTouchables()
+        {
+            return IExecuteWithSignature<Java.Util.ArrayList<Android.View.View>>("getTouchables", "()Ljava/util/ArrayList;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getSystemGestureExclusionRects()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Graphics.Rect> GetSystemGestureExclusionRects()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Graphics.Rect>>("getSystemGestureExclusionRects", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getAttributeSourceResourceMap()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.Integer, Java.Lang.Integer> GetAttributeSourceResourceMap()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.Integer, Java.Lang.Integer>>("getAttributeSourceResourceMap", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getDrawingTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDrawingTime()
+        {
+            return IExecuteWithSignature<long>("getDrawingTime", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getUniqueDrawingId()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetUniqueDrawingId()
+        {
+            return IExecuteWithSignature<long>("getUniqueDrawingId", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#addChildrenForAccessibility(java.util.ArrayList)"/>
@@ -3712,7 +3932,7 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#buildDrawingCache()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void BuildDrawingCache()
         {
             IExecuteWithSignature("buildDrawingCache", "()V");
@@ -3721,7 +3941,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/View.html#buildDrawingCache(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void BuildDrawingCache(bool arg0)
         {
             IExecuteWithSignature("buildDrawingCache", "(Z)V", arg0);
@@ -3779,7 +3999,7 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#destroyDrawingCache()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DestroyDrawingCache()
         {
             IExecuteWithSignature("destroyDrawingCache", "()V");
@@ -3873,7 +4093,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/View.html#dispatchSystemUiVisibilityChanged(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DispatchSystemUiVisibilityChanged(int arg0)
         {
             IExecuteWithSignature("dispatchSystemUiVisibilityChanged", "(I)V", arg0);
@@ -3906,7 +4126,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/View.html#dispatchWindowSystemUiVisiblityChanged(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DispatchWindowSystemUiVisiblityChanged(int arg0)
         {
             IExecuteWithSignature("dispatchWindowSystemUiVisiblityChanged", "(I)V", arg0);
@@ -4039,7 +4259,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/View.html#invalidate(android.graphics.Rect)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Invalidate(Android.Graphics.Rect arg0)
         {
             IExecuteWithSignature("invalidate", "(Landroid/graphics/Rect;)V", arg0);
@@ -4051,7 +4271,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Invalidate(int arg0, int arg1, int arg2, int arg3)
         {
             IExecute("invalidate", arg0, arg1, arg2, arg3);
@@ -4298,7 +4518,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/View.html#onWindowSystemUiVisibilityChanged(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnWindowSystemUiVisibilityChanged(int arg0)
         {
             IExecuteWithSignature("onWindowSystemUiVisibilityChanged", "(I)V", arg0);
@@ -4432,7 +4652,7 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#requestFitSystemWindows()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RequestFitSystemWindows()
         {
             IExecuteWithSignature("requestFitSystemWindows", "()V");
@@ -4543,6 +4763,38 @@ namespace Android.View
             IExecuteWithSignature("setAccessibilityHeading", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setAccessibilityLiveRegion(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetAccessibilityLiveRegion(int arg0)
+        {
+            IExecuteWithSignature("setAccessibilityLiveRegion", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setAccessibilityPaneTitle(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetAccessibilityPaneTitle(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setAccessibilityPaneTitle", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setAccessibilityTraversalAfter(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetAccessibilityTraversalAfter(int arg0)
+        {
+            IExecuteWithSignature("setAccessibilityTraversalAfter", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setAccessibilityTraversalBefore(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetAccessibilityTraversalBefore(int arg0)
+        {
+            IExecuteWithSignature("setAccessibilityTraversalBefore", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setActivated(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -4575,12 +4827,60 @@ namespace Android.View
             IExecuteWithSignature("setAllowedHandwritingDelegatorPackage", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setAlpha(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetAlpha(float arg0)
+        {
+            IExecuteWithSignature("setAlpha", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setAnimation(android.view.animation.Animation)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Animation.Animation"/></param>
+        public void SetAnimation(Android.View.Animation.Animation arg0)
+        {
+            IExecuteWithSignature("setAnimation", "(Landroid/view/animation/Animation;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setAnimationMatrix(android.graphics.Matrix)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Matrix"/></param>
+        public void SetAnimationMatrix(Android.Graphics.Matrix arg0)
+        {
+            IExecuteWithSignature("setAnimationMatrix", "(Landroid/graphics/Matrix;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setAutofillHints(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetAutofillHints(params Java.Lang.String[] arg0)
+        {
+            if (arg0.Length == 0) IExecuteWithSignature("setAutofillHints", "([Ljava/lang/String;)V"); else IExecuteWithSignature("setAutofillHints", "([Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setAutofillId(android.view.autofill.AutofillId)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Autofill.AutofillId"/></param>
+        public void SetAutofillId(Android.View.Autofill.AutofillId arg0)
+        {
+            IExecuteWithSignature("setAutofillId", "(Landroid/view/autofill/AutofillId;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setAutoHandwritingEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetAutoHandwritingEnabled(bool arg0)
         {
             IExecuteWithSignature("setAutoHandwritingEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setBackground(android.graphics.drawable.Drawable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
+        public void SetBackground(Android.Graphics.Drawable.Drawable arg0)
+        {
+            IExecuteWithSignature("setBackground", "(Landroid/graphics/drawable/Drawable;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setBackgroundColor(int)"/>
@@ -4594,7 +4894,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/View.html#setBackgroundDrawable(android.graphics.drawable.Drawable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetBackgroundDrawable(Android.Graphics.Drawable.Drawable arg0)
         {
             IExecuteWithSignature("setBackgroundDrawable", "(Landroid/graphics/drawable/Drawable;)V", arg0);
@@ -4608,12 +4908,76 @@ namespace Android.View
             IExecuteWithSignature("setBackgroundResource", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setBackgroundTintBlendMode(android.graphics.BlendMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.BlendMode"/></param>
+        public void SetBackgroundTintBlendMode(Android.Graphics.BlendMode arg0)
+        {
+            IExecuteWithSignature("setBackgroundTintBlendMode", "(Landroid/graphics/BlendMode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setBackgroundTintList(android.content.res.ColorStateList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.ColorStateList"/></param>
+        public void SetBackgroundTintList(Android.Content.Res.ColorStateList arg0)
+        {
+            IExecuteWithSignature("setBackgroundTintList", "(Landroid/content/res/ColorStateList;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setBackgroundTintMode(android.graphics.PorterDuff.Mode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.PorterDuff.Mode"/></param>
+        public void SetBackgroundTintMode(Android.Graphics.PorterDuff.Mode arg0)
+        {
+            IExecuteWithSignature("setBackgroundTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setCameraDistance(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetCameraDistance(float arg0)
+        {
+            IExecuteWithSignature("setCameraDistance", "(F)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setClickable(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetClickable(bool arg0)
         {
             IExecuteWithSignature("setClickable", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setClipBounds(android.graphics.Rect)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
+        public void SetClipBounds(Android.Graphics.Rect arg0)
+        {
+            IExecuteWithSignature("setClipBounds", "(Landroid/graphics/Rect;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setClipToOutline(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetClipToOutline(bool arg0)
+        {
+            IExecuteWithSignature("setClipToOutline", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setContentCaptureSession(android.view.contentcapture.ContentCaptureSession)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Contentcapture.ContentCaptureSession"/></param>
+        public void SetContentCaptureSession(Android.View.Contentcapture.ContentCaptureSession arg0)
+        {
+            IExecuteWithSignature("setContentCaptureSession", "(Landroid/view/contentcapture/ContentCaptureSession;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setContentDescription(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetContentDescription(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setContentDescription", "(Ljava/lang/CharSequence;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setContextClickable(boolean)"/>
@@ -4624,13 +4988,39 @@ namespace Android.View
             IExecuteWithSignature("setContextClickable", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setDefaultFocusHighlightEnabled(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetDefaultFocusHighlightEnabled(bool arg0)
+        {
+            IExecuteWithSignature("setDefaultFocusHighlightEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setDrawingCacheBackgroundColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetDrawingCacheBackgroundColor(int arg0)
+        {
+            IExecuteWithSignature("setDrawingCacheBackgroundColor", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setDrawingCacheEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetDrawingCacheEnabled(bool arg0)
         {
             IExecuteWithSignature("setDrawingCacheEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setDrawingCacheQuality(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetDrawingCacheQuality(int arg0)
+        {
+            IExecuteWithSignature("setDrawingCacheQuality", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setDuplicateParentStateEnabled(boolean)"/>
@@ -4639,6 +5029,14 @@ namespace Android.View
         public void SetDuplicateParentStateEnabled(bool arg0)
         {
             IExecuteWithSignature("setDuplicateParentStateEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setElevation(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetElevation(float arg0)
+        {
+            IExecuteWithSignature("setElevation", "(F)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setEnabled(boolean)"/>
@@ -4655,6 +5053,22 @@ namespace Android.View
         public void SetFadingEdgeLength(int arg0)
         {
             IExecuteWithSignature("setFadingEdgeLength", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setFilterTouchesWhenObscured(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetFilterTouchesWhenObscured(bool arg0)
+        {
+            IExecuteWithSignature("setFilterTouchesWhenObscured", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setFitsSystemWindows(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetFitsSystemWindows(bool arg0)
+        {
+            IExecuteWithSignature("setFitsSystemWindows", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setFocusable(boolean)"/>
@@ -4697,6 +5111,46 @@ namespace Android.View
             IExecuteWithSignature("setForceDarkAllowed", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setForeground(android.graphics.drawable.Drawable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
+        public void SetForeground(Android.Graphics.Drawable.Drawable arg0)
+        {
+            IExecuteWithSignature("setForeground", "(Landroid/graphics/drawable/Drawable;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setForegroundGravity(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetForegroundGravity(int arg0)
+        {
+            IExecuteWithSignature("setForegroundGravity", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setForegroundTintBlendMode(android.graphics.BlendMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.BlendMode"/></param>
+        public void SetForegroundTintBlendMode(Android.Graphics.BlendMode arg0)
+        {
+            IExecuteWithSignature("setForegroundTintBlendMode", "(Landroid/graphics/BlendMode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setForegroundTintList(android.content.res.ColorStateList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.ColorStateList"/></param>
+        public void SetForegroundTintList(Android.Content.Res.ColorStateList arg0)
+        {
+            IExecuteWithSignature("setForegroundTintList", "(Landroid/content/res/ColorStateList;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setForegroundTintMode(android.graphics.PorterDuff.Mode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.PorterDuff.Mode"/></param>
+        public void SetForegroundTintMode(Android.Graphics.PorterDuff.Mode arg0)
+        {
+            IExecuteWithSignature("setForegroundTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setHandwritingBoundsOffsets(float,float,float,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -4706,6 +5160,14 @@ namespace Android.View
         public void SetHandwritingBoundsOffsets(float arg0, float arg1, float arg2, float arg3)
         {
             IExecute("setHandwritingBoundsOffsets", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setHandwritingDelegatorCallback(java.lang.Runnable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        public void SetHandwritingDelegatorCallback(Java.Lang.Runnable arg0)
+        {
+            IExecuteWithSignature("setHandwritingDelegatorCallback", "(Ljava/lang/Runnable;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setHapticFeedbackEnabled(boolean)"/>
@@ -4740,12 +5202,60 @@ namespace Android.View
             IExecuteWithSignature("setHorizontalScrollBarEnabled", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setHorizontalScrollbarThumbDrawable(android.graphics.drawable.Drawable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
+        public void SetHorizontalScrollbarThumbDrawable(Android.Graphics.Drawable.Drawable arg0)
+        {
+            IExecuteWithSignature("setHorizontalScrollbarThumbDrawable", "(Landroid/graphics/drawable/Drawable;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setHorizontalScrollbarTrackDrawable(android.graphics.drawable.Drawable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
+        public void SetHorizontalScrollbarTrackDrawable(Android.Graphics.Drawable.Drawable arg0)
+        {
+            IExecuteWithSignature("setHorizontalScrollbarTrackDrawable", "(Landroid/graphics/drawable/Drawable;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setHovered(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetHovered(bool arg0)
         {
             IExecuteWithSignature("setHovered", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setId(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetId(int arg0)
+        {
+            IExecuteWithSignature("setId", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setImportantForAccessibility(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetImportantForAccessibility(int arg0)
+        {
+            IExecuteWithSignature("setImportantForAccessibility", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setImportantForAutofill(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetImportantForAutofill(int arg0)
+        {
+            IExecuteWithSignature("setImportantForAutofill", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setImportantForContentCapture(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetImportantForContentCapture(int arg0)
+        {
+            IExecuteWithSignature("setImportantForContentCapture", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setIsCredential(boolean)"/>
@@ -4764,12 +5274,28 @@ namespace Android.View
             IExecuteWithSignature("setIsHandwritingDelegate", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setKeepScreenOn(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetKeepScreenOn(bool arg0)
+        {
+            IExecuteWithSignature("setKeepScreenOn", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setKeyboardNavigationCluster(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetKeyboardNavigationCluster(bool arg0)
         {
             IExecuteWithSignature("setKeyboardNavigationCluster", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setLabelFor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetLabelFor(int arg0)
+        {
+            IExecuteWithSignature("setLabelFor", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setLayerPaint(android.graphics.Paint)"/>
@@ -4789,6 +5315,22 @@ namespace Android.View
             IExecute("setLayerType", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setLayoutDirection(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetLayoutDirection(int arg0)
+        {
+            IExecuteWithSignature("setLayoutDirection", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setLayoutParams(android.view.ViewGroup.LayoutParams)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.ViewGroup.LayoutParams"/></param>
+        public void SetLayoutParams(Android.View.ViewGroup.LayoutParams arg0)
+        {
+            IExecuteWithSignature("setLayoutParams", "(Landroid/view/ViewGroup$LayoutParams;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setLongClickable(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -4797,12 +5339,76 @@ namespace Android.View
             IExecuteWithSignature("setLongClickable", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setMinimumHeight(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMinimumHeight(int arg0)
+        {
+            IExecuteWithSignature("setMinimumHeight", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setMinimumWidth(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMinimumWidth(int arg0)
+        {
+            IExecuteWithSignature("setMinimumWidth", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setNestedScrollingEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetNestedScrollingEnabled(bool arg0)
         {
             IExecuteWithSignature("setNestedScrollingEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setNextClusterForwardId(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetNextClusterForwardId(int arg0)
+        {
+            IExecuteWithSignature("setNextClusterForwardId", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setNextFocusDownId(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetNextFocusDownId(int arg0)
+        {
+            IExecuteWithSignature("setNextFocusDownId", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setNextFocusForwardId(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetNextFocusForwardId(int arg0)
+        {
+            IExecuteWithSignature("setNextFocusForwardId", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setNextFocusLeftId(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetNextFocusLeftId(int arg0)
+        {
+            IExecuteWithSignature("setNextFocusLeftId", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setNextFocusRightId(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetNextFocusRightId(int arg0)
+        {
+            IExecuteWithSignature("setNextFocusRightId", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setNextFocusUpId(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetNextFocusUpId(int arg0)
+        {
+            IExecuteWithSignature("setNextFocusUpId", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setOnApplyWindowInsetsListener(android.view.View.OnApplyWindowInsetsListener)"/>
@@ -4913,7 +5519,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/View.html#setOnSystemUiVisibilityChangeListener(android.view.View.OnSystemUiVisibilityChangeListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View.OnSystemUiVisibilityChangeListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetOnSystemUiVisibilityChangeListener(Android.View.View.OnSystemUiVisibilityChangeListener arg0)
         {
             IExecuteWithSignature("setOnSystemUiVisibilityChangeListener", "(Landroid/view/View$OnSystemUiVisibilityChangeListener;)V", arg0);
@@ -4925,6 +5531,38 @@ namespace Android.View
         public void SetOnTouchListener(Android.View.View.OnTouchListener arg0)
         {
             IExecuteWithSignature("setOnTouchListener", "(Landroid/view/View$OnTouchListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setOutlineAmbientShadowColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetOutlineAmbientShadowColor(int arg0)
+        {
+            IExecuteWithSignature("setOutlineAmbientShadowColor", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setOutlineProvider(android.view.ViewOutlineProvider)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.ViewOutlineProvider"/></param>
+        public void SetOutlineProvider(Android.View.ViewOutlineProvider arg0)
+        {
+            IExecuteWithSignature("setOutlineProvider", "(Landroid/view/ViewOutlineProvider;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setOutlineSpotShadowColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetOutlineSpotShadowColor(int arg0)
+        {
+            IExecuteWithSignature("setOutlineSpotShadowColor", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setOverScrollMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetOverScrollMode(int arg0)
+        {
+            IExecuteWithSignature("setOverScrollMode", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setPadding(int,int,int,int)"/>
@@ -4949,6 +5587,30 @@ namespace Android.View
             IExecute("setPaddingRelative", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setPivotX(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetPivotX(float arg0)
+        {
+            IExecuteWithSignature("setPivotX", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setPivotY(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetPivotY(float arg0)
+        {
+            IExecuteWithSignature("setPivotY", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setPointerIcon(android.view.PointerIcon)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.PointerIcon"/></param>
+        public void SetPointerIcon(Android.View.PointerIcon arg0)
+        {
+            IExecuteWithSignature("setPointerIcon", "(Landroid/view/PointerIcon;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setPressed(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -4963,6 +5625,30 @@ namespace Android.View
         public void SetRenderEffect(Android.Graphics.RenderEffect arg0)
         {
             IExecuteWithSignature("setRenderEffect", "(Landroid/graphics/RenderEffect;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setRotation(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetRotation(float arg0)
+        {
+            IExecuteWithSignature("setRotation", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setRotationX(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetRotationX(float arg0)
+        {
+            IExecuteWithSignature("setRotationX", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setRotationY(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetRotationY(float arg0)
+        {
+            IExecuteWithSignature("setRotationY", "(F)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setSaveEnabled(boolean)"/>
@@ -4981,6 +5667,22 @@ namespace Android.View
             IExecuteWithSignature("setSaveFromParentEnabled", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setScaleX(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetScaleX(float arg0)
+        {
+            IExecuteWithSignature("setScaleX", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setScaleY(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetScaleY(float arg0)
+        {
+            IExecuteWithSignature("setScaleY", "(F)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setScreenReaderFocusable(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -4989,12 +5691,52 @@ namespace Android.View
             IExecuteWithSignature("setScreenReaderFocusable", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setScrollBarDefaultDelayBeforeFade(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetScrollBarDefaultDelayBeforeFade(int arg0)
+        {
+            IExecuteWithSignature("setScrollBarDefaultDelayBeforeFade", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setScrollBarFadeDuration(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetScrollBarFadeDuration(int arg0)
+        {
+            IExecuteWithSignature("setScrollBarFadeDuration", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setScrollbarFadingEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetScrollbarFadingEnabled(bool arg0)
         {
             IExecuteWithSignature("setScrollbarFadingEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setScrollBarSize(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetScrollBarSize(int arg0)
+        {
+            IExecuteWithSignature("setScrollBarSize", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setScrollBarStyle(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetScrollBarStyle(int arg0)
+        {
+            IExecuteWithSignature("setScrollBarStyle", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setScrollCaptureHint(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetScrollCaptureHint(int arg0)
+        {
+            IExecuteWithSignature("setScrollCaptureHint", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setScrollContainer(boolean)"/>
@@ -5014,6 +5756,30 @@ namespace Android.View
             IExecute("setScrollIndicators", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setScrollIndicators(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetScrollIndicators(int arg0)
+        {
+            IExecuteWithSignature("setScrollIndicators", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setScrollX(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetScrollX(int arg0)
+        {
+            IExecuteWithSignature("setScrollX", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setScrollY(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetScrollY(int arg0)
+        {
+            IExecuteWithSignature("setScrollY", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setSelected(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -5030,6 +5796,39 @@ namespace Android.View
             IExecuteWithSignature("setSoundEffectsEnabled", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setStateDescription(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetStateDescription(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setStateDescription", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setStateListAnimator(android.animation.StateListAnimator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Animation.StateListAnimator"/></param>
+        public void SetStateListAnimator(Android.Animation.StateListAnimator arg0)
+        {
+            IExecuteWithSignature("setStateListAnimator", "(Landroid/animation/StateListAnimator;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setSystemGestureExclusionRects(java.util.List)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public void SetSystemGestureExclusionRects(Java.Util.List<Android.Graphics.Rect> arg0)
+        {
+            IExecuteWithSignature("setSystemGestureExclusionRects", "(Ljava/util/List;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setSystemUiVisibility(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetSystemUiVisibility(int arg0)
+        {
+            IExecuteWithSignature("setSystemUiVisibility", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setTag(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -5039,12 +5838,84 @@ namespace Android.View
             IExecute("setTag", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setTag(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        public void SetTag(object arg0)
+        {
+            IExecuteWithSignature("setTag", "(Ljava/lang/Object;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setTextAlignment(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetTextAlignment(int arg0)
+        {
+            IExecuteWithSignature("setTextAlignment", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setTextDirection(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetTextDirection(int arg0)
+        {
+            IExecuteWithSignature("setTextDirection", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setTooltipText(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetTooltipText(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setTooltipText", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setTouchDelegate(android.view.TouchDelegate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.TouchDelegate"/></param>
+        public void SetTouchDelegate(Android.View.TouchDelegate arg0)
+        {
+            IExecuteWithSignature("setTouchDelegate", "(Landroid/view/TouchDelegate;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setTransitionAlpha(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetTransitionAlpha(float arg0)
+        {
+            IExecuteWithSignature("setTransitionAlpha", "(F)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setTransitionVisibility(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void SetTransitionVisibility(int arg0)
         {
             IExecuteWithSignature("setTransitionVisibility", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setTranslationX(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetTranslationX(float arg0)
+        {
+            IExecuteWithSignature("setTranslationX", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setTranslationY(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetTranslationY(float arg0)
+        {
+            IExecuteWithSignature("setTranslationY", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setTranslationZ(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetTranslationZ(float arg0)
+        {
+            IExecuteWithSignature("setTranslationZ", "(F)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setVerticalFadingEdgeEnabled(boolean)"/>
@@ -5063,6 +5934,30 @@ namespace Android.View
             IExecuteWithSignature("setVerticalScrollBarEnabled", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setVerticalScrollbarPosition(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetVerticalScrollbarPosition(int arg0)
+        {
+            IExecuteWithSignature("setVerticalScrollbarPosition", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setVerticalScrollbarThumbDrawable(android.graphics.drawable.Drawable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
+        public void SetVerticalScrollbarThumbDrawable(Android.Graphics.Drawable.Drawable arg0)
+        {
+            IExecuteWithSignature("setVerticalScrollbarThumbDrawable", "(Landroid/graphics/drawable/Drawable;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setVerticalScrollbarTrackDrawable(android.graphics.drawable.Drawable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
+        public void SetVerticalScrollbarTrackDrawable(Android.Graphics.Drawable.Drawable arg0)
+        {
+            IExecuteWithSignature("setVerticalScrollbarTrackDrawable", "(Landroid/graphics/drawable/Drawable;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setViewTranslationCallback(android.view.translation.ViewTranslationCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Translation.ViewTranslationCallback"/></param>
@@ -5071,10 +5966,18 @@ namespace Android.View
             IExecuteWithSignature("setViewTranslationCallback", "(Landroid/view/translation/ViewTranslationCallback;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setVisibility(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetVisibility(int arg0)
+        {
+            IExecuteWithSignature("setVisibility", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setWillNotCacheDrawing(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetWillNotCacheDrawing(bool arg0)
         {
             IExecuteWithSignature("setWillNotCacheDrawing", "(Z)V", arg0);
@@ -5094,6 +5997,30 @@ namespace Android.View
         public void SetWindowInsetsAnimationCallback(Android.View.WindowInsetsAnimation.Callback arg0)
         {
             IExecuteWithSignature("setWindowInsetsAnimationCallback", "(Landroid/view/WindowInsetsAnimation$Callback;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setX(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetX(float arg0)
+        {
+            IExecuteWithSignature("setX", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setY(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetY(float arg0)
+        {
+            IExecuteWithSignature("setY", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setZ(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetZ(float arg0)
+        {
+            IExecuteWithSignature("setZ", "(F)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#startAnimation(android.view.animation.Animation)"/>
@@ -5366,11 +6293,12 @@ namespace Android.View
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/View.DragShadowBuilder.html#getView()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/View.DragShadowBuilder.html#getView()"/>
             /// </summary>
-            public Android.View.View GetView
+            /// <returns><see cref="Android.View.View"/></returns>
+            public Android.View.View GetView()
             {
-                get { return IExecuteWithSignature<Android.View.View>("getView", "()Landroid/view/View;"); }
+                return IExecuteWithSignature<Android.View.View>("getView", "()Landroid/view/View;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.DragShadowBuilder.html#onDrawShadow(android.graphics.Canvas)"/>
@@ -5511,7 +6439,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onApplyWindowInsets", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnApplyWindowInsetsEventHandler));
+                AddEventHandler("onApplyWindowInsets", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnApplyWindowInsetsEventHandler));
 
             }
 
@@ -5519,7 +6447,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnApplyWindowInsetsListener.html#onApplyWindowInsets(android.view.View,android.view.WindowInsets)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnApplyWindowInsets"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.View, Android.View.WindowInsets, Android.View.WindowInsets> OnOnApplyWindowInsets { get; set; } = null;
+            public global::System.Func<Android.View.View, Android.View.WindowInsets, Android.View.WindowInsets> OnOnApplyWindowInsets { get; set; } = null;
 
             void OnApplyWindowInsetsEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
             {
@@ -5615,8 +6543,8 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onViewAttachedToWindow", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnViewAttachedToWindowEventHandler));
-                AddEventHandler("onViewDetachedFromWindow", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnViewDetachedFromWindowEventHandler));
+                AddEventHandler("onViewAttachedToWindow", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnViewAttachedToWindowEventHandler));
+                AddEventHandler("onViewDetachedFromWindow", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnViewDetachedFromWindowEventHandler));
 
             }
 
@@ -5624,7 +6552,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnAttachStateChangeListener.html#onViewAttachedToWindow(android.view.View)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnViewAttachedToWindow"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.View> OnOnViewAttachedToWindow { get; set; } = null;
+            public global::System.Action<Android.View.View> OnOnViewAttachedToWindow { get; set; } = null;
 
             void OnViewAttachedToWindowEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
             {
@@ -5645,7 +6573,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnAttachStateChangeListener.html#onViewDetachedFromWindow(android.view.View)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnViewDetachedFromWindow"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.View> OnOnViewDetachedFromWindow { get; set; } = null;
+            public global::System.Action<Android.View.View> OnOnViewDetachedFromWindow { get; set; } = null;
 
             void OnViewDetachedFromWindowEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
             {
@@ -5744,7 +6672,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onCapturedPointer", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnCapturedPointerEventHandler));
+                AddEventHandler("onCapturedPointer", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnCapturedPointerEventHandler));
 
             }
 
@@ -5752,7 +6680,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnCapturedPointerListener.html#onCapturedPointer(android.view.View,android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCapturedPointer"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.View, Android.View.MotionEvent, bool> OnOnCapturedPointer { get; set; } = null;
+            public global::System.Func<Android.View.View, Android.View.MotionEvent, bool> OnOnCapturedPointer { get; set; } = null;
 
             void OnCapturedPointerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
             {
@@ -5848,7 +6776,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onClick", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnClickEventHandler));
+                AddEventHandler("onClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnClickEventHandler));
 
             }
 
@@ -5856,7 +6784,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnClickListener.html#onClick(android.view.View)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnClick"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.View> OnOnClick { get; set; } = null;
+            public global::System.Action<Android.View.View> OnOnClick { get; set; } = null;
 
             void OnClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
             {
@@ -5947,7 +6875,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onContextClick", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnContextClickEventHandler));
+                AddEventHandler("onContextClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnContextClickEventHandler));
 
             }
 
@@ -5955,7 +6883,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnContextClickListener.html#onContextClick(android.view.View)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnContextClick"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.View, bool> OnOnContextClick { get; set; } = null;
+            public global::System.Func<Android.View.View, bool> OnOnContextClick { get; set; } = null;
 
             void OnContextClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
             {
@@ -6049,7 +6977,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onCreateContextMenu", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ContextMenu>>>(OnCreateContextMenuEventHandler));
+                AddEventHandler("onCreateContextMenu", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ContextMenu>>>(OnCreateContextMenuEventHandler));
 
             }
 
@@ -6057,7 +6985,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnCreateContextMenuListener.html#onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu.ContextMenuInfo)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCreateContextMenu"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.ContextMenu, Android.View.View, Android.View.ContextMenu.ContextMenuInfo> OnOnCreateContextMenu { get; set; } = null;
+            public global::System.Action<Android.View.ContextMenu, Android.View.View, Android.View.ContextMenu.ContextMenuInfo> OnOnCreateContextMenu { get; set; } = null;
 
             void OnCreateContextMenuEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.ContextMenu>> data)
             {
@@ -6152,7 +7080,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDrag", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnDragEventHandler));
+                AddEventHandler("onDrag", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnDragEventHandler));
 
             }
 
@@ -6160,7 +7088,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnDragListener.html#onDrag(android.view.View,android.view.DragEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDrag"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.View, Android.View.DragEvent, bool> OnOnDrag { get; set; } = null;
+            public global::System.Func<Android.View.View, Android.View.DragEvent, bool> OnOnDrag { get; set; } = null;
 
             void OnDragEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
             {
@@ -6256,7 +7184,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onFocusChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnFocusChangeEventHandler));
+                AddEventHandler("onFocusChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnFocusChangeEventHandler));
 
             }
 
@@ -6264,7 +7192,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnFocusChangeListener.html#onFocusChange(android.view.View,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFocusChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.View, bool> OnOnFocusChange { get; set; } = null;
+            public global::System.Action<Android.View.View, bool> OnOnFocusChange { get; set; } = null;
 
             void OnFocusChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
             {
@@ -6357,7 +7285,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onGenericMotion", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnGenericMotionEventHandler));
+                AddEventHandler("onGenericMotion", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnGenericMotionEventHandler));
 
             }
 
@@ -6365,7 +7293,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnGenericMotionListener.html#onGenericMotion(android.view.View,android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGenericMotion"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.View, Android.View.MotionEvent, bool> OnOnGenericMotion { get; set; } = null;
+            public global::System.Func<Android.View.View, Android.View.MotionEvent, bool> OnOnGenericMotion { get; set; } = null;
 
             void OnGenericMotionEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
             {
@@ -6461,7 +7389,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onHover", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnHoverEventHandler));
+                AddEventHandler("onHover", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnHoverEventHandler));
 
             }
 
@@ -6469,7 +7397,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnHoverListener.html#onHover(android.view.View,android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnHover"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.View, Android.View.MotionEvent, bool> OnOnHover { get; set; } = null;
+            public global::System.Func<Android.View.View, Android.View.MotionEvent, bool> OnOnHover { get; set; } = null;
 
             void OnHoverEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
             {
@@ -6565,7 +7493,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onKey", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnKeyEventHandler));
+                AddEventHandler("onKey", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnKeyEventHandler));
 
             }
 
@@ -6573,7 +7501,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnKeyListener.html#onKey(android.view.View,int,android.view.KeyEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnKey"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.View, int, Android.View.KeyEvent, bool> OnOnKey { get; set; } = null;
+            public global::System.Func<Android.View.View, int, Android.View.KeyEvent, bool> OnOnKey { get; set; } = null;
 
             void OnKeyEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
             {
@@ -6671,7 +7599,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onLayoutChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnLayoutChangeEventHandler));
+                AddEventHandler("onLayoutChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnLayoutChangeEventHandler));
 
             }
 
@@ -6679,7 +7607,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnLayoutChangeListener.html#onLayoutChange(android.view.View,int,int,int,int,int,int,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnLayoutChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.View, int, int, int, int, int, int, int, int> OnOnLayoutChange { get; set; } = null;
+            public global::System.Action<Android.View.View, int, int, int, int, int, int, int, int> OnOnLayoutChange { get; set; } = null;
 
             void OnLayoutChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
             {
@@ -6786,8 +7714,8 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onLongClick", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnLongClickEventHandler));
-                AddEventHandler("onLongClickUseDefaultHapticFeedback", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnLongClickUseDefaultHapticFeedbackEventHandler));
+                AddEventHandler("onLongClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnLongClickEventHandler));
+                AddEventHandler("onLongClickUseDefaultHapticFeedback", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnLongClickUseDefaultHapticFeedbackEventHandler));
 
             }
 
@@ -6795,7 +7723,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnLongClickListener.html#onLongClick(android.view.View)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnLongClick"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.View, bool> OnOnLongClick { get; set; } = null;
+            public global::System.Func<Android.View.View, bool> OnOnLongClick { get; set; } = null;
 
             void OnLongClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
             {
@@ -6828,7 +7756,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnLongClickListener.html#onLongClickUseDefaultHapticFeedback(android.view.View)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnLongClickUseDefaultHapticFeedback"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.View, bool> OnOnLongClickUseDefaultHapticFeedback { get; set; } = null;
+            public global::System.Func<Android.View.View, bool> OnOnLongClickUseDefaultHapticFeedback { get; set; } = null;
 
             void OnLongClickUseDefaultHapticFeedbackEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
             {
@@ -6932,7 +7860,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onScrollChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnScrollChangeEventHandler));
+                AddEventHandler("onScrollChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnScrollChangeEventHandler));
 
             }
 
@@ -6940,7 +7868,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnScrollChangeListener.html#onScrollChange(android.view.View,int,int,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScrollChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.View, int, int, int, int> OnOnScrollChange { get; set; } = null;
+            public global::System.Action<Android.View.View, int, int, int, int> OnOnScrollChange { get; set; } = null;
 
             void OnScrollChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
             {
@@ -7039,7 +7967,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onSystemUiVisibilityChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnSystemUiVisibilityChangeEventHandler));
+                AddEventHandler("onSystemUiVisibilityChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnSystemUiVisibilityChangeEventHandler));
 
             }
 
@@ -7047,7 +7975,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnSystemUiVisibilityChangeListener.html#onSystemUiVisibilityChange(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSystemUiVisibilityChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnSystemUiVisibilityChange { get; set; } = null;
+            public global::System.Action<int> OnOnSystemUiVisibilityChange { get; set; } = null;
 
             void OnSystemUiVisibilityChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -7059,7 +7987,7 @@ namespace Android.View
             /// <see href="https://developer.android.com/reference/android/view/View.OnSystemUiVisibilityChangeListener.html#onSystemUiVisibilityChange(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnSystemUiVisibilityChange(int arg0)
             {
                 
@@ -7099,7 +8027,7 @@ namespace Android.View
             /// <see href="https://developer.android.com/reference/android/view/View.OnSystemUiVisibilityChangeListener.html#onSystemUiVisibilityChange(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnSystemUiVisibilityChange(int arg0)
             {
                 IExecuteWithSignature("onSystemUiVisibilityChange", "(I)V", arg0);
@@ -7140,7 +8068,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onTouch", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnTouchEventHandler));
+                AddEventHandler("onTouch", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnTouchEventHandler));
 
             }
 
@@ -7148,7 +8076,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnTouchListener.html#onTouch(android.view.View,android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTouch"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.View, Android.View.MotionEvent, bool> OnOnTouch { get; set; } = null;
+            public global::System.Func<Android.View.View, Android.View.MotionEvent, bool> OnOnTouch { get; set; } = null;
 
             void OnTouchEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
             {
@@ -7244,7 +8172,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onUnhandledKeyEvent", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnUnhandledKeyEventEventHandler));
+                AddEventHandler("onUnhandledKeyEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnUnhandledKeyEventEventHandler));
 
             }
 
@@ -7252,7 +8180,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnUnhandledKeyEventListener.html#onUnhandledKeyEvent(android.view.View,android.view.KeyEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnUnhandledKeyEvent"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.View, Android.View.KeyEvent, bool> OnOnUnhandledKeyEvent { get; set; } = null;
+            public global::System.Func<Android.View.View, Android.View.KeyEvent, bool> OnOnUnhandledKeyEvent { get; set; } = null;
 
             void OnUnhandledKeyEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
             {

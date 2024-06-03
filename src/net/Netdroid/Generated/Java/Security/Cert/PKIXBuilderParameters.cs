@@ -30,7 +30,7 @@ namespace Java.Security.Cert
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXBuilderParameters.html#%3Cinit%3E(java.security.KeyStore,java.security.cert.CertSelector)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXBuilderParameters.html#%3Cinit%3E(java.security.KeyStore,java.security.cert.CertSelector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.KeyStore"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.CertSelector"/></param>
@@ -41,7 +41,7 @@ namespace Java.Security.Cert
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXBuilderParameters.html#%3Cinit%3E(java.util.Set,java.security.cert.CertSelector)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXBuilderParameters.html#%3Cinit%3E(java.util.Set,java.security.cert.CertSelector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.CertSelector"/></param>
@@ -67,11 +67,20 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXBuilderParameters.html#getMaxPathLength()"/> <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXBuilderParameters.html#setMaxPathLength(int)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXBuilderParameters.html#getMaxPathLength()"/>
         /// </summary>
-        public int MaxPathLength
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxPathLength()
         {
-            get { return IExecuteWithSignature<int>("getMaxPathLength", "()I"); } set { IExecuteWithSignature("setMaxPathLength", "(I)V", value); }
+            return IExecuteWithSignature<int>("getMaxPathLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXBuilderParameters.html#setMaxPathLength(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMaxPathLength(int arg0)
+        {
+            IExecuteWithSignature("setMaxPathLength", "(I)V", arg0);
         }
 
         #endregion

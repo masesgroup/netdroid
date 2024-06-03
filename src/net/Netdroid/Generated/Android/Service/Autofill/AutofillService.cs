@@ -64,13 +64,6 @@ namespace Android.Service.Autofill
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/AutofillService.html#getFillEventHistory()"/> 
-        /// </summary>
-        public Android.Service.Autofill.FillEventHistory FillEventHistory
-        {
-            get { return IExecuteWithSignature<Android.Service.Autofill.FillEventHistory>("getFillEventHistory", "()Landroid/service/autofill/FillEventHistory;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/AutofillService.html#onFillRequest(android.service.autofill.FillRequest,android.os.CancellationSignal,android.service.autofill.FillCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Service.Autofill.FillRequest"/></param>
@@ -88,6 +81,14 @@ namespace Android.Service.Autofill
         public void OnSaveRequest(Android.Service.Autofill.SaveRequest arg0, Android.Service.Autofill.SaveCallback arg1)
         {
             IExecute("onSaveRequest", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/autofill/AutofillService.html#getFillEventHistory()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Service.Autofill.FillEventHistory"/></returns>
+        public Android.Service.Autofill.FillEventHistory GetFillEventHistory()
+        {
+            return IExecuteWithSignature<Android.Service.Autofill.FillEventHistory>("getFillEventHistory", "()Landroid/service/autofill/FillEventHistory;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/AutofillService.html#onConnected()"/>

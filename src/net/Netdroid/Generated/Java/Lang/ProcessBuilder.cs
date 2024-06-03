@@ -30,7 +30,7 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#%3Cinit%3E(java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#%3Cinit%3E(java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public ProcessBuilder(params Java.Lang.String[] arg0)
@@ -38,7 +38,7 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#%3Cinit%3E(java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#%3Cinit%3E(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         public ProcessBuilder(Java.Util.List<Java.Lang.String> arg0)
@@ -58,7 +58,7 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#startPipeline(java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#startPipeline(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
@@ -72,7 +72,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#redirectErrorStream()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#redirectErrorStream()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool RedirectErrorStream()
@@ -80,7 +80,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("redirectErrorStream", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#directory()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#directory()"/>
         /// </summary>
         /// <returns><see cref="Java.Io.File"/></returns>
         public Java.Io.File Directory()
@@ -88,7 +88,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Io.File>("directory", "()Ljava/io/File;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#start()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#start()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Process"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -97,7 +97,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.Process>("start", "()Ljava/lang/Process;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#command(java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#command(java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
@@ -106,7 +106,7 @@ namespace Java.Lang
             if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.ProcessBuilder>("command", "([Ljava/lang/String;)Ljava/lang/ProcessBuilder;"); else return IExecuteWithSignature<Java.Lang.ProcessBuilder>("command", "([Ljava/lang/String;)Ljava/lang/ProcessBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#command(java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#command(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
@@ -115,7 +115,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.ProcessBuilder>("command", "(Ljava/util/List;)Ljava/lang/ProcessBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#directory(java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#directory(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
@@ -124,7 +124,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.ProcessBuilder>("directory", "(Ljava/io/File;)Ljava/lang/ProcessBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#inheritIO()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#inheritIO()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
         public Java.Lang.ProcessBuilder InheritIO()
@@ -132,7 +132,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.ProcessBuilder>("inheritIO", "()Ljava/lang/ProcessBuilder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#redirectError(java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#redirectError(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
@@ -141,7 +141,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.ProcessBuilder>("redirectError", "(Ljava/io/File;)Ljava/lang/ProcessBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#redirectError(java.lang.ProcessBuilder.Redirect)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#redirectError(java.lang.ProcessBuilder.Redirect)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ProcessBuilder.Redirect"/></param>
         /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
@@ -150,7 +150,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.ProcessBuilder>("redirectError", "(Ljava/lang/ProcessBuilder$Redirect;)Ljava/lang/ProcessBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#redirectErrorStream(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#redirectErrorStream(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
@@ -159,7 +159,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.ProcessBuilder>("redirectErrorStream", "(Z)Ljava/lang/ProcessBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#redirectInput(java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#redirectInput(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
@@ -168,7 +168,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.ProcessBuilder>("redirectInput", "(Ljava/io/File;)Ljava/lang/ProcessBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#redirectInput(java.lang.ProcessBuilder.Redirect)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#redirectInput(java.lang.ProcessBuilder.Redirect)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ProcessBuilder.Redirect"/></param>
         /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
@@ -177,7 +177,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.ProcessBuilder>("redirectInput", "(Ljava/lang/ProcessBuilder$Redirect;)Ljava/lang/ProcessBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#redirectOutput(java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#redirectOutput(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
@@ -186,7 +186,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.ProcessBuilder>("redirectOutput", "(Ljava/io/File;)Ljava/lang/ProcessBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#redirectOutput(java.lang.ProcessBuilder.Redirect)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#redirectOutput(java.lang.ProcessBuilder.Redirect)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ProcessBuilder.Redirect"/></param>
         /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
@@ -195,7 +195,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.ProcessBuilder>("redirectOutput", "(Ljava/lang/ProcessBuilder$Redirect;)Ljava/lang/ProcessBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#redirectError()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#redirectError()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect"/></returns>
         public Java.Lang.ProcessBuilder.Redirect RedirectError()
@@ -203,7 +203,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.ProcessBuilder.Redirect>("redirectError", "()Ljava/lang/ProcessBuilder$Redirect;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#redirectInput()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#redirectInput()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect"/></returns>
         public Java.Lang.ProcessBuilder.Redirect RedirectInput()
@@ -211,7 +211,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.ProcessBuilder.Redirect>("redirectInput", "()Ljava/lang/ProcessBuilder$Redirect;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#redirectOutput()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#redirectOutput()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect"/></returns>
         public Java.Lang.ProcessBuilder.Redirect RedirectOutput()
@@ -219,7 +219,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.ProcessBuilder.Redirect>("redirectOutput", "()Ljava/lang/ProcessBuilder$Redirect;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#command()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#command()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Lang.String> Command()
@@ -227,7 +227,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("command", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html#environment()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html#environment()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Map"/></returns>
         public Java.Util.Map<Java.Lang.String, Java.Lang.String> Environment()
@@ -251,19 +251,19 @@ namespace Java.Lang
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.Redirect.html#DISCARD"/>
+            /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.Redirect.html#DISCARD"/>
             /// </summary>
             public static Java.Lang.ProcessBuilder.Redirect DISCARD { get { if (!_DISCARDReady) { _DISCARDContent = SGetField<Java.Lang.ProcessBuilder.Redirect>(LocalBridgeClazz, "DISCARD"); _DISCARDReady = true; } return _DISCARDContent; } }
             private static Java.Lang.ProcessBuilder.Redirect _DISCARDContent = default;
             private static bool _DISCARDReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.Redirect.html#INHERIT"/>
+            /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.Redirect.html#INHERIT"/>
             /// </summary>
             public static Java.Lang.ProcessBuilder.Redirect INHERIT { get { if (!_INHERITReady) { _INHERITContent = SGetField<Java.Lang.ProcessBuilder.Redirect>(LocalBridgeClazz, "INHERIT"); _INHERITReady = true; } return _INHERITContent; } }
             private static Java.Lang.ProcessBuilder.Redirect _INHERITContent = default;
             private static bool _INHERITReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.Redirect.html#PIPE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.Redirect.html#PIPE"/>
             /// </summary>
             public static Java.Lang.ProcessBuilder.Redirect PIPE { get { if (!_PIPEReady) { _PIPEContent = SGetField<Java.Lang.ProcessBuilder.Redirect>(LocalBridgeClazz, "PIPE"); _PIPEReady = true; } return _PIPEContent; } }
             private static Java.Lang.ProcessBuilder.Redirect _PIPEContent = default;
@@ -273,7 +273,7 @@ namespace Java.Lang
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.Redirect.html#appendTo(java.io.File)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.Redirect.html#appendTo(java.io.File)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Io.File"/></param>
             /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect"/></returns>
@@ -282,7 +282,7 @@ namespace Java.Lang
                 return SExecuteWithSignature<Java.Lang.ProcessBuilder.Redirect>(LocalBridgeClazz, "appendTo", "(Ljava/io/File;)Ljava/lang/ProcessBuilder$Redirect;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.Redirect.html#from(java.io.File)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.Redirect.html#from(java.io.File)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Io.File"/></param>
             /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect"/></returns>
@@ -291,7 +291,7 @@ namespace Java.Lang
                 return SExecuteWithSignature<Java.Lang.ProcessBuilder.Redirect>(LocalBridgeClazz, "from", "(Ljava/io/File;)Ljava/lang/ProcessBuilder$Redirect;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.Redirect.html#to(java.io.File)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.Redirect.html#to(java.io.File)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Io.File"/></param>
             /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect"/></returns>
@@ -304,7 +304,7 @@ namespace Java.Lang
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.Redirect.html#file()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.Redirect.html#file()"/>
             /// </summary>
             /// <returns><see cref="Java.Io.File"/></returns>
             public Java.Io.File File()

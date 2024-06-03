@@ -76,39 +76,28 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfo.html#getEndIndex()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfo.html#getGraphemeSegmentFinder()"/>
         /// </summary>
-        public int EndIndex
+        /// <returns><see cref="Android.Text.SegmentFinder"/></returns>
+        public Android.Text.SegmentFinder GetGraphemeSegmentFinder()
         {
-            get { return IExecuteWithSignature<int>("getEndIndex", "()I"); }
+            return IExecuteWithSignature<Android.Text.SegmentFinder>("getGraphemeSegmentFinder", "()Landroid/text/SegmentFinder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfo.html#getGraphemeSegmentFinder()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfo.html#getLineSegmentFinder()"/>
         /// </summary>
-        public Android.Text.SegmentFinder GraphemeSegmentFinder
+        /// <returns><see cref="Android.Text.SegmentFinder"/></returns>
+        public Android.Text.SegmentFinder GetLineSegmentFinder()
         {
-            get { return IExecuteWithSignature<Android.Text.SegmentFinder>("getGraphemeSegmentFinder", "()Landroid/text/SegmentFinder;"); }
+            return IExecuteWithSignature<Android.Text.SegmentFinder>("getLineSegmentFinder", "()Landroid/text/SegmentFinder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfo.html#getLineSegmentFinder()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfo.html#getWordSegmentFinder()"/>
         /// </summary>
-        public Android.Text.SegmentFinder LineSegmentFinder
+        /// <returns><see cref="Android.Text.SegmentFinder"/></returns>
+        public Android.Text.SegmentFinder GetWordSegmentFinder()
         {
-            get { return IExecuteWithSignature<Android.Text.SegmentFinder>("getLineSegmentFinder", "()Landroid/text/SegmentFinder;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfo.html#getStartIndex()"/> 
-        /// </summary>
-        public int StartIndex
-        {
-            get { return IExecuteWithSignature<int>("getStartIndex", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfo.html#getWordSegmentFinder()"/> 
-        /// </summary>
-        public Android.Text.SegmentFinder WordSegmentFinder
-        {
-            get { return IExecuteWithSignature<Android.Text.SegmentFinder>("getWordSegmentFinder", "()Landroid/text/SegmentFinder;"); }
+            return IExecuteWithSignature<Android.Text.SegmentFinder>("getWordSegmentFinder", "()Landroid/text/SegmentFinder;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfo.html#describeContents()"/>
@@ -137,6 +126,14 @@ namespace Android.View.Inputmethod
             return IExecuteWithSignature<int>("getCharacterFlags", "(I)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfo.html#getEndIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEndIndex()
+        {
+            return IExecuteWithSignature<int>("getEndIndex", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfo.html#getOffsetForPosition(float,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -145,6 +142,14 @@ namespace Android.View.Inputmethod
         public int GetOffsetForPosition(float arg0, float arg1)
         {
             return IExecute<int>("getOffsetForPosition", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfo.html#getStartIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStartIndex()
+        {
+            return IExecuteWithSignature<int>("getStartIndex", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfo.html#getRangeForRect(android.graphics.RectF,android.text.SegmentFinder,android.text.Layout.TextInclusionStrategy)"/>

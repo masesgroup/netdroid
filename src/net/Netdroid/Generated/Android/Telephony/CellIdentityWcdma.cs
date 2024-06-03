@@ -52,83 +52,94 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getAdditionalPlmns()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getClosedSubscriberGroupInfo()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> AdditionalPlmns
+        /// <returns><see cref="Android.Telephony.ClosedSubscriberGroupInfo"/></returns>
+        public Android.Telephony.ClosedSubscriberGroupInfo GetClosedSubscriberGroupInfo()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getAdditionalPlmns", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Android.Telephony.ClosedSubscriberGroupInfo>("getClosedSubscriberGroupInfo", "()Landroid/telephony/ClosedSubscriberGroupInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getCid()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getCid()"/>
         /// </summary>
-        public int Cid
+        /// <returns><see cref="int"/></returns>
+        public int GetCid()
         {
-            get { return IExecuteWithSignature<int>("getCid", "()I"); }
+            return IExecuteWithSignature<int>("getCid", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getClosedSubscriberGroupInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getLac()"/>
         /// </summary>
-        public Android.Telephony.ClosedSubscriberGroupInfo ClosedSubscriberGroupInfo
+        /// <returns><see cref="int"/></returns>
+        public int GetLac()
         {
-            get { return IExecuteWithSignature<Android.Telephony.ClosedSubscriberGroupInfo>("getClosedSubscriberGroupInfo", "()Landroid/telephony/ClosedSubscriberGroupInfo;"); }
+            return IExecuteWithSignature<int>("getLac", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getLac()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getMcc()"/>
         /// </summary>
-        public int Lac
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetMcc()
         {
-            get { return IExecuteWithSignature<int>("getLac", "()I"); }
+            return IExecuteWithSignature<int>("getMcc", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getMcc()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getMnc()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int Mcc
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetMnc()
         {
-            get { return IExecuteWithSignature<int>("getMcc", "()I"); }
+            return IExecuteWithSignature<int>("getMnc", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getMccString()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getPsc()"/>
         /// </summary>
-        public Java.Lang.String MccString
+        /// <returns><see cref="int"/></returns>
+        public int GetPsc()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMccString", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<int>("getPsc", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getMnc()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getUarfcn()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int Mnc
+        /// <returns><see cref="int"/></returns>
+        public int GetUarfcn()
         {
-            get { return IExecuteWithSignature<int>("getMnc", "()I"); }
+            return IExecuteWithSignature<int>("getUarfcn", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getMncString()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getMccString()"/>
         /// </summary>
-        public Java.Lang.String MncString
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMccString()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMncString", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getMccString", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getMobileNetworkOperator()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getMncString()"/>
         /// </summary>
-        public Java.Lang.String MobileNetworkOperator
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMncString()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMobileNetworkOperator", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getMncString", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getPsc()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getMobileNetworkOperator()"/>
         /// </summary>
-        public int Psc
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMobileNetworkOperator()
         {
-            get { return IExecuteWithSignature<int>("getPsc", "()I"); }
+            return IExecuteWithSignature<Java.Lang.String>("getMobileNetworkOperator", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getUarfcn()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityWcdma.html#getAdditionalPlmns()"/>
         /// </summary>
-        public int Uarfcn
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetAdditionalPlmns()
         {
-            get { return IExecuteWithSignature<int>("getUarfcn", "()I"); }
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getAdditionalPlmns", "()Ljava/util/Set;");
         }
 
         #endregion

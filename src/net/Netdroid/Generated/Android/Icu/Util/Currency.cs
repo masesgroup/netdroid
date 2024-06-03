@@ -78,27 +78,6 @@ namespace Android.Icu.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getAvailableCurrencies()"/> 
-        /// </summary>
-        public static Java.Util.Set<Android.Icu.Util.Currency> AvailableCurrencies
-        {
-            get { return SExecuteWithSignature<Java.Util.Set<Android.Icu.Util.Currency>>(LocalBridgeClazz, "getAvailableCurrencies", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getAvailableLocales()"/> 
-        /// </summary>
-        public static Java.Util.Locale[] AvailableLocales
-        {
-            get { return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getAvailableULocales()"/> 
-        /// </summary>
-        public static Android.Icu.Util.ULocale[] AvailableULocales
-        {
-            get { return SExecuteWithSignatureArray<Android.Icu.Util.ULocale>(LocalBridgeClazz, "getAvailableULocales", "()[Landroid/icu/util/ULocale;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#fromJavaCurrency(java.util.Currency)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Currency"/></param>
@@ -133,6 +112,14 @@ namespace Android.Icu.Util
         public static Android.Icu.Util.Currency GetInstance(Java.Util.Locale arg0)
         {
             return SExecuteWithSignature<Android.Icu.Util.Currency>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;)Landroid/icu/util/Currency;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getAvailableULocales()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Util.ULocale"/></returns>
+        public static Android.Icu.Util.ULocale[] GetAvailableULocales()
+        {
+            return SExecuteWithSignatureArray<Android.Icu.Util.ULocale>(LocalBridgeClazz, "getAvailableULocales", "()[Landroid/icu/util/ULocale;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#isAvailable(java.lang.String,java.util.Date,java.util.Date)"/>
@@ -176,51 +163,33 @@ namespace Android.Icu.Util
         {
             return SExecuteArray<Java.Lang.String>(LocalBridgeClazz, "getAvailableCurrencyCodes", arg0, arg1);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getAvailableLocales()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public static Java.Util.Locale[] GetAvailableLocales()
+        {
+            return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getAvailableCurrencies()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set<Android.Icu.Util.Currency> GetAvailableCurrencies()
+        {
+            return SExecuteWithSignature<Java.Util.Set<Android.Icu.Util.Currency>>(LocalBridgeClazz, "getAvailableCurrencies", "()Ljava/util/Set;");
+        }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getCurrencyCode()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getRoundingIncrement()"/>
         /// </summary>
-        public Java.Lang.String CurrencyCode
+        /// <returns><see cref="double"/></returns>
+        public double GetRoundingIncrement()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCurrencyCode", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getDefaultFractionDigits()"/> 
-        /// </summary>
-        public int DefaultFractionDigits
-        {
-            get { return IExecuteWithSignature<int>("getDefaultFractionDigits", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getDisplayName()"/> 
-        /// </summary>
-        public Java.Lang.String DisplayName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getNumericCode()"/> 
-        /// </summary>
-        public int NumericCode
-        {
-            get { return IExecuteWithSignature<int>("getNumericCode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getRoundingIncrement()"/> 
-        /// </summary>
-        public double RoundingIncrement
-        {
-            get { return IExecuteWithSignature<double>("getRoundingIncrement", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getSymbol()"/> 
-        /// </summary>
-        public Java.Lang.String Symbol
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSymbol", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<double>("getRoundingIncrement", "()D");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getRoundingIncrement(android.icu.util.Currency.CurrencyUsage)"/>
@@ -232,6 +201,14 @@ namespace Android.Icu.Util
             return IExecuteWithSignature<double>("getRoundingIncrement", "(Landroid/icu/util/Currency$CurrencyUsage;)D", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getDefaultFractionDigits()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDefaultFractionDigits()
+        {
+            return IExecuteWithSignature<int>("getDefaultFractionDigits", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getDefaultFractionDigits(android.icu.util.Currency.CurrencyUsage)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Util.Currency.CurrencyUsage"/></param>
@@ -239,6 +216,30 @@ namespace Android.Icu.Util
         public int GetDefaultFractionDigits(Android.Icu.Util.Currency.CurrencyUsage arg0)
         {
             return IExecuteWithSignature<int>("getDefaultFractionDigits", "(Landroid/icu/util/Currency$CurrencyUsage;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getNumericCode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNumericCode()
+        {
+            return IExecuteWithSignature<int>("getNumericCode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getCurrencyCode()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCurrencyCode()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCurrencyCode", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getDisplayName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getDisplayName(java.util.Locale)"/>
@@ -294,6 +295,14 @@ namespace Android.Icu.Util
         public Java.Lang.String GetName(Java.Util.Locale arg0, int arg1, Java.Lang.String arg2, bool[] arg3)
         {
             return IExecute<Java.Lang.String>("getName", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getSymbol()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSymbol()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSymbol", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getSymbol(android.icu.util.ULocale)"/>

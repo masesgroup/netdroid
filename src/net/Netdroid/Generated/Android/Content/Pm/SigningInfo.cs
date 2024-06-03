@@ -60,18 +60,20 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/SigningInfo.html#getApkContentsSigners()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/pm/SigningInfo.html#getApkContentsSigners()"/>
         /// </summary>
-        public Android.Content.Pm.Signature[] ApkContentsSigners
+        /// <returns><see cref="Android.Content.Pm.Signature"/></returns>
+        public Android.Content.Pm.Signature[] GetApkContentsSigners()
         {
-            get { return IExecuteWithSignatureArray<Android.Content.Pm.Signature>("getApkContentsSigners", "()[Landroid/content/pm/Signature;"); }
+            return IExecuteWithSignatureArray<Android.Content.Pm.Signature>("getApkContentsSigners", "()[Landroid/content/pm/Signature;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/SigningInfo.html#getSigningCertificateHistory()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/pm/SigningInfo.html#getSigningCertificateHistory()"/>
         /// </summary>
-        public Android.Content.Pm.Signature[] SigningCertificateHistory
+        /// <returns><see cref="Android.Content.Pm.Signature"/></returns>
+        public Android.Content.Pm.Signature[] GetSigningCertificateHistory()
         {
-            get { return IExecuteWithSignatureArray<Android.Content.Pm.Signature>("getSigningCertificateHistory", "()[Landroid/content/pm/Signature;"); }
+            return IExecuteWithSignatureArray<Android.Content.Pm.Signature>("getSigningCertificateHistory", "()[Landroid/content/pm/Signature;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/SigningInfo.html#hasMultipleSigners()"/>

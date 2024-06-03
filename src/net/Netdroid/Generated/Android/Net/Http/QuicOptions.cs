@@ -46,40 +46,44 @@ namespace Android.Net.Http
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/QuicOptions.html#getAllowedQuicHosts()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> AllowedQuicHosts
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getAllowedQuicHosts", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/QuicOptions.html#getHandshakeUserAgent()"/> 
-        /// </summary>
-        public Java.Lang.String HandshakeUserAgent
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHandshakeUserAgent", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/QuicOptions.html#getIdleConnectionTimeout()"/> 
-        /// </summary>
-        public Java.Time.Duration IdleConnectionTimeout
-        {
-            get { return IExecuteWithSignature<Java.Time.Duration>("getIdleConnectionTimeout", "()Ljava/time/Duration;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/QuicOptions.html#getInMemoryServerConfigsCacheSize()"/> 
-        /// </summary>
-        public int InMemoryServerConfigsCacheSize
-        {
-            get { return IExecuteWithSignature<int>("getInMemoryServerConfigsCacheSize", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/QuicOptions.html#hasInMemoryServerConfigsCacheSize()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasInMemoryServerConfigsCacheSize()
         {
             return IExecuteWithSignature<bool>("hasInMemoryServerConfigsCacheSize", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/QuicOptions.html#getInMemoryServerConfigsCacheSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInMemoryServerConfigsCacheSize()
+        {
+            return IExecuteWithSignature<int>("getInMemoryServerConfigsCacheSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/QuicOptions.html#getHandshakeUserAgent()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetHandshakeUserAgent()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getHandshakeUserAgent", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/QuicOptions.html#getIdleConnectionTimeout()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.Duration"/></returns>
+        public Java.Time.Duration GetIdleConnectionTimeout()
+        {
+            return IExecuteWithSignature<Java.Time.Duration>("getIdleConnectionTimeout", "()Ljava/time/Duration;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/QuicOptions.html#getAllowedQuicHosts()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetAllowedQuicHosts()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getAllowedQuicHosts", "()Ljava/util/Set;");
         }
 
         #endregion

@@ -164,14 +164,14 @@ namespace Android.App.Usage
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/usage/UsageEvents.Event.html#MOVE_TO_BACKGROUND"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int MOVE_TO_BACKGROUND { get { if (!_MOVE_TO_BACKGROUNDReady) { _MOVE_TO_BACKGROUNDContent = SGetField<int>(LocalBridgeClazz, "MOVE_TO_BACKGROUND"); _MOVE_TO_BACKGROUNDReady = true; } return _MOVE_TO_BACKGROUNDContent; } }
             private static int _MOVE_TO_BACKGROUNDContent = default;
             private static bool _MOVE_TO_BACKGROUNDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/usage/UsageEvents.Event.html#MOVE_TO_FOREGROUND"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int MOVE_TO_FOREGROUND { get { if (!_MOVE_TO_FOREGROUNDReady) { _MOVE_TO_FOREGROUNDContent = SGetField<int>(LocalBridgeClazz, "MOVE_TO_FOREGROUND"); _MOVE_TO_FOREGROUNDReady = true; } return _MOVE_TO_FOREGROUNDContent; } }
             private static int _MOVE_TO_FOREGROUNDContent = default;
             private static bool _MOVE_TO_FOREGROUNDReady = false; // this is used because in case of generics 
@@ -220,53 +220,60 @@ namespace Android.App.Usage
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/usage/UsageEvents.Event.html#getAppStandbyBucket()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/usage/UsageEvents.Event.html#getConfiguration()"/>
             /// </summary>
-            public int AppStandbyBucket
+            /// <returns><see cref="Android.Content.Res.Configuration"/></returns>
+            public Android.Content.Res.Configuration GetConfiguration()
             {
-                get { return IExecuteWithSignature<int>("getAppStandbyBucket", "()I"); }
+                return IExecuteWithSignature<Android.Content.Res.Configuration>("getConfiguration", "()Landroid/content/res/Configuration;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/usage/UsageEvents.Event.html#getClassName()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/usage/UsageEvents.Event.html#getAppStandbyBucket()"/>
             /// </summary>
-            public Java.Lang.String ClassName
+            /// <returns><see cref="int"/></returns>
+            public int GetAppStandbyBucket()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getClassName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<int>("getAppStandbyBucket", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/usage/UsageEvents.Event.html#getConfiguration()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/usage/UsageEvents.Event.html#getEventType()"/>
             /// </summary>
-            public Android.Content.Res.Configuration Configuration
+            /// <returns><see cref="int"/></returns>
+            public int GetEventType()
             {
-                get { return IExecuteWithSignature<Android.Content.Res.Configuration>("getConfiguration", "()Landroid/content/res/Configuration;"); }
+                return IExecuteWithSignature<int>("getEventType", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/usage/UsageEvents.Event.html#getEventType()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/usage/UsageEvents.Event.html#getClassName()"/>
             /// </summary>
-            public int EventType
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetClassName()
             {
-                get { return IExecuteWithSignature<int>("getEventType", "()I"); }
+                return IExecuteWithSignature<Java.Lang.String>("getClassName", "()Ljava/lang/String;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/usage/UsageEvents.Event.html#getPackageName()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/usage/UsageEvents.Event.html#getPackageName()"/>
             /// </summary>
-            public Java.Lang.String PackageName
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetPackageName()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/usage/UsageEvents.Event.html#getShortcutId()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/usage/UsageEvents.Event.html#getShortcutId()"/>
             /// </summary>
-            public Java.Lang.String ShortcutId
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetShortcutId()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getShortcutId", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getShortcutId", "()Ljava/lang/String;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/usage/UsageEvents.Event.html#getTimeStamp()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/usage/UsageEvents.Event.html#getTimeStamp()"/>
             /// </summary>
-            public long TimeStamp
+            /// <returns><see cref="long"/></returns>
+            public long GetTimeStamp()
             {
-                get { return IExecuteWithSignature<long>("getTimeStamp", "()J"); }
+                return IExecuteWithSignature<long>("getTimeStamp", "()J");
             }
 
             #endregion

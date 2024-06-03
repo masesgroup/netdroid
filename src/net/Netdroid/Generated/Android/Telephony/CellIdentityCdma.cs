@@ -52,39 +52,44 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityCdma.html#getBasestationId()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityCdma.html#getBasestationId()"/>
         /// </summary>
-        public int BasestationId
+        /// <returns><see cref="int"/></returns>
+        public int GetBasestationId()
         {
-            get { return IExecuteWithSignature<int>("getBasestationId", "()I"); }
+            return IExecuteWithSignature<int>("getBasestationId", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityCdma.html#getLatitude()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityCdma.html#getLatitude()"/>
         /// </summary>
-        public int Latitude
+        /// <returns><see cref="int"/></returns>
+        public int GetLatitude()
         {
-            get { return IExecuteWithSignature<int>("getLatitude", "()I"); }
+            return IExecuteWithSignature<int>("getLatitude", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityCdma.html#getLongitude()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityCdma.html#getLongitude()"/>
         /// </summary>
-        public int Longitude
+        /// <returns><see cref="int"/></returns>
+        public int GetLongitude()
         {
-            get { return IExecuteWithSignature<int>("getLongitude", "()I"); }
+            return IExecuteWithSignature<int>("getLongitude", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityCdma.html#getNetworkId()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityCdma.html#getNetworkId()"/>
         /// </summary>
-        public int NetworkId
+        /// <returns><see cref="int"/></returns>
+        public int GetNetworkId()
         {
-            get { return IExecuteWithSignature<int>("getNetworkId", "()I"); }
+            return IExecuteWithSignature<int>("getNetworkId", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityCdma.html#getSystemId()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityCdma.html#getSystemId()"/>
         /// </summary>
-        public int SystemId
+        /// <returns><see cref="int"/></returns>
+        public int GetSystemId()
         {
-            get { return IExecuteWithSignature<int>("getSystemId", "()I"); }
+            return IExecuteWithSignature<int>("getSystemId", "()I");
         }
 
         #endregion

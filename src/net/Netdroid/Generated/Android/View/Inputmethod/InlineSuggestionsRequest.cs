@@ -58,46 +58,28 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionsRequest.html#getExtras()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionsRequest.html#getExtras()"/>
         /// </summary>
-        public Android.Os.Bundle Extras
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionsRequest.html#getHostPackageName()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionsRequest.html#getSupportedLocales()"/>
         /// </summary>
-        public Java.Lang.String HostPackageName
+        /// <returns><see cref="Android.Os.LocaleList"/></returns>
+        public Android.Os.LocaleList GetSupportedLocales()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHostPackageName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Os.LocaleList>("getSupportedLocales", "()Landroid/os/LocaleList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionsRequest.html#getInlinePresentationSpecs()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionsRequest.html#getInlineTooltipPresentationSpec()"/>
         /// </summary>
-        public Java.Util.List<Android.Widget.Inline.InlinePresentationSpec> InlinePresentationSpecs
+        /// <returns><see cref="Android.Widget.Inline.InlinePresentationSpec"/></returns>
+        public Android.Widget.Inline.InlinePresentationSpec GetInlineTooltipPresentationSpec()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Widget.Inline.InlinePresentationSpec>>("getInlinePresentationSpecs", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionsRequest.html#getInlineTooltipPresentationSpec()"/> 
-        /// </summary>
-        public Android.Widget.Inline.InlinePresentationSpec InlineTooltipPresentationSpec
-        {
-            get { return IExecuteWithSignature<Android.Widget.Inline.InlinePresentationSpec>("getInlineTooltipPresentationSpec", "()Landroid/widget/inline/InlinePresentationSpec;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionsRequest.html#getMaxSuggestionCount()"/> 
-        /// </summary>
-        public int MaxSuggestionCount
-        {
-            get { return IExecuteWithSignature<int>("getMaxSuggestionCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionsRequest.html#getSupportedLocales()"/> 
-        /// </summary>
-        public Android.Os.LocaleList SupportedLocales
-        {
-            get { return IExecuteWithSignature<Android.Os.LocaleList>("getSupportedLocales", "()Landroid/os/LocaleList;"); }
+            return IExecuteWithSignature<Android.Widget.Inline.InlinePresentationSpec>("getInlineTooltipPresentationSpec", "()Landroid/widget/inline/InlinePresentationSpec;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionsRequest.html#describeContents()"/>
@@ -106,6 +88,30 @@ namespace Android.View.Inputmethod
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionsRequest.html#getMaxSuggestionCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxSuggestionCount()
+        {
+            return IExecuteWithSignature<int>("getMaxSuggestionCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionsRequest.html#getHostPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetHostPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getHostPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionsRequest.html#getInlinePresentationSpecs()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Widget.Inline.InlinePresentationSpec> GetInlinePresentationSpecs()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Widget.Inline.InlinePresentationSpec>>("getInlinePresentationSpecs", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionsRequest.html#writeToParcel(android.os.Parcel,int)"/>

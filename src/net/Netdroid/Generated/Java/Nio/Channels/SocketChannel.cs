@@ -58,7 +58,7 @@ namespace Java.Nio.Channels
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SocketChannel.html#open()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SocketChannel.html#open()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.SocketChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -67,7 +67,7 @@ namespace Java.Nio.Channels
             return SExecuteWithSignature<Java.Nio.Channels.SocketChannel>(LocalBridgeClazz, "open", "()Ljava/nio/channels/SocketChannel;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SocketChannel.html#open(java.net.ProtocolFamily)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SocketChannel.html#open(java.net.ProtocolFamily)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.ProtocolFamily"/></param>
         /// <returns><see cref="Java.Nio.Channels.SocketChannel"/></returns>
@@ -77,7 +77,7 @@ namespace Java.Nio.Channels
             return SExecuteWithSignature<Java.Nio.Channels.SocketChannel>(LocalBridgeClazz, "open", "(Ljava/net/ProtocolFamily;)Ljava/nio/channels/SocketChannel;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SocketChannel.html#open(java.net.SocketAddress)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SocketChannel.html#open(java.net.SocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
         /// <returns><see cref="Java.Nio.Channels.SocketChannel"/></returns>
@@ -91,21 +91,7 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SocketChannel.html#getLocalAddress()"/> 
-        /// </summary>
-        public Java.Net.SocketAddress LocalAddress
-        {
-            get { return IExecuteWithSignature<Java.Net.SocketAddress>("getLocalAddress", "()Ljava/net/SocketAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SocketChannel.html#getRemoteAddress()"/> 
-        /// </summary>
-        public Java.Net.SocketAddress RemoteAddress
-        {
-            get { return IExecuteWithSignature<Java.Net.SocketAddress>("getRemoteAddress", "()Ljava/net/SocketAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SocketChannel.html#connect(java.net.SocketAddress)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SocketChannel.html#connect(java.net.SocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -115,7 +101,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<bool>("connect", "(Ljava/net/SocketAddress;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SocketChannel.html#finishConnect()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SocketChannel.html#finishConnect()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -124,7 +110,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<bool>("finishConnect", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SocketChannel.html#isConnected()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SocketChannel.html#isConnected()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsConnected()
@@ -132,7 +118,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<bool>("isConnected", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SocketChannel.html#isConnectionPending()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SocketChannel.html#isConnectionPending()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsConnectionPending()
@@ -140,7 +126,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<bool>("isConnectionPending", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SocketChannel.html#read(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SocketChannel.html#read(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="int"/></returns>
@@ -150,7 +136,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<int>("read", "(Ljava/nio/ByteBuffer;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SocketChannel.html#write(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SocketChannel.html#write(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="int"/></returns>
@@ -160,7 +146,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<int>("write", "(Ljava/nio/ByteBuffer;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SocketChannel.html#socket()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SocketChannel.html#socket()"/>
         /// </summary>
         /// <returns><see cref="Java.Net.Socket"/></returns>
         public Java.Net.Socket Socket()
@@ -168,7 +154,25 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Net.Socket>("socket", "()Ljava/net/Socket;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SocketChannel.html#shutdownInput()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SocketChannel.html#getLocalAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.SocketAddress"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Net.SocketAddress GetLocalAddress()
+        {
+            return IExecuteWithSignature<Java.Net.SocketAddress>("getLocalAddress", "()Ljava/net/SocketAddress;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SocketChannel.html#getRemoteAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.SocketAddress"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Net.SocketAddress GetRemoteAddress()
+        {
+            return IExecuteWithSignature<Java.Net.SocketAddress>("getRemoteAddress", "()Ljava/net/SocketAddress;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SocketChannel.html#shutdownInput()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.SocketChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -177,7 +181,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.SocketChannel>("shutdownInput", "()Ljava/nio/channels/SocketChannel;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SocketChannel.html#shutdownOutput()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SocketChannel.html#shutdownOutput()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.SocketChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -186,7 +190,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.SocketChannel>("shutdownOutput", "()Ljava/nio/channels/SocketChannel;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SocketChannel.html#read(java.nio.ByteBuffer[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SocketChannel.html#read(java.nio.ByteBuffer[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -198,7 +202,7 @@ namespace Java.Nio.Channels
             return IExecute<long>("read", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SocketChannel.html#write(java.nio.ByteBuffer[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SocketChannel.html#write(java.nio.ByteBuffer[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -210,7 +214,7 @@ namespace Java.Nio.Channels
             return IExecute<long>("write", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SocketChannel.html#read(java.nio.ByteBuffer[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SocketChannel.html#read(java.nio.ByteBuffer[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="long"/></returns>
@@ -220,7 +224,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<long>("read", "([Ljava/nio/ByteBuffer;)J", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SocketChannel.html#write(java.nio.ByteBuffer[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SocketChannel.html#write(java.nio.ByteBuffer[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="long"/></returns>
@@ -230,7 +234,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<long>("write", "([Ljava/nio/ByteBuffer;)J", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SocketChannel.html#bind(java.net.SocketAddress)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SocketChannel.html#bind(java.net.SocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
         /// <returns><see cref="Java.Nio.Channels.NetworkChannel"/></returns>
@@ -240,7 +244,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.NetworkChannel>("bind", "(Ljava/net/SocketAddress;)Ljava/nio/channels/NetworkChannel;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SocketChannel.html#setOption(java.net.SocketOption,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SocketChannel.html#setOption(java.net.SocketOption,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
         /// <param name="arg1"><see cref="object"/></param>

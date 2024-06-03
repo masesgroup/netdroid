@@ -36,7 +36,7 @@ namespace Android.Preference
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public MultiSelectListPreference(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -47,7 +47,7 @@ namespace Android.Preference
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public MultiSelectListPreference(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -57,7 +57,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public MultiSelectListPreference(Android.Content.Context arg0, Android.Util.AttributeSet arg1)
             : base(arg0, arg1)
         {
@@ -66,7 +66,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/MultiSelectListPreference.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public MultiSelectListPreference(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -88,44 +88,47 @@ namespace Android.Preference
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/MultiSelectListPreference.html#getEntries()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.CharSequence[] Entries
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.CharSequence>("getEntries", "()[Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/MultiSelectListPreference.html#getEntryValues()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.CharSequence[] EntryValues
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.CharSequence>("getEntryValues", "()[Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/MultiSelectListPreference.html#getValues()"/> <see href="https://developer.android.com/reference/android/preference/MultiSelectListPreference.html#setValues(java.util.Set)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Util.Set<Java.Lang.String> Values
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getValues", "()Ljava/util/Set;"); } set { IExecuteWithSignature("setValues", "(Ljava/util/Set;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/MultiSelectListPreference.html#findIndexOfValue(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int FindIndexOfValue(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<int>("findIndexOfValue", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/MultiSelectListPreference.html#getEntries()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.CharSequence[] GetEntries()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.CharSequence>("getEntries", "()[Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/MultiSelectListPreference.html#getEntryValues()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.CharSequence[] GetEntryValues()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.CharSequence>("getEntryValues", "()[Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/MultiSelectListPreference.html#getValues()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        [global::System.Obsolete()]
+        public Java.Util.Set<Java.Lang.String> GetValues()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getValues", "()Ljava/util/Set;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/MultiSelectListPreference.html#setEntries(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetEntries(int arg0)
         {
             IExecuteWithSignature("setEntries", "(I)V", arg0);
@@ -134,7 +137,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/MultiSelectListPreference.html#setEntries(java.lang.CharSequence[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetEntries(Java.Lang.CharSequence[] arg0)
         {
             IExecuteWithSignature("setEntries", "([Ljava/lang/CharSequence;)V", new object[] { arg0 });
@@ -143,7 +146,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/MultiSelectListPreference.html#setEntryValues(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetEntryValues(int arg0)
         {
             IExecuteWithSignature("setEntryValues", "(I)V", arg0);
@@ -152,10 +155,19 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/MultiSelectListPreference.html#setEntryValues(java.lang.CharSequence[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetEntryValues(Java.Lang.CharSequence[] arg0)
         {
             IExecuteWithSignature("setEntryValues", "([Ljava/lang/CharSequence;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/MultiSelectListPreference.html#setValues(java.util.Set)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        [global::System.Obsolete()]
+        public void SetValues(Java.Util.Set<Java.Lang.String> arg0)
+        {
+            IExecuteWithSignature("setValues", "(Ljava/util/Set;)V", arg0);
         }
 
         #endregion

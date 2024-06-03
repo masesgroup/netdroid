@@ -46,42 +46,10 @@ namespace Android.Location
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GpsSatellite.html#getAzimuth()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public float Azimuth
-        {
-            get { return IExecuteWithSignature<float>("getAzimuth", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GpsSatellite.html#getElevation()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public float Elevation
-        {
-            get { return IExecuteWithSignature<float>("getElevation", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GpsSatellite.html#getPrn()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int Prn
-        {
-            get { return IExecuteWithSignature<int>("getPrn", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GpsSatellite.html#getSnr()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public float Snr
-        {
-            get { return IExecuteWithSignature<float>("getSnr", "()F"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GpsSatellite.html#hasAlmanac()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool HasAlmanac()
         {
             return IExecuteWithSignature<bool>("hasAlmanac", "()Z");
@@ -90,7 +58,7 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/GpsSatellite.html#hasEphemeris()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool HasEphemeris()
         {
             return IExecuteWithSignature<bool>("hasEphemeris", "()Z");
@@ -99,10 +67,46 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/GpsSatellite.html#usedInFix()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool UsedInFix()
         {
             return IExecuteWithSignature<bool>("usedInFix", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GpsSatellite.html#getAzimuth()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        [global::System.Obsolete()]
+        public float GetAzimuth()
+        {
+            return IExecuteWithSignature<float>("getAzimuth", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GpsSatellite.html#getElevation()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        [global::System.Obsolete()]
+        public float GetElevation()
+        {
+            return IExecuteWithSignature<float>("getElevation", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GpsSatellite.html#getSnr()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        [global::System.Obsolete()]
+        public float GetSnr()
+        {
+            return IExecuteWithSignature<float>("getSnr", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GpsSatellite.html#getPrn()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetPrn()
+        {
+            return IExecuteWithSignature<int>("getPrn", "()I");
         }
 
         #endregion

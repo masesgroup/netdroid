@@ -30,7 +30,7 @@ namespace Javax.Net.Ssl
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#%3Cinit%3E(java.lang.String[],java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#%3Cinit%3E(java.lang.String[],java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -39,7 +39,7 @@ namespace Javax.Net.Ssl
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#%3Cinit%3E(java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#%3Cinit%3E(java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public SSLParameters(Java.Lang.String[] arg0)
@@ -63,88 +63,196 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#getAlgorithmConstraints()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#setAlgorithmConstraints(java.security.AlgorithmConstraints)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#getEnableRetransmissions()"/>
         /// </summary>
-        public Java.Security.AlgorithmConstraints AlgorithmConstraints
+        /// <returns><see cref="bool"/></returns>
+        public bool GetEnableRetransmissions()
         {
-            get { return IExecuteWithSignature<Java.Security.AlgorithmConstraints>("getAlgorithmConstraints", "()Ljava/security/AlgorithmConstraints;"); } set { IExecuteWithSignature("setAlgorithmConstraints", "(Ljava/security/AlgorithmConstraints;)V", value); }
+            return IExecuteWithSignature<bool>("getEnableRetransmissions", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#getApplicationProtocols()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#setApplicationProtocols(java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#getNeedClientAuth()"/>
         /// </summary>
-        public Java.Lang.String[] ApplicationProtocols
+        /// <returns><see cref="bool"/></returns>
+        public bool GetNeedClientAuth()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getApplicationProtocols", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setApplicationProtocols", "([Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<bool>("getNeedClientAuth", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#getCipherSuites()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#setCipherSuites(java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#getWantClientAuth()"/>
         /// </summary>
-        public Java.Lang.String[] CipherSuites
+        /// <returns><see cref="bool"/></returns>
+        public bool GetWantClientAuth()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getCipherSuites", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setCipherSuites", "([Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<bool>("getWantClientAuth", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#getEnableRetransmissions()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#setEnableRetransmissions(boolean)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#getUseCipherSuitesOrder()"/>
         /// </summary>
-        public bool EnableRetransmissions
+        /// <returns><see cref="bool"/></returns>
+        public bool GetUseCipherSuitesOrder()
         {
-            get { return IExecuteWithSignature<bool>("getEnableRetransmissions", "()Z"); } set { IExecuteWithSignature("setEnableRetransmissions", "(Z)V", value); }
+            return IExecuteWithSignature<bool>("getUseCipherSuitesOrder", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#getEndpointIdentificationAlgorithm()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#setEndpointIdentificationAlgorithm(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#getSNIMatchers()"/>
         /// </summary>
-        public Java.Lang.String EndpointIdentificationAlgorithm
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<Javax.Net.Ssl.SNIMatcher> GetSNIMatchers()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEndpointIdentificationAlgorithm", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setEndpointIdentificationAlgorithm", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Util.Collection<Javax.Net.Ssl.SNIMatcher>>("getSNIMatchers", "()Ljava/util/Collection;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#getMaximumPacketSize()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#setMaximumPacketSize(int)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#getServerNames()"/>
         /// </summary>
-        public int MaximumPacketSize
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Javax.Net.Ssl.SNIServerName> GetServerNames()
         {
-            get { return IExecuteWithSignature<int>("getMaximumPacketSize", "()I"); } set { IExecuteWithSignature("setMaximumPacketSize", "(I)V", value); }
+            return IExecuteWithSignature<Java.Util.List<Javax.Net.Ssl.SNIServerName>>("getServerNames", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#getNeedClientAuth()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#setNeedClientAuth(boolean)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#setServerNames(java.util.List)"/>
         /// </summary>
-        public bool NeedClientAuth
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public void SetServerNames(Java.Util.List<Javax.Net.Ssl.SNIServerName> arg0)
         {
-            get { return IExecuteWithSignature<bool>("getNeedClientAuth", "()Z"); } set { IExecuteWithSignature("setNeedClientAuth", "(Z)V", value); }
+            IExecuteWithSignature("setServerNames", "(Ljava/util/List;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#getProtocols()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#setProtocols(java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#setSNIMatchers(java.util.Collection)"/>
         /// </summary>
-        public Java.Lang.String[] Protocols
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        public void SetSNIMatchers(Java.Util.Collection<Javax.Net.Ssl.SNIMatcher> arg0)
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getProtocols", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setProtocols", "([Ljava/lang/String;)V", value); }
+            IExecuteWithSignature("setSNIMatchers", "(Ljava/util/Collection;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#getServerNames()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#setServerNames(java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#setUseCipherSuitesOrder(boolean)"/>
         /// </summary>
-        public Java.Util.List<Javax.Net.Ssl.SNIServerName> ServerNames
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetUseCipherSuitesOrder(bool arg0)
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Net.Ssl.SNIServerName>>("getServerNames", "()Ljava/util/List;"); } set { IExecuteWithSignature("setServerNames", "(Ljava/util/List;)V", value); }
+            IExecuteWithSignature("setUseCipherSuitesOrder", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#getSNIMatchers()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#setSNIMatchers(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#getMaximumPacketSize()"/>
         /// </summary>
-        public Java.Util.Collection<Javax.Net.Ssl.SNIMatcher> SNIMatchers
+        /// <returns><see cref="int"/></returns>
+        public int GetMaximumPacketSize()
         {
-            get { return IExecuteWithSignature<Java.Util.Collection<Javax.Net.Ssl.SNIMatcher>>("getSNIMatchers", "()Ljava/util/Collection;"); } set { IExecuteWithSignature("setSNIMatchers", "(Ljava/util/Collection;)V", value); }
+            return IExecuteWithSignature<int>("getMaximumPacketSize", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#getUseCipherSuitesOrder()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#setUseCipherSuitesOrder(boolean)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#getEndpointIdentificationAlgorithm()"/>
         /// </summary>
-        public bool UseCipherSuitesOrder
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEndpointIdentificationAlgorithm()
         {
-            get { return IExecuteWithSignature<bool>("getUseCipherSuitesOrder", "()Z"); } set { IExecuteWithSignature("setUseCipherSuitesOrder", "(Z)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getEndpointIdentificationAlgorithm", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#getWantClientAuth()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html#setWantClientAuth(boolean)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#getApplicationProtocols()"/>
         /// </summary>
-        public bool WantClientAuth
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetApplicationProtocols()
         {
-            get { return IExecuteWithSignature<bool>("getWantClientAuth", "()Z"); } set { IExecuteWithSignature("setWantClientAuth", "(Z)V", value); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getApplicationProtocols", "()[Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#getCipherSuites()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetCipherSuites()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getCipherSuites", "()[Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#getProtocols()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetProtocols()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getProtocols", "()[Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#getAlgorithmConstraints()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.AlgorithmConstraints"/></returns>
+        public Java.Security.AlgorithmConstraints GetAlgorithmConstraints()
+        {
+            return IExecuteWithSignature<Java.Security.AlgorithmConstraints>("getAlgorithmConstraints", "()Ljava/security/AlgorithmConstraints;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#setAlgorithmConstraints(java.security.AlgorithmConstraints)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.AlgorithmConstraints"/></param>
+        public void SetAlgorithmConstraints(Java.Security.AlgorithmConstraints arg0)
+        {
+            IExecuteWithSignature("setAlgorithmConstraints", "(Ljava/security/AlgorithmConstraints;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#setApplicationProtocols(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetApplicationProtocols(Java.Lang.String[] arg0)
+        {
+            IExecuteWithSignature("setApplicationProtocols", "([Ljava/lang/String;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#setCipherSuites(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetCipherSuites(Java.Lang.String[] arg0)
+        {
+            IExecuteWithSignature("setCipherSuites", "([Ljava/lang/String;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#setEnableRetransmissions(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetEnableRetransmissions(bool arg0)
+        {
+            IExecuteWithSignature("setEnableRetransmissions", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#setEndpointIdentificationAlgorithm(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetEndpointIdentificationAlgorithm(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setEndpointIdentificationAlgorithm", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#setMaximumPacketSize(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMaximumPacketSize(int arg0)
+        {
+            IExecuteWithSignature("setMaximumPacketSize", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#setNeedClientAuth(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetNeedClientAuth(bool arg0)
+        {
+            IExecuteWithSignature("setNeedClientAuth", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#setProtocols(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetProtocols(Java.Lang.String[] arg0)
+        {
+            IExecuteWithSignature("setProtocols", "([Ljava/lang/String;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html#setWantClientAuth(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetWantClientAuth(bool arg0)
+        {
+            IExecuteWithSignature("setWantClientAuth", "(Z)V", arg0);
         }
 
         #endregion

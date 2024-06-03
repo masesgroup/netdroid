@@ -64,11 +64,12 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/EdECKey.html#getParams()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/EdECKey.html#getParams()"/>
         /// </summary>
-        public Java.Security.Spec.NamedParameterSpec Params
+        /// <returns><see cref="Java.Security.Spec.NamedParameterSpec"/></returns>
+        public Java.Security.Spec.NamedParameterSpec GetParams()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.NamedParameterSpec>("getParams", "()Ljava/security/spec/NamedParameterSpec;"); }
+            return IExecuteWithSignature<Java.Security.Spec.NamedParameterSpec>("getParams", "()Ljava/security/spec/NamedParameterSpec;");
         }
 
         #endregion

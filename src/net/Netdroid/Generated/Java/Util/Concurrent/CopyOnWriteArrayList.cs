@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#%3Cinit%3E(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public CopyOnWriteArrayList(Java.Util.Collection arg0)
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#toArray(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#toArray(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -79,7 +79,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignatureArray<object>("toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#add(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#add(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -88,7 +88,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addAll(int,java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#addAll(int,java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
@@ -98,7 +98,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("addAll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#addAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -107,7 +107,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("addAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addIfAbsent(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#addIfAbsent(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -116,7 +116,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("addIfAbsent", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#contains(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#contains(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -125,7 +125,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#containsAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#containsAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -134,7 +134,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("containsAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#isEmpty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#isEmpty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
@@ -142,7 +142,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#remove(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -151,7 +151,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#removeAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#removeAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -160,7 +160,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("removeAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#removeIf(java.util.function.Predicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#removeIf(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -169,7 +169,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("removeIf", "(Ljava/util/function/Predicate;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#retainAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#retainAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -178,7 +178,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("retainAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#get(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#get(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="object"/></returns>
@@ -187,7 +187,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("get", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#remove(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#remove(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="object"/></returns>
@@ -196,7 +196,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("remove", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#set(int,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#set(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -206,7 +206,7 @@ namespace Java.Util.Concurrent
             return IExecute("set", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addAllAbsent(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#addAllAbsent(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="int"/></returns>
@@ -215,7 +215,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("addAllAbsent", "(Ljava/util/Collection;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#indexOf(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#indexOf(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -225,7 +225,7 @@ namespace Java.Util.Concurrent
             return IExecute<int>("indexOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#indexOf(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#indexOf(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -234,7 +234,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#lastIndexOf(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#lastIndexOf(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -244,7 +244,7 @@ namespace Java.Util.Concurrent
             return IExecute<int>("lastIndexOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#lastIndexOf(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#lastIndexOf(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -253,7 +253,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#size()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Size()
@@ -261,7 +261,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#toArray()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#toArray()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
@@ -269,7 +269,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#iterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
@@ -277,7 +277,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#subList(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#subList(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -287,7 +287,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.List>("subList", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#listIterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#listIterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public Java.Util.ListIterator ListIterator()
@@ -295,7 +295,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.ListIterator>("listIterator", "()Ljava/util/ListIterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#listIterator(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#listIterator(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
@@ -304,7 +304,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.ListIterator>("listIterator", "(I)Ljava/util/ListIterator;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#spliterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#spliterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator Spliterator()
@@ -312,7 +312,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Spliterator>("spliterator", "()Ljava/util/Spliterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#add(int,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#add(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -321,14 +321,14 @@ namespace Java.Util.Concurrent
             IExecute("add", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#clear()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#forEach(java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#forEach(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         public void ForEach(Java.Util.Function.Consumer arg0)
@@ -336,7 +336,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("forEach", "(Ljava/util/function/Consumer;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#replaceAll(java.util.function.UnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#replaceAll(java.util.function.UnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
         public void ReplaceAll(Java.Util.Function.UnaryOperator arg0)
@@ -359,7 +359,7 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#%3Cinit%3E(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#%3Cinit%3E(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         public CopyOnWriteArrayList(E[] arg0)
@@ -367,7 +367,7 @@ namespace Java.Util.Concurrent
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#%3Cinit%3E(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public CopyOnWriteArrayList(Java.Util.Collection<E> arg0)
@@ -411,7 +411,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#toArray(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#toArray(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <typeparam name="T"></typeparam>
@@ -421,7 +421,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignatureArray<T>("toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#add(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#add(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -430,28 +430,28 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addAll(int,java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#addAll(int,java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg1ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE: E
+        public bool AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE : E
         {
             return IExecute<bool>("addAll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#addAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
+        public bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
             return IExecuteWithSignature<bool>("addAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addIfAbsent(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#addIfAbsent(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -460,7 +460,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("addIfAbsent", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#contains(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#contains(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -469,7 +469,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#containsAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#containsAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -478,7 +478,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("containsAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#isEmpty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#isEmpty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
@@ -486,7 +486,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#remove(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -495,7 +495,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#removeAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#removeAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -504,17 +504,17 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("removeAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#removeIf(java.util.function.Predicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#removeIf(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool RemoveIf<Arg0objectSuperE>(Java.Util.Function.Predicate<Arg0objectSuperE> arg0) where Arg0objectSuperE: E
+        public bool RemoveIf<Arg0objectSuperE>(Java.Util.Function.Predicate<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
         {
             return IExecuteWithSignature<bool>("removeIf", "(Ljava/util/function/Predicate;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#retainAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#retainAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -523,7 +523,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("retainAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#get(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#get(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><typeparamref name="E"/></returns>
@@ -532,7 +532,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("get", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#remove(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#remove(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><typeparamref name="E"/></returns>
@@ -541,7 +541,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("remove", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#set(int,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#set(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -551,17 +551,17 @@ namespace Java.Util.Concurrent
             return IExecute<E>("set", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addAllAbsent(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#addAllAbsent(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public int AddAllAbsent<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
+        public int AddAllAbsent<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
             return IExecuteWithSignature<int>("addAllAbsent", "(Ljava/util/Collection;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#indexOf(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#indexOf(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -571,7 +571,7 @@ namespace Java.Util.Concurrent
             return IExecute<int>("indexOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#indexOf(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#indexOf(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -580,7 +580,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#lastIndexOf(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#lastIndexOf(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -590,7 +590,7 @@ namespace Java.Util.Concurrent
             return IExecute<int>("lastIndexOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#lastIndexOf(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#lastIndexOf(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -599,7 +599,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#size()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Size()
@@ -607,7 +607,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#toArray()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#toArray()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
@@ -615,7 +615,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#iterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> Iterator()
@@ -623,7 +623,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Iterator<E>>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#subList(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#subList(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -633,7 +633,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.List<E>>("subList", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#listIterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#listIterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public Java.Util.ListIterator<E> ListIterator()
@@ -641,7 +641,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.ListIterator<E>>("listIterator", "()Ljava/util/ListIterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#listIterator(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#listIterator(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
@@ -650,7 +650,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.ListIterator<E>>("listIterator", "(I)Ljava/util/ListIterator;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#spliterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#spliterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator<E> Spliterator()
@@ -658,7 +658,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Spliterator<E>>("spliterator", "()Ljava/util/Spliterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#add(int,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#add(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -667,23 +667,23 @@ namespace Java.Util.Concurrent
             IExecute("add", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#clear()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#forEach(java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#forEach(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
-        public void ForEach<Arg0objectSuperE>(Java.Util.Function.Consumer<Arg0objectSuperE> arg0) where Arg0objectSuperE: E
+        public void ForEach<Arg0objectSuperE>(Java.Util.Function.Consumer<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
         {
             IExecuteWithSignature("forEach", "(Ljava/util/function/Consumer;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html#replaceAll(java.util.function.UnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#replaceAll(java.util.function.UnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
         public void ReplaceAll(Java.Util.Function.UnaryOperator<E> arg0)

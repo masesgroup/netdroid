@@ -52,18 +52,12 @@ namespace Android.Telephony.Data
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/TrafficDescriptor.html#getDataNetworkName()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/data/TrafficDescriptor.html#getOsAppId()"/>
         /// </summary>
-        public Java.Lang.String DataNetworkName
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetOsAppId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDataNetworkName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/TrafficDescriptor.html#getOsAppId()"/> 
-        /// </summary>
-        public byte[] OsAppId
-        {
-            get { return IExecuteWithSignatureArray<byte>("getOsAppId", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getOsAppId", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/data/TrafficDescriptor.html#describeContents()"/>
@@ -72,6 +66,14 @@ namespace Android.Telephony.Data
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/TrafficDescriptor.html#getDataNetworkName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDataNetworkName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDataNetworkName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/data/TrafficDescriptor.html#writeToParcel(android.os.Parcel,int)"/>

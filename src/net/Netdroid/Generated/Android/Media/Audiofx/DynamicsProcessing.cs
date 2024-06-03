@@ -76,20 +76,6 @@ namespace Android.Media.Audiofx
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getChannelCount()"/> 
-        /// </summary>
-        public int ChannelCount
-        {
-            get { return IExecuteWithSignature<int>("getChannelCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getConfig()"/> 
-        /// </summary>
-        public Android.Media.Audiofx.DynamicsProcessing.Config GetConfig
-        {
-            get { return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config>("getConfig", "()Landroid/media/audiofx/DynamicsProcessing$Config;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getChannelByChannelIndex(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -97,6 +83,14 @@ namespace Android.Media.Audiofx
         public Android.Media.Audiofx.DynamicsProcessing.Channel GetChannelByChannelIndex(int arg0)
         {
             return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Channel>("getChannelByChannelIndex", "(I)Landroid/media/audiofx/DynamicsProcessing$Channel;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getConfig()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Config"/></returns>
+        public Android.Media.Audiofx.DynamicsProcessing.Config GetConfig()
+        {
+            return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config>("getConfig", "()Landroid/media/audiofx/DynamicsProcessing$Config;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getPostEqByChannelIndex(int)"/>
@@ -172,6 +166,14 @@ namespace Android.Media.Audiofx
         public float GetInputGainByChannelIndex(int arg0)
         {
             return IExecuteWithSignature<float>("getInputGainByChannelIndex", "(I)F", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getChannelCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChannelCount()
+        {
+            return IExecuteWithSignature<int>("getChannelCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setAllChannelsTo(android.media.audiofx.DynamicsProcessing.Channel)"/>
@@ -366,19 +368,28 @@ namespace Android.Media.Audiofx
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.BandBase.html#getCutoffFrequency()"/> <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.BandBase.html#setCutoffFrequency(float)"/>
-            /// </summary>
-            public float CutoffFrequency
-            {
-                get { return IExecuteWithSignature<float>("getCutoffFrequency", "()F"); } set { IExecuteWithSignature("setCutoffFrequency", "(F)V", value); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.BandBase.html#isEnabled()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
             public bool IsEnabled()
             {
                 return IExecuteWithSignature<bool>("isEnabled", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.BandBase.html#getCutoffFrequency()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            public float GetCutoffFrequency()
+            {
+                return IExecuteWithSignature<float>("getCutoffFrequency", "()F");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.BandBase.html#setCutoffFrequency(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            public void SetCutoffFrequency(float arg0)
+            {
+                IExecuteWithSignature("setCutoffFrequency", "(F)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.BandBase.html#setEnabled(boolean)"/>
@@ -430,11 +441,12 @@ namespace Android.Media.Audiofx
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.BandStage.html#getBandCount()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.BandStage.html#getBandCount()"/>
             /// </summary>
-            public int BandCount
+            /// <returns><see cref="int"/></returns>
+            public int GetBandCount()
             {
-                get { return IExecuteWithSignature<int>("getBandCount", "()I"); }
+                return IExecuteWithSignature<int>("getBandCount", "()I");
             }
 
             #endregion
@@ -491,39 +503,20 @@ namespace Android.Media.Audiofx
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#getLimiter()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#getPostEq()"/>
             /// </summary>
-            public Android.Media.Audiofx.DynamicsProcessing.Limiter GetLimiter
+            /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Eq"/></returns>
+            public Android.Media.Audiofx.DynamicsProcessing.Eq GetPostEq()
             {
-                get { return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Limiter>("getLimiter", "()Landroid/media/audiofx/DynamicsProcessing$Limiter;"); }
+                return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Eq>("getPostEq", "()Landroid/media/audiofx/DynamicsProcessing$Eq;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#getMbc()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#getPreEq()"/>
             /// </summary>
-            public Android.Media.Audiofx.DynamicsProcessing.Mbc GetMbc
+            /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Eq"/></returns>
+            public Android.Media.Audiofx.DynamicsProcessing.Eq GetPreEq()
             {
-                get { return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Mbc>("getMbc", "()Landroid/media/audiofx/DynamicsProcessing$Mbc;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#getInputGain()"/> <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#setInputGain(float)"/>
-            /// </summary>
-            public float InputGain
-            {
-                get { return IExecuteWithSignature<float>("getInputGain", "()F"); } set { IExecuteWithSignature("setInputGain", "(F)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#getPostEq()"/> <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#setPostEq(android.media.audiofx.DynamicsProcessing.Eq)"/>
-            /// </summary>
-            public Android.Media.Audiofx.DynamicsProcessing.Eq PostEq
-            {
-                get { return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Eq>("getPostEq", "()Landroid/media/audiofx/DynamicsProcessing$Eq;"); } set { IExecuteWithSignature("setPostEq", "(Landroid/media/audiofx/DynamicsProcessing$Eq;)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#getPreEq()"/> <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#setPreEq(android.media.audiofx.DynamicsProcessing.Eq)"/>
-            /// </summary>
-            public Android.Media.Audiofx.DynamicsProcessing.Eq PreEq
-            {
-                get { return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Eq>("getPreEq", "()Landroid/media/audiofx/DynamicsProcessing$Eq;"); } set { IExecuteWithSignature("setPreEq", "(Landroid/media/audiofx/DynamicsProcessing$Eq;)V", value); }
+                return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Eq>("getPreEq", "()Landroid/media/audiofx/DynamicsProcessing$Eq;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#getPostEqBand(int)"/>
@@ -544,6 +537,22 @@ namespace Android.Media.Audiofx
                 return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.EqBand>("getPreEqBand", "(I)Landroid/media/audiofx/DynamicsProcessing$EqBand;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#getLimiter()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Limiter"/></returns>
+            public Android.Media.Audiofx.DynamicsProcessing.Limiter GetLimiter()
+            {
+                return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Limiter>("getLimiter", "()Landroid/media/audiofx/DynamicsProcessing$Limiter;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#getMbc()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Mbc"/></returns>
+            public Android.Media.Audiofx.DynamicsProcessing.Mbc GetMbc()
+            {
+                return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Mbc>("getMbc", "()Landroid/media/audiofx/DynamicsProcessing$Mbc;");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#getMbcBand(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -551,6 +560,22 @@ namespace Android.Media.Audiofx
             public Android.Media.Audiofx.DynamicsProcessing.MbcBand GetMbcBand(int arg0)
             {
                 return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.MbcBand>("getMbcBand", "(I)Landroid/media/audiofx/DynamicsProcessing$MbcBand;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#getInputGain()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            public float GetInputGain()
+            {
+                return IExecuteWithSignature<float>("getInputGain", "()F");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#setInputGain(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            public void SetInputGain(float arg0)
+            {
+                IExecuteWithSignature("setInputGain", "(F)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#setLimiter(android.media.audiofx.DynamicsProcessing.Limiter)"/>
@@ -578,6 +603,14 @@ namespace Android.Media.Audiofx
                 IExecute("setMbcBand", arg0, arg1);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#setPostEq(android.media.audiofx.DynamicsProcessing.Eq)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Media.Audiofx.DynamicsProcessing.Eq"/></param>
+            public void SetPostEq(Android.Media.Audiofx.DynamicsProcessing.Eq arg0)
+            {
+                IExecuteWithSignature("setPostEq", "(Landroid/media/audiofx/DynamicsProcessing$Eq;)V", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#setPostEqBand(int,android.media.audiofx.DynamicsProcessing.EqBand)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -585,6 +618,14 @@ namespace Android.Media.Audiofx
             public void SetPostEqBand(int arg0, Android.Media.Audiofx.DynamicsProcessing.EqBand arg1)
             {
                 IExecute("setPostEqBand", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#setPreEq(android.media.audiofx.DynamicsProcessing.Eq)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Media.Audiofx.DynamicsProcessing.Eq"/></param>
+            public void SetPreEq(Android.Media.Audiofx.DynamicsProcessing.Eq arg0)
+            {
+                IExecuteWithSignature("setPreEq", "(Landroid/media/audiofx/DynamicsProcessing$Eq;)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#setPreEqBand(int,android.media.audiofx.DynamicsProcessing.EqBand)"/>
@@ -626,41 +667,6 @@ namespace Android.Media.Audiofx
             #endregion
 
             #region Instance methods
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#getMbcBandCount()"/> 
-            /// </summary>
-            public int MbcBandCount
-            {
-                get { return IExecuteWithSignature<int>("getMbcBandCount", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#getPostEqBandCount()"/> 
-            /// </summary>
-            public int PostEqBandCount
-            {
-                get { return IExecuteWithSignature<int>("getPostEqBandCount", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#getPreEqBandCount()"/> 
-            /// </summary>
-            public int PreEqBandCount
-            {
-                get { return IExecuteWithSignature<int>("getPreEqBandCount", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#getPreferredFrameDuration()"/> 
-            /// </summary>
-            public float PreferredFrameDuration
-            {
-                get { return IExecuteWithSignature<float>("getPreferredFrameDuration", "()F"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#getVariant()"/> 
-            /// </summary>
-            public int Variant
-            {
-                get { return IExecuteWithSignature<int>("getVariant", "()I"); }
-            }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#getChannelByChannelIndex(int)"/>
             /// </summary>
@@ -776,6 +782,46 @@ namespace Android.Media.Audiofx
             public float GetInputGainByChannelIndex(int arg0)
             {
                 return IExecuteWithSignature<float>("getInputGainByChannelIndex", "(I)F", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#getPreferredFrameDuration()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            public float GetPreferredFrameDuration()
+            {
+                return IExecuteWithSignature<float>("getPreferredFrameDuration", "()F");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#getMbcBandCount()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetMbcBandCount()
+            {
+                return IExecuteWithSignature<int>("getMbcBandCount", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#getPostEqBandCount()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetPostEqBandCount()
+            {
+                return IExecuteWithSignature<int>("getPostEqBandCount", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#getPreEqBandCount()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetPreEqBandCount()
+            {
+                return IExecuteWithSignature<int>("getPreEqBandCount", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#getVariant()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetVariant()
+            {
+                return IExecuteWithSignature<int>("getVariant", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#setAllChannelsTo(android.media.audiofx.DynamicsProcessing.Channel)"/>
@@ -1231,11 +1277,20 @@ namespace Android.Media.Audiofx
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.EqBand.html#getGain()"/> <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.EqBand.html#setGain(float)"/>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.EqBand.html#getGain()"/>
             /// </summary>
-            public float Gain
+            /// <returns><see cref="float"/></returns>
+            public float GetGain()
             {
-                get { return IExecuteWithSignature<float>("getGain", "()F"); } set { IExecuteWithSignature("setGain", "(F)V", value); }
+                return IExecuteWithSignature<float>("getGain", "()F");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.EqBand.html#setGain(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            public void SetGain(float arg0)
+            {
+                IExecuteWithSignature("setGain", "(F)V", arg0);
             }
 
             #endregion
@@ -1292,46 +1347,100 @@ namespace Android.Media.Audiofx
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#getAttackTime()"/> <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#setAttackTime(float)"/>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#getAttackTime()"/>
             /// </summary>
-            public float AttackTime
+            /// <returns><see cref="float"/></returns>
+            public float GetAttackTime()
             {
-                get { return IExecuteWithSignature<float>("getAttackTime", "()F"); } set { IExecuteWithSignature("setAttackTime", "(F)V", value); }
+                return IExecuteWithSignature<float>("getAttackTime", "()F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#getLinkGroup()"/> <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#setLinkGroup(int)"/>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#getPostGain()"/>
             /// </summary>
-            public int LinkGroup
+            /// <returns><see cref="float"/></returns>
+            public float GetPostGain()
             {
-                get { return IExecuteWithSignature<int>("getLinkGroup", "()I"); } set { IExecuteWithSignature("setLinkGroup", "(I)V", value); }
+                return IExecuteWithSignature<float>("getPostGain", "()F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#getPostGain()"/> <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#setPostGain(float)"/>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#getRatio()"/>
             /// </summary>
-            public float PostGain
+            /// <returns><see cref="float"/></returns>
+            public float GetRatio()
             {
-                get { return IExecuteWithSignature<float>("getPostGain", "()F"); } set { IExecuteWithSignature("setPostGain", "(F)V", value); }
+                return IExecuteWithSignature<float>("getRatio", "()F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#getRatio()"/> <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#setRatio(float)"/>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#getReleaseTime()"/>
             /// </summary>
-            public float Ratio
+            /// <returns><see cref="float"/></returns>
+            public float GetReleaseTime()
             {
-                get { return IExecuteWithSignature<float>("getRatio", "()F"); } set { IExecuteWithSignature("setRatio", "(F)V", value); }
+                return IExecuteWithSignature<float>("getReleaseTime", "()F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#getReleaseTime()"/> <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#setReleaseTime(float)"/>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#getThreshold()"/>
             /// </summary>
-            public float ReleaseTime
+            /// <returns><see cref="float"/></returns>
+            public float GetThreshold()
             {
-                get { return IExecuteWithSignature<float>("getReleaseTime", "()F"); } set { IExecuteWithSignature("setReleaseTime", "(F)V", value); }
+                return IExecuteWithSignature<float>("getThreshold", "()F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#getThreshold()"/> <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#setThreshold(float)"/>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#getLinkGroup()"/>
             /// </summary>
-            public float Threshold
+            /// <returns><see cref="int"/></returns>
+            public int GetLinkGroup()
             {
-                get { return IExecuteWithSignature<float>("getThreshold", "()F"); } set { IExecuteWithSignature("setThreshold", "(F)V", value); }
+                return IExecuteWithSignature<int>("getLinkGroup", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#setAttackTime(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            public void SetAttackTime(float arg0)
+            {
+                IExecuteWithSignature("setAttackTime", "(F)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#setLinkGroup(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public void SetLinkGroup(int arg0)
+            {
+                IExecuteWithSignature("setLinkGroup", "(I)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#setPostGain(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            public void SetPostGain(float arg0)
+            {
+                IExecuteWithSignature("setPostGain", "(F)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#setRatio(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            public void SetRatio(float arg0)
+            {
+                IExecuteWithSignature("setRatio", "(F)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#setReleaseTime(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            public void SetReleaseTime(float arg0)
+            {
+                IExecuteWithSignature("setReleaseTime", "(F)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#setThreshold(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            public void SetThreshold(float arg0)
+            {
+                IExecuteWithSignature("setThreshold", "(F)V", arg0);
             }
 
             #endregion
@@ -1458,67 +1567,148 @@ namespace Android.Media.Audiofx
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#getAttackTime()"/> <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#setAttackTime(float)"/>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#getAttackTime()"/>
             /// </summary>
-            public float AttackTime
+            /// <returns><see cref="float"/></returns>
+            public float GetAttackTime()
             {
-                get { return IExecuteWithSignature<float>("getAttackTime", "()F"); } set { IExecuteWithSignature("setAttackTime", "(F)V", value); }
+                return IExecuteWithSignature<float>("getAttackTime", "()F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#getExpanderRatio()"/> <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#setExpanderRatio(float)"/>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#getExpanderRatio()"/>
             /// </summary>
-            public float ExpanderRatio
+            /// <returns><see cref="float"/></returns>
+            public float GetExpanderRatio()
             {
-                get { return IExecuteWithSignature<float>("getExpanderRatio", "()F"); } set { IExecuteWithSignature("setExpanderRatio", "(F)V", value); }
+                return IExecuteWithSignature<float>("getExpanderRatio", "()F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#getKneeWidth()"/> <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#setKneeWidth(float)"/>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#getKneeWidth()"/>
             /// </summary>
-            public float KneeWidth
+            /// <returns><see cref="float"/></returns>
+            public float GetKneeWidth()
             {
-                get { return IExecuteWithSignature<float>("getKneeWidth", "()F"); } set { IExecuteWithSignature("setKneeWidth", "(F)V", value); }
+                return IExecuteWithSignature<float>("getKneeWidth", "()F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#getNoiseGateThreshold()"/> <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#setNoiseGateThreshold(float)"/>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#getNoiseGateThreshold()"/>
             /// </summary>
-            public float NoiseGateThreshold
+            /// <returns><see cref="float"/></returns>
+            public float GetNoiseGateThreshold()
             {
-                get { return IExecuteWithSignature<float>("getNoiseGateThreshold", "()F"); } set { IExecuteWithSignature("setNoiseGateThreshold", "(F)V", value); }
+                return IExecuteWithSignature<float>("getNoiseGateThreshold", "()F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#getPostGain()"/> <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#setPostGain(float)"/>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#getPostGain()"/>
             /// </summary>
-            public float PostGain
+            /// <returns><see cref="float"/></returns>
+            public float GetPostGain()
             {
-                get { return IExecuteWithSignature<float>("getPostGain", "()F"); } set { IExecuteWithSignature("setPostGain", "(F)V", value); }
+                return IExecuteWithSignature<float>("getPostGain", "()F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#getPreGain()"/> <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#setPreGain(float)"/>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#getPreGain()"/>
             /// </summary>
-            public float PreGain
+            /// <returns><see cref="float"/></returns>
+            public float GetPreGain()
             {
-                get { return IExecuteWithSignature<float>("getPreGain", "()F"); } set { IExecuteWithSignature("setPreGain", "(F)V", value); }
+                return IExecuteWithSignature<float>("getPreGain", "()F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#getRatio()"/> <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#setRatio(float)"/>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#getRatio()"/>
             /// </summary>
-            public float Ratio
+            /// <returns><see cref="float"/></returns>
+            public float GetRatio()
             {
-                get { return IExecuteWithSignature<float>("getRatio", "()F"); } set { IExecuteWithSignature("setRatio", "(F)V", value); }
+                return IExecuteWithSignature<float>("getRatio", "()F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#getReleaseTime()"/> <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#setReleaseTime(float)"/>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#getReleaseTime()"/>
             /// </summary>
-            public float ReleaseTime
+            /// <returns><see cref="float"/></returns>
+            public float GetReleaseTime()
             {
-                get { return IExecuteWithSignature<float>("getReleaseTime", "()F"); } set { IExecuteWithSignature("setReleaseTime", "(F)V", value); }
+                return IExecuteWithSignature<float>("getReleaseTime", "()F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#getThreshold()"/> <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#setThreshold(float)"/>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#getThreshold()"/>
             /// </summary>
-            public float Threshold
+            /// <returns><see cref="float"/></returns>
+            public float GetThreshold()
             {
-                get { return IExecuteWithSignature<float>("getThreshold", "()F"); } set { IExecuteWithSignature("setThreshold", "(F)V", value); }
+                return IExecuteWithSignature<float>("getThreshold", "()F");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#setAttackTime(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            public void SetAttackTime(float arg0)
+            {
+                IExecuteWithSignature("setAttackTime", "(F)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#setExpanderRatio(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            public void SetExpanderRatio(float arg0)
+            {
+                IExecuteWithSignature("setExpanderRatio", "(F)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#setKneeWidth(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            public void SetKneeWidth(float arg0)
+            {
+                IExecuteWithSignature("setKneeWidth", "(F)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#setNoiseGateThreshold(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            public void SetNoiseGateThreshold(float arg0)
+            {
+                IExecuteWithSignature("setNoiseGateThreshold", "(F)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#setPostGain(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            public void SetPostGain(float arg0)
+            {
+                IExecuteWithSignature("setPostGain", "(F)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#setPreGain(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            public void SetPreGain(float arg0)
+            {
+                IExecuteWithSignature("setPreGain", "(F)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#setRatio(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            public void SetRatio(float arg0)
+            {
+                IExecuteWithSignature("setRatio", "(F)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#setReleaseTime(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            public void SetReleaseTime(float arg0)
+            {
+                IExecuteWithSignature("setReleaseTime", "(F)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#setThreshold(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            public void SetThreshold(float arg0)
+            {
+                IExecuteWithSignature("setThreshold", "(F)V", arg0);
             }
 
             #endregion

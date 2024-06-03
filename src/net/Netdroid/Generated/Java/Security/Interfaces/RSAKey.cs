@@ -64,18 +64,20 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/RSAKey.html#getModulus()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/RSAKey.html#getModulus()"/>
         /// </summary>
-        public Java.Math.BigInteger Modulus
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetModulus()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getModulus", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getModulus", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/RSAKey.html#getParams()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/RSAKey.html#getParams()"/>
         /// </summary>
-        public Java.Security.Spec.AlgorithmParameterSpec Params
+        /// <returns><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></returns>
+        public Java.Security.Spec.AlgorithmParameterSpec GetParams()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getParams", "()Ljava/security/spec/AlgorithmParameterSpec;"); }
+            return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getParams", "()Ljava/security/spec/AlgorithmParameterSpec;");
         }
 
         #endregion

@@ -30,7 +30,7 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Annotation.html#%3Cinit%3E(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/text/Annotation.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public Annotation(object arg0)
@@ -54,11 +54,12 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Annotation.html#getValue()"/> 
+        /// <see href="https://developer.android.com/reference/java/text/Annotation.html#getValue()"/>
         /// </summary>
-        public object Value
+        /// <returns><see cref="object"/></returns>
+        public object GetValue()
         {
-            get { return IExecuteWithSignature("getValue", "()Ljava/lang/Object;"); }
+            return IExecuteWithSignature("getValue", "()Ljava/lang/Object;");
         }
 
         #endregion

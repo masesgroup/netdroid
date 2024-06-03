@@ -122,255 +122,40 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getActionBar()"/> <see href="https://developer.android.com/reference/android/app/Activity.html#setActionBar(android.widget.Toolbar)"/>
-        /// </summary>
-        public Android.App.ActionBar ActionBar
-        {
-            get { return IExecuteWithSignature<Android.App.ActionBar>("getActionBar", "()Landroid/app/ActionBar;"); } set { IExecuteWithSignature("setActionBar", "(Landroid/widget/Toolbar;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getApplication()"/> 
-        /// </summary>
-        public Android.App.Application Application
-        {
-            get { return IExecuteWithSignature<Android.App.Application>("getApplication", "()Landroid/app/Application;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getCallingActivity()"/> 
-        /// </summary>
-        public Android.Content.ComponentName CallingActivity
-        {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getCallingActivity", "()Landroid/content/ComponentName;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getCallingPackage()"/> 
-        /// </summary>
-        public Java.Lang.String CallingPackage
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCallingPackage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getChangingConfigurations()"/> 
-        /// </summary>
-        public int ChangingConfigurations
-        {
-            get { return IExecuteWithSignature<int>("getChangingConfigurations", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getComponentName()"/> 
-        /// </summary>
-        public Android.Content.ComponentName ComponentName
-        {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getComponentName", "()Landroid/content/ComponentName;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getContentScene()"/> 
-        /// </summary>
-        public Android.Transition.Scene ContentScene
-        {
-            get { return IExecuteWithSignature<Android.Transition.Scene>("getContentScene", "()Landroid/transition/Scene;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getContentTransitionManager()"/> <see href="https://developer.android.com/reference/android/app/Activity.html#setContentTransitionManager(android.transition.TransitionManager)"/>
-        /// </summary>
-        public Android.Transition.TransitionManager ContentTransitionManager
-        {
-            get { return IExecuteWithSignature<Android.Transition.TransitionManager>("getContentTransitionManager", "()Landroid/transition/TransitionManager;"); } set { IExecuteWithSignature("setContentTransitionManager", "(Landroid/transition/TransitionManager;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getCurrentFocus()"/> 
-        /// </summary>
-        public Android.View.View CurrentFocus
-        {
-            get { return IExecuteWithSignature<Android.View.View>("getCurrentFocus", "()Landroid/view/View;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getFragmentManager()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.App.FragmentManager FragmentManager
-        {
-            get { return IExecuteWithSignature<Android.App.FragmentManager>("getFragmentManager", "()Landroid/app/FragmentManager;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getIntent()"/> <see href="https://developer.android.com/reference/android/app/Activity.html#setIntent(android.content.Intent)"/>
-        /// </summary>
-        public Android.Content.Intent Intent
-        {
-            get { return IExecuteWithSignature<Android.Content.Intent>("getIntent", "()Landroid/content/Intent;"); } set { IExecuteWithSignature("setIntent", "(Landroid/content/Intent;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getLastNonConfigurationInstance()"/> 
-        /// </summary>
-        public object LastNonConfigurationInstance
-        {
-            get { return IExecuteWithSignature("getLastNonConfigurationInstance", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getLaunchedFromPackage()"/> 
-        /// </summary>
-        public Java.Lang.String LaunchedFromPackage
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLaunchedFromPackage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getLaunchedFromUid()"/> 
-        /// </summary>
-        public int LaunchedFromUid
-        {
-            get { return IExecuteWithSignature<int>("getLaunchedFromUid", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getLayoutInflater()"/> 
-        /// </summary>
-        public Android.View.LayoutInflater LayoutInflater
-        {
-            get { return IExecuteWithSignature<Android.View.LayoutInflater>("getLayoutInflater", "()Landroid/view/LayoutInflater;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getLoaderManager()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.App.LoaderManager LoaderManager
-        {
-            get { return IExecuteWithSignature<Android.App.LoaderManager>("getLoaderManager", "()Landroid/app/LoaderManager;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getLocalClassName()"/> 
-        /// </summary>
-        public Java.Lang.String LocalClassName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLocalClassName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getMaxNumPictureInPictureActions()"/> 
-        /// </summary>
-        public int MaxNumPictureInPictureActions
-        {
-            get { return IExecuteWithSignature<int>("getMaxNumPictureInPictureActions", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getMediaController()"/> <see href="https://developer.android.com/reference/android/app/Activity.html#setMediaController(android.media.session.MediaController)"/>
-        /// </summary>
-        public Android.Media.Session.MediaController MediaController
-        {
-            get { return IExecuteWithSignature<Android.Media.Session.MediaController>("getMediaController", "()Landroid/media/session/MediaController;"); } set { IExecuteWithSignature("setMediaController", "(Landroid/media/session/MediaController;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getMenuInflater()"/> 
-        /// </summary>
-        public Android.View.MenuInflater MenuInflater
-        {
-            get { return IExecuteWithSignature<Android.View.MenuInflater>("getMenuInflater", "()Landroid/view/MenuInflater;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getOnBackInvokedDispatcher()"/> 
-        /// </summary>
-        public Android.Window.OnBackInvokedDispatcher OnBackInvokedDispatcher
-        {
-            get { return IExecuteWithSignature<Android.Window.OnBackInvokedDispatcher>("getOnBackInvokedDispatcher", "()Landroid/window/OnBackInvokedDispatcher;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getParent()"/> 
-        /// </summary>
-        public Android.App.Activity Parent
-        {
-            get { return IExecuteWithSignature<Android.App.Activity>("getParent", "()Landroid/app/Activity;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getParentActivityIntent()"/> 
-        /// </summary>
-        public Android.Content.Intent ParentActivityIntent
-        {
-            get { return IExecuteWithSignature<Android.Content.Intent>("getParentActivityIntent", "()Landroid/content/Intent;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getReferrer()"/> 
-        /// </summary>
-        public Android.Net.Uri Referrer
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getReferrer", "()Landroid/net/Uri;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getRequestedOrientation()"/> <see href="https://developer.android.com/reference/android/app/Activity.html#setRequestedOrientation(int)"/>
-        /// </summary>
-        public int RequestedOrientation
-        {
-            get { return IExecuteWithSignature<int>("getRequestedOrientation", "()I"); } set { IExecuteWithSignature("setRequestedOrientation", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getSearchEvent()"/> 
-        /// </summary>
-        public Android.View.SearchEvent SearchEvent
-        {
-            get { return IExecuteWithSignature<Android.View.SearchEvent>("getSearchEvent", "()Landroid/view/SearchEvent;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getSplashScreen()"/> 
-        /// </summary>
-        public Android.Window.SplashScreen SplashScreen
-        {
-            get { return IExecuteWithSignature<Android.Window.SplashScreen>("getSplashScreen", "()Landroid/window/SplashScreen;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getTaskId()"/> 
-        /// </summary>
-        public int TaskId
-        {
-            get { return IExecuteWithSignature<int>("getTaskId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getTitle()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Title
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getTitleColor()"/> <see href="https://developer.android.com/reference/android/app/Activity.html#setTitleColor(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int TitleColor
-        {
-            get { return IExecuteWithSignature<int>("getTitleColor", "()I"); } set { IExecuteWithSignature("setTitleColor", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getVoiceInteractor()"/> 
-        /// </summary>
-        public Android.App.VoiceInteractor VoiceInteractor
-        {
-            get { return IExecuteWithSignature<Android.App.VoiceInteractor>("getVoiceInteractor", "()Landroid/app/VoiceInteractor;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getVolumeControlStream()"/> <see href="https://developer.android.com/reference/android/app/Activity.html#setVolumeControlStream(int)"/>
-        /// </summary>
-        public int VolumeControlStream
-        {
-            get { return IExecuteWithSignature<int>("getVolumeControlStream", "()I"); } set { IExecuteWithSignature("setVolumeControlStream", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getWindow()"/> 
-        /// </summary>
-        public Android.View.Window Window
-        {
-            get { return IExecuteWithSignature<Android.View.Window>("getWindow", "()Landroid/view/Window;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getWindowManager()"/> 
-        /// </summary>
-        public Android.View.WindowManager WindowManager
-        {
-            get { return IExecuteWithSignature<Android.View.WindowManager>("getWindowManager", "()Landroid/view/WindowManager;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#findViewById(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <typeparam name="T"><see cref="Android.View.View"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T FindViewById<T>(int arg0) where T: Android.View.View
+        public T FindViewById<T>(int arg0) where T : Android.View.View
         {
             return IExecuteWithSignature<T>("findViewById", "(I)Landroid/view/View;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getActionBar()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.ActionBar"/></returns>
+        public Android.App.ActionBar GetActionBar()
+        {
+            return IExecuteWithSignature<Android.App.ActionBar>("getActionBar", "()Landroid/app/ActionBar;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getFragmentManager()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.FragmentManager"/></returns>
+        [global::System.Obsolete()]
+        public Android.App.FragmentManager GetFragmentManager()
+        {
+            return IExecuteWithSignature<Android.App.FragmentManager>("getFragmentManager", "()Landroid/app/FragmentManager;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getLoaderManager()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.LoaderManager"/></returns>
+        [global::System.Obsolete()]
+        public Android.App.LoaderManager GetLoaderManager()
+        {
+            return IExecuteWithSignature<Android.App.LoaderManager>("getLoaderManager", "()Landroid/app/LoaderManager;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#createPendingResult(int,android.content.Intent,int)"/>
@@ -384,6 +169,46 @@ namespace Android.App
             return IExecute<Android.App.PendingIntent>("createPendingResult", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getVoiceInteractor()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.VoiceInteractor"/></returns>
+        public Android.App.VoiceInteractor GetVoiceInteractor()
+        {
+            return IExecuteWithSignature<Android.App.VoiceInteractor>("getVoiceInteractor", "()Landroid/app/VoiceInteractor;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getCallingActivity()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        public Android.Content.ComponentName GetCallingActivity()
+        {
+            return IExecuteWithSignature<Android.Content.ComponentName>("getCallingActivity", "()Landroid/content/ComponentName;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getComponentName()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        public Android.Content.ComponentName GetComponentName()
+        {
+            return IExecuteWithSignature<Android.Content.ComponentName>("getComponentName", "()Landroid/content/ComponentName;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getIntent()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Intent"/></returns>
+        public Android.Content.Intent GetIntent()
+        {
+            return IExecuteWithSignature<Android.Content.Intent>("getIntent", "()Landroid/content/Intent;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getParentActivityIntent()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Intent"/></returns>
+        public Android.Content.Intent GetParentActivityIntent()
+        {
+            return IExecuteWithSignature<Android.Content.Intent>("getParentActivityIntent", "()Landroid/content/Intent;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#getPreferences(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -393,12 +218,36 @@ namespace Android.App
             return IExecuteWithSignature<Android.Content.SharedPreferences>("getPreferences", "(I)Landroid/content/SharedPreferences;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getReferrer()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetReferrer()
+        {
+            return IExecuteWithSignature<Android.Net.Uri>("getReferrer", "()Landroid/net/Uri;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onProvideReferrer()"/>
         /// </summary>
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public Android.Net.Uri OnProvideReferrer()
         {
             return IExecuteWithSignature<Android.Net.Uri>("onProvideReferrer", "()Landroid/net/Uri;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getContentScene()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Transition.Scene"/></returns>
+        public Android.Transition.Scene GetContentScene()
+        {
+            return IExecuteWithSignature<Android.Transition.Scene>("getContentScene", "()Landroid/transition/Scene;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getContentTransitionManager()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Transition.TransitionManager"/></returns>
+        public Android.Transition.TransitionManager GetContentTransitionManager()
+        {
+            return IExecuteWithSignature<Android.Transition.TransitionManager>("getContentTransitionManager", "()Landroid/transition/TransitionManager;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onWindowStartingActionMode(android.view.ActionMode.Callback,int)"/>
@@ -448,6 +297,30 @@ namespace Android.App
             return IExecuteWithSignature<Android.View.DragAndDropPermissions>("requestDragAndDropPermissions", "(Landroid/view/DragEvent;)Landroid/view/DragAndDropPermissions;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getLayoutInflater()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.LayoutInflater"/></returns>
+        public Android.View.LayoutInflater GetLayoutInflater()
+        {
+            return IExecuteWithSignature<Android.View.LayoutInflater>("getLayoutInflater", "()Landroid/view/LayoutInflater;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getMenuInflater()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.MenuInflater"/></returns>
+        public Android.View.MenuInflater GetMenuInflater()
+        {
+            return IExecuteWithSignature<Android.View.MenuInflater>("getMenuInflater", "()Landroid/view/MenuInflater;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getCurrentFocus()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.View"/></returns>
+        public Android.View.View GetCurrentFocus()
+        {
+            return IExecuteWithSignature<Android.View.View>("getCurrentFocus", "()Landroid/view/View;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onCreatePanelView(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -478,6 +351,30 @@ namespace Android.App
         public Android.View.View OnCreateView(Java.Lang.String arg0, Android.Content.Context arg1, Android.Util.AttributeSet arg2)
         {
             return IExecute<Android.View.View>("onCreateView", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getWindow()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Window"/></returns>
+        public Android.View.Window GetWindow()
+        {
+            return IExecuteWithSignature<Android.View.Window>("getWindow", "()Landroid/view/Window;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getWindowManager()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.WindowManager"/></returns>
+        public Android.View.WindowManager GetWindowManager()
+        {
+            return IExecuteWithSignature<Android.View.WindowManager>("getWindowManager", "()Landroid/view/WindowManager;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getOnBackInvokedDispatcher()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Window.OnBackInvokedDispatcher"/></returns>
+        public Android.Window.OnBackInvokedDispatcher GetOnBackInvokedDispatcher()
+        {
+            return IExecuteWithSignature<Android.Window.OnBackInvokedDispatcher>("getOnBackInvokedDispatcher", "()Landroid/window/OnBackInvokedDispatcher;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#dispatchGenericMotionEvent(android.view.MotionEvent)"/>
@@ -670,7 +567,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Android.App.Activity"/></param>
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool NavigateUpToFromChild(Android.App.Activity arg0, Android.Content.Intent arg1)
         {
             return IExecute<bool>("navigateUpToFromChild", arg0, arg1);
@@ -709,7 +606,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Android.Graphics.Bitmap"/></param>
         /// <param name="arg1"><see cref="Android.Graphics.Canvas"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnCreateThumbnail(Android.Graphics.Bitmap arg0, Android.Graphics.Canvas arg1)
         {
             return IExecute<bool>("onCreateThumbnail", arg0, arg1);
@@ -807,7 +704,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Activity"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnNavigateUpFromChild(Android.App.Activity arg0)
         {
             return IExecuteWithSignature<bool>("onNavigateUpFromChild", "(Landroid/app/Activity;)Z", arg0);
@@ -897,7 +794,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool RequestVisibleBehind(bool arg0)
         {
             return IExecuteWithSignature<bool>("requestVisibleBehind", "(Z)Z", arg0);
@@ -992,9 +889,25 @@ namespace Android.App
         /// <param name="arg0"><see cref="int"/></param>
         /// <typeparam name="T"><see cref="Android.View.View"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T RequireViewById<T>(int arg0) where T: Android.View.View
+        public T RequireViewById<T>(int arg0) where T : Android.View.View
         {
             return IExecuteWithSignature<T>("requireViewById", "(I)Landroid/view/View;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getParent()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.Activity"/></returns>
+        public Android.App.Activity GetParent()
+        {
+            return IExecuteWithSignature<Android.App.Activity>("getParent", "()Landroid/app/Activity;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getApplication()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.Application"/></returns>
+        public Android.App.Application GetApplication()
+        {
+            return IExecuteWithSignature<Android.App.Application>("getApplication", "()Landroid/app/Application;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#managedQuery(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"/>
@@ -1005,10 +918,34 @@ namespace Android.App
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         /// <param name="arg4"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Android.Database.Cursor"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Database.Cursor ManagedQuery(Android.Net.Uri arg0, Java.Lang.String[] arg1, Java.Lang.String arg2, Java.Lang.String[] arg3, Java.Lang.String arg4)
         {
             return IExecute<Android.Database.Cursor>("managedQuery", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getMediaController()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.Session.MediaController"/></returns>
+        public Android.Media.Session.MediaController GetMediaController()
+        {
+            return IExecuteWithSignature<Android.Media.Session.MediaController>("getMediaController", "()Landroid/media/session/MediaController;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getSearchEvent()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.SearchEvent"/></returns>
+        public Android.View.SearchEvent GetSearchEvent()
+        {
+            return IExecuteWithSignature<Android.View.SearchEvent>("getSearchEvent", "()Landroid/view/SearchEvent;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getSplashScreen()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Window.SplashScreen"/></returns>
+        public Android.Window.SplashScreen GetSplashScreen()
+        {
+            return IExecuteWithSignature<Android.Window.SplashScreen>("getSplashScreen", "()Landroid/window/SplashScreen;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#isChild()"/>
@@ -1033,16 +970,40 @@ namespace Android.App
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool ShowDialog(int arg0, Android.Os.Bundle arg1)
         {
             return IExecute<bool>("showDialog", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getTitleColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTitleColor()
+        {
+            return IExecuteWithSignature<int>("getTitleColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getVolumeControlStream()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVolumeControlStream()
+        {
+            return IExecuteWithSignature<int>("getVolumeControlStream", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getTitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#dismissDialog(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DismissDialog(int arg0)
         {
             IExecuteWithSignature("dismissDialog", "(I)V", arg0);
@@ -1058,7 +1019,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#removeDialog(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemoveDialog(int arg0)
         {
             IExecuteWithSignature("removeDialog", "(I)V", arg0);
@@ -1132,10 +1093,18 @@ namespace Android.App
             IExecute("setFeatureDrawableUri", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#setMediaController(android.media.session.MediaController)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.Session.MediaController"/></param>
+        public void SetMediaController(Android.Media.Session.MediaController arg0)
+        {
+            IExecuteWithSignature("setMediaController", "(Landroid/media/session/MediaController;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#setProgress(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetProgress(int arg0)
         {
             IExecuteWithSignature("setProgress", "(I)V", arg0);
@@ -1144,7 +1113,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#setProgressBarIndeterminate(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetProgressBarIndeterminate(bool arg0)
         {
             IExecuteWithSignature("setProgressBarIndeterminate", "(Z)V", arg0);
@@ -1153,7 +1122,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#setProgressBarIndeterminateVisibility(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetProgressBarIndeterminateVisibility(bool arg0)
         {
             IExecuteWithSignature("setProgressBarIndeterminateVisibility", "(Z)V", arg0);
@@ -1162,7 +1131,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#setProgressBarVisibility(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetProgressBarVisibility(bool arg0)
         {
             IExecuteWithSignature("setProgressBarVisibility", "(Z)V", arg0);
@@ -1188,19 +1157,67 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#setSecondaryProgress(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSecondaryProgress(int arg0)
         {
             IExecuteWithSignature("setSecondaryProgress", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#setVolumeControlStream(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetVolumeControlStream(int arg0)
+        {
+            IExecuteWithSignature("setVolumeControlStream", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#showDialog(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ShowDialog(int arg0)
         {
             IExecuteWithSignature("showDialog", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getChangingConfigurations()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChangingConfigurations()
+        {
+            return IExecuteWithSignature<int>("getChangingConfigurations", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getLaunchedFromUid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLaunchedFromUid()
+        {
+            return IExecuteWithSignature<int>("getLaunchedFromUid", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getMaxNumPictureInPictureActions()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxNumPictureInPictureActions()
+        {
+            return IExecuteWithSignature<int>("getMaxNumPictureInPictureActions", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getRequestedOrientation()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRequestedOrientation()
+        {
+            return IExecuteWithSignature<int>("getRequestedOrientation", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getTaskId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTaskId()
+        {
+            return IExecuteWithSignature<int>("getTaskId", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onCreateDescription()"/>
@@ -1211,12 +1228,44 @@ namespace Android.App
             return IExecuteWithSignature<Java.Lang.CharSequence>("onCreateDescription", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getLastNonConfigurationInstance()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object GetLastNonConfigurationInstance()
+        {
+            return IExecuteWithSignature("getLastNonConfigurationInstance", "()Ljava/lang/Object;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onRetainNonConfigurationInstance()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object OnRetainNonConfigurationInstance()
         {
             return IExecuteWithSignature("onRetainNonConfigurationInstance", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getCallingPackage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCallingPackage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCallingPackage", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getLaunchedFromPackage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetLaunchedFromPackage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getLaunchedFromPackage", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getLocalClassName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetLocalClassName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getLocalClassName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#addContentView(android.view.View,android.view.ViewGroup.LayoutParams)"/>
@@ -1263,7 +1312,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#enterPictureInPictureMode()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void EnterPictureInPictureMode()
         {
             IExecuteWithSignature("enterPictureInPictureMode", "()V");
@@ -1288,7 +1337,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Activity"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void FinishActivityFromChild(Android.App.Activity arg0, int arg1)
         {
             IExecute("finishActivityFromChild", arg0, arg1);
@@ -1318,7 +1367,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#finishFromChild(android.app.Activity)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Activity"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void FinishFromChild(Android.App.Activity arg0)
         {
             IExecuteWithSignature("finishFromChild", "(Landroid/app/Activity;)V", arg0);
@@ -1366,7 +1415,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onAttachFragment(android.app.Fragment)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Fragment"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnAttachFragment(Android.App.Fragment arg0)
         {
             IExecuteWithSignature("onAttachFragment", "(Landroid/app/Fragment;)V", arg0);
@@ -1374,7 +1423,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onBackPressed()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnBackPressed()
         {
             IExecuteWithSignature("onBackPressed", "()V");
@@ -1486,7 +1535,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onMultiWindowModeChanged(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnMultiWindowModeChanged(bool arg0)
         {
             IExecuteWithSignature("onMultiWindowModeChanged", "(Z)V", arg0);
@@ -1532,7 +1581,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onPictureInPictureModeChanged(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnPictureInPictureModeChanged(bool arg0)
         {
             IExecuteWithSignature("onPictureInPictureModeChanged", "(Z)V", arg0);
@@ -1619,7 +1668,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onStateNotSaved()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnStateNotSaved()
         {
             IExecuteWithSignature("onStateNotSaved", "()V");
@@ -1650,7 +1699,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onVisibleBehindCanceled()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnVisibleBehindCanceled()
         {
             IExecuteWithSignature("onVisibleBehindCanceled", "()V");
@@ -1713,7 +1762,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OverridePendingTransition(int arg0, int arg1, int arg2)
         {
             IExecute("overridePendingTransition", arg0, arg1, arg2);
@@ -1723,7 +1772,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OverridePendingTransition(int arg0, int arg1)
         {
             IExecute("overridePendingTransition", arg0, arg1);
@@ -1782,6 +1831,22 @@ namespace Android.App
         public void RequestFullscreenMode(int arg0, Android.Os.OutcomeReceiver<Java.Lang.Void, Java.Lang.Throwable> arg1)
         {
             IExecute("requestFullscreenMode", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#setActionBar(android.widget.Toolbar)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Widget.Toolbar"/></param>
+        public void SetActionBar(Android.Widget.Toolbar arg0)
+        {
+            IExecuteWithSignature("setActionBar", "(Landroid/widget/Toolbar;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#setContentTransitionManager(android.transition.TransitionManager)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Transition.TransitionManager"/></param>
+        public void SetContentTransitionManager(Android.Transition.TransitionManager arg0)
+        {
+            IExecuteWithSignature("setContentTransitionManager", "(Landroid/transition/TransitionManager;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#setContentView(android.view.View,android.view.ViewGroup.LayoutParams)"/>
@@ -1849,6 +1914,14 @@ namespace Android.App
             IExecuteWithSignature("setInheritShowWhenLocked", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#setIntent(android.content.Intent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
+        public void SetIntent(Android.Content.Intent arg0)
+        {
+            IExecuteWithSignature("setIntent", "(Landroid/content/Intent;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#setLocusContext(android.content.LocusId,android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.LocusId"/></param>
@@ -1872,6 +1945,14 @@ namespace Android.App
         public void SetRecentsScreenshotEnabled(bool arg0)
         {
             IExecuteWithSignature("setRecentsScreenshotEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#setRequestedOrientation(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetRequestedOrientation(int arg0)
+        {
+            IExecuteWithSignature("setRequestedOrientation", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#setShouldDockBigOverlays(boolean)"/>
@@ -1912,6 +1993,15 @@ namespace Android.App
         public void SetTitle(Java.Lang.CharSequence arg0)
         {
             IExecuteWithSignature("setTitle", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#setTitleColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetTitleColor(int arg0)
+        {
+            IExecuteWithSignature("setTitleColor", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#setTurnScreenOn(boolean)"/>
@@ -1972,7 +2062,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartActivityFromChild(Android.App.Activity arg0, Android.Content.Intent arg1, int arg2, Android.Os.Bundle arg3)
         {
             IExecute("startActivityFromChild", arg0, arg1, arg2, arg3);
@@ -1983,7 +2073,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Android.App.Activity"/></param>
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartActivityFromChild(Android.App.Activity arg0, Android.Content.Intent arg1, int arg2)
         {
             IExecute("startActivityFromChild", arg0, arg1, arg2);
@@ -1995,7 +2085,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartActivityFromFragment(Android.App.Fragment arg0, Android.Content.Intent arg1, int arg2, Android.Os.Bundle arg3)
         {
             IExecute("startActivityFromFragment", arg0, arg1, arg2, arg3);
@@ -2006,7 +2096,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Android.App.Fragment"/></param>
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartActivityFromFragment(Android.App.Fragment arg0, Android.Content.Intent arg1, int arg2)
         {
             IExecute("startActivityFromFragment", arg0, arg1, arg2);
@@ -2052,7 +2142,7 @@ namespace Android.App
         /// <param name="arg6"><see cref="int"/></param>
         /// <param name="arg7"><see cref="Android.Os.Bundle"/></param>
         /// <exception cref="Android.Content.IntentSender.SendIntentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartIntentSenderFromChild(Android.App.Activity arg0, Android.Content.IntentSender arg1, int arg2, Android.Content.Intent arg3, int arg4, int arg5, int arg6, Android.Os.Bundle arg7)
         {
             IExecute("startIntentSenderFromChild", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -2068,7 +2158,7 @@ namespace Android.App
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="int"/></param>
         /// <exception cref="Android.Content.IntentSender.SendIntentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartIntentSenderFromChild(Android.App.Activity arg0, Android.Content.IntentSender arg1, int arg2, Android.Content.Intent arg3, int arg4, int arg5, int arg6)
         {
             IExecute("startIntentSenderFromChild", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -2092,7 +2182,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#startManagingCursor(android.database.Cursor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Database.Cursor"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartManagingCursor(Android.Database.Cursor arg0)
         {
             IExecuteWithSignature("startManagingCursor", "(Landroid/database/Cursor;)V", arg0);
@@ -2133,7 +2223,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#stopManagingCursor(android.database.Cursor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Database.Cursor"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StopManagingCursor(Android.Database.Cursor arg0)
         {
             IExecuteWithSignature("stopManagingCursor", "(Landroid/database/Cursor;)V", arg0);

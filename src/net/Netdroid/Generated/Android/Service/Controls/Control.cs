@@ -82,88 +82,36 @@ namespace Android.Service.Controls
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getAppIntent()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getAppIntent()"/>
         /// </summary>
-        public Android.App.PendingIntent AppIntent
+        /// <returns><see cref="Android.App.PendingIntent"/></returns>
+        public Android.App.PendingIntent GetAppIntent()
         {
-            get { return IExecuteWithSignature<Android.App.PendingIntent>("getAppIntent", "()Landroid/app/PendingIntent;"); }
+            return IExecuteWithSignature<Android.App.PendingIntent>("getAppIntent", "()Landroid/app/PendingIntent;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getControlId()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getCustomColor()"/>
         /// </summary>
-        public Java.Lang.String ControlId
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetCustomColor()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getControlId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getCustomColor", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getControlTemplate()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getCustomIcon()"/>
         /// </summary>
-        public Android.Service.Controls.Templates.ControlTemplate ControlTemplate
+        /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
+        public Android.Graphics.Drawable.Icon GetCustomIcon()
         {
-            get { return IExecuteWithSignature<Android.Service.Controls.Templates.ControlTemplate>("getControlTemplate", "()Landroid/service/controls/templates/ControlTemplate;"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getCustomIcon", "()Landroid/graphics/drawable/Icon;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getCustomColor()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getControlTemplate()"/>
         /// </summary>
-        public Android.Content.Res.ColorStateList CustomColor
+        /// <returns><see cref="Android.Service.Controls.Templates.ControlTemplate"/></returns>
+        public Android.Service.Controls.Templates.ControlTemplate GetControlTemplate()
         {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getCustomColor", "()Landroid/content/res/ColorStateList;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getCustomIcon()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Icon CustomIcon
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getCustomIcon", "()Landroid/graphics/drawable/Icon;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getDeviceType()"/> 
-        /// </summary>
-        public int DeviceType
-        {
-            get { return IExecuteWithSignature<int>("getDeviceType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getStatus()"/> 
-        /// </summary>
-        public int Status
-        {
-            get { return IExecuteWithSignature<int>("getStatus", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getStatusText()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence StatusText
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getStatusText", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getStructure()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Structure
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getStructure", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getSubtitle()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Subtitle
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getSubtitle", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getTitle()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Title
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getZone()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Zone
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getZone", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Android.Service.Controls.Templates.ControlTemplate>("getControlTemplate", "()Landroid/service/controls/templates/ControlTemplate;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#isAuthRequired()"/>
@@ -180,6 +128,70 @@ namespace Android.Service.Controls
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getDeviceType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDeviceType()
+        {
+            return IExecuteWithSignature<int>("getDeviceType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getStatus()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStatus()
+        {
+            return IExecuteWithSignature<int>("getStatus", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getStatusText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetStatusText()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getStatusText", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getStructure()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetStructure()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getStructure", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getSubtitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetSubtitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getSubtitle", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getTitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getZone()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetZone()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getZone", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#getControlId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetControlId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getControlId", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/controls/Control.html#writeToParcel(android.os.Parcel,int)"/>

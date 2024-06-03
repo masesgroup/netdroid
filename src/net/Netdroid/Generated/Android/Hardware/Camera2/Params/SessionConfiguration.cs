@@ -75,53 +75,36 @@ namespace Android.Hardware.Camera2.Params
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#getColorSpace()"/> <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#setColorSpace(android.graphics.ColorSpace.Named)"/>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#getColorSpace()"/>
         /// </summary>
-        public Android.Graphics.ColorSpace ColorSpace
+        /// <returns><see cref="Android.Graphics.ColorSpace"/></returns>
+        public Android.Graphics.ColorSpace GetColorSpace()
         {
-            get { return IExecuteWithSignature<Android.Graphics.ColorSpace>("getColorSpace", "()Landroid/graphics/ColorSpace;"); } set { IExecuteWithSignature("setColorSpace", "(Landroid/graphics/ColorSpace$Named;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.ColorSpace>("getColorSpace", "()Landroid/graphics/ColorSpace;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#getExecutor()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#getStateCallback()"/>
         /// </summary>
-        public Java.Util.Concurrent.Executor Executor
+        /// <returns><see cref="Android.Hardware.Camera2.CameraCaptureSession.StateCallback"/></returns>
+        public Android.Hardware.Camera2.CameraCaptureSession.StateCallback GetStateCallback()
         {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.Executor>("getExecutor", "()Ljava/util/concurrent/Executor;"); }
+            return IExecuteWithSignature<Android.Hardware.Camera2.CameraCaptureSession.StateCallback>("getStateCallback", "()Landroid/hardware/camera2/CameraCaptureSession$StateCallback;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#getInputConfiguration()"/> <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#setInputConfiguration(android.hardware.camera2.params.InputConfiguration)"/>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#getSessionParameters()"/>
         /// </summary>
-        public Android.Hardware.Camera2.Params.InputConfiguration InputConfiguration
+        /// <returns><see cref="Android.Hardware.Camera2.CaptureRequest"/></returns>
+        public Android.Hardware.Camera2.CaptureRequest GetSessionParameters()
         {
-            get { return IExecuteWithSignature<Android.Hardware.Camera2.Params.InputConfiguration>("getInputConfiguration", "()Landroid/hardware/camera2/params/InputConfiguration;"); } set { IExecuteWithSignature("setInputConfiguration", "(Landroid/hardware/camera2/params/InputConfiguration;)V", value); }
+            return IExecuteWithSignature<Android.Hardware.Camera2.CaptureRequest>("getSessionParameters", "()Landroid/hardware/camera2/CaptureRequest;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#getOutputConfigurations()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#getInputConfiguration()"/>
         /// </summary>
-        public Java.Util.List<Android.Hardware.Camera2.Params.OutputConfiguration> OutputConfigurations
+        /// <returns><see cref="Android.Hardware.Camera2.Params.InputConfiguration"/></returns>
+        public Android.Hardware.Camera2.Params.InputConfiguration GetInputConfiguration()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.Params.OutputConfiguration>>("getOutputConfigurations", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#getSessionParameters()"/> <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#setSessionParameters(android.hardware.camera2.CaptureRequest)"/>
-        /// </summary>
-        public Android.Hardware.Camera2.CaptureRequest SessionParameters
-        {
-            get { return IExecuteWithSignature<Android.Hardware.Camera2.CaptureRequest>("getSessionParameters", "()Landroid/hardware/camera2/CaptureRequest;"); } set { IExecuteWithSignature("setSessionParameters", "(Landroid/hardware/camera2/CaptureRequest;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#getSessionType()"/> 
-        /// </summary>
-        public int SessionType
-        {
-            get { return IExecuteWithSignature<int>("getSessionType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#getStateCallback()"/> 
-        /// </summary>
-        public Android.Hardware.Camera2.CameraCaptureSession.StateCallback StateCallback
-        {
-            get { return IExecuteWithSignature<Android.Hardware.Camera2.CameraCaptureSession.StateCallback>("getStateCallback", "()Landroid/hardware/camera2/CameraCaptureSession$StateCallback;"); }
+            return IExecuteWithSignature<Android.Hardware.Camera2.Params.InputConfiguration>("getInputConfiguration", "()Landroid/hardware/camera2/params/InputConfiguration;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#describeContents()"/>
@@ -132,11 +115,59 @@ namespace Android.Hardware.Camera2.Params
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#getSessionType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSessionType()
+        {
+            return IExecuteWithSignature<int>("getSessionType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#getExecutor()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Concurrent.Executor"/></returns>
+        public Java.Util.Concurrent.Executor GetExecutor()
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.Executor>("getExecutor", "()Ljava/util/concurrent/Executor;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#getOutputConfigurations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Hardware.Camera2.Params.OutputConfiguration> GetOutputConfigurations()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.Params.OutputConfiguration>>("getOutputConfigurations", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#clearColorSpace()"/>
         /// </summary>
         public void ClearColorSpace()
         {
             IExecuteWithSignature("clearColorSpace", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#setColorSpace(android.graphics.ColorSpace.Named)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.ColorSpace.Named"/></param>
+        public void SetColorSpace(Android.Graphics.ColorSpace.Named arg0)
+        {
+            IExecuteWithSignature("setColorSpace", "(Landroid/graphics/ColorSpace$Named;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#setInputConfiguration(android.hardware.camera2.params.InputConfiguration)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Hardware.Camera2.Params.InputConfiguration"/></param>
+        public void SetInputConfiguration(Android.Hardware.Camera2.Params.InputConfiguration arg0)
+        {
+            IExecuteWithSignature("setInputConfiguration", "(Landroid/hardware/camera2/params/InputConfiguration;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#setSessionParameters(android.hardware.camera2.CaptureRequest)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Hardware.Camera2.CaptureRequest"/></param>
+        public void SetSessionParameters(Android.Hardware.Camera2.CaptureRequest arg0)
+        {
+            IExecuteWithSignature("setSessionParameters", "(Landroid/hardware/camera2/CaptureRequest;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#writeToParcel(android.os.Parcel,int)"/>

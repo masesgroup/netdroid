@@ -30,7 +30,7 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EdECPoint.html#%3Cinit%3E(boolean,java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/EdECPoint.html#%3Cinit%3E(boolean,java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
@@ -55,19 +55,20 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EdECPoint.html#getY()"/> 
-        /// </summary>
-        public Java.Math.BigInteger Y
-        {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getY", "()Ljava/math/BigInteger;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EdECPoint.html#isXOdd()"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/EdECPoint.html#isXOdd()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsXOdd()
         {
             return IExecuteWithSignature<bool>("isXOdd", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/spec/EdECPoint.html#getY()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetY()
+        {
+            return IExecuteWithSignature<Java.Math.BigInteger>("getY", "()Ljava/math/BigInteger;");
         }
 
         #endregion

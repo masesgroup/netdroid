@@ -30,7 +30,7 @@ namespace Java.Util.Logging
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/MemoryHandler.html#%3Cinit%3E(java.util.logging.Handler,int,java.util.logging.Level)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/MemoryHandler.html#%3Cinit%3E(java.util.logging.Handler,int,java.util.logging.Level)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Logging.Handler"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -56,18 +56,28 @@ namespace Java.Util.Logging
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/MemoryHandler.html#getPushLevel()"/> <see href="https://developer.android.com/reference/java.logging/java/util/logging/MemoryHandler.html#setPushLevel(java.util.logging.Level)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/MemoryHandler.html#getPushLevel()"/>
         /// </summary>
-        public Java.Util.Logging.Level PushLevel
+        /// <returns><see cref="Java.Util.Logging.Level"/></returns>
+        public Java.Util.Logging.Level GetPushLevel()
         {
-            get { return IExecuteWithSignature<Java.Util.Logging.Level>("getPushLevel", "()Ljava/util/logging/Level;"); } set { IExecuteWithSignature("setPushLevel", "(Ljava/util/logging/Level;)V", value); }
+            return IExecuteWithSignature<Java.Util.Logging.Level>("getPushLevel", "()Ljava/util/logging/Level;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/MemoryHandler.html#push()"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/MemoryHandler.html#push()"/>
         /// </summary>
         public void Push()
         {
             IExecuteWithSignature("push", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/logging/MemoryHandler.html#setPushLevel(java.util.logging.Level)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public void SetPushLevel(Java.Util.Logging.Level arg0)
+        {
+            IExecuteWithSignature("setPushLevel", "(Ljava/util/logging/Level;)V", arg0);
         }
 
         #endregion

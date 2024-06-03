@@ -46,21 +46,23 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#getSecurityContext()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#getSecurityContext()"/>
         /// </summary>
-        public object SecurityContext
+        /// <returns><see cref="object"/></returns>
+        public object GetSecurityContext()
         {
-            get { return IExecuteWithSignature("getSecurityContext", "()Ljava/lang/Object;"); }
+            return IExecuteWithSignature("getSecurityContext", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#getThreadGroup()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#getThreadGroup()"/>
         /// </summary>
-        public Java.Lang.ThreadGroup ThreadGroup
+        /// <returns><see cref="Java.Lang.ThreadGroup"/></returns>
+        public Java.Lang.ThreadGroup GetThreadGroup()
         {
-            get { return IExecuteWithSignature<Java.Lang.ThreadGroup>("getThreadGroup", "()Ljava/lang/ThreadGroup;"); }
+            return IExecuteWithSignature<Java.Lang.ThreadGroup>("getThreadGroup", "()Ljava/lang/ThreadGroup;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkAccept(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkAccept(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -69,7 +71,7 @@ namespace Java.Lang
             IExecute("checkAccept", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkAccess(java.lang.Thread)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkAccess(java.lang.Thread)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
         public void CheckAccess(Java.Lang.Thread arg0)
@@ -77,7 +79,7 @@ namespace Java.Lang
             IExecuteWithSignature("checkAccess", "(Ljava/lang/Thread;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkAccess(java.lang.ThreadGroup)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkAccess(java.lang.ThreadGroup)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
         public void CheckAccess(Java.Lang.ThreadGroup arg0)
@@ -85,7 +87,7 @@ namespace Java.Lang
             IExecuteWithSignature("checkAccess", "(Ljava/lang/ThreadGroup;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkConnect(java.lang.String,int,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkConnect(java.lang.String,int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -95,7 +97,7 @@ namespace Java.Lang
             IExecute("checkConnect", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkConnect(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkConnect(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -104,14 +106,14 @@ namespace Java.Lang
             IExecute("checkConnect", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkCreateClassLoader()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkCreateClassLoader()"/>
         /// </summary>
         public void CheckCreateClassLoader()
         {
             IExecuteWithSignature("checkCreateClassLoader", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkDelete(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkDelete(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void CheckDelete(Java.Lang.String arg0)
@@ -119,7 +121,7 @@ namespace Java.Lang
             IExecuteWithSignature("checkDelete", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkExec(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkExec(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void CheckExec(Java.Lang.String arg0)
@@ -127,7 +129,7 @@ namespace Java.Lang
             IExecuteWithSignature("checkExec", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkExit(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkExit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void CheckExit(int arg0)
@@ -135,7 +137,7 @@ namespace Java.Lang
             IExecuteWithSignature("checkExit", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkLink(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkLink(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void CheckLink(Java.Lang.String arg0)
@@ -143,7 +145,7 @@ namespace Java.Lang
             IExecuteWithSignature("checkLink", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkListen(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkListen(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void CheckListen(int arg0)
@@ -151,17 +153,17 @@ namespace Java.Lang
             IExecuteWithSignature("checkListen", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkMulticast(java.net.InetAddress,byte)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkMulticast(java.net.InetAddress,byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CheckMulticast(Java.Net.InetAddress arg0, byte arg1)
         {
             IExecute("checkMulticast", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkMulticast(java.net.InetAddress)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkMulticast(java.net.InetAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
         public void CheckMulticast(Java.Net.InetAddress arg0)
@@ -169,7 +171,7 @@ namespace Java.Lang
             IExecuteWithSignature("checkMulticast", "(Ljava/net/InetAddress;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkPackageAccess(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkPackageAccess(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void CheckPackageAccess(Java.Lang.String arg0)
@@ -177,7 +179,7 @@ namespace Java.Lang
             IExecuteWithSignature("checkPackageAccess", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkPackageDefinition(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkPackageDefinition(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void CheckPackageDefinition(Java.Lang.String arg0)
@@ -185,7 +187,7 @@ namespace Java.Lang
             IExecuteWithSignature("checkPackageDefinition", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkPermission(java.security.Permission,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkPermission(java.security.Permission,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -194,7 +196,7 @@ namespace Java.Lang
             IExecute("checkPermission", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkPermission(java.security.Permission)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkPermission(java.security.Permission)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
         public void CheckPermission(Java.Security.Permission arg0)
@@ -202,21 +204,21 @@ namespace Java.Lang
             IExecuteWithSignature("checkPermission", "(Ljava/security/Permission;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkPrintJobAccess()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkPrintJobAccess()"/>
         /// </summary>
         public void CheckPrintJobAccess()
         {
             IExecuteWithSignature("checkPrintJobAccess", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkPropertiesAccess()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkPropertiesAccess()"/>
         /// </summary>
         public void CheckPropertiesAccess()
         {
             IExecuteWithSignature("checkPropertiesAccess", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkPropertyAccess(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkPropertyAccess(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void CheckPropertyAccess(Java.Lang.String arg0)
@@ -224,7 +226,7 @@ namespace Java.Lang
             IExecuteWithSignature("checkPropertyAccess", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkRead(java.io.FileDescriptor)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkRead(java.io.FileDescriptor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         public void CheckRead(Java.Io.FileDescriptor arg0)
@@ -232,7 +234,7 @@ namespace Java.Lang
             IExecuteWithSignature("checkRead", "(Ljava/io/FileDescriptor;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkRead(java.lang.String,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkRead(java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -241,7 +243,7 @@ namespace Java.Lang
             IExecute("checkRead", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkRead(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkRead(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void CheckRead(Java.Lang.String arg0)
@@ -249,7 +251,7 @@ namespace Java.Lang
             IExecuteWithSignature("checkRead", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkSecurityAccess(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkSecurityAccess(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void CheckSecurityAccess(Java.Lang.String arg0)
@@ -257,14 +259,14 @@ namespace Java.Lang
             IExecuteWithSignature("checkSecurityAccess", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkSetFactory()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkSetFactory()"/>
         /// </summary>
         public void CheckSetFactory()
         {
             IExecuteWithSignature("checkSetFactory", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkWrite(java.io.FileDescriptor)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkWrite(java.io.FileDescriptor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         public void CheckWrite(Java.Io.FileDescriptor arg0)
@@ -272,7 +274,7 @@ namespace Java.Lang
             IExecuteWithSignature("checkWrite", "(Ljava/io/FileDescriptor;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html#checkWrite(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html#checkWrite(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void CheckWrite(Java.Lang.String arg0)

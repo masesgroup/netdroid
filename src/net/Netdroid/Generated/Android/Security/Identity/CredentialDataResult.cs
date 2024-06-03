@@ -46,46 +46,52 @@ namespace Android.Security.Identity
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataResult.html#getDeviceMac()"/> 
+        /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataResult.html#getDeviceSignedEntries()"/>
         /// </summary>
-        public byte[] DeviceMac
+        /// <returns><see cref="Android.Security.Identity.CredentialDataResult.Entries"/></returns>
+        public Android.Security.Identity.CredentialDataResult.Entries GetDeviceSignedEntries()
         {
-            get { return IExecuteWithSignatureArray<byte>("getDeviceMac", "()[B"); }
+            return IExecuteWithSignature<Android.Security.Identity.CredentialDataResult.Entries>("getDeviceSignedEntries", "()Landroid/security/identity/CredentialDataResult$Entries;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataResult.html#getDeviceNameSpaces()"/> 
+        /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataResult.html#getIssuerSignedEntries()"/>
         /// </summary>
-        public byte[] DeviceNameSpaces
+        /// <returns><see cref="Android.Security.Identity.CredentialDataResult.Entries"/></returns>
+        public Android.Security.Identity.CredentialDataResult.Entries GetIssuerSignedEntries()
         {
-            get { return IExecuteWithSignatureArray<byte>("getDeviceNameSpaces", "()[B"); }
+            return IExecuteWithSignature<Android.Security.Identity.CredentialDataResult.Entries>("getIssuerSignedEntries", "()Landroid/security/identity/CredentialDataResult$Entries;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataResult.html#getDeviceSignature()"/> 
+        /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataResult.html#getDeviceMac()"/>
         /// </summary>
-        public byte[] DeviceSignature
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetDeviceMac()
         {
-            get { return IExecuteWithSignatureArray<byte>("getDeviceSignature", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getDeviceMac", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataResult.html#getDeviceSignedEntries()"/> 
+        /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataResult.html#getDeviceNameSpaces()"/>
         /// </summary>
-        public Android.Security.Identity.CredentialDataResult.Entries DeviceSignedEntries
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetDeviceNameSpaces()
         {
-            get { return IExecuteWithSignature<Android.Security.Identity.CredentialDataResult.Entries>("getDeviceSignedEntries", "()Landroid/security/identity/CredentialDataResult$Entries;"); }
+            return IExecuteWithSignatureArray<byte>("getDeviceNameSpaces", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataResult.html#getIssuerSignedEntries()"/> 
+        /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataResult.html#getStaticAuthenticationData()"/>
         /// </summary>
-        public Android.Security.Identity.CredentialDataResult.Entries IssuerSignedEntries
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetStaticAuthenticationData()
         {
-            get { return IExecuteWithSignature<Android.Security.Identity.CredentialDataResult.Entries>("getIssuerSignedEntries", "()Landroid/security/identity/CredentialDataResult$Entries;"); }
+            return IExecuteWithSignatureArray<byte>("getStaticAuthenticationData", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataResult.html#getStaticAuthenticationData()"/> 
+        /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataResult.html#getDeviceSignature()"/>
         /// </summary>
-        public byte[] StaticAuthenticationData
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetDeviceSignature()
         {
-            get { return IExecuteWithSignatureArray<byte>("getStaticAuthenticationData", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getDeviceSignature", "()[B");
         }
 
         #endregion
@@ -154,13 +160,6 @@ namespace Android.Security.Identity
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataResult.Entries.html#getNamespaces()"/> 
-            /// </summary>
-            public Java.Util.Collection<Java.Lang.String> Namespaces
-            {
-                get { return IExecuteWithSignature<Java.Util.Collection<Java.Lang.String>>("getNamespaces", "()Ljava/util/Collection;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataResult.Entries.html#getEntry(java.lang.String,java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -188,6 +187,14 @@ namespace Android.Security.Identity
             public Java.Util.Collection<Java.Lang.String> GetEntryNames(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Java.Util.Collection<Java.Lang.String>>("getEntryNames", "(Ljava/lang/String;)Ljava/util/Collection;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataResult.Entries.html#getNamespaces()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.Collection"/></returns>
+            public Java.Util.Collection<Java.Lang.String> GetNamespaces()
+            {
+                return IExecuteWithSignature<Java.Util.Collection<Java.Lang.String>>("getNamespaces", "()Ljava/util/Collection;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataResult.Entries.html#getRetrievedEntryNames(java.lang.String)"/>

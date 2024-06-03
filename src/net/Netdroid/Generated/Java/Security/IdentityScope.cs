@@ -30,7 +30,7 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/IdentityScope.html#%3Cinit%3E(java.lang.String,java.security.IdentityScope)"/>
+        /// <see href="https://developer.android.com/reference/java/security/IdentityScope.html#%3Cinit%3E(java.lang.String,java.security.IdentityScope)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.IdentityScope"/></param>
@@ -40,7 +40,7 @@ namespace Java.Security
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/IdentityScope.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/IdentityScope.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public IdentityScope(Java.Lang.String arg0)
@@ -60,18 +60,19 @@ namespace Java.Security
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/IdentityScope.html#getSystemScope()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/IdentityScope.html#getSystemScope()"/>
         /// </summary>
-        public static Java.Security.IdentityScope SystemScope
+        /// <returns><see cref="Java.Security.IdentityScope"/></returns>
+        public static Java.Security.IdentityScope GetSystemScope()
         {
-            get { return SExecuteWithSignature<Java.Security.IdentityScope>(LocalBridgeClazz, "getSystemScope", "()Ljava/security/IdentityScope;"); }
+            return SExecuteWithSignature<Java.Security.IdentityScope>(LocalBridgeClazz, "getSystemScope", "()Ljava/security/IdentityScope;");
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/IdentityScope.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/security/IdentityScope.html#size()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Size()
@@ -79,7 +80,7 @@ namespace Java.Security
             return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/IdentityScope.html#getIdentity(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/IdentityScope.html#getIdentity(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.Identity"/></returns>
@@ -88,7 +89,7 @@ namespace Java.Security
             return IExecuteWithSignature<Java.Security.Identity>("getIdentity", "(Ljava/lang/String;)Ljava/security/Identity;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/IdentityScope.html#getIdentity(java.security.PublicKey)"/>
+        /// <see href="https://developer.android.com/reference/java/security/IdentityScope.html#getIdentity(java.security.PublicKey)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
         /// <returns><see cref="Java.Security.Identity"/></returns>
@@ -97,7 +98,7 @@ namespace Java.Security
             return IExecuteWithSignature<Java.Security.Identity>("getIdentity", "(Ljava/security/PublicKey;)Ljava/security/Identity;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/IdentityScope.html#identities()"/>
+        /// <see href="https://developer.android.com/reference/java/security/IdentityScope.html#identities()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<Java.Security.Identity> Identities()
@@ -105,7 +106,7 @@ namespace Java.Security
             return IExecuteWithSignature<Java.Util.Enumeration<Java.Security.Identity>>("identities", "()Ljava/util/Enumeration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/IdentityScope.html#addIdentity(java.security.Identity)"/>
+        /// <see href="https://developer.android.com/reference/java/security/IdentityScope.html#addIdentity(java.security.Identity)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Identity"/></param>
         /// <exception cref="Java.Security.KeyManagementException"/>
@@ -114,7 +115,7 @@ namespace Java.Security
             IExecuteWithSignature("addIdentity", "(Ljava/security/Identity;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/IdentityScope.html#removeIdentity(java.security.Identity)"/>
+        /// <see href="https://developer.android.com/reference/java/security/IdentityScope.html#removeIdentity(java.security.Identity)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Identity"/></param>
         /// <exception cref="Java.Security.KeyManagementException"/>
@@ -123,7 +124,7 @@ namespace Java.Security
             IExecuteWithSignature("removeIdentity", "(Ljava/security/Identity;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/IdentityScope.html#getIdentity(java.security.Principal)"/>
+        /// <see href="https://developer.android.com/reference/java/security/IdentityScope.html#getIdentity(java.security.Principal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Principal"/></param>
         /// <returns><see cref="Java.Security.Identity"/></returns>

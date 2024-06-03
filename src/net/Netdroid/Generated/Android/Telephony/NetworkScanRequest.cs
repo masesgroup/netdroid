@@ -78,53 +78,20 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/NetworkScanRequest.html#getIncrementalResults()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/NetworkScanRequest.html#getSpecifiers()"/>
         /// </summary>
-        public bool IncrementalResults
+        /// <returns><see cref="Android.Telephony.RadioAccessSpecifier"/></returns>
+        public Android.Telephony.RadioAccessSpecifier[] GetSpecifiers()
         {
-            get { return IExecuteWithSignature<bool>("getIncrementalResults", "()Z"); }
+            return IExecuteWithSignatureArray<Android.Telephony.RadioAccessSpecifier>("getSpecifiers", "()[Landroid/telephony/RadioAccessSpecifier;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/NetworkScanRequest.html#getIncrementalResultsPeriodicity()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/NetworkScanRequest.html#getIncrementalResults()"/>
         /// </summary>
-        public int IncrementalResultsPeriodicity
+        /// <returns><see cref="bool"/></returns>
+        public bool GetIncrementalResults()
         {
-            get { return IExecuteWithSignature<int>("getIncrementalResultsPeriodicity", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/NetworkScanRequest.html#getMaxSearchTime()"/> 
-        /// </summary>
-        public int MaxSearchTime
-        {
-            get { return IExecuteWithSignature<int>("getMaxSearchTime", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/NetworkScanRequest.html#getPlmns()"/> 
-        /// </summary>
-        public Java.Util.ArrayList<Java.Lang.String> Plmns
-        {
-            get { return IExecuteWithSignature<Java.Util.ArrayList<Java.Lang.String>>("getPlmns", "()Ljava/util/ArrayList;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/NetworkScanRequest.html#getScanType()"/> 
-        /// </summary>
-        public int ScanType
-        {
-            get { return IExecuteWithSignature<int>("getScanType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/NetworkScanRequest.html#getSearchPeriodicity()"/> 
-        /// </summary>
-        public int SearchPeriodicity
-        {
-            get { return IExecuteWithSignature<int>("getSearchPeriodicity", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/NetworkScanRequest.html#getSpecifiers()"/> 
-        /// </summary>
-        public Android.Telephony.RadioAccessSpecifier[] Specifiers
-        {
-            get { return IExecuteWithSignatureArray<Android.Telephony.RadioAccessSpecifier>("getSpecifiers", "()[Landroid/telephony/RadioAccessSpecifier;"); }
+            return IExecuteWithSignature<bool>("getIncrementalResults", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/NetworkScanRequest.html#describeContents()"/>
@@ -133,6 +100,46 @@ namespace Android.Telephony
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NetworkScanRequest.html#getIncrementalResultsPeriodicity()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetIncrementalResultsPeriodicity()
+        {
+            return IExecuteWithSignature<int>("getIncrementalResultsPeriodicity", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NetworkScanRequest.html#getMaxSearchTime()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxSearchTime()
+        {
+            return IExecuteWithSignature<int>("getMaxSearchTime", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NetworkScanRequest.html#getScanType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetScanType()
+        {
+            return IExecuteWithSignature<int>("getScanType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NetworkScanRequest.html#getSearchPeriodicity()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSearchPeriodicity()
+        {
+            return IExecuteWithSignature<int>("getSearchPeriodicity", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NetworkScanRequest.html#getPlmns()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.ArrayList"/></returns>
+        public Java.Util.ArrayList<Java.Lang.String> GetPlmns()
+        {
+            return IExecuteWithSignature<Java.Util.ArrayList<Java.Lang.String>>("getPlmns", "()Ljava/util/ArrayList;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/NetworkScanRequest.html#writeToParcel(android.os.Parcel,int)"/>

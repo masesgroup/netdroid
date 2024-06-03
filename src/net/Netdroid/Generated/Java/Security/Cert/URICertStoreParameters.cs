@@ -30,7 +30,7 @@ namespace Java.Security.Cert
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/URICertStoreParameters.html#%3Cinit%3E(java.net.URI)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/URICertStoreParameters.html#%3Cinit%3E(java.net.URI)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         public URICertStoreParameters(Java.Net.URI arg0)
@@ -54,11 +54,12 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/URICertStoreParameters.html#getURI()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/URICertStoreParameters.html#getURI()"/>
         /// </summary>
-        public Java.Net.URI URI
+        /// <returns><see cref="Java.Net.URI"/></returns>
+        public Java.Net.URI GetURI()
         {
-            get { return IExecuteWithSignature<Java.Net.URI>("getURI", "()Ljava/net/URI;"); }
+            return IExecuteWithSignature<Java.Net.URI>("getURI", "()Ljava/net/URI;");
         }
 
         #endregion

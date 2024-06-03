@@ -64,14 +64,15 @@ namespace Javax.Xml.Transform
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Templates.html#getOutputProperties()"/> 
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/Templates.html#getOutputProperties()"/>
         /// </summary>
-        public Java.Util.Properties OutputProperties
+        /// <returns><see cref="Java.Util.Properties"/></returns>
+        public Java.Util.Properties GetOutputProperties()
         {
-            get { return IExecuteWithSignature<Java.Util.Properties>("getOutputProperties", "()Ljava/util/Properties;"); }
+            return IExecuteWithSignature<Java.Util.Properties>("getOutputProperties", "()Ljava/util/Properties;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Templates.html#newTransformer()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/Templates.html#newTransformer()"/>
         /// </summary>
         /// <returns><see cref="Javax.Xml.Transform.Transformer"/></returns>
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>

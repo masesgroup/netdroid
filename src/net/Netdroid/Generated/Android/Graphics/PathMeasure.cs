@@ -67,13 +67,6 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/PathMeasure.html#getLength()"/> 
-        /// </summary>
-        public float Length
-        {
-            get { return IExecuteWithSignature<float>("getLength", "()F"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/PathMeasure.html#getMatrix(float,android.graphics.Matrix,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -122,6 +115,14 @@ namespace Android.Graphics
         public bool NextContour()
         {
             return IExecuteWithSignature<bool>("nextContour", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/PathMeasure.html#getLength()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetLength()
+        {
+            return IExecuteWithSignature<float>("getLength", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/PathMeasure.html#setPath(android.graphics.Path,boolean)"/>

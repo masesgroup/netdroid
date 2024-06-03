@@ -91,32 +91,12 @@ namespace Android.Media.Tv.Interactive
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppServiceInfo.html#getCustomSupportedTypes()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppServiceInfo.html#getServiceInfo()"/>
         /// </summary>
-        public Java.Util.List<Java.Lang.String> CustomSupportedTypes
+        /// <returns><see cref="Android.Content.Pm.ServiceInfo"/></returns>
+        public Android.Content.Pm.ServiceInfo GetServiceInfo()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getCustomSupportedTypes", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppServiceInfo.html#getId()"/> 
-        /// </summary>
-        public Java.Lang.String Id
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppServiceInfo.html#getServiceInfo()"/> 
-        /// </summary>
-        public Android.Content.Pm.ServiceInfo ServiceInfo
-        {
-            get { return IExecuteWithSignature<Android.Content.Pm.ServiceInfo>("getServiceInfo", "()Landroid/content/pm/ServiceInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppServiceInfo.html#getSupportedTypes()"/> 
-        /// </summary>
-        public int SupportedTypes
-        {
-            get { return IExecuteWithSignature<int>("getSupportedTypes", "()I"); }
+            return IExecuteWithSignature<Android.Content.Pm.ServiceInfo>("getServiceInfo", "()Landroid/content/pm/ServiceInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppServiceInfo.html#describeContents()"/>
@@ -125,6 +105,30 @@ namespace Android.Media.Tv.Interactive
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppServiceInfo.html#getSupportedTypes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSupportedTypes()
+        {
+            return IExecuteWithSignature<int>("getSupportedTypes", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppServiceInfo.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppServiceInfo.html#getCustomSupportedTypes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetCustomSupportedTypes()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getCustomSupportedTypes", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppServiceInfo.html#writeToParcel(android.os.Parcel,int)"/>

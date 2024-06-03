@@ -66,11 +66,12 @@ namespace Android.Icu.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/CurrencyPluralInfo.html#getInstance()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/CurrencyPluralInfo.html#getInstance()"/>
         /// </summary>
-        public static Android.Icu.Text.CurrencyPluralInfo Instance
+        /// <returns><see cref="Android.Icu.Text.CurrencyPluralInfo"/></returns>
+        public static Android.Icu.Text.CurrencyPluralInfo GetInstance()
         {
-            get { return SExecuteWithSignature<Android.Icu.Text.CurrencyPluralInfo>(LocalBridgeClazz, "getInstance", "()Landroid/icu/text/CurrencyPluralInfo;"); }
+            return SExecuteWithSignature<Android.Icu.Text.CurrencyPluralInfo>(LocalBridgeClazz, "getInstance", "()Landroid/icu/text/CurrencyPluralInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/CurrencyPluralInfo.html#getInstance(android.icu.util.ULocale)"/>
@@ -95,18 +96,20 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/CurrencyPluralInfo.html#getLocale()"/> <see href="https://developer.android.com/reference/android/icu/text/CurrencyPluralInfo.html#setLocale(android.icu.util.ULocale)"/>
+        /// <see href="https://developer.android.com/reference/android/icu/text/CurrencyPluralInfo.html#getPluralRules()"/>
         /// </summary>
-        public Android.Icu.Util.ULocale Locale
+        /// <returns><see cref="Android.Icu.Text.PluralRules"/></returns>
+        public Android.Icu.Text.PluralRules GetPluralRules()
         {
-            get { return IExecuteWithSignature<Android.Icu.Util.ULocale>("getLocale", "()Landroid/icu/util/ULocale;"); } set { IExecuteWithSignature("setLocale", "(Landroid/icu/util/ULocale;)V", value); }
+            return IExecuteWithSignature<Android.Icu.Text.PluralRules>("getPluralRules", "()Landroid/icu/text/PluralRules;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/CurrencyPluralInfo.html#getPluralRules()"/> <see href="https://developer.android.com/reference/android/icu/text/CurrencyPluralInfo.html#setPluralRules(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/icu/text/CurrencyPluralInfo.html#getLocale()"/>
         /// </summary>
-        public Android.Icu.Text.PluralRules PluralRules
+        /// <returns><see cref="Android.Icu.Util.ULocale"/></returns>
+        public Android.Icu.Util.ULocale GetLocale()
         {
-            get { return IExecuteWithSignature<Android.Icu.Text.PluralRules>("getPluralRules", "()Landroid/icu/text/PluralRules;"); } set { IExecuteWithSignature("setPluralRules", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Android.Icu.Util.ULocale>("getLocale", "()Landroid/icu/util/ULocale;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/CurrencyPluralInfo.html#getCurrencyPluralPattern(java.lang.String)"/>
@@ -125,6 +128,22 @@ namespace Android.Icu.Text
         public void SetCurrencyPluralPattern(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecute("setCurrencyPluralPattern", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/CurrencyPluralInfo.html#setLocale(android.icu.util.ULocale)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Icu.Util.ULocale"/></param>
+        public void SetLocale(Android.Icu.Util.ULocale arg0)
+        {
+            IExecuteWithSignature("setLocale", "(Landroid/icu/util/ULocale;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/CurrencyPluralInfo.html#setPluralRules(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetPluralRules(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setPluralRules", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

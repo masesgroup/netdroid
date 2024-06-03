@@ -100,11 +100,12 @@ namespace Android.Telephony.Mbms
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/mbms/GroupCall.html#getTmgi()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/mbms/GroupCall.html#getTmgi()"/>
         /// </summary>
-        public long Tmgi
+        /// <returns><see cref="long"/></returns>
+        public long GetTmgi()
         {
-            get { return IExecuteWithSignature<long>("getTmgi", "()J"); }
+            return IExecuteWithSignature<long>("getTmgi", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/mbms/GroupCall.html#close()"/>

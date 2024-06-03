@@ -30,7 +30,7 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/DomainLoadStoreParameter.html#%3Cinit%3E(java.net.URI,java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/security/DomainLoadStoreParameter.html#%3Cinit%3E(java.net.URI,java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
@@ -55,25 +55,28 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/DomainLoadStoreParameter.html#getConfiguration()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/DomainLoadStoreParameter.html#getConfiguration()"/>
         /// </summary>
-        public Java.Net.URI Configuration
+        /// <returns><see cref="Java.Net.URI"/></returns>
+        public Java.Net.URI GetConfiguration()
         {
-            get { return IExecuteWithSignature<Java.Net.URI>("getConfiguration", "()Ljava/net/URI;"); }
+            return IExecuteWithSignature<Java.Net.URI>("getConfiguration", "()Ljava/net/URI;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/DomainLoadStoreParameter.html#getProtectionParameter()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/DomainLoadStoreParameter.html#getProtectionParameter()"/>
         /// </summary>
-        public Java.Security.KeyStore.ProtectionParameter ProtectionParameter
+        /// <returns><see cref="Java.Security.KeyStore.ProtectionParameter"/></returns>
+        public Java.Security.KeyStore.ProtectionParameter GetProtectionParameter()
         {
-            get { return IExecuteWithSignature<Java.Security.KeyStore.ProtectionParameter>("getProtectionParameter", "()Ljava/security/KeyStore$ProtectionParameter;"); }
+            return IExecuteWithSignature<Java.Security.KeyStore.ProtectionParameter>("getProtectionParameter", "()Ljava/security/KeyStore$ProtectionParameter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/DomainLoadStoreParameter.html#getProtectionParams()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/DomainLoadStoreParameter.html#getProtectionParams()"/>
         /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Security.KeyStore.ProtectionParameter> ProtectionParams
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Security.KeyStore.ProtectionParameter> GetProtectionParams()
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Security.KeyStore.ProtectionParameter>>("getProtectionParams", "()Ljava/util/Map;"); }
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Security.KeyStore.ProtectionParameter>>("getProtectionParams", "()Ljava/util/Map;");
         }
 
         #endregion

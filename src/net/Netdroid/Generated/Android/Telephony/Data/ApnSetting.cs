@@ -226,167 +226,12 @@ namespace Android.Telephony.Data
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getApnName()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getMmsc()"/>
         /// </summary>
-        public Java.Lang.String ApnName
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetMmsc()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getApnName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getApnTypeBitmask()"/> 
-        /// </summary>
-        public int ApnTypeBitmask
-        {
-            get { return IExecuteWithSignature<int>("getApnTypeBitmask", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getAuthType()"/> 
-        /// </summary>
-        public int AuthType
-        {
-            get { return IExecuteWithSignature<int>("getAuthType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getCarrierId()"/> 
-        /// </summary>
-        public int CarrierId
-        {
-            get { return IExecuteWithSignature<int>("getCarrierId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getEntryName()"/> 
-        /// </summary>
-        public Java.Lang.String EntryName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEntryName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getId()"/> 
-        /// </summary>
-        public int Id
-        {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getMmsc()"/> 
-        /// </summary>
-        public Android.Net.Uri Mmsc
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getMmsc", "()Landroid/net/Uri;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getMmsProxyAddress()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Net.InetAddress MmsProxyAddress
-        {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getMmsProxyAddress", "()Ljava/net/InetAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getMmsProxyAddressAsString()"/> 
-        /// </summary>
-        public Java.Lang.String MmsProxyAddressAsString
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMmsProxyAddressAsString", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getMmsProxyPort()"/> 
-        /// </summary>
-        public int MmsProxyPort
-        {
-            get { return IExecuteWithSignature<int>("getMmsProxyPort", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getMtuV4()"/> 
-        /// </summary>
-        public int MtuV4
-        {
-            get { return IExecuteWithSignature<int>("getMtuV4", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getMtuV6()"/> 
-        /// </summary>
-        public int MtuV6
-        {
-            get { return IExecuteWithSignature<int>("getMtuV6", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getMvnoType()"/> 
-        /// </summary>
-        public int MvnoType
-        {
-            get { return IExecuteWithSignature<int>("getMvnoType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getNetworkTypeBitmask()"/> 
-        /// </summary>
-        public int NetworkTypeBitmask
-        {
-            get { return IExecuteWithSignature<int>("getNetworkTypeBitmask", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getOperatorNumeric()"/> 
-        /// </summary>
-        public Java.Lang.String OperatorNumeric
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getOperatorNumeric", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getPassword()"/> 
-        /// </summary>
-        public Java.Lang.String Password
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPassword", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getProfileId()"/> 
-        /// </summary>
-        public int ProfileId
-        {
-            get { return IExecuteWithSignature<int>("getProfileId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getProtocol()"/> 
-        /// </summary>
-        public int Protocol
-        {
-            get { return IExecuteWithSignature<int>("getProtocol", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getProxyAddress()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Net.InetAddress ProxyAddress
-        {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getProxyAddress", "()Ljava/net/InetAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getProxyAddressAsString()"/> 
-        /// </summary>
-        public Java.Lang.String ProxyAddressAsString
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getProxyAddressAsString", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getProxyPort()"/> 
-        /// </summary>
-        public int ProxyPort
-        {
-            get { return IExecuteWithSignature<int>("getProxyPort", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getRoamingProtocol()"/> 
-        /// </summary>
-        public int RoamingProtocol
-        {
-            get { return IExecuteWithSignature<int>("getRoamingProtocol", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getUser()"/> 
-        /// </summary>
-        public Java.Lang.String User
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUser", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getMmsc", "()Landroid/net/Uri;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#isEnabled()"/>
@@ -411,6 +256,184 @@ namespace Android.Telephony.Data
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getApnTypeBitmask()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetApnTypeBitmask()
+        {
+            return IExecuteWithSignature<int>("getApnTypeBitmask", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getAuthType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAuthType()
+        {
+            return IExecuteWithSignature<int>("getAuthType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getCarrierId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCarrierId()
+        {
+            return IExecuteWithSignature<int>("getCarrierId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getMmsProxyPort()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMmsProxyPort()
+        {
+            return IExecuteWithSignature<int>("getMmsProxyPort", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getMtuV4()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMtuV4()
+        {
+            return IExecuteWithSignature<int>("getMtuV4", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getMtuV6()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMtuV6()
+        {
+            return IExecuteWithSignature<int>("getMtuV6", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getMvnoType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMvnoType()
+        {
+            return IExecuteWithSignature<int>("getMvnoType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getNetworkTypeBitmask()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNetworkTypeBitmask()
+        {
+            return IExecuteWithSignature<int>("getNetworkTypeBitmask", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getProfileId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetProfileId()
+        {
+            return IExecuteWithSignature<int>("getProfileId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getProtocol()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetProtocol()
+        {
+            return IExecuteWithSignature<int>("getProtocol", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getProxyPort()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetProxyPort()
+        {
+            return IExecuteWithSignature<int>("getProxyPort", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getRoamingProtocol()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRoamingProtocol()
+        {
+            return IExecuteWithSignature<int>("getRoamingProtocol", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getApnName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetApnName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getApnName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getEntryName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEntryName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getEntryName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getMmsProxyAddressAsString()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMmsProxyAddressAsString()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMmsProxyAddressAsString", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getOperatorNumeric()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetOperatorNumeric()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getOperatorNumeric", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getPassword()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPassword()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPassword", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getProxyAddressAsString()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetProxyAddressAsString()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getProxyAddressAsString", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getUser()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUser()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUser", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getMmsProxyAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        [global::System.Obsolete()]
+        public Java.Net.InetAddress GetMmsProxyAddress()
+        {
+            return IExecuteWithSignature<Java.Net.InetAddress>("getMmsProxyAddress", "()Ljava/net/InetAddress;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getProxyAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        [global::System.Obsolete()]
+        public Java.Net.InetAddress GetProxyAddress()
+        {
+            return IExecuteWithSignature<Java.Net.InetAddress>("getProxyAddress", "()Ljava/net/InetAddress;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#writeToParcel(android.os.Parcel,int)"/>
@@ -530,7 +553,7 @@ namespace Android.Telephony.Data
             /// </summary>
             /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
             /// <returns><see cref="Android.Telephony.Data.ApnSetting.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Telephony.Data.ApnSetting.Builder SetMmsProxyAddress(Java.Net.InetAddress arg0)
             {
                 return IExecuteWithSignature<Android.Telephony.Data.ApnSetting.Builder>("setMmsProxyAddress", "(Ljava/net/InetAddress;)Landroid/telephony/data/ApnSetting$Builder;", arg0);
@@ -639,7 +662,7 @@ namespace Android.Telephony.Data
             /// </summary>
             /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
             /// <returns><see cref="Android.Telephony.Data.ApnSetting.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Telephony.Data.ApnSetting.Builder SetProxyAddress(Java.Net.InetAddress arg0)
             {
                 return IExecuteWithSignature<Android.Telephony.Data.ApnSetting.Builder>("setProxyAddress", "(Ljava/net/InetAddress;)Landroid/telephony/data/ApnSetting$Builder;", arg0);

@@ -30,7 +30,7 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/CodeSource.html#%3Cinit%3E(java.net.URL,java.security.cert.Certificate[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/CodeSource.html#%3Cinit%3E(java.net.URL,java.security.cert.Certificate[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.Certificate"/></param>
@@ -39,7 +39,7 @@ namespace Java.Security
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/CodeSource.html#%3Cinit%3E(java.net.URL,java.security.CodeSigner[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/CodeSource.html#%3Cinit%3E(java.net.URL,java.security.CodeSigner[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         /// <param name="arg1"><see cref="Java.Security.CodeSigner"/></param>
@@ -64,34 +64,37 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/CodeSource.html#getCertificates()"/> 
-        /// </summary>
-        public Java.Security.Cert.Certificate[] Certificates
-        {
-            get { return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getCertificates", "()[Ljava/security/cert/Certificate;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/CodeSource.html#getCodeSigners()"/> 
-        /// </summary>
-        public Java.Security.CodeSigner[] CodeSigners
-        {
-            get { return IExecuteWithSignatureArray<Java.Security.CodeSigner>("getCodeSigners", "()[Ljava/security/CodeSigner;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/CodeSource.html#getLocation()"/> 
-        /// </summary>
-        public Java.Net.URL Location
-        {
-            get { return IExecuteWithSignature<Java.Net.URL>("getLocation", "()Ljava/net/URL;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/CodeSource.html#implies(java.security.CodeSource)"/>
+        /// <see href="https://developer.android.com/reference/java/security/CodeSource.html#implies(java.security.CodeSource)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.CodeSource"/></param>
         /// <returns><see cref="bool"/></returns>
         public bool Implies(Java.Security.CodeSource arg0)
         {
             return IExecuteWithSignature<bool>("implies", "(Ljava/security/CodeSource;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/CodeSource.html#getLocation()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.URL"/></returns>
+        public Java.Net.URL GetLocation()
+        {
+            return IExecuteWithSignature<Java.Net.URL>("getLocation", "()Ljava/net/URL;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/CodeSource.html#getCertificates()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
+        public Java.Security.Cert.Certificate[] GetCertificates()
+        {
+            return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getCertificates", "()[Ljava/security/cert/Certificate;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/CodeSource.html#getCodeSigners()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.CodeSigner"/></returns>
+        public Java.Security.CodeSigner[] GetCodeSigners()
+        {
+            return IExecuteWithSignatureArray<Java.Security.CodeSigner>("getCodeSigners", "()[Ljava/security/CodeSigner;");
         }
 
         #endregion

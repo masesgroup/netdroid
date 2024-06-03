@@ -63,27 +63,6 @@ namespace Android.Nfc
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/NfcAntennaInfo.html#getAvailableNfcAntennas()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Nfc.AvailableNfcAntenna> AvailableNfcAntennas
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Nfc.AvailableNfcAntenna>>("getAvailableNfcAntennas", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/NfcAntennaInfo.html#getDeviceHeight()"/> 
-        /// </summary>
-        public int DeviceHeight
-        {
-            get { return IExecuteWithSignature<int>("getDeviceHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/NfcAntennaInfo.html#getDeviceWidth()"/> 
-        /// </summary>
-        public int DeviceWidth
-        {
-            get { return IExecuteWithSignature<int>("getDeviceWidth", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/NfcAntennaInfo.html#isDeviceFoldable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -98,6 +77,30 @@ namespace Android.Nfc
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAntennaInfo.html#getDeviceHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDeviceHeight()
+        {
+            return IExecuteWithSignature<int>("getDeviceHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAntennaInfo.html#getDeviceWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDeviceWidth()
+        {
+            return IExecuteWithSignature<int>("getDeviceWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAntennaInfo.html#getAvailableNfcAntennas()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Nfc.AvailableNfcAntenna> GetAvailableNfcAntennas()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Nfc.AvailableNfcAntenna>>("getAvailableNfcAntennas", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/NfcAntennaInfo.html#writeToParcel(android.os.Parcel,int)"/>

@@ -52,11 +52,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/HydrationRecord.html#getVolume()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/HydrationRecord.html#getVolume()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Volume Volume
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Volume"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Volume GetVolume()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Volume>("getVolume", "()Landroid/health/connect/datatypes/units/Volume;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Volume>("getVolume", "()Landroid/health/connect/datatypes/units/Volume;");
         }
 
         #endregion

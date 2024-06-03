@@ -221,34 +221,6 @@ namespace Android.Icu.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getAvailableLocales()"/> 
-        /// </summary>
-        public static Android.Icu.Util.ULocale[] AvailableLocales
-        {
-            get { return SExecuteWithSignatureArray<Android.Icu.Util.ULocale>(LocalBridgeClazz, "getAvailableLocales", "()[Landroid/icu/util/ULocale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDefault()"/> 
-        /// </summary>
-        public static Android.Icu.Util.ULocale Default
-        {
-            get { return SExecuteWithSignature<Android.Icu.Util.ULocale>(LocalBridgeClazz, "getDefault", "()Landroid/icu/util/ULocale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getISOCountries()"/> 
-        /// </summary>
-        public static Java.Lang.String[] ISOCountries
-        {
-            get { return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getISOCountries", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getISOLanguages()"/> 
-        /// </summary>
-        public static Java.Lang.String[] ISOLanguages
-        {
-            get { return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getISOLanguages", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#acceptLanguage(android.icu.util.ULocale[],android.icu.util.ULocale[],boolean[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Util.ULocale"/></param>
@@ -336,6 +308,14 @@ namespace Android.Icu.Util
             return SExecuteWithSignature<Android.Icu.Util.ULocale>(LocalBridgeClazz, "forLocale", "(Ljava/util/Locale;)Landroid/icu/util/ULocale;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDefault()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Util.ULocale"/></returns>
+        public static Android.Icu.Util.ULocale GetDefault()
+        {
+            return SExecuteWithSignature<Android.Icu.Util.ULocale>(LocalBridgeClazz, "getDefault", "()Landroid/icu/util/ULocale;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDefault(android.icu.util.ULocale.Category)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Util.ULocale.Category"/></param>
@@ -352,6 +332,14 @@ namespace Android.Icu.Util
         public static Android.Icu.Util.ULocale MinimizeSubtags(Android.Icu.Util.ULocale arg0)
         {
             return SExecuteWithSignature<Android.Icu.Util.ULocale>(LocalBridgeClazz, "minimizeSubtags", "(Landroid/icu/util/ULocale;)Landroid/icu/util/ULocale;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getAvailableLocales()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Util.ULocale"/></returns>
+        public static Android.Icu.Util.ULocale[] GetAvailableLocales()
+        {
+            return SExecuteWithSignatureArray<Android.Icu.Util.ULocale>(LocalBridgeClazz, "getAvailableLocales", "()[Landroid/icu/util/ULocale;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#canonicalize(java.lang.String)"/>
@@ -694,6 +682,22 @@ namespace Android.Icu.Util
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "toUnicodeLocaleType", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getISOCountries()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String[] GetISOCountries()
+        {
+            return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getISOCountries", "()[Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getISOLanguages()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String[] GetISOLanguages()
+        {
+            return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getISOLanguages", "()[Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getAvailableLocalesByType(android.icu.util.ULocale.AvailableType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Util.ULocale.AvailableType"/></param>
@@ -716,158 +720,12 @@ namespace Android.Icu.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getBaseName()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getFallback()"/>
         /// </summary>
-        public Java.Lang.String BaseName
+        /// <returns><see cref="Android.Icu.Util.ULocale"/></returns>
+        public Android.Icu.Util.ULocale GetFallback()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getBaseName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getCharacterOrientation()"/> 
-        /// </summary>
-        public Java.Lang.String CharacterOrientation
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCharacterOrientation", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getCountry()"/> 
-        /// </summary>
-        public Java.Lang.String Country
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCountry", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayCountry()"/> 
-        /// </summary>
-        public Java.Lang.String DisplayCountry
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayCountry", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayLanguage()"/> 
-        /// </summary>
-        public Java.Lang.String DisplayLanguage
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayLanguage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayLanguageWithDialect()"/> 
-        /// </summary>
-        public Java.Lang.String DisplayLanguageWithDialect
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayLanguageWithDialect", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayName()"/> 
-        /// </summary>
-        public Java.Lang.String DisplayName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayNameWithDialect()"/> 
-        /// </summary>
-        public Java.Lang.String DisplayNameWithDialect
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayNameWithDialect", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayScript()"/> 
-        /// </summary>
-        public Java.Lang.String DisplayScript
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayScript", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayVariant()"/> 
-        /// </summary>
-        public Java.Lang.String DisplayVariant
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayVariant", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getExtensionKeys()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.Character> ExtensionKeys
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.Character>>("getExtensionKeys", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getFallback()"/> 
-        /// </summary>
-        public Android.Icu.Util.ULocale Fallback
-        {
-            get { return IExecuteWithSignature<Android.Icu.Util.ULocale>("getFallback", "()Landroid/icu/util/ULocale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getISO3Country()"/> 
-        /// </summary>
-        public Java.Lang.String ISO3Country
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getISO3Country", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getISO3Language()"/> 
-        /// </summary>
-        public Java.Lang.String ISO3Language
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getISO3Language", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getKeywords()"/> 
-        /// </summary>
-        public Java.Util.Iterator<Java.Lang.String> Keywords
-        {
-            get { return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("getKeywords", "()Ljava/util/Iterator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getLanguage()"/> 
-        /// </summary>
-        public Java.Lang.String Language
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLanguage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getLineOrientation()"/> 
-        /// </summary>
-        public Java.Lang.String LineOrientation
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLineOrientation", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getScript()"/> 
-        /// </summary>
-        public Java.Lang.String Script
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getScript", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getUnicodeLocaleAttributes()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> UnicodeLocaleAttributes
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getUnicodeLocaleAttributes", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getUnicodeLocaleKeys()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> UnicodeLocaleKeys
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getUnicodeLocaleKeys", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getVariant()"/> 
-        /// </summary>
-        public Java.Lang.String Variant
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVariant", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Icu.Util.ULocale>("getFallback", "()Landroid/icu/util/ULocale;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#setKeywordValue(java.lang.String,java.lang.String)"/>
@@ -906,6 +764,38 @@ namespace Android.Icu.Util
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getBaseName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetBaseName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getBaseName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getCharacterOrientation()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCharacterOrientation()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCharacterOrientation", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getCountry()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCountry()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCountry", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayCountry()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayCountry()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayCountry", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayCountry(android.icu.util.ULocale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Util.ULocale"/></param>
@@ -934,6 +824,14 @@ namespace Android.Icu.Util
             return IExecuteWithSignature<Java.Lang.String>("getDisplayKeywordValue", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayLanguage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayLanguage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayLanguage", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayLanguage(android.icu.util.ULocale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Util.ULocale"/></param>
@@ -941,6 +839,14 @@ namespace Android.Icu.Util
         public Java.Lang.String GetDisplayLanguage(Android.Icu.Util.ULocale arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getDisplayLanguage", "(Landroid/icu/util/ULocale;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayLanguageWithDialect()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayLanguageWithDialect()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayLanguageWithDialect", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayLanguageWithDialect(android.icu.util.ULocale)"/>
@@ -952,6 +858,14 @@ namespace Android.Icu.Util
             return IExecuteWithSignature<Java.Lang.String>("getDisplayLanguageWithDialect", "(Landroid/icu/util/ULocale;)Ljava/lang/String;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayName(android.icu.util.ULocale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Util.ULocale"/></param>
@@ -959,6 +873,14 @@ namespace Android.Icu.Util
         public Java.Lang.String GetDisplayName(Android.Icu.Util.ULocale arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(Landroid/icu/util/ULocale;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayNameWithDialect()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayNameWithDialect()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayNameWithDialect", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayNameWithDialect(android.icu.util.ULocale)"/>
@@ -970,6 +892,14 @@ namespace Android.Icu.Util
             return IExecuteWithSignature<Java.Lang.String>("getDisplayNameWithDialect", "(Landroid/icu/util/ULocale;)Ljava/lang/String;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayScript()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayScript()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayScript", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayScript(android.icu.util.ULocale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Util.ULocale"/></param>
@@ -977,6 +907,14 @@ namespace Android.Icu.Util
         public Java.Lang.String GetDisplayScript(Android.Icu.Util.ULocale arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getDisplayScript", "(Landroid/icu/util/ULocale;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayVariant()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayVariant()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayVariant", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayVariant(android.icu.util.ULocale)"/>
@@ -997,6 +935,22 @@ namespace Android.Icu.Util
             return IExecuteWithSignature<Java.Lang.String>("getExtension", "(C)Ljava/lang/String;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getISO3Country()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetISO3Country()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getISO3Country", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getISO3Language()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetISO3Language()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getISO3Language", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getKeywordValue(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -1004,6 +958,38 @@ namespace Android.Icu.Util
         public Java.Lang.String GetKeywordValue(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getKeywordValue", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getLanguage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetLanguage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getLanguage", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getLineOrientation()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetLineOrientation()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getLineOrientation", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getScript()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetScript()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getScript", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getUnicodeLocaleType(java.lang.String)"/>
@@ -1015,6 +1001,14 @@ namespace Android.Icu.Util
             return IExecuteWithSignature<Java.Lang.String>("getUnicodeLocaleType", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getVariant()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetVariant()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getVariant", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#toLanguageTag()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -1023,12 +1017,44 @@ namespace Android.Icu.Util
             return IExecuteWithSignature<Java.Lang.String>("toLanguageTag", "()Ljava/lang/String;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getKeywords()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator<Java.Lang.String> GetKeywords()
+        {
+            return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("getKeywords", "()Ljava/util/Iterator;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#toLocale()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Locale"/></returns>
         public Java.Util.Locale ToLocale()
         {
             return IExecuteWithSignature<Java.Util.Locale>("toLocale", "()Ljava/util/Locale;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getExtensionKeys()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.Character> GetExtensionKeys()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.Character>>("getExtensionKeys", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getUnicodeLocaleAttributes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetUnicodeLocaleAttributes()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getUnicodeLocaleAttributes", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getUnicodeLocaleKeys()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetUnicodeLocaleKeys()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getUnicodeLocaleKeys", "()Ljava/util/Set;");
         }
 
         #endregion

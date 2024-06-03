@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/BufferedReader.html#%3Cinit%3E(java.io.Reader,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/BufferedReader.html#%3Cinit%3E(java.io.Reader,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -39,7 +39,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/BufferedReader.html#%3Cinit%3E(java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/java/io/BufferedReader.html#%3Cinit%3E(java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         public BufferedReader(Java.Io.Reader arg0)
@@ -63,7 +63,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/BufferedReader.html#readLine()"/>
+        /// <see href="https://developer.android.com/reference/java/io/BufferedReader.html#readLine()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -72,7 +72,7 @@ namespace Java.Io
             return IExecuteWithSignature<Java.Lang.String>("readLine", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/BufferedReader.html#lines()"/>
+        /// <see href="https://developer.android.com/reference/java/io/BufferedReader.html#lines()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Lang.String> Lines()

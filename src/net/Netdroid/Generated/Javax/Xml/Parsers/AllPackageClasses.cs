@@ -28,7 +28,7 @@ namespace Javax.Xml.Parsers
 {
     #region DocumentBuilder
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/DocumentBuilder.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/parsers/DocumentBuilder.html"/>
     /// </summary>
     public partial class DocumentBuilder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DocumentBuilder>
     {
@@ -36,12 +36,12 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DocumentBuilder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DocumentBuilder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DocumentBuilder() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DocumentBuilder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DocumentBuilder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DocumentBuilder(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,7 +74,7 @@ namespace Javax.Xml.Parsers
 
     #region DocumentBuilderFactory
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/DocumentBuilderFactory.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/parsers/DocumentBuilderFactory.html"/>
     /// </summary>
     public partial class DocumentBuilderFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DocumentBuilderFactory>
     {
@@ -82,12 +82,12 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DocumentBuilderFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DocumentBuilderFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DocumentBuilderFactory() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DocumentBuilderFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DocumentBuilderFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DocumentBuilderFactory(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -120,7 +120,7 @@ namespace Javax.Xml.Parsers
 
     #region FactoryConfigurationError
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/FactoryConfigurationError.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/parsers/FactoryConfigurationError.html"/>
     /// </summary>
     public partial class FactoryConfigurationError : Java.Lang.Error
     {
@@ -137,7 +137,7 @@ namespace Javax.Xml.Parsers
 
     #region ParserConfigurationException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/ParserConfigurationException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/parsers/ParserConfigurationException.html"/>
     /// </summary>
     public partial class ParserConfigurationException : Java.Lang.Exception
     {
@@ -154,7 +154,7 @@ namespace Javax.Xml.Parsers
 
     #region SAXParser
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/SAXParser.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParser.html"/>
     /// </summary>
     public partial class SAXParser : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SAXParser>
     {
@@ -162,12 +162,12 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SAXParser class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SAXParser class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SAXParser() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SAXParser class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SAXParser class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SAXParser(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -200,7 +200,7 @@ namespace Javax.Xml.Parsers
 
     #region SAXParserFactory
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/SAXParserFactory.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html"/>
     /// </summary>
     public partial class SAXParserFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SAXParserFactory>
     {
@@ -208,12 +208,12 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SAXParserFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SAXParserFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SAXParserFactory() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SAXParserFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SAXParserFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SAXParserFactory(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

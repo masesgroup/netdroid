@@ -52,26 +52,28 @@ namespace Android.Hardware.Input
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/input/HostUsiVersion.html#getMajorVersion()"/> 
-        /// </summary>
-        public int MajorVersion
-        {
-            get { return IExecuteWithSignature<int>("getMajorVersion", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/input/HostUsiVersion.html#getMinorVersion()"/> 
-        /// </summary>
-        public int MinorVersion
-        {
-            get { return IExecuteWithSignature<int>("getMinorVersion", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/input/HostUsiVersion.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/input/HostUsiVersion.html#getMajorVersion()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMajorVersion()
+        {
+            return IExecuteWithSignature<int>("getMajorVersion", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/input/HostUsiVersion.html#getMinorVersion()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinorVersion()
+        {
+            return IExecuteWithSignature<int>("getMinorVersion", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/input/HostUsiVersion.html#writeToParcel(android.os.Parcel,int)"/>

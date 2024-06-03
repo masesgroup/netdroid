@@ -88,13 +88,6 @@ namespace Android.Printservice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/printservice/PrintService.html#getActivePrintJobs()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Printservice.PrintJob> ActivePrintJobs
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Printservice.PrintJob>>("getActivePrintJobs", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/printservice/PrintService.html#generatePrinterId(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -102,6 +95,14 @@ namespace Android.Printservice
         public Android.Print.PrinterId GeneratePrinterId(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Android.Print.PrinterId>("generatePrinterId", "(Ljava/lang/String;)Landroid/print/PrinterId;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/printservice/PrintService.html#getActivePrintJobs()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Printservice.PrintJob> GetActivePrintJobs()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Printservice.PrintJob>>("getActivePrintJobs", "()Ljava/util/List;");
         }
 
         #endregion

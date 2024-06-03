@@ -46,14 +46,7 @@ namespace Javax.Xml.Validation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/TypeInfoProvider.html#getElementTypeInfo()"/> 
-        /// </summary>
-        public Org.W3c.Dom.TypeInfo ElementTypeInfo
-        {
-            get { return IExecuteWithSignature<Org.W3c.Dom.TypeInfo>("getElementTypeInfo", "()Lorg/w3c/dom/TypeInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/TypeInfoProvider.html#isIdAttribute(int)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/validation/TypeInfoProvider.html#isIdAttribute(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -62,7 +55,7 @@ namespace Javax.Xml.Validation
             return IExecuteWithSignature<bool>("isIdAttribute", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/TypeInfoProvider.html#isSpecified(int)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/validation/TypeInfoProvider.html#isSpecified(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -71,13 +64,21 @@ namespace Javax.Xml.Validation
             return IExecuteWithSignature<bool>("isSpecified", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/TypeInfoProvider.html#getAttributeTypeInfo(int)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/validation/TypeInfoProvider.html#getAttributeTypeInfo(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Org.W3c.Dom.TypeInfo"/></returns>
         public Org.W3c.Dom.TypeInfo GetAttributeTypeInfo(int arg0)
         {
             return IExecuteWithSignature<Org.W3c.Dom.TypeInfo>("getAttributeTypeInfo", "(I)Lorg/w3c/dom/TypeInfo;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/validation/TypeInfoProvider.html#getElementTypeInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Org.W3c.Dom.TypeInfo"/></returns>
+        public Org.W3c.Dom.TypeInfo GetElementTypeInfo()
+        {
+            return IExecuteWithSignature<Org.W3c.Dom.TypeInfo>("getElementTypeInfo", "()Lorg/w3c/dom/TypeInfo;");
         }
 
         #endregion

@@ -120,9 +120,9 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onProgressChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.SeekBar>>>(OnProgressChangedEventHandler));
-                AddEventHandler("onStartTrackingTouch", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.SeekBar>>>(OnStartTrackingTouchEventHandler));
-                AddEventHandler("onStopTrackingTouch", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.SeekBar>>>(OnStopTrackingTouchEventHandler));
+                AddEventHandler("onProgressChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.SeekBar>>>(OnProgressChangedEventHandler));
+                AddEventHandler("onStartTrackingTouch", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.SeekBar>>>(OnStartTrackingTouchEventHandler));
+                AddEventHandler("onStopTrackingTouch", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.SeekBar>>>(OnStopTrackingTouchEventHandler));
 
             }
 
@@ -130,7 +130,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/SeekBar.OnSeekBarChangeListener.html#onProgressChanged(android.widget.SeekBar,int,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnProgressChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Widget.SeekBar, int, bool> OnOnProgressChanged { get; set; } = null;
+            public global::System.Action<Android.Widget.SeekBar, int, bool> OnOnProgressChanged { get; set; } = null;
 
             void OnProgressChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.SeekBar>> data)
             {
@@ -153,7 +153,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/SeekBar.OnSeekBarChangeListener.html#onStartTrackingTouch(android.widget.SeekBar)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnStartTrackingTouch"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Widget.SeekBar> OnOnStartTrackingTouch { get; set; } = null;
+            public global::System.Action<Android.Widget.SeekBar> OnOnStartTrackingTouch { get; set; } = null;
 
             void OnStartTrackingTouchEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.SeekBar>> data)
             {
@@ -174,7 +174,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/SeekBar.OnSeekBarChangeListener.html#onStopTrackingTouch(android.widget.SeekBar)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnStopTrackingTouch"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Widget.SeekBar> OnOnStopTrackingTouch { get; set; } = null;
+            public global::System.Action<Android.Widget.SeekBar> OnOnStopTrackingTouch { get; set; } = null;
 
             void OnStopTrackingTouchEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.SeekBar>> data)
             {

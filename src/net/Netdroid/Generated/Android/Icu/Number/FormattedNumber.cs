@@ -46,21 +46,22 @@ namespace Android.Icu.Number
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/number/FormattedNumber.html#getOutputUnit()"/> 
-        /// </summary>
-        public Android.Icu.Util.MeasureUnit OutputUnit
-        {
-            get { return IExecuteWithSignature<Android.Icu.Util.MeasureUnit>("getOutputUnit", "()Landroid/icu/util/MeasureUnit;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/number/FormattedNumber.html#appendTo(java.lang.Appendable)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="A"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.IAppendable"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        public A AppendTo<A>(A arg0) where A: Java.Lang.IAppendable, new()
+        public A AppendTo<A>(A arg0) where A : Java.Lang.IAppendable, new()
         {
             return IExecuteWithSignature<A>("appendTo", "(Ljava/lang/Appendable;)Ljava/lang/Appendable;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/number/FormattedNumber.html#getOutputUnit()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Util.MeasureUnit"/></returns>
+        public Android.Icu.Util.MeasureUnit GetOutputUnit()
+        {
+            return IExecuteWithSignature<Android.Icu.Util.MeasureUnit>("getOutputUnit", "()Landroid/icu/util/MeasureUnit;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/number/FormattedNumber.html#nextPosition(android.icu.text.ConstrainedFieldPosition)"/>

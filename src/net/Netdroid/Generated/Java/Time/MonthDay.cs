@@ -58,7 +58,7 @@ namespace Java.Time
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#from(java.time.temporal.TemporalAccessor)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#from(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
@@ -67,7 +67,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.MonthDay>(LocalBridgeClazz, "from", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/MonthDay;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#now()"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#now()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public static Java.Time.MonthDay Now()
@@ -75,7 +75,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.MonthDay>(LocalBridgeClazz, "now", "()Ljava/time/MonthDay;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#now(java.time.Clock)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#now(java.time.Clock)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Clock"/></param>
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
@@ -84,7 +84,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.MonthDay>(LocalBridgeClazz, "now", "(Ljava/time/Clock;)Ljava/time/MonthDay;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#now(java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#now(java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
@@ -93,7 +93,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.MonthDay>(LocalBridgeClazz, "now", "(Ljava/time/ZoneId;)Ljava/time/MonthDay;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#of(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#of(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -103,7 +103,7 @@ namespace Java.Time
             return SExecute<Java.Time.MonthDay>(LocalBridgeClazz, "of", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#of(java.time.Month,int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#of(java.time.Month,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Month"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -113,7 +113,7 @@ namespace Java.Time
             return SExecute<Java.Time.MonthDay>(LocalBridgeClazz, "of", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#parse(java.lang.CharSequence,java.time.format.DateTimeFormatter)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#parse(java.lang.CharSequence,java.time.format.DateTimeFormatter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Time.Format.DateTimeFormatter"/></param>
@@ -123,7 +123,7 @@ namespace Java.Time
             return SExecute<Java.Time.MonthDay>(LocalBridgeClazz, "parse", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#parse(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#parse(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
@@ -136,28 +136,7 @@ namespace Java.Time
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#getDayOfMonth()"/> 
-        /// </summary>
-        public int DayOfMonth
-        {
-            get { return IExecuteWithSignature<int>("getDayOfMonth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#getMonth()"/> 
-        /// </summary>
-        public Java.Time.Month Month
-        {
-            get { return IExecuteWithSignature<Java.Time.Month>("getMonth", "()Ljava/time/Month;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#getMonthValue()"/> 
-        /// </summary>
-        public int MonthValue
-        {
-            get { return IExecuteWithSignature<int>("getMonthValue", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#query(java.time.temporal.TemporalQuery)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#query(java.time.temporal.TemporalQuery)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
         /// <typeparam name="R"></typeparam>
@@ -167,7 +146,7 @@ namespace Java.Time
             return IExecuteWithSignature<R>("query", "(Ljava/time/temporal/TemporalQuery;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#isAfter(java.time.MonthDay)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#isAfter(java.time.MonthDay)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.MonthDay"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -176,7 +155,7 @@ namespace Java.Time
             return IExecuteWithSignature<bool>("isAfter", "(Ljava/time/MonthDay;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#isBefore(java.time.MonthDay)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#isBefore(java.time.MonthDay)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.MonthDay"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -185,7 +164,7 @@ namespace Java.Time
             return IExecuteWithSignature<bool>("isBefore", "(Ljava/time/MonthDay;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#isSupported(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#isSupported(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -194,7 +173,7 @@ namespace Java.Time
             return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalField;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#isValidYear(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#isValidYear(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -203,7 +182,7 @@ namespace Java.Time
             return IExecuteWithSignature<bool>("isValidYear", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -212,7 +191,7 @@ namespace Java.Time
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#compareTo(java.time.MonthDay)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#compareTo(java.time.MonthDay)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.MonthDay"/></param>
         /// <returns><see cref="int"/></returns>
@@ -221,7 +200,7 @@ namespace Java.Time
             return IExecuteWithSignature<int>("compareTo", "(Ljava/time/MonthDay;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#get(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#get(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="int"/></returns>
@@ -230,7 +209,23 @@ namespace Java.Time
             return IExecuteWithSignature<int>("get", "(Ljava/time/temporal/TemporalField;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#format(java.time.format.DateTimeFormatter)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#getDayOfMonth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDayOfMonth()
+        {
+            return IExecuteWithSignature<int>("getDayOfMonth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#getMonthValue()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMonthValue()
+        {
+            return IExecuteWithSignature<int>("getMonthValue", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#format(java.time.format.DateTimeFormatter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.DateTimeFormatter"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -239,7 +234,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Lang.String>("format", "(Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#atYear(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#atYear(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
@@ -248,7 +243,15 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.LocalDate>("atYear", "(I)Ljava/time/LocalDate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#with(java.time.Month)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#getMonth()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.Month"/></returns>
+        public Java.Time.Month GetMonth()
+        {
+            return IExecuteWithSignature<Java.Time.Month>("getMonth", "()Ljava/time/Month;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#with(java.time.Month)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Month"/></param>
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
@@ -257,7 +260,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.MonthDay>("with", "(Ljava/time/Month;)Ljava/time/MonthDay;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#withDayOfMonth(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#withDayOfMonth(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
@@ -266,7 +269,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.MonthDay>("withDayOfMonth", "(I)Ljava/time/MonthDay;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#withMonth(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#withMonth(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
@@ -275,7 +278,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.MonthDay>("withMonth", "(I)Ljava/time/MonthDay;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#adjustInto(java.time.temporal.Temporal)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#adjustInto(java.time.temporal.Temporal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
@@ -284,7 +287,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("adjustInto", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#range(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#range(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
@@ -293,7 +296,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("range", "(Ljava/time/temporal/TemporalField;)Ljava/time/temporal/ValueRange;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html#getLong(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#getLong(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="long"/></returns>

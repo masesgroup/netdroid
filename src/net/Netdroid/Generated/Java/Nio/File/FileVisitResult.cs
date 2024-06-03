@@ -38,25 +38,25 @@ namespace Java.Nio.File
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitResult.html#CONTINUE"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitResult.html#CONTINUE"/>
         /// </summary>
         public static Java.Nio.File.FileVisitResult CONTINUE { get { if (!_CONTINUEReady) { _CONTINUEContent = SGetField<Java.Nio.File.FileVisitResult>(LocalBridgeClazz, "CONTINUE"); _CONTINUEReady = true; } return _CONTINUEContent; } }
         private static Java.Nio.File.FileVisitResult _CONTINUEContent = default;
         private static bool _CONTINUEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitResult.html#SKIP_SIBLINGS"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitResult.html#SKIP_SIBLINGS"/>
         /// </summary>
         public static Java.Nio.File.FileVisitResult SKIP_SIBLINGS { get { if (!_SKIP_SIBLINGSReady) { _SKIP_SIBLINGSContent = SGetField<Java.Nio.File.FileVisitResult>(LocalBridgeClazz, "SKIP_SIBLINGS"); _SKIP_SIBLINGSReady = true; } return _SKIP_SIBLINGSContent; } }
         private static Java.Nio.File.FileVisitResult _SKIP_SIBLINGSContent = default;
         private static bool _SKIP_SIBLINGSReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitResult.html#SKIP_SUBTREE"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitResult.html#SKIP_SUBTREE"/>
         /// </summary>
         public static Java.Nio.File.FileVisitResult SKIP_SUBTREE { get { if (!_SKIP_SUBTREEReady) { _SKIP_SUBTREEContent = SGetField<Java.Nio.File.FileVisitResult>(LocalBridgeClazz, "SKIP_SUBTREE"); _SKIP_SUBTREEReady = true; } return _SKIP_SUBTREEContent; } }
         private static Java.Nio.File.FileVisitResult _SKIP_SUBTREEContent = default;
         private static bool _SKIP_SUBTREEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitResult.html#TERMINATE"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitResult.html#TERMINATE"/>
         /// </summary>
         public static Java.Nio.File.FileVisitResult TERMINATE { get { if (!_TERMINATEReady) { _TERMINATEContent = SGetField<Java.Nio.File.FileVisitResult>(LocalBridgeClazz, "TERMINATE"); _TERMINATEReady = true; } return _TERMINATEContent; } }
         private static Java.Nio.File.FileVisitResult _TERMINATEContent = default;
@@ -66,7 +66,7 @@ namespace Java.Nio.File
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitResult.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitResult.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
@@ -75,7 +75,7 @@ namespace Java.Nio.File
             return SExecuteWithSignature<Java.Nio.File.FileVisitResult>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/nio/file/FileVisitResult;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitResult.html#values()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitResult.html#values()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         public static Java.Nio.File.FileVisitResult[] Values()

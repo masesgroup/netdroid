@@ -172,7 +172,7 @@ namespace Android.Hardware.Camera2
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.html#LENS_RADIAL_DISTORTION"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Hardware.Camera2.CaptureResult.Key LENS_RADIAL_DISTORTION { get { if (!_LENS_RADIAL_DISTORTIONReady) { _LENS_RADIAL_DISTORTIONContent = SGetField<Android.Hardware.Camera2.CaptureResult.Key>(LocalBridgeClazz, "LENS_RADIAL_DISTORTION"); _LENS_RADIAL_DISTORTIONReady = true; } return _LENS_RADIAL_DISTORTIONContent; } }
         private static Android.Hardware.Camera2.CaptureResult.Key _LENS_RADIAL_DISTORTIONContent = default;
         private static bool _LENS_RADIAL_DISTORTIONReady = false; // this is used because in case of generics 
@@ -605,34 +605,6 @@ namespace Android.Hardware.Camera2
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.html#getCameraId()"/> 
-        /// </summary>
-        public Java.Lang.String CameraId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCameraId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.html#getFrameNumber()"/> 
-        /// </summary>
-        public long FrameNumber
-        {
-            get { return IExecuteWithSignature<long>("getFrameNumber", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.html#getRequest()"/> 
-        /// </summary>
-        public Android.Hardware.Camera2.CaptureRequest Request
-        {
-            get { return IExecuteWithSignature<Android.Hardware.Camera2.CaptureRequest>("getRequest", "()Landroid/hardware/camera2/CaptureRequest;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.html#getSequenceId()"/> 
-        /// </summary>
-        public int SequenceId
-        {
-            get { return IExecuteWithSignature<int>("getSequenceId", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.html#get(android.hardware.camera2.CaptureResult.Key)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Hardware.Camera2.CaptureResult.Key"/></param>
@@ -641,6 +613,38 @@ namespace Android.Hardware.Camera2
         public T Get<T>(Android.Hardware.Camera2.CaptureResult.Key<T> arg0)
         {
             return IExecuteWithSignature<T>("get", "(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.html#getRequest()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Hardware.Camera2.CaptureRequest"/></returns>
+        public Android.Hardware.Camera2.CaptureRequest GetRequest()
+        {
+            return IExecuteWithSignature<Android.Hardware.Camera2.CaptureRequest>("getRequest", "()Landroid/hardware/camera2/CaptureRequest;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.html#getSequenceId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSequenceId()
+        {
+            return IExecuteWithSignature<int>("getSequenceId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.html#getCameraId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCameraId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCameraId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.html#getFrameNumber()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetFrameNumber()
+        {
+            return IExecuteWithSignature<long>("getFrameNumber", "()J");
         }
 
         #endregion
@@ -676,11 +680,12 @@ namespace Android.Hardware.Camera2
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.Key.html#getName()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.Key.html#getName()"/>
             /// </summary>
-            public Java.Lang.String Name
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetName()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
 
             #endregion
@@ -727,11 +732,12 @@ namespace Android.Hardware.Camera2
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.Key.html#getName()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.Key.html#getName()"/>
             /// </summary>
-            public Java.Lang.String Name
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetName()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
 
             #endregion

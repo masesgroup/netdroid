@@ -30,7 +30,7 @@ namespace Javax.Crypto
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/CipherOutputStream.html#%3Cinit%3E(java.io.OutputStream,javax.crypto.Cipher)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/CipherOutputStream.html#%3Cinit%3E(java.io.OutputStream,javax.crypto.Cipher)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Javax.Crypto.Cipher"/></param>

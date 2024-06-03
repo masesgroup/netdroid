@@ -30,7 +30,7 @@ namespace Android.Drm
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/drm/DrmConvertedStatus.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class DrmConvertedStatus : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DrmConvertedStatus>
     {
         const string _bridgeClassName = "android.drm.DrmConvertedStatus";
@@ -75,7 +75,7 @@ namespace Android.Drm
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/drm/DrmErrorEvent.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class DrmErrorEvent : Android.Drm.DrmEvent
     {
         const string _bridgeClassName = "android.drm.DrmErrorEvent";
@@ -120,7 +120,7 @@ namespace Android.Drm
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/drm/DrmEvent.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class DrmEvent : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DrmEvent>
     {
         const string _bridgeClassName = "android.drm.DrmEvent";
@@ -165,7 +165,7 @@ namespace Android.Drm
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/drm/DrmInfo.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class DrmInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DrmInfo>
     {
         const string _bridgeClassName = "android.drm.DrmInfo";
@@ -210,7 +210,7 @@ namespace Android.Drm
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/drm/DrmInfoEvent.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class DrmInfoEvent : Android.Drm.DrmEvent
     {
         const string _bridgeClassName = "android.drm.DrmInfoEvent";
@@ -255,7 +255,7 @@ namespace Android.Drm
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/drm/DrmInfoRequest.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class DrmInfoRequest : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DrmInfoRequest>
     {
         const string _bridgeClassName = "android.drm.DrmInfoRequest";
@@ -300,7 +300,7 @@ namespace Android.Drm
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/drm/DrmInfoStatus.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class DrmInfoStatus : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DrmInfoStatus>
     {
         const string _bridgeClassName = "android.drm.DrmInfoStatus";
@@ -345,7 +345,7 @@ namespace Android.Drm
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class DrmManagerClient : Java.Lang.AutoCloseable
     {
         const string _bridgeClassName = "android.drm.DrmManagerClient";
@@ -386,7 +386,7 @@ namespace Android.Drm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.OnErrorListener.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class OnErrorListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
             /// <summary>
@@ -394,10 +394,13 @@ namespace Android.Drm
             /// </summary>
             public OnErrorListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.drm.DrmManagerClient_OnErrorListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.drm.OnErrorListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -419,10 +422,13 @@ namespace Android.Drm
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.drm.DrmManagerClient$OnErrorListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.drm.DrmManagerClient$OnErrorListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -446,7 +452,7 @@ namespace Android.Drm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.OnEventListener.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class OnEventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
             /// <summary>
@@ -454,10 +460,13 @@ namespace Android.Drm
             /// </summary>
             public OnEventListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.drm.DrmManagerClient_OnEventListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.drm.OnEventListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -479,10 +488,13 @@ namespace Android.Drm
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.drm.DrmManagerClient$OnEventListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.drm.DrmManagerClient$OnEventListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -506,7 +518,7 @@ namespace Android.Drm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.OnInfoListener.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class OnInfoListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
             /// <summary>
@@ -514,10 +526,13 @@ namespace Android.Drm
             /// </summary>
             public OnInfoListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.drm.DrmManagerClient_OnInfoListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.drm.OnInfoListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -539,10 +554,13 @@ namespace Android.Drm
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.drm.DrmManagerClient$OnInfoListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.drm.DrmManagerClient$OnInfoListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -570,7 +588,7 @@ namespace Android.Drm
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/drm/DrmRights.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class DrmRights : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DrmRights>
     {
         const string _bridgeClassName = "android.drm.DrmRights";
@@ -615,7 +633,7 @@ namespace Android.Drm
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/drm/DrmStore.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class DrmStore : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DrmStore>
     {
         const string _bridgeClassName = "android.drm.DrmStore";
@@ -656,7 +674,7 @@ namespace Android.Drm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmStore.Action.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class Action : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Action>
         {
             const string _bridgeClassName = "android.drm.DrmStore$Action";
@@ -701,19 +719,19 @@ namespace Android.Drm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmStore.ConstraintsColumns.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class ConstraintsColumns : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ConstraintsColumns>
         {
             const string _bridgeClassName = "android.drm.DrmStore$ConstraintsColumns";
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("ConstraintsColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("ConstraintsColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ConstraintsColumns() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("ConstraintsColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("ConstraintsColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ConstraintsColumns(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -748,7 +766,7 @@ namespace Android.Drm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmStore.DrmObjectType.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class DrmObjectType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DrmObjectType>
         {
             const string _bridgeClassName = "android.drm.DrmStore$DrmObjectType";
@@ -793,7 +811,7 @@ namespace Android.Drm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmStore.Playback.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class Playback : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Playback>
         {
             const string _bridgeClassName = "android.drm.DrmStore$Playback";
@@ -838,7 +856,7 @@ namespace Android.Drm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmStore.RightsStatus.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class RightsStatus : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RightsStatus>
         {
             const string _bridgeClassName = "android.drm.DrmStore$RightsStatus";
@@ -887,7 +905,7 @@ namespace Android.Drm
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/drm/DrmSupportInfo.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class DrmSupportInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DrmSupportInfo>
     {
         const string _bridgeClassName = "android.drm.DrmSupportInfo";
@@ -932,7 +950,7 @@ namespace Android.Drm
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/drm/DrmUtils.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class DrmUtils : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DrmUtils>
     {
         const string _bridgeClassName = "android.drm.DrmUtils";
@@ -973,7 +991,7 @@ namespace Android.Drm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmUtils.ExtendedMetadataParser.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class ExtendedMetadataParser : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ExtendedMetadataParser>
         {
             const string _bridgeClassName = "android.drm.DrmUtils$ExtendedMetadataParser";
@@ -1022,7 +1040,7 @@ namespace Android.Drm
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/drm/ProcessedData.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ProcessedData : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ProcessedData>
     {
         const string _bridgeClassName = "android.drm.ProcessedData";

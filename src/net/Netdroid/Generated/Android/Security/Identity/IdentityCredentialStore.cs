@@ -70,13 +70,6 @@ namespace Android.Security.Identity
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredentialStore.html#getSupportedDocTypes()"/> 
-        /// </summary>
-        public Java.Lang.String[] SupportedDocTypes
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getSupportedDocTypes", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredentialStore.html#getCredentialByName(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -104,10 +97,18 @@ namespace Android.Security.Identity
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="byte"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public byte[] DeleteCredentialByName(Java.Lang.String arg0)
         {
             return IExecuteWithSignatureArray<byte>("deleteCredentialByName", "(Ljava/lang/String;)[B", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredentialStore.html#getSupportedDocTypes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetSupportedDocTypes()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getSupportedDocTypes", "()[Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredentialStore.html#createPresentationSession(int)"/>

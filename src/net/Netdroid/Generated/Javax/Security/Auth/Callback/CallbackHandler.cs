@@ -64,7 +64,7 @@ namespace Javax.Security.Auth.Callback
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/callback/CallbackHandler.html#handle(javax.security.auth.callback.Callback[])"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/callback/CallbackHandler.html#handle(javax.security.auth.callback.Callback[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Security.Auth.Callback.Callback"/></param>
         /// <exception cref="Java.Io.IOException"/>

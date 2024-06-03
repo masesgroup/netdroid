@@ -46,25 +46,28 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/InterfaceAddress.html#getAddress()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/InterfaceAddress.html#getAddress()"/>
         /// </summary>
-        public Java.Net.InetAddress Address
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        public Java.Net.InetAddress GetAddress()
         {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getAddress", "()Ljava/net/InetAddress;"); }
+            return IExecuteWithSignature<Java.Net.InetAddress>("getAddress", "()Ljava/net/InetAddress;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/InterfaceAddress.html#getBroadcast()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/InterfaceAddress.html#getBroadcast()"/>
         /// </summary>
-        public Java.Net.InetAddress Broadcast
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        public Java.Net.InetAddress GetBroadcast()
         {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getBroadcast", "()Ljava/net/InetAddress;"); }
+            return IExecuteWithSignature<Java.Net.InetAddress>("getBroadcast", "()Ljava/net/InetAddress;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/InterfaceAddress.html#getNetworkPrefixLength()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/InterfaceAddress.html#getNetworkPrefixLength()"/>
         /// </summary>
-        public short NetworkPrefixLength
+        /// <returns><see cref="short"/></returns>
+        public short GetNetworkPrefixLength()
         {
-            get { return IExecuteWithSignature<short>("getNetworkPrefixLength", "()S"); }
+            return IExecuteWithSignature<short>("getNetworkPrefixLength", "()S");
         }
 
         #endregion

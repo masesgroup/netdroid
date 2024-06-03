@@ -76,40 +76,44 @@ namespace Android.Print
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintDocumentInfo.html#getContentType()"/> 
-        /// </summary>
-        public int ContentType
-        {
-            get { return IExecuteWithSignature<int>("getContentType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintDocumentInfo.html#getDataSize()"/> 
-        /// </summary>
-        public long DataSize
-        {
-            get { return IExecuteWithSignature<long>("getDataSize", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintDocumentInfo.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintDocumentInfo.html#getPageCount()"/> 
-        /// </summary>
-        public int PageCount
-        {
-            get { return IExecuteWithSignature<int>("getPageCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrintDocumentInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PrintDocumentInfo.html#getContentType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetContentType()
+        {
+            return IExecuteWithSignature<int>("getContentType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PrintDocumentInfo.html#getPageCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPageCount()
+        {
+            return IExecuteWithSignature<int>("getPageCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PrintDocumentInfo.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PrintDocumentInfo.html#getDataSize()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDataSize()
+        {
+            return IExecuteWithSignature<long>("getDataSize", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrintDocumentInfo.html#writeToParcel(android.os.Parcel,int)"/>

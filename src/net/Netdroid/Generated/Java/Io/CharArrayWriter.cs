@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/CharArrayWriter.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/CharArrayWriter.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public CharArrayWriter(int arg0)
@@ -54,7 +54,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/CharArrayWriter.html#toCharArray()"/>
+        /// <see href="https://developer.android.com/reference/java/io/CharArrayWriter.html#toCharArray()"/>
         /// </summary>
         /// <returns><see cref="char"/></returns>
         public char[] ToCharArray()
@@ -62,7 +62,7 @@ namespace Java.Io
             return IExecuteWithSignatureArray<char>("toCharArray", "()[C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/CharArrayWriter.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/io/CharArrayWriter.html#size()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Size()
@@ -70,14 +70,14 @@ namespace Java.Io
             return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/CharArrayWriter.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/java/io/CharArrayWriter.html#reset()"/>
         /// </summary>
         public void Reset()
         {
             IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/CharArrayWriter.html#writeTo(java.io.Writer)"/>
+        /// <see href="https://developer.android.com/reference/java/io/CharArrayWriter.html#writeTo(java.io.Writer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
         /// <exception cref="Java.Io.IOException"/>

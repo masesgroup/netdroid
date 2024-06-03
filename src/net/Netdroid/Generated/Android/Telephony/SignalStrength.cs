@@ -66,89 +66,12 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#getCdmaDbm()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int CdmaDbm
-        {
-            get { return IExecuteWithSignature<int>("getCdmaDbm", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#getCdmaEcio()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int CdmaEcio
-        {
-            get { return IExecuteWithSignature<int>("getCdmaEcio", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#getCellSignalStrengths()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Telephony.CellSignalStrength> CellSignalStrengths
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telephony.CellSignalStrength>>("getCellSignalStrengths", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#getEvdoDbm()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int EvdoDbm
-        {
-            get { return IExecuteWithSignature<int>("getEvdoDbm", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#getEvdoEcio()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int EvdoEcio
-        {
-            get { return IExecuteWithSignature<int>("getEvdoEcio", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#getEvdoSnr()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int EvdoSnr
-        {
-            get { return IExecuteWithSignature<int>("getEvdoSnr", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#getGsmBitErrorRate()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int GsmBitErrorRate
-        {
-            get { return IExecuteWithSignature<int>("getGsmBitErrorRate", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#getGsmSignalStrength()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int GsmSignalStrength
-        {
-            get { return IExecuteWithSignature<int>("getGsmSignalStrength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#getLevel()"/> 
-        /// </summary>
-        public int Level
-        {
-            get { return IExecuteWithSignature<int>("getLevel", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#getTimestampMillis()"/> 
-        /// </summary>
-        public long TimestampMillis
-        {
-            get { return IExecuteWithSignature<long>("getTimestampMillis", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#getCellSignalStrengths(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Android.Telephony.CellSignalStrength"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List<T> GetCellSignalStrengths<T>(Java.Lang.Class arg0) where T: Android.Telephony.CellSignalStrength
+        public Java.Util.List<T> GetCellSignalStrengths<T>(Java.Lang.Class arg0) where T : Android.Telephony.CellSignalStrength
         {
             return IExecuteWithSignature<Java.Util.List<T>>("getCellSignalStrengths", "(Ljava/lang/Class;)Ljava/util/List;", arg0);
         }
@@ -156,7 +79,7 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#isGsm()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsGsm()
         {
             return IExecuteWithSignature<bool>("isGsm", "()Z");
@@ -168,6 +91,93 @@ namespace Android.Telephony
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#getCdmaDbm()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetCdmaDbm()
+        {
+            return IExecuteWithSignature<int>("getCdmaDbm", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#getCdmaEcio()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetCdmaEcio()
+        {
+            return IExecuteWithSignature<int>("getCdmaEcio", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#getEvdoDbm()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetEvdoDbm()
+        {
+            return IExecuteWithSignature<int>("getEvdoDbm", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#getEvdoEcio()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetEvdoEcio()
+        {
+            return IExecuteWithSignature<int>("getEvdoEcio", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#getEvdoSnr()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetEvdoSnr()
+        {
+            return IExecuteWithSignature<int>("getEvdoSnr", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#getGsmBitErrorRate()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetGsmBitErrorRate()
+        {
+            return IExecuteWithSignature<int>("getGsmBitErrorRate", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#getGsmSignalStrength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetGsmSignalStrength()
+        {
+            return IExecuteWithSignature<int>("getGsmSignalStrength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#getLevel()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLevel()
+        {
+            return IExecuteWithSignature<int>("getLevel", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#getCellSignalStrengths()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telephony.CellSignalStrength> GetCellSignalStrengths()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telephony.CellSignalStrength>>("getCellSignalStrengths", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#getTimestampMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTimestampMillis()
+        {
+            return IExecuteWithSignature<long>("getTimestampMillis", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#writeToParcel(android.os.Parcel,int)"/>

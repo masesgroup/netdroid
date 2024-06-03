@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#%3Cinit%3E(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public DelayQueue(Java.Util.Collection arg0)
@@ -58,7 +58,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#add(java.util.concurrent.Delayed)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#add(java.util.concurrent.Delayed)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Delayed"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -67,7 +67,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("add", "(Ljava/util/concurrent/Delayed;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#offer(java.util.concurrent.Delayed,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#offer(java.util.concurrent.Delayed,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Delayed"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -78,7 +78,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("offer", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#offer(java.util.concurrent.Delayed)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#offer(java.util.concurrent.Delayed)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Delayed"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -87,7 +87,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("offer", "(Ljava/util/concurrent/Delayed;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -99,7 +99,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("offer", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#drainTo(java.util.Collection,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#drainTo(java.util.Collection,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -109,7 +109,7 @@ namespace Java.Util.Concurrent
             return IExecute<int>("drainTo", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#drainTo(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#drainTo(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="int"/></returns>
@@ -118,7 +118,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("drainTo", "(Ljava/util/Collection;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#remainingCapacity()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#remainingCapacity()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int RemainingCapacity()
@@ -126,7 +126,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("remainingCapacity", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#poll(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -137,7 +137,7 @@ namespace Java.Util.Concurrent
             return IExecute("poll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#take()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#take()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -146,7 +146,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("take", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#put(java.util.concurrent.Delayed)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#put(java.util.concurrent.Delayed)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Delayed"/></param>
         public void Put(Java.Util.Concurrent.Delayed arg0)
@@ -154,7 +154,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("put", "(Ljava/util/concurrent/Delayed;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#put(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#put(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -178,7 +178,7 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#%3Cinit%3E(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public DelayQueue(Java.Util.Collection<E> arg0)
@@ -210,7 +210,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#add(java.util.concurrent.Delayed)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#add(java.util.concurrent.Delayed)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -219,7 +219,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("add", "(Ljava/util/concurrent/Delayed;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#offer(java.util.concurrent.Delayed,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#offer(java.util.concurrent.Delayed,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -230,7 +230,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("offer", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#offer(java.util.concurrent.Delayed)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#offer(java.util.concurrent.Delayed)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -239,7 +239,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("offer", "(Ljava/util/concurrent/Delayed;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -251,28 +251,28 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("offer", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#drainTo(java.util.Collection,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#drainTo(java.util.Collection,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0, int arg1) where Arg0objectSuperE: E
+        public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0, int arg1) where Arg0objectSuperE : E
         {
             return IExecute<int>("drainTo", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#drainTo(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#drainTo(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0) where Arg0objectSuperE: E
+        public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
         {
             return IExecuteWithSignature<int>("drainTo", "(Ljava/util/Collection;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#remainingCapacity()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#remainingCapacity()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int RemainingCapacity()
@@ -280,7 +280,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("remainingCapacity", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#poll(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -291,7 +291,7 @@ namespace Java.Util.Concurrent
             return IExecute("poll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#take()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#take()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -300,7 +300,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("take", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#put(java.util.concurrent.Delayed)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#put(java.util.concurrent.Delayed)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void Put(E arg0)
@@ -308,7 +308,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("put", "(Ljava/util/concurrent/Delayed;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html#put(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#put(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>

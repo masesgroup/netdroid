@@ -58,11 +58,12 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/HandwritingGesture.html#getFallbackText()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/HandwritingGesture.html#getFallbackText()"/>
         /// </summary>
-        public Java.Lang.String FallbackText
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFallbackText()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFallbackText", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getFallbackText", "()Ljava/lang/String;");
         }
 
         #endregion

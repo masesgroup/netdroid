@@ -74,25 +74,12 @@ namespace Android.Text.Style
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/TypefaceSpan.html#getFamily()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/style/TypefaceSpan.html#getTypeface()"/>
         /// </summary>
-        public Java.Lang.String Family
+        /// <returns><see cref="Android.Graphics.Typeface"/></returns>
+        public Android.Graphics.Typeface GetTypeface()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFamily", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/TypefaceSpan.html#getSpanTypeId()"/> 
-        /// </summary>
-        public int SpanTypeId
-        {
-            get { return IExecuteWithSignature<int>("getSpanTypeId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/TypefaceSpan.html#getTypeface()"/> 
-        /// </summary>
-        public Android.Graphics.Typeface Typeface
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Typeface>("getTypeface", "()Landroid/graphics/Typeface;"); }
+            return IExecuteWithSignature<Android.Graphics.Typeface>("getTypeface", "()Landroid/graphics/Typeface;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TypefaceSpan.html#describeContents()"/>
@@ -101,6 +88,22 @@ namespace Android.Text.Style
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/TypefaceSpan.html#getSpanTypeId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSpanTypeId()
+        {
+            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/TypefaceSpan.html#getFamily()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFamily()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFamily", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TypefaceSpan.html#writeToParcel(android.os.Parcel,int)"/>

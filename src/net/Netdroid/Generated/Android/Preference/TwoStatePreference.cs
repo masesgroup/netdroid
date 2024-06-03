@@ -36,7 +36,7 @@ namespace Android.Preference
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public TwoStatePreference(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -47,7 +47,7 @@ namespace Android.Preference
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public TwoStatePreference(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -57,7 +57,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public TwoStatePreference(Android.Content.Context arg0, Android.Util.AttributeSet arg1)
             : base(arg0, arg1)
         {
@@ -66,7 +66,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/TwoStatePreference.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public TwoStatePreference(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -88,52 +88,64 @@ namespace Android.Preference
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/TwoStatePreference.html#getDisableDependentsState()"/> <see href="https://developer.android.com/reference/android/preference/TwoStatePreference.html#setDisableDependentsState(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/preference/TwoStatePreference.html#getDisableDependentsState()"/>
         /// </summary>
-        [System.Obsolete()]
-        public bool DisableDependentsState
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetDisableDependentsState()
         {
-            get { return IExecuteWithSignature<bool>("getDisableDependentsState", "()Z"); } set { IExecuteWithSignature("setDisableDependentsState", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/TwoStatePreference.html#getSummaryOff()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.CharSequence SummaryOff
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getSummaryOff", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/TwoStatePreference.html#getSummaryOn()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.CharSequence SummaryOn
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getSummaryOn", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<bool>("getDisableDependentsState", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/TwoStatePreference.html#isChecked()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsChecked()
         {
             return IExecuteWithSignature<bool>("isChecked", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/TwoStatePreference.html#getSummaryOff()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.CharSequence GetSummaryOff()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getSummaryOff", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/TwoStatePreference.html#getSummaryOn()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.CharSequence GetSummaryOn()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getSummaryOn", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/TwoStatePreference.html#setChecked(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetChecked(bool arg0)
         {
             IExecuteWithSignature("setChecked", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/TwoStatePreference.html#setDisableDependentsState(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        public void SetDisableDependentsState(bool arg0)
+        {
+            IExecuteWithSignature("setDisableDependentsState", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/TwoStatePreference.html#setSummaryOff(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSummaryOff(int arg0)
         {
             IExecuteWithSignature("setSummaryOff", "(I)V", arg0);
@@ -142,7 +154,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/TwoStatePreference.html#setSummaryOff(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSummaryOff(Java.Lang.CharSequence arg0)
         {
             IExecuteWithSignature("setSummaryOff", "(Ljava/lang/CharSequence;)V", arg0);
@@ -151,7 +163,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/TwoStatePreference.html#setSummaryOn(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSummaryOn(int arg0)
         {
             IExecuteWithSignature("setSummaryOn", "(I)V", arg0);
@@ -160,7 +172,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/TwoStatePreference.html#setSummaryOn(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSummaryOn(Java.Lang.CharSequence arg0)
         {
             IExecuteWithSignature("setSummaryOn", "(Ljava/lang/CharSequence;)V", arg0);

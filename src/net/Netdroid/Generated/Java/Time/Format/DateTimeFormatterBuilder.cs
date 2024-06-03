@@ -42,7 +42,7 @@ namespace Java.Time.Format
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#getLocalizedDateTimePattern(java.time.format.FormatStyle,java.time.format.FormatStyle,java.time.chrono.Chronology,java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#getLocalizedDateTimePattern(java.time.format.FormatStyle,java.time.format.FormatStyle,java.time.chrono.Chronology,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.FormatStyle"/></param>
         /// <param name="arg1"><see cref="Java.Time.Format.FormatStyle"/></param>
@@ -58,7 +58,7 @@ namespace Java.Time.Format
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#toFormatter()"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#toFormatter()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatter"/></returns>
         public Java.Time.Format.DateTimeFormatter ToFormatter()
@@ -66,7 +66,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatter>("toFormatter", "()Ljava/time/format/DateTimeFormatter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#toFormatter(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#toFormatter(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatter"/></returns>
@@ -75,7 +75,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatter>("toFormatter", "(Ljava/util/Locale;)Ljava/time/format/DateTimeFormatter;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#append(java.time.format.DateTimeFormatter)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#append(java.time.format.DateTimeFormatter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.DateTimeFormatter"/></param>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
@@ -84,7 +84,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("append", "(Ljava/time/format/DateTimeFormatter;)Ljava/time/format/DateTimeFormatterBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendChronologyId()"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendChronologyId()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendChronologyId()
@@ -92,7 +92,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("appendChronologyId", "()Ljava/time/format/DateTimeFormatterBuilder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendChronologyText(java.time.format.TextStyle)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendChronologyText(java.time.format.TextStyle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
@@ -101,7 +101,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("appendChronologyText", "(Ljava/time/format/TextStyle;)Ljava/time/format/DateTimeFormatterBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendDayPeriodText(java.time.format.TextStyle)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendDayPeriodText(java.time.format.TextStyle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
@@ -110,7 +110,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("appendDayPeriodText", "(Ljava/time/format/TextStyle;)Ljava/time/format/DateTimeFormatterBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendFraction(java.time.temporal.TemporalField,int,int,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendFraction(java.time.temporal.TemporalField,int,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -122,7 +122,7 @@ namespace Java.Time.Format
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendFraction", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendGenericZoneText(java.time.format.TextStyle,java.util.Set)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendGenericZoneText(java.time.format.TextStyle,java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
@@ -132,7 +132,7 @@ namespace Java.Time.Format
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendGenericZoneText", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendGenericZoneText(java.time.format.TextStyle)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendGenericZoneText(java.time.format.TextStyle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
@@ -141,7 +141,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("appendGenericZoneText", "(Ljava/time/format/TextStyle;)Ljava/time/format/DateTimeFormatterBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendInstant()"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendInstant()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendInstant()
@@ -149,7 +149,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("appendInstant", "()Ljava/time/format/DateTimeFormatterBuilder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendInstant(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendInstant(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
@@ -158,7 +158,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("appendInstant", "(I)Ljava/time/format/DateTimeFormatterBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendLiteral(char)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendLiteral(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
@@ -167,7 +167,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("appendLiteral", "(C)Ljava/time/format/DateTimeFormatterBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendLiteral(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendLiteral(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
@@ -176,7 +176,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("appendLiteral", "(Ljava/lang/String;)Ljava/time/format/DateTimeFormatterBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendLocalized(java.time.format.FormatStyle,java.time.format.FormatStyle)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendLocalized(java.time.format.FormatStyle,java.time.format.FormatStyle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.FormatStyle"/></param>
         /// <param name="arg1"><see cref="Java.Time.Format.FormatStyle"/></param>
@@ -186,7 +186,7 @@ namespace Java.Time.Format
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendLocalized", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendLocalizedOffset(java.time.format.TextStyle)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendLocalizedOffset(java.time.format.TextStyle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
@@ -195,7 +195,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("appendLocalizedOffset", "(Ljava/time/format/TextStyle;)Ljava/time/format/DateTimeFormatterBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendOffset(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendOffset(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -205,7 +205,7 @@ namespace Java.Time.Format
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendOffset", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendOffsetId()"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendOffsetId()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendOffsetId()
@@ -213,7 +213,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("appendOffsetId", "()Ljava/time/format/DateTimeFormatterBuilder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendOptional(java.time.format.DateTimeFormatter)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendOptional(java.time.format.DateTimeFormatter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.DateTimeFormatter"/></param>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
@@ -222,7 +222,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("appendOptional", "(Ljava/time/format/DateTimeFormatter;)Ljava/time/format/DateTimeFormatterBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendPattern(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendPattern(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
@@ -231,7 +231,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("appendPattern", "(Ljava/lang/String;)Ljava/time/format/DateTimeFormatterBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendText(java.time.temporal.TemporalField,java.time.format.TextStyle)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendText(java.time.temporal.TemporalField,java.time.format.TextStyle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <param name="arg1"><see cref="Java.Time.Format.TextStyle"/></param>
@@ -241,7 +241,7 @@ namespace Java.Time.Format
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendText", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendText(java.time.temporal.TemporalField,java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendText(java.time.temporal.TemporalField,java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
@@ -251,7 +251,7 @@ namespace Java.Time.Format
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendText", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendText(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendText(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
@@ -260,7 +260,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("appendText", "(Ljava/time/temporal/TemporalField;)Ljava/time/format/DateTimeFormatterBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendValue(java.time.temporal.TemporalField,int,int,java.time.format.SignStyle)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendValue(java.time.temporal.TemporalField,int,int,java.time.format.SignStyle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -272,7 +272,7 @@ namespace Java.Time.Format
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendValue", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendValue(java.time.temporal.TemporalField,int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendValue(java.time.temporal.TemporalField,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -282,7 +282,7 @@ namespace Java.Time.Format
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendValue", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendValue(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendValue(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
@@ -291,7 +291,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("appendValue", "(Ljava/time/temporal/TemporalField;)Ljava/time/format/DateTimeFormatterBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendValueReduced(java.time.temporal.TemporalField,int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendValueReduced(java.time.temporal.TemporalField,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -303,7 +303,7 @@ namespace Java.Time.Format
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendValueReduced", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendValueReduced(java.time.temporal.TemporalField,int,int,java.time.chrono.ChronoLocalDate)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendValueReduced(java.time.temporal.TemporalField,int,int,java.time.chrono.ChronoLocalDate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -315,7 +315,7 @@ namespace Java.Time.Format
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendValueReduced", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendZoneId()"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendZoneId()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendZoneId()
@@ -323,7 +323,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("appendZoneId", "()Ljava/time/format/DateTimeFormatterBuilder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendZoneOrOffsetId()"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendZoneOrOffsetId()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendZoneOrOffsetId()
@@ -331,7 +331,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("appendZoneOrOffsetId", "()Ljava/time/format/DateTimeFormatterBuilder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendZoneRegionId()"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendZoneRegionId()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendZoneRegionId()
@@ -339,7 +339,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("appendZoneRegionId", "()Ljava/time/format/DateTimeFormatterBuilder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendZoneText(java.time.format.TextStyle,java.util.Set)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendZoneText(java.time.format.TextStyle,java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
@@ -349,7 +349,7 @@ namespace Java.Time.Format
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendZoneText", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#appendZoneText(java.time.format.TextStyle)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendZoneText(java.time.format.TextStyle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
@@ -358,7 +358,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("appendZoneText", "(Ljava/time/format/TextStyle;)Ljava/time/format/DateTimeFormatterBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#optionalEnd()"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#optionalEnd()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder OptionalEnd()
@@ -366,7 +366,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("optionalEnd", "()Ljava/time/format/DateTimeFormatterBuilder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#optionalStart()"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#optionalStart()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder OptionalStart()
@@ -374,7 +374,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("optionalStart", "()Ljava/time/format/DateTimeFormatterBuilder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#padNext(int,char)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#padNext(int,char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="char"/></param>
@@ -384,7 +384,7 @@ namespace Java.Time.Format
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("padNext", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#padNext(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#padNext(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
@@ -393,7 +393,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("padNext", "(I)Ljava/time/format/DateTimeFormatterBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#parseCaseInsensitive()"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#parseCaseInsensitive()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder ParseCaseInsensitive()
@@ -401,7 +401,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("parseCaseInsensitive", "()Ljava/time/format/DateTimeFormatterBuilder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#parseCaseSensitive()"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#parseCaseSensitive()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder ParseCaseSensitive()
@@ -409,7 +409,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("parseCaseSensitive", "()Ljava/time/format/DateTimeFormatterBuilder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#parseDefaulting(java.time.temporal.TemporalField,long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#parseDefaulting(java.time.temporal.TemporalField,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -419,7 +419,7 @@ namespace Java.Time.Format
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("parseDefaulting", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#parseLenient()"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#parseLenient()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder ParseLenient()
@@ -427,7 +427,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("parseLenient", "()Ljava/time/format/DateTimeFormatterBuilder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DateTimeFormatterBuilder.html#parseStrict()"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#parseStrict()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder ParseStrict()

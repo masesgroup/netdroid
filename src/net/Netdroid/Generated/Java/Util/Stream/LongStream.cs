@@ -60,7 +60,7 @@ namespace Java.Util.Stream
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#concat(java.util.stream.LongStream,java.util.stream.LongStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#concat(java.util.stream.LongStream,java.util.stream.LongStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Stream.LongStream"/></param>
         /// <param name="arg1"><see cref="Java.Util.Stream.LongStream"/></param>
@@ -70,7 +70,7 @@ namespace Java.Util.Stream
             return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "concat", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#empty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#empty()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Empty()
@@ -78,7 +78,7 @@ namespace Java.Util.Stream
             return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "empty", "()Ljava/util/stream/LongStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#generate(java.util.function.LongSupplier)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#generate(java.util.function.LongSupplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongSupplier"/></param>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
@@ -87,7 +87,7 @@ namespace Java.Util.Stream
             return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "generate", "(Ljava/util/function/LongSupplier;)Ljava/util/stream/LongStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#iterate(long,java.util.function.LongPredicate,java.util.function.LongUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#iterate(long,java.util.function.LongPredicate,java.util.function.LongUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.LongPredicate"/></param>
@@ -98,7 +98,7 @@ namespace Java.Util.Stream
             return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "iterate", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#iterate(long,java.util.function.LongUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#iterate(long,java.util.function.LongUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.LongUnaryOperator"/></param>
@@ -108,7 +108,7 @@ namespace Java.Util.Stream
             return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "iterate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#of(long[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#of(long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
@@ -117,7 +117,7 @@ namespace Java.Util.Stream
             if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "of", "([J)Ljava/util/stream/LongStream;"); else return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "of", "([J)Ljava/util/stream/LongStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#of(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#of(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
@@ -126,7 +126,7 @@ namespace Java.Util.Stream
             return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "of", "(J)Ljava/util/stream/LongStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#range(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#range(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -136,7 +136,7 @@ namespace Java.Util.Stream
             return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "range", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#rangeClosed(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#rangeClosed(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -150,7 +150,7 @@ namespace Java.Util.Stream
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#collect(java.util.function.Supplier,java.util.function.ObjLongConsumer,java.util.function.BiConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#collect(java.util.function.Supplier,java.util.function.ObjLongConsumer,java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.ObjLongConsumer"/></param>
@@ -162,18 +162,18 @@ namespace Java.Util.Stream
             return IExecute<R>("collect", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#mapToObj(java.util.function.LongFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#mapToObj(java.util.function.LongFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongFunction"/></param>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<U> MapToObj<U, Arg0ExtendsU>(Java.Util.Function.LongFunction<Arg0ExtendsU> arg0) where Arg0ExtendsU: U
+        public Java.Util.Stream.Stream<U> MapToObj<U, Arg0ExtendsU>(Java.Util.Function.LongFunction<Arg0ExtendsU> arg0) where Arg0ExtendsU : U
         {
             return IExecuteWithSignature<Java.Util.Stream.Stream<U>>("mapToObj", "(Ljava/util/function/LongFunction;)Ljava/util/stream/Stream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#allMatch(java.util.function.LongPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#allMatch(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -182,7 +182,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<bool>("allMatch", "(Ljava/util/function/LongPredicate;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#anyMatch(java.util.function.LongPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#anyMatch(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -191,7 +191,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<bool>("anyMatch", "(Ljava/util/function/LongPredicate;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#noneMatch(java.util.function.LongPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#noneMatch(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -200,7 +200,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<bool>("noneMatch", "(Ljava/util/function/LongPredicate;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#summaryStatistics()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#summaryStatistics()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.LongSummaryStatistics"/></returns>
         public Java.Util.LongSummaryStatistics SummaryStatistics()
@@ -208,7 +208,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.LongSummaryStatistics>("summaryStatistics", "()Ljava/util/LongSummaryStatistics;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#average()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#average()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         public Java.Util.OptionalDouble Average()
@@ -216,7 +216,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.OptionalDouble>("average", "()Ljava/util/OptionalDouble;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#findAny()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#findAny()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.OptionalLong"/></returns>
         public Java.Util.OptionalLong FindAny()
@@ -224,7 +224,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.OptionalLong>("findAny", "()Ljava/util/OptionalLong;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#findFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#findFirst()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.OptionalLong"/></returns>
         public Java.Util.OptionalLong FindFirst()
@@ -232,7 +232,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.OptionalLong>("findFirst", "()Ljava/util/OptionalLong;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#max()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#max()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.OptionalLong"/></returns>
         public Java.Util.OptionalLong Max()
@@ -240,7 +240,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.OptionalLong>("max", "()Ljava/util/OptionalLong;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#min()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#min()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.OptionalLong"/></returns>
         public Java.Util.OptionalLong Min()
@@ -248,7 +248,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.OptionalLong>("min", "()Ljava/util/OptionalLong;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#reduce(java.util.function.LongBinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#reduce(java.util.function.LongBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
         /// <returns><see cref="Java.Util.OptionalLong"/></returns>
@@ -257,7 +257,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.OptionalLong>("reduce", "(Ljava/util/function/LongBinaryOperator;)Ljava/util/OptionalLong;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#asDoubleStream()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#asDoubleStream()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream AsDoubleStream()
@@ -265,7 +265,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("asDoubleStream", "()Ljava/util/stream/DoubleStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#mapToDouble(java.util.function.LongToDoubleFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#mapToDouble(java.util.function.LongToDoubleFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongToDoubleFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
@@ -274,7 +274,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("mapToDouble", "(Ljava/util/function/LongToDoubleFunction;)Ljava/util/stream/DoubleStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#mapToInt(java.util.function.LongToIntFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#mapToInt(java.util.function.LongToIntFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongToIntFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
@@ -283,7 +283,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("mapToInt", "(Ljava/util/function/LongToIntFunction;)Ljava/util/stream/IntStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#distinct()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#distinct()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Distinct()
@@ -291,7 +291,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("distinct", "()Ljava/util/stream/LongStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#filter(java.util.function.LongPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#filter(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
@@ -300,17 +300,17 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("filter", "(Ljava/util/function/LongPredicate;)Ljava/util/stream/LongStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#flatMap(java.util.function.LongFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#flatMap(java.util.function.LongFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongFunction"/></param>
         /// <typeparam name="Arg0ExtendsJava_Util_Stream_LongStream"><see cref="Java.Util.Stream.LongStream"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
-        public Java.Util.Stream.LongStream FlatMap<Arg0ExtendsJava_Util_Stream_LongStream>(Java.Util.Function.LongFunction<Arg0ExtendsJava_Util_Stream_LongStream> arg0) where Arg0ExtendsJava_Util_Stream_LongStream: Java.Util.Stream.LongStream
+        public Java.Util.Stream.LongStream FlatMap<Arg0ExtendsJava_Util_Stream_LongStream>(Java.Util.Function.LongFunction<Arg0ExtendsJava_Util_Stream_LongStream> arg0) where Arg0ExtendsJava_Util_Stream_LongStream : Java.Util.Stream.LongStream
         {
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("flatMap", "(Ljava/util/function/LongFunction;)Ljava/util/stream/LongStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#limit(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#limit(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
@@ -319,7 +319,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("limit", "(J)Ljava/util/stream/LongStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#map(java.util.function.LongUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#map(java.util.function.LongUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
@@ -328,7 +328,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("map", "(Ljava/util/function/LongUnaryOperator;)Ljava/util/stream/LongStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#peek(java.util.function.LongConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#peek(java.util.function.LongConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
@@ -337,7 +337,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("peek", "(Ljava/util/function/LongConsumer;)Ljava/util/stream/LongStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#skip(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#skip(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
@@ -346,7 +346,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("skip", "(J)Ljava/util/stream/LongStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#sorted()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#sorted()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Sorted()
@@ -354,7 +354,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("sorted", "()Ljava/util/stream/LongStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#boxed()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#boxed()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Lang.Long> Boxed()
@@ -362,7 +362,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Lang.Long>>("boxed", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#count()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#count()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long Count()
@@ -370,7 +370,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<long>("count", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#reduce(long,java.util.function.LongBinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#reduce(long,java.util.function.LongBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
@@ -380,7 +380,7 @@ namespace Java.Util.Stream
             return IExecute<long>("reduce", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#sum()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#sum()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long Sum()
@@ -388,7 +388,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<long>("sum", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#toArray()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#toArray()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long[] ToArray()
@@ -396,7 +396,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignatureArray<long>("toArray", "()[J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#forEach(java.util.function.LongConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#forEach(java.util.function.LongConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
         public void ForEach(Java.Util.Function.LongConsumer arg0)
@@ -404,7 +404,7 @@ namespace Java.Util.Stream
             IExecuteWithSignature("forEach", "(Ljava/util/function/LongConsumer;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#forEachOrdered(java.util.function.LongConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#forEachOrdered(java.util.function.LongConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
         public void ForEachOrdered(Java.Util.Function.LongConsumer arg0)
@@ -412,7 +412,7 @@ namespace Java.Util.Stream
             IExecuteWithSignature("forEachOrdered", "(Ljava/util/function/LongConsumer;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#iterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
@@ -420,7 +420,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#spliterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#spliterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator Spliterator()
@@ -428,7 +428,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Spliterator>("spliterator", "()Ljava/util/Spliterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#parallel()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#parallel()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
         public Java.Util.Stream.BaseStream Parallel()
@@ -436,7 +436,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.BaseStream>("parallel", "()Ljava/util/stream/BaseStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#sequential()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#sequential()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
         public Java.Util.Stream.BaseStream Sequential()
@@ -444,7 +444,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.BaseStream>("sequential", "()Ljava/util/stream/BaseStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#dropWhile(java.util.function.LongPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#dropWhile(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
@@ -453,7 +453,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("dropWhile", "(Ljava/util/function/LongPredicate;)Ljava/util/stream/LongStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#takeWhile(java.util.function.LongPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#takeWhile(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>

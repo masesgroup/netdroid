@@ -52,11 +52,12 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestion.html#getInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestion.html#getInfo()"/>
         /// </summary>
-        public Android.View.Inputmethod.InlineSuggestionInfo Info
+        /// <returns><see cref="Android.View.Inputmethod.InlineSuggestionInfo"/></returns>
+        public Android.View.Inputmethod.InlineSuggestionInfo GetInfo()
         {
-            get { return IExecuteWithSignature<Android.View.Inputmethod.InlineSuggestionInfo>("getInfo", "()Landroid/view/inputmethod/InlineSuggestionInfo;"); }
+            return IExecuteWithSignature<Android.View.Inputmethod.InlineSuggestionInfo>("getInfo", "()Landroid/view/inputmethod/InlineSuggestionInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestion.html#describeContents()"/>

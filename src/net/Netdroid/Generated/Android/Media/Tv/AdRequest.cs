@@ -93,67 +93,28 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/AdRequest.html#getEchoIntervalMillis()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/AdRequest.html#getUri()"/>
         /// </summary>
-        public long EchoIntervalMillis
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetUri()
         {
-            get { return IExecuteWithSignature<long>("getEchoIntervalMillis", "()J"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/AdRequest.html#getFileDescriptor()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/AdRequest.html#getMetadata()"/>
         /// </summary>
-        public Android.Os.ParcelFileDescriptor FileDescriptor
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetMetadata()
         {
-            get { return IExecuteWithSignature<Android.Os.ParcelFileDescriptor>("getFileDescriptor", "()Landroid/os/ParcelFileDescriptor;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getMetadata", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/AdRequest.html#getId()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/AdRequest.html#getFileDescriptor()"/>
         /// </summary>
-        public int Id
+        /// <returns><see cref="Android.Os.ParcelFileDescriptor"/></returns>
+        public Android.Os.ParcelFileDescriptor GetFileDescriptor()
         {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/AdRequest.html#getMediaFileType()"/> 
-        /// </summary>
-        public Java.Lang.String MediaFileType
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMediaFileType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/AdRequest.html#getMetadata()"/> 
-        /// </summary>
-        public Android.Os.Bundle Metadata
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getMetadata", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/AdRequest.html#getRequestType()"/> 
-        /// </summary>
-        public int RequestType
-        {
-            get { return IExecuteWithSignature<int>("getRequestType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/AdRequest.html#getStartTimeMillis()"/> 
-        /// </summary>
-        public long StartTimeMillis
-        {
-            get { return IExecuteWithSignature<long>("getStartTimeMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/AdRequest.html#getStopTimeMillis()"/> 
-        /// </summary>
-        public long StopTimeMillis
-        {
-            get { return IExecuteWithSignature<long>("getStopTimeMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/AdRequest.html#getUri()"/> 
-        /// </summary>
-        public Android.Net.Uri Uri
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Os.ParcelFileDescriptor>("getFileDescriptor", "()Landroid/os/ParcelFileDescriptor;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/AdRequest.html#describeContents()"/>
@@ -162,6 +123,54 @@ namespace Android.Media.Tv
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/AdRequest.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/AdRequest.html#getRequestType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRequestType()
+        {
+            return IExecuteWithSignature<int>("getRequestType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/AdRequest.html#getMediaFileType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMediaFileType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMediaFileType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/AdRequest.html#getEchoIntervalMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetEchoIntervalMillis()
+        {
+            return IExecuteWithSignature<long>("getEchoIntervalMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/AdRequest.html#getStartTimeMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetStartTimeMillis()
+        {
+            return IExecuteWithSignature<long>("getStartTimeMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/AdRequest.html#getStopTimeMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetStopTimeMillis()
+        {
+            return IExecuteWithSignature<long>("getStopTimeMillis", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/AdRequest.html#writeToParcel(android.os.Parcel,int)"/>

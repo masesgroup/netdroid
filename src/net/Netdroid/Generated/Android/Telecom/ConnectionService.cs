@@ -52,20 +52,6 @@ namespace Android.Telecom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#getAllConferences()"/> 
-        /// </summary>
-        public Java.Util.Collection<Android.Telecom.Conference> AllConferences
-        {
-            get { return IExecuteWithSignature<Java.Util.Collection<Android.Telecom.Conference>>("getAllConferences", "()Ljava/util/Collection;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#getAllConnections()"/> 
-        /// </summary>
-        public Java.Util.Collection<Android.Telecom.Connection> AllConnections
-        {
-            get { return IExecuteWithSignature<Java.Util.Collection<Android.Telecom.Connection>>("getAllConnections", "()Ljava/util/Collection;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#onCreateIncomingConference(android.telecom.PhoneAccountHandle,android.telecom.ConnectionRequest)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Telecom.PhoneAccountHandle"/></param>
@@ -164,6 +150,22 @@ namespace Android.Telecom
         public Android.Telecom.RemoteConnection CreateRemoteOutgoingConnection(Android.Telecom.PhoneAccountHandle arg0, Android.Telecom.ConnectionRequest arg1)
         {
             return IExecute<Android.Telecom.RemoteConnection>("createRemoteOutgoingConnection", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#getAllConferences()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<Android.Telecom.Conference> GetAllConferences()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Android.Telecom.Conference>>("getAllConferences", "()Ljava/util/Collection;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#getAllConnections()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<Android.Telecom.Connection> GetAllConnections()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Android.Telecom.Connection>>("getAllConnections", "()Ljava/util/Collection;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#addConference(android.telecom.Conference)"/>

@@ -38,7 +38,7 @@ namespace Java.Security
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Policy.html#UNSUPPORTED_EMPTY_COLLECTION"/>
+        /// <see href="https://developer.android.com/reference/java/security/Policy.html#UNSUPPORTED_EMPTY_COLLECTION"/>
         /// </summary>
         public static Java.Security.PermissionCollection UNSUPPORTED_EMPTY_COLLECTION { get { if (!_UNSUPPORTED_EMPTY_COLLECTIONReady) { _UNSUPPORTED_EMPTY_COLLECTIONContent = SGetField<Java.Security.PermissionCollection>(LocalBridgeClazz, "UNSUPPORTED_EMPTY_COLLECTION"); _UNSUPPORTED_EMPTY_COLLECTIONReady = true; } return _UNSUPPORTED_EMPTY_COLLECTIONContent; } }
         private static Java.Security.PermissionCollection _UNSUPPORTED_EMPTY_COLLECTIONContent = default;
@@ -48,14 +48,7 @@ namespace Java.Security
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Policy.html#getPolicy()"/> 
-        /// </summary>
-        public static Java.Security.Policy GetPolicy
-        {
-            get { return SExecuteWithSignature<Java.Security.Policy>(LocalBridgeClazz, "getPolicy", "()Ljava/security/Policy;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Policy.html#getInstance(java.lang.String,java.security.Policy.Parameters,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Policy.html#getInstance(java.lang.String,java.security.Policy.Parameters,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Policy.Parameters"/></param>
@@ -68,7 +61,7 @@ namespace Java.Security
             return SExecute<Java.Security.Policy>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Policy.html#getInstance(java.lang.String,java.security.Policy.Parameters,java.security.Provider)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Policy.html#getInstance(java.lang.String,java.security.Policy.Parameters,java.security.Provider)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Policy.Parameters"/></param>
@@ -80,7 +73,7 @@ namespace Java.Security
             return SExecute<Java.Security.Policy>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Policy.html#getInstance(java.lang.String,java.security.Policy.Parameters)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Policy.html#getInstance(java.lang.String,java.security.Policy.Parameters)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Policy.Parameters"/></param>
@@ -91,7 +84,15 @@ namespace Java.Security
             return SExecute<Java.Security.Policy>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Policy.html#setPolicy(java.security.Policy)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Policy.html#getPolicy()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Policy"/></returns>
+        public static Java.Security.Policy GetPolicy()
+        {
+            return SExecuteWithSignature<Java.Security.Policy>(LocalBridgeClazz, "getPolicy", "()Ljava/security/Policy;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/Policy.html#setPolicy(java.security.Policy)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Policy"/></param>
         public static void SetPolicy(Java.Security.Policy arg0)
@@ -103,28 +104,7 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Policy.html#getParameters()"/> 
-        /// </summary>
-        public Java.Security.Policy.Parameters GetParameters
-        {
-            get { return IExecuteWithSignature<Java.Security.Policy.Parameters>("getParameters", "()Ljava/security/Policy$Parameters;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Policy.html#getProvider()"/> 
-        /// </summary>
-        public Java.Security.Provider Provider
-        {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Policy.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.String Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Policy.html#implies(java.security.ProtectionDomain,java.security.Permission)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Policy.html#implies(java.security.ProtectionDomain,java.security.Permission)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.ProtectionDomain"/></param>
         /// <param name="arg1"><see cref="Java.Security.Permission"/></param>
@@ -134,7 +114,15 @@ namespace Java.Security
             return IExecute<bool>("implies", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Policy.html#getPermissions(java.security.CodeSource)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Policy.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/Policy.html#getPermissions(java.security.CodeSource)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.CodeSource"/></param>
         /// <returns><see cref="Java.Security.PermissionCollection"/></returns>
@@ -143,7 +131,7 @@ namespace Java.Security
             return IExecuteWithSignature<Java.Security.PermissionCollection>("getPermissions", "(Ljava/security/CodeSource;)Ljava/security/PermissionCollection;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Policy.html#getPermissions(java.security.ProtectionDomain)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Policy.html#getPermissions(java.security.ProtectionDomain)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.ProtectionDomain"/></param>
         /// <returns><see cref="Java.Security.PermissionCollection"/></returns>
@@ -152,7 +140,23 @@ namespace Java.Security
             return IExecuteWithSignature<Java.Security.PermissionCollection>("getPermissions", "(Ljava/security/ProtectionDomain;)Ljava/security/PermissionCollection;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Policy.html#refresh()"/>
+        /// <see href="https://developer.android.com/reference/java/security/Policy.html#getParameters()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Policy.Parameters"/></returns>
+        public Java.Security.Policy.Parameters GetParameters()
+        {
+            return IExecuteWithSignature<Java.Security.Policy.Parameters>("getParameters", "()Ljava/security/Policy$Parameters;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/Policy.html#getProvider()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Provider"/></returns>
+        public Java.Security.Provider GetProvider()
+        {
+            return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/Policy.html#refresh()"/>
         /// </summary>
         public void Refresh()
         {

@@ -72,7 +72,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutput.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutput.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
@@ -80,7 +80,7 @@ namespace Java.Io
             IExecuteWithSignature("close", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutput.html#flush()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutput.html#flush()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Flush()
@@ -88,7 +88,7 @@ namespace Java.Io
             IExecuteWithSignature("flush", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutput.html#write(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutput.html#write(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -99,7 +99,7 @@ namespace Java.Io
             IExecute("write", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutput.html#write(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutput.html#write(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -108,7 +108,7 @@ namespace Java.Io
             IExecuteWithSignature("write", "([B)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutput.html#write(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutput.html#write(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -117,7 +117,7 @@ namespace Java.Io
             IExecuteWithSignature("write", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutput.html#writeObject(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutput.html#writeObject(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <exception cref="Java.Io.IOException"/>

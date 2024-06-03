@@ -157,27 +157,6 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/VibrationAttributes.html#getFlags()"/> 
-        /// </summary>
-        public int Flags
-        {
-            get { return IExecuteWithSignature<int>("getFlags", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/VibrationAttributes.html#getUsage()"/> 
-        /// </summary>
-        public int Usage
-        {
-            get { return IExecuteWithSignature<int>("getUsage", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/VibrationAttributes.html#getUsageClass()"/> 
-        /// </summary>
-        public int UsageClass
-        {
-            get { return IExecuteWithSignature<int>("getUsageClass", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/VibrationAttributes.html#isFlagSet(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -193,6 +172,30 @@ namespace Android.Os
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/VibrationAttributes.html#getFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFlags()
+        {
+            return IExecuteWithSignature<int>("getFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/VibrationAttributes.html#getUsage()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetUsage()
+        {
+            return IExecuteWithSignature<int>("getUsage", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/VibrationAttributes.html#getUsageClass()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetUsageClass()
+        {
+            return IExecuteWithSignature<int>("getUsageClass", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/VibrationAttributes.html#writeToParcel(android.os.Parcel,int)"/>

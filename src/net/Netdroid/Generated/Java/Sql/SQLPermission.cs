@@ -30,7 +30,7 @@ namespace Java.Sql
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLPermission.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLPermission.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -39,7 +39,7 @@ namespace Java.Sql
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLPermission.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLPermission.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public SQLPermission(Java.Lang.String arg0)

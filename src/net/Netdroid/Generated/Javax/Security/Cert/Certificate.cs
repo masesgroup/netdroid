@@ -46,21 +46,24 @@ namespace Javax.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/Certificate.html#getEncoded()"/> 
+        /// <see href="https://developer.android.com/reference/javax/security/cert/Certificate.html#getEncoded()"/>
         /// </summary>
-        public byte[] Encoded
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Javax.Security.Cert.CertificateEncodingException"/>
+        public byte[] GetEncoded()
         {
-            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getEncoded", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/Certificate.html#getPublicKey()"/> 
+        /// <see href="https://developer.android.com/reference/javax/security/cert/Certificate.html#getPublicKey()"/>
         /// </summary>
-        public Java.Security.PublicKey PublicKey
+        /// <returns><see cref="Java.Security.PublicKey"/></returns>
+        public Java.Security.PublicKey GetPublicKey()
         {
-            get { return IExecuteWithSignature<Java.Security.PublicKey>("getPublicKey", "()Ljava/security/PublicKey;"); }
+            return IExecuteWithSignature<Java.Security.PublicKey>("getPublicKey", "()Ljava/security/PublicKey;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/Certificate.html#verify(java.security.PublicKey,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/security/cert/Certificate.html#verify(java.security.PublicKey,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -74,7 +77,7 @@ namespace Javax.Security.Cert
             IExecute("verify", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/Certificate.html#verify(java.security.PublicKey)"/>
+        /// <see href="https://developer.android.com/reference/javax/security/cert/Certificate.html#verify(java.security.PublicKey)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
         /// <exception cref="Javax.Security.Cert.CertificateException"/>

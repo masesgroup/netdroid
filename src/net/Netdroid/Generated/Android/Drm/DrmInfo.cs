@@ -35,7 +35,7 @@ namespace Android.Drm
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public DrmInfo(int arg0, byte[] arg1, Java.Lang.String arg2)
             : base(arg0, arg1, arg2)
         {
@@ -46,7 +46,7 @@ namespace Android.Drm
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public DrmInfo(int arg0, Java.Lang.String arg1, Java.Lang.String arg2)
             : base(arg0, arg1, arg2)
         {
@@ -68,44 +68,47 @@ namespace Android.Drm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/drm/DrmInfo.html#getData()"/> 
+        /// <see href="https://developer.android.com/reference/android/drm/DrmInfo.html#getData()"/>
         /// </summary>
-        [System.Obsolete()]
-        public byte[] Data
+        /// <returns><see cref="byte"/></returns>
+        [global::System.Obsolete()]
+        public byte[] GetData()
         {
-            get { return IExecuteWithSignatureArray<byte>("getData", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getData", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/drm/DrmInfo.html#getInfoType()"/> 
+        /// <see href="https://developer.android.com/reference/android/drm/DrmInfo.html#getInfoType()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int InfoType
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetInfoType()
         {
-            get { return IExecuteWithSignature<int>("getInfoType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/drm/DrmInfo.html#getMimeType()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String MimeType
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMimeType", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<int>("getInfoType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmInfo.html#get(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public object Get(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("get", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/drm/DrmInfo.html#getMimeType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetMimeType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMimeType", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmInfo.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.Iterator<object> Iterator()
         {
             return IExecuteWithSignature<Java.Util.Iterator<object>>("iterator", "()Ljava/util/Iterator;");
@@ -114,7 +117,7 @@ namespace Android.Drm
         /// <see href="https://developer.android.com/reference/android/drm/DrmInfo.html#keyIterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.Iterator<Java.Lang.String> KeyIterator()
         {
             return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("keyIterator", "()Ljava/util/Iterator;");
@@ -124,7 +127,7 @@ namespace Android.Drm
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Put(Java.Lang.String arg0, object arg1)
         {
             IExecute("put", arg0, arg1);

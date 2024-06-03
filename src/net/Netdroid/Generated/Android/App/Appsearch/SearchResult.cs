@@ -46,46 +46,52 @@ namespace Android.App.Appsearch
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.html#getDatabaseName()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.html#getGenericDocument()"/>
         /// </summary>
-        public Java.Lang.String DatabaseName
+        /// <returns><see cref="Android.App.Appsearch.GenericDocument"/></returns>
+        public Android.App.Appsearch.GenericDocument GetGenericDocument()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDatabaseName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.App.Appsearch.GenericDocument>("getGenericDocument", "()Landroid/app/appsearch/GenericDocument;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.html#getGenericDocument()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.html#getRankingSignal()"/>
         /// </summary>
-        public Android.App.Appsearch.GenericDocument GenericDocument
+        /// <returns><see cref="double"/></returns>
+        public double GetRankingSignal()
         {
-            get { return IExecuteWithSignature<Android.App.Appsearch.GenericDocument>("getGenericDocument", "()Landroid/app/appsearch/GenericDocument;"); }
+            return IExecuteWithSignature<double>("getRankingSignal", "()D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.html#getJoinedResults()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.html#getDatabaseName()"/>
         /// </summary>
-        public Java.Util.List<Android.App.Appsearch.SearchResult> JoinedResults
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDatabaseName()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.Appsearch.SearchResult>>("getJoinedResults", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getDatabaseName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.html#getMatchInfos()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.html#getPackageName()"/>
         /// </summary>
-        public Java.Util.List<Android.App.Appsearch.SearchResult.MatchInfo> MatchInfos
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.Appsearch.SearchResult.MatchInfo>>("getMatchInfos", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.html#getPackageName()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.html#getJoinedResults()"/>
         /// </summary>
-        public Java.Lang.String PackageName
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.Appsearch.SearchResult> GetJoinedResults()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.App.Appsearch.SearchResult>>("getJoinedResults", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.html#getRankingSignal()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.html#getMatchInfos()"/>
         /// </summary>
-        public double RankingSignal
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.Appsearch.SearchResult.MatchInfo> GetMatchInfos()
         {
-            get { return IExecuteWithSignature<double>("getRankingSignal", "()D"); }
+            return IExecuteWithSignature<Java.Util.List<Android.App.Appsearch.SearchResult.MatchInfo>>("getMatchInfos", "()Ljava/util/List;");
         }
 
         #endregion
@@ -196,67 +202,76 @@ namespace Android.App.Appsearch
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#getExactMatch()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#getPropertyPathObject()"/>
             /// </summary>
-            public Java.Lang.CharSequence ExactMatch
+            /// <returns><see cref="Android.App.Appsearch.PropertyPath"/></returns>
+            public Android.App.Appsearch.PropertyPath GetPropertyPathObject()
             {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getExactMatch", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature<Android.App.Appsearch.PropertyPath>("getPropertyPathObject", "()Landroid/app/appsearch/PropertyPath;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#getExactMatchRange()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#getExactMatchRange()"/>
             /// </summary>
-            public Android.App.Appsearch.SearchResult.MatchRange ExactMatchRange
+            /// <returns><see cref="Android.App.Appsearch.SearchResult.MatchRange"/></returns>
+            public Android.App.Appsearch.SearchResult.MatchRange GetExactMatchRange()
             {
-                get { return IExecuteWithSignature<Android.App.Appsearch.SearchResult.MatchRange>("getExactMatchRange", "()Landroid/app/appsearch/SearchResult$MatchRange;"); }
+                return IExecuteWithSignature<Android.App.Appsearch.SearchResult.MatchRange>("getExactMatchRange", "()Landroid/app/appsearch/SearchResult$MatchRange;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#getFullText()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#getSnippetRange()"/>
             /// </summary>
-            public Java.Lang.String FullText
+            /// <returns><see cref="Android.App.Appsearch.SearchResult.MatchRange"/></returns>
+            public Android.App.Appsearch.SearchResult.MatchRange GetSnippetRange()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getFullText", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Android.App.Appsearch.SearchResult.MatchRange>("getSnippetRange", "()Landroid/app/appsearch/SearchResult$MatchRange;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#getPropertyPath()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#getSubmatchRange()"/>
             /// </summary>
-            public Java.Lang.String PropertyPath
+            /// <returns><see cref="Android.App.Appsearch.SearchResult.MatchRange"/></returns>
+            public Android.App.Appsearch.SearchResult.MatchRange GetSubmatchRange()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getPropertyPath", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Android.App.Appsearch.SearchResult.MatchRange>("getSubmatchRange", "()Landroid/app/appsearch/SearchResult$MatchRange;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#getPropertyPathObject()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#getExactMatch()"/>
             /// </summary>
-            public Android.App.Appsearch.PropertyPath PropertyPathObject
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetExactMatch()
             {
-                get { return IExecuteWithSignature<Android.App.Appsearch.PropertyPath>("getPropertyPathObject", "()Landroid/app/appsearch/PropertyPath;"); }
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getExactMatch", "()Ljava/lang/CharSequence;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#getSnippet()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#getSnippet()"/>
             /// </summary>
-            public Java.Lang.CharSequence Snippet
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetSnippet()
             {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getSnippet", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getSnippet", "()Ljava/lang/CharSequence;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#getSnippetRange()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#getSubmatch()"/>
             /// </summary>
-            public Android.App.Appsearch.SearchResult.MatchRange SnippetRange
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetSubmatch()
             {
-                get { return IExecuteWithSignature<Android.App.Appsearch.SearchResult.MatchRange>("getSnippetRange", "()Landroid/app/appsearch/SearchResult$MatchRange;"); }
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getSubmatch", "()Ljava/lang/CharSequence;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#getSubmatch()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#getFullText()"/>
             /// </summary>
-            public Java.Lang.CharSequence Submatch
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetFullText()
             {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getSubmatch", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getFullText", "()Ljava/lang/String;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#getSubmatchRange()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#getPropertyPath()"/>
             /// </summary>
-            public Android.App.Appsearch.SearchResult.MatchRange SubmatchRange
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetPropertyPath()
             {
-                get { return IExecuteWithSignature<Android.App.Appsearch.SearchResult.MatchRange>("getSubmatchRange", "()Landroid/app/appsearch/SearchResult$MatchRange;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getPropertyPath", "()Ljava/lang/String;");
             }
 
             #endregion
@@ -373,18 +388,20 @@ namespace Android.App.Appsearch
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchRange.html#getEnd()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchRange.html#getEnd()"/>
             /// </summary>
-            public int End
+            /// <returns><see cref="int"/></returns>
+            public int GetEnd()
             {
-                get { return IExecuteWithSignature<int>("getEnd", "()I"); }
+                return IExecuteWithSignature<int>("getEnd", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchRange.html#getStart()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchRange.html#getStart()"/>
             /// </summary>
-            public int Start
+            /// <returns><see cref="int"/></returns>
+            public int GetStart()
             {
-                get { return IExecuteWithSignature<int>("getStart", "()I"); }
+                return IExecuteWithSignature<int>("getStart", "()I");
             }
 
             #endregion

@@ -54,20 +54,6 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Picture.html#getHeight()"/> 
-        /// </summary>
-        public int Height
-        {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Picture.html#getWidth()"/> 
-        /// </summary>
-        public int Width
-        {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Picture.html#beginRecording(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -84,6 +70,22 @@ namespace Android.Graphics
         public bool RequiresHardwareAcceleration()
         {
             return IExecuteWithSignature<bool>("requiresHardwareAcceleration", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Picture.html#getHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHeight()
+        {
+            return IExecuteWithSignature<int>("getHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Picture.html#getWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWidth()
+        {
+            return IExecuteWithSignature<int>("getWidth", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Picture.html#draw(android.graphics.Canvas)"/>

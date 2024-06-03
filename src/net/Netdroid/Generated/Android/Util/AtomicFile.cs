@@ -54,20 +54,6 @@ namespace Android.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/AtomicFile.html#getBaseFile()"/> 
-        /// </summary>
-        public Java.Io.File BaseFile
-        {
-            get { return IExecuteWithSignature<Java.Io.File>("getBaseFile", "()Ljava/io/File;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/AtomicFile.html#getLastModifiedTime()"/> 
-        /// </summary>
-        public long LastModifiedTime
-        {
-            get { return IExecuteWithSignature<long>("getLastModifiedTime", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AtomicFile.html#readFully()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
@@ -75,6 +61,14 @@ namespace Android.Util
         public byte[] ReadFully()
         {
             return IExecuteWithSignatureArray<byte>("readFully", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/AtomicFile.html#getBaseFile()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.File"/></returns>
+        public Java.Io.File GetBaseFile()
+        {
+            return IExecuteWithSignature<Java.Io.File>("getBaseFile", "()Ljava/io/File;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AtomicFile.html#openRead()"/>
@@ -93,6 +87,14 @@ namespace Android.Util
         public Java.Io.FileOutputStream StartWrite()
         {
             return IExecuteWithSignature<Java.Io.FileOutputStream>("startWrite", "()Ljava/io/FileOutputStream;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/AtomicFile.html#getLastModifiedTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLastModifiedTime()
+        {
+            return IExecuteWithSignature<long>("getLastModifiedTime", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AtomicFile.html#delete()"/>

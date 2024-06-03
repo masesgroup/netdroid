@@ -71,46 +71,12 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/YuvImage.html#getColorSpace()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/YuvImage.html#getColorSpace()"/>
         /// </summary>
-        public Android.Graphics.ColorSpace ColorSpace
+        /// <returns><see cref="Android.Graphics.ColorSpace"/></returns>
+        public Android.Graphics.ColorSpace GetColorSpace()
         {
-            get { return IExecuteWithSignature<Android.Graphics.ColorSpace>("getColorSpace", "()Landroid/graphics/ColorSpace;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/YuvImage.html#getHeight()"/> 
-        /// </summary>
-        public int Height
-        {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/YuvImage.html#getStrides()"/> 
-        /// </summary>
-        public int[] Strides
-        {
-            get { return IExecuteWithSignatureArray<int>("getStrides", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/YuvImage.html#getWidth()"/> 
-        /// </summary>
-        public int Width
-        {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/YuvImage.html#getYuvData()"/> 
-        /// </summary>
-        public byte[] YuvData
-        {
-            get { return IExecuteWithSignatureArray<byte>("getYuvData", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/YuvImage.html#getYuvFormat()"/> 
-        /// </summary>
-        public int YuvFormat
-        {
-            get { return IExecuteWithSignature<int>("getYuvFormat", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.ColorSpace>("getColorSpace", "()Landroid/graphics/ColorSpace;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/YuvImage.html#compressToJpeg(android.graphics.Rect,int,java.io.OutputStream)"/>
@@ -133,6 +99,46 @@ namespace Android.Graphics
         public bool CompressToJpegR(Android.Graphics.YuvImage arg0, int arg1, Java.Io.OutputStream arg2)
         {
             return IExecute<bool>("compressToJpegR", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/YuvImage.html#getYuvData()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetYuvData()
+        {
+            return IExecuteWithSignatureArray<byte>("getYuvData", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/YuvImage.html#getHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHeight()
+        {
+            return IExecuteWithSignature<int>("getHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/YuvImage.html#getWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWidth()
+        {
+            return IExecuteWithSignature<int>("getWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/YuvImage.html#getYuvFormat()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetYuvFormat()
+        {
+            return IExecuteWithSignature<int>("getYuvFormat", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/YuvImage.html#getStrides()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetStrides()
+        {
+            return IExecuteWithSignatureArray<int>("getStrides", "()[I");
         }
 
         #endregion

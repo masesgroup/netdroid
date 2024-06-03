@@ -186,48 +186,6 @@ namespace Android.Os
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Process.html#getElapsedCpuTime()"/> 
-        /// </summary>
-        public static long ElapsedCpuTime
-        {
-            get { return SExecuteWithSignature<long>(LocalBridgeClazz, "getElapsedCpuTime", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Process.html#getExclusiveCores()"/> 
-        /// </summary>
-        public static int[] ExclusiveCores
-        {
-            get { return SExecuteWithSignatureArray<int>(LocalBridgeClazz, "getExclusiveCores", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Process.html#getStartElapsedRealtime()"/> 
-        /// </summary>
-        public static long StartElapsedRealtime
-        {
-            get { return SExecuteWithSignature<long>(LocalBridgeClazz, "getStartElapsedRealtime", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Process.html#getStartRequestedElapsedRealtime()"/> 
-        /// </summary>
-        public static long StartRequestedElapsedRealtime
-        {
-            get { return SExecuteWithSignature<long>(LocalBridgeClazz, "getStartRequestedElapsedRealtime", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Process.html#getStartRequestedUptimeMillis()"/> 
-        /// </summary>
-        public static long StartRequestedUptimeMillis
-        {
-            get { return SExecuteWithSignature<long>(LocalBridgeClazz, "getStartRequestedUptimeMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Process.html#getStartUptimeMillis()"/> 
-        /// </summary>
-        public static long StartUptimeMillis
-        {
-            get { return SExecuteWithSignature<long>(LocalBridgeClazz, "getStartUptimeMillis", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Process.html#myUserHandle()"/>
         /// </summary>
         /// <returns><see cref="Android.Os.UserHandle"/></returns>
@@ -281,7 +239,7 @@ namespace Android.Os
         /// <see href="https://developer.android.com/reference/android/os/Process.html#supportsProcesses()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool SupportsProcesses()
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "supportsProcesses", "()Z");
@@ -339,6 +297,22 @@ namespace Android.Os
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getUidForName", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Process.html#getExclusiveCores()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public static int[] GetExclusiveCores()
+        {
+            return SExecuteWithSignatureArray<int>(LocalBridgeClazz, "getExclusiveCores", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Process.html#getElapsedCpuTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public static long GetElapsedCpuTime()
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getElapsedCpuTime", "()J");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Process.html#sendSignal(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -383,6 +357,38 @@ namespace Android.Os
         public static Java.Lang.String MyProcessName()
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "myProcessName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Process.html#getStartElapsedRealtime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public static long GetStartElapsedRealtime()
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getStartElapsedRealtime", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Process.html#getStartRequestedElapsedRealtime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public static long GetStartRequestedElapsedRealtime()
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getStartRequestedElapsedRealtime", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Process.html#getStartRequestedUptimeMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public static long GetStartRequestedUptimeMillis()
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getStartRequestedUptimeMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Process.html#getStartUptimeMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public static long GetStartUptimeMillis()
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getStartUptimeMillis", "()J");
         }
 
         #endregion

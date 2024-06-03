@@ -38,13 +38,13 @@ namespace Javax.Xml.Transform.Sax
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#FEATURE"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/SAXTransformerFactory.html#FEATURE"/>
         /// </summary>
         public static Java.Lang.String FEATURE { get { if (!_FEATUREReady) { _FEATUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE"); _FEATUREReady = true; } return _FEATUREContent; } }
         private static Java.Lang.String _FEATUREContent = default;
         private static bool _FEATUREReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#FEATURE_XMLFILTER"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/SAXTransformerFactory.html#FEATURE_XMLFILTER"/>
         /// </summary>
         public static Java.Lang.String FEATURE_XMLFILTER { get { if (!_FEATURE_XMLFILTERReady) { _FEATURE_XMLFILTERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_XMLFILTER"); _FEATURE_XMLFILTERReady = true; } return _FEATURE_XMLFILTERContent; } }
         private static Java.Lang.String _FEATURE_XMLFILTERContent = default;
@@ -58,7 +58,7 @@ namespace Javax.Xml.Transform.Sax
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newTemplatesHandler()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/SAXTransformerFactory.html#newTemplatesHandler()"/>
         /// </summary>
         /// <returns><see cref="Javax.Xml.Transform.Sax.TemplatesHandler"/></returns>
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
@@ -67,7 +67,7 @@ namespace Javax.Xml.Transform.Sax
             return IExecuteWithSignature<Javax.Xml.Transform.Sax.TemplatesHandler>("newTemplatesHandler", "()Ljavax/xml/transform/sax/TemplatesHandler;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newTransformerHandler()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/SAXTransformerFactory.html#newTransformerHandler()"/>
         /// </summary>
         /// <returns><see cref="Javax.Xml.Transform.Sax.TransformerHandler"/></returns>
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
@@ -76,7 +76,7 @@ namespace Javax.Xml.Transform.Sax
             return IExecuteWithSignature<Javax.Xml.Transform.Sax.TransformerHandler>("newTransformerHandler", "()Ljavax/xml/transform/sax/TransformerHandler;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newTransformerHandler(javax.xml.transform.Source)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/SAXTransformerFactory.html#newTransformerHandler(javax.xml.transform.Source)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Transform.Source"/></param>
         /// <returns><see cref="Javax.Xml.Transform.Sax.TransformerHandler"/></returns>
@@ -86,7 +86,7 @@ namespace Javax.Xml.Transform.Sax
             return IExecuteWithSignature<Javax.Xml.Transform.Sax.TransformerHandler>("newTransformerHandler", "(Ljavax/xml/transform/Source;)Ljavax/xml/transform/sax/TransformerHandler;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newTransformerHandler(javax.xml.transform.Templates)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/SAXTransformerFactory.html#newTransformerHandler(javax.xml.transform.Templates)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Transform.Templates"/></param>
         /// <returns><see cref="Javax.Xml.Transform.Sax.TransformerHandler"/></returns>
@@ -96,7 +96,7 @@ namespace Javax.Xml.Transform.Sax
             return IExecuteWithSignature<Javax.Xml.Transform.Sax.TransformerHandler>("newTransformerHandler", "(Ljavax/xml/transform/Templates;)Ljavax/xml/transform/sax/TransformerHandler;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newXMLFilter(javax.xml.transform.Source)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/SAXTransformerFactory.html#newXMLFilter(javax.xml.transform.Source)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Transform.Source"/></param>
         /// <returns><see cref="Org.Xml.Sax.XMLFilter"/></returns>
@@ -106,7 +106,7 @@ namespace Javax.Xml.Transform.Sax
             return IExecuteWithSignature<Org.Xml.Sax.XMLFilter>("newXMLFilter", "(Ljavax/xml/transform/Source;)Lorg/xml/sax/XMLFilter;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newXMLFilter(javax.xml.transform.Templates)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/SAXTransformerFactory.html#newXMLFilter(javax.xml.transform.Templates)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Transform.Templates"/></param>
         /// <returns><see cref="Org.Xml.Sax.XMLFilter"/></returns>

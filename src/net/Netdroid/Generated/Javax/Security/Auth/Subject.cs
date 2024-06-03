@@ -30,7 +30,7 @@ namespace Javax.Security.Auth
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Subject.html#%3Cinit%3E(boolean,java.util.Set,java.util.Set,java.util.Set)"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html#%3Cinit%3E(boolean,java.util.Set,java.util.Set,java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
@@ -53,7 +53,7 @@ namespace Javax.Security.Auth
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Subject.html#doAs(javax.security.auth.Subject,java.security.PrivilegedAction)"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html#doAs(javax.security.auth.Subject,java.security.PrivilegedAction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <param name="arg1"><see cref="Java.Security.PrivilegedAction"/></param>
@@ -64,7 +64,7 @@ namespace Javax.Security.Auth
             return SExecute<T>(LocalBridgeClazz, "doAs", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Subject.html#doAs(javax.security.auth.Subject,java.security.PrivilegedExceptionAction)"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html#doAs(javax.security.auth.Subject,java.security.PrivilegedExceptionAction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <param name="arg1"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
@@ -76,20 +76,20 @@ namespace Javax.Security.Auth
             return SExecute<T>(LocalBridgeClazz, "doAs", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedAction,java.security.AccessControlContext)"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedAction,java.security.AccessControlContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <param name="arg1"><see cref="Java.Security.PrivilegedAction"/></param>
         /// <param name="arg2"><see cref="Java.Security.AccessControlContext"/></param>
         /// <typeparam name="T"></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static T DoAsPrivileged<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedAction<T> arg1, Java.Security.AccessControlContext arg2)
         {
             return SExecute<T>(LocalBridgeClazz, "doAsPrivileged", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedExceptionAction,java.security.AccessControlContext)"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedExceptionAction,java.security.AccessControlContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <param name="arg1"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
@@ -97,17 +97,17 @@ namespace Javax.Security.Auth
         /// <typeparam name="T"></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Security.PrivilegedActionException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static T DoAsPrivileged<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedExceptionAction<T> arg1, Java.Security.AccessControlContext arg2)
         {
             return SExecute<T>(LocalBridgeClazz, "doAsPrivileged", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Subject.html#getSubject(java.security.AccessControlContext)"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html#getSubject(java.security.AccessControlContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.AccessControlContext"/></param>
         /// <returns><see cref="Javax.Security.Auth.Subject"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Javax.Security.Auth.Subject GetSubject(Java.Security.AccessControlContext arg0)
         {
             return SExecuteWithSignature<Javax.Security.Auth.Subject>(LocalBridgeClazz, "getSubject", "(Ljava/security/AccessControlContext;)Ljavax/security/auth/Subject;", arg0);
@@ -117,38 +117,17 @@ namespace Javax.Security.Auth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Subject.html#getPrincipals()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Security.Principal> Principals
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Security.Principal>>("getPrincipals", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Subject.html#getPrivateCredentials()"/> 
-        /// </summary>
-        public Java.Util.Set<object> PrivateCredentials
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<object>>("getPrivateCredentials", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Subject.html#getPublicCredentials()"/> 
-        /// </summary>
-        public Java.Util.Set<object> PublicCredentials
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<object>>("getPublicCredentials", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Subject.html#getPrincipals(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html#getPrincipals(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Security.IPrincipal"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<T> GetPrincipals<T>(Java.Lang.Class arg0) where T: Java.Security.IPrincipal, new()
+        public Java.Util.Set<T> GetPrincipals<T>(Java.Lang.Class arg0) where T : Java.Security.IPrincipal, new()
         {
             return IExecuteWithSignature<Java.Util.Set<T>>("getPrincipals", "(Ljava/lang/Class;)Ljava/util/Set;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Subject.html#getPrivateCredentials(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html#getPrivateCredentials(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"></typeparam>
@@ -158,7 +137,7 @@ namespace Javax.Security.Auth
             return IExecuteWithSignature<Java.Util.Set<T>>("getPrivateCredentials", "(Ljava/lang/Class;)Ljava/util/Set;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Subject.html#getPublicCredentials(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html#getPublicCredentials(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"></typeparam>
@@ -168,7 +147,7 @@ namespace Javax.Security.Auth
             return IExecuteWithSignature<Java.Util.Set<T>>("getPublicCredentials", "(Ljava/lang/Class;)Ljava/util/Set;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Subject.html#isReadOnly()"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html#isReadOnly()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
@@ -176,7 +155,31 @@ namespace Javax.Security.Auth
             return IExecuteWithSignature<bool>("isReadOnly", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Subject.html#setReadOnly()"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html#getPrivateCredentials()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<object> GetPrivateCredentials()
+        {
+            return IExecuteWithSignature<Java.Util.Set<object>>("getPrivateCredentials", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html#getPublicCredentials()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<object> GetPublicCredentials()
+        {
+            return IExecuteWithSignature<Java.Util.Set<object>>("getPublicCredentials", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html#getPrincipals()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Security.Principal> GetPrincipals()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Security.Principal>>("getPrincipals", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html#setReadOnly()"/>
         /// </summary>
         public void SetReadOnly()
         {

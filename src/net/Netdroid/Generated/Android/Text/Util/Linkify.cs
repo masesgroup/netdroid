@@ -58,7 +58,7 @@ namespace Android.Text.Util
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/util/Linkify.html#ALL"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ALL { get { if (!_ALLReady) { _ALLContent = SGetField<int>(LocalBridgeClazz, "ALL"); _ALLReady = true; } return _ALLContent; } }
         private static int _ALLContent = default;
         private static bool _ALLReady = false; // this is used because in case of generics 
@@ -71,7 +71,7 @@ namespace Android.Text.Util
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/util/Linkify.html#MAP_ADDRESSES"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MAP_ADDRESSES { get { if (!_MAP_ADDRESSESReady) { _MAP_ADDRESSESContent = SGetField<int>(LocalBridgeClazz, "MAP_ADDRESSES"); _MAP_ADDRESSESReady = true; } return _MAP_ADDRESSESContent; } }
         private static int _MAP_ADDRESSESContent = default;
         private static bool _MAP_ADDRESSESReady = false; // this is used because in case of generics 

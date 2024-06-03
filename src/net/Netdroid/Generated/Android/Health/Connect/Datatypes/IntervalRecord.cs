@@ -46,32 +46,36 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/IntervalRecord.html#getEndTime()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/IntervalRecord.html#getEndTime()"/>
         /// </summary>
-        public Java.Time.Instant EndTime
+        /// <returns><see cref="Java.Time.Instant"/></returns>
+        public Java.Time.Instant GetEndTime()
         {
-            get { return IExecuteWithSignature<Java.Time.Instant>("getEndTime", "()Ljava/time/Instant;"); }
+            return IExecuteWithSignature<Java.Time.Instant>("getEndTime", "()Ljava/time/Instant;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/IntervalRecord.html#getEndZoneOffset()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/IntervalRecord.html#getStartTime()"/>
         /// </summary>
-        public Java.Time.ZoneOffset EndZoneOffset
+        /// <returns><see cref="Java.Time.Instant"/></returns>
+        public Java.Time.Instant GetStartTime()
         {
-            get { return IExecuteWithSignature<Java.Time.ZoneOffset>("getEndZoneOffset", "()Ljava/time/ZoneOffset;"); }
+            return IExecuteWithSignature<Java.Time.Instant>("getStartTime", "()Ljava/time/Instant;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/IntervalRecord.html#getStartTime()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/IntervalRecord.html#getEndZoneOffset()"/>
         /// </summary>
-        public Java.Time.Instant StartTime
+        /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
+        public Java.Time.ZoneOffset GetEndZoneOffset()
         {
-            get { return IExecuteWithSignature<Java.Time.Instant>("getStartTime", "()Ljava/time/Instant;"); }
+            return IExecuteWithSignature<Java.Time.ZoneOffset>("getEndZoneOffset", "()Ljava/time/ZoneOffset;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/IntervalRecord.html#getStartZoneOffset()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/IntervalRecord.html#getStartZoneOffset()"/>
         /// </summary>
-        public Java.Time.ZoneOffset StartZoneOffset
+        /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
+        public Java.Time.ZoneOffset GetStartZoneOffset()
         {
-            get { return IExecuteWithSignature<Java.Time.ZoneOffset>("getStartZoneOffset", "()Ljava/time/ZoneOffset;"); }
+            return IExecuteWithSignature<Java.Time.ZoneOffset>("getStartZoneOffset", "()Ljava/time/ZoneOffset;");
         }
 
         #endregion

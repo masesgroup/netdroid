@@ -192,27 +192,6 @@ namespace Android.Telephony
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telephony/BarringInfo.BarringServiceInfo.html#getBarringType()"/> 
-            /// </summary>
-            public int BarringType
-            {
-                get { return IExecuteWithSignature<int>("getBarringType", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telephony/BarringInfo.BarringServiceInfo.html#getConditionalBarringFactor()"/> 
-            /// </summary>
-            public int ConditionalBarringFactor
-            {
-                get { return IExecuteWithSignature<int>("getConditionalBarringFactor", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telephony/BarringInfo.BarringServiceInfo.html#getConditionalBarringTimeSeconds()"/> 
-            /// </summary>
-            public int ConditionalBarringTimeSeconds
-            {
-                get { return IExecuteWithSignature<int>("getConditionalBarringTimeSeconds", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/BarringInfo.BarringServiceInfo.html#isBarred()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
@@ -235,6 +214,30 @@ namespace Android.Telephony
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/BarringInfo.BarringServiceInfo.html#getBarringType()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetBarringType()
+            {
+                return IExecuteWithSignature<int>("getBarringType", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/BarringInfo.BarringServiceInfo.html#getConditionalBarringFactor()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetConditionalBarringFactor()
+            {
+                return IExecuteWithSignature<int>("getConditionalBarringFactor", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/BarringInfo.BarringServiceInfo.html#getConditionalBarringTimeSeconds()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetConditionalBarringTimeSeconds()
+            {
+                return IExecuteWithSignature<int>("getConditionalBarringTimeSeconds", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/BarringInfo.BarringServiceInfo.html#writeToParcel(android.os.Parcel,int)"/>

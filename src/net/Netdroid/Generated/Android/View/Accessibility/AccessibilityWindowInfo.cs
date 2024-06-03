@@ -113,81 +113,28 @@ namespace Android.View.Accessibility
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getAnchor()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getLocales()"/>
         /// </summary>
-        public Android.View.Accessibility.AccessibilityNodeInfo Anchor
+        /// <returns><see cref="Android.Os.LocaleList"/></returns>
+        public Android.Os.LocaleList GetLocales()
         {
-            get { return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo>("getAnchor", "()Landroid/view/accessibility/AccessibilityNodeInfo;"); }
+            return IExecuteWithSignature<Android.Os.LocaleList>("getLocales", "()Landroid/os/LocaleList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getChildCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getAnchor()"/>
         /// </summary>
-        public int ChildCount
+        /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo"/></returns>
+        public Android.View.Accessibility.AccessibilityNodeInfo GetAnchor()
         {
-            get { return IExecuteWithSignature<int>("getChildCount", "()I"); }
+            return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo>("getAnchor", "()Landroid/view/accessibility/AccessibilityNodeInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getDisplayId()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getRoot()"/>
         /// </summary>
-        public int DisplayId
+        /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo"/></returns>
+        public Android.View.Accessibility.AccessibilityNodeInfo GetRoot()
         {
-            get { return IExecuteWithSignature<int>("getDisplayId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getId()"/> 
-        /// </summary>
-        public int Id
-        {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getLayer()"/> 
-        /// </summary>
-        public int Layer
-        {
-            get { return IExecuteWithSignature<int>("getLayer", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getLocales()"/> 
-        /// </summary>
-        public Android.Os.LocaleList Locales
-        {
-            get { return IExecuteWithSignature<Android.Os.LocaleList>("getLocales", "()Landroid/os/LocaleList;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getParent()"/> 
-        /// </summary>
-        public Android.View.Accessibility.AccessibilityWindowInfo Parent
-        {
-            get { return IExecuteWithSignature<Android.View.Accessibility.AccessibilityWindowInfo>("getParent", "()Landroid/view/accessibility/AccessibilityWindowInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getRoot()"/> 
-        /// </summary>
-        public Android.View.Accessibility.AccessibilityNodeInfo Root
-        {
-            get { return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo>("getRoot", "()Landroid/view/accessibility/AccessibilityNodeInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getTitle()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Title
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getTransitionTimeMillis()"/> 
-        /// </summary>
-        public long TransitionTimeMillis
-        {
-            get { return IExecuteWithSignature<long>("getTransitionTimeMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo>("getRoot", "()Landroid/view/accessibility/AccessibilityNodeInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getRoot(int)"/>
@@ -206,6 +153,14 @@ namespace Android.View.Accessibility
         public Android.View.Accessibility.AccessibilityWindowInfo GetChild(int arg0)
         {
             return IExecuteWithSignature<Android.View.Accessibility.AccessibilityWindowInfo>("getChild", "(I)Landroid/view/accessibility/AccessibilityWindowInfo;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getParent()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Accessibility.AccessibilityWindowInfo"/></returns>
+        public Android.View.Accessibility.AccessibilityWindowInfo GetParent()
+        {
+            return IExecuteWithSignature<Android.View.Accessibility.AccessibilityWindowInfo>("getParent", "()Landroid/view/accessibility/AccessibilityWindowInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#isAccessibilityFocused()"/>
@@ -246,6 +201,62 @@ namespace Android.View.Accessibility
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getChildCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChildCount()
+        {
+            return IExecuteWithSignature<int>("getChildCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getDisplayId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDisplayId()
+        {
+            return IExecuteWithSignature<int>("getDisplayId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getLayer()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLayer()
+        {
+            return IExecuteWithSignature<int>("getLayer", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getTitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getTransitionTimeMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTransitionTimeMillis()
+        {
+            return IExecuteWithSignature<long>("getTransitionTimeMillis", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#getBoundsInScreen(android.graphics.Rect)"/>

@@ -46,7 +46,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#toArray(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#toArray(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -55,7 +55,7 @@ namespace Java.Util
             return IExecuteWithSignatureArray<object>("toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#add(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#add(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -64,7 +64,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#addAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#addAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -73,7 +73,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("addAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#contains(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#contains(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -82,7 +82,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#containsAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#containsAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -91,7 +91,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("containsAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#isEmpty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#isEmpty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
@@ -99,7 +99,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#remove(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -108,7 +108,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#removeAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#removeAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -117,7 +117,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("removeAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#retainAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#retainAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -126,7 +126,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("retainAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#size()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Size()
@@ -134,7 +134,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#toArray()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#toArray()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
@@ -142,7 +142,7 @@ namespace Java.Util
             return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#iterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
@@ -150,14 +150,14 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#clear()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#toArray(java.util.function.IntFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#toArray(java.util.function.IntFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntFunction"/></param>
         /// <returns><see cref="object"/></returns>
@@ -166,7 +166,7 @@ namespace Java.Util
             return IExecuteWithSignatureArray<object>("toArray", "(Ljava/util/function/IntFunction;)[Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#removeIf(java.util.function.Predicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#removeIf(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -175,7 +175,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("removeIf", "(Ljava/util/function/Predicate;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#spliterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#spliterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator Spliterator()
@@ -183,7 +183,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Spliterator>("spliterator", "()Ljava/util/Spliterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#parallelStream()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#parallelStream()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream ParallelStream()
@@ -191,7 +191,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.Stream>("parallelStream", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#stream()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#stream()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream Stream()
@@ -252,7 +252,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#toArray(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#toArray(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <typeparam name="T"></typeparam>
@@ -262,7 +262,7 @@ namespace Java.Util
             return IExecuteWithSignatureArray<T>("toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#add(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#add(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -271,17 +271,17 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#addAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#addAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
+        public bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
             return IExecuteWithSignature<bool>("addAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#contains(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#contains(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -290,7 +290,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#containsAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#containsAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -299,7 +299,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("containsAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#isEmpty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#isEmpty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
@@ -307,7 +307,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#remove(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -316,7 +316,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#removeAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#removeAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -325,7 +325,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("removeAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#retainAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#retainAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -334,7 +334,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("retainAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#size()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Size()
@@ -342,7 +342,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#toArray()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#toArray()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
@@ -350,7 +350,7 @@ namespace Java.Util
             return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#iterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> Iterator()
@@ -358,14 +358,14 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Iterator<E>>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#clear()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#toArray(java.util.function.IntFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#toArray(java.util.function.IntFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntFunction"/></param>
         /// <typeparam name="T"></typeparam>
@@ -375,17 +375,17 @@ namespace Java.Util
             return IExecuteWithSignatureArray<T>("toArray", "(Ljava/util/function/IntFunction;)[Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#removeIf(java.util.function.Predicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#removeIf(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool RemoveIf<Arg0objectSuperE>(Java.Util.Function.Predicate<Arg0objectSuperE> arg0) where Arg0objectSuperE: E
+        public bool RemoveIf<Arg0objectSuperE>(Java.Util.Function.Predicate<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
         {
             return IExecuteWithSignature<bool>("removeIf", "(Ljava/util/function/Predicate;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#spliterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#spliterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator<E> Spliterator()
@@ -393,7 +393,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Spliterator<E>>("spliterator", "()Ljava/util/Spliterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#parallelStream()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#parallelStream()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<E> ParallelStream()
@@ -401,7 +401,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.Stream<E>>("parallelStream", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Collection.html#stream()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Collection.html#stream()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<E> Stream()

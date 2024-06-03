@@ -30,7 +30,7 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EdECPublicKeySpec.html#%3Cinit%3E(java.security.spec.NamedParameterSpec,java.security.spec.EdECPoint)"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/EdECPublicKeySpec.html#%3Cinit%3E(java.security.spec.NamedParameterSpec,java.security.spec.EdECPoint)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Spec.NamedParameterSpec"/></param>
         /// <param name="arg1"><see cref="Java.Security.Spec.EdECPoint"/></param>
@@ -55,18 +55,20 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EdECPublicKeySpec.html#getParams()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/EdECPublicKeySpec.html#getPoint()"/>
         /// </summary>
-        public Java.Security.Spec.NamedParameterSpec Params
+        /// <returns><see cref="Java.Security.Spec.EdECPoint"/></returns>
+        public Java.Security.Spec.EdECPoint GetPoint()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.NamedParameterSpec>("getParams", "()Ljava/security/spec/NamedParameterSpec;"); }
+            return IExecuteWithSignature<Java.Security.Spec.EdECPoint>("getPoint", "()Ljava/security/spec/EdECPoint;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EdECPublicKeySpec.html#getPoint()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/EdECPublicKeySpec.html#getParams()"/>
         /// </summary>
-        public Java.Security.Spec.EdECPoint Point
+        /// <returns><see cref="Java.Security.Spec.NamedParameterSpec"/></returns>
+        public Java.Security.Spec.NamedParameterSpec GetParams()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.EdECPoint>("getPoint", "()Ljava/security/spec/EdECPoint;"); }
+            return IExecuteWithSignature<Java.Security.Spec.NamedParameterSpec>("getParams", "()Ljava/security/spec/NamedParameterSpec;");
         }
 
         #endregion

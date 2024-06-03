@@ -64,46 +64,28 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#getCurrentAlpha()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#getCurrentInsets()"/>
         /// </summary>
-        public float CurrentAlpha
+        /// <returns><see cref="Android.Graphics.Insets"/></returns>
+        public Android.Graphics.Insets GetCurrentInsets()
         {
-            get { return IExecuteWithSignature<float>("getCurrentAlpha", "()F"); }
+            return IExecuteWithSignature<Android.Graphics.Insets>("getCurrentInsets", "()Landroid/graphics/Insets;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#getCurrentFraction()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#getHiddenStateInsets()"/>
         /// </summary>
-        public float CurrentFraction
+        /// <returns><see cref="Android.Graphics.Insets"/></returns>
+        public Android.Graphics.Insets GetHiddenStateInsets()
         {
-            get { return IExecuteWithSignature<float>("getCurrentFraction", "()F"); }
+            return IExecuteWithSignature<Android.Graphics.Insets>("getHiddenStateInsets", "()Landroid/graphics/Insets;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#getCurrentInsets()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#getShownStateInsets()"/>
         /// </summary>
-        public Android.Graphics.Insets CurrentInsets
+        /// <returns><see cref="Android.Graphics.Insets"/></returns>
+        public Android.Graphics.Insets GetShownStateInsets()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Insets>("getCurrentInsets", "()Landroid/graphics/Insets;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#getHiddenStateInsets()"/> 
-        /// </summary>
-        public Android.Graphics.Insets HiddenStateInsets
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Insets>("getHiddenStateInsets", "()Landroid/graphics/Insets;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#getShownStateInsets()"/> 
-        /// </summary>
-        public Android.Graphics.Insets ShownStateInsets
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Insets>("getShownStateInsets", "()Landroid/graphics/Insets;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#getTypes()"/> 
-        /// </summary>
-        public int Types
-        {
-            get { return IExecuteWithSignature<int>("getTypes", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.Insets>("getShownStateInsets", "()Landroid/graphics/Insets;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#isCancelled()"/>
@@ -120,6 +102,30 @@ namespace Android.View
         public bool IsFinished()
         {
             return IExecuteWithSignature<bool>("isFinished", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#getCurrentAlpha()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetCurrentAlpha()
+        {
+            return IExecuteWithSignature<float>("getCurrentAlpha", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#getCurrentFraction()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetCurrentFraction()
+        {
+            return IExecuteWithSignature<float>("getCurrentFraction", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#getTypes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTypes()
+        {
+            return IExecuteWithSignature<int>("getTypes", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#finish(boolean)"/>

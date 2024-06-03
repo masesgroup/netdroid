@@ -64,18 +64,20 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/WildcardType.html#getLowerBounds()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/WildcardType.html#getLowerBounds()"/>
         /// </summary>
-        public Java.Lang.Reflect.Type[] LowerBounds
+        /// <returns><see cref="Java.Lang.Reflect.Type"/></returns>
+        public Java.Lang.Reflect.Type[] GetLowerBounds()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getLowerBounds", "()[Ljava/lang/reflect/Type;"); }
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getLowerBounds", "()[Ljava/lang/reflect/Type;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/WildcardType.html#getUpperBounds()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/WildcardType.html#getUpperBounds()"/>
         /// </summary>
-        public Java.Lang.Reflect.Type[] UpperBounds
+        /// <returns><see cref="Java.Lang.Reflect.Type"/></returns>
+        public Java.Lang.Reflect.Type[] GetUpperBounds()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getUpperBounds", "()[Ljava/lang/reflect/Type;"); }
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getUpperBounds", "()[Ljava/lang/reflect/Type;");
         }
 
         #endregion

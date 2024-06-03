@@ -146,27 +146,6 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ComponentName.html#getClassName()"/> 
-        /// </summary>
-        public Java.Lang.String ClassName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getClassName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ComponentName.html#getPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String PackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ComponentName.html#getShortClassName()"/> 
-        /// </summary>
-        public Java.Lang.String ShortClassName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getShortClassName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ComponentName.html#clone()"/>
         /// </summary>
         /// <returns><see cref="Android.Content.ComponentName"/></returns>
@@ -215,6 +194,30 @@ namespace Android.Content
         public Java.Lang.String FlattenToString()
         {
             return IExecuteWithSignature<Java.Lang.String>("flattenToString", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ComponentName.html#getClassName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetClassName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getClassName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ComponentName.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ComponentName.html#getShortClassName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetShortClassName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getShortClassName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ComponentName.html#toShortString()"/>

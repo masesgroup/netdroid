@@ -52,25 +52,28 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SleepSessionRecord.html#getNotes()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SleepSessionRecord.html#getNotes()"/>
         /// </summary>
-        public Java.Lang.CharSequence Notes
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetNotes()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getNotes", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getNotes", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SleepSessionRecord.html#getStages()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SleepSessionRecord.html#getTitle()"/>
         /// </summary>
-        public Java.Util.List<Android.Health.Connect.Datatypes.SleepSessionRecord.Stage> Stages
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTitle()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.SleepSessionRecord.Stage>>("getStages", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SleepSessionRecord.html#getTitle()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SleepSessionRecord.html#getStages()"/>
         /// </summary>
-        public Java.Lang.CharSequence Title
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Health.Connect.Datatypes.SleepSessionRecord.Stage> GetStages()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.SleepSessionRecord.Stage>>("getStages", "()Ljava/util/List;");
         }
 
         #endregion
@@ -217,25 +220,28 @@ namespace Android.Health.Connect.Datatypes
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SleepSessionRecord.Stage.html#getEndTime()"/> 
+            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SleepSessionRecord.Stage.html#getType()"/>
             /// </summary>
-            public Java.Time.Instant EndTime
+            /// <returns><see cref="int"/></returns>
+            public int GetType()
             {
-                get { return IExecuteWithSignature<Java.Time.Instant>("getEndTime", "()Ljava/time/Instant;"); }
+                return IExecuteWithSignature<int>("getType", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SleepSessionRecord.Stage.html#getStartTime()"/> 
+            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SleepSessionRecord.Stage.html#getEndTime()"/>
             /// </summary>
-            public Java.Time.Instant StartTime
+            /// <returns><see cref="Java.Time.Instant"/></returns>
+            public Java.Time.Instant GetEndTime()
             {
-                get { return IExecuteWithSignature<Java.Time.Instant>("getStartTime", "()Ljava/time/Instant;"); }
+                return IExecuteWithSignature<Java.Time.Instant>("getEndTime", "()Ljava/time/Instant;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SleepSessionRecord.Stage.html#getType()"/> 
+            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SleepSessionRecord.Stage.html#getStartTime()"/>
             /// </summary>
-            public int Type
+            /// <returns><see cref="Java.Time.Instant"/></returns>
+            public Java.Time.Instant GetStartTime()
             {
-                get { return IExecuteWithSignature<int>("getType", "()I"); }
+                return IExecuteWithSignature<Java.Time.Instant>("getStartTime", "()Ljava/time/Instant;");
             }
 
             #endregion

@@ -64,7 +64,7 @@ namespace Java.Util.Regex
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/MatchResult.html#end()"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/MatchResult.html#end()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int End()
@@ -72,7 +72,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<int>("end", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/MatchResult.html#end(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/MatchResult.html#end(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -81,7 +81,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<int>("end", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/MatchResult.html#groupCount()"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/MatchResult.html#groupCount()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int GroupCount()
@@ -89,7 +89,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<int>("groupCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/MatchResult.html#start()"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/MatchResult.html#start()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Start()
@@ -97,7 +97,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<int>("start", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/MatchResult.html#start(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/MatchResult.html#start(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -106,7 +106,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<int>("start", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/MatchResult.html#group()"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/MatchResult.html#group()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Group()
@@ -114,7 +114,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<Java.Lang.String>("group", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/MatchResult.html#group(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/MatchResult.html#group(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>

@@ -30,7 +30,7 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SignedObject.html#%3Cinit%3E(java.io.Serializable,java.security.PrivateKey,java.security.Signature)"/>
+        /// <see href="https://developer.android.com/reference/java/security/SignedObject.html#%3Cinit%3E(java.io.Serializable,java.security.PrivateKey,java.security.Signature)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Serializable"/></param>
         /// <param name="arg1"><see cref="Java.Security.PrivateKey"/></param>
@@ -59,28 +59,7 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SignedObject.html#getAlgorithm()"/> 
-        /// </summary>
-        public Java.Lang.String Algorithm
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SignedObject.html#getObject()"/> 
-        /// </summary>
-        public object Object
-        {
-            get { return IExecuteWithSignature("getObject", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SignedObject.html#getSignature()"/> 
-        /// </summary>
-        public byte[] Signature
-        {
-            get { return IExecuteWithSignatureArray<byte>("getSignature", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SignedObject.html#verify(java.security.PublicKey,java.security.Signature)"/>
+        /// <see href="https://developer.android.com/reference/java/security/SignedObject.html#verify(java.security.PublicKey,java.security.Signature)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
         /// <param name="arg1"><see cref="Java.Security.Signature"/></param>
@@ -90,6 +69,32 @@ namespace Java.Security
         public bool Verify(Java.Security.PublicKey arg0, Java.Security.Signature arg1)
         {
             return IExecute<bool>("verify", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/SignedObject.html#getSignature()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetSignature()
+        {
+            return IExecuteWithSignatureArray<byte>("getSignature", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/SignedObject.html#getObject()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        public object GetObject()
+        {
+            return IExecuteWithSignature("getObject", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/SignedObject.html#getAlgorithm()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAlgorithm()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;");
         }
 
         #endregion

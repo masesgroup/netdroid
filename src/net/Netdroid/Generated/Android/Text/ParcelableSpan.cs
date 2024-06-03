@@ -64,11 +64,12 @@ namespace Android.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/ParcelableSpan.html#getSpanTypeId()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/ParcelableSpan.html#getSpanTypeId()"/>
         /// </summary>
-        public int SpanTypeId
+        /// <returns><see cref="int"/></returns>
+        public int GetSpanTypeId()
         {
-            get { return IExecuteWithSignature<int>("getSpanTypeId", "()I"); }
+            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
         }
 
         #endregion

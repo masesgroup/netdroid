@@ -82,47 +82,12 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/SharedLibraryInfo.html#getDeclaringPackage()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/pm/SharedLibraryInfo.html#getDeclaringPackage()"/>
         /// </summary>
-        public Android.Content.Pm.VersionedPackage DeclaringPackage
+        /// <returns><see cref="Android.Content.Pm.VersionedPackage"/></returns>
+        public Android.Content.Pm.VersionedPackage GetDeclaringPackage()
         {
-            get { return IExecuteWithSignature<Android.Content.Pm.VersionedPackage>("getDeclaringPackage", "()Landroid/content/pm/VersionedPackage;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/SharedLibraryInfo.html#getDependentPackages()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Content.Pm.VersionedPackage> DependentPackages
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.VersionedPackage>>("getDependentPackages", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/SharedLibraryInfo.html#getLongVersion()"/> 
-        /// </summary>
-        public long LongVersion
-        {
-            get { return IExecuteWithSignature<long>("getLongVersion", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/SharedLibraryInfo.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/SharedLibraryInfo.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/SharedLibraryInfo.html#getVersion()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int Version
-        {
-            get { return IExecuteWithSignature<int>("getVersion", "()I"); }
+            return IExecuteWithSignature<Android.Content.Pm.VersionedPackage>("getDeclaringPackage", "()Landroid/content/pm/VersionedPackage;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/SharedLibraryInfo.html#describeContents()"/>
@@ -131,6 +96,47 @@ namespace Android.Content.Pm
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/SharedLibraryInfo.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/SharedLibraryInfo.html#getVersion()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetVersion()
+        {
+            return IExecuteWithSignature<int>("getVersion", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/SharedLibraryInfo.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/SharedLibraryInfo.html#getDependentPackages()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Content.Pm.VersionedPackage> GetDependentPackages()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.VersionedPackage>>("getDependentPackages", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/SharedLibraryInfo.html#getLongVersion()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLongVersion()
+        {
+            return IExecuteWithSignature<long>("getLongVersion", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/SharedLibraryInfo.html#writeToParcel(android.os.Parcel,int)"/>

@@ -42,7 +42,7 @@ namespace Java.Util.Concurrent.Locks
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/LockSupport.html#getBlocker(java.lang.Thread)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/LockSupport.html#getBlocker(java.lang.Thread)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
         /// <returns><see cref="object"/></returns>
@@ -51,14 +51,14 @@ namespace Java.Util.Concurrent.Locks
             return SExecuteWithSignature(LocalBridgeClazz, "getBlocker", "(Ljava/lang/Thread;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/LockSupport.html#park()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/LockSupport.html#park()"/>
         /// </summary>
         public static void Park()
         {
             SExecuteWithSignature(LocalBridgeClazz, "park", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/LockSupport.html#park(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/LockSupport.html#park(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public static void Park(object arg0)
@@ -66,7 +66,7 @@ namespace Java.Util.Concurrent.Locks
             SExecuteWithSignature(LocalBridgeClazz, "park", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/LockSupport.html#parkNanos(java.lang.Object,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/LockSupport.html#parkNanos(java.lang.Object,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -75,7 +75,7 @@ namespace Java.Util.Concurrent.Locks
             SExecute(LocalBridgeClazz, "parkNanos", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/LockSupport.html#parkNanos(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/LockSupport.html#parkNanos(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public static void ParkNanos(long arg0)
@@ -83,7 +83,7 @@ namespace Java.Util.Concurrent.Locks
             SExecuteWithSignature(LocalBridgeClazz, "parkNanos", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/LockSupport.html#parkUntil(java.lang.Object,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/LockSupport.html#parkUntil(java.lang.Object,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -92,7 +92,7 @@ namespace Java.Util.Concurrent.Locks
             SExecute(LocalBridgeClazz, "parkUntil", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/LockSupport.html#parkUntil(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/LockSupport.html#parkUntil(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public static void ParkUntil(long arg0)
@@ -100,7 +100,7 @@ namespace Java.Util.Concurrent.Locks
             SExecuteWithSignature(LocalBridgeClazz, "parkUntil", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/LockSupport.html#setCurrentBlocker(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/LockSupport.html#setCurrentBlocker(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public static void SetCurrentBlocker(object arg0)
@@ -108,7 +108,7 @@ namespace Java.Util.Concurrent.Locks
             SExecuteWithSignature(LocalBridgeClazz, "setCurrentBlocker", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/LockSupport.html#unpark(java.lang.Thread)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/LockSupport.html#unpark(java.lang.Thread)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
         public static void Unpark(Java.Lang.Thread arg0)

@@ -30,7 +30,7 @@ namespace Javax.Net.Ssl
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionBindingEvent.html#%3Cinit%3E(javax.net.ssl.SSLSession,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSessionBindingEvent.html#%3Cinit%3E(javax.net.ssl.SSLSession,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSession"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -55,18 +55,20 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionBindingEvent.html#getName()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSessionBindingEvent.html#getName()"/>
         /// </summary>
-        public Java.Lang.String Name
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionBindingEvent.html#getSession()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSessionBindingEvent.html#getSession()"/>
         /// </summary>
-        public Javax.Net.Ssl.SSLSession Session
+        /// <returns><see cref="Javax.Net.Ssl.SSLSession"/></returns>
+        public Javax.Net.Ssl.SSLSession GetSession()
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLSession>("getSession", "()Ljavax/net/ssl/SSLSession;"); }
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLSession>("getSession", "()Ljavax/net/ssl/SSLSession;");
         }
 
         #endregion

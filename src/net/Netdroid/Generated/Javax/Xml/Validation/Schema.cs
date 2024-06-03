@@ -46,7 +46,7 @@ namespace Javax.Xml.Validation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/Schema.html#newValidator()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/validation/Schema.html#newValidator()"/>
         /// </summary>
         /// <returns><see cref="Javax.Xml.Validation.Validator"/></returns>
         public Javax.Xml.Validation.Validator NewValidator()
@@ -54,7 +54,7 @@ namespace Javax.Xml.Validation
             return IExecuteWithSignature<Javax.Xml.Validation.Validator>("newValidator", "()Ljavax/xml/validation/Validator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/Schema.html#newValidatorHandler()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/validation/Schema.html#newValidatorHandler()"/>
         /// </summary>
         /// <returns><see cref="Javax.Xml.Validation.ValidatorHandler"/></returns>
         public Javax.Xml.Validation.ValidatorHandler NewValidatorHandler()

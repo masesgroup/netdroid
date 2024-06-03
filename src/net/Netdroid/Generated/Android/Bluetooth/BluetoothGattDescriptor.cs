@@ -127,43 +127,31 @@ namespace Android.Bluetooth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattDescriptor.html#getCharacteristic()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattDescriptor.html#getCharacteristic()"/>
         /// </summary>
-        public Android.Bluetooth.BluetoothGattCharacteristic Characteristic
+        /// <returns><see cref="Android.Bluetooth.BluetoothGattCharacteristic"/></returns>
+        public Android.Bluetooth.BluetoothGattCharacteristic GetCharacteristic()
         {
-            get { return IExecuteWithSignature<Android.Bluetooth.BluetoothGattCharacteristic>("getCharacteristic", "()Landroid/bluetooth/BluetoothGattCharacteristic;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattDescriptor.html#getPermissions()"/> 
-        /// </summary>
-        public int Permissions
-        {
-            get { return IExecuteWithSignature<int>("getPermissions", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattDescriptor.html#getUuid()"/> 
-        /// </summary>
-        public Java.Util.UUID Uuid
-        {
-            get { return IExecuteWithSignature<Java.Util.UUID>("getUuid", "()Ljava/util/UUID;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattDescriptor.html#getValue()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public byte[] Value
-        {
-            get { return IExecuteWithSignatureArray<byte>("getValue", "()[B"); }
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothGattCharacteristic>("getCharacteristic", "()Landroid/bluetooth/BluetoothGattCharacteristic;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattDescriptor.html#setValue(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool SetValue(byte[] arg0)
         {
             return IExecuteWithSignature<bool>("setValue", "([B)Z", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattDescriptor.html#getValue()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        [global::System.Obsolete()]
+        public byte[] GetValue()
+        {
+            return IExecuteWithSignatureArray<byte>("getValue", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattDescriptor.html#describeContents()"/>
@@ -172,6 +160,22 @@ namespace Android.Bluetooth
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattDescriptor.html#getPermissions()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPermissions()
+        {
+            return IExecuteWithSignature<int>("getPermissions", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattDescriptor.html#getUuid()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.UUID"/></returns>
+        public Java.Util.UUID GetUuid()
+        {
+            return IExecuteWithSignature<Java.Util.UUID>("getUuid", "()Ljava/util/UUID;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattDescriptor.html#writeToParcel(android.os.Parcel,int)"/>

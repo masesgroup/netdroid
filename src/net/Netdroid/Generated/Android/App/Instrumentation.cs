@@ -71,55 +71,6 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#getAllocCounts()"/> 
-        /// </summary>
-        public Android.Os.Bundle AllocCounts
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getAllocCounts", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#getBinderCounts()"/> 
-        /// </summary>
-        public Android.Os.Bundle BinderCounts
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getBinderCounts", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#getComponentName()"/> 
-        /// </summary>
-        public Android.Content.ComponentName ComponentName
-        {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getComponentName", "()Landroid/content/ComponentName;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#getContext()"/> 
-        /// </summary>
-        public Android.Content.Context Context
-        {
-            get { return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#getProcessName()"/> 
-        /// </summary>
-        public Java.Lang.String ProcessName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getProcessName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#getTargetContext()"/> 
-        /// </summary>
-        public Android.Content.Context TargetContext
-        {
-            get { return IExecuteWithSignature<Android.Content.Context>("getTargetContext", "()Landroid/content/Context;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#getUiAutomation()"/> 
-        /// </summary>
-        public Android.App.UiAutomation UiAutomation
-        {
-            get { return IExecuteWithSignature<Android.App.UiAutomation>("getUiAutomation", "()Landroid/app/UiAutomation;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#newActivity(java.lang.Class,android.content.Context,android.os.IBinder,android.app.Application,android.content.Intent,android.content.pm.ActivityInfo,java.lang.CharSequence,android.app.Activity,java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -228,6 +179,14 @@ namespace Android.App
             return IExecute<Android.App.Instrumentation.ActivityMonitor>("addMonitor", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#getUiAutomation()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.UiAutomation"/></returns>
+        public Android.App.UiAutomation GetUiAutomation()
+        {
+            return IExecuteWithSignature<Android.App.UiAutomation>("getUiAutomation", "()Landroid/app/UiAutomation;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#getUiAutomation(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -235,6 +194,46 @@ namespace Android.App
         public Android.App.UiAutomation GetUiAutomation(int arg0)
         {
             return IExecuteWithSignature<Android.App.UiAutomation>("getUiAutomation", "(I)Landroid/app/UiAutomation;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#getComponentName()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        public Android.Content.ComponentName GetComponentName()
+        {
+            return IExecuteWithSignature<Android.Content.ComponentName>("getComponentName", "()Landroid/content/ComponentName;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#getContext()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Context"/></returns>
+        public Android.Content.Context GetContext()
+        {
+            return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#getTargetContext()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Context"/></returns>
+        public Android.Content.Context GetTargetContext()
+        {
+            return IExecuteWithSignature<Android.Content.Context>("getTargetContext", "()Landroid/content/Context;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#getAllocCounts()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetAllocCounts()
+        {
+            return IExecuteWithSignature<Android.Os.Bundle>("getAllocCounts", "()Landroid/os/Bundle;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#getBinderCounts()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetBinderCounts()
+        {
+            return IExecuteWithSignature<Android.Os.Bundle>("getBinderCounts", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#acquireLooperManager(android.os.Looper)"/>
@@ -294,6 +293,14 @@ namespace Android.App
         public bool OnException(object arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
             return IExecute<bool>("onException", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#getProcessName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetProcessName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getProcessName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#addMonitor(android.app.Instrumentation.ActivityMonitor)"/>
@@ -611,7 +618,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#startAllocCounting()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartAllocCounting()
         {
             IExecuteWithSignature("startAllocCounting", "()V");
@@ -633,7 +640,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#stopAllocCounting()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StopAllocCounting()
         {
             IExecuteWithSignature("stopAllocCounting", "()V");
@@ -705,34 +712,6 @@ namespace Android.App
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityMonitor.html#getFilter()"/> 
-            /// </summary>
-            public Android.Content.IntentFilter Filter
-            {
-                get { return IExecuteWithSignature<Android.Content.IntentFilter>("getFilter", "()Landroid/content/IntentFilter;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityMonitor.html#getHits()"/> 
-            /// </summary>
-            public int Hits
-            {
-                get { return IExecuteWithSignature<int>("getHits", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityMonitor.html#getLastActivity()"/> 
-            /// </summary>
-            public Android.App.Activity LastActivity
-            {
-                get { return IExecuteWithSignature<Android.App.Activity>("getLastActivity", "()Landroid/app/Activity;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityMonitor.html#getResult()"/> 
-            /// </summary>
-            public Android.App.Instrumentation.ActivityResult Result
-            {
-                get { return IExecuteWithSignature<Android.App.Instrumentation.ActivityResult>("getResult", "()Landroid/app/Instrumentation$ActivityResult;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityMonitor.html#onStartActivity(android.content.Intent)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
@@ -740,6 +719,14 @@ namespace Android.App
             public Android.App.Instrumentation.ActivityResult OnStartActivity(Android.Content.Intent arg0)
             {
                 return IExecuteWithSignature<Android.App.Instrumentation.ActivityResult>("onStartActivity", "(Landroid/content/Intent;)Landroid/app/Instrumentation$ActivityResult;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityMonitor.html#getLastActivity()"/>
+            /// </summary>
+            /// <returns><see cref="Android.App.Activity"/></returns>
+            public Android.App.Activity GetLastActivity()
+            {
+                return IExecuteWithSignature<Android.App.Activity>("getLastActivity", "()Landroid/app/Activity;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityMonitor.html#waitForActivity()"/>
@@ -759,12 +746,36 @@ namespace Android.App
                 return IExecuteWithSignature<Android.App.Activity>("waitForActivityWithTimeout", "(J)Landroid/app/Activity;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityMonitor.html#getResult()"/>
+            /// </summary>
+            /// <returns><see cref="Android.App.Instrumentation.ActivityResult"/></returns>
+            public Android.App.Instrumentation.ActivityResult GetResult()
+            {
+                return IExecuteWithSignature<Android.App.Instrumentation.ActivityResult>("getResult", "()Landroid/app/Instrumentation$ActivityResult;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityMonitor.html#getFilter()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Content.IntentFilter"/></returns>
+            public Android.Content.IntentFilter GetFilter()
+            {
+                return IExecuteWithSignature<Android.Content.IntentFilter>("getFilter", "()Landroid/content/IntentFilter;");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityMonitor.html#isBlocking()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
             public bool IsBlocking()
             {
                 return IExecuteWithSignature<bool>("isBlocking", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityMonitor.html#getHits()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetHits()
+            {
+                return IExecuteWithSignature<int>("getHits", "()I");
             }
 
             #endregion
@@ -807,18 +818,20 @@ namespace Android.App
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityResult.html#getResultCode()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityResult.html#getResultData()"/>
             /// </summary>
-            public int ResultCode
+            /// <returns><see cref="Android.Content.Intent"/></returns>
+            public Android.Content.Intent GetResultData()
             {
-                get { return IExecuteWithSignature<int>("getResultCode", "()I"); }
+                return IExecuteWithSignature<Android.Content.Intent>("getResultData", "()Landroid/content/Intent;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityResult.html#getResultData()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityResult.html#getResultCode()"/>
             /// </summary>
-            public Android.Content.Intent ResultData
+            /// <returns><see cref="int"/></returns>
+            public int GetResultCode()
             {
-                get { return IExecuteWithSignature<Android.Content.Intent>("getResultData", "()Landroid/content/Intent;"); }
+                return IExecuteWithSignature<int>("getResultCode", "()I");
             }
 
             #endregion

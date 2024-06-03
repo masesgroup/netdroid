@@ -46,11 +46,12 @@ namespace Android.App.Appsearch
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionResult.html#getSuggestedResult()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionResult.html#getSuggestedResult()"/>
         /// </summary>
-        public Java.Lang.String SuggestedResult
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSuggestedResult()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSuggestedResult", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getSuggestedResult", "()Ljava/lang/String;");
         }
 
         #endregion

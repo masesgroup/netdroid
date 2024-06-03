@@ -82,7 +82,7 @@ namespace Android.Animation
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onTimeUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.TimeAnimator>>>(OnTimeUpdateEventHandler));
+                AddEventHandler("onTimeUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.TimeAnimator>>>(OnTimeUpdateEventHandler));
 
             }
 
@@ -90,7 +90,7 @@ namespace Android.Animation
             /// Handler for <see href="https://developer.android.com/reference/android/animation/TimeAnimator.TimeListener.html#onTimeUpdate(android.animation.TimeAnimator,long,long)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTimeUpdate"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Animation.TimeAnimator, long, long> OnOnTimeUpdate { get; set; } = null;
+            public global::System.Action<Android.Animation.TimeAnimator, long, long> OnOnTimeUpdate { get; set; } = null;
 
             void OnTimeUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Animation.TimeAnimator>> data)
             {

@@ -68,8 +68,8 @@ namespace Android.Hardware
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("onAccuracyChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Hardware.Sensor>>>(OnAccuracyChangedEventHandler));
-            AddEventHandler("onSensorChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Hardware.SensorEvent>>>(OnSensorChangedEventHandler));
+            AddEventHandler("onAccuracyChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Hardware.Sensor>>>(OnAccuracyChangedEventHandler));
+            AddEventHandler("onSensorChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Hardware.SensorEvent>>>(OnSensorChangedEventHandler));
 
         }
 
@@ -77,7 +77,7 @@ namespace Android.Hardware
         /// Handler for <see href="https://developer.android.com/reference/android/hardware/SensorEventListener.html#onAccuracyChanged(android.hardware.Sensor,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnAccuracyChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Hardware.Sensor, int> OnOnAccuracyChanged { get; set; } = null;
+        public global::System.Action<Android.Hardware.Sensor, int> OnOnAccuracyChanged { get; set; } = null;
 
         void OnAccuracyChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Hardware.Sensor>> data)
         {
@@ -99,7 +99,7 @@ namespace Android.Hardware
         /// Handler for <see href="https://developer.android.com/reference/android/hardware/SensorEventListener.html#onSensorChanged(android.hardware.SensorEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnSensorChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Hardware.SensorEvent> OnOnSensorChanged { get; set; } = null;
+        public global::System.Action<Android.Hardware.SensorEvent> OnOnSensorChanged { get; set; } = null;
 
         void OnSensorChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Hardware.SensorEvent>> data)
         {

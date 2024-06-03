@@ -46,18 +46,20 @@ namespace Android.Hardware.Camera2
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.html#getDevice()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.html#getDevice()"/>
         /// </summary>
-        public Android.Hardware.Camera2.CameraDevice Device
+        /// <returns><see cref="Android.Hardware.Camera2.CameraDevice"/></returns>
+        public Android.Hardware.Camera2.CameraDevice GetDevice()
         {
-            get { return IExecuteWithSignature<Android.Hardware.Camera2.CameraDevice>("getDevice", "()Landroid/hardware/camera2/CameraDevice;"); }
+            return IExecuteWithSignature<Android.Hardware.Camera2.CameraDevice>("getDevice", "()Landroid/hardware/camera2/CameraDevice;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.html#getInputSurface()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.html#getInputSurface()"/>
         /// </summary>
-        public Android.View.Surface InputSurface
+        /// <returns><see cref="Android.View.Surface"/></returns>
+        public Android.View.Surface GetInputSurface()
         {
-            get { return IExecuteWithSignature<Android.View.Surface>("getInputSurface", "()Landroid/view/Surface;"); }
+            return IExecuteWithSignature<Android.View.Surface>("getInputSurface", "()Landroid/view/Surface;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.html#isReprocessable()"/>

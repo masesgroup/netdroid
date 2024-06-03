@@ -64,7 +64,7 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetWriter.html#writeData(javax.sql.RowSetInternal)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetWriter.html#writeData(javax.sql.RowSetInternal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.RowSetInternal"/></param>
         /// <returns><see cref="bool"/></returns>

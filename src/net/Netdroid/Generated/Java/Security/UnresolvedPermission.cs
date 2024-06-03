@@ -30,7 +30,7 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/UnresolvedPermission.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.security.cert.Certificate[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/UnresolvedPermission.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.security.cert.Certificate[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -57,32 +57,36 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/UnresolvedPermission.html#getUnresolvedActions()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/UnresolvedPermission.html#getUnresolvedActions()"/>
         /// </summary>
-        public Java.Lang.String UnresolvedActions
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUnresolvedActions()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUnresolvedActions", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getUnresolvedActions", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/UnresolvedPermission.html#getUnresolvedCerts()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/UnresolvedPermission.html#getUnresolvedName()"/>
         /// </summary>
-        public Java.Security.Cert.Certificate[] UnresolvedCerts
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUnresolvedName()
         {
-            get { return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getUnresolvedCerts", "()[Ljava/security/cert/Certificate;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getUnresolvedName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/UnresolvedPermission.html#getUnresolvedName()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/UnresolvedPermission.html#getUnresolvedType()"/>
         /// </summary>
-        public Java.Lang.String UnresolvedName
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUnresolvedType()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUnresolvedName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getUnresolvedType", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/UnresolvedPermission.html#getUnresolvedType()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/UnresolvedPermission.html#getUnresolvedCerts()"/>
         /// </summary>
-        public Java.Lang.String UnresolvedType
+        /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
+        public Java.Security.Cert.Certificate[] GetUnresolvedCerts()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUnresolvedType", "()Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getUnresolvedCerts", "()[Ljava/security/cert/Certificate;");
         }
 
         #endregion

@@ -171,189 +171,20 @@ namespace Android.Net.Wifi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getAffiliatedMloLinks()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getApMldMacAddress()"/>
         /// </summary>
-        public Java.Util.List<Android.Net.Wifi.MloLink> AffiliatedMloLinks
+        /// <returns><see cref="Android.Net.MacAddress"/></returns>
+        public Android.Net.MacAddress GetApMldMacAddress()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.MloLink>>("getAffiliatedMloLinks", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Net.MacAddress>("getApMldMacAddress", "()Landroid/net/MacAddress;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getApMldMacAddress()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getSupplicantState()"/>
         /// </summary>
-        public Android.Net.MacAddress ApMldMacAddress
+        /// <returns><see cref="Android.Net.Wifi.SupplicantState"/></returns>
+        public Android.Net.Wifi.SupplicantState GetSupplicantState()
         {
-            get { return IExecuteWithSignature<Android.Net.MacAddress>("getApMldMacAddress", "()Landroid/net/MacAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getApMloLinkId()"/> 
-        /// </summary>
-        public int ApMloLinkId
-        {
-            get { return IExecuteWithSignature<int>("getApMloLinkId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getApplicableRedactions()"/> 
-        /// </summary>
-        public long ApplicableRedactions
-        {
-            get { return IExecuteWithSignature<long>("getApplicableRedactions", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getAssociatedMloLinks()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Net.Wifi.MloLink> AssociatedMloLinks
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.MloLink>>("getAssociatedMloLinks", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getBSSID()"/> 
-        /// </summary>
-        public Java.Lang.String BSSID
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getBSSID", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getCurrentSecurityType()"/> 
-        /// </summary>
-        public int CurrentSecurityType
-        {
-            get { return IExecuteWithSignature<int>("getCurrentSecurityType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getFrequency()"/> 
-        /// </summary>
-        public int Frequency
-        {
-            get { return IExecuteWithSignature<int>("getFrequency", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getHiddenSSID()"/> 
-        /// </summary>
-        public bool HiddenSSID
-        {
-            get { return IExecuteWithSignature<bool>("getHiddenSSID", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getInformationElements()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Net.Wifi.ScanResult.InformationElement> InformationElements
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.ScanResult.InformationElement>>("getInformationElements", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getIpAddress()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int IpAddress
-        {
-            get { return IExecuteWithSignature<int>("getIpAddress", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getLinkSpeed()"/> 
-        /// </summary>
-        public int LinkSpeed
-        {
-            get { return IExecuteWithSignature<int>("getLinkSpeed", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getMacAddress()"/> 
-        /// </summary>
-        public Java.Lang.String MacAddress
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMacAddress", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getMaxSupportedRxLinkSpeedMbps()"/> 
-        /// </summary>
-        public int MaxSupportedRxLinkSpeedMbps
-        {
-            get { return IExecuteWithSignature<int>("getMaxSupportedRxLinkSpeedMbps", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getMaxSupportedTxLinkSpeedMbps()"/> 
-        /// </summary>
-        public int MaxSupportedTxLinkSpeedMbps
-        {
-            get { return IExecuteWithSignature<int>("getMaxSupportedTxLinkSpeedMbps", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getNetworkId()"/> 
-        /// </summary>
-        public int NetworkId
-        {
-            get { return IExecuteWithSignature<int>("getNetworkId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getPasspointFqdn()"/> 
-        /// </summary>
-        public Java.Lang.String PasspointFqdn
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPasspointFqdn", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getPasspointProviderFriendlyName()"/> 
-        /// </summary>
-        public Java.Lang.String PasspointProviderFriendlyName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPasspointProviderFriendlyName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getRssi()"/> 
-        /// </summary>
-        public int Rssi
-        {
-            get { return IExecuteWithSignature<int>("getRssi", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getRxLinkSpeedMbps()"/> 
-        /// </summary>
-        public int RxLinkSpeedMbps
-        {
-            get { return IExecuteWithSignature<int>("getRxLinkSpeedMbps", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getSSID()"/> 
-        /// </summary>
-        public Java.Lang.String SSID
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSSID", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getSubscriptionId()"/> 
-        /// </summary>
-        public int SubscriptionId
-        {
-            get { return IExecuteWithSignature<int>("getSubscriptionId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getSupplicantState()"/> 
-        /// </summary>
-        public Android.Net.Wifi.SupplicantState SupplicantState
-        {
-            get { return IExecuteWithSignature<Android.Net.Wifi.SupplicantState>("getSupplicantState", "()Landroid/net/wifi/SupplicantState;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getTxLinkSpeedMbps()"/> 
-        /// </summary>
-        public int TxLinkSpeedMbps
-        {
-            get { return IExecuteWithSignature<int>("getTxLinkSpeedMbps", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getWifiStandard()"/> 
-        /// </summary>
-        public int WifiStandard
-        {
-            get { return IExecuteWithSignature<int>("getWifiStandard", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#makeCopy(long)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Android.Net.TransportInfo"/></returns>
-        public Android.Net.TransportInfo MakeCopy(long arg0)
-        {
-            return IExecuteWithSignature<Android.Net.TransportInfo>("makeCopy", "(J)Landroid/net/TransportInfo;", arg0);
+            return IExecuteWithSignature<Android.Net.Wifi.SupplicantState>("getSupplicantState", "()Landroid/net/wifi/SupplicantState;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#makeCopy(long)"/>
@@ -363,6 +194,14 @@ namespace Android.Net.Wifi
         public Android.Net.Wifi.WifiInfo MakeCopy(long arg0)
         {
             return IExecuteWithSignature<Android.Net.Wifi.WifiInfo>("makeCopy", "(J)Landroid/net/wifi/WifiInfo;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getHiddenSSID()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetHiddenSSID()
+        {
+            return IExecuteWithSignature<bool>("getHiddenSSID", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#isRestricted()"/>
@@ -379,6 +218,183 @@ namespace Android.Net.Wifi
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getApMloLinkId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetApMloLinkId()
+        {
+            return IExecuteWithSignature<int>("getApMloLinkId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getCurrentSecurityType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrentSecurityType()
+        {
+            return IExecuteWithSignature<int>("getCurrentSecurityType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getFrequency()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFrequency()
+        {
+            return IExecuteWithSignature<int>("getFrequency", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getIpAddress()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetIpAddress()
+        {
+            return IExecuteWithSignature<int>("getIpAddress", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getLinkSpeed()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLinkSpeed()
+        {
+            return IExecuteWithSignature<int>("getLinkSpeed", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getMaxSupportedRxLinkSpeedMbps()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxSupportedRxLinkSpeedMbps()
+        {
+            return IExecuteWithSignature<int>("getMaxSupportedRxLinkSpeedMbps", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getMaxSupportedTxLinkSpeedMbps()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxSupportedTxLinkSpeedMbps()
+        {
+            return IExecuteWithSignature<int>("getMaxSupportedTxLinkSpeedMbps", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getNetworkId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNetworkId()
+        {
+            return IExecuteWithSignature<int>("getNetworkId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getRssi()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRssi()
+        {
+            return IExecuteWithSignature<int>("getRssi", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getRxLinkSpeedMbps()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRxLinkSpeedMbps()
+        {
+            return IExecuteWithSignature<int>("getRxLinkSpeedMbps", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getSubscriptionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSubscriptionId()
+        {
+            return IExecuteWithSignature<int>("getSubscriptionId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getTxLinkSpeedMbps()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTxLinkSpeedMbps()
+        {
+            return IExecuteWithSignature<int>("getTxLinkSpeedMbps", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getWifiStandard()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWifiStandard()
+        {
+            return IExecuteWithSignature<int>("getWifiStandard", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getBSSID()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetBSSID()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getBSSID", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getMacAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMacAddress()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMacAddress", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getPasspointFqdn()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPasspointFqdn()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPasspointFqdn", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getPasspointProviderFriendlyName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPasspointProviderFriendlyName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPasspointProviderFriendlyName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getSSID()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSSID()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSSID", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getAffiliatedMloLinks()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Wifi.MloLink> GetAffiliatedMloLinks()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.MloLink>>("getAffiliatedMloLinks", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getAssociatedMloLinks()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Wifi.MloLink> GetAssociatedMloLinks()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.MloLink>>("getAssociatedMloLinks", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getInformationElements()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Wifi.ScanResult.InformationElement> GetInformationElements()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.ScanResult.InformationElement>>("getInformationElements", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getApplicableRedactions()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetApplicableRedactions()
+        {
+            return IExecuteWithSignature<long>("getApplicableRedactions", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#writeToParcel(android.os.Parcel,int)"/>

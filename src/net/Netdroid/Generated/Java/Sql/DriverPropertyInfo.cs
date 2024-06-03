@@ -30,7 +30,7 @@ namespace Java.Sql
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverPropertyInfo.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/DriverPropertyInfo.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -47,23 +47,23 @@ namespace Java.Sql
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverPropertyInfo.html#required"/>
+        /// <see href="https://developer.android.com/reference/java/sql/DriverPropertyInfo.html#required"/>
         /// </summary>
         public bool required { get { return IGetField<bool>("required"); } set { ISetField("required", value); } }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverPropertyInfo.html#description"/>
+        /// <see href="https://developer.android.com/reference/java/sql/DriverPropertyInfo.html#description"/>
         /// </summary>
         public Java.Lang.String description { get { return IGetField<Java.Lang.String>("description"); } set { ISetField("description", value); } }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverPropertyInfo.html#name"/>
+        /// <see href="https://developer.android.com/reference/java/sql/DriverPropertyInfo.html#name"/>
         /// </summary>
         public Java.Lang.String name { get { return IGetField<Java.Lang.String>("name"); } set { ISetField("name", value); } }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverPropertyInfo.html#value"/>
+        /// <see href="https://developer.android.com/reference/java/sql/DriverPropertyInfo.html#value"/>
         /// </summary>
         public Java.Lang.String value { get { return IGetField<Java.Lang.String>("value"); } set { ISetField("value", value); } }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverPropertyInfo.html#choices"/>
+        /// <see href="https://developer.android.com/reference/java/sql/DriverPropertyInfo.html#choices"/>
         /// </summary>
         public Java.Lang.String[] choices { get { return IGetFieldArray<Java.Lang.String>("choices"); } set { ISetField("choices", value); } }
 

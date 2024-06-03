@@ -58,11 +58,12 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/AbsSavedState.html#getSuperState()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/AbsSavedState.html#getSuperState()"/>
         /// </summary>
-        public Android.Os.Parcelable SuperState
+        /// <returns><see cref="Android.Os.Parcelable"/></returns>
+        public Android.Os.Parcelable GetSuperState()
         {
-            get { return IExecuteWithSignature<Android.Os.Parcelable>("getSuperState", "()Landroid/os/Parcelable;"); }
+            return IExecuteWithSignature<Android.Os.Parcelable>("getSuperState", "()Landroid/os/Parcelable;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/AbsSavedState.html#describeContents()"/>

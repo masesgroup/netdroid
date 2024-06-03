@@ -56,33 +56,36 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthGsm.html#getBitErrorRate()"/> 
-        /// </summary>
-        public int BitErrorRate
-        {
-            get { return IExecuteWithSignature<int>("getBitErrorRate", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthGsm.html#getRssi()"/> 
-        /// </summary>
-        public int Rssi
-        {
-            get { return IExecuteWithSignature<int>("getRssi", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthGsm.html#getTimingAdvance()"/> 
-        /// </summary>
-        public int TimingAdvance
-        {
-            get { return IExecuteWithSignature<int>("getTimingAdvance", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthGsm.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthGsm.html#getBitErrorRate()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBitErrorRate()
+        {
+            return IExecuteWithSignature<int>("getBitErrorRate", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthGsm.html#getRssi()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRssi()
+        {
+            return IExecuteWithSignature<int>("getRssi", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthGsm.html#getTimingAdvance()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTimingAdvance()
+        {
+            return IExecuteWithSignature<int>("getTimingAdvance", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthGsm.html#writeToParcel(android.os.Parcel,int)"/>

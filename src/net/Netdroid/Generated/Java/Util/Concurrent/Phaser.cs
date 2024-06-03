@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Phaser.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Phaser.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public Phaser(int arg0)
@@ -38,7 +38,7 @@ namespace Java.Util.Concurrent
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Phaser.html#%3Cinit%3E(java.util.concurrent.Phaser,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Phaser.html#%3Cinit%3E(java.util.concurrent.Phaser,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Phaser"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -47,7 +47,7 @@ namespace Java.Util.Concurrent
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Phaser.html#%3Cinit%3E(java.util.concurrent.Phaser)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Phaser.html#%3Cinit%3E(java.util.concurrent.Phaser)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Phaser"/></param>
         public Phaser(Java.Util.Concurrent.Phaser arg0)
@@ -71,49 +71,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Phaser.html#getArrivedParties()"/> 
-        /// </summary>
-        public int ArrivedParties
-        {
-            get { return IExecuteWithSignature<int>("getArrivedParties", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Phaser.html#getParent()"/> 
-        /// </summary>
-        public Java.Util.Concurrent.Phaser Parent
-        {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.Phaser>("getParent", "()Ljava/util/concurrent/Phaser;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Phaser.html#getPhase()"/> 
-        /// </summary>
-        public int Phase
-        {
-            get { return IExecuteWithSignature<int>("getPhase", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Phaser.html#getRegisteredParties()"/> 
-        /// </summary>
-        public int RegisteredParties
-        {
-            get { return IExecuteWithSignature<int>("getRegisteredParties", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Phaser.html#getRoot()"/> 
-        /// </summary>
-        public Java.Util.Concurrent.Phaser Root
-        {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.Phaser>("getRoot", "()Ljava/util/concurrent/Phaser;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Phaser.html#getUnarrivedParties()"/> 
-        /// </summary>
-        public int UnarrivedParties
-        {
-            get { return IExecuteWithSignature<int>("getUnarrivedParties", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Phaser.html#isTerminated()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Phaser.html#isTerminated()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsTerminated()
@@ -121,7 +79,15 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isTerminated", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Phaser.html#arrive()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Phaser.html#getPhase()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPhase()
+        {
+            return IExecuteWithSignature<int>("getPhase", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Phaser.html#arrive()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Arrive()
@@ -129,7 +95,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("arrive", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Phaser.html#arriveAndAwaitAdvance()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Phaser.html#arriveAndAwaitAdvance()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int ArriveAndAwaitAdvance()
@@ -137,7 +103,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("arriveAndAwaitAdvance", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Phaser.html#arriveAndDeregister()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Phaser.html#arriveAndDeregister()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int ArriveAndDeregister()
@@ -145,7 +111,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("arriveAndDeregister", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Phaser.html#awaitAdvance(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Phaser.html#awaitAdvance(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -154,7 +120,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("awaitAdvance", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Phaser.html#awaitAdvanceInterruptibly(int,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Phaser.html#awaitAdvanceInterruptibly(int,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -167,7 +133,7 @@ namespace Java.Util.Concurrent
             return IExecute<int>("awaitAdvanceInterruptibly", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Phaser.html#awaitAdvanceInterruptibly(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Phaser.html#awaitAdvanceInterruptibly(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -177,7 +143,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("awaitAdvanceInterruptibly", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Phaser.html#bulkRegister(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Phaser.html#bulkRegister(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -186,7 +152,31 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("bulkRegister", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Phaser.html#register()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Phaser.html#getArrivedParties()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetArrivedParties()
+        {
+            return IExecuteWithSignature<int>("getArrivedParties", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Phaser.html#getRegisteredParties()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRegisteredParties()
+        {
+            return IExecuteWithSignature<int>("getRegisteredParties", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Phaser.html#getUnarrivedParties()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetUnarrivedParties()
+        {
+            return IExecuteWithSignature<int>("getUnarrivedParties", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Phaser.html#register()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Register()
@@ -194,7 +184,23 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("register", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Phaser.html#forceTermination()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Phaser.html#getParent()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Concurrent.Phaser"/></returns>
+        public Java.Util.Concurrent.Phaser GetParent()
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.Phaser>("getParent", "()Ljava/util/concurrent/Phaser;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Phaser.html#getRoot()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Concurrent.Phaser"/></returns>
+        public Java.Util.Concurrent.Phaser GetRoot()
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.Phaser>("getRoot", "()Ljava/util/concurrent/Phaser;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Phaser.html#forceTermination()"/>
         /// </summary>
         public void ForceTermination()
         {

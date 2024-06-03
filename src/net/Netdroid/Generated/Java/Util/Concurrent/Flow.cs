@@ -42,7 +42,7 @@ namespace Java.Util.Concurrent
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Flow.html#defaultBufferSize()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Flow.html#defaultBufferSize()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public static int DefaultBufferSize()
@@ -144,7 +144,7 @@ namespace Java.Util.Concurrent
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Flow.Publisher.html#subscribe(java.util.concurrent.Flow.Subscriber)"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/Flow.Publisher.html#subscribe(java.util.concurrent.Flow.Subscriber)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
             public void Subscribe(Java.Util.Concurrent.Flow.Subscriber arg0)
@@ -187,11 +187,11 @@ namespace Java.Util.Concurrent
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Flow.Publisher.html#subscribe(java.util.concurrent.Flow.Subscriber)"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/Flow.Publisher.html#subscribe(java.util.concurrent.Flow.Subscriber)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
             /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-            public void Subscribe<Arg0objectSuperT>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+            public void Subscribe<Arg0objectSuperT>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
             {
                 IExecuteWithSignature("subscribe", "(Ljava/util/concurrent/Flow$Subscriber;)V", arg0);
             }
@@ -227,14 +227,14 @@ namespace Java.Util.Concurrent
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Flow.Subscriber.html#onComplete()"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/Flow.Subscriber.html#onComplete()"/>
             /// </summary>
             public void OnComplete()
             {
                 IExecuteWithSignature("onComplete", "()V");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Flow.Subscriber.html#onError(java.lang.Throwable)"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/Flow.Subscriber.html#onError(java.lang.Throwable)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
             public void OnError(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
@@ -242,7 +242,7 @@ namespace Java.Util.Concurrent
                 IExecuteWithSignature("onError", "(Ljava/lang/Throwable;)V", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Flow.Subscriber.html#onNext(java.lang.Object)"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/Flow.Subscriber.html#onNext(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
             public void OnNext(object arg0)
@@ -250,7 +250,7 @@ namespace Java.Util.Concurrent
                 IExecuteWithSignature("onNext", "(Ljava/lang/Object;)V", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Flow.Subscriber.html#onSubscribe(java.util.concurrent.Flow.Subscription)"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/Flow.Subscriber.html#onSubscribe(java.util.concurrent.Flow.Subscription)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscription"/></param>
             public void OnSubscribe(Java.Util.Concurrent.Flow.Subscription arg0)
@@ -293,14 +293,14 @@ namespace Java.Util.Concurrent
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Flow.Subscriber.html#onComplete()"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/Flow.Subscriber.html#onComplete()"/>
             /// </summary>
             public void OnComplete()
             {
                 IExecuteWithSignature("onComplete", "()V");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Flow.Subscriber.html#onError(java.lang.Throwable)"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/Flow.Subscriber.html#onError(java.lang.Throwable)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
             public void OnError(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
@@ -308,7 +308,7 @@ namespace Java.Util.Concurrent
                 IExecuteWithSignature("onError", "(Ljava/lang/Throwable;)V", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Flow.Subscriber.html#onNext(java.lang.Object)"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/Flow.Subscriber.html#onNext(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><typeparamref name="T"/></param>
             public void OnNext(T arg0)
@@ -316,7 +316,7 @@ namespace Java.Util.Concurrent
                 IExecuteWithSignature("onNext", "(Ljava/lang/Object;)V", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Flow.Subscriber.html#onSubscribe(java.util.concurrent.Flow.Subscription)"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/Flow.Subscriber.html#onSubscribe(java.util.concurrent.Flow.Subscription)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscription"/></param>
             public void OnSubscribe(Java.Util.Concurrent.Flow.Subscription arg0)
@@ -355,14 +355,14 @@ namespace Java.Util.Concurrent
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Flow.Subscription.html#cancel()"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/Flow.Subscription.html#cancel()"/>
             /// </summary>
             public void Cancel()
             {
                 IExecuteWithSignature("cancel", "()V");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Flow.Subscription.html#request(long)"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/Flow.Subscription.html#request(long)"/>
             /// </summary>
             /// <param name="arg0"><see cref="long"/></param>
             public void Request(long arg0)

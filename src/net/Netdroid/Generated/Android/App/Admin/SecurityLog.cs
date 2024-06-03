@@ -352,47 +352,52 @@ namespace Android.App.Admin
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/admin/SecurityLog.SecurityEvent.html#getData()"/> 
-            /// </summary>
-            public object Data
-            {
-                get { return IExecuteWithSignature("getData", "()Ljava/lang/Object;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/admin/SecurityLog.SecurityEvent.html#getId()"/> 
-            /// </summary>
-            public long Id
-            {
-                get { return IExecuteWithSignature<long>("getId", "()J"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/admin/SecurityLog.SecurityEvent.html#getLogLevel()"/> 
-            /// </summary>
-            public int LogLevel
-            {
-                get { return IExecuteWithSignature<int>("getLogLevel", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/admin/SecurityLog.SecurityEvent.html#getTag()"/> 
-            /// </summary>
-            public int Tag
-            {
-                get { return IExecuteWithSignature<int>("getTag", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/admin/SecurityLog.SecurityEvent.html#getTimeNanos()"/> 
-            /// </summary>
-            public long TimeNanos
-            {
-                get { return IExecuteWithSignature<long>("getTimeNanos", "()J"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/admin/SecurityLog.SecurityEvent.html#describeContents()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/admin/SecurityLog.SecurityEvent.html#getLogLevel()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetLogLevel()
+            {
+                return IExecuteWithSignature<int>("getLogLevel", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/admin/SecurityLog.SecurityEvent.html#getTag()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetTag()
+            {
+                return IExecuteWithSignature<int>("getTag", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/admin/SecurityLog.SecurityEvent.html#getData()"/>
+            /// </summary>
+            /// <returns><see cref="object"/></returns>
+            public object GetData()
+            {
+                return IExecuteWithSignature("getData", "()Ljava/lang/Object;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/admin/SecurityLog.SecurityEvent.html#getId()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetId()
+            {
+                return IExecuteWithSignature<long>("getId", "()J");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/admin/SecurityLog.SecurityEvent.html#getTimeNanos()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetTimeNanos()
+            {
+                return IExecuteWithSignature<long>("getTimeNanos", "()J");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/admin/SecurityLog.SecurityEvent.html#writeToParcel(android.os.Parcel,int)"/>

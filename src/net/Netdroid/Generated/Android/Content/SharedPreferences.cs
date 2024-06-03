@@ -64,13 +64,6 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/SharedPreferences.html#getAll()"/> 
-        /// </summary>
-        public Java.Util.Map<Java.Lang.String, object> All
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, object>>("getAll", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/SharedPreferences.html#edit()"/>
         /// </summary>
         /// <returns><see cref="Android.Content.SharedPreferences.Editor"/></returns>
@@ -126,6 +119,14 @@ namespace Android.Content
         public Java.Lang.String GetString(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecute<Java.Lang.String>("getString", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/SharedPreferences.html#getAll()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, object> GetAll()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, object>>("getAll", "()Ljava/util/Map;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/SharedPreferences.html#getStringSet(java.lang.String,java.util.Set)"/>
@@ -315,7 +316,7 @@ namespace Android.Content
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onSharedPreferenceChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.SharedPreferences>>>(OnSharedPreferenceChangedEventHandler));
+                AddEventHandler("onSharedPreferenceChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.SharedPreferences>>>(OnSharedPreferenceChangedEventHandler));
 
             }
 
@@ -323,7 +324,7 @@ namespace Android.Content
             /// Handler for <see href="https://developer.android.com/reference/android/content/SharedPreferences.OnSharedPreferenceChangeListener.html#onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSharedPreferenceChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Content.SharedPreferences, Java.Lang.String> OnOnSharedPreferenceChanged { get; set; } = null;
+            public global::System.Action<Android.Content.SharedPreferences, Java.Lang.String> OnOnSharedPreferenceChanged { get; set; } = null;
 
             void OnSharedPreferenceChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Content.SharedPreferences>> data)
             {

@@ -42,7 +42,7 @@ namespace Java.Nio.Channels
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousChannelGroup.html#withCachedThreadPool(java.util.concurrent.ExecutorService,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousChannelGroup.html#withCachedThreadPool(java.util.concurrent.ExecutorService,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ExecutorService"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -53,7 +53,7 @@ namespace Java.Nio.Channels
             return SExecute<Java.Nio.Channels.AsynchronousChannelGroup>(LocalBridgeClazz, "withCachedThreadPool", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousChannelGroup.html#withFixedThreadPool(int,java.util.concurrent.ThreadFactory)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousChannelGroup.html#withFixedThreadPool(int,java.util.concurrent.ThreadFactory)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
@@ -64,7 +64,7 @@ namespace Java.Nio.Channels
             return SExecute<Java.Nio.Channels.AsynchronousChannelGroup>(LocalBridgeClazz, "withFixedThreadPool", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousChannelGroup.html#withThreadPool(java.util.concurrent.ExecutorService)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousChannelGroup.html#withThreadPool(java.util.concurrent.ExecutorService)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ExecutorService"/></param>
         /// <returns><see cref="Java.Nio.Channels.AsynchronousChannelGroup"/></returns>
@@ -78,7 +78,7 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousChannelGroup.html#awaitTermination(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousChannelGroup.html#awaitTermination(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -89,7 +89,7 @@ namespace Java.Nio.Channels
             return IExecute<bool>("awaitTermination", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousChannelGroup.html#isShutdown()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousChannelGroup.html#isShutdown()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsShutdown()
@@ -97,7 +97,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<bool>("isShutdown", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousChannelGroup.html#isTerminated()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousChannelGroup.html#isTerminated()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsTerminated()
@@ -105,14 +105,14 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<bool>("isTerminated", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousChannelGroup.html#shutdown()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousChannelGroup.html#shutdown()"/>
         /// </summary>
         public void Shutdown()
         {
             IExecuteWithSignature("shutdown", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousChannelGroup.html#shutdownNow()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousChannelGroup.html#shutdownNow()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void ShutdownNow()
@@ -120,7 +120,7 @@ namespace Java.Nio.Channels
             IExecuteWithSignature("shutdownNow", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousChannelGroup.html#provider()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousChannelGroup.html#provider()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.Spi.AsynchronousChannelProvider"/></returns>
         public Java.Nio.Channels.Spi.AsynchronousChannelProvider Provider()

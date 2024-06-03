@@ -192,19 +192,12 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#getRangeCount()"/> 
-        /// </summary>
-        public int RangeCount
-        {
-            get { return IExecuteWithSignature<int>("getRangeCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(java.lang.CharSequence[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.ICharSequence"/></typeparam>
         /// <returns><see cref="Android.Icu.Text.UnicodeSet"/></returns>
-        public Android.Icu.Text.UnicodeSet AddAll<T>(params T[] arg0) where T: Java.Lang.ICharSequence, new()
+        public Android.Icu.Text.UnicodeSet AddAll<T>(params T[] arg0) where T : Java.Lang.ICharSequence, new()
         {
             if (arg0.Length == 0) return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("addAll", "([Ljava/lang/CharSequence;)Landroid/icu/text/UnicodeSet;"); else return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("addAll", "([Ljava/lang/CharSequence;)Landroid/icu/text/UnicodeSet;", arg0);
         }
@@ -214,7 +207,7 @@ namespace Android.Icu.Text
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.ICharSequence"/></typeparam>
         /// <returns><see cref="Android.Icu.Text.UnicodeSet"/></returns>
-        public Android.Icu.Text.UnicodeSet RemoveAll<T>(Java.Lang.Iterable<T> arg0) where T: Java.Lang.ICharSequence, new()
+        public Android.Icu.Text.UnicodeSet RemoveAll<T>(Java.Lang.Iterable<T> arg0) where T : Java.Lang.ICharSequence, new()
         {
             return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("removeAll", "(Ljava/lang/Iterable;)Landroid/icu/text/UnicodeSet;", arg0);
         }
@@ -224,7 +217,7 @@ namespace Android.Icu.Text
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.ICharSequence"/></typeparam>
         /// <returns><see cref="Android.Icu.Text.UnicodeSet"/></returns>
-        public Android.Icu.Text.UnicodeSet RetainAll<T>(Java.Lang.Iterable<T> arg0) where T: Java.Lang.ICharSequence, new()
+        public Android.Icu.Text.UnicodeSet RetainAll<T>(Java.Lang.Iterable<T> arg0) where T : Java.Lang.ICharSequence, new()
         {
             return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("retainAll", "(Ljava/lang/Iterable;)Landroid/icu/text/UnicodeSet;", arg0);
         }
@@ -234,7 +227,7 @@ namespace Android.Icu.Text
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.ICharSequence"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool ContainsAll<T>(Java.Lang.Iterable<T> arg0) where T: Java.Lang.ICharSequence, new()
+        public bool ContainsAll<T>(Java.Lang.Iterable<T> arg0) where T : Java.Lang.ICharSequence, new()
         {
             return IExecuteWithSignature<bool>("containsAll", "(Ljava/lang/Iterable;)Z", arg0);
         }
@@ -244,7 +237,7 @@ namespace Android.Icu.Text
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.ICharSequence"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool ContainsNone<T>(Java.Lang.Iterable<T> arg0) where T: Java.Lang.ICharSequence, new()
+        public bool ContainsNone<T>(Java.Lang.Iterable<T> arg0) where T : Java.Lang.ICharSequence, new()
         {
             return IExecuteWithSignature<bool>("containsNone", "(Ljava/lang/Iterable;)Z", arg0);
         }
@@ -252,9 +245,9 @@ namespace Android.Icu.Text
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAllTo(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <typeparam name="T"><see cref="Java.Util.Collection{java.Lang.String}"/></typeparam>
+        /// <typeparam name="T"><see cref="Java.Util.Collection{Java.Lang.String}"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T AddAllTo<T>(T arg0) where T: Java.Util.Collection<java.Lang.String>
+        public T AddAllTo<T>(T arg0) where T : Java.Util.Collection<Java.Lang.String>
         {
             return IExecuteWithSignature<T>("addAllTo", "(Ljava/util/Collection;)Ljava/util/Collection;", arg0);
         }
@@ -551,7 +544,7 @@ namespace Android.Icu.Text
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.ICharSequence"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool ContainsSome<T>(Java.Lang.Iterable<T> arg0) where T: Java.Lang.ICharSequence, new()
+        public bool ContainsSome<T>(Java.Lang.Iterable<T> arg0) where T : Java.Lang.ICharSequence, new()
         {
             return IExecuteWithSignature<bool>("containsSome", "(Ljava/lang/Iterable;)Z", arg0);
         }
@@ -762,6 +755,14 @@ namespace Android.Icu.Text
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#getRangeCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRangeCount()
+        {
+            return IExecuteWithSignature<int>("getRangeCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#getRangeEnd(int)"/>

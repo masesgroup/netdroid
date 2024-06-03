@@ -62,25 +62,20 @@ namespace Android.Service.Credentials
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/credentials/CreateCredentialRequest.html#getCallingAppInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/credentials/CreateCredentialRequest.html#getData()"/>
         /// </summary>
-        public Android.Service.Credentials.CallingAppInfo CallingAppInfo
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetData()
         {
-            get { return IExecuteWithSignature<Android.Service.Credentials.CallingAppInfo>("getCallingAppInfo", "()Landroid/service/credentials/CallingAppInfo;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getData", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/credentials/CreateCredentialRequest.html#getData()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/credentials/CreateCredentialRequest.html#getCallingAppInfo()"/>
         /// </summary>
-        public Android.Os.Bundle Data
+        /// <returns><see cref="Android.Service.Credentials.CallingAppInfo"/></returns>
+        public Android.Service.Credentials.CallingAppInfo GetCallingAppInfo()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getData", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/credentials/CreateCredentialRequest.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.String Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Service.Credentials.CallingAppInfo>("getCallingAppInfo", "()Landroid/service/credentials/CallingAppInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/credentials/CreateCredentialRequest.html#describeContents()"/>
@@ -89,6 +84,14 @@ namespace Android.Service.Credentials
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/credentials/CreateCredentialRequest.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/credentials/CreateCredentialRequest.html#writeToParcel(android.os.Parcel,int)"/>

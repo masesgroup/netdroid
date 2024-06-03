@@ -46,11 +46,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SexualActivityRecord.html#getProtectionUsed()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SexualActivityRecord.html#getProtectionUsed()"/>
         /// </summary>
-        public int ProtectionUsed
+        /// <returns><see cref="int"/></returns>
+        public int GetProtectionUsed()
         {
-            get { return IExecuteWithSignature<int>("getProtectionUsed", "()I"); }
+            return IExecuteWithSignature<int>("getProtectionUsed", "()I");
         }
 
         #endregion

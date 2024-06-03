@@ -114,55 +114,6 @@ namespace Android.Icu.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getAvailableLocales()"/> 
-        /// </summary>
-        public static Java.Util.Locale[] AvailableLocales
-        {
-            get { return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getCurrencyInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Text.NumberFormat CurrencyInstance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.NumberFormat>(LocalBridgeClazz, "getCurrencyInstance", "()Landroid/icu/text/NumberFormat;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Text.NumberFormat Instance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.NumberFormat>(LocalBridgeClazz, "getInstance", "()Landroid/icu/text/NumberFormat;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getIntegerInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Text.NumberFormat IntegerInstance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.NumberFormat>(LocalBridgeClazz, "getIntegerInstance", "()Landroid/icu/text/NumberFormat;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getNumberInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Text.NumberFormat NumberInstance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.NumberFormat>(LocalBridgeClazz, "getNumberInstance", "()Landroid/icu/text/NumberFormat;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getPercentInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Text.NumberFormat PercentInstance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.NumberFormat>(LocalBridgeClazz, "getPercentInstance", "()Landroid/icu/text/NumberFormat;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getScientificInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Text.NumberFormat ScientificInstance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.NumberFormat>(LocalBridgeClazz, "getScientificInstance", "()Landroid/icu/text/NumberFormat;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getCurrencyInstance(android.icu.util.ULocale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Util.ULocale"/></param>
@@ -291,6 +242,22 @@ namespace Android.Icu.Text
             return SExecuteWithSignature<Android.Icu.Text.NumberFormat>(LocalBridgeClazz, "getScientificInstance", "(Ljava/util/Locale;)Landroid/icu/text/NumberFormat;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getCurrencyInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.NumberFormat"/></returns>
+        public static Android.Icu.Text.NumberFormat GetCurrencyInstance()
+        {
+            return SExecuteWithSignature<Android.Icu.Text.NumberFormat>(LocalBridgeClazz, "getCurrencyInstance", "()Landroid/icu/text/NumberFormat;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.NumberFormat"/></returns>
+        public static Android.Icu.Text.NumberFormat GetInstance()
+        {
+            return SExecuteWithSignature<Android.Icu.Text.NumberFormat>(LocalBridgeClazz, "getInstance", "()Landroid/icu/text/NumberFormat;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getInstance(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -299,52 +266,50 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignature<Android.Icu.Text.NumberFormat>(LocalBridgeClazz, "getInstance", "(I)Landroid/icu/text/NumberFormat;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getIntegerInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.NumberFormat"/></returns>
+        public static Android.Icu.Text.NumberFormat GetIntegerInstance()
+        {
+            return SExecuteWithSignature<Android.Icu.Text.NumberFormat>(LocalBridgeClazz, "getIntegerInstance", "()Landroid/icu/text/NumberFormat;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getNumberInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.NumberFormat"/></returns>
+        public static Android.Icu.Text.NumberFormat GetNumberInstance()
+        {
+            return SExecuteWithSignature<Android.Icu.Text.NumberFormat>(LocalBridgeClazz, "getNumberInstance", "()Landroid/icu/text/NumberFormat;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getPercentInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.NumberFormat"/></returns>
+        public static Android.Icu.Text.NumberFormat GetPercentInstance()
+        {
+            return SExecuteWithSignature<Android.Icu.Text.NumberFormat>(LocalBridgeClazz, "getPercentInstance", "()Landroid/icu/text/NumberFormat;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getScientificInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.NumberFormat"/></returns>
+        public static Android.Icu.Text.NumberFormat GetScientificInstance()
+        {
+            return SExecuteWithSignature<Android.Icu.Text.NumberFormat>(LocalBridgeClazz, "getScientificInstance", "()Landroid/icu/text/NumberFormat;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getAvailableLocales()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public static Java.Util.Locale[] GetAvailableLocales()
+        {
+            return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;");
+        }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getCurrency()"/> <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setCurrency(android.icu.util.Currency)"/>
-        /// </summary>
-        public Android.Icu.Util.Currency Currency
-        {
-            get { return IExecuteWithSignature<Android.Icu.Util.Currency>("getCurrency", "()Landroid/icu/util/Currency;"); } set { IExecuteWithSignature("setCurrency", "(Landroid/icu/util/Currency;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getMaximumFractionDigits()"/> <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setMaximumFractionDigits(int)"/>
-        /// </summary>
-        public int MaximumFractionDigits
-        {
-            get { return IExecuteWithSignature<int>("getMaximumFractionDigits", "()I"); } set { IExecuteWithSignature("setMaximumFractionDigits", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getMaximumIntegerDigits()"/> <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setMaximumIntegerDigits(int)"/>
-        /// </summary>
-        public int MaximumIntegerDigits
-        {
-            get { return IExecuteWithSignature<int>("getMaximumIntegerDigits", "()I"); } set { IExecuteWithSignature("setMaximumIntegerDigits", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getMinimumFractionDigits()"/> <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setMinimumFractionDigits(int)"/>
-        /// </summary>
-        public int MinimumFractionDigits
-        {
-            get { return IExecuteWithSignature<int>("getMinimumFractionDigits", "()I"); } set { IExecuteWithSignature("setMinimumFractionDigits", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getMinimumIntegerDigits()"/> <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setMinimumIntegerDigits(int)"/>
-        /// </summary>
-        public int MinimumIntegerDigits
-        {
-            get { return IExecuteWithSignature<int>("getMinimumIntegerDigits", "()I"); } set { IExecuteWithSignature("setMinimumIntegerDigits", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getRoundingMode()"/> <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setRoundingMode(int)"/>
-        /// </summary>
-        public int RoundingMode
-        {
-            get { return IExecuteWithSignature<int>("getRoundingMode", "()I"); } set { IExecuteWithSignature("setRoundingMode", "(I)V", value); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#parse(java.lang.String,java.text.ParsePosition)"/>
         /// </summary>
@@ -418,6 +383,14 @@ namespace Android.Icu.Text
         public Android.Icu.Text.DisplayContext GetContext(Android.Icu.Text.DisplayContext.Type arg0)
         {
             return IExecuteWithSignature<Android.Icu.Text.DisplayContext>("getContext", "(Landroid/icu/text/DisplayContext$Type;)Landroid/icu/text/DisplayContext;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getCurrency()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Util.Currency"/></returns>
+        public Android.Icu.Util.Currency GetCurrency()
+        {
+            return IExecuteWithSignature<Android.Icu.Util.Currency>("getCurrency", "()Landroid/icu/util/Currency;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#parseCurrency(java.lang.CharSequence,java.text.ParsePosition)"/>
@@ -508,6 +481,46 @@ namespace Android.Icu.Text
             return IExecuteWithSignature<Java.Lang.String>("format", "(J)Ljava/lang/String;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getMaximumFractionDigits()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaximumFractionDigits()
+        {
+            return IExecuteWithSignature<int>("getMaximumFractionDigits", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getMaximumIntegerDigits()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaximumIntegerDigits()
+        {
+            return IExecuteWithSignature<int>("getMaximumIntegerDigits", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getMinimumFractionDigits()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinimumFractionDigits()
+        {
+            return IExecuteWithSignature<int>("getMinimumFractionDigits", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getMinimumIntegerDigits()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinimumIntegerDigits()
+        {
+            return IExecuteWithSignature<int>("getMinimumIntegerDigits", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getRoundingMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRoundingMode()
+        {
+            return IExecuteWithSignature<int>("getRoundingMode", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#parse(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -537,12 +550,52 @@ namespace Android.Icu.Text
             IExecuteWithSignature("setContext", "(Landroid/icu/text/DisplayContext;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setCurrency(android.icu.util.Currency)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Icu.Util.Currency"/></param>
+        public void SetCurrency(Android.Icu.Util.Currency arg0)
+        {
+            IExecuteWithSignature("setCurrency", "(Landroid/icu/util/Currency;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setGroupingUsed(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetGroupingUsed(bool arg0)
         {
             IExecuteWithSignature("setGroupingUsed", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setMaximumFractionDigits(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMaximumFractionDigits(int arg0)
+        {
+            IExecuteWithSignature("setMaximumFractionDigits", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setMaximumIntegerDigits(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMaximumIntegerDigits(int arg0)
+        {
+            IExecuteWithSignature("setMaximumIntegerDigits", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setMinimumFractionDigits(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMinimumFractionDigits(int arg0)
+        {
+            IExecuteWithSignature("setMinimumFractionDigits", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setMinimumIntegerDigits(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMinimumIntegerDigits(int arg0)
+        {
+            IExecuteWithSignature("setMinimumIntegerDigits", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setParseIntegerOnly(boolean)"/>
@@ -559,6 +612,14 @@ namespace Android.Icu.Text
         public void SetParseStrict(bool arg0)
         {
             IExecuteWithSignature("setParseStrict", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setRoundingMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetRoundingMode(int arg0)
+        {
+            IExecuteWithSignature("setRoundingMode", "(I)V", arg0);
         }
 
         #endregion

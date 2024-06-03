@@ -46,11 +46,12 @@ namespace Android.Media.Effect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/effect/Effect.html#getName()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/effect/Effect.html#getName()"/>
         /// </summary>
-        public Java.Lang.String Name
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/effect/Effect.html#apply(int,int,int,int)"/>

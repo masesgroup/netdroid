@@ -56,25 +56,25 @@ namespace Org.W3c.Dom
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/TypeInfo.html#DERIVATION_EXTENSION"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/TypeInfo.html#DERIVATION_EXTENSION"/>
         /// </summary>
         public static int DERIVATION_EXTENSION { get { if (!_DERIVATION_EXTENSIONReady) { _DERIVATION_EXTENSIONContent = SGetField<int>(LocalBridgeClazz, "DERIVATION_EXTENSION"); _DERIVATION_EXTENSIONReady = true; } return _DERIVATION_EXTENSIONContent; } }
         private static int _DERIVATION_EXTENSIONContent = default;
         private static bool _DERIVATION_EXTENSIONReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/TypeInfo.html#DERIVATION_LIST"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/TypeInfo.html#DERIVATION_LIST"/>
         /// </summary>
         public static int DERIVATION_LIST { get { if (!_DERIVATION_LISTReady) { _DERIVATION_LISTContent = SGetField<int>(LocalBridgeClazz, "DERIVATION_LIST"); _DERIVATION_LISTReady = true; } return _DERIVATION_LISTContent; } }
         private static int _DERIVATION_LISTContent = default;
         private static bool _DERIVATION_LISTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/TypeInfo.html#DERIVATION_RESTRICTION"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/TypeInfo.html#DERIVATION_RESTRICTION"/>
         /// </summary>
         public static int DERIVATION_RESTRICTION { get { if (!_DERIVATION_RESTRICTIONReady) { _DERIVATION_RESTRICTIONContent = SGetField<int>(LocalBridgeClazz, "DERIVATION_RESTRICTION"); _DERIVATION_RESTRICTIONReady = true; } return _DERIVATION_RESTRICTIONContent; } }
         private static int _DERIVATION_RESTRICTIONContent = default;
         private static bool _DERIVATION_RESTRICTIONReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/TypeInfo.html#DERIVATION_UNION"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/TypeInfo.html#DERIVATION_UNION"/>
         /// </summary>
         public static int DERIVATION_UNION { get { if (!_DERIVATION_UNIONReady) { _DERIVATION_UNIONContent = SGetField<int>(LocalBridgeClazz, "DERIVATION_UNION"); _DERIVATION_UNIONReady = true; } return _DERIVATION_UNIONContent; } }
         private static int _DERIVATION_UNIONContent = default;
@@ -88,21 +88,7 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/TypeInfo.html#getTypeName()"/> 
-        /// </summary>
-        public Java.Lang.String TypeName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTypeName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/TypeInfo.html#getTypeNamespace()"/> 
-        /// </summary>
-        public Java.Lang.String TypeNamespace
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTypeNamespace", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/TypeInfo.html#isDerivedFrom(java.lang.String,java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/TypeInfo.html#isDerivedFrom(java.lang.String,java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -111,6 +97,22 @@ namespace Org.W3c.Dom
         public bool IsDerivedFrom(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
             return IExecute<bool>("isDerivedFrom", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/TypeInfo.html#getTypeName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTypeName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTypeName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/TypeInfo.html#getTypeNamespace()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTypeNamespace()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTypeNamespace", "()Ljava/lang/String;");
         }
 
         #endregion

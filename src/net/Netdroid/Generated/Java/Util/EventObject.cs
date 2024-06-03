@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EventObject.html#%3Cinit%3E(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EventObject.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public EventObject(object arg0)
@@ -54,11 +54,12 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EventObject.html#getSource()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/EventObject.html#getSource()"/>
         /// </summary>
-        public object Source
+        /// <returns><see cref="object"/></returns>
+        public object GetSource()
         {
-            get { return IExecuteWithSignature("getSource", "()Ljava/lang/Object;"); }
+            return IExecuteWithSignature("getSource", "()Ljava/lang/Object;");
         }
 
         #endregion

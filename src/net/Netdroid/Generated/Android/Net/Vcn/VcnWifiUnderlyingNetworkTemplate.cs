@@ -46,11 +46,12 @@ namespace Android.Net.Vcn
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnWifiUnderlyingNetworkTemplate.html#getSsids()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnWifiUnderlyingNetworkTemplate.html#getSsids()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> Ssids
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetSsids()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSsids", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSsids", "()Ljava/util/Set;");
         }
 
         #endregion

@@ -46,20 +46,30 @@ namespace Android.Renderscript
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/BaseObj.html#getName()"/> <see href="https://developer.android.com/reference/android/renderscript/BaseObj.html#setName(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/renderscript/BaseObj.html#getName()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String Name
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/BaseObj.html#destroy()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Destroy()
         {
             IExecuteWithSignature("destroy", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/renderscript/BaseObj.html#setName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [global::System.Obsolete()]
+        public void SetName(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setName", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

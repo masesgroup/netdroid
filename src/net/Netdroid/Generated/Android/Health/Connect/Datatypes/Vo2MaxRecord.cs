@@ -46,18 +46,20 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Vo2MaxRecord.html#getMeasurementMethod()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Vo2MaxRecord.html#getVo2MillilitersPerMinuteKilogram()"/>
         /// </summary>
-        public int MeasurementMethod
+        /// <returns><see cref="double"/></returns>
+        public double GetVo2MillilitersPerMinuteKilogram()
         {
-            get { return IExecuteWithSignature<int>("getMeasurementMethod", "()I"); }
+            return IExecuteWithSignature<double>("getVo2MillilitersPerMinuteKilogram", "()D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Vo2MaxRecord.html#getVo2MillilitersPerMinuteKilogram()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Vo2MaxRecord.html#getMeasurementMethod()"/>
         /// </summary>
-        public double Vo2MillilitersPerMinuteKilogram
+        /// <returns><see cref="int"/></returns>
+        public int GetMeasurementMethod()
         {
-            get { return IExecuteWithSignature<double>("getVo2MillilitersPerMinuteKilogram", "()D"); }
+            return IExecuteWithSignature<int>("getMeasurementMethod", "()I");
         }
 
         #endregion

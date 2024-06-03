@@ -30,7 +30,7 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html#%3Cinit%3E(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#%3Cinit%3E(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public Inflater(bool arg0)
@@ -54,49 +54,7 @@ namespace Java.Util.Zip
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html#getAdler()"/> 
-        /// </summary>
-        public int Adler
-        {
-            get { return IExecuteWithSignature<int>("getAdler", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html#getBytesRead()"/> 
-        /// </summary>
-        public long BytesRead
-        {
-            get { return IExecuteWithSignature<long>("getBytesRead", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html#getBytesWritten()"/> 
-        /// </summary>
-        public long BytesWritten
-        {
-            get { return IExecuteWithSignature<long>("getBytesWritten", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html#getRemaining()"/> 
-        /// </summary>
-        public int Remaining
-        {
-            get { return IExecuteWithSignature<int>("getRemaining", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html#getTotalIn()"/> 
-        /// </summary>
-        public int TotalIn
-        {
-            get { return IExecuteWithSignature<int>("getTotalIn", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html#getTotalOut()"/> 
-        /// </summary>
-        public int TotalOut
-        {
-            get { return IExecuteWithSignature<int>("getTotalOut", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html#finished()"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#finished()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool Finished()
@@ -104,7 +62,7 @@ namespace Java.Util.Zip
             return IExecuteWithSignature<bool>("finished", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html#needsDictionary()"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#needsDictionary()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool NeedsDictionary()
@@ -112,7 +70,7 @@ namespace Java.Util.Zip
             return IExecuteWithSignature<bool>("needsDictionary", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html#needsInput()"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#needsInput()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool NeedsInput()
@@ -120,7 +78,39 @@ namespace Java.Util.Zip
             return IExecuteWithSignature<bool>("needsInput", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html#inflate(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#getAdler()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAdler()
+        {
+            return IExecuteWithSignature<int>("getAdler", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#getRemaining()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRemaining()
+        {
+            return IExecuteWithSignature<int>("getRemaining", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#getTotalIn()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTotalIn()
+        {
+            return IExecuteWithSignature<int>("getTotalIn", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#getTotalOut()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTotalOut()
+        {
+            return IExecuteWithSignature<int>("getTotalOut", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#inflate(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -132,7 +122,7 @@ namespace Java.Util.Zip
             return IExecute<int>("inflate", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html#inflate(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#inflate(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="int"/></returns>
@@ -142,7 +132,7 @@ namespace Java.Util.Zip
             return IExecuteWithSignature<int>("inflate", "([B)I", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html#inflate(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#inflate(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="int"/></returns>
@@ -152,21 +142,37 @@ namespace Java.Util.Zip
             return IExecuteWithSignature<int>("inflate", "(Ljava/nio/ByteBuffer;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html#end()"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#getBytesRead()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetBytesRead()
+        {
+            return IExecuteWithSignature<long>("getBytesRead", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#getBytesWritten()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetBytesWritten()
+        {
+            return IExecuteWithSignature<long>("getBytesWritten", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#end()"/>
         /// </summary>
         public void End()
         {
             IExecuteWithSignature("end", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#reset()"/>
         /// </summary>
         public void Reset()
         {
             IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html#setDictionary(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#setDictionary(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -176,7 +182,7 @@ namespace Java.Util.Zip
             IExecute("setDictionary", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html#setDictionary(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#setDictionary(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public void SetDictionary(byte[] arg0)
@@ -184,7 +190,7 @@ namespace Java.Util.Zip
             IExecuteWithSignature("setDictionary", "([B)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html#setDictionary(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#setDictionary(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         public void SetDictionary(Java.Nio.ByteBuffer arg0)
@@ -192,7 +198,7 @@ namespace Java.Util.Zip
             IExecuteWithSignature("setDictionary", "(Ljava/nio/ByteBuffer;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html#setInput(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#setInput(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -202,7 +208,7 @@ namespace Java.Util.Zip
             IExecute("setInput", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html#setInput(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#setInput(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public void SetInput(byte[] arg0)
@@ -210,7 +216,7 @@ namespace Java.Util.Zip
             IExecuteWithSignature("setInput", "([B)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html#setInput(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#setInput(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         public void SetInput(Java.Nio.ByteBuffer arg0)

@@ -46,7 +46,7 @@ namespace Java.Nio
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#allocate(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#allocate(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
@@ -55,7 +55,7 @@ namespace Java.Nio
             return SExecuteWithSignature<Java.Nio.LongBuffer>(LocalBridgeClazz, "allocate", "(I)Ljava/nio/LongBuffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#wrap(long[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#wrap(long[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -66,7 +66,7 @@ namespace Java.Nio
             return SExecute<Java.Nio.LongBuffer>(LocalBridgeClazz, "wrap", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#wrap(long[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#wrap(long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
@@ -79,7 +79,7 @@ namespace Java.Nio
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#order()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#order()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
         public Java.Nio.ByteOrder Order()
@@ -87,7 +87,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ByteOrder>("order", "()Ljava/nio/ByteOrder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#asReadOnlyBuffer()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#asReadOnlyBuffer()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public Java.Nio.LongBuffer AsReadOnlyBuffer()
@@ -95,7 +95,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.LongBuffer>("asReadOnlyBuffer", "()Ljava/nio/LongBuffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#compact()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#compact()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public Java.Nio.LongBuffer Compact()
@@ -103,7 +103,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.LongBuffer>("compact", "()Ljava/nio/LongBuffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#put(int,long)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#put(int,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -113,7 +113,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.LongBuffer>("put", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#put(long)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#put(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
@@ -122,7 +122,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.LongBuffer>("put", "(J)Ljava/nio/LongBuffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#get()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long Get()
@@ -130,7 +130,7 @@ namespace Java.Nio
             return IExecuteWithSignature<long>("get", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#get(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#get(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="long"/></returns>
@@ -139,7 +139,7 @@ namespace Java.Nio
             return IExecuteWithSignature<long>("get", "(I)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#put(long[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#put(long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
@@ -148,7 +148,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.LongBuffer>("put", "([J)Ljava/nio/LongBuffer;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -157,7 +157,7 @@ namespace Java.Nio
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#compareTo(java.nio.LongBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#compareTo(java.nio.LongBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.LongBuffer"/></param>
         /// <returns><see cref="int"/></returns>
@@ -166,7 +166,7 @@ namespace Java.Nio
             return IExecuteWithSignature<int>("compareTo", "(Ljava/nio/LongBuffer;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#mismatch(java.nio.LongBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#mismatch(java.nio.LongBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.LongBuffer"/></param>
         /// <returns><see cref="int"/></returns>
@@ -175,7 +175,7 @@ namespace Java.Nio
             return IExecuteWithSignature<int>("mismatch", "(Ljava/nio/LongBuffer;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#get(int,long[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#get(int,long[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -187,7 +187,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.LongBuffer>("get", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#get(int,long[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#get(int,long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -197,7 +197,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.LongBuffer>("get", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#get(long[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#get(long[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -208,7 +208,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.LongBuffer>("get", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#get(long[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#get(long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
@@ -217,7 +217,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.LongBuffer>("get", "([J)Ljava/nio/LongBuffer;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#put(int,java.nio.LongBuffer,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#put(int,java.nio.LongBuffer,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Nio.LongBuffer"/></param>
@@ -229,7 +229,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.LongBuffer>("put", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#put(int,long[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#put(int,long[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -241,7 +241,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.LongBuffer>("put", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#put(int,long[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#put(int,long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -251,7 +251,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.LongBuffer>("put", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#put(java.nio.LongBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#put(java.nio.LongBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.LongBuffer"/></param>
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
@@ -260,7 +260,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.LongBuffer>("put", "(Ljava/nio/LongBuffer;)Ljava/nio/LongBuffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html#put(long[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#put(long[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>

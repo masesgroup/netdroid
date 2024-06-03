@@ -52,32 +52,12 @@ namespace Android.Content.Om
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/om/OverlayInfo.html#getOverlayIdentifier()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/om/OverlayInfo.html#getOverlayIdentifier()"/>
         /// </summary>
-        public Android.Content.Om.OverlayIdentifier OverlayIdentifier
+        /// <returns><see cref="Android.Content.Om.OverlayIdentifier"/></returns>
+        public Android.Content.Om.OverlayIdentifier GetOverlayIdentifier()
         {
-            get { return IExecuteWithSignature<Android.Content.Om.OverlayIdentifier>("getOverlayIdentifier", "()Landroid/content/om/OverlayIdentifier;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/om/OverlayInfo.html#getOverlayName()"/> 
-        /// </summary>
-        public Java.Lang.String OverlayName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getOverlayName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/om/OverlayInfo.html#getTargetOverlayableName()"/> 
-        /// </summary>
-        public Java.Lang.String TargetOverlayableName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTargetOverlayableName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/om/OverlayInfo.html#getTargetPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String TargetPackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTargetPackageName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Content.Om.OverlayIdentifier>("getOverlayIdentifier", "()Landroid/content/om/OverlayIdentifier;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/om/OverlayInfo.html#describeContents()"/>
@@ -86,6 +66,30 @@ namespace Android.Content.Om
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/om/OverlayInfo.html#getOverlayName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetOverlayName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getOverlayName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/om/OverlayInfo.html#getTargetOverlayableName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTargetOverlayableName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTargetOverlayableName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/om/OverlayInfo.html#getTargetPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTargetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTargetPackageName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/om/OverlayInfo.html#writeToParcel(android.os.Parcel,int)"/>

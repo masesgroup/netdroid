@@ -42,14 +42,15 @@ namespace Java.Nio.File
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystems.html#getDefault()"/> 
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileSystems.html#getDefault()"/>
         /// </summary>
-        public static Java.Nio.File.FileSystem Default
+        /// <returns><see cref="Java.Nio.File.FileSystem"/></returns>
+        public static Java.Nio.File.FileSystem GetDefault()
         {
-            get { return SExecuteWithSignature<Java.Nio.File.FileSystem>(LocalBridgeClazz, "getDefault", "()Ljava/nio/file/FileSystem;"); }
+            return SExecuteWithSignature<Java.Nio.File.FileSystem>(LocalBridgeClazz, "getDefault", "()Ljava/nio/file/FileSystem;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystems.html#getFileSystem(java.net.URI)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileSystems.html#getFileSystem(java.net.URI)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <returns><see cref="Java.Nio.File.FileSystem"/></returns>
@@ -58,7 +59,7 @@ namespace Java.Nio.File
             return SExecuteWithSignature<Java.Nio.File.FileSystem>(LocalBridgeClazz, "getFileSystem", "(Ljava/net/URI;)Ljava/nio/file/FileSystem;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystems.html#newFileSystem(java.net.URI,java.util.Map,java.lang.ClassLoader)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileSystems.html#newFileSystem(java.net.URI,java.util.Map,java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
@@ -70,7 +71,7 @@ namespace Java.Nio.File
             return SExecute<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystems.html#newFileSystem(java.net.URI,java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileSystems.html#newFileSystem(java.net.URI,java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
@@ -81,7 +82,7 @@ namespace Java.Nio.File
             return SExecute<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path,java.lang.ClassLoader)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path,java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
@@ -92,7 +93,7 @@ namespace Java.Nio.File
             return SExecute<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path,java.util.Map,java.lang.ClassLoader)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path,java.util.Map,java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
@@ -104,7 +105,7 @@ namespace Java.Nio.File
             return SExecute<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path,java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path,java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
@@ -115,7 +116,7 @@ namespace Java.Nio.File
             return SExecute<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="Java.Nio.File.FileSystem"/></returns>

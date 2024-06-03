@@ -46,11 +46,12 @@ namespace Android.Companion.Virtual
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/companion/virtual/VirtualDeviceManager.html#getVirtualDevices()"/> 
+        /// <see href="https://developer.android.com/reference/android/companion/virtual/VirtualDeviceManager.html#getVirtualDevices()"/>
         /// </summary>
-        public Java.Util.List<Android.Companion.Virtual.VirtualDevice> VirtualDevices
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Companion.Virtual.VirtualDevice> GetVirtualDevices()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Companion.Virtual.VirtualDevice>>("getVirtualDevices", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Companion.Virtual.VirtualDevice>>("getVirtualDevices", "()Ljava/util/List;");
         }
 
         #endregion

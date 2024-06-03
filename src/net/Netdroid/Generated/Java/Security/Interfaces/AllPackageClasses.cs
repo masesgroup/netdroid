@@ -28,7 +28,7 @@ namespace Java.Security.Interfaces
 {
     #region DSAKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/DSAKey.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/interfaces/DSAKey.html"/>
     /// </summary>
     public partial class DSAKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DSAKey>
     {
@@ -36,12 +36,12 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DSAKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DSAKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DSAKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DSAKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DSAKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DSAKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,7 +74,7 @@ namespace Java.Security.Interfaces
 
     #region DSAKeyPairGenerator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/DSAKeyPairGenerator.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/interfaces/DSAKeyPairGenerator.html"/>
     /// </summary>
     public partial class DSAKeyPairGenerator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DSAKeyPairGenerator>
     {
@@ -82,12 +82,12 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DSAKeyPairGenerator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DSAKeyPairGenerator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DSAKeyPairGenerator() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DSAKeyPairGenerator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DSAKeyPairGenerator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DSAKeyPairGenerator(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -120,7 +120,7 @@ namespace Java.Security.Interfaces
 
     #region DSAParams
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/DSAParams.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/interfaces/DSAParams.html"/>
     /// </summary>
     public partial class DSAParams : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DSAParams>
     {
@@ -128,12 +128,12 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DSAParams class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DSAParams class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DSAParams() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DSAParams class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DSAParams class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DSAParams(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -166,7 +166,7 @@ namespace Java.Security.Interfaces
 
     #region DSAPrivateKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/DSAPrivateKey.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/interfaces/DSAPrivateKey.html"/>
     /// </summary>
     public partial class DSAPrivateKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DSAPrivateKey>
     {
@@ -174,12 +174,12 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DSAPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DSAPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DSAPrivateKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DSAPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DSAPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DSAPrivateKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -212,7 +212,7 @@ namespace Java.Security.Interfaces
 
     #region DSAPublicKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/DSAPublicKey.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/interfaces/DSAPublicKey.html"/>
     /// </summary>
     public partial class DSAPublicKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DSAPublicKey>
     {
@@ -220,12 +220,12 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DSAPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DSAPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DSAPublicKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DSAPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DSAPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DSAPublicKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -258,7 +258,7 @@ namespace Java.Security.Interfaces
 
     #region ECKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/ECKey.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/interfaces/ECKey.html"/>
     /// </summary>
     public partial class ECKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ECKey>
     {
@@ -266,12 +266,12 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ECKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ECKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ECKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ECKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ECKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ECKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -304,7 +304,7 @@ namespace Java.Security.Interfaces
 
     #region ECPrivateKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/ECPrivateKey.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/interfaces/ECPrivateKey.html"/>
     /// </summary>
     public partial class ECPrivateKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ECPrivateKey>
     {
@@ -312,12 +312,12 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ECPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ECPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ECPrivateKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ECPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ECPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ECPrivateKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -350,7 +350,7 @@ namespace Java.Security.Interfaces
 
     #region ECPublicKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/ECPublicKey.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/interfaces/ECPublicKey.html"/>
     /// </summary>
     public partial class ECPublicKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ECPublicKey>
     {
@@ -358,12 +358,12 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ECPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ECPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ECPublicKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ECPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ECPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ECPublicKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -396,7 +396,7 @@ namespace Java.Security.Interfaces
 
     #region EdECKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/EdECKey.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/interfaces/EdECKey.html"/>
     /// </summary>
     public partial class EdECKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EdECKey>
     {
@@ -404,12 +404,12 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("EdECKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("EdECKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EdECKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("EdECKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("EdECKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EdECKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -442,7 +442,7 @@ namespace Java.Security.Interfaces
 
     #region EdECPrivateKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/EdECPrivateKey.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/interfaces/EdECPrivateKey.html"/>
     /// </summary>
     public partial class EdECPrivateKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EdECPrivateKey>
     {
@@ -450,12 +450,12 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("EdECPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("EdECPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EdECPrivateKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("EdECPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("EdECPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EdECPrivateKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -488,7 +488,7 @@ namespace Java.Security.Interfaces
 
     #region EdECPublicKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/EdECPublicKey.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/interfaces/EdECPublicKey.html"/>
     /// </summary>
     public partial class EdECPublicKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EdECPublicKey>
     {
@@ -496,12 +496,12 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("EdECPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("EdECPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EdECPublicKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("EdECPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("EdECPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EdECPublicKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -534,7 +534,7 @@ namespace Java.Security.Interfaces
 
     #region RSAKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/RSAKey.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/interfaces/RSAKey.html"/>
     /// </summary>
     public partial class RSAKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RSAKey>
     {
@@ -542,12 +542,12 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("RSAKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RSAKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RSAKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("RSAKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RSAKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RSAKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -580,7 +580,7 @@ namespace Java.Security.Interfaces
 
     #region RSAMultiPrimePrivateCrtKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html"/>
     /// </summary>
     public partial class RSAMultiPrimePrivateCrtKey : Java.Security.Interfaces.RSAPrivateKey
     {
@@ -588,12 +588,12 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("RSAMultiPrimePrivateCrtKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RSAMultiPrimePrivateCrtKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RSAMultiPrimePrivateCrtKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("RSAMultiPrimePrivateCrtKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RSAMultiPrimePrivateCrtKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RSAMultiPrimePrivateCrtKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -626,7 +626,7 @@ namespace Java.Security.Interfaces
 
     #region RSAPrivateCrtKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/RSAPrivateCrtKey.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/interfaces/RSAPrivateCrtKey.html"/>
     /// </summary>
     public partial class RSAPrivateCrtKey : Java.Security.Interfaces.RSAPrivateKey
     {
@@ -634,12 +634,12 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("RSAPrivateCrtKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RSAPrivateCrtKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RSAPrivateCrtKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("RSAPrivateCrtKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RSAPrivateCrtKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RSAPrivateCrtKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -672,7 +672,7 @@ namespace Java.Security.Interfaces
 
     #region RSAPrivateKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/RSAPrivateKey.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/interfaces/RSAPrivateKey.html"/>
     /// </summary>
     public partial class RSAPrivateKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RSAPrivateKey>
     {
@@ -680,12 +680,12 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("RSAPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RSAPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RSAPrivateKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("RSAPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RSAPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RSAPrivateKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -718,7 +718,7 @@ namespace Java.Security.Interfaces
 
     #region RSAPublicKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/RSAPublicKey.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/interfaces/RSAPublicKey.html"/>
     /// </summary>
     public partial class RSAPublicKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RSAPublicKey>
     {
@@ -726,12 +726,12 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("RSAPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RSAPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RSAPublicKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("RSAPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RSAPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RSAPublicKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -764,7 +764,7 @@ namespace Java.Security.Interfaces
 
     #region XECKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/XECKey.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/interfaces/XECKey.html"/>
     /// </summary>
     public partial class XECKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XECKey>
     {
@@ -772,12 +772,12 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("XECKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("XECKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XECKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("XECKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("XECKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XECKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -810,7 +810,7 @@ namespace Java.Security.Interfaces
 
     #region XECPrivateKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/XECPrivateKey.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/interfaces/XECPrivateKey.html"/>
     /// </summary>
     public partial class XECPrivateKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XECPrivateKey>
     {
@@ -818,12 +818,12 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("XECPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("XECPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XECPrivateKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("XECPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("XECPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XECPrivateKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -856,7 +856,7 @@ namespace Java.Security.Interfaces
 
     #region XECPublicKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/XECPublicKey.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/interfaces/XECPublicKey.html"/>
     /// </summary>
     public partial class XECPublicKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XECPublicKey>
     {
@@ -864,12 +864,12 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("XECPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("XECPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XECPublicKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("XECPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("XECPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XECPublicKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

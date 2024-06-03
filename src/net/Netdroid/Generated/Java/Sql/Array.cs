@@ -64,28 +64,16 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Array.html#getBaseType()"/> 
+        /// <see href="https://developer.android.com/reference/java/sql/Array.html#getBaseType()"/>
         /// </summary>
-        public int BaseType
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int GetBaseType()
         {
-            get { return IExecuteWithSignature<int>("getBaseType", "()I"); }
+            return IExecuteWithSignature<int>("getBaseType", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Array.html#getBaseTypeName()"/> 
-        /// </summary>
-        public Java.Lang.String BaseTypeName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getBaseTypeName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Array.html#getResultSet()"/> 
-        /// </summary>
-        public Java.Sql.ResultSet ResultSet
-        {
-            get { return IExecuteWithSignature<Java.Sql.ResultSet>("getResultSet", "()Ljava/sql/ResultSet;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Array.html#getArray()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Array.html#getArray()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -94,7 +82,7 @@ namespace Java.Sql
             return IExecuteWithSignature("getArray", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Array.html#getArray(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Array.html#getArray(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="object"/></returns>
@@ -104,7 +92,7 @@ namespace Java.Sql
             return IExecuteWithSignature("getArray", "(Ljava/util/Map;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Array.html#getArray(long,int,java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Array.html#getArray(long,int,java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -116,7 +104,7 @@ namespace Java.Sql
             return IExecute("getArray", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Array.html#getArray(long,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Array.html#getArray(long,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -127,7 +115,25 @@ namespace Java.Sql
             return IExecute("getArray", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Array.html#getResultSet(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Array.html#getBaseTypeName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Lang.String GetBaseTypeName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getBaseTypeName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Array.html#getResultSet()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.ResultSet GetResultSet()
+        {
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getResultSet", "()Ljava/sql/ResultSet;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Array.html#getResultSet(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Java.Sql.ResultSet"/></returns>
@@ -137,7 +143,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.ResultSet>("getResultSet", "(Ljava/util/Map;)Ljava/sql/ResultSet;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Array.html#getResultSet(long,int,java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Array.html#getResultSet(long,int,java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -149,7 +155,7 @@ namespace Java.Sql
             return IExecute<Java.Sql.ResultSet>("getResultSet", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Array.html#getResultSet(long,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Array.html#getResultSet(long,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -160,7 +166,7 @@ namespace Java.Sql
             return IExecute<Java.Sql.ResultSet>("getResultSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Array.html#free()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Array.html#free()"/>
         /// </summary>
         /// <exception cref="Java.Sql.SQLException"/>
         public void Free()

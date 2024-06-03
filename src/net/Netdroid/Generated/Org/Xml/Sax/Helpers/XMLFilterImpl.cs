@@ -30,7 +30,7 @@ namespace Org.Xml.Sax.Helpers
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#%3Cinit%3E(org.xml.sax.XMLReader)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#%3Cinit%3E(org.xml.sax.XMLReader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.XMLReader"/></param>
         public XMLFilterImpl(Org.Xml.Sax.XMLReader arg0)
@@ -74,42 +74,7 @@ namespace Org.Xml.Sax.Helpers
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getContentHandler()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setContentHandler(org.xml.sax.ContentHandler)"/>
-        /// </summary>
-        public Org.Xml.Sax.ContentHandler ContentHandler
-        {
-            get { return IExecuteWithSignature<Org.Xml.Sax.ContentHandler>("getContentHandler", "()Lorg/xml/sax/ContentHandler;"); } set { IExecuteWithSignature("setContentHandler", "(Lorg/xml/sax/ContentHandler;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getDTDHandler()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setDTDHandler(org.xml.sax.DTDHandler)"/>
-        /// </summary>
-        public Org.Xml.Sax.DTDHandler DTDHandler
-        {
-            get { return IExecuteWithSignature<Org.Xml.Sax.DTDHandler>("getDTDHandler", "()Lorg/xml/sax/DTDHandler;"); } set { IExecuteWithSignature("setDTDHandler", "(Lorg/xml/sax/DTDHandler;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getEntityResolver()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
-        /// </summary>
-        public Org.Xml.Sax.EntityResolver EntityResolver
-        {
-            get { return IExecuteWithSignature<Org.Xml.Sax.EntityResolver>("getEntityResolver", "()Lorg/xml/sax/EntityResolver;"); } set { IExecuteWithSignature("setEntityResolver", "(Lorg/xml/sax/EntityResolver;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getErrorHandler()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
-        /// </summary>
-        public Org.Xml.Sax.ErrorHandler ErrorHandler
-        {
-            get { return IExecuteWithSignature<Org.Xml.Sax.ErrorHandler>("getErrorHandler", "()Lorg/xml/sax/ErrorHandler;"); } set { IExecuteWithSignature("setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getParent()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setParent(org.xml.sax.XMLReader)"/>
-        /// </summary>
-        public Org.Xml.Sax.XMLReader Parent
-        {
-            get { return IExecuteWithSignature<Org.Xml.Sax.XMLReader>("getParent", "()Lorg/xml/sax/XMLReader;"); } set { IExecuteWithSignature("setParent", "(Lorg/xml/sax/XMLReader;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getFeature(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#getFeature(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -120,7 +85,7 @@ namespace Org.Xml.Sax.Helpers
             return IExecuteWithSignature<bool>("getFeature", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getProperty(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#getProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
@@ -131,7 +96,39 @@ namespace Org.Xml.Sax.Helpers
             return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#resolveEntity(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#getContentHandler()"/>
+        /// </summary>
+        /// <returns><see cref="Org.Xml.Sax.ContentHandler"/></returns>
+        public Org.Xml.Sax.ContentHandler GetContentHandler()
+        {
+            return IExecuteWithSignature<Org.Xml.Sax.ContentHandler>("getContentHandler", "()Lorg/xml/sax/ContentHandler;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#getDTDHandler()"/>
+        /// </summary>
+        /// <returns><see cref="Org.Xml.Sax.DTDHandler"/></returns>
+        public Org.Xml.Sax.DTDHandler GetDTDHandler()
+        {
+            return IExecuteWithSignature<Org.Xml.Sax.DTDHandler>("getDTDHandler", "()Lorg/xml/sax/DTDHandler;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#getEntityResolver()"/>
+        /// </summary>
+        /// <returns><see cref="Org.Xml.Sax.EntityResolver"/></returns>
+        public Org.Xml.Sax.EntityResolver GetEntityResolver()
+        {
+            return IExecuteWithSignature<Org.Xml.Sax.EntityResolver>("getEntityResolver", "()Lorg/xml/sax/EntityResolver;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#getErrorHandler()"/>
+        /// </summary>
+        /// <returns><see cref="Org.Xml.Sax.ErrorHandler"/></returns>
+        public Org.Xml.Sax.ErrorHandler GetErrorHandler()
+        {
+            return IExecuteWithSignature<Org.Xml.Sax.ErrorHandler>("getErrorHandler", "()Lorg/xml/sax/ErrorHandler;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#resolveEntity(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -143,7 +140,15 @@ namespace Org.Xml.Sax.Helpers
             return IExecute<Org.Xml.Sax.InputSource>("resolveEntity", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#characters(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#getParent()"/>
+        /// </summary>
+        /// <returns><see cref="Org.Xml.Sax.XMLReader"/></returns>
+        public Org.Xml.Sax.XMLReader GetParent()
+        {
+            return IExecuteWithSignature<Org.Xml.Sax.XMLReader>("getParent", "()Lorg/xml/sax/XMLReader;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#characters(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -154,7 +159,7 @@ namespace Org.Xml.Sax.Helpers
             IExecute("characters", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#endDocument()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#endDocument()"/>
         /// </summary>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndDocument()
@@ -162,7 +167,7 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("endDocument", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#endElement(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#endElement(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -173,7 +178,7 @@ namespace Org.Xml.Sax.Helpers
             IExecute("endElement", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#endPrefixMapping(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#endPrefixMapping(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
@@ -182,7 +187,7 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("endPrefixMapping", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#error(org.xml.sax.SAXParseException)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#error(org.xml.sax.SAXParseException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
@@ -191,7 +196,7 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("error", "(Lorg/xml/sax/SAXParseException;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#fatalError(org.xml.sax.SAXParseException)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#fatalError(org.xml.sax.SAXParseException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
@@ -200,7 +205,7 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("fatalError", "(Lorg/xml/sax/SAXParseException;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#ignorableWhitespace(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#ignorableWhitespace(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -211,7 +216,7 @@ namespace Org.Xml.Sax.Helpers
             IExecute("ignorableWhitespace", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#notationDecl(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#notationDecl(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -222,7 +227,7 @@ namespace Org.Xml.Sax.Helpers
             IExecute("notationDecl", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#parse(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#parse(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
@@ -232,7 +237,7 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("parse", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#parse(org.xml.sax.InputSource)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#parse(org.xml.sax.InputSource)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
@@ -242,7 +247,7 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("parse", "(Lorg/xml/sax/InputSource;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#processingInstruction(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#processingInstruction(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -252,7 +257,15 @@ namespace Org.Xml.Sax.Helpers
             IExecute("processingInstruction", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setDocumentLocator(org.xml.sax.Locator)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#setContentHandler(org.xml.sax.ContentHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.ContentHandler"/></param>
+        public void SetContentHandler(Org.Xml.Sax.ContentHandler arg0)
+        {
+            IExecuteWithSignature("setContentHandler", "(Lorg/xml/sax/ContentHandler;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#setDocumentLocator(org.xml.sax.Locator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.Locator"/></param>
         public void SetDocumentLocator(Org.Xml.Sax.Locator arg0)
@@ -260,7 +273,31 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("setDocumentLocator", "(Lorg/xml/sax/Locator;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setFeature(java.lang.String,boolean)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#setDTDHandler(org.xml.sax.DTDHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.DTDHandler"/></param>
+        public void SetDTDHandler(Org.Xml.Sax.DTDHandler arg0)
+        {
+            IExecuteWithSignature("setDTDHandler", "(Lorg/xml/sax/DTDHandler;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.EntityResolver"/></param>
+        public void SetEntityResolver(Org.Xml.Sax.EntityResolver arg0)
+        {
+            IExecuteWithSignature("setEntityResolver", "(Lorg/xml/sax/EntityResolver;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.ErrorHandler"/></param>
+        public void SetErrorHandler(Org.Xml.Sax.ErrorHandler arg0)
+        {
+            IExecuteWithSignature("setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#setFeature(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -271,7 +308,15 @@ namespace Org.Xml.Sax.Helpers
             IExecute("setFeature", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setProperty(java.lang.String,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#setParent(org.xml.sax.XMLReader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.XMLReader"/></param>
+        public void SetParent(Org.Xml.Sax.XMLReader arg0)
+        {
+            IExecuteWithSignature("setParent", "(Lorg/xml/sax/XMLReader;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#setProperty(java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -282,7 +327,7 @@ namespace Org.Xml.Sax.Helpers
             IExecute("setProperty", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#skippedEntity(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#skippedEntity(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
@@ -291,7 +336,7 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("skippedEntity", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#startDocument()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#startDocument()"/>
         /// </summary>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartDocument()
@@ -299,7 +344,7 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("startDocument", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -311,7 +356,7 @@ namespace Org.Xml.Sax.Helpers
             IExecute("startElement", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#startPrefixMapping(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#startPrefixMapping(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -321,7 +366,7 @@ namespace Org.Xml.Sax.Helpers
             IExecute("startPrefixMapping", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#unparsedEntityDecl(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#unparsedEntityDecl(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -333,7 +378,7 @@ namespace Org.Xml.Sax.Helpers
             IExecute("unparsedEntityDecl", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#warning(org.xml.sax.SAXParseException)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLFilterImpl.html#warning(org.xml.sax.SAXParseException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>

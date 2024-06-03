@@ -267,90 +267,6 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getAllocationByteCount()"/> 
-        /// </summary>
-        public int AllocationByteCount
-        {
-            get { return IExecuteWithSignature<int>("getAllocationByteCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getByteCount()"/> 
-        /// </summary>
-        public int ByteCount
-        {
-            get { return IExecuteWithSignature<int>("getByteCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getColorSpace()"/> <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#setColorSpace(android.graphics.ColorSpace)"/>
-        /// </summary>
-        public Android.Graphics.ColorSpace ColorSpace
-        {
-            get { return IExecuteWithSignature<Android.Graphics.ColorSpace>("getColorSpace", "()Landroid/graphics/ColorSpace;"); } set { IExecuteWithSignature("setColorSpace", "(Landroid/graphics/ColorSpace;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getDensity()"/> <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#setDensity(int)"/>
-        /// </summary>
-        public int Density
-        {
-            get { return IExecuteWithSignature<int>("getDensity", "()I"); } set { IExecuteWithSignature("setDensity", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getGainmap()"/> <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#setGainmap(android.graphics.Gainmap)"/>
-        /// </summary>
-        public Android.Graphics.Gainmap Gainmap
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Gainmap>("getGainmap", "()Landroid/graphics/Gainmap;"); } set { IExecuteWithSignature("setGainmap", "(Landroid/graphics/Gainmap;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getGenerationId()"/> 
-        /// </summary>
-        public int GenerationId
-        {
-            get { return IExecuteWithSignature<int>("getGenerationId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getConfig()"/> 
-        /// </summary>
-        public Android.Graphics.Bitmap.Config GetConfig
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Bitmap.Config>("getConfig", "()Landroid/graphics/Bitmap$Config;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getHardwareBuffer()"/> 
-        /// </summary>
-        public Android.Hardware.HardwareBuffer HardwareBuffer
-        {
-            get { return IExecuteWithSignature<Android.Hardware.HardwareBuffer>("getHardwareBuffer", "()Landroid/hardware/HardwareBuffer;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getHeight()"/> <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#setHeight(int)"/>
-        /// </summary>
-        public int Height
-        {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); } set { IExecuteWithSignature("setHeight", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getNinePatchChunk()"/> 
-        /// </summary>
-        public byte[] NinePatchChunk
-        {
-            get { return IExecuteWithSignatureArray<byte>("getNinePatchChunk", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getRowBytes()"/> 
-        /// </summary>
-        public int RowBytes
-        {
-            get { return IExecuteWithSignature<int>("getRowBytes", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getWidth()"/> <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#setWidth(int)"/>
-        /// </summary>
-        public int Width
-        {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); } set { IExecuteWithSignature("setWidth", "(I)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#asShared()"/>
         /// </summary>
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
@@ -387,6 +303,14 @@ namespace Android.Graphics
             return IExecute<Android.Graphics.Bitmap>("extractAlpha", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getConfig()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Bitmap.Config"/></returns>
+        public Android.Graphics.Bitmap.Config GetConfig()
+        {
+            return IExecuteWithSignature<Android.Graphics.Bitmap.Config>("getConfig", "()Landroid/graphics/Bitmap$Config;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getColor(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -395,6 +319,30 @@ namespace Android.Graphics
         public Android.Graphics.Color GetColor(int arg0, int arg1)
         {
             return IExecute<Android.Graphics.Color>("getColor", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getColorSpace()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.ColorSpace"/></returns>
+        public Android.Graphics.ColorSpace GetColorSpace()
+        {
+            return IExecuteWithSignature<Android.Graphics.ColorSpace>("getColorSpace", "()Landroid/graphics/ColorSpace;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getGainmap()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Gainmap"/></returns>
+        public Android.Graphics.Gainmap GetGainmap()
+        {
+            return IExecuteWithSignature<Android.Graphics.Gainmap>("getGainmap", "()Landroid/graphics/Gainmap;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getHardwareBuffer()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Hardware.HardwareBuffer"/></returns>
+        public Android.Hardware.HardwareBuffer GetHardwareBuffer()
+        {
+            return IExecuteWithSignature<Android.Hardware.HardwareBuffer>("getHardwareBuffer", "()Landroid/hardware/HardwareBuffer;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#compress(android.graphics.Bitmap.CompressFormat,int,java.io.OutputStream)"/>
@@ -465,12 +413,60 @@ namespace Android.Graphics
             return IExecuteWithSignature<bool>("sameAs", "(Landroid/graphics/Bitmap;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getNinePatchChunk()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetNinePatchChunk()
+        {
+            return IExecuteWithSignatureArray<byte>("getNinePatchChunk", "()[B");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getAllocationByteCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAllocationByteCount()
+        {
+            return IExecuteWithSignature<int>("getAllocationByteCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getByteCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetByteCount()
+        {
+            return IExecuteWithSignature<int>("getByteCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getDensity()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDensity()
+        {
+            return IExecuteWithSignature<int>("getDensity", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getGenerationId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGenerationId()
+        {
+            return IExecuteWithSignature<int>("getGenerationId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHeight()
+        {
+            return IExecuteWithSignature<int>("getHeight", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getPixel(int,int)"/>
@@ -481,6 +477,14 @@ namespace Android.Graphics
         public int GetPixel(int arg0, int arg1)
         {
             return IExecute<int>("getPixel", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getRowBytes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRowBytes()
+        {
+            return IExecuteWithSignature<int>("getRowBytes", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getScaledHeight(android.graphics.Canvas)"/>
@@ -535,6 +539,14 @@ namespace Android.Graphics
         public int GetScaledWidth(int arg0)
         {
             return IExecuteWithSignature<int>("getScaledWidth", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWidth()
+        {
+            return IExecuteWithSignature<int>("getWidth", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#copyPixelsFromBuffer(java.nio.Buffer)"/>
@@ -607,12 +619,36 @@ namespace Android.Graphics
             IExecuteWithSignature("recycle", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#setColorSpace(android.graphics.ColorSpace)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.ColorSpace"/></param>
+        public void SetColorSpace(Android.Graphics.ColorSpace arg0)
+        {
+            IExecuteWithSignature("setColorSpace", "(Landroid/graphics/ColorSpace;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#setConfig(android.graphics.Bitmap.Config)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Bitmap.Config"/></param>
         public void SetConfig(Android.Graphics.Bitmap.Config arg0)
         {
             IExecuteWithSignature("setConfig", "(Landroid/graphics/Bitmap$Config;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#setDensity(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDensity(int arg0)
+        {
+            IExecuteWithSignature("setDensity", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#setGainmap(android.graphics.Gainmap)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Gainmap"/></param>
+        public void SetGainmap(Android.Graphics.Gainmap arg0)
+        {
+            IExecuteWithSignature("setGainmap", "(Landroid/graphics/Gainmap;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#setHasAlpha(boolean)"/>
@@ -629,6 +665,14 @@ namespace Android.Graphics
         public void SetHasMipMap(bool arg0)
         {
             IExecuteWithSignature("setHasMipMap", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#setHeight(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetHeight(int arg0)
+        {
+            IExecuteWithSignature("setHeight", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#setPixel(int,int,int)"/>
@@ -661,6 +705,14 @@ namespace Android.Graphics
         public void SetPremultiplied(bool arg0)
         {
             IExecuteWithSignature("setPremultiplied", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#setWidth(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetWidth(int arg0)
+        {
+            IExecuteWithSignature("setWidth", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#writeToParcel(android.os.Parcel,int)"/>
@@ -702,7 +754,7 @@ namespace Android.Graphics
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.CompressFormat.html#WEBP"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Graphics.Bitmap.CompressFormat WEBP { get { if (!_WEBPReady) { _WEBPContent = SGetField<Android.Graphics.Bitmap.CompressFormat>(LocalBridgeClazz, "WEBP"); _WEBPReady = true; } return _WEBPContent; } }
             private static Android.Graphics.Bitmap.CompressFormat _WEBPContent = default;
             private static bool _WEBPReady = false; // this is used because in case of generics 
@@ -775,7 +827,7 @@ namespace Android.Graphics
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.Config.html#ARGB_4444"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Graphics.Bitmap.Config ARGB_4444 { get { if (!_ARGB_4444Ready) { _ARGB_4444Content = SGetField<Android.Graphics.Bitmap.Config>(LocalBridgeClazz, "ARGB_4444"); _ARGB_4444Ready = true; } return _ARGB_4444Content; } }
             private static Android.Graphics.Bitmap.Config _ARGB_4444Content = default;
             private static bool _ARGB_4444Ready = false; // this is used because in case of generics 

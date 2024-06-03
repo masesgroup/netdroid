@@ -46,32 +46,36 @@ namespace Android.App.Appsearch
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.html#getDeletedTypes()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.html#getMigrationFailures()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> DeletedTypes
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.Appsearch.SetSchemaResponse.MigrationFailure> GetMigrationFailures()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getDeletedTypes", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.App.Appsearch.SetSchemaResponse.MigrationFailure>>("getMigrationFailures", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.html#getIncompatibleTypes()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.html#getDeletedTypes()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> IncompatibleTypes
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetDeletedTypes()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getIncompatibleTypes", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getDeletedTypes", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.html#getMigratedTypes()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.html#getIncompatibleTypes()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> MigratedTypes
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetIncompatibleTypes()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getMigratedTypes", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getIncompatibleTypes", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.html#getMigrationFailures()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.html#getMigratedTypes()"/>
         /// </summary>
-        public Java.Util.List<Android.App.Appsearch.SetSchemaResponse.MigrationFailure> MigrationFailures
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetMigratedTypes()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.Appsearch.SetSchemaResponse.MigrationFailure>>("getMigrationFailures", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getMigratedTypes", "()Ljava/util/Set;");
         }
 
         #endregion
@@ -220,32 +224,36 @@ namespace Android.App.Appsearch
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.MigrationFailure.html#getAppSearchResult()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.MigrationFailure.html#getAppSearchResult()"/>
             /// </summary>
-            public Android.App.Appsearch.AppSearchResult<Java.Lang.Void> AppSearchResult
+            /// <returns><see cref="Android.App.Appsearch.AppSearchResult"/></returns>
+            public Android.App.Appsearch.AppSearchResult<Java.Lang.Void> GetAppSearchResult()
             {
-                get { return IExecuteWithSignature<Android.App.Appsearch.AppSearchResult<Java.Lang.Void>>("getAppSearchResult", "()Landroid/app/appsearch/AppSearchResult;"); }
+                return IExecuteWithSignature<Android.App.Appsearch.AppSearchResult<Java.Lang.Void>>("getAppSearchResult", "()Landroid/app/appsearch/AppSearchResult;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.MigrationFailure.html#getDocumentId()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.MigrationFailure.html#getDocumentId()"/>
             /// </summary>
-            public Java.Lang.String DocumentId
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetDocumentId()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getDocumentId", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getDocumentId", "()Ljava/lang/String;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.MigrationFailure.html#getNamespace()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.MigrationFailure.html#getNamespace()"/>
             /// </summary>
-            public Java.Lang.String Namespace
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetNamespace()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.MigrationFailure.html#getSchemaType()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.MigrationFailure.html#getSchemaType()"/>
             /// </summary>
-            public Java.Lang.String SchemaType
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetSchemaType()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getSchemaType", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getSchemaType", "()Ljava/lang/String;");
             }
 
             #endregion

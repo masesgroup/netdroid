@@ -69,46 +69,84 @@ namespace Android.Webkit
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceResponse.html#getData()"/> <see href="https://developer.android.com/reference/android/webkit/WebResourceResponse.html#setData(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceResponse.html#getStatusCode()"/>
         /// </summary>
-        public Java.Io.InputStream Data
+        /// <returns><see cref="int"/></returns>
+        public int GetStatusCode()
         {
-            get { return IExecuteWithSignature<Java.Io.InputStream>("getData", "()Ljava/io/InputStream;"); } set { IExecuteWithSignature("setData", "(Ljava/io/InputStream;)V", value); }
+            return IExecuteWithSignature<int>("getStatusCode", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceResponse.html#getEncoding()"/> <see href="https://developer.android.com/reference/android/webkit/WebResourceResponse.html#setEncoding(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceResponse.html#getData()"/>
         /// </summary>
-        public Java.Lang.String Encoding
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        public Java.Io.InputStream GetData()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setEncoding", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Io.InputStream>("getData", "()Ljava/io/InputStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceResponse.html#getMimeType()"/> <see href="https://developer.android.com/reference/android/webkit/WebResourceResponse.html#setMimeType(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceResponse.html#getEncoding()"/>
         /// </summary>
-        public Java.Lang.String MimeType
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEncoding()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMimeType", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setMimeType", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceResponse.html#getReasonPhrase()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceResponse.html#getMimeType()"/>
         /// </summary>
-        public Java.Lang.String ReasonPhrase
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMimeType()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getReasonPhrase", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getMimeType", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceResponse.html#getResponseHeaders()"/> <see href="https://developer.android.com/reference/android/webkit/WebResourceResponse.html#setResponseHeaders(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceResponse.html#getReasonPhrase()"/>
         /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Lang.String> ResponseHeaders
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetReasonPhrase()
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getResponseHeaders", "()Ljava/util/Map;"); } set { IExecuteWithSignature("setResponseHeaders", "(Ljava/util/Map;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getReasonPhrase", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceResponse.html#getStatusCode()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceResponse.html#getResponseHeaders()"/>
         /// </summary>
-        public int StatusCode
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Lang.String> GetResponseHeaders()
         {
-            get { return IExecuteWithSignature<int>("getStatusCode", "()I"); }
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getResponseHeaders", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceResponse.html#setData(java.io.InputStream)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        public void SetData(Java.Io.InputStream arg0)
+        {
+            IExecuteWithSignature("setData", "(Ljava/io/InputStream;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceResponse.html#setEncoding(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetEncoding(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setEncoding", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceResponse.html#setMimeType(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetMimeType(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setMimeType", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceResponse.html#setResponseHeaders(java.util.Map)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        public void SetResponseHeaders(Java.Util.Map<Java.Lang.String, Java.Lang.String> arg0)
+        {
+            IExecuteWithSignature("setResponseHeaders", "(Ljava/util/Map;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebResourceResponse.html#setStatusCodeAndReasonPhrase(int,java.lang.String)"/>

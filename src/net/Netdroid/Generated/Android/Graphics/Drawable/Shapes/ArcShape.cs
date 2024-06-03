@@ -55,18 +55,20 @@ namespace Android.Graphics.Drawable.Shapes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/shapes/ArcShape.html#getStartAngle()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/shapes/ArcShape.html#getStartAngle()"/>
         /// </summary>
-        public float StartAngle
+        /// <returns><see cref="float"/></returns>
+        public float GetStartAngle()
         {
-            get { return IExecuteWithSignature<float>("getStartAngle", "()F"); }
+            return IExecuteWithSignature<float>("getStartAngle", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/shapes/ArcShape.html#getSweepAngle()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/shapes/ArcShape.html#getSweepAngle()"/>
         /// </summary>
-        public float SweepAngle
+        /// <returns><see cref="float"/></returns>
+        public float GetSweepAngle()
         {
-            get { return IExecuteWithSignature<float>("getSweepAngle", "()F"); }
+            return IExecuteWithSignature<float>("getSweepAngle", "()F");
         }
 
         #endregion

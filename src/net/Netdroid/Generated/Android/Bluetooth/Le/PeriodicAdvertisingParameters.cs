@@ -52,18 +52,12 @@ namespace Android.Bluetooth.Le
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/PeriodicAdvertisingParameters.html#getIncludeTxPower()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/PeriodicAdvertisingParameters.html#getIncludeTxPower()"/>
         /// </summary>
-        public bool IncludeTxPower
+        /// <returns><see cref="bool"/></returns>
+        public bool GetIncludeTxPower()
         {
-            get { return IExecuteWithSignature<bool>("getIncludeTxPower", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/PeriodicAdvertisingParameters.html#getInterval()"/> 
-        /// </summary>
-        public int Interval
-        {
-            get { return IExecuteWithSignature<int>("getInterval", "()I"); }
+            return IExecuteWithSignature<bool>("getIncludeTxPower", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/PeriodicAdvertisingParameters.html#describeContents()"/>
@@ -72,6 +66,14 @@ namespace Android.Bluetooth.Le
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/PeriodicAdvertisingParameters.html#getInterval()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInterval()
+        {
+            return IExecuteWithSignature<int>("getInterval", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/PeriodicAdvertisingParameters.html#writeToParcel(android.os.Parcel,int)"/>

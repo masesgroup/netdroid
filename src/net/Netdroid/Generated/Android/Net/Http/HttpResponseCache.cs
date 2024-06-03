@@ -46,11 +46,12 @@ namespace Android.Net.Http
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/HttpResponseCache.html#getInstalled()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/http/HttpResponseCache.html#getInstalled()"/>
         /// </summary>
-        public static Android.Net.Http.HttpResponseCache Installed
+        /// <returns><see cref="Android.Net.Http.HttpResponseCache"/></returns>
+        public static Android.Net.Http.HttpResponseCache GetInstalled()
         {
-            get { return SExecuteWithSignature<Android.Net.Http.HttpResponseCache>(LocalBridgeClazz, "getInstalled", "()Landroid/net/http/HttpResponseCache;"); }
+            return SExecuteWithSignature<Android.Net.Http.HttpResponseCache>(LocalBridgeClazz, "getInstalled", "()Landroid/net/http/HttpResponseCache;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/HttpResponseCache.html#install(java.io.File,long)"/>
@@ -68,25 +69,28 @@ namespace Android.Net.Http
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/HttpResponseCache.html#getHitCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/http/HttpResponseCache.html#getHitCount()"/>
         /// </summary>
-        public int HitCount
+        /// <returns><see cref="int"/></returns>
+        public int GetHitCount()
         {
-            get { return IExecuteWithSignature<int>("getHitCount", "()I"); }
+            return IExecuteWithSignature<int>("getHitCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/HttpResponseCache.html#getNetworkCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/http/HttpResponseCache.html#getNetworkCount()"/>
         /// </summary>
-        public int NetworkCount
+        /// <returns><see cref="int"/></returns>
+        public int GetNetworkCount()
         {
-            get { return IExecuteWithSignature<int>("getNetworkCount", "()I"); }
+            return IExecuteWithSignature<int>("getNetworkCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/HttpResponseCache.html#getRequestCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/http/HttpResponseCache.html#getRequestCount()"/>
         /// </summary>
-        public int RequestCount
+        /// <returns><see cref="int"/></returns>
+        public int GetRequestCount()
         {
-            get { return IExecuteWithSignature<int>("getRequestCount", "()I"); }
+            return IExecuteWithSignature<int>("getRequestCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/HttpResponseCache.html#maxSize()"/>

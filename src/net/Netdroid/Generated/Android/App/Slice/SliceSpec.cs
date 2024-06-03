@@ -61,20 +61,6 @@ namespace Android.App.Slice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/slice/SliceSpec.html#getRevision()"/> 
-        /// </summary>
-        public int Revision
-        {
-            get { return IExecuteWithSignature<int>("getRevision", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/slice/SliceSpec.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.String Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceSpec.html#canRender(android.app.slice.SliceSpec)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Slice.SliceSpec"/></param>
@@ -90,6 +76,22 @@ namespace Android.App.Slice
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/slice/SliceSpec.html#getRevision()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRevision()
+        {
+            return IExecuteWithSignature<int>("getRevision", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/slice/SliceSpec.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceSpec.html#writeToParcel(android.os.Parcel,int)"/>

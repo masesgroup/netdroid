@@ -42,22 +42,24 @@ namespace Javax.Microedition.Khronos.Egl
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGLContext.html#getEGL()"/> 
+        /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGLContext.html#getEGL()"/>
         /// </summary>
-        public static Javax.Microedition.Khronos.Egl.EGL EGL
+        /// <returns><see cref="Javax.Microedition.Khronos.Egl.EGL"/></returns>
+        public static Javax.Microedition.Khronos.Egl.EGL GetEGL()
         {
-            get { return SExecuteWithSignature<Javax.Microedition.Khronos.Egl.EGL>(LocalBridgeClazz, "getEGL", "()Ljavax/microedition/khronos/egl/EGL;"); }
+            return SExecuteWithSignature<Javax.Microedition.Khronos.Egl.EGL>(LocalBridgeClazz, "getEGL", "()Ljavax/microedition/khronos/egl/EGL;");
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGLContext.html#getGL()"/> 
+        /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGLContext.html#getGL()"/>
         /// </summary>
-        public Javax.Microedition.Khronos.Opengles.GL GL
+        /// <returns><see cref="Javax.Microedition.Khronos.Opengles.GL"/></returns>
+        public Javax.Microedition.Khronos.Opengles.GL GetGL()
         {
-            get { return IExecuteWithSignature<Javax.Microedition.Khronos.Opengles.GL>("getGL", "()Ljavax/microedition/khronos/opengles/GL;"); }
+            return IExecuteWithSignature<Javax.Microedition.Khronos.Opengles.GL>("getGL", "()Ljavax/microedition/khronos/opengles/GL;");
         }
 
         #endregion

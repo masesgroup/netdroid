@@ -64,7 +64,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Closeable.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/io/Closeable.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Close()

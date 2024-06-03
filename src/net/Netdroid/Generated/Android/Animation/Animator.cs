@@ -52,41 +52,6 @@ namespace Android.Animation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/Animator.html#getDuration()"/> 
-        /// </summary>
-        public long Duration
-        {
-            get { return IExecuteWithSignature<long>("getDuration", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/Animator.html#getInterpolator()"/> <see href="https://developer.android.com/reference/android/animation/Animator.html#setInterpolator(android.animation.TimeInterpolator)"/>
-        /// </summary>
-        public Android.Animation.TimeInterpolator Interpolator
-        {
-            get { return IExecuteWithSignature<Android.Animation.TimeInterpolator>("getInterpolator", "()Landroid/animation/TimeInterpolator;"); } set { IExecuteWithSignature("setInterpolator", "(Landroid/animation/TimeInterpolator;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/Animator.html#getListeners()"/> 
-        /// </summary>
-        public Java.Util.ArrayList<Android.Animation.Animator.AnimatorListener> Listeners
-        {
-            get { return IExecuteWithSignature<Java.Util.ArrayList<Android.Animation.Animator.AnimatorListener>>("getListeners", "()Ljava/util/ArrayList;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/Animator.html#getStartDelay()"/> <see href="https://developer.android.com/reference/android/animation/Animator.html#setStartDelay(long)"/>
-        /// </summary>
-        public long StartDelay
-        {
-            get { return IExecuteWithSignature<long>("getStartDelay", "()J"); } set { IExecuteWithSignature("setStartDelay", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/Animator.html#getTotalDuration()"/> 
-        /// </summary>
-        public long TotalDuration
-        {
-            get { return IExecuteWithSignature<long>("getTotalDuration", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/Animator.html#setDuration(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -104,12 +69,52 @@ namespace Android.Animation
             return IExecuteWithSignature<bool>("isRunning", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/Animator.html#getDuration()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDuration()
+        {
+            return IExecuteWithSignature<long>("getDuration", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/Animator.html#getStartDelay()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetStartDelay()
+        {
+            return IExecuteWithSignature<long>("getStartDelay", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/Animator.html#setInterpolator(android.animation.TimeInterpolator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Animation.TimeInterpolator"/></param>
+        public void SetInterpolator(Android.Animation.TimeInterpolator arg0)
+        {
+            IExecuteWithSignature("setInterpolator", "(Landroid/animation/TimeInterpolator;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/Animator.html#setStartDelay(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetStartDelay(long arg0)
+        {
+            IExecuteWithSignature("setStartDelay", "(J)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/Animator.html#clone()"/>
         /// </summary>
         /// <returns><see cref="Android.Animation.Animator"/></returns>
         public Android.Animation.Animator Clone()
         {
             return IExecuteWithSignature<Android.Animation.Animator>("clone", "()Landroid/animation/Animator;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/Animator.html#getInterpolator()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Animation.TimeInterpolator"/></returns>
+        public Android.Animation.TimeInterpolator GetInterpolator()
+        {
+            return IExecuteWithSignature<Android.Animation.TimeInterpolator>("getInterpolator", "()Landroid/animation/TimeInterpolator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/Animator.html#isPaused()"/>
@@ -126,6 +131,22 @@ namespace Android.Animation
         public bool IsStarted()
         {
             return IExecuteWithSignature<bool>("isStarted", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/Animator.html#getListeners()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.ArrayList"/></returns>
+        public Java.Util.ArrayList<Android.Animation.Animator.AnimatorListener> GetListeners()
+        {
+            return IExecuteWithSignature<Java.Util.ArrayList<Android.Animation.Animator.AnimatorListener>>("getListeners", "()Ljava/util/ArrayList;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/Animator.html#getTotalDuration()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTotalDuration()
+        {
+            return IExecuteWithSignature<long>("getTotalDuration", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/Animator.html#addListener(android.animation.Animator.AnimatorListener)"/>
@@ -252,12 +273,12 @@ namespace Android.Animation
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onAnimationCancel", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationCancelEventHandler));
-                AddEventHandler("onAnimationEnd", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationEndEventHandler));
-                AddEventHandler("onAnimationRepeat", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationRepeatEventHandler));
-                AddEventHandler("onAnimationStart", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationStartEventHandler));
-                AddEventHandler("onAnimationEnd2", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationEnd2EventHandler));
-                AddEventHandler("onAnimationStart2", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationStart2EventHandler));
+                AddEventHandler("onAnimationCancel", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationCancelEventHandler));
+                AddEventHandler("onAnimationEnd", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationEndEventHandler));
+                AddEventHandler("onAnimationRepeat", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationRepeatEventHandler));
+                AddEventHandler("onAnimationStart", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationStartEventHandler));
+                AddEventHandler("onAnimationEnd2", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationEnd2EventHandler));
+                AddEventHandler("onAnimationStart2", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationStart2EventHandler));
 
             }
 
@@ -265,7 +286,7 @@ namespace Android.Animation
             /// Handler for <see href="https://developer.android.com/reference/android/animation/Animator.AnimatorListener.html#onAnimationCancel(android.animation.Animator)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAnimationCancel"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Animation.Animator> OnOnAnimationCancel { get; set; } = null;
+            public global::System.Action<Android.Animation.Animator> OnOnAnimationCancel { get; set; } = null;
 
             void OnAnimationCancelEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Animation.Animator>> data)
             {
@@ -286,7 +307,7 @@ namespace Android.Animation
             /// Handler for <see href="https://developer.android.com/reference/android/animation/Animator.AnimatorListener.html#onAnimationEnd(android.animation.Animator)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAnimationEnd"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Animation.Animator> OnOnAnimationEnd { get; set; } = null;
+            public global::System.Action<Android.Animation.Animator> OnOnAnimationEnd { get; set; } = null;
 
             void OnAnimationEndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Animation.Animator>> data)
             {
@@ -307,7 +328,7 @@ namespace Android.Animation
             /// Handler for <see href="https://developer.android.com/reference/android/animation/Animator.AnimatorListener.html#onAnimationRepeat(android.animation.Animator)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAnimationRepeat"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Animation.Animator> OnOnAnimationRepeat { get; set; } = null;
+            public global::System.Action<Android.Animation.Animator> OnOnAnimationRepeat { get; set; } = null;
 
             void OnAnimationRepeatEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Animation.Animator>> data)
             {
@@ -328,7 +349,7 @@ namespace Android.Animation
             /// Handler for <see href="https://developer.android.com/reference/android/animation/Animator.AnimatorListener.html#onAnimationStart(android.animation.Animator)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAnimationStart"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Animation.Animator> OnOnAnimationStart { get; set; } = null;
+            public global::System.Action<Android.Animation.Animator> OnOnAnimationStart { get; set; } = null;
 
             void OnAnimationStartEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Animation.Animator>> data)
             {
@@ -359,7 +380,7 @@ namespace Android.Animation
             /// Handler for <see href="https://developer.android.com/reference/android/animation/Animator.AnimatorListener.html#onAnimationEnd(android.animation.Animator,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAnimationEnd2"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Animation.Animator, bool> OnOnAnimationEnd2 { get; set; } = null;
+            public global::System.Action<Android.Animation.Animator, bool> OnOnAnimationEnd2 { get; set; } = null;
 
             void OnAnimationEnd2EventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Animation.Animator>> data)
             {
@@ -392,7 +413,7 @@ namespace Android.Animation
             /// Handler for <see href="https://developer.android.com/reference/android/animation/Animator.AnimatorListener.html#onAnimationStart(android.animation.Animator,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAnimationStart2"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Animation.Animator, bool> OnOnAnimationStart2 { get; set; } = null;
+            public global::System.Action<Android.Animation.Animator, bool> OnOnAnimationStart2 { get; set; } = null;
 
             void OnAnimationStart2EventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Animation.Animator>> data)
             {
@@ -527,8 +548,8 @@ namespace Android.Animation
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onAnimationPause", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationPauseEventHandler));
-                AddEventHandler("onAnimationResume", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationResumeEventHandler));
+                AddEventHandler("onAnimationPause", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationPauseEventHandler));
+                AddEventHandler("onAnimationResume", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationResumeEventHandler));
 
             }
 
@@ -536,7 +557,7 @@ namespace Android.Animation
             /// Handler for <see href="https://developer.android.com/reference/android/animation/Animator.AnimatorPauseListener.html#onAnimationPause(android.animation.Animator)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAnimationPause"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Animation.Animator> OnOnAnimationPause { get; set; } = null;
+            public global::System.Action<Android.Animation.Animator> OnOnAnimationPause { get; set; } = null;
 
             void OnAnimationPauseEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Animation.Animator>> data)
             {
@@ -557,7 +578,7 @@ namespace Android.Animation
             /// Handler for <see href="https://developer.android.com/reference/android/animation/Animator.AnimatorPauseListener.html#onAnimationResume(android.animation.Animator)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAnimationResume"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Animation.Animator> OnOnAnimationResume { get; set; } = null;
+            public global::System.Action<Android.Animation.Animator> OnOnAnimationResume { get; set; } = null;
 
             void OnAnimationResumeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Animation.Animator>> data)
             {

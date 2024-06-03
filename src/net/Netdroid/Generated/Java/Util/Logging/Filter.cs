@@ -64,7 +64,7 @@ namespace Java.Util.Logging
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Filter.html#isLoggable(java.util.logging.LogRecord)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/Filter.html#isLoggable(java.util.logging.LogRecord)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Logging.LogRecord"/></param>
         /// <returns><see cref="bool"/></returns>

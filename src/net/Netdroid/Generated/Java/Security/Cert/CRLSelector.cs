@@ -64,7 +64,7 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CRLSelector.html#match(java.security.cert.CRL)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CRLSelector.html#match(java.security.cert.CRL)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.CRL"/></param>
         /// <returns><see cref="bool"/></returns>

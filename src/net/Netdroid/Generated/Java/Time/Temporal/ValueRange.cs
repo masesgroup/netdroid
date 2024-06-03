@@ -42,7 +42,7 @@ namespace Java.Time.Temporal
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/ValueRange.html#of(long,long,long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/ValueRange.html#of(long,long,long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -54,7 +54,7 @@ namespace Java.Time.Temporal
             return SExecute<Java.Time.Temporal.ValueRange>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/ValueRange.html#of(long,long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/ValueRange.html#of(long,long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -65,7 +65,7 @@ namespace Java.Time.Temporal
             return SExecute<Java.Time.Temporal.ValueRange>(LocalBridgeClazz, "of", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/ValueRange.html#of(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/ValueRange.html#of(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -79,35 +79,7 @@ namespace Java.Time.Temporal
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/ValueRange.html#getLargestMinimum()"/> 
-        /// </summary>
-        public long LargestMinimum
-        {
-            get { return IExecuteWithSignature<long>("getLargestMinimum", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/ValueRange.html#getMaximum()"/> 
-        /// </summary>
-        public long Maximum
-        {
-            get { return IExecuteWithSignature<long>("getMaximum", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/ValueRange.html#getMinimum()"/> 
-        /// </summary>
-        public long Minimum
-        {
-            get { return IExecuteWithSignature<long>("getMinimum", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/ValueRange.html#getSmallestMaximum()"/> 
-        /// </summary>
-        public long SmallestMaximum
-        {
-            get { return IExecuteWithSignature<long>("getSmallestMaximum", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/ValueRange.html#isFixed()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/ValueRange.html#isFixed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsFixed()
@@ -115,7 +87,7 @@ namespace Java.Time.Temporal
             return IExecuteWithSignature<bool>("isFixed", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/ValueRange.html#isIntValue()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/ValueRange.html#isIntValue()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsIntValue()
@@ -123,7 +95,7 @@ namespace Java.Time.Temporal
             return IExecuteWithSignature<bool>("isIntValue", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/ValueRange.html#isValidIntValue(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/ValueRange.html#isValidIntValue(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -132,7 +104,7 @@ namespace Java.Time.Temporal
             return IExecuteWithSignature<bool>("isValidIntValue", "(J)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/ValueRange.html#isValidValue(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/ValueRange.html#isValidValue(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -141,7 +113,7 @@ namespace Java.Time.Temporal
             return IExecuteWithSignature<bool>("isValidValue", "(J)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/ValueRange.html#checkValidIntValue(long,java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/ValueRange.html#checkValidIntValue(long,java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalField"/></param>
@@ -151,7 +123,7 @@ namespace Java.Time.Temporal
             return IExecute<int>("checkValidIntValue", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/ValueRange.html#checkValidValue(long,java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/ValueRange.html#checkValidValue(long,java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalField"/></param>
@@ -159,6 +131,38 @@ namespace Java.Time.Temporal
         public long CheckValidValue(long arg0, Java.Time.Temporal.TemporalField arg1)
         {
             return IExecute<long>("checkValidValue", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/ValueRange.html#getLargestMinimum()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLargestMinimum()
+        {
+            return IExecuteWithSignature<long>("getLargestMinimum", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/ValueRange.html#getMaximum()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetMaximum()
+        {
+            return IExecuteWithSignature<long>("getMaximum", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/ValueRange.html#getMinimum()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetMinimum()
+        {
+            return IExecuteWithSignature<long>("getMinimum", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/ValueRange.html#getSmallestMaximum()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetSmallestMaximum()
+        {
+            return IExecuteWithSignature<long>("getSmallestMaximum", "()J");
         }
 
         #endregion

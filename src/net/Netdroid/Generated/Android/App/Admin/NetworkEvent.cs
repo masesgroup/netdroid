@@ -52,27 +52,6 @@ namespace Android.App.Admin
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/NetworkEvent.html#getId()"/> 
-        /// </summary>
-        public long Id
-        {
-            get { return IExecuteWithSignature<long>("getId", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/NetworkEvent.html#getPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String PackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/NetworkEvent.html#getTimestamp()"/> 
-        /// </summary>
-        public long Timestamp
-        {
-            get { return IExecuteWithSignature<long>("getTimestamp", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/NetworkEvent.html#writeToParcel(android.os.Parcel,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
@@ -88,6 +67,30 @@ namespace Android.App.Admin
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/NetworkEvent.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/NetworkEvent.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetId()
+        {
+            return IExecuteWithSignature<long>("getId", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/NetworkEvent.html#getTimestamp()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTimestamp()
+        {
+            return IExecuteWithSignature<long>("getTimestamp", "()J");
         }
 
         #endregion

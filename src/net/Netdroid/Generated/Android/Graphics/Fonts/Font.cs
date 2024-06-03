@@ -46,53 +46,28 @@ namespace Android.Graphics.Fonts
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/fonts/Font.html#getAxes()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/fonts/Font.html#getStyle()"/>
         /// </summary>
-        public Android.Graphics.Fonts.FontVariationAxis[] Axes
+        /// <returns><see cref="Android.Graphics.Fonts.FontStyle"/></returns>
+        public Android.Graphics.Fonts.FontStyle GetStyle()
         {
-            get { return IExecuteWithSignatureArray<Android.Graphics.Fonts.FontVariationAxis>("getAxes", "()[Landroid/graphics/fonts/FontVariationAxis;"); }
+            return IExecuteWithSignature<Android.Graphics.Fonts.FontStyle>("getStyle", "()Landroid/graphics/fonts/FontStyle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/fonts/Font.html#getBuffer()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/fonts/Font.html#getAxes()"/>
         /// </summary>
-        public Java.Nio.ByteBuffer Buffer
+        /// <returns><see cref="Android.Graphics.Fonts.FontVariationAxis"/></returns>
+        public Android.Graphics.Fonts.FontVariationAxis[] GetAxes()
         {
-            get { return IExecuteWithSignature<Java.Nio.ByteBuffer>("getBuffer", "()Ljava/nio/ByteBuffer;"); }
+            return IExecuteWithSignatureArray<Android.Graphics.Fonts.FontVariationAxis>("getAxes", "()[Landroid/graphics/fonts/FontVariationAxis;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/fonts/Font.html#getFile()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/fonts/Font.html#getLocaleList()"/>
         /// </summary>
-        public Java.Io.File File
+        /// <returns><see cref="Android.Os.LocaleList"/></returns>
+        public Android.Os.LocaleList GetLocaleList()
         {
-            get { return IExecuteWithSignature<Java.Io.File>("getFile", "()Ljava/io/File;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/fonts/Font.html#getLocaleList()"/> 
-        /// </summary>
-        public Android.Os.LocaleList LocaleList
-        {
-            get { return IExecuteWithSignature<Android.Os.LocaleList>("getLocaleList", "()Landroid/os/LocaleList;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/fonts/Font.html#getSourceIdentifier()"/> 
-        /// </summary>
-        public int SourceIdentifier
-        {
-            get { return IExecuteWithSignature<int>("getSourceIdentifier", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/fonts/Font.html#getStyle()"/> 
-        /// </summary>
-        public Android.Graphics.Fonts.FontStyle Style
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Fonts.FontStyle>("getStyle", "()Landroid/graphics/fonts/FontStyle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/fonts/Font.html#getTtcIndex()"/> 
-        /// </summary>
-        public int TtcIndex
-        {
-            get { return IExecuteWithSignature<int>("getTtcIndex", "()I"); }
+            return IExecuteWithSignature<Android.Os.LocaleList>("getLocaleList", "()Landroid/os/LocaleList;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/fonts/Font.html#getGlyphBounds(int,android.graphics.Paint,android.graphics.RectF)"/>
@@ -104,6 +79,38 @@ namespace Android.Graphics.Fonts
         public float GetGlyphBounds(int arg0, Android.Graphics.Paint arg1, Android.Graphics.RectF arg2)
         {
             return IExecute<float>("getGlyphBounds", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/fonts/Font.html#getSourceIdentifier()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSourceIdentifier()
+        {
+            return IExecuteWithSignature<int>("getSourceIdentifier", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/fonts/Font.html#getTtcIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTtcIndex()
+        {
+            return IExecuteWithSignature<int>("getTtcIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/fonts/Font.html#getFile()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.File"/></returns>
+        public Java.Io.File GetFile()
+        {
+            return IExecuteWithSignature<Java.Io.File>("getFile", "()Ljava/io/File;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/fonts/Font.html#getBuffer()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
+        public Java.Nio.ByteBuffer GetBuffer()
+        {
+            return IExecuteWithSignature<Java.Nio.ByteBuffer>("getBuffer", "()Ljava/nio/ByteBuffer;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/fonts/Font.html#getMetrics(android.graphics.Paint,android.graphics.Paint.FontMetrics)"/>

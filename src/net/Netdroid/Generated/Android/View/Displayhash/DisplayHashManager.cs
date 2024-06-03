@@ -46,13 +46,6 @@ namespace Android.View.Displayhash
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/displayhash/DisplayHashManager.html#getSupportedHashAlgorithms()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> SupportedHashAlgorithms
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSupportedHashAlgorithms", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/displayhash/DisplayHashManager.html#verifyDisplayHash(android.view.displayhash.DisplayHash)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Displayhash.DisplayHash"/></param>
@@ -60,6 +53,14 @@ namespace Android.View.Displayhash
         public Android.View.Displayhash.VerifiedDisplayHash VerifyDisplayHash(Android.View.Displayhash.DisplayHash arg0)
         {
             return IExecuteWithSignature<Android.View.Displayhash.VerifiedDisplayHash>("verifyDisplayHash", "(Landroid/view/displayhash/DisplayHash;)Landroid/view/displayhash/VerifiedDisplayHash;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/displayhash/DisplayHashManager.html#getSupportedHashAlgorithms()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetSupportedHashAlgorithms()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSupportedHashAlgorithms", "()Ljava/util/Set;");
         }
 
         #endregion

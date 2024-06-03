@@ -224,63 +224,6 @@ namespace Android.Bluetooth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getDescriptors()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Bluetooth.BluetoothGattDescriptor> Descriptors
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothGattDescriptor>>("getDescriptors", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getInstanceId()"/> 
-        /// </summary>
-        public int InstanceId
-        {
-            get { return IExecuteWithSignature<int>("getInstanceId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getPermissions()"/> 
-        /// </summary>
-        public int Permissions
-        {
-            get { return IExecuteWithSignature<int>("getPermissions", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getProperties()"/> 
-        /// </summary>
-        public int Properties
-        {
-            get { return IExecuteWithSignature<int>("getProperties", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getService()"/> 
-        /// </summary>
-        public Android.Bluetooth.BluetoothGattService Service
-        {
-            get { return IExecuteWithSignature<Android.Bluetooth.BluetoothGattService>("getService", "()Landroid/bluetooth/BluetoothGattService;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getUuid()"/> 
-        /// </summary>
-        public Java.Util.UUID Uuid
-        {
-            get { return IExecuteWithSignature<Java.Util.UUID>("getUuid", "()Ljava/util/UUID;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getValue()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public byte[] Value
-        {
-            get { return IExecuteWithSignatureArray<byte>("getValue", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getWriteType()"/> <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#setWriteType(int)"/>
-        /// </summary>
-        public int WriteType
-        {
-            get { return IExecuteWithSignature<int>("getWriteType", "()I"); } set { IExecuteWithSignature("setWriteType", "(I)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getDescriptor(java.util.UUID)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.UUID"/></param>
@@ -288,6 +231,14 @@ namespace Android.Bluetooth
         public Android.Bluetooth.BluetoothGattDescriptor GetDescriptor(Java.Util.UUID arg0)
         {
             return IExecuteWithSignature<Android.Bluetooth.BluetoothGattDescriptor>("getDescriptor", "(Ljava/util/UUID;)Landroid/bluetooth/BluetoothGattDescriptor;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getService()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Bluetooth.BluetoothGattService"/></returns>
+        public Android.Bluetooth.BluetoothGattService GetService()
+        {
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothGattService>("getService", "()Landroid/bluetooth/BluetoothGattService;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#addDescriptor(android.bluetooth.BluetoothGattDescriptor)"/>
@@ -303,7 +254,7 @@ namespace Android.Bluetooth
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool SetValue(byte[] arg0)
         {
             return IExecuteWithSignature<bool>("setValue", "([B)Z", new object[] { arg0 });
@@ -316,7 +267,7 @@ namespace Android.Bluetooth
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool SetValue(int arg0, int arg1, int arg2, int arg3)
         {
             return IExecute<bool>("setValue", arg0, arg1, arg2, arg3);
@@ -328,7 +279,7 @@ namespace Android.Bluetooth
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool SetValue(int arg0, int arg1, int arg2)
         {
             return IExecute<bool>("setValue", arg0, arg1, arg2);
@@ -338,10 +289,19 @@ namespace Android.Bluetooth
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool SetValue(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("setValue", "(Ljava/lang/String;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getValue()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        [global::System.Obsolete()]
+        public byte[] GetValue()
+        {
+            return IExecuteWithSignatureArray<byte>("getValue", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#describeContents()"/>
@@ -352,12 +312,44 @@ namespace Android.Bluetooth
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getInstanceId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInstanceId()
+        {
+            return IExecuteWithSignature<int>("getInstanceId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getPermissions()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPermissions()
+        {
+            return IExecuteWithSignature<int>("getPermissions", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getProperties()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetProperties()
+        {
+            return IExecuteWithSignature<int>("getProperties", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getWriteType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWriteType()
+        {
+            return IExecuteWithSignature<int>("getWriteType", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getFloatValue(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.Float"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.Float GetFloatValue(int arg0, int arg1)
         {
             return IExecute<Java.Lang.Float>("getFloatValue", arg0, arg1);
@@ -368,7 +360,7 @@ namespace Android.Bluetooth
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.Integer"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.Integer GetIntValue(int arg0, int arg1)
         {
             return IExecute<Java.Lang.Integer>("getIntValue", arg0, arg1);
@@ -378,10 +370,34 @@ namespace Android.Bluetooth
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String GetStringValue(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getStringValue", "(I)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getDescriptors()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Bluetooth.BluetoothGattDescriptor> GetDescriptors()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothGattDescriptor>>("getDescriptors", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getUuid()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.UUID"/></returns>
+        public Java.Util.UUID GetUuid()
+        {
+            return IExecuteWithSignature<Java.Util.UUID>("getUuid", "()Ljava/util/UUID;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#setWriteType(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetWriteType(int arg0)
+        {
+            IExecuteWithSignature("setWriteType", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#writeToParcel(android.os.Parcel,int)"/>

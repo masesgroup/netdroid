@@ -226,18 +226,20 @@ namespace Android.Media.Tv.Interactive
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#getAppLinkInfoList()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#getAppLinkInfoList()"/>
         /// </summary>
-        public Java.Util.List<Android.Media.Tv.Interactive.AppLinkInfo> AppLinkInfoList
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.Tv.Interactive.AppLinkInfo> GetAppLinkInfoList()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.Tv.Interactive.AppLinkInfo>>("getAppLinkInfoList", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Media.Tv.Interactive.AppLinkInfo>>("getAppLinkInfoList", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#getTvInteractiveAppServiceList()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#getTvInteractiveAppServiceList()"/>
         /// </summary>
-        public Java.Util.List<Android.Media.Tv.Interactive.TvInteractiveAppServiceInfo> TvInteractiveAppServiceList
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.Tv.Interactive.TvInteractiveAppServiceInfo> GetTvInteractiveAppServiceList()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.Tv.Interactive.TvInteractiveAppServiceInfo>>("getTvInteractiveAppServiceList", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Media.Tv.Interactive.TvInteractiveAppServiceInfo>>("getTvInteractiveAppServiceList", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#registerAppLinkInfo(java.lang.String,android.media.tv.interactive.AppLinkInfo)"/>

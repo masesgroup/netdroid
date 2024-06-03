@@ -52,18 +52,20 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorBoundsInfo.html#getEditorBounds()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorBoundsInfo.html#getEditorBounds()"/>
         /// </summary>
-        public Android.Graphics.RectF EditorBounds
+        /// <returns><see cref="Android.Graphics.RectF"/></returns>
+        public Android.Graphics.RectF GetEditorBounds()
         {
-            get { return IExecuteWithSignature<Android.Graphics.RectF>("getEditorBounds", "()Landroid/graphics/RectF;"); }
+            return IExecuteWithSignature<Android.Graphics.RectF>("getEditorBounds", "()Landroid/graphics/RectF;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorBoundsInfo.html#getHandwritingBounds()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorBoundsInfo.html#getHandwritingBounds()"/>
         /// </summary>
-        public Android.Graphics.RectF HandwritingBounds
+        /// <returns><see cref="Android.Graphics.RectF"/></returns>
+        public Android.Graphics.RectF GetHandwritingBounds()
         {
-            get { return IExecuteWithSignature<Android.Graphics.RectF>("getHandwritingBounds", "()Landroid/graphics/RectF;"); }
+            return IExecuteWithSignature<Android.Graphics.RectF>("getHandwritingBounds", "()Landroid/graphics/RectF;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorBoundsInfo.html#describeContents()"/>

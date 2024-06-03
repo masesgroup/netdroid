@@ -54,20 +54,6 @@ namespace Android.Icu.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getAvailableIDs()"/> 
-        /// </summary>
-        public static Java.Util.Enumeration<Java.Lang.String> AvailableIDs
-        {
-            get { return SExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>(LocalBridgeClazz, "getAvailableIDs", "()Ljava/util/Enumeration;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getAvailableSources()"/> 
-        /// </summary>
-        public static Java.Util.Enumeration<Java.Lang.String> AvailableSources
-        {
-            get { return SExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>(LocalBridgeClazz, "getAvailableSources", "()Ljava/util/Enumeration;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getInstance(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -105,6 +91,22 @@ namespace Android.Icu.Text
         public static Java.Lang.String GetDisplayName(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDisplayName", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getAvailableIDs()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public static Java.Util.Enumeration<Java.Lang.String> GetAvailableIDs()
+        {
+            return SExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>(LocalBridgeClazz, "getAvailableIDs", "()Ljava/util/Enumeration;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getAvailableSources()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public static Java.Util.Enumeration<Java.Lang.String> GetAvailableSources()
+        {
+            return SExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>(LocalBridgeClazz, "getAvailableSources", "()Ljava/util/Enumeration;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getAvailableTargets(java.lang.String)"/>
@@ -150,53 +152,52 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getElements()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getElements()"/>
         /// </summary>
-        public Android.Icu.Text.Transliterator[] Elements
+        /// <returns><see cref="Android.Icu.Text.Transliterator"/></returns>
+        public Android.Icu.Text.Transliterator[] GetElements()
         {
-            get { return IExecuteWithSignatureArray<Android.Icu.Text.Transliterator>("getElements", "()[Landroid/icu/text/Transliterator;"); }
+            return IExecuteWithSignatureArray<Android.Icu.Text.Transliterator>("getElements", "()[Landroid/icu/text/Transliterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getFilter()"/> <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#setFilter(android.icu.text.UnicodeFilter)"/>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getTargetSet()"/>
         /// </summary>
-        public Android.Icu.Text.UnicodeFilter Filter
+        /// <returns><see cref="Android.Icu.Text.UnicodeSet"/></returns>
+        public Android.Icu.Text.UnicodeSet GetTargetSet()
         {
-            get { return IExecuteWithSignature<Android.Icu.Text.UnicodeFilter>("getFilter", "()Landroid/icu/text/UnicodeFilter;"); } set { IExecuteWithSignature("setFilter", "(Landroid/icu/text/UnicodeFilter;)V", value); }
+            return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("getTargetSet", "()Landroid/icu/text/UnicodeSet;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getID()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getInverse()"/>
         /// </summary>
-        public Java.Lang.String ID
+        /// <returns><see cref="Android.Icu.Text.Transliterator"/></returns>
+        public Android.Icu.Text.Transliterator GetInverse()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getID", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Icu.Text.Transliterator>("getInverse", "()Landroid/icu/text/Transliterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getInverse()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getFilter()"/>
         /// </summary>
-        public Android.Icu.Text.Transliterator Inverse
+        /// <returns><see cref="Android.Icu.Text.UnicodeFilter"/></returns>
+        public Android.Icu.Text.UnicodeFilter GetFilter()
         {
-            get { return IExecuteWithSignature<Android.Icu.Text.Transliterator>("getInverse", "()Landroid/icu/text/Transliterator;"); }
+            return IExecuteWithSignature<Android.Icu.Text.UnicodeFilter>("getFilter", "()Landroid/icu/text/UnicodeFilter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getMaximumContextLength()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getSourceSet()"/>
         /// </summary>
-        public int MaximumContextLength
+        /// <returns><see cref="Android.Icu.Text.UnicodeSet"/></returns>
+        public Android.Icu.Text.UnicodeSet GetSourceSet()
         {
-            get { return IExecuteWithSignature<int>("getMaximumContextLength", "()I"); }
+            return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("getSourceSet", "()Landroid/icu/text/UnicodeSet;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getSourceSet()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getMaximumContextLength()"/>
         /// </summary>
-        public Android.Icu.Text.UnicodeSet SourceSet
+        /// <returns><see cref="int"/></returns>
+        public int GetMaximumContextLength()
         {
-            get { return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("getSourceSet", "()Landroid/icu/text/UnicodeSet;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getTargetSet()"/> 
-        /// </summary>
-        public Android.Icu.Text.UnicodeSet TargetSet
-        {
-            get { return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("getTargetSet", "()Landroid/icu/text/UnicodeSet;"); }
+            return IExecuteWithSignature<int>("getMaximumContextLength", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#transliterate(android.icu.text.Replaceable,int,int)"/>
@@ -208,6 +209,14 @@ namespace Android.Icu.Text
         public int Transliterate(Android.Icu.Text.Replaceable arg0, int arg1, int arg2)
         {
             return IExecute<int>("transliterate", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getID()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetID()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getID", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#transliterate(java.lang.String)"/>
@@ -282,6 +291,14 @@ namespace Android.Icu.Text
         public void FilteredTransliterate(Android.Icu.Text.Replaceable arg0, Android.Icu.Text.Transliterator.Position arg1, bool arg2)
         {
             IExecute("filteredTransliterate", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#setFilter(android.icu.text.UnicodeFilter)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Icu.Text.UnicodeFilter"/></param>
+        public void SetFilter(Android.Icu.Text.UnicodeFilter arg0)
+        {
+            IExecuteWithSignature("setFilter", "(Landroid/icu/text/UnicodeFilter;)V", arg0);
         }
 
         #endregion

@@ -58,18 +58,12 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/UriPermission.html#getPersistedTime()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/UriPermission.html#getUri()"/>
         /// </summary>
-        public long PersistedTime
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetUri()
         {
-            get { return IExecuteWithSignature<long>("getPersistedTime", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/UriPermission.html#getUri()"/> 
-        /// </summary>
-        public Android.Net.Uri Uri
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/UriPermission.html#isReadPermission()"/>
@@ -94,6 +88,14 @@ namespace Android.Content
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/UriPermission.html#getPersistedTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetPersistedTime()
+        {
+            return IExecuteWithSignature<long>("getPersistedTime", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/UriPermission.html#writeToParcel(android.os.Parcel,int)"/>

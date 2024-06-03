@@ -70,47 +70,52 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioProfile.html#getChannelIndexMasks()"/> 
-        /// </summary>
-        public int[] ChannelIndexMasks
-        {
-            get { return IExecuteWithSignatureArray<int>("getChannelIndexMasks", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioProfile.html#getChannelMasks()"/> 
-        /// </summary>
-        public int[] ChannelMasks
-        {
-            get { return IExecuteWithSignatureArray<int>("getChannelMasks", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioProfile.html#getEncapsulationType()"/> 
-        /// </summary>
-        public int EncapsulationType
-        {
-            get { return IExecuteWithSignature<int>("getEncapsulationType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioProfile.html#getFormat()"/> 
-        /// </summary>
-        public int Format
-        {
-            get { return IExecuteWithSignature<int>("getFormat", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioProfile.html#getSampleRates()"/> 
-        /// </summary>
-        public int[] SampleRates
-        {
-            get { return IExecuteWithSignatureArray<int>("getSampleRates", "()[I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioProfile.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioProfile.html#getEncapsulationType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEncapsulationType()
+        {
+            return IExecuteWithSignature<int>("getEncapsulationType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioProfile.html#getFormat()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFormat()
+        {
+            return IExecuteWithSignature<int>("getFormat", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioProfile.html#getChannelIndexMasks()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetChannelIndexMasks()
+        {
+            return IExecuteWithSignatureArray<int>("getChannelIndexMasks", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioProfile.html#getChannelMasks()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetChannelMasks()
+        {
+            return IExecuteWithSignatureArray<int>("getChannelMasks", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioProfile.html#getSampleRates()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetSampleRates()
+        {
+            return IExecuteWithSignatureArray<int>("getSampleRates", "()[I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioProfile.html#writeToParcel(android.os.Parcel,int)"/>

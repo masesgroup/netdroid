@@ -56,19 +56,19 @@ namespace Org.W3c.Dom
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMError.html#SEVERITY_ERROR"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMError.html#SEVERITY_ERROR"/>
         /// </summary>
         public static short SEVERITY_ERROR { get { if (!_SEVERITY_ERRORReady) { _SEVERITY_ERRORContent = SGetField<short>(LocalBridgeClazz, "SEVERITY_ERROR"); _SEVERITY_ERRORReady = true; } return _SEVERITY_ERRORContent; } }
         private static short _SEVERITY_ERRORContent = default;
         private static bool _SEVERITY_ERRORReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMError.html#SEVERITY_FATAL_ERROR"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMError.html#SEVERITY_FATAL_ERROR"/>
         /// </summary>
         public static short SEVERITY_FATAL_ERROR { get { if (!_SEVERITY_FATAL_ERRORReady) { _SEVERITY_FATAL_ERRORContent = SGetField<short>(LocalBridgeClazz, "SEVERITY_FATAL_ERROR"); _SEVERITY_FATAL_ERRORReady = true; } return _SEVERITY_FATAL_ERRORContent; } }
         private static short _SEVERITY_FATAL_ERRORContent = default;
         private static bool _SEVERITY_FATAL_ERRORReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMError.html#SEVERITY_WARNING"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMError.html#SEVERITY_WARNING"/>
         /// </summary>
         public static short SEVERITY_WARNING { get { if (!_SEVERITY_WARNINGReady) { _SEVERITY_WARNINGContent = SGetField<short>(LocalBridgeClazz, "SEVERITY_WARNING"); _SEVERITY_WARNINGReady = true; } return _SEVERITY_WARNINGContent; } }
         private static short _SEVERITY_WARNINGContent = default;
@@ -82,46 +82,52 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMError.html#getLocation()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMError.html#getRelatedData()"/>
         /// </summary>
-        public Org.W3c.Dom.DOMLocator Location
+        /// <returns><see cref="object"/></returns>
+        public object GetRelatedData()
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.DOMLocator>("getLocation", "()Lorg/w3c/dom/DOMLocator;"); }
+            return IExecuteWithSignature("getRelatedData", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMError.html#getMessage()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMError.html#getRelatedException()"/>
         /// </summary>
-        public Java.Lang.String Message
+        /// <returns><see cref="object"/></returns>
+        public object GetRelatedException()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMessage", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature("getRelatedException", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMError.html#getRelatedData()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMError.html#getMessage()"/>
         /// </summary>
-        public object RelatedData
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMessage()
         {
-            get { return IExecuteWithSignature("getRelatedData", "()Ljava/lang/Object;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getMessage", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMError.html#getRelatedException()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMError.html#getType()"/>
         /// </summary>
-        public object RelatedException
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetType()
         {
-            get { return IExecuteWithSignature("getRelatedException", "()Ljava/lang/Object;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMError.html#getSeverity()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMError.html#getLocation()"/>
         /// </summary>
-        public short Severity
+        /// <returns><see cref="Org.W3c.Dom.DOMLocator"/></returns>
+        public Org.W3c.Dom.DOMLocator GetLocation()
         {
-            get { return IExecuteWithSignature<short>("getSeverity", "()S"); }
+            return IExecuteWithSignature<Org.W3c.Dom.DOMLocator>("getLocation", "()Lorg/w3c/dom/DOMLocator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMError.html#getType()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMError.html#getSeverity()"/>
         /// </summary>
-        public Java.Lang.String Type
+        /// <returns><see cref="short"/></returns>
+        public short GetSeverity()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<short>("getSeverity", "()S");
         }
 
         #endregion

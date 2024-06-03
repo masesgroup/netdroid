@@ -58,27 +58,6 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/UiccPortInfo.html#getIccId()"/> 
-        /// </summary>
-        public Java.Lang.String IccId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getIccId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/UiccPortInfo.html#getLogicalSlotIndex()"/> 
-        /// </summary>
-        public int LogicalSlotIndex
-        {
-            get { return IExecuteWithSignature<int>("getLogicalSlotIndex", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/UiccPortInfo.html#getPortIndex()"/> 
-        /// </summary>
-        public int PortIndex
-        {
-            get { return IExecuteWithSignature<int>("getPortIndex", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/UiccPortInfo.html#isActive()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -93,6 +72,30 @@ namespace Android.Telephony
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/UiccPortInfo.html#getLogicalSlotIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLogicalSlotIndex()
+        {
+            return IExecuteWithSignature<int>("getLogicalSlotIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/UiccPortInfo.html#getPortIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPortIndex()
+        {
+            return IExecuteWithSignature<int>("getPortIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/UiccPortInfo.html#getIccId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetIccId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getIccId", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/UiccPortInfo.html#writeToParcel(android.os.Parcel,int)"/>

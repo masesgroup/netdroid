@@ -42,11 +42,12 @@ namespace Android.Os
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Looper.html#getMainLooper()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/Looper.html#getMainLooper()"/>
         /// </summary>
-        public static Android.Os.Looper MainLooper
+        /// <returns><see cref="Android.Os.Looper"/></returns>
+        public static Android.Os.Looper GetMainLooper()
         {
-            get { return SExecuteWithSignature<Android.Os.Looper>(LocalBridgeClazz, "getMainLooper", "()Landroid/os/Looper;"); }
+            return SExecuteWithSignature<Android.Os.Looper>(LocalBridgeClazz, "getMainLooper", "()Landroid/os/Looper;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Looper.html#myLooper()"/>
@@ -81,7 +82,7 @@ namespace Android.Os
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Looper.html#prepareMainLooper()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void PrepareMainLooper()
         {
             SExecuteWithSignature(LocalBridgeClazz, "prepareMainLooper", "()V");
@@ -91,18 +92,12 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Looper.html#getQueue()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/Looper.html#getQueue()"/>
         /// </summary>
-        public Android.Os.MessageQueue Queue
+        /// <returns><see cref="Android.Os.MessageQueue"/></returns>
+        public Android.Os.MessageQueue GetQueue()
         {
-            get { return IExecuteWithSignature<Android.Os.MessageQueue>("getQueue", "()Landroid/os/MessageQueue;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Looper.html#getThread()"/> 
-        /// </summary>
-        public Java.Lang.Thread Thread
-        {
-            get { return IExecuteWithSignature<Java.Lang.Thread>("getThread", "()Ljava/lang/Thread;"); }
+            return IExecuteWithSignature<Android.Os.MessageQueue>("getQueue", "()Landroid/os/MessageQueue;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Looper.html#isCurrentThread()"/>
@@ -111,6 +106,14 @@ namespace Android.Os
         public bool IsCurrentThread()
         {
             return IExecuteWithSignature<bool>("isCurrentThread", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Looper.html#getThread()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Thread"/></returns>
+        public Java.Lang.Thread GetThread()
+        {
+            return IExecuteWithSignature<Java.Lang.Thread>("getThread", "()Ljava/lang/Thread;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Looper.html#dump(android.util.Printer,java.lang.String)"/>

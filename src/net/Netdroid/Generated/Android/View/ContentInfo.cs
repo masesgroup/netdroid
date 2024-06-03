@@ -94,39 +94,28 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ContentInfo.html#getClip()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/ContentInfo.html#getClip()"/>
         /// </summary>
-        public Android.Content.ClipData Clip
+        /// <returns><see cref="Android.Content.ClipData"/></returns>
+        public Android.Content.ClipData GetClip()
         {
-            get { return IExecuteWithSignature<Android.Content.ClipData>("getClip", "()Landroid/content/ClipData;"); }
+            return IExecuteWithSignature<Android.Content.ClipData>("getClip", "()Landroid/content/ClipData;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ContentInfo.html#getExtras()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/ContentInfo.html#getLinkUri()"/>
         /// </summary>
-        public Android.Os.Bundle Extras
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetLinkUri()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getLinkUri", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ContentInfo.html#getFlags()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/ContentInfo.html#getExtras()"/>
         /// </summary>
-        public int Flags
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<int>("getFlags", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ContentInfo.html#getLinkUri()"/> 
-        /// </summary>
-        public Android.Net.Uri LinkUri
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getLinkUri", "()Landroid/net/Uri;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ContentInfo.html#getSource()"/> 
-        /// </summary>
-        public int Source
-        {
-            get { return IExecuteWithSignature<int>("getSource", "()I"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ContentInfo.html#describeContents()"/>
@@ -135,6 +124,22 @@ namespace Android.View
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ContentInfo.html#getFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFlags()
+        {
+            return IExecuteWithSignature<int>("getFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ContentInfo.html#getSource()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSource()
+        {
+            return IExecuteWithSignature<int>("getSource", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ContentInfo.html#writeToParcel(android.os.Parcel,int)"/>

@@ -28,7 +28,7 @@ namespace Java.Util.Stream
 {
     #region BaseStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html"/>
     /// </summary>
     public partial class BaseStream : Java.Lang.AutoCloseable
     {
@@ -36,12 +36,12 @@ namespace Java.Util.Stream
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("BaseStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("BaseStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BaseStream() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("BaseStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("BaseStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BaseStream(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,22 +74,22 @@ namespace Java.Util.Stream
 
     #region BaseStream<T, S>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="S"><see cref="Java.Util.Stream.BaseStream{T, S}"/></typeparam>
-    public partial class BaseStream<T, S> : Java.Lang.AutoCloseable where S: Java.Util.Stream.BaseStream<T, S>
+    public partial class BaseStream<T, S> : Java.Lang.AutoCloseable where S : Java.Util.Stream.BaseStream<T, S>
     {
         const string _bridgeClassName = "java.util.stream.BaseStream";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("BaseStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("BaseStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BaseStream() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("BaseStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("BaseStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BaseStream(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -122,7 +122,7 @@ namespace Java.Util.Stream
 
     #region Collector
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html"/>
     /// </summary>
     public partial class Collector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Collector>
     {
@@ -130,12 +130,12 @@ namespace Java.Util.Stream
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Collector class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Collector class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Collector() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Collector class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Collector class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Collector(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -164,7 +164,7 @@ namespace Java.Util.Stream
         // TODO: complete the class
         #region Characteristics
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.Characteristics.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.Characteristics.html"/>
         /// </summary>
         public partial class Characteristics : Java.Lang.Enum<Java.Util.Stream.Collector.Characteristics>
         {
@@ -212,7 +212,7 @@ namespace Java.Util.Stream
 
     #region Collector<T, A, R>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="A"></typeparam>
@@ -223,12 +223,12 @@ namespace Java.Util.Stream
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Collector class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Collector class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Collector() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Collector class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Collector class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Collector(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -261,7 +261,7 @@ namespace Java.Util.Stream
 
     #region Collectors
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collectors.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html"/>
     /// </summary>
     public partial class Collectors : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Collectors>
     {
@@ -305,7 +305,7 @@ namespace Java.Util.Stream
 
     #region DoubleStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html"/>
     /// </summary>
     public partial class DoubleStream : Java.Util.Stream.BaseStream<Java.Lang.Double, Java.Util.Stream.DoubleStream>
     {
@@ -313,12 +313,12 @@ namespace Java.Util.Stream
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DoubleStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DoubleStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DoubleStream() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DoubleStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DoubleStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DoubleStream(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -351,7 +351,7 @@ namespace Java.Util.Stream
 
     #region IntStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html"/>
     /// </summary>
     public partial class IntStream : Java.Util.Stream.BaseStream<Java.Lang.Integer, Java.Util.Stream.IntStream>
     {
@@ -359,12 +359,12 @@ namespace Java.Util.Stream
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("IntStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("IntStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public IntStream() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("IntStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("IntStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public IntStream(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -397,7 +397,7 @@ namespace Java.Util.Stream
 
     #region LongStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html"/>
     /// </summary>
     public partial class LongStream : Java.Util.Stream.BaseStream<Java.Lang.Long, Java.Util.Stream.LongStream>
     {
@@ -405,12 +405,12 @@ namespace Java.Util.Stream
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("LongStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("LongStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LongStream() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("LongStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("LongStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LongStream(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -443,7 +443,7 @@ namespace Java.Util.Stream
 
     #region Stream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Stream.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html"/>
     /// </summary>
     public partial class Stream : Java.Util.Stream.BaseStream
     {
@@ -451,12 +451,12 @@ namespace Java.Util.Stream
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Stream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Stream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Stream() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Stream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Stream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Stream(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -489,7 +489,7 @@ namespace Java.Util.Stream
 
     #region Stream<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Stream.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class Stream<T> : Java.Util.Stream.BaseStream<T, Java.Util.Stream.Stream<T>>
@@ -498,12 +498,12 @@ namespace Java.Util.Stream
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Stream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Stream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Stream() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Stream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Stream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Stream(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -536,7 +536,7 @@ namespace Java.Util.Stream
 
     #region StreamSupport
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/stream/StreamSupport.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/stream/StreamSupport.html"/>
     /// </summary>
     public partial class StreamSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StreamSupport>
     {

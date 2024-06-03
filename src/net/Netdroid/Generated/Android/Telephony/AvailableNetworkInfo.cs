@@ -81,47 +81,52 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/AvailableNetworkInfo.html#getBands()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.Integer> Bands
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getBands", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/AvailableNetworkInfo.html#getMccMncs()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> MccMncs
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getMccMncs", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/AvailableNetworkInfo.html#getPriority()"/> 
-        /// </summary>
-        public int Priority
-        {
-            get { return IExecuteWithSignature<int>("getPriority", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/AvailableNetworkInfo.html#getRadioAccessSpecifiers()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Telephony.RadioAccessSpecifier> RadioAccessSpecifiers
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telephony.RadioAccessSpecifier>>("getRadioAccessSpecifiers", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/AvailableNetworkInfo.html#getSubId()"/> 
-        /// </summary>
-        public int SubId
-        {
-            get { return IExecuteWithSignature<int>("getSubId", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/AvailableNetworkInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/AvailableNetworkInfo.html#getPriority()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPriority()
+        {
+            return IExecuteWithSignature<int>("getPriority", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/AvailableNetworkInfo.html#getSubId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSubId()
+        {
+            return IExecuteWithSignature<int>("getSubId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/AvailableNetworkInfo.html#getRadioAccessSpecifiers()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telephony.RadioAccessSpecifier> GetRadioAccessSpecifiers()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telephony.RadioAccessSpecifier>>("getRadioAccessSpecifiers", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/AvailableNetworkInfo.html#getBands()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.Integer> GetBands()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getBands", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/AvailableNetworkInfo.html#getMccMncs()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetMccMncs()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getMccMncs", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/AvailableNetworkInfo.html#writeToParcel(android.os.Parcel,int)"/>

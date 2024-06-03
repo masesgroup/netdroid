@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#%3Cinit%3E(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#%3Cinit%3E(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public Random(long arg0)
@@ -58,7 +58,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#nextBoolean()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#nextBoolean()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool NextBoolean()
@@ -66,7 +66,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("nextBoolean", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#nextDouble()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#nextDouble()"/>
         /// </summary>
         /// <returns><see cref="double"/></returns>
         public double NextDouble()
@@ -74,7 +74,7 @@ namespace Java.Util
             return IExecuteWithSignature<double>("nextDouble", "()D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#nextFloat()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#nextFloat()"/>
         /// </summary>
         /// <returns><see cref="float"/></returns>
         public float NextFloat()
@@ -82,7 +82,7 @@ namespace Java.Util
             return IExecuteWithSignature<float>("nextFloat", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#nextInt()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#nextInt()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int NextInt()
@@ -90,7 +90,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("nextInt", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#nextInt(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#nextInt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -99,7 +99,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("nextInt", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#doubles()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#doubles()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Doubles()
@@ -107,7 +107,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("doubles", "()Ljava/util/stream/DoubleStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#doubles(double,double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#doubles(double,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -117,7 +117,7 @@ namespace Java.Util
             return IExecute<Java.Util.Stream.DoubleStream>("doubles", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#doubles(long,double,double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#doubles(long,double,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -128,7 +128,7 @@ namespace Java.Util
             return IExecute<Java.Util.Stream.DoubleStream>("doubles", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#doubles(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#doubles(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
@@ -137,7 +137,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("doubles", "(J)Ljava/util/stream/DoubleStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#ints()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#ints()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Ints()
@@ -145,7 +145,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("ints", "()Ljava/util/stream/IntStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#ints(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#ints(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -155,7 +155,7 @@ namespace Java.Util
             return IExecute<Java.Util.Stream.IntStream>("ints", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#ints(long,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#ints(long,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -166,7 +166,7 @@ namespace Java.Util
             return IExecute<Java.Util.Stream.IntStream>("ints", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#ints(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#ints(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
@@ -175,7 +175,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("ints", "(J)Ljava/util/stream/IntStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#longs()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#longs()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Longs()
@@ -183,7 +183,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("longs", "()Ljava/util/stream/LongStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#longs(long,long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#longs(long,long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -194,7 +194,7 @@ namespace Java.Util
             return IExecute<Java.Util.Stream.LongStream>("longs", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#longs(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#longs(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -204,7 +204,7 @@ namespace Java.Util
             return IExecute<Java.Util.Stream.LongStream>("longs", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#longs(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#longs(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
@@ -213,7 +213,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("longs", "(J)Ljava/util/stream/LongStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#nextLong()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#nextLong()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long NextLong()
@@ -221,7 +221,7 @@ namespace Java.Util
             return IExecuteWithSignature<long>("nextLong", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#nextGaussian()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#nextGaussian()"/>
         /// </summary>
         /// <returns><see cref="double"/></returns>
         public double NextGaussian()
@@ -229,7 +229,7 @@ namespace Java.Util
             return IExecuteWithSignature<double>("nextGaussian", "()D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#setSeed(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#setSeed(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public void SetSeed(long arg0)
@@ -237,7 +237,7 @@ namespace Java.Util
             IExecuteWithSignature("setSeed", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Random.html#nextBytes(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Random.html#nextBytes(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public void NextBytes(byte[] arg0)

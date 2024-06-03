@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StringWriter.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/StringWriter.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public StringWriter(int arg0)
@@ -54,11 +54,12 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StringWriter.html#getBuffer()"/> 
+        /// <see href="https://developer.android.com/reference/java/io/StringWriter.html#getBuffer()"/>
         /// </summary>
-        public Java.Lang.StringBuffer Buffer
+        /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
+        public Java.Lang.StringBuffer GetBuffer()
         {
-            get { return IExecuteWithSignature<Java.Lang.StringBuffer>("getBuffer", "()Ljava/lang/StringBuffer;"); }
+            return IExecuteWithSignature<Java.Lang.StringBuffer>("getBuffer", "()Ljava/lang/StringBuffer;");
         }
 
         #endregion

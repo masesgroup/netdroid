@@ -30,7 +30,7 @@ namespace Android.Preference
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/preference/CheckBoxPreference.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class CheckBoxPreference : Android.Preference.TwoStatePreference
     {
         const string _bridgeClassName = "android.preference.CheckBoxPreference";
@@ -75,19 +75,19 @@ namespace Android.Preference
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class DialogPreference : Android.Preference.Preference
     {
         const string _bridgeClassName = "android.preference.DialogPreference";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DialogPreference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DialogPreference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DialogPreference() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DialogPreference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DialogPreference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DialogPreference(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -122,7 +122,7 @@ namespace Android.Preference
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/preference/EditTextPreference.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class EditTextPreference : Android.Preference.DialogPreference
     {
         const string _bridgeClassName = "android.preference.EditTextPreference";
@@ -167,7 +167,7 @@ namespace Android.Preference
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/preference/ListPreference.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ListPreference : Android.Preference.DialogPreference
     {
         const string _bridgeClassName = "android.preference.ListPreference";
@@ -212,7 +212,7 @@ namespace Android.Preference
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/preference/MultiSelectListPreference.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class MultiSelectListPreference : Android.Preference.DialogPreference
     {
         const string _bridgeClassName = "android.preference.MultiSelectListPreference";
@@ -257,7 +257,7 @@ namespace Android.Preference
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/preference/Preference.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Preference : Java.Lang.Comparable<Android.Preference.Preference>
     {
         const string _bridgeClassName = "android.preference.Preference";
@@ -298,7 +298,7 @@ namespace Android.Preference
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/Preference.BaseSavedState.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class BaseSavedState : Android.View.AbsSavedState
         {
             const string _bridgeClassName = "android.preference.Preference$BaseSavedState";
@@ -343,7 +343,7 @@ namespace Android.Preference
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/Preference.OnPreferenceChangeListener.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class OnPreferenceChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
             /// <summary>
@@ -351,10 +351,13 @@ namespace Android.Preference
             /// </summary>
             public OnPreferenceChangeListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.preference.Preference_OnPreferenceChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.preference.OnPreferenceChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -376,10 +379,13 @@ namespace Android.Preference
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.preference.Preference$OnPreferenceChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.preference.Preference$OnPreferenceChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -403,7 +409,7 @@ namespace Android.Preference
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/Preference.OnPreferenceClickListener.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class OnPreferenceClickListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
             /// <summary>
@@ -411,10 +417,13 @@ namespace Android.Preference
             /// </summary>
             public OnPreferenceClickListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.preference.Preference_OnPreferenceClickListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.preference.OnPreferenceClickListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -436,10 +445,13 @@ namespace Android.Preference
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.preference.Preference$OnPreferenceClickListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.preference.Preference$OnPreferenceClickListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -467,19 +479,19 @@ namespace Android.Preference
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class PreferenceActivity : Android.App.ListActivity
     {
         const string _bridgeClassName = "android.preference.PreferenceActivity";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("PreferenceActivity class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PreferenceActivity class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PreferenceActivity() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("PreferenceActivity class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PreferenceActivity class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PreferenceActivity(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -510,7 +522,7 @@ namespace Android.Preference
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.Header.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class Header : Android.Os.Parcelable
         {
             const string _bridgeClassName = "android.preference.PreferenceActivity$Header";
@@ -559,7 +571,7 @@ namespace Android.Preference
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/preference/PreferenceCategory.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class PreferenceCategory : Android.Preference.PreferenceGroup
     {
         const string _bridgeClassName = "android.preference.PreferenceCategory";
@@ -604,19 +616,19 @@ namespace Android.Preference
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/preference/PreferenceDataStore.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class PreferenceDataStore : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PreferenceDataStore>
     {
         const string _bridgeClassName = "android.preference.PreferenceDataStore";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("PreferenceDataStore class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PreferenceDataStore class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PreferenceDataStore() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("PreferenceDataStore class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PreferenceDataStore class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PreferenceDataStore(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -651,19 +663,19 @@ namespace Android.Preference
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/preference/PreferenceFragment.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class PreferenceFragment : Android.App.Fragment
     {
         const string _bridgeClassName = "android.preference.PreferenceFragment";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("PreferenceFragment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PreferenceFragment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PreferenceFragment() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("PreferenceFragment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PreferenceFragment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PreferenceFragment(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -694,19 +706,19 @@ namespace Android.Preference
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceFragment.OnPreferenceStartFragmentCallback.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class OnPreferenceStartFragmentCallback : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OnPreferenceStartFragmentCallback>
         {
             const string _bridgeClassName = "android.preference.PreferenceFragment$OnPreferenceStartFragmentCallback";
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("OnPreferenceStartFragmentCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("OnPreferenceStartFragmentCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public OnPreferenceStartFragmentCallback() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("OnPreferenceStartFragmentCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("OnPreferenceStartFragmentCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public OnPreferenceStartFragmentCallback(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -745,19 +757,19 @@ namespace Android.Preference
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/preference/PreferenceGroup.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class PreferenceGroup : Android.Preference.Preference
     {
         const string _bridgeClassName = "android.preference.PreferenceGroup";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("PreferenceGroup class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PreferenceGroup class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PreferenceGroup() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("PreferenceGroup class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PreferenceGroup class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PreferenceGroup(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -792,7 +804,7 @@ namespace Android.Preference
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class PreferenceManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PreferenceManager>
     {
         const string _bridgeClassName = "android.preference.PreferenceManager";
@@ -833,7 +845,7 @@ namespace Android.Preference
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.OnActivityDestroyListener.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class OnActivityDestroyListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
             /// <summary>
@@ -841,10 +853,13 @@ namespace Android.Preference
             /// </summary>
             public OnActivityDestroyListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.preference.PreferenceManager_OnActivityDestroyListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.preference.OnActivityDestroyListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -866,10 +881,13 @@ namespace Android.Preference
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.preference.PreferenceManager$OnActivityDestroyListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.preference.PreferenceManager$OnActivityDestroyListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -893,7 +911,7 @@ namespace Android.Preference
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.OnActivityResultListener.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class OnActivityResultListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
             /// <summary>
@@ -901,10 +919,13 @@ namespace Android.Preference
             /// </summary>
             public OnActivityResultListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.preference.PreferenceManager_OnActivityResultListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.preference.OnActivityResultListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -926,10 +947,13 @@ namespace Android.Preference
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.preference.PreferenceManager$OnActivityResultListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.preference.PreferenceManager$OnActivityResultListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -953,7 +977,7 @@ namespace Android.Preference
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.OnActivityStopListener.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class OnActivityStopListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
             /// <summary>
@@ -961,10 +985,13 @@ namespace Android.Preference
             /// </summary>
             public OnActivityStopListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.preference.PreferenceManager_OnActivityStopListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.preference.OnActivityStopListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -986,10 +1013,13 @@ namespace Android.Preference
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.preference.PreferenceManager$OnActivityStopListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.preference.PreferenceManager$OnActivityStopListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -1017,7 +1047,7 @@ namespace Android.Preference
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/preference/PreferenceScreen.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class PreferenceScreen : Android.Preference.PreferenceGroup
     {
         const string _bridgeClassName = "android.preference.PreferenceScreen";
@@ -1062,7 +1092,7 @@ namespace Android.Preference
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/preference/RingtonePreference.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class RingtonePreference : Android.Preference.Preference
     {
         const string _bridgeClassName = "android.preference.RingtonePreference";
@@ -1107,7 +1137,7 @@ namespace Android.Preference
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/preference/SwitchPreference.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class SwitchPreference : Android.Preference.TwoStatePreference
     {
         const string _bridgeClassName = "android.preference.SwitchPreference";
@@ -1152,19 +1182,19 @@ namespace Android.Preference
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/preference/TwoStatePreference.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class TwoStatePreference : Android.Preference.Preference
     {
         const string _bridgeClassName = "android.preference.TwoStatePreference";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("TwoStatePreference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TwoStatePreference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TwoStatePreference() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("TwoStatePreference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TwoStatePreference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TwoStatePreference(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

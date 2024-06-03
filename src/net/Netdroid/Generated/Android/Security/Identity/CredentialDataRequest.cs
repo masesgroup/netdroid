@@ -46,34 +46,6 @@ namespace Android.Security.Identity
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataRequest.html#getDeviceSignedEntriesToRequest()"/> 
-        /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Util.Collection<Java.Lang.String>> DeviceSignedEntriesToRequest
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Collection<Java.Lang.String>>>("getDeviceSignedEntriesToRequest", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataRequest.html#getIssuerSignedEntriesToRequest()"/> 
-        /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Util.Collection<Java.Lang.String>> IssuerSignedEntriesToRequest
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Collection<Java.Lang.String>>>("getIssuerSignedEntriesToRequest", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataRequest.html#getReaderSignature()"/> 
-        /// </summary>
-        public byte[] ReaderSignature
-        {
-            get { return IExecuteWithSignatureArray<byte>("getReaderSignature", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataRequest.html#getRequestMessage()"/> 
-        /// </summary>
-        public byte[] RequestMessage
-        {
-            get { return IExecuteWithSignatureArray<byte>("getRequestMessage", "()[B"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataRequest.html#isAllowUsingExhaustedKeys()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -96,6 +68,38 @@ namespace Android.Security.Identity
         public bool IsIncrementUseCount()
         {
             return IExecuteWithSignature<bool>("isIncrementUseCount", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataRequest.html#getReaderSignature()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetReaderSignature()
+        {
+            return IExecuteWithSignatureArray<byte>("getReaderSignature", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataRequest.html#getRequestMessage()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetRequestMessage()
+        {
+            return IExecuteWithSignatureArray<byte>("getRequestMessage", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataRequest.html#getDeviceSignedEntriesToRequest()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.Collection<Java.Lang.String>> GetDeviceSignedEntriesToRequest()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Collection<Java.Lang.String>>>("getDeviceSignedEntriesToRequest", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataRequest.html#getIssuerSignedEntriesToRequest()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.Collection<Java.Lang.String>> GetIssuerSignedEntriesToRequest()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Collection<Java.Lang.String>>>("getIssuerSignedEntriesToRequest", "()Ljava/util/Map;");
         }
 
         #endregion

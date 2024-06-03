@@ -96,118 +96,113 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getAdapter()"/> <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setAdapter(android.widget.ListAdapter)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setAdapter(android.widget.ListAdapter)"/>
         /// </summary>
-        public Android.Widget.ListAdapter Adapter
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <typeparam name="T"><see cref="Android.Widget.IListAdapter"/></typeparam>
+        public void SetAdapter<T>(T arg0) where T : Android.Widget.IListAdapter, Android.Widget.IFilterable, new()
         {
-            get { return IExecuteWithSignature<Android.Widget.ListAdapter>("getAdapter", "()Landroid/widget/ListAdapter;"); } set { IExecuteWithSignature("setAdapter", "(Landroid/widget/ListAdapter;)V", value); }
+            IExecuteWithSignature("setAdapter", "(Landroid/widget/ListAdapter;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getCompletionHint()"/> <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setCompletionHint(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getDropDownBackground()"/>
         /// </summary>
-        public Java.Lang.CharSequence CompletionHint
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetDropDownBackground()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getCompletionHint", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setCompletionHint", "(Ljava/lang/CharSequence;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDropDownBackground", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getDropDownAnchor()"/> <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setDropDownAnchor(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getItemClickListener()"/>
         /// </summary>
-        public int DropDownAnchor
+        /// <returns><see cref="Android.Widget.AdapterView.OnItemClickListener"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.AdapterView.OnItemClickListener GetItemClickListener()
         {
-            get { return IExecuteWithSignature<int>("getDropDownAnchor", "()I"); } set { IExecuteWithSignature("setDropDownAnchor", "(I)V", value); }
+            return IExecuteWithSignature<Android.Widget.AdapterView.OnItemClickListener>("getItemClickListener", "()Landroid/widget/AdapterView$OnItemClickListener;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getDropDownBackground()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getItemClickListener()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable DropDownBackground
+        /// <returns><see cref="Android.Widget.AdapterView.OnItemClickListener"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.AdapterView.OnItemClickListener GetItemClickListenerDirect()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDropDownBackground", "()Landroid/graphics/drawable/Drawable;"); }
+            return IExecuteWithSignature<Android.Widget.AdapterView.OnItemClickListenerDirect, Android.Widget.AdapterView.OnItemClickListener>("getItemClickListener", "()Landroid/widget/AdapterView$OnItemClickListener;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getDropDownHeight()"/> <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setDropDownHeight(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getOnItemClickListener()"/>
         /// </summary>
-        public int DropDownHeight
+        /// <returns><see cref="Android.Widget.AdapterView.OnItemClickListener"/></returns>
+        public Android.Widget.AdapterView.OnItemClickListener GetOnItemClickListener()
         {
-            get { return IExecuteWithSignature<int>("getDropDownHeight", "()I"); } set { IExecuteWithSignature("setDropDownHeight", "(I)V", value); }
+            return IExecuteWithSignature<Android.Widget.AdapterView.OnItemClickListener>("getOnItemClickListener", "()Landroid/widget/AdapterView$OnItemClickListener;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getDropDownHorizontalOffset()"/> <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setDropDownHorizontalOffset(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getOnItemClickListener()"/>
         /// </summary>
-        public int DropDownHorizontalOffset
+        /// <returns><see cref="Android.Widget.AdapterView.OnItemClickListener"/></returns>
+        public Android.Widget.AdapterView.OnItemClickListener GetOnItemClickListenerDirect()
         {
-            get { return IExecuteWithSignature<int>("getDropDownHorizontalOffset", "()I"); } set { IExecuteWithSignature("setDropDownHorizontalOffset", "(I)V", value); }
+            return IExecuteWithSignature<Android.Widget.AdapterView.OnItemClickListenerDirect, Android.Widget.AdapterView.OnItemClickListener>("getOnItemClickListener", "()Landroid/widget/AdapterView$OnItemClickListener;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getDropDownVerticalOffset()"/> <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setDropDownVerticalOffset(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getItemSelectedListener()"/>
         /// </summary>
-        public int DropDownVerticalOffset
+        /// <returns><see cref="Android.Widget.AdapterView.OnItemSelectedListener"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.AdapterView.OnItemSelectedListener GetItemSelectedListener()
         {
-            get { return IExecuteWithSignature<int>("getDropDownVerticalOffset", "()I"); } set { IExecuteWithSignature("setDropDownVerticalOffset", "(I)V", value); }
+            return IExecuteWithSignature<Android.Widget.AdapterView.OnItemSelectedListener>("getItemSelectedListener", "()Landroid/widget/AdapterView$OnItemSelectedListener;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getDropDownWidth()"/> <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setDropDownWidth(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getItemSelectedListener()"/>
         /// </summary>
-        public int DropDownWidth
+        /// <returns><see cref="Android.Widget.AdapterView.OnItemSelectedListener"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.AdapterView.OnItemSelectedListener GetItemSelectedListenerDirect()
         {
-            get { return IExecuteWithSignature<int>("getDropDownWidth", "()I"); } set { IExecuteWithSignature("setDropDownWidth", "(I)V", value); }
+            return IExecuteWithSignature<Android.Widget.AdapterView.OnItemSelectedListenerDirect, Android.Widget.AdapterView.OnItemSelectedListener>("getItemSelectedListener", "()Landroid/widget/AdapterView$OnItemSelectedListener;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getValidator()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getOnItemSelectedListener()"/>
         /// </summary>
-        public Android.Widget.AutoCompleteTextView.Validator GetValidator
+        /// <returns><see cref="Android.Widget.AdapterView.OnItemSelectedListener"/></returns>
+        public Android.Widget.AdapterView.OnItemSelectedListener GetOnItemSelectedListener()
         {
-            get { return IExecuteWithSignature<Android.Widget.AutoCompleteTextView.Validator>("getValidator", "()Landroid/widget/AutoCompleteTextView$Validator;"); }
+            return IExecuteWithSignature<Android.Widget.AdapterView.OnItemSelectedListener>("getOnItemSelectedListener", "()Landroid/widget/AdapterView$OnItemSelectedListener;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getInputMethodMode()"/> <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setInputMethodMode(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getOnItemSelectedListener()"/>
         /// </summary>
-        public int InputMethodMode
+        /// <returns><see cref="Android.Widget.AdapterView.OnItemSelectedListener"/></returns>
+        public Android.Widget.AdapterView.OnItemSelectedListener GetOnItemSelectedListenerDirect()
         {
-            get { return IExecuteWithSignature<int>("getInputMethodMode", "()I"); } set { IExecuteWithSignature("setInputMethodMode", "(I)V", value); }
+            return IExecuteWithSignature<Android.Widget.AdapterView.OnItemSelectedListenerDirect, Android.Widget.AdapterView.OnItemSelectedListener>("getOnItemSelectedListener", "()Landroid/widget/AdapterView$OnItemSelectedListener;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getItemClickListener()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getValidator()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Widget.AdapterView.OnItemClickListener ItemClickListener
+        /// <returns><see cref="Android.Widget.AutoCompleteTextView.Validator"/></returns>
+        public Android.Widget.AutoCompleteTextView.Validator GetValidator()
         {
-            get { return IExecuteWithSignature<Android.Widget.AdapterView.OnItemClickListener>("getItemClickListener", "()Landroid/widget/AdapterView$OnItemClickListener;"); }
+            return IExecuteWithSignature<Android.Widget.AutoCompleteTextView.Validator>("getValidator", "()Landroid/widget/AutoCompleteTextView$Validator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getItemSelectedListener()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getAdapter()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Widget.AdapterView.OnItemSelectedListener ItemSelectedListener
+        /// <returns><see cref="Android.Widget.ListAdapter"/></returns>
+        public Android.Widget.ListAdapter GetAdapter()
         {
-            get { return IExecuteWithSignature<Android.Widget.AdapterView.OnItemSelectedListener>("getItemSelectedListener", "()Landroid/widget/AdapterView$OnItemSelectedListener;"); }
+            return IExecuteWithSignature<Android.Widget.ListAdapter>("getAdapter", "()Landroid/widget/ListAdapter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getListSelection()"/> <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setListSelection(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getAdapter()"/>
         /// </summary>
-        public int ListSelection
+        /// <returns><see cref="Android.Widget.ListAdapter"/></returns>
+        public Android.Widget.ListAdapter GetAdapterDirect()
         {
-            get { return IExecuteWithSignature<int>("getListSelection", "()I"); } set { IExecuteWithSignature("setListSelection", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getOnItemClickListener()"/> <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setOnItemClickListener(android.widget.AdapterView.OnItemClickListener)"/>
-        /// </summary>
-        public Android.Widget.AdapterView.OnItemClickListener OnItemClickListener
-        {
-            get { return IExecuteWithSignature<Android.Widget.AdapterView.OnItemClickListener>("getOnItemClickListener", "()Landroid/widget/AdapterView$OnItemClickListener;"); } set { IExecuteWithSignature("setOnItemClickListener", "(Landroid/widget/AdapterView$OnItemClickListener;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getOnItemSelectedListener()"/> <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setOnItemSelectedListener(android.widget.AdapterView.OnItemSelectedListener)"/>
-        /// </summary>
-        public Android.Widget.AdapterView.OnItemSelectedListener OnItemSelectedListener
-        {
-            get { return IExecuteWithSignature<Android.Widget.AdapterView.OnItemSelectedListener>("getOnItemSelectedListener", "()Landroid/widget/AdapterView$OnItemSelectedListener;"); } set { IExecuteWithSignature("setOnItemSelectedListener", "(Landroid/widget/AdapterView$OnItemSelectedListener;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getThreshold()"/> <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setThreshold(int)"/>
-        /// </summary>
-        public int Threshold
-        {
-            get { return IExecuteWithSignature<int>("getThreshold", "()I"); } set { IExecuteWithSignature("setThreshold", "(I)V", value); }
+            return IExecuteWithSignature<Android.Widget.ListAdapterDirect, Android.Widget.ListAdapter>("getAdapter", "()Landroid/widget/ListAdapter;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#enoughToFilter()"/>
@@ -239,6 +234,78 @@ namespace Android.Widget
         public void RefreshAutoCompleteResults()
         {
             IExecuteWithSignature("refreshAutoCompleteResults", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getDropDownAnchor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDropDownAnchor()
+        {
+            return IExecuteWithSignature<int>("getDropDownAnchor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getDropDownHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDropDownHeight()
+        {
+            return IExecuteWithSignature<int>("getDropDownHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getDropDownHorizontalOffset()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDropDownHorizontalOffset()
+        {
+            return IExecuteWithSignature<int>("getDropDownHorizontalOffset", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getDropDownVerticalOffset()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDropDownVerticalOffset()
+        {
+            return IExecuteWithSignature<int>("getDropDownVerticalOffset", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getDropDownWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDropDownWidth()
+        {
+            return IExecuteWithSignature<int>("getDropDownWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getInputMethodMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInputMethodMode()
+        {
+            return IExecuteWithSignature<int>("getInputMethodMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getListSelection()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetListSelection()
+        {
+            return IExecuteWithSignature<int>("getListSelection", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getThreshold()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetThreshold()
+        {
+            return IExecuteWithSignature<int>("getThreshold", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getCompletionHint()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetCompletionHint()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getCompletionHint", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#clearListSelection()"/>
@@ -277,6 +344,22 @@ namespace Android.Widget
             IExecuteWithSignature("performValidation", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setCompletionHint(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetCompletionHint(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setCompletionHint", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setDropDownAnchor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDropDownAnchor(int arg0)
+        {
+            IExecuteWithSignature("setDropDownAnchor", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setDropDownBackgroundDrawable(android.graphics.drawable.Drawable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
@@ -293,12 +376,76 @@ namespace Android.Widget
             IExecuteWithSignature("setDropDownBackgroundResource", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setDropDownHeight(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDropDownHeight(int arg0)
+        {
+            IExecuteWithSignature("setDropDownHeight", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setDropDownHorizontalOffset(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDropDownHorizontalOffset(int arg0)
+        {
+            IExecuteWithSignature("setDropDownHorizontalOffset", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setDropDownVerticalOffset(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDropDownVerticalOffset(int arg0)
+        {
+            IExecuteWithSignature("setDropDownVerticalOffset", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setDropDownWidth(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDropDownWidth(int arg0)
+        {
+            IExecuteWithSignature("setDropDownWidth", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setInputMethodMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetInputMethodMode(int arg0)
+        {
+            IExecuteWithSignature("setInputMethodMode", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setListSelection(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetListSelection(int arg0)
+        {
+            IExecuteWithSignature("setListSelection", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setOnDismissListener(android.widget.AutoCompleteTextView.OnDismissListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Widget.AutoCompleteTextView.OnDismissListener"/></param>
         public void SetOnDismissListener(Android.Widget.AutoCompleteTextView.OnDismissListener arg0)
         {
             IExecuteWithSignature("setOnDismissListener", "(Landroid/widget/AutoCompleteTextView$OnDismissListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setOnItemClickListener(android.widget.AdapterView.OnItemClickListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Widget.AdapterView.OnItemClickListener"/></param>
+        public void SetOnItemClickListener(Android.Widget.AdapterView.OnItemClickListener arg0)
+        {
+            IExecuteWithSignature("setOnItemClickListener", "(Landroid/widget/AdapterView$OnItemClickListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setOnItemSelectedListener(android.widget.AdapterView.OnItemSelectedListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Widget.AdapterView.OnItemSelectedListener"/></param>
+        public void SetOnItemSelectedListener(Android.Widget.AdapterView.OnItemSelectedListener arg0)
+        {
+            IExecuteWithSignature("setOnItemSelectedListener", "(Landroid/widget/AdapterView$OnItemSelectedListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setText(java.lang.CharSequence,boolean)"/>
@@ -308,6 +455,14 @@ namespace Android.Widget
         public void SetText(Java.Lang.CharSequence arg0, bool arg1)
         {
             IExecute("setText", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setThreshold(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetThreshold(int arg0)
+        {
+            IExecuteWithSignature("setThreshold", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setValidator(android.widget.AutoCompleteTextView.Validator)"/>
@@ -353,7 +508,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDismiss", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnDismissEventHandler));
+                AddEventHandler("onDismiss", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnDismissEventHandler));
 
             }
 
@@ -361,7 +516,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.OnDismissListener.html#onDismiss()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDismiss"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnDismiss { get; set; } = null;
+            public global::System.Action OnOnDismiss { get; set; } = null;
 
             void OnDismissEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {

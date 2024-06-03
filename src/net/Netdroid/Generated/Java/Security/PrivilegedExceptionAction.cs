@@ -46,7 +46,7 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/PrivilegedExceptionAction.html#run()"/>
+        /// <see href="https://developer.android.com/reference/java/security/PrivilegedExceptionAction.html#run()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.Exception"/>
@@ -108,7 +108,7 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/PrivilegedExceptionAction.html#run()"/>
+        /// <see href="https://developer.android.com/reference/java/security/PrivilegedExceptionAction.html#run()"/>
         /// </summary>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Lang.Exception"/>

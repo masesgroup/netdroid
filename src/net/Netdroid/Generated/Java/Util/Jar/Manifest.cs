@@ -30,7 +30,7 @@ namespace Java.Util.Jar
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/Manifest.html#%3Cinit%3E(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/Manifest.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -39,7 +39,7 @@ namespace Java.Util.Jar
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/Manifest.html#%3Cinit%3E(java.util.jar.Manifest)"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/Manifest.html#%3Cinit%3E(java.util.jar.Manifest)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Jar.Manifest"/></param>
         public Manifest(Java.Util.Jar.Manifest arg0)
@@ -63,21 +63,7 @@ namespace Java.Util.Jar
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/Manifest.html#getEntries()"/> 
-        /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Util.Jar.Attributes> Entries
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Jar.Attributes>>("getEntries", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/Manifest.html#getMainAttributes()"/> 
-        /// </summary>
-        public Java.Util.Jar.Attributes MainAttributes
-        {
-            get { return IExecuteWithSignature<Java.Util.Jar.Attributes>("getMainAttributes", "()Ljava/util/jar/Attributes;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/Manifest.html#getAttributes(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/Manifest.html#getAttributes(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Jar.Attributes"/></returns>
@@ -86,14 +72,30 @@ namespace Java.Util.Jar
             return IExecuteWithSignature<Java.Util.Jar.Attributes>("getAttributes", "(Ljava/lang/String;)Ljava/util/jar/Attributes;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/Manifest.html#clear()"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/Manifest.html#getMainAttributes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Jar.Attributes"/></returns>
+        public Java.Util.Jar.Attributes GetMainAttributes()
+        {
+            return IExecuteWithSignature<Java.Util.Jar.Attributes>("getMainAttributes", "()Ljava/util/jar/Attributes;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/jar/Manifest.html#getEntries()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.Jar.Attributes> GetEntries()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Jar.Attributes>>("getEntries", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/jar/Manifest.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/Manifest.html#read(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/Manifest.html#read(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -102,7 +104,7 @@ namespace Java.Util.Jar
             IExecuteWithSignature("read", "(Ljava/io/InputStream;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/Manifest.html#write(java.io.OutputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/Manifest.html#write(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <exception cref="Java.Io.IOException"/>

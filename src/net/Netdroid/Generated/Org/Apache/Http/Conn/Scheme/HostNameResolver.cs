@@ -69,7 +69,7 @@ namespace Org.Apache.Http.Conn.Scheme
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Net.InetAddress"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Net.InetAddress Resolve(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Net.InetAddress>("resolve", "(Ljava/lang/String;)Ljava/net/InetAddress;", arg0);

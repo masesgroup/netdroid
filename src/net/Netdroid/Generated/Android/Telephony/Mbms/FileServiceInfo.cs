@@ -56,19 +56,20 @@ namespace Android.Telephony.Mbms
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/mbms/FileServiceInfo.html#getFiles()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Telephony.Mbms.FileInfo> Files
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telephony.Mbms.FileInfo>>("getFiles", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/mbms/FileServiceInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/mbms/FileServiceInfo.html#getFiles()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telephony.Mbms.FileInfo> GetFiles()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telephony.Mbms.FileInfo>>("getFiles", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/mbms/FileServiceInfo.html#writeToParcel(android.os.Parcel,int)"/>

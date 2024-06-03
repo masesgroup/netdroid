@@ -62,25 +62,20 @@ namespace Android.Telecom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/GatewayInfo.html#getGatewayAddress()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/GatewayInfo.html#getGatewayAddress()"/>
         /// </summary>
-        public Android.Net.Uri GatewayAddress
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetGatewayAddress()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getGatewayAddress", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getGatewayAddress", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/GatewayInfo.html#getGatewayProviderPackageName()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/GatewayInfo.html#getOriginalAddress()"/>
         /// </summary>
-        public Java.Lang.String GatewayProviderPackageName
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetOriginalAddress()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getGatewayProviderPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/GatewayInfo.html#getOriginalAddress()"/> 
-        /// </summary>
-        public Android.Net.Uri OriginalAddress
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getOriginalAddress", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getOriginalAddress", "()Landroid/net/Uri;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/GatewayInfo.html#isEmpty()"/>
@@ -97,6 +92,14 @@ namespace Android.Telecom
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/GatewayInfo.html#getGatewayProviderPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetGatewayProviderPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getGatewayProviderPackageName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/GatewayInfo.html#writeToParcel(android.os.Parcel,int)"/>

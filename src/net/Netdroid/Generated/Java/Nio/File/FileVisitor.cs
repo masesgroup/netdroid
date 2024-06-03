@@ -46,7 +46,7 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitor.html#postVisitDirectory(java.lang.Object,java.io.IOException)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitor.html#postVisitDirectory(java.lang.Object,java.io.IOException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
@@ -57,7 +57,7 @@ namespace Java.Nio.File
             return IExecute<Java.Nio.File.FileVisitResult>("postVisitDirectory", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitor.html#preVisitDirectory(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitor.html#preVisitDirectory(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></param>
@@ -68,7 +68,7 @@ namespace Java.Nio.File
             return IExecute<Java.Nio.File.FileVisitResult>("preVisitDirectory", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitor.html#visitFile(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitor.html#visitFile(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></param>
@@ -79,7 +79,7 @@ namespace Java.Nio.File
             return IExecute<Java.Nio.File.FileVisitResult>("visitFile", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitor.html#visitFileFailed(java.lang.Object,java.io.IOException)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitor.html#visitFileFailed(java.lang.Object,java.io.IOException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
@@ -143,7 +143,7 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitor.html#postVisitDirectory(java.lang.Object,java.io.IOException)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitor.html#postVisitDirectory(java.lang.Object,java.io.IOException)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
@@ -154,7 +154,7 @@ namespace Java.Nio.File
             return IExecute<Java.Nio.File.FileVisitResult>("postVisitDirectory", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitor.html#preVisitDirectory(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitor.html#preVisitDirectory(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></param>
@@ -165,7 +165,7 @@ namespace Java.Nio.File
             return IExecute<Java.Nio.File.FileVisitResult>("preVisitDirectory", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitor.html#visitFile(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitor.html#visitFile(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></param>
@@ -176,7 +176,7 @@ namespace Java.Nio.File
             return IExecute<Java.Nio.File.FileVisitResult>("visitFile", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitor.html#visitFileFailed(java.lang.Object,java.io.IOException)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitor.html#visitFileFailed(java.lang.Object,java.io.IOException)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Io.IOException"/></param>

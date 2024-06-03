@@ -52,54 +52,12 @@ namespace Android.Net.Nsd
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#getAttributes()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#getNetwork()"/>
         /// </summary>
-        public Java.Util.Map<Java.Lang.String, byte[]> Attributes
+        /// <returns><see cref="Android.Net.Network"/></returns>
+        public Android.Net.Network GetNetwork()
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, byte[]>>("getAttributes", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#getHost()"/> <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#setHost(java.net.InetAddress)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Net.InetAddress Host
-        {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getHost", "()Ljava/net/InetAddress;"); } set { IExecuteWithSignature("setHost", "(Ljava/net/InetAddress;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#getHostAddresses()"/> <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#setHostAddresses(java.util.List)"/>
-        /// </summary>
-        public Java.Util.List<Java.Net.InetAddress> HostAddresses
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Net.InetAddress>>("getHostAddresses", "()Ljava/util/List;"); } set { IExecuteWithSignature("setHostAddresses", "(Ljava/util/List;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#getNetwork()"/> <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#setNetwork(android.net.Network)"/>
-        /// </summary>
-        public Android.Net.Network Network
-        {
-            get { return IExecuteWithSignature<Android.Net.Network>("getNetwork", "()Landroid/net/Network;"); } set { IExecuteWithSignature("setNetwork", "(Landroid/net/Network;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#getPort()"/> <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#setPort(int)"/>
-        /// </summary>
-        public int Port
-        {
-            get { return IExecuteWithSignature<int>("getPort", "()I"); } set { IExecuteWithSignature("setPort", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#getServiceName()"/> <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#setServiceName(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String ServiceName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getServiceName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setServiceName", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#getServiceType()"/> <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#setServiceType(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String ServiceType
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getServiceType", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setServiceType", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Android.Net.Network>("getNetwork", "()Landroid/net/Network;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#describeContents()"/>
@@ -108,6 +66,55 @@ namespace Android.Net.Nsd
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#getPort()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPort()
+        {
+            return IExecuteWithSignature<int>("getPort", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#getServiceName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetServiceName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getServiceName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#getServiceType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetServiceType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getServiceType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#getHost()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        [global::System.Obsolete()]
+        public Java.Net.InetAddress GetHost()
+        {
+            return IExecuteWithSignature<Java.Net.InetAddress>("getHost", "()Ljava/net/InetAddress;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#getHostAddresses()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Net.InetAddress> GetHostAddresses()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Net.InetAddress>>("getHostAddresses", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#getAttributes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, byte[]> GetAttributes()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, byte[]>>("getAttributes", "()Ljava/util/Map;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#removeAttribute(java.lang.String)"/>
@@ -125,6 +132,55 @@ namespace Android.Net.Nsd
         public void SetAttribute(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecute("setAttribute", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#setHost(java.net.InetAddress)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
+        [global::System.Obsolete()]
+        public void SetHost(Java.Net.InetAddress arg0)
+        {
+            IExecuteWithSignature("setHost", "(Ljava/net/InetAddress;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#setHostAddresses(java.util.List)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public void SetHostAddresses(Java.Util.List<Java.Net.InetAddress> arg0)
+        {
+            IExecuteWithSignature("setHostAddresses", "(Ljava/util/List;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#setNetwork(android.net.Network)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Network"/></param>
+        public void SetNetwork(Android.Net.Network arg0)
+        {
+            IExecuteWithSignature("setNetwork", "(Landroid/net/Network;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#setPort(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetPort(int arg0)
+        {
+            IExecuteWithSignature("setPort", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#setServiceName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetServiceName(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setServiceName", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#setServiceType(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetServiceType(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setServiceType", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#writeToParcel(android.os.Parcel,int)"/>

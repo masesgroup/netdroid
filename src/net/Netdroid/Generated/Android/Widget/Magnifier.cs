@@ -33,7 +33,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#%3Cinit%3E(android.view.View)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Magnifier(Android.View.View arg0)
             : base(arg0)
         {
@@ -67,88 +67,28 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getCornerRadius()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getOverlay()"/>
         /// </summary>
-        public float CornerRadius
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetOverlay()
         {
-            get { return IExecuteWithSignature<float>("getCornerRadius", "()F"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getOverlay", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getDefaultHorizontalSourceToMagnifierOffset()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getPosition()"/>
         /// </summary>
-        public int DefaultHorizontalSourceToMagnifierOffset
+        /// <returns><see cref="Android.Graphics.Point"/></returns>
+        public Android.Graphics.Point GetPosition()
         {
-            get { return IExecuteWithSignature<int>("getDefaultHorizontalSourceToMagnifierOffset", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.Point>("getPosition", "()Landroid/graphics/Point;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getDefaultVerticalSourceToMagnifierOffset()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getSourcePosition()"/>
         /// </summary>
-        public int DefaultVerticalSourceToMagnifierOffset
+        /// <returns><see cref="Android.Graphics.Point"/></returns>
+        public Android.Graphics.Point GetSourcePosition()
         {
-            get { return IExecuteWithSignature<int>("getDefaultVerticalSourceToMagnifierOffset", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getElevation()"/> 
-        /// </summary>
-        public float Elevation
-        {
-            get { return IExecuteWithSignature<float>("getElevation", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getHeight()"/> 
-        /// </summary>
-        public int Height
-        {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getOverlay()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable Overlay
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getOverlay", "()Landroid/graphics/drawable/Drawable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getPosition()"/> 
-        /// </summary>
-        public Android.Graphics.Point Position
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Point>("getPosition", "()Landroid/graphics/Point;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getSourceHeight()"/> 
-        /// </summary>
-        public int SourceHeight
-        {
-            get { return IExecuteWithSignature<int>("getSourceHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getSourcePosition()"/> 
-        /// </summary>
-        public Android.Graphics.Point SourcePosition
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Point>("getSourcePosition", "()Landroid/graphics/Point;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getSourceWidth()"/> 
-        /// </summary>
-        public int SourceWidth
-        {
-            get { return IExecuteWithSignature<int>("getSourceWidth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getWidth()"/> 
-        /// </summary>
-        public int Width
-        {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getZoom()"/> <see href="https://developer.android.com/reference/android/widget/Magnifier.html#setZoom(float)"/>
-        /// </summary>
-        public float Zoom
-        {
-            get { return IExecuteWithSignature<float>("getZoom", "()F"); } set { IExecuteWithSignature("setZoom", "(F)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Point>("getSourcePosition", "()Landroid/graphics/Point;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#isClippingEnabled()"/>
@@ -159,11 +99,91 @@ namespace Android.Widget
             return IExecuteWithSignature<bool>("isClippingEnabled", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getCornerRadius()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetCornerRadius()
+        {
+            return IExecuteWithSignature<float>("getCornerRadius", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getElevation()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetElevation()
+        {
+            return IExecuteWithSignature<float>("getElevation", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getZoom()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetZoom()
+        {
+            return IExecuteWithSignature<float>("getZoom", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getDefaultHorizontalSourceToMagnifierOffset()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDefaultHorizontalSourceToMagnifierOffset()
+        {
+            return IExecuteWithSignature<int>("getDefaultHorizontalSourceToMagnifierOffset", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getDefaultVerticalSourceToMagnifierOffset()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDefaultVerticalSourceToMagnifierOffset()
+        {
+            return IExecuteWithSignature<int>("getDefaultVerticalSourceToMagnifierOffset", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHeight()
+        {
+            return IExecuteWithSignature<int>("getHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getSourceHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSourceHeight()
+        {
+            return IExecuteWithSignature<int>("getSourceHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getSourceWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSourceWidth()
+        {
+            return IExecuteWithSignature<int>("getSourceWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWidth()
+        {
+            return IExecuteWithSignature<int>("getWidth", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#dismiss()"/>
         /// </summary>
         public void Dismiss()
         {
             IExecuteWithSignature("dismiss", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#setZoom(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetZoom(float arg0)
+        {
+            IExecuteWithSignature("setZoom", "(F)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#show(float,float,float,float)"/>

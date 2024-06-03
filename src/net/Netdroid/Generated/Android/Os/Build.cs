@@ -58,14 +58,14 @@ namespace Android.Os
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Build.html#CPU_ABI"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String CPU_ABI { get { if (!_CPU_ABIReady) { _CPU_ABIContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CPU_ABI"); _CPU_ABIReady = true; } return _CPU_ABIContent; } }
         private static Java.Lang.String _CPU_ABIContent = default;
         private static bool _CPU_ABIReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Build.html#CPU_ABI2"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String CPU_ABI2 { get { if (!_CPU_ABI2Ready) { _CPU_ABI2Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "CPU_ABI2"); _CPU_ABI2Ready = true; } return _CPU_ABI2Content; } }
         private static Java.Lang.String _CPU_ABI2Content = default;
         private static bool _CPU_ABI2Ready = false; // this is used because in case of generics 
@@ -132,14 +132,14 @@ namespace Android.Os
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Build.html#RADIO"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String RADIO { get { if (!_RADIOReady) { _RADIOContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "RADIO"); _RADIOReady = true; } return _RADIOContent; } }
         private static Java.Lang.String _RADIOContent = default;
         private static bool _RADIOReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Build.html#SERIAL"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String SERIAL { get { if (!_SERIALReady) { _SERIALContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SERIAL"); _SERIALReady = true; } return _SERIALContent; } }
         private static Java.Lang.String _SERIALContent = default;
         private static bool _SERIALReady = false; // this is used because in case of generics 
@@ -214,25 +214,28 @@ namespace Android.Os
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Build.html#getFingerprintedPartitions()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/Build.html#getRadioVersion()"/>
         /// </summary>
-        public static Java.Util.List<Android.Os.Build.Partition> FingerprintedPartitions
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String GetRadioVersion()
         {
-            get { return SExecuteWithSignature<Java.Util.List<Android.Os.Build.Partition>>(LocalBridgeClazz, "getFingerprintedPartitions", "()Ljava/util/List;"); }
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getRadioVersion", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Build.html#getRadioVersion()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/Build.html#getSerial()"/>
         /// </summary>
-        public static Java.Lang.String RadioVersion
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String GetSerial()
         {
-            get { return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getRadioVersion", "()Ljava/lang/String;"); }
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getSerial", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Build.html#getSerial()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/Build.html#getFingerprintedPartitions()"/>
         /// </summary>
-        public static Java.Lang.String Serial
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public static Java.Util.List<Android.Os.Build.Partition> GetFingerprintedPartitions()
         {
-            get { return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getSerial", "()Ljava/lang/String;"); }
+            return SExecuteWithSignature<Java.Util.List<Android.Os.Build.Partition>>(LocalBridgeClazz, "getFingerprintedPartitions", "()Ljava/util/List;");
         }
 
         #endregion
@@ -269,25 +272,28 @@ namespace Android.Os
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/os/Build.Partition.html#getBuildTimeMillis()"/> 
+            /// <see href="https://developer.android.com/reference/android/os/Build.Partition.html#getFingerprint()"/>
             /// </summary>
-            public long BuildTimeMillis
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetFingerprint()
             {
-                get { return IExecuteWithSignature<long>("getBuildTimeMillis", "()J"); }
+                return IExecuteWithSignature<Java.Lang.String>("getFingerprint", "()Ljava/lang/String;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/os/Build.Partition.html#getFingerprint()"/> 
+            /// <see href="https://developer.android.com/reference/android/os/Build.Partition.html#getName()"/>
             /// </summary>
-            public Java.Lang.String Fingerprint
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetName()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getFingerprint", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/os/Build.Partition.html#getName()"/> 
+            /// <see href="https://developer.android.com/reference/android/os/Build.Partition.html#getBuildTimeMillis()"/>
             /// </summary>
-            public Java.Lang.String Name
+            /// <returns><see cref="long"/></returns>
+            public long GetBuildTimeMillis()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<long>("getBuildTimeMillis", "()J");
             }
 
             #endregion
@@ -369,7 +375,7 @@ namespace Android.Os
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/Build.VERSION.html#SDK"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SDK { get { if (!_SDKReady) { _SDKContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SDK"); _SDKReady = true; } return _SDKContent; } }
             private static Java.Lang.String _SDKContent = default;
             private static bool _SDKReady = false; // this is used because in case of generics 

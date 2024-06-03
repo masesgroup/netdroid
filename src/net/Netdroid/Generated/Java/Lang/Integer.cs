@@ -30,20 +30,20 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Integer(int arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Lang.NumberFormatException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Integer(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -61,31 +61,31 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#BYTES"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#BYTES"/>
         /// </summary>
         public static int BYTES { get { if (!_BYTESReady) { _BYTESContent = SGetField<int>(LocalBridgeClazz, "BYTES"); _BYTESReady = true; } return _BYTESContent; } }
         private static int _BYTESContent = default;
         private static bool _BYTESReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#MAX_VALUE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#MAX_VALUE"/>
         /// </summary>
         public static int MAX_VALUE { get { if (!_MAX_VALUEReady) { _MAX_VALUEContent = SGetField<int>(LocalBridgeClazz, "MAX_VALUE"); _MAX_VALUEReady = true; } return _MAX_VALUEContent; } }
         private static int _MAX_VALUEContent = default;
         private static bool _MAX_VALUEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#MIN_VALUE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#MIN_VALUE"/>
         /// </summary>
         public static int MIN_VALUE { get { if (!_MIN_VALUEReady) { _MIN_VALUEContent = SGetField<int>(LocalBridgeClazz, "MIN_VALUE"); _MIN_VALUEReady = true; } return _MIN_VALUEContent; } }
         private static int _MIN_VALUEContent = default;
         private static bool _MIN_VALUEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#SIZE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#SIZE"/>
         /// </summary>
         public static int SIZE { get { if (!_SIZEReady) { _SIZEContent = SGetField<int>(LocalBridgeClazz, "SIZE"); _SIZEReady = true; } return _SIZEContent; } }
         private static int _SIZEContent = default;
         private static bool _SIZEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#TYPE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#TYPE"/>
         /// </summary>
         public static Java.Lang.Class TYPE { get { if (!_TYPEReady) { _TYPEContent = SGetField<Java.Lang.Class>(LocalBridgeClazz, "TYPE"); _TYPEReady = true; } return _TYPEContent; } }
         private static Java.Lang.Class _TYPEContent = default;
@@ -95,7 +95,7 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#bitCount(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#bitCount(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -104,7 +104,7 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "bitCount", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#compare(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#compare(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -114,7 +114,7 @@ namespace Java.Lang
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#compareUnsigned(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#compareUnsigned(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -124,7 +124,7 @@ namespace Java.Lang
             return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#divideUnsigned(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#divideUnsigned(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -134,7 +134,7 @@ namespace Java.Lang
             return SExecute<int>(LocalBridgeClazz, "divideUnsigned", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#hashCode(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#hashCode(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -143,7 +143,7 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#highestOneBit(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#highestOneBit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -152,7 +152,7 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "highestOneBit", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#lowestOneBit(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#lowestOneBit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -161,7 +161,7 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "lowestOneBit", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#max(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#max(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -171,7 +171,7 @@ namespace Java.Lang
             return SExecute<int>(LocalBridgeClazz, "max", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#min(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#min(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -181,7 +181,7 @@ namespace Java.Lang
             return SExecute<int>(LocalBridgeClazz, "min", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#numberOfLeadingZeros(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#numberOfLeadingZeros(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -190,7 +190,7 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "numberOfLeadingZeros", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#numberOfTrailingZeros(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#numberOfTrailingZeros(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -199,7 +199,7 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "numberOfTrailingZeros", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#parseInt(java.lang.CharSequence,int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#parseInt(java.lang.CharSequence,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -212,7 +212,7 @@ namespace Java.Lang
             return SExecute<int>(LocalBridgeClazz, "parseInt", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#parseInt(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#parseInt(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -223,7 +223,7 @@ namespace Java.Lang
             return SExecute<int>(LocalBridgeClazz, "parseInt", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#parseInt(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#parseInt(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
@@ -233,7 +233,7 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "parseInt", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#parseUnsignedInt(java.lang.CharSequence,int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#parseUnsignedInt(java.lang.CharSequence,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -246,7 +246,7 @@ namespace Java.Lang
             return SExecute<int>(LocalBridgeClazz, "parseUnsignedInt", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#parseUnsignedInt(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#parseUnsignedInt(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -257,7 +257,7 @@ namespace Java.Lang
             return SExecute<int>(LocalBridgeClazz, "parseUnsignedInt", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#parseUnsignedInt(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#parseUnsignedInt(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
@@ -267,7 +267,7 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "parseUnsignedInt", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#remainderUnsigned(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#remainderUnsigned(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -277,7 +277,7 @@ namespace Java.Lang
             return SExecute<int>(LocalBridgeClazz, "remainderUnsigned", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#reverse(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#reverse(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -286,7 +286,7 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "reverse", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#reverseBytes(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#reverseBytes(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -295,7 +295,7 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "reverseBytes", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#rotateLeft(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#rotateLeft(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -305,7 +305,7 @@ namespace Java.Lang
             return SExecute<int>(LocalBridgeClazz, "rotateLeft", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#rotateRight(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#rotateRight(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -315,7 +315,7 @@ namespace Java.Lang
             return SExecute<int>(LocalBridgeClazz, "rotateRight", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#signum(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#signum(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -324,7 +324,7 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "signum", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#sum(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#sum(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -334,7 +334,7 @@ namespace Java.Lang
             return SExecute<int>(LocalBridgeClazz, "sum", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#decode(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#decode(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Integer"/></returns>
@@ -344,7 +344,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.Integer>(LocalBridgeClazz, "decode", "(Ljava/lang/String;)Ljava/lang/Integer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#getInteger(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#getInteger(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -354,7 +354,7 @@ namespace Java.Lang
             return SExecute<Java.Lang.Integer>(LocalBridgeClazz, "getInteger", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#getInteger(java.lang.String,java.lang.Integer)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#getInteger(java.lang.String,java.lang.Integer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Integer"/></param>
@@ -364,7 +364,7 @@ namespace Java.Lang
             return SExecute<Java.Lang.Integer>(LocalBridgeClazz, "getInteger", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#getInteger(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#getInteger(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Integer"/></returns>
@@ -373,7 +373,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.Integer>(LocalBridgeClazz, "getInteger", "(Ljava/lang/String;)Ljava/lang/Integer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#valueOf(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#valueOf(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.Integer"/></returns>
@@ -382,7 +382,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.Integer>(LocalBridgeClazz, "valueOf", "(I)Ljava/lang/Integer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#valueOf(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#valueOf(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -393,7 +393,7 @@ namespace Java.Lang
             return SExecute<Java.Lang.Integer>(LocalBridgeClazz, "valueOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Integer"/></returns>
@@ -403,7 +403,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.Integer>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/Integer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#toBinaryString(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#toBinaryString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -412,7 +412,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toBinaryString", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#toHexString(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#toHexString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -421,7 +421,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toHexString", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#toOctalString(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#toOctalString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -430,7 +430,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toOctalString", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#toString(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#toString(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -440,7 +440,7 @@ namespace Java.Lang
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#toString(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#toString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -449,7 +449,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#toUnsignedString(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#toUnsignedString(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -459,7 +459,7 @@ namespace Java.Lang
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "toUnsignedString", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#toUnsignedString(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#toUnsignedString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -468,7 +468,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toUnsignedString", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#toUnsignedLong(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#toUnsignedLong(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="long"/></returns>
@@ -481,7 +481,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#compareTo(java.lang.Integer)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#compareTo(java.lang.Integer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Integer"/></param>
         /// <returns><see cref="int"/></returns>
@@ -490,7 +490,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Integer;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -499,7 +499,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
         /// <returns><see cref="object"/></returns>
@@ -509,7 +509,7 @@ namespace Java.Lang
             return IExecuteWithSignature("resolveConstantDesc", "(Ljava/lang/invoke/MethodHandles$Lookup;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#describeConstable()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Integer.html#describeConstable()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<Java.Lang.Integer> DescribeConstable()

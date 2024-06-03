@@ -231,7 +231,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET { get { if (!_FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESETReady) { _FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESETContent = SGetField<int>(LocalBridgeClazz, "FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET"); _FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESETReady = true; } return _FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESETContent; } }
         private static int _FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESETContent = default;
         private static bool _FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESETReady = false; // this is used because in case of generics 
@@ -574,7 +574,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#ACTION_CLOSE_SYSTEM_DIALOGS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String ACTION_CLOSE_SYSTEM_DIALOGS { get { if (!_ACTION_CLOSE_SYSTEM_DIALOGSReady) { _ACTION_CLOSE_SYSTEM_DIALOGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_CLOSE_SYSTEM_DIALOGS"); _ACTION_CLOSE_SYSTEM_DIALOGSReady = true; } return _ACTION_CLOSE_SYSTEM_DIALOGSContent; } }
         private static Java.Lang.String _ACTION_CLOSE_SYSTEM_DIALOGSContent = default;
         private static bool _ACTION_CLOSE_SYSTEM_DIALOGSReady = false; // this is used because in case of generics 
@@ -635,14 +635,14 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#ACTION_DEVICE_STORAGE_LOW"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String ACTION_DEVICE_STORAGE_LOW { get { if (!_ACTION_DEVICE_STORAGE_LOWReady) { _ACTION_DEVICE_STORAGE_LOWContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_DEVICE_STORAGE_LOW"); _ACTION_DEVICE_STORAGE_LOWReady = true; } return _ACTION_DEVICE_STORAGE_LOWContent; } }
         private static Java.Lang.String _ACTION_DEVICE_STORAGE_LOWContent = default;
         private static bool _ACTION_DEVICE_STORAGE_LOWReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#ACTION_DEVICE_STORAGE_OK"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String ACTION_DEVICE_STORAGE_OK { get { if (!_ACTION_DEVICE_STORAGE_OKReady) { _ACTION_DEVICE_STORAGE_OKContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_DEVICE_STORAGE_OK"); _ACTION_DEVICE_STORAGE_OKReady = true; } return _ACTION_DEVICE_STORAGE_OKContent; } }
         private static Java.Lang.String _ACTION_DEVICE_STORAGE_OKContent = default;
         private static bool _ACTION_DEVICE_STORAGE_OKReady = false; // this is used because in case of generics 
@@ -751,7 +751,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#ACTION_INSTALL_PACKAGE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String ACTION_INSTALL_PACKAGE { get { if (!_ACTION_INSTALL_PACKAGEReady) { _ACTION_INSTALL_PACKAGEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_INSTALL_PACKAGE"); _ACTION_INSTALL_PACKAGEReady = true; } return _ACTION_INSTALL_PACKAGEContent; } }
         private static Java.Lang.String _ACTION_INSTALL_PACKAGEContent = default;
         private static bool _ACTION_INSTALL_PACKAGEReady = false; // this is used because in case of generics 
@@ -878,7 +878,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#ACTION_MEDIA_SCANNER_SCAN_FILE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String ACTION_MEDIA_SCANNER_SCAN_FILE { get { if (!_ACTION_MEDIA_SCANNER_SCAN_FILEReady) { _ACTION_MEDIA_SCANNER_SCAN_FILEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_MEDIA_SCANNER_SCAN_FILE"); _ACTION_MEDIA_SCANNER_SCAN_FILEReady = true; } return _ACTION_MEDIA_SCANNER_SCAN_FILEContent; } }
         private static Java.Lang.String _ACTION_MEDIA_SCANNER_SCAN_FILEContent = default;
         private static bool _ACTION_MEDIA_SCANNER_SCAN_FILEReady = false; // this is used because in case of generics 
@@ -927,7 +927,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#ACTION_NEW_OUTGOING_CALL"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String ACTION_NEW_OUTGOING_CALL { get { if (!_ACTION_NEW_OUTGOING_CALLReady) { _ACTION_NEW_OUTGOING_CALLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_NEW_OUTGOING_CALL"); _ACTION_NEW_OUTGOING_CALLReady = true; } return _ACTION_NEW_OUTGOING_CALLContent; } }
         private static Java.Lang.String _ACTION_NEW_OUTGOING_CALLContent = default;
         private static bool _ACTION_NEW_OUTGOING_CALLReady = false; // this is used because in case of generics 
@@ -976,7 +976,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#ACTION_PACKAGE_INSTALL"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String ACTION_PACKAGE_INSTALL { get { if (!_ACTION_PACKAGE_INSTALLReady) { _ACTION_PACKAGE_INSTALLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_PACKAGE_INSTALL"); _ACTION_PACKAGE_INSTALLReady = true; } return _ACTION_PACKAGE_INSTALLContent; } }
         private static Java.Lang.String _ACTION_PACKAGE_INSTALLContent = default;
         private static bool _ACTION_PACKAGE_INSTALLReady = false; // this is used because in case of generics 
@@ -1235,21 +1235,21 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#ACTION_UMS_CONNECTED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String ACTION_UMS_CONNECTED { get { if (!_ACTION_UMS_CONNECTEDReady) { _ACTION_UMS_CONNECTEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_UMS_CONNECTED"); _ACTION_UMS_CONNECTEDReady = true; } return _ACTION_UMS_CONNECTEDContent; } }
         private static Java.Lang.String _ACTION_UMS_CONNECTEDContent = default;
         private static bool _ACTION_UMS_CONNECTEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#ACTION_UMS_DISCONNECTED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String ACTION_UMS_DISCONNECTED { get { if (!_ACTION_UMS_DISCONNECTEDReady) { _ACTION_UMS_DISCONNECTEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_UMS_DISCONNECTED"); _ACTION_UMS_DISCONNECTEDReady = true; } return _ACTION_UMS_DISCONNECTEDContent; } }
         private static Java.Lang.String _ACTION_UMS_DISCONNECTEDContent = default;
         private static bool _ACTION_UMS_DISCONNECTEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#ACTION_UNINSTALL_PACKAGE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String ACTION_UNINSTALL_PACKAGE { get { if (!_ACTION_UNINSTALL_PACKAGEReady) { _ACTION_UNINSTALL_PACKAGEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_UNINSTALL_PACKAGE"); _ACTION_UNINSTALL_PACKAGEReady = true; } return _ACTION_UNINSTALL_PACKAGEContent; } }
         private static Java.Lang.String _ACTION_UNINSTALL_PACKAGEContent = default;
         private static bool _ACTION_UNINSTALL_PACKAGEReady = false; // this is used because in case of generics 
@@ -1316,7 +1316,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#ACTION_WALLPAPER_CHANGED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String ACTION_WALLPAPER_CHANGED { get { if (!_ACTION_WALLPAPER_CHANGEDReady) { _ACTION_WALLPAPER_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_WALLPAPER_CHANGED"); _ACTION_WALLPAPER_CHANGEDReady = true; } return _ACTION_WALLPAPER_CHANGEDContent; } }
         private static Java.Lang.String _ACTION_WALLPAPER_CHANGEDContent = default;
         private static bool _ACTION_WALLPAPER_CHANGEDReady = false; // this is used because in case of generics 
@@ -1587,7 +1587,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#EXTRA_ALLOW_REPLACE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_ALLOW_REPLACE { get { if (!_EXTRA_ALLOW_REPLACEReady) { _EXTRA_ALLOW_REPLACEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_ALLOW_REPLACE"); _EXTRA_ALLOW_REPLACEReady = true; } return _EXTRA_ALLOW_REPLACEContent; } }
         private static Java.Lang.String _EXTRA_ALLOW_REPLACEContent = default;
         private static bool _EXTRA_ALLOW_REPLACEReady = false; // this is used because in case of generics 
@@ -1666,7 +1666,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#EXTRA_CHANGED_COMPONENT_NAME"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_CHANGED_COMPONENT_NAME { get { if (!_EXTRA_CHANGED_COMPONENT_NAMEReady) { _EXTRA_CHANGED_COMPONENT_NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_CHANGED_COMPONENT_NAME"); _EXTRA_CHANGED_COMPONENT_NAMEReady = true; } return _EXTRA_CHANGED_COMPONENT_NAMEContent; } }
         private static Java.Lang.String _EXTRA_CHANGED_COMPONENT_NAMEContent = default;
         private static bool _EXTRA_CHANGED_COMPONENT_NAMEReady = false; // this is used because in case of generics 
@@ -1973,14 +1973,14 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#EXTRA_SHORTCUT_ICON"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_SHORTCUT_ICON { get { if (!_EXTRA_SHORTCUT_ICONReady) { _EXTRA_SHORTCUT_ICONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SHORTCUT_ICON"); _EXTRA_SHORTCUT_ICONReady = true; } return _EXTRA_SHORTCUT_ICONContent; } }
         private static Java.Lang.String _EXTRA_SHORTCUT_ICONContent = default;
         private static bool _EXTRA_SHORTCUT_ICONReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#EXTRA_SHORTCUT_ICON_RESOURCE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_SHORTCUT_ICON_RESOURCE { get { if (!_EXTRA_SHORTCUT_ICON_RESOURCEReady) { _EXTRA_SHORTCUT_ICON_RESOURCEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SHORTCUT_ICON_RESOURCE"); _EXTRA_SHORTCUT_ICON_RESOURCEReady = true; } return _EXTRA_SHORTCUT_ICON_RESOURCEContent; } }
         private static Java.Lang.String _EXTRA_SHORTCUT_ICON_RESOURCEContent = default;
         private static bool _EXTRA_SHORTCUT_ICON_RESOURCEReady = false; // this is used because in case of generics 
@@ -1993,14 +1993,14 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#EXTRA_SHORTCUT_INTENT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_SHORTCUT_INTENT { get { if (!_EXTRA_SHORTCUT_INTENTReady) { _EXTRA_SHORTCUT_INTENTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SHORTCUT_INTENT"); _EXTRA_SHORTCUT_INTENTReady = true; } return _EXTRA_SHORTCUT_INTENTContent; } }
         private static Java.Lang.String _EXTRA_SHORTCUT_INTENTContent = default;
         private static bool _EXTRA_SHORTCUT_INTENTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#EXTRA_SHORTCUT_NAME"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_SHORTCUT_NAME { get { if (!_EXTRA_SHORTCUT_NAMEReady) { _EXTRA_SHORTCUT_NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SHORTCUT_NAME"); _EXTRA_SHORTCUT_NAMEReady = true; } return _EXTRA_SHORTCUT_NAMEContent; } }
         private static Java.Lang.String _EXTRA_SHORTCUT_NAMEContent = default;
         private static bool _EXTRA_SHORTCUT_NAMEReady = false; // this is used because in case of generics 
@@ -2131,7 +2131,7 @@ namespace Android.Content
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Android.Content.Intent"/></returns>
         /// <exception cref="Java.Net.URISyntaxException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Content.Intent GetIntent(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Android.Content.Intent>(LocalBridgeClazz, "getIntent", "(Ljava/lang/String;)Landroid/content/Intent;", arg0);
@@ -2212,111 +2212,13 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getAction()"/> 
-        /// </summary>
-        public Java.Lang.String Action
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAction", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getCategories()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> Categories
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getCategories", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getClipData()"/> <see href="https://developer.android.com/reference/android/content/Intent.html#setClipData(android.content.ClipData)"/>
-        /// </summary>
-        public Android.Content.ClipData ClipData
-        {
-            get { return IExecuteWithSignature<Android.Content.ClipData>("getClipData", "()Landroid/content/ClipData;"); } set { IExecuteWithSignature("setClipData", "(Landroid/content/ClipData;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getComponent()"/> 
-        /// </summary>
-        public Android.Content.ComponentName Component
-        {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getComponent", "()Landroid/content/ComponentName;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getData()"/> 
-        /// </summary>
-        public Android.Net.Uri Data
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getData", "()Landroid/net/Uri;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getDataString()"/> 
-        /// </summary>
-        public Java.Lang.String DataString
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDataString", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getExtras()"/> 
-        /// </summary>
-        public Android.Os.Bundle Extras
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getFlags()"/> 
-        /// </summary>
-        public int Flags
-        {
-            get { return IExecuteWithSignature<int>("getFlags", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getIdentifier()"/> 
-        /// </summary>
-        public Java.Lang.String Identifier
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getIdentifier", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getPackage()"/> 
-        /// </summary>
-        public Java.Lang.String Package
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getScheme()"/> 
-        /// </summary>
-        public Java.Lang.String Scheme
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getScheme", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getSelector()"/> <see href="https://developer.android.com/reference/android/content/Intent.html#setSelector(android.content.Intent)"/>
-        /// </summary>
-        public Android.Content.Intent Selector
-        {
-            get { return IExecuteWithSignature<Android.Content.Intent>("getSelector", "()Landroid/content/Intent;"); } set { IExecuteWithSignature("setSelector", "(Landroid/content/Intent;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getSourceBounds()"/> <see href="https://developer.android.com/reference/android/content/Intent.html#setSourceBounds(android.graphics.Rect)"/>
-        /// </summary>
-        public Android.Graphics.Rect SourceBounds
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getSourceBounds", "()Landroid/graphics/Rect;"); } set { IExecuteWithSignature("setSourceBounds", "(Landroid/graphics/Rect;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.String Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getParcelableArrayListExtra(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
         /// <returns><see cref="Java.Util.ArrayList"/></returns>
-        [System.Obsolete()]
-        public Java.Util.ArrayList<T> GetParcelableArrayListExtra<T>(Java.Lang.String arg0) where T: Android.Os.IParcelable, new()
+        [global::System.Obsolete()]
+        public Java.Util.ArrayList<T> GetParcelableArrayListExtra<T>(Java.Lang.String arg0) where T : Android.Os.IParcelable, new()
         {
             return IExecuteWithSignature<Java.Util.ArrayList<T>>("getParcelableArrayListExtra", "(Ljava/lang/String;)Ljava/util/ArrayList;", arg0);
         }
@@ -2326,8 +2228,8 @@ namespace Android.Content
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        [System.Obsolete()]
-        public T GetParcelableExtra<T>(Java.Lang.String arg0) where T: Android.Os.IParcelable, new()
+        [global::System.Obsolete()]
+        public T GetParcelableExtra<T>(Java.Lang.String arg0) where T : Android.Os.IParcelable, new()
         {
             return IExecuteWithSignature<T>("getParcelableExtra", "(Ljava/lang/String;)Landroid/os/Parcelable;", arg0);
         }
@@ -2338,7 +2240,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Io.ISerializable"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T GetSerializableExtra<T>(Java.Lang.String arg0, Java.Lang.Class arg1) where T: Java.Io.ISerializable, new()
+        public T GetSerializableExtra<T>(Java.Lang.String arg0, Java.Lang.Class arg1) where T : Java.Io.ISerializable, new()
         {
             return IExecute<T>("getSerializableExtra", arg0, arg1);
         }
@@ -2376,6 +2278,22 @@ namespace Android.Content
             return IExecuteArray<T>("getParcelableArrayExtra", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getClipData()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.ClipData"/></returns>
+        public Android.Content.ClipData GetClipData()
+        {
+            return IExecuteWithSignature<Android.Content.ClipData>("getClipData", "()Landroid/content/ClipData;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getComponent()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        public Android.Content.ComponentName GetComponent()
+        {
+            return IExecuteWithSignature<Android.Content.ComponentName>("getComponent", "()Landroid/content/ComponentName;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#resolveActivity(android.content.pm.PackageManager)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Pm.PackageManager"/></param>
@@ -2409,6 +2327,14 @@ namespace Android.Content
         public Android.Content.Intent CloneFilter()
         {
             return IExecuteWithSignature<Android.Content.Intent>("cloneFilter", "()Landroid/content/Intent;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getSelector()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Intent"/></returns>
+        public Android.Content.Intent GetSelector()
+        {
+            return IExecuteWithSignature<Android.Content.Intent>("getSelector", "()Landroid/content/Intent;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putCharSequenceArrayListExtra(java.lang.String,java.util.ArrayList)"/>
@@ -2695,7 +2621,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="Java.Util.ArrayList"/></param>
         /// <typeparam name="Arg1ExtendsAndroid_Os_Parcelable"><see cref="Android.Os.Parcelable"/></typeparam>
         /// <returns><see cref="Android.Content.Intent"/></returns>
-        public Android.Content.Intent PutParcelableArrayListExtra<Arg1ExtendsAndroid_Os_Parcelable>(Java.Lang.String arg0, Java.Util.ArrayList<Arg1ExtendsAndroid_Os_Parcelable> arg1) where Arg1ExtendsAndroid_Os_Parcelable: Android.Os.Parcelable
+        public Android.Content.Intent PutParcelableArrayListExtra<Arg1ExtendsAndroid_Os_Parcelable>(Java.Lang.String arg0, Java.Util.ArrayList<Arg1ExtendsAndroid_Os_Parcelable> arg1) where Arg1ExtendsAndroid_Os_Parcelable : Android.Os.Parcelable
         {
             return IExecute<Android.Content.Intent>("putParcelableArrayListExtra", arg0, arg1);
         }
@@ -2869,6 +2795,22 @@ namespace Android.Content
             return IExecute<Android.Content.Pm.ActivityInfo>("resolveActivityInfo", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getSourceBounds()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetSourceBounds()
+        {
+            return IExecuteWithSignature<Android.Graphics.Rect>("getSourceBounds", "()Landroid/graphics/Rect;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getData()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetData()
+        {
+            return IExecuteWithSignature<Android.Net.Uri>("getData", "()Landroid/net/Uri;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getBundleExtra(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -2878,11 +2820,19 @@ namespace Android.Content
             return IExecuteWithSignature<Android.Os.Bundle>("getBundleExtra", "(Ljava/lang/String;)Landroid/os/Bundle;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getExtras()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
+        {
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getParcelableArrayExtra(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Android.Os.Parcelable"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Os.Parcelable[] GetParcelableArrayExtra(Java.Lang.String arg0)
         {
             return IExecuteWithSignatureArray<Android.Os.Parcelable>("getParcelableArrayExtra", "(Ljava/lang/String;)[Landroid/os/Parcelable;", arg0);
@@ -3044,6 +2994,14 @@ namespace Android.Content
             return IExecuteWithSignature<int>("filterHashCode", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFlags()
+        {
+            return IExecuteWithSignature<int>("getFlags", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getIntExtra(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -3067,7 +3025,7 @@ namespace Android.Content
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.Serializable"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Io.Serializable GetSerializableExtra(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Io.Serializable>("getSerializableExtra", "(Ljava/lang/String;)Ljava/io/Serializable;", arg0);
@@ -3091,6 +3049,46 @@ namespace Android.Content
             return IExecuteWithSignatureArray<Java.Lang.CharSequence>("getCharSequenceArrayExtra", "(Ljava/lang/String;)[Ljava/lang/CharSequence;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getAction()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAction()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAction", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getDataString()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDataString()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDataString", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getIdentifier()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetIdentifier()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getIdentifier", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getPackage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackage", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getScheme()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetScheme()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getScheme", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getStringExtra(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -3098,6 +3096,14 @@ namespace Android.Content
         public Java.Lang.String GetStringExtra(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getStringExtra", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#resolveType(android.content.ContentResolver)"/>
@@ -3130,7 +3136,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#toURI()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String ToURI()
         {
             return IExecuteWithSignature<Java.Lang.String>("toURI", "()Ljava/lang/String;");
@@ -3179,6 +3185,14 @@ namespace Android.Content
         public Java.Util.ArrayList<Java.Lang.String> GetStringArrayListExtra(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Util.ArrayList<Java.Lang.String>>("getStringArrayListExtra", "(Ljava/lang/String;)Ljava/util/ArrayList;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getCategories()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetCategories()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getCategories", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getLongExtra(java.lang.String,long)"/>
@@ -3251,12 +3265,36 @@ namespace Android.Content
             IExecuteWithSignature("removeFlags", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#setClipData(android.content.ClipData)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ClipData"/></param>
+        public void SetClipData(Android.Content.ClipData arg0)
+        {
+            IExecuteWithSignature("setClipData", "(Landroid/content/ClipData;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#setExtrasClassLoader(java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
         public void SetExtrasClassLoader(Java.Lang.ClassLoader arg0)
         {
             IExecuteWithSignature("setExtrasClassLoader", "(Ljava/lang/ClassLoader;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#setSelector(android.content.Intent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
+        public void SetSelector(Android.Content.Intent arg0)
+        {
+            IExecuteWithSignature("setSelector", "(Landroid/content/Intent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#setSourceBounds(android.graphics.Rect)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
+        public void SetSourceBounds(Android.Graphics.Rect arg0)
+        {
+            IExecuteWithSignature("setSourceBounds", "(Landroid/graphics/Rect;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#writeToParcel(android.os.Parcel,int)"/>
@@ -3300,11 +3338,12 @@ namespace Android.Content
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/Intent.FilterComparison.html#getIntent()"/> 
+            /// <see href="https://developer.android.com/reference/android/content/Intent.FilterComparison.html#getIntent()"/>
             /// </summary>
-            public Android.Content.Intent GetIntent
+            /// <returns><see cref="Android.Content.Intent"/></returns>
+            public Android.Content.Intent GetIntent()
             {
-                get { return IExecuteWithSignature<Android.Content.Intent>("getIntent", "()Landroid/content/Intent;"); }
+                return IExecuteWithSignature<Android.Content.Intent>("getIntent", "()Landroid/content/Intent;");
             }
 
             #endregion

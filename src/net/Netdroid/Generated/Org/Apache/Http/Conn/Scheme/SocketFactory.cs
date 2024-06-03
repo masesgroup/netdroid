@@ -69,7 +69,7 @@ namespace Org.Apache.Http.Conn.Scheme
         /// <param name="arg0"><see cref="Java.Net.Socket"/></param>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsSecure(Java.Net.Socket arg0)
         {
             return IExecuteWithSignature<bool>("isSecure", "(Ljava/net/Socket;)Z", arg0);
@@ -87,7 +87,7 @@ namespace Org.Apache.Http.Conn.Scheme
         /// <exception cref="Org.Apache.Http.Conn.ConnectTimeoutException"/>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Java.Net.UnknownHostException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Net.Socket ConnectSocket(Java.Net.Socket arg0, Java.Lang.String arg1, int arg2, Java.Net.InetAddress arg3, int arg4, Org.Apache.Http.Params.HttpParams arg5)
         {
             return IExecute<Java.Net.Socket>("connectSocket", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -97,7 +97,7 @@ namespace Org.Apache.Http.Conn.Scheme
         /// </summary>
         /// <returns><see cref="Java.Net.Socket"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Net.Socket CreateSocket()
         {
             return IExecuteWithSignature<Java.Net.Socket>("createSocket", "()Ljava/net/Socket;");

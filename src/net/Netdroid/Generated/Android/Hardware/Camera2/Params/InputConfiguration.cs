@@ -65,33 +65,36 @@ namespace Android.Hardware.Camera2.Params
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/InputConfiguration.html#getFormat()"/> 
-        /// </summary>
-        public int Format
-        {
-            get { return IExecuteWithSignature<int>("getFormat", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/InputConfiguration.html#getHeight()"/> 
-        /// </summary>
-        public int Height
-        {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/InputConfiguration.html#getWidth()"/> 
-        /// </summary>
-        public int Width
-        {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/InputConfiguration.html#isMultiResolution()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsMultiResolution()
         {
             return IExecuteWithSignature<bool>("isMultiResolution", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/InputConfiguration.html#getFormat()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFormat()
+        {
+            return IExecuteWithSignature<int>("getFormat", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/InputConfiguration.html#getHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHeight()
+        {
+            return IExecuteWithSignature<int>("getHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/InputConfiguration.html#getWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWidth()
+        {
+            return IExecuteWithSignature<int>("getWidth", "()I");
         }
 
         #endregion

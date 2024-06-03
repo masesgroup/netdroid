@@ -46,32 +46,28 @@ namespace Android.Printservice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/printservice/PrintJob.html#getDocument()"/> 
+        /// <see href="https://developer.android.com/reference/android/printservice/PrintJob.html#getId()"/>
         /// </summary>
-        public Android.Printservice.PrintDocument Document
+        /// <returns><see cref="Android.Print.PrintJobId"/></returns>
+        public Android.Print.PrintJobId GetId()
         {
-            get { return IExecuteWithSignature<Android.Printservice.PrintDocument>("getDocument", "()Landroid/printservice/PrintDocument;"); }
+            return IExecuteWithSignature<Android.Print.PrintJobId>("getId", "()Landroid/print/PrintJobId;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/printservice/PrintJob.html#getId()"/> 
+        /// <see href="https://developer.android.com/reference/android/printservice/PrintJob.html#getInfo()"/>
         /// </summary>
-        public Android.Print.PrintJobId Id
+        /// <returns><see cref="Android.Print.PrintJobInfo"/></returns>
+        public Android.Print.PrintJobInfo GetInfo()
         {
-            get { return IExecuteWithSignature<Android.Print.PrintJobId>("getId", "()Landroid/print/PrintJobId;"); }
+            return IExecuteWithSignature<Android.Print.PrintJobInfo>("getInfo", "()Landroid/print/PrintJobInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/printservice/PrintJob.html#getInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/printservice/PrintJob.html#getDocument()"/>
         /// </summary>
-        public Android.Print.PrintJobInfo Info
+        /// <returns><see cref="Android.Printservice.PrintDocument"/></returns>
+        public Android.Printservice.PrintDocument GetDocument()
         {
-            get { return IExecuteWithSignature<Android.Print.PrintJobInfo>("getInfo", "()Landroid/print/PrintJobInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/printservice/PrintJob.html#getTag()"/> 
-        /// </summary>
-        public Java.Lang.String Tag
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTag", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Printservice.PrintDocument>("getDocument", "()Landroid/printservice/PrintDocument;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/printservice/PrintJob.html#block(java.lang.String)"/>
@@ -198,6 +194,14 @@ namespace Android.Printservice
         public Java.Lang.String GetAdvancedStringOption(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getAdvancedStringOption", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/printservice/PrintJob.html#getTag()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTag()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTag", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/printservice/PrintJob.html#setProgress(float)"/>

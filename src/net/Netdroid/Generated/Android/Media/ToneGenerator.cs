@@ -661,13 +661,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ToneGenerator.html#getAudioSessionId()"/> 
-        /// </summary>
-        public int AudioSessionId
-        {
-            get { return IExecuteWithSignature<int>("getAudioSessionId", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ToneGenerator.html#startTone(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -675,6 +668,14 @@ namespace Android.Media
         public bool StartTone(int arg0)
         {
             return IExecuteWithSignature<bool>("startTone", "(I)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ToneGenerator.html#getAudioSessionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAudioSessionId()
+        {
+            return IExecuteWithSignature<int>("getAudioSessionId", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ToneGenerator.html#startTone(int,int)"/>

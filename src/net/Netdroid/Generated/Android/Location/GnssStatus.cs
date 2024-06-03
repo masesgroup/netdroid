@@ -100,13 +100,6 @@ namespace Android.Location
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssStatus.html#getSatelliteCount()"/> 
-        /// </summary>
-        public int SatelliteCount
-        {
-            get { return IExecuteWithSignature<int>("getSatelliteCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssStatus.html#hasAlmanacData(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -212,6 +205,14 @@ namespace Android.Location
         public int GetConstellationType(int arg0)
         {
             return IExecuteWithSignature<int>("getConstellationType", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssStatus.html#getSatelliteCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSatelliteCount()
+        {
+            return IExecuteWithSignature<int>("getSatelliteCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssStatus.html#getSvid(int)"/>

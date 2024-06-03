@@ -50,7 +50,7 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/DirectoryStream.html#iterator()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/DirectoryStream.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
@@ -82,7 +82,7 @@ namespace Java.Nio.File
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/nio/file/DirectoryStream.Filter.html#accept(java.lang.Object)"/>
+            /// <see href="https://developer.android.com/reference/java/nio/file/DirectoryStream.Filter.html#accept(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
             /// <returns><see cref="bool"/></returns>
@@ -127,7 +127,7 @@ namespace Java.Nio.File
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/nio/file/DirectoryStream.Filter.html#accept(java.lang.Object)"/>
+            /// <see href="https://developer.android.com/reference/java/nio/file/DirectoryStream.Filter.html#accept(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><typeparamref name="T"/></param>
             /// <returns><see cref="bool"/></returns>
@@ -201,7 +201,7 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/DirectoryStream.html#iterator()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/DirectoryStream.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<T> Iterator()

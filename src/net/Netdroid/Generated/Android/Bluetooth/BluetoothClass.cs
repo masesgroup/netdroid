@@ -70,20 +70,6 @@ namespace Android.Bluetooth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothClass.html#getDeviceClass()"/> 
-        /// </summary>
-        public int DeviceClass
-        {
-            get { return IExecuteWithSignature<int>("getDeviceClass", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothClass.html#getMajorDeviceClass()"/> 
-        /// </summary>
-        public int MajorDeviceClass
-        {
-            get { return IExecuteWithSignature<int>("getMajorDeviceClass", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothClass.html#doesClassMatch(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -108,6 +94,22 @@ namespace Android.Bluetooth
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothClass.html#getDeviceClass()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDeviceClass()
+        {
+            return IExecuteWithSignature<int>("getDeviceClass", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothClass.html#getMajorDeviceClass()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMajorDeviceClass()
+        {
+            return IExecuteWithSignature<int>("getMajorDeviceClass", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothClass.html#writeToParcel(android.os.Parcel,int)"/>

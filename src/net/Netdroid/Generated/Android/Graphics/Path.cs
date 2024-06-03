@@ -54,25 +54,20 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Path.html#getGenerationId()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/Path.html#getFillType()"/>
         /// </summary>
-        public int GenerationId
+        /// <returns><see cref="Android.Graphics.Path.FillType"/></returns>
+        public Android.Graphics.Path.FillType GetFillType()
         {
-            get { return IExecuteWithSignature<int>("getGenerationId", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.Path.FillType>("getFillType", "()Landroid/graphics/Path$FillType;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Path.html#getFillType()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/Path.html#getPathIterator()"/>
         /// </summary>
-        public Android.Graphics.Path.FillType GetFillType
+        /// <returns><see cref="Android.Graphics.PathIterator"/></returns>
+        public Android.Graphics.PathIterator GetPathIterator()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Path.FillType>("getFillType", "()Landroid/graphics/Path$FillType;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Path.html#getPathIterator()"/> 
-        /// </summary>
-        public Android.Graphics.PathIterator PathIterator
-        {
-            get { return IExecuteWithSignature<Android.Graphics.PathIterator>("getPathIterator", "()Landroid/graphics/PathIterator;"); }
+            return IExecuteWithSignature<Android.Graphics.PathIterator>("getPathIterator", "()Landroid/graphics/PathIterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#interpolate(android.graphics.Path,float,android.graphics.Path)"/>
@@ -89,7 +84,7 @@ namespace Android.Graphics
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#isConvex()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsConvex()
         {
             return IExecuteWithSignature<bool>("isConvex", "()Z");
@@ -157,6 +152,14 @@ namespace Android.Graphics
         public float[] Approximate(float arg0)
         {
             return IExecuteWithSignatureArray<float>("approximate", "(F)[F", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Path.html#getGenerationId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGenerationId()
+        {
+            return IExecuteWithSignature<int>("getGenerationId", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#addArc(android.graphics.RectF,float,float)"/>

@@ -106,25 +106,28 @@ namespace Android.Webkit
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/TracingConfig.html#getCustomIncludedCategories()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/TracingConfig.html#getPredefinedCategories()"/>
         /// </summary>
-        public Java.Util.List<Java.Lang.String> CustomIncludedCategories
+        /// <returns><see cref="int"/></returns>
+        public int GetPredefinedCategories()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getCustomIncludedCategories", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<int>("getPredefinedCategories", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/TracingConfig.html#getPredefinedCategories()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/TracingConfig.html#getTracingMode()"/>
         /// </summary>
-        public int PredefinedCategories
+        /// <returns><see cref="int"/></returns>
+        public int GetTracingMode()
         {
-            get { return IExecuteWithSignature<int>("getPredefinedCategories", "()I"); }
+            return IExecuteWithSignature<int>("getTracingMode", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/TracingConfig.html#getTracingMode()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/TracingConfig.html#getCustomIncludedCategories()"/>
         /// </summary>
-        public int TracingMode
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetCustomIncludedCategories()
         {
-            get { return IExecuteWithSignature<int>("getTracingMode", "()I"); }
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getCustomIncludedCategories", "()Ljava/util/List;");
         }
 
         #endregion

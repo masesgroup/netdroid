@@ -63,20 +63,6 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Interpolator.html#getKeyFrameCount()"/> 
-        /// </summary>
-        public int KeyFrameCount
-        {
-            get { return IExecuteWithSignature<int>("getKeyFrameCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Interpolator.html#getValueCount()"/> 
-        /// </summary>
-        public int ValueCount
-        {
-            get { return IExecuteWithSignature<int>("getValueCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Interpolator.html#timeToValues(float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -94,6 +80,22 @@ namespace Android.Graphics
         public Android.Graphics.Interpolator.Result TimeToValues(int arg0, float[] arg1)
         {
             return IExecute<Android.Graphics.Interpolator.Result>("timeToValues", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Interpolator.html#getKeyFrameCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetKeyFrameCount()
+        {
+            return IExecuteWithSignature<int>("getKeyFrameCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Interpolator.html#getValueCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetValueCount()
+        {
+            return IExecuteWithSignature<int>("getValueCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Interpolator.html#reset(int,int)"/>

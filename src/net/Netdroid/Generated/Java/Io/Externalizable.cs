@@ -64,7 +64,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Externalizable.html#readExternal(java.io.ObjectInput)"/>
+        /// <see href="https://developer.android.com/reference/java/io/Externalizable.html#readExternal(java.io.ObjectInput)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.ObjectInput"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -74,7 +74,7 @@ namespace Java.Io
             IExecuteWithSignature("readExternal", "(Ljava/io/ObjectInput;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Externalizable.html#writeExternal(java.io.ObjectOutput)"/>
+        /// <see href="https://developer.android.com/reference/java/io/Externalizable.html#writeExternal(java.io.ObjectOutput)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.ObjectOutput"/></param>
         /// <exception cref="Java.Io.IOException"/>

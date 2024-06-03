@@ -82,7 +82,7 @@ namespace Android.Health.Connect
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         /// <typeparam name="T"><see cref="Android.Health.Connect.Datatypes.Record"/></typeparam>
-        public void ReadRecords<T>(Android.Health.Connect.ReadRecordsRequest<T> arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Health.Connect.ReadRecordsResponse<T>, Android.Health.Connect.HealthConnectException> arg2) where T: Android.Health.Connect.Datatypes.Record
+        public void ReadRecords<T>(Android.Health.Connect.ReadRecordsRequest<T> arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Health.Connect.ReadRecordsResponse<T>, Android.Health.Connect.HealthConnectException> arg2) where T : Android.Health.Connect.Datatypes.Record
         {
             IExecute("readRecords", arg0, arg1, arg2);
         }

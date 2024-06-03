@@ -52,13 +52,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/RouteDiscoveryPreference.html#getPreferredFeatures()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> PreferredFeatures
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getPreferredFeatures", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RouteDiscoveryPreference.html#shouldPerformActiveScan()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -73,6 +66,14 @@ namespace Android.Media
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RouteDiscoveryPreference.html#getPreferredFeatures()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetPreferredFeatures()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getPreferredFeatures", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RouteDiscoveryPreference.html#writeToParcel(android.os.Parcel,int)"/>

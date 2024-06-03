@@ -75,18 +75,20 @@ namespace Android.Appwidget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#getAppWidgetId()"/> 
+        /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#getAppWidgetInfo()"/>
         /// </summary>
-        public int AppWidgetId
+        /// <returns><see cref="Android.Appwidget.AppWidgetProviderInfo"/></returns>
+        public Android.Appwidget.AppWidgetProviderInfo GetAppWidgetInfo()
         {
-            get { return IExecuteWithSignature<int>("getAppWidgetId", "()I"); }
+            return IExecuteWithSignature<Android.Appwidget.AppWidgetProviderInfo>("getAppWidgetInfo", "()Landroid/appwidget/AppWidgetProviderInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#getAppWidgetInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#getAppWidgetId()"/>
         /// </summary>
-        public Android.Appwidget.AppWidgetProviderInfo AppWidgetInfo
+        /// <returns><see cref="int"/></returns>
+        public int GetAppWidgetId()
         {
-            get { return IExecuteWithSignature<Android.Appwidget.AppWidgetProviderInfo>("getAppWidgetInfo", "()Landroid/appwidget/AppWidgetProviderInfo;"); }
+            return IExecuteWithSignature<int>("getAppWidgetId", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#resetColorResources()"/>
@@ -152,7 +154,7 @@ namespace Android.Appwidget
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void UpdateAppWidgetSize(Android.Os.Bundle arg0, int arg1, int arg2, int arg3, int arg4)
         {
             IExecute("updateAppWidgetSize", arg0, arg1, arg2, arg3, arg4);

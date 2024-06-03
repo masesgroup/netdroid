@@ -69,11 +69,12 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/ParcelableColorSpace.html#getColorSpace()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/ParcelableColorSpace.html#getColorSpace()"/>
         /// </summary>
-        public Android.Graphics.ColorSpace ColorSpace
+        /// <returns><see cref="Android.Graphics.ColorSpace"/></returns>
+        public Android.Graphics.ColorSpace GetColorSpace()
         {
-            get { return IExecuteWithSignature<Android.Graphics.ColorSpace>("getColorSpace", "()Landroid/graphics/ColorSpace;"); }
+            return IExecuteWithSignature<Android.Graphics.ColorSpace>("getColorSpace", "()Landroid/graphics/ColorSpace;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ParcelableColorSpace.html#describeContents()"/>

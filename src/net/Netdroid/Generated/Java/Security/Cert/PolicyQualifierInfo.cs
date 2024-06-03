@@ -30,7 +30,7 @@ namespace Java.Security.Cert
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PolicyQualifierInfo.html#%3Cinit%3E(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PolicyQualifierInfo.html#%3Cinit%3E(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -55,25 +55,28 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PolicyQualifierInfo.html#getEncoded()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/PolicyQualifierInfo.html#getEncoded()"/>
         /// </summary>
-        public byte[] Encoded
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetEncoded()
         {
-            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getEncoded", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PolicyQualifierInfo.html#getPolicyQualifier()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/PolicyQualifierInfo.html#getPolicyQualifier()"/>
         /// </summary>
-        public byte[] PolicyQualifier
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetPolicyQualifier()
         {
-            get { return IExecuteWithSignatureArray<byte>("getPolicyQualifier", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getPolicyQualifier", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PolicyQualifierInfo.html#getPolicyQualifierId()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/PolicyQualifierInfo.html#getPolicyQualifierId()"/>
         /// </summary>
-        public Java.Lang.String PolicyQualifierId
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPolicyQualifierId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPolicyQualifierId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getPolicyQualifierId", "()Ljava/lang/String;");
         }
 
         #endregion

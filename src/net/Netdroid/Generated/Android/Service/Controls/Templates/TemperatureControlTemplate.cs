@@ -124,32 +124,36 @@ namespace Android.Service.Controls.Templates
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/templates/TemperatureControlTemplate.html#getCurrentActiveMode()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/templates/TemperatureControlTemplate.html#getTemplate()"/>
         /// </summary>
-        public int CurrentActiveMode
+        /// <returns><see cref="Android.Service.Controls.Templates.ControlTemplate"/></returns>
+        public Android.Service.Controls.Templates.ControlTemplate GetTemplate()
         {
-            get { return IExecuteWithSignature<int>("getCurrentActiveMode", "()I"); }
+            return IExecuteWithSignature<Android.Service.Controls.Templates.ControlTemplate>("getTemplate", "()Landroid/service/controls/templates/ControlTemplate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/templates/TemperatureControlTemplate.html#getCurrentMode()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/templates/TemperatureControlTemplate.html#getCurrentActiveMode()"/>
         /// </summary>
-        public int CurrentMode
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrentActiveMode()
         {
-            get { return IExecuteWithSignature<int>("getCurrentMode", "()I"); }
+            return IExecuteWithSignature<int>("getCurrentActiveMode", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/templates/TemperatureControlTemplate.html#getModes()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/templates/TemperatureControlTemplate.html#getCurrentMode()"/>
         /// </summary>
-        public int Modes
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrentMode()
         {
-            get { return IExecuteWithSignature<int>("getModes", "()I"); }
+            return IExecuteWithSignature<int>("getCurrentMode", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/templates/TemperatureControlTemplate.html#getTemplate()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/templates/TemperatureControlTemplate.html#getModes()"/>
         /// </summary>
-        public Android.Service.Controls.Templates.ControlTemplate Template
+        /// <returns><see cref="int"/></returns>
+        public int GetModes()
         {
-            get { return IExecuteWithSignature<Android.Service.Controls.Templates.ControlTemplate>("getTemplate", "()Landroid/service/controls/templates/ControlTemplate;"); }
+            return IExecuteWithSignature<int>("getModes", "()I");
         }
 
         #endregion

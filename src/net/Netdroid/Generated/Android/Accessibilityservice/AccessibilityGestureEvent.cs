@@ -71,33 +71,36 @@ namespace Android.Accessibilityservice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityGestureEvent.html#getDisplayId()"/> 
-        /// </summary>
-        public int DisplayId
-        {
-            get { return IExecuteWithSignature<int>("getDisplayId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityGestureEvent.html#getGestureId()"/> 
-        /// </summary>
-        public int GestureId
-        {
-            get { return IExecuteWithSignature<int>("getGestureId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityGestureEvent.html#getMotionEvents()"/> 
-        /// </summary>
-        public Java.Util.List<Android.View.MotionEvent> MotionEvents
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.View.MotionEvent>>("getMotionEvents", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityGestureEvent.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityGestureEvent.html#getDisplayId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDisplayId()
+        {
+            return IExecuteWithSignature<int>("getDisplayId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityGestureEvent.html#getGestureId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGestureId()
+        {
+            return IExecuteWithSignature<int>("getGestureId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityGestureEvent.html#getMotionEvents()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.View.MotionEvent> GetMotionEvents()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.View.MotionEvent>>("getMotionEvents", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityGestureEvent.html#writeToParcel(android.os.Parcel,int)"/>

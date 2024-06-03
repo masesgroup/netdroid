@@ -64,21 +64,7 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Element.html#getSchemaTypeInfo()"/> 
-        /// </summary>
-        public Org.W3c.Dom.TypeInfo SchemaTypeInfo
-        {
-            get { return IExecuteWithSignature<Org.W3c.Dom.TypeInfo>("getSchemaTypeInfo", "()Lorg/w3c/dom/TypeInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Element.html#getTagName()"/> 
-        /// </summary>
-        public Java.Lang.String TagName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTagName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Element.html#hasAttribute(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Element.html#hasAttribute(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -87,7 +73,7 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<bool>("hasAttribute", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Element.html#hasAttributeNS(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Element.html#hasAttributeNS(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -98,7 +84,7 @@ namespace Org.W3c.Dom
             return IExecute<bool>("hasAttributeNS", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Element.html#getAttribute(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Element.html#getAttribute(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -107,7 +93,7 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Java.Lang.String>("getAttribute", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Element.html#getAttributeNS(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Element.html#getAttributeNS(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -118,7 +104,15 @@ namespace Org.W3c.Dom
             return IExecute<Java.Lang.String>("getAttributeNS", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Element.html#getAttributeNode(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Element.html#getTagName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTagName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTagName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Element.html#getAttributeNode(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Attr"/></returns>
@@ -127,7 +121,7 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Org.W3c.Dom.Attr>("getAttributeNode", "(Ljava/lang/String;)Lorg/w3c/dom/Attr;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Element.html#getAttributeNodeNS(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Element.html#getAttributeNodeNS(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -138,7 +132,7 @@ namespace Org.W3c.Dom
             return IExecute<Org.W3c.Dom.Attr>("getAttributeNodeNS", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Element.html#removeAttributeNode(org.w3c.dom.Attr)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Element.html#removeAttributeNode(org.w3c.dom.Attr)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Attr"/></param>
         /// <returns><see cref="Org.W3c.Dom.Attr"/></returns>
@@ -148,7 +142,7 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Org.W3c.Dom.Attr>("removeAttributeNode", "(Lorg/w3c/dom/Attr;)Lorg/w3c/dom/Attr;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Element.html#setAttributeNode(org.w3c.dom.Attr)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Element.html#setAttributeNode(org.w3c.dom.Attr)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Attr"/></param>
         /// <returns><see cref="Org.W3c.Dom.Attr"/></returns>
@@ -158,7 +152,7 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Org.W3c.Dom.Attr>("setAttributeNode", "(Lorg/w3c/dom/Attr;)Lorg/w3c/dom/Attr;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Element.html#setAttributeNodeNS(org.w3c.dom.Attr)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Element.html#setAttributeNodeNS(org.w3c.dom.Attr)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Attr"/></param>
         /// <returns><see cref="Org.W3c.Dom.Attr"/></returns>
@@ -168,7 +162,7 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Org.W3c.Dom.Attr>("setAttributeNodeNS", "(Lorg/w3c/dom/Attr;)Lorg/w3c/dom/Attr;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Element.html#getElementsByTagName(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Element.html#getElementsByTagName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.NodeList"/></returns>
@@ -177,7 +171,7 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Org.W3c.Dom.NodeList>("getElementsByTagName", "(Ljava/lang/String;)Lorg/w3c/dom/NodeList;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Element.html#getElementsByTagNameNS(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Element.html#getElementsByTagNameNS(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -188,7 +182,15 @@ namespace Org.W3c.Dom
             return IExecute<Org.W3c.Dom.NodeList>("getElementsByTagNameNS", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Element.html#removeAttribute(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Element.html#getSchemaTypeInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Org.W3c.Dom.TypeInfo"/></returns>
+        public Org.W3c.Dom.TypeInfo GetSchemaTypeInfo()
+        {
+            return IExecuteWithSignature<Org.W3c.Dom.TypeInfo>("getSchemaTypeInfo", "()Lorg/w3c/dom/TypeInfo;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Element.html#removeAttribute(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
@@ -197,7 +199,7 @@ namespace Org.W3c.Dom
             IExecuteWithSignature("removeAttribute", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Element.html#removeAttributeNS(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Element.html#removeAttributeNS(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -207,7 +209,7 @@ namespace Org.W3c.Dom
             IExecute("removeAttributeNS", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Element.html#setAttribute(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Element.html#setAttribute(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -217,7 +219,7 @@ namespace Org.W3c.Dom
             IExecute("setAttribute", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Element.html#setAttributeNS(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Element.html#setAttributeNS(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -228,7 +230,7 @@ namespace Org.W3c.Dom
             IExecute("setAttributeNS", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Element.html#setIdAttribute(java.lang.String,boolean)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Element.html#setIdAttribute(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -238,7 +240,7 @@ namespace Org.W3c.Dom
             IExecute("setIdAttribute", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Element.html#setIdAttributeNode(org.w3c.dom.Attr,boolean)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Element.html#setIdAttributeNode(org.w3c.dom.Attr,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Attr"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -248,7 +250,7 @@ namespace Org.W3c.Dom
             IExecute("setIdAttributeNode", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Element.html#setIdAttributeNS(java.lang.String,java.lang.String,boolean)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Element.html#setIdAttributeNS(java.lang.String,java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>

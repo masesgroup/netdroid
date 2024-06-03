@@ -76,25 +76,28 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrength.html#getAsuLevel()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrength.html#getAsuLevel()"/>
         /// </summary>
-        public int AsuLevel
+        /// <returns><see cref="int"/></returns>
+        public int GetAsuLevel()
         {
-            get { return IExecuteWithSignature<int>("getAsuLevel", "()I"); }
+            return IExecuteWithSignature<int>("getAsuLevel", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrength.html#getDbm()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrength.html#getDbm()"/>
         /// </summary>
-        public int Dbm
+        /// <returns><see cref="int"/></returns>
+        public int GetDbm()
         {
-            get { return IExecuteWithSignature<int>("getDbm", "()I"); }
+            return IExecuteWithSignature<int>("getDbm", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrength.html#getLevel()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrength.html#getLevel()"/>
         /// </summary>
-        public int Level
+        /// <returns><see cref="int"/></returns>
+        public int GetLevel()
         {
-            get { return IExecuteWithSignature<int>("getLevel", "()I"); }
+            return IExecuteWithSignature<int>("getLevel", "()I");
         }
 
         #endregion

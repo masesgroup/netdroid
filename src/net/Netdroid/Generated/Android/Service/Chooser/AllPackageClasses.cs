@@ -118,7 +118,7 @@ namespace Android.Service.Chooser
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserTarget.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ChooserTarget : Android.Os.Parcelable
     {
         const string _bridgeClassName = "android.service.chooser.ChooserTarget";
@@ -163,19 +163,19 @@ namespace Android.Service.Chooser
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserTargetService.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ChooserTargetService : Android.App.Service
     {
         const string _bridgeClassName = "android.service.chooser.ChooserTargetService";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ChooserTargetService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ChooserTargetService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ChooserTargetService() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ChooserTargetService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ChooserTargetService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ChooserTargetService(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

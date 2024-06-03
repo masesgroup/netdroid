@@ -151,7 +151,7 @@ namespace Android.Hardware.Fingerprint
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html#hasEnrolledFingerprints()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool HasEnrolledFingerprints()
         {
             return IExecuteWithSignature<bool>("hasEnrolledFingerprints", "()Z");
@@ -160,7 +160,7 @@ namespace Android.Hardware.Fingerprint
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html#isHardwareDetected()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsHardwareDetected()
         {
             return IExecuteWithSignature<bool>("isHardwareDetected", "()Z");
@@ -173,7 +173,7 @@ namespace Android.Hardware.Fingerprint
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Android.Hardware.Fingerprint.FingerprintManager.AuthenticationCallback"/></param>
         /// <param name="arg4"><see cref="Android.Os.Handler"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Authenticate(Android.Hardware.Fingerprint.FingerprintManager.CryptoObject arg0, Android.Os.CancellationSignal arg1, int arg2, Android.Hardware.Fingerprint.FingerprintManager.AuthenticationCallback arg3, Android.Os.Handler arg4)
         {
             IExecute("authenticate", arg0, arg1, arg2, arg3, arg4);
@@ -207,7 +207,7 @@ namespace Android.Hardware.Fingerprint
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnAuthenticationError(int arg0, Java.Lang.CharSequence arg1)
             {
                 IExecute("onAuthenticationError", arg0, arg1);
@@ -215,7 +215,7 @@ namespace Android.Hardware.Fingerprint
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.AuthenticationCallback.html#onAuthenticationFailed()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnAuthenticationFailed()
             {
                 IExecuteWithSignature("onAuthenticationFailed", "()V");
@@ -225,7 +225,7 @@ namespace Android.Hardware.Fingerprint
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnAuthenticationHelp(int arg0, Java.Lang.CharSequence arg1)
             {
                 IExecute("onAuthenticationHelp", arg0, arg1);
@@ -234,7 +234,7 @@ namespace Android.Hardware.Fingerprint
             /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.AuthenticationCallback.html#onAuthenticationSucceeded(android.hardware.fingerprint.FingerprintManager.AuthenticationResult)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Hardware.Fingerprint.FingerprintManager.AuthenticationResult"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnAuthenticationSucceeded(Android.Hardware.Fingerprint.FingerprintManager.AuthenticationResult arg0)
             {
                 IExecuteWithSignature("onAuthenticationSucceeded", "(Landroid/hardware/fingerprint/FingerprintManager$AuthenticationResult;)V", arg0);
@@ -271,12 +271,13 @@ namespace Android.Hardware.Fingerprint
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.AuthenticationResult.html#getCryptoObject()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.AuthenticationResult.html#getCryptoObject()"/>
             /// </summary>
-            [System.Obsolete()]
-            public Android.Hardware.Fingerprint.FingerprintManager.CryptoObject GetCryptoObject
+            /// <returns><see cref="Android.Hardware.Fingerprint.FingerprintManager.CryptoObject"/></returns>
+            [global::System.Obsolete()]
+            public Android.Hardware.Fingerprint.FingerprintManager.CryptoObject GetCryptoObject()
             {
-                get { return IExecuteWithSignature<Android.Hardware.Fingerprint.FingerprintManager.CryptoObject>("getCryptoObject", "()Landroid/hardware/fingerprint/FingerprintManager$CryptoObject;"); }
+                return IExecuteWithSignature<Android.Hardware.Fingerprint.FingerprintManager.CryptoObject>("getCryptoObject", "()Landroid/hardware/fingerprint/FingerprintManager$CryptoObject;");
             }
 
             #endregion
@@ -297,7 +298,7 @@ namespace Android.Hardware.Fingerprint
             /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.CryptoObject.html#%3Cinit%3E(java.security.Signature)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Security.Signature"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public CryptoObject(Java.Security.Signature arg0)
                 : base(arg0)
             {
@@ -306,7 +307,7 @@ namespace Android.Hardware.Fingerprint
             /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.CryptoObject.html#%3Cinit%3E(javax.crypto.Cipher)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Crypto.Cipher"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public CryptoObject(Javax.Crypto.Cipher arg0)
                 : base(arg0)
             {
@@ -315,7 +316,7 @@ namespace Android.Hardware.Fingerprint
             /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.CryptoObject.html#%3Cinit%3E(javax.crypto.Mac)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Crypto.Mac"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public CryptoObject(Javax.Crypto.Mac arg0)
                 : base(arg0)
             {
@@ -337,28 +338,31 @@ namespace Android.Hardware.Fingerprint
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.CryptoObject.html#getCipher()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.CryptoObject.html#getSignature()"/>
             /// </summary>
-            [System.Obsolete()]
-            public Javax.Crypto.Cipher Cipher
+            /// <returns><see cref="Java.Security.Signature"/></returns>
+            [global::System.Obsolete()]
+            public Java.Security.Signature GetSignature()
             {
-                get { return IExecuteWithSignature<Javax.Crypto.Cipher>("getCipher", "()Ljavax/crypto/Cipher;"); }
+                return IExecuteWithSignature<Java.Security.Signature>("getSignature", "()Ljava/security/Signature;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.CryptoObject.html#getMac()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.CryptoObject.html#getCipher()"/>
             /// </summary>
-            [System.Obsolete()]
-            public Javax.Crypto.Mac Mac
+            /// <returns><see cref="Javax.Crypto.Cipher"/></returns>
+            [global::System.Obsolete()]
+            public Javax.Crypto.Cipher GetCipher()
             {
-                get { return IExecuteWithSignature<Javax.Crypto.Mac>("getMac", "()Ljavax/crypto/Mac;"); }
+                return IExecuteWithSignature<Javax.Crypto.Cipher>("getCipher", "()Ljavax/crypto/Cipher;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.CryptoObject.html#getSignature()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.CryptoObject.html#getMac()"/>
             /// </summary>
-            [System.Obsolete()]
-            public Java.Security.Signature Signature
+            /// <returns><see cref="Javax.Crypto.Mac"/></returns>
+            [global::System.Obsolete()]
+            public Javax.Crypto.Mac GetMac()
             {
-                get { return IExecuteWithSignature<Java.Security.Signature>("getSignature", "()Ljava/security/Signature;"); }
+                return IExecuteWithSignature<Javax.Crypto.Mac>("getMac", "()Ljavax/crypto/Mac;");
             }
 
             #endregion

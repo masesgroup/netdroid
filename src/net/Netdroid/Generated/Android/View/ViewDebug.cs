@@ -40,14 +40,14 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewDebug.html#TRACE_HIERARCHY"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool TRACE_HIERARCHY { get { if (!_TRACE_HIERARCHYReady) { _TRACE_HIERARCHYContent = SGetField<bool>(LocalBridgeClazz, "TRACE_HIERARCHY"); _TRACE_HIERARCHYReady = true; } return _TRACE_HIERARCHYContent; } }
         private static bool _TRACE_HIERARCHYContent = default;
         private static bool _TRACE_HIERARCHYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewDebug.html#TRACE_RECYCLER"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool TRACE_RECYCLER { get { if (!_TRACE_RECYCLERReady) { _TRACE_RECYCLERContent = SGetField<bool>(LocalBridgeClazz, "TRACE_RECYCLER"); _TRACE_RECYCLERReady = true; } return _TRACE_RECYCLERContent; } }
         private static bool _TRACE_RECYCLERContent = default;
         private static bool _TRACE_RECYCLERReady = false; // this is used because in case of generics 
@@ -69,7 +69,7 @@ namespace Android.View
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Android.View.View"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void StartHierarchyTracing(Java.Lang.String arg0, Android.View.View arg1)
         {
             SExecute(LocalBridgeClazz, "startHierarchyTracing", arg0, arg1);
@@ -79,7 +79,7 @@ namespace Android.View
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Android.View.View"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void StartRecyclerTracing(Java.Lang.String arg0, Android.View.View arg1)
         {
             SExecute(LocalBridgeClazz, "startRecyclerTracing", arg0, arg1);
@@ -87,7 +87,7 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewDebug.html#stopHierarchyTracing()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void StopHierarchyTracing()
         {
             SExecuteWithSignature(LocalBridgeClazz, "stopHierarchyTracing", "()V");
@@ -95,7 +95,7 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewDebug.html#stopRecyclerTracing()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void StopRecyclerTracing()
         {
             SExecuteWithSignature(LocalBridgeClazz, "stopRecyclerTracing", "()V");
@@ -105,7 +105,7 @@ namespace Android.View
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
         /// <param name="arg1"><see cref="Android.View.ViewDebug.HierarchyTraceType"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void Trace(Android.View.View arg0, Android.View.ViewDebug.HierarchyTraceType arg1)
         {
             SExecute(LocalBridgeClazz, "trace", arg0, arg1);
@@ -116,7 +116,7 @@ namespace Android.View
         /// <param name="arg0"><see cref="Android.View.View"/></param>
         /// <param name="arg1"><see cref="Android.View.ViewDebug.RecyclerTraceType"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void Trace(Android.View.View arg0, Android.View.ViewDebug.RecyclerTraceType arg1, params int[] arg2)
         {
             if (arg2.Length == 0) SExecute(LocalBridgeClazz, "trace", arg0, arg1); else SExecute(LocalBridgeClazz, "trace", arg0, arg1, arg2);
@@ -349,56 +349,56 @@ namespace Android.View
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewDebug.HierarchyTraceType.html#BUILD_CACHE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.View.ViewDebug.HierarchyTraceType BUILD_CACHE { get { if (!_BUILD_CACHEReady) { _BUILD_CACHEContent = SGetField<Android.View.ViewDebug.HierarchyTraceType>(LocalBridgeClazz, "BUILD_CACHE"); _BUILD_CACHEReady = true; } return _BUILD_CACHEContent; } }
             private static Android.View.ViewDebug.HierarchyTraceType _BUILD_CACHEContent = default;
             private static bool _BUILD_CACHEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewDebug.HierarchyTraceType.html#DRAW"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.View.ViewDebug.HierarchyTraceType DRAW { get { if (!_DRAWReady) { _DRAWContent = SGetField<Android.View.ViewDebug.HierarchyTraceType>(LocalBridgeClazz, "DRAW"); _DRAWReady = true; } return _DRAWContent; } }
             private static Android.View.ViewDebug.HierarchyTraceType _DRAWContent = default;
             private static bool _DRAWReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewDebug.HierarchyTraceType.html#INVALIDATE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.View.ViewDebug.HierarchyTraceType INVALIDATE { get { if (!_INVALIDATEReady) { _INVALIDATEContent = SGetField<Android.View.ViewDebug.HierarchyTraceType>(LocalBridgeClazz, "INVALIDATE"); _INVALIDATEReady = true; } return _INVALIDATEContent; } }
             private static Android.View.ViewDebug.HierarchyTraceType _INVALIDATEContent = default;
             private static bool _INVALIDATEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewDebug.HierarchyTraceType.html#INVALIDATE_CHILD"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.View.ViewDebug.HierarchyTraceType INVALIDATE_CHILD { get { if (!_INVALIDATE_CHILDReady) { _INVALIDATE_CHILDContent = SGetField<Android.View.ViewDebug.HierarchyTraceType>(LocalBridgeClazz, "INVALIDATE_CHILD"); _INVALIDATE_CHILDReady = true; } return _INVALIDATE_CHILDContent; } }
             private static Android.View.ViewDebug.HierarchyTraceType _INVALIDATE_CHILDContent = default;
             private static bool _INVALIDATE_CHILDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewDebug.HierarchyTraceType.html#INVALIDATE_CHILD_IN_PARENT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.View.ViewDebug.HierarchyTraceType INVALIDATE_CHILD_IN_PARENT { get { if (!_INVALIDATE_CHILD_IN_PARENTReady) { _INVALIDATE_CHILD_IN_PARENTContent = SGetField<Android.View.ViewDebug.HierarchyTraceType>(LocalBridgeClazz, "INVALIDATE_CHILD_IN_PARENT"); _INVALIDATE_CHILD_IN_PARENTReady = true; } return _INVALIDATE_CHILD_IN_PARENTContent; } }
             private static Android.View.ViewDebug.HierarchyTraceType _INVALIDATE_CHILD_IN_PARENTContent = default;
             private static bool _INVALIDATE_CHILD_IN_PARENTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewDebug.HierarchyTraceType.html#ON_LAYOUT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.View.ViewDebug.HierarchyTraceType ON_LAYOUT { get { if (!_ON_LAYOUTReady) { _ON_LAYOUTContent = SGetField<Android.View.ViewDebug.HierarchyTraceType>(LocalBridgeClazz, "ON_LAYOUT"); _ON_LAYOUTReady = true; } return _ON_LAYOUTContent; } }
             private static Android.View.ViewDebug.HierarchyTraceType _ON_LAYOUTContent = default;
             private static bool _ON_LAYOUTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewDebug.HierarchyTraceType.html#ON_MEASURE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.View.ViewDebug.HierarchyTraceType ON_MEASURE { get { if (!_ON_MEASUREReady) { _ON_MEASUREContent = SGetField<Android.View.ViewDebug.HierarchyTraceType>(LocalBridgeClazz, "ON_MEASURE"); _ON_MEASUREReady = true; } return _ON_MEASUREContent; } }
             private static Android.View.ViewDebug.HierarchyTraceType _ON_MEASUREContent = default;
             private static bool _ON_MEASUREReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewDebug.HierarchyTraceType.html#REQUEST_LAYOUT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.View.ViewDebug.HierarchyTraceType REQUEST_LAYOUT { get { if (!_REQUEST_LAYOUTReady) { _REQUEST_LAYOUTContent = SGetField<Android.View.ViewDebug.HierarchyTraceType>(LocalBridgeClazz, "REQUEST_LAYOUT"); _REQUEST_LAYOUTReady = true; } return _REQUEST_LAYOUTContent; } }
             private static Android.View.ViewDebug.HierarchyTraceType _REQUEST_LAYOUTContent = default;
             private static bool _REQUEST_LAYOUTReady = false; // this is used because in case of generics 
@@ -500,42 +500,42 @@ namespace Android.View
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewDebug.RecyclerTraceType.html#BIND_VIEW"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.View.ViewDebug.RecyclerTraceType BIND_VIEW { get { if (!_BIND_VIEWReady) { _BIND_VIEWContent = SGetField<Android.View.ViewDebug.RecyclerTraceType>(LocalBridgeClazz, "BIND_VIEW"); _BIND_VIEWReady = true; } return _BIND_VIEWContent; } }
             private static Android.View.ViewDebug.RecyclerTraceType _BIND_VIEWContent = default;
             private static bool _BIND_VIEWReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewDebug.RecyclerTraceType.html#MOVE_FROM_ACTIVE_TO_SCRAP_HEAP"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.View.ViewDebug.RecyclerTraceType MOVE_FROM_ACTIVE_TO_SCRAP_HEAP { get { if (!_MOVE_FROM_ACTIVE_TO_SCRAP_HEAPReady) { _MOVE_FROM_ACTIVE_TO_SCRAP_HEAPContent = SGetField<Android.View.ViewDebug.RecyclerTraceType>(LocalBridgeClazz, "MOVE_FROM_ACTIVE_TO_SCRAP_HEAP"); _MOVE_FROM_ACTIVE_TO_SCRAP_HEAPReady = true; } return _MOVE_FROM_ACTIVE_TO_SCRAP_HEAPContent; } }
             private static Android.View.ViewDebug.RecyclerTraceType _MOVE_FROM_ACTIVE_TO_SCRAP_HEAPContent = default;
             private static bool _MOVE_FROM_ACTIVE_TO_SCRAP_HEAPReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewDebug.RecyclerTraceType.html#MOVE_TO_SCRAP_HEAP"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.View.ViewDebug.RecyclerTraceType MOVE_TO_SCRAP_HEAP { get { if (!_MOVE_TO_SCRAP_HEAPReady) { _MOVE_TO_SCRAP_HEAPContent = SGetField<Android.View.ViewDebug.RecyclerTraceType>(LocalBridgeClazz, "MOVE_TO_SCRAP_HEAP"); _MOVE_TO_SCRAP_HEAPReady = true; } return _MOVE_TO_SCRAP_HEAPContent; } }
             private static Android.View.ViewDebug.RecyclerTraceType _MOVE_TO_SCRAP_HEAPContent = default;
             private static bool _MOVE_TO_SCRAP_HEAPReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewDebug.RecyclerTraceType.html#NEW_VIEW"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.View.ViewDebug.RecyclerTraceType NEW_VIEW { get { if (!_NEW_VIEWReady) { _NEW_VIEWContent = SGetField<Android.View.ViewDebug.RecyclerTraceType>(LocalBridgeClazz, "NEW_VIEW"); _NEW_VIEWReady = true; } return _NEW_VIEWContent; } }
             private static Android.View.ViewDebug.RecyclerTraceType _NEW_VIEWContent = default;
             private static bool _NEW_VIEWReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewDebug.RecyclerTraceType.html#RECYCLE_FROM_ACTIVE_HEAP"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.View.ViewDebug.RecyclerTraceType RECYCLE_FROM_ACTIVE_HEAP { get { if (!_RECYCLE_FROM_ACTIVE_HEAPReady) { _RECYCLE_FROM_ACTIVE_HEAPContent = SGetField<Android.View.ViewDebug.RecyclerTraceType>(LocalBridgeClazz, "RECYCLE_FROM_ACTIVE_HEAP"); _RECYCLE_FROM_ACTIVE_HEAPReady = true; } return _RECYCLE_FROM_ACTIVE_HEAPContent; } }
             private static Android.View.ViewDebug.RecyclerTraceType _RECYCLE_FROM_ACTIVE_HEAPContent = default;
             private static bool _RECYCLE_FROM_ACTIVE_HEAPReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewDebug.RecyclerTraceType.html#RECYCLE_FROM_SCRAP_HEAP"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.View.ViewDebug.RecyclerTraceType RECYCLE_FROM_SCRAP_HEAP { get { if (!_RECYCLE_FROM_SCRAP_HEAPReady) { _RECYCLE_FROM_SCRAP_HEAPContent = SGetField<Android.View.ViewDebug.RecyclerTraceType>(LocalBridgeClazz, "RECYCLE_FROM_SCRAP_HEAP"); _RECYCLE_FROM_SCRAP_HEAPReady = true; } return _RECYCLE_FROM_SCRAP_HEAPContent; } }
             private static Android.View.ViewDebug.RecyclerTraceType _RECYCLE_FROM_SCRAP_HEAPContent = default;
             private static bool _RECYCLE_FROM_SCRAP_HEAPReady = false; // this is used because in case of generics 

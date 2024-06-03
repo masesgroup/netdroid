@@ -63,13 +63,6 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ViewFlipper.html#getFlipInterval()"/> <see href="https://developer.android.com/reference/android/widget/ViewFlipper.html#setFlipInterval(int)"/>
-        /// </summary>
-        public int FlipInterval
-        {
-            get { return IExecuteWithSignature<int>("getFlipInterval", "()I"); } set { IExecuteWithSignature("setFlipInterval", "(I)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ViewFlipper.html#isAutoStart()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -86,12 +79,28 @@ namespace Android.Widget
             return IExecuteWithSignature<bool>("isFlipping", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ViewFlipper.html#getFlipInterval()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFlipInterval()
+        {
+            return IExecuteWithSignature<int>("getFlipInterval", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ViewFlipper.html#setAutoStart(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetAutoStart(bool arg0)
         {
             IExecuteWithSignature("setAutoStart", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ViewFlipper.html#setFlipInterval(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetFlipInterval(int arg0)
+        {
+            IExecuteWithSignature("setFlipInterval", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ViewFlipper.html#startFlipping()"/>

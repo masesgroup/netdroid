@@ -42,7 +42,7 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#empty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#empty()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public static Java.Util.Optional Empty()
@@ -50,7 +50,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Optional>(LocalBridgeClazz, "empty", "()Ljava/util/Optional;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#of(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#of(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.Optional"/></returns>
@@ -59,7 +59,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Optional>(LocalBridgeClazz, "of", "(Ljava/lang/Object;)Ljava/util/Optional;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#ofNullable(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#ofNullable(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.Optional"/></returns>
@@ -72,7 +72,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#flatMap(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#flatMap(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Optional"/></returns>
@@ -81,7 +81,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Optional>("flatMap", "(Ljava/util/function/Function;)Ljava/util/Optional;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#map(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#map(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Optional"/></returns>
@@ -90,7 +90,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Optional>("map", "(Ljava/util/function/Function;)Ljava/util/Optional;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#orElseThrow(java.util.function.Supplier)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#orElseThrow(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <returns><see cref="object"/></returns>
@@ -100,7 +100,7 @@ namespace Java.Util
             return IExecuteWithSignature("orElseThrow", "(Ljava/util/function/Supplier;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#isEmpty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#isEmpty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
@@ -108,7 +108,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#isPresent()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#isPresent()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsPresent()
@@ -116,7 +116,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("isPresent", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#filter(java.util.function.Predicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#filter(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <returns><see cref="Java.Util.Optional"/></returns>
@@ -125,7 +125,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Optional>("filter", "(Ljava/util/function/Predicate;)Ljava/util/Optional;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#or(java.util.function.Supplier)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#or(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <returns><see cref="Java.Util.Optional"/></returns>
@@ -134,7 +134,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Optional>("or", "(Ljava/util/function/Supplier;)Ljava/util/Optional;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#stream()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#stream()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream Stream()
@@ -142,7 +142,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.Stream>("stream", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#get()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Get()
@@ -150,7 +150,7 @@ namespace Java.Util
             return IExecuteWithSignature("get", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#orElse(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#orElse(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -159,7 +159,7 @@ namespace Java.Util
             return IExecuteWithSignature("orElse", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#orElseGet(java.util.function.Supplier)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#orElseGet(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <returns><see cref="object"/></returns>
@@ -168,7 +168,7 @@ namespace Java.Util
             return IExecuteWithSignature("orElseGet", "(Ljava/util/function/Supplier;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#orElseThrow()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#orElseThrow()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object OrElseThrow()
@@ -176,7 +176,7 @@ namespace Java.Util
             return IExecuteWithSignature("orElseThrow", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#ifPresent(java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#ifPresent(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         public void IfPresent(Java.Util.Function.Consumer arg0)
@@ -184,7 +184,7 @@ namespace Java.Util
             IExecuteWithSignature("ifPresent", "(Ljava/util/function/Consumer;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#ifPresentOrElse(java.util.function.Consumer,java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#ifPresentOrElse(java.util.function.Consumer,java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
@@ -224,7 +224,7 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#empty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#empty()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public static Java.Util.Optional<T> Empty()
@@ -232,7 +232,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Optional<T>>(LocalBridgeClazz, "empty", "()Ljava/util/Optional;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#of(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#of(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><see cref="Java.Util.Optional"/></returns>
@@ -241,7 +241,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Optional<T>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;)Ljava/util/Optional;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#ofNullable(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#ofNullable(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><see cref="Java.Util.Optional"/></returns>
@@ -254,7 +254,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#flatMap(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#flatMap(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="U"></typeparam>
@@ -262,36 +262,36 @@ namespace Java.Util
         /// <typeparam name="Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_"><see cref="Java.Util.Optional{Arg0ExtendsU}"/></typeparam>
         /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<U> FlatMap<U, Arg0objectSuperT, Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_, Arg0ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_> arg0) where Arg0objectSuperT: T where Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_: Java.Util.Optional<Arg0ExtendsU> where Arg0ExtendsU: U
+        public Java.Util.Optional<U> FlatMap<U, Arg0objectSuperT, Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_, Arg0ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_> arg0) where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_ : Java.Util.Optional<Arg0ExtendsU> where Arg0ExtendsU : U
         {
             return IExecuteWithSignature<Java.Util.Optional<U>>("flatMap", "(Ljava/util/function/Function;)Ljava/util/Optional;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#map(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#map(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<U> Map<U, Arg0objectSuperT, Arg0ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU> arg0) where Arg0objectSuperT: T where Arg0ExtendsU: U
+        public Java.Util.Optional<U> Map<U, Arg0objectSuperT, Arg0ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU> arg0) where Arg0objectSuperT : T where Arg0ExtendsU : U
         {
             return IExecuteWithSignature<Java.Util.Optional<U>>("map", "(Ljava/util/function/Function;)Ljava/util/Optional;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#orElseThrow(java.util.function.Supplier)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#orElseThrow(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <typeparam name="Arg0ExtendsX"><typeparamref name="X"/></typeparam>
         /// <typeparam name="X"></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Lang.Throwable"/>
-        public T OrElseThrow<Arg0ExtendsX, X>(Java.Util.Function.Supplier<Arg0ExtendsX> arg0) where Arg0ExtendsX: X
+        public T OrElseThrow<Arg0ExtendsX, X>(Java.Util.Function.Supplier<Arg0ExtendsX> arg0) where Arg0ExtendsX : X
         {
             return IExecuteWithSignature<T>("orElseThrow", "(Ljava/util/function/Supplier;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#isEmpty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#isEmpty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
@@ -299,7 +299,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#isPresent()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#isPresent()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsPresent()
@@ -307,28 +307,28 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("isPresent", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#filter(java.util.function.Predicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#filter(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<T> Filter<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public Java.Util.Optional<T> Filter<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<Java.Util.Optional<T>>("filter", "(Ljava/util/function/Predicate;)Ljava/util/Optional;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#or(java.util.function.Supplier)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#or(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <typeparam name="Arg0ExtendsJava_Util_Optional_Arg0ExtendsT_"><see cref="Java.Util.Optional{Arg0ExtendsT}"/></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<T> Or<Arg0ExtendsJava_Util_Optional_Arg0ExtendsT_, Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsJava_Util_Optional_Arg0ExtendsT_> arg0) where Arg0ExtendsJava_Util_Optional_Arg0ExtendsT_: Java.Util.Optional<Arg0ExtendsT> where Arg0ExtendsT: T
+        public Java.Util.Optional<T> Or<Arg0ExtendsJava_Util_Optional_Arg0ExtendsT_, Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsJava_Util_Optional_Arg0ExtendsT_> arg0) where Arg0ExtendsJava_Util_Optional_Arg0ExtendsT_ : Java.Util.Optional<Arg0ExtendsT> where Arg0ExtendsT : T
         {
             return IExecuteWithSignature<Java.Util.Optional<T>>("or", "(Ljava/util/function/Supplier;)Ljava/util/Optional;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#stream()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#stream()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<T> Stream()
@@ -336,7 +336,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.Stream<T>>("stream", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#get()"/>
         /// </summary>
         /// <returns><typeparamref name="T"/></returns>
         public T Get()
@@ -344,7 +344,7 @@ namespace Java.Util
             return IExecuteWithSignature<T>("get", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#orElse(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#orElse(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><typeparamref name="T"/></returns>
@@ -353,17 +353,17 @@ namespace Java.Util
             return IExecuteWithSignature<T>("orElse", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#orElseGet(java.util.function.Supplier)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#orElseGet(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T OrElseGet<Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
+        public T OrElseGet<Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
             return IExecuteWithSignature<T>("orElseGet", "(Ljava/util/function/Supplier;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#orElseThrow()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#orElseThrow()"/>
         /// </summary>
         /// <returns><typeparamref name="T"/></returns>
         public T OrElseThrow()
@@ -371,21 +371,21 @@ namespace Java.Util
             return IExecuteWithSignature<T>("orElseThrow", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#ifPresent(java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#ifPresent(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        public void IfPresent<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public void IfPresent<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             IExecuteWithSignature("ifPresent", "(Ljava/util/function/Consumer;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Optional.html#ifPresentOrElse(java.util.function.Consumer,java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Optional.html#ifPresentOrElse(java.util.function.Consumer,java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        public void IfPresentOrElse<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0, Java.Lang.Runnable arg1) where Arg0objectSuperT: T
+        public void IfPresentOrElse<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0, Java.Lang.Runnable arg1) where Arg0objectSuperT : T
         {
             IExecute("ifPresentOrElse", arg0, arg1);
         }

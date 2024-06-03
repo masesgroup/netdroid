@@ -99,13 +99,6 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/SyncAdapterType.html#getSettingsActivity()"/> 
-        /// </summary>
-        public Java.Lang.String SettingsActivity
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSettingsActivity", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/SyncAdapterType.html#allowParallelSyncs()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -144,6 +137,14 @@ namespace Android.Content
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/SyncAdapterType.html#getSettingsActivity()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSettingsActivity()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSettingsActivity", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/SyncAdapterType.html#writeToParcel(android.os.Parcel,int)"/>

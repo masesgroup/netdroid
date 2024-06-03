@@ -198,46 +198,11 @@ namespace Android.Telephony
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getActiveDataSubscriptionId()"/> 
-        /// </summary>
-        public static int ActiveDataSubscriptionId
-        {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getActiveDataSubscriptionId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getDefaultDataSubscriptionId()"/> 
-        /// </summary>
-        public static int DefaultDataSubscriptionId
-        {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getDefaultDataSubscriptionId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getDefaultSmsSubscriptionId()"/> 
-        /// </summary>
-        public static int DefaultSmsSubscriptionId
-        {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getDefaultSmsSubscriptionId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getDefaultSubscriptionId()"/> 
-        /// </summary>
-        public static int DefaultSubscriptionId
-        {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getDefaultSubscriptionId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getDefaultVoiceSubscriptionId()"/> 
-        /// </summary>
-        public static int DefaultVoiceSubscriptionId
-        {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getDefaultVoiceSubscriptionId", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#from(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <returns><see cref="Android.Telephony.SubscriptionManager"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Telephony.SubscriptionManager From(Android.Content.Context arg0)
         {
             return SExecuteWithSignature<Android.Telephony.SubscriptionManager>(LocalBridgeClazz, "from", "(Landroid/content/Context;)Landroid/telephony/SubscriptionManager;", arg0);
@@ -261,6 +226,46 @@ namespace Android.Telephony
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isValidSubscriptionId", "(I)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getActiveDataSubscriptionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public static int GetActiveDataSubscriptionId()
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getActiveDataSubscriptionId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getDefaultDataSubscriptionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public static int GetDefaultDataSubscriptionId()
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getDefaultDataSubscriptionId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getDefaultSmsSubscriptionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public static int GetDefaultSmsSubscriptionId()
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getDefaultSmsSubscriptionId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getDefaultSubscriptionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public static int GetDefaultSubscriptionId()
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getDefaultSubscriptionId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getDefaultVoiceSubscriptionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public static int GetDefaultVoiceSubscriptionId()
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getDefaultVoiceSubscriptionId", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getSlotIndex(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -282,55 +287,6 @@ namespace Android.Telephony
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getAccessibleSubscriptionInfoList()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Telephony.SubscriptionInfo> AccessibleSubscriptionInfoList
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telephony.SubscriptionInfo>>("getAccessibleSubscriptionInfoList", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getActiveSubscriptionInfoCount()"/> 
-        /// </summary>
-        public int ActiveSubscriptionInfoCount
-        {
-            get { return IExecuteWithSignature<int>("getActiveSubscriptionInfoCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getActiveSubscriptionInfoCountMax()"/> 
-        /// </summary>
-        public int ActiveSubscriptionInfoCountMax
-        {
-            get { return IExecuteWithSignature<int>("getActiveSubscriptionInfoCountMax", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getActiveSubscriptionInfoList()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Telephony.SubscriptionInfo> ActiveSubscriptionInfoList
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telephony.SubscriptionInfo>>("getActiveSubscriptionInfoList", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getAllSubscriptionInfoList()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Telephony.SubscriptionInfo> AllSubscriptionInfoList
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telephony.SubscriptionInfo>>("getAllSubscriptionInfoList", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getCompleteActiveSubscriptionInfoList()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Telephony.SubscriptionInfo> CompleteActiveSubscriptionInfoList
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telephony.SubscriptionInfo>>("getCompleteActiveSubscriptionInfoList", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getOpportunisticSubscriptions()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Telephony.SubscriptionInfo> OpportunisticSubscriptions
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telephony.SubscriptionInfo>>("getOpportunisticSubscriptions", "()Ljava/util/List;"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#createSubscriptionGroup(java.util.List)"/>
         /// </summary>
@@ -396,6 +352,22 @@ namespace Android.Telephony
             return IExecute<bool>("setOpportunistic", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getActiveSubscriptionInfoCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetActiveSubscriptionInfoCount()
+        {
+            return IExecuteWithSignature<int>("getActiveSubscriptionInfoCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getActiveSubscriptionInfoCountMax()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetActiveSubscriptionInfoCountMax()
+        {
+            return IExecuteWithSignature<int>("getActiveSubscriptionInfoCountMax", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getDeviceToDeviceStatusSharingPreference(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -409,7 +381,7 @@ namespace Android.Telephony
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int[] GetSubscriptionIds(int arg0)
         {
             return IExecuteWithSignatureArray<int>("getSubscriptionIds", "(I)[I", arg0);
@@ -443,6 +415,46 @@ namespace Android.Telephony
             return IExecuteWithSignature<Java.Util.List<Android.Net.Uri>>("getDeviceToDeviceStatusSharingContacts", "(I)Ljava/util/List;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getAccessibleSubscriptionInfoList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telephony.SubscriptionInfo> GetAccessibleSubscriptionInfoList()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telephony.SubscriptionInfo>>("getAccessibleSubscriptionInfoList", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getActiveSubscriptionInfoList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telephony.SubscriptionInfo> GetActiveSubscriptionInfoList()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telephony.SubscriptionInfo>>("getActiveSubscriptionInfoList", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getAllSubscriptionInfoList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telephony.SubscriptionInfo> GetAllSubscriptionInfoList()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telephony.SubscriptionInfo>>("getAllSubscriptionInfoList", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getCompleteActiveSubscriptionInfoList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telephony.SubscriptionInfo> GetCompleteActiveSubscriptionInfoList()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telephony.SubscriptionInfo>>("getCompleteActiveSubscriptionInfoList", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getOpportunisticSubscriptions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telephony.SubscriptionInfo> GetOpportunisticSubscriptions()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telephony.SubscriptionInfo>>("getOpportunisticSubscriptions", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getSubscriptionsInGroup(android.os.ParcelUuid)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.ParcelUuid"/></param>
@@ -473,7 +485,7 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#addOnSubscriptionsChangedListener(android.telephony.SubscriptionManager.OnSubscriptionsChangedListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Telephony.SubscriptionManager.OnSubscriptionsChangedListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddOnSubscriptionsChangedListener(Android.Telephony.SubscriptionManager.OnSubscriptionsChangedListener arg0)
         {
             IExecuteWithSignature("addOnSubscriptionsChangedListener", "(Landroid/telephony/SubscriptionManager$OnSubscriptionsChangedListener;)V", arg0);
@@ -605,7 +617,7 @@ namespace Android.Telephony
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSubscriptionPlans(int arg0, Java.Util.List<Android.Telephony.SubscriptionPlan> arg1)
         {
             IExecute("setSubscriptionPlans", arg0, arg1);
@@ -615,7 +627,7 @@ namespace Android.Telephony
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.App.PendingIntent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SwitchToSubscription(int arg0, Android.App.PendingIntent arg1)
         {
             IExecute("switchToSubscription", arg0, arg1);
@@ -645,68 +657,9 @@ namespace Android.Telephony
 
             #region Instance methods
             /// <summary>
-            /// Handlers initializer for <see cref="OnOpportunisticSubscriptionsChangedListener"/>
-            /// </summary>
-            protected virtual void InitializeHandlers()
-            {
-                AddEventHandler("onOpportunisticSubscriptionsChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnOpportunisticSubscriptionsChangedEventHandler));
-
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.OnOpportunisticSubscriptionsChangedListener.html#onOpportunisticSubscriptionsChanged()"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnOpportunisticSubscriptionsChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnOpportunisticSubscriptionsChanged { get; set; } = null;
-
-            void OnOpportunisticSubscriptionsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-            {
-                var methodToExecute = (OnOnOpportunisticSubscriptionsChanged != null) ? OnOnOpportunisticSubscriptionsChanged : OnOpportunisticSubscriptionsChanged;
-                methodToExecute.Invoke();
-            }
-
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.OnOpportunisticSubscriptionsChangedListener.html#onOpportunisticSubscriptionsChanged()"/>
             /// </summary>
-            public virtual void OnOpportunisticSubscriptionsChanged()
-            {
-                
-            }
-
-            #endregion
-
-            #region Nested classes
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region OnOpportunisticSubscriptionsChangedListenerDirect
-        public partial class OnOpportunisticSubscriptionsChangedListenerDirect
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.OnOpportunisticSubscriptionsChangedListener.html#onOpportunisticSubscriptionsChanged()"/>
-            /// </summary>
-            public override void OnOpportunisticSubscriptionsChanged()
+            public void OnOpportunisticSubscriptionsChanged()
             {
                 IExecuteWithSignature("onOpportunisticSubscriptionsChanged", "()V");
             }
@@ -742,68 +695,9 @@ namespace Android.Telephony
 
             #region Instance methods
             /// <summary>
-            /// Handlers initializer for <see cref="OnSubscriptionsChangedListener"/>
-            /// </summary>
-            protected virtual void InitializeHandlers()
-            {
-                AddEventHandler("onSubscriptionsChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnSubscriptionsChangedEventHandler));
-
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.OnSubscriptionsChangedListener.html#onSubscriptionsChanged()"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnSubscriptionsChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnSubscriptionsChanged { get; set; } = null;
-
-            void OnSubscriptionsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-            {
-                var methodToExecute = (OnOnSubscriptionsChanged != null) ? OnOnSubscriptionsChanged : OnSubscriptionsChanged;
-                methodToExecute.Invoke();
-            }
-
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.OnSubscriptionsChangedListener.html#onSubscriptionsChanged()"/>
             /// </summary>
-            public virtual void OnSubscriptionsChanged()
-            {
-                
-            }
-
-            #endregion
-
-            #region Nested classes
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region OnSubscriptionsChangedListenerDirect
-        public partial class OnSubscriptionsChangedListenerDirect
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.OnSubscriptionsChangedListener.html#onSubscriptionsChanged()"/>
-            /// </summary>
-            public override void OnSubscriptionsChanged()
+            public void OnSubscriptionsChanged()
             {
                 IExecuteWithSignature("onSubscriptionsChanged", "()V");
             }

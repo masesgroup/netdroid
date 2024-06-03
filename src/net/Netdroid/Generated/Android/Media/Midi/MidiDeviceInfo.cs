@@ -160,53 +160,20 @@ namespace Android.Media.Midi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.html#getDefaultProtocol()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.html#getPorts()"/>
         /// </summary>
-        public int DefaultProtocol
+        /// <returns><see cref="Android.Media.Midi.MidiDeviceInfo.PortInfo"/></returns>
+        public Android.Media.Midi.MidiDeviceInfo.PortInfo[] GetPorts()
         {
-            get { return IExecuteWithSignature<int>("getDefaultProtocol", "()I"); }
+            return IExecuteWithSignatureArray<Android.Media.Midi.MidiDeviceInfo.PortInfo>("getPorts", "()[Landroid/media/midi/MidiDeviceInfo$PortInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.html#getId()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.html#getProperties()"/>
         /// </summary>
-        public int Id
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetProperties()
         {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.html#getInputPortCount()"/> 
-        /// </summary>
-        public int InputPortCount
-        {
-            get { return IExecuteWithSignature<int>("getInputPortCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.html#getOutputPortCount()"/> 
-        /// </summary>
-        public int OutputPortCount
-        {
-            get { return IExecuteWithSignature<int>("getOutputPortCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.html#getPorts()"/> 
-        /// </summary>
-        public Android.Media.Midi.MidiDeviceInfo.PortInfo[] Ports
-        {
-            get { return IExecuteWithSignatureArray<Android.Media.Midi.MidiDeviceInfo.PortInfo>("getPorts", "()[Landroid/media/midi/MidiDeviceInfo$PortInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.html#getProperties()"/> 
-        /// </summary>
-        public Android.Os.Bundle Properties
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getProperties", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getProperties", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.html#isPrivate()"/>
@@ -223,6 +190,46 @@ namespace Android.Media.Midi
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.html#getDefaultProtocol()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDefaultProtocol()
+        {
+            return IExecuteWithSignature<int>("getDefaultProtocol", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.html#getInputPortCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInputPortCount()
+        {
+            return IExecuteWithSignature<int>("getInputPortCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.html#getOutputPortCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOutputPortCount()
+        {
+            return IExecuteWithSignature<int>("getOutputPortCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.html#writeToParcel(android.os.Parcel,int)"/>
@@ -270,25 +277,28 @@ namespace Android.Media.Midi
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.PortInfo.html#getName()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.PortInfo.html#getPortNumber()"/>
             /// </summary>
-            public Java.Lang.String Name
+            /// <returns><see cref="int"/></returns>
+            public int GetPortNumber()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<int>("getPortNumber", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.PortInfo.html#getPortNumber()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.PortInfo.html#getType()"/>
             /// </summary>
-            public int PortNumber
+            /// <returns><see cref="int"/></returns>
+            public int GetType()
             {
-                get { return IExecuteWithSignature<int>("getPortNumber", "()I"); }
+                return IExecuteWithSignature<int>("getType", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.PortInfo.html#getType()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/midi/MidiDeviceInfo.PortInfo.html#getName()"/>
             /// </summary>
-            public int Type
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetName()
             {
-                get { return IExecuteWithSignature<int>("getType", "()I"); }
+                return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
 
             #endregion

@@ -70,13 +70,6 @@ namespace Android.Location
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssCapabilities.html#getGnssSignalTypes()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Location.GnssSignalType> GnssSignalTypes
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Location.GnssSignalType>>("getGnssSignalTypes", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssCapabilities.html#hasAntennaInfo()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -96,7 +89,7 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/GnssCapabilities.html#hasGnssAntennaInfo()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool HasGnssAntennaInfo()
         {
             return IExecuteWithSignature<bool>("hasGnssAntennaInfo", "()Z");
@@ -292,6 +285,14 @@ namespace Android.Location
         public int HasAccumulatedDeltaRange()
         {
             return IExecuteWithSignature<int>("hasAccumulatedDeltaRange", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssCapabilities.html#getGnssSignalTypes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Location.GnssSignalType> GetGnssSignalTypes()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Location.GnssSignalType>>("getGnssSignalTypes", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssCapabilities.html#writeToParcel(android.os.Parcel,int)"/>

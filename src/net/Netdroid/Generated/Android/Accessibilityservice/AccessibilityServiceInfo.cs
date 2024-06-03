@@ -78,7 +78,7 @@ namespace Android.Accessibilityservice
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#CAPABILITY_CAN_REQUEST_ENHANCED_WEB_ACCESSIBILITY"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CAPABILITY_CAN_REQUEST_ENHANCED_WEB_ACCESSIBILITY { get { if (!_CAPABILITY_CAN_REQUEST_ENHANCED_WEB_ACCESSIBILITYReady) { _CAPABILITY_CAN_REQUEST_ENHANCED_WEB_ACCESSIBILITYContent = SGetField<int>(LocalBridgeClazz, "CAPABILITY_CAN_REQUEST_ENHANCED_WEB_ACCESSIBILITY"); _CAPABILITY_CAN_REQUEST_ENHANCED_WEB_ACCESSIBILITYReady = true; } return _CAPABILITY_CAN_REQUEST_ENHANCED_WEB_ACCESSIBILITYContent; } }
         private static int _CAPABILITY_CAN_REQUEST_ENHANCED_WEB_ACCESSIBILITYContent = default;
         private static bool _CAPABILITY_CAN_REQUEST_ENHANCED_WEB_ACCESSIBILITYReady = false; // this is used because in case of generics 
@@ -199,7 +199,7 @@ namespace Android.Accessibilityservice
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITY"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITY { get { if (!_FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITYReady) { _FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITYContent = SGetField<int>(LocalBridgeClazz, "FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITY"); _FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITYReady = true; } return _FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITYContent; } }
         private static int _FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITYContent = default;
         private static bool _FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITYReady = false; // this is used because in case of generics 
@@ -287,76 +287,21 @@ namespace Android.Accessibilityservice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getCanRetrieveWindowContent()"/> 
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getResolveInfo()"/>
         /// </summary>
-        [System.Obsolete()]
-        public bool CanRetrieveWindowContent
+        /// <returns><see cref="Android.Content.Pm.ResolveInfo"/></returns>
+        public Android.Content.Pm.ResolveInfo GetResolveInfo()
         {
-            get { return IExecuteWithSignature<bool>("getCanRetrieveWindowContent", "()Z"); }
+            return IExecuteWithSignature<Android.Content.Pm.ResolveInfo>("getResolveInfo", "()Landroid/content/pm/ResolveInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getCapabilities()"/> 
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getCanRetrieveWindowContent()"/>
         /// </summary>
-        public int Capabilities
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetCanRetrieveWindowContent()
         {
-            get { return IExecuteWithSignature<int>("getCapabilities", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getDescription()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String Description
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getId()"/> 
-        /// </summary>
-        public Java.Lang.String Id
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getInteractiveUiTimeoutMillis()"/> <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#setInteractiveUiTimeoutMillis(int)"/>
-        /// </summary>
-        public int InteractiveUiTimeoutMillis
-        {
-            get { return IExecuteWithSignature<int>("getInteractiveUiTimeoutMillis", "()I"); } set { IExecuteWithSignature("setInteractiveUiTimeoutMillis", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getMotionEventSources()"/> <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#setMotionEventSources(int)"/>
-        /// </summary>
-        public int MotionEventSources
-        {
-            get { return IExecuteWithSignature<int>("getMotionEventSources", "()I"); } set { IExecuteWithSignature("setMotionEventSources", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getNonInteractiveUiTimeoutMillis()"/> <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#setNonInteractiveUiTimeoutMillis(int)"/>
-        /// </summary>
-        public int NonInteractiveUiTimeoutMillis
-        {
-            get { return IExecuteWithSignature<int>("getNonInteractiveUiTimeoutMillis", "()I"); } set { IExecuteWithSignature("setNonInteractiveUiTimeoutMillis", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getResolveInfo()"/> 
-        /// </summary>
-        public Android.Content.Pm.ResolveInfo ResolveInfo
-        {
-            get { return IExecuteWithSignature<Android.Content.Pm.ResolveInfo>("getResolveInfo", "()Landroid/content/pm/ResolveInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getSettingsActivityName()"/> 
-        /// </summary>
-        public Java.Lang.String SettingsActivityName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSettingsActivityName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getTileServiceName()"/> 
-        /// </summary>
-        public Java.Lang.String TileServiceName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTileServiceName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<bool>("getCanRetrieveWindowContent", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#isAccessibilityTool()"/>
@@ -373,6 +318,38 @@ namespace Android.Accessibilityservice
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getCapabilities()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCapabilities()
+        {
+            return IExecuteWithSignature<int>("getCapabilities", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getInteractiveUiTimeoutMillis()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInteractiveUiTimeoutMillis()
+        {
+            return IExecuteWithSignature<int>("getInteractiveUiTimeoutMillis", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getMotionEventSources()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMotionEventSources()
+        {
+            return IExecuteWithSignature<int>("getMotionEventSources", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getNonInteractiveUiTimeoutMillis()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNonInteractiveUiTimeoutMillis()
+        {
+            return IExecuteWithSignature<int>("getNonInteractiveUiTimeoutMillis", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#loadIntro(android.content.pm.PackageManager)"/>
@@ -393,6 +370,39 @@ namespace Android.Accessibilityservice
             return IExecuteWithSignature<Java.Lang.CharSequence>("loadSummary", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getSettingsActivityName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSettingsActivityName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSettingsActivityName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getTileServiceName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTileServiceName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTileServiceName", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#loadDescription(android.content.pm.PackageManager)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Pm.PackageManager"/></param>
@@ -400,6 +410,30 @@ namespace Android.Accessibilityservice
         public Java.Lang.String LoadDescription(Android.Content.Pm.PackageManager arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("loadDescription", "(Landroid/content/pm/PackageManager;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#setInteractiveUiTimeoutMillis(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetInteractiveUiTimeoutMillis(int arg0)
+        {
+            IExecuteWithSignature("setInteractiveUiTimeoutMillis", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#setMotionEventSources(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMotionEventSources(int arg0)
+        {
+            IExecuteWithSignature("setMotionEventSources", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#setNonInteractiveUiTimeoutMillis(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetNonInteractiveUiTimeoutMillis(int arg0)
+        {
+            IExecuteWithSignature("setNonInteractiveUiTimeoutMillis", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#writeToParcel(android.os.Parcel,int)"/>

@@ -50,7 +50,7 @@ namespace Android.Net.Wifi.Aware
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Wifi.Aware.PeerHandle"/></param>
         /// <returns><see cref="Android.Net.NetworkSpecifier"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Net.NetworkSpecifier CreateNetworkSpecifierOpen(Android.Net.Wifi.Aware.PeerHandle arg0)
         {
             return IExecuteWithSignature<Android.Net.NetworkSpecifier>("createNetworkSpecifierOpen", "(Landroid/net/wifi/aware/PeerHandle;)Landroid/net/NetworkSpecifier;", arg0);
@@ -61,7 +61,7 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg0"><see cref="Android.Net.Wifi.Aware.PeerHandle"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Android.Net.NetworkSpecifier"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Net.NetworkSpecifier CreateNetworkSpecifierPassphrase(Android.Net.Wifi.Aware.PeerHandle arg0, Java.Lang.String arg1)
         {
             return IExecute<Android.Net.NetworkSpecifier>("createNetworkSpecifierPassphrase", arg0, arg1);

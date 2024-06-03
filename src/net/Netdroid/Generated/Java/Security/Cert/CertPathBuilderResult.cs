@@ -64,11 +64,12 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathBuilderResult.html#getCertPath()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertPathBuilderResult.html#getCertPath()"/>
         /// </summary>
-        public Java.Security.Cert.CertPath CertPath
+        /// <returns><see cref="Java.Security.Cert.CertPath"/></returns>
+        public Java.Security.Cert.CertPath GetCertPath()
         {
-            get { return IExecuteWithSignature<Java.Security.Cert.CertPath>("getCertPath", "()Ljava/security/cert/CertPath;"); }
+            return IExecuteWithSignature<Java.Security.Cert.CertPath>("getCertPath", "()Ljava/security/cert/CertPath;");
         }
 
         #endregion

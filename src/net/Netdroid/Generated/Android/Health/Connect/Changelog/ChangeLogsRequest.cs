@@ -52,26 +52,28 @@ namespace Android.Health.Connect.Changelog
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogsRequest.html#getPageSize()"/> 
-        /// </summary>
-        public int PageSize
-        {
-            get { return IExecuteWithSignature<int>("getPageSize", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogsRequest.html#getToken()"/> 
-        /// </summary>
-        public Java.Lang.String Token
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getToken", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogsRequest.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogsRequest.html#getPageSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPageSize()
+        {
+            return IExecuteWithSignature<int>("getPageSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogsRequest.html#getToken()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetToken()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getToken", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogsRequest.html#writeToParcel(android.os.Parcel,int)"/>

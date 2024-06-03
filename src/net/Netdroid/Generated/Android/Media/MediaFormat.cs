@@ -228,7 +228,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#KEY_AAC_MAX_OUTPUT_CHANNEL_COUNT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String KEY_AAC_MAX_OUTPUT_CHANNEL_COUNT { get { if (!_KEY_AAC_MAX_OUTPUT_CHANNEL_COUNTReady) { _KEY_AAC_MAX_OUTPUT_CHANNEL_COUNTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_AAC_MAX_OUTPUT_CHANNEL_COUNT"); _KEY_AAC_MAX_OUTPUT_CHANNEL_COUNTReady = true; } return _KEY_AAC_MAX_OUTPUT_CHANNEL_COUNTContent; } }
         private static Java.Lang.String _KEY_AAC_MAX_OUTPUT_CHANNEL_COUNTContent = default;
         private static bool _KEY_AAC_MAX_OUTPUT_CHANNEL_COUNTReady = false; // this is used because in case of generics 
@@ -1113,20 +1113,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#getFeatures()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> Features
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getFeatures", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#getKeys()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> Keys
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getKeys", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#containsFeature(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -1256,6 +1242,22 @@ namespace Android.Media
         public Java.Nio.ByteBuffer GetByteBuffer(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Nio.ByteBuffer>("getByteBuffer", "(Ljava/lang/String;)Ljava/nio/ByteBuffer;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#getFeatures()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetFeatures()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getFeatures", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#getKeys()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetKeys()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getKeys", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#getLong(java.lang.String,long)"/>

@@ -28,7 +28,7 @@ namespace Java.Beans
 {
     #region IndexedPropertyChangeEvent
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.desktop/java/beans/IndexedPropertyChangeEvent.html"/>
+    /// <see href="https://developer.android.com/reference/java/beans/IndexedPropertyChangeEvent.html"/>
     /// </summary>
     public partial class IndexedPropertyChangeEvent : Java.Beans.PropertyChangeEvent
     {
@@ -72,7 +72,7 @@ namespace Java.Beans
 
     #region PropertyChangeEvent
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeEvent.html"/>
+    /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeEvent.html"/>
     /// </summary>
     public partial class PropertyChangeEvent : Java.Util.EventObject
     {
@@ -116,7 +116,7 @@ namespace Java.Beans
 
     #region PropertyChangeListener
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeListener.html"/>
+    /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeListener.html"/>
     /// </summary>
     public partial class PropertyChangeListener : Java.Util.EventListener
     {
@@ -125,10 +125,13 @@ namespace Java.Beans
         /// </summary>
         public PropertyChangeListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.java.beans.PropertyChangeListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.java.beans.PropertyChangeListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -150,10 +153,13 @@ namespace Java.Beans
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "java.beans.PropertyChangeListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.beans.PropertyChangeListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -175,7 +181,7 @@ namespace Java.Beans
 
     #region PropertyChangeListenerProxy
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeListenerProxy.html"/>
+    /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeListenerProxy.html"/>
     /// </summary>
     public partial class PropertyChangeListenerProxy : Java.Util.EventListenerProxy<Java.Beans.PropertyChangeListener>
     {
@@ -219,7 +225,7 @@ namespace Java.Beans
 
     #region PropertyChangeSupport
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeSupport.html"/>
+    /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html"/>
     /// </summary>
     public partial class PropertyChangeSupport : Java.Io.Serializable
     {

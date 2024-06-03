@@ -52,11 +52,12 @@ namespace Android.Adservices.Common
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/common/AdFilters.html#getFrequencyCapFilters()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/common/AdFilters.html#getFrequencyCapFilters()"/>
         /// </summary>
-        public Android.Adservices.Common.FrequencyCapFilters FrequencyCapFilters
+        /// <returns><see cref="Android.Adservices.Common.FrequencyCapFilters"/></returns>
+        public Android.Adservices.Common.FrequencyCapFilters GetFrequencyCapFilters()
         {
-            get { return IExecuteWithSignature<Android.Adservices.Common.FrequencyCapFilters>("getFrequencyCapFilters", "()Landroid/adservices/common/FrequencyCapFilters;"); }
+            return IExecuteWithSignature<Android.Adservices.Common.FrequencyCapFilters>("getFrequencyCapFilters", "()Landroid/adservices/common/FrequencyCapFilters;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/common/AdFilters.html#describeContents()"/>

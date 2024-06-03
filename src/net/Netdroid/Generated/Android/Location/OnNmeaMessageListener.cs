@@ -68,7 +68,7 @@ namespace Android.Location
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("onNmeaMessage", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnNmeaMessageEventHandler));
+            AddEventHandler("onNmeaMessage", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnNmeaMessageEventHandler));
 
         }
 
@@ -76,7 +76,7 @@ namespace Android.Location
         /// Handler for <see href="https://developer.android.com/reference/android/location/OnNmeaMessageListener.html#onNmeaMessage(java.lang.String,long)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnNmeaMessage"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String, long> OnOnNmeaMessage { get; set; } = null;
+        public global::System.Action<Java.Lang.String, long> OnOnNmeaMessage { get; set; } = null;
 
         void OnNmeaMessageEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {

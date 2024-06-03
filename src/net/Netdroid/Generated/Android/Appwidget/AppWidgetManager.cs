@@ -229,13 +229,6 @@ namespace Android.Appwidget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#getInstalledProviders()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Appwidget.AppWidgetProviderInfo> InstalledProviders
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Appwidget.AppWidgetProviderInfo>>("getInstalledProviders", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#getAppWidgetInfo(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -313,6 +306,14 @@ namespace Android.Appwidget
         public int[] GetAppWidgetIds(Android.Content.ComponentName arg0)
         {
             return IExecuteWithSignatureArray<int>("getAppWidgetIds", "(Landroid/content/ComponentName;)[I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#getInstalledProviders()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Appwidget.AppWidgetProviderInfo> GetInstalledProviders()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Appwidget.AppWidgetProviderInfo>>("getInstalledProviders", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#getInstalledProvidersForPackage(java.lang.String,android.os.UserHandle)"/>

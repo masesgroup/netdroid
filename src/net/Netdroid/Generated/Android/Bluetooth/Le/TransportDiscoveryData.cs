@@ -69,20 +69,6 @@ namespace Android.Bluetooth.Le
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/TransportDiscoveryData.html#getTransportBlocks()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Bluetooth.Le.TransportBlock> TransportBlocks
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.Le.TransportBlock>>("getTransportBlocks", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/TransportDiscoveryData.html#getTransportDataType()"/> 
-        /// </summary>
-        public int TransportDataType
-        {
-            get { return IExecuteWithSignature<int>("getTransportDataType", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/TransportDiscoveryData.html#toByteArray()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
@@ -99,12 +85,28 @@ namespace Android.Bluetooth.Le
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/TransportDiscoveryData.html#getTransportDataType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTransportDataType()
+        {
+            return IExecuteWithSignature<int>("getTransportDataType", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/TransportDiscoveryData.html#totalBytes()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int TotalBytes()
         {
             return IExecuteWithSignature<int>("totalBytes", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/TransportDiscoveryData.html#getTransportBlocks()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Bluetooth.Le.TransportBlock> GetTransportBlocks()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.Le.TransportBlock>>("getTransportBlocks", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/TransportDiscoveryData.html#writeToParcel(android.os.Parcel,int)"/>

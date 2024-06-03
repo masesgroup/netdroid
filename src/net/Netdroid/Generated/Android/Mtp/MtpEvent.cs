@@ -154,74 +154,84 @@ namespace Android.Mtp
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpEvent.html#getDevicePropCode()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpEvent.html#getDevicePropCode()"/>
         /// </summary>
-        public int DevicePropCode
+        /// <returns><see cref="int"/></returns>
+        public int GetDevicePropCode()
         {
-            get { return IExecuteWithSignature<int>("getDevicePropCode", "()I"); }
+            return IExecuteWithSignature<int>("getDevicePropCode", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpEvent.html#getEventCode()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpEvent.html#getEventCode()"/>
         /// </summary>
-        public int EventCode
+        /// <returns><see cref="int"/></returns>
+        public int GetEventCode()
         {
-            get { return IExecuteWithSignature<int>("getEventCode", "()I"); }
+            return IExecuteWithSignature<int>("getEventCode", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpEvent.html#getObjectFormatCode()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpEvent.html#getObjectFormatCode()"/>
         /// </summary>
-        public int ObjectFormatCode
+        /// <returns><see cref="int"/></returns>
+        public int GetObjectFormatCode()
         {
-            get { return IExecuteWithSignature<int>("getObjectFormatCode", "()I"); }
+            return IExecuteWithSignature<int>("getObjectFormatCode", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpEvent.html#getObjectHandle()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpEvent.html#getObjectHandle()"/>
         /// </summary>
-        public int ObjectHandle
+        /// <returns><see cref="int"/></returns>
+        public int GetObjectHandle()
         {
-            get { return IExecuteWithSignature<int>("getObjectHandle", "()I"); }
+            return IExecuteWithSignature<int>("getObjectHandle", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpEvent.html#getObjectPropCode()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpEvent.html#getObjectPropCode()"/>
         /// </summary>
-        public int ObjectPropCode
+        /// <returns><see cref="int"/></returns>
+        public int GetObjectPropCode()
         {
-            get { return IExecuteWithSignature<int>("getObjectPropCode", "()I"); }
+            return IExecuteWithSignature<int>("getObjectPropCode", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpEvent.html#getParameter1()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpEvent.html#getParameter1()"/>
         /// </summary>
-        public int Parameter1
+        /// <returns><see cref="int"/></returns>
+        public int GetParameter1()
         {
-            get { return IExecuteWithSignature<int>("getParameter1", "()I"); }
+            return IExecuteWithSignature<int>("getParameter1", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpEvent.html#getParameter2()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpEvent.html#getParameter2()"/>
         /// </summary>
-        public int Parameter2
+        /// <returns><see cref="int"/></returns>
+        public int GetParameter2()
         {
-            get { return IExecuteWithSignature<int>("getParameter2", "()I"); }
+            return IExecuteWithSignature<int>("getParameter2", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpEvent.html#getParameter3()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpEvent.html#getParameter3()"/>
         /// </summary>
-        public int Parameter3
+        /// <returns><see cref="int"/></returns>
+        public int GetParameter3()
         {
-            get { return IExecuteWithSignature<int>("getParameter3", "()I"); }
+            return IExecuteWithSignature<int>("getParameter3", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpEvent.html#getStorageId()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpEvent.html#getStorageId()"/>
         /// </summary>
-        public int StorageId
+        /// <returns><see cref="int"/></returns>
+        public int GetStorageId()
         {
-            get { return IExecuteWithSignature<int>("getStorageId", "()I"); }
+            return IExecuteWithSignature<int>("getStorageId", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpEvent.html#getTransactionId()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpEvent.html#getTransactionId()"/>
         /// </summary>
-        public int TransactionId
+        /// <returns><see cref="int"/></returns>
+        public int GetTransactionId()
         {
-            get { return IExecuteWithSignature<int>("getTransactionId", "()I"); }
+            return IExecuteWithSignature<int>("getTransactionId", "()I");
         }
 
         #endregion

@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Timer.html#%3Cinit%3E(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Timer.html#%3Cinit%3E(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public Timer(bool arg0)
@@ -38,7 +38,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Timer.html#%3Cinit%3E(java.lang.String,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Timer.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -47,7 +47,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Timer.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Timer.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public Timer(Java.Lang.String arg0)
@@ -71,7 +71,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Timer.html#purge()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Timer.html#purge()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Purge()
@@ -79,14 +79,14 @@ namespace Java.Util
             return IExecuteWithSignature<int>("purge", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Timer.html#cancel()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Timer.html#cancel()"/>
         /// </summary>
         public void Cancel()
         {
             IExecuteWithSignature("cancel", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Timer.html#schedule(java.util.TimerTask,java.util.Date,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Timer.html#schedule(java.util.TimerTask,java.util.Date,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.TimerTask"/></param>
         /// <param name="arg1"><see cref="Java.Util.Date"/></param>
@@ -96,7 +96,7 @@ namespace Java.Util
             IExecute("schedule", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Timer.html#schedule(java.util.TimerTask,java.util.Date)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Timer.html#schedule(java.util.TimerTask,java.util.Date)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.TimerTask"/></param>
         /// <param name="arg1"><see cref="Java.Util.Date"/></param>
@@ -105,7 +105,7 @@ namespace Java.Util
             IExecute("schedule", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Timer.html#schedule(java.util.TimerTask,long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Timer.html#schedule(java.util.TimerTask,long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.TimerTask"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -115,7 +115,7 @@ namespace Java.Util
             IExecute("schedule", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Timer.html#schedule(java.util.TimerTask,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Timer.html#schedule(java.util.TimerTask,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.TimerTask"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -124,7 +124,7 @@ namespace Java.Util
             IExecute("schedule", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Timer.html#scheduleAtFixedRate(java.util.TimerTask,java.util.Date,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Timer.html#scheduleAtFixedRate(java.util.TimerTask,java.util.Date,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.TimerTask"/></param>
         /// <param name="arg1"><see cref="Java.Util.Date"/></param>
@@ -134,7 +134,7 @@ namespace Java.Util
             IExecute("scheduleAtFixedRate", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Timer.html#scheduleAtFixedRate(java.util.TimerTask,long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Timer.html#scheduleAtFixedRate(java.util.TimerTask,long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.TimerTask"/></param>
         /// <param name="arg1"><see cref="long"/></param>

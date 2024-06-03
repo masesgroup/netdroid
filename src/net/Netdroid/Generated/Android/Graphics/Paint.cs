@@ -224,277 +224,20 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getAlpha()"/> <see href="https://developer.android.com/reference/android/graphics/Paint.html#setAlpha(int)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getBlendMode()"/>
         /// </summary>
-        public int Alpha
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        public Android.Graphics.BlendMode GetBlendMode()
         {
-            get { return IExecuteWithSignature<int>("getAlpha", "()I"); } set { IExecuteWithSignature("setAlpha", "(I)V", value); }
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getBlendMode", "()Landroid/graphics/BlendMode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getBlendMode()"/> <see href="https://developer.android.com/reference/android/graphics/Paint.html#setBlendMode(android.graphics.BlendMode)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getColorFilter()"/>
         /// </summary>
-        public Android.Graphics.BlendMode BlendMode
+        /// <returns><see cref="Android.Graphics.ColorFilter"/></returns>
+        public Android.Graphics.ColorFilter GetColorFilter()
         {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getBlendMode", "()Landroid/graphics/BlendMode;"); } set { IExecuteWithSignature("setBlendMode", "(Landroid/graphics/BlendMode;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getColor()"/> 
-        /// </summary>
-        public int Color
-        {
-            get { return IExecuteWithSignature<int>("getColor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getColorFilter()"/> 
-        /// </summary>
-        public Android.Graphics.ColorFilter ColorFilter
-        {
-            get { return IExecuteWithSignature<Android.Graphics.ColorFilter>("getColorFilter", "()Landroid/graphics/ColorFilter;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getColorLong()"/> 
-        /// </summary>
-        public long ColorLong
-        {
-            get { return IExecuteWithSignature<long>("getColorLong", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getEndHyphenEdit()"/> <see href="https://developer.android.com/reference/android/graphics/Paint.html#setEndHyphenEdit(int)"/>
-        /// </summary>
-        public int EndHyphenEdit
-        {
-            get { return IExecuteWithSignature<int>("getEndHyphenEdit", "()I"); } set { IExecuteWithSignature("setEndHyphenEdit", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getFlags()"/> <see href="https://developer.android.com/reference/android/graphics/Paint.html#setFlags(int)"/>
-        /// </summary>
-        public int Flags
-        {
-            get { return IExecuteWithSignature<int>("getFlags", "()I"); } set { IExecuteWithSignature("setFlags", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getFontFeatureSettings()"/> <see href="https://developer.android.com/reference/android/graphics/Paint.html#setFontFeatureSettings(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String FontFeatureSettings
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFontFeatureSettings", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setFontFeatureSettings", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getFontSpacing()"/> 
-        /// </summary>
-        public float FontSpacing
-        {
-            get { return IExecuteWithSignature<float>("getFontSpacing", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getFontVariationSettings()"/> 
-        /// </summary>
-        public Java.Lang.String FontVariationSettings
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFontVariationSettings", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getStyle()"/> 
-        /// </summary>
-        public Android.Graphics.Paint.Style GetStyle
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Paint.Style>("getStyle", "()Landroid/graphics/Paint$Style;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getHinting()"/> <see href="https://developer.android.com/reference/android/graphics/Paint.html#setHinting(int)"/>
-        /// </summary>
-        public int Hinting
-        {
-            get { return IExecuteWithSignature<int>("getHinting", "()I"); } set { IExecuteWithSignature("setHinting", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getLetterSpacing()"/> <see href="https://developer.android.com/reference/android/graphics/Paint.html#setLetterSpacing(float)"/>
-        /// </summary>
-        public float LetterSpacing
-        {
-            get { return IExecuteWithSignature<float>("getLetterSpacing", "()F"); } set { IExecuteWithSignature("setLetterSpacing", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getMaskFilter()"/> 
-        /// </summary>
-        public Android.Graphics.MaskFilter MaskFilter
-        {
-            get { return IExecuteWithSignature<Android.Graphics.MaskFilter>("getMaskFilter", "()Landroid/graphics/MaskFilter;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getPathEffect()"/> 
-        /// </summary>
-        public Android.Graphics.PathEffect PathEffect
-        {
-            get { return IExecuteWithSignature<Android.Graphics.PathEffect>("getPathEffect", "()Landroid/graphics/PathEffect;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getShader()"/> 
-        /// </summary>
-        public Android.Graphics.Shader Shader
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Shader>("getShader", "()Landroid/graphics/Shader;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getShadowLayerColor()"/> 
-        /// </summary>
-        public int ShadowLayerColor
-        {
-            get { return IExecuteWithSignature<int>("getShadowLayerColor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getShadowLayerColorLong()"/> 
-        /// </summary>
-        public long ShadowLayerColorLong
-        {
-            get { return IExecuteWithSignature<long>("getShadowLayerColorLong", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getShadowLayerDx()"/> 
-        /// </summary>
-        public float ShadowLayerDx
-        {
-            get { return IExecuteWithSignature<float>("getShadowLayerDx", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getShadowLayerDy()"/> 
-        /// </summary>
-        public float ShadowLayerDy
-        {
-            get { return IExecuteWithSignature<float>("getShadowLayerDy", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getShadowLayerRadius()"/> 
-        /// </summary>
-        public float ShadowLayerRadius
-        {
-            get { return IExecuteWithSignature<float>("getShadowLayerRadius", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getStartHyphenEdit()"/> <see href="https://developer.android.com/reference/android/graphics/Paint.html#setStartHyphenEdit(int)"/>
-        /// </summary>
-        public int StartHyphenEdit
-        {
-            get { return IExecuteWithSignature<int>("getStartHyphenEdit", "()I"); } set { IExecuteWithSignature("setStartHyphenEdit", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getStrikeThruPosition()"/> 
-        /// </summary>
-        public float StrikeThruPosition
-        {
-            get { return IExecuteWithSignature<float>("getStrikeThruPosition", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getStrikeThruThickness()"/> 
-        /// </summary>
-        public float StrikeThruThickness
-        {
-            get { return IExecuteWithSignature<float>("getStrikeThruThickness", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getStrokeCap()"/> <see href="https://developer.android.com/reference/android/graphics/Paint.html#setStrokeCap(android.graphics.Paint.Cap)"/>
-        /// </summary>
-        public Android.Graphics.Paint.Cap StrokeCap
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Paint.Cap>("getStrokeCap", "()Landroid/graphics/Paint$Cap;"); } set { IExecuteWithSignature("setStrokeCap", "(Landroid/graphics/Paint$Cap;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getStrokeJoin()"/> <see href="https://developer.android.com/reference/android/graphics/Paint.html#setStrokeJoin(android.graphics.Paint.Join)"/>
-        /// </summary>
-        public Android.Graphics.Paint.Join StrokeJoin
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Paint.Join>("getStrokeJoin", "()Landroid/graphics/Paint$Join;"); } set { IExecuteWithSignature("setStrokeJoin", "(Landroid/graphics/Paint$Join;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getStrokeMiter()"/> <see href="https://developer.android.com/reference/android/graphics/Paint.html#setStrokeMiter(float)"/>
-        /// </summary>
-        public float StrokeMiter
-        {
-            get { return IExecuteWithSignature<float>("getStrokeMiter", "()F"); } set { IExecuteWithSignature("setStrokeMiter", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getStrokeWidth()"/> <see href="https://developer.android.com/reference/android/graphics/Paint.html#setStrokeWidth(float)"/>
-        /// </summary>
-        public float StrokeWidth
-        {
-            get { return IExecuteWithSignature<float>("getStrokeWidth", "()F"); } set { IExecuteWithSignature("setStrokeWidth", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextAlign()"/> <see href="https://developer.android.com/reference/android/graphics/Paint.html#setTextAlign(android.graphics.Paint.Align)"/>
-        /// </summary>
-        public Android.Graphics.Paint.Align TextAlign
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Paint.Align>("getTextAlign", "()Landroid/graphics/Paint$Align;"); } set { IExecuteWithSignature("setTextAlign", "(Landroid/graphics/Paint$Align;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextLocale()"/> <see href="https://developer.android.com/reference/android/graphics/Paint.html#setTextLocale(java.util.Locale)"/>
-        /// </summary>
-        public Java.Util.Locale TextLocale
-        {
-            get { return IExecuteWithSignature<Java.Util.Locale>("getTextLocale", "()Ljava/util/Locale;"); } set { IExecuteWithSignature("setTextLocale", "(Ljava/util/Locale;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextLocales()"/> <see href="https://developer.android.com/reference/android/graphics/Paint.html#setTextLocales(android.os.LocaleList)"/>
-        /// </summary>
-        public Android.Os.LocaleList TextLocales
-        {
-            get { return IExecuteWithSignature<Android.Os.LocaleList>("getTextLocales", "()Landroid/os/LocaleList;"); } set { IExecuteWithSignature("setTextLocales", "(Landroid/os/LocaleList;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextScaleX()"/> <see href="https://developer.android.com/reference/android/graphics/Paint.html#setTextScaleX(float)"/>
-        /// </summary>
-        public float TextScaleX
-        {
-            get { return IExecuteWithSignature<float>("getTextScaleX", "()F"); } set { IExecuteWithSignature("setTextScaleX", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextSize()"/> <see href="https://developer.android.com/reference/android/graphics/Paint.html#setTextSize(float)"/>
-        /// </summary>
-        public float TextSize
-        {
-            get { return IExecuteWithSignature<float>("getTextSize", "()F"); } set { IExecuteWithSignature("setTextSize", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextSkewX()"/> <see href="https://developer.android.com/reference/android/graphics/Paint.html#setTextSkewX(float)"/>
-        /// </summary>
-        public float TextSkewX
-        {
-            get { return IExecuteWithSignature<float>("getTextSkewX", "()F"); } set { IExecuteWithSignature("setTextSkewX", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTypeface()"/> 
-        /// </summary>
-        public Android.Graphics.Typeface Typeface
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Typeface>("getTypeface", "()Landroid/graphics/Typeface;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getUnderlinePosition()"/> 
-        /// </summary>
-        public float UnderlinePosition
-        {
-            get { return IExecuteWithSignature<float>("getUnderlinePosition", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getUnderlineThickness()"/> 
-        /// </summary>
-        public float UnderlineThickness
-        {
-            get { return IExecuteWithSignature<float>("getUnderlineThickness", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getWordSpacing()"/> <see href="https://developer.android.com/reference/android/graphics/Paint.html#setWordSpacing(float)"/>
-        /// </summary>
-        public float WordSpacing
-        {
-            get { return IExecuteWithSignature<float>("getWordSpacing", "()F"); } set { IExecuteWithSignature("setWordSpacing", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getXfermode()"/> 
-        /// </summary>
-        public Android.Graphics.Xfermode Xfermode
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Xfermode>("getXfermode", "()Landroid/graphics/Xfermode;"); }
+            return IExecuteWithSignature<Android.Graphics.ColorFilter>("getColorFilter", "()Landroid/graphics/ColorFilter;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setColorFilter(android.graphics.ColorFilter)"/>
@@ -506,6 +249,14 @@ namespace Android.Graphics
             return IExecuteWithSignature<Android.Graphics.ColorFilter>("setColorFilter", "(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getMaskFilter()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.MaskFilter"/></returns>
+        public Android.Graphics.MaskFilter GetMaskFilter()
+        {
+            return IExecuteWithSignature<Android.Graphics.MaskFilter>("getMaskFilter", "()Landroid/graphics/MaskFilter;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setMaskFilter(android.graphics.MaskFilter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.MaskFilter"/></param>
@@ -513,6 +264,22 @@ namespace Android.Graphics
         public Android.Graphics.MaskFilter SetMaskFilter(Android.Graphics.MaskFilter arg0)
         {
             return IExecuteWithSignature<Android.Graphics.MaskFilter>("setMaskFilter", "(Landroid/graphics/MaskFilter;)Landroid/graphics/MaskFilter;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextAlign()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Paint.Align"/></returns>
+        public Android.Graphics.Paint.Align GetTextAlign()
+        {
+            return IExecuteWithSignature<Android.Graphics.Paint.Align>("getTextAlign", "()Landroid/graphics/Paint$Align;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getStrokeCap()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Paint.Cap"/></returns>
+        public Android.Graphics.Paint.Cap GetStrokeCap()
+        {
+            return IExecuteWithSignature<Android.Graphics.Paint.Cap>("getStrokeCap", "()Landroid/graphics/Paint$Cap;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getFontMetrics()"/>
@@ -531,6 +298,30 @@ namespace Android.Graphics
             return IExecuteWithSignature<Android.Graphics.Paint.FontMetricsInt>("getFontMetricsInt", "()Landroid/graphics/Paint$FontMetricsInt;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getStrokeJoin()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Paint.Join"/></returns>
+        public Android.Graphics.Paint.Join GetStrokeJoin()
+        {
+            return IExecuteWithSignature<Android.Graphics.Paint.Join>("getStrokeJoin", "()Landroid/graphics/Paint$Join;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getStyle()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Paint.Style"/></returns>
+        public Android.Graphics.Paint.Style GetStyle()
+        {
+            return IExecuteWithSignature<Android.Graphics.Paint.Style>("getStyle", "()Landroid/graphics/Paint$Style;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getPathEffect()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.PathEffect"/></returns>
+        public Android.Graphics.PathEffect GetPathEffect()
+        {
+            return IExecuteWithSignature<Android.Graphics.PathEffect>("getPathEffect", "()Landroid/graphics/PathEffect;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setPathEffect(android.graphics.PathEffect)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.PathEffect"/></param>
@@ -538,6 +329,14 @@ namespace Android.Graphics
         public Android.Graphics.PathEffect SetPathEffect(Android.Graphics.PathEffect arg0)
         {
             return IExecuteWithSignature<Android.Graphics.PathEffect>("setPathEffect", "(Landroid/graphics/PathEffect;)Landroid/graphics/PathEffect;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getShader()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Shader"/></returns>
+        public Android.Graphics.Shader GetShader()
+        {
+            return IExecuteWithSignature<Android.Graphics.Shader>("getShader", "()Landroid/graphics/Shader;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setShader(android.graphics.Shader)"/>
@@ -549,6 +348,14 @@ namespace Android.Graphics
             return IExecuteWithSignature<Android.Graphics.Shader>("setShader", "(Landroid/graphics/Shader;)Landroid/graphics/Shader;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTypeface()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Typeface"/></returns>
+        public Android.Graphics.Typeface GetTypeface()
+        {
+            return IExecuteWithSignature<Android.Graphics.Typeface>("getTypeface", "()Landroid/graphics/Typeface;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setTypeface(android.graphics.Typeface)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Typeface"/></param>
@@ -558,6 +365,14 @@ namespace Android.Graphics
             return IExecuteWithSignature<Android.Graphics.Typeface>("setTypeface", "(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getXfermode()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Xfermode"/></returns>
+        public Android.Graphics.Xfermode GetXfermode()
+        {
+            return IExecuteWithSignature<Android.Graphics.Xfermode>("getXfermode", "()Landroid/graphics/Xfermode;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setXfermode(android.graphics.Xfermode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Xfermode"/></param>
@@ -565,6 +380,14 @@ namespace Android.Graphics
         public Android.Graphics.Xfermode SetXfermode(Android.Graphics.Xfermode arg0)
         {
             return IExecuteWithSignature<Android.Graphics.Xfermode>("setXfermode", "(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextLocales()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.LocaleList"/></returns>
+        public Android.Os.LocaleList GetTextLocales()
+        {
+            return IExecuteWithSignature<Android.Os.LocaleList>("getTextLocales", "()Landroid/os/LocaleList;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#equalsForTextMeasurement(android.graphics.Paint)"/>
@@ -701,6 +524,22 @@ namespace Android.Graphics
             return IExecuteWithSignature<float>("getFontMetrics", "(Landroid/graphics/Paint$FontMetrics;)F", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getFontSpacing()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetFontSpacing()
+        {
+            return IExecuteWithSignature<float>("getFontSpacing", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getLetterSpacing()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetLetterSpacing()
+        {
+            return IExecuteWithSignature<float>("getLetterSpacing", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getRunAdvance(char[],int,int,int,int,boolean,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
@@ -765,6 +604,62 @@ namespace Android.Graphics
             return IExecute<float>("getRunCharacterAdvance", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getShadowLayerDx()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetShadowLayerDx()
+        {
+            return IExecuteWithSignature<float>("getShadowLayerDx", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getShadowLayerDy()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetShadowLayerDy()
+        {
+            return IExecuteWithSignature<float>("getShadowLayerDy", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getShadowLayerRadius()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetShadowLayerRadius()
+        {
+            return IExecuteWithSignature<float>("getShadowLayerRadius", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getStrikeThruPosition()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetStrikeThruPosition()
+        {
+            return IExecuteWithSignature<float>("getStrikeThruPosition", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getStrikeThruThickness()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetStrikeThruThickness()
+        {
+            return IExecuteWithSignature<float>("getStrikeThruThickness", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getStrokeMiter()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetStrokeMiter()
+        {
+            return IExecuteWithSignature<float>("getStrokeMiter", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getStrokeWidth()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetStrokeWidth()
+        {
+            return IExecuteWithSignature<float>("getStrokeWidth", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextRunAdvances(char[],int,int,int,int,boolean,float[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
@@ -779,6 +674,54 @@ namespace Android.Graphics
         public float GetTextRunAdvances(char[] arg0, int arg1, int arg2, int arg3, int arg4, bool arg5, float[] arg6, int arg7)
         {
             return IExecute<float>("getTextRunAdvances", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextScaleX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetTextScaleX()
+        {
+            return IExecuteWithSignature<float>("getTextScaleX", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextSize()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetTextSize()
+        {
+            return IExecuteWithSignature<float>("getTextSize", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextSkewX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetTextSkewX()
+        {
+            return IExecuteWithSignature<float>("getTextSkewX", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getUnderlinePosition()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetUnderlinePosition()
+        {
+            return IExecuteWithSignature<float>("getUnderlinePosition", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getUnderlineThickness()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetUnderlineThickness()
+        {
+            return IExecuteWithSignature<float>("getUnderlineThickness", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getWordSpacing()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetWordSpacing()
+        {
+            return IExecuteWithSignature<float>("getWordSpacing", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#measureText(char[],int,int)"/>
@@ -862,6 +805,38 @@ namespace Android.Graphics
             return IExecute<int>("breakText", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getAlpha()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAlpha()
+        {
+            return IExecuteWithSignature<int>("getAlpha", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetColor()
+        {
+            return IExecuteWithSignature<int>("getColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getEndHyphenEdit()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEndHyphenEdit()
+        {
+            return IExecuteWithSignature<int>("getEndHyphenEdit", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFlags()
+        {
+            return IExecuteWithSignature<int>("getFlags", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getFontMetricsInt(android.graphics.Paint.FontMetricsInt)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Paint.FontMetricsInt"/></param>
@@ -869,6 +844,14 @@ namespace Android.Graphics
         public int GetFontMetricsInt(Android.Graphics.Paint.FontMetricsInt arg0)
         {
             return IExecuteWithSignature<int>("getFontMetricsInt", "(Landroid/graphics/Paint$FontMetricsInt;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getHinting()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHinting()
+        {
+            return IExecuteWithSignature<int>("getHinting", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getOffsetForAdvance(char[],int,int,int,int,boolean,float)"/>
@@ -899,6 +882,22 @@ namespace Android.Graphics
         public int GetOffsetForAdvance(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3, int arg4, bool arg5, float arg6)
         {
             return IExecute<int>("getOffsetForAdvance", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getShadowLayerColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetShadowLayerColor()
+        {
+            return IExecuteWithSignature<int>("getShadowLayerColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getStartHyphenEdit()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStartHyphenEdit()
+        {
+            return IExecuteWithSignature<int>("getStartHyphenEdit", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextRunCursor(char[],int,int,boolean,int,int)"/>
@@ -973,6 +972,46 @@ namespace Android.Graphics
         public int GetTextWidths(Java.Lang.String arg0, int arg1, int arg2, float[] arg3)
         {
             return IExecute<int>("getTextWidths", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getFontFeatureSettings()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFontFeatureSettings()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFontFeatureSettings", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getFontVariationSettings()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFontVariationSettings()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFontVariationSettings", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextLocale()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public Java.Util.Locale GetTextLocale()
+        {
+            return IExecuteWithSignature<Java.Util.Locale>("getTextLocale", "()Ljava/util/Locale;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getColorLong()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetColorLong()
+        {
+            return IExecuteWithSignature<long>("getColorLong", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getShadowLayerColorLong()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetShadowLayerColorLong()
+        {
+            return IExecuteWithSignature<long>("getShadowLayerColorLong", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#clearShadowLayer()"/>
@@ -1084,6 +1123,14 @@ namespace Android.Graphics
             IExecuteWithSignature("set", "(Landroid/graphics/Paint;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setAlpha(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetAlpha(int arg0)
+        {
+            IExecuteWithSignature("setAlpha", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setAntiAlias(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -1101,6 +1148,14 @@ namespace Android.Graphics
         public void SetARGB(int arg0, int arg1, int arg2, int arg3)
         {
             IExecute("setARGB", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setBlendMode(android.graphics.BlendMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.BlendMode"/></param>
+        public void SetBlendMode(Android.Graphics.BlendMode arg0)
+        {
+            IExecuteWithSignature("setBlendMode", "(Landroid/graphics/BlendMode;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setColor(int)"/>
@@ -1135,6 +1190,14 @@ namespace Android.Graphics
             IExecuteWithSignature("setElegantTextHeight", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setEndHyphenEdit(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetEndHyphenEdit(int arg0)
+        {
+            IExecuteWithSignature("setEndHyphenEdit", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setFakeBoldText(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -1149,6 +1212,38 @@ namespace Android.Graphics
         public void SetFilterBitmap(bool arg0)
         {
             IExecuteWithSignature("setFilterBitmap", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setFlags(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetFlags(int arg0)
+        {
+            IExecuteWithSignature("setFlags", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setFontFeatureSettings(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetFontFeatureSettings(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setFontFeatureSettings", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setHinting(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetHinting(int arg0)
+        {
+            IExecuteWithSignature("setHinting", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setLetterSpacing(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetLetterSpacing(float arg0)
+        {
+            IExecuteWithSignature("setLetterSpacing", "(F)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setLinearText(boolean)"/>
@@ -1181,12 +1276,52 @@ namespace Android.Graphics
             IExecute("setShadowLayer", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setStartHyphenEdit(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetStartHyphenEdit(int arg0)
+        {
+            IExecuteWithSignature("setStartHyphenEdit", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setStrikeThruText(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetStrikeThruText(bool arg0)
         {
             IExecuteWithSignature("setStrikeThruText", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setStrokeCap(android.graphics.Paint.Cap)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Paint.Cap"/></param>
+        public void SetStrokeCap(Android.Graphics.Paint.Cap arg0)
+        {
+            IExecuteWithSignature("setStrokeCap", "(Landroid/graphics/Paint$Cap;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setStrokeJoin(android.graphics.Paint.Join)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Paint.Join"/></param>
+        public void SetStrokeJoin(Android.Graphics.Paint.Join arg0)
+        {
+            IExecuteWithSignature("setStrokeJoin", "(Landroid/graphics/Paint$Join;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setStrokeMiter(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetStrokeMiter(float arg0)
+        {
+            IExecuteWithSignature("setStrokeMiter", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setStrokeWidth(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetStrokeWidth(float arg0)
+        {
+            IExecuteWithSignature("setStrokeWidth", "(F)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setStyle(android.graphics.Paint.Style)"/>
@@ -1205,12 +1340,68 @@ namespace Android.Graphics
             IExecuteWithSignature("setSubpixelText", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setTextAlign(android.graphics.Paint.Align)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Paint.Align"/></param>
+        public void SetTextAlign(Android.Graphics.Paint.Align arg0)
+        {
+            IExecuteWithSignature("setTextAlign", "(Landroid/graphics/Paint$Align;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setTextLocale(java.util.Locale)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        public void SetTextLocale(Java.Util.Locale arg0)
+        {
+            IExecuteWithSignature("setTextLocale", "(Ljava/util/Locale;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setTextLocales(android.os.LocaleList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.LocaleList"/></param>
+        public void SetTextLocales(Android.Os.LocaleList arg0)
+        {
+            IExecuteWithSignature("setTextLocales", "(Landroid/os/LocaleList;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setTextScaleX(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetTextScaleX(float arg0)
+        {
+            IExecuteWithSignature("setTextScaleX", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setTextSize(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetTextSize(float arg0)
+        {
+            IExecuteWithSignature("setTextSize", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setTextSkewX(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetTextSkewX(float arg0)
+        {
+            IExecuteWithSignature("setTextSkewX", "(F)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setUnderlineText(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetUnderlineText(bool arg0)
         {
             IExecuteWithSignature("setUnderlineText", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setWordSpacing(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetWordSpacing(float arg0)
+        {
+            IExecuteWithSignature("setWordSpacing", "(F)V", arg0);
         }
 
         #endregion

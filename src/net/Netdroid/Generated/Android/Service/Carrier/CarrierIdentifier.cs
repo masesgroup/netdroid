@@ -90,68 +90,76 @@ namespace Android.Service.Carrier
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierIdentifier.html#getCarrierId()"/> 
-        /// </summary>
-        public int CarrierId
-        {
-            get { return IExecuteWithSignature<int>("getCarrierId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierIdentifier.html#getGid1()"/> 
-        /// </summary>
-        public Java.Lang.String Gid1
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getGid1", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierIdentifier.html#getGid2()"/> 
-        /// </summary>
-        public Java.Lang.String Gid2
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getGid2", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierIdentifier.html#getImsi()"/> 
-        /// </summary>
-        public Java.Lang.String Imsi
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getImsi", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierIdentifier.html#getMcc()"/> 
-        /// </summary>
-        public Java.Lang.String Mcc
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMcc", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierIdentifier.html#getMnc()"/> 
-        /// </summary>
-        public Java.Lang.String Mnc
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMnc", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierIdentifier.html#getSpecificCarrierId()"/> 
-        /// </summary>
-        public int SpecificCarrierId
-        {
-            get { return IExecuteWithSignature<int>("getSpecificCarrierId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierIdentifier.html#getSpn()"/> 
-        /// </summary>
-        public Java.Lang.String Spn
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSpn", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierIdentifier.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierIdentifier.html#getCarrierId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCarrierId()
+        {
+            return IExecuteWithSignature<int>("getCarrierId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierIdentifier.html#getSpecificCarrierId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSpecificCarrierId()
+        {
+            return IExecuteWithSignature<int>("getSpecificCarrierId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierIdentifier.html#getGid1()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetGid1()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getGid1", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierIdentifier.html#getGid2()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetGid2()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getGid2", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierIdentifier.html#getImsi()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetImsi()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getImsi", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierIdentifier.html#getMcc()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMcc()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMcc", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierIdentifier.html#getMnc()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMnc()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMnc", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierIdentifier.html#getSpn()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSpn()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSpn", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierIdentifier.html#writeToParcel(android.os.Parcel,int)"/>

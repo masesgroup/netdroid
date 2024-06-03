@@ -42,7 +42,7 @@ namespace Java.Lang.Runtime
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/runtime/ObjectMethods.html#bootstrap(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.invoke.TypeDescriptor,java.lang.Class,java.lang.String,java.lang.invoke.MethodHandle[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/runtime/ObjectMethods.html#bootstrap(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.invoke.TypeDescriptor,java.lang.Class,java.lang.String,java.lang.invoke.MethodHandle[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
