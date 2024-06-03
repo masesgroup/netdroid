@@ -461,15 +461,6 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("dropWhile", "(Ljava/util/function/IntPredicate;)Ljava/util/stream/IntStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#mapMulti(java.util.stream.IntStream.IntMapMultiConsumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Stream.IntStream.IntMapMultiConsumer"/></param>
-        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
-        public Java.Util.Stream.IntStream MapMulti(Java.Util.Stream.IntStream.IntMapMultiConsumer arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Stream.IntStream>("mapMulti", "(Ljava/util/stream/IntStream$IntMapMultiConsumer;)Ljava/util/stream/IntStream;", arg0);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#takeWhile(java.util.function.IntPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>

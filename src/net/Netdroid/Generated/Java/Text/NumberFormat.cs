@@ -102,16 +102,6 @@ namespace Java.Text
             return SExecuteWithSignature<Java.Text.NumberFormat>(LocalBridgeClazz, "getCompactNumberInstance", "()Ljava/text/NumberFormat;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java/text/NumberFormat.html#getCompactNumberInstance(java.util.Locale,java.text.NumberFormat.Style)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <param name="arg1"><see cref="Java.Text.NumberFormat.Style"/></param>
-        /// <returns><see cref="Java.Text.NumberFormat"/></returns>
-        public static Java.Text.NumberFormat GetCompactNumberInstance(Java.Util.Locale arg0, Java.Text.NumberFormat.Style arg1)
-        {
-            return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getCompactNumberInstance", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/NumberFormat.html#getCurrencyInstance(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
